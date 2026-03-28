@@ -2,18 +2,23 @@
 // StockTable.tsx — 板塊內個股排名表格（含 K 線展開）
 import { useState } from "react";
 import dynamic from "next/dynamic";
-import type { StockData } from "@/lib/types";
+import type { StockData, OHLCBar } from "@/lib/types";
 import { changePctColor, formatChangePct, SIGNAL_NAMES } from "@/lib/signals";
 
+interface KLineProps { data: OHLCBar[]; stockId: string; }
+
 // 動態載入 K 線圖，避免 SSR 問題
-const StockKLine = dynamic(() => import("./StockKLine").then((m) => m.StockKLine), {
-  ssr: false,
-  loading: () => (
-    <div className="h-[160px] flex items-center justify-center text-zinc-400 text-xs">
-      載入中...
-    </div>
-  ),
-});
+const StockKLine = dynamic<KLineProps>(
+  () => import("./StockKLine").then((m) => m.StockKLine),
+  {
+    ssr: false,
+    loading: () => (
+      <div className="h-[160px] flex items-center justify-center text-zinc-400 text-xs">
+        載入中...
+      </div>
+    ),
+  }
+);
 
 interface StockTableProps {
   stocks: StockData[];
