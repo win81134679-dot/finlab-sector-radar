@@ -218,7 +218,7 @@ def _save_snapshot(result: Dict[str, Any], config) -> Optional[Path]:
         pass
 
     # ── 取得 OHLCV 和交易狀態（一次批次）─────────────────────────
-    _last_trading_date = date_str  # fallback
+    _last_trading_date = datetime.now().strftime("%Y-%m-%d")  # fallback
     _trading_status: dict = {}
     _ohlcv_batch: dict = {}
     try:
