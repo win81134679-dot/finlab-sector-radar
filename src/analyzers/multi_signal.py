@@ -217,7 +217,27 @@ def _save_snapshot(result: Dict[str, Any], config) -> Optional[Path]:
     except Exception:
         pass
 
-    # ── 建立完整板塊快照（含 name_zh + stocks）──────────────────────────
+    # ── 取得 OHLCV 和交易狀態（一次批次）─────────────────────────
+    _last_trading_date = date_str  # fallback
+    _trading_status: dict = {}
+    _ohlcv_batch: dict = {}
+    try:
+        from src.data_fetcher import fetcher as _fetcher
+        _ltd = _fetcher.get_last_trading_date()
+        if _ltd:
+            _last_trading_date = _ltd
+        # 收集所有需要細項的股票 ID
+        _all_sids: List[str] = []
+        for _v in result["sector_results"].values():
+            _all_sids.extend(_v.get("stock_rankings", {}).keys())
+        _all_sids = list(set(_all_sids))
+        if _all_sids:
+            _trading_status = _fetcher.get_trading_status(_all_sids, _last_trading_date)
+            _ohlcv_batch    = _fetcher.get_ohlcv_batch(_all_sids, days=10)
+    except Exception as _e:
+        logger.warning("取得 OHLCV/交易狀態失敗: %s", _e)
+
+    # ── 建立完整板塊快照（含 name_zh + stocks）──────────────────
     sectors_payload: Dict[str, Any] = {}
     for sid, v in result["sector_results"].items():
         stock_list: List[Dict[str, Any]] = []
@@ -230,6 +250,8 @@ def _save_snapshot(result: Dict[str, Any], config) -> Optional[Path]:
                 "change_pct": sdata.get("change_pct"),
                 "triggered":  sdata.get("triggered", []),
                 "breakdown":  sdata.get("breakdown", {}),
+                "price_flag": _trading_status.get(stock_id, "normal"),
+                "ohlcv_7d":   _ohlcv_batch.get(stock_id, []),
             })
         sectors_payload[sid] = {
             "name_zh": v["name"],
@@ -255,6 +277,7 @@ def _save_snapshot(result: Dict[str, Any], config) -> Optional[Path]:
         "schema_version": "2.0",
         "date":    date_str,
         "run_at":  run_at_str,
+        "last_trading_date": _last_trading_date,
         "macro":   macro_payload,
         # 保留舊欄位向下相容
         "macro_warning": result.get("macro_warning", False),

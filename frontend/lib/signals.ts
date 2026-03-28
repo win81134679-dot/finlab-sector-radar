@@ -17,27 +17,27 @@ export const LEVEL_CONFIG = {
     emoji: "🔥",
     label: "強烈關注",
     color: "#FF4D4F",
-    bgClass: "bg-red-500/10 border-red-500/30",
-    textClass: "text-red-400",
-    badgeClass: "bg-red-500/20 text-red-300 border border-red-500/30",
+    bgClass: "bg-red-500/10 border-red-300 dark:border-red-500/30",
+    textClass: "text-red-600 dark:text-red-400",
+    badgeClass: "bg-red-500/20 text-red-700 dark:text-red-300 border border-red-300 dark:border-red-500/30",
     sortWeight: 0,
   },
   觀察中: {
     emoji: "👀",
     label: "觀察中",
     color: "#FAAD14",
-    bgClass: "bg-amber-500/10 border-amber-500/30",
-    textClass: "text-amber-400",
-    badgeClass: "bg-amber-500/20 text-amber-300 border border-amber-500/30",
+    bgClass: "bg-amber-500/10 border-amber-300 dark:border-amber-500/30",
+    textClass: "text-amber-600 dark:text-amber-400",
+    badgeClass: "bg-amber-500/20 text-amber-700 dark:text-amber-300 border border-amber-300 dark:border-amber-500/30",
     sortWeight: 1,
   },
   忽略: {
     emoji: "💤",
     label: "忽略",
     color: "#52525b",
-    bgClass: "bg-zinc-800/50 border-zinc-700/30",
-    textClass: "text-zinc-500",
-    badgeClass: "bg-zinc-700/40 text-zinc-500 border border-zinc-700/30",
+    bgClass: "bg-zinc-100/80 dark:bg-zinc-800/50 border-zinc-300 dark:border-zinc-700/30",
+    textClass: "text-zinc-600 dark:text-zinc-500",
+    badgeClass: "bg-zinc-200/60 dark:bg-zinc-700/40 text-zinc-600 dark:text-zinc-500 border border-zinc-300 dark:border-zinc-700/30",
     sortWeight: 2,
   },
 } as const;
@@ -70,10 +70,10 @@ export function signalState(value: number): "on" | "half" | "off" {
 
 // 漲跌幅色彩
 export function changePctColor(pct: number | null | undefined): string {
-  if (pct == null) return "text-zinc-500";
-  if (pct > 0) return "text-emerald-400";
-  if (pct < 0) return "text-red-400";
-  return "text-zinc-400";
+  if (pct == null) return "text-zinc-500 dark:text-zinc-400";
+  if (pct > 0) return "text-emerald-600 dark:text-emerald-400";
+  if (pct < 0) return "text-red-600 dark:text-red-400";
+  return "text-zinc-600 dark:text-zinc-400";
 }
 
 // 漲跌幅格式化（加 + 號）

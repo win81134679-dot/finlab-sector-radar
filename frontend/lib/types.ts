@@ -1,5 +1,14 @@
 // types.ts — FinLab 板塊偵測系統前端型別定義
 
+export interface OHLCBar {
+  date: string;
+  o: number;
+  h: number;
+  l: number;
+  c: number;
+  v: number;
+}
+
 export interface StockData {
   id: string;
   score?: number | null;
@@ -12,6 +21,8 @@ export interface StockData {
     chipset: number;
     bonus: number;
   };
+  price_flag?: "normal" | "ex_div" | "halt";
+  ohlcv_7d?: OHLCBar[];
 }
 
 export interface SectorData {
@@ -40,6 +51,7 @@ export interface SignalSnapshot {
   schema_version?: string;
   date: string;
   run_at: string;
+  last_trading_date?: string;
   macro: MacroData;
   macro_warning?: boolean;  // 向下相容
   sectors: Record<string, SectorData>;

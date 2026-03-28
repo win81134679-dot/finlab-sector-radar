@@ -193,6 +193,108 @@ class DataFetcher:
             result[str(col)] = round(float(val), 2) if pd.notna(val) else None
         return result
 
+    def get_last_trading_date(self) -> Optional[str]:
+        """
+        回傳最近一個交易日日期（YYYY-MM-DD）。
+        FinLab DataFrame index 只含交易日，取最後一筆即可。
+        """
+        try:
+            df = self.get("price:收盤價")
+            if df is not None and not df.empty:
+                return pd.Timestamp(df.index[-1]).strftime("%Y-%m-%d")
+        except Exception as e:
+            logger.warning("get_last_trading_date 失敗: %s", e)
+        return None
+
+    def get_trading_status(self, stock_ids: list, date_str: str) -> dict:
+        """
+        回傳 {stock_id: "halt"|"ex_div"|"normal"}。
+        - 停牌：成交股數 == 0
+        - 除權息：|漲跌幅| > 9.9（台股漲跌停 ±10%，超過即為除權息日）
+        """
+        status: dict = {sid: "normal" for sid in stock_ids}
+        try:
+            vol_df   = self.get("price:成交股數")
+            chpct_df = self.get("price:漲跌幅")
+            date_ts  = pd.Timestamp(date_str)
+            for sid in stock_ids:
+                try:
+                    # 停牌偵測
+                    if vol_df is not None and sid in vol_df.columns:
+                        rows = vol_df.loc[vol_df.index <= date_ts, sid]
+                        if not rows.empty and pd.notna(rows.iloc[-1]) and rows.iloc[-1] == 0:
+                            status[sid] = "halt"
+                            continue
+                    # 除權息偵測
+                    if chpct_df is not None and sid in chpct_df.columns:
+                        rows2 = chpct_df.loc[chpct_df.index <= date_ts, sid]
+                        if not rows2.empty and pd.notna(rows2.iloc[-1]):
+                            if abs(float(rows2.iloc[-1])) > 9.9:
+                                status[sid] = "ex_div"
+                except Exception:
+                    pass
+        except Exception as e:
+            logger.warning("get_trading_status 失敗: %s", e)
+        return status
+
+    def get_ohlcv_batch(self, stock_ids: list, days: int = 10) -> dict:
+        """
+        回傳 {stock_id: [{date, o, h, l, c, v}, ...]} 最近 days 筆交易日 OHLCV。
+        使用 price:開/高/低/收盤價 + price:成交股數。
+        """
+        result: dict = {}
+        try:
+            frames = {
+                "o": self.get("price:開盤價"),
+                "h": self.get("price:最高價"),
+                "l": self.get("price:最低價"),
+                "c": self.get("price:收盤價"),
+                "v": self.get("price:成交股數"),
+            }
+            close_df = frames["c"]
+            if close_df is None or close_df.empty:
+                return result
+
+            tail_index = close_df.index[-days:]
+
+            for sid in stock_ids:
+                if sid not in close_df.columns:
+                    continue
+                bars = []
+                for ts in tail_index:
+                    try:
+                        if ts not in close_df.index:
+                            continue
+                        c_val = close_df.at[ts, sid]
+                        if not pd.notna(c_val):
+                            continue
+                        c = round(float(c_val), 2)
+                        bar: dict = {
+                            "date": pd.Timestamp(ts).strftime("%Y-%m-%d"),
+                            "c": c,
+                        }
+                        for key in ("o", "h", "l"):
+                            df = frames[key]
+                            if df is not None and sid in df.columns and ts in df.index:
+                                val = df.at[ts, sid]
+                                bar[key] = round(float(val), 2) if pd.notna(val) else c
+                            else:
+                                bar[key] = c
+                        vol_df = frames["v"]
+                        if vol_df is not None and sid in vol_df.columns and ts in vol_df.index:
+                            v_val = vol_df.at[ts, sid]
+                            bar["v"] = int(v_val) if pd.notna(v_val) else 0
+                        else:
+                            bar["v"] = 0
+                        bars.append(bar)
+                    except Exception:
+                        continue
+                if bars:
+                    result[sid] = bars
+        except Exception as e:
+            logger.warning("get_ohlcv_batch 失敗: %s", e)
+        return result
+
 
 # 全域單例
 fetcher = DataFetcher()
