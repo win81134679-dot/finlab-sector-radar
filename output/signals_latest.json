@@ -1,0 +1,1689 @@
+{
+  "schema_version": "2.0",
+  "date": "2026-03-29",
+  "run_at": "2026-03-29T02:52:39+08:00",
+  "macro": {
+    "warning": true,
+    "signal": false,
+    "positive_count": 1,
+    "total_available": 3,
+    "details": {
+      "bond": "US10Y=4.42% (↑均線❌)",
+      "pmi": "INDPRO=102.6 (擴張✅)",
+      "sox": "SOXX=323.48 (20MA下方❌)"
+    },
+    "us_bond_10y": 4.42,
+    "bond_trend": "up",
+    "ip_index": 102.6,
+    "ip_trend": "up",
+    "sox_price": 323.48,
+    "sox_trend": "down"
+  },
+  "macro_warning": true,
+  "sectors": {
+    "optical_comm": {
+      "name_zh": "光通訊",
+      "total": 4.5,
+      "signals": [
+        1.0,
+        0.0,
+        1.0,
+        0.5,
+        1.0,
+        1.0,
+        0.0
+      ],
+      "level": "強烈關注",
+      "stocks": [
+        {
+          "id": "6426",
+          "score": 5.0,
+          "grade": "⭐",
+          "change_pct": null,
+          "triggered": [
+            "燈3✓",
+            "EPS_YoY✓",
+            "燈6✓",
+            "PE<avg✓"
+          ],
+          "breakdown": {
+            "fundamental": 3.0,
+            "technical": 0.0,
+            "chipset": 1.0,
+            "bonus": 1.0
+          }
+        },
+        {
+          "id": "4979",
+          "score": 4.0,
+          "grade": "⭐",
+          "change_pct": null,
+          "triggered": [
+            "燈3✓",
+            "EPS_YoY✓",
+            "燈6✓"
+          ],
+          "breakdown": {
+            "fundamental": 3.0,
+            "technical": 0.0,
+            "chipset": 1.0,
+            "bonus": 0.0
+          }
+        },
+        {
+          "id": "3081",
+          "score": 3.0,
+          "grade": "⭐",
+          "change_pct": null,
+          "triggered": [
+            "EPS_YoY✓",
+            "燈5✓"
+          ],
+          "breakdown": {
+            "fundamental": 2.0,
+            "technical": 1.0,
+            "chipset": 0.0,
+            "bonus": 0.0
+          }
+        },
+        {
+          "id": "4908",
+          "score": 3.0,
+          "grade": "⭐",
+          "change_pct": null,
+          "triggered": [
+            "燈1✓",
+            "PE<avg✓"
+          ],
+          "breakdown": {
+            "fundamental": 2.0,
+            "technical": 0.0,
+            "chipset": 0.0,
+            "bonus": 1.0
+          }
+        }
+      ]
+    },
+    "networking": {
+      "name_zh": "網通設備",
+      "total": 3.5,
+      "signals": [
+        1.0,
+        0.0,
+        1.0,
+        0.5,
+        1.0,
+        0.0,
+        0.0
+      ],
+      "level": "觀察中",
+      "stocks": [
+        {
+          "id": "2345",
+          "score": 4.5,
+          "grade": "⭐",
+          "change_pct": null,
+          "triggered": [
+            "EPS_YoY✓",
+            "燈2_投信",
+            "PE<avg✓",
+            "ROE✓"
+          ],
+          "breakdown": {
+            "fundamental": 2.0,
+            "technical": 0.0,
+            "chipset": 0.5,
+            "bonus": 2.0
+          }
+        },
+        {
+          "id": "6138",
+          "score": 4.0,
+          "grade": "⭐",
+          "change_pct": null,
+          "triggered": [
+            "EPS_YoY✓",
+            "燈6✓",
+            "PE<avg✓"
+          ],
+          "breakdown": {
+            "fundamental": 2.0,
+            "technical": 0.0,
+            "chipset": 1.0,
+            "bonus": 1.0
+          }
+        }
+      ]
+    },
+    "power_components": {
+      "name_zh": "電源/被動元件",
+      "total": 3.5,
+      "signals": [
+        1.0,
+        0.0,
+        0.0,
+        0.5,
+        1.0,
+        1.0,
+        0.0
+      ],
+      "level": "觀察中",
+      "stocks": [
+        {
+          "id": "2301",
+          "score": 4.5,
+          "grade": "⭐",
+          "change_pct": null,
+          "triggered": [
+            "EPS_YoY✓",
+            "燈2_外資",
+            "燈6✓",
+            "PE<avg✓"
+          ],
+          "breakdown": {
+            "fundamental": 2.0,
+            "technical": 0.0,
+            "chipset": 1.5,
+            "bonus": 1.0
+          }
+        },
+        {
+          "id": "2308",
+          "score": 3.5,
+          "grade": "⭐",
+          "change_pct": null,
+          "triggered": [
+            "EPS_YoY✓",
+            "燈5✓",
+            "燈2_投信"
+          ],
+          "breakdown": {
+            "fundamental": 2.0,
+            "technical": 1.0,
+            "chipset": 0.5,
+            "bonus": 0.0
+          }
+        }
+      ]
+    },
+    "pcb": {
+      "name_zh": "PCB板",
+      "total": 3.5,
+      "signals": [
+        1.0,
+        0.0,
+        0.0,
+        0.5,
+        1.0,
+        1.0,
+        0.0
+      ],
+      "level": "觀察中",
+      "stocks": [
+        {
+          "id": "3037",
+          "score": 4.0,
+          "grade": "⭐",
+          "change_pct": null,
+          "triggered": [
+            "EPS_YoY✓",
+            "燈5✓",
+            "燈6✓"
+          ],
+          "breakdown": {
+            "fundamental": 2.0,
+            "technical": 1.0,
+            "chipset": 1.0,
+            "bonus": 0.0
+          }
+        },
+        {
+          "id": "2301",
+          "score": 3.5,
+          "grade": "⭐",
+          "change_pct": null,
+          "triggered": [
+            "EPS_YoY✓",
+            "燈2_外資",
+            "燈6✓"
+          ],
+          "breakdown": {
+            "fundamental": 2.0,
+            "technical": 0.0,
+            "chipset": 1.5,
+            "bonus": 0.0
+          }
+        },
+        {
+          "id": "8046",
+          "score": 3.5,
+          "grade": "⭐",
+          "change_pct": null,
+          "triggered": [
+            "EPS_YoY✓",
+            "燈2_投信",
+            "燈6✓"
+          ],
+          "breakdown": {
+            "fundamental": 2.0,
+            "technical": 0.0,
+            "chipset": 1.5,
+            "bonus": 0.0
+          }
+        },
+        {
+          "id": "5264",
+          "score": 3.0,
+          "grade": "⭐",
+          "change_pct": null,
+          "triggered": [
+            "EPS_YoY✓",
+            "PE<avg✓"
+          ],
+          "breakdown": {
+            "fundamental": 2.0,
+            "technical": 0.0,
+            "chipset": 0.0,
+            "bonus": 1.0
+          }
+        }
+      ]
+    },
+    "semiconductor_equip": {
+      "name_zh": "半導體設備",
+      "total": 3.5,
+      "signals": [
+        1.0,
+        0.0,
+        1.0,
+        0.5,
+        0.0,
+        1.0,
+        0.0
+      ],
+      "level": "觀察中",
+      "stocks": [
+        {
+          "id": "3090",
+          "score": 4.0,
+          "grade": "⭐",
+          "change_pct": null,
+          "triggered": [
+            "EPS_YoY✓",
+            "燈6✓",
+            "PE<avg✓"
+          ],
+          "breakdown": {
+            "fundamental": 2.0,
+            "technical": 0.0,
+            "chipset": 1.0,
+            "bonus": 1.0
+          }
+        },
+        {
+          "id": "4523",
+          "score": 4.0,
+          "grade": "⭐",
+          "change_pct": null,
+          "triggered": [
+            "燈1✓",
+            "燈6✓",
+            "PE<avg✓"
+          ],
+          "breakdown": {
+            "fundamental": 2.0,
+            "technical": 0.0,
+            "chipset": 1.0,
+            "bonus": 1.0
+          }
+        },
+        {
+          "id": "3443",
+          "score": 4.0,
+          "grade": "⭐",
+          "change_pct": null,
+          "triggered": [
+            "燈3✓",
+            "EPS_YoY✓",
+            "燈5✓"
+          ],
+          "breakdown": {
+            "fundamental": 3.0,
+            "technical": 1.0,
+            "chipset": 0.0,
+            "bonus": 0.0
+          }
+        }
+      ]
+    },
+    "thermal": {
+      "name_zh": "散熱/熱管理",
+      "total": 3.5,
+      "signals": [
+        1.0,
+        0.0,
+        1.0,
+        0.5,
+        1.0,
+        0.0,
+        0.0
+      ],
+      "level": "觀察中",
+      "stocks": [
+        {
+          "id": "3017",
+          "score": 6.5,
+          "grade": "⭐⭐",
+          "change_pct": null,
+          "triggered": [
+            "燈3✓",
+            "EPS_YoY✓",
+            "燈5✓",
+            "燈2_投信",
+            "燈6✓",
+            "ROE✓"
+          ],
+          "breakdown": {
+            "fundamental": 3.0,
+            "technical": 1.0,
+            "chipset": 1.5,
+            "bonus": 1.0
+          }
+        },
+        {
+          "id": "3324",
+          "score": 4.0,
+          "grade": "⭐",
+          "change_pct": null,
+          "triggered": [
+            "燈3✓",
+            "EPS_YoY✓",
+            "PE<avg✓"
+          ],
+          "breakdown": {
+            "fundamental": 3.0,
+            "technical": 0.0,
+            "chipset": 0.0,
+            "bonus": 1.0
+          }
+        },
+        {
+          "id": "2421",
+          "score": 3.0,
+          "grade": "⭐",
+          "change_pct": null,
+          "triggered": [
+            "EPS_YoY✓",
+            "PE<avg✓"
+          ],
+          "breakdown": {
+            "fundamental": 2.0,
+            "technical": 0.0,
+            "chipset": 0.0,
+            "bonus": 1.0
+          }
+        }
+      ]
+    },
+    "memory": {
+      "name_zh": "記憶體/DRAM",
+      "total": 3.0,
+      "signals": [
+        1.0,
+        0.0,
+        1.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      "level": "觀察中",
+      "stocks": [
+        {
+          "id": "3260",
+          "score": 5.0,
+          "grade": "⭐",
+          "change_pct": null,
+          "triggered": [
+            "EPS_YoY✓",
+            "燈5✓",
+            "PE<avg✓",
+            "ROE✓"
+          ],
+          "breakdown": {
+            "fundamental": 2.0,
+            "technical": 1.0,
+            "chipset": 0.0,
+            "bonus": 2.0
+          }
+        },
+        {
+          "id": "2408",
+          "score": 3.0,
+          "grade": "⭐",
+          "change_pct": null,
+          "triggered": [
+            "燈3✓",
+            "EPS_YoY✓"
+          ],
+          "breakdown": {
+            "fundamental": 3.0,
+            "technical": 0.0,
+            "chipset": 0.0,
+            "bonus": 0.0
+          }
+        },
+        {
+          "id": "2344",
+          "score": 3.0,
+          "grade": "⭐",
+          "change_pct": null,
+          "triggered": [
+            "燈3✓",
+            "EPS_YoY✓"
+          ],
+          "breakdown": {
+            "fundamental": 3.0,
+            "technical": 0.0,
+            "chipset": 0.0,
+            "bonus": 0.0
+          }
+        }
+      ]
+    },
+    "connector": {
+      "name_zh": "連接器/線材",
+      "total": 3.0,
+      "signals": [
+        0.0,
+        0.5,
+        1.0,
+        0.5,
+        1.0,
+        0.0,
+        0.0
+      ],
+      "level": "觀察中",
+      "stocks": [
+        {
+          "id": "3533",
+          "score": 3.5,
+          "grade": "⭐",
+          "change_pct": null,
+          "triggered": [
+            "燈5✓",
+            "燈2_投信",
+            "燈6✓",
+            "PE<avg✓"
+          ],
+          "breakdown": {
+            "fundamental": 0.0,
+            "technical": 1.0,
+            "chipset": 1.5,
+            "bonus": 1.0
+          }
+        },
+        {
+          "id": "3665",
+          "score": 3.5,
+          "grade": "⭐",
+          "change_pct": null,
+          "triggered": [
+            "燈3✓",
+            "EPS_YoY✓",
+            "燈2_投信"
+          ],
+          "breakdown": {
+            "fundamental": 3.0,
+            "technical": 0.0,
+            "chipset": 0.5,
+            "bonus": 0.0
+          }
+        }
+      ]
+    },
+    "vehicle_elec": {
+      "name_zh": "車用電子",
+      "total": 3.0,
+      "signals": [
+        0.0,
+        0.0,
+        1.0,
+        1.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      "level": "觀察中",
+      "stocks": [
+        {
+          "id": "6279",
+          "score": 5.0,
+          "grade": "⭐",
+          "change_pct": null,
+          "triggered": [
+            "燈3✓",
+            "EPS_YoY✓",
+            "燈6✓",
+            "PE<avg✓"
+          ],
+          "breakdown": {
+            "fundamental": 3.0,
+            "technical": 0.0,
+            "chipset": 1.0,
+            "bonus": 1.0
+          }
+        }
+      ]
+    },
+    "food": {
+      "name_zh": "食品",
+      "total": 3.0,
+      "signals": [
+        1.0,
+        0.5,
+        1.0,
+        0.5,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "level": "觀察中",
+      "stocks": [
+        {
+          "id": "1215",
+          "score": 3.0,
+          "grade": "⭐",
+          "change_pct": null,
+          "triggered": [
+            "燈3✓",
+            "燈5✓",
+            "PE<avg✓"
+          ],
+          "breakdown": {
+            "fundamental": 1.0,
+            "technical": 1.0,
+            "chipset": 0.0,
+            "bonus": 1.0
+          }
+        }
+      ]
+    },
+    "securities": {
+      "name_zh": "證券",
+      "total": 3.0,
+      "signals": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        1.0,
+        0.0
+      ],
+      "level": "觀察中",
+      "stocks": [
+        {
+          "id": "2855",
+          "score": 5.5,
+          "grade": "⭐",
+          "change_pct": null,
+          "triggered": [
+            "EPS_YoY✓",
+            "燈5✓",
+            "燈2_外資",
+            "燈6✓",
+            "PE<avg✓"
+          ],
+          "breakdown": {
+            "fundamental": 2.0,
+            "technical": 1.0,
+            "chipset": 1.5,
+            "bonus": 1.0
+          }
+        }
+      ]
+    },
+    "ev_supply": {
+      "name_zh": "電動車供應鏈",
+      "total": 2.5,
+      "signals": [
+        1.0,
+        0.0,
+        0.0,
+        0.5,
+        1.0,
+        0.0,
+        0.0
+      ],
+      "level": "觀察中",
+      "stocks": [
+        {
+          "id": "6213",
+          "score": 4.5,
+          "grade": "⭐",
+          "change_pct": null,
+          "triggered": [
+            "燈3✓",
+            "EPS_YoY✓",
+            "燈5✓",
+            "燈2_外資"
+          ],
+          "breakdown": {
+            "fundamental": 3.0,
+            "technical": 1.0,
+            "chipset": 0.5,
+            "bonus": 0.0
+          }
+        },
+        {
+          "id": "2308",
+          "score": 3.5,
+          "grade": "⭐",
+          "change_pct": null,
+          "triggered": [
+            "EPS_YoY✓",
+            "燈5✓",
+            "燈2_投信"
+          ],
+          "breakdown": {
+            "fundamental": 2.0,
+            "technical": 1.0,
+            "chipset": 0.5,
+            "bonus": 0.0
+          }
+        },
+        {
+          "id": "5483",
+          "score": 3.0,
+          "grade": "⭐",
+          "change_pct": null,
+          "triggered": [
+            "EPS_YoY✓",
+            "PE<avg✓"
+          ],
+          "breakdown": {
+            "fundamental": 2.0,
+            "technical": 0.0,
+            "chipset": 0.0,
+            "bonus": 1.0
+          }
+        },
+        {
+          "id": "1504",
+          "score": 3.0,
+          "grade": "⭐",
+          "change_pct": null,
+          "triggered": [
+            "燈3✓",
+            "燈6✓",
+            "PE<avg✓"
+          ],
+          "breakdown": {
+            "fundamental": 1.0,
+            "technical": 0.0,
+            "chipset": 1.0,
+            "bonus": 1.0
+          }
+        }
+      ]
+    },
+    "banking": {
+      "name_zh": "銀行/金融",
+      "total": 2.5,
+      "signals": [
+        1.0,
+        0.5,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      "level": "觀察中",
+      "stocks": [
+        {
+          "id": "2891",
+          "score": 4.5,
+          "grade": "⭐",
+          "change_pct": null,
+          "triggered": [
+            "EPS_YoY✓",
+            "燈5✓",
+            "燈2_投信",
+            "PE<avg✓"
+          ],
+          "breakdown": {
+            "fundamental": 2.0,
+            "technical": 1.0,
+            "chipset": 0.5,
+            "bonus": 1.0
+          }
+        },
+        {
+          "id": "2884",
+          "score": 4.5,
+          "grade": "⭐",
+          "change_pct": null,
+          "triggered": [
+            "EPS_YoY✓",
+            "燈5✓",
+            "燈2_外資",
+            "燈6✓"
+          ],
+          "breakdown": {
+            "fundamental": 2.0,
+            "technical": 1.0,
+            "chipset": 1.5,
+            "bonus": 0.0
+          }
+        },
+        {
+          "id": "2882",
+          "score": 4.0,
+          "grade": "⭐",
+          "change_pct": null,
+          "triggered": [
+            "燈1(0.5)",
+            "EPS_YoY✓",
+            "燈2_投信",
+            "PE<avg✓"
+          ],
+          "breakdown": {
+            "fundamental": 2.5,
+            "technical": 0.0,
+            "chipset": 0.5,
+            "bonus": 1.0
+          }
+        }
+      ]
+    },
+    "packaging": {
+      "name_zh": "封測",
+      "total": 2.5,
+      "signals": [
+        1.0,
+        0.5,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      "level": "觀察中",
+      "stocks": [
+        {
+          "id": "6257",
+          "score": 4.5,
+          "grade": "⭐",
+          "change_pct": null,
+          "triggered": [
+            "燈3✓",
+            "EPS_YoY✓",
+            "燈2_外資",
+            "PE<avg✓"
+          ],
+          "breakdown": {
+            "fundamental": 3.0,
+            "technical": 0.0,
+            "chipset": 0.5,
+            "bonus": 1.0
+          }
+        },
+        {
+          "id": "3711",
+          "score": 3.0,
+          "grade": "⭐",
+          "change_pct": null,
+          "triggered": [
+            "EPS_YoY✓",
+            "燈5✓"
+          ],
+          "breakdown": {
+            "fundamental": 2.0,
+            "technical": 1.0,
+            "chipset": 0.0,
+            "bonus": 0.0
+          }
+        }
+      ]
+    },
+    "energy_storage": {
+      "name_zh": "儲能/電池",
+      "total": 2.5,
+      "signals": [
+        1.0,
+        0.0,
+        0.0,
+        0.5,
+        1.0,
+        0.0,
+        0.0
+      ],
+      "level": "觀察中",
+      "stocks": [
+        {
+          "id": "2308",
+          "score": 4.5,
+          "grade": "⭐",
+          "change_pct": null,
+          "triggered": [
+            "EPS_YoY✓",
+            "燈5✓",
+            "燈2_投信",
+            "PE<avg✓"
+          ],
+          "breakdown": {
+            "fundamental": 2.0,
+            "technical": 1.0,
+            "chipset": 0.5,
+            "bonus": 1.0
+          }
+        }
+      ]
+    },
+    "ic_design": {
+      "name_zh": "IC設計",
+      "total": 2.0,
+      "signals": [
+        0.0,
+        0.5,
+        0.0,
+        0.5,
+        0.0,
+        1.0,
+        0.0
+      ],
+      "level": "觀察中",
+      "stocks": [
+        {
+          "id": "3051",
+          "score": 3.0,
+          "grade": "⭐",
+          "change_pct": null,
+          "triggered": [
+            "燈3✓",
+            "燈6✓",
+            "PE<avg✓"
+          ],
+          "breakdown": {
+            "fundamental": 1.0,
+            "technical": 0.0,
+            "chipset": 1.0,
+            "bonus": 1.0
+          }
+        },
+        {
+          "id": "6770",
+          "score": 3.0,
+          "grade": "⭐",
+          "change_pct": null,
+          "triggered": [
+            "EPS_YoY✓",
+            "燈5✓"
+          ],
+          "breakdown": {
+            "fundamental": 2.0,
+            "technical": 1.0,
+            "chipset": 0.0,
+            "bonus": 0.0
+          }
+        }
+      ]
+    },
+    "ai_server": {
+      "name_zh": "AI伺服器/ODM",
+      "total": 2.0,
+      "signals": [
+        1.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "level": "觀察中",
+      "stocks": [
+        {
+          "id": "6669",
+          "score": 4.0,
+          "grade": "⭐",
+          "change_pct": null,
+          "triggered": [
+            "燈3✓",
+            "EPS_YoY✓",
+            "PE<avg✓"
+          ],
+          "breakdown": {
+            "fundamental": 3.0,
+            "technical": 0.0,
+            "chipset": 0.0,
+            "bonus": 1.0
+          }
+        },
+        {
+          "id": "2382",
+          "score": 3.5,
+          "grade": "⭐",
+          "change_pct": null,
+          "triggered": [
+            "EPS_YoY✓",
+            "燈5✓",
+            "燈2_外資"
+          ],
+          "breakdown": {
+            "fundamental": 2.0,
+            "technical": 1.0,
+            "chipset": 0.5,
+            "bonus": 0.0
+          }
+        },
+        {
+          "id": "2308",
+          "score": 3.5,
+          "grade": "⭐",
+          "change_pct": null,
+          "triggered": [
+            "EPS_YoY✓",
+            "燈5✓",
+            "燈2_投信"
+          ],
+          "breakdown": {
+            "fundamental": 2.0,
+            "technical": 1.0,
+            "chipset": 0.5,
+            "bonus": 0.0
+          }
+        },
+        {
+          "id": "3231",
+          "score": 3.0,
+          "grade": "⭐",
+          "change_pct": null,
+          "triggered": [
+            "燈3✓",
+            "EPS_YoY✓"
+          ],
+          "breakdown": {
+            "fundamental": 3.0,
+            "technical": 0.0,
+            "chipset": 0.0,
+            "bonus": 0.0
+          }
+        }
+      ]
+    },
+    "shipping": {
+      "name_zh": "航運",
+      "total": 2.0,
+      "signals": [
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      "level": "觀察中",
+      "stocks": [
+        {
+          "id": "2615",
+          "score": 3.0,
+          "grade": "⭐",
+          "change_pct": null,
+          "triggered": [
+            "燈3✓",
+            "燈6✓",
+            "PE<avg✓"
+          ],
+          "breakdown": {
+            "fundamental": 1.0,
+            "technical": 0.0,
+            "chipset": 1.0,
+            "bonus": 1.0
+          }
+        }
+      ]
+    },
+    "construction": {
+      "name_zh": "建設/營造",
+      "total": 2.0,
+      "signals": [
+        1.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "level": "觀察中",
+      "stocks": [
+        {
+          "id": "2501",
+          "score": 7.5,
+          "grade": "⭐⭐",
+          "change_pct": null,
+          "triggered": [
+            "燈1✓",
+            "燈3✓",
+            "EPS_YoY✓",
+            "燈2_外資",
+            "燈6✓",
+            "PE<avg✓"
+          ],
+          "breakdown": {
+            "fundamental": 5.0,
+            "technical": 0.0,
+            "chipset": 1.5,
+            "bonus": 1.0
+          }
+        },
+        {
+          "id": "5522",
+          "score": 4.0,
+          "grade": "⭐",
+          "change_pct": null,
+          "triggered": [
+            "燈3✓",
+            "EPS_YoY✓",
+            "PE<avg✓"
+          ],
+          "breakdown": {
+            "fundamental": 3.0,
+            "technical": 0.0,
+            "chipset": 0.0,
+            "bonus": 1.0
+          }
+        },
+        {
+          "id": "2511",
+          "score": 3.0,
+          "grade": "⭐",
+          "change_pct": null,
+          "triggered": [
+            "燈3✓",
+            "EPS_YoY✓"
+          ],
+          "breakdown": {
+            "fundamental": 3.0,
+            "technical": 0.0,
+            "chipset": 0.0,
+            "bonus": 0.0
+          }
+        }
+      ]
+    },
+    "power_infra": {
+      "name_zh": "重電/電力設備",
+      "total": 2.0,
+      "signals": [
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      "level": "觀察中",
+      "stocks": [
+        {
+          "id": "1514",
+          "score": 4.0,
+          "grade": "⭐",
+          "change_pct": null,
+          "triggered": [
+            "燈3✓",
+            "EPS_YoY✓",
+            "燈6✓"
+          ],
+          "breakdown": {
+            "fundamental": 3.0,
+            "technical": 0.0,
+            "chipset": 1.0,
+            "bonus": 0.0
+          }
+        },
+        {
+          "id": "1519",
+          "score": 3.0,
+          "grade": "⭐",
+          "change_pct": null,
+          "triggered": [
+            "燈3✓",
+            "燈5✓",
+            "ROE✓"
+          ],
+          "breakdown": {
+            "fundamental": 1.0,
+            "technical": 1.0,
+            "chipset": 0.0,
+            "bonus": 1.0
+          }
+        },
+        {
+          "id": "1503",
+          "score": 3.0,
+          "grade": "⭐",
+          "change_pct": null,
+          "triggered": [
+            "燈3✓",
+            "燈6✓",
+            "PE<avg✓"
+          ],
+          "breakdown": {
+            "fundamental": 1.0,
+            "technical": 0.0,
+            "chipset": 1.0,
+            "bonus": 1.0
+          }
+        }
+      ]
+    },
+    "robotics": {
+      "name_zh": "機器人/自動化",
+      "total": 2.0,
+      "signals": [
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      "level": "觀察中",
+      "stocks": [
+        {
+          "id": "1590",
+          "score": 5.0,
+          "grade": "⭐",
+          "change_pct": null,
+          "triggered": [
+            "燈3✓",
+            "EPS_YoY✓",
+            "燈6✓",
+            "PE<avg✓"
+          ],
+          "breakdown": {
+            "fundamental": 3.0,
+            "technical": 0.0,
+            "chipset": 1.0,
+            "bonus": 1.0
+          }
+        },
+        {
+          "id": "2049",
+          "score": 4.5,
+          "grade": "⭐",
+          "change_pct": null,
+          "triggered": [
+            "燈3✓",
+            "EPS_YoY✓",
+            "燈5✓",
+            "燈2_外資"
+          ],
+          "breakdown": {
+            "fundamental": 3.0,
+            "technical": 1.0,
+            "chipset": 0.5,
+            "bonus": 0.0
+          }
+        },
+        {
+          "id": "2359",
+          "score": 4.0,
+          "grade": "⭐",
+          "change_pct": null,
+          "triggered": [
+            "燈3✓",
+            "EPS_YoY✓",
+            "燈6✓"
+          ],
+          "breakdown": {
+            "fundamental": 3.0,
+            "technical": 0.0,
+            "chipset": 1.0,
+            "bonus": 0.0
+          }
+        }
+      ]
+    },
+    "wind_energy": {
+      "name_zh": "風電/綠能",
+      "total": 2.0,
+      "signals": [
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      "level": "觀察中",
+      "stocks": [
+        {
+          "id": "9958",
+          "score": 6.0,
+          "grade": "⭐⭐",
+          "change_pct": null,
+          "triggered": [
+            "燈1✓",
+            "燈3✓",
+            "EPS_YoY✓",
+            "燈6✓"
+          ],
+          "breakdown": {
+            "fundamental": 5.0,
+            "technical": 0.0,
+            "chipset": 1.0,
+            "bonus": 0.0
+          }
+        },
+        {
+          "id": "3708",
+          "score": 3.0,
+          "grade": "⭐",
+          "change_pct": null,
+          "triggered": [
+            "燈3✓",
+            "燈5✓",
+            "PE<avg✓"
+          ],
+          "breakdown": {
+            "fundamental": 1.0,
+            "technical": 1.0,
+            "chipset": 0.0,
+            "bonus": 1.0
+          }
+        }
+      ]
+    },
+    "ecommerce": {
+      "name_zh": "電商/網路平台",
+      "total": 2.0,
+      "signals": [
+        1.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "level": "觀察中",
+      "stocks": []
+    },
+    "gaming": {
+      "name_zh": "遊戲",
+      "total": 2.0,
+      "signals": [
+        1.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "level": "觀察中",
+      "stocks": [
+        {
+          "id": "5478",
+          "score": 5.0,
+          "grade": "⭐",
+          "change_pct": null,
+          "triggered": [
+            "燈3✓",
+            "EPS_YoY✓",
+            "燈5✓",
+            "PE<avg✓"
+          ],
+          "breakdown": {
+            "fundamental": 3.0,
+            "technical": 1.0,
+            "chipset": 0.0,
+            "bonus": 1.0
+          }
+        },
+        {
+          "id": "3293",
+          "score": 3.5,
+          "grade": "⭐",
+          "change_pct": null,
+          "triggered": [
+            "燈2_外資",
+            "燈6✓",
+            "PE<avg✓",
+            "ROE✓"
+          ],
+          "breakdown": {
+            "fundamental": 0.0,
+            "technical": 0.0,
+            "chipset": 1.5,
+            "bonus": 2.0
+          }
+        }
+      ]
+    },
+    "steel": {
+      "name_zh": "鋼鐵",
+      "total": 1.5,
+      "signals": [
+        0.0,
+        0.5,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      "level": "忽略",
+      "stocks": []
+    },
+    "power_semi": {
+      "name_zh": "功率半導體",
+      "total": 1.5,
+      "signals": [
+        0.0,
+        0.0,
+        0.0,
+        0.5,
+        1.0,
+        0.0,
+        0.0
+      ],
+      "level": "忽略",
+      "stocks": []
+    },
+    "financial_holding": {
+      "name_zh": "金控",
+      "total": 1.5,
+      "signals": [
+        1.0,
+        0.5,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "level": "忽略",
+      "stocks": []
+    },
+    "telecom": {
+      "name_zh": "電信",
+      "total": 1.5,
+      "signals": [
+        0.0,
+        0.5,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "level": "忽略",
+      "stocks": []
+    },
+    "tourism": {
+      "name_zh": "觀光/餐飲",
+      "total": 1.5,
+      "signals": [
+        0.0,
+        0.0,
+        0.0,
+        0.5,
+        0.0,
+        1.0,
+        0.0
+      ],
+      "level": "忽略",
+      "stocks": []
+    },
+    "foundry": {
+      "name_zh": "晶圓代工",
+      "total": 1.0,
+      "signals": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "level": "忽略",
+      "stocks": []
+    },
+    "insurance": {
+      "name_zh": "壽險",
+      "total": 1.0,
+      "signals": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      "level": "忽略",
+      "stocks": []
+    },
+    "ip_design": {
+      "name_zh": "矽智財/IC設計服務",
+      "total": 1.0,
+      "signals": [
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "level": "忽略",
+      "stocks": []
+    },
+    "lens_optics": {
+      "name_zh": "鏡頭/光學",
+      "total": 1.0,
+      "signals": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      "level": "忽略",
+      "stocks": []
+    },
+    "software_saas": {
+      "name_zh": "軟體/SaaS",
+      "total": 1.0,
+      "signals": [
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "level": "忽略",
+      "stocks": []
+    },
+    "cement": {
+      "name_zh": "水泥",
+      "total": 1.0,
+      "signals": [
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "level": "忽略",
+      "stocks": []
+    },
+    "paper": {
+      "name_zh": "造紙",
+      "total": 1.0,
+      "signals": [
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "level": "忽略",
+      "stocks": []
+    },
+    "gas_energy": {
+      "name_zh": "天然氣/能源",
+      "total": 1.0,
+      "signals": [
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "level": "忽略",
+      "stocks": []
+    },
+    "defense": {
+      "name_zh": "國防/軍工",
+      "total": 1.0,
+      "signals": [
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "level": "忽略",
+      "stocks": []
+    },
+    "medical_device": {
+      "name_zh": "醫材",
+      "total": 1.0,
+      "signals": [
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "level": "忽略",
+      "stocks": []
+    },
+    "solar": {
+      "name_zh": "太陽能",
+      "total": 0.5,
+      "signals": [
+        0.0,
+        0.0,
+        0.0,
+        0.5,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "level": "忽略",
+      "stocks": []
+    },
+    "biotech": {
+      "name_zh": "生技醫療",
+      "total": 0.5,
+      "signals": [
+        0.0,
+        0.0,
+        0.0,
+        0.5,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "level": "忽略",
+      "stocks": []
+    },
+    "rubber": {
+      "name_zh": "橡膠/輪胎",
+      "total": 0.5,
+      "signals": [
+        0.0,
+        0.0,
+        0.0,
+        0.5,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "level": "忽略",
+      "stocks": []
+    },
+    "display": {
+      "name_zh": "面板顯示",
+      "total": 0.0,
+      "signals": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "level": "忽略",
+      "stocks": []
+    },
+    "petrochemical": {
+      "name_zh": "塑化",
+      "total": 0.0,
+      "signals": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "level": "忽略",
+      "stocks": []
+    },
+    "textile": {
+      "name_zh": "紡織",
+      "total": 0.0,
+      "signals": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "level": "忽略",
+      "stocks": []
+    }
+  }
+}

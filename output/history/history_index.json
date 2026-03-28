@@ -1,0 +1,432 @@
+{
+  "dates": [
+    "2026-03-29"
+  ],
+  "sectors": {
+    "optical_comm": {
+      "name_zh": "光通訊",
+      "totals": [
+        4.5
+      ],
+      "levels": [
+        "強烈關注"
+      ]
+    },
+    "networking": {
+      "name_zh": "網通設備",
+      "totals": [
+        3.5
+      ],
+      "levels": [
+        "觀察中"
+      ]
+    },
+    "power_components": {
+      "name_zh": "電源/被動元件",
+      "totals": [
+        3.5
+      ],
+      "levels": [
+        "觀察中"
+      ]
+    },
+    "pcb": {
+      "name_zh": "PCB板",
+      "totals": [
+        3.5
+      ],
+      "levels": [
+        "觀察中"
+      ]
+    },
+    "semiconductor_equip": {
+      "name_zh": "半導體設備",
+      "totals": [
+        3.5
+      ],
+      "levels": [
+        "觀察中"
+      ]
+    },
+    "thermal": {
+      "name_zh": "散熱/熱管理",
+      "totals": [
+        3.5
+      ],
+      "levels": [
+        "觀察中"
+      ]
+    },
+    "memory": {
+      "name_zh": "記憶體/DRAM",
+      "totals": [
+        3.0
+      ],
+      "levels": [
+        "觀察中"
+      ]
+    },
+    "connector": {
+      "name_zh": "連接器/線材",
+      "totals": [
+        3.0
+      ],
+      "levels": [
+        "觀察中"
+      ]
+    },
+    "vehicle_elec": {
+      "name_zh": "車用電子",
+      "totals": [
+        3.0
+      ],
+      "levels": [
+        "觀察中"
+      ]
+    },
+    "food": {
+      "name_zh": "食品",
+      "totals": [
+        3.0
+      ],
+      "levels": [
+        "觀察中"
+      ]
+    },
+    "securities": {
+      "name_zh": "證券",
+      "totals": [
+        3.0
+      ],
+      "levels": [
+        "觀察中"
+      ]
+    },
+    "ev_supply": {
+      "name_zh": "電動車供應鏈",
+      "totals": [
+        2.5
+      ],
+      "levels": [
+        "觀察中"
+      ]
+    },
+    "banking": {
+      "name_zh": "銀行/金融",
+      "totals": [
+        2.5
+      ],
+      "levels": [
+        "觀察中"
+      ]
+    },
+    "packaging": {
+      "name_zh": "封測",
+      "totals": [
+        2.5
+      ],
+      "levels": [
+        "觀察中"
+      ]
+    },
+    "energy_storage": {
+      "name_zh": "儲能/電池",
+      "totals": [
+        2.5
+      ],
+      "levels": [
+        "觀察中"
+      ]
+    },
+    "ic_design": {
+      "name_zh": "IC設計",
+      "totals": [
+        2.0
+      ],
+      "levels": [
+        "觀察中"
+      ]
+    },
+    "ai_server": {
+      "name_zh": "AI伺服器/ODM",
+      "totals": [
+        2.0
+      ],
+      "levels": [
+        "觀察中"
+      ]
+    },
+    "shipping": {
+      "name_zh": "航運",
+      "totals": [
+        2.0
+      ],
+      "levels": [
+        "觀察中"
+      ]
+    },
+    "construction": {
+      "name_zh": "建設/營造",
+      "totals": [
+        2.0
+      ],
+      "levels": [
+        "觀察中"
+      ]
+    },
+    "power_infra": {
+      "name_zh": "重電/電力設備",
+      "totals": [
+        2.0
+      ],
+      "levels": [
+        "觀察中"
+      ]
+    },
+    "robotics": {
+      "name_zh": "機器人/自動化",
+      "totals": [
+        2.0
+      ],
+      "levels": [
+        "觀察中"
+      ]
+    },
+    "wind_energy": {
+      "name_zh": "風電/綠能",
+      "totals": [
+        2.0
+      ],
+      "levels": [
+        "觀察中"
+      ]
+    },
+    "ecommerce": {
+      "name_zh": "電商/網路平台",
+      "totals": [
+        2.0
+      ],
+      "levels": [
+        "觀察中"
+      ]
+    },
+    "gaming": {
+      "name_zh": "遊戲",
+      "totals": [
+        2.0
+      ],
+      "levels": [
+        "觀察中"
+      ]
+    },
+    "steel": {
+      "name_zh": "鋼鐵",
+      "totals": [
+        1.5
+      ],
+      "levels": [
+        "忽略"
+      ]
+    },
+    "power_semi": {
+      "name_zh": "功率半導體",
+      "totals": [
+        1.5
+      ],
+      "levels": [
+        "忽略"
+      ]
+    },
+    "financial_holding": {
+      "name_zh": "金控",
+      "totals": [
+        1.5
+      ],
+      "levels": [
+        "忽略"
+      ]
+    },
+    "telecom": {
+      "name_zh": "電信",
+      "totals": [
+        1.5
+      ],
+      "levels": [
+        "忽略"
+      ]
+    },
+    "tourism": {
+      "name_zh": "觀光/餐飲",
+      "totals": [
+        1.5
+      ],
+      "levels": [
+        "忽略"
+      ]
+    },
+    "foundry": {
+      "name_zh": "晶圓代工",
+      "totals": [
+        1.0
+      ],
+      "levels": [
+        "忽略"
+      ]
+    },
+    "insurance": {
+      "name_zh": "壽險",
+      "totals": [
+        1.0
+      ],
+      "levels": [
+        "忽略"
+      ]
+    },
+    "ip_design": {
+      "name_zh": "矽智財/IC設計服務",
+      "totals": [
+        1.0
+      ],
+      "levels": [
+        "忽略"
+      ]
+    },
+    "lens_optics": {
+      "name_zh": "鏡頭/光學",
+      "totals": [
+        1.0
+      ],
+      "levels": [
+        "忽略"
+      ]
+    },
+    "software_saas": {
+      "name_zh": "軟體/SaaS",
+      "totals": [
+        1.0
+      ],
+      "levels": [
+        "忽略"
+      ]
+    },
+    "cement": {
+      "name_zh": "水泥",
+      "totals": [
+        1.0
+      ],
+      "levels": [
+        "忽略"
+      ]
+    },
+    "paper": {
+      "name_zh": "造紙",
+      "totals": [
+        1.0
+      ],
+      "levels": [
+        "忽略"
+      ]
+    },
+    "gas_energy": {
+      "name_zh": "天然氣/能源",
+      "totals": [
+        1.0
+      ],
+      "levels": [
+        "忽略"
+      ]
+    },
+    "defense": {
+      "name_zh": "國防/軍工",
+      "totals": [
+        1.0
+      ],
+      "levels": [
+        "忽略"
+      ]
+    },
+    "medical_device": {
+      "name_zh": "醫材",
+      "totals": [
+        1.0
+      ],
+      "levels": [
+        "忽略"
+      ]
+    },
+    "solar": {
+      "name_zh": "太陽能",
+      "totals": [
+        0.5
+      ],
+      "levels": [
+        "忽略"
+      ]
+    },
+    "biotech": {
+      "name_zh": "生技醫療",
+      "totals": [
+        0.5
+      ],
+      "levels": [
+        "忽略"
+      ]
+    },
+    "rubber": {
+      "name_zh": "橡膠/輪胎",
+      "totals": [
+        0.5
+      ],
+      "levels": [
+        "忽略"
+      ]
+    },
+    "display": {
+      "name_zh": "面板顯示",
+      "totals": [
+        0.0
+      ],
+      "levels": [
+        "忽略"
+      ]
+    },
+    "petrochemical": {
+      "name_zh": "塑化",
+      "totals": [
+        0.0
+      ],
+      "levels": [
+        "忽略"
+      ]
+    },
+    "textile": {
+      "name_zh": "紡織",
+      "totals": [
+        0.0
+      ],
+      "levels": [
+        "忽略"
+      ]
+    }
+  },
+  "macro": [
+    {
+      "warning": true,
+      "signal": false,
+      "positive_count": 1,
+      "total_available": 3,
+      "details": {
+        "bond": "US10Y=4.42% (↑均線❌)",
+        "pmi": "INDPRO=102.6 (擴張✅)",
+        "sox": "SOXX=323.48 (20MA下方❌)"
+      },
+      "us_bond_10y": 4.42,
+      "bond_trend": "up",
+      "ip_index": 102.6,
+      "ip_trend": "up",
+      "sox_price": 323.48,
+      "sox_trend": "down",
+      "date": "2026-03-29"
+    }
+  ]
+}
