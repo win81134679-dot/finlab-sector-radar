@@ -107,11 +107,11 @@ jobs:
           if not url:
               print("DISCORD_WEBHOOK_SYSTEM 未設定，跳過通知")
           else:
+              repo = os.getenv("GITHUB_REPOSITORY", "")
               payload = {
                   "embeds": [{
                       "title":       "❌ FinLab 板塊分析失敗",
-                      "description": "請前往 GitHub Actions 查看完整日誌：\n"
-                                     f"https://github.com/${{{{ github.repository }}}}/actions",
+                      "description": f"請前往 GitHub Actions 查看完整日誌：\nhttps://github.com/{repo}/actions",
                       "color":       0xCF1322,
                   }]
               }
