@@ -220,6 +220,7 @@ def _save_snapshot(result: Dict[str, Any], config) -> Optional[Path]:
     # ── 取得 OHLCV 和交易狀態（一次批次）─────────────────────────
     _last_trading_date = datetime.now().strftime("%Y-%m-%d")  # fallback
     _trading_status: dict = {}
+    _ohlcv_full_batch: dict = {}
     _ohlcv_batch: dict = {}
     try:
         from src.data_fetcher import fetcher as _fetcher
@@ -233,7 +234,9 @@ def _save_snapshot(result: Dict[str, Any], config) -> Optional[Path]:
         _all_sids = list(set(_all_sids))
         if _all_sids:
             _trading_status = _fetcher.get_trading_status(_all_sids, _last_trading_date)
-            _ohlcv_batch    = _fetcher.get_ohlcv_batch(_all_sids, days=10)
+            _ohlcv_full_batch = _fetcher.get_ohlcv_batch(_all_sids, days=400)
+            # 主快照剛保留最近 10 日（做快預覽用）
+            _ohlcv_batch = {sid: bars[-10:] for sid, bars in _ohlcv_full_batch.items()}
     except Exception as _e:
         logger.warning("取得 OHLCV/交易狀態失敗: %s", _e)
 
@@ -323,6 +326,19 @@ def _save_snapshot(result: Dict[str, Any], config) -> Optional[Path]:
         _update_history_index(config, date_str, sectors_payload, macro_payload)
     except Exception as e:
         logger.warning("history_index.json 更新失敗: %s", e)
+
+    try:
+        # 5. 個股 OHLCV 歷史（供前端 K 線多時間框架切換）
+        if _ohlcv_full_batch:
+            _ohlcv_dir = config.OUTPUT_DIR / "ohlcv"
+            _ohlcv_dir.mkdir(exist_ok=True)
+            for _sid, _bars in _ohlcv_full_batch.items():
+                (_ohlcv_dir / f"{_sid}.json").write_text(
+                    json.dumps(_bars, ensure_ascii=False), encoding="utf-8"
+                )
+            logger.info("個股 OHLCV 已寫出 %d 檔至 output/ohlcv/", len(_ohlcv_full_batch))
+    except Exception as e:
+        logger.warning("個股 OHLCV 寫出失敗: %s", e)
 
     return saved_paths[0] if saved_paths else None
 
