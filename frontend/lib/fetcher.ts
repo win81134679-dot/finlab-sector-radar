@@ -6,6 +6,15 @@ const GITHUB_RAW_BASE =
   process.env.NEXT_PUBLIC_GITHUB_RAW_BASE_URL || "";
 
 // Zod schema：驗證 JSON 結構，防止 malformed data 崩潰
+const OHLCBarSchema = z.object({
+  date: z.string(),
+  o: z.number(),
+  h: z.number(),
+  l: z.number(),
+  c: z.number(),
+  v: z.number(),
+});
+
 const MacroSchema = z.object({
   warning: z.boolean(),
   signal: z.boolean().optional().default(false),
@@ -34,6 +43,8 @@ const StockSchema = z.object({
       bonus: z.number(),
     })
     .optional(),
+  price_flag: z.enum(["normal", "ex_div", "halt"]).optional(),
+  ohlcv_7d: z.array(OHLCBarSchema).optional(),
 });
 
 const SectorSchema = z.object({
@@ -48,6 +59,7 @@ const SnapshotSchema = z.object({
   schema_version: z.string().optional(),
   date: z.string(),
   run_at: z.string(),
+  last_trading_date: z.string().optional(),
   macro: MacroSchema,
   macro_warning: z.boolean().optional(),
   sectors: z.record(SectorSchema),

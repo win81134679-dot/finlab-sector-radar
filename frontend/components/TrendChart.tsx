@@ -119,7 +119,7 @@ export function TrendChart({ historyIndex, range, topSectors }: TrendChartProps)
             key={sectorId}
             type="monotone"
             dataKey={sectorId}
-            name={sectorId}
+            name={historyIndex.sectors?.[sectorId]?.name_zh ?? sectorId}
             stroke={LINE_COLORS[i % LINE_COLORS.length]}
             strokeWidth={2}
             dot={false}
