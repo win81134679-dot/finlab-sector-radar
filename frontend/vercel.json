@@ -1,0 +1,8 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "framework": "nextjs",
+  "buildCommand": "npm run build",
+  "installCommand": "npm ci",
+  "outputDirectory": ".next",
+  "ignoreCommand": "git diff HEAD^ HEAD --name-only | grep -qvE '^frontend/' && exit 0 || exit 1"
+}

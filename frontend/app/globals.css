@@ -1,0 +1,64 @@
+@import "tailwindcss";
+
+/* ─── Light theme tokens ─── */
+:root {
+  --bg-page:    #f8fafc;  /* slate-50 */
+  --bg-card:    rgba(255, 255, 255, 0.85);
+  --border:     rgba(226, 232, 240, 0.7);
+  --text-base:  #18181b;
+  --text-muted: #71717a;
+}
+
+/* ─── Dark theme tokens ─── */
+.dark {
+  --bg-page:    #09090b;  /* zinc-950 */
+  --bg-card:    rgba(39, 39, 42, 0.6);
+  --border:     rgba(63, 63, 70, 0.5);
+  --text-base:  #fafafa;
+  --text-muted: #a1a1aa;
+}
+
+@theme inline {
+  --color-background: var(--bg-page);
+  --color-foreground: var(--text-base);
+  --font-sans: var(--font-geist-sans), var(--font-noto-tc), ui-sans-serif;
+  --font-mono: var(--font-geist-mono), ui-monospace;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  background: var(--bg-page);
+  color: var(--text-base);
+  font-family: var(--font-sans, ui-sans-serif);
+  min-height: 100dvh;
+}
+
+/* ─── Signal dot glow variables ─── */
+.signal-on-glow {
+  box-shadow: 0 0 8px rgba(52, 211, 153, 0.7), 0 0 2px rgba(52, 211, 153, 0.4);
+}
+.signal-half-glow {
+  box-shadow: 0 0 8px rgba(251, 191, 36, 0.7), 0 0 2px rgba(251, 191, 36, 0.4);
+}
+
+/* ─── Glassmorphism card (utility, Tailwind also handles this) ─── */
+.glass-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border-radius: 1rem;
+}
+
+/* ─── Scrollbar (thin, cross-browser) ─── */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(113, 113, 122, 0.4) transparent;
+}
+::-webkit-scrollbar { width: 5px; height: 5px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: rgba(113, 113, 122, 0.4); border-radius: 99px; }

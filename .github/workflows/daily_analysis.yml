@@ -1,0 +1,169 @@
+name: Daily Analysis & Deploy
+
+on:
+  schedule:
+    # UTC 12:30 = TST (UTC+8) 20:30，只在平日執行
+    # 台灣國定假日由 Python 腳本自行判斷並 exit(0) 跳過
+    - cron: '30 12 * * 1-5'
+  workflow_dispatch:
+    inputs:
+      run_backfill:
+        description: '執行歷史回填（首次部署時使用）'
+        type: boolean
+        default: false
+      backfill_months:
+        description: '回填月數（預設 6）'
+        type: string
+        default: '6'
+
+# 🔒 最小化權限：只開放推送 output/ 所需的 contents:write
+permissions:
+  contents: write
+
+# 🔒 防止同時執行兩個 workflow 造成 git push race condition
+concurrency:
+  group: daily-analysis
+  cancel-in-progress: false   # 等前一個跑完，不取消
+
+env:
+  PYTHON_VERSION: '3.11'
+
+jobs:
+  # ══════════════════════════════════════════════════════════════════
+  # Job 1: 每日分析
+  # ══════════════════════════════════════════════════════════════════
+  analyze:
+    name: 每日板塊分析
+    runs-on: ubuntu-latest
+    # 只在非回填模式時執行（workflow_dispatch 手動觸發回填時跳過）
+    if: ${{ github.event.inputs.run_backfill != 'true' }}
+
+    steps:
+      - name: 📥 Checkout repo
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 2   # 需要 HEAD^ 來比對前次狀態
+
+      - name: 🐍 Setup Python ${{ env.PYTHON_VERSION }}
+        uses: actions/setup-python@v5
+        with:
+          python-version: ${{ env.PYTHON_VERSION }}
+          cache: 'pip'
+          cache-dependency-path: requirements.txt
+
+      - name: 📦 Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: 🇹🇼 台灣假日判斷
+        id: holiday_check
+        run: |
+          python - <<'EOF'
+          import holidays, datetime, sys, zoneinfo
+          tz = zoneinfo.ZoneInfo('Asia/Taipei')
+          today = datetime.datetime.now(tz).date()
+          tw = holidays.TW(years=today.year)
+          if today in tw:
+              print(f'SKIP=true >> $GITHUB_OUTPUT', flush=True)
+              print(f'今日 {today} 為台灣假日：{tw[today]}，跳過執行。')
+          else:
+              print(f'SKIP=false >> $GITHUB_OUTPUT', flush=True)
+              print(f'今日 {today}，非假日，繼續執行。')
+          EOF
+
+      - name: 🚀 執行 7 燈板塊分析
+        if: steps.holiday_check.outputs.SKIP != 'true'
+        run: python src/main.py --auto
+        env:
+          FINLAB_API_TOKEN:       ${{ secrets.FINLAB_API_TOKEN }}
+          FRED_API_KEY:           ${{ secrets.FRED_API_KEY }}
+          ALPHA_VANTAGE_KEY:      ${{ secrets.ALPHA_VANTAGE_KEY }}
+          DISCORD_WEBHOOK_DAILY:  ${{ secrets.DISCORD_WEBHOOK_DAILY }}
+          DISCORD_WEBHOOK_ALERT:  ${{ secrets.DISCORD_WEBHOOK_ALERT }}
+          DISCORD_WEBHOOK_MACRO:  ${{ secrets.DISCORD_WEBHOOK_MACRO }}
+          DISCORD_WEBHOOK_SYSTEM: ${{ secrets.DISCORD_WEBHOOK_SYSTEM }}
+
+      - name: 📤 Commit & Push output/
+        if: steps.holiday_check.outputs.SKIP != 'true'
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add output/
+          # 只在有變更時才 commit（避免空 commit）
+          if ! git diff --staged --quiet; then
+            DATE=$(TZ='Asia/Taipei' date +%Y-%m-%d)
+            git commit -m "data: ${DATE} 板塊分析更新 [skip ci]"
+            git push
+            echo "✅ output/ 已推送"
+          else
+            echo "ℹ️  output/ 無變更，跳過 commit"
+          fi
+
+      - name: ❌ 分析失敗 — Discord 通知
+        if: failure()
+        run: |
+          python - <<'EOF'
+          import os, requests
+          url = os.getenv("DISCORD_WEBHOOK_SYSTEM", "")
+          if not url:
+              print("DISCORD_WEBHOOK_SYSTEM 未設定，跳過通知")
+          else:
+              payload = {
+                  "embeds": [{
+                      "title":       "❌ FinLab 板塊分析失敗",
+                      "description": "請前往 GitHub Actions 查看完整日誌：\n"
+                                     f"https://github.com/${{{{ github.repository }}}}/actions",
+                      "color":       0xCF1322,
+                  }]
+              }
+              requests.post(url, json=payload, timeout=10)
+              print("Discord 失敗通知已發送")
+          EOF
+        env:
+          DISCORD_WEBHOOK_SYSTEM: ${{ secrets.DISCORD_WEBHOOK_SYSTEM }}
+
+  # ══════════════════════════════════════════════════════════════════
+  # Job 2: 歷史回填（僅 workflow_dispatch 手動觸發）
+  # ══════════════════════════════════════════════════════════════════
+  backfill:
+    name: 歷史資料回填
+    runs-on: ubuntu-latest
+    if: ${{ github.event.inputs.run_backfill == 'true' }}
+    timeout-minutes: 360   # 6 小時上限（回填 6 個月約需 2-3 小時）
+
+    steps:
+      - name: 📥 Checkout repo
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - name: 🐍 Setup Python ${{ env.PYTHON_VERSION }}
+        uses: actions/setup-python@v5
+        with:
+          python-version: ${{ env.PYTHON_VERSION }}
+          cache: 'pip'
+          cache-dependency-path: requirements.txt
+
+      - name: 📦 Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: 🕐 執行歷史回填
+        run: |
+          python scripts/backfill_history.py \
+            --months ${{ github.event.inputs.backfill_months || '6' }}
+        env:
+          FINLAB_API_TOKEN:  ${{ secrets.FINLAB_API_TOKEN }}
+          FRED_API_KEY:      ${{ secrets.FRED_API_KEY }}
+          ALPHA_VANTAGE_KEY: ${{ secrets.ALPHA_VANTAGE_KEY }}
+
+      - name: 📤 Commit & Push history/
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add output/history/
+          if ! git diff --staged --quiet; then
+            git commit -m "data: 歷史回填完成（${{ github.event.inputs.backfill_months || 6 }}個月）[skip ci]"
+            git push
+            echo "✅ 歷史資料已推送"
+          else
+            echo "ℹ️  無新資料需要推送"
+          fi

@@ -1,0 +1,95 @@
+// SectorCard.tsx — 單一板塊 Bento 卡片（含7燈 + 個股展開）
+"use client";
+
+import { useState } from "react";
+import type { SectorData } from "@/lib/types";
+import { SignalDots } from "./SignalDots";
+import { StockTable } from "./StockTable";
+import { LEVEL_CONFIG } from "@/lib/signals";
+
+interface SectorCardProps {
+  sectorId: string;
+  sector: SectorData;
+  featured?: boolean;  // 強烈關注時放大顯示
+  defaultExpanded?: boolean;
+}
+
+export function SectorCard({ sectorId, sector, featured = false, defaultExpanded = false }: SectorCardProps) {
+  const [expanded, setExpanded] = useState(defaultExpanded);
+  const levelCfg = LEVEL_CONFIG[sector.level] ?? LEVEL_CONFIG["忽略"];
+  const stocks = sector.stocks ?? [];
+  const hasStocks = stocks.length > 0;
+
+  return (
+    <article
+      className={`
+        group rounded-2xl border backdrop-blur-sm
+        transition-all duration-300
+        ${levelCfg.bgClass}
+        ${featured ? "col-span-2 row-span-2" : ""}
+        ${expanded ? "shadow-lg" : "hover:shadow-md"}
+        overflow-hidden
+      `}
+      aria-label={`${sector.name_zh} 板塊（${sector.level}）`}
+    >
+      {/* 卡片頭部 */}
+      <button
+        className="w-full p-4 flex items-start justify-between text-left"
+        onClick={() => setExpanded(!expanded)}
+        aria-expanded={expanded}
+        aria-controls={`sector-detail-${sectorId}`}
+      >
+        <div className="flex flex-col gap-2 min-w-0">
+          {/* 板塊名稱 + 等級 badge */}
+          <div className="flex items-center gap-2 flex-wrap">
+            <h3 className={`font-bold ${featured ? "text-lg" : "text-base"} text-zinc-900 dark:text-white truncate`}>
+              {sector.name_zh}
+            </h3>
+            <span className={`text-xs px-2 py-0.5 rounded-full font-medium ${levelCfg.badgeClass}`}>
+              {levelCfg.emoji} {sector.level}
+            </span>
+          </div>
+
+          {/* 總分 */}
+          <div className="flex items-center gap-2">
+            <span className={`text-2xl font-bold ${levelCfg.textClass}`}>
+              {sector.total.toFixed(1)}
+            </span>
+            <span className="text-xs text-zinc-500 dark:text-zinc-400">/ 7 燈</span>
+          </div>
+
+          {/* 7燈顯示 */}
+          <SignalDots signals={sector.signals} size={featured ? "lg" : "sm"} />
+        </div>
+
+        {/* 展開箭頭 */}
+        <div className={`
+          ml-2 mt-1 flex-shrink-0 w-6 h-6 flex items-center justify-center
+          rounded-full text-zinc-400 dark:text-zinc-500
+          transition-transform duration-200
+          ${expanded ? "rotate-180" : ""}
+          ${hasStocks ? "visible" : "invisible"}
+        `}>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
+            <path d="M6 9l6 6 6-6" />
+          </svg>
+        </div>
+      </button>
+
+      {/* 展開的個股列表 */}
+      {hasStocks && (
+        <div
+          id={`sector-detail-${sectorId}`}
+          className={`
+            transition-all duration-300 overflow-hidden
+            ${expanded ? "max-h-[800px] opacity-100" : "max-h-0 opacity-0"}
+          `}
+        >
+          <div className="px-4 pb-4 border-t border-zinc-200/30 dark:border-zinc-700/30 pt-3">
+            <StockTable stocks={stocks} />
+          </div>
+        </div>
+      )}
+    </article>
+  );
+}

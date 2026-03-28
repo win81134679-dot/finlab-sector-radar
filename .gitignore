@@ -1,0 +1,50 @@
+# Virtual environment
+venv/
+.venv/
+
+# API Keys — 絕對不要提交（.env 與任何純文字 key 備份檔）
+.env
+
+# API Key 純文字備份 — 永遠不要提交這些！
+# 若不小心 add 請立即執行 git rm --cached <file>
+Alpha*KEY*.txt
+Alpha*key*.txt
+FRED*key*.txt
+FRED*KEY*.txt
+*API*KEY*.txt
+*api*key*.txt
+# 如需保留其他 .txt，請明確 !排除，例如：
+# !README.txt
+
+# Cache files
+.cache/
+
+# Output reports — commit output/ 以供 Vercel 前端讀取
+# 如需在本地忽略 Markdown 報告（不影響 JSON），可取消下一行注解：
+# output/*.md
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+dist/
+build/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Node / Next.js
+frontend/node_modules/
+frontend/.next/
+frontend/out/
+frontend/.env.local
+
+# OS
+.DS_Store
+Thumbs.db
