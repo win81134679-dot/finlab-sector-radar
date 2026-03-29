@@ -2,6 +2,7 @@
 // 學術基礎：Wilder, J.W. (1978). New Concepts in Technical Trading Systems.
 // RSI = 100 − 100 / (1 + RS)，RS = 14期指數平均漲幅 / 14期指數平均跌幅
 import type { OHLCBar } from "@/lib/types";
+import { InfoPopover } from "./InfoPopover";
 
 // ── RSI-14 計算（Wilder 指數平滑法）───────────────────────────────────────
 function calcRSI14(data: OHLCBar[]): number | null {
@@ -142,9 +143,22 @@ export function RsiGauge({ data, loading }: RsiGaugeProps) {
   return (
     <div className="px-3 pt-2 pb-2 border-b border-zinc-100 dark:border-zinc-800/50">
       <div className="flex items-center justify-between mb-0.5">
-        <span className="text-[11px] font-semibold text-zinc-500 dark:text-zinc-400 tracking-wide">
-          RSI-14 強弱儀表板
-        </span>
+        <div className="flex items-center gap-1">
+          <span className="text-[11px] font-semibold text-zinc-500 dark:text-zinc-400 tracking-wide">
+            RSI-14 強弱儀表板
+          </span>
+          <InfoPopover
+            title="RSI 怎麼看"
+            tips={[
+              { label: "RSI < 30",   desc: "超賣區：下跌動能耗盡，可留意防御式廞祥或分批建喀" },
+              { label: "30–70",       desc: "中性區：價格在正常旋動範圍，配合其他訊號判斷" },
+              { label: "RSI > 70",   desc: "超買區：短期漲漲過熱，勢头追奋風险增加，考慮收等" },
+              { label: "多頭背離", desc: "價格创新低但 RSI 未创低：賣家動能衰弱，對潛在反彈訊號" },
+              { label: "空頭背離", desc: "價格创新高但 RSI 未创高：買家動能不分，見頂警訊" },
+              { label: "學術來源", desc: "Wilder (1978) New Concepts in Technical Trading Systems" },
+            ]}
+          />
+        </div>
         <span className="text-[10px] text-zinc-400">Wilder (1978)</span>
       </div>
 

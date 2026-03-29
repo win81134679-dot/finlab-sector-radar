@@ -14,6 +14,7 @@ import {
   ResponsiveContainer,
   Tooltip,
 } from "recharts";
+import { InfoPopover } from "./InfoPopover";
 
 interface Breakdown {
   fundamental: number;
@@ -52,9 +53,22 @@ export function FactorRadar({
   return (
     <div className="px-3 pt-2 pb-2 border-b border-zinc-100 dark:border-zinc-800/50">
       <div className="flex items-center justify-between mb-0.5">
-        <span className="text-[11px] font-semibold text-zinc-500 dark:text-zinc-400 tracking-wide">
-          因子強度分析
-        </span>
+        <div className="flex items-center gap-1">
+          <span className="text-[11px] font-semibold text-zinc-500 dark:text-zinc-400 tracking-wide">
+            因子強度分析
+          </span>
+          <InfoPopover
+            title="因子雷達圖怎麼看"
+            tips={[
+              { label: "面積越大",    desc: "四個維度（基本 / 技術 / 籌碼 / 加分）全面強勢，表示各面共振抉投" },
+              { label: "基本面",        desc: "Piotroski F-Score：獲利能力 + 財務結構，6以上為強" },
+              { label: "技術面",        desc: "Jegadeesh & Titman 動能：MA20/60 突破 + 量能發動，越高越好" },
+              { label: "籌碼面",        desc: "三大法人共振（外資 / 投信 / 自營），同步買超強却信號" },
+              { label: "加分",            desc: "Graham 安全邊際：PE + ROE 低亻 / 高成長，額外加分" },
+              { label: "灰色 = 弱勢",    desc: "對昇成沒為帶來顯著貢獻，可待豺后再關注" },
+            ]}
+          />
+        </div>
         <span className="text-[10px] text-zinc-400">
           面積越大 = 三面越均衡強勢
         </span>

@@ -4,6 +4,7 @@
 //   Morning/Evening Star → Lu & Chen (2015), J. Behavioral Finance（亞太股市驗證）
 //   Doji → Caginalp & Laurent (1998), Applied Mathematical Finance
 import type { OHLCBar } from "@/lib/types";
+import { InfoPopover } from "./InfoPopover";
 
 interface Pattern {
   name:      string;
@@ -206,9 +207,21 @@ export function CandlePatternBadges({ bars }: CandlePatternBadgesProps) {
   return (
     <div className="px-3 pt-2 pb-2 border-b border-zinc-100 dark:border-zinc-800/50">
       <div className="flex items-center justify-between mb-1.5">
-        <span className="text-[11px] font-semibold text-zinc-500 dark:text-zinc-400 tracking-wide">
-          K 線型態偵測
-        </span>
+        <div className="flex items-center gap-1">
+          <span className="text-[11px] font-semibold text-zinc-500 dark:text-zinc-400 tracking-wide">
+            K 線型態偵測
+          </span>
+          <InfoPopover
+            title="K 線型態怎麼看"
+            tips={[
+              { label: "綠色 (多頭)",   desc: "市場買家強勢，遠期統計勝率約62–63%，人圖結合瞎法人處理" },
+              { label: "紅色 (空頭)",   desc: "市場賣家強勢，等真空振出揚或止捨益損提防態度" },
+              { label: "灰色 (中性)",   desc: "十字線等，多空勢均衡，待後續發展確認方向" },
+              { label: "N 日前",           desc: "型態出現的天數，越近期効果越新鮮" },
+              { label: "學術來源",   desc: "Marshall (2006) J.Banking & Finance、Lu & Chen (2015)、Caginalp (1998)" },
+            ]}
+          />
+        </div>
         <span className="text-[10px] text-zinc-400">近 5 日掃描</span>
       </div>
 

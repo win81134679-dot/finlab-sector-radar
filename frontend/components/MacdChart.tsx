@@ -3,6 +3,7 @@
 // 學術基礎：Appel, G. (1979). The Moving Average Convergence-Divergence Method.
 // MACD = EMA(12) − EMA(26)；Signal = EMA(9, MACD)；Histogram = MACD − Signal
 import type { OHLCBar } from "@/lib/types";
+import { InfoPopover } from "./InfoPopover";
 
 // ── EMA 計算 ──────────────────────────────────────────────────────────────
 function calcEMA(values: number[], period: number): number[] {
@@ -57,9 +58,21 @@ export function MacdChart({ data, loading }: MacdChartProps) {
     return (
       <div className="px-3 pt-2 pb-2 border-b border-zinc-100 dark:border-zinc-800/50">
         <div className="flex items-center justify-between mb-0.5">
-          <span className="text-[11px] font-semibold text-zinc-500 dark:text-zinc-400 tracking-wide">
-            MACD 動量指標
-          </span>
+          <div className="flex items-center gap-1">
+            <span className="text-[11px] font-semibold text-zinc-500 dark:text-zinc-400 tracking-wide">
+              MACD 動量指標
+            </span>
+            <InfoPopover
+              title="MACD 怎麼看"
+              tips={[
+                { label: "藍線 (MACD)",    desc: "EMA12 − EMA26，白色 0 線上方為多頭動能，下方為空頭" },
+                { label: "橘處線 (Signal)", desc: "MACD 的 9 日 EMA，表達趨勢平滑度" },
+                { label: "黃金交叉 ▲",   desc: "MACD 由下穿上 Signal 線：動能反轉向上，熱門进場訊號" },
+                { label: "死亡交叉 ▼",   desc: "MACD 由上穿下 Signal 線：動能複弱，空頭規避訊號" },
+                { label: "綠柱大 / 切短", desc: "Histogram 間距擴大為動能增強；收縮为初步衣空" },
+              ]}
+            />
+          </div>
           <span className="text-[10px] text-zinc-400">Appel (1979)</span>
         </div>
         <div className="flex flex-col items-center gap-1 py-2">
@@ -123,9 +136,21 @@ export function MacdChart({ data, loading }: MacdChartProps) {
     <div className="px-3 pt-2 pb-2 border-b border-zinc-100 dark:border-zinc-800/50">
       {/* 標題 */}
       <div className="flex items-center justify-between mb-1">
-        <span className="text-[11px] font-semibold text-zinc-500 dark:text-zinc-400 tracking-wide">
-          MACD 動量指標
-        </span>
+        <div className="flex items-center gap-1">
+          <span className="text-[11px] font-semibold text-zinc-500 dark:text-zinc-400 tracking-wide">
+            MACD 動量指標
+          </span>
+          <InfoPopover
+            title="MACD 怎麼看"
+            tips={[
+              { label: "藍線 (MACD)",    desc: "EMA12 − EMA26，白色 0 線上方為多頭動能，下方為空頭" },
+              { label: "樘處線 (Signal)", desc: "MACD 的 9 日 EMA，表達趨勢平滑度" },
+              { label: "黃金交叉 ▲",   desc: "MACD 由下穿上 Signal 線：動能反轉向上，熱門进場訊號" },
+              { label: "死亡交叉 ▼",   desc: "MACD 由上穿下 Signal 線：動能複弱，空頭規避訊號" },
+              { label: "綠柱大 / 切短", desc: "Histogram 間距擴大為動能增強；收縮為初步袓空" },
+            ]}
+          />
+        </div>
         <div className="flex items-center gap-2">
           {histTrend && !crossLabel && (
             <span className="text-[10px] font-semibold" style={{ color: histTrendColor }}>
