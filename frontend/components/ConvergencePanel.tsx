@@ -142,10 +142,11 @@ function CombinedBar({ combined, lightRatio, composite }: {
   );
 }
 
-function StockCard({ stock, isExpanded, onToggle }: {
+function StockCard({ stock, isExpanded, onToggle, macroWarning }: {
   stock: ConvergenceStock;
   isExpanded: boolean;
   onToggle: () => void;
+  macroWarning?: boolean;
 }) {
   const { fullData, loading: loadingFull } = useOHLCV(stock.id, isExpanded);
   const displayBars = fullData.length >= 2 ? fullData : (stock.ohlcv_7d ?? []);
@@ -273,7 +274,16 @@ function StockCard({ stock, isExpanded, onToggle }: {
       )}
       {isExpanded && hasExpandable && (
         <div className="border-t border-zinc-100 dark:border-zinc-800/50">
-          <StockSummary data={fullData.length > 0 ? fullData : (stock.ohlcv_7d ?? [])} grade={stock.grade} breakdown={stock.breakdown} loading={loadingFull} />
+          <StockSummary
+            data={fullData.length > 0 ? fullData : (stock.ohlcv_7d ?? [])}
+            grade={stock.grade}
+            breakdown={stock.breakdown}
+            loading={loadingFull}
+            triggered={stock.triggered}
+            score={stock.score}
+            sectorLevel={stock.sectorLevel}
+            macroWarning={macroWarning}
+          />
           {hasBreakdown && stock.breakdown && (
             <FactorRadar breakdown={stock.breakdown} grade={stock.grade} />
           )}
@@ -610,6 +620,7 @@ export function ConvergencePanel({ snapshot, composite, holdings, magaData }: Pr
                       key={stock.id}
                       stock={stock}
                       isExpanded={expandedRows.has(rowKey)}
+                      macroWarning={snapshot?.macro?.warning}
                       onToggle={() =>
                         setExpandedRows((prev) => {
                           const next = new Set(prev);

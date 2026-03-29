@@ -95,7 +95,7 @@ export function SectorCard({ sectorId, sector, featured = false, defaultExpanded
           `}
         >
           <div className="px-4 pb-4 border-t border-zinc-200/30 dark:border-zinc-700/30 pt-3">
-            <StockTable stocks={stocks} />
+            <StockTable stocks={stocks} sectorLevel={sector.level} />
           </div>
         </div>
       )}

@@ -47,7 +47,8 @@ function useOHLCV(stockId: string, enabled: boolean) {
 }
 
 interface StockTableProps {
-  stocks: StockData[];
+  stocks:       StockData[];
+  sectorLevel?: string;      // 板塊等級（傳入 StockSummary）
 }
 
 const GRADE_STARS: Record<string, string> = {
@@ -56,7 +57,7 @@ const GRADE_STARS: Record<string, string> = {
   "忽略": "⭐",
 };
 
-export function StockTable({ stocks }: StockTableProps) {
+export function StockTable({ stocks, sectorLevel }: StockTableProps) {
   const [expandedId, setExpandedId] = useState<string | null>(null);
 
   if (!stocks || stocks.length === 0) {
@@ -88,6 +89,7 @@ export function StockTable({ stocks }: StockTableProps) {
               key={stock.id}
               stock={stock}
               isExpanded={expandedId === stock.id}
+              sectorLevel={sectorLevel}
               onToggle={() =>
                 setExpandedId(expandedId === stock.id ? null : stock.id)
               }
@@ -100,12 +102,13 @@ export function StockTable({ stocks }: StockTableProps) {
 }
 
 interface StockRowProps {
-  stock: StockData;
-  isExpanded: boolean;
-  onToggle: () => void;
+  stock:        StockData;
+  isExpanded:   boolean;
+  sectorLevel?: string;
+  onToggle:     () => void;
 }
 
-function StockRow({ stock, isExpanded, onToggle }: StockRowProps) {
+function StockRow({ stock, isExpanded, sectorLevel, onToggle }: StockRowProps) {
   const stars = GRADE_STARS[stock.grade] ?? "⭐";
   const changePct = stock.change_pct;
   const flag = stock.price_flag ?? "normal";
@@ -209,7 +212,15 @@ function StockRow({ stock, isExpanded, onToggle }: StockRowProps) {
 
             {/* 一句話總結 */}
             <div className="mb-3">
-              <StockSummary data={displayBars} grade={stock.grade} breakdown={stock.breakdown} loading={loading} />
+              <StockSummary
+                data={displayBars}
+                grade={stock.grade}
+                breakdown={stock.breakdown}
+                loading={loading}
+                triggered={stock.triggered}
+                score={stock.score}
+                sectorLevel={sectorLevel}
+              />
             </div>
 
             {/* 因子雷達圖 */}
