@@ -1,7 +1,7 @@
 {
   "schema_version": "2.0",
   "date": "2026-03-30",
-  "run_at": "2026-03-30T00:39:15+08:00",
+  "run_at": "2026-03-30T01:15:15+08:00",
   "last_trading_date": "2026-03-27",
   "macro": {
     "warning": true,
@@ -39,6 +39,15 @@
       ],
       "level": "強烈關注",
       "cycle_stage": "加速期",
+      "exit_risk": {
+        "score": 15,
+        "action": "持有",
+        "triggers": [
+          "宏觀環境逆風"
+        ],
+        "rs_quadrant": "領先(Right-Upper)"
+      },
+      "rs_momentum": 0.011299,
       "stocks": [
         {
           "id": "6426",
@@ -461,6 +470,8 @@
       ],
       "level": "觀察中",
       "cycle_stage": null,
+      "exit_risk": null,
+      "rs_momentum": 0.008869,
       "stocks": [
         {
           "id": "2345",
@@ -682,6 +693,8 @@
       ],
       "level": "觀察中",
       "cycle_stage": null,
+      "exit_risk": null,
+      "rs_momentum": 0.004892,
       "stocks": [
         {
           "id": "2301",
@@ -903,6 +916,8 @@
       ],
       "level": "觀察中",
       "cycle_stage": null,
+      "exit_risk": null,
+      "rs_momentum": 0.007128,
       "stocks": [
         {
           "id": "3037",
@@ -1242,6 +1257,8 @@
       ],
       "level": "觀察中",
       "cycle_stage": null,
+      "exit_risk": null,
+      "rs_momentum": 0.002109,
       "stocks": [
         {
           "id": "3090",
@@ -1563,6 +1580,8 @@
       ],
       "level": "觀察中",
       "cycle_stage": null,
+      "exit_risk": null,
+      "rs_momentum": 0.00811,
       "stocks": [
         {
           "id": "3017",
@@ -1887,6 +1906,8 @@
       ],
       "level": "觀察中",
       "cycle_stage": "萌芽期",
+      "exit_risk": null,
+      "rs_momentum": 0.001297,
       "stocks": [
         {
           "id": "3260",
@@ -2209,6 +2230,8 @@
       ],
       "level": "觀察中",
       "cycle_stage": null,
+      "exit_risk": null,
+      "rs_momentum": 0.014279,
       "stocks": [
         {
           "id": "3533",
@@ -2428,6 +2451,8 @@
       ],
       "level": "觀察中",
       "cycle_stage": null,
+      "exit_risk": null,
+      "rs_momentum": 0.00384,
       "stocks": [
         {
           "id": "6279",
@@ -2546,6 +2571,8 @@
       ],
       "level": "觀察中",
       "cycle_stage": null,
+      "exit_risk": null,
+      "rs_momentum": -0.00021,
       "stocks": [
         {
           "id": "1215",
@@ -2665,6 +2692,8 @@
       ],
       "level": "觀察中",
       "cycle_stage": "萌芽期",
+      "exit_risk": null,
+      "rs_momentum": 0.0028,
       "stocks": [
         {
           "id": "2855",
@@ -2785,6 +2814,8 @@
       ],
       "level": "觀察中",
       "cycle_stage": null,
+      "exit_risk": null,
+      "rs_momentum": 0.00725,
       "stocks": [
         {
           "id": "6213",
@@ -3310,6 +3341,8 @@
       ],
       "level": "觀察中",
       "cycle_stage": null,
+      "exit_risk": null,
+      "rs_momentum": -0.001073,
       "stocks": [
         {
           "id": "2891",
@@ -3632,6 +3665,8 @@
       ],
       "level": "觀察中",
       "cycle_stage": null,
+      "exit_risk": null,
+      "rs_momentum": 0.001512,
       "stocks": [
         {
           "id": "6257",
@@ -3853,6 +3888,8 @@
       ],
       "level": "觀察中",
       "cycle_stage": null,
+      "exit_risk": null,
+      "rs_momentum": 0.00828,
       "stocks": [
         {
           "id": "2308",
@@ -3973,6 +4010,8 @@
       ],
       "level": "觀察中",
       "cycle_stage": null,
+      "exit_risk": null,
+      "rs_momentum": -0.002562,
       "stocks": [
         {
           "id": "3051",
@@ -4190,6 +4229,8 @@
       ],
       "level": "觀察中",
       "cycle_stage": "萌芽期",
+      "exit_risk": null,
+      "rs_momentum": -0.002569,
       "stocks": [
         {
           "id": "6669",
@@ -4615,6 +4656,8 @@
       ],
       "level": "觀察中",
       "cycle_stage": "萌芽期",
+      "exit_risk": null,
+      "rs_momentum": -0.001429,
       "stocks": [
         {
           "id": "2615",
@@ -4732,6 +4775,8 @@
       ],
       "level": "觀察中",
       "cycle_stage": "萌芽期",
+      "exit_risk": null,
+      "rs_momentum": 0.002612,
       "stocks": [
         {
           "id": "2501",
@@ -5056,6 +5101,8 @@
       ],
       "level": "觀察中",
       "cycle_stage": "萌芽期",
+      "exit_risk": null,
+      "rs_momentum": -0.003523,
       "stocks": [
         {
           "id": "1514",
@@ -5374,6 +5421,8 @@
       ],
       "level": "觀察中",
       "cycle_stage": "萌芽期",
+      "exit_risk": null,
+      "rs_momentum": -0.003973,
       "stocks": [
         {
           "id": "1590",
@@ -5694,6 +5743,8 @@
       ],
       "level": "觀察中",
       "cycle_stage": "萌芽期",
+      "exit_risk": null,
+      "rs_momentum": -0.001857,
       "stocks": [
         {
           "id": "9958",
@@ -5913,6 +5964,8 @@
       ],
       "level": "觀察中",
       "cycle_stage": "萌芽期",
+      "exit_risk": null,
+      "rs_momentum": -0.001257,
       "stocks": []
     },
     "gaming": {
@@ -5929,6 +5982,8 @@
       ],
       "level": "觀察中",
       "cycle_stage": "萌芽期",
+      "exit_risk": null,
+      "rs_momentum": 0.004247,
       "stocks": [
         {
           "id": "5478",
@@ -6150,6 +6205,8 @@
       ],
       "level": "忽略",
       "cycle_stage": null,
+      "exit_risk": null,
+      "rs_momentum": -0.003871,
       "stocks": []
     },
     "power_semi": {
@@ -6166,6 +6223,8 @@
       ],
       "level": "忽略",
       "cycle_stage": null,
+      "exit_risk": null,
+      "rs_momentum": 0.004922,
       "stocks": []
     },
     "financial_holding": {
@@ -6182,6 +6241,8 @@
       ],
       "level": "忽略",
       "cycle_stage": null,
+      "exit_risk": null,
+      "rs_momentum": -0.000931,
       "stocks": []
     },
     "telecom": {
@@ -6198,6 +6259,8 @@
       ],
       "level": "忽略",
       "cycle_stage": null,
+      "exit_risk": null,
+      "rs_momentum": 0.000732,
       "stocks": []
     },
     "tourism": {
@@ -6214,6 +6277,8 @@
       ],
       "level": "忽略",
       "cycle_stage": null,
+      "exit_risk": null,
+      "rs_momentum": 0.000404,
       "stocks": []
     },
     "foundry": {
@@ -6230,6 +6295,8 @@
       ],
       "level": "忽略",
       "cycle_stage": null,
+      "exit_risk": null,
+      "rs_momentum": -0.00119,
       "stocks": []
     },
     "insurance": {
@@ -6246,6 +6313,8 @@
       ],
       "level": "忽略",
       "cycle_stage": null,
+      "exit_risk": null,
+      "rs_momentum": null,
       "stocks": []
     },
     "ip_design": {
@@ -6262,6 +6331,8 @@
       ],
       "level": "忽略",
       "cycle_stage": null,
+      "exit_risk": null,
+      "rs_momentum": -0.000329,
       "stocks": []
     },
     "lens_optics": {
@@ -6278,6 +6349,8 @@
       ],
       "level": "忽略",
       "cycle_stage": null,
+      "exit_risk": null,
+      "rs_momentum": -0.002474,
       "stocks": []
     },
     "software_saas": {
@@ -6294,6 +6367,8 @@
       ],
       "level": "忽略",
       "cycle_stage": null,
+      "exit_risk": null,
+      "rs_momentum": -0.002889,
       "stocks": []
     },
     "cement": {
@@ -6310,6 +6385,8 @@
       ],
       "level": "忽略",
       "cycle_stage": null,
+      "exit_risk": null,
+      "rs_momentum": -0.002357,
       "stocks": []
     },
     "paper": {
@@ -6326,6 +6403,8 @@
       ],
       "level": "忽略",
       "cycle_stage": null,
+      "exit_risk": null,
+      "rs_momentum": 0.007108,
       "stocks": []
     },
     "gas_energy": {
@@ -6342,6 +6421,8 @@
       ],
       "level": "忽略",
       "cycle_stage": null,
+      "exit_risk": null,
+      "rs_momentum": 0.001946,
       "stocks": []
     },
     "defense": {
@@ -6358,6 +6439,8 @@
       ],
       "level": "忽略",
       "cycle_stage": null,
+      "exit_risk": null,
+      "rs_momentum": -0.001533,
       "stocks": []
     },
     "medical_device": {
@@ -6374,6 +6457,8 @@
       ],
       "level": "忽略",
       "cycle_stage": null,
+      "exit_risk": null,
+      "rs_momentum": -0.000881,
       "stocks": []
     },
     "solar": {
@@ -6390,6 +6475,8 @@
       ],
       "level": "忽略",
       "cycle_stage": null,
+      "exit_risk": null,
+      "rs_momentum": 0.009627,
       "stocks": []
     },
     "biotech": {
@@ -6406,6 +6493,8 @@
       ],
       "level": "忽略",
       "cycle_stage": null,
+      "exit_risk": null,
+      "rs_momentum": 0.012083,
       "stocks": []
     },
     "rubber": {
@@ -6422,6 +6511,8 @@
       ],
       "level": "忽略",
       "cycle_stage": null,
+      "exit_risk": null,
+      "rs_momentum": -0.000429,
       "stocks": []
     },
     "display": {
@@ -6438,6 +6529,8 @@
       ],
       "level": "忽略",
       "cycle_stage": null,
+      "exit_risk": null,
+      "rs_momentum": -0.003479,
       "stocks": []
     },
     "petrochemical": {
@@ -6454,6 +6547,8 @@
       ],
       "level": "忽略",
       "cycle_stage": null,
+      "exit_risk": null,
+      "rs_momentum": -0.00197,
       "stocks": []
     },
     "textile": {
@@ -6470,6 +6565,8 @@
       ],
       "level": "忽略",
       "cycle_stage": null,
+      "exit_risk": null,
+      "rs_momentum": -0.008489,
       "stocks": []
     }
   }
