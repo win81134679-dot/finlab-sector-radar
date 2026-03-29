@@ -52,6 +52,7 @@ const SectorSchema = z.object({
   total: z.number(),
   signals: z.array(z.number()).length(7),
   level: z.enum(["強烈關注", "觀察中", "忽略"]),
+  cycle_stage: z.enum(["萌芽期", "確認期", "加速期", "過熱期"]).nullable().optional(),
   stocks: z.array(StockSchema).optional().default([]),
 });
 
