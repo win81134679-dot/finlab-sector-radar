@@ -81,12 +81,22 @@ const RSS_SOURCES = [
 ] as const;
 
 // ── RSS 抓取（單一來源） ─────────────────────────────────────────────────────
+// 使用 native fetch + AbortController 確保真正取消連線（rss-parser.parseURL 的
+// timeout 只是 socket inactivity timeout，對 Vercel 封鎖的主機無效）
 async function fetchFeed(
   source: (typeof RSS_SOURCES)[number],
 ): Promise<{ items: { text: string; url: string | null; timestamp: string | null }[]; label: string }> {
+  const controller = new AbortController();
+  const timer = setTimeout(() => controller.abort(), source.timeoutMs);
   try {
-    const parser = new Parser({ timeout: source.timeoutMs });
-    const feed = await parser.parseURL(source.url);
+    const res = await fetch(source.url, {
+      signal: controller.signal,
+      headers: { "User-Agent": "Mozilla/5.0 (compatible; finlab-bot/1.0; +https://github.com)" },
+    });
+    if (!res.ok) return { items: [], label: source.label };
+    const xml = await res.text();
+    const parser = new Parser();
+    const feed = await parser.parseString(xml);
 
     const items = (feed.items ?? []).map((item) => ({
       text:      `${item.title ?? ""} ${item.contentSnippet ?? item.content ?? ""}`.trim(),
@@ -97,6 +107,8 @@ async function fetchFeed(
     return { items, label: source.label };
   } catch {
     return { items: [], label: source.label };
+  } finally {
+    clearTimeout(timer);
   }
 }
 
