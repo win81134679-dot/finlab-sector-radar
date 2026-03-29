@@ -27,6 +27,9 @@ function useColumns() {
   return cols;
 }
 
+import { MiniSparkline } from "./MiniSparkline";
+import { FactorRadar } from "./FactorRadar";
+
 const StockKLine = dynamic<{ data: OHLCBar[]; stockId: string }>(
   () => import("./StockKLine").then((m) => m.StockKLine),
   {
@@ -65,6 +68,7 @@ interface ConvergenceStock {
   price_flag:  string;
   triggered:   string[];
   ohlcv_7d?:   OHLCBar[];
+  breakdown?:  { fundamental: number; technical: number; chipset: number; bonus: number };
   tags:        Array<"持倉" | "MAGA">;
   combined:    number;
   lightRatio:  number;
@@ -115,7 +119,12 @@ function StockCard({ stock, isExpanded, onToggle }: {
   isExpanded: boolean;
   onToggle: () => void;
 }) {
-  const hasKLine = (stock.ohlcv_7d?.length ?? 0) >= 2;
+  const hasKLine     = (stock.ohlcv_7d?.length ?? 0) >= 2;
+  const hasBreakdown  = !!(stock.breakdown && (
+    stock.breakdown.fundamental > 0 || stock.breakdown.technical > 0 ||
+    stock.breakdown.chipset > 0     || stock.breakdown.bonus > 0
+  ));
+  const hasExpandable = hasKLine || hasBreakdown;
   const signalLabels = (stock.triggered ?? [])
     .slice(0, 4)
     .map((key) => {
@@ -185,6 +194,7 @@ function StockCard({ stock, isExpanded, onToggle }: {
             </div>
           </div>
           <div className="flex flex-col items-end gap-1 shrink-0">
+            {hasKLine && <MiniSparkline bars={stock.ohlcv_7d!} />}
             {stock.price_flag === "halt" ? (
               <span className="text-[11px] px-1.5 py-0.5 rounded bg-red-100 dark:bg-red-900/30 text-red-600 dark:text-red-400 border border-red-200 dark:border-red-700/40">停牌</span>
             ) : stock.price_flag === "ex_div" ? (
@@ -216,8 +226,8 @@ function StockCard({ stock, isExpanded, onToggle }: {
         {/* Row 3: 雙線分數條 */}
         <CombinedBar combined={stock.combined} lightRatio={stock.lightRatio} composite={stock.composite} />
       </div>
-      {/* K 線展開按鈕 */}
-      {hasKLine && (
+      {/* 分析展開按鈕（因子雷達 + K 線） */}
+      {hasExpandable && (
         <button
           onClick={onToggle}
           className={`w-full flex items-center justify-center gap-1.5 py-1.5 text-[11px] transition-colors border-t ${
@@ -226,13 +236,20 @@ function StockCard({ stock, isExpanded, onToggle }: {
               : "border-zinc-100 dark:border-zinc-800/50 text-zinc-400 hover:text-blue-500 dark:hover:text-blue-400 hover:bg-blue-50/40 dark:hover:bg-blue-900/10"
           }`}
         >
-          <span>📈</span>
-          <span className="font-medium">{isExpanded ? "收起 K 線" : "展開 K 線"}</span>
+          <span>📊</span>
+          <span className="font-medium">{isExpanded ? "收起分析" : "展開分析"}</span>
         </button>
       )}
-      {isExpanded && hasKLine && (
-        <div className="border-t border-zinc-100 dark:border-zinc-800/50 px-1 py-1">
-          <StockKLine data={stock.ohlcv_7d!} stockId={stock.id} />
+      {isExpanded && hasExpandable && (
+        <div className="border-t border-zinc-100 dark:border-zinc-800/50">
+          {hasBreakdown && stock.breakdown && (
+            <FactorRadar breakdown={stock.breakdown} grade={stock.grade} />
+          )}
+          {hasKLine && (
+            <div className="px-1 py-1">
+              <StockKLine data={stock.ohlcv_7d!} stockId={stock.id} />
+            </div>
+          )}
         </div>
       )}
     </div>
@@ -358,6 +375,7 @@ export function ConvergencePanel({ snapshot, composite, holdings, magaData }: Pr
           price_flag: stock.price_flag ?? "normal",
           triggered:  stock.triggered ?? [],
           ohlcv_7d:   stock.ohlcv_7d,
+          breakdown:  stock.breakdown,
           tags,
           combined:   secMeta.combined,
           lightRatio: secMeta.lightRatio,
