@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import { Geist, Geist_Mono, Noto_Sans_TC } from "next/font/google";
+import { Analytics } from "@vercel/analytics/next";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -65,6 +66,7 @@ export default function RootLayout({
       </head>
       <body className="min-h-dvh bg-[var(--bg-page)] text-[var(--text-base)] flex flex-col">
         {children}
+        <Analytics />
         <footer className="mt-auto py-5 px-4 border-t border-zinc-200/60 dark:border-zinc-800/60">
           <p className="text-center text-[11px] leading-relaxed text-zinc-400 dark:text-zinc-500">
             本平台所有分析結果均由量化模型自動生成，僅供研究參考，不構成任何投資建議。
