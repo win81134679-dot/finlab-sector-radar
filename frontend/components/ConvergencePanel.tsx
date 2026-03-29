@@ -58,6 +58,7 @@ interface ConvergenceStock {
   id:          string;
   name_zh?:    string;
   sectorId:    string;
+  sectorLevel: string;
   score:       number | null;
   grade:       string;
   change_pct:  number | null;
@@ -113,19 +114,30 @@ function StockCard({ stock, isExpanded, onToggle }: {
   stock: ConvergenceStock;
   isExpanded: boolean;
   onToggle: () => void;
-}) {  const hasKLine = (stock.ohlcv_7d?.length ?? 0) >= 2;
+}) {
+  const hasKLine = (stock.ohlcv_7d?.length ?? 0) >= 2;
   const signalLabels = (stock.triggered ?? [])
     .slice(0, 4)
     .map((key) => {
       const name = SIGNAL_NAMES[key] ?? key;
       return name.length > 2 ? name.slice(0, 2) : name;
     });
-  const barColor =
+
+  const isFeatured = stock.sectorLevel === "強烈關注";
+  const isWatch    = stock.sectorLevel === "觀察中";
+
+  // 左色條：板塊等級優先，其次才是綜合分
+  const barColor = isFeatured ? "#ef4444" : isWatch ? "#f59e0b" :
     stock.combined >= 70 ? "#10b981" :
     stock.combined >= 50 ? "#3b82f6" : "#a1a1aa";
 
+  // 卡片邊框：強烈關注用紅色微營光
+  const cardBorder = isFeatured
+    ? "border-red-300/70 dark:border-red-700/50 shadow-[0_0_0_1px_rgba(239,68,68,0.15)]"
+    : "border-zinc-200/60 dark:border-zinc-700/50";
+
   return (
-    <div className="rounded-xl border border-zinc-200/60 dark:border-zinc-700/50 bg-white/70 dark:bg-zinc-900/50 overflow-hidden">
+    <div className={`rounded-xl border bg-white/70 dark:bg-zinc-900/50 overflow-hidden ${cardBorder}`}>
       {/* NLP 空方衝擊警示條 */}
       {stock.nlpBearish && stock.nlpSeverity && (
         <div className={`flex items-center gap-1.5 px-3.5 py-1.5 text-[11px] font-medium border-b ${
@@ -157,7 +169,19 @@ function StockCard({ stock, isExpanded, onToggle }: {
                   {stock.grade}
                 </span>
               </div>
-              <p className="text-[11px] text-zinc-400 mt-0.5 truncate">{getSectorName(stock.sectorId)}</p>
+              <p className="text-[11px] text-zinc-400 mt-0.5 truncate flex items-center gap-1">
+                {getSectorName(stock.sectorId)}
+                {isFeatured && (
+                  <span className="inline-flex items-center gap-0.5 text-[10px] px-1 py-0.5 rounded font-bold bg-red-100/80 dark:bg-red-900/30 text-red-700 dark:text-red-300 leading-none">
+                    🔴 強烈關注
+                  </span>
+                )}
+                {isWatch && (
+                  <span className="inline-flex items-center gap-0.5 text-[10px] px-1 py-0.5 rounded font-medium bg-amber-100/80 dark:bg-amber-900/30 text-amber-700 dark:text-amber-300 leading-none">
+                    🟡 觀察中
+                  </span>
+                )}
+              </p>
             </div>
           </div>
           <div className="flex flex-col items-end gap-1 shrink-0">
@@ -327,6 +351,7 @@ export function ConvergencePanel({ snapshot, composite, holdings, magaData }: Pr
           id:         stock.id,
           name_zh:    nameMap[stock.id],
           sectorId,
+          sectorLevel: sector.level,
           score:      stock.score ?? null,
           grade:      stock.grade,
           change_pct: stock.change_pct ?? null,
