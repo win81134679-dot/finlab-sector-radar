@@ -1,6 +1,7 @@
 // app/api/update-trump/route.ts
-// Trump 貼文 RSS 抓取 + NLP 分析 + Vercel KV 存狀態
-// 由 GitHub Actions update_trump_feed.yml 每 30 分鐘觸發（POST）
+// Trump 貼文 RSS 抓取 + NLP 分析
+// 由 GitHub Actions update_trump_feed.yml 每 4 小時觸發（POST）
+// 結果以 JSON 回傳 → workflow 存入 output/trump_signals.json 並 commit 到 repo
 //
 // 安全設計：與 manual-update 相同，使用 CRON_SECRET 驗證
 
@@ -181,6 +182,21 @@ function calcDelta(
   };
 }
 
+// ── 從 GitHub raw 讀取上一次結果（避免依賴 Redis）──────────────────────────────
+async function fetchPrevFromGithub(): Promise<TrumpEventLog | null> {
+  const base = process.env.NEXT_PUBLIC_GITHUB_RAW_BASE_URL ?? "";
+  if (!base) return null;
+  try {
+    return await Promise.race([
+      fetch(`${base}/output/trump_signals.json`, { cache: "no-store" })
+        .then(async (r) => (r.ok ? (r.json() as Promise<TrumpEventLog>) : null)),
+      new Promise<null>((resolve) => setTimeout(() => resolve(null), 5_000)),
+    ]);
+  } catch {
+    return null;
+  }
+}
+
 // ── 主處理邏輯 ────────────────────────────────────────────────────────────────
 export async function POST(request: NextRequest) {
   // 驗證 Authorization
@@ -190,12 +206,8 @@ export async function POST(request: NextRequest) {
     return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
   }
 
-  // KV 可用性檢查
+  // Redis（現在為可選，主要儲存已改用 GitHub file）
   const { client: redis, ok: kvOk } = makeRedis();
-  if (!kvOk) {
-    console.error("update-trump: Redis env vars 未設定，請確認 Upstash 已連結到此 Vercel 專案");
-    return NextResponse.json({ error: "Redis env vars 未設定" }, { status: 503 });
-  }
 
   // 速率限制
   const now = Date.now();
@@ -257,11 +269,14 @@ export async function POST(request: NextRequest) {
     summary:    "",
   })));
 
-  // 4. 讀取 KV 上一次的板塊狀態
+  // 4. 讀取上一次的板塊狀態（優先從 GitHub file，Redis 作為備援）
   const t1 = Date.now();
+  const prevFile = await fetchPrevFromGithub();
   const prevState: Record<string, SectorState> =
-    (await safeRedisGet<Record<string, SectorState>>(redis, KV_KEY_STATE)) ?? {};
-  console.log(`[update-trump] Redis GET state in ${Date.now() - t1}ms`);
+    prevFile?.sectorState ??
+    (kvOk ? await safeRedisGet<Record<string, SectorState>>(redis, KV_KEY_STATE) : null) ??
+    {};
+  console.log(`[update-trump] prevState loaded in ${Date.now() - t1}ms, sectors=${Object.keys(prevState).length}`);
 
   // 5. 計算 delta + 更新狀態
   const updatedAt  = new Date().toISOString();
@@ -287,14 +302,11 @@ export async function POST(request: NextRequest) {
   allDeltas.sort((a, b) => Math.abs(b.delta) - Math.abs(a.delta));
   const topDeltas = allDeltas.slice(0, 5);
 
-  // 6. 讀取舊的 event log（保留歷史貼文）
-  const t2 = Date.now();
-  const existingLog = await safeRedisGet<TrumpEventLog>(redis, KV_KEY_LOG);
-  console.log(`[update-trump] Redis GET log in ${Date.now() - t2}ms`);
-
+  // 6. 合併歷史貼文（優先從 GitHub file，Redis 作為備援）
+  const existingPosts = prevFile?.posts ?? [];
   const mergedPosts = dedup([
     ...analyzed,
-    ...(existingLog?.posts ?? []),
+    ...existingPosts,
   ]).slice(0, MAX_LOG_POSTS);
 
   const newLog: TrumpEventLog = {
@@ -306,13 +318,14 @@ export async function POST(request: NextRequest) {
     sources:       activeSources,
   };
 
-  // 7. 寫回 KV
-  const t3 = Date.now();
-  await Promise.all([
-    safeRedisSet(redis, KV_KEY_STATE, newState),
-    safeRedisSet(redis, KV_KEY_LOG, newLog, 7200),
-  ]);
-  console.log(`[update-trump] Redis SET done in ${Date.now() - t3}ms`);
+  // 7. 寫回 KV（best-effort，不影響主流程）
+  if (kvOk) {
+    const t3 = Date.now();
+    void Promise.all([
+      safeRedisSet(redis, KV_KEY_STATE, newState),
+      safeRedisSet(redis, KV_KEY_LOG, newLog, 7200),
+    ]).then(() => console.log(`[update-trump] Redis SET done in ${Date.now() - t3}ms`));
+  }
 
   // 8. 觸發 ISR revalidate
   try {
@@ -331,6 +344,7 @@ export async function POST(request: NextRequest) {
     top3_deltas:    topDeltas.slice(0, 3).map((d) => `${d.sectorName} ${d.delta > 0 ? "+" : ""}${d.delta.toFixed(3)}`),
     sources:        activeSources,
     updated_at:     updatedAt,
+    log:            { ...newLog, sectorState: newState },
   });
   })(); // end work
 

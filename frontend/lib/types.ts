@@ -376,4 +376,6 @@ export interface TrumpEventLog {
   topDeltas:      SectorDelta[];  // 前 5 大絕對值 delta
   totalAnalyzed:  number;
   sources:        string[];       // 來源標示，例如 ["Truth Social", "Google News"]
+  /** 儲存於 output/trump_signals.json，供下次 update-trump 計算 delta 用 */
+  sectorState?:   Record<string, SectorState>;
 }

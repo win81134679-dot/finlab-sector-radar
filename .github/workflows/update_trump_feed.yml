@@ -1,18 +1,24 @@
 name: Update Trump Feed
 
-# 每 30 分鐘觸發一次，也可手動觸發
+# 每 4 小時執行一次（每天 6 次），也可手動觸發
 on:
   schedule:
-    - cron: "*/30 * * * *"
+    - cron: "0 */4 * * *"
   workflow_dispatch:
+
+permissions:
+  contents: write
 
 jobs:
   trigger:
-    name: 觸發 Vercel update-trump API
+    name: 更新 Trump 訊號並存檔
     runs-on: ubuntu-latest
-    timeout-minutes: 2
+    timeout-minutes: 3
 
     steps:
+      - name: 📥 Checkout repo
+        uses: actions/checkout@v4
+
       - name: 呼叫 Vercel update-trump endpoint
         run: |
           RESPONSE=$(curl -s -w "\n%{http_code}" -X POST \
@@ -20,14 +26,45 @@ jobs:
             -H "Authorization: Bearer ${{ secrets.CRON_SECRET }}" \
             -H "Content-Type: application/json" \
             --max-time 55)
-          
+
           HTTP_CODE=$(echo "$RESPONSE" | tail -n1)
           BODY=$(echo "$RESPONSE" | sed '$d')
-          
+
           echo "HTTP Status: $HTTP_CODE"
-          echo "Response: $BODY"
-          
+          echo "Response preview: ${BODY:0:300}"
+
           if [ "$HTTP_CODE" -ne 200 ]; then
             echo "::error::update-trump 回傳非 200：$HTTP_CODE"
             exit 1
           fi
+
+          # 解析 response.log 並存入 output/trump_signals.json
+          echo "$BODY" | python3 -c "
+import sys, json, os
+
+data = json.load(sys.stdin)
+
+# skipped（速率限制）不需要儲存
+if data.get('skipped'):
+    print('Skipped (rate limited):', data.get('reason', ''))
+    sys.exit(0)
+
+log = data.get('log')
+if not log:
+    print('WARNING: response 中沒有 log 欄位，keys:', list(data.keys()))
+    sys.exit(0)
+
+os.makedirs('output', exist_ok=True)
+with open('output/trump_signals.json', 'w', encoding='utf-8') as f:
+    json.dump(log, f, ensure_ascii=False, indent=2)
+print('Saved output/trump_signals.json, posts:', len(log.get('posts', [])), 'deltas:', len(log.get('deltas', [])))
+"
+
+      - name: 📤 Commit and push
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add output/trump_signals.json
+          git diff --staged --quiet && echo "No changes to commit" || \
+            (git commit -m "chore: update trump_signals.json [skip ci]" && git push)
+
