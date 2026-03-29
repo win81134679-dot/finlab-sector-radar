@@ -1,5 +1,5 @@
 // app/page.tsx — FinLab 板塊偵測 主儀表板（Server Component）
-import { fetchLatestSnapshot, fetchHistoryIndex, fetchCommodities, fetchMagaData, fetchComposite, fetchHoldings, fetchPnl, fetchBacktest, fetchSensitivity } from "@/lib/fetcher";
+import { fetchLatestSnapshot, fetchHistoryIndex, fetchCommodities, fetchMagaData, fetchComposite, fetchHoldings, fetchPnl, fetchSensitivity } from "@/lib/fetcher";
 import { Header } from "@/components/Header";
 import { TabContainer } from "@/components/TabContainer";
 import { ErrorBoundary } from "@/components/ErrorBoundary";
@@ -7,7 +7,7 @@ import { ErrorBoundary } from "@/components/ErrorBoundary";
 export const revalidate = 1800;  // ISR: 30 分鐘重新驗證（資料由 GitHub Actions 每日更新）
 
 export default async function DashboardPage() {
-  const [snapshot, historyIndex, commodities, magaData, composite, sensitivity, holdings, pnl, backtest] = await Promise.all([
+  const [snapshot, historyIndex, commodities, magaData, composite, sensitivity, holdings, pnl] = await Promise.all([
     fetchLatestSnapshot(),
     fetchHistoryIndex(),
     fetchCommodities(),
@@ -16,7 +16,6 @@ export default async function DashboardPage() {
     fetchSensitivity(),
     fetchHoldings(),
     fetchPnl(),
-    fetchBacktest(),
   ]);
 
   const runAt = snapshot?.run_at ?? "";
@@ -38,7 +37,6 @@ export default async function DashboardPage() {
           sensitivity={sensitivity}
           holdings={holdings}
           pnl={pnl}
-          backtest={backtest}
         />
       </ErrorBoundary>
 

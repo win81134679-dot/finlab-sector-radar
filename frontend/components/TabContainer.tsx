@@ -1,8 +1,8 @@
 "use client";
-// TabContainer.tsx — 板塊偵測 / 商品市場 / MAGA 追蹤 / 訊號雷達 / 組合管理 / 回測 Tab 切換（Client Component）
+// TabContainer.tsx — 短線趨勢 / 最強訊號 / 長線趨勢 / 商品市場 Tab 切換（Client Component）
 
 import { useState } from "react";
-import type { SignalSnapshot, HistoryIndex, CommoditySnapshot, MagaSnapshot, CompositeSnapshot, HoldingsSnapshot, PnlSnapshot, BacktestSnapshot, SensitivitySnapshot } from "@/lib/types";
+import type { SignalSnapshot, HistoryIndex, CommoditySnapshot, MagaSnapshot, CompositeSnapshot, HoldingsSnapshot, PnlSnapshot, SensitivitySnapshot } from "@/lib/types";
 import { MacroPanel } from "@/components/MacroPanel";
 import { MacroWarningBanner } from "@/components/MacroWarningBanner";
 import { StaleDataBanner } from "@/components/StaleDataBanner";
@@ -10,10 +10,8 @@ import { SectorGrid } from "@/components/SectorGrid";
 import { ErrorBoundary } from "@/components/ErrorBoundary";
 import { TrendSection } from "@/components/TrendSection";
 import { CommodityPanel } from "@/components/CommodityPanel";
-import { MagaPanel } from "@/components/MagaPanel";
-import { CompositePanel } from "@/components/CompositePanel";
-import { PortfolioPanel } from "@/components/PortfolioPanel";
-import { BacktestPanel } from "@/components/BacktestPanel";
+import { ConvergencePanel } from "@/components/ConvergencePanel";
+import { LongTermPanel } from "@/components/LongTermPanel";
 import { UpdateButton } from "@/components/UpdateButton";
 
 interface Props {
@@ -25,21 +23,18 @@ interface Props {
   sensitivity: SensitivitySnapshot | null;
   holdings:    HoldingsSnapshot | null;
   pnl:         PnlSnapshot | null;
-  backtest:    BacktestSnapshot | null;
 }
 
-type Tab = "sector" | "commodity" | "maga" | "signal" | "portfolio" | "backtest";
+type Tab = "sector" | "convergence" | "longterm" | "commodity";
 
 const TABS: { id: Tab; label: string }[] = [
-  { id: "sector",    label: "板塊偵測 🔍" },
-  { id: "commodity", label: "商品市場 📊" },
-  { id: "maga",      label: "MAGA 追蹤 🌐" },
-  { id: "signal",    label: "訊號雷達 🎯" },
-  { id: "portfolio", label: "組合管理 💼" },
-  { id: "backtest",  label: "策略回測 📈" },
+  { id: "sector",      label: "短線趨勢 📊" },
+  { id: "convergence", label: "最強訊號 ⭐" },
+  { id: "longterm",    label: "長線趨勢 📐" },
+  { id: "commodity",   label: "商品市場 🌐" },
 ];
 
-export function TabContainer({ snapshot, historyIndex, commodities, magaData, composite, sensitivity, holdings, pnl, backtest }: Props) {
+export function TabContainer({ snapshot, historyIndex, commodities, magaData, composite, sensitivity, holdings, pnl }: Props) {
   const [activeTab, setActiveTab] = useState<Tab>("sector");
 
   const runAt  = snapshot?.run_at  ?? "";
@@ -93,46 +88,34 @@ export function TabContainer({ snapshot, historyIndex, commodities, magaData, co
           </>
         )}
 
+        {activeTab === "convergence" && (
+          <ErrorBoundary label="最強訊號">
+            <ConvergencePanel
+              snapshot={snapshot}
+              composite={composite}
+              holdings={holdings}
+              magaData={magaData}
+            />
+          </ErrorBoundary>
+        )}
+
+        {activeTab === "longterm" && (
+          <ErrorBoundary label="長線趨勢">
+            <LongTermPanel
+              composite={composite}
+              sensitivity={sensitivity}
+              magaData={magaData}
+              snapshot={snapshot}
+              holdings={holdings}
+              pnl={pnl}
+            />
+          </ErrorBoundary>
+        )}
+
         {activeTab === "commodity" && (
           <ErrorBoundary label="商品市場">
             <CommodityPanel data={commodities} />
           </ErrorBoundary>
-        )}
-
-        {activeTab === "maga" && (
-          <ErrorBoundary label="MAGA 追蹤">
-            <MagaPanel data={magaData} snapshot={snapshot} />
-          </ErrorBoundary>
-        )}
-
-        {activeTab === "signal" && (
-          <div className="mt-6">
-            <h2 className="text-lg font-bold text-zinc-900 dark:text-white mb-1">訊號雷達</h2>
-            <p className="text-xs text-zinc-500 dark:text-zinc-400 mb-5">NLP 分析 + 關稅矩陣複合評分，權重 50:50</p>
-            <ErrorBoundary label="訊號雷達">
-              <CompositePanel data={composite} sensitivity={sensitivity} />
-            </ErrorBoundary>
-          </div>
-        )}
-
-        {activeTab === "portfolio" && (
-          <div className="mt-6">
-            <h2 className="text-lg font-bold text-zinc-900 dark:text-white mb-1">組合管理</h2>
-            <p className="text-xs text-zinc-500 dark:text-zinc-400 mb-5">依複合評分建立的建議持倉與損益追蹤</p>
-            <ErrorBoundary label="組合管理">
-              <PortfolioPanel holdings={holdings} pnl={pnl} hasComposite={composite !== null} />
-            </ErrorBoundary>
-          </div>
-        )}
-
-        {activeTab === "backtest" && (
-          <div className="mt-6">
-            <h2 className="text-lg font-bold text-zinc-900 dark:text-white mb-1">策略回測</h2>
-            <p className="text-xs text-zinc-500 dark:text-zinc-400 mb-5">基於複合訊號閾值的歷史回測結果</p>
-            <ErrorBoundary label="策略回測">
-              <BacktestPanel data={backtest} />
-            </ErrorBoundary>
-          </div>
         )}
       </main>
     </>
