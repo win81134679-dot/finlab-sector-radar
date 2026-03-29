@@ -33,7 +33,7 @@ type Tab = "sector" | "commodity" | "maga" | "signal" | "portfolio" | "backtest"
 const TABS: { id: Tab; label: string }[] = [
   { id: "sector",    label: "板塊偵測 🔍" },
   { id: "commodity", label: "商品市場 📊" },
-  { id: "maga",      label: "MAGA 追蹤 🇺🇸" },
+  { id: "maga",      label: "MAGA 追蹤 🌐" },
   { id: "signal",    label: "訊號雷達 🎯" },
   { id: "portfolio", label: "組合管理 💼" },
   { id: "backtest",  label: "策略回測 📈" },
@@ -120,7 +120,7 @@ export function TabContainer({ snapshot, historyIndex, commodities, magaData, co
             <h2 className="text-lg font-bold text-zinc-900 dark:text-white mb-1">組合管理</h2>
             <p className="text-xs text-zinc-500 dark:text-zinc-400 mb-5">依複合評分建立的建議持倉與損益追蹤</p>
             <ErrorBoundary label="組合管理">
-              <PortfolioPanel holdings={holdings} pnl={pnl} />
+              <PortfolioPanel holdings={holdings} pnl={pnl} hasComposite={composite !== null} />
             </ErrorBoundary>
           </div>
         )}

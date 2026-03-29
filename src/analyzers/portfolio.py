@@ -146,7 +146,7 @@ def build_suggested_holdings(
         sector_alloc[sector] = sector_used + raw_weight
 
         # 計算股數（以收盤價估算，若無則為 null）
-        price = stock.get("latest_price")
+        price = stock.get("price") or stock.get("latest_price")
         shares = None
         if price and price > 0:
             alloc_amount = budget * raw_weight
@@ -296,7 +296,7 @@ def run_portfolio_update(
 
     # 收集當前價格
     current_prices: dict[str, float | None] = {
-        s["id"]: s.get("latest_price")
+        s["id"]: s.get("price") or s.get("latest_price")
         for s in maga_stocks
     }
 

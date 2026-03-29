@@ -666,6 +666,28 @@ if __name__ == "__main__":
         except Exception as _e:
             _auto_log(f"[WARN] 複合評分失敗（不影響主流程）: {_e}")
 
+        # 4e. 建議持倉 + 損益更新（依賴 4c MAGA + 4d composite，非核心，失敗不中斷）
+        try:
+            import json as _json
+            _maga_latest_path = ROOT / "output" / "maga" / "latest.json"
+            _comp_latest_path = ROOT / "output" / "composite" / "latest.json"
+            if _maga_latest_path.exists() and _comp_latest_path.exists():
+                with open(_maga_latest_path, encoding="utf-8") as _f:
+                    _maga_snap = _json.load(_f)
+                with open(_comp_latest_path, encoding="utf-8") as _f:
+                    _comp_snap = _json.load(_f)
+                _maga_stocks_list = _maga_snap.get("stocks", [])
+                from src.analyzers.portfolio import run_portfolio_update as _portfolio_run
+                _holdings, _pnl = _portfolio_run(_comp_snap, _maga_stocks_list)
+                _auto_log(
+                    f"[INFO] 建議持倉更新完成：{len(_holdings.get('positions', {}))} 支"
+                    f" → output/portfolio/holdings.json"
+                )
+            else:
+                _auto_log("[INFO] MAGA 或 composite 資料不存在，跳過持倉更新")
+        except Exception as _e:
+            _auto_log(f"[WARN] 持倉更新失敗（不影響主流程）: {_e}")
+
         # 5. 送出 Discord 通知
         try:
             from src.notifier import send_daily_report, send_sector_alert, send_macro_alert, send_system_ok

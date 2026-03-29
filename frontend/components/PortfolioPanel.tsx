@@ -3,10 +3,12 @@
 "use client";
 
 import type { HoldingsSnapshot, PnlSnapshot } from "@/lib/types";
+import { getSectorName } from "@/lib/sectors";
 
 interface Props {
-  holdings: HoldingsSnapshot | null;
-  pnl:      PnlSnapshot | null;
+  holdings:     HoldingsSnapshot | null;
+  pnl:          PnlSnapshot | null;
+  hasComposite?: boolean;
 }
 
 function PnlBadge({ pct }: { pct: number | null }) {
@@ -15,13 +17,42 @@ function PnlBadge({ pct }: { pct: number | null }) {
   return <span className={`font-semibold ${color}`}>{pct > 0 ? "+" : ""}{pct.toFixed(2)}%</span>;
 }
 
-export function PortfolioPanel({ holdings, pnl }: Props) {
+export function PortfolioPanel({ holdings, pnl, hasComposite }: Props) {
   if (!holdings) {
     return (
-      <div className="flex flex-col items-center justify-center py-20 text-zinc-400 dark:text-zinc-600">
-        <span className="text-4xl mb-3">📋</span>
-        <p className="text-sm">建議持倉尚未生成</p>
-        <p className="text-xs mt-1 opacity-60">需先完成複合評分分析</p>
+      <div className="flex flex-col items-center justify-center py-16 space-y-6">
+        {/* Step 1 */}
+        <div className={`flex items-center gap-3 px-5 py-3.5 rounded-xl border w-full max-w-sm ${
+          hasComposite
+            ? "border-emerald-300/60 dark:border-emerald-700/40 bg-emerald-50/60 dark:bg-emerald-900/20"
+            : "border-zinc-200/40 dark:border-zinc-700/40 bg-zinc-50/60 dark:bg-zinc-900/30"
+        }`}>
+          <span className="text-xl">{hasComposite ? "✅" : "⬜"}</span>
+          <div>
+            <p className={`text-sm font-semibold ${
+              hasComposite ? "text-emerald-700 dark:text-emerald-300" : "text-zinc-500 dark:text-zinc-400"
+            }`}>Step 1：複合評分分析</p>
+            <p className="text-xs text-zinc-400 dark:text-zinc-500">
+              {hasComposite ? "NLP + 關稅矩陣評分已完成" : "尚未執行——請先執行 --auto"}
+            </p>
+          </div>
+        </div>
+
+        {/* 箭頭 */}
+        <div className="text-zinc-300 dark:text-zinc-600 text-xl">↓</div>
+
+        {/* Step 2 */}
+        <div className="flex items-center gap-3 px-5 py-3.5 rounded-xl border border-zinc-200/40 dark:border-zinc-700/40 bg-zinc-50/60 dark:bg-zinc-900/30 w-full max-w-sm">
+          <span className="text-xl">{hasComposite ? "⏳" : "⬜"}</span>
+          <div>
+            <p className="text-sm font-semibold text-zinc-500 dark:text-zinc-400">Step 2：建議持倉生成</p>
+            <p className="text-xs text-zinc-400 dark:text-zinc-500">
+              {hasComposite
+                ? "待下次 --auto 執行後即可顯示"
+                : "需先完成 Step 1"}
+            </p>
+          </div>
+        </div>
       </div>
     );
   }
@@ -70,7 +101,7 @@ export function PortfolioPanel({ holdings, pnl }: Props) {
                   <tr key={ticker} className="hover:bg-zinc-50/60 dark:hover:bg-zinc-800/20 transition-colors">
                     <td className="px-4 py-2 font-mono font-semibold text-zinc-800 dark:text-zinc-200">{ticker}</td>
                     <td className="px-3 py-2 text-zinc-700 dark:text-zinc-300 truncate max-w-[7rem]">{pos.name_zh}</td>
-                    <td className="px-3 py-2 text-zinc-500 dark:text-zinc-400 truncate max-w-[6rem]">{pos.sector}</td>
+                    <td className="px-3 py-2 text-zinc-500 dark:text-zinc-400 truncate max-w-[6rem]">{getSectorName(pos.sector)}</td>
                     <td className="px-3 py-2 text-right font-mono">
                       <span className={pos.composite_score >= 0 ? "text-emerald-600 dark:text-emerald-400" : "text-red-500"}>
                         {pos.composite_score >= 0 ? "+" : ""}{pos.composite_score.toFixed(2)}

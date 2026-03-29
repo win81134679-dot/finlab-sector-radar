@@ -6,6 +6,7 @@
 
 import { useState } from "react";
 import type { CompositeSnapshot, SensitivitySnapshot, SectorStability } from "@/lib/types";
+import { getSectorName } from "@/lib/sectors";
 
 interface Props {
   data:        CompositeSnapshot | null;
@@ -70,8 +71,8 @@ function SectorRow({ sectorId, score, stab }: SectorRowProps) {
   const textClass = SIGNAL_COLOR[score.signal] ?? "text-zinc-500";
   return (
     <div className={`flex items-center gap-3 px-3 py-2 rounded-lg border ${bgClass}`}>
-      <div className="w-24 shrink-0 flex items-center gap-1">
-        <span className="text-xs font-medium text-zinc-700 dark:text-zinc-300 truncate">{sectorId}</span>
+      <div className="w-28 shrink-0 flex items-center gap-1">
+        <span className="text-xs font-medium text-zinc-700 dark:text-zinc-300 truncate">{getSectorName(sectorId)}</span>
         <StabilityBadge stab={stab} />
       </div>
       <ScoreBar value={score.composite} />
@@ -247,13 +248,13 @@ export function CompositePanel({ data, sensitivity }: Props) {
             {alwaysBuy.length > 0 && (
               <p className="text-xs text-zinc-500 dark:text-zinc-400">
                 <span className="font-medium text-emerald-600 dark:text-emerald-400">穩健買入：</span>
-                {alwaysBuy.join("、")}
+                {alwaysBuy.map(getSectorName).join("、")}
               </p>
             )}
             {alwaysSell.length > 0 && (
               <p className="text-xs text-zinc-500 dark:text-zinc-400">
                 <span className="font-medium text-red-500 dark:text-red-400">穩健賣出：</span>
-                {alwaysSell.join("、")}
+                {alwaysSell.map(getSectorName).join("、")}
               </p>
             )}
           </div>

@@ -1,0 +1,87 @@
+{
+  "updated_at": "2026-03-29T08:51:23.253225+00:00",
+  "positions": {
+    "2330": {
+      "name_zh": "台積電",
+      "sector": "foundry",
+      "category": "beneficiary",
+      "composite_score": 0.3,
+      "entry_price": 1820.0,
+      "shares": 0,
+      "weight": 0.1364,
+      "added_at": "2026-03-29T08:51:23.253225+00:00",
+      "reason": "訊號進場"
+    },
+    "2303": {
+      "name_zh": "聯電",
+      "sector": "foundry",
+      "category": "beneficiary",
+      "composite_score": 0.3,
+      "entry_price": 57.8,
+      "shares": 2000,
+      "weight": 0.1364,
+      "added_at": "2026-03-29T08:51:23.253225+00:00",
+      "reason": "訊號進場"
+    },
+    "5347": {
+      "name_zh": "世界先進",
+      "sector": "foundry",
+      "category": "beneficiary",
+      "composite_score": 0.3,
+      "entry_price": 120.5,
+      "shares": 1000,
+      "weight": 0.1273,
+      "added_at": "2026-03-29T08:51:23.253225+00:00",
+      "reason": "訊號進場"
+    },
+    "3711": {
+      "name_zh": "日月光",
+      "sector": "packaging",
+      "category": "beneficiary",
+      "composite_score": 0.25,
+      "entry_price": 353.5,
+      "shares": 0,
+      "weight": 0.1136,
+      "added_at": "2026-03-29T08:51:23.253225+00:00",
+      "reason": "訊號進場"
+    },
+    "2449": {
+      "name_zh": "京元電",
+      "sector": "packaging",
+      "category": "beneficiary",
+      "composite_score": 0.25,
+      "entry_price": 278.5,
+      "shares": 0,
+      "weight": 0.1136,
+      "added_at": "2026-03-29T08:51:23.253225+00:00",
+      "reason": "訊號進場"
+    },
+    "6257": {
+      "name_zh": "矽格",
+      "sector": "packaging",
+      "category": "beneficiary",
+      "composite_score": 0.25,
+      "entry_price": 146.0,
+      "shares": 0,
+      "weight": 0.1136,
+      "added_at": "2026-03-29T08:51:23.253225+00:00",
+      "reason": "訊號進場"
+    },
+    "2441": {
+      "name_zh": "超豐",
+      "sector": "packaging",
+      "category": "beneficiary",
+      "composite_score": 0.25,
+      "entry_price": 95.5,
+      "shares": 0,
+      "weight": 0.0591,
+      "added_at": "2026-03-29T08:51:23.253225+00:00",
+      "reason": "訊號進場"
+    }
+  },
+  "total_weight": 0.8,
+  "sector_weights": {
+    "foundry": 0.4001,
+    "packaging": 0.3999
+  }
+}
