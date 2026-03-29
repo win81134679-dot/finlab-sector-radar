@@ -3,7 +3,7 @@
 // GET 不需認證（純讀取，無敏感操作）
 
 import { NextResponse } from "next/server";
-import { kv } from "@vercel/kv";
+import { Redis } from "@upstash/redis";
 import type { TrumpEventLog } from "@/lib/types";
 
 export const runtime = "nodejs";
@@ -11,9 +11,15 @@ export const runtime = "nodejs";
 // 60 秒 CDN 快取（允許前端讀到略舊的資料，但不至於每次都打 KV）
 export const revalidate = 60;
 
+// 支援 Upstash 兩種 env var 命名慣例
+const redis = new Redis({
+  url:   process.env.KV_REDIS_REST_URL   ?? process.env.KV_REST_API_URL   ?? "",
+  token: process.env.KV_REDIS_REST_TOKEN ?? process.env.KV_REST_API_TOKEN ?? "",
+});
+
 export async function GET() {
   try {
-    const log = await kv.get<TrumpEventLog>("trump:event_log");
+    const log = await redis.get<TrumpEventLog>("trump:event_log");
 
     if (!log) {
       return NextResponse.json(

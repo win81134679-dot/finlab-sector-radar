@@ -7,8 +7,14 @@
 import type { NextRequest } from "next/server";
 import { NextResponse } from "next/server";
 import Parser from "rss-parser";
-import { kv } from "@vercel/kv";
+import { Redis } from "@upstash/redis";
 import { analyzePost, aggregateImpacts } from "@/lib/trump-nlp";
+
+// 支援 Upstash 兩種 env var 命名慣例（KV_REDIS_REST_* 或 KV_REST_API_*）
+const redis = new Redis({
+  url:   process.env.KV_REDIS_REST_URL   ?? process.env.KV_REST_API_URL   ?? "",
+  token: process.env.KV_REDIS_REST_TOKEN ?? process.env.KV_REST_API_TOKEN ?? "",
+});
 import { SECTOR_NAMES } from "@/lib/sectors";
 import type {
   TrumpPost,
@@ -162,10 +168,10 @@ export async function POST(request: NextRequest) {
     summary:    "",
   })));
 
-  // 4. 讀取 Vercel KV 上一次的板塊狀態
+  // 4. 讀取 KV 上一次的板塊狀態
   let prevState: Record<string, SectorState> = {};
   try {
-    prevState = (await kv.get<Record<string, SectorState>>(KV_KEY_STATE)) ?? {};
+    prevState = (await redis.get<Record<string, SectorState>>(KV_KEY_STATE)) ?? {};
   } catch {
     // KV 未設定或第一次執行，prevState 維持空
   }
@@ -197,7 +203,7 @@ export async function POST(request: NextRequest) {
   // 6. 讀取舊的 event log（保留歷史貼文）
   let existingLog: TrumpEventLog | null = null;
   try {
-    existingLog = await kv.get<TrumpEventLog>(KV_KEY_LOG);
+    existingLog = await redis.get<TrumpEventLog>(KV_KEY_LOG);
   } catch {
     /* ignore */
   }
@@ -219,11 +225,11 @@ export async function POST(request: NextRequest) {
   // 7. 寫回 KV
   try {
     await Promise.all([
-      kv.set(KV_KEY_STATE, newState),
-      kv.set(KV_KEY_LOG, newLog, { ex: 7200 }),  // 2 小時過期
+      redis.set(KV_KEY_STATE, newState),
+      redis.set(KV_KEY_LOG, newLog, { ex: 7200 }),  // 2 小時過期
     ]);
   } catch (e) {
-    console.error("Vercel KV 寫入失敗:", e);
+    console.error("KV 寫入失敗:", e);
     return NextResponse.json({ ok: false, error: "KV 寫入失敗" }, { status: 500 });
   }
 
