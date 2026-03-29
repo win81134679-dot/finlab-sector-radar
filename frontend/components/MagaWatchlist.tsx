@@ -6,6 +6,16 @@ import type { MagaStock } from "@/lib/types";
 import { ImpactBadge } from "@/components/ImpactBadge";
 import { StockKLine } from "@/components/StockKLine";
 
+// 板塊生命週期章節配色
+const PHASE_STYLE: Record<string, string> = {
+  "加速期": "text-orange-600 bg-orange-50 dark:text-orange-300 dark:bg-orange-900/25 border-orange-200 dark:border-orange-700/40",
+  "確認期": "text-blue-600 bg-blue-50 dark:text-blue-300 dark:bg-blue-900/25 border-blue-200 dark:border-blue-700/40",
+  "萌芽期": "text-amber-600 bg-amber-50 dark:text-amber-300 dark:bg-amber-900/25 border-amber-200 dark:border-amber-700/40",
+};
+const PHASE_ICON: Record<string, string> = {
+  "加速期": "🚀", "確認期": "🔍", "萌芽期": "🌱",
+};
+
 function fmtPct(v: number | null): string {
   if (v === null) return "—";
   return `${v > 0 ? "+" : ""}${v.toFixed(2)}%`;
@@ -20,7 +30,7 @@ function pctColor(v: number | null): string {
     : "text-zinc-500";
 }
 
-function StockRow({ stock }: { stock: MagaStock }) {
+function StockRow({ stock, phase }: { stock: MagaStock; phase?: string }) {
   const [expanded, setExpanded] = useState(false);
   const hasChart = (stock.ohlcv_7d?.length ?? 0) > 0;
 
@@ -35,6 +45,11 @@ function StockRow({ stock }: { stock: MagaStock }) {
             <span className="font-mono text-xs text-zinc-400 shrink-0">{stock.id}</span>
             <span className="text-sm font-medium text-zinc-900 dark:text-white">{stock.name_zh}</span>
             <span className="text-xs text-zinc-400 truncate">{stock.sector_name}</span>
+            {phase && (
+              <span className={`text-xs font-medium px-1.5 py-0.5 rounded border ${PHASE_STYLE[phase]}`}>
+                {PHASE_ICON[phase]} {phase}
+              </span>
+            )}
           </div>
         </div>
 
@@ -68,9 +83,10 @@ function StockRow({ stock }: { stock: MagaStock }) {
 
 interface Props {
   stocks: MagaStock[];
+  sectorPhases: Record<string, string>;
 }
 
-export function MagaWatchlist({ stocks }: Props) {
+export function MagaWatchlist({ stocks, sectorPhases }: Props) {
   const beneficiary = [...stocks.filter(s => s.category === "beneficiary")]
     .sort((a, b) => b.impact_score - a.impact_score);
   const victim = [...stocks.filter(s => s.category === "victim")]
@@ -85,7 +101,7 @@ export function MagaWatchlist({ stocks }: Props) {
           <span className="text-xs text-zinc-400 font-normal">({beneficiary.length} 支)</span>
         </h3>
         <div className="space-y-2">
-          {beneficiary.map(s => <StockRow key={s.id} stock={s} />)}
+          {beneficiary.map(s => <StockRow key={s.id} stock={s} phase={sectorPhases[s.sector_id]} />)}
           {beneficiary.length === 0 && (
             <p className="text-sm text-zinc-400 py-6 text-center">暫無資料</p>
           )}
@@ -99,7 +115,7 @@ export function MagaWatchlist({ stocks }: Props) {
           <span className="text-xs text-zinc-400 font-normal">({victim.length} 支)</span>
         </h3>
         <div className="space-y-2">
-          {victim.map(s => <StockRow key={s.id} stock={s} />)}
+          {victim.map(s => <StockRow key={s.id} stock={s} phase={sectorPhases[s.sector_id]} />)}
           {victim.length === 0 && (
             <p className="text-sm text-zinc-400 py-6 text-center">暫無資料</p>
           )}

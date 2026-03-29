@@ -90,7 +90,7 @@ export function TabContainer({ snapshot, historyIndex, commodities, magaData }: 
 
         {activeTab === "maga" && (
           <ErrorBoundary label="MAGA 追蹤">
-            <MagaPanel data={magaData} />
+            <MagaPanel data={magaData} snapshot={snapshot} />
           </ErrorBoundary>
         )}
       </main>

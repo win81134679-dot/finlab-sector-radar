@@ -416,7 +416,20 @@ def run_maga_analysis(fetcher, sector_map) -> dict:
 
     # 2. 股價資料（複用 DataFetcher，已含快取）
     change_pct_map = fetcher.get_latest_change_pct()
-    ohlcv_map = fetcher.get_ohlcv_batch(all_tickers, days=7)
+    ohlcv_map = fetcher.get_ohlcv_batch(all_tickers, days=365)
+
+    # 2b. 將完整 OHLCV 寫出到 output/ohlcv/ 供前端 K 線圖年區間使用
+    ohlcv_dir = Path(__file__).resolve().parent.parent.parent / "output" / "ohlcv"
+    ohlcv_dir.mkdir(parents=True, exist_ok=True)
+    for _tick, _bars in ohlcv_map.items():
+        if _bars:
+            try:
+                (_ohlcv_f := ohlcv_dir / f"{_tick}.json").write_text(
+                    json.dumps(_bars, ensure_ascii=False, separators=(",", ":")),
+                    encoding="utf-8",
+                )
+            except Exception as _e:
+                logger.warning(f"OHLCV 寫檔失敗 ({_tick}): {_e}")
 
     # 3. 7 日漲跌幅
     change_7d_map: dict[str, float | None] = {}
@@ -460,7 +473,7 @@ def run_maga_analysis(fetcher, sector_map) -> dict:
                 "price": price,
                 "change_1d_pct": change_pct_map.get(ticker),
                 "change_7d_pct": change_7d_map.get(ticker),
-                "ohlcv_7d": ohlcv,
+                "ohlcv_7d": ohlcv[-7:] if ohlcv else [],
             })
 
     # 6. 新聞 RSS

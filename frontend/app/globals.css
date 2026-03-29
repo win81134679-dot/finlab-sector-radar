@@ -1,5 +1,8 @@
 @import "tailwindcss";
 
+/* Tailwind v4：啟用 .dark class 觸發 dark: 變體（預設為 media query）*/
+@custom-variant dark (&:where(.dark, .dark *));
+
 /* ─── Light theme tokens ─── */
 :root {
   --bg-page:    #f8fafc;  /* slate-50 */

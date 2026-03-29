@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-29T07:37:26.661801+00:00",
+  "updated_at": "2026-03-29T07:59:43.007196+00:00",
   "assets": {
     "gold": {
       "slug": "gold",
@@ -31,7 +31,7 @@
           "source": "Wilder (1978)."
         }
       ],
-      "last_updated": "2026-03-29T07:37:26.596581+00:00"
+      "last_updated": "2026-03-29T07:59:42.944204+00:00"
     },
     "silver": {
       "slug": "silver",
@@ -63,7 +63,7 @@
           "source": "Jegadeesh & Titman (1993), J. Finance."
         }
       ],
-      "last_updated": "2026-03-29T07:37:26.600593+00:00"
+      "last_updated": "2026-03-29T07:59:42.950192+00:00"
     },
     "copper": {
       "slug": "copper",
@@ -95,7 +95,7 @@
           "source": "Wilder (1978)."
         }
       ],
-      "last_updated": "2026-03-29T07:37:26.604596+00:00"
+      "last_updated": "2026-03-29T07:59:42.954205+00:00"
     },
     "wti": {
       "slug": "wti",
@@ -120,7 +120,7 @@
           "source": "Baumeister & Kilian (2016), J. Applied Econometrics."
         }
       ],
-      "last_updated": "2026-03-29T07:37:26.609595+00:00"
+      "last_updated": "2026-03-29T07:59:42.957191+00:00"
     },
     "brent": {
       "slug": "brent",
@@ -152,7 +152,7 @@
           "source": "Fattouh (2014), Oxford Energy Comment."
         }
       ],
-      "last_updated": "2026-03-29T07:37:26.612597+00:00"
+      "last_updated": "2026-03-29T07:59:42.961208+00:00"
     },
     "natgas": {
       "slug": "natgas",
@@ -170,7 +170,7 @@
           "source": "Pindyck (1999), J. Environmental Economics & Management."
         }
       ],
-      "last_updated": "2026-03-29T07:37:26.616581+00:00"
+      "last_updated": "2026-03-29T07:59:42.966191+00:00"
     },
     "vix": {
       "slug": "vix",
@@ -188,7 +188,7 @@
           "source": "Whaley (2000), J. Portfolio Management."
         }
       ],
-      "last_updated": "2026-03-29T07:37:26.620579+00:00"
+      "last_updated": "2026-03-29T07:59:42.969207+00:00"
     },
     "dxy": {
       "slug": "dxy",
@@ -220,7 +220,7 @@
           "source": "Meese & Rogoff (1983), J. International Economics."
         }
       ],
-      "last_updated": "2026-03-29T07:37:26.624581+00:00"
+      "last_updated": "2026-03-29T07:59:42.973188+00:00"
     },
     "us2y": {
       "slug": "us2y",
@@ -238,7 +238,7 @@
           "source": "Taylor (1993), Carnegie-Rochester Conference Series."
         }
       ],
-      "last_updated": "2026-03-29T07:37:26.627796+00:00"
+      "last_updated": "2026-03-29T07:59:42.976206+00:00"
     },
     "us10y": {
       "slug": "us10y",
@@ -263,7 +263,7 @@
           "source": "Shiller (1981), Am. Econ. Review."
         }
       ],
-      "last_updated": "2026-03-29T07:37:26.631813+00:00"
+      "last_updated": "2026-03-29T07:59:42.981190+00:00"
     },
     "us30y": {
       "slug": "us30y",
@@ -288,15 +288,15 @@
           "source": "Diebold & Li (2006), J. Econometrics."
         }
       ],
-      "last_updated": "2026-03-29T07:37:26.634811+00:00"
+      "last_updated": "2026-03-29T07:59:42.985188+00:00"
     },
     "btc": {
       "slug": "btc",
       "name_zh": "比特幣 BTC",
       "category": "crypto",
-      "price": 66622.6953,
-      "change_1d_pct": 0.46,
-      "change_7d_pct": -1.8,
+      "price": 66656.9141,
+      "change_1d_pct": 0.51,
+      "change_7d_pct": -1.75,
       "signals": [
         {
           "key": "btc_neutral",
@@ -309,19 +309,19 @@
           "key": "btc_above_200ma",
           "triggered": false,
           "severity": "medium",
-          "commentary": "BTC $66,623，200MA $91,076。跌破 200MA，進入加密熊市區間，建議大幅降低風險資產暴露。",
+          "commentary": "BTC $66,657，200MA $91,076。跌破 200MA，進入加密熊市區間，建議大幅降低風險資產暴露。",
           "source": "Liu & Tsyvinski (2021), Rev. Financial Studies."
         }
       ],
-      "last_updated": "2026-03-29T07:37:26.641808+00:00"
+      "last_updated": "2026-03-29T07:59:42.989192+00:00"
     },
     "eth": {
       "slug": "eth",
       "name_zh": "以太坊 ETH",
       "category": "crypto",
-      "price": 2002.5573,
-      "change_1d_pct": 0.49,
-      "change_7d_pct": -2.46,
+      "price": 2005.7927,
+      "change_1d_pct": 0.66,
+      "change_7d_pct": -2.3,
       "signals": [
         {
           "key": "eth_btc_ratio",
@@ -334,29 +334,29 @@
           "key": "eth_above_200ma",
           "triggered": false,
           "severity": "medium",
-          "commentary": "ETH $2,003，200MA $3,081，空頭格局。",
+          "commentary": "ETH $2,006，200MA $3,081，空頭格局。",
           "source": "Liu & Tsyvinski (2021), Rev. Financial Studies."
         }
       ],
-      "last_updated": "2026-03-29T07:37:26.646803+00:00"
+      "last_updated": "2026-03-29T07:59:42.994191+00:00"
     },
     "sol": {
       "slug": "sol",
       "name_zh": "Solana SOL",
       "category": "crypto",
-      "price": 82.3788,
-      "change_1d_pct": 0.44,
-      "change_7d_pct": -4.35,
+      "price": 82.4935,
+      "change_1d_pct": 0.58,
+      "change_7d_pct": -4.22,
       "signals": [
         {
           "key": "sol_above_200ma",
           "triggered": false,
           "severity": "medium",
-          "commentary": "SOL $82.38，200MA $141.21，空頭格局。Layer-1 生態鏈 200MA 上/下方是市場認知的牛熊分界。",
+          "commentary": "SOL $82.49，200MA $141.21，空頭格局。Layer-1 生態鏈 200MA 上/下方是市場認知的牛熊分界。",
           "source": "Liu & Tsyvinski (2021), Rev. Financial Studies."
         }
       ],
-      "last_updated": "2026-03-29T07:37:26.652796+00:00"
+      "last_updated": "2026-03-29T07:59:43.000192+00:00"
     },
     "sp500": {
       "slug": "sp500",
@@ -388,7 +388,7 @@
           "source": "Wilder (1978); Lo & MacKinlay (1988), Rev. Financial Studies."
         }
       ],
-      "last_updated": "2026-03-29T07:37:26.659800+00:00"
+      "last_updated": "2026-03-29T07:59:43.004197+00:00"
     }
   },
   "yield_curve": [

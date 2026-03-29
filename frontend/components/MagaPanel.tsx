@@ -1,6 +1,6 @@
 // MagaPanel.tsx — MAGA 投資組合追蹤主面板
 
-import type { MagaSnapshot } from "@/lib/types";
+import type { MagaSnapshot, SignalSnapshot, SectorData } from "@/lib/types";
 import { MagaPolicyCard } from "@/components/MagaPolicyCard";
 import { MagaWatchlist } from "@/components/MagaWatchlist";
 import { MagaSensitivityMatrix } from "@/components/MagaSensitivityMatrix";
@@ -8,6 +8,7 @@ import { MagaNewsTimeline } from "@/components/MagaNewsTimeline";
 
 interface Props {
   data: MagaSnapshot | null;
+  snapshot?: SignalSnapshot | null;
 }
 
 function SummaryBar({ summary }: { summary: MagaSnapshot["summary"] }) {
@@ -36,7 +37,7 @@ function SummaryBar({ summary }: { summary: MagaSnapshot["summary"] }) {
   );
 }
 
-export function MagaPanel({ data }: Props) {
+export function MagaPanel({ data, snapshot }: Props) {
   if (!data) {
     return (
       <div className="mt-8">
@@ -57,6 +58,21 @@ export function MagaPanel({ data }: Props) {
     .filter(p => p.active)
     .map(p => p.key);
 
+  // 板塊生命週期計算（來自主要指標資料）
+  function computePhase(sector: SectorData | undefined): string {
+    if (!sector) return "";
+    if (sector.level === "強烈關注") return "加速期";
+    if (sector.level === "觀察中") return sector.total >= 3 ? "確認期" : "萌芽期";
+    return "";
+  }
+  const sectorPhases: Record<string, string> = {};
+  if (snapshot?.sectors) {
+    for (const [sid, sdata] of Object.entries(snapshot.sectors)) {
+      const ph = computePhase(sdata);
+      if (ph) sectorPhases[sid] = ph;
+    }
+  }
+
   return (
     <div className="mt-6 space-y-8">
       {/* 政策摘要 */}
@@ -72,7 +88,7 @@ export function MagaPanel({ data }: Props) {
         <h2 className="text-lg font-bold text-zinc-900 dark:text-white mb-4">
           🇺🇸 MAGA 受益 / 受害清單
         </h2>
-        <MagaWatchlist stocks={data.stocks} />
+        <MagaWatchlist stocks={data.stocks} sectorPhases={sectorPhases} />
       </section>
 
       {/* 政策敏感度矩陣 */}
