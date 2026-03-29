@@ -4,7 +4,7 @@
 import { useState, useMemo } from "react";
 import type { SignalSnapshot, HistoryIndex, CommoditySnapshot, MagaSnapshot, CompositeSnapshot, HoldingsSnapshot, PnlSnapshot, SensitivitySnapshot } from "@/lib/types";
 import { MacroPanel } from "@/components/MacroPanel";
-import { MacroWarningBanner } from "@/components/MacroWarningBanner";
+import { CommodityAlertBanner } from "@/components/CommodityAlertBanner";
 import { StaleDataBanner } from "@/components/StaleDataBanner";
 import { SectorGrid } from "@/components/SectorGrid";
 import { ErrorBoundary } from "@/components/ErrorBoundary";
@@ -44,8 +44,9 @@ function ResonanceBar({
   holdings: HoldingsSnapshot | null;
   magaData: MagaSnapshot | null;
 }) {
-  const hotSectors = useMemo(() => {
-    if (!snapshot?.sectors) return [];
+  const result = useMemo(() => {
+    if (!snapshot?.sectors) return { hotSectors: [], dangerSectors: [] };
+
     const holdingStockIds = new Set(Object.keys(holdings?.positions ?? {}));
     const magaBeneSectors = new Set(
       (magaData?.stocks ?? [])
@@ -53,53 +54,123 @@ function ResonanceBar({
         .map((s) => s.sector_id)
         .filter((id): id is string => Boolean(id))
     );
-    return Object.entries(snapshot.sectors)
-      .map(([id, sector]) => {
-        let heat = 0;
-        const badges: string[] = [];
-        if (sector.level === "強烈關注") { heat += 3; badges.push(`短線 ${Math.round(sector.total)}燈`); }
-        else if (sector.level === "觀察中") { heat += 1; }
-        const cd = composite?.scores?.[id];
-        if (cd) {
-          if (cd.signal === "強烈買入")  { heat += 3; badges.push("長線強買"); }
-          else if (cd.signal === "買入") { heat += 2; badges.push("長線買入"); }
-          else if (cd.signal === "賣出")      { heat -= 1; }
-          else if (cd.signal === "強烈賣出")  { heat -= 2; }
-        }
-        if (sector.stocks.some((s) => holdingStockIds.has(s.id))) { heat += 1; badges.push("持倉"); }
-        if (magaBeneSectors.has(id)) { heat += 1; badges.push("MAGA"); }
-        return { id, name: sector.name_zh, heat, level: sector.level, badges };
-      })
-      .filter((s) => s.heat >= 4 && s.level !== "忽略")
-      .sort((a, b) => b.heat - a.heat)
-      .slice(0, 6);
+    const magaVictimSectors = new Set(
+      (magaData?.stocks ?? [])
+        .filter((s) => s.category === "victim")
+        .map((s) => s.sector_id)
+        .filter((id): id is string => Boolean(id))
+    );
+
+    const hot:    Array<{ id: string; name: string; heat: number;   level: string; badges: string[] }> = [];
+    const danger: Array<{ id: string; name: string; danger: number; level: string; badges: string[] }> = [];
+
+    for (const [id, sector] of Object.entries(snapshot.sectors)) {
+      const cd  = composite?.scores?.[id];
+      const nlp = (cd as { nlp?: number } | undefined)?.nlp ?? 0;
+
+      // ── 進攻側 ──
+      let heat = 0;
+      const hBadges: string[] = [];
+      if (sector.level === "強烈關注") { heat += 3; hBadges.push(`短線 ${Math.round(sector.total)}燈`); }
+      else if (sector.level === "觀察中") { heat += 1; }
+      if (cd) {
+        if (cd.signal === "強烈買入")  { heat += 3; hBadges.push("長線強買"); }
+        else if (cd.signal === "買入") { heat += 2; hBadges.push("長線買入"); }
+        else if (cd.signal === "賣出")       { heat -= 1; }
+        else if (cd.signal === "強烈賣出")   { heat -= 2; }
+      }
+      if (sector.stocks.some((s) => holdingStockIds.has(s.id))) { heat += 1; hBadges.push("持倉"); }
+      if (magaBeneSectors.has(id)) { heat += 1; hBadges.push("MAGA"); }
+      if (heat >= 4 && sector.level !== "忽略") {
+        hot.push({ id, name: sector.name_zh, heat, level: sector.level, badges: hBadges });
+      }
+
+      // ── 危險側 ──
+      let dHeat = 0;
+      const dBadges: string[] = [];
+      if (cd) {
+        if (cd.signal === "強烈賣出") { dHeat += 3; dBadges.push("長線強賣"); }
+        else if (cd.signal === "賣出") { dHeat += 2; dBadges.push("長線賣出"); }
+        if (nlp < -0.25) { dHeat += 1; dBadges.push("NLP空方"); }
+      }
+      if (sector.level === "觀察中" && dHeat >= 1) { dHeat += 1; dBadges.push("短線異動"); }
+      if (magaVictimSectors.has(id)) { dHeat += 1; dBadges.push("MAGA受害"); }
+      if (dHeat >= 2) {
+        danger.push({ id, name: sector.name_zh, danger: dHeat, level: sector.level, badges: dBadges });
+      }
+    }
+
+    return {
+      hotSectors:    hot.sort((a, b) => b.heat - a.heat).slice(0, 5),
+      dangerSectors: danger.sort((a, b) => b.danger - a.danger).slice(0, 4),
+    };
   }, [snapshot, composite, holdings, magaData]);
 
-  if (hotSectors.length === 0) return null;
+  const { hotSectors, dangerSectors } = result;
+  if (hotSectors.length === 0 && dangerSectors.length === 0) return null;
 
   return (
-    <div className="border-b border-rose-200/50 dark:border-rose-900/40 bg-gradient-to-r from-rose-50/80 via-amber-50/50 to-transparent dark:from-rose-950/30 dark:via-amber-950/20 dark:to-transparent">
-      <div className="max-w-screen-xl mx-auto px-4 py-2 flex items-center gap-3 overflow-x-auto">
-        <span className="text-xs font-bold text-rose-600 dark:text-rose-400 shrink-0">🔥 全景共振</span>
-        <div className="w-px h-3.5 bg-rose-200/80 dark:bg-rose-800/50 shrink-0" />
-        <div className="flex gap-2">
-          {hotSectors.map((s) => (
-            <div
-              key={s.id}
-              className={`flex items-center gap-1.5 px-2.5 py-1 rounded-full text-xs font-medium border shrink-0 ${
-                s.heat >= 6
-                  ? "bg-rose-100/90 dark:bg-rose-900/40 text-rose-800 dark:text-rose-200 border-rose-300/60 dark:border-rose-700/50"
-                  : "bg-amber-100/90 dark:bg-amber-900/40 text-amber-800 dark:text-amber-200 border-amber-300/60 dark:border-amber-700/50"
-              }`}
-            >
-              {s.heat >= 6 ? "🔥" : "⚡"}
-              <span>{s.name}</span>
-              {s.badges.map((b, i) => (
-                <span key={i} className="opacity-70 font-normal">· {b}</span>
+    <div className="border-b border-zinc-200/40 dark:border-zinc-800/40 bg-zinc-50/60 dark:bg-zinc-900/40">
+      <div className="max-w-screen-xl mx-auto px-4 py-1.5 flex items-center gap-2.5 overflow-x-auto">
+
+        {/* 進攻側 */}
+        {hotSectors.length > 0 && (
+          <>
+            <span className="text-[11px] font-bold text-emerald-600 dark:text-emerald-400 shrink-0">🔥 進攻機會</span>
+            <div className="w-px h-3.5 bg-zinc-300 dark:bg-zinc-700 shrink-0" />
+            <div className="flex gap-1.5">
+              {hotSectors.map((s) => (
+                <div
+                  key={s.id}
+                  className={`flex items-center gap-1 px-2 py-1 rounded-full text-[11px] font-medium border shrink-0 ${
+                    s.heat >= 7
+                      ? "bg-emerald-100/90 dark:bg-emerald-900/40 text-emerald-800 dark:text-emerald-200 border-emerald-300/60 dark:border-emerald-700/50"
+                      : s.heat >= 5
+                      ? "bg-sky-100/90 dark:bg-sky-900/40 text-sky-800 dark:text-sky-200 border-sky-300/60 dark:border-sky-700/50"
+                      : "bg-amber-100/90 dark:bg-amber-900/40 text-amber-800 dark:text-amber-200 border-amber-300/60 dark:border-amber-700/50"
+                  }`}
+                >
+                  {s.heat >= 7 ? "🔥" : s.heat >= 5 ? "⚡" : "↗️"}
+                  <span>{s.name}</span>
+                  {s.badges.map((b, i) => (
+                    <span key={i} className="opacity-60 font-normal">· {b}</span>
+                  ))}
+                </div>
               ))}
             </div>
-          ))}
-        </div>
+          </>
+        )}
+
+        {/* 分隔 */}
+        {hotSectors.length > 0 && dangerSectors.length > 0 && (
+          <div className="w-px h-4 bg-zinc-300 dark:bg-zinc-600 shrink-0 mx-1" />
+        )}
+
+        {/* 危險側 */}
+        {dangerSectors.length > 0 && (
+          <>
+            <span className="text-[11px] font-bold text-red-600 dark:text-red-400 shrink-0">🛡️ 警戒危險</span>
+            <div className="w-px h-3.5 bg-zinc-300 dark:bg-zinc-700 shrink-0" />
+            <div className="flex gap-1.5">
+              {dangerSectors.map((s) => (
+                <div
+                  key={s.id}
+                  className={`flex items-center gap-1 px-2 py-1 rounded-full text-[11px] font-medium border shrink-0 ${
+                    s.danger >= 4
+                      ? "bg-red-100/90 dark:bg-red-900/40 text-red-800 dark:text-red-200 border-red-300/60 dark:border-red-700/50"
+                      : "bg-orange-100/90 dark:bg-orange-900/40 text-orange-800 dark:text-orange-200 border-orange-300/60 dark:border-orange-700/50"
+                  }`}
+                >
+                  {s.danger >= 4 ? "🚨" : "⚠️"}
+                  <span>{s.name}</span>
+                  {s.badges.map((b, i) => (
+                    <span key={i} className="opacity-60 font-normal">· {b}</span>
+                  ))}
+                </div>
+              ))}
+            </div>
+          </>
+        )}
       </div>
     </div>
   );
@@ -115,8 +186,8 @@ export function TabContainer({ snapshot, historyIndex, commodities, magaData, co
 
   return (
     <>
-      {/* 橫幅（全局，不受 tab 影響）*/}
-      {showMacroWarning && <MacroWarningBanner />}
+      {/* 商品市場警示橫幅（取代純文字宏觀警示）*/}
+      <CommodityAlertBanner commodities={commodities} macroWarning={showMacroWarning} />
       {runAt && <StaleDataBanner runAt={runAt} />}
 
       {/* Tab 導航列 */}

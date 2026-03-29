@@ -67,8 +67,8 @@ interface ConvergenceStock {
   tags:        Array<"持倉" | "MAGA">;
   combined:    number;
   lightRatio:  number;
-  composite:   number;
-}
+  composite:   number;  nlpBearish:  boolean;
+  nlpSeverity: "high" | "medium" | null;}
 
 const LEVEL_BADGE: Record<string, string> = {
   "強烈關注": "bg-red-100/80 dark:bg-red-900/30 text-red-700 dark:text-red-300 border-red-200 dark:border-red-800/50",
@@ -126,6 +126,22 @@ function StockCard({ stock, isExpanded, onToggle }: {
 
   return (
     <div className="rounded-xl border border-zinc-200/60 dark:border-zinc-700/50 bg-white/70 dark:bg-zinc-900/50 overflow-hidden">
+      {/* NLP 空方衝擊警示條 */}
+      {stock.nlpBearish && stock.nlpSeverity && (
+        <div className={`flex items-center gap-1.5 px-3.5 py-1.5 text-[11px] font-medium border-b ${
+          stock.nlpSeverity === "high"
+            ? "bg-red-50/90 dark:bg-red-950/40 border-red-200/50 dark:border-red-800/50 text-red-700 dark:text-red-300"
+            : "bg-amber-50/90 dark:bg-amber-950/40 border-amber-200/50 dark:border-amber-800/50 text-amber-700 dark:text-amber-300"
+        }`}>
+          <span>{stock.nlpSeverity === "high" ? "🚨" : "⚠️"}</span>
+          <span>
+            <strong>{getSectorName(stock.sectorId)}</strong>
+            {stock.nlpSeverity === "high"
+              ? " 承受強空方訊號衝擊，建議降低曝險或設停損"
+              : " 承受NLP空方壓力，持倉需提高警覺"}
+          </span>
+        </div>
+      )}
       <div className="px-3.5 pt-3 pb-2.5 space-y-2.5">
         {/* Row 1: ID + 名稱 + 漲跌 + 標籤 */}
         <div className="flex items-start justify-between gap-2">
@@ -321,6 +337,13 @@ export function ConvergencePanel({ snapshot, composite, holdings, magaData }: Pr
           combined:   secMeta.combined,
           lightRatio: secMeta.lightRatio,
           composite:  secMeta.composite,
+          nlpBearish:  (composite?.scores?.[sectorId] as { nlp?: number } | undefined)?.nlp !== undefined
+            ? ((composite!.scores[sectorId] as unknown as { nlp: number }).nlp < -0.1)
+            : false,
+          nlpSeverity: (() => {
+            const nlp = (composite?.scores?.[sectorId] as { nlp?: number } | undefined)?.nlp ?? 0;
+            return nlp < -0.35 ? "high" : nlp < -0.1 ? "medium" : null;
+          })(),
         });
       }
     }
