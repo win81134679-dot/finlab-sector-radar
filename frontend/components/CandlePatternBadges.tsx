@@ -5,6 +5,7 @@
 //   Doji → Caginalp & Laurent (1998), Applied Mathematical Finance
 import type { OHLCBar } from "@/lib/types";
 import { InfoPopover } from "./InfoPopover";
+import { useState } from "react";
 
 interface Pattern {
   name:      string;
@@ -199,6 +200,34 @@ const DIR_ICON: Record<Pattern["dir"], string> = {
   bull: "🟢", bear: "🔴", neutral: "⚪",
 };
 
+// ── 個別徽章（React state 懸停 tooltip）────────────────────────────────
+function PatternBadge({ pattern: p }: { pattern: Pattern }) {
+  const [hovered, setHovered] = useState(false);
+  return (
+    <div
+      className={`relative inline-flex items-center gap-1 px-2 py-0.5 rounded-full border text-[11px] font-medium cursor-default ${DIR_STYLE[p.dir]}`}
+      onMouseEnter={() => setHovered(true)}
+      onMouseLeave={() => setHovered(false)}
+    >
+      <span>{DIR_ICON[p.dir]}</span>
+      <span>{p.name}</span>
+      {p.daysAgo > 0 && (
+        <span className="opacity-60 font-normal">{p.daysAgo}日前</span>
+      )}
+      {hovered && (
+        <div className="absolute bottom-full left-0 mb-1.5 z-50 pointer-events-none min-w-[150px]">
+          <div className="bg-zinc-900 dark:bg-zinc-700 text-white text-[10px] rounded-lg px-2.5 py-2 shadow-xl">
+            <div className="font-semibold mb-1">{p.name}</div>
+            <div className="opacity-75 leading-snug">{p.source}</div>
+            <div className="opacity-75 leading-snug mt-0.5">歷史勝率 {p.winRate}</div>
+          </div>
+          <div className="ml-2 w-0 h-0 border-l-4 border-r-4 border-t-4 border-l-transparent border-r-transparent border-t-zinc-900 dark:border-t-zinc-700" />
+        </div>
+      )}
+    </div>
+  );
+}
+
 export function CandlePatternBadges({ bars }: CandlePatternBadgesProps) {
   if (bars.length < 2) return null;
 
@@ -214,11 +243,11 @@ export function CandlePatternBadges({ bars }: CandlePatternBadgesProps) {
           <InfoPopover
             title="K 線型態怎麼看"
             tips={[
-              { label: "綠色 (多頭)",   desc: "市場買家強勢，遠期統計勝率約62–63%，人圖結合瞎法人處理" },
-              { label: "紅色 (空頭)",   desc: "市場賣家強勢，等真空振出揚或止捨益損提防態度" },
-              { label: "灰色 (中性)",   desc: "十字線等，多空勢均衡，待後續發展確認方向" },
-              { label: "N 日前",           desc: "型態出現的天數，越近期効果越新鮮" },
-              { label: "學術來源",   desc: "Marshall (2006) J.Banking & Finance、Lu & Chen (2015)、Caginalp (1998)" },
+              { label: "綠色 (多頭)",  desc: "市場買家強勢，遠期統計勝率約62–63％，配合法人資金面一起看" },
+              { label: "紅色 (空頭)",  desc: "市場賣家強勢，延伸保守或註意止損防守" },
+              { label: "灰色 (中性)",  desc: "十字線等多空勢均衡，待後續發展確認方向" },
+              { label: "N 日前",          desc: "型態出現的天數，越近期效果越新鮮" },
+              { label: "學術來源",  desc: "Marshall (2006) J.Banking & Finance、Lu & Chen (2015)、Caginalp (1998)" },
             ]}
           />
         </div>
@@ -230,24 +259,7 @@ export function CandlePatternBadges({ bars }: CandlePatternBadgesProps) {
       ) : (
         <div className="flex flex-wrap gap-1.5">
           {patterns.map((p, i) => (
-            <div
-              key={i}
-              className={`group relative inline-flex items-center gap-1 px-2 py-0.5 rounded-full border text-[11px] font-medium ${DIR_STYLE[p.dir]}`}
-            >
-              <span>{DIR_ICON[p.dir]}</span>
-              <span>{p.name}</span>
-              {p.daysAgo > 0 && (
-                <span className="opacity-60 font-normal">{p.daysAgo}日前</span>
-              )}
-              {/* Tooltip */}
-              <div className="absolute bottom-full left-0 mb-1 z-10 hidden group-hover:block min-w-[140px]">
-                <div className="bg-zinc-900 dark:bg-zinc-700 text-white text-[10px] rounded-lg px-2 py-1.5 shadow-lg">
-                  <div className="font-semibold mb-0.5">{p.name}</div>
-                  <div className="opacity-80">{p.source}</div>
-                  <div className="opacity-80">歷史勝率 {p.winRate}</div>
-                </div>
-              </div>
-            </div>
+            <PatternBadge key={i} pattern={p} />
           ))}
         </div>
       )}

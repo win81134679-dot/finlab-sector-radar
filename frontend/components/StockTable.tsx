@@ -9,6 +9,7 @@ import { FactorRadar } from "./FactorRadar";
 import { CandlePatternBadges } from "./CandlePatternBadges";
 import { RsiGauge } from "./RsiGauge";
 import { MacdChart } from "./MacdChart";
+import { StockSummary } from "./StockSummary";
 
 const GITHUB_RAW_BASE_ST = process.env.NEXT_PUBLIC_GITHUB_RAW_BASE_URL ?? "";
 
@@ -204,6 +205,11 @@ function StockRow({ stock, isExpanded, onToggle }: StockRowProps) {
                 {stock.id} 完整分析
               </span>
               <MiniSparkline bars={stock.ohlcv_7d ?? []} />
+            </div>
+
+            {/* 一句話總結 */}
+            <div className="mb-3">
+              <StockSummary data={displayBars} grade={stock.grade} breakdown={stock.breakdown} loading={loading} />
             </div>
 
             {/* 因子雷達圖 */}

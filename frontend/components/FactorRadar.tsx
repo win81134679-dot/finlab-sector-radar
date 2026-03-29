@@ -60,12 +60,12 @@ export function FactorRadar({
           <InfoPopover
             title="因子雷達圖怎麼看"
             tips={[
-              { label: "面積越大",    desc: "四個維度（基本 / 技術 / 籌碼 / 加分）全面強勢，表示各面共振抉投" },
-              { label: "基本面",        desc: "Piotroski F-Score：獲利能力 + 財務結構，6以上為強" },
+              { label: "面積越大",    desc: "四個維度（基本 / 技術 / 籌碼 / 加分）全面強勢，表示各面共振，抹投信號越強" },
+              { label: "基本面",        desc: "Piotroski F-Score：獲利能力 + 財務結構，6 分以上為強勢" },
               { label: "技術面",        desc: "Jegadeesh & Titman 動能：MA20/60 突破 + 量能發動，越高越好" },
-              { label: "籌碼面",        desc: "三大法人共振（外資 / 投信 / 自營），同步買超強却信號" },
-              { label: "加分",            desc: "Graham 安全邊際：PE + ROE 低亻 / 高成長，額外加分" },
-              { label: "灰色 = 弱勢",    desc: "對昇成沒為帶來顯著貢獻，可待豺后再關注" },
+              { label: "籌碼面",        desc: "三大法人共振（外資 / 投信 / 自營），同步買超為強勢訊號" },
+              { label: "加分",            desc: "Graham 安全邊際：PE 低估値 / ROE 高成長，額外加分" },
+              { label: "灰色 = 弱勢",    desc: "該維度貢獻不題著，可待改善後再關注" },
             ]}
           />
         </div>

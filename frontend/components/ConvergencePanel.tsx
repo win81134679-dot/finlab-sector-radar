@@ -32,6 +32,7 @@ import { FactorRadar } from "./FactorRadar";
 import { RsiGauge } from "./RsiGauge";
 import { MacdChart } from "./MacdChart";
 import { CandlePatternBadges } from "./CandlePatternBadges";
+import { StockSummary } from "./StockSummary";
 
 const GITHUB_RAW_BASE_CP = process.env.NEXT_PUBLIC_GITHUB_RAW_BASE_URL ?? "";
 
@@ -272,6 +273,7 @@ function StockCard({ stock, isExpanded, onToggle }: {
       )}
       {isExpanded && hasExpandable && (
         <div className="border-t border-zinc-100 dark:border-zinc-800/50">
+          <StockSummary data={fullData.length > 0 ? fullData : (stock.ohlcv_7d ?? [])} grade={stock.grade} breakdown={stock.breakdown} loading={loadingFull} />
           {hasBreakdown && stock.breakdown && (
             <FactorRadar breakdown={stock.breakdown} grade={stock.grade} />
           )}

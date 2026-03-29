@@ -65,11 +65,12 @@ export function MacdChart({ data, loading }: MacdChartProps) {
             <InfoPopover
               title="MACD 怎麼看"
               tips={[
-                { label: "藍線 (MACD)",    desc: "EMA12 − EMA26，白色 0 線上方為多頭動能，下方為空頭" },
-                { label: "橘處線 (Signal)", desc: "MACD 的 9 日 EMA，表達趨勢平滑度" },
-                { label: "黃金交叉 ▲",   desc: "MACD 由下穿上 Signal 線：動能反轉向上，熱門进場訊號" },
-                { label: "死亡交叉 ▼",   desc: "MACD 由上穿下 Signal 線：動能複弱，空頭規避訊號" },
-                { label: "綠柱大 / 切短", desc: "Histogram 間距擴大為動能增強；收縮为初步衣空" },
+              { label: "藍線 (MACD)",      desc: "EMA12 − EMA26，0 線上方為多頭動能，下方為空頭" },
+                { label: "樘色線 (Signal)", desc: "MACD 的 9 日 EMA，表達趨勢平滑度" },
+                { label: "黃金交叉 ▲",  desc: "MACD 由下穿上 Signal 線：動能反轉向上，熱門進場訊號" },
+                { label: "死亡交叉 ▼",  desc: "MACD 由上穿下 Signal 線：動能衰竭，空頭規避訊號" },
+                { label: "綠柱居大",       desc: "Histogram 間距擴大：動能增強中" },
+                { label: "柱狀收縮",       desc: "Histogram 近三根收短：動能前期衰弱，注意方向變化" },
               ]}
             />
           </div>
@@ -143,11 +144,12 @@ export function MacdChart({ data, loading }: MacdChartProps) {
           <InfoPopover
             title="MACD 怎麼看"
             tips={[
-              { label: "藍線 (MACD)",    desc: "EMA12 − EMA26，白色 0 線上方為多頭動能，下方為空頭" },
-              { label: "樘處線 (Signal)", desc: "MACD 的 9 日 EMA，表達趨勢平滑度" },
-              { label: "黃金交叉 ▲",   desc: "MACD 由下穿上 Signal 線：動能反轉向上，熱門进場訊號" },
-              { label: "死亡交叉 ▼",   desc: "MACD 由上穿下 Signal 線：動能複弱，空頭規避訊號" },
-              { label: "綠柱大 / 切短", desc: "Histogram 間距擴大為動能增強；收縮為初步袓空" },
+              { label: "藍線 (MACD)",      desc: "EMA12 − EMA26，0 線上方為多頭動能，下方為空頭" },
+              { label: "樘色線 (Signal)", desc: "MACD 的 9 日 EMA，表達趨勢平滑度" },
+              { label: "黃金交叉 ▲",  desc: "MACD 由下穿上 Signal 線：動能反轉向上，熱門進場訊號" },
+              { label: "死亡交叉 ▼",  desc: "MACD 由上穿下 Signal 線：動能衰竭，空頭規避訊號" },
+              { label: "綠柱居大",       desc: "Histogram 間距擴大：動能增強中" },
+              { label: "柱狀收縮",       desc: "Histogram 近三根收短：動能前期衰弱，注意方向變化" },
             ]}
           />
         </div>
