@@ -1,11 +1,17 @@
 "use client";
-// StockTable.tsx — 板塊內個股排名表格（含 K 線展開）
-import { useState } from "react";
+// StockTable.tsx — 板塊內個股排名表格（含完整個股分析展開）
+import { useState, useRef, useEffect } from "react";
 import dynamic from "next/dynamic";
 import type { StockData, OHLCBar } from "@/lib/types";
 import { changePctColor, formatChangePct, SIGNAL_NAMES } from "@/lib/signals";
+import { MiniSparkline } from "./MiniSparkline";
+import { FactorRadar } from "./FactorRadar";
+import { CandlePatternBadges } from "./CandlePatternBadges";
+import { RsiGauge } from "./RsiGauge";
 
-interface KLineProps { data: OHLCBar[]; stockId: string; }
+const GITHUB_RAW_BASE_ST = process.env.NEXT_PUBLIC_GITHUB_RAW_BASE_URL ?? "";
+
+interface KLineProps { data: OHLCBar[]; stockId: string; fullData?: OHLCBar[]; }
 
 // 動態載入 K 線圖，避免 SSR 問題
 const StockKLine = dynamic<KLineProps>(
@@ -19,6 +25,24 @@ const StockKLine = dynamic<KLineProps>(
     ),
   }
 );
+
+// ── useOHLCV：展開時 fetch 完整 K 線資料（與 ConvergencePanel 相同策略）──
+function useOHLCV(stockId: string, enabled: boolean) {
+  const [fullData, setFullData] = useState<OHLCBar[]>([]);
+  const [loading, setLoading] = useState(false);
+  const fetchedRef = useRef(false);
+  useEffect(() => {
+    if (!enabled || fetchedRef.current || !GITHUB_RAW_BASE_ST) return;
+    fetchedRef.current = true;
+    setLoading(true);
+    fetch(`${GITHUB_RAW_BASE_ST}/ohlcv/${stockId}.json`)
+      .then((r) => r.json())
+      .then((d: OHLCBar[]) => setFullData(Array.isArray(d) ? d : []))
+      .catch(() => setFullData([]))
+      .finally(() => setLoading(false));
+  }, [stockId, enabled]);
+  return { fullData, loading };
+}
 
 interface StockTableProps {
   stocks: StockData[];
@@ -85,6 +109,9 @@ function StockRow({ stock, isExpanded, onToggle }: StockRowProps) {
   const flag = stock.price_flag ?? "normal";
   const hasKLine = (stock.ohlcv_7d?.length ?? 0) >= 2;
 
+  const { fullData, loading } = useOHLCV(stock.id, isExpanded);
+  const displayBars = fullData.length > 0 ? fullData : (stock.ohlcv_7d ?? []);
+
   // 觸發信號縮寫（最多3個）
   const triggeredSignals = stock.triggered ?? [];
   const signalLabels = triggeredSignals
@@ -106,7 +133,7 @@ function StockRow({ stock, isExpanded, onToggle }: StockRowProps) {
             {hasKLine && (
               <button
                 onClick={onToggle}
-                title={isExpanded ? "收起K線" : "展閆71日K線"}
+                title={isExpanded ? "收起分析" : "展開完整分析"}
                 className={`flex items-center gap-0.5 text-[10px] leading-none transition-colors rounded px-1 py-0.5 ${
                   isExpanded
                     ? "bg-blue-500/15 text-blue-600 dark:text-blue-400"
@@ -114,7 +141,7 @@ function StockRow({ stock, isExpanded, onToggle }: StockRowProps) {
                 }`}
               >
                 <span>📈</span>
-                <span className="font-medium">K線</span>
+                <span className="font-medium">分析</span>
               </button>
             )}
           </div>
@@ -163,8 +190,38 @@ function StockRow({ stock, isExpanded, onToggle }: StockRowProps) {
       </tr>
       {isExpanded && hasKLine && (
         <tr className="border-b border-zinc-200/20 dark:border-zinc-700/20">
-          <td colSpan={5} className="px-2 pb-2">
-            <StockKLine data={stock.ohlcv_7d!} stockId={stock.id} />
+          <td colSpan={5} className="px-2 pb-4 pt-2">
+            {/* 標題 + MiniSparkline */}
+            <div className="flex items-center justify-between mb-3">
+              <span className="text-sm font-bold text-zinc-900 dark:text-white">
+                {stock.id} 完整分析
+              </span>
+              <MiniSparkline bars={stock.ohlcv_7d ?? []} />
+            </div>
+
+            {/* 因子雷達圖 */}
+            {stock.breakdown && (
+              <div className="mb-3">
+                <FactorRadar breakdown={stock.breakdown} grade={stock.grade} />
+              </div>
+            )}
+
+            {/* K 線型態徽章 */}
+            <div className="mb-3">
+              <CandlePatternBadges bars={displayBars} />
+            </div>
+
+            {/* RSI 儀表板 */}
+            <div className="mb-3">
+              <RsiGauge data={displayBars} loading={loading} />
+            </div>
+
+            {/* 完整 K 線 */}
+            <StockKLine
+              data={stock.ohlcv_7d!}
+              stockId={stock.id}
+              fullData={fullData.length > 0 ? fullData : undefined}
+            />
           </td>
         </tr>
       )}
