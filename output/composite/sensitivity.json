@@ -1,0 +1,1244 @@
+{
+  "updated_at": "2026-03-29T15:40:42.417093+00:00",
+  "scenario": "25%",
+  "presets": [
+    {
+      "label": "NLP 主導 (9:1)",
+      "nlp_weight": 0.9,
+      "tariff_weight": 0.1,
+      "top_buy": [
+        "foundry",
+        "packaging",
+        "semiconductor_equip",
+        "ai_server",
+        "optical_comm"
+      ],
+      "top_sell": [
+        "shipping",
+        "display",
+        "ic_design",
+        "ev_supply",
+        "solar"
+      ],
+      "signal_strength": 0.008,
+      "scores": {
+        "ai_server": {
+          "composite": 0.035,
+          "signal": "中性"
+        },
+        "banking": {
+          "composite": 0.0,
+          "signal": "中性"
+        },
+        "biotech": {
+          "composite": 0.0,
+          "signal": "中性"
+        },
+        "cement": {
+          "composite": -0.005,
+          "signal": "中性"
+        },
+        "connector": {
+          "composite": -0.005,
+          "signal": "中性"
+        },
+        "construction": {
+          "composite": 0.0,
+          "signal": "中性"
+        },
+        "defense": {
+          "composite": 0.005,
+          "signal": "中性"
+        },
+        "display": {
+          "composite": -0.05,
+          "signal": "中性"
+        },
+        "ecommerce": {
+          "composite": 0.0,
+          "signal": "中性"
+        },
+        "energy_storage": {
+          "composite": -0.01,
+          "signal": "中性"
+        },
+        "ev_supply": {
+          "composite": -0.035,
+          "signal": "中性"
+        },
+        "financial_holding": {
+          "composite": 0.0,
+          "signal": "中性"
+        },
+        "food": {
+          "composite": -0.005,
+          "signal": "中性"
+        },
+        "foundry": {
+          "composite": 0.06,
+          "signal": "中性"
+        },
+        "gaming": {
+          "composite": 0.0,
+          "signal": "中性"
+        },
+        "gas_energy": {
+          "composite": 0.005,
+          "signal": "中性"
+        },
+        "ic_design": {
+          "composite": -0.045,
+          "signal": "中性"
+        },
+        "insurance": {
+          "composite": 0.0,
+          "signal": "中性"
+        },
+        "ip_design": {
+          "composite": 0.02,
+          "signal": "中性"
+        },
+        "lens_optics": {
+          "composite": -0.005,
+          "signal": "中性"
+        },
+        "medical_device": {
+          "composite": 0.005,
+          "signal": "中性"
+        },
+        "memory": {
+          "composite": -0.01,
+          "signal": "中性"
+        },
+        "networking": {
+          "composite": 0.025,
+          "signal": "中性"
+        },
+        "optical_comm": {
+          "composite": 0.03,
+          "signal": "中性"
+        },
+        "packaging": {
+          "composite": 0.05,
+          "signal": "中性"
+        },
+        "paper": {
+          "composite": -0.01,
+          "signal": "中性"
+        },
+        "pcb": {
+          "composite": -0.005,
+          "signal": "中性"
+        },
+        "petrochemical": {
+          "composite": -0.03,
+          "signal": "中性"
+        },
+        "power_components": {
+          "composite": -0.005,
+          "signal": "中性"
+        },
+        "power_infra": {
+          "composite": 0.005,
+          "signal": "中性"
+        },
+        "power_semi": {
+          "composite": 0.01,
+          "signal": "中性"
+        },
+        "robotics": {
+          "composite": 0.01,
+          "signal": "中性"
+        },
+        "rubber": {
+          "composite": -0.015,
+          "signal": "中性"
+        },
+        "securities": {
+          "composite": 0.0,
+          "signal": "中性"
+        },
+        "semiconductor_equip": {
+          "composite": 0.045,
+          "signal": "中性"
+        },
+        "shipping": {
+          "composite": -0.055,
+          "signal": "中性"
+        },
+        "software_saas": {
+          "composite": 0.0,
+          "signal": "中性"
+        },
+        "solar": {
+          "composite": -0.03,
+          "signal": "中性"
+        },
+        "steel": {
+          "composite": -0.02,
+          "signal": "中性"
+        },
+        "telecom": {
+          "composite": 0.0,
+          "signal": "中性"
+        },
+        "textile": {
+          "composite": -0.025,
+          "signal": "中性"
+        },
+        "thermal": {
+          "composite": 0.015,
+          "signal": "中性"
+        },
+        "tourism": {
+          "composite": -0.005,
+          "signal": "中性"
+        },
+        "vehicle_elec": {
+          "composite": -0.02,
+          "signal": "中性"
+        },
+        "wind_energy": {
+          "composite": -0.02,
+          "signal": "中性"
+        }
+      }
+    },
+    {
+      "label": "NLP 偏重 (7:3)",
+      "nlp_weight": 0.7,
+      "tariff_weight": 0.3,
+      "top_buy": [
+        "foundry",
+        "packaging",
+        "semiconductor_equip",
+        "ai_server",
+        "optical_comm"
+      ],
+      "top_sell": [
+        "shipping",
+        "display",
+        "ic_design",
+        "ev_supply",
+        "solar"
+      ],
+      "signal_strength": 0.024,
+      "scores": {
+        "ai_server": {
+          "composite": 0.105,
+          "signal": "中性"
+        },
+        "banking": {
+          "composite": 0.0,
+          "signal": "中性"
+        },
+        "biotech": {
+          "composite": 0.0,
+          "signal": "中性"
+        },
+        "cement": {
+          "composite": -0.015,
+          "signal": "中性"
+        },
+        "connector": {
+          "composite": -0.015,
+          "signal": "中性"
+        },
+        "construction": {
+          "composite": 0.0,
+          "signal": "中性"
+        },
+        "defense": {
+          "composite": 0.015,
+          "signal": "中性"
+        },
+        "display": {
+          "composite": -0.15,
+          "signal": "中性"
+        },
+        "ecommerce": {
+          "composite": 0.0,
+          "signal": "中性"
+        },
+        "energy_storage": {
+          "composite": -0.03,
+          "signal": "中性"
+        },
+        "ev_supply": {
+          "composite": -0.105,
+          "signal": "中性"
+        },
+        "financial_holding": {
+          "composite": 0.0,
+          "signal": "中性"
+        },
+        "food": {
+          "composite": -0.015,
+          "signal": "中性"
+        },
+        "foundry": {
+          "composite": 0.18,
+          "signal": "中性"
+        },
+        "gaming": {
+          "composite": 0.0,
+          "signal": "中性"
+        },
+        "gas_energy": {
+          "composite": 0.015,
+          "signal": "中性"
+        },
+        "ic_design": {
+          "composite": -0.135,
+          "signal": "中性"
+        },
+        "insurance": {
+          "composite": 0.0,
+          "signal": "中性"
+        },
+        "ip_design": {
+          "composite": 0.06,
+          "signal": "中性"
+        },
+        "lens_optics": {
+          "composite": -0.015,
+          "signal": "中性"
+        },
+        "medical_device": {
+          "composite": 0.015,
+          "signal": "中性"
+        },
+        "memory": {
+          "composite": -0.03,
+          "signal": "中性"
+        },
+        "networking": {
+          "composite": 0.075,
+          "signal": "中性"
+        },
+        "optical_comm": {
+          "composite": 0.09,
+          "signal": "中性"
+        },
+        "packaging": {
+          "composite": 0.15,
+          "signal": "中性"
+        },
+        "paper": {
+          "composite": -0.03,
+          "signal": "中性"
+        },
+        "pcb": {
+          "composite": -0.015,
+          "signal": "中性"
+        },
+        "petrochemical": {
+          "composite": -0.09,
+          "signal": "中性"
+        },
+        "power_components": {
+          "composite": -0.015,
+          "signal": "中性"
+        },
+        "power_infra": {
+          "composite": 0.015,
+          "signal": "中性"
+        },
+        "power_semi": {
+          "composite": 0.03,
+          "signal": "中性"
+        },
+        "robotics": {
+          "composite": 0.03,
+          "signal": "中性"
+        },
+        "rubber": {
+          "composite": -0.045,
+          "signal": "中性"
+        },
+        "securities": {
+          "composite": 0.0,
+          "signal": "中性"
+        },
+        "semiconductor_equip": {
+          "composite": 0.135,
+          "signal": "中性"
+        },
+        "shipping": {
+          "composite": -0.165,
+          "signal": "中性"
+        },
+        "software_saas": {
+          "composite": 0.0,
+          "signal": "中性"
+        },
+        "solar": {
+          "composite": -0.09,
+          "signal": "中性"
+        },
+        "steel": {
+          "composite": -0.06,
+          "signal": "中性"
+        },
+        "telecom": {
+          "composite": 0.0,
+          "signal": "中性"
+        },
+        "textile": {
+          "composite": -0.075,
+          "signal": "中性"
+        },
+        "thermal": {
+          "composite": 0.045,
+          "signal": "中性"
+        },
+        "tourism": {
+          "composite": -0.015,
+          "signal": "中性"
+        },
+        "vehicle_elec": {
+          "composite": -0.06,
+          "signal": "中性"
+        },
+        "wind_energy": {
+          "composite": -0.06,
+          "signal": "中性"
+        }
+      }
+    },
+    {
+      "label": "均衡 (5:5)",
+      "nlp_weight": 0.5,
+      "tariff_weight": 0.5,
+      "top_buy": [
+        "foundry",
+        "packaging",
+        "semiconductor_equip",
+        "ai_server",
+        "optical_comm"
+      ],
+      "top_sell": [
+        "shipping",
+        "display",
+        "ic_design",
+        "ev_supply",
+        "solar"
+      ],
+      "signal_strength": 0.041,
+      "scores": {
+        "ai_server": {
+          "composite": 0.175,
+          "signal": "中性"
+        },
+        "banking": {
+          "composite": 0.0,
+          "signal": "中性"
+        },
+        "biotech": {
+          "composite": 0.0,
+          "signal": "中性"
+        },
+        "cement": {
+          "composite": -0.025,
+          "signal": "中性"
+        },
+        "connector": {
+          "composite": -0.025,
+          "signal": "中性"
+        },
+        "construction": {
+          "composite": 0.0,
+          "signal": "中性"
+        },
+        "defense": {
+          "composite": 0.025,
+          "signal": "中性"
+        },
+        "display": {
+          "composite": -0.25,
+          "signal": "中性"
+        },
+        "ecommerce": {
+          "composite": 0.0,
+          "signal": "中性"
+        },
+        "energy_storage": {
+          "composite": -0.05,
+          "signal": "中性"
+        },
+        "ev_supply": {
+          "composite": -0.175,
+          "signal": "中性"
+        },
+        "financial_holding": {
+          "composite": 0.0,
+          "signal": "中性"
+        },
+        "food": {
+          "composite": -0.025,
+          "signal": "中性"
+        },
+        "foundry": {
+          "composite": 0.3,
+          "signal": "中性"
+        },
+        "gaming": {
+          "composite": 0.0,
+          "signal": "中性"
+        },
+        "gas_energy": {
+          "composite": 0.025,
+          "signal": "中性"
+        },
+        "ic_design": {
+          "composite": -0.225,
+          "signal": "中性"
+        },
+        "insurance": {
+          "composite": 0.0,
+          "signal": "中性"
+        },
+        "ip_design": {
+          "composite": 0.1,
+          "signal": "中性"
+        },
+        "lens_optics": {
+          "composite": -0.025,
+          "signal": "中性"
+        },
+        "medical_device": {
+          "composite": 0.025,
+          "signal": "中性"
+        },
+        "memory": {
+          "composite": -0.05,
+          "signal": "中性"
+        },
+        "networking": {
+          "composite": 0.125,
+          "signal": "中性"
+        },
+        "optical_comm": {
+          "composite": 0.15,
+          "signal": "中性"
+        },
+        "packaging": {
+          "composite": 0.25,
+          "signal": "中性"
+        },
+        "paper": {
+          "composite": -0.05,
+          "signal": "中性"
+        },
+        "pcb": {
+          "composite": -0.025,
+          "signal": "中性"
+        },
+        "petrochemical": {
+          "composite": -0.15,
+          "signal": "中性"
+        },
+        "power_components": {
+          "composite": -0.025,
+          "signal": "中性"
+        },
+        "power_infra": {
+          "composite": 0.025,
+          "signal": "中性"
+        },
+        "power_semi": {
+          "composite": 0.05,
+          "signal": "中性"
+        },
+        "robotics": {
+          "composite": 0.05,
+          "signal": "中性"
+        },
+        "rubber": {
+          "composite": -0.075,
+          "signal": "中性"
+        },
+        "securities": {
+          "composite": 0.0,
+          "signal": "中性"
+        },
+        "semiconductor_equip": {
+          "composite": 0.225,
+          "signal": "中性"
+        },
+        "shipping": {
+          "composite": -0.275,
+          "signal": "中性"
+        },
+        "software_saas": {
+          "composite": 0.0,
+          "signal": "中性"
+        },
+        "solar": {
+          "composite": -0.15,
+          "signal": "中性"
+        },
+        "steel": {
+          "composite": -0.1,
+          "signal": "中性"
+        },
+        "telecom": {
+          "composite": 0.0,
+          "signal": "中性"
+        },
+        "textile": {
+          "composite": -0.125,
+          "signal": "中性"
+        },
+        "thermal": {
+          "composite": 0.075,
+          "signal": "中性"
+        },
+        "tourism": {
+          "composite": -0.025,
+          "signal": "中性"
+        },
+        "vehicle_elec": {
+          "composite": -0.1,
+          "signal": "中性"
+        },
+        "wind_energy": {
+          "composite": -0.1,
+          "signal": "中性"
+        }
+      }
+    },
+    {
+      "label": "關稅偏重 (3:7)",
+      "nlp_weight": 0.3,
+      "tariff_weight": 0.7,
+      "top_buy": [
+        "foundry",
+        "packaging",
+        "semiconductor_equip",
+        "ai_server",
+        "optical_comm"
+      ],
+      "top_sell": [
+        "shipping",
+        "display",
+        "ic_design",
+        "ev_supply",
+        "solar"
+      ],
+      "signal_strength": 0.057,
+      "scores": {
+        "ai_server": {
+          "composite": 0.245,
+          "signal": "中性"
+        },
+        "banking": {
+          "composite": 0.0,
+          "signal": "中性"
+        },
+        "biotech": {
+          "composite": 0.0,
+          "signal": "中性"
+        },
+        "cement": {
+          "composite": -0.035,
+          "signal": "中性"
+        },
+        "connector": {
+          "composite": -0.035,
+          "signal": "中性"
+        },
+        "construction": {
+          "composite": 0.0,
+          "signal": "中性"
+        },
+        "defense": {
+          "composite": 0.035,
+          "signal": "中性"
+        },
+        "display": {
+          "composite": -0.35,
+          "signal": "中性"
+        },
+        "ecommerce": {
+          "composite": 0.0,
+          "signal": "中性"
+        },
+        "energy_storage": {
+          "composite": -0.07,
+          "signal": "中性"
+        },
+        "ev_supply": {
+          "composite": -0.245,
+          "signal": "中性"
+        },
+        "financial_holding": {
+          "composite": 0.0,
+          "signal": "中性"
+        },
+        "food": {
+          "composite": -0.035,
+          "signal": "中性"
+        },
+        "foundry": {
+          "composite": 0.42,
+          "signal": "買入"
+        },
+        "gaming": {
+          "composite": 0.0,
+          "signal": "中性"
+        },
+        "gas_energy": {
+          "composite": 0.035,
+          "signal": "中性"
+        },
+        "ic_design": {
+          "composite": -0.315,
+          "signal": "中性"
+        },
+        "insurance": {
+          "composite": 0.0,
+          "signal": "中性"
+        },
+        "ip_design": {
+          "composite": 0.14,
+          "signal": "中性"
+        },
+        "lens_optics": {
+          "composite": -0.035,
+          "signal": "中性"
+        },
+        "medical_device": {
+          "composite": 0.035,
+          "signal": "中性"
+        },
+        "memory": {
+          "composite": -0.07,
+          "signal": "中性"
+        },
+        "networking": {
+          "composite": 0.175,
+          "signal": "中性"
+        },
+        "optical_comm": {
+          "composite": 0.21,
+          "signal": "中性"
+        },
+        "packaging": {
+          "composite": 0.35,
+          "signal": "中性"
+        },
+        "paper": {
+          "composite": -0.07,
+          "signal": "中性"
+        },
+        "pcb": {
+          "composite": -0.035,
+          "signal": "中性"
+        },
+        "petrochemical": {
+          "composite": -0.21,
+          "signal": "中性"
+        },
+        "power_components": {
+          "composite": -0.035,
+          "signal": "中性"
+        },
+        "power_infra": {
+          "composite": 0.035,
+          "signal": "中性"
+        },
+        "power_semi": {
+          "composite": 0.07,
+          "signal": "中性"
+        },
+        "robotics": {
+          "composite": 0.07,
+          "signal": "中性"
+        },
+        "rubber": {
+          "composite": -0.105,
+          "signal": "中性"
+        },
+        "securities": {
+          "composite": 0.0,
+          "signal": "中性"
+        },
+        "semiconductor_equip": {
+          "composite": 0.315,
+          "signal": "中性"
+        },
+        "shipping": {
+          "composite": -0.385,
+          "signal": "中性"
+        },
+        "software_saas": {
+          "composite": 0.0,
+          "signal": "中性"
+        },
+        "solar": {
+          "composite": -0.21,
+          "signal": "中性"
+        },
+        "steel": {
+          "composite": -0.14,
+          "signal": "中性"
+        },
+        "telecom": {
+          "composite": 0.0,
+          "signal": "中性"
+        },
+        "textile": {
+          "composite": -0.175,
+          "signal": "中性"
+        },
+        "thermal": {
+          "composite": 0.105,
+          "signal": "中性"
+        },
+        "tourism": {
+          "composite": -0.035,
+          "signal": "中性"
+        },
+        "vehicle_elec": {
+          "composite": -0.14,
+          "signal": "中性"
+        },
+        "wind_energy": {
+          "composite": -0.14,
+          "signal": "中性"
+        }
+      }
+    },
+    {
+      "label": "關稅主導 (1:9)",
+      "nlp_weight": 0.1,
+      "tariff_weight": 0.9,
+      "top_buy": [
+        "foundry",
+        "packaging",
+        "semiconductor_equip",
+        "ai_server",
+        "optical_comm"
+      ],
+      "top_sell": [
+        "shipping",
+        "display",
+        "ic_design",
+        "ev_supply",
+        "solar"
+      ],
+      "signal_strength": 0.073,
+      "scores": {
+        "ai_server": {
+          "composite": 0.315,
+          "signal": "中性"
+        },
+        "banking": {
+          "composite": 0.0,
+          "signal": "中性"
+        },
+        "biotech": {
+          "composite": 0.0,
+          "signal": "中性"
+        },
+        "cement": {
+          "composite": -0.045,
+          "signal": "中性"
+        },
+        "connector": {
+          "composite": -0.045,
+          "signal": "中性"
+        },
+        "construction": {
+          "composite": 0.0,
+          "signal": "中性"
+        },
+        "defense": {
+          "composite": 0.045,
+          "signal": "中性"
+        },
+        "display": {
+          "composite": -0.45,
+          "signal": "賣出"
+        },
+        "ecommerce": {
+          "composite": 0.0,
+          "signal": "中性"
+        },
+        "energy_storage": {
+          "composite": -0.09,
+          "signal": "中性"
+        },
+        "ev_supply": {
+          "composite": -0.315,
+          "signal": "中性"
+        },
+        "financial_holding": {
+          "composite": 0.0,
+          "signal": "中性"
+        },
+        "food": {
+          "composite": -0.045,
+          "signal": "中性"
+        },
+        "foundry": {
+          "composite": 0.54,
+          "signal": "買入"
+        },
+        "gaming": {
+          "composite": 0.0,
+          "signal": "中性"
+        },
+        "gas_energy": {
+          "composite": 0.045,
+          "signal": "中性"
+        },
+        "ic_design": {
+          "composite": -0.405,
+          "signal": "賣出"
+        },
+        "insurance": {
+          "composite": 0.0,
+          "signal": "中性"
+        },
+        "ip_design": {
+          "composite": 0.18,
+          "signal": "中性"
+        },
+        "lens_optics": {
+          "composite": -0.045,
+          "signal": "中性"
+        },
+        "medical_device": {
+          "composite": 0.045,
+          "signal": "中性"
+        },
+        "memory": {
+          "composite": -0.09,
+          "signal": "中性"
+        },
+        "networking": {
+          "composite": 0.225,
+          "signal": "中性"
+        },
+        "optical_comm": {
+          "composite": 0.27,
+          "signal": "中性"
+        },
+        "packaging": {
+          "composite": 0.45,
+          "signal": "買入"
+        },
+        "paper": {
+          "composite": -0.09,
+          "signal": "中性"
+        },
+        "pcb": {
+          "composite": -0.045,
+          "signal": "中性"
+        },
+        "petrochemical": {
+          "composite": -0.27,
+          "signal": "中性"
+        },
+        "power_components": {
+          "composite": -0.045,
+          "signal": "中性"
+        },
+        "power_infra": {
+          "composite": 0.045,
+          "signal": "中性"
+        },
+        "power_semi": {
+          "composite": 0.09,
+          "signal": "中性"
+        },
+        "robotics": {
+          "composite": 0.09,
+          "signal": "中性"
+        },
+        "rubber": {
+          "composite": -0.135,
+          "signal": "中性"
+        },
+        "securities": {
+          "composite": 0.0,
+          "signal": "中性"
+        },
+        "semiconductor_equip": {
+          "composite": 0.405,
+          "signal": "買入"
+        },
+        "shipping": {
+          "composite": -0.495,
+          "signal": "賣出"
+        },
+        "software_saas": {
+          "composite": 0.0,
+          "signal": "中性"
+        },
+        "solar": {
+          "composite": -0.27,
+          "signal": "中性"
+        },
+        "steel": {
+          "composite": -0.18,
+          "signal": "中性"
+        },
+        "telecom": {
+          "composite": 0.0,
+          "signal": "中性"
+        },
+        "textile": {
+          "composite": -0.225,
+          "signal": "中性"
+        },
+        "thermal": {
+          "composite": 0.135,
+          "signal": "中性"
+        },
+        "tourism": {
+          "composite": -0.045,
+          "signal": "中性"
+        },
+        "vehicle_elec": {
+          "composite": -0.18,
+          "signal": "中性"
+        },
+        "wind_energy": {
+          "composite": -0.18,
+          "signal": "中性"
+        }
+      }
+    }
+  ],
+  "stability": {
+    "ai_server": {
+      "rank_std": 0.0,
+      "always_buy": true,
+      "always_sell": false
+    },
+    "banking": {
+      "rank_std": 0.0,
+      "always_buy": true,
+      "always_sell": false
+    },
+    "biotech": {
+      "rank_std": 0.0,
+      "always_buy": false,
+      "always_sell": false
+    },
+    "cement": {
+      "rank_std": 0.0,
+      "always_buy": false,
+      "always_sell": false
+    },
+    "connector": {
+      "rank_std": 0.0,
+      "always_buy": false,
+      "always_sell": false
+    },
+    "construction": {
+      "rank_std": 0.0,
+      "always_buy": false,
+      "always_sell": false
+    },
+    "defense": {
+      "rank_std": 0.0,
+      "always_buy": true,
+      "always_sell": false
+    },
+    "display": {
+      "rank_std": 0.0,
+      "always_buy": false,
+      "always_sell": true
+    },
+    "ecommerce": {
+      "rank_std": 0.0,
+      "always_buy": false,
+      "always_sell": false
+    },
+    "energy_storage": {
+      "rank_std": 0.0,
+      "always_buy": false,
+      "always_sell": true
+    },
+    "ev_supply": {
+      "rank_std": 0.0,
+      "always_buy": false,
+      "always_sell": true
+    },
+    "financial_holding": {
+      "rank_std": 0.0,
+      "always_buy": false,
+      "always_sell": false
+    },
+    "food": {
+      "rank_std": 0.0,
+      "always_buy": false,
+      "always_sell": false
+    },
+    "foundry": {
+      "rank_std": 0.0,
+      "always_buy": true,
+      "always_sell": false
+    },
+    "gaming": {
+      "rank_std": 0.0,
+      "always_buy": false,
+      "always_sell": false
+    },
+    "gas_energy": {
+      "rank_std": 0.0,
+      "always_buy": true,
+      "always_sell": false
+    },
+    "ic_design": {
+      "rank_std": 0.0,
+      "always_buy": false,
+      "always_sell": true
+    },
+    "insurance": {
+      "rank_std": 0.0,
+      "always_buy": false,
+      "always_sell": false
+    },
+    "ip_design": {
+      "rank_std": 0.0,
+      "always_buy": true,
+      "always_sell": false
+    },
+    "lens_optics": {
+      "rank_std": 0.0,
+      "always_buy": false,
+      "always_sell": false
+    },
+    "medical_device": {
+      "rank_std": 0.0,
+      "always_buy": true,
+      "always_sell": false
+    },
+    "memory": {
+      "rank_std": 0.0,
+      "always_buy": false,
+      "always_sell": true
+    },
+    "networking": {
+      "rank_std": 0.0,
+      "always_buy": true,
+      "always_sell": false
+    },
+    "optical_comm": {
+      "rank_std": 0.0,
+      "always_buy": true,
+      "always_sell": false
+    },
+    "packaging": {
+      "rank_std": 0.0,
+      "always_buy": true,
+      "always_sell": false
+    },
+    "paper": {
+      "rank_std": 0.0,
+      "always_buy": false,
+      "always_sell": true
+    },
+    "pcb": {
+      "rank_std": 0.0,
+      "always_buy": false,
+      "always_sell": false
+    },
+    "petrochemical": {
+      "rank_std": 0.0,
+      "always_buy": false,
+      "always_sell": true
+    },
+    "power_components": {
+      "rank_std": 0.0,
+      "always_buy": false,
+      "always_sell": false
+    },
+    "power_infra": {
+      "rank_std": 0.0,
+      "always_buy": true,
+      "always_sell": false
+    },
+    "power_semi": {
+      "rank_std": 0.0,
+      "always_buy": true,
+      "always_sell": false
+    },
+    "robotics": {
+      "rank_std": 0.0,
+      "always_buy": true,
+      "always_sell": false
+    },
+    "rubber": {
+      "rank_std": 0.0,
+      "always_buy": false,
+      "always_sell": true
+    },
+    "securities": {
+      "rank_std": 0.0,
+      "always_buy": false,
+      "always_sell": false
+    },
+    "semiconductor_equip": {
+      "rank_std": 0.0,
+      "always_buy": true,
+      "always_sell": false
+    },
+    "shipping": {
+      "rank_std": 0.0,
+      "always_buy": false,
+      "always_sell": true
+    },
+    "software_saas": {
+      "rank_std": 0.0,
+      "always_buy": false,
+      "always_sell": false
+    },
+    "solar": {
+      "rank_std": 0.0,
+      "always_buy": false,
+      "always_sell": true
+    },
+    "steel": {
+      "rank_std": 0.0,
+      "always_buy": false,
+      "always_sell": true
+    },
+    "telecom": {
+      "rank_std": 0.0,
+      "always_buy": false,
+      "always_sell": false
+    },
+    "textile": {
+      "rank_std": 0.0,
+      "always_buy": false,
+      "always_sell": true
+    },
+    "thermal": {
+      "rank_std": 0.0,
+      "always_buy": true,
+      "always_sell": false
+    },
+    "tourism": {
+      "rank_std": 0.0,
+      "always_buy": false,
+      "always_sell": true
+    },
+    "vehicle_elec": {
+      "rank_std": 0.0,
+      "always_buy": false,
+      "always_sell": true
+    },
+    "wind_energy": {
+      "rank_std": 0.0,
+      "always_buy": false,
+      "always_sell": true
+    }
+  },
+  "note": "此敏感度分析以 5 組 NLP:關稅 權重比例各跑一次複合評分，觀察板塊排名的穩定性。rank_std 越低代表此板塊不論權重如何設定，排名都穩定（結論可信度較高）。always_buy/always_sell 代表在所有5 種權重假設下均被列為受益/受害板塊。注意：目前 NLP 訊號來自靜態關鍵詞規則（非訓練模型），50:50 預設為工程設計值，非從歷史資料最佳化得出。"
+}
