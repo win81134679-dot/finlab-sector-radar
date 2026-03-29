@@ -2,7 +2,7 @@
 "use client";
 
 import { useState } from "react";
-import type { SectorData } from "@/lib/types";
+import type { SectorData, CompositeSnapshot } from "@/lib/types";
 import { SignalDots } from "./SignalDots";
 import { StockTable } from "./StockTable";
 import { LEVEL_CONFIG } from "@/lib/signals";
@@ -12,13 +12,17 @@ interface SectorCardProps {
   sector: SectorData;
   featured?: boolean;  // 強烈關注時放大顯示
   defaultExpanded?: boolean;
+  composite?: CompositeSnapshot | null;
 }
 
-export function SectorCard({ sectorId, sector, featured = false, defaultExpanded = false }: SectorCardProps) {
+export function SectorCard({ sectorId, sector, featured = false, defaultExpanded = false, composite }: SectorCardProps) {
   const [expanded, setExpanded] = useState(defaultExpanded);
   const levelCfg = LEVEL_CONFIG[sector.level] ?? LEVEL_CONFIG["忽略"];
   const stocks = sector.stocks ?? [];
   const hasStocks = stocks.length > 0;
+  const cdScore = composite?.scores?.[sectorId];
+  const isLongTermBull = !!cdScore &&
+    (cdScore.signal === "強烈買入" || cdScore.signal === "買入");
 
   return (
     <article
@@ -48,6 +52,11 @@ export function SectorCard({ sectorId, sector, featured = false, defaultExpanded
             <span className={`text-xs px-2 py-0.5 rounded-full font-medium ${levelCfg.badgeClass}`}>
               {levelCfg.emoji} {sector.level}
             </span>
+            {isLongTermBull && (
+              <span className="text-[10px] px-1.5 py-0.5 rounded-full font-medium bg-purple-100/80 dark:bg-purple-900/30 text-purple-700 dark:text-purple-300 border border-purple-200/60 dark:border-purple-800/40">
+                🎯 長線共振
+              </span>
+            )}
           </div>
 
           {/* 總分 */}

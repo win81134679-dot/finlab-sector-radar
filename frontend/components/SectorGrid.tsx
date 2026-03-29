@@ -1,7 +1,7 @@
 // SectorGrid.tsx — Bento Grid 板塊容器（含行動版收折）
 "use client";
 
-import type { SignalSnapshot } from "@/lib/types";
+import type { SignalSnapshot, CompositeSnapshot } from "@/lib/types";
 import { sortedSectors } from "@/lib/signals";
 import { SectorCard } from "./SectorCard";
 import { SkeletonCard } from "./SkeletonCard";
@@ -9,11 +9,12 @@ import { SkeletonCard } from "./SkeletonCard";
 interface SectorGridProps {
   data: SignalSnapshot | null;
   isLoading?: boolean;
+  composite?: CompositeSnapshot | null;
 }
 
 const SKELETON_COUNT = 8;
 
-export function SectorGrid({ data, isLoading = false }: SectorGridProps) {
+export function SectorGrid({ data, isLoading = false, composite }: SectorGridProps) {
 
   if (isLoading) {
     return (
@@ -65,6 +66,7 @@ export function SectorGrid({ data, isLoading = false }: SectorGridProps) {
               sector={s}
               featured={featuredIds.has(s.id)}
               defaultExpanded={featuredIds.has(s.id)}
+              composite={composite}
             />
           </div>
         ))}
@@ -79,6 +81,7 @@ export function SectorGrid({ data, isLoading = false }: SectorGridProps) {
             sector={s}
             featured={false}
             defaultExpanded={false}
+            composite={composite}
           />
         ))}
       </div>

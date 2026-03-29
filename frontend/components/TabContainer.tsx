@@ -1,7 +1,7 @@
 "use client";
 // TabContainer.tsx — 短線趨勢 / 最強訊號 / 長線趨勢 / 商品市場 Tab 切換（Client Component）
 
-import { useState } from "react";
+import { useState, useMemo } from "react";
 import type { SignalSnapshot, HistoryIndex, CommoditySnapshot, MagaSnapshot, CompositeSnapshot, HoldingsSnapshot, PnlSnapshot, SensitivitySnapshot } from "@/lib/types";
 import { MacroPanel } from "@/components/MacroPanel";
 import { MacroWarningBanner } from "@/components/MacroWarningBanner";
@@ -35,6 +35,75 @@ const TABS: { id: Tab; label: string }[] = [
   { id: "trumpfeed",   label: "訊號來源 📡" },
   { id: "commodity",   label: "商品市場 🌐" },
 ];
+
+function ResonanceBar({
+  snapshot, composite, holdings, magaData,
+}: {
+  snapshot: Props["snapshot"];
+  composite: CompositeSnapshot | null;
+  holdings: HoldingsSnapshot | null;
+  magaData: MagaSnapshot | null;
+}) {
+  const hotSectors = useMemo(() => {
+    if (!snapshot?.sectors) return [];
+    const holdingStockIds = new Set(Object.keys(holdings?.positions ?? {}));
+    const magaBeneSectors = new Set(
+      (magaData?.stocks ?? [])
+        .filter((s) => s.category === "beneficiary")
+        .map((s) => s.sector_id)
+        .filter((id): id is string => Boolean(id))
+    );
+    return Object.entries(snapshot.sectors)
+      .map(([id, sector]) => {
+        let heat = 0;
+        const badges: string[] = [];
+        if (sector.level === "強烈關注") { heat += 3; badges.push(`短線 ${Math.round(sector.total)}燈`); }
+        else if (sector.level === "觀察中") { heat += 1; }
+        const cd = composite?.scores?.[id];
+        if (cd) {
+          if (cd.signal === "強烈買入")  { heat += 3; badges.push("長線強買"); }
+          else if (cd.signal === "買入") { heat += 2; badges.push("長線買入"); }
+          else if (cd.signal === "賣出")      { heat -= 1; }
+          else if (cd.signal === "強烈賣出")  { heat -= 2; }
+        }
+        if (sector.stocks.some((s) => holdingStockIds.has(s.id))) { heat += 1; badges.push("持倉"); }
+        if (magaBeneSectors.has(id)) { heat += 1; badges.push("MAGA"); }
+        return { id, name: sector.name_zh, heat, level: sector.level, badges };
+      })
+      .filter((s) => s.heat >= 4 && s.level !== "忽略")
+      .sort((a, b) => b.heat - a.heat)
+      .slice(0, 6);
+  }, [snapshot, composite, holdings, magaData]);
+
+  if (hotSectors.length === 0) return null;
+
+  return (
+    <div className="border-b border-rose-200/50 dark:border-rose-900/40 bg-gradient-to-r from-rose-50/80 via-amber-50/50 to-transparent dark:from-rose-950/30 dark:via-amber-950/20 dark:to-transparent">
+      <div className="max-w-screen-xl mx-auto px-4 py-2 flex items-center gap-3 overflow-x-auto">
+        <span className="text-xs font-bold text-rose-600 dark:text-rose-400 shrink-0">🔥 全景共振</span>
+        <div className="w-px h-3.5 bg-rose-200/80 dark:bg-rose-800/50 shrink-0" />
+        <div className="flex gap-2">
+          {hotSectors.map((s) => (
+            <div
+              key={s.id}
+              className={`flex items-center gap-1.5 px-2.5 py-1 rounded-full text-xs font-medium border shrink-0 ${
+                s.heat >= 6
+                  ? "bg-rose-100/90 dark:bg-rose-900/40 text-rose-800 dark:text-rose-200 border-rose-300/60 dark:border-rose-700/50"
+                  : "bg-amber-100/90 dark:bg-amber-900/40 text-amber-800 dark:text-amber-200 border-amber-300/60 dark:border-amber-700/50"
+              }`}
+            >
+              {s.heat >= 6 ? "🔥" : "⚡"}
+              <span>{s.name}</span>
+              {s.badges.map((b, i) => (
+                <span key={i} className="opacity-70 font-normal">· {b}</span>
+              ))}
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  );
+}
 
 export function TabContainer({ snapshot, historyIndex, commodities, magaData, composite, sensitivity, holdings, pnl }: Props) {
   const [activeTab, setActiveTab] = useState<Tab>("sector");
@@ -71,6 +140,14 @@ export function TabContainer({ snapshot, historyIndex, commodities, magaData, co
         </div>
       </div>
 
+      {/* 全景共振袝 */}
+      <ResonanceBar
+        snapshot={snapshot}
+        composite={composite}
+        holdings={holdings}
+        magaData={magaData}
+      />
+
       {/* Tab 內容 */}
       <main className="flex-1 max-w-screen-xl mx-auto w-full px-4 pb-12">
         {activeTab === "sector" && (
@@ -82,7 +159,7 @@ export function TabContainer({ snapshot, historyIndex, commodities, magaData, co
               </ErrorBoundary>
             </section>
             <ErrorBoundary label="板塊偵測">
-              <SectorGrid data={snapshot} />
+              <SectorGrid data={snapshot} composite={composite} />
             </ErrorBoundary>
             <ErrorBoundary label="歷史圖表">
               <TrendSection historyIndex={historyIndex} snapshot={snapshot} />

@@ -199,9 +199,35 @@ function StockCard({ stock, isExpanded, onToggle }: {
   );
 }
 
+function StockMiniRow({
+  stock,
+  nameMap,
+}: {
+  stock: { id: string; score?: number | null; grade: string; change_pct?: number | null };
+  nameMap: Record<string, string>;
+}) {
+  const gradeColor =
+    stock.grade === "A+" ? "text-emerald-600 dark:text-emerald-400" :
+    stock.grade === "A"  ? "text-emerald-500 dark:text-emerald-500" :
+    stock.grade === "B"  ? "text-blue-500 dark:text-blue-400" : "text-zinc-400";
+  return (
+    <div className="flex items-center gap-2 px-2 py-1.5 rounded-lg hover:bg-zinc-50 dark:hover:bg-zinc-800/50">
+      <span className="font-mono text-[11px] text-zinc-400 w-10 shrink-0">{stock.id}</span>
+      <span className="text-xs text-zinc-700 dark:text-zinc-300 flex-1 truncate">
+        {nameMap[stock.id] ?? "—"}
+      </span>
+      <span className={`text-xs font-bold ${gradeColor} w-6 text-center`}>{stock.grade}</span>
+      <span className={`text-xs font-medium ${changePctColor(stock.change_pct ?? null)} w-14 text-right`}>
+        {formatChangePct(stock.change_pct ?? null)}
+      </span>
+    </div>
+  );
+}
+
 export function ConvergencePanel({ snapshot, composite, holdings, magaData }: Props) {
   const [view, setView] = useState<"stocks" | "rank">("stocks");
   const [expandedRows, setExpandedRows] = useState<Set<number>>(new Set());
+  const [sectorExpandSet, setSectorExpandSet] = useState<Set<string>>(new Set());
   const cols = useColumns();
 
   // 切換 view 時收合所有 K 線
@@ -209,6 +235,14 @@ export function ConvergencePanel({ snapshot, composite, holdings, magaData }: Pr
     setView(v);
     setExpandedRows(new Set());
   };
+
+  const toggleSector = (id: string) =>
+    setSectorExpandSet((prev) => {
+      const next = new Set(prev);
+      if (next.has(id)) next.delete(id);
+      else next.add(id);
+      return next;
+    });
 
   // ──── 計算交集板塊 ────────────────────────────────────────────────
   const convergenceSectors = useMemo<ConvergenceSector[]>(() => {
@@ -395,39 +429,65 @@ export function ConvergencePanel({ snapshot, composite, holdings, magaData }: Pr
       {/* ── 板塊排行 ── */}
       {view === "rank" && (
         <div className="space-y-2">
-          {convergenceSectors.map((sec) => (
-            <div
-              key={sec.sectorId}
-              className="flex items-center gap-3 px-4 py-3 rounded-xl border border-zinc-200/50 dark:border-zinc-700/50 bg-white/60 dark:bg-zinc-900/40"
-            >
-              {/* 板塊名稱 + 等級 badge */}
-              <div className="w-32 shrink-0">
-                <p className="text-sm font-medium text-zinc-800 dark:text-zinc-200 truncate">
-                  {getSectorName(sec.sectorId)}
-                </p>
-                <span className={`inline-block mt-0.5 text-xs px-1.5 py-0.5 rounded-full font-medium ${LEVEL_BADGE[sec.level] ?? "bg-zinc-100 dark:bg-zinc-800 text-zinc-500"}`}>
-                  {sec.level}
-                </span>
+          {convergenceSectors.map((sec) => {
+            const isExpanded = sectorExpandSet.has(sec.sectorId);
+            const sectorStocks = (snapshot?.sectors[sec.sectorId]?.stocks ?? [])
+              .slice()
+              .sort((a, b) => (b.score ?? 0) - (a.score ?? 0))
+              .slice(0, 8);
+            return (
+              <div
+                key={sec.sectorId}
+                className="rounded-xl border border-zinc-200/50 dark:border-zinc-700/50 bg-white/60 dark:bg-zinc-900/40 overflow-hidden"
+              >
+                {/* 可點擊摘要列 */}
+                <button
+                  className="w-full flex items-center gap-3 px-4 py-3 text-left"
+                  onClick={() => toggleSector(sec.sectorId)}
+                  aria-expanded={isExpanded}
+                >
+                  <div className="w-32 shrink-0">
+                    <p className="text-sm font-medium text-zinc-800 dark:text-zinc-200 truncate">
+                      {getSectorName(sec.sectorId)}
+                    </p>
+                    <span className={`inline-block mt-0.5 text-xs px-1.5 py-0.5 rounded-full font-medium ${LEVEL_BADGE[sec.level] ?? "bg-zinc-100 dark:bg-zinc-800 text-zinc-500"}`}>
+                      {sec.level}
+                    </span>
+                  </div>
+                  <div className="flex flex-col items-center shrink-0 w-14 text-center">
+                    <span className="text-base font-bold text-emerald-600 dark:text-emerald-400 leading-none">
+                      {sec.lightCount}
+                    </span>
+                    <span className="text-[10px] text-zinc-400 leading-tight">/ 7 燈</span>
+                  </div>
+                  <div className="flex-1 min-w-0">
+                    <CombinedBar combined={sec.combined} lightRatio={sec.lightRatio} composite={sec.composite} />
+                  </div>
+                  <div className="flex items-center gap-1.5 shrink-0">
+                    <span className="text-xs text-zinc-400">{sec.stockCount} 支</span>
+                    {sectorStocks.length > 0 && (
+                      <svg
+                        width="14" height="14" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" strokeWidth="2.5"
+                        className={`text-zinc-400 transition-transform duration-200 ${isExpanded ? "rotate-180" : ""}`}
+                      >
+                        <path d="M6 9l6 6 6-6" />
+                      </svg>
+                    )}
+                  </div>
+                </button>
+                {/* 展開個股 */}
+                {isExpanded && sectorStocks.length > 0 && (
+                  <div className="border-t border-zinc-100/70 dark:border-zinc-800/60 px-3 pb-3 pt-2 space-y-0.5">
+                    <p className="text-[10px] text-zinc-400 px-2 pb-1">板塊個股排名（依綜合評分）</p>
+                    {sectorStocks.map((stock) => (
+                      <StockMiniRow key={stock.id} stock={stock} nameMap={nameMap} />
+                    ))}
+                  </div>
+                )}
               </div>
-
-              {/* 短線亮燈 / 總燈 */}
-              <div className="flex flex-col items-center shrink-0 w-14 text-center">
-                <span className="text-base font-bold text-emerald-600 dark:text-emerald-400 leading-none">
-                  {sec.lightCount}
-                </span>
-                <span className="text-[10px] text-zinc-400 leading-tight">/ 7 燈</span>
-              </div>
-
-              {/* 雙線共振綜合分數條 */}
-              <div className="flex-1 min-w-0">
-                <CombinedBar combined={sec.combined} lightRatio={sec.lightRatio} composite={sec.composite} />
-              </div>
-
-              {/* 個股數量 */}
-              <span className="text-xs text-zinc-400 shrink-0">{sec.stockCount} 支</span>
-            </div>
-          ))}
-
+            );
+          })}
           <p className="text-xs text-zinc-400 dark:text-zinc-500 text-center pt-2">
             綜合分 = 短線燈號比率 × 50% ＋ 正規化複合分 × 50%  ·  Asness, Moskowitz & Pedersen (2013)
           </p>
