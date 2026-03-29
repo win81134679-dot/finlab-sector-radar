@@ -50,6 +50,7 @@ interface StockTableProps {
   stocks:       StockData[];
   sectorLevel?: string;      // 板塊等級（傳入 StockSummary）
   macroWarning?: boolean;    // 宏觀逆風警示（傳入 StockSummary）
+  cycleStage?:  string;      // 週期階段（傳入 StockSummary）
 }
 
 const GRADE_STARS: Record<string, string> = {
@@ -58,7 +59,7 @@ const GRADE_STARS: Record<string, string> = {
   "忽略": "⭐",
 };
 
-export function StockTable({ stocks, sectorLevel, macroWarning }: StockTableProps) {
+export function StockTable({ stocks, sectorLevel, macroWarning, cycleStage }: StockTableProps) {
   const [expandedId, setExpandedId] = useState<string | null>(null);
 
   if (!stocks || stocks.length === 0) {
@@ -92,6 +93,7 @@ export function StockTable({ stocks, sectorLevel, macroWarning }: StockTableProp
               isExpanded={expandedId === stock.id}
               sectorLevel={sectorLevel}
               macroWarning={macroWarning}
+              cycleStage={cycleStage}
               onToggle={() =>
                 setExpandedId(expandedId === stock.id ? null : stock.id)
               }
@@ -108,10 +110,11 @@ interface StockRowProps {
   isExpanded:   boolean;
   sectorLevel?: string;
   macroWarning?: boolean;
+  cycleStage?:  string;
   onToggle:     () => void;
 }
 
-function StockRow({ stock, isExpanded, sectorLevel, macroWarning, onToggle }: StockRowProps) {
+function StockRow({ stock, isExpanded, sectorLevel, macroWarning, cycleStage, onToggle }: StockRowProps) {
   const stars = GRADE_STARS[stock.grade] ?? "⭐";
   const changePct = stock.change_pct;
   const flag = stock.price_flag ?? "normal";
@@ -224,6 +227,7 @@ function StockRow({ stock, isExpanded, sectorLevel, macroWarning, onToggle }: St
                 score={stock.score}
                 sectorLevel={sectorLevel}
                 macroWarning={macroWarning}
+                cycleStage={cycleStage}
               />
             </div>
 

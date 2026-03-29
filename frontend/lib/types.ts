@@ -25,11 +25,14 @@ export interface StockData {
   ohlcv_7d?: OHLCBar[];
 }
 
+export type CycleStage = "萌芽期" | "確認期" | "加速期" | "過熱期";
+
 export interface SectorData {
   name_zh: string;
   total: number;
   signals: number[];   // 0.0 / 0.5 / 1.0，7個元素
   level: "強烈關注" | "觀察中" | "忽略";
+  cycle_stage?: CycleStage | null;
   stocks: StockData[];
 }
 

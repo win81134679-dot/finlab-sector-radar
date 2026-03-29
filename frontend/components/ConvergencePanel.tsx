@@ -8,7 +8,7 @@ import { useState, useMemo, useEffect, useRef } from "react";
 import dynamic from "next/dynamic";
 import type { SignalSnapshot, CompositeSnapshot, HoldingsSnapshot, MagaSnapshot, OHLCBar } from "@/lib/types";
 import { getSectorName } from "@/lib/sectors";
-import { changePctColor, formatChangePct, SIGNAL_NAMES } from "@/lib/signals";
+import { changePctColor, formatChangePct, SIGNAL_NAMES, CYCLE_STAGE_CONFIG, type CycleStageKey } from "@/lib/signals";
 
 const COMPOSITE_THRESHOLD = 0.10;
 
@@ -90,6 +90,7 @@ interface ConvergenceStock {
   name_zh?:    string;
   sectorId:    string;
   sectorLevel: string;
+  cycle_stage?: string | null;
   score:       number | null;
   grade:       string;
   change_pct:  number | null;
@@ -241,6 +242,17 @@ function StockCard({ stock, isExpanded, onToggle, macroWarning }: {
               {stock.tags.includes("MAGA") && (
                 <span className="text-[11px] px-1.5 py-0.5 rounded-full bg-blue-100/80 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 border border-blue-200 dark:border-blue-700/40">🇺🇸政策</span>
               )}
+              {stock.cycle_stage && (() => {
+                const cfg = CYCLE_STAGE_CONFIG[stock.cycle_stage as CycleStageKey];
+                return cfg ? (
+                  <span
+                    className={`text-[11px] px-1.5 py-0.5 rounded-full border font-medium ${cfg.chipCls}`}
+                    title={cfg.tooltip}
+                  >
+                    {cfg.emoji} {cfg.label}
+                  </span>
+                ) : null;
+              })()}
             </div>
           </div>
         </div>
@@ -283,6 +295,7 @@ function StockCard({ stock, isExpanded, onToggle, macroWarning }: {
             score={stock.score}
             sectorLevel={stock.sectorLevel}
             macroWarning={macroWarning}
+            cycleStage={stock.cycle_stage ?? undefined}
           />
           {hasBreakdown && stock.breakdown && (
             <FactorRadar breakdown={stock.breakdown} grade={stock.grade} />
@@ -414,6 +427,7 @@ export function ConvergencePanel({ snapshot, composite, holdings, magaData }: Pr
           name_zh:    nameMap[stock.id],
           sectorId,
           sectorLevel: sector.level,
+          cycle_stage: sector.cycle_stage ?? null,
           score:      stock.score ?? null,
           grade:      stock.grade,
           change_pct: stock.change_pct ?? null,

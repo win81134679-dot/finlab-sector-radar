@@ -42,6 +42,36 @@ export const LEVEL_CONFIG = {
   },
 } as const;
 
+// 四週期階段設定（同步 Python _calc_cycle_stage 判斷邏輯）
+export const CYCLE_STAGE_CONFIG = {
+  "萌芽期": {
+    emoji:   "🌱",
+    label:   "萌芽期",
+    chipCls: "bg-lime-100/80 dark:bg-lime-900/30 text-lime-700 dark:text-lime-300 border border-lime-200 dark:border-lime-700/40",
+    tooltip: "基本面出現拐點，觀察訊號，可小量試探性佈局",
+  },
+  "確認期": {
+    emoji:   "🌿",
+    label:   "確認期",
+    chipCls: "bg-emerald-100/80 dark:bg-emerald-900/30 text-emerald-700 dark:text-emerald-300 border border-emerald-200 dark:border-emerald-700/40",
+    tooltip: "法人入場＋技術突破，最佳主力建倉時機",
+  },
+  "加速期": {
+    emoji:   "🌳",
+    label:   "加速期",
+    chipCls: "bg-green-100/80 dark:bg-green-900/30 text-green-700 dark:text-green-300 border border-green-200 dark:border-green-700/40",
+    tooltip: "多燈齊亮，動能強勁，持股續抱但設置動態停利",
+  },
+  "過熱期": {
+    emoji:   "🍂",
+    label:   "過熱期",
+    chipCls: "bg-amber-100/80 dark:bg-amber-900/20 text-amber-800 dark:text-amber-300 border border-amber-300 dark:border-amber-600/40",
+    tooltip: "全燈齊亮，留意高追風險，宜分批出場",
+  },
+} as const;
+
+export type CycleStageKey = keyof typeof CYCLE_STAGE_CONFIG;
+
 // 信號鍵 → 中文名稱（key 為 Python 輸出的信號名稱）
 export const SIGNAL_NAMES: Record<string, string> = {
   revenue:     "月營收拐點",

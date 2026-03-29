@@ -176,6 +176,30 @@ def run_all(fetcher, sector_map, config,
     return result
 
 
+def _calc_cycle_stage(signals: list, total: float, level: str) -> Optional[str]:
+    """
+    依七燈 signals 陣列推算板塊所處週期階段。
+    優先序：過熱期 > 加速期 > 確認期 > 萌芽期
+    signals 索引：[0]=營收 [1]=法人 [2]=庫存 [3]=技術 [4]=相對強度 [5]=籌碼 [6]=宏觀
+    """
+    if level == "忽略" or len(signals) < 6:
+        return None
+    rev, inst, inv, tech, _rs, chip = (float(signals[i]) for i in range(6))
+    # 過熱期：幾乎全燈，泡沫化跡象
+    if total >= 6.5:
+        return "過熱期"
+    # 加速期：多燈齊亮 + 籌碼進駐
+    if total >= 5 or (total >= 4 and chip >= 1):
+        return "加速期"
+    # 確認期：法人入場 + 技術啟動
+    if inst >= 1 and tech >= 0.5:
+        return "確認期"
+    # 萌芽期：基本面拐點，資金尚未跟進
+    if (rev >= 0.5 or inv >= 0.5) and inst == 0 and tech == 0:
+        return "萌芽期"
+    return None
+
+
 def _save_snapshot(result: Dict[str, Any], config) -> Optional[Path]:
     """
     儲存三個 JSON 輸出：
@@ -268,12 +292,14 @@ def _save_snapshot(result: Dict[str, Any], config) -> Optional[Path]:
                 "price_flag": _trading_status.get(stock_id, "normal"),
                 "ohlcv_7d":   _ohlcv_batch.get(stock_id, []),
             })
+        _sigs = [float(s) for s in v["signals"]]
         sectors_payload[sid] = {
-            "name_zh": v["name"],
-            "total":   v["total"],
-            "signals": [float(s) for s in v["signals"]],
-            "level":   v["level"],
-            "stocks":  stock_list,
+            "name_zh":     v["name"],
+            "total":       v["total"],
+            "signals":     _sigs,
+            "level":       v["level"],
+            "cycle_stage": _calc_cycle_stage(_sigs, v["total"], v["level"]),
+            "stocks":      stock_list,
         }
 
     # ── 構建完整 snapshot dict ──────────────────────────────────────────

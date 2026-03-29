@@ -62,11 +62,12 @@ interface StockSummaryProps {
   score?:        number | null;    // 綜合評分（預留）
   sectorLevel?:  string;           // "強烈關注" | "觀察中" | "忽略"
   macroWarning?: boolean;          // 宏觀環境逆風警示
+  cycleStage?:   string;           // 週期階段標籤（用於衝突提示）
 }
 
 export function StockSummary({
   data, grade, breakdown, loading,
-  triggered, sectorLevel, macroWarning,
+  triggered, sectorLevel, macroWarning, cycleStage,
 }: StockSummaryProps) {
   if (loading) {
     return (
@@ -138,6 +139,14 @@ export function StockSummary({
   else if (sectorLevel === "觀察中")   chips.push({ text: "🟡 板塊觀察", cls: "bg-amber-100 dark:bg-amber-900/30 text-amber-700 dark:text-amber-300" });
 
   if (macroWarning) chips.push({ text: "⚠ 宏觀逆風", cls: "bg-orange-100 dark:bg-orange-900/30 text-orange-700 dark:text-orange-400" });
+
+  // 確認期 × 宏觀逆風衝突提示：最佳進場点卻遭逆風，需謹慎對待
+  if (cycleStage === "確認期" && macroWarning) {
+    chips.push({
+      text: "⚡ 確認期×逆風",
+      cls: "bg-yellow-100 dark:bg-yellow-900/30 text-yellow-800 dark:text-yellow-300 border border-yellow-300 dark:border-yellow-600/40",
+    });
+  }
 
   if (chip >= 3) chips.push({ text: "籌碼集中", cls: "bg-purple-100/80 dark:bg-purple-900/30 text-purple-700 dark:text-purple-300" });
 

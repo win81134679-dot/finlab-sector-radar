@@ -5,7 +5,7 @@ import { useState } from "react";
 import type { SectorData, CompositeSnapshot } from "@/lib/types";
 import { SignalDots } from "./SignalDots";
 import { StockTable } from "./StockTable";
-import { LEVEL_CONFIG } from "@/lib/signals";
+import { LEVEL_CONFIG, CYCLE_STAGE_CONFIG, type CycleStageKey } from "@/lib/signals";
 
 interface SectorCardProps {
   sectorId: string;
@@ -58,6 +58,17 @@ export function SectorCard({ sectorId, sector, featured = false, defaultExpanded
                 🎯 長線共振
               </span>
             )}
+            {sector.cycle_stage && (() => {
+              const cfg = CYCLE_STAGE_CONFIG[sector.cycle_stage as CycleStageKey];
+              return cfg ? (
+                <span
+                  className={`text-[10px] px-1.5 py-0.5 rounded-full font-medium ${cfg.chipCls}`}
+                  title={cfg.tooltip}
+                >
+                  {cfg.emoji} {cfg.label}
+                </span>
+              ) : null;
+            })()}
           </div>
 
           {/* 總分 */}
@@ -96,7 +107,7 @@ export function SectorCard({ sectorId, sector, featured = false, defaultExpanded
           `}
         >
           <div className="px-4 pb-4 border-t border-zinc-200/30 dark:border-zinc-700/30 pt-3">
-            <StockTable stocks={stocks} sectorLevel={sector.level} macroWarning={macroWarning} />
+            <StockTable stocks={stocks} sectorLevel={sector.level} macroWarning={macroWarning} cycleStage={sector.cycle_stage ?? undefined} />
           </div>
         </div>
       )}
