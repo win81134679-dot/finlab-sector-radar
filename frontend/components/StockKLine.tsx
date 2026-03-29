@@ -6,12 +6,17 @@ import type { Time } from "lightweight-charts";
 import type { OHLCBar } from "@/lib/types";
 
 // ── 時間框架 ──────────────────────────────────────────────────────────────
-export type Timeframe = "14D" | "1M" | "W" | "Mo" | "Y";
+export type Timeframe = "D" | "W" | "Mo" | "Y";
+
+// 日K 期間選項
+export type DayPeriod = "週" | "月" | "年";
+const DAY_PERIOD_BARS: Record<DayPeriod, number> = { "週": 5, "月": 22, "年": 252 };
+const DAY_PERIODS: DayPeriod[] = ["週", "月", "年"];
 
 const TIMEFRAME_LABELS: Record<Timeframe, string> = {
-  "14D": "14天", "1M": "1月", "W": "週K", "Mo": "月K", "Y": "年K",
+  "D": "日K", "W": "週K", "Mo": "月K", "Y": "年K",
 };
-const TIMEFRAMES: Timeframe[] = ["14D", "1M", "W", "Mo", "Y"];
+const TIMEFRAMES: Timeframe[] = ["D", "W", "Mo", "Y"];
 
 // ── 資料聚合工具 ───────────────────────────────────────────────────────────
 function toWeekly(data: OHLCBar[]): OHLCBar[] {
@@ -60,18 +65,17 @@ function toYearly(data: OHLCBar[]): OHLCBar[] {
   }));
 }
 
-function applyTimeframe(data: OHLCBar[], tf: Timeframe): OHLCBar[] {
+function applyTimeframe(data: OHLCBar[], tf: Timeframe, dayPeriod: DayPeriod): OHLCBar[] {
   switch (tf) {
-    case "14D": return data.slice(-14);
-    case "1M":  return data.slice(-22);
-    case "W":   return toWeekly(data);
-    case "Mo":  return toMonthly(data);
-    case "Y":   return toYearly(data);
+    case "D":  return data.slice(-DAY_PERIOD_BARS[dayPeriod]);
+    case "W":  return toWeekly(data);
+    case "Mo": return toMonthly(data);
+    case "Y":  return toYearly(data);
   }
 }
 
 // ── 時間軸格式化（修正 NaN/NaN：v5 傳入 BusinessDay 物件非 Unix 戳）──────
-function fmtAxisTime(time: Time, tf: Timeframe): string {
+function fmtAxisTime(time: Time, tf: Timeframe, _period?: DayPeriod): string {
   let y = 0, mo = 0, d = 0;
   if (typeof time === "number") {
     const dt = new Date(time * 1000);
@@ -111,7 +115,8 @@ const GITHUB_RAW_BASE = process.env.NEXT_PUBLIC_GITHUB_RAW_BASE_URL ?? "";
 
 export function StockKLine({ data: initData, stockId }: KLineProps) {
   const containerRef = useRef<HTMLDivElement>(null);
-  const [tf, setTf] = useState<Timeframe>("1M");
+  const [tf, setTf] = useState<Timeframe>("D");
+  const [dayPeriod, setDayPeriod] = useState<DayPeriod>("月");
   const [fullData, setFullData] = useState<OHLCBar[]>(initData);
   const [loading, setLoading] = useState(false);
 
@@ -133,7 +138,7 @@ export function StockKLine({ data: initData, stockId }: KLineProps) {
   // 資料或時間框架切換時重建圖表
   useEffect(() => {
     if (!containerRef.current) return;
-    const bars = applyTimeframe(fullData, tf);
+    const bars = applyTimeframe(fullData, tf, dayPeriod);
     if (bars.length === 0) return;
 
     const dark = isDark();
@@ -157,7 +162,7 @@ export function StockKLine({ data: initData, stockId }: KLineProps) {
       },
       timeScale: {
         borderColor: c.border,
-        tickMarkFormatter: (time: Time) => fmtAxisTime(time, tf),
+        tickMarkFormatter: (time: Time) => fmtAxisTime(time, tf, dayPeriod),
       },
       crosshair: { mode: 1 },
       handleScroll: false,
@@ -205,7 +210,7 @@ export function StockKLine({ data: initData, stockId }: KLineProps) {
       window.removeEventListener("resize", handleResize);
       chart.remove();
     };
-  }, [fullData, tf]);
+  }, [fullData, tf, dayPeriod]);
 
   return (
     <div className="mt-1 rounded border border-zinc-200/50 dark:border-zinc-700/30 overflow-hidden">
@@ -214,7 +219,26 @@ export function StockKLine({ data: initData, stockId }: KLineProps) {
         <span className="text-[10px] text-zinc-500 dark:text-zinc-400 font-mono">
           {stockId}{loading ? " · 載入…" : ""}
         </span>
-        <div className="flex gap-0.5">
+        <div className="flex items-center gap-1">
+          {/* 日K 期間切換（僅 D 模式顯示） */}
+          {tf === "D" && (
+            <div className="flex gap-0.5 border-r border-zinc-200/50 dark:border-zinc-700/40 pr-1 mr-0.5">
+              {DAY_PERIODS.map(p => (
+                <button
+                  key={p}
+                  onClick={() => setDayPeriod(p)}
+                  className={`px-1.5 py-0.5 text-[10px] rounded transition-colors ${
+                    dayPeriod === p
+                      ? "bg-zinc-200/80 dark:bg-zinc-700/80 text-zinc-700 dark:text-zinc-200 font-medium"
+                      : "text-zinc-400 hover:text-zinc-600 dark:hover:text-zinc-300"
+                  }`}
+                >
+                  {p}
+                </button>
+              ))}
+            </div>
+          )}
+          {/* K線類型切換 */}
           {TIMEFRAMES.map(t => (
             <button
               key={t}

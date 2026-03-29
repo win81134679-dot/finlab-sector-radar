@@ -106,14 +106,15 @@ function StockRow({ stock, isExpanded, onToggle }: StockRowProps) {
             {hasKLine && (
               <button
                 onClick={onToggle}
-                title={isExpanded ? "收起K線" : "展開7日K線"}
-                className={`text-[11px] leading-none transition-colors ${
+                title={isExpanded ? "收起K線" : "展閆71日K線"}
+                className={`flex items-center gap-0.5 text-[10px] leading-none transition-colors rounded px-1 py-0.5 ${
                   isExpanded
-                    ? "text-blue-500 dark:text-blue-400"
-                    : "text-zinc-400 hover:text-blue-500 dark:hover:text-blue-400"
+                    ? "bg-blue-500/15 text-blue-600 dark:text-blue-400"
+                    : "text-zinc-400 hover:text-blue-500 dark:hover:text-blue-400 hover:bg-blue-500/10"
                 }`}
               >
-                📈
+                <span>📈</span>
+                <span className="font-medium">K線</span>
               </button>
             )}
           </div>
