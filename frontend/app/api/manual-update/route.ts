@@ -11,6 +11,8 @@ import { createHash, timingSafeEqual } from "crypto";
 import type { NextRequest } from "next/server";
 import { NextResponse } from "next/server";
 
+export const runtime = "nodejs";
+
 // SHA-256("fd33802001") — 重新計算指令:
 //   node -e "const c=require('crypto');console.log(c.createHash('sha256').update('YOUR_PASSWORD').digest('hex'))"
 const EXPECTED_HASH = "9742a9ab0bad9cec3be88eb0911befc2b8cac865cf9cec9dd9be0a3461b61a07";

@@ -55,8 +55,8 @@ export function TabContainer({ snapshot, historyIndex, commodities }: Props) {
               {tab.label}
             </button>
           ))}
-          {/* 立刻更新按鈕（密碼保護） */}
-          <UpdateButton />
+          {/* 立刻更新按鈕（密碼保護）*/}
+          <UpdateButton currentRunAt={runAt} />
         </div>
       </div>
 
