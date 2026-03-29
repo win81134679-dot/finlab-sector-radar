@@ -648,12 +648,20 @@ if __name__ == "__main__":
                 _auto_log(f"[INFO] Truth Social 載入 {len(_posts)} 篇貼文")
             else:
                 _auto_log("[INFO] TRUTH_SOCIAL_PATH 未設定，composite 使用空貼文（純關稅矩陣）")
-            from src.analyzers.composite import run_composite_analysis as _composite_run
+            from src.analyzers.composite import run_composite_analysis as _composite_run, run_sensitivity_analysis as _sensitivity_run
             _comp = _composite_run(_posts, scenario="25%", write_output=True)
             _auto_log(
                 f"[INFO] 複合評分完成：強度={_comp['signal_strength']:.2f}  "
                 f"買入板塊={','.join(_comp['top_buy'][:3])}  "
                 f"賣出板塊={','.join(_comp['top_sell'][:3])}"
+            )
+            # 敏感度分析（檢驗 50:50 假設的穩健性）
+            _sens = _sensitivity_run(_posts, scenario="25%", write_output=True)
+            _always_buy  = [s for s, v in _sens["stability"].items() if v["always_buy"]]
+            _always_sell = [s for s, v in _sens["stability"].items() if v["always_sell"]]
+            _auto_log(
+                f"[INFO] 敏感度分析完成：穩健買入={','.join(_always_buy[:3]) or '無'}  "
+                f"穩健賣出={','.join(_always_sell[:3]) or '無'}"
             )
         except Exception as _e:
             _auto_log(f"[WARN] 複合評分失敗（不影響主流程）: {_e}")

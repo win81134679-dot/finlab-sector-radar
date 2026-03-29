@@ -300,3 +300,31 @@ export interface BacktestSnapshot {
     worst_ticker:   string;
   };
 }
+
+// ────────────────────────────────────────────────────────────────────────
+// 敏感度分析（Sensitivity Analysis）型別
+// ────────────────────────────────────────────────────────────────────────
+
+export interface SensitivityPreset {
+  label:           string;                  // e.g. "均衡 (5:5)"
+  nlp_weight:      number;                  // 0.0 ~ 1.0
+  tariff_weight:   number;                  // 0.0 ~ 1.0
+  top_buy:         string[];
+  top_sell:        string[];
+  signal_strength: number;
+  scores:          Record<string, { composite: number; signal: SignalLabel }>;
+}
+
+export interface SectorStability {
+  rank_std:    number;   // 0 = 完全穩定，越大越敏感
+  always_buy:  boolean;  // 在所有 5 種權重下皆為買入
+  always_sell: boolean;  // 在所有 5 種權重下皆為賣出
+}
+
+export interface SensitivitySnapshot {
+  updated_at: string;
+  scenario:   TariffScenario;
+  presets:    SensitivityPreset[];
+  stability:  Record<string, SectorStability>;
+  note:       string;   // 學術誠實聲明
+}

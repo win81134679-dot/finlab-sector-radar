@@ -2,7 +2,7 @@
 // TabContainer.tsx — 板塊偵測 / 商品市場 / MAGA 追蹤 / 訊號雷達 / 組合管理 / 回測 Tab 切換（Client Component）
 
 import { useState } from "react";
-import type { SignalSnapshot, HistoryIndex, CommoditySnapshot, MagaSnapshot, CompositeSnapshot, HoldingsSnapshot, PnlSnapshot, BacktestSnapshot } from "@/lib/types";
+import type { SignalSnapshot, HistoryIndex, CommoditySnapshot, MagaSnapshot, CompositeSnapshot, HoldingsSnapshot, PnlSnapshot, BacktestSnapshot, SensitivitySnapshot } from "@/lib/types";
 import { MacroPanel } from "@/components/MacroPanel";
 import { MacroWarningBanner } from "@/components/MacroWarningBanner";
 import { StaleDataBanner } from "@/components/StaleDataBanner";
@@ -22,6 +22,7 @@ interface Props {
   commodities: CommoditySnapshot | null;
   magaData:    MagaSnapshot | null;
   composite:   CompositeSnapshot | null;
+  sensitivity: SensitivitySnapshot | null;
   holdings:    HoldingsSnapshot | null;
   pnl:         PnlSnapshot | null;
   backtest:    BacktestSnapshot | null;
@@ -38,7 +39,7 @@ const TABS: { id: Tab; label: string }[] = [
   { id: "backtest",  label: "策略回測 📈" },
 ];
 
-export function TabContainer({ snapshot, historyIndex, commodities, magaData, composite, holdings, pnl, backtest }: Props) {
+export function TabContainer({ snapshot, historyIndex, commodities, magaData, composite, sensitivity, holdings, pnl, backtest }: Props) {
   const [activeTab, setActiveTab] = useState<Tab>("sector");
 
   const runAt  = snapshot?.run_at  ?? "";
@@ -109,7 +110,7 @@ export function TabContainer({ snapshot, historyIndex, commodities, magaData, co
             <h2 className="text-lg font-bold text-zinc-900 dark:text-white mb-1">訊號雷達</h2>
             <p className="text-xs text-zinc-500 dark:text-zinc-400 mb-5">NLP 分析 + 關稅矩陣複合評分，權重 50:50</p>
             <ErrorBoundary label="訊號雷達">
-              <CompositePanel data={composite} />
+              <CompositePanel data={composite} sensitivity={sensitivity} />
             </ErrorBoundary>
           </div>
         )}

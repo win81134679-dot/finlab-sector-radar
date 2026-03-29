@@ -429,3 +429,46 @@ export async function fetchBacktest() {
     return parsed.data;
   } catch { return null; }
 }
+
+// ── 敏感度分析 ────────────────────────────────────────────────────────────
+
+const SensitivityPresetSchema = z.object({
+  label:           z.string(),
+  nlp_weight:      z.number(),
+  tariff_weight:   z.number(),
+  top_buy:         z.array(z.string()).optional().default([]),
+  top_sell:        z.array(z.string()).optional().default([]),
+  signal_strength: z.number(),
+  scores: z.record(z.object({
+    composite: z.number(),
+    signal:    z.enum(["強烈買入", "買入", "中性", "賣出", "強烈賣出"]),
+  })),
+});
+
+const SectorStabilitySchema = z.object({
+  rank_std:    z.number(),
+  always_buy:  z.boolean(),
+  always_sell: z.boolean(),
+});
+
+const SensitivitySnapshotSchema = z.object({
+  updated_at: z.string(),
+  scenario:   z.enum(["10%", "25%", "60%"]),
+  presets:    z.array(SensitivityPresetSchema),
+  stability:  z.record(SectorStabilitySchema),
+  note:       z.string().optional().default(""),
+});
+
+export async function fetchSensitivity() {
+  if (!GITHUB_RAW_BASE) return null;
+  const url = `${GITHUB_RAW_BASE}/output/composite/sensitivity.json`;
+  try {
+    const raw = await fetchJSON<unknown>(url);
+    const parsed = SensitivitySnapshotSchema.safeParse(raw);
+    if (!parsed.success) {
+      console.warn("composite/sensitivity.json schema 驗證失敗:", parsed.error.issues);
+      return null;
+    }
+    return parsed.data;
+  } catch { return null; }
+}
