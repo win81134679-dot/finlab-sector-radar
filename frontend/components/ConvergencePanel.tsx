@@ -236,7 +236,7 @@ function StockCard({ stock, isExpanded, onToggle, macroWarning }: {
             )}
             <div className="flex gap-1">
               {stock.tags.includes("持倉") && (
-                <span className="text-[11px] px-1.5 py-0.5 rounded-full bg-amber-100/80 dark:bg-amber-900/30 text-amber-700 dark:text-amber-300 border border-amber-200 dark:border-amber-700/40">💼持倉</span>
+                <span className="text-[11px] px-1.5 py-0.5 rounded-full bg-amber-100/80 dark:bg-amber-900/30 text-amber-700 dark:text-amber-300 border border-amber-200 dark:border-amber-700/40">💼長線建議持倉</span>
               )}
               {stock.tags.includes("MAGA") && (
                 <span className="text-[11px] px-1.5 py-0.5 rounded-full bg-blue-100/80 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 border border-blue-200 dark:border-blue-700/40">🇺🇸政策</span>
@@ -634,7 +634,7 @@ export function ConvergencePanel({ snapshot, composite, holdings, magaData }: Pr
                 })}
               </div>
               <p className="text-[11px] text-zinc-400 dark:text-zinc-500 text-center pt-1">
-                以所屬板塊「雙線共振綜合分數」排序  ·  💼 持倉  🇺🇸 MAGA政策受益  ·  點擊「展開 K 線」查看走勢
+                以所屬板塊「雙線共振綜合分數」排序  ·  💼 長線建議持倉  🇺🇸 MAGA政策受益  ·  點擊「展開 K 線」查看走勢
               </p>
             </>
           )}
