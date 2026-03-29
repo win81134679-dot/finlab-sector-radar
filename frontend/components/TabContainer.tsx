@@ -10,6 +10,7 @@ import { SectorGrid } from "@/components/SectorGrid";
 import { ErrorBoundary } from "@/components/ErrorBoundary";
 import { TrendSection } from "@/components/TrendSection";
 import { CommodityPanel } from "@/components/CommodityPanel";
+import { UpdateButton } from "@/components/UpdateButton";
 
 interface Props {
   snapshot: Awaited<ReturnType<typeof import("@/lib/fetcher").fetchLatestSnapshot>>;
@@ -40,7 +41,7 @@ export function TabContainer({ snapshot, historyIndex, commodities }: Props) {
 
       {/* Tab 導航列 */}
       <div className="sticky top-[var(--header-h,56px)] z-30 bg-[var(--bg-page)]/90 backdrop-blur-sm border-b border-zinc-200/40 dark:border-zinc-800/40">
-        <div className="max-w-screen-xl mx-auto px-4 flex gap-1 pt-1">
+        <div className="max-w-screen-xl mx-auto px-4 flex items-center gap-1 pt-1">
           {TABS.map(tab => (
             <button
               key={tab.id}
@@ -54,6 +55,8 @@ export function TabContainer({ snapshot, historyIndex, commodities }: Props) {
               {tab.label}
             </button>
           ))}
+          {/* 立刻更新按鈕（密碼保護） */}
+          <UpdateButton />
         </div>
       </div>
 
