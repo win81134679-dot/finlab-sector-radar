@@ -10,11 +10,22 @@ import Parser from "rss-parser";
 import { Redis } from "@upstash/redis";
 import { analyzePost, aggregateImpacts } from "@/lib/trump-nlp";
 
-// 支援 Upstash 兩種 env var 命名慣例（KV_REDIS_REST_* 或 KV_REST_API_*）
-const redis = new Redis({
-  url:   process.env.KV_REDIS_REST_URL   ?? process.env.KV_REST_API_URL   ?? "",
-  token: process.env.KV_REDIS_REST_TOKEN ?? process.env.KV_REST_API_TOKEN ?? "",
-});
+// 支援所有常見的 Upstash env var 命名慣例
+function makeRedis() {
+  const url =
+    process.env.KV_REDIS_REST_URL ??
+    process.env.KV_REST_API_URL ??
+    process.env.UPSTASH_REDIS_REST_URL ??
+    process.env.STORAGE_REDIS_REST_URL ??
+    process.env.STORAGE_REST_API_URL ?? "";
+  const token =
+    process.env.KV_REDIS_REST_TOKEN ??
+    process.env.KV_REST_API_TOKEN ??
+    process.env.UPSTASH_REDIS_REST_TOKEN ??
+    process.env.STORAGE_REDIS_REST_TOKEN ??
+    process.env.STORAGE_REST_API_TOKEN ?? "";
+  return { client: new Redis({ url, token }), ok: !!(url && token) };
+}
 import { SECTOR_NAMES } from "@/lib/sectors";
 import type {
   TrumpPost,
@@ -119,6 +130,13 @@ export async function POST(request: NextRequest) {
   const expectedToken = process.env.CRON_SECRET;
   if (!expectedToken || authHeader !== `Bearer ${expectedToken}`) {
     return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
+  }
+
+  // KV 可用性檢查
+  const { client: redis, ok: kvOk } = makeRedis();
+  if (!kvOk) {
+    console.error("update-trump: Redis env vars 未設定，請確認 Upstash 已連結到此 Vercel 專案");
+    return NextResponse.json({ error: "Redis env vars 未設定" }, { status: 503 });
   }
 
   // 速率限制

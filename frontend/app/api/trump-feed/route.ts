@@ -11,13 +11,38 @@ export const runtime = "nodejs";
 // 60 秒 CDN 快取（允許前端讀到略舊的資料，但不至於每次都打 KV）
 export const revalidate = 60;
 
-// 支援 Upstash 兩種 env var 命名慣例
-const redis = new Redis({
-  url:   process.env.KV_REDIS_REST_URL   ?? process.env.KV_REST_API_URL   ?? "",
-  token: process.env.KV_REDIS_REST_TOKEN ?? process.env.KV_REST_API_TOKEN ?? "",
-});
+// 支援所有常見的 Upstash env var 命名慣例
+function makeRedis() {
+  const url =
+    process.env.KV_REDIS_REST_URL ??
+    process.env.KV_REST_API_URL ??
+    process.env.UPSTASH_REDIS_REST_URL ??
+    process.env.STORAGE_REDIS_REST_URL ??
+    process.env.STORAGE_REST_API_URL ?? "";
+  const token =
+    process.env.KV_REDIS_REST_TOKEN ??
+    process.env.KV_REST_API_TOKEN ??
+    process.env.UPSTASH_REDIS_REST_TOKEN ??
+    process.env.STORAGE_REDIS_REST_TOKEN ??
+    process.env.STORAGE_REST_API_TOKEN ?? "";
+  return { client: new Redis({ url, token }), url, token };
+}
 
 export async function GET() {
+  const { client: redis, url, token } = makeRedis();
+
+  if (!url || !token) {
+    console.error(
+      "trump-feed: 找不到 Redis env vars，已嘗試：",
+      "KV_REDIS_REST_URL / KV_REST_API_URL / UPSTASH_REDIS_REST_URL / STORAGE_REDIS_REST_URL",
+      "→ 請訪問 /api/kv-debug 查看 Vercel 實際注入了哪些 env vars",
+    );
+    return NextResponse.json(
+      { error: "Redis env vars 未設定，請訪問 /api/kv-debug 診斷" },
+      { status: 503 },
+    );
+  }
+
   try {
     const log = await redis.get<TrumpEventLog>("trump:event_log");
 
@@ -36,7 +61,7 @@ export async function GET() {
   } catch (e) {
     console.error("trump-feed KV 讀取失敗:", e);
     return NextResponse.json(
-      { error: "KV 讀取失敗，請確認 Vercel KV 環境變數已設定" },
+      { error: "KV 讀取失敗，請訪問 /api/kv-debug 確認 env vars 設定" },
       { status: 503 },
     );
   }
