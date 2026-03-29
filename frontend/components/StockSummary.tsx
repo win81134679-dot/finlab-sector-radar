@@ -146,37 +146,37 @@ export function StockSummary({
     const academicDefs: Array<{ key: string; label: string; cls: string }> = [
       {
         key:   "外資牛市共振",
-        label: "📖 外資牛市",
+        label: "� 外資偏多",   // 牛市市場外資連續買超 → 偏多
         cls:   "bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300",
       },
       {
         key:   "外資熊市防守",
-        label: "📖 外資防守",
-        cls:   "bg-slate-100 dark:bg-slate-800/50 text-slate-700 dark:text-slate-300",
+        label: "🔻 外資防守",   // 熊市市場外資縮手 → 偏空/保守
+        cls:   "bg-slate-100 dark:bg-slate-800/50 text-slate-600 dark:text-slate-400",
       },
       {
         key:   "借券回補↑",
-        label: "📖 借券回補",
+        label: "🔺 借券回補",   // 空方借券↓ = 空頭回補 → 偏多
         cls:   "bg-violet-100 dark:bg-violet-900/30 text-violet-700 dark:text-violet-300",
       },
       {
         key:   "空頭加碼⚠",
-        label: "⚠ 空頭加碼",
+        label: "🔻 空頭加碼",   // 借券↑ = 空頭持續增碼 → 偏空警示
         cls:   "bg-orange-100 dark:bg-orange-900/30 text-orange-700 dark:text-orange-400",
       },
       {
         key:   "季節動能✓",
-        label: "📖 季節動能",
+        label: "🔺 季節偏多",   // 3–12月板塊動能延續 → 偏多
         cls:   "bg-teal-100 dark:bg-teal-900/30 text-teal-700 dark:text-teal-300",
       },
       {
         key:   "節後反轉⭐",
-        label: "📖 節後反轉",
-        cls:   "bg-indigo-100 dark:bg-indigo-900/30 text-indigo-700 dark:text-indigo-300",
+        label: "🔻 節後謹慎",   // 1–2月強勢後易拉回反轉 → 偏空/謹慎
+        cls:   "bg-indigo-100 dark:bg-indigo-900/30 text-indigo-600 dark:text-indigo-400",
       },
       {
         key:   "營收加速↑✓",
-        label: "📖 營收加速",
+        label: "🔺 營收加速",   // 近3月YoY持續加速 → 偏多
         cls:   "bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-300",
       },
     ];
