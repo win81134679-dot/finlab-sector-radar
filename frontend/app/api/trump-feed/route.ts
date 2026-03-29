@@ -7,9 +7,8 @@ import { Redis } from "@upstash/redis";
 import type { TrumpEventLog } from "@/lib/types";
 
 export const runtime = "nodejs";
-
-// 60 秒 CDN 快取（允許前端讀到略舊的資料，但不至於每次都打 KV）
-export const revalidate = 60;
+// force-dynamic：避免 Vercel ISR 快取住 Redis 掛起時的空/錯誤回應
+export const dynamic = "force-dynamic";
 
 // 支援所有常見的 Upstash env var 命名慣例
 // Vercel Marketplace 注入的是 redis:// 協定 URL（KV_REDIS_URL），需解析為 REST 格式
@@ -64,7 +63,11 @@ export async function GET() {
   }
 
   try {
-    const log = await redis.get<TrumpEventLog>("trump:event_log");
+    // 加入 8s 超時保護（Upstash REST 從 Vercel 冷啟動時可能掛起）
+    const log = await Promise.race([
+      redis.get<TrumpEventLog>("trump:event_log"),
+      new Promise<null>((resolve) => setTimeout(() => resolve(null), 8_000)),
+    ]);
 
     if (!log) {
       return NextResponse.json(
