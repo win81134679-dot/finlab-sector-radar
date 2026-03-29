@@ -67,6 +67,7 @@ export function SectorGrid({ data, isLoading = false, composite }: SectorGridPro
               featured={featuredIds.has(s.id)}
               defaultExpanded={featuredIds.has(s.id)}
               composite={composite}
+              macroWarning={data?.macro?.warning}
             />
           </div>
         ))}
@@ -82,6 +83,7 @@ export function SectorGrid({ data, isLoading = false, composite }: SectorGridPro
             featured={false}
             defaultExpanded={false}
             composite={composite}
+            macroWarning={data?.macro?.warning}
           />
         ))}
       </div>

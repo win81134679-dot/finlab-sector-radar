@@ -10,12 +10,13 @@ import { LEVEL_CONFIG } from "@/lib/signals";
 interface SectorCardProps {
   sectorId: string;
   sector: SectorData;
-  featured?: boolean;  // 強烈關注時放大顯示
+  featured?: boolean;
   defaultExpanded?: boolean;
   composite?: CompositeSnapshot | null;
+  macroWarning?: boolean;
 }
 
-export function SectorCard({ sectorId, sector, featured = false, defaultExpanded = false, composite }: SectorCardProps) {
+export function SectorCard({ sectorId, sector, featured = false, defaultExpanded = false, composite, macroWarning }: SectorCardProps) {
   const [expanded, setExpanded] = useState(defaultExpanded);
   const levelCfg = LEVEL_CONFIG[sector.level] ?? LEVEL_CONFIG["忽略"];
   const stocks = sector.stocks ?? [];
@@ -95,7 +96,7 @@ export function SectorCard({ sectorId, sector, featured = false, defaultExpanded
           `}
         >
           <div className="px-4 pb-4 border-t border-zinc-200/30 dark:border-zinc-700/30 pt-3">
-            <StockTable stocks={stocks} sectorLevel={sector.level} />
+            <StockTable stocks={stocks} sectorLevel={sector.level} macroWarning={macroWarning} />
           </div>
         </div>
       )}
