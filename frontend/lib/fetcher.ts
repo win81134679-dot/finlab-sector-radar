@@ -275,3 +275,157 @@ export async function fetchMagaData() {
     return null;
   }
 }
+
+// ── 三合一：複合訊號 / 組合 / 損益 / 回測 ────────────────────────────────
+
+const SectorCompositeScoreSchema = z.object({
+  composite: z.number(),
+  nlp:       z.number(),
+  tariff:    z.number(),
+  signal:    z.enum(["強烈買入", "買入", "中性", "賣出", "強烈賣出"]),
+});
+
+const CompositeSnapshotSchema = z.object({
+  updated_at:      z.string(),
+  scenario:        z.enum(["10%", "25%", "60%"]),
+  nlp_weight:      z.number(),
+  tariff_weight:   z.number(),
+  scores:          z.record(SectorCompositeScoreSchema),
+  top_buy:         z.array(z.string()).optional().default([]),
+  top_sell:        z.array(z.string()).optional().default([]),
+  keyword_hits:    z.array(z.string()).optional().default([]),
+  tariff_scenario: z.enum(["10%", "25%", "60%"]),
+  signal_strength: z.number(),
+  source_count:    z.number(),
+});
+
+const HoldingPositionSchema = z.object({
+  name_zh:         z.string(),
+  sector:          z.string(),
+  category:        z.enum(["beneficiary", "victim", "neutral"]),
+  composite_score: z.number(),
+  entry_price:     z.number().nullable(),
+  shares:          z.number().nullable(),
+  weight:          z.number(),
+  added_at:        z.string(),
+  reason:          z.string(),
+});
+
+const HoldingsSnapshotSchema = z.object({
+  updated_at:     z.string(),
+  positions:      z.record(HoldingPositionSchema),
+  total_weight:   z.number(),
+  sector_weights: z.record(z.number()),
+});
+
+const PnlPositionSchema = z.object({
+  name_zh:       z.string(),
+  sector:        z.string(),
+  entry_price:   z.number().nullable(),
+  current_price: z.number().nullable(),
+  pnl_pct:       z.number().nullable(),
+  pnl_abs:       z.number().nullable(),
+  shares:        z.number(),
+  days_held:     z.number(),
+});
+
+const PnlSnapshotSchema = z.object({
+  updated_at:        z.string(),
+  positions:         z.record(PnlPositionSchema),
+  portfolio_pnl_pct: z.number().nullable(),
+  best_position:     z.string().nullable(),
+  worst_position:    z.string().nullable(),
+});
+
+const BacktestTradeSchema = z.object({
+  buy_date:   z.string(),
+  buy_price:  z.number(),
+  sell_date:  z.string(),
+  sell_price: z.number(),
+  pnl_pct:    z.number(),
+  hold_days:  z.number(),
+});
+
+const BacktestTickerResultSchema = z.object({
+  name_zh:          z.string(),
+  sector:           z.string(),
+  trades:           z.array(BacktestTradeSchema).optional().default([]),
+  total_return_pct: z.number(),
+  win_rate:         z.number(),
+  trade_count:      z.number(),
+  max_drawdown_pct: z.number(),
+});
+
+const BacktestSnapshotSchema = z.object({
+  ran_at:        z.string(),
+  strategy:      z.object({
+    entry_threshold: z.number(),
+    exit_threshold:  z.number(),
+    lookback_days:   z.number(),
+    initial_capital: z.number(),
+  }),
+  tickers_tested: z.number(),
+  results:        z.record(BacktestTickerResultSchema),
+  portfolio_summary: z.object({
+    avg_return_pct: z.number(),
+    avg_win_rate:   z.number(),
+    best_ticker:    z.string(),
+    worst_ticker:   z.string(),
+  }).optional(),
+});
+
+export async function fetchComposite() {
+  if (!GITHUB_RAW_BASE) return null;
+  const url = `${GITHUB_RAW_BASE}/output/composite/latest.json`;
+  try {
+    const raw = await fetchJSON<unknown>(url);
+    const parsed = CompositeSnapshotSchema.safeParse(raw);
+    if (!parsed.success) {
+      console.warn("composite/latest.json schema 驗證失敗:", parsed.error.issues);
+      return null;
+    }
+    return parsed.data;
+  } catch { return null; }
+}
+
+export async function fetchHoldings() {
+  if (!GITHUB_RAW_BASE) return null;
+  const url = `${GITHUB_RAW_BASE}/output/portfolio/holdings.json`;
+  try {
+    const raw = await fetchJSON<unknown>(url);
+    const parsed = HoldingsSnapshotSchema.safeParse(raw);
+    if (!parsed.success) {
+      console.warn("portfolio/holdings.json schema 驗證失敗:", parsed.error.issues);
+      return null;
+    }
+    return parsed.data;
+  } catch { return null; }
+}
+
+export async function fetchPnl() {
+  if (!GITHUB_RAW_BASE) return null;
+  const url = `${GITHUB_RAW_BASE}/output/portfolio/pnl.json`;
+  try {
+    const raw = await fetchJSON<unknown>(url);
+    const parsed = PnlSnapshotSchema.safeParse(raw);
+    if (!parsed.success) {
+      console.warn("portfolio/pnl.json schema 驗證失敗:", parsed.error.issues);
+      return null;
+    }
+    return parsed.data;
+  } catch { return null; }
+}
+
+export async function fetchBacktest() {
+  if (!GITHUB_RAW_BASE) return null;
+  const url = `${GITHUB_RAW_BASE}/output/portfolio/backtest.json`;
+  try {
+    const raw = await fetchJSON<unknown>(url);
+    const parsed = BacktestSnapshotSchema.safeParse(raw);
+    if (!parsed.success) {
+      console.warn("portfolio/backtest.json schema 驗證失敗:", parsed.error.issues);
+      return null;
+    }
+    return parsed.data;
+  } catch { return null; }
+}

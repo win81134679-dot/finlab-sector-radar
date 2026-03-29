@@ -194,3 +194,109 @@ export interface MagaSnapshot {
   };
   news: MagaNewsItem[];
 }
+
+// ────────────────────────────────────────────────────────────────────────
+// 三合一：複合訊號 / 組合 / 回測型別
+// ────────────────────────────────────────────────────────────────────────
+
+export type TariffScenario = "10%" | "25%" | "60%";
+export type SignalLabel = "強烈買入" | "買入" | "中性" | "賣出" | "強烈賣出";
+
+export interface SectorCompositeScore {
+  composite: number;   // -2.0 ~ +2.0
+  nlp:       number;
+  tariff:    number;
+  signal:    SignalLabel;
+}
+
+export interface CompositeSnapshot {
+  updated_at:      string;
+  scenario:        TariffScenario;
+  nlp_weight:      number;
+  tariff_weight:   number;
+  scores:          Record<string, SectorCompositeScore>;
+  top_buy:         string[];
+  top_sell:        string[];
+  keyword_hits:    string[];
+  tariff_scenario: TariffScenario;
+  signal_strength: number;       // 0.0 ~ 1.0
+  source_count:    number;
+}
+
+// 持倉
+export interface HoldingPosition {
+  name_zh:         string;
+  sector:          string;
+  category:        "beneficiary" | "victim" | "neutral";
+  composite_score: number;
+  entry_price:     number | null;
+  shares:          number | null;
+  weight:          number;
+  added_at:        string;
+  reason:          string;
+}
+
+export interface HoldingsSnapshot {
+  updated_at:     string;
+  positions:      Record<string, HoldingPosition>;
+  total_weight:   number;
+  sector_weights: Record<string, number>;
+}
+
+// 損益
+export interface PnlPosition {
+  name_zh:       string;
+  sector:        string;
+  entry_price:   number | null;
+  current_price: number | null;
+  pnl_pct:       number | null;
+  pnl_abs:       number | null;
+  shares:        number;
+  days_held:     number;
+}
+
+export interface PnlSnapshot {
+  updated_at:        string;
+  positions:         Record<string, PnlPosition>;
+  portfolio_pnl_pct: number | null;
+  best_position:     string | null;
+  worst_position:    string | null;
+}
+
+// 回測
+export interface BacktestTrade {
+  buy_date:   string;
+  buy_price:  number;
+  sell_date:  string;
+  sell_price: number;
+  pnl_pct:    number;
+  hold_days:  number;
+}
+
+export interface BacktestTickerResult {
+  name_zh:          string;
+  sector:           string;
+  trades:           BacktestTrade[];
+  total_return_pct: number;
+  win_rate:         number;
+  trade_count:      number;
+  max_drawdown_pct: number;
+}
+
+export interface BacktestSnapshot {
+  ran_at:        string;
+  strategy:      {
+    entry_threshold: number;
+    exit_threshold:  number;
+    lookback_days:   number;
+    initial_capital: number;
+  };
+  tickers_tested: number;
+  results:        Record<string, BacktestTickerResult>;
+  portfolio_summary?: {
+    avg_return_pct: number;
+    avg_win_rate:   number;
+    best_ticker:    string;
+    worst_ticker:   string;
+  };
+}

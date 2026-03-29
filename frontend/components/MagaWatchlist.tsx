@@ -15,6 +15,11 @@ const PHASE_STYLE: Record<string, string> = {
 const PHASE_ICON: Record<string, string> = {
   "加速期": "🚀", "確認期": "🔍", "萌芽期": "🌱",
 };
+const PHASE_DESC: Record<string, string> = {
+  "加速期": "板塊達強烈關注",
+  "確認期": "7燈得分≥3",
+  "萌芽期": "觀察中得分<3",
+};
 
 function fmtPct(v: number | null): string {
   if (v === null) return "—";
@@ -93,7 +98,19 @@ export function MagaWatchlist({ stocks, sectorPhases }: Props) {
     .sort((a, b) => a.impact_score - b.impact_score);
 
   return (
-    <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+    <div>
+      {/* 進場週期說明圖例 */}
+      <div className="flex flex-wrap items-center gap-2 mb-4 px-3 py-2.5 rounded-lg bg-zinc-50/60 dark:bg-zinc-900/40 border border-zinc-200/40 dark:border-zinc-800/40">
+        <span className="text-xs text-zinc-500 dark:text-zinc-400 font-medium shrink-0">進場週期說明：</span>
+        {(["加速期", "確認期", "萌芽期"] as const).map(phase => (
+          <span key={phase} className={`text-xs font-medium px-2 py-0.5 rounded border ${PHASE_STYLE[phase]}`}>
+            {PHASE_ICON[phase]} {phase}
+            <span className="font-normal opacity-75 ml-1">— {PHASE_DESC[phase]}</span>
+          </span>
+        ))}
+      </div>
+
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
       {/* 受益 */}
       <div>
         <h3 className="text-sm font-semibold text-emerald-600 dark:text-emerald-400 mb-3 flex items-center gap-2">
@@ -121,6 +138,7 @@ export function MagaWatchlist({ stocks, sectorPhases }: Props) {
           )}
         </div>
       </div>
+      </div>{/* end grid */}
     </div>
   );
 }

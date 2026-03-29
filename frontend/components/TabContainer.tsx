@@ -1,8 +1,8 @@
 "use client";
-// TabContainer.tsx — 板塊偵測 / 商品市場 / MAGA 追蹤 Tab 切換（Client Component）
+// TabContainer.tsx — 板塊偵測 / 商品市場 / MAGA 追蹤 / 訊號雷達 / 組合管理 / 回測 Tab 切換（Client Component）
 
 import { useState } from "react";
-import type { SignalSnapshot, HistoryIndex, CommoditySnapshot, MagaSnapshot } from "@/lib/types";
+import type { SignalSnapshot, HistoryIndex, CommoditySnapshot, MagaSnapshot, CompositeSnapshot, HoldingsSnapshot, PnlSnapshot, BacktestSnapshot } from "@/lib/types";
 import { MacroPanel } from "@/components/MacroPanel";
 import { MacroWarningBanner } from "@/components/MacroWarningBanner";
 import { StaleDataBanner } from "@/components/StaleDataBanner";
@@ -11,24 +11,34 @@ import { ErrorBoundary } from "@/components/ErrorBoundary";
 import { TrendSection } from "@/components/TrendSection";
 import { CommodityPanel } from "@/components/CommodityPanel";
 import { MagaPanel } from "@/components/MagaPanel";
+import { CompositePanel } from "@/components/CompositePanel";
+import { PortfolioPanel } from "@/components/PortfolioPanel";
+import { BacktestPanel } from "@/components/BacktestPanel";
 import { UpdateButton } from "@/components/UpdateButton";
 
 interface Props {
-  snapshot: Awaited<ReturnType<typeof import("@/lib/fetcher").fetchLatestSnapshot>>;
+  snapshot:    Awaited<ReturnType<typeof import("@/lib/fetcher").fetchLatestSnapshot>>;
   historyIndex: HistoryIndex | null;
   commodities: CommoditySnapshot | null;
-  magaData: MagaSnapshot | null;
+  magaData:    MagaSnapshot | null;
+  composite:   CompositeSnapshot | null;
+  holdings:    HoldingsSnapshot | null;
+  pnl:         PnlSnapshot | null;
+  backtest:    BacktestSnapshot | null;
 }
 
-type Tab = "sector" | "commodity" | "maga";
+type Tab = "sector" | "commodity" | "maga" | "signal" | "portfolio" | "backtest";
 
 const TABS: { id: Tab; label: string }[] = [
   { id: "sector",    label: "板塊偵測 🔍" },
   { id: "commodity", label: "商品市場 📊" },
   { id: "maga",      label: "MAGA 追蹤 🇺🇸" },
+  { id: "signal",    label: "訊號雷達 🎯" },
+  { id: "portfolio", label: "組合管理 💼" },
+  { id: "backtest",  label: "策略回測 📈" },
 ];
 
-export function TabContainer({ snapshot, historyIndex, commodities, magaData }: Props) {
+export function TabContainer({ snapshot, historyIndex, commodities, magaData, composite, holdings, pnl, backtest }: Props) {
   const [activeTab, setActiveTab] = useState<Tab>("sector");
 
   const runAt  = snapshot?.run_at  ?? "";
@@ -44,12 +54,12 @@ export function TabContainer({ snapshot, historyIndex, commodities, magaData }: 
 
       {/* Tab 導航列 */}
       <div className="sticky top-[var(--header-h,56px)] z-30 bg-[var(--bg-page)]/90 backdrop-blur-sm border-b border-zinc-200/40 dark:border-zinc-800/40">
-        <div className="max-w-screen-xl mx-auto px-4 flex items-center gap-1 pt-1">
+        <div className="max-w-screen-xl mx-auto px-4 flex items-center gap-0.5 pt-1 overflow-x-auto">
           {TABS.map(tab => (
             <button
               key={tab.id}
               onClick={() => setActiveTab(tab.id)}
-              className={`px-4 py-2 text-sm font-medium rounded-t-lg border-b-2 transition-colors ${
+              className={`px-3 py-2 text-sm font-medium rounded-t-lg border-b-2 transition-colors whitespace-nowrap ${
                 activeTab === tab.id
                   ? "border-blue-500 text-blue-600 dark:text-blue-400 bg-blue-500/5"
                   : "border-transparent text-zinc-500 hover:text-zinc-700 dark:hover:text-zinc-300"
@@ -92,6 +102,36 @@ export function TabContainer({ snapshot, historyIndex, commodities, magaData }: 
           <ErrorBoundary label="MAGA 追蹤">
             <MagaPanel data={magaData} snapshot={snapshot} />
           </ErrorBoundary>
+        )}
+
+        {activeTab === "signal" && (
+          <div className="mt-6">
+            <h2 className="text-lg font-bold text-zinc-900 dark:text-white mb-1">訊號雷達</h2>
+            <p className="text-xs text-zinc-500 dark:text-zinc-400 mb-5">NLP 分析 + 關稅矩陣複合評分，權重 50:50</p>
+            <ErrorBoundary label="訊號雷達">
+              <CompositePanel data={composite} />
+            </ErrorBoundary>
+          </div>
+        )}
+
+        {activeTab === "portfolio" && (
+          <div className="mt-6">
+            <h2 className="text-lg font-bold text-zinc-900 dark:text-white mb-1">組合管理</h2>
+            <p className="text-xs text-zinc-500 dark:text-zinc-400 mb-5">依複合評分建立的建議持倉與損益追蹤</p>
+            <ErrorBoundary label="組合管理">
+              <PortfolioPanel holdings={holdings} pnl={pnl} />
+            </ErrorBoundary>
+          </div>
+        )}
+
+        {activeTab === "backtest" && (
+          <div className="mt-6">
+            <h2 className="text-lg font-bold text-zinc-900 dark:text-white mb-1">策略回測</h2>
+            <p className="text-xs text-zinc-500 dark:text-zinc-400 mb-5">基於複合訊號閾值的歷史回測結果</p>
+            <ErrorBoundary label="策略回測">
+              <BacktestPanel data={backtest} />
+            </ErrorBoundary>
+          </div>
         )}
       </main>
     </>

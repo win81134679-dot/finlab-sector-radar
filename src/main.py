@@ -637,6 +637,27 @@ if __name__ == "__main__":
         except Exception as _e:
             _auto_log(f"[WARN] MAGA 分析失敗（不影響主流程）: {_e}")
 
+        # 4d. Trump 訊號複合評分（NLP + 關稅矩陣，非核心，失敗不中斷）
+        try:
+            import os as _os
+            _truth_path = _os.environ.get("TRUTH_SOCIAL_PATH", "")
+            _posts: list[dict] = []
+            if _truth_path:
+                from src.scrapers.truth_social import load_posts as _load_posts
+                _posts = _load_posts(_truth_path)
+                _auto_log(f"[INFO] Truth Social 載入 {len(_posts)} 篇貼文")
+            else:
+                _auto_log("[INFO] TRUTH_SOCIAL_PATH 未設定，composite 使用空貼文（純關稅矩陣）")
+            from src.analyzers.composite import run_composite_analysis as _composite_run
+            _comp = _composite_run(_posts, scenario="25%", write_output=True)
+            _auto_log(
+                f"[INFO] 複合評分完成：強度={_comp['signal_strength']:.2f}  "
+                f"買入板塊={','.join(_comp['top_buy'][:3])}  "
+                f"賣出板塊={','.join(_comp['top_sell'][:3])}"
+            )
+        except Exception as _e:
+            _auto_log(f"[WARN] 複合評分失敗（不影響主流程）: {_e}")
+
         # 5. 送出 Discord 通知
         try:
             from src.notifier import send_daily_report, send_sector_alert, send_macro_alert, send_system_ok
