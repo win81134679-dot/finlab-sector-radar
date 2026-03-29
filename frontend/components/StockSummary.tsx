@@ -141,6 +141,52 @@ export function StockSummary({
 
   if (chip >= 3) chips.push({ text: "籌碼集中", cls: "bg-purple-100/80 dark:bg-purple-900/30 text-purple-700 dark:text-purple-300" });
 
+  // ── 學術 bonus 信號芯片 ──────────────────────────────────────────────
+  if (triggered && triggered.length > 0) {
+    const academicDefs: Array<{ key: string; label: string; cls: string }> = [
+      {
+        key:   "外資牛市共振",
+        label: "📖 外資牛市",
+        cls:   "bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300",
+      },
+      {
+        key:   "外資熊市防守",
+        label: "📖 外資防守",
+        cls:   "bg-slate-100 dark:bg-slate-800/50 text-slate-700 dark:text-slate-300",
+      },
+      {
+        key:   "借券回補↑",
+        label: "📖 借券回補",
+        cls:   "bg-violet-100 dark:bg-violet-900/30 text-violet-700 dark:text-violet-300",
+      },
+      {
+        key:   "空頭加碼⚠",
+        label: "⚠ 空頭加碼",
+        cls:   "bg-orange-100 dark:bg-orange-900/30 text-orange-700 dark:text-orange-400",
+      },
+      {
+        key:   "季節動能✓",
+        label: "📖 季節動能",
+        cls:   "bg-teal-100 dark:bg-teal-900/30 text-teal-700 dark:text-teal-300",
+      },
+      {
+        key:   "節後反轉⭐",
+        label: "📖 節後反轉",
+        cls:   "bg-indigo-100 dark:bg-indigo-900/30 text-indigo-700 dark:text-indigo-300",
+      },
+      {
+        key:   "營收加速↑✓",
+        label: "📖 營收加速",
+        cls:   "bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-300",
+      },
+    ];
+    for (const def of academicDefs) {
+      if (triggered.includes(def.key)) {
+        chips.push({ text: def.label, cls: def.cls });
+      }
+    }
+  }
+
   // ── 指標摘要文字 ──────────────────────────────────────────────────────
   const fundText = fund >= 4 ? "基本面強" : fund >= 2 ? "基本面中" : fund > 0 ? "基本面弱" : null;
   const rsiText  = rsi === null ? null

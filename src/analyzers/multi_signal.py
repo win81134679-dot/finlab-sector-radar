@@ -56,6 +56,7 @@ def run_all(fetcher, sector_map, config,
     """
     from src.analyzers import revenue, institutional, inventory, technical
     from src.analyzers import rs_ratio, chipset, macro
+    from src.analyzers import momentum_season, revenue_surprise
 
     steps = [
         ("燈1 月營收拐點",  lambda: revenue.analyze(fetcher, sector_map, config)),
@@ -65,6 +66,9 @@ def run_all(fetcher, sector_map, config,
         ("燈5 相對強度",    lambda: rs_ratio.analyze(fetcher, sector_map, config)),
         ("燈6 籌碼集中",    lambda: chipset.analyze(fetcher, sector_map, config)),
         ("燈7 宏觀濾網",    lambda: macro.analyze(fetcher, config)),
+        # 學術 bonus 分析器（不計入七燈總分）
+        ("學術_季節動能",   lambda: momentum_season.analyze(fetcher, sector_map, config)),
+        ("學術_營收加速",   lambda: revenue_surprise.analyze(fetcher, sector_map, config)),
     ]
 
     raw: Dict[str, Any] = {}
@@ -214,6 +218,14 @@ def _save_snapshot(result: Dict[str, Any], config) -> Optional[Path]:
         if "SOXX=" in sox_str:
             macro_payload["sox_price"] = float(sox_str.split("SOXX=")[1].split(" ")[0])
         macro_payload["sox_trend"] = "up" if sub.get("sox_above_ma") else "down"
+    except Exception:
+        pass
+    try:
+        twd_str = details.get("twd", "")
+        if "USD/TWD=" in twd_str:
+            macro_payload["usd_twd"] = float(twd_str.split("USD/TWD=")[1].split(" ")[0])
+        twd_sub = sub.get("twd_appreciating")
+        macro_payload["twd_trend"] = "down" if twd_sub else "up"
     except Exception:
         pass
 

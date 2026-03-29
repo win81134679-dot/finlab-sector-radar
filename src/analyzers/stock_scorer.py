@@ -122,6 +122,9 @@ def score_stocks(
     lamp4 = raw_results.get("燈4 技術突破",  {}).get(sector_id, {})
     lamp5 = raw_results.get("燈5 相對強度",  {}).get(sector_id, {})
     lamp6 = raw_results.get("燈6 籌碼集中",  {}).get(sector_id, {})
+    # 學術 bonus 分析器
+    lamp_season  = raw_results.get("學術_季節動能",  {}).get(sector_id, {})
+    lamp_accel   = raw_results.get("學術_營收加速",  {}).get(sector_id, {})
 
     lit1       = set(lamp1.get("lit_stocks",      []))   # 燈1 YoY 拐點
     mom_accel  = set(lamp1.get("mom_accel_stocks", []))  # 燈1 MoM 加速
@@ -130,6 +133,13 @@ def score_stocks(
     trust_only   = set(lamp2.get("trust_only",    []))   # 燈2 投信獨買
     lit3       = set(lamp3.get("lit_stocks",      []))   # 燈3 庫存改善
     lit6       = set(lamp6.get("lit_stocks",      []))   # 燈6 籌碼集中
+    short_cover = set(lamp6.get("short_cover",    []))   # 燈6 借券回補↑
+    short_add   = set(lamp6.get("short_add",      []))   # 燈6 空頭加碼⚠
+
+    # 學術 bonus
+    resonance_label = lamp2.get("resonance_label", "外資牛市共振")  # 燈2 市場狀態標籤
+    accel_stocks    = set(lamp_accel.get("accel_stocks", []))        # 學術9 營收加速
+    season_bonus_label = lamp_season.get("season_bonus_label")       # 學術8 季節信號
 
     stock_signals = lamp4.get("stock_signals", {})       # 燈4 per-stock tech
     stock_rs      = lamp5.get("stock_rs",      {})       # 燈5 per-stock RS
@@ -204,6 +214,16 @@ def score_stocks(
             pts_chipset += 1.0
             triggered.append("燈6✓")
 
+        # 學術燈2 — 市場狀態標籤（牛市共振 vs 熊市防守）
+        if sid in lit2 and resonance_label:
+            triggered.append(resonance_label)
+
+        # 學術燈6 — 借券方向信號（Hu et al. 2009）
+        if sid in short_cover and sid not in lit6:
+            triggered.append("借券回補↑")
+        if sid in short_add:
+            triggered.append("空頭加碼⚠")     # 警示，不加分
+
         # --- 加分 ---
         pe_val = _latest_value(pe_df, sid)
         if pe_val is not None and sector_avg_pe is not None and pe_val > 0 and pe_val < sector_avg_pe:
@@ -214,6 +234,15 @@ def score_stocks(
         if roe_val is not None and roe_val >= _ROE_MIN:
             pts_bonus += 1.0
             triggered.append("ROE✓")
+
+        # 學術燈9 — 月營收連加速超預期（Lu & Xin 2024）
+        if sid in accel_stocks:
+            pts_bonus += 0.5
+            triggered.append("營收加速↑✓")
+
+        # 學術燈8 — 季節動能（Fu & Hsieh 2024）— 板塊級別信號，注入個股
+        if season_bonus_label:
+            triggered.append(season_bonus_label)
 
         total = pts_fundamental + pts_technical + pts_chipset + pts_bonus
 

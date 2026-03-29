@@ -45,6 +45,8 @@ export interface MacroData {
   ip_trend?: "up" | "down";
   sox_price?: number;
   sox_trend?: "up" | "down";
+  usd_twd?: number;
+  twd_trend?: "up" | "down";
 }
 
 export interface SignalSnapshot {

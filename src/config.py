@@ -53,11 +53,23 @@ TECHNICAL_VOLUME_MULTIPLIER: float = 1.5
 
 # 燈6：籌碼集中（融資+借券同時下降，AND條件；板塊門檻50%）
 CHIPSET_SECTOR_THRESHOLD: float = 0.50
+CHIPSET_LENDING_WINDOW: int = 5          # 借券方向偵測窗口（天）
 
 # 燈7：宏觀（Alpha Vantage SOX代理）
 MACRO_SOX_SYMBOL: str = "SOXX"           # iShares Semiconductor ETF
 MACRO_SOX_MA: int = 20
 MACRO_CACHE_KEY: str = "macro_sox"
+MACRO_USD_TWD_SYMBOL: str = "USDTWD=X"  # Yahoo Finance USD/TWD 匯率
+MACRO_USD_TWD_MA: int = 7               # 台幣均線方向（7日）
+
+# 學術燈8/9：季節動能 + 營收加速（bonus trigger）
+REVENUE_ACCEL_LOOKBACK: int = 3          # 營收加速連續月數
+REVENUE_ACCEL_AVG_MONTHS: int = 12       # 對比過去 N 月平均 YoY
+
+# 法人市場狀態門檻（Chiang et al. 2012）
+INSTITUTIONAL_BULL_DAYS: int = 3         # 牛市狀態下外資連買門檻
+INSTITUTIONAL_BEAR_DAYS: int = 5         # 熊市狀態下外資連買門檻
+INSTITUTIONAL_MARKET_MA: int = 260       # 市場狀態判定均線（週線≒260日）
 
 # ── 輸出歷史目錄 ──────────────────────────────────────────────────────────
 OUTPUT_HISTORY_DIR: Path = OUTPUT_DIR / "history"

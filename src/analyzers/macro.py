@@ -1,10 +1,12 @@
 """
 燈7 — 宏觀環境濾網（全局燈，非板塊個別）
 
-三個子指標（≥2 項正面 → 宏觀燈亮）：
+四個子指標（≥3 項正面 → 宏觀燈亮；可用不足 3 時按比例降門檻）：
   A. FRED DGS10  ：美 10 年公債殖利率 3 個月均線下彎（降息預期/資金寬鬆）
-  B. FRED INDPRO ：美工業生產指數站上 12 個月均線（擴張期代理，替代已下架的 NAPM）
+  B. FRED INDPRO ：美工業生產指數站上 12 個月均線（擴張期代理）
   C. yfinance SOXX：費半 ETF 站上 20MA（科技週期上行）
+  D. yfinance USDTWD=X：美元/台幣 7日均線下彎（台幣升值，熱錢流入）
+     → Singh, Mehta & Varsha (2011) JEB：USD/TWD 為台股最強宏觀領先指標之一
 
 快取策略：
   - 所有時序資料透過 csv_cache 做 CSV 增量快取（.cache/csv/）
@@ -75,7 +77,7 @@ def _indpro_signal(indpro: pd.Series) -> bool:
     return float(indpro.iloc[-1]) >= float(ma.iloc[-1])
 
 
-# ── yfinance SOXX（帶 CSV 增量快取）──────────────────────────────────────
+# ── yfinance（帶 CSV 增量快取）──────────────────────────────────────────────
 
 def _make_yf_fetcher(symbol: str):
     """工廠函數：回傳 yfinance 增量 fetch_fn。"""
@@ -93,16 +95,28 @@ def _make_yf_fetcher(symbol: str):
     return _fn
 
 
-def _get_sox(config) -> Optional[pd.Series]:
-    """取 SOXX 日線，帶 CSV 增量快取；失敗回傳 None（fallback 只用 FRED 兩項）。"""
+def _get_yf_series(symbol: str, cache_key: str) -> Optional[pd.Series]:
+    """取 yfinance 時序，帶 CSV 增量快取；失敗回傳 None。"""
     from src.csv_cache import fetch_with_cache
-    cache_key = f"YF_{config.MACRO_SOX_SYMBOL}"
     try:
-        s = fetch_with_cache(cache_key, _make_yf_fetcher(config.MACRO_SOX_SYMBOL))
+        s = fetch_with_cache(cache_key, _make_yf_fetcher(symbol))
         return s if not s.empty else None
     except Exception as e:
-        logger.warning(f"燈7: SOXX 取得失敗，僅用 FRED 兩項指標: {e}")
+        logger.warning(f"燈7: {symbol} 取得失敗: {e}")
         return None
+
+
+def _get_sox(config) -> Optional[pd.Series]:
+    """取 SOXX 日線，帶 CSV 增量快取；失敗回傳 None。"""
+    cache_key = f"YF_{config.MACRO_SOX_SYMBOL}"
+    return _get_yf_series(config.MACRO_SOX_SYMBOL, cache_key)
+
+
+def _get_usd_twd(config) -> Optional[pd.Series]:
+    """取 USD/TWD 日線，帶 CSV 增量快取；失敗回傳 None。"""
+    symbol = getattr(config, "MACRO_USD_TWD_SYMBOL", "USDTWD=X")
+    cache_key = f"YF_{symbol.replace('=', '_').replace('^', 'IDX_')}"
+    return _get_yf_series(symbol, cache_key)
 
 
 def _sox_signal(series: pd.Series, ma: int) -> bool:
@@ -113,14 +127,23 @@ def _sox_signal(series: pd.Series, ma: int) -> bool:
     return float(series.iloc[-1]) > float(ma_val)
 
 
+def _usd_twd_signal(series: pd.Series, ma: int) -> bool:
+    """USD/TWD 收盤 < MA → 台幣升值趨勢 → 正面（外資淨流入）。"""
+    if series is None or len(series) < ma:
+        return False
+    ma_val = series.rolling(ma).mean().iloc[-1]
+    return float(series.iloc[-1]) < float(ma_val)
+
+
 # ── 主函數 ───────────────────────────────────────────────────────────────
 
 def analyze(fetcher, config) -> Dict[str, Any]:
     """全局燈號，回傳單一 dict（非板塊巡迴）。"""
     sub_signals: Dict[str, Optional[bool]] = {
-        "bond_down":      None,
-        "indpro_above_ma": None,
-        "sox_above_ma":   None,
+        "bond_down":        None,
+        "indpro_above_ma":  None,
+        "sox_above_ma":     None,
+        "twd_appreciating": None,
     }
     details: Dict[str, str] = {}
 
@@ -150,14 +173,33 @@ def analyze(fetcher, config) -> Dict[str, Any]:
         val = float(sox_series.iloc[-1])
         details["sox"] = f"SOXX={val:.2f} ({'站上20MA✅' if sub_signals['sox_above_ma'] else '20MA下方❌'})"
     else:
-        details["sox"] = "SOXX 不可用（使用 FRED 兩項）"
+        details["sox"] = "SOXX 不可用"
 
-    # 計分：available 子指標中 ≥2 項正面 → 亮燈
+    # D. yfinance USD/TWD（台幣升值 → 正面；Singh et al. 2011）
+    usd_twd_series = _get_usd_twd(config)
+    usd_twd_val: Optional[float] = None
+    twd_trend: str = "unknown"
+    if usd_twd_series is not None:
+        ma_period = getattr(config, "MACRO_USD_TWD_MA", 7)
+        sub_signals["twd_appreciating"] = _usd_twd_signal(usd_twd_series, ma_period)
+        usd_twd_val = float(usd_twd_series.iloc[-1])
+        twd_trend = "down" if sub_signals["twd_appreciating"] else "up"
+        details["twd"] = (
+            f"USD/TWD={usd_twd_val:.3f} "
+            f"({'台幣升值✅' if sub_signals['twd_appreciating'] else '台幣貶值❌'})"
+        )
+    else:
+        details["twd"] = "USD/TWD 取得失敗"
+
+    # 計分：≥3 項正面（可用 ≥3 時）；可用 <3 時沿用 ≥2/N 邏輯
     available = {k: v for k, v in sub_signals.items() if v is not None}
     positive_count   = sum(1 for v in available.values() if v)
     total_available  = len(available)
 
-    signal = (total_available >= 1) and (positive_count >= min(2, total_available))
+    if total_available >= 3:
+        signal = positive_count >= 3
+    else:
+        signal = (total_available >= 1) and (positive_count >= min(2, total_available))
 
     return {
         "signal":          signal,
@@ -165,6 +207,8 @@ def analyze(fetcher, config) -> Dict[str, Any]:
         "positive_count":  positive_count,
         "total_available": total_available,
         "sub_signals":     sub_signals,
+        "usd_twd":         usd_twd_val,
+        "twd_trend":       twd_trend,
         "details_dict":    details,
         "details": (
             f"宏觀 {positive_count}/{total_available} 正面 | "
