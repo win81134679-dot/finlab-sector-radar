@@ -13,6 +13,7 @@ import { CommodityPanel } from "@/components/CommodityPanel";
 import { ConvergencePanel } from "@/components/ConvergencePanel";
 import { LongTermPanel } from "@/components/LongTermPanel";
 import { TrumpFeedPanel } from "@/components/TrumpFeedPanel";
+import { AccelerationPanel } from "@/components/AccelerationPanel";
 import { UpdateButton } from "@/components/UpdateButton";
 
 interface Props {
@@ -26,14 +27,15 @@ interface Props {
   pnl:         PnlSnapshot | null;
 }
 
-type Tab = "sector" | "convergence" | "longterm" | "trumpfeed" | "commodity";
+type Tab = "sector" | "convergence" | "acceleration" | "longterm" | "trumpfeed" | "commodity";
 
 const TABS: { id: Tab; label: string }[] = [
-  { id: "sector",      label: "短線趨勢 📊" },
-  { id: "convergence", label: "雙線共振 🎯" },
-  { id: "longterm",    label: "長線趨勢 📐" },
-  { id: "trumpfeed",   label: "訊號來源 📡" },
-  { id: "commodity",   label: "商品市場 🌐" },
+  { id: "sector",       label: "短線趨勢 📊" },
+  { id: "convergence",  label: "雙線共振 🎯" },
+  { id: "acceleration", label: "週期監控 🔄" },
+  { id: "longterm",     label: "長線趨勢 📐" },
+  { id: "trumpfeed",    label: "訊號來源 📡" },
+  { id: "commodity",    label: "商品市場 🌐" },
 ];
 
 function ResonanceBar({
@@ -245,6 +247,16 @@ export function TabContainer({ snapshot, historyIndex, commodities, magaData, co
               composite={composite}
               holdings={holdings}
               magaData={magaData}
+            />
+          </ErrorBoundary>
+        )}
+
+        {activeTab === "acceleration" && (
+          <ErrorBoundary label="週期監控">
+            <AccelerationPanel
+              snapshot={snapshot}
+              composite={composite}
+              holdings={holdings}
             />
           </ErrorBoundary>
         )}

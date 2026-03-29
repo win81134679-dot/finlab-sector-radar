@@ -6,9 +6,9 @@
 
 import { useState, useMemo, useEffect, useRef } from "react";
 import dynamic from "next/dynamic";
-import type { SignalSnapshot, CompositeSnapshot, HoldingsSnapshot, MagaSnapshot, OHLCBar } from "@/lib/types";
+import type { SignalSnapshot, CompositeSnapshot, HoldingsSnapshot, MagaSnapshot, OHLCBar, ExitRisk } from "@/lib/types";
 import { getSectorName } from "@/lib/sectors";
-import { changePctColor, formatChangePct, SIGNAL_NAMES, CYCLE_STAGE_CONFIG, type CycleStageKey } from "@/lib/signals";
+import { changePctColor, formatChangePct, SIGNAL_NAMES, CYCLE_STAGE_CONFIG, type CycleStageKey, EXIT_RISK_CONFIG, type ExitRiskAction } from "@/lib/signals";
 
 const COMPOSITE_THRESHOLD = 0.10;
 
@@ -91,6 +91,7 @@ interface ConvergenceStock {
   sectorId:    string;
   sectorLevel: string;
   cycle_stage?: string | null;
+  exit_risk?:  ExitRisk | null;
   score:       number | null;
   grade:       string;
   change_pct:  number | null;
@@ -250,6 +251,17 @@ function StockCard({ stock, isExpanded, onToggle, macroWarning }: {
                     title={cfg.tooltip}
                   >
                     {cfg.emoji} {cfg.label}
+                  </span>
+                ) : null;
+              })()}
+              {stock.exit_risk && (() => {
+                const eCfg = EXIT_RISK_CONFIG[stock.exit_risk.action as ExitRiskAction];
+                return eCfg ? (
+                  <span
+                    className={`text-[11px] px-1.5 py-0.5 rounded-full font-medium ${eCfg.chipCls}`}
+                    title={stock.exit_risk.triggers.join("、")}
+                  >
+                    {eCfg.emoji} 風險{stock.exit_risk.score}
                   </span>
                 ) : null;
               })()}
@@ -428,6 +440,7 @@ export function ConvergencePanel({ snapshot, composite, holdings, magaData }: Pr
           sectorId,
           sectorLevel: sector.level,
           cycle_stage: sector.cycle_stage ?? null,
+          exit_risk: sector.exit_risk ?? null,
           score:      stock.score ?? null,
           grade:      stock.grade,
           change_pct: stock.change_pct ?? null,

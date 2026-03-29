@@ -293,13 +293,29 @@ def _save_snapshot(result: Dict[str, Any], config) -> Optional[Path]:
                 "ohlcv_7d":   _ohlcv_batch.get(stock_id, []),
             })
         _sigs = [float(s) for s in v["signals"]]
+        _stage = _calc_cycle_stage(_sigs, v["total"], v["level"])
+
+        # 出場風險評估（僅加速期/過熱期）
+        from src.analyzers.cycle_exit import calc_exit_risk as _calc_exit
+        _exit_risk = _calc_exit(
+            sid, _sigs, v["total"], _stage,
+            result.get("macro_warning", False),
+            raw_results=result.get("raw_results", {}),
+        )
+
+        # 暴露 RS-Momentum 給前端
+        _rs_data = result.get("raw_results", {}).get("燈5 相對強度", {}).get(sid, {})
+        _rs_mom = _rs_data.get("rs_momentum")
+
         sectors_payload[sid] = {
-            "name_zh":     v["name"],
-            "total":       v["total"],
-            "signals":     _sigs,
-            "level":       v["level"],
-            "cycle_stage": _calc_cycle_stage(_sigs, v["total"], v["level"]),
-            "stocks":      stock_list,
+            "name_zh":      v["name"],
+            "total":        v["total"],
+            "signals":      _sigs,
+            "level":        v["level"],
+            "cycle_stage":  _stage,
+            "exit_risk":    _exit_risk,
+            "rs_momentum":  round(_rs_mom, 6) if _rs_mom is not None else None,
+            "stocks":       stock_list,
         }
 
     # ── 構建完整 snapshot dict ──────────────────────────────────────────

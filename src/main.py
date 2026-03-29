@@ -679,6 +679,15 @@ if __name__ == "__main__":
                 _maga_stocks_list = _maga_snap.get("stocks", [])
                 from src.analyzers.portfolio import run_portfolio_update as _portfolio_run
                 _holdings, _pnl = _portfolio_run(_comp_snap, _maga_stocks_list)
+
+                # 加速期個股自動注入持倉
+                _sig_latest = ROOT / "output" / "signals_latest.json"
+                if _sig_latest.exists():
+                    with open(_sig_latest, encoding="utf-8") as _sf:
+                        _sig_snap = _json.load(_sf)
+                    from src.analyzers.portfolio import inject_cycle_acceleration
+                    _holdings = inject_cycle_acceleration(_holdings, _sig_snap.get("sectors", {}))
+
                 _auto_log(
                     f"[INFO] 建議持倉更新完成：{len(_holdings.get('positions', {}))} 支"
                     f" → output/portfolio/holdings.json"

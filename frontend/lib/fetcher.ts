@@ -47,12 +47,21 @@ const StockSchema = z.object({
   ohlcv_7d: z.array(OHLCBarSchema).optional(),
 });
 
+const ExitRiskSchema = z.object({
+  score: z.number(),
+  action: z.enum(["持有", "留意", "減碼", "出場"]),
+  triggers: z.array(z.string()),
+  rs_quadrant: z.string(),
+});
+
 const SectorSchema = z.object({
   name_zh: z.string(),
   total: z.number(),
   signals: z.array(z.number()).length(7),
   level: z.enum(["強烈關注", "觀察中", "忽略"]),
   cycle_stage: z.enum(["萌芽期", "確認期", "加速期", "過熱期"]).nullable().optional(),
+  exit_risk: ExitRiskSchema.nullable().optional(),
+  rs_momentum: z.number().nullable().optional(),
   stocks: z.array(StockSchema).optional().default([]),
 });
 

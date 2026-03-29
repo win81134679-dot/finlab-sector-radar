@@ -26,6 +26,14 @@ export interface StockData {
 }
 
 export type CycleStage = "萌芽期" | "確認期" | "加速期" | "過熱期";
+export type ExitAction = "持有" | "留意" | "減碼" | "出場";
+
+export interface ExitRisk {
+  score: number;          // 0–100
+  action: ExitAction;
+  triggers: string[];
+  rs_quadrant: string;
+}
 
 export interface SectorData {
   name_zh: string;
@@ -33,6 +41,8 @@ export interface SectorData {
   signals: number[];   // 0.0 / 0.5 / 1.0，7個元素
   level: "強烈關注" | "觀察中" | "忽略";
   cycle_stage?: CycleStage | null;
+  exit_risk?: ExitRisk | null;
+  rs_momentum?: number | null;
   stocks: StockData[];
 }
 

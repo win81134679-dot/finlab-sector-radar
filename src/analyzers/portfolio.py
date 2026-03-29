@@ -198,6 +198,55 @@ def build_suggested_holdings(
     return holdings
 
 
+def inject_cycle_acceleration(
+    holdings: dict[str, Any],
+    snapshot_sectors: dict[str, Any],
+) -> dict[str, Any]:
+    """
+    將加速期/過熱期板塊的所有個股自動注入 holdings.positions。
+    每一支加速期個股都納入（不限數量）。
+    若板塊有 exit_risk.action ∈ ["減碼","出場"]，標記 exit_alert=True。
+    """
+    now = datetime.now(timezone.utc).isoformat()
+    positions = holdings.get("positions", {})
+
+    for sid, sec in snapshot_sectors.items():
+        stage = sec.get("cycle_stage")
+        if stage not in ("加速期", "過熱期"):
+            continue
+
+        exit_risk = sec.get("exit_risk") or {}
+        exit_alert = exit_risk.get("action") in ("減碼", "出場")
+
+        for stock in sec.get("stocks", []):
+            stock_id = stock.get("id", "")
+            if not stock_id:
+                continue
+            # 已存在的持倉不覆蓋原始 reason
+            if stock_id in positions:
+                positions[stock_id]["exit_alert"] = exit_alert
+                continue
+
+            positions[stock_id] = {
+                "name_zh":         stock_id,
+                "sector":          sid,
+                "category":        "neutral",
+                "composite_score": 0.0,
+                "entry_price":     None,
+                "shares":          None,
+                "weight":          0.0,
+                "added_at":        now,
+                "reason":          f"cycle_acceleration ({stage})",
+                "exit_alert":      exit_alert,
+            }
+
+    holdings["positions"] = positions
+    holdings["updated_at"] = now
+
+    _save_json(_OUTPUT_DIR / "holdings.json", holdings)
+    return holdings
+
+
 def compute_pnl(holdings: dict, current_prices: dict[str, float | None]) -> dict[str, Any]:
     """
     計算組合損益。
