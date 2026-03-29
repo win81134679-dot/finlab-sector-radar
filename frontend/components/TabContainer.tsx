@@ -29,7 +29,7 @@ type Tab = "sector" | "convergence" | "longterm" | "commodity";
 
 const TABS: { id: Tab; label: string }[] = [
   { id: "sector",      label: "短線趨勢 📊" },
-  { id: "convergence", label: "最強訊號 ⭐" },
+  { id: "convergence", label: "雙線共振 🎯" },
   { id: "longterm",    label: "長線趨勢 📐" },
   { id: "commodity",   label: "商品市場 🌐" },
 ];
