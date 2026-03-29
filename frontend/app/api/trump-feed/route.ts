@@ -12,6 +12,22 @@ export const runtime = "nodejs";
 export const revalidate = 60;
 
 // 支援所有常見的 Upstash env var 命名慣例
+// Vercel Marketplace 注入的是 redis:// 協定 URL（KV_REDIS_URL），需解析為 REST 格式
+function parseKvRedisUrl(): { url: string; token: string } | null {
+  const raw = process.env.KV_REDIS_URL;
+  if (!raw) return null;
+  try {
+    const u = new URL(raw);
+    if (u.hostname && u.password) {
+      return {
+        url:   `https://${u.hostname}`,
+        token: decodeURIComponent(u.password),
+      };
+    }
+  } catch { /* ignore parse error */ }
+  return null;
+}
+
 function makeRedis() {
   const url =
     process.env.KV_REDIS_REST_URL ??
@@ -25,7 +41,11 @@ function makeRedis() {
     process.env.UPSTASH_REDIS_REST_TOKEN ??
     process.env.STORAGE_REDIS_REST_TOKEN ??
     process.env.STORAGE_REST_API_TOKEN ?? "";
-  return { client: new Redis({ url, token }), url, token };
+  if (url && token) return { client: new Redis({ url, token }), url, token };
+  // Fallback：解析 Vercel Marketplace 注入的 redis:// 協定 URL
+  const parsed = parseKvRedisUrl();
+  if (parsed) return { client: new Redis({ url: parsed.url, token: parsed.token }), url: parsed.url, token: parsed.token };
+  return { client: new Redis({ url: "", token: "" }), url: "", token: "" };
 }
 
 export async function GET() {

@@ -9,8 +9,32 @@ import { NextResponse } from "next/server";
 import Parser from "rss-parser";
 import { Redis } from "@upstash/redis";
 import { analyzePost, aggregateImpacts } from "@/lib/trump-nlp";
+import { SECTOR_NAMES } from "@/lib/sectors";
+import type {
+  TrumpPost,
+  SectorState,
+  SectorDelta,
+  MomentumLabel,
+  TrumpEventLog,
+} from "@/lib/types";
 
 // 支援所有常見的 Upstash env var 命名慣例
+// Vercel Marketplace 注入的是 redis:// 協定 URL（KV_REDIS_URL），需解析為 REST 格式
+function parseKvRedisUrl(): { url: string; token: string } | null {
+  const raw = process.env.KV_REDIS_URL;
+  if (!raw) return null;
+  try {
+    const u = new URL(raw);
+    if (u.hostname && u.password) {
+      return {
+        url:   `https://${u.hostname}`,
+        token: decodeURIComponent(u.password),
+      };
+    }
+  } catch { /* ignore parse error */ }
+  return null;
+}
+
 function makeRedis() {
   const url =
     process.env.KV_REDIS_REST_URL ??
@@ -24,17 +48,12 @@ function makeRedis() {
     process.env.UPSTASH_REDIS_REST_TOKEN ??
     process.env.STORAGE_REDIS_REST_TOKEN ??
     process.env.STORAGE_REST_API_TOKEN ?? "";
-  return { client: new Redis({ url, token }), ok: !!(url && token) };
+  if (url && token) return { client: new Redis({ url, token }), ok: true };
+  // Fallback：解析 Vercel Marketplace 注入的 redis:// 協定 URL
+  const parsed = parseKvRedisUrl();
+  if (parsed) return { client: new Redis({ url: parsed.url, token: parsed.token }), ok: true };
+  return { client: new Redis({ url: "", token: "" }), ok: false };
 }
-import { SECTOR_NAMES } from "@/lib/sectors";
-import type {
-  TrumpPost,
-  SectorState,
-  SectorDelta,
-  MomentumLabel,
-  TrumpEventLog,
-} from "@/lib/types";
-
 export const runtime = "nodejs";
 export const maxDuration = 60;   // Vercel Pro: 最長 60s
 

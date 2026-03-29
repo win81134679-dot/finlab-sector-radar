@@ -26,7 +26,7 @@ const nextConfig: NextConfig = {
               "default-src 'self'",
               "script-src 'self' 'unsafe-inline'",  // Next.js ISR/Client 需要
               "style-src 'self' 'unsafe-inline'",
-              `connect-src 'self' ${GITHUB_RAW}`,
+              `connect-src 'self' ${GITHUB_RAW} https://*.upstash.io`,
               "img-src 'self' data:",
               "font-src 'self' https://fonts.gstatic.com",
               "frame-ancestors 'none'",

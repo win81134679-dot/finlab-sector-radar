@@ -172,10 +172,10 @@ export function TrumpFeedPanel({ compact = false, maxPosts = 10 }: Props) {
   const [errMsg, setErrMsg] = useState("");
 
   useEffect(() => {
-    let cancelled = false;
+    const controller = new AbortController();
     setStatus("loading");
 
-    fetch("/api/trump-feed")
+    fetch("/api/trump-feed", { signal: controller.signal })
       .then(async (res) => {
         if (res.status === 404) { setStatus("empty"); return; }
         if (!res.ok) {
@@ -183,16 +183,16 @@ export function TrumpFeedPanel({ compact = false, maxPosts = 10 }: Props) {
           throw new Error(`HTTP ${res.status}: ${text}`);
         }
         const json = await res.json() as TrumpEventLog;
-        if (!cancelled) { setData(json); setStatus("ok"); }
+        setData(json);
+        setStatus("ok");
       })
       .catch((err: unknown) => {
-        if (!cancelled) {
-          setErrMsg(err instanceof Error ? err.message : String(err));
-          setStatus("error");
-        }
+        if (err instanceof DOMException && err.name === "AbortError") return;
+        setErrMsg(err instanceof Error ? err.message : String(err));
+        setStatus("error");
       });
 
-    return () => { cancelled = true; };
+    return () => controller.abort();
   }, []);
 
   /* 讀取中 */

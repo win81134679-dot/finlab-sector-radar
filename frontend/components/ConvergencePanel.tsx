@@ -4,13 +4,28 @@
 
 "use client";
 
-import { useState, useMemo } from "react";
+import { useState, useMemo, useEffect } from "react";
 import dynamic from "next/dynamic";
 import type { SignalSnapshot, CompositeSnapshot, HoldingsSnapshot, MagaSnapshot, OHLCBar } from "@/lib/types";
 import { getSectorName } from "@/lib/sectors";
 import { changePctColor, formatChangePct, SIGNAL_NAMES } from "@/lib/signals";
 
 const COMPOSITE_THRESHOLD = 0.10;
+
+/** 回傳目前 grid 欄數（對應 grid-cols-1 sm:grid-cols-2 xl:grid-cols-3） */
+function useColumns() {
+  const [cols, setCols] = useState(1);
+  useEffect(() => {
+    const update = () => {
+      const w = window.innerWidth;
+      setCols(w >= 1280 ? 3 : w >= 640 ? 2 : 1);
+    };
+    update();
+    window.addEventListener("resize", update, { passive: true });
+    return () => window.removeEventListener("resize", update);
+  }, []);
+  return cols;
+}
 
 const StockKLine = dynamic<{ data: OHLCBar[]; stockId: string }>(
   () => import("./StockKLine").then((m) => m.StockKLine),
@@ -94,9 +109,11 @@ function CombinedBar({ combined, lightRatio, composite }: {
   );
 }
 
-function StockCard({ stock }: { stock: ConvergenceStock }) {
-  const [expanded, setExpanded] = useState(false);
-  const hasKLine = (stock.ohlcv_7d?.length ?? 0) >= 2;
+function StockCard({ stock, isExpanded, onToggle }: {
+  stock: ConvergenceStock;
+  isExpanded: boolean;
+  onToggle: () => void;
+}) {  const hasKLine = (stock.ohlcv_7d?.length ?? 0) >= 2;
   const signalLabels = (stock.triggered ?? [])
     .slice(0, 4)
     .map((key) => {
@@ -162,18 +179,18 @@ function StockCard({ stock }: { stock: ConvergenceStock }) {
       {/* K 線展開按鈕 */}
       {hasKLine && (
         <button
-          onClick={() => setExpanded(!expanded)}
+          onClick={onToggle}
           className={`w-full flex items-center justify-center gap-1.5 py-1.5 text-[11px] transition-colors border-t ${
-            expanded
+            isExpanded
               ? "border-blue-200/60 dark:border-blue-800/40 bg-blue-50/60 dark:bg-blue-900/20 text-blue-600 dark:text-blue-400"
               : "border-zinc-100 dark:border-zinc-800/50 text-zinc-400 hover:text-blue-500 dark:hover:text-blue-400 hover:bg-blue-50/40 dark:hover:bg-blue-900/10"
           }`}
         >
           <span>📈</span>
-          <span className="font-medium">{expanded ? "收起 K 線" : "展開 K 線"}</span>
+          <span className="font-medium">{isExpanded ? "收起 K 線" : "展開 K 線"}</span>
         </button>
       )}
-      {expanded && hasKLine && (
+      {isExpanded && hasKLine && (
         <div className="border-t border-zinc-100 dark:border-zinc-800/50 px-1 py-1">
           <StockKLine data={stock.ohlcv_7d!} stockId={stock.id} />
         </div>
@@ -184,6 +201,14 @@ function StockCard({ stock }: { stock: ConvergenceStock }) {
 
 export function ConvergencePanel({ snapshot, composite, holdings, magaData }: Props) {
   const [view, setView] = useState<"stocks" | "rank">("stocks");
+  const [expandedRows, setExpandedRows] = useState<Set<number>>(new Set());
+  const cols = useColumns();
+
+  // 切換 view 時收合所有 K 線
+  const handleViewChange = (v: "stocks" | "rank") => {
+    setView(v);
+    setExpandedRows(new Set());
+  };
 
   // ──── 計算交集板塊 ────────────────────────────────────────────────
   const convergenceSectors = useMemo<ConvergenceSector[]>(() => {
@@ -355,7 +380,7 @@ export function ConvergencePanel({ snapshot, composite, holdings, magaData }: Pr
         {(["stocks", "rank"] as const).map((v) => (
           <button
             key={v}
-            onClick={() => setView(v)}
+            onClick={() => handleViewChange(v)}
             className={`px-4 py-1.5 text-sm rounded-md transition-colors font-medium ${
               view === v
                 ? "bg-white dark:bg-zinc-700 text-zinc-900 dark:text-zinc-100 shadow-sm"
@@ -417,9 +442,24 @@ export function ConvergencePanel({ snapshot, composite, holdings, magaData }: Pr
           ) : (
             <>
               <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-3">
-                {convergenceStocks.map((stock) => (
-                  <StockCard key={stock.id} stock={stock} />
-                ))}
+                {convergenceStocks.map((stock, i) => {
+                  const rowKey = Math.floor(i / cols);
+                  return (
+                    <StockCard
+                      key={stock.id}
+                      stock={stock}
+                      isExpanded={expandedRows.has(rowKey)}
+                      onToggle={() =>
+                        setExpandedRows((prev) => {
+                          const next = new Set(prev);
+                          if (next.has(rowKey)) next.delete(rowKey);
+                          else next.add(rowKey);
+                          return next;
+                        })
+                      }
+                    />
+                  );
+                })}
               </div>
               <p className="text-[11px] text-zinc-400 dark:text-zinc-500 text-center pt-1">
                 以所屬板塊「雙線共振綜合分數」排序  ·  💼 持倉  🇺🇸 MAGA政策受益  ·  點擊「展開 K 線」查看走勢

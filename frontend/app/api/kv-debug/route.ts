@@ -17,12 +17,25 @@ const CANDIDATES = [
   "KV_REST_API_READ_ONLY_TOKEN",
   "UPSTASH_REDIS_REST_URL",
   "UPSTASH_REDIS_REST_TOKEN",
-  "KV_REDIS_URL",          // Redis 協定 URL（非 REST，不能用於 @upstash/redis）
-  "STORAGE_REST_API_URL",  // 若安裝時 prefix 留 STORAGE
+  "KV_REDIS_URL",           // Vercel Marketplace 注入的 redis:// 協定 URL → 可自動解析為 REST
+  "STORAGE_REST_API_URL",   // 若安裝時 prefix 留 STORAGE
   "STORAGE_REST_API_TOKEN",
   "STORAGE_REDIS_REST_URL",
   "STORAGE_REDIS_REST_TOKEN",
 ];
+
+/** 解析 redis://default:TOKEN@HOST:PORT → { url: https://HOST, token } */
+function tryParseKvRedisUrl(): { url: string; token: string } | null {
+  const raw = process.env.KV_REDIS_URL;
+  if (!raw) return null;
+  try {
+    const u = new URL(raw);
+    if (u.hostname && u.password) {
+      return { url: `https://${u.hostname}`, token: decodeURIComponent(u.password) };
+    }
+  } catch { /* ignore */ }
+  return null;
+}
 
 export async function GET() {
   const found: Record<string, string> = {};
@@ -37,7 +50,7 @@ export async function GET() {
     }
   }
 
-  // 判斷哪組組合可用
+  // 判斷哪組組合可用（REST 優先）
   const restUrl =
     process.env.KV_REDIS_REST_URL ??
     process.env.KV_REST_API_URL ??
@@ -54,11 +67,25 @@ export async function GET() {
     process.env.STORAGE_REST_API_TOKEN ??
     null;
 
+  // Fallback：嘗試解析 KV_REDIS_URL
+  const parsed = (!restUrl || !restToken) ? tryParseKvRedisUrl() : null;
+  const resolvedUrl   = restUrl   ?? parsed?.url   ?? null;
+  const resolvedToken = restToken ?? parsed?.token ?? null;
+  const usedFallback  = !restUrl && parsed != null;
+
   return NextResponse.json({
-    status: restUrl && restToken ? "✅ Redis 可用" : "❌ 缺少 env vars",
-    resolved_url_key:   restUrl   ? CANDIDATES.find(k => process.env[k] === restUrl)   : null,
-    resolved_token_key: restToken ? CANDIDATES.find(k => process.env[k] === restToken) : null,
+    status: resolvedUrl && resolvedToken ? "✅ Redis 可用" : "❌ 缺少 env vars",
+    resolved_via: usedFallback
+      ? "KV_REDIS_URL（redis:// 協定自動解析為 REST）"
+      : restUrl
+        ? CANDIDATES.find(k => process.env[k] === restUrl) ?? "直接設定"
+        : null,
+    resolved_url_preview:   resolvedUrl   ? resolvedUrl.slice(0, 30) + "…" : null,
+    resolved_token_preview: resolvedToken ? resolvedToken.slice(0, 8) + "…" : null,
     found,
     missing_count: missing.length,
+    hint: !resolvedUrl
+      ? "請至 Vercel Dashboard → Settings → Environment Variables 確認 Upstash 已連結，或手動新增 KV_REDIS_REST_URL + KV_REDIS_REST_TOKEN"
+      : null,
   });
 }
