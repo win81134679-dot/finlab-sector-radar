@@ -4,7 +4,7 @@
 
 "use client";
 
-import { useState, useMemo, useEffect } from "react";
+import { useState, useMemo, useEffect, useRef } from "react";
 import dynamic from "next/dynamic";
 import type { SignalSnapshot, CompositeSnapshot, HoldingsSnapshot, MagaSnapshot, OHLCBar } from "@/lib/types";
 import { getSectorName } from "@/lib/sectors";
@@ -29,8 +29,34 @@ function useColumns() {
 
 import { MiniSparkline } from "./MiniSparkline";
 import { FactorRadar } from "./FactorRadar";
+import { RsiGauge } from "./RsiGauge";
+import { CandlePatternBadges } from "./CandlePatternBadges";
 
-const StockKLine = dynamic<{ data: OHLCBar[]; stockId: string }>(
+const GITHUB_RAW_BASE_CP = process.env.NEXT_PUBLIC_GITHUB_RAW_BASE_URL ?? "";
+
+/** 展開後 lazy-load 完整 ohlcv，只 fetch 一次 */
+function useOHLCV(stockId: string, enabled: boolean) {
+  const [fullData, setFullData] = useState<OHLCBar[]>([]);
+  const [loading, setLoading]   = useState(false);
+  const fetchedRef = useRef(false);
+
+  useEffect(() => {
+    if (!enabled || fetchedRef.current || !GITHUB_RAW_BASE_CP) return;
+    fetchedRef.current = true;
+    let cancelled = false;
+    setLoading(true);
+    fetch(`${GITHUB_RAW_BASE_CP}/output/ohlcv/${stockId}.json`, { cache: "no-store" })
+      .then(r => (r.ok ? r.json() : null))
+      .then((d: OHLCBar[] | null) => { if (!cancelled && d && d.length > 0) setFullData(d); })
+      .catch(() => {})
+      .finally(() => { if (!cancelled) setLoading(false); });
+    return () => { cancelled = true; };
+  }, [stockId, enabled]);
+
+  return { fullData, loading };
+}
+
+const StockKLine = dynamic<{ data: OHLCBar[]; stockId: string; fullData?: OHLCBar[] }>(
   () => import("./StockKLine").then((m) => m.StockKLine),
   {
     ssr: false,
@@ -119,6 +145,9 @@ function StockCard({ stock, isExpanded, onToggle }: {
   isExpanded: boolean;
   onToggle: () => void;
 }) {
+  const { fullData, loading: loadingFull } = useOHLCV(stock.id, isExpanded);
+  const displayBars = fullData.length >= 2 ? fullData : (stock.ohlcv_7d ?? []);
+
   const hasKLine     = (stock.ohlcv_7d?.length ?? 0) >= 2;
   const hasBreakdown  = !!(stock.breakdown && (
     stock.breakdown.fundamental > 0 || stock.breakdown.technical > 0 ||
@@ -245,9 +274,11 @@ function StockCard({ stock, isExpanded, onToggle }: {
           {hasBreakdown && stock.breakdown && (
             <FactorRadar breakdown={stock.breakdown} grade={stock.grade} />
           )}
+          <CandlePatternBadges bars={displayBars} />
+          <RsiGauge data={fullData} loading={loadingFull} />
           {hasKLine && (
             <div className="px-1 py-1">
-              <StockKLine data={stock.ohlcv_7d!} stockId={stock.id} />
+              <StockKLine data={stock.ohlcv_7d!} stockId={stock.id} fullData={fullData.length > 0 ? fullData : undefined} />
             </div>
           )}
         </div>

@@ -93,7 +93,7 @@ function fmtAxisTime(time: Time, tf: Timeframe, _period?: DayPeriod): string {
   return `${mo}/${d}`;
 }
 
-export interface KLineProps { data: OHLCBar[]; stockId: string; }
+export interface KLineProps { data: OHLCBar[]; stockId: string; fullData?: OHLCBar[]; }
 
 function isDark(): boolean {
   return typeof document !== "undefined" &&
@@ -113,15 +113,21 @@ function getChartColors(dark: boolean) {
 
 const GITHUB_RAW_BASE = process.env.NEXT_PUBLIC_GITHUB_RAW_BASE_URL ?? "";
 
-export function StockKLine({ data: initData, stockId }: KLineProps) {
+export function StockKLine({ data: initData, stockId, fullData: externalData }: KLineProps) {
   const containerRef = useRef<HTMLDivElement>(null);
   const [tf, setTf] = useState<Timeframe>("D");
   const [dayPeriod, setDayPeriod] = useState<DayPeriod>("月");
-  const [fullData, setFullData] = useState<OHLCBar[]>(initData);
+  const [fullData, setFullData] = useState<OHLCBar[]>(externalData ?? initData);
   const [loading, setLoading] = useState(false);
 
-  // 掛載時從 GitHub Raw 抓取完整 OHLCV（約 400 交易日）
+  // 外部資料更新時同步（ConvergencePanel 共用 hook 提供）
   useEffect(() => {
+    if (externalData && externalData.length > 0) setFullData(externalData);
+  }, [externalData]);
+
+  // 無外部資料時才自行抓取
+  useEffect(() => {
+    if (externalData && externalData.length > 0) return;
     if (!GITHUB_RAW_BASE) return;
     let cancelled = false;
     setLoading(true);
@@ -133,7 +139,7 @@ export function StockKLine({ data: initData, stockId }: KLineProps) {
       .catch(() => {})
       .finally(() => { if (!cancelled) setLoading(false); });
     return () => { cancelled = true; };
-  }, [stockId]);
+  }, [stockId, externalData]);
 
   // 資料或時間框架切換時重建圖表
   useEffect(() => {
