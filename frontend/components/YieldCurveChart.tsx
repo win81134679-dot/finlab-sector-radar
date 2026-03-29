@@ -78,7 +78,6 @@ export function YieldCurveChart({ data, updated_at, analysis }: Props) {
     : "steep"
   );
   const isInverted = spread_2_10 !== null && spread_2_10 < 0;
-  const triggeredSignals = (analysis?.signals ?? []).filter(s => s.triggered);
 
   return (
     <div className="rounded-xl border border-zinc-200/60 dark:border-zinc-700/40 bg-white/60 dark:bg-zinc-800/40 backdrop-blur p-4 space-y-4">

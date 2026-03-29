@@ -58,16 +58,21 @@ jobs:
         id: holiday_check
         run: |
           python - <<'EOF'
-          import holidays, datetime, sys, zoneinfo
+          import holidays, datetime, os, zoneinfo
           tz = zoneinfo.ZoneInfo('Asia/Taipei')
           today = datetime.datetime.now(tz).date()
           tw = holidays.TW(years=today.year)
+          github_output = os.environ.get('GITHUB_OUTPUT', '')
           if today in tw:
-              print(f'SKIP=true >> $GITHUB_OUTPUT', flush=True)
-              print(f'今日 {today} 為台灣假日：{tw[today]}，跳過執行。')
+              print(f'今日 {today} 為台灣假日：{tw[today]}，跳過執行。', flush=True)
+              if github_output:
+                  with open(github_output, 'a') as f:
+                      f.write('SKIP=true\n')
           else:
-              print(f'SKIP=false >> $GITHUB_OUTPUT', flush=True)
-              print(f'今日 {today}，非假日，繼續執行。')
+              print(f'今日 {today}，非假日，繼續執行。', flush=True)
+              if github_output:
+                  with open(github_output, 'a') as f:
+                      f.write('SKIP=false\n')
           EOF
 
       - name: 🚀 執行 7 燈板塊分析

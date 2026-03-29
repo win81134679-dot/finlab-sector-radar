@@ -169,6 +169,7 @@ export async function fetchLatestSnapshot() {
 }
 
 export async function fetchHistoryIndex() {
+  if (!GITHUB_RAW_BASE) return null;
   const url = `${GITHUB_RAW_BASE}/output/history/history_index.json`;
   try {
     const raw = await fetchJSON<unknown>(url);

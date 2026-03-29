@@ -22,10 +22,10 @@ const CATEGORY_LABELS: Record<string, string> = {
 };
 
 const OVERALL_STYLE: Record<string, string> = {
-  risk_off: "border-red-500/40 bg-red-500/8",
-  caution:  "border-amber-500/40 bg-amber-500/8",
-  neutral:  "border-blue-500/40 bg-blue-500/8",
-  risk_on:  "border-emerald-500/40 bg-emerald-500/8",
+  risk_off: "border-red-500/40 bg-red-500/10",
+  caution:  "border-amber-500/40 bg-amber-500/10",
+  neutral:  "border-blue-500/40 bg-blue-500/10",
+  risk_on:  "border-emerald-500/40 bg-emerald-500/10",
 };
 
 /** 同排同步：以 cols=3 為基準計算 rowIndex，同一 row 的所有卡片一起展開/收合 */

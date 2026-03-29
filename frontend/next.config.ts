@@ -24,7 +24,7 @@ const nextConfig: NextConfig = {
             key: "Content-Security-Policy",
             value: [
               "default-src 'self'",
-              "script-src 'self' 'unsafe-inline' 'unsafe-eval'",  // Next.js ISR/Client 需要
+              "script-src 'self' 'unsafe-inline'",  // Next.js ISR/Client 需要
               "style-src 'self' 'unsafe-inline'",
               `connect-src 'self' ${GITHUB_RAW}`,
               "img-src 'self' data:",

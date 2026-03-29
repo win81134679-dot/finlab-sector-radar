@@ -60,7 +60,9 @@ export function CommodityCard({ asset, isExpanded, onToggle }: Props) {
         <div className="flex items-center gap-3 shrink-0 ml-2">
           <div className="text-right">
             <div className="text-sm font-mono font-medium text-zinc-900 dark:text-white">
-              {price !== null ? price.toPrecision(5) : "—"}
+              {price !== null ? price.toPrecision(5) : (
+                <span title="資料來源暫時無法取得" className="text-zinc-400 dark:text-zinc-500 text-xs">資料暫缺</span>
+              )}
             </div>
             <div className={`text-[10px] font-mono ${pctColor(change_1d_pct)}`}>
               {fmtPct(change_1d_pct)} 日
@@ -87,27 +89,29 @@ export function CommodityCard({ asset, isExpanded, onToggle }: Props) {
           </div>
 
           {/* 學術信號說明 */}
-          {signals.length > 0 && (
-            <div className="mt-3 space-y-2">
-              <div className="text-[10px] font-semibold text-zinc-500 dark:text-zinc-400 uppercase tracking-wider">
-                學術信號
-              </div>
-              {signals.map(sig => (
-                <div
-                  key={sig.key}
-                  className={`rounded-lg border px-3 py-2 text-[11px] ${SEVERITY_STYLE[sig.severity] ?? SEVERITY_STYLE.low}`}
-                >
-                  <div className="flex items-start gap-2">
-                    <span className="shrink-0 mt-0.5">{sig.triggered ? "🔔" : "○"}</span>
-                    <div>
-                      <p className="leading-relaxed">{sig.commentary}</p>
-                      <p className="mt-1 opacity-60 text-[10px]">{sig.source}</p>
-                    </div>
+          <div className="mt-3 space-y-2">
+            <div className="text-[10px] font-semibold text-zinc-500 dark:text-zinc-400 uppercase tracking-wider">
+              學術信號
+            </div>
+            {signals.length > 0 ? signals.map(sig => (
+              <div
+                key={sig.key}
+                className={`rounded-lg border px-3 py-2 text-[11px] ${SEVERITY_STYLE[sig.severity] ?? SEVERITY_STYLE.low}`}
+              >
+                <div className="flex items-start gap-2">
+                  <span className="shrink-0 mt-0.5">{sig.triggered ? "🔔" : "○"}</span>
+                  <div>
+                    <p className="leading-relaxed">{sig.commentary}</p>
+                    <p className="mt-1 opacity-60 text-[10px]">{sig.source}</p>
                   </div>
                 </div>
-              ))}
-            </div>
-          )}
+              </div>
+            )) : (
+              <p className="text-[11px] text-emerald-600 dark:text-emerald-400 py-1">
+                ✓ 目前無觸發信號，市場環境正常
+              </p>
+            )}
+          </div>
         </div>
       )}
     </div>
