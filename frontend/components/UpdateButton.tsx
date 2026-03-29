@@ -5,8 +5,12 @@
 //  1. 密碼透過 POST /api/manual-update 在伺服器端以 SHA-256 + timingSafeEqual 比對
 //  2. 用戶端：連續 5 次失敗 → 鎖定 5 分鐘（搭配伺服器端 IP 速率限制）
 //  3. 模式關閉時清空密碼，不在記憶體中保留
+//
+// Modal 使用 ReactDOM.createPortal 掛載到 document.body，
+// 避免父層 backdrop-filter 讓 fixed 定位失效（CSS 規格限制）。
 
 import { useState, useRef, useEffect, useCallback } from "react";
+import { createPortal } from "react-dom";
 
 const MAX_CLIENT_ATTEMPTS = 5;
 const CLIENT_LOCKOUT_SEC  = 5 * 60; // 5 分鐘
@@ -54,6 +58,10 @@ export function UpdateButton() {
   }, [open]);
 
   const isLocked = lockedUntil > 0 && Date.now() < lockedUntil;
+
+  // Portal target（SSR 安全）
+  const [mounted, setMounted] = useState(false);
+  useEffect(() => { setMounted(true); }, []);
 
   const handleClose = useCallback(() => {
     setOpen(false);
@@ -120,8 +128,8 @@ export function UpdateButton() {
         立刻更新
       </button>
 
-      {/* ── 模態視窗 ──────────────────────────────────────── */}
-      {open && (
+      {/* ── 模態視窗（Portal 掛至 body，繞過父層 backdrop-filter 限制）── */}
+      {open && mounted && createPortal(
         <div
           role="dialog"
           aria-modal="true"
@@ -226,7 +234,7 @@ export function UpdateButton() {
             )}
           </div>
         </div>
-      )}
+      , document.body)}
     </>
   );
 }
