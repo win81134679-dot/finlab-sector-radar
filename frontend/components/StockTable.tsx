@@ -35,7 +35,7 @@ function useOHLCV(stockId: string, enabled: boolean) {
     if (!enabled || fetchedRef.current || !GITHUB_RAW_BASE_ST) return;
     fetchedRef.current = true;
     setLoading(true);
-    fetch(`${GITHUB_RAW_BASE_ST}/ohlcv/${stockId}.json`)
+    fetch(`${GITHUB_RAW_BASE_ST}/output/ohlcv/${stockId}.json`, { cache: "no-store" })
       .then((r) => r.json())
       .then((d: OHLCBar[]) => setFullData(Array.isArray(d) ? d : []))
       .catch(() => setFullData([]))

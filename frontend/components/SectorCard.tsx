@@ -90,8 +90,8 @@ export function SectorCard({ sectorId, sector, featured = false, defaultExpanded
         <div
           id={`sector-detail-${sectorId}`}
           className={`
-            transition-all duration-300 overflow-hidden
-            ${expanded ? "max-h-[800px] opacity-100" : "max-h-0 opacity-0"}
+            transition-all duration-500 overflow-hidden
+            ${expanded ? "max-h-[5000px] opacity-100" : "max-h-0 opacity-0"}
           `}
         >
           <div className="px-4 pb-4 border-t border-zinc-200/30 dark:border-zinc-700/30 pt-3">
