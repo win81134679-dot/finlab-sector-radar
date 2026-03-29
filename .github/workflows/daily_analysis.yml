@@ -98,6 +98,8 @@ jobs:
           if ! git diff --staged --quiet; then
             DATE=$(TZ='Asia/Taipei' date +%Y-%m-%d)
             git commit -m "data: ${DATE} 板塊分析更新 [skip ci]"
+            # rebase 拉取遠端最新（避免本地 push 後 remote 超前導致拒絕）
+            git pull --rebase
             git push
             echo "✅ output/ 已推送"
           else
@@ -168,6 +170,7 @@ jobs:
           git add output/history/
           if ! git diff --staged --quiet; then
             git commit -m "data: 歷史回填完成（${{ github.event.inputs.backfill_months || 6 }}個月）[skip ci]"
+            git pull --rebase
             git push
             echo "✅ 歷史資料已推送"
           else
