@@ -84,3 +84,46 @@ export const HISTORY_RANGE_LABELS: Record<HistoryRange, string> = {
   "30d": "1 個月",
   "90d": "3 個月",
 };
+
+// ────────────────────────────────────────────────────────────────────────
+// 商品市場（Commodities Dashboard）型別
+// ────────────────────────────────────────────────────────────────────────
+
+export type CommodityCategory =
+  | "precious_metal"
+  | "energy"
+  | "industrial"
+  | "crypto"
+  | "index"
+  | "bonds";
+
+export interface EconSignal {
+  key: string;
+  triggered: boolean;
+  severity: "high" | "medium" | "low";
+  commentary: string;
+  source: string;
+}
+
+export interface CommodityAsset {
+  slug: string;
+  name_zh: string;
+  category: CommodityCategory;
+  price: number | null;
+  change_1d_pct: number | null;
+  change_7d_pct: number | null;
+  signals: EconSignal[];
+  last_updated: string;
+}
+
+export interface YieldPoint {
+  tenor: string;    // "2Y" | "5Y" | "10Y" | "30Y"
+  years: number;
+  yield_pct: number;
+}
+
+export interface CommoditySnapshot {
+  updated_at: string;
+  assets: Record<string, CommodityAsset>;
+  yield_curve: YieldPoint[];
+}

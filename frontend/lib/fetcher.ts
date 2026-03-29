@@ -89,10 +89,43 @@ const HistoryIndexSchema = z.object({
     .default([]),
 });
 
+// ── 商品市場 Zod schema ───────────────────────────────────────────────────
+
+const EconSignalSchema = z.object({
+  key: z.string(),
+  triggered: z.boolean(),
+  severity: z.enum(["high", "medium", "low"]),
+  commentary: z.string(),
+  source: z.string(),
+});
+
+const CommodityAssetSchema = z.object({
+  slug: z.string(),
+  name_zh: z.string(),
+  category: z.enum(["precious_metal", "energy", "industrial", "crypto", "index", "bonds"]),
+  price: z.number().nullable(),
+  change_1d_pct: z.number().nullable(),
+  change_7d_pct: z.number().nullable(),
+  signals: z.array(EconSignalSchema).optional().default([]),
+  last_updated: z.string(),
+});
+
+const YieldPointSchema = z.object({
+  tenor: z.string(),
+  years: z.number(),
+  yield_pct: z.number(),
+});
+
+const CommoditySnapshotSchema = z.object({
+  updated_at: z.string(),
+  assets: z.record(CommodityAssetSchema),
+  yield_curve: z.array(YieldPointSchema).optional().default([]),
+});
+
 // ── fetch 工具 ────────────────────────────────────────────────────────────
 
-async function fetchJSON<T>(url: string): Promise<T> {
-  const res = await fetch(url, { next: { revalidate: 1800 } }); // ISR 30 分鐘
+async function fetchJSON<T>(url: string, revalidate = 1800): Promise<T> {
+  const res = await fetch(url, { next: { revalidate } }); // ISR 30 分鐘
   if (!res.ok) {
     throw new Error(`HTTP ${res.status}: ${url}`);
   }
@@ -134,3 +167,35 @@ export async function fetchHistoryIndex() {
     return null;
   }
 }
+
+export async function fetchCommodities() {
+  if (!GITHUB_RAW_BASE) return null;
+  const url = `${GITHUB_RAW_BASE}/output/commodities/latest.json`;
+  try {
+    const raw = await fetchJSON<unknown>(url);
+    const parsed = CommoditySnapshotSchema.safeParse(raw);
+    if (!parsed.success) {
+      console.warn("commodities/latest.json schema 驗證失敗:", parsed.error.issues);
+      return null;
+    }
+    return parsed.data;
+  } catch {
+    return null;
+  }
+}
+
+export async function fetchCommodityOHLCV(slug: string) {
+  if (!GITHUB_RAW_BASE) return null;
+  const url = `${GITHUB_RAW_BASE}/output/commodities/${slug}.json`;
+  try {
+    const raw = await fetch(url, { cache: "no-store" });
+    if (!raw.ok) return null;
+    const data = await raw.json();
+    const parsed = z.array(OHLCBarSchema).safeParse(data);
+    return parsed.success ? parsed.data : null;
+  } catch {
+    return null;
+  }
+}
+
+

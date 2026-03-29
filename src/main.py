@@ -66,6 +66,7 @@ MENU_ITEMS = [
     ("9", "🔦 多維訊號彙總表（幾燈亮）"),
     ("A", "📁 掃描 / 讀取歷史報告"),
     ("B", "⚙️  設定（Token 管理 / 清快取）"),
+    ("C", "🌐 商品市場分析（黃金 / 原油 / 加密 / 債券）"),
     ("0", "離開"),
 ]
 
@@ -397,6 +398,62 @@ def _update_env(key: str, value: str) -> None:
 
 
 # ══════════════════════════════════════════════════════════════════════════
+# 商品市場
+# ══════════════════════════════════════════════════════════════════════════
+
+def menu_commodities() -> None:
+    """執行商品市場分析並顯示摘要。"""
+    from src.analyzers.commodities import run as commodities_run
+    with console.status("[cyan]🌐 抓取商品市場行情（yfinance + CoinGecko）…[/cyan]"):
+        try:
+            result = commodities_run()
+        except Exception as e:
+            console.print(f"[red]商品市場分析失敗: {e}[/red]")
+            return
+
+    assets = result.get("assets", {})
+    table = Table(title="🌐 商品市場摘要", header_style="bold cyan")
+    table.add_column("資產",     style="bold", min_width=16)
+    table.add_column("類別",     min_width=10)
+    table.add_column("最新價",   justify="right")
+    table.add_column("日漲跌",   justify="right")
+    table.add_column("7日漲跌",  justify="right")
+    table.add_column("信號",     overflow="fold")
+
+    for slug, a in assets.items():
+        price   = a["price"]
+        chg1d   = a["change_1d_pct"]
+        chg7d   = a["change_7d_pct"]
+        sigs    = a.get("signals", [])
+        triggered = [s for s in sigs if s.get("triggered")]
+        sig_str = ", ".join(s["key"] for s in triggered) if triggered else "—"
+
+        def _fmt(v):  # noqa: E306
+            if v is None: return "—"
+            color = "green" if v > 0 else "red" if v < 0 else ""
+            s = f"{v:+.2f}%"
+            return s if not color else f"[{color}]{s}[/{color}]"
+
+        table.add_row(
+            a["name_zh"],
+            a["category"],
+            f"{price:.4g}" if price is not None else "—",
+            _fmt(chg1d),
+            _fmt(chg7d),
+            sig_str,
+        )
+
+    console.print(table)
+
+    yc = result.get("yield_curve", [])
+    if yc:
+        yc_str = "   ".join(f"{p['tenor']}={p['yield_pct']:.2f}%" for p in yc)
+        console.print(f"\n[bold]收益率曲線：[/bold] {yc_str}")
+
+    console.print(f"\n[green]✅ 資料已寫出 output/commodities/[/green]")
+
+
+# ══════════════════════════════════════════════════════════════════════════
 # 主選單
 # ══════════════════════════════════════════════════════════════════════════
 
@@ -421,6 +478,8 @@ def main() -> None:
         "a": menu_history,
         "B": menu_settings,
         "b": menu_settings,
+        "C": menu_commodities,
+        "c": menu_commodities,
     }
 
     while True:
@@ -504,6 +563,15 @@ if __name__ == "__main__":
             _auto_log(f"[INFO] Markdown 報告：{report_path.name}")
         except Exception as _e:
             _auto_log(f"[WARN] Markdown 報告輸出失敗: {_e}")
+
+        # 4b. 商品市場分析（黃金/油/幣/債，非核心，失敗不中斷）
+        try:
+            from src.analyzers.commodities import run as _commodities_run
+            _auto_log("[INFO] 開始商品市場分析（yfinance + CoinGecko）…")
+            _comm_result = _commodities_run()
+            _auto_log(f"[INFO] 商品市場完成：{len(_comm_result.get('assets', {}))} 個資產")
+        except Exception as _e:
+            _auto_log(f"[WARN] 商品市場分析失敗（不影響主流程）: {_e}")
 
         # 5. 送出 Discord 通知
         try:
