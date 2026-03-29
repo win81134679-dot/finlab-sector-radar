@@ -12,6 +12,7 @@ import { TrendSection } from "@/components/TrendSection";
 import { CommodityPanel } from "@/components/CommodityPanel";
 import { ConvergencePanel } from "@/components/ConvergencePanel";
 import { LongTermPanel } from "@/components/LongTermPanel";
+import { TrumpFeedPanel } from "@/components/TrumpFeedPanel";
 import { UpdateButton } from "@/components/UpdateButton";
 
 interface Props {
@@ -25,12 +26,13 @@ interface Props {
   pnl:         PnlSnapshot | null;
 }
 
-type Tab = "sector" | "convergence" | "longterm" | "commodity";
+type Tab = "sector" | "convergence" | "longterm" | "trumpfeed" | "commodity";
 
 const TABS: { id: Tab; label: string }[] = [
   { id: "sector",      label: "短線趨勢 📊" },
   { id: "convergence", label: "雙線共振 🎯" },
   { id: "longterm",    label: "長線趨勢 📐" },
+  { id: "trumpfeed",   label: "訊號來源 📡" },
   { id: "commodity",   label: "商品市場 🌐" },
 ];
 
@@ -109,6 +111,12 @@ export function TabContainer({ snapshot, historyIndex, commodities, magaData, co
               holdings={holdings}
               pnl={pnl}
             />
+          </ErrorBoundary>
+        )}
+
+        {activeTab === "trumpfeed" && (
+          <ErrorBoundary label="訊號來源">
+            <TrumpFeedPanel />
           </ErrorBoundary>
         )}
 

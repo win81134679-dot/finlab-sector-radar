@@ -5,7 +5,7 @@ trump_nlp.py — Trump 貼文 / 新聞 NLP 情感分析引擎
 輸出：{
     "sentiment":  {"compound": float, "label": str},   # VADER 複合分數 + 標籤
     "keywords":   list[str],                            # 命中的關鍵詞
-    "impacts":    {sector_id: int},                     # +2/+1/0/-1/-2 多空信號
+    "impacts":    {sector_id: float},                   # -1.0 ~ +1.0 板塊衝擊係數
     "confidence": float,                                # 0.0-1.0 可信度
     "summary":    str,                                  # 人類可讀摘要
 }
@@ -13,104 +13,34 @@ trump_nlp.py — Trump 貼文 / 新聞 NLP 情感分析引擎
 依賴：
   - vaderSentiment（pip install vaderSentiment）
   若未安裝則退化為僅關鍵詞模式，sentiment.compound = 0.0
+
+NLP vs tariff.py 語義差異：
+  NLP  捕捉「短期市場恐慌 / 即時情緒反應」（tariff→foundry 短期賣壓 -0.7）
+  tariff.py 捕捉「長期結構受益」（台積電替代效應 +0.60）
+  兩者方向相反是刻意設計，composite.py 50:50 加權後反映真實複雜性
 """
 
 from __future__ import annotations
 
-import re
-from dataclasses import dataclass, field
 from typing import NamedTuple
+
+from src.analyzers.keywords import (
+    KEYWORD_MATRIX,
+    PHRASE_MATRIX,
+    NOISE_WORDS,
+    TRUMP_VADER_LEXICON,
+)
 
 # ── 可選：VADER 情感分析 ─────────────────────────────────────────────────────
 try:
     from vaderSentiment.vaderSentiment import SentimentIntensityAnalyzer  # type: ignore
     _vader = SentimentIntensityAnalyzer()
+    # 注入川普語境自訂詞彙（覆蓋預設情緒分數）
+    _vader.lexicon.update(TRUMP_VADER_LEXICON)
     VADER_AVAILABLE = True
 except ImportError:
     _vader = None
     VADER_AVAILABLE = False
-
-
-# ══════════════════════════════════════════════════════════════════════════════
-# 關鍵詞 → 板塊衝擊表
-# key: 關鍵詞（小寫，regex 支援）
-# val: {sector_id: signal}  signal: +2=強買, +1=買, -1=賣, -2=強賣
-# ══════════════════════════════════════════════════════════════════════════════
-_KEYWORD_IMPACTS: dict[str, dict[str, int]] = {
-    # AI / 半導體 扶植
-    r"\bai\b":                       {"ai_server": +2, "foundry": +1, "ic_design": +1},
-    r"artificial intelligence":      {"ai_server": +2, "foundry": +1},
-    r"semiconductor":                {"foundry": +2, "packaging": +1, "ic_design": -1},
-    r"chip(s)?":                     {"foundry": +2, "packaging": +1},
-    r"nvidia":                       {"ai_server": +2, "foundry": +1},
-    r"tsmc":                         {"foundry": +2, "packaging": +1},
-
-    # 防衛 / 軍事
-    r"defense|military|pentagon":    {"defense": +2, "foundry": +1},
-    r"missile|weapon":               {"defense": +2},
-
-    # 貿易戰 / 關稅
-    r"tariff(s)?":                   {
-        "foundry": +1, "ic_design": -2, "shipping": -2,
-        "display": -2, "ev_supply": -1, "textile": -1,
-    },
-    r"trade war":                    {
-        "ic_design": -2, "shipping": -2, "display": -1, "ev_supply": -1,
-    },
-    r"import tax":                   {"shipping": -2, "ic_design": -1},
-    r"sanction(s)?":                 {"ic_design": -2, "foundry": +1},
-
-    # 中國相關（負面）
-    r"china|chinese":                {
-        "ic_design": -1, "shipping": -1, "display": -1, "ev_supply": -1,
-    },
-    r"ban(ned)? china":              {"ic_design": -2, "shipping": -2},
-    r"decouple":                     {
-        "ic_design": -2, "foundry": +1, "shipping": -1,
-    },
-
-    # 貿易協定（正面）
-    r"deal|agreement|bilateral":     {"shipping": +1, "ic_design": +1},
-    r"trade deal":                   {"shipping": +2, "ic_design": +1, "display": +1},
-
-    # 能源
-    r"oil|petroleum|lng":            {"petrochemical": +1, "shipping": +1},
-    r"drill|energy independent":     {"petrochemical": +2},
-    r"solar|clean energy|renewable": {"solar": +1, "wind_energy": +1},
-    r"electric vehicle|ev":          {"ev_supply": +1, "power_semi": +1},
-
-    # 基建 / 製造回流
-    r"manufactur(e|ing) (in )?america": {
-        "foundry": +1, "semiconductor_equip": +1, "robotics": +1,
-    },
-    r"reshoring|onshoring":          {
-        "foundry": +1, "packaging": +1, "robotics": +1,
-    },
-    r"infrastructure":               {
-        "power_infra": +2, "construction": +1, "steel": +1,
-    },
-
-    # 科技反托拉斯 / 管制（負面）
-    r"antitrust|break up (big )?tech": {"software_saas": -1, "ecommerce": -1},
-    r"regulate tech":                {"software_saas": -1},
-
-    # 美元 / 金融
-    r"dollar|usd":                   {"banking": 0, "financial_holding": 0},
-    r"interest rate|fed":            {
-        "banking": -1, "financial_holding": -1, "power_semi": +1,
-    },
-    r"inflation":                    {
-        "banking": -1, "petrochemical": +1,
-    },
-
-    # 航運
-    r"port|shipping|maritime|freight": {"shipping": -1},
-    r"panama|taiwan strait|south china sea": {"shipping": -2, "foundry": +2},
-
-    # 加密貨幣
-    r"bitcoin|btc|crypto":           {"gaming": +1},
-    r"blockchain":                   {"software_saas": +1},
-}
 
 
 # ── 標籤對應 ─────────────────────────────────────────────────────────────────
@@ -156,18 +86,35 @@ def analyze_post(text: str) -> dict:
     else:
         compound = 0.0
 
-    # ── 2. 關鍵詞匹配 ────────────────────────────────────────────────────────
+    # ── 2. 關鍵詞匹配（PHRASE_MATRIX 優先，再處理 KEYWORD_MATRIX）─────────────
     matched_keywords: list[str] = []
-    impact_accumulator: dict[str, int] = {}
+    impact_accumulator: dict[str, float] = {}
 
-    for pattern, sector_impacts in _KEYWORD_IMPACTS.items():
-        if re.search(pattern, lower):
-            matched_keywords.append(pattern.replace("\\b", "").replace("(s)?", "s").replace("(ed)?", "ed"))
+    # 2a. 多詞組（較長的短語先匹配）
+    for phrase, sector_impacts in PHRASE_MATRIX.items():
+        if phrase in lower and sector_impacts:
+            matched_keywords.append(phrase)
             for sector, signal in sector_impacts.items():
-                impact_accumulator[sector] = impact_accumulator.get(sector, 0) + signal
+                impact_accumulator[sector] = impact_accumulator.get(sector, 0.0) + signal
 
-    # clamp to ±2
-    impacts = {s: max(-2, min(2, v)) for s, v in impact_accumulator.items() if v != 0}
+    # 2b. 單詞關鍵詞（排除雜訊詞）
+    for keyword, sector_impacts in KEYWORD_MATRIX.items():
+        if keyword in NOISE_WORDS or not sector_impacts:
+            continue
+        if keyword in lower:
+            matched_keywords.append(keyword)
+            for sector, signal in sector_impacts.items():
+                impact_accumulator[sector] = impact_accumulator.get(sector, 0.0) + signal
+
+    # 去重（同一關鍵詞多次出現只計一次）
+    matched_keywords = list(dict.fromkeys(matched_keywords))
+
+    # clamp to ±1.0
+    impacts: dict[str, float] = {
+        s: round(max(-1.0, min(1.0, v)), 3)
+        for s, v in impact_accumulator.items()
+        if abs(v) >= 0.05
+    }
 
     # ── 3. 可信度 = 有關鍵詞命中時才有意義 ─────────────────────────────────
     hit_count = len(matched_keywords)
@@ -187,7 +134,7 @@ def analyze_post(text: str) -> dict:
     # ── 4. 人類可讀摘要 ──────────────────────────────────────────────────────
     label = _sentiment_label(compound)
     top_impact = sorted(impacts.items(), key=lambda x: abs(x[1]), reverse=True)[:3]
-    impact_str = ", ".join(f"{s}({'+' if v>0 else ''}{v})" for s, v in top_impact)
+    impact_str = ", ".join(f"{s}({'+' if v>0 else ''}{v:.2f})" for s, v in top_impact)
     summary = f"[{label}] 命中 {hit_count} 個關鍵詞；主要衝擊板塊：{impact_str or '無'}"
 
     return {

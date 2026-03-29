@@ -16,6 +16,7 @@ import { CompositePanel } from "@/components/CompositePanel";
 import { MagaPanel } from "@/components/MagaPanel";
 import { PortfolioPanel } from "@/components/PortfolioPanel";
 import { ErrorBoundary } from "@/components/ErrorBoundary";
+import { TrumpFeedPanel } from "@/components/TrumpFeedPanel";
 
 interface Props {
   composite:   CompositeSnapshot | null;
@@ -73,6 +74,16 @@ export function LongTermPanel({
           <ErrorBoundary label="訊號分析">
             <CompositePanel data={composite} sensitivity={sensitivity} />
           </ErrorBoundary>
+          {/* Trump 即時衝擊摘要（精簡模式）*/}
+          <div className="mt-6 pt-6 border-t border-zinc-200/50 dark:border-zinc-700/50">
+            <h3 className="text-sm font-bold text-zinc-700 dark:text-zinc-300 mb-2">
+              Trump 訊號即時衝擊
+              <span className="ml-2 text-xs font-normal text-zinc-400">（精簡）→ 詳細課觀「訊號來源 📡」</span>
+            </h3>
+            <ErrorBoundary label="Trump 衝擊摘要">
+              <TrumpFeedPanel compact maxPosts={3} />
+            </ErrorBoundary>
+          </div>
         </>
       )}
 

@@ -1,0 +1,33 @@
+name: Update Trump Feed
+
+# 每 30 分鐘觸發一次，也可手動觸發
+on:
+  schedule:
+    - cron: "*/30 * * * *"
+  workflow_dispatch:
+
+jobs:
+  trigger:
+    name: 觸發 Vercel update-trump API
+    runs-on: ubuntu-latest
+    timeout-minutes: 2
+
+    steps:
+      - name: 呼叫 Vercel update-trump endpoint
+        run: |
+          RESPONSE=$(curl -s -w "\n%{http_code}" -X POST \
+            "https://${{ secrets.VERCEL_URL }}/api/update-trump" \
+            -H "Authorization: Bearer ${{ secrets.CRON_SECRET }}" \
+            -H "Content-Type: application/json" \
+            --max-time 55)
+          
+          HTTP_CODE=$(echo "$RESPONSE" | tail -n1)
+          BODY=$(echo "$RESPONSE" | sed '$d')
+          
+          echo "HTTP Status: $HTTP_CODE"
+          echo "Response: $BODY"
+          
+          if [ "$HTTP_CODE" -ne 200 ]; then
+            echo "::error::update-trump 回傳非 200：$HTTP_CODE"
+            exit 1
+          fi

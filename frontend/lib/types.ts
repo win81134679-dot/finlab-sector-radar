@@ -328,3 +328,52 @@ export interface SensitivitySnapshot {
   stability:  Record<string, SectorStability>;
   note:       string;   // 學術誠實聲明
 }
+
+// ────────────────────────────────────────────────────────────────────────
+// Trump 貼文即時訊號型別（Vercel KV 存儲）
+// ────────────────────────────────────────────────────────────────────────
+
+/** 每個板塊的即時狀態（存於 Vercel KV） */
+export interface SectorState {
+  score:        number;    // composite score，-2.0 ~ +2.0
+  lastUpdated:  string;    // ISO datetime
+  deltaHistory: number[];  // 最近 10 筆 delta，由舊到新
+}
+
+/** 單篇貼文的板塊衝擊計算結果 */
+export interface TrumpPost {
+  text:      string;
+  timestamp: string | null;
+  url:       string | null;
+  keywords:  string[];
+  impacts:   Record<string, number>;  // sector → -1.0 ~ +1.0
+  sentiment: { compound: number; label: string };
+}
+
+/** 一個板塊從上次更新到本次的變化 */
+export type MomentumLabel =
+  | "↑ 訊號強化"
+  | "↑ 壓力緩解"
+  | "↓ 訊號弱化"
+  | "↓ 壓力加深"
+  | "→ 無顯著變化";
+
+export interface SectorDelta {
+  sector:       string;
+  sectorName:   string;           // 中文名稱
+  prev:         number;
+  current:      number;
+  delta:        number;
+  momentum:     MomentumLabel;
+  accelerating: boolean;          // |delta| > |上一筆 delta| → 🔥
+}
+
+/** /api/trump-feed 回傳的完整資料 */
+export interface TrumpEventLog {
+  updatedAt:      string;
+  posts:          TrumpPost[];
+  deltas:         SectorDelta[];  // 所有有變動的板塊
+  topDeltas:      SectorDelta[];  // 前 5 大絕對值 delta
+  totalAnalyzed:  number;
+  sources:        string[];       // 來源標示，例如 ["Truth Social", "Google News"]
+}
