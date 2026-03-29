@@ -4,7 +4,7 @@ import { Header } from "@/components/Header";
 import { TabContainer } from "@/components/TabContainer";
 import { ErrorBoundary } from "@/components/ErrorBoundary";
 
-export const revalidate = 300;  // ISR: 5 分鐘重新驗證
+export const revalidate = 1800;  // ISR: 30 分鐘重新驗證（資料由 GitHub Actions 每日更新）
 
 export default async function DashboardPage() {
   const [snapshot, historyIndex, commodities, magaData] = await Promise.all([
