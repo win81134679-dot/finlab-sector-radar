@@ -40,25 +40,21 @@ jobs:
             exit 1
           fi
 
-          echo "$BODY" | python3 -c "
-import sys, json, os
-
-data = json.load(sys.stdin)
-
-if data.get('skipped'):
-    print('Skipped (rate limited):', data.get('reason', ''))
-    sys.exit(0)
-
-log = data.get('log')
-if not log:
-    print('WARNING: no log field in response, keys:', list(data.keys()))
-    sys.exit(0)
-
-os.makedirs('output', exist_ok=True)
-with open('output/trump_signals.json', 'w', encoding='utf-8') as f:
-    json.dump(log, f, ensure_ascii=False, indent=2)
-print('Saved output/trump_signals.json, posts:', len(log.get('posts', [])), 'deltas:', len(log.get('deltas', [])))
-"
+          echo "$BODY" | python3 - <<'PYEOF'
+          import sys, json, os
+          data = json.load(sys.stdin)
+          if data.get('skipped'):
+              print('Skipped (rate limited):', data.get('reason', ''))
+              sys.exit(0)
+          log = data.get('log')
+          if not log:
+              print('WARNING: no log field in response, keys:', list(data.keys()))
+              sys.exit(0)
+          os.makedirs('output', exist_ok=True)
+          with open('output/trump_signals.json', 'w', encoding='utf-8') as f:
+              json.dump(log, f, ensure_ascii=False, indent=2)
+          print('Saved output/trump_signals.json, posts:', len(log.get('posts', [])), 'deltas:', len(log.get('deltas', [])))
+          PYEOF
 
       - name: Commit and push
         run: |
