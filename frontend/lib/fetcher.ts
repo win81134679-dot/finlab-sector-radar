@@ -31,6 +31,7 @@ const MacroSchema = z.object({
 
 const StockSchema = z.object({
   id: z.string(),
+  name_zh: z.string().optional().default(""),
   score: z.number().nullable().optional(),
   grade: z.string().optional().default(""),
   change_pct: z.number().nullable().optional(),

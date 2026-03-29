@@ -402,6 +402,12 @@ export function ConvergencePanel({ snapshot, composite, holdings, magaData }: Pr
 
   const nameMap = useMemo<Record<string, string>>(() => {
     const map: Record<string, string> = {};
+    // 從 snapshot 板塊個股取得名稱
+    for (const sector of Object.values(snapshot?.sectors ?? {})) {
+      for (const s of sector.stocks ?? []) {
+        if (s.name_zh) map[s.id] = s.name_zh;
+      }
+    }
     for (const [id, pos] of Object.entries(holdings?.positions ?? {})) {
       if (pos.name_zh) map[id] = pos.name_zh;
     }
@@ -409,7 +415,7 @@ export function ConvergencePanel({ snapshot, composite, holdings, magaData }: Pr
       if (s.name_zh) map[s.id] = s.name_zh;
     }
     return map;
-  }, [holdings, magaData]);
+  }, [snapshot, holdings, magaData]);
 
   // 計算交集個股
   const convergenceStocks = useMemo<ConvergenceStock[]>(() => {

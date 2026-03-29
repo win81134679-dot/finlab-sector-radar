@@ -60,6 +60,20 @@ interface Props {
   holdings:  HoldingsSnapshot | null;
 }
 
+interface AccStock {
+  id: string;
+  nameZh: string;
+  score: number | null;
+  grade: string;
+  changePct: number | null;
+  priceFlag: string;
+  triggered: string[];
+  ohlcv7d?: OHLCBar[];
+  breakdown?: { fundamental: number; technical: number; chipset: number; bonus: number };
+  isHolding: boolean;
+  exitAlert: boolean;
+}
+
 interface AccSector {
   sectorId: string;
   nameZh: string;
@@ -69,18 +83,7 @@ interface AccSector {
   exitRisk: ExitRisk | null;
   rsMomentum: number | null;
   signals: number[];
-  stocks: Array<{
-    id: string;
-    score: number | null;
-    grade: string;
-    changePct: number | null;
-    priceFlag: string;
-    triggered: string[];
-    ohlcv7d?: OHLCBar[];
-    breakdown?: { fundamental: number; technical: number; chipset: number; bonus: number };
-    isHolding: boolean;
-    exitAlert: boolean;
-  }>;
+  stocks: AccStock[];
 }
 
 // 風險進度條
@@ -101,14 +104,14 @@ function RiskBar({ score, action }: { score: number; action: string }) {
   );
 }
 
-function AccStockCard({ stock, sectorLevel, exitRisk, cycleStage, macroWarning }: {
-  stock: AccSector["stocks"][number];
+function AccStockCard({ stock, sectorLevel, exitRisk, cycleStage, macroWarning, expanded }: {
+  stock: AccStock;
   sectorLevel: string;
   exitRisk: ExitRisk | null;
   cycleStage: string;
   macroWarning?: boolean;
+  expanded: boolean;
 }) {
-  const [expanded, setExpanded] = useState(false);
   const { fullData, loading } = useOHLCV(stock.id, expanded);
   const displayBars = fullData.length >= 2 ? fullData : (stock.ohlcv7d ?? []);
   const hasKLine = (stock.ohlcv7d?.length ?? 0) >= 2;
@@ -130,6 +133,9 @@ function AccStockCard({ stock, sectorLevel, exitRisk, cycleStage, macroWarning }
         <div className="flex items-start justify-between gap-2">
           <div className="flex items-center gap-2 min-w-0">
             <span className="text-[15px] font-bold text-zinc-900 dark:text-zinc-100">{stock.id}</span>
+            {stock.nameZh && (
+              <span className="text-xs text-zinc-500 dark:text-zinc-400 truncate max-w-[5rem]">{stock.nameZh}</span>
+            )}
             <span className={`text-xs font-bold ${
               stock.grade === "A+" || stock.grade === "A" ? "text-emerald-600 dark:text-emerald-400"
               : stock.grade === "B" ? "text-blue-500" : "text-zinc-400"
@@ -163,20 +169,8 @@ function AccStockCard({ stock, sectorLevel, exitRisk, cycleStage, macroWarning }
         )}
       </div>
 
-      {/* Expand */}
-      {(hasKLine || hasBreakdown) && (
-        <button
-          onClick={() => setExpanded(!expanded)}
-          className={`w-full flex items-center justify-center gap-1.5 py-1.5 text-[11px] border-t transition-colors ${
-            expanded
-              ? "border-blue-200/60 dark:border-blue-800/40 bg-blue-50/60 dark:bg-blue-900/20 text-blue-600 dark:text-blue-400"
-              : "border-zinc-100 dark:border-zinc-800/50 text-zinc-400 hover:text-blue-500"
-          }`}
-        >
-          📊 {expanded ? "收起分析" : "展開分析"}
-        </button>
-      )}
-      {expanded && (
+      {/* Expanded detail (controlled by sector-level toggle) */}
+      {expanded && (hasKLine || hasBreakdown) && (
         <div className="border-t border-zinc-100 dark:border-zinc-800/50">
           <StockSummary
             data={fullData.length > 0 ? fullData : (stock.ohlcv7d ?? [])}
@@ -206,6 +200,11 @@ function AccStockCard({ stock, sectorLevel, exitRisk, cycleStage, macroWarning }
 
 export function AccelerationPanel({ snapshot, composite, holdings }: Props) {
   const macroWarning = snapshot?.macro_warning === true || snapshot?.macro?.warning === true;
+  const [expandedSectors, setExpandedSectors] = useState<Record<string, boolean>>({});
+
+  const toggleSector = (sectorId: string) => {
+    setExpandedSectors((prev) => ({ ...prev, [sectorId]: !prev[sectorId] }));
+  };
 
   const accSectors = useMemo<AccSector[]>(() => {
     if (!snapshot?.sectors) return [];
@@ -227,6 +226,7 @@ export function AccelerationPanel({ snapshot, composite, holdings }: Props) {
           .sort((a, b) => (b.score ?? 0) - (a.score ?? 0))
           .map((s) => ({
             id: s.id,
+            nameZh: s.name_zh ?? "",
             score: s.score ?? null,
             grade: s.grade,
             changePct: s.change_pct ?? null,
@@ -240,6 +240,21 @@ export function AccelerationPanel({ snapshot, composite, holdings }: Props) {
       }))
       .sort((a, b) => (b.exitRisk?.score ?? 0) - (a.exitRisk?.score ?? 0));
   }, [snapshot, holdings]);
+
+  // 統計
+  const totalStocks = accSectors.reduce((sum, s) => sum + s.stocks.length, 0);
+  const holdingCount = accSectors.reduce((sum, s) => sum + s.stocks.filter(st => st.isHolding).length, 0);
+  const avgRisk = accSectors.length > 0
+    ? Math.round(accSectors.reduce((sum, s) => sum + (s.exitRisk?.score ?? 0), 0) / accSectors.length)
+    : 0;
+  const allExpanded = accSectors.length > 0 && accSectors.every((s) => expandedSectors[s.sectorId]);
+
+  const toggleAll = () => {
+    const nextVal = !allExpanded;
+    const next: Record<string, boolean> = {};
+    for (const s of accSectors) next[s.sectorId] = nextVal;
+    setExpandedSectors(next);
+  };
 
   // 空狀態
   if (accSectors.length === 0) {
@@ -273,14 +288,47 @@ export function AccelerationPanel({ snapshot, composite, holdings }: Props) {
             {accSectors.length} 板塊
           </span>
           <span className="px-2.5 py-1 rounded-full bg-blue-100/70 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 font-medium border border-blue-200/60 dark:border-blue-800/40">
-            {accSectors.reduce((sum, s) => sum + s.stocks.length, 0)} 個股
+            {totalStocks} 個股
+          </span>
+          {holdingCount > 0 && (
+            <span className="px-2.5 py-1 rounded-full bg-amber-100/70 dark:bg-amber-900/30 text-amber-700 dark:text-amber-300 font-medium border border-amber-200/60 dark:border-amber-800/40">
+              💼 {holdingCount} 持倉
+            </span>
+          )}
+        </div>
+      </div>
+
+      {/* Summary bar */}
+      <div className="flex flex-wrap items-center gap-3 px-4 py-3 rounded-xl bg-zinc-50 dark:bg-zinc-800/40 border border-zinc-200/60 dark:border-zinc-700/40">
+        <div className="flex items-center gap-2 text-sm">
+          <span className="text-zinc-500 dark:text-zinc-400">平均風險分</span>
+          <span className={`font-bold ${avgRisk >= 56 ? "text-red-500" : avgRisk >= 31 ? "text-amber-500" : "text-emerald-500"}`}>
+            {avgRisk}
           </span>
         </div>
+        <div className="h-4 w-px bg-zinc-200 dark:bg-zinc-700" />
+        {accSectors.map((sec) => {
+          const eCfg = sec.exitRisk ? EXIT_RISK_CONFIG[sec.exitRisk.action as ExitRiskAction] : null;
+          return (
+            <span key={sec.sectorId} className="flex items-center gap-1 text-xs">
+              <span className="font-medium text-zinc-700 dark:text-zinc-300">{sec.nameZh}</span>
+              {eCfg && <span className={`px-1.5 py-0.5 rounded ${eCfg.chipCls}`}>{eCfg.emoji}{sec.exitRisk?.score}</span>}
+            </span>
+          );
+        })}
+        <div className="flex-1" />
+        <button
+          onClick={toggleAll}
+          className="text-xs text-blue-500 hover:text-blue-700 dark:hover:text-blue-300 transition-colors"
+        >
+          📊 {allExpanded ? "全部收起" : "全部展開分析"}
+        </button>
       </div>
 
       {/* Sectors */}
       {accSectors.map((sec) => {
         const stageCfg = CYCLE_STAGE_CONFIG[sec.cycleStage as CycleStageKey];
+        const isExpanded = !!expandedSectors[sec.sectorId];
         return (
           <section
             key={sec.sectorId}
@@ -297,9 +345,20 @@ export function AccelerationPanel({ snapshot, composite, holdings }: Props) {
                     </span>
                   )}
                   <span className="text-xs text-zinc-500">{sec.total.toFixed(1)} / 7 燈</span>
+                  <span className="text-xs text-zinc-400">· {sec.stocks.length} 檔</span>
                 </div>
-                <div className="flex items-center gap-2 text-xs">
+                <div className="flex items-center gap-3 text-xs">
                   <SignalDots signals={sec.signals} size="sm" />
+                  <button
+                    onClick={() => toggleSector(sec.sectorId)}
+                    className={`px-2.5 py-1 rounded-lg transition-colors ${
+                      isExpanded
+                        ? "bg-blue-100/80 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400"
+                        : "text-zinc-400 hover:text-blue-500 hover:bg-blue-50 dark:hover:bg-blue-900/20"
+                    }`}
+                  >
+                    📊 {isExpanded ? "收起" : "展開分析"}
+                  </button>
                 </div>
               </div>
 
@@ -317,6 +376,11 @@ export function AccelerationPanel({ snapshot, composite, holdings }: Props) {
                       : "bg-red-50 dark:bg-red-900/20 text-red-600 dark:text-red-300 border-red-200 dark:border-red-800/40"
                   }`}>
                     RS-Mom: {sec.rsMomentum >= 0 ? "+" : ""}{(sec.rsMomentum * 100).toFixed(2)}%
+                  </span>
+                )}
+                {sec.exitRisk?.rs_quadrant && (
+                  <span className="px-2 py-0.5 rounded-full bg-purple-50 dark:bg-purple-900/20 text-purple-600 dark:text-purple-300 border border-purple-200 dark:border-purple-800/40">
+                    RRG: {sec.exitRisk.rs_quadrant}
                   </span>
                 )}
                 {sec.exitRisk?.triggers.map((t, i) => (
@@ -341,6 +405,7 @@ export function AccelerationPanel({ snapshot, composite, holdings }: Props) {
                       exitRisk={sec.exitRisk}
                       cycleStage={sec.cycleStage}
                       macroWarning={macroWarning}
+                      expanded={isExpanded}
                     />
                   ))}
                 </div>

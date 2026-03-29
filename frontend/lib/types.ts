@@ -11,6 +11,7 @@ export interface OHLCBar {
 
 export interface StockData {
   id: string;
+  name_zh?: string;
   score?: number | null;
   grade: string;
   change_pct?: number | null;

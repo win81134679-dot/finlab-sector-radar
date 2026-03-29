@@ -277,6 +277,8 @@ def _save_snapshot(result: Dict[str, Any], config) -> Optional[Path]:
         logger.warning("取得 OHLCV/交易狀態失敗: %s", _e)
 
     # ── 建立完整板塊快照（含 name_zh + stocks）──────────────────
+    from src.stock_names import get_name as _get_stock_name
+
     sectors_payload: Dict[str, Any] = {}
     for sid, v in result["sector_results"].items():
         stock_list: List[Dict[str, Any]] = []
@@ -284,6 +286,7 @@ def _save_snapshot(result: Dict[str, Any], config) -> Optional[Path]:
         for stock_id, sdata in rankings.items():
             stock_list.append({
                 "id":         stock_id,
+                "name_zh":    _get_stock_name(stock_id),
                 "score":      sdata.get("score"),
                 "grade":      sdata.get("grade", ""),
                 "change_pct": sdata.get("change_pct"),
