@@ -122,7 +122,34 @@ function dedup<T extends { url: string | null; text: string }>(items: T[]): T[] 
     return true;
   });
 }
+// ── Redis 操作超時包裝（防止 Upstash REST 掛起）───────────────────────
+const REDIS_TIMEOUT_MS = 8_000;
 
+function withTimeout<T>(p: Promise<T>, ms: number, fallback: T): Promise<T> {
+  return Promise.race([
+    p,
+    new Promise<T>((resolve) => setTimeout(() => resolve(fallback), ms)),
+  ]);
+}
+
+async function safeRedisGet<T>(redis: Redis, key: string): Promise<T | null> {
+  try {
+    return await withTimeout(redis.get<T>(key), REDIS_TIMEOUT_MS, null);
+  } catch {
+    return null;
+  }
+}
+
+async function safeRedisSet(
+  redis: Redis, key: string, value: unknown, ex?: number
+): Promise<void> {
+  try {
+    const op = ex ? redis.set(key, value, { ex }) : redis.set(key, value);
+    await withTimeout(op as Promise<unknown>, REDIS_TIMEOUT_MS, null);
+  } catch {
+    /* non-critical */
+  }
+}
 // ── 計算 delta 與動量 ────────────────────────────────────────────────────────
 function calcDelta(
   sector: string,
@@ -231,12 +258,10 @@ export async function POST(request: NextRequest) {
   })));
 
   // 4. 讀取 KV 上一次的板塊狀態
-  let prevState: Record<string, SectorState> = {};
-  try {
-    prevState = (await redis.get<Record<string, SectorState>>(KV_KEY_STATE)) ?? {};
-  } catch {
-    // KV 未設定或第一次執行，prevState 維持空
-  }
+  const t1 = Date.now();
+  const prevState: Record<string, SectorState> =
+    (await safeRedisGet<Record<string, SectorState>>(redis, KV_KEY_STATE)) ?? {};
+  console.log(`[update-trump] Redis GET state in ${Date.now() - t1}ms`);
 
   // 5. 計算 delta + 更新狀態
   const updatedAt  = new Date().toISOString();
@@ -263,12 +288,9 @@ export async function POST(request: NextRequest) {
   const topDeltas = allDeltas.slice(0, 5);
 
   // 6. 讀取舊的 event log（保留歷史貼文）
-  let existingLog: TrumpEventLog | null = null;
-  try {
-    existingLog = await redis.get<TrumpEventLog>(KV_KEY_LOG);
-  } catch {
-    /* ignore */
-  }
+  const t2 = Date.now();
+  const existingLog = await safeRedisGet<TrumpEventLog>(redis, KV_KEY_LOG);
+  console.log(`[update-trump] Redis GET log in ${Date.now() - t2}ms`);
 
   const mergedPosts = dedup([
     ...analyzed,
@@ -285,15 +307,12 @@ export async function POST(request: NextRequest) {
   };
 
   // 7. 寫回 KV
-  try {
-    await Promise.all([
-      redis.set(KV_KEY_STATE, newState),
-      redis.set(KV_KEY_LOG, newLog, { ex: 7200 }),  // 2 小時過期
-    ]);
-  } catch (e) {
-    console.error("KV 寫入失敗:", e);
-    return NextResponse.json({ ok: false, error: "KV 寫入失敗" }, { status: 500 });
-  }
+  const t3 = Date.now();
+  await Promise.all([
+    safeRedisSet(redis, KV_KEY_STATE, newState),
+    safeRedisSet(redis, KV_KEY_LOG, newLog, 7200),
+  ]);
+  console.log(`[update-trump] Redis SET done in ${Date.now() - t3}ms`);
 
   // 8. 觸發 ISR revalidate
   try {
