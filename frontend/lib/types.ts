@@ -147,3 +147,50 @@ export interface CommoditySnapshot {
   yield_curve_analysis?: YieldCurveAnalysis;
   market_summary?:       MarketSummary;
 }
+
+// ────────────────────────────────────────────────────────────────────────
+// MAGA 投資組合追蹤型別
+// ────────────────────────────────────────────────────────────────────────
+
+export interface MagaPolicy {
+  key:         string;
+  label:       string;
+  active:      boolean;
+  description: string;
+}
+
+export interface MagaStock {
+  ticker:              string;   // e.g. "2330.TW"
+  id:                  string;   // e.g. "2330"
+  name_zh:             string;
+  sector_id:           string;
+  sector_name:         string;
+  category:            "beneficiary" | "victim";
+  impact_score:        number;   // -100 ~ +100
+  policy_contributions: Record<string, number>;
+  price:               number | null;
+  change_1d_pct:       number | null;
+  change_7d_pct:       number | null;
+  ohlcv_7d?:           OHLCBar[];
+}
+
+export interface MagaNewsItem {
+  date:      string;
+  headline:  string;
+  url:       string;
+  sentiment: "positive" | "negative" | "neutral";
+}
+
+export interface MagaSnapshot {
+  updated_at:               string;
+  active_policies:          MagaPolicy[];
+  stocks:                   MagaStock[];
+  policy_sensitivity_matrix: Record<string, Record<string, number>>;
+  sector_names:             Record<string, string>;
+  summary?: {
+    total_beneficiary:    number;
+    total_victim:         number;
+    avg_beneficiary_score: number;
+  };
+  news: MagaNewsItem[];
+}

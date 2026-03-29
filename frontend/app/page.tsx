@@ -1,5 +1,5 @@
 // app/page.tsx — FinLab 板塊偵測 主儀表板（Server Component）
-import { fetchLatestSnapshot, fetchHistoryIndex, fetchCommodities } from "@/lib/fetcher";
+import { fetchLatestSnapshot, fetchHistoryIndex, fetchCommodities, fetchMagaData } from "@/lib/fetcher";
 import { Header } from "@/components/Header";
 import { TabContainer } from "@/components/TabContainer";
 import { ErrorBoundary } from "@/components/ErrorBoundary";
@@ -7,10 +7,11 @@ import { ErrorBoundary } from "@/components/ErrorBoundary";
 export const revalidate = 300;  // ISR: 5 分鐘重新驗證
 
 export default async function DashboardPage() {
-  const [snapshot, historyIndex, commodities] = await Promise.all([
+  const [snapshot, historyIndex, commodities, magaData] = await Promise.all([
     fetchLatestSnapshot(),
     fetchHistoryIndex(),
     fetchCommodities(),
+    fetchMagaData(),
   ]);
 
   const runAt = snapshot?.run_at ?? "";
@@ -27,6 +28,7 @@ export default async function DashboardPage() {
           snapshot={snapshot}
           historyIndex={historyIndex ?? null}
           commodities={commodities}
+          magaData={magaData}
         />
       </ErrorBoundary>
 

@@ -42,18 +42,14 @@ ASSETS = [
     ("us2y",          "^IRX",            "美債 2Y 殖利率",     "bonds"),
     ("us10y",         "^TNX",            "美債 10Y 殖利率",    "bonds"),
     ("us30y",         "^TYX",            "美債 30Y 殖利率",    "bonds"),
-    ("btc",           None,              "比特幣 BTC",         "crypto"),
-    ("eth",           None,              "以太坊 ETH",         "crypto"),
-    ("sol",           None,              "Solana SOL",         "crypto"),
+    ("btc",           "BTC-USD",          "比特幣 BTC",         "crypto"),
+    ("eth",           "ETH-USD",          "以太坊 ETH",         "crypto"),
+    ("sol",           "SOL-USD",          "Solana SOL",         "crypto"),
     ("sp500",         "^GSPC",           "S&P 500",            "index"),
 ]
 
-# CoinGecko slug → ID 對應
-COINGECKO_IDS = {
-    "btc": "bitcoin",
-    "eth": "ethereum",
-    "sol": "solana",
-}
+# CoinGecko 已改為需要 API Key（401 Unauthorized），改用 yfinance BTC-USD/ETH-USD/SOL-USD
+COINGECKO_IDS: dict = {}
 
 # yfinance FRED 收益率曲線用符號
 YIELD_CURVE_TICKERS = {
@@ -923,15 +919,6 @@ def run(config=None) -> Dict[str, Any]:
         df = _fetch_yf(symbol, period="2y")
         all_dfs[symbol] = df
         all_ohlcv[slug] = _df_to_ohlcv(df) if df is not None else []
-
-    # ── Step 2: 抓取 CoinGecko 加密貨幣 ──────────────────────────────────
-    for slug, cg_id in COINGECKO_IDS.items():
-        logger.info(f"  CoinGecko: {cg_id} ({slug})…")
-        df = _fetch_coingecko(cg_id)
-        all_ohlcv[slug] = _df_to_ohlcv(df) if df is not None else []
-        # CoinGecko 無 Volume，補空 df 供後續使用
-        all_dfs[f"CG_{cg_id}"] = df
-        time.sleep(2)  # 避免 CoinGecko free tier 限速
 
     # ── Step 3: 收集最新收盤價 ───────────────────────────────────────────
     latest_closes: Dict[str, float] = {}

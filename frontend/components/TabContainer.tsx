@@ -1,8 +1,8 @@
 "use client";
-// TabContainer.tsx — 板塊偵測 / 商品市場 Tab 切換（Client Component）
+// TabContainer.tsx — 板塊偵測 / 商品市場 / MAGA 追蹤 Tab 切換（Client Component）
 
 import { useState } from "react";
-import type { SignalSnapshot, HistoryIndex, CommoditySnapshot } from "@/lib/types";
+import type { SignalSnapshot, HistoryIndex, CommoditySnapshot, MagaSnapshot } from "@/lib/types";
 import { MacroPanel } from "@/components/MacroPanel";
 import { MacroWarningBanner } from "@/components/MacroWarningBanner";
 import { StaleDataBanner } from "@/components/StaleDataBanner";
@@ -10,22 +10,25 @@ import { SectorGrid } from "@/components/SectorGrid";
 import { ErrorBoundary } from "@/components/ErrorBoundary";
 import { TrendSection } from "@/components/TrendSection";
 import { CommodityPanel } from "@/components/CommodityPanel";
+import { MagaPanel } from "@/components/MagaPanel";
 import { UpdateButton } from "@/components/UpdateButton";
 
 interface Props {
   snapshot: Awaited<ReturnType<typeof import("@/lib/fetcher").fetchLatestSnapshot>>;
   historyIndex: HistoryIndex | null;
   commodities: CommoditySnapshot | null;
+  magaData: MagaSnapshot | null;
 }
 
-type Tab = "sector" | "commodity";
+type Tab = "sector" | "commodity" | "maga";
 
 const TABS: { id: Tab; label: string }[] = [
   { id: "sector",    label: "板塊偵測 🔍" },
   { id: "commodity", label: "商品市場 📊" },
+  { id: "maga",      label: "MAGA 追蹤 🇺🇸" },
 ];
 
-export function TabContainer({ snapshot, historyIndex, commodities }: Props) {
+export function TabContainer({ snapshot, historyIndex, commodities, magaData }: Props) {
   const [activeTab, setActiveTab] = useState<Tab>("sector");
 
   const runAt  = snapshot?.run_at  ?? "";
@@ -82,6 +85,12 @@ export function TabContainer({ snapshot, historyIndex, commodities }: Props) {
         {activeTab === "commodity" && (
           <ErrorBoundary label="商品市場">
             <CommodityPanel data={commodities} />
+          </ErrorBoundary>
+        )}
+
+        {activeTab === "maga" && (
+          <ErrorBoundary label="MAGA 追蹤">
+            <MagaPanel data={magaData} />
           </ErrorBoundary>
         )}
       </main>

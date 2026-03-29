@@ -167,13 +167,16 @@ class DataFetcher:
 
     def get_change_pct(self) -> Optional[pd.DataFrame]:
         """
-        取得 FinLab 個股當日漲跌幅（%）。
-        使用 'price:漲跌幅' 欄位，回傳 DataFrame（index=日期, columns=股票代號）。
-        取最後一列為當日數值。失敗回傳 None。
+        取得個股漲跌幅 DataFrame（%）。
+        FinLab 不提供 'price:漲跌幅'，改由 'price:收盤價' 自行計算。
+        公式：(close_t - close_{t-1}) / close_{t-1} * 100
         """
         try:
-            df = self.get("price:漲跌幅")
-            return df if isinstance(df, pd.DataFrame) else None
+            close_df = self.get("price:收盤價")
+            if close_df is None or not isinstance(close_df, pd.DataFrame) or len(close_df) < 2:
+                return None
+            pct_df = close_df.pct_change(fill_method=None) * 100
+            return pct_df
         except Exception as e:
             logger.warning("get_change_pct 失敗: %s", e)
             return None
@@ -214,9 +217,9 @@ class DataFetcher:
         """
         status: dict = {sid: "normal" for sid in stock_ids}
         try:
-            vol_df   = self.get("price:成交股數")
-            chpct_df = self.get("price:漲跌幅")
-            date_ts  = pd.Timestamp(date_str)
+            vol_df    = self.get("price:成交股數")
+            chpct_df  = self.get_change_pct()   # 由收盤價自行計算漲跌幅
+            date_ts   = pd.Timestamp(date_str)
             for sid in stock_ids:
                 try:
                     # 停牌偵測

@@ -215,4 +215,63 @@ export async function fetchCommodityOHLCV(slug: string) {
   }
 }
 
+// ── MAGA 投資組合追蹤 ─────────────────────────────────────────────────────
 
+const MagaPolicySchema = z.object({
+  key:         z.string(),
+  label:       z.string(),
+  active:      z.boolean(),
+  description: z.string(),
+});
+
+const MagaStockSchema = z.object({
+  ticker:              z.string(),
+  id:                  z.string(),
+  name_zh:             z.string(),
+  sector_id:           z.string(),
+  sector_name:         z.string(),
+  category:            z.enum(["beneficiary", "victim"]),
+  impact_score:        z.number(),
+  policy_contributions: z.record(z.number()).optional().default({}),
+  price:               z.number().nullable(),
+  change_1d_pct:       z.number().nullable(),
+  change_7d_pct:       z.number().nullable(),
+  ohlcv_7d:            z.array(OHLCBarSchema).optional().default([]),
+});
+
+const MagaNewsItemSchema = z.object({
+  date:      z.string(),
+  headline:  z.string(),
+  url:       z.string(),
+  sentiment: z.enum(["positive", "negative", "neutral"]),
+});
+
+const MagaSnapshotSchema = z.object({
+  updated_at:               z.string(),
+  active_policies:          z.array(MagaPolicySchema).optional().default([]),
+  stocks:                   z.array(MagaStockSchema).optional().default([]),
+  policy_sensitivity_matrix: z.record(z.record(z.number())).optional().default({}),
+  sector_names:             z.record(z.string()).optional().default({}),
+  summary: z.object({
+    total_beneficiary:     z.number(),
+    total_victim:          z.number(),
+    avg_beneficiary_score: z.number(),
+  }).optional(),
+  news: z.array(MagaNewsItemSchema).optional().default([]),
+});
+
+export async function fetchMagaData() {
+  if (!GITHUB_RAW_BASE) return null;
+  const url = `${GITHUB_RAW_BASE}/output/maga/latest.json`;
+  try {
+    const raw = await fetchJSON<unknown>(url);
+    const parsed = MagaSnapshotSchema.safeParse(raw);
+    if (!parsed.success) {
+      console.warn("maga/latest.json schema 驗證失敗:", parsed.error.issues);
+      return null;
+    }
+    return parsed.data;
+  } catch {
+    return null;
+  }
+}

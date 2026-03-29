@@ -67,6 +67,7 @@ MENU_ITEMS = [
     ("A", "📁 掃描 / 讀取歷史報告"),
     ("B", "⚙️  設定（Token 管理 / 清快取）"),
     ("C", "🌐 商品市場分析（黃金 / 原油 / 加密 / 債券）"),
+    ("D", "🇺🇸 MAGA 投資組合追蹤（受益 / 受害板塊）"),
     ("0", "離開"),
 ]
 
@@ -454,6 +455,56 @@ def menu_commodities() -> None:
 
 
 # ══════════════════════════════════════════════════════════════════════════
+# MAGA 投資組合追蹤
+# ══════════════════════════════════════════════════════════════════════════
+
+def menu_maga() -> None:
+    """執行 MAGA 衝擊評分分析並顯示摘要。"""
+    if not _ensure_login() or not _ensure_sectors():
+        return
+
+    from src.analyzers.maga_analyzer import run_maga_analysis
+    with console.status("[cyan]🇺🇸 執行 MAGA 板塊衝擊分析…[/cyan]"):
+        try:
+            result = run_maga_analysis(fetcher, sector_map)
+        except Exception as e:
+            console.print(f"[red]MAGA 分析失敗: {e}[/red]")
+            return
+
+    stocks = result.get("stocks", [])
+    b_stocks = [s for s in stocks if s["category"] == "beneficiary"]
+    v_stocks = [s for s in stocks if s["category"] == "victim"]
+
+    table = Table(title="🇺🇸 MAGA 衝擊評分", header_style="bold cyan")
+    table.add_column("代號",  style="bold", min_width=6)
+    table.add_column("公司",  min_width=10)
+    table.add_column("板塊",  min_width=12)
+    table.add_column("類別",  justify="center", min_width=6)
+    table.add_column("衝擊分", justify="center", min_width=8)
+    table.add_column("日漲跌", justify="right")
+
+    for s in sorted(b_stocks, key=lambda x: -x["impact_score"]):
+        chg = s["change_1d_pct"]
+        chg_str = f"+{chg:.2f}%" if chg and chg > 0 else f"{chg:.2f}%" if chg is not None else "—"
+        table.add_row(s["id"], s["name_zh"], s["sector_name"],
+                      "[green]受益[/green]", f"[green]+{s['impact_score']}[/green]", chg_str)
+    for s in sorted(v_stocks, key=lambda x: x["impact_score"]):
+        chg = s["change_1d_pct"]
+        chg_str = f"+{chg:.2f}%" if chg and chg > 0 else f"{chg:.2f}%" if chg is not None else "—"
+        table.add_row(s["id"], s["name_zh"], s["sector_name"],
+                      "[red]受害[/red]", f"[red]{s['impact_score']}[/red]", chg_str)
+
+    console.print(table)
+    summary = result.get("summary", {})
+    console.print(
+        f"\n受益 {summary.get('total_beneficiary', 0)} 支 "
+        f"受害 {summary.get('total_victim', 0)} 支 "
+        f"新聞 {len(result.get('news', []))} 則"
+    )
+    console.print("[green]✅ 資料已寫出 output/maga/latest.json[/green]")
+
+
+# ══════════════════════════════════════════════════════════════════════════
 # 主選單
 # ══════════════════════════════════════════════════════════════════════════
 
@@ -480,6 +531,8 @@ def main() -> None:
         "b": menu_settings,
         "C": menu_commodities,
         "c": menu_commodities,
+        "D": menu_maga,
+        "d": menu_maga,
     }
 
     while True:
@@ -572,6 +625,17 @@ if __name__ == "__main__":
             _auto_log(f"[INFO] 商品市場完成：{len(_comm_result.get('assets', {}))} 個資產")
         except Exception as _e:
             _auto_log(f"[WARN] 商品市場分析失敗（不影響主流程）: {_e}")
+
+        # 4c. MAGA 投資組合追蹤（非核心，失敗不中斷）
+        try:
+            from src.analyzers.maga_analyzer import run_maga_analysis as _maga_run
+            _auto_log("[INFO] 開始 MAGA 衝擊評分分析…")
+            _maga_result = _maga_run(fetcher, sector_map)
+            _maga_b = _maga_result.get("summary", {}).get("total_beneficiary", 0)
+            _maga_v = _maga_result.get("summary", {}).get("total_victim", 0)
+            _auto_log(f"[INFO] MAGA 完成：受益 {_maga_b} 支，受害 {_maga_v} 支")
+        except Exception as _e:
+            _auto_log(f"[WARN] MAGA 分析失敗（不影響主流程）: {_e}")
 
         # 5. 送出 Discord 通知
         try:
