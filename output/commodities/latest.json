@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-29T15:40:33.176957+00:00",
+  "updated_at": "2026-03-29T16:39:17.325932+00:00",
   "assets": {
     "gold": {
       "slug": "gold",
@@ -31,7 +31,7 @@
           "source": "Wilder (1978)."
         }
       ],
-      "last_updated": "2026-03-29T15:40:33.158560+00:00"
+      "last_updated": "2026-03-29T16:39:17.307353+00:00"
     },
     "silver": {
       "slug": "silver",
@@ -63,7 +63,7 @@
           "source": "Jegadeesh & Titman (1993), J. Finance."
         }
       ],
-      "last_updated": "2026-03-29T15:40:33.159784+00:00"
+      "last_updated": "2026-03-29T16:39:17.308604+00:00"
     },
     "copper": {
       "slug": "copper",
@@ -95,7 +95,7 @@
           "source": "Wilder (1978)."
         }
       ],
-      "last_updated": "2026-03-29T15:40:33.160969+00:00"
+      "last_updated": "2026-03-29T16:39:17.309777+00:00"
     },
     "wti": {
       "slug": "wti",
@@ -120,57 +120,57 @@
           "source": "Baumeister & Kilian (2016), J. Applied Econometrics."
         }
       ],
-      "last_updated": "2026-03-29T15:40:33.162135+00:00"
+      "last_updated": "2026-03-29T16:39:17.310957+00:00"
     },
     "brent": {
       "slug": "brent",
       "name_zh": "Brent 原油",
       "category": "energy",
-      "price": 112.57,
-      "change_1d_pct": 4.22,
-      "change_7d_pct": 4.83,
+      "price": 105.32,
+      "change_1d_pct": -2.49,
+      "change_7d_pct": -1.92,
       "signals": [
         {
           "key": "brent_shock",
           "triggered": true,
           "severity": "high",
-          "commentary": "Brent 原油 $112.57/桶。突破 $90，Baumeister & Kilian (2016) 研究顯示此水準開始對通膨產生顯著推升效果，新興市場受輸入型通膨壓力更大。",
+          "commentary": "Brent 原油 $105.32/桶。突破 $90，Baumeister & Kilian (2016) 研究顯示此水準開始對通膨產生顯著推升效果，新興市場受輸入型通膨壓力更大。",
           "source": "Baumeister & Kilian (2016), J. Applied Econometrics."
         },
         {
           "key": "brent_wti_spread",
           "triggered": true,
           "severity": "medium",
-          "commentary": "Brent-WTI 價差 $12.93。溢價超過 $5，顯示中東/歐洲供應鏈風險抬高，地緣政治緊張或管線/航運瓶頸所致。",
+          "commentary": "Brent-WTI 價差 $5.68。溢價超過 $5，顯示中東/歐洲供應鏈風險抬高，地緣政治緊張或管線/航運瓶頸所致。",
           "source": "Hamilton (2009); EIA (2024), Oil Market Report."
         },
         {
           "key": "brent_below_opec_floor",
           "triggered": false,
           "severity": "low",
-          "commentary": "Brent $112.57。高於 $60，OPEC+ 成員普遍有利潤空間，增產衝突風險較低。",
+          "commentary": "Brent $105.32。高於 $60，OPEC+ 成員普遍有利潤空間，增產衝突風險較低。",
           "source": "Fattouh (2014), Oxford Energy Comment."
         }
       ],
-      "last_updated": "2026-03-29T15:40:33.163313+00:00"
+      "last_updated": "2026-03-29T16:39:17.312172+00:00"
     },
     "natgas": {
       "slug": "natgas",
       "name_zh": "天然氣",
       "category": "energy",
-      "price": 3.095,
-      "change_1d_pct": 3.2,
-      "change_7d_pct": 0.98,
+      "price": 3.025,
+      "change_1d_pct": 0.87,
+      "change_7d_pct": -1.31,
       "signals": [
         {
           "key": "natgas_price_regime",
           "triggered": false,
           "severity": "low",
-          "commentary": "天然氣 $3.095/MMBtu。處於 $2-4 合理區間，能源成本無顯著整體壓力或拖累。",
+          "commentary": "天然氣 $3.025/MMBtu。處於 $2-4 合理區間，能源成本無顯著整體壓力或拖累。",
           "source": "Pindyck (1999), J. Environmental Economics & Management."
         }
       ],
-      "last_updated": "2026-03-29T15:40:33.164458+00:00"
+      "last_updated": "2026-03-29T16:39:17.313331+00:00"
     },
     "vix": {
       "slug": "vix",
@@ -188,7 +188,7 @@
           "source": "Whaley (2000), J. Portfolio Management."
         }
       ],
-      "last_updated": "2026-03-29T15:40:33.165538+00:00"
+      "last_updated": "2026-03-29T16:39:17.314419+00:00"
     },
     "dxy": {
       "slug": "dxy",
@@ -220,7 +220,7 @@
           "source": "Meese & Rogoff (1983), J. International Economics."
         }
       ],
-      "last_updated": "2026-03-29T15:40:33.166659+00:00"
+      "last_updated": "2026-03-29T16:39:17.315543+00:00"
     },
     "us2y": {
       "slug": "us2y",
@@ -238,7 +238,7 @@
           "source": "Taylor (1993), Carnegie-Rochester Conference Series."
         }
       ],
-      "last_updated": "2026-03-29T15:40:33.167752+00:00"
+      "last_updated": "2026-03-29T16:39:17.316640+00:00"
     },
     "us10y": {
       "slug": "us10y",
@@ -263,7 +263,7 @@
           "source": "Shiller (1981), Am. Econ. Review."
         }
       ],
-      "last_updated": "2026-03-29T15:40:33.168819+00:00"
+      "last_updated": "2026-03-29T16:39:17.317735+00:00"
     },
     "us30y": {
       "slug": "us30y",
@@ -288,40 +288,40 @@
           "source": "Diebold & Li (2006), J. Econometrics."
         }
       ],
-      "last_updated": "2026-03-29T15:40:33.169886+00:00"
+      "last_updated": "2026-03-29T16:39:17.318842+00:00"
     },
     "btc": {
       "slug": "btc",
       "name_zh": "比特幣 BTC",
       "category": "crypto",
-      "price": 66324.5781,
-      "change_1d_pct": 0.01,
-      "change_7d_pct": -2.24,
+      "price": 66492.0391,
+      "change_1d_pct": 0.26,
+      "change_7d_pct": -1.99,
       "signals": [
         {
           "key": "btc_neutral",
           "triggered": false,
           "severity": "low",
-          "commentary": "BTC 7日漲跌 -2.2%，維持正常波動區間，無顯著風險信號。",
+          "commentary": "BTC 7日漲跌 -2.0%，維持正常波動區間，無顯著風險信號。",
           "source": "Bouri et al. (2017), Finance Research Letters."
         },
         {
           "key": "btc_above_200ma",
           "triggered": false,
           "severity": "medium",
-          "commentary": "BTC $66,325，200MA $91,075。跌破 200MA，進入加密熊市區間，建議大幅降低風險資產暴露。",
+          "commentary": "BTC $66,492，200MA $91,075。跌破 200MA，進入加密熊市區間，建議大幅降低風險資產暴露。",
           "source": "Liu & Tsyvinski (2021), Rev. Financial Studies."
         }
       ],
-      "last_updated": "2026-03-29T15:40:33.171877+00:00"
+      "last_updated": "2026-03-29T16:39:17.320794+00:00"
     },
     "eth": {
       "slug": "eth",
       "name_zh": "以太坊 ETH",
       "category": "crypto",
-      "price": 1988.1152,
-      "change_1d_pct": -0.23,
-      "change_7d_pct": -3.16,
+      "price": 1997.5219,
+      "change_1d_pct": 0.24,
+      "change_7d_pct": -2.7,
       "signals": [
         {
           "key": "eth_btc_ratio",
@@ -334,29 +334,29 @@
           "key": "eth_above_200ma",
           "triggered": false,
           "severity": "medium",
-          "commentary": "ETH $1,988，200MA $3,081，空頭格局。",
+          "commentary": "ETH $1,998，200MA $3,081，空頭格局。",
           "source": "Liu & Tsyvinski (2021), Rev. Financial Studies."
         }
       ],
-      "last_updated": "2026-03-29T15:40:33.173671+00:00"
+      "last_updated": "2026-03-29T16:39:17.322573+00:00"
     },
     "sol": {
       "slug": "sol",
       "name_zh": "Solana SOL",
       "category": "crypto",
-      "price": 81.5445,
-      "change_1d_pct": -0.57,
-      "change_7d_pct": -5.32,
+      "price": 81.814,
+      "change_1d_pct": -0.25,
+      "change_7d_pct": -5.01,
       "signals": [
         {
           "key": "sol_above_200ma",
           "triggered": false,
           "severity": "medium",
-          "commentary": "SOL $81.54，200MA $141.20，空頭格局。Layer-1 生態鏈 200MA 上/下方是市場認知的牛熊分界。",
+          "commentary": "SOL $81.81，200MA $141.20，空頭格局。Layer-1 生態鏈 200MA 上/下方是市場認知的牛熊分界。",
           "source": "Liu & Tsyvinski (2021), Rev. Financial Studies."
         }
       ],
-      "last_updated": "2026-03-29T15:40:33.175384+00:00"
+      "last_updated": "2026-03-29T16:39:17.324296+00:00"
     },
     "sp500": {
       "slug": "sp500",
@@ -388,7 +388,7 @@
           "source": "Wilder (1978); Lo & MacKinlay (1988), Rev. Financial Studies."
         }
       ],
-      "last_updated": "2026-03-29T15:40:33.176625+00:00"
+      "last_updated": "2026-03-29T16:39:17.325534+00:00"
     }
   },
   "yield_curve": [
@@ -453,7 +453,7 @@
     "headline": "🚨 高度警戒：2 項高危信號觸發，市場防禦模式全面啟動，建議大幅降低風險暴露",
     "key_alerts": [
       "WTI 原油 $99.64/桶。突破 $85，達 Hamilton (2009) 供給衝擊門檻，對消費端 GDP 有顯著…",
-      "Brent 原油 $112.57/桶。突破 $90，Baumeister & Kilian (2016) 研究顯示此水準…"
+      "Brent 原油 $105.32/桶。突破 $90，Baumeister & Kilian (2016) 研究顯示此水準…"
     ]
   }
 }
