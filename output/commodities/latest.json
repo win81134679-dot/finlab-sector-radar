@@ -1,0 +1,212 @@
+{
+  "updated_at": "2026-03-29T02:28:23.081147+00:00",
+  "assets": {
+    "gold": {
+      "slug": "gold",
+      "name_zh": "黃金",
+      "category": "precious_metal",
+      "price": 4492.0,
+      "change_1d_pct": 2.66,
+      "change_7d_pct": -8.14,
+      "signals": [
+        {
+          "key": "gold_above_200ma",
+          "triggered": true,
+          "severity": "medium",
+          "commentary": "黃金現價 $4492.00，200日均線 $4091.06。站上 200MA，避險資金流入確認，符合 Baur & Lucey (2010) 黃金避險功能啟動條件。",
+          "source": "Baur & Lucey (2010), J. Banking & Finance."
+        }
+      ],
+      "last_updated": "2026-03-29T02:28:23.069136+00:00"
+    },
+    "silver": {
+      "slug": "silver",
+      "name_zh": "白銀",
+      "category": "precious_metal",
+      "price": 69.545,
+      "change_1d_pct": 2.77,
+      "change_7d_pct": -9.96,
+      "signals": [],
+      "last_updated": "2026-03-29T02:28:23.070226+00:00"
+    },
+    "copper": {
+      "slug": "copper",
+      "name_zh": "銅",
+      "category": "industrial",
+      "price": 5.467,
+      "change_1d_pct": 0.38,
+      "change_7d_pct": -1.57,
+      "signals": [],
+      "last_updated": "2026-03-29T02:28:23.071307+00:00"
+    },
+    "wti": {
+      "slug": "wti",
+      "name_zh": "WTI 原油",
+      "category": "energy",
+      "price": 99.64,
+      "change_1d_pct": 5.46,
+      "change_7d_pct": 3.45,
+      "signals": [
+        {
+          "key": "oil_shock",
+          "triggered": true,
+          "severity": "high",
+          "commentary": "WTI 原油 $99.64/桶。突破 $85，達 Hamilton (2009) 定義的供給衝擊門檻，歷史上此水準對經濟增長有顯著負向影響。",
+          "source": "Hamilton (2009), J. Economic Perspectives."
+        }
+      ],
+      "last_updated": "2026-03-29T02:28:23.072385+00:00"
+    },
+    "brent": {
+      "slug": "brent",
+      "name_zh": "Brent 原油",
+      "category": "energy",
+      "price": 112.57,
+      "change_1d_pct": 4.22,
+      "change_7d_pct": 4.83,
+      "signals": [],
+      "last_updated": "2026-03-29T02:28:23.073462+00:00"
+    },
+    "natgas": {
+      "slug": "natgas",
+      "name_zh": "天然氣",
+      "category": "energy",
+      "price": 3.095,
+      "change_1d_pct": 3.2,
+      "change_7d_pct": 0.98,
+      "signals": [],
+      "last_updated": "2026-03-29T02:28:23.074496+00:00"
+    },
+    "vix": {
+      "slug": "vix",
+      "name_zh": "VIX 恐慌指數",
+      "category": "index",
+      "price": 31.05,
+      "change_1d_pct": 13.16,
+      "change_7d_pct": 23.75,
+      "signals": [
+        {
+          "key": "vix_spike",
+          "triggered": true,
+          "severity": "medium",
+          "commentary": "VIX=31.1，突破 30 警戒線。市場情緒急速惡化，選擇權隱含波動率大幅抬升，注意避險需求上升。",
+          "source": "Whaley (2000), J. Portfolio Mgmt."
+        }
+      ],
+      "last_updated": "2026-03-29T02:28:23.075489+00:00"
+    },
+    "dxy": {
+      "slug": "dxy",
+      "name_zh": "美元指數 DXY",
+      "category": "index",
+      "price": 100.15,
+      "change_1d_pct": 0.25,
+      "change_7d_pct": 0.06,
+      "signals": [
+        {
+          "key": "dxy_strong",
+          "triggered": false,
+          "severity": "low",
+          "commentary": "美元指數 DXY=100.15。低於 105，美元強勢暫緩，有利新興市場及大宗商品資產。",
+          "source": "FRB (2024), Federal Reserve Trade-Weighted Index."
+        }
+      ],
+      "last_updated": "2026-03-29T02:28:23.076499+00:00"
+    },
+    "us2y": {
+      "slug": "us2y",
+      "name_zh": "美債 2Y 殖利率",
+      "category": "bonds",
+      "price": 3.607,
+      "change_1d_pct": -0.36,
+      "change_7d_pct": -0.08,
+      "signals": [],
+      "last_updated": "2026-03-29T02:28:23.077471+00:00"
+    },
+    "us10y": {
+      "slug": "us10y",
+      "name_zh": "美債 10Y 殖利率",
+      "category": "bonds",
+      "price": 4.44,
+      "change_1d_pct": 0.54,
+      "change_7d_pct": 4.25,
+      "signals": [
+        {
+          "key": "yield_inversion",
+          "triggered": false,
+          "severity": "low",
+          "commentary": "2-10Y 利差 = +0.83%。殖利率曲線正常（正利差），衰退風險尚低。",
+          "source": "Campbell & Shiller (1991), Rev. Financial Studies."
+        }
+      ],
+      "last_updated": "2026-03-29T02:28:23.078456+00:00"
+    },
+    "us30y": {
+      "slug": "us30y",
+      "name_zh": "美債 30Y 殖利率",
+      "category": "bonds",
+      "price": 4.982,
+      "change_1d_pct": 0.93,
+      "change_7d_pct": 2.07,
+      "signals": [],
+      "last_updated": "2026-03-29T02:28:23.079425+00:00"
+    },
+    "btc": {
+      "slug": "btc",
+      "name_zh": "比特幣 BTC",
+      "category": "crypto",
+      "price": null,
+      "change_1d_pct": null,
+      "change_7d_pct": null,
+      "signals": [],
+      "last_updated": "2026-03-29T02:28:23.079494+00:00"
+    },
+    "eth": {
+      "slug": "eth",
+      "name_zh": "以太坊 ETH",
+      "category": "crypto",
+      "price": null,
+      "change_1d_pct": null,
+      "change_7d_pct": null,
+      "signals": [],
+      "last_updated": "2026-03-29T02:28:23.079576+00:00"
+    },
+    "sol": {
+      "slug": "sol",
+      "name_zh": "Solana SOL",
+      "category": "crypto",
+      "price": null,
+      "change_1d_pct": null,
+      "change_7d_pct": null,
+      "signals": [],
+      "last_updated": "2026-03-29T02:28:23.079646+00:00"
+    },
+    "sp500": {
+      "slug": "sp500",
+      "name_zh": "S&P 500",
+      "category": "index",
+      "price": 6368.8501,
+      "change_1d_pct": -1.67,
+      "change_7d_pct": -3.86,
+      "signals": [],
+      "last_updated": "2026-03-29T02:28:23.080795+00:00"
+    }
+  },
+  "yield_curve": [
+    {
+      "tenor": "2Y",
+      "years": 2,
+      "yield_pct": 3.607
+    },
+    {
+      "tenor": "10Y",
+      "years": 10,
+      "yield_pct": 4.44
+    },
+    {
+      "tenor": "30Y",
+      "years": 30,
+      "yield_pct": 4.982
+    }
+  ]
+}
