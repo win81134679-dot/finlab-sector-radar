@@ -30,6 +30,7 @@ function useColumns() {
 import { MiniSparkline } from "./MiniSparkline";
 import { FactorRadar } from "./FactorRadar";
 import { RsiGauge } from "./RsiGauge";
+import { MacdChart } from "./MacdChart";
 import { CandlePatternBadges } from "./CandlePatternBadges";
 
 const GITHUB_RAW_BASE_CP = process.env.NEXT_PUBLIC_GITHUB_RAW_BASE_URL ?? "";
@@ -276,6 +277,7 @@ function StockCard({ stock, isExpanded, onToggle }: {
           )}
           <CandlePatternBadges bars={displayBars} />
           <RsiGauge data={fullData} loading={loadingFull} />
+          <MacdChart data={fullData} loading={loadingFull} />
           {hasKLine && (
             <div className="px-1 py-1">
               <StockKLine data={stock.ohlcv_7d!} stockId={stock.id} fullData={fullData.length > 0 ? fullData : undefined} />

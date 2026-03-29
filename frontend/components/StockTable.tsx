@@ -8,6 +8,7 @@ import { MiniSparkline } from "./MiniSparkline";
 import { FactorRadar } from "./FactorRadar";
 import { CandlePatternBadges } from "./CandlePatternBadges";
 import { RsiGauge } from "./RsiGauge";
+import { MacdChart } from "./MacdChart";
 
 const GITHUB_RAW_BASE_ST = process.env.NEXT_PUBLIC_GITHUB_RAW_BASE_URL ?? "";
 
@@ -144,6 +145,12 @@ function StockRow({ stock, isExpanded, onToggle }: StockRowProps) {
                 <span className="font-medium">分析</span>
               </button>
             )}
+            {/* 行內迫績走勢圖：小螢幕以上可見 */}
+            {(stock.ohlcv_7d?.length ?? 0) >= 2 && (
+              <span className="hidden sm:block ml-auto">
+                <MiniSparkline bars={stock.ohlcv_7d!} width={52} height={20} />
+              </span>
+            )}
           </div>
         </td>
         <td className="py-1.5 px-2 text-center">
@@ -214,6 +221,11 @@ function StockRow({ stock, isExpanded, onToggle }: StockRowProps) {
             {/* RSI 儀表板 */}
             <div className="mb-3">
               <RsiGauge data={displayBars} loading={loading} />
+            </div>
+
+            {/* MACD 動能指標 */}
+            <div className="mb-3">
+              <MacdChart data={displayBars} loading={loading} />
             </div>
 
             {/* 完整 K 線 */}

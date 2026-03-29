@@ -27,6 +27,60 @@ function calcRSI14(data: OHLCBar[]): number | null {
   return parseFloat((100 - 100 / (1 + rs)).toFixed(1));
 }
 
+// ── RSI 序列（用於背離偵測）────────────────────────────────────────────────
+function calcRSISeries(data: OHLCBar[], lookback = 20): { rsi: number; close: number }[] {
+  if (data.length < 15) return [];
+  const closes  = data.map((b) => b.c);
+  const changes = closes.slice(1).map((c, i) => c - closes[i]);
+
+  let avgGain = changes.slice(0, 14).filter((d) => d > 0).reduce((s, d) => s + d, 0) / 14;
+  let avgLoss = changes.slice(0, 14).filter((d) => d < 0).reduce((s, d) => s + Math.abs(d), 0) / 14;
+
+  const rsiArr: number[] = [];
+  const rsi0 = avgLoss === 0 ? 100 : parseFloat((100 - 100 / (1 + avgGain / avgLoss)).toFixed(1));
+  rsiArr.push(rsi0);
+
+  for (let i = 14; i < changes.length; i++) {
+    const gain = changes[i] > 0 ? changes[i] : 0;
+    const loss = changes[i] < 0 ? Math.abs(changes[i]) : 0;
+    avgGain = (avgGain * 13 + gain) / 14;
+    avgLoss = (avgLoss * 13 + loss) / 14;
+    rsiArr.push(avgLoss === 0 ? 100 : parseFloat((100 - 100 / (1 + avgGain / avgLoss)).toFixed(1)));
+  }
+
+  const slice     = rsiArr.slice(-lookback);
+  const dataSlice = closes.slice(14 + Math.max(0, rsiArr.length - lookback));
+  return slice.map((rsi, i) => ({ rsi, close: dataSlice[i] ?? 0 }));
+}
+
+// ── 背離偵測（Cardoso et al. 2018）────────────────────────────────────────
+type DivergenceType = "bullish" | "bearish" | null;
+
+function detectDivergence(data: OHLCBar[]): DivergenceType {
+  const series = calcRSISeries(data, 20);
+  if (series.length < 10) return null;
+
+  const half   = Math.floor(series.length / 2);
+  const first  = series.slice(0, half);
+  const second = series.slice(half);
+
+  const f_minP = Math.min(...first.map((d)  => d.close));
+  const s_minP = Math.min(...second.map((d) => d.close));
+  const f_minR = Math.min(...first.map((d)  => d.rsi));
+  const s_minR = Math.min(...second.map((d) => d.rsi));
+
+  const f_maxP = Math.max(...first.map((d)  => d.close));
+  const s_maxP = Math.max(...second.map((d) => d.close));
+  const f_maxR = Math.max(...first.map((d)  => d.rsi));
+  const s_maxR = Math.max(...second.map((d) => d.rsi));
+
+  // 多頭背離：價格更低低點，但 RSI 更高低點（動能蓄積 → 潛在反彈）
+  if (s_minP < f_minP * 0.995 && s_minR > f_minR + 2) return "bullish";
+  // 空頭背離：價格更高高點，但 RSI 更低高點（動能衰竭 → 潛在見頂）
+  if (s_maxP > f_maxP * 1.005 && s_maxR < f_maxR - 2) return "bearish";
+  return null;
+}
+
 // ── SVG 弧繪製工具 ──────────────────────────────────────────────────────────
 function polarToXY(cx: number, cy: number, r: number, angleDeg: number) {
   const rad = ((angleDeg - 90) * Math.PI) / 180;
@@ -65,7 +119,8 @@ interface RsiGaugeProps {
 }
 
 export function RsiGauge({ data, loading }: RsiGaugeProps) {
-  const rsi = data.length >= 15 ? calcRSI14(data) : null;
+  const rsi       = data.length >= 15 ? calcRSI14(data) : null;
+  const divergence = data.length >= 30 ? detectDivergence(data) : null;
 
   const W = 160, H = 100;
   const cx = W / 2, cy = 82;
@@ -101,6 +156,7 @@ export function RsiGauge({ data, loading }: RsiGaugeProps) {
           </span>
         </div>
       ) : (
+        <>
         <div className="flex items-center gap-3">
           {/* SVG 儀表板 */}
           <svg width={W} height={H} viewBox={`0 0 ${W} ${H}`} aria-label={`RSI ${rsi}`}>
@@ -189,6 +245,24 @@ export function RsiGauge({ data, loading }: RsiGaugeProps) {
             </div>
           </div>
         </div>
+
+        {/* RSI 背離徽章（Cardoso et al. 2018） */}
+        {divergence && (
+          <div className={`mt-1.5 flex items-center gap-1.5 px-2 py-1 rounded-lg text-[11px] font-medium ${
+            divergence === "bullish"
+              ? "bg-emerald-50 dark:bg-emerald-900/20 text-emerald-700 dark:text-emerald-400 border border-emerald-200/60 dark:border-emerald-700/40"
+              : "bg-red-50 dark:bg-red-900/20 text-red-700 dark:text-red-400 border border-red-200/60 dark:border-red-700/40"
+          }`}>
+            <span>{divergence === "bullish" ? "📈" : "📉"}</span>
+            <span>
+              {divergence === "bullish"
+                ? "多頭背離：動能蓄積，留意潛在反彈"
+                : "空頭背離：動能衰竭，謹防見頂回落"}
+            </span>
+            <span className="ml-auto text-[9px] opacity-60">Cardoso (2018)</span>
+          </div>
+        )}
+        </>
       )}
     </div>
   );
