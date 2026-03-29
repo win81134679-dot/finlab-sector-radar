@@ -71,12 +71,12 @@ const RSS_SOURCES = [
   {
     url: "https://truthsocial.com/@realDonaldTrump.rss",
     label: "Truth Social",
-    timeoutMs: 8000,
+    timeoutMs: 5000,
   },
   {
     url: "https://news.google.com/rss/search?q=trump+tariff+trade+china&hl=en-US&gl=US&ceid=US:en",
     label: "Google News",
-    timeoutMs: 8000,
+    timeoutMs: 5000,
   },
 ] as const;
 
@@ -177,10 +177,23 @@ export async function POST(request: NextRequest) {
   }
   lastRunAt = now;
 
+  // 函式級別 45s 硬性保護：確保在 curl --max-time 55 前必定回應
+  const hardTimeout = new Promise<import("next/server").NextResponse<unknown>>((resolve) =>
+    setTimeout(() =>
+      resolve(NextResponse.json(
+        { ok: false, message: "Function hard timeout 45s", sources: [] },
+        { status: 200 }
+      )), 45_000
+    )
+  );
+
+  const work = (async () => {
   // 1. 抓取 RSS（雙來源並行）
+  const t0 = Date.now();
   const [truthResult, googleResult] = await Promise.all(
     RSS_SOURCES.map((s) => fetchFeed(s)),
   );
+  console.log(`[update-trump] RSS done in ${Date.now() - t0}ms, truth=${truthResult.items.length} google=${googleResult.items.length}`);
 
   const allRawPosts = dedup([
     ...truthResult.items,
@@ -300,4 +313,7 @@ export async function POST(request: NextRequest) {
     sources:        activeSources,
     updated_at:     updatedAt,
   });
+  })(); // end work
+
+  return Promise.race([work, hardTimeout]);
 }
