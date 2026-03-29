@@ -120,6 +120,22 @@ const CommoditySnapshotSchema = z.object({
   updated_at: z.string(),
   assets: z.record(CommodityAssetSchema),
   yield_curve: z.array(YieldPointSchema).optional().default([]),
+  yield_curve_analysis: z.object({
+    spread_2_10:  z.number().nullable(),
+    spread_2_30:  z.number().nullable(),
+    spread_10_30: z.number().nullable(),
+    is_inverted:  z.boolean(),
+    slope_signal: z.enum(["inverted", "flat", "normal", "steep", "unknown"]),
+    signals:      z.array(EconSignalSchema).optional().default([]),
+  }).optional(),
+  market_summary: z.object({
+    total_triggered: z.number(),
+    high_count:      z.number(),
+    medium_count:    z.number(),
+    overall:         z.enum(["risk_off", "caution", "neutral", "risk_on"]),
+    headline:        z.string(),
+    key_alerts:      z.array(z.string()).optional().default([]),
+  }).optional(),
 });
 
 // ── fetch 工具 ────────────────────────────────────────────────────────────

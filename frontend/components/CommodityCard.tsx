@@ -1,13 +1,14 @@
 "use client";
 // CommodityCard.tsx — 單一商品資產卡片（含 K 線展開 + 學術信號）
 
-import { useState } from "react";
 import type { CommodityAsset } from "@/lib/types";
 import { CommodityKLine } from "@/components/CommodityKLine";
 import type { OHLCBar } from "@/lib/types";
 
 interface Props {
   asset: CommodityAsset;
+  isExpanded: boolean;
+  onToggle: () => void;
 }
 
 const CATEGORY_ICONS: Record<string, string> = {
@@ -25,9 +26,7 @@ const SEVERITY_STYLE: Record<string, string> = {
   low:    "bg-zinc-500/10 text-zinc-500 dark:text-zinc-400 border-zinc-500/20",
 };
 
-export function CommodityCard({ asset }: Props) {
-  const [expanded, setExpanded] = useState(false);
-
+export function CommodityCard({ asset, isExpanded, onToggle }: Props) {
   const { name_zh, category, price, change_1d_pct, change_7d_pct, signals } = asset;
   const icon = CATEGORY_ICONS[category] ?? "📌";
   const triggeredSignals = signals.filter(s => s.triggered);
@@ -47,7 +46,7 @@ export function CommodityCard({ asset }: Props) {
       {/* 卡片頭部 */}
       <div
         className="flex items-center justify-between px-3 py-2.5 cursor-pointer hover:bg-zinc-50/80 dark:hover:bg-zinc-700/30 transition-colors"
-        onClick={() => setExpanded(v => !v)}
+        onClick={() => onToggle()}
       >
         <div className="flex items-center gap-2 min-w-0">
           <span className="text-base shrink-0">{icon}</span>
@@ -74,13 +73,13 @@ export function CommodityCard({ asset }: Props) {
             <div className="text-[9px] text-zinc-400">7日</div>
           </div>
           <span className="text-zinc-400 dark:text-zinc-500 text-xs">
-            {expanded ? "▲" : "▼"}
+            {isExpanded ? "▲" : "▼"}
           </span>
         </div>
       </div>
 
       {/* 展開：K 線圖 + 學術信號 */}
-      {expanded && (
+      {isExpanded && (
         <div className="px-3 pb-3 border-t border-zinc-100/80 dark:border-zinc-700/40">
           {/* K 線圖（無初始 OHLCV，全靠懶載入）*/}
           <div className="mt-2">

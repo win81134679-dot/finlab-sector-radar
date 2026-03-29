@@ -122,8 +122,28 @@ export interface YieldPoint {
   yield_pct: number;
 }
 
+export interface YieldCurveAnalysis {
+  spread_2_10:  number | null;
+  spread_2_30:  number | null;
+  spread_10_30: number | null;
+  is_inverted:  boolean;
+  slope_signal: "inverted" | "flat" | "normal" | "steep" | "unknown";
+  signals:      EconSignal[];
+}
+
+export interface MarketSummary {
+  total_triggered: number;
+  high_count:      number;
+  medium_count:    number;
+  overall:         "risk_off" | "caution" | "neutral" | "risk_on";
+  headline:        string;
+  key_alerts:      string[];
+}
+
 export interface CommoditySnapshot {
-  updated_at: string;
-  assets: Record<string, CommodityAsset>;
-  yield_curve: YieldPoint[];
+  updated_at:            string;
+  assets:                Record<string, CommodityAsset>;
+  yield_curve:           YieldPoint[];
+  yield_curve_analysis?: YieldCurveAnalysis;
+  market_summary?:       MarketSummary;
 }
