@@ -1,15 +1,15 @@
 {
-  "updated_at": "2026-03-30T12:33:52.526815+00:00",
+  "updated_at": "2026-03-30T14:09:18.210332+00:00",
   "positions": {
     "2330": {
       "name_zh": "台積電",
       "sector": "foundry",
       "category": "beneficiary",
       "composite_score": 0.3,
-      "entry_price": 1780.0,
+      "entry_price": 1905.0,
       "shares": 0,
       "weight": 0.1364,
-      "added_at": "2026-03-30T12:33:52.524770+00:00",
+      "added_at": "2026-03-30T14:09:18.208255+00:00",
       "reason": "訊號進場"
     },
     "2303": {
@@ -17,10 +17,10 @@
       "sector": "foundry",
       "category": "beneficiary",
       "composite_score": 0.3,
-      "entry_price": 57.0,
+      "entry_price": 61.1,
       "shares": 2000,
       "weight": 0.1364,
-      "added_at": "2026-03-30T12:33:52.524770+00:00",
+      "added_at": "2026-03-30T14:09:18.208255+00:00",
       "reason": "訊號進場"
     },
     "5347": {
@@ -31,7 +31,7 @@
       "entry_price": 117.0,
       "shares": 1000,
       "weight": 0.1273,
-      "added_at": "2026-03-30T12:33:52.524770+00:00",
+      "added_at": "2026-03-30T14:09:18.208255+00:00",
       "reason": "訊號進場"
     },
     "3711": {
@@ -39,10 +39,10 @@
       "sector": "packaging",
       "category": "beneficiary",
       "composite_score": 0.25,
-      "entry_price": 353.5,
+      "entry_price": 357.5,
       "shares": 0,
       "weight": 0.1136,
-      "added_at": "2026-03-30T12:33:52.524770+00:00",
+      "added_at": "2026-03-30T14:09:18.208255+00:00",
       "reason": "訊號進場"
     },
     "2449": {
@@ -50,10 +50,10 @@
       "sector": "packaging",
       "category": "beneficiary",
       "composite_score": 0.25,
-      "entry_price": 272.0,
+      "entry_price": 323.0,
       "shares": 0,
       "weight": 0.1136,
-      "added_at": "2026-03-30T12:33:52.524770+00:00",
+      "added_at": "2026-03-30T14:09:18.208255+00:00",
       "reason": "訊號進場"
     },
     "6257": {
@@ -61,10 +61,10 @@
       "sector": "packaging",
       "category": "beneficiary",
       "composite_score": 0.25,
-      "entry_price": 148.0,
+      "entry_price": 136.5,
       "shares": 0,
       "weight": 0.1136,
-      "added_at": "2026-03-30T12:33:52.524770+00:00",
+      "added_at": "2026-03-30T14:09:18.208255+00:00",
       "reason": "訊號進場"
     },
     "2441": {
@@ -72,81 +72,57 @@
       "sector": "packaging",
       "category": "beneficiary",
       "composite_score": 0.25,
-      "entry_price": 93.8,
+      "entry_price": 89.5,
       "shares": 0,
       "weight": 0.0591,
-      "added_at": "2026-03-30T12:33:52.524770+00:00",
+      "added_at": "2026-03-30T14:09:18.208255+00:00",
       "reason": "訊號進場"
     },
-    "4979": {
-      "name_zh": "4979",
-      "sector": "optical_comm",
+    "3037": {
+      "name_zh": "3037",
+      "sector": "pcb",
       "category": "neutral",
       "composite_score": 0.0,
       "entry_price": null,
       "shares": null,
       "weight": 0.0,
-      "added_at": "2026-03-30T12:33:52.526815+00:00",
+      "added_at": "2026-03-30T14:09:18.210332+00:00",
       "reason": "cycle_acceleration (加速期)",
       "exit_alert": false
     },
-    "6426": {
-      "name_zh": "6426",
-      "sector": "optical_comm",
+    "8046": {
+      "name_zh": "8046",
+      "sector": "pcb",
       "category": "neutral",
       "composite_score": 0.0,
       "entry_price": null,
       "shares": null,
       "weight": 0.0,
-      "added_at": "2026-03-30T12:33:52.526815+00:00",
-      "reason": "cycle_acceleration (加速期)",
-      "exit_alert": false
-    },
-    "3081": {
-      "name_zh": "3081",
-      "sector": "optical_comm",
-      "category": "neutral",
-      "composite_score": 0.0,
-      "entry_price": null,
-      "shares": null,
-      "weight": 0.0,
-      "added_at": "2026-03-30T12:33:52.526815+00:00",
-      "reason": "cycle_acceleration (加速期)",
-      "exit_alert": false
-    },
-    "4908": {
-      "name_zh": "4908",
-      "sector": "optical_comm",
-      "category": "neutral",
-      "composite_score": 0.0,
-      "entry_price": null,
-      "shares": null,
-      "weight": 0.0,
-      "added_at": "2026-03-30T12:33:52.526815+00:00",
+      "added_at": "2026-03-30T14:09:18.210332+00:00",
       "reason": "cycle_acceleration (加速期)",
       "exit_alert": false
     },
     "2301": {
       "name_zh": "2301",
-      "sector": "power_components",
+      "sector": "pcb",
       "category": "neutral",
       "composite_score": 0.0,
       "entry_price": null,
       "shares": null,
       "weight": 0.0,
-      "added_at": "2026-03-30T12:33:52.526815+00:00",
+      "added_at": "2026-03-30T14:09:18.210332+00:00",
       "reason": "cycle_acceleration (加速期)",
       "exit_alert": false
     },
-    "2308": {
-      "name_zh": "2308",
-      "sector": "power_components",
+    "5264": {
+      "name_zh": "5264",
+      "sector": "pcb",
       "category": "neutral",
       "composite_score": 0.0,
       "entry_price": null,
       "shares": null,
       "weight": 0.0,
-      "added_at": "2026-03-30T12:33:52.526815+00:00",
+      "added_at": "2026-03-30T14:09:18.210332+00:00",
       "reason": "cycle_acceleration (加速期)",
       "exit_alert": false
     }
