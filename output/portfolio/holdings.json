@@ -1,15 +1,15 @@
 {
-  "updated_at": "2026-03-30T14:09:18.210332+00:00",
+  "updated_at": "2026-03-31T12:33:36.856854+00:00",
   "positions": {
     "2330": {
       "name_zh": "台積電",
       "sector": "foundry",
       "category": "beneficiary",
       "composite_score": 0.3,
-      "entry_price": 1905.0,
+      "entry_price": 1760.0,
       "shares": 0,
       "weight": 0.1364,
-      "added_at": "2026-03-30T14:09:18.208255+00:00",
+      "added_at": "2026-03-31T12:33:36.854891+00:00",
       "reason": "訊號進場"
     },
     "2303": {
@@ -17,10 +17,10 @@
       "sector": "foundry",
       "category": "beneficiary",
       "composite_score": 0.3,
-      "entry_price": 61.1,
+      "entry_price": 56.5,
       "shares": 2000,
       "weight": 0.1364,
-      "added_at": "2026-03-30T14:09:18.208255+00:00",
+      "added_at": "2026-03-31T12:33:36.854891+00:00",
       "reason": "訊號進場"
     },
     "5347": {
@@ -28,10 +28,10 @@
       "sector": "foundry",
       "category": "beneficiary",
       "composite_score": 0.3,
-      "entry_price": 117.0,
+      "entry_price": 116.0,
       "shares": 1000,
       "weight": 0.1273,
-      "added_at": "2026-03-30T14:09:18.208255+00:00",
+      "added_at": "2026-03-31T12:33:36.854891+00:00",
       "reason": "訊號進場"
     },
     "3711": {
@@ -39,10 +39,10 @@
       "sector": "packaging",
       "category": "beneficiary",
       "composite_score": 0.25,
-      "entry_price": 357.5,
+      "entry_price": 328.5,
       "shares": 0,
       "weight": 0.1136,
-      "added_at": "2026-03-30T14:09:18.208255+00:00",
+      "added_at": "2026-03-31T12:33:36.854891+00:00",
       "reason": "訊號進場"
     },
     "2449": {
@@ -50,10 +50,10 @@
       "sector": "packaging",
       "category": "beneficiary",
       "composite_score": 0.25,
-      "entry_price": 323.0,
+      "entry_price": 261.0,
       "shares": 0,
       "weight": 0.1136,
-      "added_at": "2026-03-30T14:09:18.208255+00:00",
+      "added_at": "2026-03-31T12:33:36.854891+00:00",
       "reason": "訊號進場"
     },
     "6257": {
@@ -61,10 +61,10 @@
       "sector": "packaging",
       "category": "beneficiary",
       "composite_score": 0.25,
-      "entry_price": 136.5,
+      "entry_price": 149.5,
       "shares": 0,
       "weight": 0.1136,
-      "added_at": "2026-03-30T14:09:18.208255+00:00",
+      "added_at": "2026-03-31T12:33:36.854891+00:00",
       "reason": "訊號進場"
     },
     "2441": {
@@ -72,59 +72,11 @@
       "sector": "packaging",
       "category": "beneficiary",
       "composite_score": 0.25,
-      "entry_price": 89.5,
+      "entry_price": 84.5,
       "shares": 0,
       "weight": 0.0591,
-      "added_at": "2026-03-30T14:09:18.208255+00:00",
+      "added_at": "2026-03-31T12:33:36.854891+00:00",
       "reason": "訊號進場"
-    },
-    "3037": {
-      "name_zh": "3037",
-      "sector": "pcb",
-      "category": "neutral",
-      "composite_score": 0.0,
-      "entry_price": null,
-      "shares": null,
-      "weight": 0.0,
-      "added_at": "2026-03-30T14:09:18.210332+00:00",
-      "reason": "cycle_acceleration (加速期)",
-      "exit_alert": false
-    },
-    "8046": {
-      "name_zh": "8046",
-      "sector": "pcb",
-      "category": "neutral",
-      "composite_score": 0.0,
-      "entry_price": null,
-      "shares": null,
-      "weight": 0.0,
-      "added_at": "2026-03-30T14:09:18.210332+00:00",
-      "reason": "cycle_acceleration (加速期)",
-      "exit_alert": false
-    },
-    "2301": {
-      "name_zh": "2301",
-      "sector": "pcb",
-      "category": "neutral",
-      "composite_score": 0.0,
-      "entry_price": null,
-      "shares": null,
-      "weight": 0.0,
-      "added_at": "2026-03-30T14:09:18.210332+00:00",
-      "reason": "cycle_acceleration (加速期)",
-      "exit_alert": false
-    },
-    "5264": {
-      "name_zh": "5264",
-      "sector": "pcb",
-      "category": "neutral",
-      "composite_score": 0.0,
-      "entry_price": null,
-      "shares": null,
-      "weight": 0.0,
-      "added_at": "2026-03-30T14:09:18.210332+00:00",
-      "reason": "cycle_acceleration (加速期)",
-      "exit_alert": false
     }
   },
   "total_weight": 0.8,
