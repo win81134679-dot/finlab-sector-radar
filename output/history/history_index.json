@@ -65,14 +65,14 @@
         4.0,
         3.5,
         3.5,
-        4.0
+        3.0
       ],
       "levels": [
         "觀察中",
         "強烈關注",
         "觀察中",
         "觀察中",
-        "強烈關注"
+        "觀察中"
       ]
     },
     "semiconductor_equip": {
@@ -99,14 +99,14 @@
         2.0,
         4.0,
         3.5,
-        3.5
+        4.5
       ],
       "levels": [
         "觀察中",
         "觀察中",
         "強烈關注",
         "觀察中",
-        "觀察中"
+        "強烈關注"
       ]
     },
     "memory": {
@@ -439,7 +439,7 @@
         1.0,
         2.0,
         2.0,
-        1.0
+        0.0
       ],
       "levels": [
         "忽略",
@@ -711,7 +711,7 @@
         0.5,
         1.5,
         0.0,
-        0.0
+        1.0
       ],
       "levels": [
         "忽略",
@@ -860,21 +860,21 @@
     {
       "warning": true,
       "signal": false,
-      "positive_count": 2,
+      "positive_count": 1,
       "total_available": 4,
       "details": {
         "bond": "US10Y=4.30% (↑均線❌)",
         "pmi": "INDPRO=102.6 (擴張✅)",
-        "sox": "SOXX=338.54 (站上20MA✅)",
-        "twd": "USD/TWD=31.977 (台幣貶值❌)"
+        "sox": "SOXX=331.85 (20MA下方❌)",
+        "twd": "USD/TWD=31.969 (台幣貶值❌)"
       },
       "us_bond_10y": 4.3,
       "bond_trend": "up",
       "ip_index": 102.6,
       "ip_trend": "up",
-      "sox_price": 338.54,
-      "sox_trend": "up",
-      "usd_twd": 31.977,
+      "sox_price": 331.85,
+      "sox_trend": "down",
+      "usd_twd": 31.969,
       "twd_trend": "up",
       "date": "2026-04-02"
     }
