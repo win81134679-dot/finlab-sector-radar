@@ -1,15 +1,15 @@
 {
-  "updated_at": "2026-04-02T14:03:36.536291+00:00",
+  "updated_at": "2026-04-07T12:33:40.301166+00:00",
   "positions": {
     "2330": {
       "name_zh": "台積電",
       "sector": "foundry",
       "category": "beneficiary",
       "composite_score": 0.3,
-      "entry_price": 1810.0,
+      "entry_price": 1860.0,
       "shares": 0,
       "weight": 0.1364,
-      "added_at": "2026-04-02T14:03:36.534295+00:00",
+      "added_at": "2026-04-07T12:33:40.298601+00:00",
       "reason": "訊號進場"
     },
     "2303": {
@@ -17,10 +17,10 @@
       "sector": "foundry",
       "category": "beneficiary",
       "composite_score": 0.3,
-      "entry_price": 53.6,
+      "entry_price": 58.3,
       "shares": 2000,
       "weight": 0.1364,
-      "added_at": "2026-04-02T14:03:36.534295+00:00",
+      "added_at": "2026-04-07T12:33:40.298601+00:00",
       "reason": "訊號進場"
     },
     "5347": {
@@ -28,10 +28,10 @@
       "sector": "foundry",
       "category": "beneficiary",
       "composite_score": 0.3,
-      "entry_price": 110.0,
+      "entry_price": 121.0,
       "shares": 1000,
       "weight": 0.1273,
-      "added_at": "2026-04-02T14:03:36.534295+00:00",
+      "added_at": "2026-04-07T12:33:40.298601+00:00",
       "reason": "訊號進場"
     },
     "3711": {
@@ -39,10 +39,10 @@
       "sector": "packaging",
       "category": "beneficiary",
       "composite_score": 0.25,
-      "entry_price": 361.0,
+      "entry_price": 352.0,
       "shares": 0,
       "weight": 0.1136,
-      "added_at": "2026-04-02T14:03:36.534295+00:00",
+      "added_at": "2026-04-07T12:33:40.298601+00:00",
       "reason": "訊號進場"
     },
     "2449": {
@@ -50,10 +50,10 @@
       "sector": "packaging",
       "category": "beneficiary",
       "composite_score": 0.25,
-      "entry_price": 259.0,
+      "entry_price": 268.0,
       "shares": 0,
       "weight": 0.1136,
-      "added_at": "2026-04-02T14:03:36.534295+00:00",
+      "added_at": "2026-04-07T12:33:40.298601+00:00",
       "reason": "訊號進場"
     },
     "6257": {
@@ -61,10 +61,10 @@
       "sector": "packaging",
       "category": "beneficiary",
       "composite_score": 0.25,
-      "entry_price": 151.0,
+      "entry_price": 155.0,
       "shares": 0,
       "weight": 0.1136,
-      "added_at": "2026-04-02T14:03:36.534295+00:00",
+      "added_at": "2026-04-07T12:33:40.298601+00:00",
       "reason": "訊號進場"
     },
     "2441": {
@@ -72,45 +72,21 @@
       "sector": "packaging",
       "category": "beneficiary",
       "composite_score": 0.25,
-      "entry_price": 85.0,
+      "entry_price": 86.0,
       "shares": 0,
       "weight": 0.0591,
-      "added_at": "2026-04-02T14:03:36.534295+00:00",
+      "added_at": "2026-04-07T12:33:40.298601+00:00",
       "reason": "訊號進場"
     },
-    "3017": {
-      "name_zh": "3017",
-      "sector": "thermal",
+    "6426": {
+      "name_zh": "6426",
+      "sector": "optical_comm",
       "category": "neutral",
       "composite_score": 0.0,
       "entry_price": null,
       "shares": null,
       "weight": 0.0,
-      "added_at": "2026-04-02T14:03:36.536291+00:00",
-      "reason": "cycle_acceleration (加速期)",
-      "exit_alert": false
-    },
-    "3324": {
-      "name_zh": "3324",
-      "sector": "thermal",
-      "category": "neutral",
-      "composite_score": 0.0,
-      "entry_price": null,
-      "shares": null,
-      "weight": 0.0,
-      "added_at": "2026-04-02T14:03:36.536291+00:00",
-      "reason": "cycle_acceleration (加速期)",
-      "exit_alert": false
-    },
-    "2421": {
-      "name_zh": "2421",
-      "sector": "thermal",
-      "category": "neutral",
-      "composite_score": 0.0,
-      "entry_price": null,
-      "shares": null,
-      "weight": 0.0,
-      "added_at": "2026-04-02T14:03:36.536291+00:00",
+      "added_at": "2026-04-07T12:33:40.301166+00:00",
       "reason": "cycle_acceleration (加速期)",
       "exit_alert": false
     },
@@ -122,19 +98,7 @@
       "entry_price": null,
       "shares": null,
       "weight": 0.0,
-      "added_at": "2026-04-02T14:03:36.536291+00:00",
-      "reason": "cycle_acceleration (加速期)",
-      "exit_alert": false
-    },
-    "4979": {
-      "name_zh": "4979",
-      "sector": "optical_comm",
-      "category": "neutral",
-      "composite_score": 0.0,
-      "entry_price": null,
-      "shares": null,
-      "weight": 0.0,
-      "added_at": "2026-04-02T14:03:36.536291+00:00",
+      "added_at": "2026-04-07T12:33:40.301166+00:00",
       "reason": "cycle_acceleration (加速期)",
       "exit_alert": false
     },
@@ -146,19 +110,127 @@
       "entry_price": null,
       "shares": null,
       "weight": 0.0,
-      "added_at": "2026-04-02T14:03:36.536291+00:00",
+      "added_at": "2026-04-07T12:33:40.301166+00:00",
       "reason": "cycle_acceleration (加速期)",
       "exit_alert": false
     },
-    "6426": {
-      "name_zh": "6426",
+    "4979": {
+      "name_zh": "4979",
       "sector": "optical_comm",
       "category": "neutral",
       "composite_score": 0.0,
       "entry_price": null,
       "shares": null,
       "weight": 0.0,
-      "added_at": "2026-04-02T14:03:36.536291+00:00",
+      "added_at": "2026-04-07T12:33:40.301166+00:00",
+      "reason": "cycle_acceleration (加速期)",
+      "exit_alert": false
+    },
+    "3017": {
+      "name_zh": "3017",
+      "sector": "thermal",
+      "category": "neutral",
+      "composite_score": 0.0,
+      "entry_price": null,
+      "shares": null,
+      "weight": 0.0,
+      "added_at": "2026-04-07T12:33:40.301166+00:00",
+      "reason": "cycle_acceleration (加速期)",
+      "exit_alert": false
+    },
+    "3324": {
+      "name_zh": "3324",
+      "sector": "thermal",
+      "category": "neutral",
+      "composite_score": 0.0,
+      "entry_price": null,
+      "shares": null,
+      "weight": 0.0,
+      "added_at": "2026-04-07T12:33:40.301166+00:00",
+      "reason": "cycle_acceleration (加速期)",
+      "exit_alert": false
+    },
+    "2421": {
+      "name_zh": "2421",
+      "sector": "thermal",
+      "category": "neutral",
+      "composite_score": 0.0,
+      "entry_price": null,
+      "shares": null,
+      "weight": 0.0,
+      "added_at": "2026-04-07T12:33:40.301166+00:00",
+      "reason": "cycle_acceleration (加速期)",
+      "exit_alert": false
+    },
+    "2308": {
+      "name_zh": "2308",
+      "sector": "energy_storage",
+      "category": "neutral",
+      "composite_score": 0.0,
+      "entry_price": null,
+      "shares": null,
+      "weight": 0.0,
+      "added_at": "2026-04-07T12:33:40.301166+00:00",
+      "reason": "cycle_acceleration (加速期)",
+      "exit_alert": false
+    },
+    "6282": {
+      "name_zh": "6282",
+      "sector": "energy_storage",
+      "category": "neutral",
+      "composite_score": 0.0,
+      "entry_price": null,
+      "shares": null,
+      "weight": 0.0,
+      "added_at": "2026-04-07T12:33:40.301166+00:00",
+      "reason": "cycle_acceleration (加速期)",
+      "exit_alert": false
+    },
+    "6741": {
+      "name_zh": "6741",
+      "sector": "ecommerce",
+      "category": "neutral",
+      "composite_score": 0.0,
+      "entry_price": null,
+      "shares": null,
+      "weight": 0.0,
+      "added_at": "2026-04-07T12:33:40.301166+00:00",
+      "reason": "cycle_acceleration (加速期)",
+      "exit_alert": false
+    },
+    "3045": {
+      "name_zh": "3045",
+      "sector": "telecom",
+      "category": "neutral",
+      "composite_score": 0.0,
+      "entry_price": null,
+      "shares": null,
+      "weight": 0.0,
+      "added_at": "2026-04-07T12:33:40.301166+00:00",
+      "reason": "cycle_acceleration (加速期)",
+      "exit_alert": false
+    },
+    "2412": {
+      "name_zh": "2412",
+      "sector": "telecom",
+      "category": "neutral",
+      "composite_score": 0.0,
+      "entry_price": null,
+      "shares": null,
+      "weight": 0.0,
+      "added_at": "2026-04-07T12:33:40.301166+00:00",
+      "reason": "cycle_acceleration (加速期)",
+      "exit_alert": false
+    },
+    "4904": {
+      "name_zh": "4904",
+      "sector": "telecom",
+      "category": "neutral",
+      "composite_score": 0.0,
+      "entry_price": null,
+      "shares": null,
+      "weight": 0.0,
+      "added_at": "2026-04-07T12:33:40.301166+00:00",
       "reason": "cycle_acceleration (加速期)",
       "exit_alert": false
     }
