@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-08T05:50:56.641Z",
+  "updatedAt": "2026-04-08T09:13:05.702Z",
   "posts": [
     {
       "text": "China warns Trump’s latest tariff moves could damage trade ties - AP News China warns Trump’s latest tariff moves could damage trade ties  AP News",
@@ -23,7 +23,7 @@
       }
     },
     {
-      "text": "US Starts Trade Probe Into China, EU in Trump’s Tariffs Revival - Bloomberg.com US Starts Trade Probe Into China, EU in Trump’s Tariffs Revival  Bloomberg.com",
+      "text": "US Starts Trade Probe Into China, EU in Trump’s Tariffs Revival - bloomberg.com US Starts Trade Probe Into China, EU in Trump’s Tariffs Revival  bloomberg.com",
       "timestamp": "2026-03-11T07:00:00.000Z",
       "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQLUluRVBnTlJSZEltVlFfVGRuMDZrWS02RGRYYWlvcndOeGhOM0VtWVdyVHlMcXd1N05ycFloQzFxbW9aU2VKMGIwOTVmY2NpR0cxMkVHdjhGLVlCeVpqN1lFanNTN3BDX3J2b01qbk5ubHBBcFd5dEFqd0V6T29MT25SX25sa2VHSmdFUG5QUkEzWEc1QzIzeEI2dkpvemxXSUd2Y2s4MU4tTUlJU1BaTW5feG0?oc=5",
       "keywords": [
@@ -194,26 +194,32 @@
       }
     },
     {
-      "text": "What Happens to All These Trade Deals Now? - The New York Times What Happens to All These Trade Deals Now?  The New York Times",
-      "timestamp": "2026-02-20T08:00:00.000Z",
-      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNNGVQMlRySWxUOUM0N1FnQXB3QTVCbjhMeVZoa3U3NnBrSHhrRk1CeVl0QjUzNEFvNEhlSTFJUXVVaFZObkttMmtOMzlZOXF6YkIxa3h3WGNnTEI1ZlRNeTRIZi1XX0JiOUdoZU5hY1dlLUVWdXl1UloyNzltUjJCM3FoQ0E0Y1FFcjRJYklvVzh2ZkJtUHdKaW1qVjU1OW8?oc=5",
+      "text": "Beijing Sees Opening in U.S. Trade War After Court Blunts Trump’s Tariff Weapon - WSJ Beijing Sees Opening in U.S. Trade War After Court Blunts Trump’s Tariff Weapon  WSJ",
+      "timestamp": "2026-02-23T08:00:00.000Z",
+      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNb3F5SFlQNmNoSFh0aGszcVZwY3FWT0phM1pxQkdVSDIyaWpMSWQyMHBFdkxEeHNyUkFONWFDdmxVWGIzeDVla3RNenpibnFpdEhsUjRTcTVJNlhnQzNSaXlMWTBLeHhhbXpITG5JcVlua2VvVklaZUpPRDAyTmVGOTdGXzJiVnRua1BiTVFXbHY5amlra3VRNV8zYlhIM3N5aHdzRUo3ZmhzVzhOTEFNYm1VNEgyMGFnYnc?oc=5",
       "keywords": [
-        "trade deal",
-        "deal"
+        "trade war",
+        "tariff",
+        "beijing",
+        "weapon"
       ],
       "impacts": {
-        "shipping": 0.7,
-        "ic_design": 0.6,
-        "display": 0.3
+        "foundry": -1,
+        "ic_design": -1,
+        "shipping": -1,
+        "steel": -0.5,
+        "display": -0.5,
+        "ev_supply": -0.4,
+        "defense": 0.7
       },
       "sentiment": {
-        "compound": 0,
-        "label": "中性"
+        "compound": -0.7184,
+        "label": "強烈利空"
       }
     },
     {
       "text": "‘Definitely a Sham’: As Tariffs Climb, Trade Fraud and Accounting Tricks Proliferate - The New York Times ‘Definitely a Sham’: As Tariffs Climb, Trade Fraud and Accounting Tricks Proliferate  The New York Times",
-      "timestamp": "2026-04-07T21:08:01.000Z",
+      "timestamp": "2026-04-07T16:28:33.000Z",
       "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQR0Rma2lmZDAtNXl6b0trbEhhZUFldkk5VDFLemRHZWpxVllqUWRwZEdTakM3R0pfWmo1NDJmT3JZM0Q3a2t2LVpVd1Q1cFRvMk5qbWN2ODg2X003R1dvdm00ZWJIR1BhdDUzdzVBU0NzcEhsNWZrZWRJVlNjQnE3RE1iVHk?oc=5",
       "keywords": [
         "tariff",
@@ -419,56 +425,17 @@
       }
     }
   ],
-  "deltas": [
-    {
-      "sector": "steel",
-      "sectorName": "鋼鐵",
-      "prev": -0.665,
-      "current": -0.739,
-      "delta": -0.074,
-      "momentum": "↓ 壓力加深",
-      "accelerating": true
-    },
-    {
-      "sector": "foundry",
-      "sectorName": "晶圓代工",
-      "prev": -0.785,
-      "current": -0.853,
-      "delta": -0.068,
-      "momentum": "↓ 壓力加深",
-      "accelerating": true
-    }
-  ],
-  "topDeltas": [
-    {
-      "sector": "steel",
-      "sectorName": "鋼鐵",
-      "prev": -0.665,
-      "current": -0.739,
-      "delta": -0.074,
-      "momentum": "↓ 壓力加深",
-      "accelerating": true
-    },
-    {
-      "sector": "foundry",
-      "sectorName": "晶圓代工",
-      "prev": -0.785,
-      "current": -0.853,
-      "delta": -0.068,
-      "momentum": "↓ 壓力加深",
-      "accelerating": true
-    }
-  ],
+  "deltas": [],
+  "topDeltas": [],
   "totalAnalyzed": 100,
   "sources": [
     "Google News"
   ],
   "sectorState": {
     "foundry": {
-      "score": -0.853,
-      "lastUpdated": "2026-04-08T05:50:56.641Z",
+      "score": -0.841,
+      "lastUpdated": "2026-04-08T09:13:05.702Z",
       "deltaHistory": [
-        0.017000000000000015,
         -0.0040000000000000036,
         0.04300000000000004,
         0.0020000000000000018,
@@ -477,14 +444,14 @@
         0.008000000000000007,
         0.028999999999999915,
         0.0030000000000000027,
-        -0.06799999999999995
+        -0.06799999999999995,
+        0.01200000000000001
       ]
     },
     "shipping": {
-      "score": -0.955,
-      "lastUpdated": "2026-04-08T05:50:56.641Z",
+      "score": -0.96,
+      "lastUpdated": "2026-04-08T09:13:05.702Z",
       "deltaHistory": [
-        -0.007000000000000006,
         0.0020000000000000018,
         0.0010000000000000009,
         0,
@@ -493,14 +460,14 @@
         0.0030000000000000027,
         0.019999999999999907,
         -0.0020000000000000018,
-        -0.017999999999999905
+        -0.017999999999999905,
+        -0.0050000000000000044
       ]
     },
     "steel": {
-      "score": -0.739,
-      "lastUpdated": "2026-04-08T05:50:56.641Z",
+      "score": -0.713,
+      "lastUpdated": "2026-04-08T09:13:05.702Z",
       "deltaHistory": [
-        0.014000000000000012,
         0.016000000000000014,
         0.08899999999999997,
         0,
@@ -509,12 +476,13 @@
         0.0040000000000000036,
         0.04400000000000004,
         0.026999999999999913,
-        -0.07399999999999995
+        -0.07399999999999995,
+        0.026000000000000023
       ]
     },
     "ic_design": {
       "score": -1,
-      "lastUpdated": "2026-04-08T05:50:56.641Z",
+      "lastUpdated": "2026-04-08T09:13:05.702Z",
       "deltaHistory": [
         0,
         0,
@@ -529,10 +497,9 @@
       ]
     },
     "display": {
-      "score": -0.894,
-      "lastUpdated": "2026-04-08T05:50:56.641Z",
+      "score": -0.869,
+      "lastUpdated": "2026-04-08T09:13:05.702Z",
       "deltaHistory": [
-        0.005999999999999894,
         -0.0010000000000000009,
         0.04200000000000004,
         0,
@@ -541,14 +508,14 @@
         -0.0030000000000000027,
         0.008000000000000007,
         0.02100000000000002,
-        -0.02100000000000002
+        -0.02100000000000002,
+        0.025000000000000022
       ]
     },
     "ev_supply": {
-      "score": -0.764,
-      "lastUpdated": "2026-04-08T05:50:56.641Z",
+      "score": -0.733,
+      "lastUpdated": "2026-04-08T09:13:05.702Z",
       "deltaHistory": [
-        0.01200000000000001,
         -0.0020000000000000018,
         0.05799999999999994,
         0,
@@ -557,14 +524,14 @@
         -0.009000000000000008,
         0.02100000000000002,
         0.02200000000000002,
-        -0.030000000000000027
+        -0.030000000000000027,
+        0.031000000000000028
       ]
     },
     "ai_server": {
-      "score": 0.067,
-      "lastUpdated": "2026-04-08T05:50:56.641Z",
+      "score": 0.065,
+      "lastUpdated": "2026-04-08T09:13:05.702Z",
       "deltaHistory": [
-        -0.010999999999999996,
         -0.062,
         -0.009000000000000001,
         -0.003999999999999997,
@@ -573,14 +540,14 @@
         0.033,
         0.038000000000000006,
         -0.036000000000000004,
-        -0.027999999999999997
+        -0.027999999999999997,
+        -0.0020000000000000018
       ]
     },
     "defense": {
-      "score": 0,
-      "lastUpdated": "2026-04-08T05:50:56.641Z",
+      "score": 0.027,
+      "lastUpdated": "2026-04-08T09:13:05.702Z",
       "deltaHistory": [
-        -0.007999999999999997,
         0.0010000000000000009,
         -0.029,
         0,
@@ -589,7 +556,8 @@
         0,
         0,
         0,
-        0
+        0,
+        0.027
       ]
     },
     "solar": {
@@ -625,10 +593,9 @@
       ]
     },
     "petrochemical": {
-      "score": 0.013,
-      "lastUpdated": "2026-04-08T05:50:56.641Z",
+      "score": 0.012,
+      "lastUpdated": "2026-04-08T09:13:05.702Z",
       "deltaHistory": [
-        -0.0059999999999999915,
         -0.01200000000000001,
         -0.002999999999999989,
         0,
@@ -637,14 +604,14 @@
         0.001999999999999988,
         -0.05499999999999999,
         -0.002,
-        -0.0010000000000000009
+        -0.0010000000000000009,
+        -0.0009999999999999992
       ]
     },
     "semiconductor_equip": {
       "score": 0.005,
-      "lastUpdated": "2026-04-08T05:50:56.641Z",
+      "lastUpdated": "2026-04-08T09:13:05.702Z",
       "deltaHistory": [
-        0,
         -0.001,
         0,
         0,
@@ -653,14 +620,14 @@
         0,
         0.006999999999999999,
         -0.002999999999999999,
-        -0.001
+        -0.001,
+        0
       ]
     },
     "robotics": {
       "score": 0.005,
-      "lastUpdated": "2026-04-08T05:50:56.641Z",
+      "lastUpdated": "2026-04-08T09:13:05.702Z",
       "deltaHistory": [
-        0,
         -0.001,
         0,
         0,
@@ -669,14 +636,14 @@
         0,
         0.006999999999999999,
         -0.002999999999999999,
-        -0.001
+        -0.001,
+        0
       ]
     },
     "packaging": {
-      "score": -0.002,
-      "lastUpdated": "2026-04-08T05:50:56.641Z",
+      "score": -0.003,
+      "lastUpdated": "2026-04-08T09:13:05.702Z",
       "deltaHistory": [
-        0,
         -0.008,
         -0.0009999999999999992,
         0,
@@ -685,7 +652,8 @@
         0.001,
         -0.001,
         0.001,
-        0
+        0,
+        -0.001
       ]
     },
     "banking": {
@@ -728,10 +696,9 @@
       ]
     },
     "pcb": {
-      "score": 0.013,
-      "lastUpdated": "2026-04-08T05:50:56.641Z",
+      "score": 0.012,
+      "lastUpdated": "2026-04-08T09:13:05.702Z",
       "deltaHistory": [
-        -0.0009999999999999992,
         0.0009999999999999992,
         -0.0009999999999999992,
         0.002,
@@ -740,7 +707,8 @@
         0,
         0,
         0.0009999999999999992,
-        0
+        0,
+        -0.0009999999999999992
       ]
     }
   }
