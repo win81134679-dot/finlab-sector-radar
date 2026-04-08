@@ -63,7 +63,7 @@ const StockKLine = dynamic<{ data: OHLCBar[]; stockId: string; fullData?: OHLCBa
   {
     ssr: false,
     loading: () => (
-      <div className="h-[200px] flex items-center justify-center text-zinc-400 text-xs">載入中...</div>
+      <div className="h-50 flex items-center justify-center text-zinc-400 text-xs">載入中...</div>
     ),
   }
 );
@@ -126,7 +126,7 @@ function CombinedBar({ combined, lightRatio, composite }: {
       <div className="flex items-center gap-2">
         <div className="flex-1 bg-zinc-100 dark:bg-zinc-800 rounded-full h-1.5 overflow-hidden">
           <div
-            className="h-full bg-gradient-to-r from-blue-500 to-emerald-500 rounded-full transition-all"
+            className="h-full bg-linear-to-r from-blue-500 to-emerald-500 rounded-full transition-all"
             style={{ width: `${combined}%` }}
           />
         </div>
@@ -206,7 +206,7 @@ function StockCard({ stock, isExpanded, onToggle, macroWarning }: {
               <div className="flex items-center gap-1.5 flex-wrap">
                 <span className="text-[15px] font-bold text-zinc-900 dark:text-zinc-100">{stock.id}</span>
                 {stock.name_zh && (
-                  <span className="text-xs text-zinc-500 dark:text-zinc-400 truncate max-w-[5rem]">{stock.name_zh}</span>
+                  <span className="text-xs text-zinc-500 dark:text-zinc-400 truncate max-w-20">{stock.name_zh}</span>
                 )}
                 <span className={`text-[11px] px-1.5 py-0.5 rounded-md font-medium ${GRADE_BADGE[stock.grade] ?? GRADE_BADGE["C"]}`}>
                   {stock.grade}

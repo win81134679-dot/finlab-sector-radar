@@ -48,7 +48,7 @@ const StockKLine = dynamic<{ data: OHLCBar[]; stockId: string; fullData?: OHLCBa
   {
     ssr: false,
     loading: () => (
-      <div className="h-[200px] flex items-center justify-center text-zinc-400 text-xs">載入中...</div>
+      <div className="h-50 flex items-center justify-center text-zinc-400 text-xs">載入中...</div>
     ),
   }
 );
@@ -133,7 +133,7 @@ function AccStockCard({ stock, sectorLevel, exitRisk, cycleStage, macroWarning, 
           <div className="flex items-center gap-2 min-w-0">
             <span className="text-[15px] font-bold text-zinc-900 dark:text-zinc-100">{stock.id}</span>
             {stock.nameZh && (
-              <span className="text-xs text-zinc-500 dark:text-zinc-400 truncate max-w-[5rem]">{stock.nameZh}</span>
+              <span className="text-xs text-zinc-500 dark:text-zinc-400 truncate max-w-20">{stock.nameZh}</span>
             )}
             <span className={`text-xs font-bold ${
               stock.grade === "A+" || stock.grade === "A" ? "text-emerald-600 dark:text-emerald-400"

@@ -54,7 +54,7 @@ export function CommodityAlertBanner({ commodities, macroWarning }: Props) {
       <div className="max-w-7xl mx-auto px-4">
 
         {/* ── 主列 ── */}
-        <div className="flex items-center gap-2.5 py-2 flex-wrap min-h-[2.25rem]">
+        <div className="flex items-center gap-2.5 py-2 flex-wrap min-h-9">
 
           {/* 等級圖示 + 標籤 */}
           <span className="text-sm leading-none">{cfg.icon}</span>

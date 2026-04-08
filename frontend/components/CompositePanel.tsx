@@ -76,7 +76,7 @@ function SectorRow({ sectorId, score, stab }: SectorRowProps) {
         <StabilityBadge stab={stab} />
       </div>
       <ScoreBar value={score.composite} />
-      <span className={`text-xs shrink-0 w-[5.5rem] text-right ${textClass}`}>{score.signal}</span>
+      <span className={`text-xs shrink-0 w-22 text-right ${textClass}`}>{score.signal}</span>
     </div>
   );
 }

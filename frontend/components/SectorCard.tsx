@@ -103,7 +103,7 @@ export function SectorCard({ sectorId, sector, featured = false, defaultExpanded
           id={`sector-detail-${sectorId}`}
           className={`
             transition-all duration-500
-            ${expanded ? "max-h-[5000px] overflow-visible opacity-100" : "max-h-0 overflow-hidden opacity-0"}
+            ${expanded ? "max-h-1250 overflow-visible opacity-100" : "max-h-0 overflow-hidden opacity-0"}
           `}
         >
           <div className="px-4 pb-4 border-t border-zinc-200/30 dark:border-zinc-700/30 pt-3">

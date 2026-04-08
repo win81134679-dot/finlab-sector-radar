@@ -21,7 +21,7 @@ const StockKLine = dynamic<KLineProps>(
   {
     ssr: false,
     loading: () => (
-      <div className="h-[160px] flex items-center justify-center text-zinc-400 text-xs">
+      <div className="h-40 flex items-center justify-center text-zinc-400 text-xs">
         載入中...
       </div>
     ),
@@ -75,7 +75,7 @@ export function StockTable({ stocks, sectorLevel, macroWarning, cycleStage }: St
 
   return (
     <div className="overflow-x-auto -mx-1">
-      <table className="w-full text-xs min-w-[340px]">
+      <table className="w-full text-xs min-w-85">
         <thead>
           <tr className="text-zinc-500 dark:text-zinc-400 border-b border-zinc-200/30 dark:border-zinc-700/30">
             <th className="py-1.5 px-2 text-left font-medium">股票</th>
