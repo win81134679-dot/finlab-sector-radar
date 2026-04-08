@@ -1,8 +1,29 @@
 {
-  "updatedAt": "2026-04-08T09:13:05.702Z",
+  "updatedAt": "2026-04-08T13:50:09.939Z",
   "posts": [
     {
-      "text": "China warns Trump’s latest tariff moves could damage trade ties - AP News China warns Trump’s latest tariff moves could damage trade ties  AP News",
+      "text": "Trump's trade war with China in focus ahead of May summit - reuters.com Trump's trade war with China in focus ahead of May summit  reuters.com",
+      "timestamp": "2026-04-06T01:03:00.000Z",
+      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQNWdZTUNvd3VfbWx4djBBNjU0OGZlbE04dHRGUC1VaEw2Zl9uQUhfQnNzQzkzdVNPeEMxUk44bjFMSjFwajgyN0wzTGdTRDU2WUZTUzREQ1YyWnlMSzhpeU1hWDVUeUxwWG1MdzZoRHVmbGw2VTZRXzQzNDFLek9LOWJWQ0QtWU9JckhvbVZXSkxqc2Fpb0hnOHhXSHJXdlU?oc=5",
+      "keywords": [
+        "trade war with china",
+        "trade war",
+        "china"
+      ],
+      "impacts": {
+        "foundry": -1,
+        "ic_design": -1,
+        "shipping": -1,
+        "display": -0.4,
+        "ev_supply": -0.3
+      },
+      "sentiment": {
+        "compound": 0,
+        "label": "中性"
+      }
+    },
+    {
+      "text": "China warns Trump’s latest tariff moves could damage trade ties - apnews.com China warns Trump’s latest tariff moves could damage trade ties  apnews.com",
       "timestamp": "2026-03-16T07:00:00.000Z",
       "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOMlRvSmdFeGxqMHZLY2NyZjI0cWc1UlEyTUNaRTR4WjlBWC1nVnNTRXVpQjhJWE9aWDUtWlUzTDZKMnp3WlZoOHByNmoycFczbldhWlFHNmp3S1VwNW9NN0EyeTRSQzliZkVuVjBleVhIUlc1dXNYanlCVHRMcTRpSE16dngzeWdPenpGeUk4T29Ma1JJaFpR?oc=5",
       "keywords": [
@@ -16,29 +37,6 @@
         "ic_design": -1,
         "display": -0.9,
         "ev_supply": -0.7
-      },
-      "sentiment": {
-        "compound": -0.7184,
-        "label": "強烈利空"
-      }
-    },
-    {
-      "text": "US Starts Trade Probe Into China, EU in Trump’s Tariffs Revival - bloomberg.com US Starts Trade Probe Into China, EU in Trump’s Tariffs Revival  bloomberg.com",
-      "timestamp": "2026-03-11T07:00:00.000Z",
-      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQLUluRVBnTlJSZEltVlFfVGRuMDZrWS02RGRYYWlvcndOeGhOM0VtWVdyVHlMcXd1N05ycFloQzFxbW9aU2VKMGIwOTVmY2NpR0cxMkVHdjhGLVlCeVpqN1lFanNTN3BDX3J2b01qbk5ubHBBcFd5dEFqd0V6T29MT25SX25sa2VHSmdFUG5QUkEzWEc1QzIzeEI2dkpvemxXSUd2Y2s4MU4tTUlJU1BaTW5feG0?oc=5",
-      "keywords": [
-        "tariff",
-        "tariffs",
-        "china",
-        "ev"
-      ],
-      "impacts": {
-        "foundry": -1,
-        "shipping": -1,
-        "steel": -1,
-        "ic_design": -1,
-        "display": -1,
-        "ev_supply": -0.9
       },
       "sentiment": {
         "compound": -0.7184,
@@ -67,25 +65,21 @@
       }
     },
     {
-      "text": "How Trump’s Tariffs Are Choking U.S.-China Trade - WSJ How Trump’s Tariffs Are Choking U.S.-China Trade  WSJ",
-      "timestamp": "2026-03-27T07:00:00.000Z",
-      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOcXlMTFpuVVVUa3R5ZWlfc3BHWElJQWh4SWVGajVYb19ieUJ5QUprOFpGYXhRTTVwY1UxYXpZNm9FTlZqTTBxMnpxUlZzR0xVaTlaQ09tZVJ3U0lOQmRsdHdSeURpem9KLVZuVHhvV1E1UlBsY1YxR1Y3X0UwNlFFc2NxdjVxVWNzbXU3VVhmZjdSUWM?oc=5",
+      "text": "Trump administration launches Section 301 trade probes into Mexico, China, EU, others - CNBC Trump administration launches Section 301 trade probes into Mexico, China, EU, others  CNBC",
+      "timestamp": "2026-03-11T07:00:00.000Z",
+      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOcXM3aVJCSEdUOGw1YWZDcUxBeERTTWVSb0VFRXZBTWF4cm5QaFdwd0pDMHlqV3dfaVhLLVF6a0E1amtsM1RDX3FDMjlYQ0tZSFYxQ0FWdmhpVE90QWdoWWRWV0FCOEY2dkpBcFF3VnQwS1ZxWl9OaDZzdC10VjFaYnMwONIBiAFBVV95cUxOMHVUM01USGtidVpsZGt6QmR2Zk9uemwwdHNDbHdFQlFHRDdYeGNVenpzbXBkcC01TFd6aXpGTS05T1czVW9fM21FYmFWYWdhM2VJdFdyZU5yd1pEa0hMLWNRX21kd1hJVmEtNXUxdUttRXFndUJmb19uQWNaQVJnSE1BY1lZaUw2?oc=5",
       "keywords": [
-        "tariff",
-        "tariffs",
         "china"
       ],
       "impacts": {
-        "foundry": -1,
-        "shipping": -1,
-        "steel": -1,
-        "ic_design": -1,
-        "display": -1,
-        "ev_supply": -1
+        "ic_design": -0.5,
+        "shipping": -0.4,
+        "display": -0.4,
+        "ev_supply": -0.3
       },
       "sentiment": {
-        "compound": -0.7184,
-        "label": "強烈利空"
+        "compound": 0,
+        "label": "中性"
       }
     },
     {
@@ -110,21 +104,23 @@
       }
     },
     {
-      "text": "US launches unfair-trade probes to rebuild Trump's tariff pressure - Reuters US launches unfair-trade probes to rebuild Trump's tariff pressure  Reuters",
-      "timestamp": "2026-03-13T07:00:00.000Z",
-      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPWmRXcU9vVEl6dUtmWHZTa3pHNjdCRTVhVlZPQ0VnRmwwOTBSYkRLM2hkWXJ6QVpXd1hVM0lyRnJKWXBUcXNObk1jR1k4aTZsbGUzSnBYSDhUVFZDYmQ0TW5QZlpvZk9NWW9JN1BLVElueUlpTlFSQUVqb0FnaDVQaDVRR0x2YUlCRkZRQnZMSC1feUh1V3ZaTTRzYWNiNnl6WDQ1cHpvekNXWjNFbHgwQg?oc=5",
+      "text": "Beijing Sees Opening in U.S. Trade War After Court Blunts Trump’s Tariff Weapon - WSJ Beijing Sees Opening in U.S. Trade War After Court Blunts Trump’s Tariff Weapon  WSJ",
+      "timestamp": "2026-02-23T08:00:00.000Z",
+      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNb3F5SFlQNmNoSFh0aGszcVZwY3FWT0phM1pxQkdVSDIyaWpMSWQyMHBFdkxEeHNyUkFONWFDdmxVWGIzeDVla3RNenpibnFpdEhsUjRTcTVJNlhnQzNSaXlMWTBLeHhhbXpITG5JcVlua2VvVklaZUpPRDAyTmVGOTdGXzJiVnRua1BiTVFXbHY5amlra3VRNV8zYlhIM3N5aHdzRUo3ZmhzVzhOTEFNYm1VNEgyMGFnYnc?oc=5",
       "keywords": [
-        "ai",
-        "tariff"
+        "trade war",
+        "tariff",
+        "beijing",
+        "weapon"
       ],
       "impacts": {
-        "ai_server": 0.7,
-        "foundry": -0.4,
-        "shipping": -0.5,
+        "foundry": -1,
+        "ic_design": -1,
+        "shipping": -1,
         "steel": -0.5,
-        "ic_design": -0.6,
         "display": -0.5,
-        "ev_supply": -0.4
+        "ev_supply": -0.4,
+        "defense": 0.7
       },
       "sentiment": {
         "compound": -0.7184,
@@ -132,9 +128,9 @@
       }
     },
     {
-      "text": "China’s leverage rises before high-stakes summit as Supreme Court curbs Trump tariffs - CNBC China’s leverage rises before high-stakes summit as Supreme Court curbs Trump tariffs  CNBC",
-      "timestamp": "2026-02-23T08:00:00.000Z",
-      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNMFpjTnU3MjlsNmY3M1NyUzB2OXFXTTM2aUhmVDYwc2VwQ0NVMEoxQ0JWSlJqUUdwMnRRWVdsSmR0eGtCdWdEcHE0UXE5M2Y5VmtrMFhXaU81TDV4YVJaMXUyV1I1bnljT0ZpQUd5SE1pdWVtVmY2aTVUVlF2cTVUYUdYVTI5YVRhWmplVlA1N1pVN1lxLUx3ODRjQTNGU0xXR1d4UGxoQVQ3UFU1T1h6dXQ2dzFMSEhwUlA2X9IBwgFBVV95cUxQWHYyWXktQ1VHR3hxdmdxcDRCOTN2Zm56aWFOcVpWWmZVRVZqU3pfbS1yUXB3UlluX2oxQzBXd0F0M2xEb042d0g0ZnhEcDN2QWJmZjBrbkVhRVBxTENBTlhwbTRudDh0WEdiSXNXQnI5a05FY3hGNTZ6UGUzQnpnMXE3eHdSWHltUmhLUmY4T0ZBSThBRUdxM1VYVGFCTEJ1c05zSzRzWFdkcUtFVVg3Mm5qT2RoTzRaSWRJc0xLYWozUQ?oc=5",
+      "text": "US Starts Trade Probe Into China, EU in Trump’s Tariffs Revival - Bloomberg.com US Starts Trade Probe Into China, EU in Trump’s Tariffs Revival  Bloomberg.com",
+      "timestamp": "2026-03-11T07:00:00.000Z",
+      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQLUluRVBnTlJSZEltVlFfVGRuMDZrWS02RGRYYWlvcndOeGhOM0VtWVdyVHlMcXd1N05ycFloQzFxbW9aU2VKMGIwOTVmY2NpR0cxMkVHdjhGLVlCeVpqN1lFanNTN3BDX3J2b01qbk5ubHBBcFd5dEFqd0V6T29MT25SX25sa2VHSmdFUG5QUkEzWEc1QzIzeEI2dkpvemxXSUd2Y2s4MU4tTUlJU1BaTW5feG0?oc=5",
       "keywords": [
         "tariff",
         "tariffs",
@@ -176,41 +172,43 @@
       }
     },
     {
-      "text": "Trump administration launches Section 301 trade probes into Mexico, China, EU, others - CNBC Trump administration launches Section 301 trade probes into Mexico, China, EU, others  CNBC",
-      "timestamp": "2026-03-11T07:00:00.000Z",
-      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOcXM3aVJCSEdUOGw1YWZDcUxBeERTTWVSb0VFRXZBTWF4cm5QaFdwd0pDMHlqV3dfaVhLLVF6a0E1amtsM1RDX3FDMjlYQ0tZSFYxQ0FWdmhpVE90QWdoWWRWV0FCOEY2dkpBcFF3VnQwS1ZxWl9OaDZzdC10VjFaYnMwONIBiAFBVV95cUxOMHVUM01USGtidVpsZGt6QmR2Zk9uemwwdHNDbHdFQlFHRDdYeGNVenpzbXBkcC01TFd6aXpGTS05T1czVW9fM21FYmFWYWdhM2VJdFdyZU5yd1pEa0hMLWNRX21kd1hJVmEtNXUxdUttRXFndUJmb19uQWNaQVJnSE1BY1lZaUw2?oc=5",
+      "text": "US launches unfair-trade probes to rebuild Trump's tariff pressure - reuters.com US launches unfair-trade probes to rebuild Trump's tariff pressure  reuters.com",
+      "timestamp": "2026-03-13T07:00:00.000Z",
+      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPWmRXcU9vVEl6dUtmWHZTa3pHNjdCRTVhVlZPQ0VnRmwwOTBSYkRLM2hkWXJ6QVpXd1hVM0lyRnJKWXBUcXNObk1jR1k4aTZsbGUzSnBYSDhUVFZDYmQ0TW5QZlpvZk9NWW9JN1BLVElueUlpTlFSQUVqb0FnaDVQaDVRR0x2YUlCRkZRQnZMSC1feUh1V3ZaTTRzYWNiNnl6WDQ1cHpvekNXWjNFbHgwQg?oc=5",
       "keywords": [
-        "china"
+        "ai",
+        "tariff"
       ],
       "impacts": {
-        "ic_design": -0.5,
-        "shipping": -0.4,
-        "display": -0.4,
-        "ev_supply": -0.3
+        "ai_server": 0.7,
+        "foundry": -0.4,
+        "shipping": -0.5,
+        "steel": -0.5,
+        "ic_design": -0.6,
+        "display": -0.5,
+        "ev_supply": -0.4
       },
       "sentiment": {
-        "compound": 0,
-        "label": "中性"
+        "compound": -0.7184,
+        "label": "強烈利空"
       }
     },
     {
-      "text": "Beijing Sees Opening in U.S. Trade War After Court Blunts Trump’s Tariff Weapon - WSJ Beijing Sees Opening in U.S. Trade War After Court Blunts Trump’s Tariff Weapon  WSJ",
-      "timestamp": "2026-02-23T08:00:00.000Z",
-      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNb3F5SFlQNmNoSFh0aGszcVZwY3FWT0phM1pxQkdVSDIyaWpMSWQyMHBFdkxEeHNyUkFONWFDdmxVWGIzeDVla3RNenpibnFpdEhsUjRTcTVJNlhnQzNSaXlMWTBLeHhhbXpITG5JcVlua2VvVklaZUpPRDAyTmVGOTdGXzJiVnRua1BiTVFXbHY5amlra3VRNV8zYlhIM3N5aHdzRUo3ZmhzVzhOTEFNYm1VNEgyMGFnYnc?oc=5",
+      "text": "How Trump’s Tariffs Are Choking U.S.-China Trade - WSJ How Trump’s Tariffs Are Choking U.S.-China Trade  WSJ",
+      "timestamp": "2026-03-27T07:00:00.000Z",
+      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOcXlMTFpuVVVUa3R5ZWlfc3BHWElJQWh4SWVGajVYb19ieUJ5QUprOFpGYXhRTTVwY1UxYXpZNm9FTlZqTTBxMnpxUlZzR0xVaTlaQ09tZVJ3U0lOQmRsdHdSeURpem9KLVZuVHhvV1E1UlBsY1YxR1Y3X0UwNlFFc2NxdjVxVWNzbXU3VVhmZjdSUWM?oc=5",
       "keywords": [
-        "trade war",
         "tariff",
-        "beijing",
-        "weapon"
+        "tariffs",
+        "china"
       ],
       "impacts": {
         "foundry": -1,
-        "ic_design": -1,
         "shipping": -1,
-        "steel": -0.5,
-        "display": -0.5,
-        "ev_supply": -0.4,
-        "defense": 0.7
+        "steel": -1,
+        "ic_design": -1,
+        "display": -1,
+        "ev_supply": -1
       },
       "sentiment": {
         "compound": -0.7184,
@@ -239,14 +237,13 @@
       }
     },
     {
-      "text": "How one factory in China learned to live with Trump, tariffs and turmoil - Reuters How one factory in China learned to live with Trump, tariffs and turmoil  Reuters",
-      "timestamp": "2026-04-06T01:03:00.000Z",
-      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQMl80UFk3LU5BWkl5cXktUGNfTm42TW9NeXJ4ZjRYRjB6aWpMUnBaQmF2eGs3eUVkb3djOThaUlVYanVYSXkySGZWRHdnSXJQZjhQZm1wczZLWGIxYURuUVNYazRXai1YX1ByRzdjVkMxUVdKNGlYOVhrOVhJamd4bExjM0NQWmZvOTVTbXRUQUR2dTU0THd4cUIzYW5yMGNxeW1FcHFwcV9wdEJ6R1E?oc=5",
+      "text": "A Year After ‘Liberation Day,’ Experts Review the Costs of Trump’s Tariffs - cfr.org A Year After ‘Liberation Day,’ Experts Review the Costs of Trump’s Tariffs  cfr.org",
+      "timestamp": "2026-04-02T11:00:00.000Z",
+      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNWmlydGN5Mm1BbDAxZk53Mld4d05rOWpERDJsM09qTDRnd21BQ1gxN3VMQzdVdVhiODhQdlE0RjNFbm03R216VmViZENoc2hjZDRMN09zT3hBTXNhLUtvUG10UWs2MjctSGhQUlVkYUd1bzJYa2ZQTXAxamlfRi1TaWQtOC01Z19yUmxiRXBuRVlpMTN6OWJGc3hzcUk2SkpD?oc=5",
       "keywords": [
         "tariff",
         "tariffs",
-        "china",
-        "oil"
+        "ev"
       ],
       "impacts": {
         "foundry": -1,
@@ -254,30 +251,7 @@
         "steel": -1,
         "ic_design": -1,
         "display": -1,
-        "ev_supply": -1,
-        "petrochemical": 0.4
-      },
-      "sentiment": {
-        "compound": -0.7184,
-        "label": "強烈利空"
-      }
-    },
-    {
-      "text": "Trump tariff fallout: Some industries grapple with lingering effects one year later - CNBC Trump tariff fallout: Some industries grapple with lingering effects one year later  CNBC",
-      "timestamp": "2026-04-03T11:30:01.000Z",
-      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE4wQTdudlByQ24zTjlIZ19CVm82OTliTVFwZmg4amNONTVDVjNBNXA0Y1NFLTB1WlFMTHNqVWVGTENhOFNnMVJpSG5RblpLcHNnZFl0bFRLYTdSMWNqV0RYUVpDd2hfSnlsanFpRC1lUUxlMXBxQ2fSAXtBVV95cUxPbmdSTV9FQlh6WmJuVXRZempURXB1cW5QVnV6T25NVXcwejY2OHEzM3oxdDVsYjZRcXYtSzZHUXVTMkZtUzVfcTQ0UFlVaWdhaXg5QUZpSjZpd25yejFNbWVFU1VGVHVVWW9jd2Z2ZnRnMXVJZlF3ZWNUcHM?oc=5",
-      "keywords": [
-        "tariff",
-        "apple"
-      ],
-      "impacts": {
-        "foundry": -0.4,
-        "shipping": -0.5,
-        "steel": -0.5,
-        "ic_design": -0.6,
-        "display": -0.5,
-        "ev_supply": -0.4,
-        "pcb": 0.5
+        "ev_supply": -0.6
       },
       "sentiment": {
         "compound": -0.7184,
@@ -303,13 +277,13 @@
       }
     },
     {
-      "text": "A Year After ‘Liberation Day,’ Experts Review the Costs of Trump’s Tariffs - Council on Foreign Relations A Year After ‘Liberation Day,’ Experts Review the Costs of Trump’s Tariffs  Council on Foreign Relations",
-      "timestamp": "2026-04-02T11:00:00.000Z",
-      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNWmlydGN5Mm1BbDAxZk53Mld4d05rOWpERDJsM09qTDRnd21BQ1gxN3VMQzdVdVhiODhQdlE0RjNFbm03R216VmViZENoc2hjZDRMN09zT3hBTXNhLUtvUG10UWs2MjctSGhQUlVkYUd1bzJYa2ZQTXAxamlfRi1TaWQtOC01Z19yUmxiRXBuRVlpMTN6OWJGc3hzcUk2SkpD?oc=5",
+      "text": "Trump threatens Iran arms suppliers with tariffs, offers nuclear talks - cryptobriefing.com Trump threatens Iran arms suppliers with tariffs, offers nuclear talks  cryptobriefing.com",
+      "timestamp": "2026-04-08T12:41:18.000Z",
+      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQdjlVYWM0Ymh5dFhvZndpV3NkZ29YMG9SSERDRjBZVnhCVEphWE1EQnZDYjBhcjR5SnBvakd3ampUcjByNmZxdEpOMGxYNXVCMmE4NHFnTHZlS0VTLThjWERsM1Q3OG9MQmZiM1U3OHdGWU9rLTNqeHhEN3pJM0pTWE5Bbkd5T0ZyeXFTM2U3Wk9lRGhxZDZLalNWZ29yZw?oc=5",
       "keywords": [
         "tariff",
         "tariffs",
-        "ev"
+        "crypto"
       ],
       "impacts": {
         "foundry": -1,
@@ -317,7 +291,8 @@
         "steel": -1,
         "ic_design": -1,
         "display": -1,
-        "ev_supply": -0.6
+        "ev_supply": -0.8,
+        "gaming": 0.3
       },
       "sentiment": {
         "compound": -0.7184,
@@ -325,17 +300,15 @@
       }
     },
     {
-      "text": "REP RO KHANNA: Trump needs to stop hurting American workers and stand up to China - Fox News REP RO KHANNA: Trump needs to stop hurting American workers and stand up to China  Fox News",
-      "timestamp": "2026-04-06T09:00:39.000Z",
-      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOMG9oWUlOY3lJMnBaa2pKTHE4aHduOWprX2tJS2FXUHVBNEtkMTFrNklkMHdXRkM1Tl9SRlVrYndkMXI5M2dXVFdzcnJIcFpza0R3VllQYkxldXNNWHpMdk5vMmtzM05URjdHdUtzVTcwR2lXVTdrRTBDVExEc3BBQWFSdGRXdHRFZkZaRFd3Sm5PU3NXOXNmVXJDX2lGY3hY0gGmAUFVX3lxTFB6RjhzSDJaSEo0S0hhTXVfZHYwTnBMOTBxbENzdl94eGpVd1UydU9Ua0VwNk9BcnBFV3VrZmVnUEd0VTlKcmJQNXY2cDhuOFVRZU11RjlkZkloa1pzSWZLQllSTjdSXzNnOXJFd1dROVNsdkctRHloQ0FucjRoUHBhR2FyRkEzUW1zaWtqNnVHVnZoT0VGLWl3TGVnblBVOEswTkJrQkE?oc=5",
+      "text": "Free Trade Is Dead in Washington - Foreign Policy Free Trade Is Dead in Washington  Foreign Policy",
+      "timestamp": "2026-04-06T16:04:01.000Z",
+      "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE8yR1pSdlhmLWV4M3ZZWUhyVmxJUk5MMk95TGt6ZUQ4ZDdCVXVabFA2V3ZVYjJGNVpWSm1hVEZkcHhfWEJoSW04aTdsQkgzU0RabjVCNURoSGVfRVhZTjFLaEN6OWcybzVYQkRBZW5sczRyMTlJ?oc=5",
       "keywords": [
-        "china"
+        "free trade"
       ],
       "impacts": {
-        "ic_design": -0.5,
-        "shipping": -0.4,
-        "display": -0.4,
-        "ev_supply": -0.3
+        "shipping": 0.4,
+        "ic_design": 0.3
       },
       "sentiment": {
         "compound": 0,
@@ -367,15 +340,17 @@
       }
     },
     {
-      "text": "Free Trade Is Dead in Washington - Foreign Policy Free Trade Is Dead in Washington  Foreign Policy",
-      "timestamp": "2026-04-06T16:04:01.000Z",
-      "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE8yR1pSdlhmLWV4M3ZZWUhyVmxJUk5MMk95TGt6ZUQ4ZDdCVXVabFA2V3ZVYjJGNVpWSm1hVEZkcHhfWEJoSW04aTdsQkgzU0RabjVCNURoSGVfRVhZTjFLaEN6OWcybzVYQkRBZW5sczRyMTlJ?oc=5",
+      "text": "REP RO KHANNA: Trump needs to stop hurting American workers and stand up to China - Fox News REP RO KHANNA: Trump needs to stop hurting American workers and stand up to China  Fox News",
+      "timestamp": "2026-04-06T09:00:39.000Z",
+      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOMG9oWUlOY3lJMnBaa2pKTHE4aHduOWprX2tJS2FXUHVBNEtkMTFrNklkMHdXRkM1Tl9SRlVrYndkMXI5M2dXVFdzcnJIcFpza0R3VllQYkxldXNNWHpMdk5vMmtzM05URjdHdUtzVTcwR2lXVTdrRTBDVExEc3BBQWFSdGRXdHRFZkZaRFd3Sm5PU3NXOXNmVXJDX2lGY3hY0gGmAUFVX3lxTFB6RjhzSDJaSEo0S0hhTXVfZHYwTnBMOTBxbENzdl94eGpVd1UydU9Ua0VwNk9BcnBFV3VrZmVnUEd0VTlKcmJQNXY2cDhuOFVRZU11RjlkZkloa1pzSWZLQllSTjdSXzNnOXJFd1dROVNsdkctRHloQ0FucjRoUHBhR2FyRkEzUW1zaWtqNnVHVnZoT0VGLWl3TGVnblBVOEswTkJrQkE?oc=5",
       "keywords": [
-        "free trade"
+        "china"
       ],
       "impacts": {
-        "shipping": 0.4,
-        "ic_design": 0.3
+        "ic_design": -0.5,
+        "shipping": -0.4,
+        "display": -0.4,
+        "ev_supply": -0.3
       },
       "sentiment": {
         "compound": 0,
@@ -404,39 +379,124 @@
       }
     },
     {
-      "text": "Trump's trade war with China in focus ahead of May summit - Reuters Trump's trade war with China in focus ahead of May summit  Reuters",
+      "text": "How one factory in China learned to live with Trump, tariffs and turmoil - reuters.com How one factory in China learned to live with Trump, tariffs and turmoil  reuters.com",
       "timestamp": "2026-04-06T01:03:00.000Z",
-      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQNWdZTUNvd3VfbWx4djBBNjU0OGZlbE04dHRGUC1VaEw2Zl9uQUhfQnNzQzkzdVNPeEMxUk44bjFMSjFwajgyN0wzTGdTRDU2WUZTUzREQ1YyWnlMSzhpeU1hWDVUeUxwWG1MdzZoRHVmbGw2VTZRXzQzNDFLek9LOWJWQ0QtWU9JckhvbVZXSkxqc2Fpb0hnOHhXSHJXdlU?oc=5",
+      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQMl80UFk3LU5BWkl5cXktUGNfTm42TW9NeXJ4ZjRYRjB6aWpMUnBaQmF2eGs3eUVkb3djOThaUlVYanVYSXkySGZWRHdnSXJQZjhQZm1wczZLWGIxYURuUVNYazRXai1YX1ByRzdjVkMxUVdKNGlYOVhrOVhJamd4bExjM0NQWmZvOTVTbXRUQUR2dTU0THd4cUIzYW5yMGNxeW1FcHFwcV9wdEJ6R1E?oc=5",
       "keywords": [
-        "trade war with china",
-        "trade war",
-        "china"
+        "tariff",
+        "tariffs",
+        "china",
+        "oil"
       ],
       "impacts": {
         "foundry": -1,
-        "ic_design": -1,
         "shipping": -1,
-        "display": -0.4,
-        "ev_supply": -0.3
+        "steel": -1,
+        "ic_design": -1,
+        "display": -1,
+        "ev_supply": -1,
+        "petrochemical": 0.4
       },
       "sentiment": {
-        "compound": 0,
-        "label": "中性"
+        "compound": -0.7184,
+        "label": "強烈利空"
+      }
+    },
+    {
+      "text": "Trump Tariffs Fail to Dent China Manufacturing Momentum - stratnewsglobal.com Trump Tariffs Fail to Dent China Manufacturing Momentum  stratnewsglobal.com",
+      "timestamp": "2026-04-06T03:30:47.000Z",
+      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPRmVkTmJ4bVo2blYzR0F0cThuN0tBd3lZSEJwSzVJcnZFR1IxVF82eEVKZmNqZjdGaVlFM0JRVjlPSmI5N2ZFU1NQSXYyT3dacnl2aF9GYWY1WDBvRHF4WFA5UnpfZFRHaXdVcjlROG96ZjFMOWxrRGtPcEFxZWdmZ1FEX09qNGVWTGRNa1Rsc01yRzdHRnow?oc=5",
+      "keywords": [
+        "ai",
+        "tariff",
+        "tariffs",
+        "china",
+        "manufacturing"
+      ],
+      "impacts": {
+        "ai_server": 0.7,
+        "foundry": -1,
+        "shipping": -1,
+        "steel": -1,
+        "ic_design": -1,
+        "display": -1,
+        "ev_supply": -1,
+        "semiconductor_equip": 0.2,
+        "robotics": 0.2
+      },
+      "sentiment": {
+        "compound": -0.7184,
+        "label": "強烈利空"
       }
     }
   ],
-  "deltas": [],
-  "topDeltas": [],
+  "deltas": [
+    {
+      "sector": "steel",
+      "sectorName": "鋼鐵",
+      "prev": -0.713,
+      "current": -0.521,
+      "delta": 0.192,
+      "momentum": "↑ 壓力緩解",
+      "accelerating": true
+    },
+    {
+      "sector": "ev_supply",
+      "sectorName": "電動車供應鏈",
+      "prev": -0.733,
+      "current": -0.609,
+      "delta": 0.124,
+      "momentum": "↑ 壓力緩解",
+      "accelerating": true
+    },
+    {
+      "sector": "display",
+      "sectorName": "面板/顯示",
+      "prev": -0.869,
+      "current": -0.759,
+      "delta": 0.11,
+      "momentum": "↑ 壓力緩解",
+      "accelerating": true
+    }
+  ],
+  "topDeltas": [
+    {
+      "sector": "steel",
+      "sectorName": "鋼鐵",
+      "prev": -0.713,
+      "current": -0.521,
+      "delta": 0.192,
+      "momentum": "↑ 壓力緩解",
+      "accelerating": true
+    },
+    {
+      "sector": "ev_supply",
+      "sectorName": "電動車供應鏈",
+      "prev": -0.733,
+      "current": -0.609,
+      "delta": 0.124,
+      "momentum": "↑ 壓力緩解",
+      "accelerating": true
+    },
+    {
+      "sector": "display",
+      "sectorName": "面板/顯示",
+      "prev": -0.869,
+      "current": -0.759,
+      "delta": 0.11,
+      "momentum": "↑ 壓力緩解",
+      "accelerating": true
+    }
+  ],
   "totalAnalyzed": 100,
   "sources": [
     "Google News"
   ],
   "sectorState": {
     "foundry": {
-      "score": -0.841,
-      "lastUpdated": "2026-04-08T09:13:05.702Z",
+      "score": -0.828,
+      "lastUpdated": "2026-04-08T13:50:09.939Z",
       "deltaHistory": [
-        -0.0040000000000000036,
         0.04300000000000004,
         0.0020000000000000018,
         -0.0040000000000000036,
@@ -445,14 +505,14 @@
         0.028999999999999915,
         0.0030000000000000027,
         -0.06799999999999995,
-        0.01200000000000001
+        0.01200000000000001,
+        0.013000000000000012
       ]
     },
     "shipping": {
-      "score": -0.96,
-      "lastUpdated": "2026-04-08T09:13:05.702Z",
+      "score": -0.961,
+      "lastUpdated": "2026-04-08T13:50:09.939Z",
       "deltaHistory": [
-        0.0020000000000000018,
         0.0010000000000000009,
         0,
         -0.0030000000000000027,
@@ -461,14 +521,14 @@
         0.019999999999999907,
         -0.0020000000000000018,
         -0.017999999999999905,
-        -0.0050000000000000044
+        -0.0050000000000000044,
+        -0.0010000000000000009
       ]
     },
     "steel": {
-      "score": -0.713,
-      "lastUpdated": "2026-04-08T09:13:05.702Z",
+      "score": -0.521,
+      "lastUpdated": "2026-04-08T13:50:09.939Z",
       "deltaHistory": [
-        0.016000000000000014,
         0.08899999999999997,
         0,
         -0.009000000000000008,
@@ -477,12 +537,13 @@
         0.04400000000000004,
         0.026999999999999913,
         -0.07399999999999995,
-        0.026000000000000023
+        0.026000000000000023,
+        0.19199999999999995
       ]
     },
     "ic_design": {
       "score": -1,
-      "lastUpdated": "2026-04-08T09:13:05.702Z",
+      "lastUpdated": "2026-04-08T13:50:09.939Z",
       "deltaHistory": [
         0,
         0,
@@ -497,10 +558,9 @@
       ]
     },
     "display": {
-      "score": -0.869,
-      "lastUpdated": "2026-04-08T09:13:05.702Z",
+      "score": -0.759,
+      "lastUpdated": "2026-04-08T13:50:09.939Z",
       "deltaHistory": [
-        -0.0010000000000000009,
         0.04200000000000004,
         0,
         -0.008000000000000007,
@@ -509,14 +569,14 @@
         0.008000000000000007,
         0.02100000000000002,
         -0.02100000000000002,
-        0.025000000000000022
+        0.025000000000000022,
+        0.10999999999999999
       ]
     },
     "ev_supply": {
-      "score": -0.733,
-      "lastUpdated": "2026-04-08T09:13:05.702Z",
+      "score": -0.609,
+      "lastUpdated": "2026-04-08T13:50:09.939Z",
       "deltaHistory": [
-        -0.0020000000000000018,
         0.05799999999999994,
         0,
         -0.006000000000000005,
@@ -525,14 +585,14 @@
         0.02100000000000002,
         0.02200000000000002,
         -0.030000000000000027,
-        0.031000000000000028
+        0.031000000000000028,
+        0.124
       ]
     },
     "ai_server": {
-      "score": 0.065,
-      "lastUpdated": "2026-04-08T09:13:05.702Z",
+      "score": 0.048,
+      "lastUpdated": "2026-04-08T13:50:09.939Z",
       "deltaHistory": [
-        -0.062,
         -0.009000000000000001,
         -0.003999999999999997,
         -0.0020000000000000018,
@@ -541,14 +601,14 @@
         0.038000000000000006,
         -0.036000000000000004,
         -0.027999999999999997,
-        -0.0020000000000000018
+        -0.0020000000000000018,
+        -0.017
       ]
     },
     "defense": {
-      "score": 0.027,
-      "lastUpdated": "2026-04-08T09:13:05.702Z",
+      "score": 0.052,
+      "lastUpdated": "2026-04-08T13:50:09.939Z",
       "deltaHistory": [
-        0.0010000000000000009,
         -0.029,
         0,
         0,
@@ -557,7 +617,8 @@
         0,
         0,
         0,
-        0.027
+        0.027,
+        0.024999999999999998
       ]
     },
     "solar": {
@@ -593,10 +654,9 @@
       ]
     },
     "petrochemical": {
-      "score": 0.012,
-      "lastUpdated": "2026-04-08T09:13:05.702Z",
+      "score": 0.005,
+      "lastUpdated": "2026-04-08T13:50:09.939Z",
       "deltaHistory": [
-        -0.01200000000000001,
         -0.002999999999999989,
         0,
         0,
@@ -605,14 +665,14 @@
         -0.05499999999999999,
         -0.002,
         -0.0010000000000000009,
-        -0.0009999999999999992
+        -0.0009999999999999992,
+        -0.007
       ]
     },
     "semiconductor_equip": {
-      "score": 0.005,
-      "lastUpdated": "2026-04-08T09:13:05.702Z",
+      "score": 0.006,
+      "lastUpdated": "2026-04-08T13:50:09.939Z",
       "deltaHistory": [
-        -0.001,
         0,
         0,
         0,
@@ -621,14 +681,14 @@
         0.006999999999999999,
         -0.002999999999999999,
         -0.001,
-        0
+        0,
+        0.001
       ]
     },
     "robotics": {
-      "score": 0.005,
-      "lastUpdated": "2026-04-08T09:13:05.702Z",
+      "score": 0.006,
+      "lastUpdated": "2026-04-08T13:50:09.939Z",
       "deltaHistory": [
-        -0.001,
         0,
         0,
         0,
@@ -637,14 +697,14 @@
         0.006999999999999999,
         -0.002999999999999999,
         -0.001,
-        0
+        0,
+        0.001
       ]
     },
     "packaging": {
-      "score": -0.003,
-      "lastUpdated": "2026-04-08T09:13:05.702Z",
+      "score": -0.001,
+      "lastUpdated": "2026-04-08T13:50:09.939Z",
       "deltaHistory": [
-        -0.008,
         -0.0009999999999999992,
         0,
         0.005999999999999999,
@@ -653,7 +713,8 @@
         -0.001,
         0.001,
         0,
-        -0.001
+        -0.001,
+        0.002
       ]
     },
     "banking": {
@@ -680,10 +741,9 @@
       ]
     },
     "gaming": {
-      "score": 0,
-      "lastUpdated": "2026-04-06T20:48:04.260Z",
+      "score": 0.006,
+      "lastUpdated": "2026-04-08T13:50:09.939Z",
       "deltaHistory": [
-        0,
         -0.002,
         0,
         -0.001,
@@ -692,7 +752,8 @@
         0,
         0,
         0,
-        0
+        0,
+        0.006
       ]
     },
     "pcb": {
