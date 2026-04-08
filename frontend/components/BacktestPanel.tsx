@@ -76,7 +76,7 @@ export function BacktestPanel({ data }: Props) {
                 return (
                   <tr key={ticker} className="hover:bg-zinc-50/60 dark:hover:bg-zinc-800/20 transition-colors">
                     <td className="px-4 py-2 font-mono font-semibold text-zinc-800 dark:text-zinc-200">{ticker}</td>
-                    <td className="px-3 py-2 text-zinc-600 dark:text-zinc-400 truncate max-w-[8rem]">{r.name_zh}</td>
+                    <td className="px-3 py-2 text-zinc-600 dark:text-zinc-400 truncate max-w-32">{r.name_zh}</td>
                     <td className={`px-3 py-2 text-right font-semibold ${returnColor(r.total_return_pct)}`}>
                       {r.total_return_pct >= 0 ? "+" : ""}{r.total_return_pct.toFixed(2)}%
                     </td>

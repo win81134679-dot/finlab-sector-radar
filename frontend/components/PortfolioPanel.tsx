@@ -105,8 +105,8 @@ export function PortfolioPanel({ holdings, pnl, hasComposite, exitAlerts }: Prop
                 return (
                   <tr key={ticker} className="hover:bg-zinc-50/60 dark:hover:bg-zinc-800/20 transition-colors">
                     <td className="px-4 py-2 font-mono font-semibold text-zinc-800 dark:text-zinc-200">{ticker}</td>
-                    <td className="px-3 py-2 text-zinc-700 dark:text-zinc-300 truncate max-w-[7rem]">{pos.name_zh}</td>
-                    <td className="px-3 py-2 text-zinc-500 dark:text-zinc-400 truncate max-w-[6rem]">{getSectorName(pos.sector)}</td>
+                    <td className="px-3 py-2 text-zinc-700 dark:text-zinc-300 truncate max-w-28">{pos.name_zh}</td>
+                    <td className="px-3 py-2 text-zinc-500 dark:text-zinc-400 truncate max-w-24">{getSectorName(pos.sector)}</td>
                     <td className="px-3 py-2 text-right font-mono">
                       <span className={pos.composite_score >= 0 ? "text-emerald-600 dark:text-emerald-400" : "text-red-500"}>
                         {pos.composite_score >= 0 ? "+" : ""}{pos.composite_score.toFixed(2)}

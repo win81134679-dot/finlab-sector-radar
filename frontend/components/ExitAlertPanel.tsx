@@ -129,7 +129,7 @@ export function ExitAlertPanel({ exitAlerts, pnl }: Props) {
                       <span className="font-mono font-semibold text-zinc-800 dark:text-zinc-200">{ticker}</span>
                       <span className="ml-1.5 text-zinc-500 dark:text-zinc-400">{alert.name_zh}</span>
                     </td>
-                    <td className="px-3 py-2.5 text-zinc-500 dark:text-zinc-400 truncate max-w-[6rem]">{alert.sector_name}</td>
+                    <td className="px-3 py-2.5 text-zinc-500 dark:text-zinc-400 truncate max-w-24">{alert.sector_name}</td>
                     <td className="px-3 py-2.5 w-32">
                       <AlertBar score={alert.score} action={alert.action} />
                     </td>
@@ -142,7 +142,7 @@ export function ExitAlertPanel({ exitAlerts, pnl }: Props) {
                     <td className="px-3 py-2.5 hidden sm:table-cell">
                       <div className="flex flex-wrap gap-1">
                         {alert.triggers.slice(0, 3).map((t, i) => (
-                          <span key={i} className="inline-block px-1.5 py-0.5 text-[10px] rounded bg-zinc-100 dark:bg-zinc-800 text-zinc-600 dark:text-zinc-400 truncate max-w-[10rem]" title={t}>
+                          <span key={i} className="inline-block px-1.5 py-0.5 text-[10px] rounded bg-zinc-100 dark:bg-zinc-800 text-zinc-600 dark:text-zinc-400 truncate max-w-40" title={t}>
                             {t}
                           </span>
                         ))}
