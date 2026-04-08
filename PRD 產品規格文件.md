@@ -397,6 +397,20 @@ graph LR
 | **後置條件** | 使用者了解持有板塊的週期位置和出場時機 |
 | **商業規則** | BR-005: 過熱期 = total ≥ 6.5<br>BR-006: 加速期 = total ≥ 5 或 (total ≥ 4 且 chip ≥ 1)<br>BR-007: 確認期 = inst ≥ 0.5 且 tech ≥ 0.5<br>BR-008: 萌芽期 = (rev ≥ 0.5 或 inv ≥ 0.5) 且 inst < 0.5 且 tech < 0.5 |
 
+#### UC-003a：查看隨日出場訊號提醒
+
+| 欄位 | 內容 |
+|------|------|
+| **UC-ID** | UC-003a |
+| **名稱** | 查看持倉個股的隨日出場警報 |
+| **Actor** | 散戶投資人 |
+| **前置條件** | UC-003 已完成，且持倉資料已生成 |
+| **主流程** | 1. 進入「長線趨勢 › 建議持倉」子頁籤<br>2. 頂部顯示 ExitAlertPanel 隨日操作提醒<br>3. 若系統性風險升溫（≥3 板塊同時警戒）顯示紅色橫幅<br>4. 操作摘要卡片顯示出場、減碼、留意、安全各幾檔<br>5. 持倉警報表顯示每檔詳細：警報分數條、趨勢箭頭、觸發因子、損益、行動建議<br>6. 底部可展開學術方法論說明 |
+| **替代流程** | A1: 無持倉資料 → 不顯示 ExitAlertPanel<br>A2: 無任何警報 → 不顯示面板（靠靜隱藏） |
+| **例外流程** | E1: 前日快照不存在 → delta 顯示「—」，不計算加速度因子 |
+| **後置條件** | 使用者知道哪些持倉明日需要採取行動 |
+| **商業規則** | BR-050: 五因子加權模型：RRG 象限衰退 30% + 出場風險加速度 25% + 籌碼信號熄滅 20% + 量價背離 15% + 多板塊共振衰退 10%<br>BR-051: 警報等級 — 0–30=無 / 31–50=留意 / 51–70=減碼 / 71–100=出場<br>BR-052: 僅對加速期、過熱期板塊計算（萌芽/確認期不適用）<br>BR-053: 系統性風險 = ≥3 板塊同時 exit_risk ≥ 56（Condorcet 1785） |
+
 #### UC-004：查看宏觀環境面板
 
 | 欄位 | 內容 |
@@ -3141,6 +3155,7 @@ output/
 | UpdateButton | Client | 手動更新按鈕 |
 | StatusDot | Client | 狀態圓點 |
 | LoadingSkeleton | Client | Loading 骨架 |
+| ExitAlertPanel | Client | 隨日出場警報面板 |
 
 ## 附錄 F：變更日誌
 
@@ -3149,6 +3164,7 @@ output/
 | 1.0 | 2025-03-29 | PRD Generator | 初版完整 PRD 文件 |
 | 1.1 | 2026-04-09 | FinLab Team | UC-001 板塊排序改為投資行動導向（BR-002a）；週期監控面板排序改為加速期優先；雙線共振排序加入週期 tiebreaker |
 | 1.2 | 2026-04-09 | FinLab Team | 統一 7 個元件展開收合過渡動畫：SectorCard 移除硬編碼 max-h-1250 改用 CSS grid-template-rows 0fr→1fr；CommodityAlertBanner / CommodityCard / AccStockCard / MagaWatchlist / ConvergencePanel / TrumpFeedPanel 補上平滑過渡 |
+| 1.3 | 2026-04-09 | FinLab Team | 新增 UC-003a 隨日出場訊號提醒：五因子學術加權模型（RRG 30% + 加速度 25% + 籌碼 20% + 量價 15% + 共振 10%）；新增 exit_alert.py 分析器 + ExitAlertPanel.tsx 前端面板；商業規則 BR-050～BR-053 |
 
 ---
 
