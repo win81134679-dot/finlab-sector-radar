@@ -4,6 +4,7 @@ import {
   CYCLE_STAGE_CONFIG,
   EXIT_RISK_CONFIG,
   SIGNAL_NAMES,
+  CYCLE_SORT_WEIGHT,
   signalState,
   changePctColor,
   formatChangePct,
@@ -110,6 +111,58 @@ describe("sortedSectors", () => {
     expect(result[0].id).toBe("y");
     expect(result[1].id).toBe("x");
   });
+
+  // ── 投資行動導向排序 ──────────────────────────────────────────────────────
+
+  const sig7 = [1,1,1,1,1,0,0] as [number,number,number,number,number,number,number];
+
+  it("強烈關注: 確認期排在萌芽期前，萌芽期排在加速期前，加速期排在過熱期前", () => {
+    const sectors = {
+      overheat: { name_zh: "過熱", total: 6.5, signals: sig7, level: "強烈關注" as const, cycle_stage: "過熱期" as const, exit_risk: { score: 60, action: "減碼" as const, triggers: [], rs_quadrant: "" }, stocks: [] },
+      sprout:   { name_zh: "萌芽", total: 4,   signals: sig7, level: "強烈關注" as const, cycle_stage: "萌芽期" as const, exit_risk: { score: 0, action: "持有" as const, triggers: [], rs_quadrant: "" }, stocks: [] },
+      accel:    { name_zh: "加速", total: 5.5, signals: sig7, level: "強烈關注" as const, cycle_stage: "加速期" as const, exit_risk: { score: 0, action: "持有" as const, triggers: [], rs_quadrant: "" }, stocks: [] },
+      confirm:  { name_zh: "確認", total: 4,   signals: sig7, level: "強烈關注" as const, cycle_stage: "確認期" as const, exit_risk: { score: 0, action: "持有" as const, triggers: [], rs_quadrant: "" }, stocks: [] },
+    };
+    const ids = sortedSectors(sectors).map(s => s.id);
+    expect(ids).toEqual(["confirm", "sprout", "accel", "overheat"]);
+  });
+
+  it("強烈關注: 同週期階段按出場風險升序（低風險優先）", () => {
+    const sectors = {
+      risky: { name_zh: "高風險", total: 5, signals: sig7, level: "強烈關注" as const, cycle_stage: "加速期" as const, exit_risk: { score: 40, action: "留意" as const, triggers: [], rs_quadrant: "" }, stocks: [] },
+      safe:  { name_zh: "低風險", total: 5, signals: sig7, level: "強烈關注" as const, cycle_stage: "加速期" as const, exit_risk: { score: 10, action: "持有" as const, triggers: [], rs_quadrant: "" }, stocks: [] },
+    };
+    const ids = sortedSectors(sectors).map(s => s.id);
+    expect(ids).toEqual(["safe", "risky"]);
+  });
+
+  it("強烈關注: 同週期+同風險按 total 降序", () => {
+    const sectors = {
+      low:  { name_zh: "低分", total: 4,   signals: sig7, level: "強烈關注" as const, cycle_stage: "確認期" as const, exit_risk: { score: 0, action: "持有" as const, triggers: [], rs_quadrant: "" }, stocks: [] },
+      high: { name_zh: "高分", total: 5.5, signals: sig7, level: "強烈關注" as const, cycle_stage: "確認期" as const, exit_risk: { score: 0, action: "持有" as const, triggers: [], rs_quadrant: "" }, stocks: [] },
+    };
+    const ids = sortedSectors(sectors).map(s => s.id);
+    expect(ids).toEqual(["high", "low"]);
+  });
+
+  it("強烈關注: null cycle_stage 排在有明確週期的板塊之後", () => {
+    const sectors = {
+      unknown: { name_zh: "未知", total: 5, signals: sig7, level: "強烈關注" as const, cycle_stage: null,             exit_risk: { score: 0, action: "持有" as const, triggers: [], rs_quadrant: "" }, stocks: [] },
+      known:   { name_zh: "已知", total: 4, signals: sig7, level: "強烈關注" as const, cycle_stage: "過熱期" as const, exit_risk: { score: 60, action: "減碼" as const, triggers: [], rs_quadrant: "" }, stocks: [] },
+    };
+    const ids = sortedSectors(sectors).map(s => s.id);
+    expect(ids).toEqual(["known", "unknown"]);
+  });
+
+  it("觀察中: 同 total 按 rs_momentum 降序（正動量優先）", () => {
+    const sectors = {
+      weak:   { name_zh: "弱勢", total: 3, signals: sig7, level: "觀察中" as const, rs_momentum: -0.01, stocks: [] },
+      strong: { name_zh: "強勢", total: 3, signals: sig7, level: "觀察中" as const, rs_momentum: 0.05,  stocks: [] },
+      nodata: { name_zh: "無資料", total: 3, signals: sig7, level: "觀察中" as const, rs_momentum: null, stocks: [] },
+    };
+    const ids = sortedSectors(sectors).map(s => s.id);
+    expect(ids).toEqual(["strong", "nodata", "weak"]);
+  });
 });
 
 // ── formatRelativeTime ──────────────────────────────────────────────────────
@@ -159,6 +212,14 @@ describe("CYCLE_STAGE_CONFIG", () => {
     expect(Object.keys(CYCLE_STAGE_CONFIG)).toEqual(
       expect.arrayContaining(["萌芽期", "確認期", "加速期", "過熱期"])
     );
+  });
+});
+
+describe("CYCLE_SORT_WEIGHT", () => {
+  it("確認期 < 萌芽期 < 加速期 < 過熱期", () => {
+    expect(CYCLE_SORT_WEIGHT["確認期"]).toBeLessThan(CYCLE_SORT_WEIGHT["萌芽期"]);
+    expect(CYCLE_SORT_WEIGHT["萌芽期"]).toBeLessThan(CYCLE_SORT_WEIGHT["加速期"]);
+    expect(CYCLE_SORT_WEIGHT["加速期"]).toBeLessThan(CYCLE_SORT_WEIGHT["過熱期"]);
   });
 });
 

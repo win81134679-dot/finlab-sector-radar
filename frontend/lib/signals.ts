@@ -72,6 +72,15 @@ export const CYCLE_STAGE_CONFIG = {
 
 export type CycleStageKey = keyof typeof CYCLE_STAGE_CONFIG;
 
+// 週期階段排序權重：確認期最優先（黃金建倉窗口），過熱期最末
+export const CYCLE_SORT_WEIGHT: Record<string, number> = {
+  "確認期": 0,  // 法人＋技術雙確認，最佳進場
+  "萌芽期": 1,  // 基本面拐點，早期觀察
+  "加速期": 2,  // 動能強勁，持股為主
+  "過熱期": 3,  // 高追風險，需出場計畫
+};
+const CYCLE_SORT_WEIGHT_DEFAULT = 4; // 無週期階段
+
 // 出場風險等級設定（同步 Python cycle_exit.py 行動建議）
 export const EXIT_RISK_CONFIG = {
   "持有": {
@@ -153,7 +162,10 @@ export function isDataStale(runAt: string): boolean {
   }
 }
 
-// 過濾並排序板塊（強烈關注優先），返回含 id 的陣列
+// 過濾並排序板塊（投資行動導向），返回含 id 的陣列
+// 強烈關注：週期階段(確認>萌芽>加速>過熱) → 出場風險↑ → 亮燈數↓
+// 觀察中：亮燈數↓ → RS動量↓
+// 忽略：亮燈數↓
 export function sortedSectors(
   sectors: Record<string, SectorData>
 ): Array<{ id: string } & SectorData> {
@@ -163,6 +175,25 @@ export function sortedSectors(
       const wa = LEVEL_CONFIG[a.level]?.sortWeight ?? 3;
       const wb = LEVEL_CONFIG[b.level]?.sortWeight ?? 3;
       if (wa !== wb) return wa - wb;
+
+      // 「強烈關注」群組：最佳進場時機排最前
+      if (a.level === "強烈關注") {
+        const ca = CYCLE_SORT_WEIGHT[a.cycle_stage ?? ""] ?? CYCLE_SORT_WEIGHT_DEFAULT;
+        const cb = CYCLE_SORT_WEIGHT[b.cycle_stage ?? ""] ?? CYCLE_SORT_WEIGHT_DEFAULT;
+        if (ca !== cb) return ca - cb;
+        const ea = a.exit_risk?.score ?? 0;
+        const eb = b.exit_risk?.score ?? 0;
+        if (ea !== eb) return ea - eb; // 低風險優先
+        return b.total - a.total;
+      }
+
+      // 「觀察中」群組：接近升級門檻 + 動量正向優先
+      if (a.level === "觀察中") {
+        if (a.total !== b.total) return b.total - a.total;
+        return (b.rs_momentum ?? 0) - (a.rs_momentum ?? 0);
+      }
+
+      // 「忽略」群組
       return b.total - a.total;
     });
 }
