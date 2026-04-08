@@ -38,7 +38,8 @@ function useRowSync() {
     [expandedRows],
   );
 
-  const toggle = useCallback((cat: string, idx: number, listLen: number) => {
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
+  const toggle = useCallback((cat: string, idx: number, _listLen: number) => {
     const rowIdx = Math.floor(idx / 3);
     setExpandedRows(prev => {
       const cur = new Set(prev[cat] ?? []);

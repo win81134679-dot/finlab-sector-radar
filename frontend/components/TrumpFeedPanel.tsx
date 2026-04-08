@@ -460,7 +460,7 @@ export function TrumpFeedPanel({ compact = false, maxPosts = 10 }: Props) {
 
   useEffect(() => {
     const controller = new AbortController();
-    setStatus("loading");
+    queueMicrotask(() => setStatus("loading"));
 
     fetch("/api/trump-feed", { signal: controller.signal })
       .then(async (res) => {

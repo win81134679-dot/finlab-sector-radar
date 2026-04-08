@@ -36,7 +36,7 @@ function useOHLCV(stockId: string, enabled: boolean) {
   useEffect(() => {
     if (!enabled || fetchedRef.current || !GITHUB_RAW_BASE_ST) return;
     fetchedRef.current = true;
-    setLoading(true);
+    queueMicrotask(() => setLoading(true));
     fetch(`${GITHUB_RAW_BASE_ST}/output/ohlcv/${stockId}.json`, { cache: "no-store" })
       .then((r) => r.json())
       .then((d: OHLCBar[]) => setFullData(Array.isArray(d) ? d : []))

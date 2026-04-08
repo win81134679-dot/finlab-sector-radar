@@ -45,6 +45,9 @@ frontend/.next/
 frontend/out/
 frontend/.env.local
 
+# Vercel
+.vercel/
+
 # OS
 .DS_Store
 Thumbs.db

@@ -1,0 +1,12 @@
+# 強制 GitHub Actions YAML 使用 LF 換行符（CRLF 會導致 workflow_dispatch 失效）
+*.yml text eol=lf
+*.yaml text eol=lf
+
+# Shell scripts
+*.sh text eol=lf
+
+# Python
+*.py text eol=lf
+
+# Keep Windows batch files as CRLF
+*.bat text eol=crlf

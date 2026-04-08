@@ -6,7 +6,6 @@ import {
   ResponsiveContainer, Legend, CartesianGrid
 } from "recharts";
 import type { HistoryIndex } from "@/lib/types";
-import { HISTORY_RANGE_DAYS } from "@/lib/signals";
 import { format, parseISO } from "date-fns";
 import { zhTW } from "date-fns/locale";
 

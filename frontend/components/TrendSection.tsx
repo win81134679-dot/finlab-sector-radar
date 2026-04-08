@@ -4,9 +4,8 @@
 import { useState } from "react";
 import dynamic from "next/dynamic";
 import type { HistoryIndex, SignalSnapshot } from "@/lib/types";
-import { HISTORY_RANGE_DAYS, sortedSectors, CYCLE_STAGE_CONFIG, type CycleStageKey } from "@/lib/signals";
+import { sortedSectors, CYCLE_STAGE_CONFIG, type CycleStageKey } from "@/lib/signals";
 import { HistoryNav } from "./HistoryNav";
-import { SkeletonCard } from "./SkeletonCard";
 
 // TrendChart 只在 Client 端渲染（Recharts 不支援 SSR）
 const TrendChartDynamic = dynamic(

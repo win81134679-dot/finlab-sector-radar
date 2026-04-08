@@ -1,36 +1,56 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# FinLab 板塊偵測 — Frontend
 
-## Getting Started
+台股板塊偵測 Dashboard，基於 Next.js 16 + React 19 + TypeScript，部署於 Vercel。
 
-First, run the development server:
+## 技術棧
+
+- **Next.js 16** — App Router, Server Components, ISR (30 分鐘)
+- **React 19** — 最新版 Concurrent Features
+- **TypeScript** — strict 模式
+- **Tailwind CSS 4** — 樣式系統
+- **Zod** — 外部 JSON 驗證
+- **SWR / Zustand** — Client-side 狀態管理
+- **Recharts / lightweight-charts** — 圖表
+
+## 快速開始
 
 ```bash
+# 安裝依賴
+npm install
+
+# 設定環境變數
+cp .env.example .env.local
+# 編輯 .env.local 填入必要值
+
+# 開發伺服器
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+開啟 [http://localhost:3000](http://localhost:3000) 檢視。
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 指令
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+| 指令 | 用途 |
+|------|------|
+| `npm run dev` | 本機開發 |
+| `npm run build` | 正式打包 |
+| `npm test` | 執行 Vitest 單元測試 |
+| `npm run test:coverage` | 測試覆蓋率 |
+| `npm run lint` | ESLint 檢查 |
 
-## Learn More
+## 資料流
 
-To learn more about Next.js, take a look at the following resources:
+```
+Python (src/analyzers/) → output/*.json → git push
+  → GitHub Raw URL → fetcher.ts (Zod 驗證)
+  → page.tsx (Server Component, ISR 30min)
+  → TabContainer → 各 Panel 元件
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 環境變數
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+參見 [.env.example](.env.example)。
 
-## Deploy on Vercel
+## 部署
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+透過 Vercel 部署，連結 GitHub repo 後自動 CI/CD。

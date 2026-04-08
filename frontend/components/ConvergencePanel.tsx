@@ -46,7 +46,7 @@ function useOHLCV(stockId: string, enabled: boolean) {
     if (!enabled || fetchedRef.current || !GITHUB_RAW_BASE_CP) return;
     fetchedRef.current = true;
     let cancelled = false;
-    setLoading(true);
+    queueMicrotask(() => { if (!cancelled) setLoading(true); });
     fetch(`${GITHUB_RAW_BASE_CP}/output/ohlcv/${stockId}.json`, { cache: "no-store" })
       .then(r => (r.ok ? r.json() : null))
       .then((d: OHLCBar[] | null) => { if (!cancelled && d && d.length > 0) setFullData(d); })

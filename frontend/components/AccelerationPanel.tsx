@@ -5,7 +5,6 @@
 import { useState, useMemo, useEffect, useRef } from "react";
 import dynamic from "next/dynamic";
 import type { SignalSnapshot, CompositeSnapshot, HoldingsSnapshot, ExitRisk, OHLCBar } from "@/lib/types";
-import { getSectorName } from "@/lib/sectors";
 import {
   changePctColor, formatChangePct,
   CYCLE_STAGE_CONFIG, type CycleStageKey,
@@ -32,7 +31,7 @@ function useOHLCV(stockId: string, enabled: boolean) {
     if (!enabled || fetchedRef.current || !GITHUB_RAW_BASE) return;
     fetchedRef.current = true;
     let cancelled = false;
-    setLoading(true);
+    queueMicrotask(() => { if (!cancelled) setLoading(true); });
     fetch(`${GITHUB_RAW_BASE}/output/ohlcv/${stockId}.json`, { cache: "no-store" })
       .then(r => (r.ok ? r.json() : null))
       .then((d: OHLCBar[] | null) => { if (!cancelled && d && d.length > 0) setFullData(d); })
@@ -198,7 +197,7 @@ function AccStockCard({ stock, sectorLevel, exitRisk, cycleStage, macroWarning, 
   );
 }
 
-export function AccelerationPanel({ snapshot, composite, holdings }: Props) {
+export function AccelerationPanel({ snapshot, holdings }: Props) {
   const macroWarning = snapshot?.macro_warning === true || snapshot?.macro?.warning === true;
   const [expandedSectors, setExpandedSectors] = useState<Record<string, boolean>>({});
 

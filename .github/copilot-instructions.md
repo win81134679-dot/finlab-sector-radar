@@ -43,12 +43,15 @@ cd frontend
 npm run dev         # 本機開發 http://localhost:3000
 npm run build       # 正式打包（必須通過 TypeScript strict + ESLint）
 npm run lint        # ESLint 檢查
+npm test            # Vitest 單元測試
+npm run test:coverage # 覆蓋率報告
 
 # Python 後端
 pip install -r requirements.txt
 python -m src.main                        # CLI 互動選單
 python scripts/backfill_history.py        # 歷史資料回填
 python scripts/backtest_trump_signals.py  # 川普訊號回測
+python -m pytest tests/ -v               # Python 單元測試
 
 # 型別檢查
 cd frontend && npx tsc --noEmit
@@ -160,3 +163,33 @@ TabContainer → SectorGrid / MacroPanel / CommodityPanel / TrumpFeedPanel ...
 - **Redis 為選填**：`update-trump` 不依賴 Redis 才能運作；Redis 寫入為 best-effort（`void Promise.all`）
 - **`frontend/AGENTS.md` 引用 `@AGENTS.md`**：next.js agent rule 見 `frontend/AGENTS.md`；此檔為全局規則
 - **`next.config.ts` 可能有自訂 headers/rewrites**：修改前先讀取確認
+- **GitHub Actions YAML 必須 LF 換行符**：已透過 `.gitattributes` 強制
+
+---
+
+## 新增分析器 SOP
+
+1. 在 `src/analyzers/` 建立新模組（如 `new_signal.py`）
+2. 實作 `analyze(fetcher, sector_map, config)` 函式，回傳 `Dict[str, Dict]`
+3. 在 `multi_signal.py` 的 `steps` 清單加入 lambda
+4. 分析器將自動平行執行（ThreadPoolExecutor）
+5. 若產出新 JSON 欄位，同步更新：
+   - `frontend/lib/types.ts`（新增 interface）
+   - `frontend/lib/fetcher.ts`（新增 Zod schema + fetch 函式）
+6. 執行 `npm test` + `python -m pytest` 確認無破壞
+
+---
+
+## 測試
+
+### 前端（Vitest）
+
+- 測試檔案位於 `frontend/lib/__tests__/`
+- 覆蓋 `signals.ts`、`trump-nlp.ts`、`fetcher.ts` 的核心邏輯
+- `npm test` 執行、`npm run test:coverage` 查看覆蓋率
+
+### Python（pytest）
+
+- 測試檔案位於 `tests/`
+- 覆蓋 `config.py` 和 `sector_map.py`
+- `python -m pytest tests/ -v` 執行

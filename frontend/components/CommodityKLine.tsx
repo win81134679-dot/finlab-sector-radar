@@ -26,6 +26,7 @@ function agg(data: OHLCBar[], fn: (bars: OHLCBar[], key: string) => OHLCBar, key
 }
 
 function toWeekly(data: OHLCBar[]) {
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   return agg(data, (bars, _k) => ({
     date: bars[0].date, o: bars[0].o,
     h: Math.max(...bars.map(b => b.h)), l: Math.min(...bars.map(b => b.l)),
@@ -144,7 +145,7 @@ export function CommodityKLine({ data: initData, slug, nameZh }: CommodityKLineP
   useEffect(() => {
     if (!GITHUB_RAW_BASE) return;
     let cancelled = false;
-    setLoading(true);
+    queueMicrotask(() => { if (!cancelled) setLoading(true); });
     fetch(`${GITHUB_RAW_BASE}/output/commodities/${slug}.json`, { cache: "no-store" })
       .then(r => (r.ok ? r.json() : null))
       .then((d: OHLCBar[] | null) => {

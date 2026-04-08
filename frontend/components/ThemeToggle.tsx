@@ -4,24 +4,18 @@
 import { useEffect, useState } from "react";
 
 export function ThemeToggle() {
-  const [isDark, setIsDark] = useState(false);
-
-  // 初始化：讀取 localStorage 或系統偏好
-  useEffect(() => {
+  const [isDark, setIsDark] = useState(() => {
+    if (typeof window === "undefined") return false;
     const saved = localStorage.getItem("theme");
-    if (saved === "dark") {
-      setIsDark(true);
-      document.documentElement.classList.add("dark");
-    } else if (saved === "light") {
-      setIsDark(false);
-      document.documentElement.classList.remove("dark");
-    } else {
-      // 系統偏好
-      const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
-      setIsDark(prefersDark);
-      document.documentElement.classList.toggle("dark", prefersDark);
-    }
-  }, []);
+    if (saved === "dark") return true;
+    if (saved === "light") return false;
+    return window.matchMedia("(prefers-color-scheme: dark)").matches;
+  });
+
+  // 初始化：同步 DOM class
+  useEffect(() => {
+    document.documentElement.classList.toggle("dark", isDark);
+  }, [isDark]);
 
   const toggle = () => {
     const next = !isDark;

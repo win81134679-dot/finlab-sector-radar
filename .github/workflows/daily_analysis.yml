@@ -36,6 +36,7 @@ jobs:
   analyze:
     name: 每日板塊分析
     runs-on: ubuntu-latest
+    timeout-minutes: 30
     # 只在非回填模式時執行（workflow_dispatch 手動觸發回填時跳過）
     if: ${{ github.event.inputs.run_backfill != 'true' }}
 
@@ -98,9 +99,12 @@ jobs:
           if ! git diff --staged --quiet; then
             DATE=$(TZ='Asia/Taipei' date +%Y-%m-%d)
             git commit -m "data: ${DATE} 板塊分析更新 [skip ci]"
-            # rebase 拉取遠端最新（避免本地 push 後 remote 超前導致拒絕）
-            git pull --rebase
-            git push
+            # rebase 拉取遠端最新 + 重試（最多 3 次，避免 remote conflict 導致失敗）
+            for i in 1 2 3; do
+              git pull --rebase && git push && break
+              echo "⚠️ push 失敗，第 ${i} 次重試..."
+              sleep 5
+            done
             echo "✅ output/ 已推送"
           else
             echo "ℹ️  output/ 無變更，跳過 commit"
@@ -170,8 +174,11 @@ jobs:
           git add output/history/
           if ! git diff --staged --quiet; then
             git commit -m "data: 歷史回填完成（${{ github.event.inputs.backfill_months || 6 }}個月）[skip ci]"
-            git pull --rebase
-            git push
+            for i in 1 2 3; do
+              git pull --rebase && git push && break
+              echo "⚠️ push 失敗，第 ${i} 次重試..."
+              sleep 5
+            done
             echo "✅ 歷史資料已推送"
           else
             echo "ℹ️  無新資料需要推送"

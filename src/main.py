@@ -43,7 +43,7 @@ from src.reporters.markdown_writer import write_report
 console = Console()
 
 logging.basicConfig(
-    level=logging.WARNING,
+    level=logging.INFO,
     format="%(levelname)s %(name)s — %(message)s",
 )
 

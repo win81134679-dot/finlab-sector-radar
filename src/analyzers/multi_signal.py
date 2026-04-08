@@ -8,6 +8,7 @@ multi_signal.py — 7 燈彙總引擎
 """
 import json
 import logging
+from concurrent.futures import ThreadPoolExecutor, as_completed
 from datetime import datetime
 from pathlib import Path
 from typing import Any, Dict, List, Optional
@@ -72,14 +73,20 @@ def run_all(fetcher, sector_map, config,
     ]
 
     raw: Dict[str, Any] = {}
-    for i, (name, fn) in enumerate(steps):
-        if progress_cb:
-            progress_cb(name, i + 1, len(steps))
-        try:
-            raw[name] = fn()
-        except Exception as e:
-            logger.error(f"{name} 執行失敗: {e}")
-            raw[name] = {}
+    # 使用 ThreadPoolExecutor 平行執行各分析器（每步獨立，無互相依賴）
+    with ThreadPoolExecutor(max_workers=min(len(steps), 4)) as pool:
+        future_map = {
+            pool.submit(fn): name for name, fn in steps
+        }
+        for i, future in enumerate(as_completed(future_map)):
+            name = future_map[future]
+            if progress_cb:
+                progress_cb(name, i + 1, len(steps))
+            try:
+                raw[name] = future.result()
+            except Exception as e:
+                logger.error(f"{name} 執行失敗: {e}")
+                raw[name] = {}
 
     # 宏觀是全局燈（dict，非 per-sector）
     macro_result: Dict[str, Any] = raw.get("燈7 宏觀濾網", {})

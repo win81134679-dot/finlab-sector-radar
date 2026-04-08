@@ -75,6 +75,7 @@ function applyTimeframe(data: OHLCBar[], tf: Timeframe, dayPeriod: DayPeriod): O
 }
 
 // ── 時間軸格式化（修正 NaN/NaN：v5 傳入 BusinessDay 物件非 Unix 戳）──────
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 function fmtAxisTime(time: Time, tf: Timeframe, _period?: DayPeriod): string {
   let y = 0, mo = 0, d = 0;
   if (typeof time === "number") {
@@ -122,7 +123,7 @@ export function StockKLine({ data: initData, stockId, fullData: externalData }: 
 
   // 外部資料更新時同步（ConvergencePanel 共用 hook 提供）
   useEffect(() => {
-    if (externalData && externalData.length > 0) setFullData(externalData);
+    if (externalData && externalData.length > 0) queueMicrotask(() => setFullData(externalData));
   }, [externalData]);
 
   // 無外部資料時才自行抓取
@@ -130,7 +131,7 @@ export function StockKLine({ data: initData, stockId, fullData: externalData }: 
     if (externalData && externalData.length > 0) return;
     if (!GITHUB_RAW_BASE) return;
     let cancelled = false;
-    setLoading(true);
+    queueMicrotask(() => { if (!cancelled) setLoading(true); });
     fetch(`${GITHUB_RAW_BASE}/output/ohlcv/${stockId}.json`, { cache: "no-store" })
       .then(r => (r.ok ? r.json() : null))
       .then((d: OHLCBar[] | null) => {

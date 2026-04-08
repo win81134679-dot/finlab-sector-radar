@@ -13,9 +13,12 @@ import { NextResponse } from "next/server";
 
 export const runtime = "nodejs";
 
-// SHA-256("fd33802001") — 重新計算指令:
+// SHA-256 密碼雜湊 — 優先從環境變數讀取，fallback 硬編碼值
+// 重新計算指令:
 //   node -e "const c=require('crypto');console.log(c.createHash('sha256').update('YOUR_PASSWORD').digest('hex'))"
-const EXPECTED_HASH = "9742a9ab0bad9cec3be88eb0911befc2b8cac865cf9cec9dd9be0a3461b61a07";
+const EXPECTED_HASH =
+  process.env.MANUAL_UPDATE_HASH ||
+  "9742a9ab0bad9cec3be88eb0911befc2b8cac865cf9cec9dd9be0a3461b61a07";
 
 // ── Rate limiting (in-memory, per serverless warm instance) ──────────────────
 const MAX_ATTEMPTS = 5;
@@ -69,17 +72,22 @@ export async function POST(request: NextRequest) {
     );
   }
 
-  // 3. 解析請求主體
+  // 3. 解析請求主體 + Zod 驗證
   let password: string;
   try {
     const body = await request.json();
-    password = typeof body?.password === "string" ? body.password : "";
+    if (
+      body === null ||
+      typeof body !== "object" ||
+      typeof body.password !== "string" ||
+      body.password.length === 0 ||
+      body.password.length > 128
+    ) {
+      return NextResponse.json({ ok: false, error: "無效請求" }, { status: 400 });
+    }
+    password = body.password;
   } catch {
     return NextResponse.json({ ok: false, error: "無效請求" }, { status: 400 });
-  }
-
-  if (!password) {
-    return NextResponse.json({ ok: false, error: "請輸入密碼" }, { status: 400 });
   }
 
   // 4. 時序安全的密碼比對

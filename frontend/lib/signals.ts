@@ -16,28 +16,28 @@ export const LEVEL_CONFIG = {
   強烈關注: {
     emoji: "🔥",
     label: "強烈關注",
-    color: "#FF4D4F",
-    bgClass: "bg-red-500/10 border-red-300 dark:border-red-500/30",
-    textClass: "text-red-600 dark:text-red-400",
-    badgeClass: "bg-red-500/20 text-red-700 dark:text-red-300 border border-red-300 dark:border-red-500/30",
+    color: "#B91C1C",
+    bgClass: "bg-[var(--danger-bg)] border-[var(--danger-border)]",
+    textClass: "text-[var(--danger-text)]",
+    badgeClass: "bg-[var(--danger-bg)] text-[var(--danger-text)] border border-[var(--danger-border)]",
     sortWeight: 0,
   },
   觀察中: {
     emoji: "👀",
     label: "觀察中",
-    color: "#FAAD14",
-    bgClass: "bg-amber-500/10 border-amber-300 dark:border-amber-500/30",
-    textClass: "text-amber-600 dark:text-amber-400",
-    badgeClass: "bg-amber-500/20 text-amber-700 dark:text-amber-300 border border-amber-300 dark:border-amber-500/30",
+    color: "#B45309",
+    bgClass: "bg-[var(--warn-bg)] border-[var(--warn-border)]",
+    textClass: "text-[var(--warn-text)]",
+    badgeClass: "bg-[var(--warn-bg)] text-[var(--warn-text)] border border-[var(--warn-border)]",
     sortWeight: 1,
   },
   忽略: {
     emoji: "💤",
     label: "忽略",
-    color: "#52525b",
-    bgClass: "bg-zinc-100/80 dark:bg-zinc-800/50 border-zinc-300 dark:border-zinc-700/30",
-    textClass: "text-zinc-600 dark:text-zinc-500",
-    badgeClass: "bg-zinc-200/60 dark:bg-zinc-700/40 text-zinc-600 dark:text-zinc-500 border border-zinc-300 dark:border-zinc-700/30",
+    color: "#6B7399",
+    bgClass: "bg-[var(--chip-bg)] border-[var(--border)]",
+    textClass: "text-[var(--text-muted)]",
+    badgeClass: "bg-[var(--chip-bg)] text-[var(--text-muted)] border border-[var(--border)]",
     sortWeight: 2,
   },
 } as const;
@@ -47,25 +47,25 @@ export const CYCLE_STAGE_CONFIG = {
   "萌芽期": {
     emoji:   "🌱",
     label:   "萌芽期",
-    chipCls: "bg-lime-100/80 dark:bg-lime-900/30 text-lime-700 dark:text-lime-300 border border-lime-200 dark:border-lime-700/40",
+    chipCls: "bg-[var(--chip-bg)] text-[var(--accent2)] border border-[var(--accent2)]/20",
     tooltip: "基本面出現拐點，觀察訊號，可小量試探性佈局",
   },
   "確認期": {
     emoji:   "🌿",
     label:   "確認期",
-    chipCls: "bg-emerald-100/80 dark:bg-emerald-900/30 text-emerald-700 dark:text-emerald-300 border border-emerald-200 dark:border-emerald-700/40",
+    chipCls: "bg-[var(--ok-bg)] text-[var(--ok-text)] border border-[var(--ok-border)]",
     tooltip: "法人入場＋技術突破，最佳主力建倉時機",
   },
   "加速期": {
     emoji:   "🌳",
     label:   "加速期",
-    chipCls: "bg-green-100/80 dark:bg-green-900/30 text-green-700 dark:text-green-300 border border-green-200 dark:border-green-700/40",
+    chipCls: "bg-[var(--ok-bg)] text-[var(--ok-text)] border border-[var(--ok-border)] font-semibold",
     tooltip: "多燈齊亮，動能強勁，持股續抱但設置動態停利",
   },
   "過熱期": {
     emoji:   "🍂",
     label:   "過熱期",
-    chipCls: "bg-amber-100/80 dark:bg-amber-900/20 text-amber-800 dark:text-amber-300 border border-amber-300 dark:border-amber-600/40",
+    chipCls: "bg-[var(--warn-bg)] text-[var(--warn-text)] border border-[var(--warn-border)]",
     tooltip: "全燈齊亮，留意高追風險，宜分批出場",
   },
 } as const;
@@ -77,26 +77,26 @@ export const EXIT_RISK_CONFIG = {
   "持有": {
     emoji: "✅",
     label: "持有",
-    chipCls: "bg-emerald-100/80 dark:bg-emerald-900/30 text-emerald-700 dark:text-emerald-300 border border-emerald-200 dark:border-emerald-700/40",
-    barColor: "bg-emerald-500",
+    chipCls: "bg-[var(--ok-bg)] text-[var(--ok-text)] border border-[var(--ok-border)]",
+    barColor: "bg-[var(--ok-text)]",
   },
   "留意": {
     emoji: "⚡",
     label: "留意",
-    chipCls: "bg-yellow-100/80 dark:bg-yellow-900/30 text-yellow-700 dark:text-yellow-300 border border-yellow-200 dark:border-yellow-700/40",
-    barColor: "bg-yellow-500",
+    chipCls: "bg-[var(--warn-bg)] text-[var(--warn-text)] border border-[var(--warn-border)]",
+    barColor: "bg-[var(--warn-text)]",
   },
   "減碼": {
     emoji: "🔶",
     label: "減碼",
-    chipCls: "bg-orange-100/80 dark:bg-orange-900/30 text-orange-700 dark:text-orange-300 border border-orange-200 dark:border-orange-700/40",
+    chipCls: "bg-[var(--warn-bg)] text-[var(--warn-text)] border border-[var(--warn-border)] font-semibold",
     barColor: "bg-orange-500",
   },
   "出場": {
     emoji: "🚨",
     label: "出場",
-    chipCls: "bg-red-100/80 dark:bg-red-900/30 text-red-700 dark:text-red-300 border border-red-200 dark:border-red-700/40",
-    barColor: "bg-red-500",
+    chipCls: "bg-[var(--danger-bg)] text-[var(--danger-text)] border border-[var(--danger-border)]",
+    barColor: "bg-[var(--danger-text)]",
   },
 } as const;
 
@@ -130,10 +130,10 @@ export function signalState(value: number): "on" | "half" | "off" {
 
 // 漲跌幅色彩
 export function changePctColor(pct: number | null | undefined): string {
-  if (pct == null) return "text-zinc-500 dark:text-zinc-400";
-  if (pct > 0) return "text-emerald-600 dark:text-emerald-400";
-  if (pct < 0) return "text-red-600 dark:text-red-400";
-  return "text-zinc-600 dark:text-zinc-400";
+  if (pct == null) return "text-[var(--text-muted)]";
+  if (pct > 0) return "text-[var(--ok-text)]";
+  if (pct < 0) return "text-[var(--danger-text)]";
+  return "text-[var(--text-muted)]";
 }
 
 // 漲跌幅格式化（加 + 號）

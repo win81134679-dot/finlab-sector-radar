@@ -20,25 +20,36 @@ export default async function DashboardPage() {
 
   const runAt = snapshot?.run_at ?? "";
   const date  = snapshot?.date   ?? "";
+  const allNull = !snapshot && !historyIndex && !commodities && !magaData && !composite && !sensitivity && !holdings && !pnl;
 
   return (
     <div className="flex flex-col min-h-dvh">
       {/* 固定頁首 */}
       <Header runAt={runAt} dateLabel={date} />
 
-      {/* Tab 導航 + 內容（Client Component） */}
-      <ErrorBoundary label="主儀表板">
-        <TabContainer
-          snapshot={snapshot}
-          historyIndex={historyIndex ?? null}
-          commodities={commodities}
-          magaData={magaData}
-          composite={composite}
-          sensitivity={sensitivity}
-          holdings={holdings}
-          pnl={pnl}
-        />
-      </ErrorBoundary>
+      {allNull ? (
+        <main className="flex-1 flex items-center justify-center">
+          <div className="text-center space-y-3 p-8">
+            <p className="text-2xl">📡</p>
+            <p className="text-zinc-600 dark:text-zinc-400 font-medium">資料更新中</p>
+            <p className="text-sm text-zinc-500 dark:text-zinc-500">系統正在取得最新分析數據，請稍後再試</p>
+          </div>
+        </main>
+      ) : (
+        /* Tab 導航 + 內容（Client Component） */
+        <ErrorBoundary label="主儀表板">
+          <TabContainer
+            snapshot={snapshot}
+            historyIndex={historyIndex ?? null}
+            commodities={commodities}
+            magaData={magaData}
+            composite={composite}
+            sensitivity={sensitivity}
+            holdings={holdings}
+            pnl={pnl}
+          />
+        </ErrorBoundary>
+      )}
 
       <footer className="py-4 text-center text-xs text-zinc-500 dark:text-zinc-600 border-t border-zinc-200/40 dark:border-zinc-800/40">
         FinLab 板塊偵測 · 資料來源：FinLab / FRED / Alpha Vantage / CoinGecko

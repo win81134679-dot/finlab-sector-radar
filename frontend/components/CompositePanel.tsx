@@ -99,8 +99,6 @@ export function CompositePanel({ data, sensitivity }: Props) {
   const activePreset = sensitivity?.presets[presetIdx];
   const activeScores: Record<string, { composite: number; signal: string }> =
     activePreset?.scores ?? data?.scores ?? {};
-  const activeTopBuy    = activePreset?.top_buy    ?? data?.top_buy    ?? [];
-  const activeTopSell   = activePreset?.top_sell   ?? data?.top_sell   ?? [];
   const activeStrength  = activePreset?.signal_strength ?? data?.signal_strength ?? 0;
 
   const sortedScores = Object.entries(activeScores)

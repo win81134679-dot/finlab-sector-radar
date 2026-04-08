@@ -35,6 +35,7 @@ export async function GET() {
     }
 
     // 剔除 sectorState（前端不需要，減少傳輸量）
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
     const { sectorState: _, ...log } = data;
 
     return NextResponse.json(log, {
