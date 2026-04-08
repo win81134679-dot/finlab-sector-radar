@@ -1,15 +1,15 @@
 {
-  "updated_at": "2026-04-07T14:09:27.960622+00:00",
+  "updated_at": "2026-04-08T12:33:55.734202+00:00",
   "positions": {
     "2330": {
       "name_zh": "台積電",
       "sector": "foundry",
       "category": "beneficiary",
       "composite_score": 0.3,
-      "entry_price": 1860.0,
+      "entry_price": 1950.0,
       "shares": 0,
       "weight": 0.1364,
-      "added_at": "2026-04-07T14:09:27.957954+00:00",
+      "added_at": "2026-04-08T12:33:55.731604+00:00",
       "reason": "訊號進場"
     },
     "2303": {
@@ -17,10 +17,10 @@
       "sector": "foundry",
       "category": "beneficiary",
       "composite_score": 0.3,
-      "entry_price": 58.3,
+      "entry_price": 60.3,
       "shares": 2000,
       "weight": 0.1364,
-      "added_at": "2026-04-07T14:09:27.957954+00:00",
+      "added_at": "2026-04-08T12:33:55.731604+00:00",
       "reason": "訊號進場"
     },
     "5347": {
@@ -28,10 +28,10 @@
       "sector": "foundry",
       "category": "beneficiary",
       "composite_score": 0.3,
-      "entry_price": 121.0,
-      "shares": 1000,
+      "entry_price": 131.0,
+      "shares": 0,
       "weight": 0.1273,
-      "added_at": "2026-04-07T14:09:27.957954+00:00",
+      "added_at": "2026-04-08T12:33:55.731604+00:00",
       "reason": "訊號進場"
     },
     "3711": {
@@ -39,21 +39,22 @@
       "sector": "packaging",
       "category": "beneficiary",
       "composite_score": 0.25,
-      "entry_price": 352.0,
+      "entry_price": 383.0,
       "shares": 0,
       "weight": 0.1136,
-      "added_at": "2026-04-07T14:09:27.957954+00:00",
-      "reason": "訊號進場"
+      "added_at": "2026-04-08T12:33:55.731604+00:00",
+      "reason": "訊號進場",
+      "exit_alert": false
     },
     "2449": {
       "name_zh": "京元電",
       "sector": "packaging",
       "category": "beneficiary",
       "composite_score": 0.25,
-      "entry_price": 268.0,
+      "entry_price": 280.0,
       "shares": 0,
       "weight": 0.1136,
-      "added_at": "2026-04-07T14:09:27.957954+00:00",
+      "added_at": "2026-04-08T12:33:55.731604+00:00",
       "reason": "訊號進場"
     },
     "6257": {
@@ -61,70 +62,23 @@
       "sector": "packaging",
       "category": "beneficiary",
       "composite_score": 0.25,
-      "entry_price": 155.0,
+      "entry_price": 170.5,
       "shares": 0,
       "weight": 0.1136,
-      "added_at": "2026-04-07T14:09:27.957954+00:00",
-      "reason": "訊號進場"
+      "added_at": "2026-04-08T12:33:55.731604+00:00",
+      "reason": "訊號進場",
+      "exit_alert": false
     },
     "2441": {
       "name_zh": "超豐",
       "sector": "packaging",
       "category": "beneficiary",
       "composite_score": 0.25,
-      "entry_price": 86.0,
+      "entry_price": 94.5,
       "shares": 0,
       "weight": 0.0591,
-      "added_at": "2026-04-07T14:09:27.957954+00:00",
+      "added_at": "2026-04-08T12:33:55.731604+00:00",
       "reason": "訊號進場"
-    },
-    "6426": {
-      "name_zh": "6426",
-      "sector": "optical_comm",
-      "category": "neutral",
-      "composite_score": 0.0,
-      "entry_price": null,
-      "shares": null,
-      "weight": 0.0,
-      "added_at": "2026-04-07T14:09:27.960622+00:00",
-      "reason": "cycle_acceleration (加速期)",
-      "exit_alert": false
-    },
-    "3081": {
-      "name_zh": "3081",
-      "sector": "optical_comm",
-      "category": "neutral",
-      "composite_score": 0.0,
-      "entry_price": null,
-      "shares": null,
-      "weight": 0.0,
-      "added_at": "2026-04-07T14:09:27.960622+00:00",
-      "reason": "cycle_acceleration (加速期)",
-      "exit_alert": false
-    },
-    "4908": {
-      "name_zh": "4908",
-      "sector": "optical_comm",
-      "category": "neutral",
-      "composite_score": 0.0,
-      "entry_price": null,
-      "shares": null,
-      "weight": 0.0,
-      "added_at": "2026-04-07T14:09:27.960622+00:00",
-      "reason": "cycle_acceleration (加速期)",
-      "exit_alert": false
-    },
-    "4979": {
-      "name_zh": "4979",
-      "sector": "optical_comm",
-      "category": "neutral",
-      "composite_score": 0.0,
-      "entry_price": null,
-      "shares": null,
-      "weight": 0.0,
-      "added_at": "2026-04-07T14:09:27.960622+00:00",
-      "reason": "cycle_acceleration (加速期)",
-      "exit_alert": false
     },
     "3017": {
       "name_zh": "3017",
@@ -134,7 +88,7 @@
       "entry_price": null,
       "shares": null,
       "weight": 0.0,
-      "added_at": "2026-04-07T14:09:27.960622+00:00",
+      "added_at": "2026-04-08T12:33:55.734202+00:00",
       "reason": "cycle_acceleration (加速期)",
       "exit_alert": false
     },
@@ -146,7 +100,7 @@
       "entry_price": null,
       "shares": null,
       "weight": 0.0,
-      "added_at": "2026-04-07T14:09:27.960622+00:00",
+      "added_at": "2026-04-08T12:33:55.734202+00:00",
       "reason": "cycle_acceleration (加速期)",
       "exit_alert": false
     },
@@ -158,7 +112,55 @@
       "entry_price": null,
       "shares": null,
       "weight": 0.0,
-      "added_at": "2026-04-07T14:09:27.960622+00:00",
+      "added_at": "2026-04-08T12:33:55.734202+00:00",
+      "reason": "cycle_acceleration (加速期)",
+      "exit_alert": false
+    },
+    "6426": {
+      "name_zh": "6426",
+      "sector": "optical_comm",
+      "category": "neutral",
+      "composite_score": 0.0,
+      "entry_price": null,
+      "shares": null,
+      "weight": 0.0,
+      "added_at": "2026-04-08T12:33:55.734202+00:00",
+      "reason": "cycle_acceleration (加速期)",
+      "exit_alert": false
+    },
+    "4908": {
+      "name_zh": "4908",
+      "sector": "optical_comm",
+      "category": "neutral",
+      "composite_score": 0.0,
+      "entry_price": null,
+      "shares": null,
+      "weight": 0.0,
+      "added_at": "2026-04-08T12:33:55.734202+00:00",
+      "reason": "cycle_acceleration (加速期)",
+      "exit_alert": false
+    },
+    "3081": {
+      "name_zh": "3081",
+      "sector": "optical_comm",
+      "category": "neutral",
+      "composite_score": 0.0,
+      "entry_price": null,
+      "shares": null,
+      "weight": 0.0,
+      "added_at": "2026-04-08T12:33:55.734202+00:00",
+      "reason": "cycle_acceleration (加速期)",
+      "exit_alert": false
+    },
+    "4979": {
+      "name_zh": "4979",
+      "sector": "optical_comm",
+      "category": "neutral",
+      "composite_score": 0.0,
+      "entry_price": null,
+      "shares": null,
+      "weight": 0.0,
+      "added_at": "2026-04-08T12:33:55.734202+00:00",
       "reason": "cycle_acceleration (加速期)",
       "exit_alert": false
     },
@@ -170,7 +172,7 @@
       "entry_price": null,
       "shares": null,
       "weight": 0.0,
-      "added_at": "2026-04-07T14:09:27.960622+00:00",
+      "added_at": "2026-04-08T12:33:55.734202+00:00",
       "reason": "cycle_acceleration (加速期)",
       "exit_alert": false
     },
@@ -182,55 +184,19 @@
       "entry_price": null,
       "shares": null,
       "weight": 0.0,
-      "added_at": "2026-04-07T14:09:27.960622+00:00",
+      "added_at": "2026-04-08T12:33:55.734202+00:00",
       "reason": "cycle_acceleration (加速期)",
       "exit_alert": false
     },
-    "6741": {
-      "name_zh": "6741",
+    "8454": {
+      "name_zh": "8454",
       "sector": "ecommerce",
       "category": "neutral",
       "composite_score": 0.0,
       "entry_price": null,
       "shares": null,
       "weight": 0.0,
-      "added_at": "2026-04-07T14:09:27.960622+00:00",
-      "reason": "cycle_acceleration (加速期)",
-      "exit_alert": false
-    },
-    "3045": {
-      "name_zh": "3045",
-      "sector": "telecom",
-      "category": "neutral",
-      "composite_score": 0.0,
-      "entry_price": null,
-      "shares": null,
-      "weight": 0.0,
-      "added_at": "2026-04-07T14:09:27.960622+00:00",
-      "reason": "cycle_acceleration (加速期)",
-      "exit_alert": false
-    },
-    "2412": {
-      "name_zh": "2412",
-      "sector": "telecom",
-      "category": "neutral",
-      "composite_score": 0.0,
-      "entry_price": null,
-      "shares": null,
-      "weight": 0.0,
-      "added_at": "2026-04-07T14:09:27.960622+00:00",
-      "reason": "cycle_acceleration (加速期)",
-      "exit_alert": false
-    },
-    "4904": {
-      "name_zh": "4904",
-      "sector": "telecom",
-      "category": "neutral",
-      "composite_score": 0.0,
-      "entry_price": null,
-      "shares": null,
-      "weight": 0.0,
-      "added_at": "2026-04-07T14:09:27.960622+00:00",
+      "added_at": "2026-04-08T12:33:55.734202+00:00",
       "reason": "cycle_acceleration (加速期)",
       "exit_alert": false
     }
