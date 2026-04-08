@@ -64,7 +64,7 @@ export default function RootLayout({
           }}
         />
       </head>
-      <body className="min-h-dvh bg-[var(--bg-page)] text-[var(--text-base)] flex flex-col">
+      <body className="min-h-dvh bg-background text-foreground flex flex-col">
         {children}
         <Analytics />
         <footer className="mt-auto py-5 px-4 border-t border-zinc-200/60 dark:border-zinc-800/60">

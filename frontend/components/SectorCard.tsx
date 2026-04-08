@@ -85,7 +85,7 @@ export function SectorCard({ sectorId, sector, featured = false, defaultExpanded
 
         {/* 展開箭頭 */}
         <div className={`
-          ml-2 mt-1 flex-shrink-0 w-6 h-6 flex items-center justify-center
+          ml-2 mt-1 shrink-0 w-6 h-6 flex items-center justify-center
           rounded-full text-zinc-400 dark:text-zinc-500
           transition-transform duration-200
           ${expanded ? "rotate-180" : ""}

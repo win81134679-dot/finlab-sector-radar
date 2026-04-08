@@ -113,7 +113,7 @@ function ResonanceBar({
 
   return (
     <div className="border-b border-zinc-200/40 dark:border-zinc-800/40 bg-zinc-50/60 dark:bg-zinc-900/40">
-      <div className="max-w-screen-xl mx-auto px-4 py-1.5 flex items-center gap-2.5 overflow-x-auto">
+      <div className="max-w-7xl mx-auto px-4 py-1.5 flex items-center gap-2.5 overflow-x-auto">
 
         {/* 進攻側 */}
         {hotSectors.length > 0 && (
@@ -192,8 +192,8 @@ export function TabContainer({ snapshot, historyIndex, commodities, magaData, co
       {runAt && <StaleDataBanner runAt={runAt} />}
 
       {/* Tab 導航列 */}
-      <div className="sticky top-[var(--header-h,56px)] z-30 bg-[var(--bg-page)]/90 backdrop-blur-sm border-b border-zinc-200/40 dark:border-zinc-800/40">
-        <div className="max-w-screen-xl mx-auto px-4 flex items-center gap-0.5 pt-1 overflow-x-auto">
+      <div className="sticky top-(--header-h,56px) z-30 bg-(--bg-page)/90 backdrop-blur-sm border-b border-zinc-200/40 dark:border-zinc-800/40">
+        <div className="max-w-7xl mx-auto px-4 flex items-center gap-0.5 pt-1 overflow-x-auto">
           {TABS.map(tab => (
             <button
               key={tab.id}
@@ -221,7 +221,7 @@ export function TabContainer({ snapshot, historyIndex, commodities, magaData, co
       />
 
       {/* Tab 內容 */}
-      <main className="flex-1 max-w-screen-xl mx-auto w-full px-4 pb-12">
+      <main className="flex-1 max-w-7xl mx-auto w-full px-4 pb-12">
         {activeTab === "sector" && (
           <>
             <section className="mt-6" aria-label="宏觀經濟">

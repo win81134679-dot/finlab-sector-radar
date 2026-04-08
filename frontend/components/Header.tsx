@@ -17,14 +17,14 @@ export function Header({ runAt, dateLabel }: HeaderProps) {
       backdrop-blur-md
       border-b border-zinc-200/60 dark:border-zinc-800/60
     ">
-      <div className="max-w-screen-xl mx-auto px-4 h-14 flex items-center justify-between gap-3">
+      <div className="max-w-7xl mx-auto px-4 h-14 flex items-center justify-between gap-3">
 
         {/* Logo 區 */}
         <div className="flex items-center gap-2.5 min-w-0">
           <div className="
             w-8 h-8 rounded-lg flex items-center justify-center text-base
-            bg-gradient-to-br from-emerald-400 to-emerald-600
-            shadow-sm flex-shrink-0
+            bg-linear-to-br from-emerald-400 to-emerald-600
+            shadow-sm shrink-0
           ">
             📡
           </div>
@@ -41,13 +41,13 @@ export function Header({ runAt, dateLabel }: HeaderProps) {
         </div>
 
         {/* 右側：更新時間 + 主題 */}
-        <div className="flex items-center gap-3 flex-shrink-0">
+        <div className="flex items-center gap-3 shrink-0">
           {relativeTime && (
             <span className="
               hidden sm:flex items-center gap-1.5
               text-xs text-zinc-500 dark:text-zinc-400
             ">
-              <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 flex-shrink-0
+              <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 shrink-0
                                shadow-[0_0_6px_rgba(52,211,153,0.8)]" />
               更新：{relativeTime}
             </span>

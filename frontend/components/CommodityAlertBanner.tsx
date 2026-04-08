@@ -51,7 +51,7 @@ export function CommodityAlertBanner({ commodities, macroWarning }: Props) {
 
   return (
     <div role="alert" className={`w-full border-y ${cfg.bg}`}>
-      <div className="max-w-screen-xl mx-auto px-4">
+      <div className="max-w-7xl mx-auto px-4">
 
         {/* ── 主列 ── */}
         <div className="flex items-center gap-2.5 py-2 flex-wrap min-h-[2.25rem]">
