@@ -104,14 +104,18 @@ export function CommodityAlertBanner({ commodities, macroWarning }: Props) {
         </div>
 
         {/* ── 展開的 key_alerts ── */}
-        {expanded && keyAlerts.length > 0 && (
-          <div className={`pb-3 pt-2 border-t ${cfg.text} border-current/10 space-y-1.5`}>
-            {keyAlerts.slice(0, 6).map((alert, i) => (
-              <div key={i} className="flex gap-2 text-xs">
-                <span className={`${cfg.text} opacity-50 shrink-0 mt-0.5`}>▲</span>
-                <span className={`${cfg.text} opacity-75 leading-snug`}>{alert}</span>
+        {keyAlerts.length > 0 && (
+          <div className={`grid transition-[grid-template-rows,opacity] duration-300 ${expanded ? "grid-rows-[1fr] opacity-100" : "grid-rows-[0fr] opacity-0"}`}>
+            <div className="overflow-hidden min-h-0">
+              <div className={`pb-3 pt-2 border-t ${cfg.text} border-current/10 space-y-1.5`}>
+                {keyAlerts.slice(0, 6).map((alert, i) => (
+                  <div key={i} className="flex gap-2 text-xs">
+                    <span className={`${cfg.text} opacity-50 shrink-0 mt-0.5`}>▲</span>
+                    <span className={`${cfg.text} opacity-75 leading-snug`}>{alert}</span>
+                  </div>
+                ))}
               </div>
-            ))}
+            </div>
           </div>
         )}
       </div>

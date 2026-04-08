@@ -37,6 +37,8 @@ function pctColor(v: number | null): string {
 
 function StockRow({ stock, phase }: { stock: MagaStock; phase?: string }) {
   const [expanded, setExpanded] = useState(false);
+  const [shouldRender, setShouldRender] = useState(false);
+  if (expanded && !shouldRender) setShouldRender(true);
   const hasChart = (stock.ohlcv_7d?.length ?? 0) > 0;
 
   return (
@@ -77,9 +79,18 @@ function StockRow({ stock, phase }: { stock: MagaStock; phase?: string }) {
         </div>
       </button>
 
-      {expanded && hasChart && (
-        <div className="border-t border-zinc-200/40 dark:border-zinc-800/40 p-3 bg-zinc-50/50 dark:bg-zinc-900/30">
-          <StockKLine data={stock.ohlcv_7d!} stockId={stock.id} />
+      {hasChart && (
+        <div
+          className={`grid transition-[grid-template-rows,opacity] duration-300 ${expanded ? "grid-rows-[1fr] opacity-100" : "grid-rows-[0fr] opacity-0"}`}
+          onTransitionEnd={(e) => { if (!expanded && e.target === e.currentTarget) setShouldRender(false); }}
+        >
+          <div className="overflow-hidden min-h-0">
+            {shouldRender && (
+              <div className="border-t border-zinc-200/40 dark:border-zinc-800/40 p-3 bg-zinc-50/50 dark:bg-zinc-900/30">
+                <StockKLine data={stock.ohlcv_7d!} stockId={stock.id} />
+              </div>
+            )}
+          </div>
         </div>
       )}
     </div>

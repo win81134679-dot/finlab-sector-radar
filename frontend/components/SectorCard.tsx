@@ -101,13 +101,12 @@ export function SectorCard({ sectorId, sector, featured = false, defaultExpanded
       {hasStocks && (
         <div
           id={`sector-detail-${sectorId}`}
-          className={`
-            transition-all duration-500
-            ${expanded ? "max-h-1250 overflow-visible opacity-100" : "max-h-0 overflow-hidden opacity-0"}
-          `}
+          className={`grid transition-[grid-template-rows,opacity] duration-500 ${expanded ? "grid-rows-[1fr] opacity-100" : "grid-rows-[0fr] opacity-0"}`}
         >
-          <div className="px-4 pb-4 border-t border-zinc-200/30 dark:border-zinc-700/30 pt-3">
-            <StockTable stocks={stocks} sectorLevel={sector.level} macroWarning={macroWarning} cycleStage={sector.cycle_stage ?? undefined} />
+          <div className="overflow-hidden min-h-0">
+            <div className="px-4 pb-4 border-t border-zinc-200/30 dark:border-zinc-700/30 pt-3">
+              <StockTable stocks={stocks} sectorLevel={sector.level} macroWarning={macroWarning} cycleStage={sector.cycle_stage ?? undefined} />
+            </div>
           </div>
         </div>
       )}

@@ -111,6 +111,9 @@ function AccStockCard({ stock, sectorLevel, exitRisk, cycleStage, macroWarning, 
   macroWarning?: boolean;
   expanded: boolean;
 }) {
+  const [shouldRender, setShouldRender] = useState(expanded);
+  if (expanded && !shouldRender) setShouldRender(true);
+
   const { fullData, loading } = useOHLCV(stock.id, expanded);
   const displayBars = fullData.length >= 2 ? fullData : (stock.ohlcv7d ?? []);
   const hasKLine = (stock.ohlcv7d?.length ?? 0) >= 2;
@@ -169,28 +172,37 @@ function AccStockCard({ stock, sectorLevel, exitRisk, cycleStage, macroWarning, 
       </div>
 
       {/* Expanded detail (controlled by sector-level toggle) */}
-      {expanded && (hasKLine || hasBreakdown) && (
-        <div className="border-t border-zinc-100 dark:border-zinc-800/50">
-          <StockSummary
-            data={fullData.length > 0 ? fullData : (stock.ohlcv7d ?? [])}
-            grade={stock.grade}
-            breakdown={stock.breakdown}
-            loading={loading}
-            triggered={stock.triggered}
-            score={stock.score}
-            sectorLevel={sectorLevel}
-            macroWarning={macroWarning}
-            cycleStage={cycleStage}
-          />
-          {hasBreakdown && stock.breakdown && <FactorRadar breakdown={stock.breakdown} grade={stock.grade} />}
-          <CandlePatternBadges bars={displayBars} />
-          <RsiGauge data={fullData} loading={loading} />
-          <MacdChart data={fullData} loading={loading} />
-          {hasKLine && (
-            <div className="px-1 py-1">
-              <StockKLine data={stock.ohlcv7d!} stockId={stock.id} fullData={fullData.length > 0 ? fullData : undefined} />
-            </div>
-          )}
+      {(hasKLine || hasBreakdown) && (
+        <div
+          className={`grid transition-[grid-template-rows,opacity] duration-300 ${expanded ? "grid-rows-[1fr] opacity-100" : "grid-rows-[0fr] opacity-0"}`}
+          onTransitionEnd={(e) => { if (!expanded && e.target === e.currentTarget) setShouldRender(false); }}
+        >
+          <div className="overflow-hidden min-h-0">
+            {shouldRender && (
+              <div className="border-t border-zinc-100 dark:border-zinc-800/50">
+                <StockSummary
+                  data={fullData.length > 0 ? fullData : (stock.ohlcv7d ?? [])}
+                  grade={stock.grade}
+                  breakdown={stock.breakdown}
+                  loading={loading}
+                  triggered={stock.triggered}
+                  score={stock.score}
+                  sectorLevel={sectorLevel}
+                  macroWarning={macroWarning}
+                  cycleStage={cycleStage}
+                />
+                {hasBreakdown && stock.breakdown && <FactorRadar breakdown={stock.breakdown} grade={stock.grade} />}
+                <CandlePatternBadges bars={displayBars} />
+                <RsiGauge data={fullData} loading={loading} />
+                <MacdChart data={fullData} loading={loading} />
+                {hasKLine && (
+                  <div className="px-1 py-1">
+                    <StockKLine data={stock.ohlcv7d!} stockId={stock.id} fullData={fullData.length > 0 ? fullData : undefined} />
+                  </div>
+                )}
+              </div>
+            )}
+          </div>
         </div>
       )}
     </div>

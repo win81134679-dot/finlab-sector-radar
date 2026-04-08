@@ -1,6 +1,7 @@
 "use client";
 // CommodityCard.tsx — 單一商品資產卡片（含 K 線展開 + 學術信號）
 
+import { useState } from "react";
 import type { CommodityAsset } from "@/lib/types";
 import { CommodityKLine } from "@/components/CommodityKLine";
 import type { OHLCBar } from "@/lib/types";
@@ -27,6 +28,9 @@ const SEVERITY_STYLE: Record<string, string> = {
 };
 
 export function CommodityCard({ asset, isExpanded, onToggle }: Props) {
+  const [shouldRender, setShouldRender] = useState(isExpanded);
+  if (isExpanded && !shouldRender) setShouldRender(true);
+
   const { name_zh, category, price, change_1d_pct, change_7d_pct, signals } = asset;
   const icon = CATEGORY_ICONS[category] ?? "📌";
   const triggeredSignals = signals.filter(s => s.triggered);
@@ -81,39 +85,46 @@ export function CommodityCard({ asset, isExpanded, onToggle }: Props) {
       </div>
 
       {/* 展開：K 線圖 + 學術信號 */}
-      {isExpanded && (
-        <div className="px-3 pb-3 border-t border-zinc-100/80 dark:border-zinc-700/40">
-          {/* K 線圖（無初始 OHLCV，全靠懶載入）*/}
-          <div className="mt-2">
-            <CommodityKLine data={[] as OHLCBar[]} slug={asset.slug} nameZh={name_zh} />
-          </div>
-
-          {/* 學術信號說明 */}
-          <div className="mt-3 space-y-2">
-            <div className="text-[10px] font-semibold text-zinc-500 dark:text-zinc-400 uppercase tracking-wider">
-              學術信號
-            </div>
-            {signals.length > 0 ? signals.map(sig => (
-              <div
-                key={sig.key}
-                className={`rounded-lg border px-3 py-2 text-[11px] ${SEVERITY_STYLE[sig.severity] ?? SEVERITY_STYLE.low}`}
-              >
-                <div className="flex items-start gap-2">
-                  <span className="shrink-0 mt-0.5">{sig.triggered ? "🔔" : "○"}</span>
-                  <div>
-                    <p className="leading-relaxed">{sig.commentary}</p>
-                    <p className="mt-1 opacity-60 text-[10px]">{sig.source}</p>
-                  </div>
-                </div>
+      <div
+        className={`grid transition-[grid-template-rows,opacity] duration-300 ${isExpanded ? "grid-rows-[1fr] opacity-100" : "grid-rows-[0fr] opacity-0"}`}
+        onTransitionEnd={(e) => { if (!isExpanded && e.target === e.currentTarget) setShouldRender(false); }}
+      >
+        <div className="overflow-hidden min-h-0">
+          {shouldRender && (
+            <div className="px-3 pb-3 border-t border-zinc-100/80 dark:border-zinc-700/40">
+              {/* K 線圖（無初始 OHLCV，全靠懶載入）*/}
+              <div className="mt-2">
+                <CommodityKLine data={[] as OHLCBar[]} slug={asset.slug} nameZh={name_zh} />
               </div>
-            )) : (
-              <p className="text-[11px] text-emerald-600 dark:text-emerald-400 py-1">
-                ✓ 目前無觸發信號，市場環境正常
-              </p>
-            )}
-          </div>
+
+              {/* 學術信號說明 */}
+              <div className="mt-3 space-y-2">
+                <div className="text-[10px] font-semibold text-zinc-500 dark:text-zinc-400 uppercase tracking-wider">
+                  學術信號
+                </div>
+                {signals.length > 0 ? signals.map(sig => (
+                  <div
+                    key={sig.key}
+                    className={`rounded-lg border px-3 py-2 text-[11px] ${SEVERITY_STYLE[sig.severity] ?? SEVERITY_STYLE.low}`}
+                  >
+                    <div className="flex items-start gap-2">
+                      <span className="shrink-0 mt-0.5">{sig.triggered ? "🔔" : "○"}</span>
+                      <div>
+                        <p className="leading-relaxed">{sig.commentary}</p>
+                        <p className="mt-1 opacity-60 text-[10px]">{sig.source}</p>
+                      </div>
+                    </div>
+                  </div>
+                )) : (
+                  <p className="text-[11px] text-emerald-600 dark:text-emerald-400 py-1">
+                    ✓ 目前無觸發信號，市場環境正常
+                  </p>
+                )}
+              </div>
+            </div>
+          )}
         </div>
-      )}
+      </div>
     </div>
   );
 }

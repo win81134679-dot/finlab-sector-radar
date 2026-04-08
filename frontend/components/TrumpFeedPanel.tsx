@@ -312,8 +312,9 @@ function HowToRead() {
         <span>📖 如何解讀這份報告？</span>
         <span className={`transition-transform ${open ? "rotate-90" : ""}`}>›</span>
       </button>
-      {open && (
-        <div className="px-4 pb-4 pt-1 space-y-2.5 text-xs text-zinc-500 dark:text-zinc-400 leading-relaxed bg-zinc-50/50 dark:bg-zinc-800/30">
+      <div className={`grid transition-[grid-template-rows,opacity] duration-300 ${open ? "grid-rows-[1fr] opacity-100" : "grid-rows-[0fr] opacity-0"}`}>
+        <div className="overflow-hidden min-h-0">
+          <div className="px-4 pb-4 pt-1 space-y-2.5 text-xs text-zinc-500 dark:text-zinc-400 leading-relaxed bg-zinc-50/50 dark:bg-zinc-800/30">
           <div>
             <span className="font-semibold text-zinc-600 dark:text-zinc-300">📊 板塊衝擊 Top N</span>
             <p className="mt-0.5">顯示本次分析中，變動最劇烈的板塊。<strong>delta 值</strong>是「本次分數 − 上次分數」的差，代表訊號變化速度。負值（紅）代表壓力加深，正值（綠）代表訊號好轉。</p>
@@ -335,7 +336,8 @@ function HowToRead() {
             <p className="mt-0.5">本頁是<strong>短線情緒面</strong>的補充。長線趨勢頁中的「Trump 即時衝擊」是這裡的精簡版，最終綜合評分會同時考慮兩者。</p>
           </div>
         </div>
-      )}
+        </div>
+      </div>
     </div>
   );
 }

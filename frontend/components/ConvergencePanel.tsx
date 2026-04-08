@@ -631,12 +631,16 @@ export function ConvergencePanel({ snapshot, composite, holdings, magaData }: Pr
                   </div>
                 </button>
                 {/* 展開個股 */}
-                {isExpanded && sectorStocks.length > 0 && (
-                  <div className="border-t border-zinc-100/70 dark:border-zinc-800/60 px-3 pb-3 pt-2 space-y-0.5">
-                    <p className="text-[10px] text-zinc-400 px-2 pb-1">板塊個股排名（依綜合評分）</p>
-                    {sectorStocks.map((stock) => (
-                      <StockMiniRow key={stock.id} stock={stock} nameMap={nameMap} />
-                    ))}
+                {sectorStocks.length > 0 && (
+                  <div className={`grid transition-[grid-template-rows,opacity] duration-300 ${isExpanded ? "grid-rows-[1fr] opacity-100" : "grid-rows-[0fr] opacity-0"}`}>
+                    <div className="overflow-hidden min-h-0">
+                      <div className="border-t border-zinc-100/70 dark:border-zinc-800/60 px-3 pb-3 pt-2 space-y-0.5">
+                        <p className="text-[10px] text-zinc-400 px-2 pb-1">板塊個股排名（依綜合評分）</p>
+                        {sectorStocks.map((stock) => (
+                          <StockMiniRow key={stock.id} stock={stock} nameMap={nameMap} />
+                        ))}
+                      </div>
+                    </div>
                   </div>
                 )}
               </div>
