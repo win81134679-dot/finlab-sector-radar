@@ -257,6 +257,8 @@ export function TabContainer({ snapshot, historyIndex, commodities, magaData, co
               snapshot={snapshot}
               composite={composite}
               holdings={holdings}
+              exitAlerts={exitAlerts}
+              pnl={pnl}
             />
           </ErrorBoundary>
         )}

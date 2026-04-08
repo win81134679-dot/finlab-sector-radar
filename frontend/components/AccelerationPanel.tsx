@@ -4,7 +4,7 @@
 
 import { useState, useMemo, useEffect, useRef } from "react";
 import dynamic from "next/dynamic";
-import type { SignalSnapshot, CompositeSnapshot, HoldingsSnapshot, ExitRisk, OHLCBar } from "@/lib/types";
+import type { SignalSnapshot, CompositeSnapshot, HoldingsSnapshot, PnlSnapshot, ExitAlertsSnapshot, ExitRisk, OHLCBar } from "@/lib/types";
 import {
   changePctColor, formatChangePct,
   CYCLE_STAGE_CONFIG, type CycleStageKey,
@@ -19,6 +19,7 @@ import { FactorRadar } from "./FactorRadar";
 import { RsiGauge } from "./RsiGauge";
 import { MacdChart } from "./MacdChart";
 import { CandlePatternBadges } from "./CandlePatternBadges";
+import { ExitAlertPanel } from "./ExitAlertPanel";
 
 const GITHUB_RAW_BASE = process.env.NEXT_PUBLIC_GITHUB_RAW_BASE_URL ?? "";
 
@@ -57,6 +58,8 @@ interface Props {
   snapshot:  SignalSnapshot | null | undefined;
   composite: CompositeSnapshot | null;
   holdings:  HoldingsSnapshot | null;
+  exitAlerts?: ExitAlertsSnapshot | null;
+  pnl?:       PnlSnapshot | null;
 }
 
 interface AccStock {
@@ -209,7 +212,7 @@ function AccStockCard({ stock, sectorLevel, exitRisk, cycleStage, macroWarning, 
   );
 }
 
-export function AccelerationPanel({ snapshot, holdings }: Props) {
+export function AccelerationPanel({ snapshot, holdings, exitAlerts, pnl }: Props) {
   const macroWarning = snapshot?.macro_warning === true || snapshot?.macro?.warning === true;
   const [expandedSectors, setExpandedSectors] = useState<Record<string, boolean>>({});
 
@@ -298,6 +301,14 @@ export function AccelerationPanel({ snapshot, holdings }: Props) {
 
   return (
     <div className="mt-6 space-y-5">
+      {/* ── 隔日出場訊號提醒 ── */}
+      <ExitAlertPanel exitAlerts={exitAlerts ?? null} pnl={pnl ?? null} />
+      {exitAlerts && (
+        <p className="text-[11px] text-zinc-400 dark:text-zinc-500 -mt-2">
+          💡 以上為系統根據 RRG 動能、籌碼、量價等五因子模型產生的隔日操作建議，僅供參考。
+        </p>
+      )}
+
       {/* Header */}
       <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3">
         <div>
