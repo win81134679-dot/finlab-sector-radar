@@ -33,21 +33,21 @@ describe("signalState", () => {
 
 // ── changePctColor ──────────────────────────────────────────────────────────
 describe("changePctColor", () => {
-  it("returns ok-text class for positive", () => {
-    expect(changePctColor(1.5)).toContain("--ok-text");
+  it("returns green class for positive", () => {
+    expect(changePctColor(1.5)).toContain("emerald");
   });
 
-  it("returns danger-text class for negative", () => {
-    expect(changePctColor(-0.5)).toContain("--danger-text");
+  it("returns red class for negative", () => {
+    expect(changePctColor(-0.5)).toContain("red");
   });
 
-  it("returns muted class for zero", () => {
-    expect(changePctColor(0)).toContain("--text-muted");
+  it("returns zinc class for zero", () => {
+    expect(changePctColor(0)).toContain("zinc");
   });
 
-  it("returns muted class for null/undefined", () => {
-    expect(changePctColor(null)).toContain("--text-muted");
-    expect(changePctColor(undefined)).toContain("--text-muted");
+  it("returns zinc class for null/undefined", () => {
+    expect(changePctColor(null)).toContain("zinc");
+    expect(changePctColor(undefined)).toContain("zinc");
   });
 });
 
