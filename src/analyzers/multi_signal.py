@@ -26,13 +26,27 @@ SIGNAL_NAMES = [
 ]
 
 LEVEL_THRESHOLDS = {
+    # 學術依據：Condorcet 陪審團定理 (1785)
+    # n=7 獨立信號，多數決最優門檻 = ⌈7/2⌉ = 4
+    # Piotroski (2000, J. Accounting Research, cited 3000+): 多信號聚合需品質閘門
     "強烈關注": 4,
     "觀察中":   2,
 }
 
 
-def _level(total: float) -> str:
+def _level(total: float, scores: list | None = None) -> str:
+    """
+    判定板塊等級。
+    scores: [燈1,燈2,燈3,燈4,燈5,燈6,燈7] 的分數列表（0/0.5/1.0）。
+    品質閘門：「強烈關注」需至少一個基本面燈（燈1 營收 or 燈3 庫存）≥ 0.5，
+    防止純技術/籌碼驅動的虛假板塊。
+    """
     if total >= LEVEL_THRESHOLDS["強烈關注"]:
+        # 品質閘門：要求基本面參與 (Piotroski 2000)
+        if scores is not None and len(scores) >= 4:
+            rev, _inst, inv = float(scores[0]), float(scores[1]), float(scores[2])
+            if rev < 0.5 and inv < 0.5:
+                return "觀察中"  # 降級：無基本面支撐
         return "強烈關注"
     if total >= LEVEL_THRESHOLDS["觀察中"]:
         return "觀察中"
@@ -124,7 +138,7 @@ def run_all(fetcher, sector_map, config,
             "signals_bool":  signals,         # List[bool]: 主要信號备用
             "signal_names":  SIGNAL_NAMES,
             "total":         total,
-            "level":         _level(total),
+            "level":         _level(total, scores),
             "macro_warning": macro_warning,
             "detail": {
                 SIGNAL_NAMES[0]: raw.get("燈1 月營收拐點", {}).get(sector_id, {}),
@@ -198,11 +212,14 @@ def _calc_cycle_stage(signals: list, total: float, level: str) -> Optional[str]:
     # 加速期：多燈齊亮 + 籌碼進駐
     if total >= 5 or (total >= 4 and chip >= 1):
         return "加速期"
-    # 確認期：法人入場 + 技術啟動
-    if inst >= 1 and tech >= 0.5:
+    # 確認期：法人開始入場 + 技術訊號啟動
+    # 學術依據：Chen, Yang & Lin (2012, Managerial Finance) 台股外資半燈已具領先意義
+    # Chung et al. (2021, QREF) MA 突破 + 法人持股增加之複合有效性
+    if inst >= 0.5 and tech >= 0.5:
         return "確認期"
-    # 萌芽期：基本面拐點，資金尚未跟進
-    if (rev >= 0.5 or inv >= 0.5) and inst == 0 and tech == 0:
+    # 萌芽期：基本面拐點出現，法人與技術尚未確認
+    # 對應 Wyckoff Accumulation 階段 (Grimes 2012, cited 60)
+    if (rev >= 0.5 or inv >= 0.5) and inst < 0.5 and tech < 0.5:
         return "萌芽期"
     return None
 

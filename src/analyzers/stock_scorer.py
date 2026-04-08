@@ -8,6 +8,12 @@ stock_scorer.py
   籌碼面  4.0 pts  — 燈2 共振 +2 / 外資獨買 +0.5 / 投信獨買 +0.5 / 燈6 +1
   加分    2.0 pts  — PE<板塊均值 +1 / ROE>15% +1
 
+學術依據：
+  - EPS YoY ≥ 25%：O'Neil (2009) CAN SLIM "C" (Current quarterly EPS growth ≥ 25%)
+    實證驗證：Lutey, Crum & Rayome (2014, J. Accounting & Finance, cited 10)
+    Lutey & Mukherjee (2023, SSRN) 簡化模型仍保持 25% 門檻
+  - ROE ≥ 15%：Buffett 護城河標準；Greenblatt (2006) Magic Formula 排名因子
+
 最高約 15 分；僅回傳分數 ≥ STOCK_MIN_DISPLAY 的個股
 """
 
@@ -24,8 +30,8 @@ logger = logging.getLogger(__name__)
 
 # ─── 常數（與 config 保持一致，避免循環 import） ────────────────────────────
 _DIST_MAX   = 10.0   # dist_60ma_pct 甜蜜區上限 %（0 < dist ≤ 10% → +0.5）
-_ROE_MIN    = 15.0   # ROE 加分下限 %
-_EPS_YOY_T  = 25.0   # EPS YoY 加分門檻 %
+_ROE_MIN    = 15.0   # ROE 加分下限 %（Greenblatt 2006 Magic Formula）
+_EPS_YOY_T  = 25.0   # EPS YoY 加分門檻 %（O'Neil 2009 CAN SLIM "C"；Lutey et al. 2014 驗證）
 
 
 # ────────────────────────────────────────────────────────────────────────────

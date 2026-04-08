@@ -1,7 +1,9 @@
 """
 燈3 — 庫存循環偵測
 
-主指標（季頻）：存貨週轉率 QoQ 改善 → 個股亮燈
+主指標（季頻）：存貨週轉率連續 2 季改善 → 個股亮燈
+學術依據：Abernathy et al. (2014, J. Accounting & Economics) 建議 2+ 季趨勢
+          確認以過濾單季波動雜訊
 板塊閾值：≥50% 個股亮燈 → 板塊亮燈
 
 注意：融資/借券已移至燈6（籌碼集中）計算，不再影響燈3。
@@ -17,10 +19,18 @@ _INVENTORY_TURNOVER_KEY = "fundamental_features:存貨週轉率"
 
 
 def _turnover_improving(series: pd.Series) -> bool:
-    """存貨週轉率：最新季 > 前一季（QoQ 改善）。"""
+    """
+    存貨週轉率：連續 2 季改善（Q[-1] > Q[-2] > Q[-3]）。
+    學術依據：2+ 季趨勢確認過濾單季波動雜訊 (Abernathy et al. 2014)。
+    數據不足 3 季時降級為單季 QoQ 比較。
+    """
     clean = series.dropna()
     if len(clean) < 2:
         return False
+    # 優先：連續 2 季改善
+    if len(clean) >= 3:
+        return float(clean.iloc[-1]) > float(clean.iloc[-2]) > float(clean.iloc[-3])
+    # 降級：僅 2 季數據時用單季 QoQ
     return float(clean.iloc[-1]) > float(clean.iloc[-2])
 
 

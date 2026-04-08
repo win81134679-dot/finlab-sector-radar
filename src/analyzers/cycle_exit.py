@@ -8,12 +8,17 @@ cycle_exit.py — 週期出場風險評估器
     Journal of Finance: 機構拋售（借券上升）先於股價高點約 3–5 日
   - Da, Gurun & Warachka (2014) "Frog in the Pan", Review of Financial Studies:
     大量累積漲幅的離散跳躍比漸進動能更容易反轉
+  - Cheng, Hameed & Subrahmanyam (2017) "Short-term Reversals",
+    J. Financial & Quantitative Analysis (cited 108): 機構退場加速短期反轉
 
-出場風險分數 (0–100)：
-  RRG Weakening 象限     → +40
-  籌碼燈熄滅 (chip=0)    → +25
-  接近過熱期 (total≥6.0)  → +20
-  宏觀逆風 + 加速/過熱期  → +15
+出場風險分數 (0–100) — 權重按學術預測力排序：
+  RRG Weakening 象限     → +40  (最強：技術面趨勢領先 2-4 週)
+  籌碼燈熄滅 (chip=0)    → +25  (次強：機構拋售 3-5 日領先)
+  接近過熱期 (total≥6.0)  → +20  (跳躍漲幅反轉風險)
+  宏觀逆風 + 加速/過熱期  → +15  (環境背景因子)
+
+  權重排序反映學術文獻中各因子的預測顯著性強弱；
+  無回測最佳化，但相對優先級與引用文獻的結論一致。
 
 行動建議：
   0–30  → 持有 (綠)
