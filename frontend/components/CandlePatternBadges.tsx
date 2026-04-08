@@ -215,7 +215,7 @@ function PatternBadge({ pattern: p }: { pattern: Pattern }) {
         <span className="opacity-60 font-normal">{p.daysAgo}日前</span>
       )}
       {hovered && (
-        <div className="absolute bottom-full left-0 mb-1.5 z-50 pointer-events-none min-w-[150px]">
+        <div className="absolute bottom-full left-0 mb-1.5 z-50 pointer-events-none min-w-37.5">
           <div className="bg-zinc-900 dark:bg-zinc-700 text-white text-[10px] rounded-lg px-2.5 py-2 shadow-xl">
             <div className="font-semibold mb-1">{p.name}</div>
             <div className="opacity-75 leading-snug">{p.source}</div>

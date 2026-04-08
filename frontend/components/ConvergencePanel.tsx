@@ -76,13 +76,14 @@ interface Props {
 }
 
 interface ConvergenceSector {
-  sectorId:   string;
-  level:      string;
-  lightRatio: number;
-  lightCount: number;
-  composite:  number;
-  combined:   number;
-  stockCount: number;
+  sectorId:    string;
+  level:       string;
+  lightRatio:  number;
+  lightCount:  number;
+  composite:   number;
+  combined:    number;
+  stockCount:  number;
+  cycleStage:  string | null;
 }
 
 interface ConvergenceStock {
@@ -395,9 +396,15 @@ export function ConvergencePanel({ snapshot, composite, holdings, magaData }: Pr
           composite:  cd.composite,
           combined,
           stockCount: sector.stocks.length,
+          cycleStage: sector.cycle_stage ?? null,
         };
       })
-      .sort((a, b) => b.combined - a.combined);
+      .sort((a, b) => {
+        if (a.combined !== b.combined) return b.combined - a.combined;
+        // 同 combined：確認期 > 萌芽期 > 加速期 > 過熱期
+        const cw: Record<string, number> = { "確認期": 0, "萌芽期": 1, "加速期": 2, "過熱期": 3 };
+        return (cw[a.cycleStage ?? ""] ?? 4) - (cw[b.cycleStage ?? ""] ?? 4);
+      });
   }, [snapshot, composite]);
 
   const nameMap = useMemo<Record<string, string>>(() => {
@@ -470,7 +477,10 @@ export function ConvergencePanel({ snapshot, composite, holdings, magaData }: Pr
     }
 
     return result.sort((a, b) => {
-      const w = (s: ConvergenceStock) => s.tags.length * 20 + s.combined;
+      // tags×20 + combined + 週期加成（確認期+10, 萌芽期+5）
+      const cycleBonus: Record<string, number> = { "確認期": 10, "萌芽期": 5 };
+      const w = (s: ConvergenceStock) =>
+        s.tags.length * 20 + s.combined + (cycleBonus[s.cycle_stage ?? ""] ?? 0);
       return w(b) - w(a);
     });
   }, [snapshot, composite, holdings, magaData, convergenceSectors, nameMap]);

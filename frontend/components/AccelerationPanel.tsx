@@ -237,7 +237,19 @@ export function AccelerationPanel({ snapshot, holdings }: Props) {
             exitAlert: sec.exit_risk?.action === "減碼" || sec.exit_risk?.action === "出場",
           })),
       }))
-      .sort((a, b) => (b.exitRisk?.score ?? 0) - (a.exitRisk?.score ?? 0));
+      .sort((a, b) => {
+        // 加速期(0) 排在過熱期(1) 前面：安心持有 → 準備出場
+        const cw: Record<string, number> = { "加速期": 0, "過熱期": 1 };
+        const ca = cw[a.cycleStage] ?? 2;
+        const cb = cw[b.cycleStage] ?? 2;
+        if (ca !== cb) return ca - cb;
+        // 同週期：低出場風險優先
+        const ea = a.exitRisk?.score ?? 0;
+        const eb = b.exitRisk?.score ?? 0;
+        if (ea !== eb) return ea - eb;
+        // 同風險：總分高優先
+        return b.total - a.total;
+      });
   }, [snapshot, holdings]);
 
   // 統計
