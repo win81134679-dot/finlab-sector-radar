@@ -1,5 +1,5 @@
 // app/page.tsx — FinLab 板塊偵測 主儀表板（Server Component）
-import { fetchLatestSnapshot, fetchHistoryIndex, fetchCommodities, fetchMagaData, fetchComposite, fetchHoldings, fetchPnl, fetchSensitivity } from "@/lib/fetcher";
+import { fetchLatestSnapshot, fetchHistoryIndex, fetchCommodities, fetchMagaData, fetchComposite, fetchHoldings, fetchPnl, fetchSensitivity, fetchExitAlerts } from "@/lib/fetcher";
 import { Header } from "@/components/Header";
 import { TabContainer } from "@/components/TabContainer";
 import { ErrorBoundary } from "@/components/ErrorBoundary";
@@ -7,7 +7,7 @@ import { ErrorBoundary } from "@/components/ErrorBoundary";
 export const revalidate = 1800;  // ISR: 30 分鐘重新驗證（資料由 GitHub Actions 每日更新）
 
 export default async function DashboardPage() {
-  const [snapshot, historyIndex, commodities, magaData, composite, sensitivity, holdings, pnl] = await Promise.all([
+  const [snapshot, historyIndex, commodities, magaData, composite, sensitivity, holdings, pnl, exitAlerts] = await Promise.all([
     fetchLatestSnapshot(),
     fetchHistoryIndex(),
     fetchCommodities(),
@@ -16,11 +16,12 @@ export default async function DashboardPage() {
     fetchSensitivity(),
     fetchHoldings(),
     fetchPnl(),
+    fetchExitAlerts(),
   ]);
 
   const runAt = snapshot?.run_at ?? "";
   const date  = snapshot?.date   ?? "";
-  const allNull = !snapshot && !historyIndex && !commodities && !magaData && !composite && !sensitivity && !holdings && !pnl;
+  const allNull = !snapshot && !historyIndex && !commodities && !magaData && !composite && !sensitivity && !holdings && !pnl && !exitAlerts;
 
   return (
     <div className="flex flex-col min-h-dvh">
@@ -47,6 +48,7 @@ export default async function DashboardPage() {
             sensitivity={sensitivity}
             holdings={holdings}
             pnl={pnl}
+            exitAlerts={exitAlerts}
           />
         </ErrorBoundary>
       )}

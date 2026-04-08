@@ -111,6 +111,33 @@ export const EXIT_RISK_CONFIG = {
 
 export type ExitRiskAction = keyof typeof EXIT_RISK_CONFIG;
 
+// 隔日出場警報等級設定（五因子學術模型）
+export const EXIT_ALERT_CONFIG = {
+  "留意": {
+    emoji: "⚡",
+    label: "明日留意",
+    description: "觀察開盤量能再決定",
+    chipCls: "bg-yellow-100/80 dark:bg-yellow-900/30 text-yellow-700 dark:text-yellow-300 border border-yellow-200 dark:border-yellow-700/40",
+    barColor: "bg-yellow-500",
+  },
+  "減碼": {
+    emoji: "🔶",
+    label: "明日減碼",
+    description: "建議開盤減碼 50%",
+    chipCls: "bg-orange-100/80 dark:bg-orange-900/30 text-orange-700 dark:text-orange-300 border border-orange-200 dark:border-orange-700/40",
+    barColor: "bg-orange-500",
+  },
+  "出場": {
+    emoji: "🚨",
+    label: "明日出場",
+    description: "建議開盤全數出場",
+    chipCls: "bg-red-100/80 dark:bg-red-900/30 text-red-700 dark:text-red-300 border border-red-200 dark:border-red-700/40",
+    barColor: "bg-red-500",
+  },
+} as const;
+
+export type ExitAlertActionKey = keyof typeof EXIT_ALERT_CONFIG;
+
 // 信號鍵 → 中文名稱（key 為 Python 輸出的信號名稱）
 export const SIGNAL_NAMES: Record<string, string> = {
   revenue:     "月營收拐點",

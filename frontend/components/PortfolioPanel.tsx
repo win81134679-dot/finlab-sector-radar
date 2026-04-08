@@ -2,13 +2,15 @@
 
 "use client";
 
-import type { HoldingsSnapshot, PnlSnapshot } from "@/lib/types";
+import type { HoldingsSnapshot, PnlSnapshot, ExitAlertsSnapshot } from "@/lib/types";
 import { getSectorName } from "@/lib/sectors";
+import { ExitAlertPanel } from "@/components/ExitAlertPanel";
 
 interface Props {
   holdings:     HoldingsSnapshot | null;
   pnl:          PnlSnapshot | null;
   hasComposite?: boolean;
+  exitAlerts?:  ExitAlertsSnapshot | null;
 }
 
 function PnlBadge({ pct }: { pct: number | null }) {
@@ -17,7 +19,7 @@ function PnlBadge({ pct }: { pct: number | null }) {
   return <span className={`font-semibold ${color}`}>{pct > 0 ? "+" : ""}{pct.toFixed(2)}%</span>;
 }
 
-export function PortfolioPanel({ holdings, pnl, hasComposite }: Props) {
+export function PortfolioPanel({ holdings, pnl, hasComposite, exitAlerts }: Props) {
   if (!holdings) {
     return (
       <div className="flex flex-col items-center justify-center py-16 space-y-6">
@@ -66,6 +68,9 @@ export function PortfolioPanel({ holdings, pnl, hasComposite }: Props) {
 
   return (
     <div className="space-y-5">
+      {/* ── 隔日出場訊號提醒 ── */}
+      <ExitAlertPanel exitAlerts={exitAlerts ?? null} pnl={pnl} />
+
       {/* ── 摘要列 ── */}
       <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
         <Stat label="持倉數" value={tickers.length.toString()} />

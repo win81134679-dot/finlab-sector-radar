@@ -688,6 +688,23 @@ if __name__ == "__main__":
                     from src.analyzers.portfolio import inject_cycle_acceleration
                     _holdings = inject_cycle_acceleration(_holdings, _sig_snap.get("sectors", {}))
 
+                    # 隔日出場警報
+                    try:
+                        from src.analyzers.exit_alert import generate_exit_alerts
+                        _exit_alerts = generate_exit_alerts(
+                            _sig_snap.get("sectors", {}),
+                            _holdings.get("positions"),
+                        )
+                        _ea_sum = _exit_alerts.get("summary", {})
+                        _auto_log(
+                            f"[INFO] 隔日出場警報：🚨出場 {_ea_sum.get('exit_count', 0)} "
+                            f"🔶減碼 {_ea_sum.get('reduce_count', 0)} "
+                            f"⚡留意 {_ea_sum.get('watch_count', 0)} "
+                            f"→ output/portfolio/exit_alerts.json"
+                        )
+                    except Exception as _ea_err:
+                        _auto_log(f"[WARN] 隔日出場警報產生失敗（不影響主流程）: {_ea_err}")
+
                 _auto_log(
                     f"[INFO] 建議持倉更新完成：{len(_holdings.get('positions', {}))} 支"
                     f" → output/portfolio/holdings.json"

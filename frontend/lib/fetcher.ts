@@ -427,6 +427,62 @@ export async function fetchPnl() {
   } catch { return null; }
 }
 
+// ── 隔日出場警報 ────────────────────────────────────────────────────────────
+
+const ExitAlertPositionSchema = z.object({
+  name_zh:            z.string(),
+  sector:             z.string(),
+  sector_name:        z.string(),
+  score:              z.number(),
+  action:             z.enum(["留意", "減碼", "出場"]),
+  delta:              z.number().nullable(),
+  prev_score:         z.number().nullable(),
+  current_exit_risk:  z.number(),
+  triggers:           z.array(z.string()),
+  cycle_stage:        z.string(),
+  composite_score:    z.number(),
+  weight:             z.number(),
+});
+
+const SectorAlertSchema = z.object({
+  score:              z.number(),
+  action:             z.string(),
+  delta:              z.number().nullable(),
+  prev_score:         z.number().nullable(),
+  current_exit_risk:  z.number(),
+  triggers:           z.array(z.string()),
+  cycle_stage:        z.string(),
+  sector_name:        z.string(),
+});
+
+const ExitAlertsSnapshotSchema = z.object({
+  updated_at:           z.string(),
+  system_risk_level:    z.enum(["low", "moderate", "elevated"]),
+  systemic_sector_count: z.number(),
+  sector_alerts:        z.record(SectorAlertSchema),
+  position_alerts:      z.record(ExitAlertPositionSchema),
+  summary: z.object({
+    exit_count:   z.number(),
+    reduce_count: z.number(),
+    watch_count:  z.number(),
+    safe_count:   z.number(),
+  }),
+});
+
+export async function fetchExitAlerts() {
+  if (!GITHUB_RAW_BASE) return null;
+  const url = `${GITHUB_RAW_BASE}/output/portfolio/exit_alerts.json`;
+  try {
+    const raw = await fetchJSON<unknown>(url);
+    const parsed = ExitAlertsSnapshotSchema.safeParse(raw);
+    if (!parsed.success) {
+      console.warn("portfolio/exit_alerts.json schema 驗證失敗:", parsed.error.issues);
+      return null;
+    }
+    return parsed.data;
+  } catch { return null; }
+}
+
 export async function fetchBacktest() {
   if (!GITHUB_RAW_BASE) return null;
   const url = `${GITHUB_RAW_BASE}/output/portfolio/backtest.json`;

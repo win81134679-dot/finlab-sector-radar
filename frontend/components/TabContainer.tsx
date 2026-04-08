@@ -2,7 +2,7 @@
 // TabContainer.tsx — 短線趨勢 / 最強訊號 / 長線趨勢 / 商品市場 Tab 切換（Client Component）
 
 import { useState, useMemo } from "react";
-import type { HistoryIndex, CommoditySnapshot, MagaSnapshot, CompositeSnapshot, HoldingsSnapshot, PnlSnapshot, SensitivitySnapshot } from "@/lib/types";
+import type { HistoryIndex, CommoditySnapshot, MagaSnapshot, CompositeSnapshot, HoldingsSnapshot, PnlSnapshot, SensitivitySnapshot, ExitAlertsSnapshot } from "@/lib/types";
 import { MacroPanel } from "@/components/MacroPanel";
 import { CommodityAlertBanner } from "@/components/CommodityAlertBanner";
 import { StaleDataBanner } from "@/components/StaleDataBanner";
@@ -25,6 +25,7 @@ interface Props {
   sensitivity: SensitivitySnapshot | null;
   holdings:    HoldingsSnapshot | null;
   pnl:         PnlSnapshot | null;
+  exitAlerts:  ExitAlertsSnapshot | null;
 }
 
 type Tab = "sector" | "convergence" | "acceleration" | "longterm" | "trumpfeed" | "commodity";
@@ -178,7 +179,7 @@ function ResonanceBar({
   );
 }
 
-export function TabContainer({ snapshot, historyIndex, commodities, magaData, composite, sensitivity, holdings, pnl }: Props) {
+export function TabContainer({ snapshot, historyIndex, commodities, magaData, composite, sensitivity, holdings, pnl, exitAlerts }: Props) {
   const [activeTab, setActiveTab] = useState<Tab>("sector");
 
   const runAt  = snapshot?.run_at  ?? "";
@@ -269,6 +270,7 @@ export function TabContainer({ snapshot, historyIndex, commodities, magaData, co
               snapshot={snapshot}
               holdings={holdings}
               pnl={pnl}
+              exitAlerts={exitAlerts}
             />
           </ErrorBoundary>
         )}

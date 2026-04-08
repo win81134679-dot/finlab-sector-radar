@@ -395,3 +395,49 @@ export interface TrumpEventLog {
   /** 儲存於 output/trump_signals.json，供下次 update-trump 計算 delta 用 */
   sectorState?:   Record<string, SectorState>;
 }
+
+// ────────────────────────────────────────────────────────────────────────
+// 隔日出場警報（Exit Alert）型別
+// ────────────────────────────────────────────────────────────────────────
+
+export type ExitAlertAction = "留意" | "減碼" | "出場";
+
+export interface ExitAlertPosition {
+  name_zh:            string;
+  sector:             string;
+  sector_name:        string;
+  score:              number;   // 0–100
+  action:             ExitAlertAction;
+  delta:              number | null;
+  prev_score:         number | null;
+  current_exit_risk:  number;
+  triggers:           string[];
+  cycle_stage:        string;
+  composite_score:    number;
+  weight:             number;
+}
+
+export interface ExitAlertSummary {
+  exit_count:   number;
+  reduce_count: number;
+  watch_count:  number;
+  safe_count:   number;
+}
+
+export interface ExitAlertsSnapshot {
+  updated_at:           string;
+  system_risk_level:    "low" | "moderate" | "elevated";
+  systemic_sector_count: number;
+  sector_alerts:        Record<string, {
+    score:              number;
+    action:             string;
+    delta:              number | null;
+    prev_score:         number | null;
+    current_exit_risk:  number;
+    triggers:           string[];
+    cycle_stage:        string;
+    sector_name:        string;
+  }>;
+  position_alerts:      Record<string, ExitAlertPosition>;
+  summary:              ExitAlertSummary;
+}
