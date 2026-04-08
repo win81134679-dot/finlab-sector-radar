@@ -2072,7 +2072,7 @@ graph TB
 | 色彩策略 | 雙主題（Light / Dark），語義化色彩系統 |
 | 字型策略 | Geist（英文/數字 monospace 感） + Noto Sans TC（中文） |
 | 圖像策略 | 無圖片依賴，純 emoji + SVG icon + 色塊 |
-| 動畫策略 | 極簡——僅 Tab 切換與 hover transition |
+| 動畫策略 | 展開收合採用 CSS `grid-template-rows` 過渡（300–500ms），避免硬編碼 max-height；其餘僅 hover transition |
 | 密度 | 高密度卡片排列，資訊優先於留白 |
 
 ### 25.2 設計原則
@@ -2170,7 +2170,7 @@ graph TB
 | 尺寸 | 寬度隨 Grid 響應，高度 auto |
 | 左邊框 | 4px solid，色彩依 level 變化 |
 | 排版 | 名稱 (semibold) + SignalDots + 週期 badge + 個股數 |
-| 展開 | 點擊觸發 → 下方漸出 StockTable |
+| 展開 | 點擊觸發 → CSS grid-rows `0fr→1fr` 過渡 500ms 漸出 StockTable |
 | hover | border-color 亮度提升 + 微陰影 |
 
 ### 27.2 SignalDots
@@ -3148,6 +3148,7 @@ output/
 |------|------|------|----------|
 | 1.0 | 2025-03-29 | PRD Generator | 初版完整 PRD 文件 |
 | 1.1 | 2026-04-09 | FinLab Team | UC-001 板塊排序改為投資行動導向（BR-002a）；週期監控面板排序改為加速期優先；雙線共振排序加入週期 tiebreaker |
+| 1.2 | 2026-04-09 | FinLab Team | 統一 7 個元件展開收合過渡動畫：SectorCard 移除硬編碼 max-h-1250 改用 CSS grid-template-rows 0fr→1fr；CommodityAlertBanner / CommodityCard / AccStockCard / MagaWatchlist / ConvergencePanel / TrumpFeedPanel 補上平滑過渡 |
 
 ---
 
