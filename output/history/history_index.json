@@ -1293,12 +1293,25 @@
       "sox_price": 375.94
     },
     {
-      "date": "2026-04-10",
       "warning": false,
       "signal": true,
       "positive_count": 3,
+      "total_available": 4,
+      "details": {
+        "bond": "US10Y=4.33% (↑均線❌)",
+        "pmi": "INDPRO=102.6 (擴張✅)",
+        "sox": "SOXX=377.01 (站上20MA✅)",
+        "twd": "USD/TWD=31.725 (台幣升值✅)"
+      },
       "us_bond_10y": 4.33,
-      "sox_price": 375.94
+      "bond_trend": "up",
+      "ip_index": 102.6,
+      "ip_trend": "up",
+      "sox_price": 377.01,
+      "sox_trend": "up",
+      "usd_twd": 31.725,
+      "twd_trend": "down",
+      "date": "2026-04-10"
     }
   ]
 }
