@@ -1,5 +1,14 @@
 {
-  "updated_at": "2026-04-09T11:48:52.485Z",
+  "updated_at": "2026-04-09T13:37:10.837Z",
   "updated_by": "admin",
-  "positions": {}
+  "positions": {
+    "3481": {
+      "name_zh": "群創",
+      "sector": "display",
+      "entry_price": 25.3,
+      "entry_date": "2026-04-09",
+      "shares": 1000,
+      "note": "手動加入"
+    }
+  }
 }
