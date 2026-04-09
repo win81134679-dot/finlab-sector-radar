@@ -227,6 +227,18 @@ export function AccelerationPanel({ snapshot, holdings, exitAlerts, pnl, userHol
   const [expandedSectors, setExpandedSectors] = useState<Record<string, boolean>>({});
   const [accSubTab, setAccSubTab] = useState<AccSubTab>("monitor");
 
+  // 從 snapshot 建構 stockLookup（代號 → 名稱 + 板塊）
+  const stockLookup = useMemo(() => {
+    if (!snapshot?.sectors) return {};
+    const lookup: Record<string, { name_zh: string; sector: string }> = {};
+    for (const [sectorId, sec] of Object.entries(snapshot.sectors)) {
+      for (const stock of sec.stocks) {
+        lookup[stock.id] = { name_zh: stock.name_zh ?? stock.id, sector: sectorId };
+      }
+    }
+    return lookup;
+  }, [snapshot]);
+
   const toggleSector = (sectorId: string) => {
     setExpandedSectors((prev) => ({ ...prev, [sectorId]: !prev[sectorId] }));
   };
@@ -496,6 +508,7 @@ export function AccelerationPanel({ snapshot, holdings, exitAlerts, pnl, userHol
           pnl={pnl ?? null}
           exitAlerts={exitAlerts}
           userHoldings={userHoldings}
+          stockLookup={stockLookup}
         />
       )}
     </div>

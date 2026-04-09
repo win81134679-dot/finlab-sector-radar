@@ -1,16 +1,34 @@
 // UserHoldingsManager.tsx — 管理員自選持倉管理面板
-// 功能：手動新增/刪除持倉、從演算法建議一鍵加入、密碼認證
+// 功能：手動新增/刪除持倉、從演算法建議一鍵加入、密碼認證、交易成本試算
 
 "use client";
 
-import { useState, useCallback, useEffect } from "react";
+import { useState, useCallback, useEffect, useMemo } from "react";
 import type { UserHoldingsSnapshot, UserHoldingPosition, HoldingsSnapshot } from "@/lib/types";
 import { getSectorName } from "@/lib/sectors";
+
+// ── 交易成本常數（元富證券，無折扣） ─────────────────────────────────────
+const BROKER_FEE_RATE = 0.001425;   // 0.1425% 買賣各收一次
+const BROKER_FEE_MIN  = 20;         // 最低手續費 20 元
+const TAX_RATE         = 0.003;     // 0.3% 證交稅（賣出時收取）
+
+/** 計算單筆交易成本（台幣整數，進位） */
+function calcTradeCost(price: number | null, shares: number | null) {
+  if (!price || !shares) return null;
+  const amount  = price * shares;
+  const buyFee  = Math.max(Math.round(amount * BROKER_FEE_RATE), BROKER_FEE_MIN);
+  const sellFee = Math.max(Math.round(amount * BROKER_FEE_RATE), BROKER_FEE_MIN);
+  const tax     = Math.round(amount * TAX_RATE);
+  return { amount, buyFee, sellFee, tax, total: buyFee + sellFee + tax };
+}
+
+export type StockLookup = Record<string, { name_zh: string; sector: string }>;
 
 interface Props {
   userHoldings: UserHoldingsSnapshot | null;
   algoHoldings: HoldingsSnapshot | null;
   onSaved: () => void;
+  stockLookup?: StockLookup;
 }
 
 const ADMIN_UNLOCKED_KEY = "finlab_admin_unlocked";
@@ -69,38 +87,95 @@ function PasswordModal({ onSuccess, onClose }: { onSuccess: () => void; onClose:
   );
 }
 
-// ── 新增持倉表單 ─────────────────────────────────────────────────────────
-function AddPositionForm({ onAdd }: { onAdd: (ticker: string, pos: UserHoldingPosition) => void }) {
+// ── 智慧新增持倉表單 ─────────────────────────────────────────────────────
+function AddPositionForm({ onAdd, stockLookup }: { onAdd: (ticker: string, pos: UserHoldingPosition) => void; stockLookup?: StockLookup }) {
   const [ticker, setTicker] = useState("");
-  const [nameZh, setNameZh] = useState("");
-  const [sector, setSector] = useState("");
   const [entryPrice, setEntryPrice] = useState("");
   const [shares, setShares] = useState("");
+
+  // 從 stockLookup 自動帶入名稱與板塊
+  const matched = stockLookup?.[ticker.trim()] ?? null;
+
+  const cost = calcTradeCost(
+    entryPrice ? Number(entryPrice) : null,
+    shares ? Number(shares) : null,
+  );
 
   const handleAdd = () => {
     const t = ticker.trim();
     if (!t) return;
     onAdd(t, {
-      name_zh: nameZh.trim() || t,
-      sector: sector.trim(),
+      name_zh: matched?.name_zh ?? t,
+      sector: matched?.sector ?? "",
       entry_price: entryPrice ? Number(entryPrice) : null,
       entry_date: new Date().toISOString().slice(0, 10),
       shares: shares ? Number(shares) : null,
       note: "手動加入",
     });
-    setTicker(""); setNameZh(""); setSector(""); setEntryPrice(""); setShares("");
+    setTicker(""); setEntryPrice(""); setShares("");
   };
+
+  const inputCls = "px-2.5 py-2 rounded-lg border border-zinc-300 dark:border-zinc-600 bg-white dark:bg-zinc-800 text-xs text-zinc-800 dark:text-zinc-200 placeholder-zinc-400 focus:outline-none focus:ring-2 focus:ring-blue-500/30";
 
   return (
     <div className="rounded-xl border border-zinc-200/40 dark:border-zinc-800/40 bg-zinc-50/60 dark:bg-zinc-900/40 p-4 space-y-3">
       <p className="text-xs font-semibold text-zinc-600 dark:text-zinc-300">➕ 手動新增持倉</p>
-      <div className="grid grid-cols-2 sm:grid-cols-5 gap-2">
-        <input value={ticker} onChange={e => setTicker(e.target.value)} placeholder="代號 *" className="px-2 py-1.5 rounded-lg border border-zinc-300 dark:border-zinc-600 bg-white dark:bg-zinc-800 text-xs text-zinc-800 dark:text-zinc-200 placeholder-zinc-400 focus:outline-none focus:ring-2 focus:ring-blue-500/30" />
-        <input value={nameZh} onChange={e => setNameZh(e.target.value)} placeholder="名稱" className="px-2 py-1.5 rounded-lg border border-zinc-300 dark:border-zinc-600 bg-white dark:bg-zinc-800 text-xs text-zinc-800 dark:text-zinc-200 placeholder-zinc-400 focus:outline-none focus:ring-2 focus:ring-blue-500/30" />
-        <input value={sector} onChange={e => setSector(e.target.value)} placeholder="板塊 ID" className="px-2 py-1.5 rounded-lg border border-zinc-300 dark:border-zinc-600 bg-white dark:bg-zinc-800 text-xs text-zinc-800 dark:text-zinc-200 placeholder-zinc-400 focus:outline-none focus:ring-2 focus:ring-blue-500/30" />
-        <input value={entryPrice} onChange={e => setEntryPrice(e.target.value)} placeholder="進場價" type="number" className="px-2 py-1.5 rounded-lg border border-zinc-300 dark:border-zinc-600 bg-white dark:bg-zinc-800 text-xs text-zinc-800 dark:text-zinc-200 placeholder-zinc-400 focus:outline-none focus:ring-2 focus:ring-blue-500/30" />
-        <input value={shares} onChange={e => setShares(e.target.value)} placeholder="股數" type="number" className="px-2 py-1.5 rounded-lg border border-zinc-300 dark:border-zinc-600 bg-white dark:bg-zinc-800 text-xs text-zinc-800 dark:text-zinc-200 placeholder-zinc-400 focus:outline-none focus:ring-2 focus:ring-blue-500/30" />
+
+      {/* 只需 3 欄：代號、進場價、股數 */}
+      <div className="grid grid-cols-3 gap-2">
+        <input
+          value={ticker}
+          onChange={e => setTicker(e.target.value.toUpperCase())}
+          placeholder="代號 *"
+          className={inputCls}
+          onKeyDown={e => e.key === "Enter" && handleAdd()}
+        />
+        <input
+          value={entryPrice}
+          onChange={e => setEntryPrice(e.target.value)}
+          placeholder="進場價"
+          type="number"
+          step="0.01"
+          className={inputCls}
+          onKeyDown={e => e.key === "Enter" && handleAdd()}
+        />
+        <input
+          value={shares}
+          onChange={e => setShares(e.target.value)}
+          placeholder="股數"
+          type="number"
+          className={inputCls}
+          onKeyDown={e => e.key === "Enter" && handleAdd()}
+        />
       </div>
+
+      {/* 自動帶入提示 */}
+      {ticker.trim() && (
+        <div className="flex items-center gap-3 text-[11px]">
+          {matched ? (
+            <span className="text-emerald-600 dark:text-emerald-400">
+              ✅ {matched.name_zh}（{getSectorName(matched.sector)}）
+            </span>
+          ) : (
+            <span className="text-zinc-400">⚠️ 未在訊號資料中找到，將以代號為名稱</span>
+          )}
+        </div>
+      )}
+
+      {/* 交易成本預覽 */}
+      {cost && (
+        <div className="flex flex-wrap items-center gap-3 text-[11px] text-zinc-500 dark:text-zinc-400 bg-zinc-100/60 dark:bg-zinc-800/50 rounded-lg px-3 py-2">
+          <span>💰 成交金額 <b className="text-zinc-700 dark:text-zinc-300">${cost.amount.toLocaleString()}</b></span>
+          <span className="text-zinc-300 dark:text-zinc-600">|</span>
+          <span>買入手續費 <b className="text-amber-600 dark:text-amber-400">${cost.buyFee.toLocaleString()}</b></span>
+          <span>賣出手續費 <b className="text-amber-600 dark:text-amber-400">${cost.sellFee.toLocaleString()}</b></span>
+          <span>證交稅 <b className="text-red-500 dark:text-red-400">${cost.tax.toLocaleString()}</b></span>
+          <span className="text-zinc-300 dark:text-zinc-600">|</span>
+          <span>來回總成本 <b className="text-red-600 dark:text-red-400">${cost.total.toLocaleString()}</b></span>
+          <span className="text-[10px] text-zinc-400">（元富證券 0.1425% 無折扣）</span>
+        </div>
+      )}
+
       <button onClick={handleAdd} disabled={!ticker.trim()} className="px-3 py-1.5 text-xs rounded-lg bg-blue-600 text-white font-medium hover:bg-blue-700 disabled:opacity-40 transition-colors">
         新增
       </button>
@@ -109,7 +184,7 @@ function AddPositionForm({ onAdd }: { onAdd: (ticker: string, pos: UserHoldingPo
 }
 
 // ── 主元件 ───────────────────────────────────────────────────────────────
-export function UserHoldingsManager({ userHoldings, algoHoldings, onSaved }: Props) {
+export function UserHoldingsManager({ userHoldings, algoHoldings, onSaved, stockLookup }: Props) {
   const [showPasswordModal, setShowPasswordModal] = useState(false);
   const [unlocked, setUnlocked] = useState(false);
   const [positions, setPositions] = useState<Record<string, UserHoldingPosition>>({});
@@ -197,6 +272,25 @@ export function UserHoldingsManager({ userHoldings, algoHoldings, onSaved }: Pro
     }
   };
 
+  const posEntries = Object.entries(positions);
+  const algoPositions = algoHoldings?.positions ?? {};
+  const algoNotInUser = Object.entries(algoPositions).filter(([t]) => !(t in positions));
+
+  // 交易成本匯總
+  const costSummary = useMemo(() => {
+    let totalAmount = 0, totalBuyFee = 0, totalSellFee = 0, totalTax = 0;
+    for (const [, pos] of posEntries) {
+      const c = calcTradeCost(pos.entry_price, pos.shares);
+      if (c) {
+        totalAmount  += c.amount;
+        totalBuyFee  += c.buyFee;
+        totalSellFee += c.sellFee;
+        totalTax     += c.tax;
+      }
+    }
+    return { totalAmount, totalBuyFee, totalSellFee, totalTax, totalCost: totalBuyFee + totalSellFee + totalTax };
+  }, [posEntries]);
+
   // 入口按鈕
   if (!unlocked) {
     return (
@@ -210,8 +304,6 @@ export function UserHoldingsManager({ userHoldings, algoHoldings, onSaved }: Pro
         {showPasswordModal && (
           <PasswordModal
             onSuccess={() => {
-              // 密碼已在 PasswordModal 驗證成功，此處暫用空物件驗證
-              // 實際密碼存 sessionStorage 以供後續儲存
               handleUnlock();
             }}
             onClose={() => setShowPasswordModal(false)}
@@ -220,10 +312,6 @@ export function UserHoldingsManager({ userHoldings, algoHoldings, onSaved }: Pro
       </>
     );
   }
-
-  const posEntries = Object.entries(positions);
-  const algoPositions = algoHoldings?.positions ?? {};
-  const algoNotInUser = Object.entries(algoPositions).filter(([t]) => !(t in positions));
 
   return (
     <div className="space-y-4">
@@ -258,24 +346,35 @@ export function UserHoldingsManager({ userHoldings, algoHoldings, onSaved }: Pro
                   <th className="text-left px-3 py-2.5 font-medium text-zinc-500 dark:text-zinc-400">板塊</th>
                   <th className="text-right px-3 py-2.5 font-medium text-zinc-500 dark:text-zinc-400">進場價</th>
                   <th className="text-right px-3 py-2.5 font-medium text-zinc-500 dark:text-zinc-400">股數</th>
+                  <th className="text-right px-3 py-2.5 font-medium text-zinc-500 dark:text-zinc-400">成本</th>
                   <th className="text-left px-3 py-2.5 font-medium text-zinc-500 dark:text-zinc-400">日期</th>
                   <th className="text-center px-3 py-2.5 font-medium text-zinc-500 dark:text-zinc-400">操作</th>
                 </tr>
               </thead>
               <tbody className="divide-y divide-zinc-100/60 dark:divide-zinc-800/40">
-                {posEntries.map(([ticker, pos]) => (
+                {posEntries.map(([ticker, pos]) => {
+                  const cost = calcTradeCost(pos.entry_price, pos.shares);
+                  return (
                   <tr key={ticker} className="hover:bg-zinc-50/60 dark:hover:bg-zinc-800/20 transition-colors">
                     <td className="px-4 py-2 font-mono font-semibold text-zinc-800 dark:text-zinc-200">{ticker}</td>
                     <td className="px-3 py-2 text-zinc-700 dark:text-zinc-300 truncate max-w-28">{pos.name_zh}</td>
                     <td className="px-3 py-2 text-zinc-500 dark:text-zinc-400 truncate max-w-24">{getSectorName(pos.sector)}</td>
                     <td className="px-3 py-2 text-right font-mono text-zinc-600 dark:text-zinc-400">{pos.entry_price ?? "—"}</td>
                     <td className="px-3 py-2 text-right font-mono text-zinc-600 dark:text-zinc-400">{pos.shares ?? "—"}</td>
+                    <td className="px-3 py-2 text-right font-mono text-xs">
+                      {cost ? (
+                        <span className="text-red-500 dark:text-red-400" title={`買手續費 $${cost.buyFee} + 賣手續費 $${cost.sellFee} + 證交稅 $${cost.tax}`}>
+                          ${cost.total.toLocaleString()}
+                        </span>
+                      ) : "—"}
+                    </td>
                     <td className="px-3 py-2 text-zinc-500 dark:text-zinc-400">{pos.entry_date}</td>
                     <td className="px-3 py-2 text-center">
                       <button onClick={() => handleRemove(ticker)} className="text-red-500 hover:text-red-600 text-xs font-medium transition-colors">刪除</button>
                     </td>
                   </tr>
-                ))}
+                  );
+                })}
               </tbody>
             </table>
           </div>
@@ -286,8 +385,21 @@ export function UserHoldingsManager({ userHoldings, algoHoldings, onSaved }: Pro
         </div>
       )}
 
+      {/* 交易成本匯總 */}
+      {posEntries.length > 0 && costSummary.totalAmount > 0 && (
+        <div className="flex flex-wrap items-center gap-4 px-4 py-2.5 rounded-xl bg-zinc-100/60 dark:bg-zinc-800/40 border border-zinc-200/40 dark:border-zinc-700/40 text-[11px] text-zinc-500 dark:text-zinc-400">
+          <span className="font-medium text-zinc-700 dark:text-zinc-300">📊 持倉成本匯總</span>
+          <span>總市值 <b className="text-zinc-700 dark:text-zinc-300">${costSummary.totalAmount.toLocaleString()}</b></span>
+          <span>買入手續費 <b className="text-amber-600 dark:text-amber-400">${costSummary.totalBuyFee.toLocaleString()}</b></span>
+          <span>賣出手續費 <b className="text-amber-600 dark:text-amber-400">${costSummary.totalSellFee.toLocaleString()}</b></span>
+          <span>證交稅 <b className="text-red-500 dark:text-red-400">${costSummary.totalTax.toLocaleString()}</b></span>
+          <span>來回總成本 <b className="text-red-600 dark:text-red-400">${costSummary.totalCost.toLocaleString()}</b></span>
+          <span className="text-[10px] text-zinc-400">（元富證券 0.1425% 無折扣 + 證交稅 0.3%）</span>
+        </div>
+      )}
+
       {/* 手動新增 */}
-      <AddPositionForm onAdd={handleAdd} />
+      <AddPositionForm onAdd={handleAdd} stockLookup={stockLookup} />
 
       {/* 從演算法建議加入 */}
       {algoNotInUser.length > 0 && (

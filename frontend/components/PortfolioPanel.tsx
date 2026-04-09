@@ -7,6 +7,7 @@ import type { HoldingsSnapshot, PnlSnapshot, ExitAlertsSnapshot, UserHoldingsSna
 import { getSectorName } from "@/lib/sectors";
 import { ExitAlertPanel } from "@/components/ExitAlertPanel";
 import { UserHoldingsManager } from "@/components/UserHoldingsManager";
+import type { StockLookup } from "@/components/UserHoldingsManager";
 
 interface Props {
   holdings:      HoldingsSnapshot | null;
@@ -15,6 +16,7 @@ interface Props {
   exitAlerts?:   ExitAlertsSnapshot | null;
   userHoldings?: UserHoldingsSnapshot | null;
   readOnly?:     boolean;
+  stockLookup?:  StockLookup;
 }
 
 function PnlBadge({ pct }: { pct: number | null }) {
@@ -23,7 +25,7 @@ function PnlBadge({ pct }: { pct: number | null }) {
   return <span className={`font-semibold ${color}`}>{pct > 0 ? "+" : ""}{pct.toFixed(2)}%</span>;
 }
 
-export function PortfolioPanel({ holdings, pnl, hasComposite, exitAlerts, userHoldings, readOnly }: Props) {
+export function PortfolioPanel({ holdings, pnl, hasComposite, exitAlerts, userHoldings, readOnly, stockLookup }: Props) {
   const [view, setView] = useState<"user" | "algo">((!readOnly && userHoldings?.positions && Object.keys(userHoldings.positions).length > 0) ? "user" : "algo");
   const [refreshKey, setRefreshKey] = useState(0);
 
@@ -109,6 +111,7 @@ export function PortfolioPanel({ holdings, pnl, hasComposite, exitAlerts, userHo
           userHoldings={userHoldings ?? null}
           algoHoldings={holdings}
           onSaved={() => setRefreshKey(k => k + 1)}
+          stockLookup={stockLookup}
         />
       )}
 
