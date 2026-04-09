@@ -19,7 +19,7 @@ export function SectorGrid({ data, isLoading = false, composite }: SectorGridPro
   if (isLoading) {
     return (
       <section aria-label="板塊載入中" className="mt-6">
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3">
           {Array.from({ length: SKELETON_COUNT }).map((_, i) => (
             <SkeletonCard key={i} />
           ))}
@@ -55,7 +55,7 @@ export function SectorGrid({ data, isLoading = false, composite }: SectorGridPro
       </div>
 
       {/* Desktop: Bento Grid */}
-      <div className="hidden md:grid grid-cols-3 lg:grid-cols-4 gap-4 auto-rows-fr">
+      <div className="hidden md:grid grid-cols-3 lg:grid-cols-4 gap-3 auto-rows-fr">
         {sectors.map((s) => (
           <div
             key={s.id}

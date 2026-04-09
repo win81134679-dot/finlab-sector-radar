@@ -39,12 +39,12 @@ export function SectorCard({ sectorId, sector, featured = false, defaultExpanded
     >
       {/* 卡片頭部 */}
       <button
-        className="w-full p-4 flex items-start justify-between text-left"
+        className="w-full p-3 flex items-start justify-between text-left"
         onClick={() => setExpanded(!expanded)}
         aria-expanded={expanded}
         aria-controls={`sector-detail-${sectorId}`}
       >
-        <div className="flex flex-col gap-2 min-w-0">
+        <div className="flex flex-col gap-1.5 min-w-0">
           {/* 板塊名稱 + 等級 badge */}
           <div className="flex items-center gap-2 flex-wrap">
             <h3 className={`font-bold ${featured ? "text-lg" : "text-base"} text-zinc-900 dark:text-white truncate`}>
@@ -111,7 +111,7 @@ export function SectorCard({ sectorId, sector, featured = false, defaultExpanded
           className={`grid transition-[grid-template-rows,opacity] duration-500 ${expanded ? "grid-rows-[1fr] opacity-100" : "grid-rows-[0fr] opacity-0"}`}
         >
           <div className="overflow-hidden min-h-0">
-            <div className="px-4 pb-4 border-t border-zinc-200/30 dark:border-zinc-700/30 pt-3">
+            <div className="px-3 pb-3 border-t border-zinc-200/30 dark:border-zinc-700/30 pt-2">
               <StockTable stocks={stocks} sectorLevel={sector.level} macroWarning={macroWarning} cycleStage={sector.cycle_stage ?? undefined} />
             </div>
           </div>
