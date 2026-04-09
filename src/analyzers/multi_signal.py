@@ -72,14 +72,56 @@ def run_all(fetcher, sector_map, config,
     from src.analyzers import revenue, institutional, inventory, technical
     from src.analyzers import rs_ratio, chipset, macro
     from src.analyzers import momentum_season, revenue_surprise
+    from src.analyzers import correlation_gate
+
+    # ── 相關性品質閘門（Phase 2）────────────────────────────────────────
+    # 先計算各板塊 intra-sector correlation，再建立過濾後的 sector_map
+    # 文獻依據：Bhojraj, Lee & Oler (JAR 2003) return comovement
+    corr_scores = {}
+    homogeneity = {}
+    sm_strict = sector_map   # 燈4/5 嚴格閘門（corr ≥ 0.40）
+    sm_loose = sector_map    # 燈1/2/3/6 寬鬆閘門（corr ≥ 0.25）
+    try:
+        price_df = fetcher.get("price:收盤價")
+        if price_df is not None and not price_df.empty:
+            all_sector_stocks = {
+                sid: sector_map.get_stocks(sid)
+                for sid in sector_map.all_sector_ids()
+            }
+            corr_scores = correlation_gate.compute_sector_correlations(
+                price_df, all_sector_stocks,
+            )
+            homogeneity = correlation_gate.compute_sector_homogeneity(corr_scores)
+
+            # 建立過濾後的 sector_map
+            strict_filtered = correlation_gate.filter_stocks_by_correlation(
+                all_sector_stocks, corr_scores,
+                threshold=correlation_gate.THRESHOLD_STRICT,
+            )
+            loose_filtered = correlation_gate.filter_stocks_by_correlation(
+                all_sector_stocks, corr_scores,
+                threshold=correlation_gate.THRESHOLD_LOOSE,
+            )
+            sm_strict = sector_map.create_filtered(strict_filtered)
+            sm_loose = sector_map.create_filtered(loose_filtered)
+
+            # 儲存相關性分數
+            correlation_gate.save_correlation_scores(corr_scores, homogeneity)
+            logger.info(
+                "相關性閘門完成：%d 個板塊, 平均同質性 %.3f",
+                len(homogeneity),
+                sum(v for v in homogeneity.values() if v == v) / max(1, len(homogeneity)),
+            )
+    except Exception as e:
+        logger.warning("相關性閘門計算失敗（退化為無過濾模式）: %s", e)
 
     steps = [
-        ("燈1 月營收拐點",  lambda: revenue.analyze(fetcher, sector_map, config)),
-        ("燈2 法人共振",    lambda: institutional.analyze(fetcher, sector_map, config)),
-        ("燈3 庫存循環",    lambda: inventory.analyze(fetcher, sector_map, config)),
-        ("燈4 技術突破",    lambda: technical.analyze(fetcher, sector_map, config)),
-        ("燈5 相對強度",    lambda: rs_ratio.analyze(fetcher, sector_map, config)),
-        ("燈6 籌碼集中",    lambda: chipset.analyze(fetcher, sector_map, config)),
+        ("燈1 月營收拐點",  lambda: revenue.analyze(fetcher, sm_loose, config)),
+        ("燈2 法人共振",    lambda: institutional.analyze(fetcher, sm_loose, config)),
+        ("燈3 庫存循環",    lambda: inventory.analyze(fetcher, sm_loose, config)),
+        ("燈4 技術突破",    lambda: technical.analyze(fetcher, sm_strict, config)),
+        ("燈5 相對強度",    lambda: rs_ratio.analyze(fetcher, sm_strict, config)),
+        ("燈6 籌碼集中",    lambda: chipset.analyze(fetcher, sm_loose, config)),
         ("燈7 宏觀濾網",    lambda: macro.analyze(fetcher, config)),
         # 學術 bonus 分析器（不計入七燈總分）
         ("學術_季節動能",   lambda: momentum_season.analyze(fetcher, sector_map, config)),
@@ -169,12 +211,15 @@ def run_all(fetcher, sector_map, config,
 
         sector_results[sector_id] = {
             "name":          sector_map.get_sector_name(sector_id),
+            "source":        sector_map.get_sector_source(sector_id),
             "signals":       scores,          # List[float]: 0.0 / 0.5 / 1.0
             "signals_bool":  signals,         # List[bool]: 主要信號备用
             "signal_names":  SIGNAL_NAMES,
             "total":         total,
             "level":         _level(total, scores),
             "macro_warning": macro_warning,
+            "homogeneity":   homogeneity.get(sector_id),
+            "member_count":  len(sector_map.get_stocks(sector_id)),
             "detail": {
                 SIGNAL_NAMES[0]: raw.get("燈1 月營收拐點", {}).get(sector_id, {}),
                 SIGNAL_NAMES[1]: raw.get("燈2 法人共振",  {}).get(sector_id, {}),
@@ -402,6 +447,9 @@ def _save_snapshot(result: Dict[str, Any], config, sector_map) -> Optional[Path]
             "exit_risk":    _exit_risk,
             "rs_momentum":  round(_rs_mom, 6) if _rs_mom is not None else None,
             "constituent_count": len(sector_map.get_stocks(sid)),
+            "source":       v.get("source", "custom"),
+            "homogeneity":  v.get("homogeneity"),
+            "member_count": v.get("member_count", len(sector_map.get_stocks(sid))),
             "stocks":       stock_list,
         }
 
@@ -609,7 +657,13 @@ def _generate_stock_names_json(config) -> None:
     universe: Dict[str, str] = {}
     if universe_path.exists():
         try:
-            universe = json.loads(universe_path.read_text(encoding="utf-8"))
+            raw_uni = json.loads(universe_path.read_text(encoding="utf-8"))
+            # 相容新格式 {code: {name, industry}} 與舊格式 {code: name}
+            for k, v in raw_uni.items():
+                if isinstance(v, dict):
+                    universe[k] = v.get("name", k)
+                else:
+                    universe[k] = v
             logger.info("讀取 stock_universe.json：%d 筆", len(universe))
         except Exception as e:
             logger.warning("stock_universe.json 讀取失敗: %s", e)

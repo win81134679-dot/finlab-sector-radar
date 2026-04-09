@@ -45,6 +45,9 @@ export interface SectorData {
   exit_risk?: ExitRisk | null;
   rs_momentum?: number | null;
   constituent_count?: number;
+  source?: "custom" | "auto";
+  homogeneity?: number | null;
+  member_count?: number;
   stocks: StockData[];
 }
 

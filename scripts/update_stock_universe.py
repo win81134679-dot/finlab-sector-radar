@@ -48,23 +48,24 @@ def _is_cache_valid(force: bool = False) -> bool:
     return (datetime.now() - mtime) < timedelta(days=CACHE_DAYS)
 
 
-def _fetch_twse() -> dict[str, str]:
-    """從 TWSE 公開 API 取得上市公司清單。"""
+def _fetch_twse() -> dict[str, dict]:
+    """從 TWSE 公開 API 取得上市公司清單（含產業碼）。"""
     url = "https://openapi.twse.com.tw/v1/opendata/t187ap03_L"
     logger.info("正在取得 TWSE 上市公司清單...")
     try:
         resp = requests.get(url, timeout=REQUEST_TIMEOUT)
         resp.raise_for_status()
         data = resp.json()
-        result: dict[str, str] = {}
+        result: dict[str, dict] = {}
         for row in data:
             code = str(row.get("公司代號", "")).strip()
             # 優先取簡稱，fallback 到公司全名
             name = str(
                 row.get("公司簡稱", "") or row.get("公司名稱", "")
             ).strip()
+            industry = str(row.get("產業別", "")).strip()
             if _STOCK_CODE_RE.match(code) and name:
-                result[code] = name
+                result[code] = {"name": name, "industry": industry}
         logger.info("TWSE 上市：取得 %d 筆", len(result))
         return result
     except Exception as e:
@@ -72,23 +73,24 @@ def _fetch_twse() -> dict[str, str]:
         return {}
 
 
-def _fetch_tpex() -> dict[str, str]:
-    """從 TPEx 公開 API 取得上櫃公司清單。"""
+def _fetch_tpex() -> dict[str, dict]:
+    """從 TPEx 公開 API 取得上櫃公司清單（含產業碼）。"""
     url = "https://www.tpex.org.tw/openapi/v1/mopsfin_t187ap03_O"
     logger.info("正在取得 TPEx 上櫃公司清單...")
     try:
         resp = requests.get(url, timeout=REQUEST_TIMEOUT)
         resp.raise_for_status()
         data = resp.json()
-        result: dict[str, str] = {}
+        result: dict[str, dict] = {}
         for row in data:
             code = str(row.get("SecuritiesCompanyCode", "")).strip()
             # 優先取簡稱，fallback 到公司全名
             name = str(
                 row.get("CompanyAbbreviation", "") or row.get("CompanyName", "")
             ).strip()
+            industry = str(row.get("SecuritiesIndustryCode", "")).strip()
             if _STOCK_CODE_RE.match(code) and name:
-                result[code] = name
+                result[code] = {"name": name, "industry": industry}
         logger.info("TPEx 上櫃：取得 %d 筆", len(result))
         return result
     except Exception as e:
@@ -96,16 +98,16 @@ def _fetch_tpex() -> dict[str, str]:
         return {}
 
 
-def update(force: bool = False) -> dict[str, str]:
+def update(force: bool = False) -> dict[str, dict]:
     """
     更新 stock_universe.json。
-    回傳完整的 { 代碼: 名稱 } 字典。
+    回傳完整的 { 代碼: {"name": 名稱, "industry": 產業碼} } 字典。
     """
     if _is_cache_valid(force):
         logger.info("stock_universe.json 快取有效（%d 天內），跳過更新", CACHE_DAYS)
         return json.loads(UNIVERSE_PATH.read_text(encoding="utf-8"))
 
-    universe: dict[str, str] = {}
+    universe: dict[str, dict] = {}
 
     # 合併 TWSE + TPEx
     twse = _fetch_twse()

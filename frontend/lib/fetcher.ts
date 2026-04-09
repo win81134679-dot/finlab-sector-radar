@@ -64,6 +64,9 @@ const SectorSchema = z.object({
   exit_risk: ExitRiskSchema.nullable().optional(),
   rs_momentum: z.number().nullable().optional(),
   constituent_count: z.number().optional(),
+  source: z.enum(["custom", "auto"]).optional(),
+  homogeneity: z.number().nullable().optional(),
+  member_count: z.number().optional(),
   stocks: z.array(StockSchema).optional().default([]),
 });
 

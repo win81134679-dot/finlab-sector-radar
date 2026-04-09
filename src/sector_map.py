@@ -1,7 +1,10 @@
 """
-sector_map.py — 板塊定義載入器
+sector_map.py — 板塊定義載入器（雙源合併）
 
-資料來源：custom_sectors.csv（雙層結構：TWSE大類 + 自訂子板塊）
+資料來源：
+  1. custom_sectors.csv（手動定義，最高優先權）
+  2. output/auto_sectors.csv（官方產業碼自動產生，補充未覆蓋股票）
+
 後續可直接編輯 CSV 新增或修改板塊，不需改 Python 代碼。
 """
 import csv
@@ -28,18 +31,36 @@ class SectorMap:
     def load(self, csv_path: Optional[Path] = None) -> int:
         """
         從 CSV 載入板塊定義。
+        先讀 custom_sectors.csv（最高優先），再讀 auto_sectors.csv（補充）。
         回傳載入的板塊數量。
         """
         from src import config
         csv_path = csv_path or config.CUSTOM_SECTORS_CSV
 
+        self._sectors = {}
+        count = 0
+
+        # 第一源：custom_sectors.csv
+        count += self._load_csv(csv_path, source="custom")
+
+        # 第二源：auto_sectors.csv（補充未覆蓋股票）
+        auto_path = config.OUTPUT_DIR / "auto_sectors.csv"
+        if auto_path.exists():
+            count += self._load_csv(auto_path, source="auto")
+        else:
+            logger.debug("auto_sectors.csv 不存在，僅使用 custom 板塊")
+
+        self._loaded = count > 0
+        logger.info(f"載入 {count} 個板塊定義（custom + auto）")
+        return count
+
+    def _load_csv(self, csv_path: Path, source: str = "custom") -> int:
+        """從單一 CSV 載入板塊定義。"""
         if not csv_path.exists():
             logger.error(f"找不到板塊定義檔: {csv_path}")
             return 0
 
-        self._sectors = {}
         count = 0
-
         with open(csv_path, encoding="utf-8-sig", newline="") as f:
             reader = csv.DictReader(f)
             for row in reader:
@@ -47,11 +68,8 @@ class SectorMap:
                 if not sid:
                     continue
 
-                # 收集所有 stock_ids（支援引號包住的逗號分隔字串）
                 stocks: List[str] = []
                 raw_ids = row.get("stock_ids", "") or ""
-                # raw_ids 可能是 str（正確格式），也可能因 CSV 無引號而被
-                # DictReader 拆成多欄 — 統一轉 str 後分割
                 if isinstance(raw_ids, list):
                     raw_ids = ",".join(str(x) for x in raw_ids)
                 for part in str(raw_ids).split(","):
@@ -59,16 +77,20 @@ class SectorMap:
                     if s:
                         stocks.append(s)
 
+                if sid in self._sectors:
+                    # 已存在的 sector_id（custom 優先），跳過
+                    continue
+
                 self._sectors[sid] = {
                     "name":    row.get("sector_name", sid).strip(),
-                    "type":    row.get("sector_type", "custom").strip(),
+                    "type":    row.get("sector_type", source).strip(),
                     "parent":  row.get("parent_sector", "").strip(),
                     "stocks":  stocks,
+                    "source":  source,
                 }
                 count += 1
 
-        self._loaded = True
-        logger.info(f"載入 {count} 個板塊定義")
+        logger.info(f"  [{source}] {csv_path.name}: {count} 個板塊")
         return count
 
     # ── 查詢接口 ──────────────────────────────────────────────────────────
@@ -81,6 +103,10 @@ class SectorMap:
 
     def get_sector_type(self, sector_id: str) -> str:
         return self._sectors.get(sector_id, {}).get("type", "custom")
+
+    def get_sector_source(self, sector_id: str) -> str:
+        """回傳板塊來源：'custom' 或 'auto'。"""
+        return self._sectors.get(sector_id, {}).get("source", "custom")
 
     def all_sector_ids(self) -> List[str]:
         return list(self._sectors.keys())
@@ -117,6 +143,25 @@ class SectorMap:
         if stock_code not in self._sectors[sector_id]["stocks"]:
             self._sectors[sector_id]["stocks"].append(stock_code)
         return True
+
+    def create_filtered(self, filtered_stocks: Dict[str, List[str]]) -> "SectorMap":
+        """
+        建立一個新的 SectorMap，板塊成員替換為過濾後的股票清單。
+        用於 correlation gate 過濾異質股後的分析器調用。
+
+        Parameters
+        ----------
+        filtered_stocks : dict
+            {sector_id: [filtered_stock_ids, ...]}
+        """
+        import copy
+        new_sm = SectorMap()
+        new_sm._sectors = copy.deepcopy(self._sectors)
+        new_sm._loaded = True
+        for sid, stocks in filtered_stocks.items():
+            if sid in new_sm._sectors:
+                new_sm._sectors[sid]["stocks"] = list(stocks)
+        return new_sm
 
     @property
     def loaded(self) -> bool:

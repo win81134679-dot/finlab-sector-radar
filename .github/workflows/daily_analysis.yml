@@ -81,6 +81,10 @@ jobs:
         if: steps.holiday_check.outputs.SKIP != 'true'
         run: python scripts/update_stock_universe.py
 
+      - name: 🏭 產生自動板塊分類
+        if: steps.holiday_check.outputs.SKIP != 'true'
+        run: python -m src.industry_mapping
+
       - name: 🚀 執行 7 燈板塊分析
         if: steps.holiday_check.outputs.SKIP != 'true'
         run: python src/main.py --auto

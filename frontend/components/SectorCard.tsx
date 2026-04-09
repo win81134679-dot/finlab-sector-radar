@@ -58,6 +58,13 @@ export function SectorCard({ sectorId, sector, featured = false, defaultExpanded
                 🎯 長線共振
               </span>
             )}
+            {sector.source === "auto" && (
+              <span className="text-[10px] px-1.5 py-0.5 rounded-full font-medium bg-blue-100/80 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 border border-blue-200/60 dark:border-blue-800/40"
+                title={sector.homogeneity != null ? `同質性: ${(sector.homogeneity * 100).toFixed(0)}%` : "自動分類板塊"}
+              >
+                ✨ 自動
+              </span>
+            )}
             {sector.cycle_stage && (() => {
               const cfg = CYCLE_STAGE_CONFIG[sector.cycle_stage as CycleStageKey];
               return cfg ? (

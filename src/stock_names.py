@@ -99,13 +99,20 @@ _UNIVERSE_PATH = Path(__file__).resolve().parent.parent / "output" / "stock_univ
 
 
 def _load_universe() -> dict[str, str]:
-    """延遲載入 + 快取 stock_universe.json。"""
+    """延遲載入 + 快取 stock_universe.json。支援新格式（{code: {name, industry}}）與舊格式（{code: name}）。"""
     global _universe_cache
     if _universe_cache is not None:
         return _universe_cache
     if _UNIVERSE_PATH.exists():
         try:
-            _universe_cache = json.loads(_UNIVERSE_PATH.read_text(encoding="utf-8"))
+            raw = json.loads(_UNIVERSE_PATH.read_text(encoding="utf-8"))
+            # 相容新舊格式
+            _universe_cache = {}
+            for k, v in raw.items():
+                if isinstance(v, dict):
+                    _universe_cache[k] = v.get("name", k)
+                else:
+                    _universe_cache[k] = v
             logger.debug("stock_universe.json 載入：%d 筆", len(_universe_cache))
             return _universe_cache
         except Exception as e:
