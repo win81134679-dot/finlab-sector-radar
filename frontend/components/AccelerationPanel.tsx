@@ -4,8 +4,7 @@
 
 import { useState, useMemo, useEffect, useRef } from "react";
 import dynamic from "next/dynamic";
-import type { SignalSnapshot, CompositeSnapshot, HoldingsSnapshot, PnlSnapshot, ExitAlertsSnapshot, ExitRisk, OHLCBar, UserHoldingsSnapshot } from "@/lib/types";
-import type { StockNamesMap } from "@/lib/fetcher";
+import type { SignalSnapshot, CompositeSnapshot, HoldingsSnapshot, PnlSnapshot, ExitAlertsSnapshot, ExitRisk, OHLCBar } from "@/lib/types";
 import {
   changePctColor, formatChangePct,
   CYCLE_STAGE_CONFIG, type CycleStageKey,
@@ -21,7 +20,6 @@ import { RsiGauge } from "./RsiGauge";
 import { MacdChart } from "./MacdChart";
 import { CandlePatternBadges } from "./CandlePatternBadges";
 import { ExitAlertPanel } from "./ExitAlertPanel";
-import { PortfolioPanel } from "./PortfolioPanel";
 
 const GITHUB_RAW_BASE = process.env.NEXT_PUBLIC_GITHUB_RAW_BASE_URL ?? "";
 
@@ -62,16 +60,7 @@ interface Props {
   holdings:  HoldingsSnapshot | null;
   exitAlerts?: ExitAlertsSnapshot | null;
   pnl?:       PnlSnapshot | null;
-  userHoldings?: UserHoldingsSnapshot | null;
-  stockNames?:    StockNamesMap | null;
 }
-
-type AccSubTab = "monitor" | "holdings";
-
-const ACC_SUB_TABS: { id: AccSubTab; label: string }[] = [
-  { id: "monitor",  label: "板塊監控 🔄" },
-  { id: "holdings", label: "我的持倉 📌" },
-];
 
 interface AccStock {
   id: string;
@@ -224,30 +213,9 @@ function AccStockCard({ stock, sectorLevel, exitRisk, cycleStage, macroWarning, 
   );
 }
 
-export function AccelerationPanel({ snapshot, holdings, exitAlerts, pnl, userHoldings, stockNames }: Props) {
+export function AccelerationPanel({ snapshot, holdings, exitAlerts, pnl }: Props) {
   const macroWarning = snapshot?.macro_warning === true || snapshot?.macro?.warning === true;
   const [expandedSectors, setExpandedSectors] = useState<Record<string, boolean>>({});
-  const [accSubTab, setAccSubTab] = useState<AccSubTab>("monitor");
-
-  // 完整 stockLookup：stockNames.json（全部股票）+ snapshot（即時資料優先）
-  const stockLookup = useMemo(() => {
-    const lookup: Record<string, { name_zh: string; sector: string }> = {};
-    // 1. 先填入完整對照表（stock_names.json）
-    if (stockNames) {
-      for (const [id, entry] of Object.entries(stockNames)) {
-        lookup[id] = { name_zh: entry.name_zh, sector: entry.sector };
-      }
-    }
-    // 2. snapshot 資料覆蓋（更即時）
-    if (snapshot?.sectors) {
-      for (const [sectorId, sec] of Object.entries(snapshot.sectors)) {
-        for (const stock of sec.stocks) {
-          lookup[stock.id] = { name_zh: stock.name_zh ?? stock.id, sector: sectorId };
-        }
-      }
-    }
-    return lookup;
-  }, [snapshot, stockNames]);
 
   const toggleSector = (sectorId: string) => {
     setExpandedSectors((prev) => ({ ...prev, [sectorId]: !prev[sectorId] }));
@@ -344,182 +312,150 @@ export function AccelerationPanel({ snapshot, holdings, exitAlerts, pnl, userHol
         </div>
       </div>
 
-      {/* 子分頁導航 */}
-      <div className="flex gap-1 p-1 rounded-lg bg-zinc-100/70 dark:bg-zinc-800/70 w-fit">
-        {ACC_SUB_TABS.map((tab) => (
-          <button
-            key={tab.id}
-            onClick={() => setAccSubTab(tab.id)}
-            className={`px-4 py-1.5 text-sm rounded-md transition-colors font-medium ${
-              accSubTab === tab.id
-                ? "bg-white dark:bg-zinc-700 text-zinc-900 dark:text-zinc-100 shadow-sm"
-                : "text-zinc-500 hover:text-zinc-700 dark:hover:text-zinc-300"
-            }`}
-          >
-            {tab.label}
-          </button>
-        ))}
-      </div>
-
-      {/* ── 板塊監控子標籤 ── */}
-      {accSubTab === "monitor" && (
+      {/* ── 板塊列表 ── */}
+      {monitorEmpty ? (
+        <div className="flex flex-col items-center justify-center py-16 text-zinc-400 dark:text-zinc-600">
+          <span className="text-4xl mb-3">🔄</span>
+          <p className="text-sm font-medium">目前無加速期板塊</p>
+          <p className="text-xs mt-1 opacity-60">所有板塊尚未進入加速期或過熱期，無需出場監控</p>
+        </div>
+      ) : (
         <>
-          {monitorEmpty ? (
-            <div className="flex flex-col items-center justify-center py-16 text-zinc-400 dark:text-zinc-600">
-              <span className="text-4xl mb-3">🔄</span>
-              <p className="text-sm font-medium">目前無加速期板塊</p>
-              <p className="text-xs mt-1 opacity-60">所有板塊尚未進入加速期或過熱期，無需出場監控</p>
+          {/* Summary bar */}
+          <div className="flex flex-wrap items-center gap-3 px-4 py-3 rounded-xl bg-zinc-50 dark:bg-zinc-800/40 border border-zinc-200/60 dark:border-zinc-700/40">
+            <div className="flex items-center gap-2 text-sm">
+              <span className="text-zinc-500 dark:text-zinc-400">平均風險分</span>
+              <span className={`font-bold ${avgRisk >= 56 ? "text-red-500" : avgRisk >= 31 ? "text-amber-500" : "text-emerald-500"}`}>
+                {avgRisk}
+              </span>
             </div>
-          ) : (
-            <>
-      {/* Summary bar */}
-      <div className="flex flex-wrap items-center gap-3 px-4 py-3 rounded-xl bg-zinc-50 dark:bg-zinc-800/40 border border-zinc-200/60 dark:border-zinc-700/40">
-        <div className="flex items-center gap-2 text-sm">
-          <span className="text-zinc-500 dark:text-zinc-400">平均風險分</span>
-          <span className={`font-bold ${avgRisk >= 56 ? "text-red-500" : avgRisk >= 31 ? "text-amber-500" : "text-emerald-500"}`}>
-            {avgRisk}
-          </span>
-        </div>
-        <div className="h-4 w-px bg-zinc-200 dark:bg-zinc-700" />
-        {accSectors.map((sec) => {
-          const eCfg = sec.exitRisk ? EXIT_RISK_CONFIG[sec.exitRisk.action as ExitRiskAction] : null;
-          return (
-            <span key={sec.sectorId} className="flex items-center gap-1 text-xs">
-              <span className="font-medium text-zinc-700 dark:text-zinc-300">{sec.nameZh}</span>
-              {eCfg && <span className={`px-1.5 py-0.5 rounded ${eCfg.chipCls}`}>{eCfg.emoji}{sec.exitRisk?.score}</span>}
-            </span>
-          );
-        })}
-        <div className="flex-1" />
-        <button
-          onClick={toggleAll}
-          className="text-xs text-blue-500 hover:text-blue-700 dark:hover:text-blue-300 transition-colors"
-        >
-          📊 {allExpanded ? "全部收起" : "全部展開分析"}
-        </button>
-      </div>
-
-      {/* Sectors */}
-      {accSectors.map((sec) => {
-        const stageCfg = CYCLE_STAGE_CONFIG[sec.cycleStage as CycleStageKey];
-        const isExpanded = !!expandedSectors[sec.sectorId];
-        return (
-          <section
-            key={sec.sectorId}
-            className="rounded-2xl border border-zinc-200/50 dark:border-zinc-700/40 bg-white/60 dark:bg-zinc-900/40 overflow-hidden"
-          >
-            {/* Sector header */}
-            <div className="px-4 py-3.5 space-y-2.5 border-b border-zinc-100 dark:border-zinc-800/50">
-              <div className="flex items-center justify-between">
-                <div className="flex items-center gap-2 flex-wrap">
-                  <h3 className="text-base font-bold text-zinc-900 dark:text-white">{sec.nameZh}</h3>
-                  {stageCfg && (
-                    <span className={`text-[11px] px-1.5 py-0.5 rounded-full font-medium ${stageCfg.chipCls}`} title={stageCfg.tooltip}>
-                      {stageCfg.emoji} {stageCfg.label}
-                    </span>
-                  )}
-                  <span className="text-xs text-zinc-500">{sec.total.toFixed(1)} / 7 燈</span>
-                  <span className="text-xs text-zinc-400">· {sec.stocks.length}/{sec.constituentCount} 檔{sec.constituentCount > sec.stocks.length ? ` (${sec.constituentCount - sec.stocks.length} 檔未達門檻)` : ''}</span>
-                </div>
-                <div className="flex items-center gap-3 text-xs">
-                  <SignalDots signals={sec.signals} size="sm" />
-                  <button
-                    onClick={() => toggleSector(sec.sectorId)}
-                    className={`px-2.5 py-1 rounded-lg transition-colors ${
-                      isExpanded
-                        ? "bg-blue-100/80 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400"
-                        : "text-zinc-400 hover:text-blue-500 hover:bg-blue-50 dark:hover:bg-blue-900/20"
-                    }`}
-                  >
-                    📊 {isExpanded ? "收起" : "展開分析"}
-                  </button>
-                </div>
-              </div>
-
-              {/* Exit risk bar */}
-              {sec.exitRisk && (
-                <RiskBar score={sec.exitRisk.score} action={sec.exitRisk.action} />
-              )}
-
-              {/* Triggers + RS info */}
-              <div className="flex flex-wrap gap-2 text-[11px]">
-                {sec.rsMomentum !== null && (
-                  <span className={`px-2 py-0.5 rounded-full border ${
-                    sec.rsMomentum >= 0
-                      ? "bg-emerald-50 dark:bg-emerald-900/20 text-emerald-700 dark:text-emerald-300 border-emerald-200 dark:border-emerald-800/40"
-                      : "bg-red-50 dark:bg-red-900/20 text-red-600 dark:text-red-300 border-red-200 dark:border-red-800/40"
-                  }`}>
-                    RS-Mom: {sec.rsMomentum >= 0 ? "+" : ""}{(sec.rsMomentum * 100).toFixed(2)}%
-                  </span>
-                )}
-                {sec.exitRisk?.rs_quadrant && (
-                  <span className="px-2 py-0.5 rounded-full bg-purple-50 dark:bg-purple-900/20 text-purple-600 dark:text-purple-300 border border-purple-200 dark:border-purple-800/40">
-                    RRG: {sec.exitRisk.rs_quadrant}
-                  </span>
-                )}
-                {sec.exitRisk?.triggers.map((t, i) => (
-                  <span key={i} className="px-2 py-0.5 rounded-full bg-zinc-100 dark:bg-zinc-800 text-zinc-600 dark:text-zinc-400 border border-zinc-200/60 dark:border-zinc-700/40">
-                    {t}
-                  </span>
-                ))}
-              </div>
-            </div>
-
-            {/* Stocks grid */}
-            <div className="p-3">
-              {sec.stocks.length === 0 ? (
-                <p className="text-sm text-zinc-400 text-center py-4">此板塊無個股資料</p>
-              ) : (
-                <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-3">
-                  {sec.stocks.map((stock) => (
-                    <AccStockCard
-                      key={stock.id}
-                      stock={stock}
-                      sectorLevel={sec.level}
-                      exitRisk={sec.exitRisk}
-                      cycleStage={sec.cycleStage}
-                      macroWarning={macroWarning}
-                      expanded={isExpanded}
-                    />
-                  ))}
-                </div>
-              )}
-            </div>
-          </section>
-        );
-      })}
-
-      {/* ── 持倉隔日操作建議（獨立區塊） ── */}
-      {exitAlerts && (
-        <div className="border-t border-zinc-200/60 dark:border-zinc-700/40 pt-5">
-          <div className="mb-3">
-            <h3 className="text-base font-bold text-zinc-900 dark:text-white">📋 持倉隔日操作建議</h3>
-            <p className="text-[11px] text-zinc-400 dark:text-zinc-500 mt-0.5">
-              💡 根據 RRG 動能、籌碼、量價等五因子模型產生，僅供參考
-            </p>
+            <div className="h-4 w-px bg-zinc-200 dark:bg-zinc-700" />
+            {accSectors.map((sec) => {
+              const eCfg = sec.exitRisk ? EXIT_RISK_CONFIG[sec.exitRisk.action as ExitRiskAction] : null;
+              return (
+                <span key={sec.sectorId} className="flex items-center gap-1 text-xs">
+                  <span className="font-medium text-zinc-700 dark:text-zinc-300">{sec.nameZh}</span>
+                  {eCfg && <span className={`px-1.5 py-0.5 rounded ${eCfg.chipCls}`}>{eCfg.emoji}{sec.exitRisk?.score}</span>}
+                </span>
+              );
+            })}
+            <div className="flex-1" />
+            <button
+              onClick={toggleAll}
+              className="text-xs text-blue-500 hover:text-blue-700 dark:hover:text-blue-300 transition-colors"
+            >
+              📊 {allExpanded ? "全部收起" : "全部展開分析"}
+            </button>
           </div>
-          <ExitAlertPanel exitAlerts={exitAlerts} pnl={pnl ?? null} />
-        </div>
-      )}
 
-      {/* Citation */}
-      <p className="text-[10px] text-zinc-400 dark:text-zinc-500 text-center pt-1 leading-relaxed">
-        出場風險模型：de Kempenaer (2014) RRG Weakening · Grinblatt, Titman &amp; Wermers (1995) 籌碼反轉 · Da, Gurun &amp; Warachka (2014) Frog in the Pan
-      </p>
-            </>
+          {/* Sectors */}
+          {accSectors.map((sec) => {
+            const stageCfg = CYCLE_STAGE_CONFIG[sec.cycleStage as CycleStageKey];
+            const isExpanded = !!expandedSectors[sec.sectorId];
+            return (
+              <section
+                key={sec.sectorId}
+                className="rounded-2xl border border-zinc-200/50 dark:border-zinc-700/40 bg-white/60 dark:bg-zinc-900/40 overflow-hidden"
+              >
+                {/* Sector header */}
+                <div className="px-4 py-3.5 space-y-2.5 border-b border-zinc-100 dark:border-zinc-800/50">
+                  <div className="flex items-center justify-between">
+                    <div className="flex items-center gap-2 flex-wrap">
+                      <h3 className="text-base font-bold text-zinc-900 dark:text-white">{sec.nameZh}</h3>
+                      {stageCfg && (
+                        <span className={`text-[11px] px-1.5 py-0.5 rounded-full font-medium ${stageCfg.chipCls}`} title={stageCfg.tooltip}>
+                          {stageCfg.emoji} {stageCfg.label}
+                        </span>
+                      )}
+                      <span className="text-xs text-zinc-500">{sec.total.toFixed(1)} / 7 燈</span>
+                      <span className="text-xs text-zinc-400">· {sec.stocks.length}/{sec.constituentCount} 檔{sec.constituentCount > sec.stocks.length ? ` (${sec.constituentCount - sec.stocks.length} 檔未達門檻)` : ''}</span>
+                    </div>
+                    <div className="flex items-center gap-3 text-xs">
+                      <SignalDots signals={sec.signals} size="sm" />
+                      <button
+                        onClick={() => toggleSector(sec.sectorId)}
+                        className={`px-2.5 py-1 rounded-lg transition-colors ${
+                          isExpanded
+                            ? "bg-blue-100/80 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400"
+                            : "text-zinc-400 hover:text-blue-500 hover:bg-blue-50 dark:hover:bg-blue-900/20"
+                        }`}
+                      >
+                        📊 {isExpanded ? "收起" : "展開分析"}
+                      </button>
+                    </div>
+                  </div>
+
+                  {/* Exit risk bar */}
+                  {sec.exitRisk && (
+                    <RiskBar score={sec.exitRisk.score} action={sec.exitRisk.action} />
+                  )}
+
+                  {/* Triggers + RS info */}
+                  <div className="flex flex-wrap gap-2 text-[11px]">
+                    {sec.rsMomentum !== null && (
+                      <span className={`px-2 py-0.5 rounded-full border ${
+                        sec.rsMomentum >= 0
+                          ? "bg-emerald-50 dark:bg-emerald-900/20 text-emerald-700 dark:text-emerald-300 border-emerald-200 dark:border-emerald-800/40"
+                          : "bg-red-50 dark:bg-red-900/20 text-red-600 dark:text-red-300 border-red-200 dark:border-red-800/40"
+                      }`}>
+                        RS-Mom: {sec.rsMomentum >= 0 ? "+" : ""}{(sec.rsMomentum * 100).toFixed(2)}%
+                      </span>
+                    )}
+                    {sec.exitRisk?.rs_quadrant && (
+                      <span className="px-2 py-0.5 rounded-full bg-purple-50 dark:bg-purple-900/20 text-purple-600 dark:text-purple-300 border border-purple-200 dark:border-purple-800/40">
+                        RRG: {sec.exitRisk.rs_quadrant}
+                      </span>
+                    )}
+                    {sec.exitRisk?.triggers.map((t, i) => (
+                      <span key={i} className="px-2 py-0.5 rounded-full bg-zinc-100 dark:bg-zinc-800 text-zinc-600 dark:text-zinc-400 border border-zinc-200/60 dark:border-zinc-700/40">
+                        {t}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+
+                {/* Stocks grid */}
+                <div className="p-3">
+                  {sec.stocks.length === 0 ? (
+                    <p className="text-sm text-zinc-400 text-center py-4">此板塊無個股資料</p>
+                  ) : (
+                    <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-3">
+                      {sec.stocks.map((stock) => (
+                        <AccStockCard
+                          key={stock.id}
+                          stock={stock}
+                          sectorLevel={sec.level}
+                          exitRisk={sec.exitRisk}
+                          cycleStage={sec.cycleStage}
+                          macroWarning={macroWarning}
+                          expanded={isExpanded}
+                        />
+                      ))}
+                    </div>
+                  )}
+                </div>
+              </section>
+            );
+          })}
+
+          {/* ── 持倉隔日操作建議（獨立區塊） ── */}
+          {exitAlerts && (
+            <div className="border-t border-zinc-200/60 dark:border-zinc-700/40 pt-5">
+              <div className="mb-3">
+                <h3 className="text-base font-bold text-zinc-900 dark:text-white">📋 持倉隔日操作建議</h3>
+                <p className="text-[11px] text-zinc-400 dark:text-zinc-500 mt-0.5">
+                  💡 根據 RRG 動能、籌碼、量價等五因子模型產生，僅供參考
+                </p>
+              </div>
+              <ExitAlertPanel exitAlerts={exitAlerts} pnl={pnl ?? null} />
+            </div>
           )}
-        </>
-      )}
 
-      {/* ── 我的持倉子標籤 ── */}
-      {accSubTab === "holdings" && (
-        <PortfolioPanel
-          holdings={holdings}
-          pnl={pnl ?? null}
-          exitAlerts={exitAlerts}
-          userHoldings={userHoldings}
-          stockLookup={stockLookup}
-        />
+          {/* Citation */}
+          <p className="text-[10px] text-zinc-400 dark:text-zinc-500 text-center pt-1 leading-relaxed">
+            出場風險模型：de Kempenaer (2014) RRG Weakening · Grinblatt, Titman &amp; Wermers (1995) 籌碼反轉 · Da, Gurun &amp; Warachka (2014) Frog in the Pan
+          </p>
+        </>
       )}
     </div>
   );

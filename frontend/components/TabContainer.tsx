@@ -15,6 +15,7 @@ import { ConvergencePanel } from "@/components/ConvergencePanel";
 import { LongTermPanel } from "@/components/LongTermPanel";
 import { TrumpFeedPanel } from "@/components/TrumpFeedPanel";
 import { AccelerationPanel } from "@/components/AccelerationPanel";
+import { HoldingsTab } from "@/components/HoldingsTab";
 import { UpdateButton } from "@/components/UpdateButton";
 
 interface Props {
@@ -31,7 +32,7 @@ interface Props {
   stockNames:   StockNamesMap | null;
 }
 
-type Tab = "sector" | "convergence" | "acceleration" | "longterm" | "trumpfeed" | "commodity";
+type Tab = "sector" | "convergence" | "acceleration" | "longterm" | "trumpfeed" | "commodity" | "holdings";
 
 const TABS: { id: Tab; label: string }[] = [
   { id: "sector",       label: "短線趨勢 📊" },
@@ -40,6 +41,7 @@ const TABS: { id: Tab; label: string }[] = [
   { id: "longterm",     label: "長線趨勢 📐" },
   { id: "trumpfeed",    label: "訊號來源 📡" },
   { id: "commodity",    label: "商品市場 🌐" },
+  { id: "holdings",     label: "我的持倉 📌" },
 ];
 
 function ResonanceBar({
@@ -262,8 +264,6 @@ export function TabContainer({ snapshot, historyIndex, commodities, magaData, co
               holdings={holdings}
               exitAlerts={exitAlerts}
               pnl={pnl}
-              userHoldings={userHoldings}
-              stockNames={stockNames}
             />
           </ErrorBoundary>
         )}
@@ -292,6 +292,19 @@ export function TabContainer({ snapshot, historyIndex, commodities, magaData, co
         {activeTab === "commodity" && (
           <ErrorBoundary label="商品市場">
             <CommodityPanel data={commodities} />
+          </ErrorBoundary>
+        )}
+
+        {activeTab === "holdings" && (
+          <ErrorBoundary label="我的持倉">
+            <HoldingsTab
+              snapshot={snapshot}
+              holdings={holdings}
+              userHoldings={userHoldings}
+              pnl={pnl}
+              exitAlerts={exitAlerts}
+              stockNames={stockNames}
+            />
           </ErrorBoundary>
         )}
       </main>

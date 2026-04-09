@@ -105,7 +105,7 @@ export function LongTermPanel({
         <>
           <h2 className="text-lg font-bold text-zinc-900 dark:text-white mb-1">持倉總覽</h2>
           <p className="text-xs text-zinc-500 dark:text-zinc-400 mb-5">
-            依複合評分建立的建議持倉與損益追蹤　·　編輯持倉請到「週期監控 → 我的持倉」
+            依複合評分建立的建議持倉與損益追蹤　·　編輯持倉請到「我的持倉」頁籤
           </p>
           <ErrorBoundary label="持倉總覽">
             <PortfolioPanel
