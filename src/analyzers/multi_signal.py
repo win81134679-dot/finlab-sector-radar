@@ -103,22 +103,39 @@ def run_all(fetcher, sector_map, config,
                 raw[name] = {}
 
     # ── 資料可用性閘門 ─────────────────────────────────────────────────
-    # 防止 FinLab API 全掛時覆蓋正常資料（GitHub Actions 預防性機制）
+    # 防止 FinLab API 全掛 / 部分掛時覆蓋正常資料（GitHub Actions 預防性機制）
     SECTOR_ANALYZERS = [
         "燈1 月營收拐點", "燈2 法人共振", "燈3 庫存循環",
         "燈4 技術突破", "燈5 相對強度", "燈6 籌碼集中",
     ]
-    empty_count = sum(1 for name in SECTOR_ANALYZERS if not raw.get(name))
-    if empty_count == len(SECTOR_ANALYZERS):
+    MIN_VALID_ANALYZERS = 4  # Condorcet: n=7 信號需 ≥4 有效才有正確率優勢
+
+    def _is_analyzer_empty(data: dict) -> bool:
+        """判斷分析器輸出是否為無效資料（空 dict 或全部 signal=False/score=0）。"""
+        if not data:
+            return True
+        # 捕捉「回傳了結構但所有 sector 都是空信號」的假資料模式
+        return all(
+            not entry.get("signal", False) and float(entry.get("score", 0)) <= 0
+            for entry in data.values()
+            if isinstance(entry, dict)
+        )
+
+    valid_names = [n for n in SECTOR_ANALYZERS if not _is_analyzer_empty(raw.get(n, {}))]
+    failed_names = [n for n in SECTOR_ANALYZERS if n not in valid_names]
+    valid_count = len(valid_names)
+
+    if valid_count < MIN_VALID_ANALYZERS:
         msg = (
-            "⚠️ 資料可用性閘門觸發：6 個板塊分析器全部回傳空白，"
-            "疑似 FinLab API 不可用。中止本次分析以保護現有資料。"
+            f"⚠️ 資料可用性閘門觸發：僅 {valid_count}/{len(SECTOR_ANALYZERS)} 個板塊分析器有效"
+            f"（需 ≥{MIN_VALID_ANALYZERS}），疑似 FinLab API 不可用。\n"
+            f"失效分析器：{', '.join(failed_names)}\n"
+            f"中止本次分析以保護現有資料。"
         )
         logger.error(msg)
         raise RuntimeError(msg)
-    if empty_count > 0:
-        failed = [n for n in SECTOR_ANALYZERS if not raw.get(n)]
-        logger.warning("部分分析器回傳空白（%d/%d）：%s", empty_count, len(SECTOR_ANALYZERS), failed)
+    if failed_names:
+        logger.warning("部分分析器無有效資料（%d/%d）：%s", len(failed_names), len(SECTOR_ANALYZERS), failed_names)
 
     # 宏觀是全局燈（dict，非 per-sector）
     macro_result: Dict[str, Any] = raw.get("燈7 宏觀濾網", {})
@@ -208,6 +225,30 @@ def run_all(fetcher, sector_map, config,
             "ignore":  [sid for sid, v in sorted_sectors.items() if v["level"] == "忽略"],
         },
     }
+
+    # ── 品質異常退化保護（防禦第二道）────────────────────────────────────
+    # 若前次有 ≥5 個強烈關注，本次卻變 0，視為資料異常而非真實市場變化
+    new_strong_count = len(result["summary"]["strong"])
+    try:
+        latest_path = Path(config.OUTPUT_DIR) / "signals_latest.json"
+        if latest_path.exists():
+            import json as _json_mod
+            prev_data = _json_mod.loads(latest_path.read_text(encoding="utf-8"))
+            prev_strong = sum(
+                1 for s in prev_data.get("sectors", {}).values()
+                if s.get("level") == "強烈關注"
+            )
+            if prev_strong >= 5 and new_strong_count == 0:
+                msg = (
+                    f"⚠️ 品質異常退化保護觸發：前次 {prev_strong} 個強烈關注 → 本次 0 個，"
+                    f"市場不可能單日全面崩潰。中止本次分析以保護現有資料。"
+                )
+                logger.error(msg)
+                raise RuntimeError(msg)
+    except RuntimeError:
+        raise
+    except Exception as _e:
+        logger.debug("歷史比對讀取失敗（首次執行屬正常）: %s", _e)
 
     # ── 儲存 JSON 歷史快照 ──────────────────────────────────────────────
     _save_snapshot(result, config, sector_map)

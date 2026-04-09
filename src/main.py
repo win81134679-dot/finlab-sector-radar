@@ -601,11 +601,16 @@ if __name__ == "__main__":
         try:
             result = run_all(fetcher, sector_map, config, progress_cb=_auto_cb)
         except Exception as _e:
-            _auto_log(f"[ERROR] 7 燈分析失敗: {_e}")
-            # 通知 Discord 系統頻道
+            err_str = str(_e)
+            _auto_log(f"[ERROR] 7 燈分析失敗: {err_str}")
+            # 通知 Discord 系統頻道（閘門觸發 vs 一般錯誤用不同通知）
             try:
-                from src.notifier import send_error
-                send_error(config, str(_e))
+                if "資料可用性閘門" in err_str or "品質異常退化" in err_str:
+                    from src.notifier import send_data_gate_alert
+                    send_data_gate_alert(config, err_str)
+                else:
+                    from src.notifier import send_error
+                    send_error(config, err_str)
             except Exception:
                 pass
             sys.exit(1)

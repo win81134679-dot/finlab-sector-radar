@@ -225,6 +225,30 @@ def send_macro_alert(config: Any, result: Dict[str, Any]) -> None:
     _post(webhook_url, {"embeds": [embed]})
 
 
+def send_data_gate_alert(config: Any, error_msg: str) -> None:
+    """
+    資料可用性閘門觸發通知 → #系統-通知
+    與 send_error 不同：使用黃色（警告），強調「前次資料已保留」。
+    """
+    webhook_url = getattr(config, "DISCORD_WEBHOOK_SYSTEM", "")
+    if not webhook_url:
+        webhook_url = os.getenv("DISCORD_WEBHOOK_SYSTEM", "")
+    if not webhook_url:
+        return
+
+    embed = {
+        "title":       "🛡️ 資料保護閘門已啟動",
+        "description": f"```\n{error_msg[:800]}\n```",
+        "color":       0xFAAD14,
+        "fields": [
+            {"name": "影響", "value": "本次分析已中止，**前次正常資料已保留**，網站不受影響。", "inline": False},
+            {"name": "下一步", "value": "將於下次排程（每日 20:30 TST）自動重試。\n若持續觸發，請確認 FinLab API 狀態。", "inline": False},
+        ],
+        "timestamp": datetime.utcnow().isoformat(),
+    }
+    _post(webhook_url, {"embeds": [embed]})
+
+
 def send_error(config: Any, error_msg: str) -> None:
     """
     執行失敗通知 → #系統-通知

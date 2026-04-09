@@ -38,6 +38,9 @@ def analyze(fetcher, sector_map, config) -> Dict[str, Dict[str, Any]]:
     results: Dict[str, Dict[str, Any]] = {}
 
     inv_df = fetcher.get(_INVENTORY_TURNOVER_KEY)
+    if inv_df is None:
+        logger.warning("燈3: 無法取得庫存週轉率數據")
+        return results
 
     for sector_id in sector_map.all_sector_ids():
         stocks = sector_map.get_stocks(sector_id)
