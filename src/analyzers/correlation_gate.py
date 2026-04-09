@@ -152,7 +152,7 @@ def compute_sector_homogeneity(
         if values:
             result[sector_id] = round(float(np.mean(values)), 4)
         else:
-            result[sector_id] = float("nan")
+            result[sector_id] = None
     return result
 
 

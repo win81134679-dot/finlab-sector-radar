@@ -37,6 +37,17 @@ def _nan_to_none(v: Any) -> Any:
     return v
 
 
+def _sanitize_nans(obj: Any) -> Any:
+    """遞迴清洗整個結構中的 float NaN → None，保證 json.dumps(allow_nan=False) 不會爆"""
+    if isinstance(obj, dict):
+        return {k: _sanitize_nans(v) for k, v in obj.items()}
+    if isinstance(obj, list):
+        return [_sanitize_nans(v) for v in obj]
+    if isinstance(obj, float) and math.isnan(obj):
+        return None
+    return obj
+
+
 LEVEL_THRESHOLDS = {
     # 學術依據：Condorcet 陪審團定理 (1785)
     # n=7 獨立信號，多數決最優門檻 = ⌈7/2⌉ = 4
@@ -367,29 +378,29 @@ def _save_snapshot(result: Dict[str, Any], config, sector_map) -> Optional[Path]
         bond_str = details.get("bond", "")
         if "US10Y=" in bond_str:
             macro_payload["us_bond_10y"] = float(bond_str.split("US10Y=")[1].split("%")[0])
-        macro_payload["bond_trend"] = "down" if sub.get("bond_down") else "up"
+        macro_payload["bond_trend"] = "down" if sub.get("bond_down") is True else ("up" if sub.get("bond_down") is False else "unknown")
     except Exception:
         pass
     try:
         indpro_str = details.get("pmi", "")
         if "INDPRO=" in indpro_str:
             macro_payload["ip_index"] = float(indpro_str.split("INDPRO=")[1].split(" ")[0])
-        macro_payload["ip_trend"] = "up" if sub.get("indpro_above_ma") else "down"
+        macro_payload["ip_trend"] = "up" if sub.get("indpro_above_ma") is True else ("down" if sub.get("indpro_above_ma") is False else "unknown")
     except Exception:
         pass
     try:
         sox_str = details.get("sox", "")
         if "SOXX=" in sox_str:
             macro_payload["sox_price"] = float(sox_str.split("SOXX=")[1].split(" ")[0])
-        macro_payload["sox_trend"] = "up" if sub.get("sox_above_ma") else "down"
+        macro_payload["sox_trend"] = "up" if sub.get("sox_above_ma") is True else ("down" if sub.get("sox_above_ma") is False else "unknown")
     except Exception:
         pass
     try:
         twd_str = details.get("twd", "")
         if "USD/TWD=" in twd_str:
             macro_payload["usd_twd"] = float(twd_str.split("USD/TWD=")[1].split(" ")[0])
-        twd_sub = sub.get("twd_appreciating")
-        macro_payload["twd_trend"] = "down" if twd_sub else "up"
+        _twd_val = sub.get("twd_appreciating")
+        macro_payload["twd_trend"] = "down" if _twd_val is True else ("up" if _twd_val is False else "unknown")
     except Exception:
         pass
 
@@ -488,6 +499,7 @@ def _save_snapshot(result: Dict[str, Any], config, sector_map) -> Optional[Path]
         "sectors": sectors_payload,
     }
 
+    snapshot = _sanitize_nans(snapshot)
     snapshot_json = json.dumps(snapshot, ensure_ascii=False, indent=2, allow_nan=False)
 
     saved_paths: List[Path] = []

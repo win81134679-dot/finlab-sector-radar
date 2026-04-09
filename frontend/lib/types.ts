@@ -58,13 +58,13 @@ export interface MacroData {
   total_available: number;
   details: Record<string, string>;
   us_bond_10y?: number;
-  bond_trend?: "up" | "down";
+  bond_trend?: "up" | "down" | "unknown";
   ip_index?: number;
-  ip_trend?: "up" | "down";
+  ip_trend?: "up" | "down" | "unknown";
   sox_price?: number;
-  sox_trend?: "up" | "down";
+  sox_trend?: "up" | "down" | "unknown";
   usd_twd?: number;
-  twd_trend?: "up" | "down";
+  twd_trend?: "up" | "down" | "unknown";
 }
 
 export interface SignalSnapshot {

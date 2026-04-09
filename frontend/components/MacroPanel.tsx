@@ -7,7 +7,7 @@ interface MacroCardProps {
   title: string;
   value: string | null;
   subtitle: string;
-  trend?: "up" | "down" | null;
+  trend?: "up" | "down" | "unknown" | null;
   positive?: boolean;
   icon: string;
 }

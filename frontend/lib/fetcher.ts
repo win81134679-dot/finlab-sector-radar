@@ -22,13 +22,13 @@ const MacroSchema = z.object({
   total_available: z.number().optional().default(0),
   details: z.record(z.string()).optional().default({}),
   us_bond_10y: z.number().optional(),
-  bond_trend: z.enum(["up", "down"]).optional(),
+  bond_trend: z.enum(["up", "down", "unknown"]).optional(),
   ip_index: z.number().optional(),
-  ip_trend: z.enum(["up", "down"]).optional(),
+  ip_trend: z.enum(["up", "down", "unknown"]).optional(),
   sox_price: z.number().optional(),
-  sox_trend: z.enum(["up", "down"]).optional(),
+  sox_trend: z.enum(["up", "down", "unknown"]).optional(),
   usd_twd: z.number().optional(),
-  twd_trend: z.enum(["up", "down"]).optional(),
+  twd_trend: z.enum(["up", "down", "unknown"]).optional(),
 });
 
 const StockSchema = z.object({

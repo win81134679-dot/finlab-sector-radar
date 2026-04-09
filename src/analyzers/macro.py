@@ -191,15 +191,16 @@ def analyze(fetcher, config) -> Dict[str, Any]:
     else:
         details["twd"] = "USD/TWD 取得失敗"
 
-    # 計分：≥3 項正面（可用 ≥3 時）；可用 <3 時沿用 ≥2/N 邏輯
+    # 計分：≥60% 正面（比例制閾值，防止單指標失效時連鎖崩潰）
+    import math
     available = {k: v for k, v in sub_signals.items() if v is not None}
     positive_count   = sum(1 for v in available.values() if v)
     total_available  = len(available)
 
-    if total_available >= 3:
-        signal = positive_count >= 3
+    if total_available >= 2:
+        signal = positive_count >= math.ceil(total_available * 0.6)
     else:
-        signal = (total_available >= 1) and (positive_count >= min(2, total_available))
+        signal = (total_available >= 1) and (positive_count >= 1)
 
     return {
         "signal":          signal,

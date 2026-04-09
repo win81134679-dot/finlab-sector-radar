@@ -254,11 +254,10 @@ export function HoldingCard({ holding, onRemove, showManagement }: HoldingCardPr
       </div>
 
       {/* ── 展開分析區 ── */}
-      {(hasKLine || hasBreakdown) && (
-        <div
-          className={`grid transition-[grid-template-rows,opacity] duration-300 ${expanded ? "grid-rows-[1fr] opacity-100" : "grid-rows-[0fr] opacity-0"}`}
-          onTransitionEnd={(e) => { if (!expanded && e.target === e.currentTarget) setShouldRender(false); }}
-        >
+      <div
+        className={`grid transition-[grid-template-rows,opacity] duration-300 ${expanded ? "grid-rows-[1fr] opacity-100" : "grid-rows-[0fr] opacity-0"}`}
+        onTransitionEnd={(e) => { if (!expanded && e.target === e.currentTarget) setShouldRender(false); }}
+      >
           <div className="overflow-hidden min-h-0">
             {shouldRender && (
               <div className="border-t border-zinc-100 dark:border-zinc-800/50">
@@ -285,7 +284,6 @@ export function HoldingCard({ holding, onRemove, showManagement }: HoldingCardPr
             )}
           </div>
         </div>
-      )}
     </div>
   );
 }

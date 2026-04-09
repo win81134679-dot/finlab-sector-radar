@@ -7,10 +7,12 @@ vi.stubEnv("NEXT_PUBLIC_GITHUB_RAW_BASE_URL", "https://raw.example.com");
 const { fetchExitAlerts } = await import("../fetcher");
 
 function mockJsonResponse(data: unknown, status = 200) {
+  const body = JSON.stringify(data);
   mockFetch.mockResolvedValueOnce({
     ok: status >= 200 && status < 300,
     status,
     json: () => Promise.resolve(data),
+    text: () => Promise.resolve(body),
   });
 }
 
