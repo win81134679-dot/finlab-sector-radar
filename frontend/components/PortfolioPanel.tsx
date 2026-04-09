@@ -14,6 +14,7 @@ interface Props {
   hasComposite?: boolean;
   exitAlerts?:   ExitAlertsSnapshot | null;
   userHoldings?: UserHoldingsSnapshot | null;
+  readOnly?:     boolean;
 }
 
 function PnlBadge({ pct }: { pct: number | null }) {
@@ -22,8 +23,8 @@ function PnlBadge({ pct }: { pct: number | null }) {
   return <span className={`font-semibold ${color}`}>{pct > 0 ? "+" : ""}{pct.toFixed(2)}%</span>;
 }
 
-export function PortfolioPanel({ holdings, pnl, hasComposite, exitAlerts, userHoldings }: Props) {
-  const [view, setView] = useState<"user" | "algo">(userHoldings?.positions && Object.keys(userHoldings.positions).length > 0 ? "user" : "algo");
+export function PortfolioPanel({ holdings, pnl, hasComposite, exitAlerts, userHoldings, readOnly }: Props) {
+  const [view, setView] = useState<"user" | "algo">((!readOnly && userHoldings?.positions && Object.keys(userHoldings.positions).length > 0) ? "user" : "algo");
   const [refreshKey, setRefreshKey] = useState(0);
 
   if (!holdings && !userHoldings) {
@@ -75,32 +76,34 @@ export function PortfolioPanel({ holdings, pnl, hasComposite, exitAlerts, userHo
 
   return (
     <div className="space-y-5">
-      {/* ── 視圖切換 ── */}
-      <div className="flex items-center gap-2">
-        <button
-          onClick={() => setView("user")}
-          className={`px-3 py-1.5 text-xs font-medium rounded-lg border transition-colors ${
-            view === "user"
-              ? "border-blue-300 dark:border-blue-700 bg-blue-50 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300"
-              : "border-zinc-200/60 dark:border-zinc-700/40 text-zinc-500 dark:text-zinc-400 hover:bg-zinc-50 dark:hover:bg-zinc-800/40"
-          }`}
-        >
-          📌 我的持倉{hasUserPositions ? ` (${Object.keys(userHoldings!.positions).length})` : ""}
-        </button>
-        <button
-          onClick={() => setView("algo")}
-          className={`px-3 py-1.5 text-xs font-medium rounded-lg border transition-colors ${
-            view === "algo"
-              ? "border-blue-300 dark:border-blue-700 bg-blue-50 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300"
-              : "border-zinc-200/60 dark:border-zinc-700/40 text-zinc-500 dark:text-zinc-400 hover:bg-zinc-50 dark:hover:bg-zinc-800/40"
-          }`}
-        >
-          💡 演算法建議{tickers.length > 0 ? ` (${tickers.length})` : ""}
-        </button>
-      </div>
+      {/* ── 視圖切換（readOnly 模式隱藏） ── */}
+      {!readOnly && (
+        <div className="flex items-center gap-2">
+          <button
+            onClick={() => setView("user")}
+            className={`px-3 py-1.5 text-xs font-medium rounded-lg border transition-colors ${
+              view === "user"
+                ? "border-blue-300 dark:border-blue-700 bg-blue-50 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300"
+                : "border-zinc-200/60 dark:border-zinc-700/40 text-zinc-500 dark:text-zinc-400 hover:bg-zinc-50 dark:hover:bg-zinc-800/40"
+            }`}
+          >
+            📌 我的持倉{hasUserPositions ? ` (${Object.keys(userHoldings!.positions).length})` : ""}
+          </button>
+          <button
+            onClick={() => setView("algo")}
+            className={`px-3 py-1.5 text-xs font-medium rounded-lg border transition-colors ${
+              view === "algo"
+                ? "border-blue-300 dark:border-blue-700 bg-blue-50 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300"
+                : "border-zinc-200/60 dark:border-zinc-700/40 text-zinc-500 dark:text-zinc-400 hover:bg-zinc-50 dark:hover:bg-zinc-800/40"
+            }`}
+          >
+            💡 演算法建議{tickers.length > 0 ? ` (${tickers.length})` : ""}
+          </button>
+        </div>
+      )}
 
-      {/* ── 我的持倉視圖 ── */}
-      {view === "user" && (
+      {/* ── 我的持倉視圖（readOnly 模式不顯示） ── */}
+      {!readOnly && view === "user" && (
         <UserHoldingsManager
           key={refreshKey}
           userHoldings={userHoldings ?? null}
@@ -109,8 +112,8 @@ export function PortfolioPanel({ holdings, pnl, hasComposite, exitAlerts, userHo
         />
       )}
 
-      {/* ── 演算法建議視圖 ── */}
-      {view === "algo" && (
+      {/* ── 演算法建議視圖（readOnly 模式固定顯示） ── */}
+      {(readOnly || view === "algo") && (
         <>
       {/* ── 隔日出場訊號提醒 ── */}
       <ExitAlertPanel exitAlerts={exitAlerts ?? null} pnl={pnl} />

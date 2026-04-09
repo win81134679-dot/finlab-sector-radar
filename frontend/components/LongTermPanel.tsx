@@ -36,7 +36,7 @@ type SubTab = "signal" | "maga" | "portfolio";
 const SUB_TABS: { id: SubTab; label: string }[] = [
   { id: "signal",    label: "訊號分析" },
   { id: "maga",      label: "MAGA 政策" },
-  { id: "portfolio", label: "建議持倉" },
+  { id: "portfolio", label: "持倉總覽" },
 ];
 
 export function LongTermPanel({
@@ -100,20 +100,21 @@ export function LongTermPanel({
         </ErrorBoundary>
       )}
 
-      {/* 建議持倉 */}
+      {/* 持倉總覽（唯讀模式） */}
       {subTab === "portfolio" && (
         <>
-          <h2 className="text-lg font-bold text-zinc-900 dark:text-white mb-1">建議持倉</h2>
+          <h2 className="text-lg font-bold text-zinc-900 dark:text-white mb-1">持倉總覽</h2>
           <p className="text-xs text-zinc-500 dark:text-zinc-400 mb-5">
-            依複合評分建立的建議持倉與損益追蹤
+            依複合評分建立的建議持倉與損益追蹤　·　編輯持倉請到「週期監控 → 我的持倉」
           </p>
-          <ErrorBoundary label="建議持倉">
+          <ErrorBoundary label="持倉總覽">
             <PortfolioPanel
               holdings={holdings}
               pnl={pnl}
               hasComposite={composite !== null}
               exitAlerts={exitAlerts}
               userHoldings={userHoldings}
+              readOnly
             />
           </ErrorBoundary>
         </>

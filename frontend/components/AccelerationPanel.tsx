@@ -4,7 +4,7 @@
 
 import { useState, useMemo, useEffect, useRef } from "react";
 import dynamic from "next/dynamic";
-import type { SignalSnapshot, CompositeSnapshot, HoldingsSnapshot, PnlSnapshot, ExitAlertsSnapshot, ExitRisk, OHLCBar } from "@/lib/types";
+import type { SignalSnapshot, CompositeSnapshot, HoldingsSnapshot, PnlSnapshot, ExitAlertsSnapshot, ExitRisk, OHLCBar, UserHoldingsSnapshot } from "@/lib/types";
 import {
   changePctColor, formatChangePct,
   CYCLE_STAGE_CONFIG, type CycleStageKey,
@@ -20,6 +20,7 @@ import { RsiGauge } from "./RsiGauge";
 import { MacdChart } from "./MacdChart";
 import { CandlePatternBadges } from "./CandlePatternBadges";
 import { ExitAlertPanel } from "./ExitAlertPanel";
+import { PortfolioPanel } from "./PortfolioPanel";
 
 const GITHUB_RAW_BASE = process.env.NEXT_PUBLIC_GITHUB_RAW_BASE_URL ?? "";
 
@@ -60,7 +61,15 @@ interface Props {
   holdings:  HoldingsSnapshot | null;
   exitAlerts?: ExitAlertsSnapshot | null;
   pnl?:       PnlSnapshot | null;
+  userHoldings?: UserHoldingsSnapshot | null;
 }
+
+type AccSubTab = "monitor" | "holdings";
+
+const ACC_SUB_TABS: { id: AccSubTab; label: string }[] = [
+  { id: "monitor",  label: "板塊監控 🔄" },
+  { id: "holdings", label: "我的持倉 📌" },
+];
 
 interface AccStock {
   id: string;
@@ -213,9 +222,10 @@ function AccStockCard({ stock, sectorLevel, exitRisk, cycleStage, macroWarning, 
   );
 }
 
-export function AccelerationPanel({ snapshot, holdings, exitAlerts, pnl }: Props) {
+export function AccelerationPanel({ snapshot, holdings, exitAlerts, pnl, userHoldings }: Props) {
   const macroWarning = snapshot?.macro_warning === true || snapshot?.macro?.warning === true;
   const [expandedSectors, setExpandedSectors] = useState<Record<string, boolean>>({});
+  const [accSubTab, setAccSubTab] = useState<AccSubTab>("monitor");
 
   const toggleSector = (sectorId: string) => {
     setExpandedSectors((prev) => ({ ...prev, [sectorId]: !prev[sectorId] }));
@@ -284,22 +294,8 @@ export function AccelerationPanel({ snapshot, holdings, exitAlerts, pnl }: Props
     setExpandedSectors(next);
   };
 
-  // 空狀態
-  if (accSectors.length === 0) {
-    return (
-      <div className="mt-6">
-        <div className="mb-5">
-          <h2 className="text-lg font-bold text-zinc-900 dark:text-white">週期監控 🔄</h2>
-          <p className="text-xs text-zinc-500 dark:text-zinc-400 mt-0.5">追蹤加速期 / 過熱期板塊的出場風險</p>
-        </div>
-        <div className="flex flex-col items-center justify-center py-16 text-zinc-400 dark:text-zinc-600">
-          <span className="text-4xl mb-3">🔄</span>
-          <p className="text-sm font-medium">目前無加速期板塊</p>
-          <p className="text-xs mt-1 opacity-60">所有板塊尚未進入加速期或過熱期，無需出場監控</p>
-        </div>
-      </div>
-    );
-  }
+  // 空狀態（板塊監控子標籤仍可切到持倉）
+  const monitorEmpty = accSectors.length === 0;
 
   return (
     <div className="mt-6 space-y-5">
@@ -326,6 +322,34 @@ export function AccelerationPanel({ snapshot, holdings, exitAlerts, pnl }: Props
         </div>
       </div>
 
+      {/* 子分頁導航 */}
+      <div className="flex gap-1 p-1 rounded-lg bg-zinc-100/70 dark:bg-zinc-800/70 w-fit">
+        {ACC_SUB_TABS.map((tab) => (
+          <button
+            key={tab.id}
+            onClick={() => setAccSubTab(tab.id)}
+            className={`px-4 py-1.5 text-sm rounded-md transition-colors font-medium ${
+              accSubTab === tab.id
+                ? "bg-white dark:bg-zinc-700 text-zinc-900 dark:text-zinc-100 shadow-sm"
+                : "text-zinc-500 hover:text-zinc-700 dark:hover:text-zinc-300"
+            }`}
+          >
+            {tab.label}
+          </button>
+        ))}
+      </div>
+
+      {/* ── 板塊監控子標籤 ── */}
+      {accSubTab === "monitor" && (
+        <>
+          {monitorEmpty ? (
+            <div className="flex flex-col items-center justify-center py-16 text-zinc-400 dark:text-zinc-600">
+              <span className="text-4xl mb-3">🔄</span>
+              <p className="text-sm font-medium">目前無加速期板塊</p>
+              <p className="text-xs mt-1 opacity-60">所有板塊尚未進入加速期或過熱期，無需出場監控</p>
+            </div>
+          ) : (
+            <>
       {/* Summary bar */}
       <div className="flex flex-wrap items-center gap-3 px-4 py-3 rounded-xl bg-zinc-50 dark:bg-zinc-800/40 border border-zinc-200/60 dark:border-zinc-700/40">
         <div className="flex items-center gap-2 text-sm">
@@ -460,6 +484,20 @@ export function AccelerationPanel({ snapshot, holdings, exitAlerts, pnl }: Props
       <p className="text-[10px] text-zinc-400 dark:text-zinc-500 text-center pt-1 leading-relaxed">
         出場風險模型：de Kempenaer (2014) RRG Weakening · Grinblatt, Titman &amp; Wermers (1995) 籌碼反轉 · Da, Gurun &amp; Warachka (2014) Frog in the Pan
       </p>
+            </>
+          )}
+        </>
+      )}
+
+      {/* ── 我的持倉子標籤 ── */}
+      {accSubTab === "holdings" && (
+        <PortfolioPanel
+          holdings={holdings}
+          pnl={pnl ?? null}
+          exitAlerts={exitAlerts}
+          userHoldings={userHoldings}
+        />
+      )}
     </div>
   );
 }
