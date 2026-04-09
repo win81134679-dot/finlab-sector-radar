@@ -192,7 +192,7 @@ def run_all(fetcher, sector_map, config,
     }
 
     # ── 儲存 JSON 歷史快照 ──────────────────────────────────────────────
-    _save_snapshot(result, config)
+    _save_snapshot(result, config, sector_map)
 
     return result
 
@@ -224,7 +224,7 @@ def _calc_cycle_stage(signals: list, total: float, level: str) -> Optional[str]:
     return None
 
 
-def _save_snapshot(result: Dict[str, Any], config) -> Optional[Path]:
+def _save_snapshot(result: Dict[str, Any], config, sector_map) -> Optional[Path]:
     """
     儲存三個 JSON 輸出：
     1. output/signals_YYYYMMDD_HHMM.json   — 舊時間戳快照（供 load_history 使用）
