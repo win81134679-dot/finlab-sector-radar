@@ -4,8 +4,8 @@
   "run_at": "2026-04-09T22:21:40+08:00",
   "last_trading_date": "2026-04-09",
   "macro": {
-    "warning": true,
-    "signal": false,
+    "warning": false,
+    "signal": true,
     "positive_count": 2,
     "total_available": 3,
     "details": {
@@ -16,17 +16,17 @@
     },
     "us_bond_10y": 4.33,
     "bond_trend": "up",
-    "ip_trend": "down",
+    "ip_trend": "unknown",
     "sox_price": 372.53,
     "sox_trend": "up",
     "usd_twd": 31.777,
     "twd_trend": "down"
   },
-  "macro_warning": true,
+  "macro_warning": false,
   "sectors": {
     "pcb": {
       "name_zh": "PCB板",
-      "total": 4.0,
+      "total": 5.0,
       "signals": [
         1.0,
         0.5,
@@ -34,7 +34,7 @@
         0.5,
         1.0,
         1.0,
-        0.0
+        1.0
       ],
       "level": "強烈關注",
       "cycle_stage": "加速期",
@@ -876,7 +876,7 @@
     },
     "semiconductor_equip": {
       "name_zh": "半導體設備",
-      "total": 3.5,
+      "total": 4.5,
       "signals": [
         1.0,
         0.0,
@@ -884,10 +884,10 @@
         0.5,
         1.0,
         1.0,
-        0.0
+        1.0
       ],
-      "level": "觀察中",
-      "cycle_stage": null,
+      "level": "強烈關注",
+      "cycle_stage": "加速期",
       "exit_risk": null,
       "rs_momentum": 0.006019,
       "constituent_count": 11,
@@ -1507,7 +1507,7 @@
     },
     "ic_design": {
       "name_zh": "IC設計",
-      "total": 3.0,
+      "total": 4.0,
       "signals": [
         1.0,
         0.5,
@@ -1515,9 +1515,9 @@
         0.5,
         1.0,
         0.0,
-        0.0
+        1.0
       ],
-      "level": "觀察中",
+      "level": "強烈關注",
       "cycle_stage": "確認期",
       "exit_risk": null,
       "rs_momentum": 0.004326,
@@ -1836,7 +1836,7 @@
     },
     "networking": {
       "name_zh": "網通設備",
-      "total": 3.0,
+      "total": 4.0,
       "signals": [
         1.0,
         0.0,
@@ -1844,9 +1844,9 @@
         1.0,
         1.0,
         0.0,
-        0.0
+        1.0
       ],
-      "level": "觀察中",
+      "level": "強烈關注",
       "cycle_stage": null,
       "exit_risk": null,
       "rs_momentum": 0.004305,
@@ -2168,7 +2168,7 @@
     },
     "power_components": {
       "name_zh": "電源/被動元件",
-      "total": 3.0,
+      "total": 4.0,
       "signals": [
         1.0,
         0.5,
@@ -2176,9 +2176,9 @@
         0.5,
         1.0,
         0.0,
-        0.0
+        1.0
       ],
-      "level": "觀察中",
+      "level": "強烈關注",
       "cycle_stage": "確認期",
       "exit_risk": null,
       "rs_momentum": 0.00386,
@@ -2602,7 +2602,7 @@
     },
     "optical_comm": {
       "name_zh": "光通訊",
-      "total": 3.0,
+      "total": 4.0,
       "signals": [
         1.0,
         0.5,
@@ -2610,9 +2610,9 @@
         0.5,
         1.0,
         0.0,
-        0.0
+        1.0
       ],
-      "level": "觀察中",
+      "level": "強烈關注",
       "cycle_stage": "確認期",
       "exit_risk": null,
       "rs_momentum": 0.013379,
@@ -3135,7 +3135,7 @@
     },
     "ev_supply": {
       "name_zh": "電動車供應鏈",
-      "total": 2.5,
+      "total": 3.5,
       "signals": [
         1.0,
         0.0,
@@ -3143,7 +3143,7 @@
         0.5,
         0.0,
         0.0,
-        0.0
+        1.0
       ],
       "level": "觀察中",
       "cycle_stage": null,
@@ -3669,7 +3669,7 @@
     },
     "construction": {
       "name_zh": "建設/營造",
-      "total": 2.5,
+      "total": 3.5,
       "signals": [
         1.0,
         0.5,
@@ -3677,7 +3677,7 @@
         0.0,
         0.0,
         0.0,
-        0.0
+        1.0
       ],
       "level": "觀察中",
       "cycle_stage": null,
@@ -4316,7 +4316,7 @@
     },
     "thermal": {
       "name_zh": "散熱/熱管理",
-      "total": 2.5,
+      "total": 3.5,
       "signals": [
         1.0,
         0.0,
@@ -4324,7 +4324,7 @@
         0.5,
         1.0,
         0.0,
-        0.0
+        1.0
       ],
       "level": "觀察中",
       "cycle_stage": null,
@@ -4853,7 +4853,7 @@
     },
     "packaging": {
       "name_zh": "封測",
-      "total": 2.5,
+      "total": 3.5,
       "signals": [
         1.0,
         0.0,
@@ -4861,7 +4861,7 @@
         0.5,
         1.0,
         0.0,
-        0.0
+        1.0
       ],
       "level": "觀察中",
       "cycle_stage": null,
@@ -5184,7 +5184,7 @@
     },
     "robotics": {
       "name_zh": "機器人/自動化",
-      "total": 2.5,
+      "total": 3.5,
       "signals": [
         0.0,
         0.5,
@@ -5192,7 +5192,7 @@
         0.0,
         0.0,
         1.0,
-        0.0
+        1.0
       ],
       "level": "觀察中",
       "cycle_stage": null,
@@ -5615,7 +5615,7 @@
     },
     "power_semi": {
       "name_zh": "功率半導體",
-      "total": 2.5,
+      "total": 3.5,
       "signals": [
         1.0,
         0.0,
@@ -5623,7 +5623,7 @@
         0.5,
         1.0,
         0.0,
-        0.0
+        1.0
       ],
       "level": "觀察中",
       "cycle_stage": null,
@@ -5947,7 +5947,7 @@
     },
     "securities": {
       "name_zh": "證券",
-      "total": 2.5,
+      "total": 3.5,
       "signals": [
         1.0,
         0.5,
@@ -5955,7 +5955,7 @@
         0.0,
         1.0,
         0.0,
-        0.0
+        1.0
       ],
       "level": "觀察中",
       "cycle_stage": null,
@@ -6281,7 +6281,7 @@
     },
     "energy_storage": {
       "name_zh": "儲能/電池",
-      "total": 2.5,
+      "total": 3.5,
       "signals": [
         1.0,
         0.0,
@@ -6289,7 +6289,7 @@
         0.5,
         1.0,
         0.0,
-        0.0
+        1.0
       ],
       "level": "觀察中",
       "cycle_stage": null,
@@ -6615,7 +6615,7 @@
     },
     "solar": {
       "name_zh": "太陽能",
-      "total": 2.0,
+      "total": 3.0,
       "signals": [
         1.0,
         0.0,
@@ -6623,7 +6623,7 @@
         0.0,
         0.0,
         0.0,
-        0.0
+        1.0
       ],
       "level": "觀察中",
       "cycle_stage": "萌芽期",
@@ -7050,7 +7050,7 @@
     },
     "banking": {
       "name_zh": "銀行/金融",
-      "total": 2.0,
+      "total": 3.0,
       "signals": [
         1.0,
         0.5,
@@ -7058,7 +7058,7 @@
         0.5,
         0.0,
         0.0,
-        0.0
+        1.0
       ],
       "level": "觀察中",
       "cycle_stage": "確認期",
@@ -7587,7 +7587,7 @@
     },
     "connector": {
       "name_zh": "連接器/線材",
-      "total": 2.0,
+      "total": 3.0,
       "signals": [
         0.0,
         0.5,
@@ -7595,7 +7595,7 @@
         0.5,
         1.0,
         0.0,
-        0.0
+        1.0
       ],
       "level": "觀察中",
       "cycle_stage": "確認期",
@@ -7916,7 +7916,7 @@
     },
     "telecom": {
       "name_zh": "電信",
-      "total": 2.0,
+      "total": 3.0,
       "signals": [
         0.0,
         1.0,
@@ -7924,7 +7924,7 @@
         0.0,
         0.0,
         1.0,
-        0.0
+        1.0
       ],
       "level": "觀察中",
       "cycle_stage": null,
@@ -8143,7 +8143,7 @@
     },
     "foundry": {
       "name_zh": "晶圓代工",
-      "total": 1.5,
+      "total": 2.5,
       "signals": [
         1.0,
         0.5,
@@ -8151,9 +8151,9 @@
         0.0,
         0.0,
         0.0,
-        0.0
+        1.0
       ],
-      "level": "忽略",
+      "level": "觀察中",
       "cycle_stage": null,
       "exit_risk": null,
       "rs_momentum": -7.7e-05,
@@ -8165,7 +8165,7 @@
     },
     "ai_server": {
       "name_zh": "AI伺服器/ODM",
-      "total": 1.5,
+      "total": 2.5,
       "signals": [
         1.0,
         0.5,
@@ -8173,9 +8173,9 @@
         0.0,
         0.0,
         0.0,
-        0.0
+        1.0
       ],
-      "level": "忽略",
+      "level": "觀察中",
       "cycle_stage": null,
       "exit_risk": null,
       "rs_momentum": -0.002785,
@@ -8187,7 +8187,7 @@
     },
     "insurance": {
       "name_zh": "壽險",
-      "total": 1.5,
+      "total": 2.5,
       "signals": [
         1.0,
         0.0,
@@ -8195,21 +8195,21 @@
         0.5,
         0.0,
         0.0,
-        0.0
+        1.0
       ],
-      "level": "忽略",
+      "level": "觀察中",
       "cycle_stage": null,
       "exit_risk": null,
       "rs_momentum": -0.001759,
       "constituent_count": 2,
       "source": "custom",
-      "homogeneity": NaN,
+      "homogeneity": null,
       "member_count": 2,
       "stocks": []
     },
     "steel": {
       "name_zh": "鋼鐵",
-      "total": 1.5,
+      "total": 2.5,
       "signals": [
         0.0,
         0.5,
@@ -8217,9 +8217,9 @@
         0.0,
         0.0,
         1.0,
-        0.0
+        1.0
       ],
-      "level": "忽略",
+      "level": "觀察中",
       "cycle_stage": null,
       "exit_risk": null,
       "rs_momentum": -0.004635,
@@ -8231,7 +8231,7 @@
     },
     "wind_energy": {
       "name_zh": "風電/綠能",
-      "total": 1.5,
+      "total": 2.5,
       "signals": [
         0.0,
         0.0,
@@ -8239,9 +8239,9 @@
         0.5,
         0.0,
         1.0,
-        0.0
+        1.0
       ],
-      "level": "忽略",
+      "level": "觀察中",
       "cycle_stage": null,
       "exit_risk": null,
       "rs_momentum": 0.010344,
@@ -8253,7 +8253,7 @@
     },
     "petrochemical": {
       "name_zh": "塑化",
-      "total": 1.5,
+      "total": 2.5,
       "signals": [
         0.0,
         0.5,
@@ -8261,9 +8261,9 @@
         0.0,
         1.0,
         0.0,
-        0.0
+        1.0
       ],
-      "level": "忽略",
+      "level": "觀察中",
       "cycle_stage": null,
       "exit_risk": null,
       "rs_momentum": 0.001535,
@@ -8275,7 +8275,7 @@
     },
     "food": {
       "name_zh": "食品",
-      "total": 1.5,
+      "total": 2.5,
       "signals": [
         1.0,
         0.0,
@@ -8283,9 +8283,9 @@
         0.5,
         0.0,
         0.0,
-        0.0
+        1.0
       ],
-      "level": "忽略",
+      "level": "觀察中",
       "cycle_stage": null,
       "exit_risk": null,
       "rs_momentum": -0.002136,
@@ -8297,7 +8297,7 @@
     },
     "financial_holding": {
       "name_zh": "金控",
-      "total": 1.5,
+      "total": 2.5,
       "signals": [
         1.0,
         0.5,
@@ -8305,9 +8305,9 @@
         0.0,
         0.0,
         0.0,
-        0.0
+        1.0
       ],
-      "level": "忽略",
+      "level": "觀察中",
       "cycle_stage": null,
       "exit_risk": null,
       "rs_momentum": -0.000562,
@@ -8319,7 +8319,7 @@
     },
     "tourism": {
       "name_zh": "觀光/餐飲",
-      "total": 1.5,
+      "total": 2.5,
       "signals": [
         1.0,
         0.0,
@@ -8327,9 +8327,9 @@
         0.5,
         0.0,
         0.0,
-        0.0
+        1.0
       ],
-      "level": "忽略",
+      "level": "觀察中",
       "cycle_stage": null,
       "exit_risk": null,
       "rs_momentum": -0.001556,
@@ -8341,7 +8341,7 @@
     },
     "memory": {
       "name_zh": "記憶體/DRAM",
-      "total": 1.0,
+      "total": 2.0,
       "signals": [
         1.0,
         0.0,
@@ -8349,10 +8349,10 @@
         0.0,
         0.0,
         0.0,
-        0.0
+        1.0
       ],
-      "level": "忽略",
-      "cycle_stage": null,
+      "level": "觀察中",
+      "cycle_stage": "萌芽期",
       "exit_risk": null,
       "rs_momentum": -0.004456,
       "constituent_count": 6,
@@ -8363,7 +8363,7 @@
     },
     "biotech": {
       "name_zh": "生技醫療",
-      "total": 1.0,
+      "total": 2.0,
       "signals": [
         0.0,
         0.0,
@@ -8371,10 +8371,10 @@
         0.0,
         0.0,
         0.0,
-        0.0
+        1.0
       ],
-      "level": "忽略",
-      "cycle_stage": null,
+      "level": "觀察中",
+      "cycle_stage": "萌芽期",
       "exit_risk": null,
       "rs_momentum": -0.004568,
       "constituent_count": 8,
@@ -8385,7 +8385,7 @@
     },
     "shipping": {
       "name_zh": "航運",
-      "total": 1.0,
+      "total": 2.0,
       "signals": [
         0.0,
         0.0,
@@ -8393,10 +8393,10 @@
         0.0,
         0.0,
         0.0,
-        0.0
+        1.0
       ],
-      "level": "忽略",
-      "cycle_stage": null,
+      "level": "觀察中",
+      "cycle_stage": "萌芽期",
       "exit_risk": null,
       "rs_momentum": -0.002293,
       "constituent_count": 8,
@@ -8407,7 +8407,7 @@
     },
     "power_infra": {
       "name_zh": "重電/電力設備",
-      "total": 1.0,
+      "total": 2.0,
       "signals": [
         1.0,
         0.0,
@@ -8415,10 +8415,10 @@
         0.0,
         0.0,
         0.0,
-        0.0
+        1.0
       ],
-      "level": "忽略",
-      "cycle_stage": null,
+      "level": "觀察中",
+      "cycle_stage": "萌芽期",
       "exit_risk": null,
       "rs_momentum": -0.006039,
       "constituent_count": 7,
@@ -8429,7 +8429,7 @@
     },
     "ip_design": {
       "name_zh": "矽智財/IC設計服務",
-      "total": 1.0,
+      "total": 2.0,
       "signals": [
         1.0,
         0.0,
@@ -8437,10 +8437,10 @@
         0.0,
         0.0,
         0.0,
-        0.0
+        1.0
       ],
-      "level": "忽略",
-      "cycle_stage": null,
+      "level": "觀察中",
+      "cycle_stage": "萌芽期",
       "exit_risk": null,
       "rs_momentum": -0.001832,
       "constituent_count": 7,
@@ -8451,7 +8451,7 @@
     },
     "vehicle_elec": {
       "name_zh": "車用電子",
-      "total": 1.0,
+      "total": 2.0,
       "signals": [
         0.0,
         0.0,
@@ -8459,10 +8459,10 @@
         0.0,
         0.0,
         0.0,
-        0.0
+        1.0
       ],
-      "level": "忽略",
-      "cycle_stage": null,
+      "level": "觀察中",
+      "cycle_stage": "萌芽期",
       "exit_risk": null,
       "rs_momentum": -0.000373,
       "constituent_count": 8,
@@ -8473,7 +8473,7 @@
     },
     "paper": {
       "name_zh": "造紙",
-      "total": 1.0,
+      "total": 2.0,
       "signals": [
         0.0,
         0.5,
@@ -8481,10 +8481,10 @@
         0.5,
         0.0,
         0.0,
-        0.0
+        1.0
       ],
-      "level": "忽略",
-      "cycle_stage": null,
+      "level": "觀察中",
+      "cycle_stage": "確認期",
       "exit_risk": null,
       "rs_momentum": 0.000335,
       "constituent_count": 5,
@@ -8495,7 +8495,7 @@
     },
     "defense": {
       "name_zh": "國防/軍工",
-      "total": 1.0,
+      "total": 2.0,
       "signals": [
         0.0,
         0.0,
@@ -8503,10 +8503,10 @@
         0.0,
         0.0,
         0.0,
-        0.0
+        1.0
       ],
-      "level": "忽略",
-      "cycle_stage": null,
+      "level": "觀察中",
+      "cycle_stage": "萌芽期",
       "exit_risk": null,
       "rs_momentum": -0.004943,
       "constituent_count": 4,
@@ -8517,7 +8517,7 @@
     },
     "software_saas": {
       "name_zh": "軟體/SaaS",
-      "total": 0.5,
+      "total": 1.5,
       "signals": [
         0.0,
         0.5,
@@ -8525,7 +8525,7 @@
         0.0,
         0.0,
         0.0,
-        0.0
+        1.0
       ],
       "level": "忽略",
       "cycle_stage": null,
@@ -8539,7 +8539,7 @@
     },
     "gas_energy": {
       "name_zh": "天然氣/能源",
-      "total": 0.5,
+      "total": 1.5,
       "signals": [
         0.0,
         0.0,
@@ -8547,7 +8547,7 @@
         0.5,
         0.0,
         0.0,
-        0.0
+        1.0
       ],
       "level": "忽略",
       "cycle_stage": null,
@@ -8561,7 +8561,7 @@
     },
     "display": {
       "name_zh": "面板顯示",
-      "total": 0.0,
+      "total": 1.0,
       "signals": [
         0.0,
         0.0,
@@ -8569,7 +8569,7 @@
         0.0,
         0.0,
         0.0,
-        0.0
+        1.0
       ],
       "level": "忽略",
       "cycle_stage": null,
@@ -8583,7 +8583,7 @@
     },
     "lens_optics": {
       "name_zh": "鏡頭/光學",
-      "total": 0.0,
+      "total": 1.0,
       "signals": [
         0.0,
         0.0,
@@ -8591,7 +8591,7 @@
         0.0,
         0.0,
         0.0,
-        0.0
+        1.0
       ],
       "level": "忽略",
       "cycle_stage": null,
@@ -8605,7 +8605,7 @@
     },
     "ecommerce": {
       "name_zh": "電商/網路平台",
-      "total": 0.0,
+      "total": 1.0,
       "signals": [
         0.0,
         0.0,
@@ -8613,7 +8613,7 @@
         0.0,
         0.0,
         0.0,
-        0.0
+        1.0
       ],
       "level": "忽略",
       "cycle_stage": null,
@@ -8627,7 +8627,7 @@
     },
     "gaming": {
       "name_zh": "遊戲",
-      "total": 0.0,
+      "total": 1.0,
       "signals": [
         0.0,
         0.0,
@@ -8635,7 +8635,7 @@
         0.0,
         0.0,
         0.0,
-        0.0
+        1.0
       ],
       "level": "忽略",
       "cycle_stage": null,
@@ -8649,7 +8649,7 @@
     },
     "textile": {
       "name_zh": "紡織",
-      "total": 0.0,
+      "total": 1.0,
       "signals": [
         0.0,
         0.0,
@@ -8657,7 +8657,7 @@
         0.0,
         0.0,
         0.0,
-        0.0
+        1.0
       ],
       "level": "忽略",
       "cycle_stage": null,
@@ -8671,7 +8671,7 @@
     },
     "cement": {
       "name_zh": "水泥",
-      "total": 0.0,
+      "total": 1.0,
       "signals": [
         0.0,
         0.0,
@@ -8679,7 +8679,7 @@
         0.0,
         0.0,
         0.0,
-        0.0
+        1.0
       ],
       "level": "忽略",
       "cycle_stage": null,
@@ -8693,7 +8693,7 @@
     },
     "rubber": {
       "name_zh": "橡膠/輪胎",
-      "total": 0.0,
+      "total": 1.0,
       "signals": [
         0.0,
         0.0,
@@ -8701,7 +8701,7 @@
         0.0,
         0.0,
         0.0,
-        0.0
+        1.0
       ],
       "level": "忽略",
       "cycle_stage": null,
@@ -8715,7 +8715,7 @@
     },
     "medical_device": {
       "name_zh": "醫材",
-      "total": 0.0,
+      "total": 1.0,
       "signals": [
         0.0,
         0.0,
@@ -8723,7 +8723,7 @@
         0.0,
         0.0,
         0.0,
-        0.0
+        1.0
       ],
       "level": "忽略",
       "cycle_stage": null,
