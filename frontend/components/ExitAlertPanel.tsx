@@ -41,12 +41,64 @@ function PnlBadge({ pct }: { pct: number | null }) {
 export function ExitAlertPanel({ exitAlerts, pnl }: Props) {
   const [showMethodology, setShowMethodology] = useState(false);
 
-  if (!exitAlerts) return null;
+  if (!exitAlerts) {
+    return (
+      <div className="rounded-xl border border-zinc-200/40 dark:border-zinc-800/40 bg-zinc-50/60 dark:bg-zinc-900/40 px-4 py-3">
+        <div className="flex items-center gap-2">
+          <span className="text-base">🛡️</span>
+          <div>
+            <p className="text-xs font-medium text-zinc-500 dark:text-zinc-400">隔日出場訊號</p>
+            <p className="text-[11px] text-zinc-400 dark:text-zinc-500">尚未生成——待下次分析執行後更新</p>
+          </div>
+        </div>
+      </div>
+    );
+  }
 
   const { summary, position_alerts, system_risk_level, systemic_sector_count } = exitAlerts;
   const hasAlerts = summary.exit_count + summary.reduce_count + summary.watch_count > 0;
+  const totalPositions = summary.exit_count + summary.reduce_count + summary.watch_count + summary.safe_count;
+  const updatedLabel = new Date(exitAlerts.updated_at).toLocaleString("zh-TW", {
+    timeZone: "Asia/Taipei", month: "numeric", day: "numeric", hour: "2-digit", minute: "2-digit",
+  });
 
-  if (!hasAlerts) return null;
+  // ── 全持倉安全狀態 ──
+  if (!hasAlerts) {
+    return (
+      <div className="rounded-xl border border-emerald-200/60 dark:border-emerald-800/40 bg-gradient-to-r from-emerald-50/80 via-emerald-50/40 to-transparent dark:from-emerald-900/20 dark:via-emerald-900/10 dark:to-transparent px-4 py-3.5">
+        <div className="flex items-center justify-between">
+          <div className="flex items-center gap-3">
+            <div className="flex items-center justify-center w-9 h-9 rounded-full bg-emerald-100/80 dark:bg-emerald-900/40">
+              <span className="text-lg">🛡️</span>
+            </div>
+            <div>
+              <p className="text-sm font-semibold text-emerald-700 dark:text-emerald-300">
+                全持倉安全 — 無離場訊號
+              </p>
+              <p className="text-[11px] text-emerald-600/70 dark:text-emerald-400/60 mt-0.5">
+                {totalPositions} 檔持倉皆通過五因子出場檢測，明日無需操作
+              </p>
+            </div>
+          </div>
+          <div className="hidden sm:flex items-center gap-3">
+            <div className="flex items-center gap-1.5 px-2.5 py-1 rounded-lg bg-emerald-100/60 dark:bg-emerald-900/30">
+              <span className="text-xs">✅</span>
+              <span className="text-xs font-semibold text-emerald-700 dark:text-emerald-300">{summary.safe_count} 檔安全</span>
+            </div>
+            <span className="text-[10px] text-zinc-400 dark:text-zinc-500">{updatedLabel}</span>
+          </div>
+        </div>
+        {/* 手機版：第二行摘要 */}
+        <div className="flex sm:hidden items-center gap-3 mt-2 ml-12">
+          <div className="flex items-center gap-1.5 px-2.5 py-1 rounded-lg bg-emerald-100/60 dark:bg-emerald-900/30">
+            <span className="text-xs">✅</span>
+            <span className="text-xs font-semibold text-emerald-700 dark:text-emerald-300">{summary.safe_count} 檔安全</span>
+          </div>
+          <span className="text-[10px] text-zinc-400 dark:text-zinc-500">{updatedLabel}</span>
+        </div>
+      </div>
+    );
+  }
 
   // 排序：出場 > 減碼 > 留意
   const ACTION_PRIORITY: Record<string, number> = { "出場": 0, "減碼": 1, "留意": 2 };
@@ -70,7 +122,10 @@ export function ExitAlertPanel({ exitAlerts, pnl }: Props) {
 
       {/* ── 隔日操作摘要 ── */}
       <div className="rounded-xl border border-zinc-200/40 dark:border-zinc-800/40 bg-zinc-50/60 dark:bg-zinc-900/40 px-4 py-3">
-        <p className="text-xs font-medium text-zinc-500 dark:text-zinc-400 mb-2.5">📋 隔日操作提醒</p>
+        <div className="flex items-center justify-between mb-2.5">
+          <p className="text-xs font-medium text-zinc-500 dark:text-zinc-400">📋 隔日操作提醒</p>
+          <span className="text-[10px] text-zinc-400 dark:text-zinc-500">{updatedLabel}</span>
+        </div>
         <div className="grid grid-cols-2 sm:grid-cols-4 gap-2">
           {summary.exit_count > 0 && (
             <div className="flex items-center gap-1.5 px-2.5 py-1.5 rounded-lg bg-red-50/80 dark:bg-red-900/20 border border-red-200/60 dark:border-red-700/30">
