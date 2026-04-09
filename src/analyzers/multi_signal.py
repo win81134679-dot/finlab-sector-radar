@@ -102,6 +102,24 @@ def run_all(fetcher, sector_map, config,
                 logger.error(f"{name} 執行失敗: {e}")
                 raw[name] = {}
 
+    # ── 資料可用性閘門 ─────────────────────────────────────────────────
+    # 防止 FinLab API 全掛時覆蓋正常資料（GitHub Actions 預防性機制）
+    SECTOR_ANALYZERS = [
+        "燈1 月營收拐點", "燈2 法人共振", "燈3 庫存循環",
+        "燈4 技術突破", "燈5 相對強度", "燈6 籌碼集中",
+    ]
+    empty_count = sum(1 for name in SECTOR_ANALYZERS if not raw.get(name))
+    if empty_count == len(SECTOR_ANALYZERS):
+        msg = (
+            "⚠️ 資料可用性閘門觸發：6 個板塊分析器全部回傳空白，"
+            "疑似 FinLab API 不可用。中止本次分析以保護現有資料。"
+        )
+        logger.error(msg)
+        raise RuntimeError(msg)
+    if empty_count > 0:
+        failed = [n for n in SECTOR_ANALYZERS if not raw.get(n)]
+        logger.warning("部分分析器回傳空白（%d/%d）：%s", empty_count, len(SECTOR_ANALYZERS), failed)
+
     # 宏觀是全局燈（dict，非 per-sector）
     macro_result: Dict[str, Any] = raw.get("燈7 宏觀濾網", {})
     macro_signal: bool = macro_result.get("signal", False)
