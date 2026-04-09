@@ -27,7 +27,6 @@ function PnlBadge({ pct }: { pct: number | null }) {
 
 export function PortfolioPanel({ holdings, pnl, hasComposite, exitAlerts, userHoldings, readOnly, stockLookup }: Props) {
   const [view, setView] = useState<"user" | "algo">((!readOnly && userHoldings?.positions && Object.keys(userHoldings.positions).length > 0) ? "user" : "algo");
-  const [refreshKey, setRefreshKey] = useState(0);
 
   if (!holdings && !userHoldings) {
     return (
@@ -107,10 +106,9 @@ export function PortfolioPanel({ holdings, pnl, hasComposite, exitAlerts, userHo
       {/* ── 我的持倉視圖（readOnly 模式不顯示） ── */}
       {!readOnly && view === "user" && (
         <UserHoldingsManager
-          key={refreshKey}
           userHoldings={userHoldings ?? null}
           algoHoldings={holdings}
-          onSaved={() => setRefreshKey(k => k + 1)}
+          onSaved={() => {}}
           stockLookup={stockLookup}
         />
       )}

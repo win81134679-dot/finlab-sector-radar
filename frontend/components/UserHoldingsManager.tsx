@@ -3,7 +3,7 @@
 
 "use client";
 
-import { useState, useCallback, useEffect, useMemo } from "react";
+import { useState, useCallback, useEffect, useMemo, useRef } from "react";
 import type { UserHoldingsSnapshot, UserHoldingPosition, HoldingsSnapshot } from "@/lib/types";
 import { getSectorName } from "@/lib/sectors";
 
@@ -35,7 +35,7 @@ const ADMIN_UNLOCKED_KEY = "finlab_admin_unlocked";
 const ADMIN_PW_KEY = "finlab_admin_pw";
 
 // ── 密碼 Modal ──────────────────────────────────────────────────────────
-function PasswordModal({ onSuccess, onClose }: { onSuccess: () => void; onClose: () => void }) {
+function PasswordModal({ onSuccess, onClose }: { onSuccess: (password: string) => void; onClose: () => void }) {
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
   const [loading, setLoading] = useState(false);
@@ -51,9 +51,7 @@ function PasswordModal({ onSuccess, onClose }: { onSuccess: () => void; onClose:
         body: JSON.stringify({ password }),
       });
       if (res.ok) {
-        sessionStorage.setItem(ADMIN_UNLOCKED_KEY, "1");
-        sessionStorage.setItem(ADMIN_PW_KEY, password);
-        onSuccess();
+        onSuccess(password);
       } else {
         const data = await res.json().catch(() => ({ error: "驗證失敗" }));
         setError(data.error || "密碼錯誤");
@@ -192,24 +190,43 @@ export function UserHoldingsManager({ userHoldings, algoHoldings, onSaved, stock
   const [positions, setPositions] = useState<Record<string, UserHoldingPosition>>({});
   const [saving, setSaving] = useState(false);
   const [toast, setToast] = useState("");
+  // 密碼存在 ref 中（不觸發 re-render，跨 render 持久）
+  const passwordRef = useRef<string>("");
+  // 用於「儲存時發現密碼失效 → 重新驗證後自動儲存」的 pending flag
+  const pendingSaveRef = useRef(false);
 
-  // 初始化
+  // 初始化：從 sessionStorage 恢復狀態
   useEffect(() => {
-    if (sessionStorage.getItem(ADMIN_UNLOCKED_KEY) === "1") {
+    const storedPw = sessionStorage.getItem(ADMIN_PW_KEY);
+    if (sessionStorage.getItem(ADMIN_UNLOCKED_KEY) === "1" && storedPw) {
+      passwordRef.current = storedPw;
       setUnlocked(true);
     }
   }, []);
 
+  // 初始化持倉（僅在首次或 prop 變更時）
+  const initializedRef = useRef(false);
   useEffect(() => {
-    if (userHoldings?.positions) {
+    if (userHoldings?.positions && !initializedRef.current) {
       setPositions({ ...userHoldings.positions });
+      initializedRef.current = true;
     }
   }, [userHoldings]);
 
-  const handleUnlock = useCallback(() => {
+  const handleUnlockWithPassword = useCallback((pw: string) => {
+    passwordRef.current = pw;
+    sessionStorage.setItem(ADMIN_UNLOCKED_KEY, "1");
+    sessionStorage.setItem(ADMIN_PW_KEY, pw);
     setUnlocked(true);
     setShowPasswordModal(false);
-  }, []);
+
+    // 如果是「儲存時重新驗證」，驗證完立即觸發儲存
+    if (pendingSaveRef.current) {
+      pendingSaveRef.current = false;
+      // 延遲一個 tick 讓 state 更新完再 save
+      setTimeout(() => doSave(pw), 0);
+    }
+  }, []); // eslint-disable-line react-hooks/exhaustive-deps
 
   const handleRemove = useCallback((ticker: string) => {
     setPositions(prev => {
@@ -237,20 +254,14 @@ export function UserHoldingsManager({ userHoldings, algoHoldings, onSaved, stock
     }));
   }, []);
 
-  const handleSave = async () => {
-    const savedPassword = sessionStorage.getItem(ADMIN_PW_KEY);
-    if (!savedPassword) {
-      setToast("請重新輸入密碼");
-      setUnlocked(false);
-      sessionStorage.removeItem(ADMIN_UNLOCKED_KEY);
-      return;
-    }
+  /** 實際執行儲存（接受密碼參數，避免閉包老引用） */
+  const doSave = async (pw: string) => {
     setSaving(true);
     try {
       const res = await fetch("/api/user-holdings", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ password: savedPassword, positions }),
+        body: JSON.stringify({ password: pw, positions }),
       });
       if (res.ok) {
         setToast("✅ 持倉已儲存至 GitHub");
@@ -259,12 +270,18 @@ export function UserHoldingsManager({ userHoldings, algoHoldings, onSaved, stock
       } else {
         const data = await res.json().catch(() => ({ error: "儲存失敗" }));
         if (res.status === 401) {
-          setUnlocked(false);
+          // 密碼失效 → 清除並彈出重新驗證（驗證後自動重試儲存）
+          passwordRef.current = "";
           sessionStorage.removeItem(ADMIN_UNLOCKED_KEY);
           sessionStorage.removeItem(ADMIN_PW_KEY);
+          pendingSaveRef.current = true;
+          setShowPasswordModal(true);
+          setToast("🔐 密碼已失效，請重新驗證");
+          setTimeout(() => setToast(""), 3000);
+        } else {
+          setToast(`❌ ${data.error || "儲存失敗"}`);
+          setTimeout(() => setToast(""), 4000);
         }
-        setToast(`❌ ${data.error || "儲存失敗"}`);
-        setTimeout(() => setToast(""), 4000);
       }
     } catch {
       setToast("❌ 網路錯誤");
@@ -272,6 +289,17 @@ export function UserHoldingsManager({ userHoldings, algoHoldings, onSaved, stock
     } finally {
       setSaving(false);
     }
+  };
+
+  const handleSave = async () => {
+    const pw = passwordRef.current || sessionStorage.getItem(ADMIN_PW_KEY) || "";
+    if (!pw) {
+      // 沒有密碼 → 彈出密碼 modal，驗證後自動儲存
+      pendingSaveRef.current = true;
+      setShowPasswordModal(true);
+      return;
+    }
+    await doSave(pw);
   };
 
   const posEntries = Object.entries(positions);
@@ -305,10 +333,8 @@ export function UserHoldingsManager({ userHoldings, algoHoldings, onSaved, stock
         </button>
         {showPasswordModal && (
           <PasswordModal
-            onSuccess={() => {
-              handleUnlock();
-            }}
-            onClose={() => setShowPasswordModal(false)}
+            onSuccess={handleUnlockWithPassword}
+            onClose={() => { setShowPasswordModal(false); pendingSaveRef.current = false; }}
           />
         )}
       </>
@@ -421,6 +447,14 @@ export function UserHoldingsManager({ userHoldings, algoHoldings, onSaved, stock
             ))}
           </div>
         </div>
+      )}
+
+      {/* 密碼重新驗證 Modal（儲存時密碼失效時觸發） */}
+      {showPasswordModal && (
+        <PasswordModal
+          onSuccess={handleUnlockWithPassword}
+          onClose={() => { setShowPasswordModal(false); pendingSaveRef.current = false; }}
+        />
       )}
     </div>
   );
