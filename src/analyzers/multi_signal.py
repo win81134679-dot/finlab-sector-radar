@@ -25,6 +25,18 @@ SIGNAL_NAMES = [
     "燈7_宏觀濾網",
 ]
 
+import math
+
+
+def _nan_to_none(v: Any) -> Any:
+    """float NaN → None，防止 json.dumps 產出非法 JSON"""
+    if v is None:
+        return None
+    if isinstance(v, float) and math.isnan(v):
+        return None
+    return v
+
+
 LEVEL_THRESHOLDS = {
     # 學術依據：Condorcet 陪審團定理 (1785)
     # n=7 獨立信號，多數決最優門檻 = ⌈7/2⌉ = 4
@@ -218,7 +230,7 @@ def run_all(fetcher, sector_map, config,
             "total":         total,
             "level":         _level(total, scores),
             "macro_warning": macro_warning,
-            "homogeneity":   homogeneity.get(sector_id),
+            "homogeneity":   _nan_to_none(homogeneity.get(sector_id)),
             "member_count":  len(sector_map.get_stocks(sector_id)),
             "detail": {
                 SIGNAL_NAMES[0]: raw.get("燈1 月營收拐點", {}).get(sector_id, {}),
@@ -448,7 +460,7 @@ def _save_snapshot(result: Dict[str, Any], config, sector_map) -> Optional[Path]
             "rs_momentum":  round(_rs_mom, 6) if _rs_mom is not None else None,
             "constituent_count": len(sector_map.get_stocks(sid)),
             "source":       v.get("source", "custom"),
-            "homogeneity":  v.get("homogeneity"),
+            "homogeneity":  _nan_to_none(v.get("homogeneity")),
             "member_count": v.get("member_count", len(sector_map.get_stocks(sid))),
             "stocks":       stock_list,
         }
@@ -476,7 +488,7 @@ def _save_snapshot(result: Dict[str, Any], config, sector_map) -> Optional[Path]
         "sectors": sectors_payload,
     }
 
-    snapshot_json = json.dumps(snapshot, ensure_ascii=False, indent=2)
+    snapshot_json = json.dumps(snapshot, ensure_ascii=False, indent=2, allow_nan=False)
 
     saved_paths: List[Path] = []
 

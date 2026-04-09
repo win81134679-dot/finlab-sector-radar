@@ -119,7 +119,7 @@ export function HoldingCard({ holding, onRemove, showManagement }: HoldingCardPr
     h.breakdown.chipset > 0 || h.breakdown.bonus > 0
   ));
   const cycleCfg = h.cycleStage ? CYCLE_STAGE_CONFIG[h.cycleStage as CycleStageKey] : null;
-  const cost = h.source !== "algo" ? calcTradeCost(h.entryPrice, h.shares) : null;
+  const cost = calcTradeCost(h.entryPrice, h.shares);
 
   // 卡片外框色彩依行動等級
   const borderCls =
@@ -206,12 +206,12 @@ export function HoldingCard({ holding, onRemove, showManagement }: HoldingCardPr
           </div>
         )}
 
-        {/* Row 5: 進場資訊（用戶持倉才顯示） */}
-        {h.source !== "algo" && h.entryPrice != null && (
+        {/* Row 5: 進場資訊（所有來源都顯示） */}
+        {(h.entryPrice != null || h.entryDate) && (
           <div className="flex items-center gap-3 text-[11px] text-zinc-500 dark:text-zinc-400">
-            <span>進場 {h.entryPrice.toFixed(2)}</span>
-            {h.entryDate && <span>{h.entryDate}</span>}
-            {h.shares != null && <span>{h.shares.toLocaleString()} 股</span>}
+            {h.entryPrice != null && <span>進場 {h.entryPrice.toFixed(2)}</span>}
+            {h.entryDate && <span>📅 {h.entryDate}</span>}
+            {h.shares != null && h.shares > 0 && <span>{h.shares.toLocaleString()} 股</span>}
             {cost && (
               <span className="text-red-500 dark:text-red-400">
                 成本 ${cost.total.toLocaleString()}

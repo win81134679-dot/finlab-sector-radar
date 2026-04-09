@@ -27,6 +27,8 @@ const MacroSchema = z.object({
   ip_trend: z.enum(["up", "down"]).optional(),
   sox_price: z.number().optional(),
   sox_trend: z.enum(["up", "down"]).optional(),
+  usd_twd: z.number().optional(),
+  twd_trend: z.enum(["up", "down"]).optional(),
 });
 
 const StockSchema = z.object({
@@ -160,7 +162,9 @@ async function fetchJSON<T>(url: string, revalidate = 1800): Promise<T> {
   if (!res.ok) {
     throw new Error(`HTTP ${res.status}: ${url}`);
   }
-  return res.json();
+  // Python json.dumps 可能產出 NaN/Infinity（非合法 JSON），先替換再解析
+  const text = await res.text();
+  return JSON.parse(text.replace(/\bNaN\b/g, "null").replace(/\bInfinity\b/g, "null").replace(/-Infinity\b/g, "null"));
 }
 
 export async function fetchLatestSnapshot() {

@@ -14,6 +14,7 @@ import type {
   OHLCBar,
 } from "./types";
 import type { StockNamesMap } from "./fetcher";
+import { getSectorName } from "./sectors";
 
 // ── 五級行動定義 ────────────────────────────────────────────────────────
 
@@ -125,7 +126,7 @@ export function mergeHoldings(
     const si = stockIndex.get(h.stockId);
     if (si) {
       h.sectorId = si.sectorId;
-      h.sectorName = si.sector.name_zh;
+      h.sectorName = si.sector.name_zh || getSectorName(si.sectorId);
       h.sectorLevel = si.sector.level;
       h.cycleStage = si.sector.cycle_stage ?? null;
       h.signals = si.sector.signals;
@@ -135,15 +136,33 @@ export function mergeHoldings(
       h.ohlcv7d = si.stock.ohlcv_7d ?? [];
       h.breakdown = si.stock.breakdown ?? null;
       h.score = si.stock.score ?? null;
+    } else {
+      // Sector-level fallback：個股未達門檻不在 stocks[] 中，但仍屬於該板塊
+      const sectorId = h.sectorId
+        ?? pnlPositions[h.stockId]?.sector
+        ?? (holdings?.positions[h.stockId] as { sector?: string } | undefined)?.sector
+        ?? stockNames?.[h.stockId]?.sector
+        ?? null;
+      if (sectorId && snapshot?.sectors?.[sectorId]) {
+        const sec = snapshot.sectors[sectorId];
+        h.sectorId = sectorId;
+        h.sectorName = sec.name_zh || getSectorName(sectorId);
+        h.sectorLevel = sec.level;
+        h.cycleStage = sec.cycle_stage ?? null;
+        h.signals = sec.signals;
+      }
     }
 
-    // stockNames fallback
-    if (!h.sectorName && stockNames?.[h.stockId]) {
-      h.sectorName = stockNames[h.stockId].sector;
-      h.sectorId = stockNames[h.stockId].sector;
-    }
-    if (h.nameZh === h.stockId && stockNames?.[h.stockId]) {
-      h.nameZh = stockNames[h.stockId].name_zh;
+    // stockNames fallback（名稱 + 板塊）
+    const sn = stockNames?.[h.stockId];
+    if (sn) {
+      if (!h.sectorName) {
+        h.sectorName = sn.sector_name || getSectorName(sn.sector);
+        h.sectorId = h.sectorId ?? sn.sector;
+      }
+      if (h.nameZh === h.stockId) {
+        h.nameZh = sn.name_zh;
+      }
     }
 
     // PnL
@@ -155,8 +174,15 @@ export function mergeHoldings(
       h.daysHeld = pp.days_held;
     }
 
+    // daysHeld 前端補算：當 Python 回傳 0 但有 entryDate 時
+    if ((h.daysHeld == null || h.daysHeld === 0) && h.entryDate) {
+      const ms = Date.now() - new Date(h.entryDate).getTime();
+      if (ms > 0) h.daysHeld = Math.floor(ms / 86_400_000);
+    }
+
     // 行動等級
-    h.action = resolveAction(h.stockId, positionAlerts, si?.sector ?? null);
+    const sectorForAction = si?.sector ?? (h.sectorId && snapshot?.sectors?.[h.sectorId]) ?? null;
+    h.action = resolveAction(h.stockId, positionAlerts, sectorForAction as SectorData | null);
     const alert = positionAlerts[h.stockId];
     if (alert) {
       h.exitAlertScore = alert.score;
@@ -213,18 +239,27 @@ export function mergeHoldings(
   // 2. Algo holdings
   if (holdings?.positions) {
     for (const [id, pos] of Object.entries(holdings.positions)) {
+      const algoDate = pos.added_at ? pos.added_at.slice(0, 10) : null;
       const existing = merged.get(id);
       if (existing) {
         existing.source = "both";
         existing.compositeScore = pos.composite_score;
         existing.weight = pos.weight;
         existing.reason = pos.reason;
+        // 保留 user entry_date 優先，fallback algo added_at
+        if (!existing.entryDate && algoDate) existing.entryDate = algoDate;
+        if (existing.entryPrice == null && pos.entry_price != null) existing.entryPrice = pos.entry_price;
+        if (existing.shares == null && pos.shares != null) existing.shares = pos.shares;
       } else {
         const h = emptyHolding(id, pos.name_zh || id);
         h.source = "algo";
         h.compositeScore = pos.composite_score;
         h.weight = pos.weight;
         h.reason = pos.reason;
+        h.entryDate = algoDate;
+        h.entryPrice = pos.entry_price ?? null;
+        h.shares = pos.shares ?? null;
+        h.sectorId = pos.sector || null;
         merged.set(id, h);
       }
     }

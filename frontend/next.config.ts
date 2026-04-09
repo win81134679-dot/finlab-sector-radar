@@ -1,3 +1,4 @@
+// Build: 2026-04-10T00
 import type { NextConfig } from "next";
 
 const GITHUB_RAW = "https://raw.githubusercontent.com";
