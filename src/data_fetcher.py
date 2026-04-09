@@ -3,6 +3,7 @@ data_fetcher.py — FinLab data.get() wrapper，含 pickle 磁碟快取
 """
 import logging
 import pickle
+import time
 from datetime import datetime, timedelta
 from pathlib import Path
 from typing import Optional
@@ -79,6 +80,10 @@ class DataFetcher:
 
     # ── 主要 API ─────────────────────────────────────────────────────────
 
+    # 重試設定：指數退避（2s → 4s → 8s）
+    _MAX_RETRIES = 3
+    _BASE_DELAY = 2  # 秒
+
     def get(self, key: str) -> Optional[pd.DataFrame]:
         """
         取得 FinLab 數據，優先使用磁碟快取。
@@ -86,7 +91,7 @@ class DataFetcher:
 
         快取層級（依序）：
           1. pickle 快取（24hr 以內）       → 最快
-          2. FinLab API 拉取 → 儲 pickle + side-export CSV（增量）
+          2. FinLab API 拉取（含重試）→ 儲 pickle + side-export CSV（增量）
           3. 過期 pickle                    → 降級
           4. CSV 備份                       → 最後手段（API 全掛）
         """
@@ -106,22 +111,47 @@ class DataFetcher:
                 # 嘗試 CSV 備份
                 return self._load_csv_fallback(key)
 
-        # 3. 從 FinLab 拉取
-        try:
-            df = self._finlab_data.get(key)
-            if df is not None:
-                self._save_cache(cache_file, df)
-                # side-export：增量追加 CSV，非同步失敗不影響主流程
-                self._export_csv(key, df)
-            return df
-        except Exception as e:
-            logger.error(f"FinLab data.get({key!r}) 失敗: {e}")
-            # 4a. 過期 pickle 降級
-            if cache_file.exists():
-                logger.warning(f"使用過期 pickle 快取: {key}")
-                return self._load_cache(cache_file)
-            # 4b. CSV 備份降級
-            return self._load_csv_fallback(key)
+        # 3. 從 FinLab 拉取（含重試）
+        last_err = None
+        for attempt in range(1, self._MAX_RETRIES + 1):
+            try:
+                df = self._finlab_data.get(key)
+                if df is not None:
+                    self._save_cache(cache_file, df)
+                    self._export_csv(key, df)
+                return df
+            except Exception as e:
+                last_err = e
+                err_msg = str(e)
+                # 可重試的暫時性錯誤：JSON 解析、連線逾時、伺服器錯誤
+                is_retryable = any(kw in err_msg for kw in (
+                    "Extra data", "JSONDecodeError", "Expecting value",
+                    "timeout", "ConnectionError", "RemoteDisconnected",
+                    "ChunkedEncodingError", "500", "502", "503", "504",
+                ))
+                if is_retryable and attempt < self._MAX_RETRIES:
+                    delay = self._BASE_DELAY * (2 ** (attempt - 1))
+                    logger.warning(
+                        f"FinLab data.get({key!r}) 第 {attempt} 次失敗 ({err_msg})，"
+                        f"{delay}s 後重試..."
+                    )
+                    time.sleep(delay)
+                    # JSON 解析錯誤可能是 token 問題，嘗試重新登入
+                    if "Extra data" in err_msg or "Expecting value" in err_msg:
+                        logger.info("嘗試重新登入 FinLab...")
+                        self._logged_in = False
+                        self.login()
+                    continue
+                # 不可重試或已耗盡重試次數
+                break
+
+        logger.error(f"FinLab data.get({key!r}) 失敗: {last_err}")
+        # 4a. 過期 pickle 降級
+        if cache_file.exists():
+            logger.warning(f"使用過期 pickle 快取: {key}")
+            return self._load_cache(cache_file)
+        # 4b. CSV 備份降級
+        return self._load_csv_fallback(key)
 
     # ── CSV side-export（FinLab 寬表格式）────────────────────────────────
 
