@@ -1300,16 +1300,16 @@
       "details": {
         "bond": "US10Y=4.33% (↑均線❌)",
         "pmi": "INDPRO=102.6 (擴張✅)",
-        "sox": "SOXX=377.01 (站上20MA✅)",
-        "twd": "USD/TWD=31.725 (台幣升值✅)"
+        "sox": "SOXX=376.73 (站上20MA✅)",
+        "twd": "USD/TWD=31.726 (台幣升值✅)"
       },
       "us_bond_10y": 4.33,
       "bond_trend": "up",
       "ip_index": 102.6,
       "ip_trend": "up",
-      "sox_price": 377.01,
+      "sox_price": 376.73,
       "sox_trend": "up",
-      "usd_twd": 31.725,
+      "usd_twd": 31.726,
       "twd_trend": "down",
       "date": "2026-04-10"
     }
