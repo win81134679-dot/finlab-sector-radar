@@ -260,6 +260,22 @@ export interface HoldingsSnapshot {
   sector_weights: Record<string, number>;
 }
 
+// 用戶自選持倉（管理員維護）
+export interface UserHoldingPosition {
+  name_zh:     string;
+  sector:      string;
+  entry_price: number | null;
+  entry_date:  string;
+  shares:      number | null;
+  note:        string;
+}
+
+export interface UserHoldingsSnapshot {
+  updated_at:  string;
+  updated_by:  string;
+  positions:   Record<string, UserHoldingPosition>;
+}
+
 // 損益
 export interface PnlPosition {
   name_zh:       string;

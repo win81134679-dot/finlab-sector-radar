@@ -1,6 +1,6 @@
 # FinLab 板塊偵測系統 — 產品規格文件（PRD）
 
-> **版本**：v1.0 | **日期**：2026-04-09 | **作者**：FinLab Sector Radar Team
+> **版本**：v1.4 | **日期**：2026-04-09 | **作者**：FinLab Sector Radar Team
 >
 > **一句話描述**：以學術量化七燈訊號系統偵測台股 45 板塊輪動週期，搭配自動化管道與即時儀表板，協助散戶投資人做出有紀律的板塊配置決策。
 
@@ -410,6 +410,20 @@ graph LR
 | **例外流程** | E1: 前日快照不存在 → delta 顯示「—」，不計算加速度因子 |
 | **後置條件** | 使用者知道哪些持倉明日需要採取行動 |
 | **商業規則** | BR-050: 五因子加權模型：RRG 象限衰退 30% + 出場風險加速度 25% + 籌碼信號熄滅 20% + 量價背離 15% + 多板塊共振衰退 10%<br>BR-051: 警報等級 — 0–30=無 / 31–50=留意 / 51–70=減碼 / 71–100=出場<br>BR-052: 僅對加速期、過熱期板塊計算（萌芽/確認期不適用）<br>BR-053: 系統性風險 = ≥3 板塊同時 exit_risk ≥ 56（Condorcet 1785） |
+
+#### UC-003b：管理員自選持倉（Admin User Holdings）
+
+| 欄位 | 內容 |
+|------|------|
+| **UC-ID** | UC-003b |
+| **名稱** | 管理員自選持倉管理 |
+| **Actor** | 管理員（密碼驗證） |
+| **前置條件** | 管理員已知道密碼（SHA-256 雜湊儲存於 MANUAL_UPDATE_HASH 環境變數） |
+| **問題背景** | 演算法建議持倉每日重算，股票可能被輪換掉而永遠不觸發出場警報。管理員自選持倉讓出場警報針對實際持有的股票生成。 |
+| **主流程** | 1. 進入「長線趨勢 › 建議持倉」子頁籤<br>2. 點擊「📌 我的持倉」切換至自選持倉視圖<br>3. 點擊「解鎖管理」→ 輸入密碼→ 驗證通過<br>4. 可新增股票（股號 + 名稱 + 板塊 + 可選成本價/張數/備註）<br>5. 可從演算法建議中一鍵加入<br>6. 可刪除單一持倉<br>7. 點擊「儲存」→ POST `/api/user-holdings` → 寫入 GitHub `output/portfolio/user_holdings.json` |
+| **替代流程** | A1: 密碼錯誤 → 顯示錯誤訊息，不解鎖<br>A2: 尚未設定自選持倉 → 顯示空狀態提示「尚未設定持倉」<br>A3: 網路失敗 → 顯示儲存失敗提示 |
+| **後置條件** | `user_holdings.json` 已更新；下次 Python 管道執行時 `exit_alert.py` 將優先以自選持倉生成出場警報 |
+| **商業規則** | BR-060: 自選持倉優先於演算法建議作為出場警報來源<br>BR-061: 密碼驗證共用 `admin-auth.ts` 模組（SHA-256 + timingSafeEqual + IP 速率限制 5次/15分）<br>BR-062: 演算法建議保留為參考視圖，不再直接影響出場警報<br>BR-063: 無自選持倉時 fallback 至演算法建議 |
 
 #### UC-004：查看宏觀環境面板
 
@@ -3106,7 +3120,8 @@ output/
 ├── backtest/
 │   └── *.json                    # 回測結果
 └── portfolio/
-    └── *.json                    # 投組分析
+    ├── *.json                    # 投組分析
+    └── user_holdings.json        # 管理員自選持倉（前端管理，exit_alert.py 讀取）
 ```
 
 ## 附錄 E：前端元件清單（42 個）
@@ -3156,6 +3171,7 @@ output/
 | StatusDot | Client | 狀態圓點 |
 | LoadingSkeleton | Client | Loading 骨架 |
 | ExitAlertPanel | Client | 隨日出場警報面板 |
+| UserHoldingsManager | Client | 管理員自選持倉管理介面 |
 
 ## 附錄 F：變更日誌
 
@@ -3165,6 +3181,7 @@ output/
 | 1.1 | 2026-04-09 | FinLab Team | UC-001 板塊排序改為投資行動導向（BR-002a）；週期監控面板排序改為加速期優先；雙線共振排序加入週期 tiebreaker |
 | 1.2 | 2026-04-09 | FinLab Team | 統一 7 個元件展開收合過渡動畫：SectorCard 移除硬編碼 max-h-1250 改用 CSS grid-template-rows 0fr→1fr；CommodityAlertBanner / CommodityCard / AccStockCard / MagaWatchlist / ConvergencePanel / TrumpFeedPanel 補上平滑過渡 |
 | 1.3 | 2026-04-09 | FinLab Team | 新增 UC-003a 隨日出場訊號提醒：五因子學術加權模型（RRG 30% + 加速度 25% + 籌碼 20% + 量價 15% + 共振 10%）；新增 exit_alert.py 分析器 + ExitAlertPanel.tsx 前端面板；商業規則 BR-050～BR-053 |
+| 1.4 | 2026-04-09 | FinLab Team | 新增 UC-003b 管理員自選持倉：解決演算法輪換導致出場警報失效問題。新增 admin-auth.ts 共用認證模組；新增 UserHoldingsManager.tsx 前端管理介面；新增 /api/user-holdings API route；新增 user_holdings.json 資料檔；PortfolioPanel 雙視圖切換（📌我的持倉 / 💡演算法建議）；exit_alert.py 優先讀取自選持倉；重構 manual-update/route.ts 共用 admin-auth；商業規則 BR-060～BR-063 |
 
 ---
 

@@ -200,7 +200,7 @@ export function UpdateButton({ currentRunAt = "" }: Props) {
         <div
           role="status"
           aria-live="polite"
-          className="fixed top-5 left-1/2 -translate-x-1/2 z-[200]
+          className="fixed top-5 left-1/2 -translate-x-1/2 z-200
             flex items-center gap-2.5 px-5 py-3 rounded-2xl shadow-2xl
             bg-emerald-500 text-white text-sm font-semibold
             pointer-events-none"

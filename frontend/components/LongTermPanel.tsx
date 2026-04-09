@@ -12,6 +12,7 @@ import type {
   HoldingsSnapshot,
   PnlSnapshot,
   ExitAlertsSnapshot,
+  UserHoldingsSnapshot,
 } from "@/lib/types";
 import { CompositePanel } from "@/components/CompositePanel";
 import { MagaPanel } from "@/components/MagaPanel";
@@ -27,6 +28,7 @@ interface Props {
   holdings:    HoldingsSnapshot | null;
   pnl:         PnlSnapshot | null;
   exitAlerts:  ExitAlertsSnapshot | null;
+  userHoldings: UserHoldingsSnapshot | null;
 }
 
 type SubTab = "signal" | "maga" | "portfolio";
@@ -45,6 +47,7 @@ export function LongTermPanel({
   holdings,
   pnl,
   exitAlerts,
+  userHoldings,
 }: Props) {
   const [subTab, setSubTab] = useState<SubTab>("signal");
 
@@ -110,6 +113,7 @@ export function LongTermPanel({
               pnl={pnl}
               hasComposite={composite !== null}
               exitAlerts={exitAlerts}
+              userHoldings={userHoldings}
             />
           </ErrorBoundary>
         </>

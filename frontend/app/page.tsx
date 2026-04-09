@@ -1,5 +1,5 @@
 // app/page.tsx — FinLab 板塊偵測 主儀表板（Server Component）
-import { fetchLatestSnapshot, fetchHistoryIndex, fetchCommodities, fetchMagaData, fetchComposite, fetchHoldings, fetchPnl, fetchSensitivity, fetchExitAlerts } from "@/lib/fetcher";
+import { fetchLatestSnapshot, fetchHistoryIndex, fetchCommodities, fetchMagaData, fetchComposite, fetchHoldings, fetchPnl, fetchSensitivity, fetchExitAlerts, fetchUserHoldings } from "@/lib/fetcher";
 import { Header } from "@/components/Header";
 import { TabContainer } from "@/components/TabContainer";
 import { ErrorBoundary } from "@/components/ErrorBoundary";
@@ -7,7 +7,7 @@ import { ErrorBoundary } from "@/components/ErrorBoundary";
 export const revalidate = 1800;  // ISR: 30 分鐘重新驗證（資料由 GitHub Actions 每日更新）
 
 export default async function DashboardPage() {
-  const [snapshot, historyIndex, commodities, magaData, composite, sensitivity, holdings, pnl, exitAlerts] = await Promise.all([
+  const [snapshot, historyIndex, commodities, magaData, composite, sensitivity, holdings, pnl, exitAlerts, userHoldings] = await Promise.all([
     fetchLatestSnapshot(),
     fetchHistoryIndex(),
     fetchCommodities(),
@@ -17,6 +17,7 @@ export default async function DashboardPage() {
     fetchHoldings(),
     fetchPnl(),
     fetchExitAlerts(),
+    fetchUserHoldings(),
   ]);
 
   const runAt = snapshot?.run_at ?? "";
@@ -49,6 +50,7 @@ export default async function DashboardPage() {
             holdings={holdings}
             pnl={pnl}
             exitAlerts={exitAlerts}
+            userHoldings={userHoldings}
           />
         </ErrorBoundary>
       )}

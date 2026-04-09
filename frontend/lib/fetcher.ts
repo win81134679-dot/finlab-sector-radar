@@ -414,6 +414,37 @@ export async function fetchHoldings() {
   } catch { return null; }
 }
 
+// ── 用戶自選持倉 ────────────────────────────────────────────────────────────
+
+const UserHoldingPositionSchema = z.object({
+  name_zh:     z.string(),
+  sector:      z.string(),
+  entry_price: z.number().nullable(),
+  entry_date:  z.string(),
+  shares:      z.number().nullable(),
+  note:        z.string().optional().default(""),
+});
+
+const UserHoldingsSnapshotSchema = z.object({
+  updated_at:  z.string(),
+  updated_by:  z.string(),
+  positions:   z.record(UserHoldingPositionSchema),
+});
+
+export async function fetchUserHoldings() {
+  if (!GITHUB_RAW_BASE) return null;
+  const url = `${GITHUB_RAW_BASE}/output/portfolio/user_holdings.json`;
+  try {
+    const raw = await fetchJSON<unknown>(url);
+    const parsed = UserHoldingsSnapshotSchema.safeParse(raw);
+    if (!parsed.success) {
+      console.warn("portfolio/user_holdings.json schema 驗證失敗:", parsed.error.issues);
+      return null;
+    }
+    return parsed.data;
+  } catch { return null; }
+}
+
 export async function fetchPnl() {
   if (!GITHUB_RAW_BASE) return null;
   const url = `${GITHUB_RAW_BASE}/output/portfolio/pnl.json`;

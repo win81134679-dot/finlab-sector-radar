@@ -98,6 +98,25 @@ def _get_prev_chip_signal(prev_snapshot: dict | None, sector_id: str) -> float |
     return None
 
 
+_USER_HOLDINGS_PATH = _OUTPUT_DIR / "user_holdings.json"
+
+
+def _load_user_holdings() -> dict | None:
+    """載入管理員自選持倉 (user_holdings.json)。"""
+    if not _USER_HOLDINGS_PATH.exists():
+        return None
+    try:
+        with open(_USER_HOLDINGS_PATH, encoding="utf-8") as f:
+            data = json.load(f)
+        positions = data.get("positions", {})
+        if positions:
+            return positions
+        return None
+    except (json.JSONDecodeError, OSError) as e:
+        logger.warning("載入 user_holdings.json 失敗: %s", e)
+        return None
+
+
 def _count_systemic_risk_sectors(snapshot_sectors: dict[str, Any]) -> int:
     """計算當前有多少板塊的 exit_risk.score ≥ SYSTEMIC_SCORE_MIN。"""
     count = 0
@@ -226,10 +245,12 @@ def generate_exit_alerts(
         if alert:
             sector_alerts[sid] = alert
 
-    # 個股級警報：交叉比對持倉
+    # 個股級警報：優先使用管理員自選持倉，否則用演算法持倉
+    user_holdings = _load_user_holdings()
+    effective_positions = user_holdings or holdings_positions
     position_alerts: dict[str, dict] = {}
-    if holdings_positions:
-        for ticker, pos in holdings_positions.items():
+    if effective_positions:
+        for ticker, pos in effective_positions.items():
             sector = pos.get("sector", "")
             if sector in sector_alerts:
                 sa = sector_alerts[sector]
@@ -247,6 +268,9 @@ def generate_exit_alerts(
                     "composite_score": pos.get("composite_score", 0),
                     "weight": pos.get("weight", 0),
                 }
+
+    if user_holdings:
+        logger.info("出場警報以管理員自選持倉為基準（%d 支）", len(user_holdings))
 
     # 系統風險等級
     if systemic_count >= SYSTEMIC_THRESHOLD:
@@ -267,7 +291,7 @@ def generate_exit_alerts(
             "exit_count": sum(1 for a in position_alerts.values() if a["action"] == "出場"),
             "reduce_count": sum(1 for a in position_alerts.values() if a["action"] == "減碼"),
             "watch_count": sum(1 for a in position_alerts.values() if a["action"] == "留意"),
-            "safe_count": (len(holdings_positions) - len(position_alerts)) if holdings_positions else 0,
+            "safe_count": (len(effective_positions) - len(position_alerts)) if effective_positions else 0,
         },
     }
 

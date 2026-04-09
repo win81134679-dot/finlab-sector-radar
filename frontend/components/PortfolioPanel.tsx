@@ -2,15 +2,18 @@
 
 "use client";
 
-import type { HoldingsSnapshot, PnlSnapshot, ExitAlertsSnapshot } from "@/lib/types";
+import { useState } from "react";
+import type { HoldingsSnapshot, PnlSnapshot, ExitAlertsSnapshot, UserHoldingsSnapshot } from "@/lib/types";
 import { getSectorName } from "@/lib/sectors";
 import { ExitAlertPanel } from "@/components/ExitAlertPanel";
+import { UserHoldingsManager } from "@/components/UserHoldingsManager";
 
 interface Props {
-  holdings:     HoldingsSnapshot | null;
-  pnl:          PnlSnapshot | null;
+  holdings:      HoldingsSnapshot | null;
+  pnl:           PnlSnapshot | null;
   hasComposite?: boolean;
-  exitAlerts?:  ExitAlertsSnapshot | null;
+  exitAlerts?:   ExitAlertsSnapshot | null;
+  userHoldings?: UserHoldingsSnapshot | null;
 }
 
 function PnlBadge({ pct }: { pct: number | null }) {
@@ -19,8 +22,11 @@ function PnlBadge({ pct }: { pct: number | null }) {
   return <span className={`font-semibold ${color}`}>{pct > 0 ? "+" : ""}{pct.toFixed(2)}%</span>;
 }
 
-export function PortfolioPanel({ holdings, pnl, hasComposite, exitAlerts }: Props) {
-  if (!holdings) {
+export function PortfolioPanel({ holdings, pnl, hasComposite, exitAlerts, userHoldings }: Props) {
+  const [view, setView] = useState<"user" | "algo">(userHoldings?.positions && Object.keys(userHoldings.positions).length > 0 ? "user" : "algo");
+  const [refreshKey, setRefreshKey] = useState(0);
+
+  if (!holdings && !userHoldings) {
     return (
       <div className="flex flex-col items-center justify-center py-16 space-y-6">
         {/* Step 1 */}
@@ -59,28 +65,66 @@ export function PortfolioPanel({ holdings, pnl, hasComposite, exitAlerts }: Prop
     );
   }
 
-  const positions = holdings.positions;
+  const positions = holdings?.positions ?? {};
   const tickers = Object.keys(positions).sort(
-    (a, b) => positions[b].composite_score - positions[a].composite_score
+    (a, b) => (positions[b]?.composite_score ?? 0) - (positions[a]?.composite_score ?? 0)
   );
 
   const portfolioPnl = pnl?.portfolio_pnl_pct ?? null;
+  const hasUserPositions = userHoldings?.positions && Object.keys(userHoldings.positions).length > 0;
 
   return (
     <div className="space-y-5">
+      {/* ── 視圖切換 ── */}
+      <div className="flex items-center gap-2">
+        <button
+          onClick={() => setView("user")}
+          className={`px-3 py-1.5 text-xs font-medium rounded-lg border transition-colors ${
+            view === "user"
+              ? "border-blue-300 dark:border-blue-700 bg-blue-50 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300"
+              : "border-zinc-200/60 dark:border-zinc-700/40 text-zinc-500 dark:text-zinc-400 hover:bg-zinc-50 dark:hover:bg-zinc-800/40"
+          }`}
+        >
+          📌 我的持倉{hasUserPositions ? ` (${Object.keys(userHoldings!.positions).length})` : ""}
+        </button>
+        <button
+          onClick={() => setView("algo")}
+          className={`px-3 py-1.5 text-xs font-medium rounded-lg border transition-colors ${
+            view === "algo"
+              ? "border-blue-300 dark:border-blue-700 bg-blue-50 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300"
+              : "border-zinc-200/60 dark:border-zinc-700/40 text-zinc-500 dark:text-zinc-400 hover:bg-zinc-50 dark:hover:bg-zinc-800/40"
+          }`}
+        >
+          💡 演算法建議{tickers.length > 0 ? ` (${tickers.length})` : ""}
+        </button>
+      </div>
+
+      {/* ── 我的持倉視圖 ── */}
+      {view === "user" && (
+        <UserHoldingsManager
+          key={refreshKey}
+          userHoldings={userHoldings ?? null}
+          algoHoldings={holdings}
+          onSaved={() => setRefreshKey(k => k + 1)}
+        />
+      )}
+
+      {/* ── 演算法建議視圖 ── */}
+      {view === "algo" && (
+        <>
       {/* ── 隔日出場訊號提醒 ── */}
       <ExitAlertPanel exitAlerts={exitAlerts ?? null} pnl={pnl} />
 
       {/* ── 摘要列 ── */}
       <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
         <Stat label="持倉數" value={tickers.length.toString()} />
-        <Stat label="總配重" value={`${Math.round(holdings.total_weight * 100)}%`} />
+        <Stat label="總配重" value={`${Math.round((holdings?.total_weight ?? 0) * 100)}%`} />
         <Stat
           label="組合損益"
           value={portfolioPnl != null ? `${portfolioPnl > 0 ? "+" : ""}${portfolioPnl.toFixed(2)}%` : "—"}
           valueColor={portfolioPnl != null ? (portfolioPnl > 0 ? "text-emerald-500" : portfolioPnl < 0 ? "text-red-500" : undefined) : undefined}
         />
-        <Stat label="更新時間" value={new Date(holdings.updated_at).toLocaleString("zh-TW", { timeZone: "Asia/Taipei", month: "numeric", day: "numeric", hour: "2-digit", minute: "2-digit" })} />
+        <Stat label="更新時間" value={holdings?.updated_at ? new Date(holdings.updated_at).toLocaleString("zh-TW", { timeZone: "Asia/Taipei", month: "numeric", day: "numeric", hour: "2-digit", minute: "2-digit" }) : "—"} />
       </div>
 
       {/* ── 持倉表格 ── */}
@@ -130,7 +174,7 @@ export function PortfolioPanel({ holdings, pnl, hasComposite, exitAlerts }: Prop
       </div>
 
       {/* ── 板塊分佈 ── */}
-      {Object.keys(holdings.sector_weights).length > 0 && (
+      {holdings && Object.keys(holdings.sector_weights).length > 0 && (
         <div className="rounded-xl border border-zinc-200/40 dark:border-zinc-800/40 bg-zinc-50/60 dark:bg-zinc-900/40 px-4 py-3">
           <p className="text-xs font-medium text-zinc-500 dark:text-zinc-400 mb-2">板塊配置</p>
           <div className="flex flex-wrap gap-2">
@@ -159,6 +203,8 @@ export function PortfolioPanel({ holdings, pnl, hasComposite, exitAlerts }: Prop
             </span>
           )}
         </div>
+      )}
+        </>
       )}
     </div>
   );
