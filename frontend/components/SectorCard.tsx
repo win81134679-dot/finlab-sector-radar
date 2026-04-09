@@ -31,7 +31,6 @@ export function SectorCard({ sectorId, sector, featured = false, defaultExpanded
         group rounded-2xl border backdrop-blur-sm
         transition-all duration-300
         ${levelCfg.bgClass}
-        ${featured ? "col-span-2 row-span-2" : ""}
         ${expanded ? "shadow-lg" : "hover:shadow-md"}
         overflow-hidden
       `}
@@ -78,16 +77,14 @@ export function SectorCard({ sectorId, sector, featured = false, defaultExpanded
             })()}
           </div>
 
-          {/* 總分 */}
+          {/* 總分 + 7燈 */}
           <div className="flex items-center gap-2">
             <span className={`text-2xl font-bold ${levelCfg.textClass}`}>
               {sector.total.toFixed(1)}
             </span>
             <span className="text-xs text-zinc-500 dark:text-zinc-400">/ 7 燈</span>
+            <span className="ml-1"><SignalDots signals={sector.signals} size={featured ? "lg" : "sm"} /></span>
           </div>
-
-          {/* 7燈顯示 */}
-          <SignalDots signals={sector.signals} size={featured ? "lg" : "sm"} />
         </div>
 
         {/* 展開箭頭 */}

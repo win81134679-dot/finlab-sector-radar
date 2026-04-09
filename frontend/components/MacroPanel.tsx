@@ -25,7 +25,7 @@ function MacroCard({ title, value, subtitle, trend, positive, icon }: MacroCardP
       bg-white/80 dark:bg-zinc-800/60
       border border-zinc-200/60 dark:border-zinc-700/50
       backdrop-blur-sm
-      p-5 flex flex-col gap-2
+      p-4 flex flex-col gap-1.5
       hover:border-zinc-300 dark:hover:border-zinc-600
       transition-all duration-200
     ">
@@ -66,7 +66,7 @@ interface MacroPanelProps {
 export function MacroPanel({ macro }: MacroPanelProps) {
   if (!macro) {
     return (
-      <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 opacity-30 pointer-events-none">
+      <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 opacity-30 pointer-events-none">
         {Array.from({ length: 4 }).map((_, i) => (
           <div key={i} className="h-28 rounded-2xl bg-zinc-200 dark:bg-zinc-800 animate-pulse" />
         ))}
@@ -74,7 +74,7 @@ export function MacroPanel({ macro }: MacroPanelProps) {
     );
   }
   return (
-    <section aria-label="宏觀經濟指標" className="grid grid-cols-2 lg:grid-cols-4 gap-4">
+    <section aria-label="宏觀經濟指標" className="grid grid-cols-2 lg:grid-cols-4 gap-3">
       {/* 美國10年公債殖利率 */}
       <MacroCard
         title="美債 10Y 殖利率"

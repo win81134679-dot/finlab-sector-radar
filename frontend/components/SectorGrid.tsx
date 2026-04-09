@@ -55,11 +55,11 @@ export function SectorGrid({ data, isLoading = false, composite }: SectorGridPro
       </div>
 
       {/* Desktop: Bento Grid */}
-      <div className="hidden md:grid grid-cols-3 lg:grid-cols-4 gap-3 auto-rows-fr">
+      <div className="hidden md:grid grid-cols-3 lg:grid-cols-4 gap-3">
         {sectors.map((s) => (
           <div
             key={s.id}
-            className={featuredIds.has(s.id) ? "col-span-2 row-span-2" : ""}
+            className={featuredIds.has(s.id) ? "col-span-2" : ""}
           >
             <SectorCard
               sectorId={s.id}

@@ -36,8 +36,8 @@ export function TrendSection({ historyIndex, snapshot }: TrendSectionProps) {
     : [];
 
   return (
-    <section className="mt-8" aria-label="歷史趨勢">
-      <div className="flex items-center justify-between mb-4 flex-wrap gap-2">
+    <section className="mt-6" aria-label="歷史趨勢">
+      <div className="flex items-center justify-between mb-3 flex-wrap gap-2">
         <h2 className="text-lg font-bold text-zinc-900 dark:text-white">
           板塊趨勢
         </h2>

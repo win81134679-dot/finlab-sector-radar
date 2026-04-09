@@ -121,7 +121,7 @@ export function MagaWatchlist({ stocks, sectorPhases }: Props) {
         ))}
       </div>
 
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
       {/* 受益 */}
       <div>
         <h3 className="text-sm font-semibold text-emerald-600 dark:text-emerald-400 mb-3 flex items-center gap-2">

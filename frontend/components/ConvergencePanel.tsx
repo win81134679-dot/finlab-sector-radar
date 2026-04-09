@@ -12,21 +12,6 @@ import { changePctColor, formatChangePct, SIGNAL_NAMES, CYCLE_STAGE_CONFIG, type
 
 const COMPOSITE_THRESHOLD = 0.10;
 
-/** 回傳目前 grid 欄數（對應 grid-cols-1 sm:grid-cols-2 xl:grid-cols-3） */
-function useColumns() {
-  const [cols, setCols] = useState(1);
-  useEffect(() => {
-    const update = () => {
-      const w = window.innerWidth;
-      setCols(w >= 1280 ? 3 : w >= 640 ? 2 : 1);
-    };
-    update();
-    window.addEventListener("resize", update, { passive: true });
-    return () => window.removeEventListener("resize", update);
-  }, []);
-  return cols;
-}
-
 import { MiniSparkline } from "./MiniSparkline";
 import { FactorRadar } from "./FactorRadar";
 import { RsiGauge } from "./RsiGauge";
@@ -354,14 +339,13 @@ function StockMiniRow({
 
 export function ConvergencePanel({ snapshot, composite, holdings, magaData }: Props) {
   const [view, setView] = useState<"stocks" | "rank">("stocks");
-  const [expandedRows, setExpandedRows] = useState<Set<number>>(new Set());
+  const [expandedStockId, setExpandedStockId] = useState<string | null>(null);
   const [sectorExpandSet, setSectorExpandSet] = useState<Set<string>>(new Set());
-  const cols = useColumns();
 
   // 切換 view 時收合所有 K 線
   const handleViewChange = (v: "stocks" | "rank") => {
     setView(v);
-    setExpandedRows(new Set());
+    setExpandedStockId(null);
   };
 
   const toggleSector = (id: string) =>
@@ -661,20 +645,16 @@ export function ConvergencePanel({ snapshot, composite, holdings, magaData }: Pr
             <>
               <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-3">
                 {convergenceStocks.map((stock, i) => {
-                  const rowKey = Math.floor(i / cols);
                   return (
                     <StockCard
                       key={stock.id}
                       stock={stock}
-                      isExpanded={expandedRows.has(rowKey)}
+                      isExpanded={expandedStockId === stock.id}
                       macroWarning={snapshot?.macro?.warning}
                       onToggle={() =>
-                        setExpandedRows((prev) => {
-                          const next = new Set(prev);
-                          if (next.has(rowKey)) next.delete(rowKey);
-                          else next.add(rowKey);
-                          return next;
-                        })
+                        setExpandedStockId((prev) =>
+                          prev === stock.id ? null : stock.id
+                        )
                       }
                     />
                   );

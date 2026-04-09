@@ -107,13 +107,14 @@ function RiskBar({ score, action }: { score: number; action: string }) {
   );
 }
 
-function AccStockCard({ stock, sectorLevel, exitRisk, cycleStage, macroWarning, expanded }: {
+function AccStockCard({ stock, sectorLevel, exitRisk, cycleStage, macroWarning, expanded, onToggle }: {
   stock: AccStock;
   sectorLevel: string;
   exitRisk: ExitRisk | null;
   cycleStage: string;
   macroWarning?: boolean;
   expanded: boolean;
+  onToggle: () => void;
 }) {
   const [shouldRender, setShouldRender] = useState(expanded);
   if (expanded && !shouldRender) setShouldRender(true);
@@ -134,7 +135,7 @@ function AccStockCard({ stock, sectorLevel, exitRisk, cycleStage, macroWarning, 
         ? "border-red-300/60 dark:border-red-700/50 bg-red-50/30 dark:bg-red-950/20"
         : "border-zinc-200/60 dark:border-zinc-700/50 bg-white/70 dark:bg-zinc-900/50"
     }`}>
-      <div className="px-3.5 pt-3 pb-2.5 space-y-2">
+      <div className="px-3.5 pt-3 pb-2.5 space-y-2 cursor-pointer select-none" onClick={onToggle}>
         {/* Header row */}
         <div className="flex items-start justify-between gap-2">
           <div className="flex items-center gap-2 min-w-0">
@@ -216,9 +217,24 @@ function AccStockCard({ stock, sectorLevel, exitRisk, cycleStage, macroWarning, 
 export function AccelerationPanel({ snapshot, holdings, exitAlerts, pnl }: Props) {
   const macroWarning = snapshot?.macro_warning === true || snapshot?.macro?.warning === true;
   const [expandedSectors, setExpandedSectors] = useState<Record<string, boolean>>({});
+  const [expandedStockBySector, setExpandedStockBySector] = useState<Record<string, string | null>>({});
 
   const toggleSector = (sectorId: string) => {
-    setExpandedSectors((prev) => ({ ...prev, [sectorId]: !prev[sectorId] }));
+    setExpandedSectors((prev) => {
+      const next = { ...prev, [sectorId]: !prev[sectorId] };
+      // 收起板塊時同時收起該板塊的個股
+      if (!next[sectorId]) {
+        setExpandedStockBySector((p) => ({ ...p, [sectorId]: null }));
+      }
+      return next;
+    });
+  };
+
+  const toggleStock = (sectorId: string, stockId: string) => {
+    setExpandedStockBySector((prev) => ({
+      ...prev,
+      [sectorId]: prev[sectorId] === stockId ? null : stockId,
+    }));
   };
 
   const accSectors = useMemo<AccSector[]>(() => {
@@ -282,6 +298,8 @@ export function AccelerationPanel({ snapshot, holdings, exitAlerts, pnl }: Props
     const next: Record<string, boolean> = {};
     for (const s of accSectors) next[s.sectorId] = nextVal;
     setExpandedSectors(next);
+    // 收起全部時同時清空個股展開
+    if (!nextVal) setExpandedStockBySector({});
   };
 
   // 空狀態（板塊監控子標籤仍可切到持倉）
@@ -428,7 +446,8 @@ export function AccelerationPanel({ snapshot, holdings, exitAlerts, pnl }: Props
                           exitRisk={sec.exitRisk}
                           cycleStage={sec.cycleStage}
                           macroWarning={macroWarning}
-                          expanded={isExpanded}
+                          expanded={expandedStockBySector[sec.sectorId] === stock.id}
+                          onToggle={() => toggleStock(sec.sectorId, stock.id)}
                         />
                       ))}
                     </div>
