@@ -65,7 +65,7 @@ export function ExitAlertPanel({ exitAlerts, pnl }: Props) {
   // ── 全持倉安全狀態 ──
   if (!hasAlerts) {
     return (
-      <div className="rounded-xl border border-emerald-200/60 dark:border-emerald-800/40 bg-gradient-to-r from-emerald-50/80 via-emerald-50/40 to-transparent dark:from-emerald-900/20 dark:via-emerald-900/10 dark:to-transparent px-4 py-3.5">
+      <div className="rounded-xl border border-emerald-200/60 dark:border-emerald-800/40 bg-linear-to-r from-emerald-50/80 via-emerald-50/40 to-transparent dark:from-emerald-900/20 dark:via-emerald-900/10 dark:to-transparent px-4 py-3.5">
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-3">
             <div className="flex items-center justify-center w-9 h-9 rounded-full bg-emerald-100/80 dark:bg-emerald-900/40">
