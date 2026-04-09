@@ -69,46 +69,107 @@ function PasswordModal({ onSuccess, onClose }: { onSuccess: (pw: string) => void
 }
 
 // ── Add Position Form ───────────────────────────────────────────────────
-function AddPositionForm({ onAdd, stockLookup }: {
+function AddPositionForm({ onAdd, stockLookup, existingPositions }: {
   onAdd: (ticker: string, pos: UserHoldingPosition) => void;
   stockLookup: Record<string, { name_zh: string; sector: string }>;
+  existingPositions: Record<string, UserHoldingPosition>;
 }) {
+  const today = new Date().toISOString().slice(0, 10);
   const [ticker, setTicker] = useState("");
   const [entryPrice, setEntryPrice] = useState("");
   const [shares, setShares] = useState("");
+  const [entryDate, setEntryDate] = useState(today);
+  const [note, setNote] = useState("");
+  const [errors, setErrors] = useState<Record<string, string>>({});
+
   const matched = stockLookup[ticker.trim()] ?? null;
+  const existing = existingPositions[ticker.trim()] ?? null;
+  const isTopUp = !!existing;
+
   const inputCls = "px-2.5 py-2 rounded-lg border border-zinc-300 dark:border-zinc-600 bg-white dark:bg-zinc-800 text-xs text-zinc-800 dark:text-zinc-200 placeholder-zinc-400 focus:outline-none focus:ring-2 focus:ring-blue-500/30";
+  const errorCls = "border-red-400 dark:border-red-600 focus:ring-red-500/30";
+
+  const validate = (): boolean => {
+    const errs: Record<string, string> = {};
+    if (!ticker.trim()) errs.ticker = "必填";
+    if (entryPrice && Number(entryPrice) <= 0) errs.entryPrice = "須 > 0";
+    if (shares && Number(shares) <= 0) errs.shares = "須 > 0";
+    if (entryDate > today) errs.entryDate = "不可超過今日";
+    setErrors(errs);
+    return Object.keys(errs).length === 0;
+  };
 
   const handleAdd = () => {
+    if (!validate()) return;
     const t = ticker.trim();
-    if (!t) return;
-    onAdd(t, {
-      name_zh: matched?.name_zh ?? t,
-      sector: matched?.sector ?? "",
-      entry_price: entryPrice ? Number(entryPrice) : null,
-      entry_date: new Date().toISOString().slice(0, 10),
-      shares: shares ? Number(shares) : null,
-      note: "手動加入",
-    });
-    setTicker(""); setEntryPrice(""); setShares("");
+    const newPrice = entryPrice ? Number(entryPrice) : null;
+    const newShares = shares ? Number(shares) : null;
+
+    if (isTopUp && existing) {
+      // 加碼均價計算
+      const oldP = existing.entry_price ?? 0;
+      const oldS = existing.shares ?? 0;
+      const nP = newPrice ?? 0;
+      const nS = newShares ?? 0;
+      const totalS = oldS + nS;
+      const avgPrice = totalS > 0 ? Math.round(((oldP * oldS + nP * nS) / totalS) * 100) / 100 : nP;
+      const earlierDate = existing.entry_date < entryDate ? existing.entry_date : entryDate;
+      onAdd(t, {
+        ...existing,
+        entry_price: avgPrice || existing.entry_price,
+        shares: totalS || existing.shares,
+        entry_date: earlierDate || existing.entry_date,
+        note: note.trim() || existing.note || "加碼",
+      });
+    } else {
+      onAdd(t, {
+        name_zh: matched?.name_zh ?? t,
+        sector: matched?.sector ?? "",
+        entry_price: newPrice,
+        entry_date: entryDate,
+        shares: newShares,
+        note: note.trim() || "手動加入",
+      });
+    }
+    setTicker(""); setEntryPrice(""); setShares(""); setNote(""); setEntryDate(today); setErrors({});
   };
 
   return (
     <div className="rounded-xl border border-zinc-200/40 dark:border-zinc-800/40 bg-zinc-50/60 dark:bg-zinc-900/40 p-4 space-y-3">
-      <p className="text-xs font-semibold text-zinc-600 dark:text-zinc-300">➕ 手動新增持倉</p>
-      <div className="grid grid-cols-3 gap-2">
-        <input value={ticker} onChange={e => setTicker(e.target.value.toUpperCase())} placeholder="代號 *" className={inputCls} onKeyDown={e => e.key === "Enter" && handleAdd()} />
-        <input value={entryPrice} onChange={e => setEntryPrice(e.target.value)} placeholder="進場價" type="number" step="0.01" className={inputCls} onKeyDown={e => e.key === "Enter" && handleAdd()} />
-        <input value={shares} onChange={e => setShares(e.target.value)} placeholder="股數" type="number" className={inputCls} onKeyDown={e => e.key === "Enter" && handleAdd()} />
+      <p className="text-xs font-semibold text-zinc-600 dark:text-zinc-300">
+        {isTopUp ? "⬆️ 加碼現有持倉" : "➕ 手動新增持倉"}
+      </p>
+
+      {/* 加碼提示 */}
+      {isTopUp && existing && (
+        <div className="text-[11px] px-3 py-2 rounded-lg bg-blue-50/70 dark:bg-blue-900/20 border border-blue-200/50 dark:border-blue-800/40 text-blue-700 dark:text-blue-300">
+          已持有 <b>{existing.shares ?? "?"} 股</b> @ <b>{existing.entry_price ?? "?"}</b>，本次加碼將計算加權均價
+        </div>
+      )}
+
+      <div className="grid grid-cols-2 sm:grid-cols-4 gap-2">
+        <input value={ticker} onChange={e => setTicker(e.target.value.toUpperCase())} placeholder="代號 *" className={`${inputCls} ${errors.ticker ? errorCls : ""}`} onKeyDown={e => e.key === "Enter" && handleAdd()} />
+        <input value={entryPrice} onChange={e => setEntryPrice(e.target.value)} placeholder="進場價" type="number" step="0.01" min="0" className={`${inputCls} ${errors.entryPrice ? errorCls : ""}`} onKeyDown={e => e.key === "Enter" && handleAdd()} />
+        <input value={shares} onChange={e => setShares(e.target.value)} placeholder="股數" type="number" min="0" className={`${inputCls} ${errors.shares ? errorCls : ""}`} onKeyDown={e => e.key === "Enter" && handleAdd()} />
+        <input value={entryDate} onChange={e => setEntryDate(e.target.value)} type="date" max={today} className={`${inputCls} ${errors.entryDate ? errorCls : ""}`} />
       </div>
-      {ticker.trim() && (
+      <input value={note} onChange={e => setNote(e.target.value)} placeholder="備註（選填）" className={`${inputCls} w-full`} onKeyDown={e => e.key === "Enter" && handleAdd()} />
+
+      {/* 驗證錯誤 */}
+      {Object.keys(errors).length > 0 && (
+        <div className="text-[11px] text-red-500">{Object.values(errors).join(" · ")}</div>
+      )}
+
+      {ticker.trim() && !isTopUp && (
         <div className="text-[11px]">
           {matched
             ? <span className="text-emerald-600 dark:text-emerald-400">✅ {matched.name_zh}（{getSectorName(matched.sector)}）</span>
             : <span className="text-zinc-400">⚠️ 未在訊號資料中找到，將以代號為名稱</span>}
         </div>
       )}
-      <button onClick={handleAdd} disabled={!ticker.trim()} className="px-3 py-1.5 text-xs rounded-lg bg-blue-600 text-white font-medium hover:bg-blue-700 disabled:opacity-40 transition-colors">新增</button>
+      <button onClick={handleAdd} disabled={!ticker.trim()} className="px-3 py-1.5 text-xs rounded-lg bg-blue-600 text-white font-medium hover:bg-blue-700 disabled:opacity-40 transition-colors">
+        {isTopUp ? "⬆️ 加碼" : "新增"}
+      </button>
     </div>
   );
 }
@@ -211,16 +272,40 @@ export function HoldingsTab({ snapshot, holdings, userHoldings, pnl, exitAlerts,
   }, []); // eslint-disable-line react-hooks/exhaustive-deps
 
   // ── CRUD ──
+  const [dirty, setDirty] = useState(false);
+
   const handleRemove = useCallback((ticker: string) => {
     setPositions(prev => {
       const next = { ...prev };
       delete next[ticker];
       return next;
     });
+    setDirty(true);
   }, []);
 
   const handleAdd = useCallback((ticker: string, pos: UserHoldingPosition) => {
     setPositions(prev => ({ ...prev, [ticker]: pos }));
+    setDirty(true);
+  }, []);
+
+  const handleEdit = useCallback((ticker: string, updated: UserHoldingPosition) => {
+    setPositions(prev => ({ ...prev, [ticker]: updated }));
+    setDirty(true);
+  }, []);
+
+  const handleReduce = useCallback((ticker: string, sellShares: number) => {
+    setPositions(prev => {
+      const pos = prev[ticker];
+      if (!pos) return prev;
+      const remaining = (pos.shares ?? 0) - sellShares;
+      if (remaining <= 0) {
+        const next = { ...prev };
+        delete next[ticker];
+        return next;
+      }
+      return { ...prev, [ticker]: { ...pos, shares: remaining } };
+    });
+    setDirty(true);
   }, []);
 
   const doSave = async (pw: string) => {
@@ -233,6 +318,7 @@ export function HoldingsTab({ snapshot, holdings, userHoldings, pnl, exitAlerts,
       });
       if (res.ok) {
         setToast("✅ 持倉已儲存至 GitHub");
+        setDirty(false);
         setTimeout(() => setToast(""), 3000);
       } else {
         const data = await res.json().catch(() => ({ error: "儲存失敗" }));
@@ -371,6 +457,7 @@ export function HoldingsTab({ snapshot, holdings, userHoldings, pnl, exitAlerts,
           <div className="flex items-center gap-2">
             {toast && <span className="text-xs text-zinc-500">{toast}</span>}
             <span className="text-[10px] px-1.5 py-0.5 rounded bg-amber-100 dark:bg-amber-900/30 text-amber-700 dark:text-amber-300 font-medium">管理員</span>
+            {dirty && <span className="text-[10px] text-amber-500 font-medium">● 未儲存</span>}
             <button
               onClick={handleSave}
               disabled={saving}
@@ -395,7 +482,10 @@ export function HoldingsTab({ snapshot, holdings, userHoldings, pnl, exitAlerts,
               key={h.stockId}
               holding={h}
               onRemove={handleRemove}
+              onEdit={handleEdit}
+              onReduce={handleReduce}
               showManagement={unlocked}
+              positions={positions}
             />
           ))}
         </div>
@@ -410,7 +500,7 @@ export function HoldingsTab({ snapshot, holdings, userHoldings, pnl, exitAlerts,
       {/* ── Management Section (unlocked only) ── */}
       {unlocked && (
         <div className="space-y-4 border-t border-zinc-200/60 dark:border-zinc-700/40 pt-5">
-          <AddPositionForm onAdd={handleAdd} stockLookup={stockLookup} />
+          <AddPositionForm onAdd={handleAdd} stockLookup={stockLookup} existingPositions={positions} />
 
           {/* 從演算法建議快速加入 */}
           {algoNotInUser.length > 0 && (

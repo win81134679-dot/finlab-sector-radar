@@ -3,7 +3,7 @@
 
 import { useState, useEffect, useRef } from "react";
 import dynamic from "next/dynamic";
-import type { OHLCBar } from "@/lib/types";
+import type { OHLCBar, UserHoldingPosition } from "@/lib/types";
 import type { MergedHolding } from "@/lib/holdings-utils";
 import { ACTION_CONFIG, type HoldingAction } from "@/lib/holdings-utils";
 import {
@@ -19,6 +19,7 @@ import { FactorRadar } from "./FactorRadar";
 import { RsiGauge } from "./RsiGauge";
 import { MacdChart } from "./MacdChart";
 import { CandlePatternBadges } from "./CandlePatternBadges";
+import { ConfirmDialog } from "./ConfirmDialog";
 
 const GITHUB_RAW_BASE = process.env.NEXT_PUBLIC_GITHUB_RAW_BASE_URL ?? "";
 
@@ -101,13 +102,26 @@ function SourceBadge({ source }: { source: "user" | "algo" | "both" }) {
 interface HoldingCardProps {
   holding: MergedHolding;
   onRemove?: (stockId: string) => void;
+  onEdit?: (stockId: string, updated: UserHoldingPosition) => void;
+  onReduce?: (stockId: string, sellShares: number) => void;
+  positions?: Record<string, UserHoldingPosition>;
   showManagement?: boolean;
 }
 
-export function HoldingCard({ holding, onRemove, showManagement }: HoldingCardProps) {
+export function HoldingCard({ holding, onRemove, onEdit, onReduce, positions, showManagement }: HoldingCardProps) {
   const [expanded, setExpanded] = useState(false);
   const [shouldRender, setShouldRender] = useState(false);
   if (expanded && !shouldRender) setShouldRender(true);
+
+  // ── CRUD 狀態 ──
+  const [editMode, setEditMode] = useState(false);
+  const [closeConfirmOpen, setCloseConfirmOpen] = useState(false);
+  const [reduceDialogOpen, setReduceDialogOpen] = useState(false);
+  const [reduceSellShares, setReduceSellShares] = useState("");
+  const [editPrice, setEditPrice] = useState("");
+  const [editShares, setEditShares] = useState("");
+  const [editDate, setEditDate] = useState("");
+  const [editNote, setEditNote] = useState("");
 
   const h = holding;
   const actionCfg = ACTION_CONFIG[h.action];
@@ -229,7 +243,7 @@ export function HoldingCard({ holding, onRemove, showManagement }: HoldingCardPr
           </div>
         )}
 
-        {/* 展開按鈕 */}
+        {/* 展開 + 管理按鈕 */}
         <div className="flex items-center justify-between">
           <button
             onClick={() => setExpanded(!expanded)}
@@ -241,16 +255,141 @@ export function HoldingCard({ holding, onRemove, showManagement }: HoldingCardPr
           >
             📊 {expanded ? "收起分析" : "展開分析"}
           </button>
-          {/* 管理按鈕（卡片底部） */}
-          {showManagement && onRemove && h.source !== "algo" && (
-            <button
-              onClick={() => onRemove(h.stockId)}
-              className="text-[11px] px-2 py-1 rounded-lg text-red-400 hover:text-red-600 hover:bg-red-50 dark:hover:bg-red-900/20 transition-colors"
-            >
-              🗑 移除
-            </button>
+          {showManagement && h.source !== "algo" && (
+            <div className="flex items-center gap-1">
+              <button
+                onClick={() => {
+                  const pos = positions?.[h.stockId];
+                  setEditPrice(String(pos?.entry_price ?? h.entryPrice ?? ""));
+                  setEditShares(String(pos?.shares ?? h.shares ?? ""));
+                  setEditDate(pos?.entry_date ?? h.entryDate ?? new Date().toISOString().slice(0, 10));
+                  setEditNote(pos?.note ?? "");
+                  setEditMode(true);
+                }}
+                className="text-[11px] px-2 py-1 rounded-lg text-blue-400 hover:text-blue-600 hover:bg-blue-50 dark:hover:bg-blue-900/20 transition-colors"
+              >
+                ✏️ 編輯
+              </button>
+              <button
+                onClick={() => { setReduceSellShares(""); setReduceDialogOpen(true); }}
+                className="text-[11px] px-2 py-1 rounded-lg text-amber-400 hover:text-amber-600 hover:bg-amber-50 dark:hover:bg-amber-900/20 transition-colors"
+              >
+                📉 減倉
+              </button>
+              <button
+                onClick={() => setCloseConfirmOpen(true)}
+                className="text-[11px] px-2 py-1 rounded-lg text-red-400 hover:text-red-600 hover:bg-red-50 dark:hover:bg-red-900/20 transition-colors"
+              >
+                🔒 平倉
+              </button>
+            </div>
           )}
         </div>
+
+        {/* ── 內嵌編輯表單 ── */}
+        {editMode && (
+          <div className="mt-2 p-3 rounded-xl bg-blue-50/60 dark:bg-blue-950/30 border border-blue-200/50 dark:border-blue-800/40 space-y-2">
+            <div className="text-xs font-semibold text-blue-600 dark:text-blue-400 mb-1">✏️ 編輯持倉</div>
+            <div className="grid grid-cols-2 gap-2">
+              <div>
+                <label className="text-[10px] text-zinc-500">成本價</label>
+                <input type="number" step="0.01" min="0" value={editPrice}
+                  onChange={e => setEditPrice(e.target.value)}
+                  className="w-full text-xs px-2 py-1.5 rounded-lg border border-zinc-300 dark:border-zinc-600 bg-white dark:bg-zinc-800"
+                />
+              </div>
+              <div>
+                <label className="text-[10px] text-zinc-500">持有股數</label>
+                <input type="number" step="1" min="0" value={editShares}
+                  onChange={e => setEditShares(e.target.value)}
+                  className="w-full text-xs px-2 py-1.5 rounded-lg border border-zinc-300 dark:border-zinc-600 bg-white dark:bg-zinc-800"
+                />
+              </div>
+              <div>
+                <label className="text-[10px] text-zinc-500">建倉日期</label>
+                <input type="date" value={editDate} max={new Date().toISOString().slice(0, 10)}
+                  onChange={e => setEditDate(e.target.value)}
+                  className="w-full text-xs px-2 py-1.5 rounded-lg border border-zinc-300 dark:border-zinc-600 bg-white dark:bg-zinc-800"
+                />
+              </div>
+              <div>
+                <label className="text-[10px] text-zinc-500">備註</label>
+                <input type="text" value={editNote} maxLength={50}
+                  onChange={e => setEditNote(e.target.value)}
+                  placeholder="選填"
+                  className="w-full text-xs px-2 py-1.5 rounded-lg border border-zinc-300 dark:border-zinc-600 bg-white dark:bg-zinc-800"
+                />
+              </div>
+            </div>
+            <div className="flex justify-end gap-2 pt-1">
+              <button onClick={() => setEditMode(false)}
+                className="text-[11px] px-3 py-1 rounded-lg text-zinc-500 hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-colors">
+                取消
+              </button>
+              <button
+                onClick={() => {
+                  const p = parseFloat(editPrice);
+                  const s = parseInt(editShares, 10);
+                  if (!p || p <= 0 || !s || s <= 0 || !editDate) return;
+                  const pos = positions?.[h.stockId];
+                  onEdit?.(h.stockId, {
+                    name_zh: pos?.name_zh ?? h.nameZh ?? h.stockId,
+                    sector: pos?.sector ?? h.sectorId ?? "",
+                    entry_price: p,
+                    shares: s,
+                    entry_date: editDate,
+                    note: editNote || "",
+                  });
+                  setEditMode(false);
+                }}
+                className="text-[11px] px-3 py-1 rounded-lg bg-blue-600 text-white hover:bg-blue-700 transition-colors"
+              >
+                ✓ 確認修改
+              </button>
+            </div>
+          </div>
+        )}
+
+        {/* ── 平倉確認 ── */}
+        <ConfirmDialog
+          open={closeConfirmOpen}
+          title="確認平倉"
+          message={`確定要平倉 ${h.stockId}${h.nameZh ? ` ${h.nameZh}` : ""}？此操作會從持倉列表中移除。`}
+          confirmLabel="確認平倉"
+          variant="danger"
+          onConfirm={() => { onRemove?.(h.stockId); setCloseConfirmOpen(false); }}
+          onCancel={() => setCloseConfirmOpen(false)}
+        />
+
+        {/* ── 減倉對話框 ── */}
+        <ConfirmDialog
+          open={reduceDialogOpen}
+          title="減倉"
+          message={`${h.stockId}${h.nameZh ? ` ${h.nameZh}` : ""} — 目前持有 ${h.shares ?? "?"} 股`}
+          confirmLabel="確認減倉"
+          variant="warning"
+          onConfirm={() => {
+            const sell = parseInt(reduceSellShares, 10);
+            if (!sell || sell <= 0) return;
+            onReduce?.(h.stockId, sell);
+            setReduceDialogOpen(false);
+          }}
+          onCancel={() => setReduceDialogOpen(false)}
+        >
+          <div className="mt-2">
+            <label className="text-xs text-zinc-600 dark:text-zinc-400">賣出股數</label>
+            <input
+              type="number" step="1" min="1" max={h.shares ?? undefined}
+              value={reduceSellShares}
+              onChange={e => setReduceSellShares(e.target.value)}
+              placeholder={`最多 ${h.shares ?? "?"}`}
+              className="mt-1 w-full text-sm px-3 py-2 rounded-lg border border-zinc-300 dark:border-zinc-600 bg-white dark:bg-zinc-800"
+            />
+            {parseInt(reduceSellShares, 10) > (h.shares ?? 0) && (
+              <p className="text-[11px] text-red-500 mt-1">超過持有股數，請使用平倉</p>
+            )}
+          </div>
+        </ConfirmDialog>
       </div>
 
       {/* ── 展開分析區 ── */}
