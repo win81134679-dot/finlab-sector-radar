@@ -469,7 +469,13 @@ def _save_snapshot(result: Dict[str, Any], config, sector_map) -> Optional[Path]
         logger.warning("history_index.json 更新失敗: %s", e)
 
     try:
-        # 5. 個股 OHLCV 歷史（供前端 K 線多時間框架切換）
+        # 5. stock_names.json — 完整代碼→名稱+板塊對照（前端持倉表單用）
+        _generate_stock_names_json(config)
+    except Exception as e:
+        logger.warning("stock_names.json 產生失敗: %s", e)
+
+    try:
+        # 6. 個股 OHLCV 歷史（供前端 K 線多時間框架切換）
         if _ohlcv_full_batch:
             _ohlcv_dir = config.OUTPUT_DIR / "ohlcv"
             _ohlcv_dir.mkdir(exist_ok=True)
@@ -572,3 +578,35 @@ def build_trend_string(sector_id: str, history: List[Dict[str, Any]]) -> str:
             display = str(int(v)) if v == int(v) else f"{v:.1f}"
             values.append(display)
     return "→".join(values) if values else "-"
+
+
+def _generate_stock_names_json(config) -> None:
+    """
+    產生 output/stock_names.json —— 所有板塊股票的 代碼→{name_zh, sector} 對照。
+    前端持倉表單用來辨識任意股票代碼。
+    """
+    import os
+    from src.stock_names import STOCK_NAMES
+    from src.sector_map import SectorMap
+
+    sm = SectorMap()
+    sm.load()
+
+    lookup: Dict[str, Dict[str, str]] = {}
+    for sid in sm.all_sector_ids():
+        sector_name = sm.get_sector_name(sid)
+        for stock_id in sm.get_stocks(sid):
+            if stock_id not in lookup:
+                lookup[stock_id] = {
+                    "name_zh": STOCK_NAMES.get(stock_id, stock_id),
+                    "sector":  sid,
+                    "sector_name": sector_name,
+                }
+
+    out_path = config.OUTPUT_DIR / "stock_names.json"
+    tmp_path = config.OUTPUT_DIR / "stock_names.tmp.json"
+    tmp_path.write_text(
+        json.dumps(lookup, ensure_ascii=False, indent=2), encoding="utf-8"
+    )
+    os.replace(str(tmp_path), str(out_path))
+    logger.info("stock_names.json 已更新（%d 筆股票）", len(lookup))

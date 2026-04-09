@@ -1,0 +1,1397 @@
+{
+  "2330": {
+    "name_zh": "台積電",
+    "sector": "foundry",
+    "sector_name": "晶圓代工"
+  },
+  "2303": {
+    "name_zh": "聯電",
+    "sector": "foundry",
+    "sector_name": "晶圓代工"
+  },
+  "5347": {
+    "name_zh": "世界先進",
+    "sector": "foundry",
+    "sector_name": "晶圓代工"
+  },
+  "6770": {
+    "name_zh": "力積電",
+    "sector": "foundry",
+    "sector_name": "晶圓代工"
+  },
+  "8150": {
+    "name_zh": "8150",
+    "sector": "foundry",
+    "sector_name": "晶圓代工"
+  },
+  "2454": {
+    "name_zh": "聯發科",
+    "sector": "ic_design",
+    "sector_name": "IC設計"
+  },
+  "2379": {
+    "name_zh": "瑞昱",
+    "sector": "ic_design",
+    "sector_name": "IC設計"
+  },
+  "3034": {
+    "name_zh": "聯詠",
+    "sector": "ic_design",
+    "sector_name": "IC設計"
+  },
+  "3051": {
+    "name_zh": "力旺",
+    "sector": "ic_design",
+    "sector_name": "IC設計"
+  },
+  "2441": {
+    "name_zh": "超豐",
+    "sector": "ic_design",
+    "sector_name": "IC設計"
+  },
+  "6415": {
+    "name_zh": "6415",
+    "sector": "ic_design",
+    "sector_name": "IC設計"
+  },
+  "5274": {
+    "name_zh": "5274",
+    "sector": "ic_design",
+    "sector_name": "IC設計"
+  },
+  "3529": {
+    "name_zh": "3529",
+    "sector": "ic_design",
+    "sector_name": "IC設計"
+  },
+  "4968": {
+    "name_zh": "4968",
+    "sector": "ic_design",
+    "sector_name": "IC設計"
+  },
+  "6462": {
+    "name_zh": "6462",
+    "sector": "ic_design",
+    "sector_name": "IC設計"
+  },
+  "6533": {
+    "name_zh": "晶心科",
+    "sector": "ic_design",
+    "sector_name": "IC設計"
+  },
+  "6732": {
+    "name_zh": "6732",
+    "sector": "ic_design",
+    "sector_name": "IC設計"
+  },
+  "2458": {
+    "name_zh": "2458",
+    "sector": "ic_design",
+    "sector_name": "IC設計"
+  },
+  "4966": {
+    "name_zh": "4966",
+    "sector": "ic_design",
+    "sector_name": "IC設計"
+  },
+  "2408": {
+    "name_zh": "南亞科",
+    "sector": "memory",
+    "sector_name": "記憶體/DRAM"
+  },
+  "2344": {
+    "name_zh": "華邦電",
+    "sector": "memory",
+    "sector_name": "記憶體/DRAM"
+  },
+  "3260": {
+    "name_zh": "威剛",
+    "sector": "memory",
+    "sector_name": "記憶體/DRAM"
+  },
+  "2337": {
+    "name_zh": "2337",
+    "sector": "memory",
+    "sector_name": "記憶體/DRAM"
+  },
+  "3006": {
+    "name_zh": "3006",
+    "sector": "memory",
+    "sector_name": "記憶體/DRAM"
+  },
+  "4967": {
+    "name_zh": "4967",
+    "sector": "memory",
+    "sector_name": "記憶體/DRAM"
+  },
+  "3231": {
+    "name_zh": "緯創",
+    "sector": "ai_server",
+    "sector_name": "AI伺服器/ODM"
+  },
+  "6669": {
+    "name_zh": "緯穎",
+    "sector": "ai_server",
+    "sector_name": "AI伺服器/ODM"
+  },
+  "2382": {
+    "name_zh": "廣達",
+    "sector": "ai_server",
+    "sector_name": "AI伺服器/ODM"
+  },
+  "2317": {
+    "name_zh": "鴻海",
+    "sector": "ai_server",
+    "sector_name": "AI伺服器/ODM"
+  },
+  "2308": {
+    "name_zh": "台達電",
+    "sector": "ai_server",
+    "sector_name": "AI伺服器/ODM"
+  },
+  "2356": {
+    "name_zh": "2356",
+    "sector": "ai_server",
+    "sector_name": "AI伺服器/ODM"
+  },
+  "2376": {
+    "name_zh": "2376",
+    "sector": "ai_server",
+    "sector_name": "AI伺服器/ODM"
+  },
+  "3706": {
+    "name_zh": "3706",
+    "sector": "ai_server",
+    "sector_name": "AI伺服器/ODM"
+  },
+  "6414": {
+    "name_zh": "6414",
+    "sector": "ai_server",
+    "sector_name": "AI伺服器/ODM"
+  },
+  "8210": {
+    "name_zh": "8210",
+    "sector": "ai_server",
+    "sector_name": "AI伺服器/ODM"
+  },
+  "2345": {
+    "name_zh": "智邦",
+    "sector": "networking",
+    "sector_name": "網通設備"
+  },
+  "3149": {
+    "name_zh": "正文",
+    "sector": "networking",
+    "sector_name": "網通設備"
+  },
+  "2332": {
+    "name_zh": "友訊",
+    "sector": "networking",
+    "sector_name": "網通設備"
+  },
+  "6138": {
+    "name_zh": "茂達",
+    "sector": "networking",
+    "sector_name": "網通設備"
+  },
+  "3380": {
+    "name_zh": "3380",
+    "sector": "networking",
+    "sector_name": "網通設備"
+  },
+  "6285": {
+    "name_zh": "6285",
+    "sector": "networking",
+    "sector_name": "網通設備"
+  },
+  "3704": {
+    "name_zh": "3704",
+    "sector": "networking",
+    "sector_name": "網通設備"
+  },
+  "5388": {
+    "name_zh": "5388",
+    "sector": "networking",
+    "sector_name": "網通設備"
+  },
+  "2301": {
+    "name_zh": "光寶科",
+    "sector": "power_components",
+    "sector_name": "電源/被動元件"
+  },
+  "3044": {
+    "name_zh": "健鼎",
+    "sector": "power_components",
+    "sector_name": "電源/被動元件"
+  },
+  "2492": {
+    "name_zh": "華新科",
+    "sector": "power_components",
+    "sector_name": "電源/被動元件"
+  },
+  "2327": {
+    "name_zh": "2327",
+    "sector": "power_components",
+    "sector_name": "電源/被動元件"
+  },
+  "2478": {
+    "name_zh": "2478",
+    "sector": "power_components",
+    "sector_name": "電源/被動元件"
+  },
+  "3026": {
+    "name_zh": "3026",
+    "sector": "power_components",
+    "sector_name": "電源/被動元件"
+  },
+  "1504": {
+    "name_zh": "東元",
+    "sector": "ev_supply",
+    "sector_name": "電動車供應鏈"
+  },
+  "6213": {
+    "name_zh": "聯茂",
+    "sector": "ev_supply",
+    "sector_name": "電動車供應鏈"
+  },
+  "2231": {
+    "name_zh": "為升",
+    "sector": "ev_supply",
+    "sector_name": "電動車供應鏈"
+  },
+  "8255": {
+    "name_zh": "朋程",
+    "sector": "ev_supply",
+    "sector_name": "電動車供應鏈"
+  },
+  "1536": {
+    "name_zh": "1536",
+    "sector": "ev_supply",
+    "sector_name": "電動車供應鏈"
+  },
+  "2059": {
+    "name_zh": "2059",
+    "sector": "ev_supply",
+    "sector_name": "電動車供應鏈"
+  },
+  "3552": {
+    "name_zh": "3552",
+    "sector": "ev_supply",
+    "sector_name": "電動車供應鏈"
+  },
+  "3665": {
+    "name_zh": "貿聯-KY",
+    "sector": "ev_supply",
+    "sector_name": "電動車供應鏈"
+  },
+  "3576": {
+    "name_zh": "聯合再生",
+    "sector": "solar",
+    "sector_name": "太陽能"
+  },
+  "6214": {
+    "name_zh": "精誠",
+    "sector": "solar",
+    "sector_name": "太陽能"
+  },
+  "3178": {
+    "name_zh": "公信",
+    "sector": "solar",
+    "sector_name": "太陽能"
+  },
+  "6244": {
+    "name_zh": "6244",
+    "sector": "solar",
+    "sector_name": "太陽能"
+  },
+  "3691": {
+    "name_zh": "3691",
+    "sector": "solar",
+    "sector_name": "太陽能"
+  },
+  "6443": {
+    "name_zh": "6443",
+    "sector": "solar",
+    "sector_name": "太陽能"
+  },
+  "6477": {
+    "name_zh": "6477",
+    "sector": "solar",
+    "sector_name": "太陽能"
+  },
+  "3037": {
+    "name_zh": "欣興",
+    "sector": "pcb",
+    "sector_name": "PCB板"
+  },
+  "8046": {
+    "name_zh": "南電",
+    "sector": "pcb",
+    "sector_name": "PCB板"
+  },
+  "2313": {
+    "name_zh": "2313",
+    "sector": "pcb",
+    "sector_name": "PCB板"
+  },
+  "3189": {
+    "name_zh": "3189",
+    "sector": "pcb",
+    "sector_name": "PCB板"
+  },
+  "4958": {
+    "name_zh": "4958",
+    "sector": "pcb",
+    "sector_name": "PCB板"
+  },
+  "6153": {
+    "name_zh": "6153",
+    "sector": "pcb",
+    "sector_name": "PCB板"
+  },
+  "2368": {
+    "name_zh": "2368",
+    "sector": "pcb",
+    "sector_name": "PCB板"
+  },
+  "8155": {
+    "name_zh": "8155",
+    "sector": "pcb",
+    "sector_name": "PCB板"
+  },
+  "2316": {
+    "name_zh": "2316",
+    "sector": "pcb",
+    "sector_name": "PCB板"
+  },
+  "2409": {
+    "name_zh": "友達",
+    "sector": "display",
+    "sector_name": "面板顯示"
+  },
+  "3481": {
+    "name_zh": "群創",
+    "sector": "display",
+    "sector_name": "面板顯示"
+  },
+  "8069": {
+    "name_zh": "8069",
+    "sector": "display",
+    "sector_name": "面板顯示"
+  },
+  "6116": {
+    "name_zh": "6116",
+    "sector": "display",
+    "sector_name": "面板顯示"
+  },
+  "6547": {
+    "name_zh": "高端疫苗",
+    "sector": "biotech",
+    "sector_name": "生技醫療"
+  },
+  "1789": {
+    "name_zh": "神隆",
+    "sector": "biotech",
+    "sector_name": "生技醫療"
+  },
+  "4168": {
+    "name_zh": "醣聯",
+    "sector": "biotech",
+    "sector_name": "生技醫療"
+  },
+  "4743": {
+    "name_zh": "4743",
+    "sector": "biotech",
+    "sector_name": "生技醫療"
+  },
+  "6446": {
+    "name_zh": "6446",
+    "sector": "biotech",
+    "sector_name": "生技醫療"
+  },
+  "6472": {
+    "name_zh": "6472",
+    "sector": "biotech",
+    "sector_name": "生技醫療"
+  },
+  "6496": {
+    "name_zh": "6496",
+    "sector": "biotech",
+    "sector_name": "生技醫療"
+  },
+  "8436": {
+    "name_zh": "8436",
+    "sector": "biotech",
+    "sector_name": "生技醫療"
+  },
+  "2881": {
+    "name_zh": "富邦金",
+    "sector": "banking",
+    "sector_name": "銀行/金融"
+  },
+  "2882": {
+    "name_zh": "國泰金",
+    "sector": "banking",
+    "sector_name": "銀行/金融"
+  },
+  "2886": {
+    "name_zh": "兆豐金",
+    "sector": "banking",
+    "sector_name": "銀行/金融"
+  },
+  "2891": {
+    "name_zh": "中信金",
+    "sector": "banking",
+    "sector_name": "銀行/金融"
+  },
+  "2884": {
+    "name_zh": "玉山金",
+    "sector": "banking",
+    "sector_name": "銀行/金融"
+  },
+  "2892": {
+    "name_zh": "第一金",
+    "sector": "banking",
+    "sector_name": "銀行/金融"
+  },
+  "2880": {
+    "name_zh": "2880",
+    "sector": "banking",
+    "sector_name": "銀行/金融"
+  },
+  "5880": {
+    "name_zh": "5880",
+    "sector": "banking",
+    "sector_name": "銀行/金融"
+  },
+  "2816": {
+    "name_zh": "2816",
+    "sector": "insurance",
+    "sector_name": "壽險"
+  },
+  "2832": {
+    "name_zh": "2832",
+    "sector": "insurance",
+    "sector_name": "壽險"
+  },
+  "2603": {
+    "name_zh": "長榮",
+    "sector": "shipping",
+    "sector_name": "航運"
+  },
+  "2609": {
+    "name_zh": "陽明",
+    "sector": "shipping",
+    "sector_name": "航運"
+  },
+  "2615": {
+    "name_zh": "萬海",
+    "sector": "shipping",
+    "sector_name": "航運"
+  },
+  "2616": {
+    "name_zh": "山隆",
+    "sector": "shipping",
+    "sector_name": "航運"
+  },
+  "2605": {
+    "name_zh": "2605",
+    "sector": "shipping",
+    "sector_name": "航運"
+  },
+  "2606": {
+    "name_zh": "2606",
+    "sector": "shipping",
+    "sector_name": "航運"
+  },
+  "2637": {
+    "name_zh": "2637",
+    "sector": "shipping",
+    "sector_name": "航運"
+  },
+  "2636": {
+    "name_zh": "2636",
+    "sector": "shipping",
+    "sector_name": "航運"
+  },
+  "2511": {
+    "name_zh": "太子",
+    "sector": "construction",
+    "sector_name": "建設/營造"
+  },
+  "2515": {
+    "name_zh": "中工",
+    "sector": "construction",
+    "sector_name": "建設/營造"
+  },
+  "5522": {
+    "name_zh": "遠雄",
+    "sector": "construction",
+    "sector_name": "建設/營造"
+  },
+  "2501": {
+    "name_zh": "國建",
+    "sector": "construction",
+    "sector_name": "建設/營造"
+  },
+  "2520": {
+    "name_zh": "2520",
+    "sector": "construction",
+    "sector_name": "建設/營造"
+  },
+  "2524": {
+    "name_zh": "2524",
+    "sector": "construction",
+    "sector_name": "建設/營造"
+  },
+  "2542": {
+    "name_zh": "2542",
+    "sector": "construction",
+    "sector_name": "建設/營造"
+  },
+  "2548": {
+    "name_zh": "2548",
+    "sector": "construction",
+    "sector_name": "建設/營造"
+  },
+  "5534": {
+    "name_zh": "5534",
+    "sector": "construction",
+    "sector_name": "建設/營造"
+  },
+  "6177": {
+    "name_zh": "6177",
+    "sector": "construction",
+    "sector_name": "建設/營造"
+  },
+  "2002": {
+    "name_zh": "中鋼",
+    "sector": "steel",
+    "sector_name": "鋼鐵"
+  },
+  "2006": {
+    "name_zh": "東和鋼鐵",
+    "sector": "steel",
+    "sector_name": "鋼鐵"
+  },
+  "2027": {
+    "name_zh": "大成鋼",
+    "sector": "steel",
+    "sector_name": "鋼鐵"
+  },
+  "2014": {
+    "name_zh": "2014",
+    "sector": "steel",
+    "sector_name": "鋼鐵"
+  },
+  "2015": {
+    "name_zh": "2015",
+    "sector": "steel",
+    "sector_name": "鋼鐵"
+  },
+  "2023": {
+    "name_zh": "2023",
+    "sector": "steel",
+    "sector_name": "鋼鐵"
+  },
+  "2031": {
+    "name_zh": "2031",
+    "sector": "steel",
+    "sector_name": "鋼鐵"
+  },
+  "2034": {
+    "name_zh": "2034",
+    "sector": "steel",
+    "sector_name": "鋼鐵"
+  },
+  "9958": {
+    "name_zh": "世紀鋼",
+    "sector": "steel",
+    "sector_name": "鋼鐵"
+  },
+  "2012": {
+    "name_zh": "2012",
+    "sector": "steel",
+    "sector_name": "鋼鐵"
+  },
+  "3090": {
+    "name_zh": "日電貿",
+    "sector": "semiconductor_equip",
+    "sector_name": "半導體設備"
+  },
+  "4523": {
+    "name_zh": "永彥",
+    "sector": "semiconductor_equip",
+    "sector_name": "半導體設備"
+  },
+  "3443": {
+    "name_zh": "創意",
+    "sector": "semiconductor_equip",
+    "sector_name": "半導體設備"
+  },
+  "3131": {
+    "name_zh": "3131",
+    "sector": "semiconductor_equip",
+    "sector_name": "半導體設備"
+  },
+  "3413": {
+    "name_zh": "3413",
+    "sector": "semiconductor_equip",
+    "sector_name": "半導體設備"
+  },
+  "3583": {
+    "name_zh": "3583",
+    "sector": "semiconductor_equip",
+    "sector_name": "半導體設備"
+  },
+  "3680": {
+    "name_zh": "3680",
+    "sector": "semiconductor_equip",
+    "sector_name": "半導體設備"
+  },
+  "6187": {
+    "name_zh": "6187",
+    "sector": "semiconductor_equip",
+    "sector_name": "半導體設備"
+  },
+  "6196": {
+    "name_zh": "6196",
+    "sector": "semiconductor_equip",
+    "sector_name": "半導體設備"
+  },
+  "6510": {
+    "name_zh": "6510",
+    "sector": "semiconductor_equip",
+    "sector_name": "半導體設備"
+  },
+  "6230": {
+    "name_zh": "超眾",
+    "sector": "thermal",
+    "sector_name": "散熱/熱管理"
+  },
+  "3324": {
+    "name_zh": "雙鴻",
+    "sector": "thermal",
+    "sector_name": "散熱/熱管理"
+  },
+  "2421": {
+    "name_zh": "建準",
+    "sector": "thermal",
+    "sector_name": "散熱/熱管理"
+  },
+  "3017": {
+    "name_zh": "奇鋐",
+    "sector": "thermal",
+    "sector_name": "散熱/熱管理"
+  },
+  "3338": {
+    "name_zh": "3338",
+    "sector": "thermal",
+    "sector_name": "散熱/熱管理"
+  },
+  "3483": {
+    "name_zh": "3483",
+    "sector": "thermal",
+    "sector_name": "散熱/熱管理"
+  },
+  "3653": {
+    "name_zh": "3653",
+    "sector": "thermal",
+    "sector_name": "散熱/熱管理"
+  },
+  "8996": {
+    "name_zh": "8996",
+    "sector": "thermal",
+    "sector_name": "散熱/熱管理"
+  },
+  "3081": {
+    "name_zh": "聯亞",
+    "sector": "optical_comm",
+    "sector_name": "光通訊"
+  },
+  "4908": {
+    "name_zh": "前鼎",
+    "sector": "optical_comm",
+    "sector_name": "光通訊"
+  },
+  "4979": {
+    "name_zh": "華星光",
+    "sector": "optical_comm",
+    "sector_name": "光通訊"
+  },
+  "6426": {
+    "name_zh": "統新",
+    "sector": "optical_comm",
+    "sector_name": "光通訊"
+  },
+  "3163": {
+    "name_zh": "3163",
+    "sector": "optical_comm",
+    "sector_name": "光通訊"
+  },
+  "3234": {
+    "name_zh": "3234",
+    "sector": "optical_comm",
+    "sector_name": "光通訊"
+  },
+  "3363": {
+    "name_zh": "3363",
+    "sector": "optical_comm",
+    "sector_name": "光通訊"
+  },
+  "3450": {
+    "name_zh": "3450",
+    "sector": "optical_comm",
+    "sector_name": "光通訊"
+  },
+  "4977": {
+    "name_zh": "4977",
+    "sector": "optical_comm",
+    "sector_name": "光通訊"
+  },
+  "3711": {
+    "name_zh": "日月光",
+    "sector": "packaging",
+    "sector_name": "封測"
+  },
+  "2449": {
+    "name_zh": "京元電",
+    "sector": "packaging",
+    "sector_name": "封測"
+  },
+  "6257": {
+    "name_zh": "矽格",
+    "sector": "packaging",
+    "sector_name": "封測"
+  },
+  "6239": {
+    "name_zh": "6239",
+    "sector": "packaging",
+    "sector_name": "封測"
+  },
+  "2369": {
+    "name_zh": "2369",
+    "sector": "packaging",
+    "sector_name": "封測"
+  },
+  "3264": {
+    "name_zh": "3264",
+    "sector": "packaging",
+    "sector_name": "封測"
+  },
+  "6147": {
+    "name_zh": "6147",
+    "sector": "packaging",
+    "sector_name": "封測"
+  },
+  "1519": {
+    "name_zh": "華城",
+    "sector": "power_infra",
+    "sector_name": "重電/電力設備"
+  },
+  "1503": {
+    "name_zh": "士電",
+    "sector": "power_infra",
+    "sector_name": "重電/電力設備"
+  },
+  "1513": {
+    "name_zh": "中興電",
+    "sector": "power_infra",
+    "sector_name": "重電/電力設備"
+  },
+  "1514": {
+    "name_zh": "東元",
+    "sector": "power_infra",
+    "sector_name": "重電/電力設備"
+  },
+  "2371": {
+    "name_zh": "2371",
+    "sector": "power_infra",
+    "sector_name": "重電/電力設備"
+  },
+  "1560": {
+    "name_zh": "1560",
+    "sector": "power_infra",
+    "sector_name": "重電/電力設備"
+  },
+  "2049": {
+    "name_zh": "上銀",
+    "sector": "robotics",
+    "sector_name": "機器人/自動化"
+  },
+  "1590": {
+    "name_zh": "亞德客-KY",
+    "sector": "robotics",
+    "sector_name": "機器人/自動化"
+  },
+  "2359": {
+    "name_zh": "所羅門",
+    "sector": "robotics",
+    "sector_name": "機器人/自動化"
+  },
+  "4506": {
+    "name_zh": "4506",
+    "sector": "robotics",
+    "sector_name": "機器人/自動化"
+  },
+  "2464": {
+    "name_zh": "2464",
+    "sector": "robotics",
+    "sector_name": "機器人/自動化"
+  },
+  "1597": {
+    "name_zh": "1597",
+    "sector": "robotics",
+    "sector_name": "機器人/自動化"
+  },
+  "2481": {
+    "name_zh": "強茂",
+    "sector": "power_semi",
+    "sector_name": "功率半導體"
+  },
+  "3675": {
+    "name_zh": "德微",
+    "sector": "power_semi",
+    "sector_name": "功率半導體"
+  },
+  "5299": {
+    "name_zh": "杰力",
+    "sector": "power_semi",
+    "sector_name": "功率半導體"
+  },
+  "3105": {
+    "name_zh": "3105",
+    "sector": "power_semi",
+    "sector_name": "功率半導體"
+  },
+  "2342": {
+    "name_zh": "2342",
+    "sector": "power_semi",
+    "sector_name": "功率半導體"
+  },
+  "3707": {
+    "name_zh": "3707",
+    "sector": "power_semi",
+    "sector_name": "功率半導體"
+  },
+  "6435": {
+    "name_zh": "6435",
+    "sector": "power_semi",
+    "sector_name": "功率半導體"
+  },
+  "3661": {
+    "name_zh": "世芯-KY",
+    "sector": "ip_design",
+    "sector_name": "矽智財/IC設計服務"
+  },
+  "3035": {
+    "name_zh": "智原",
+    "sector": "ip_design",
+    "sector_name": "矽智財/IC設計服務"
+  },
+  "6643": {
+    "name_zh": "M31",
+    "sector": "ip_design",
+    "sector_name": "矽智財/IC設計服務"
+  },
+  "6531": {
+    "name_zh": "6531",
+    "sector": "ip_design",
+    "sector_name": "矽智財/IC設計服務"
+  },
+  "3708": {
+    "name_zh": "上緯投控",
+    "sector": "wind_energy",
+    "sector_name": "風電/綠能"
+  },
+  "1589": {
+    "name_zh": "永冠-KY",
+    "sector": "wind_energy",
+    "sector_name": "風電/綠能"
+  },
+  "6829": {
+    "name_zh": "6829",
+    "sector": "wind_energy",
+    "sector_name": "風電/綠能"
+  },
+  "3008": {
+    "name_zh": "大立光",
+    "sector": "lens_optics",
+    "sector_name": "鏡頭/光學"
+  },
+  "3406": {
+    "name_zh": "玉晶光",
+    "sector": "lens_optics",
+    "sector_name": "鏡頭/光學"
+  },
+  "3019": {
+    "name_zh": "亞光",
+    "sector": "lens_optics",
+    "sector_name": "鏡頭/光學"
+  },
+  "3362": {
+    "name_zh": "3362",
+    "sector": "lens_optics",
+    "sector_name": "鏡頭/光學"
+  },
+  "3504": {
+    "name_zh": "3504",
+    "sector": "lens_optics",
+    "sector_name": "鏡頭/光學"
+  },
+  "4976": {
+    "name_zh": "4976",
+    "sector": "lens_optics",
+    "sector_name": "鏡頭/光學"
+  },
+  "2392": {
+    "name_zh": "正崴",
+    "sector": "connector",
+    "sector_name": "連接器/線材"
+  },
+  "3533": {
+    "name_zh": "嘉澤",
+    "sector": "connector",
+    "sector_name": "連接器/線材"
+  },
+  "3023": {
+    "name_zh": "信邦",
+    "sector": "connector",
+    "sector_name": "連接器/線材"
+  },
+  "5457": {
+    "name_zh": "5457",
+    "sector": "connector",
+    "sector_name": "連接器/線材"
+  },
+  "6205": {
+    "name_zh": "6205",
+    "sector": "connector",
+    "sector_name": "連接器/線材"
+  },
+  "6271": {
+    "name_zh": "同欣電",
+    "sector": "vehicle_elec",
+    "sector_name": "車用電子"
+  },
+  "6279": {
+    "name_zh": "胡連",
+    "sector": "vehicle_elec",
+    "sector_name": "車用電子"
+  },
+  "2233": {
+    "name_zh": "2233",
+    "sector": "vehicle_elec",
+    "sector_name": "車用電子"
+  },
+  "4551": {
+    "name_zh": "4551",
+    "sector": "vehicle_elec",
+    "sector_name": "車用電子"
+  },
+  "3029": {
+    "name_zh": "零壹",
+    "sector": "software_saas",
+    "sector_name": "軟體/SaaS"
+  },
+  "6752": {
+    "name_zh": "叡揚",
+    "sector": "software_saas",
+    "sector_name": "軟體/SaaS"
+  },
+  "6486": {
+    "name_zh": "互動",
+    "sector": "software_saas",
+    "sector_name": "軟體/SaaS"
+  },
+  "2427": {
+    "name_zh": "2427",
+    "sector": "software_saas",
+    "sector_name": "軟體/SaaS"
+  },
+  "2453": {
+    "name_zh": "2453",
+    "sector": "software_saas",
+    "sector_name": "軟體/SaaS"
+  },
+  "2480": {
+    "name_zh": "2480",
+    "sector": "software_saas",
+    "sector_name": "軟體/SaaS"
+  },
+  "8454": {
+    "name_zh": "8454",
+    "sector": "ecommerce",
+    "sector_name": "電商/網路平台"
+  },
+  "8044": {
+    "name_zh": "8044",
+    "sector": "ecommerce",
+    "sector_name": "電商/網路平台"
+  },
+  "6741": {
+    "name_zh": "6741",
+    "sector": "ecommerce",
+    "sector_name": "電商/網路平台"
+  },
+  "5287": {
+    "name_zh": "5287",
+    "sector": "ecommerce",
+    "sector_name": "電商/網路平台"
+  },
+  "8477": {
+    "name_zh": "8477",
+    "sector": "ecommerce",
+    "sector_name": "電商/網路平台"
+  },
+  "6180": {
+    "name_zh": "6180",
+    "sector": "gaming",
+    "sector_name": "遊戲"
+  },
+  "3293": {
+    "name_zh": "3293",
+    "sector": "gaming",
+    "sector_name": "遊戲"
+  },
+  "6111": {
+    "name_zh": "6111",
+    "sector": "gaming",
+    "sector_name": "遊戲"
+  },
+  "5478": {
+    "name_zh": "5478",
+    "sector": "gaming",
+    "sector_name": "遊戲"
+  },
+  "4994": {
+    "name_zh": "4994",
+    "sector": "gaming",
+    "sector_name": "遊戲"
+  },
+  "1301": {
+    "name_zh": "台塑",
+    "sector": "petrochemical",
+    "sector_name": "塑化"
+  },
+  "1303": {
+    "name_zh": "南亞",
+    "sector": "petrochemical",
+    "sector_name": "塑化"
+  },
+  "1326": {
+    "name_zh": "台化",
+    "sector": "petrochemical",
+    "sector_name": "塑化"
+  },
+  "6505": {
+    "name_zh": "台塑石化",
+    "sector": "petrochemical",
+    "sector_name": "塑化"
+  },
+  "1304": {
+    "name_zh": "1304",
+    "sector": "petrochemical",
+    "sector_name": "塑化"
+  },
+  "1308": {
+    "name_zh": "1308",
+    "sector": "petrochemical",
+    "sector_name": "塑化"
+  },
+  "1312": {
+    "name_zh": "1312",
+    "sector": "petrochemical",
+    "sector_name": "塑化"
+  },
+  "1314": {
+    "name_zh": "1314",
+    "sector": "petrochemical",
+    "sector_name": "塑化"
+  },
+  "1476": {
+    "name_zh": "1476",
+    "sector": "textile",
+    "sector_name": "紡織"
+  },
+  "1477": {
+    "name_zh": "1477",
+    "sector": "textile",
+    "sector_name": "紡織"
+  },
+  "1402": {
+    "name_zh": "1402",
+    "sector": "textile",
+    "sector_name": "紡織"
+  },
+  "1434": {
+    "name_zh": "1434",
+    "sector": "textile",
+    "sector_name": "紡織"
+  },
+  "1440": {
+    "name_zh": "1440",
+    "sector": "textile",
+    "sector_name": "紡織"
+  },
+  "1101": {
+    "name_zh": "1101",
+    "sector": "cement",
+    "sector_name": "水泥"
+  },
+  "1102": {
+    "name_zh": "1102",
+    "sector": "cement",
+    "sector_name": "水泥"
+  },
+  "1103": {
+    "name_zh": "1103",
+    "sector": "cement",
+    "sector_name": "水泥"
+  },
+  "1104": {
+    "name_zh": "1104",
+    "sector": "cement",
+    "sector_name": "水泥"
+  },
+  "1216": {
+    "name_zh": "1216",
+    "sector": "food",
+    "sector_name": "食品"
+  },
+  "1210": {
+    "name_zh": "1210",
+    "sector": "food",
+    "sector_name": "食品"
+  },
+  "1215": {
+    "name_zh": "卜蜂",
+    "sector": "food",
+    "sector_name": "食品"
+  },
+  "1231": {
+    "name_zh": "1231",
+    "sector": "food",
+    "sector_name": "食品"
+  },
+  "1227": {
+    "name_zh": "1227",
+    "sector": "food",
+    "sector_name": "食品"
+  },
+  "1218": {
+    "name_zh": "1218",
+    "sector": "food",
+    "sector_name": "食品"
+  },
+  "2105": {
+    "name_zh": "2105",
+    "sector": "rubber",
+    "sector_name": "橡膠/輪胎"
+  },
+  "2106": {
+    "name_zh": "2106",
+    "sector": "rubber",
+    "sector_name": "橡膠/輪胎"
+  },
+  "2101": {
+    "name_zh": "2101",
+    "sector": "rubber",
+    "sector_name": "橡膠/輪胎"
+  },
+  "1904": {
+    "name_zh": "1904",
+    "sector": "paper",
+    "sector_name": "造紙"
+  },
+  "1905": {
+    "name_zh": "1905",
+    "sector": "paper",
+    "sector_name": "造紙"
+  },
+  "1909": {
+    "name_zh": "1909",
+    "sector": "paper",
+    "sector_name": "造紙"
+  },
+  "1903": {
+    "name_zh": "1903",
+    "sector": "paper",
+    "sector_name": "造紙"
+  },
+  "1907": {
+    "name_zh": "1907",
+    "sector": "paper",
+    "sector_name": "造紙"
+  },
+  "2885": {
+    "name_zh": "2885",
+    "sector": "securities",
+    "sector_name": "證券"
+  },
+  "2855": {
+    "name_zh": "2855",
+    "sector": "securities",
+    "sector_name": "證券"
+  },
+  "2883": {
+    "name_zh": "2883",
+    "sector": "securities",
+    "sector_name": "證券"
+  },
+  "6015": {
+    "name_zh": "6015",
+    "sector": "securities",
+    "sector_name": "證券"
+  },
+  "6024": {
+    "name_zh": "6024",
+    "sector": "securities",
+    "sector_name": "證券"
+  },
+  "2890": {
+    "name_zh": "2890",
+    "sector": "financial_holding",
+    "sector_name": "金控"
+  },
+  "2887": {
+    "name_zh": "2887",
+    "sector": "financial_holding",
+    "sector_name": "金控"
+  },
+  "2412": {
+    "name_zh": "2412",
+    "sector": "telecom",
+    "sector_name": "電信"
+  },
+  "3045": {
+    "name_zh": "3045",
+    "sector": "telecom",
+    "sector_name": "電信"
+  },
+  "4904": {
+    "name_zh": "4904",
+    "sector": "telecom",
+    "sector_name": "電信"
+  },
+  "6282": {
+    "name_zh": "6282",
+    "sector": "energy_storage",
+    "sector_name": "儲能/電池"
+  },
+  "6121": {
+    "name_zh": "6121",
+    "sector": "energy_storage",
+    "sector_name": "儲能/電池"
+  },
+  "3323": {
+    "name_zh": "3323",
+    "sector": "energy_storage",
+    "sector_name": "儲能/電池"
+  },
+  "3211": {
+    "name_zh": "3211",
+    "sector": "energy_storage",
+    "sector_name": "儲能/電池"
+  },
+  "5309": {
+    "name_zh": "5309",
+    "sector": "energy_storage",
+    "sector_name": "儲能/電池"
+  },
+  "9908": {
+    "name_zh": "9908",
+    "sector": "gas_energy",
+    "sector_name": "天然氣/能源"
+  },
+  "9918": {
+    "name_zh": "9918",
+    "sector": "gas_energy",
+    "sector_name": "天然氣/能源"
+  },
+  "9926": {
+    "name_zh": "9926",
+    "sector": "gas_energy",
+    "sector_name": "天然氣/能源"
+  },
+  "9931": {
+    "name_zh": "9931",
+    "sector": "gas_energy",
+    "sector_name": "天然氣/能源"
+  },
+  "8908": {
+    "name_zh": "8908",
+    "sector": "gas_energy",
+    "sector_name": "天然氣/能源"
+  },
+  "2634": {
+    "name_zh": "漢翔",
+    "sector": "defense",
+    "sector_name": "國防/軍工"
+  },
+  "8033": {
+    "name_zh": "雷虎",
+    "sector": "defense",
+    "sector_name": "國防/軍工"
+  },
+  "5222": {
+    "name_zh": "全訊",
+    "sector": "defense",
+    "sector_name": "國防/軍工"
+  },
+  "2707": {
+    "name_zh": "2707",
+    "sector": "tourism",
+    "sector_name": "觀光/餐飲"
+  },
+  "2739": {
+    "name_zh": "2739",
+    "sector": "tourism",
+    "sector_name": "觀光/餐飲"
+  },
+  "2729": {
+    "name_zh": "2729",
+    "sector": "tourism",
+    "sector_name": "觀光/餐飲"
+  },
+  "2753": {
+    "name_zh": "2753",
+    "sector": "tourism",
+    "sector_name": "觀光/餐飲"
+  },
+  "2727": {
+    "name_zh": "2727",
+    "sector": "tourism",
+    "sector_name": "觀光/餐飲"
+  },
+  "2731": {
+    "name_zh": "2731",
+    "sector": "tourism",
+    "sector_name": "觀光/餐飲"
+  },
+  "4126": {
+    "name_zh": "4126",
+    "sector": "medical_device",
+    "sector_name": "醫材"
+  },
+  "4107": {
+    "name_zh": "4107",
+    "sector": "medical_device",
+    "sector_name": "醫材"
+  },
+  "4116": {
+    "name_zh": "4116",
+    "sector": "medical_device",
+    "sector_name": "醫材"
+  },
+  "4121": {
+    "name_zh": "4121",
+    "sector": "medical_device",
+    "sector_name": "醫材"
+  },
+  "6499": {
+    "name_zh": "6499",
+    "sector": "medical_device",
+    "sector_name": "醫材"
+  }
+}

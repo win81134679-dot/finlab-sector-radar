@@ -3,6 +3,7 @@
 
 import { useState, useMemo } from "react";
 import type { HistoryIndex, CommoditySnapshot, MagaSnapshot, CompositeSnapshot, HoldingsSnapshot, PnlSnapshot, SensitivitySnapshot, ExitAlertsSnapshot, UserHoldingsSnapshot } from "@/lib/types";
+import type { StockNamesMap } from "@/lib/fetcher";
 import { MacroPanel } from "@/components/MacroPanel";
 import { CommodityAlertBanner } from "@/components/CommodityAlertBanner";
 import { StaleDataBanner } from "@/components/StaleDataBanner";
@@ -27,6 +28,7 @@ interface Props {
   pnl:         PnlSnapshot | null;
   exitAlerts:  ExitAlertsSnapshot | null;
   userHoldings: UserHoldingsSnapshot | null;
+  stockNames:   StockNamesMap | null;
 }
 
 type Tab = "sector" | "convergence" | "acceleration" | "longterm" | "trumpfeed" | "commodity";
@@ -180,7 +182,7 @@ function ResonanceBar({
   );
 }
 
-export function TabContainer({ snapshot, historyIndex, commodities, magaData, composite, sensitivity, holdings, pnl, exitAlerts, userHoldings }: Props) {
+export function TabContainer({ snapshot, historyIndex, commodities, magaData, composite, sensitivity, holdings, pnl, exitAlerts, userHoldings, stockNames }: Props) {
   const [activeTab, setActiveTab] = useState<Tab>("sector");
 
   const runAt  = snapshot?.run_at  ?? "";
@@ -261,6 +263,7 @@ export function TabContainer({ snapshot, historyIndex, commodities, magaData, co
               exitAlerts={exitAlerts}
               pnl={pnl}
               userHoldings={userHoldings}
+              stockNames={stockNames}
             />
           </ErrorBoundary>
         )}

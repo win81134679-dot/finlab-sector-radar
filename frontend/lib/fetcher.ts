@@ -445,6 +445,31 @@ export async function fetchUserHoldings() {
   } catch { return null; }
 }
 
+// ── 完整股票代碼→名稱+板塊對照 ──────────────────────────────────────────
+const StockNameEntrySchema = z.object({
+  name_zh: z.string(),
+  sector:  z.string(),
+  sector_name: z.string().optional().default(""),
+});
+
+const StockNamesMapSchema = z.record(StockNameEntrySchema);
+
+export type StockNamesMap = z.infer<typeof StockNamesMapSchema>;
+
+export async function fetchStockNames(): Promise<StockNamesMap | null> {
+  if (!GITHUB_RAW_BASE) return null;
+  const url = `${GITHUB_RAW_BASE}/output/stock_names.json`;
+  try {
+    const raw = await fetchJSON<unknown>(url);
+    const parsed = StockNamesMapSchema.safeParse(raw);
+    if (!parsed.success) {
+      console.warn("stock_names.json schema 驗證失敗:", parsed.error.issues);
+      return null;
+    }
+    return parsed.data;
+  } catch { return null; }
+}
+
 export async function fetchPnl() {
   if (!GITHUB_RAW_BASE) return null;
   const url = `${GITHUB_RAW_BASE}/output/portfolio/pnl.json`;

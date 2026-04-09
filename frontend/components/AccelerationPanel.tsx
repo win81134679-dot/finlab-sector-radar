@@ -5,6 +5,7 @@
 import { useState, useMemo, useEffect, useRef } from "react";
 import dynamic from "next/dynamic";
 import type { SignalSnapshot, CompositeSnapshot, HoldingsSnapshot, PnlSnapshot, ExitAlertsSnapshot, ExitRisk, OHLCBar, UserHoldingsSnapshot } from "@/lib/types";
+import type { StockNamesMap } from "@/lib/fetcher";
 import {
   changePctColor, formatChangePct,
   CYCLE_STAGE_CONFIG, type CycleStageKey,
@@ -62,6 +63,7 @@ interface Props {
   exitAlerts?: ExitAlertsSnapshot | null;
   pnl?:       PnlSnapshot | null;
   userHoldings?: UserHoldingsSnapshot | null;
+  stockNames?:    StockNamesMap | null;
 }
 
 type AccSubTab = "monitor" | "holdings";
@@ -222,22 +224,30 @@ function AccStockCard({ stock, sectorLevel, exitRisk, cycleStage, macroWarning, 
   );
 }
 
-export function AccelerationPanel({ snapshot, holdings, exitAlerts, pnl, userHoldings }: Props) {
+export function AccelerationPanel({ snapshot, holdings, exitAlerts, pnl, userHoldings, stockNames }: Props) {
   const macroWarning = snapshot?.macro_warning === true || snapshot?.macro?.warning === true;
   const [expandedSectors, setExpandedSectors] = useState<Record<string, boolean>>({});
   const [accSubTab, setAccSubTab] = useState<AccSubTab>("monitor");
 
-  // 從 snapshot 建構 stockLookup（代號 → 名稱 + 板塊）
+  // 完整 stockLookup：stockNames.json（全部股票）+ snapshot（即時資料優先）
   const stockLookup = useMemo(() => {
-    if (!snapshot?.sectors) return {};
     const lookup: Record<string, { name_zh: string; sector: string }> = {};
-    for (const [sectorId, sec] of Object.entries(snapshot.sectors)) {
-      for (const stock of sec.stocks) {
-        lookup[stock.id] = { name_zh: stock.name_zh ?? stock.id, sector: sectorId };
+    // 1. 先填入完整對照表（stock_names.json）
+    if (stockNames) {
+      for (const [id, entry] of Object.entries(stockNames)) {
+        lookup[id] = { name_zh: entry.name_zh, sector: entry.sector };
+      }
+    }
+    // 2. snapshot 資料覆蓋（更即時）
+    if (snapshot?.sectors) {
+      for (const [sectorId, sec] of Object.entries(snapshot.sectors)) {
+        for (const stock of sec.stocks) {
+          lookup[stock.id] = { name_zh: stock.name_zh ?? stock.id, sector: sectorId };
+        }
       }
     }
     return lookup;
-  }, [snapshot]);
+  }, [snapshot, stockNames]);
 
   const toggleSector = (sectorId: string) => {
     setExpandedSectors((prev) => ({ ...prev, [sectorId]: !prev[sectorId] }));
