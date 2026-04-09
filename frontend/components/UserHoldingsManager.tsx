@@ -32,6 +32,7 @@ interface Props {
 }
 
 const ADMIN_UNLOCKED_KEY = "finlab_admin_unlocked";
+const ADMIN_PW_KEY = "finlab_admin_pw";
 
 // ── 密碼 Modal ──────────────────────────────────────────────────────────
 function PasswordModal({ onSuccess, onClose }: { onSuccess: () => void; onClose: () => void }) {
@@ -44,13 +45,14 @@ function PasswordModal({ onSuccess, onClose }: { onSuccess: () => void; onClose:
     setLoading(true);
     setError("");
     try {
-      const res = await fetch("/api/user-holdings", {
+      const res = await fetch("/api/user-holdings/verify", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ password, positions: {} }),
+        body: JSON.stringify({ password }),
       });
       if (res.ok) {
         sessionStorage.setItem(ADMIN_UNLOCKED_KEY, "1");
+        sessionStorage.setItem(ADMIN_PW_KEY, password);
         onSuccess();
       } else {
         const data = await res.json().catch(() => ({ error: "驗證失敗" }));
@@ -236,7 +238,7 @@ export function UserHoldingsManager({ userHoldings, algoHoldings, onSaved, stock
   }, []);
 
   const handleSave = async () => {
-    const savedPassword = sessionStorage.getItem("finlab_admin_pw");
+    const savedPassword = sessionStorage.getItem(ADMIN_PW_KEY);
     if (!savedPassword) {
       setToast("請重新輸入密碼");
       setUnlocked(false);
@@ -259,7 +261,7 @@ export function UserHoldingsManager({ userHoldings, algoHoldings, onSaved, stock
         if (res.status === 401) {
           setUnlocked(false);
           sessionStorage.removeItem(ADMIN_UNLOCKED_KEY);
-          sessionStorage.removeItem("finlab_admin_pw");
+          sessionStorage.removeItem(ADMIN_PW_KEY);
         }
         setToast(`❌ ${data.error || "儲存失敗"}`);
         setTimeout(() => setToast(""), 4000);
