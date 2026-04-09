@@ -342,6 +342,7 @@ def _save_snapshot(result: Dict[str, Any], config) -> Optional[Path]:
             "cycle_stage":  _stage,
             "exit_risk":    _exit_risk,
             "rs_momentum":  round(_rs_mom, 6) if _rs_mom is not None else None,
+            "constituent_count": len(sector_map.get_stocks(sid)),
             "stocks":       stock_list,
         }
 

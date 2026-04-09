@@ -44,6 +44,7 @@ export interface SectorData {
   cycle_stage?: CycleStage | null;
   exit_risk?: ExitRisk | null;
   rs_momentum?: number | null;
+  constituent_count?: number;
   stocks: StockData[];
 }
 

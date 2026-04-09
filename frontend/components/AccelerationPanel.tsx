@@ -84,6 +84,7 @@ interface AccSector {
   cycleStage: string;
   exitRisk: ExitRisk | null;
   rsMomentum: number | null;
+  constituentCount: number;
   signals: number[];
   stocks: AccStock[];
 }
@@ -234,6 +235,7 @@ export function AccelerationPanel({ snapshot, holdings, exitAlerts, pnl }: Props
         cycleStage: sec.cycle_stage!,
         exitRisk: sec.exit_risk ?? null,
         rsMomentum: sec.rs_momentum ?? null,
+        constituentCount: sec.constituent_count ?? sec.stocks?.length ?? 0,
         signals: sec.signals,
         stocks: (sec.stocks ?? [])
           .slice()
@@ -301,14 +303,6 @@ export function AccelerationPanel({ snapshot, holdings, exitAlerts, pnl }: Props
 
   return (
     <div className="mt-6 space-y-5">
-      {/* ── 隔日出場訊號提醒 ── */}
-      <ExitAlertPanel exitAlerts={exitAlerts ?? null} pnl={pnl ?? null} />
-      {exitAlerts && (
-        <p className="text-[11px] text-zinc-400 dark:text-zinc-500 -mt-2">
-          💡 以上為系統根據 RRG 動能、籌碼、量價等五因子模型產生的隔日操作建議，僅供參考。
-        </p>
-      )}
-
       {/* Header */}
       <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3">
         <div>
@@ -379,7 +373,7 @@ export function AccelerationPanel({ snapshot, holdings, exitAlerts, pnl }: Props
                     </span>
                   )}
                   <span className="text-xs text-zinc-500">{sec.total.toFixed(1)} / 7 燈</span>
-                  <span className="text-xs text-zinc-400">· {sec.stocks.length} 檔</span>
+                  <span className="text-xs text-zinc-400">· {sec.stocks.length}/{sec.constituentCount} 檔{sec.constituentCount > sec.stocks.length ? ` (${sec.constituentCount - sec.stocks.length} 檔未達門檻)` : ''}</span>
                 </div>
                 <div className="flex items-center gap-3 text-xs">
                   <SignalDots signals={sec.signals} size="sm" />
@@ -448,6 +442,19 @@ export function AccelerationPanel({ snapshot, holdings, exitAlerts, pnl }: Props
           </section>
         );
       })}
+
+      {/* ── 持倉隔日操作建議（獨立區塊） ── */}
+      {exitAlerts && (
+        <div className="border-t border-zinc-200/60 dark:border-zinc-700/40 pt-5">
+          <div className="mb-3">
+            <h3 className="text-base font-bold text-zinc-900 dark:text-white">📋 持倉隔日操作建議</h3>
+            <p className="text-[11px] text-zinc-400 dark:text-zinc-500 mt-0.5">
+              💡 根據 RRG 動能、籌碼、量價等五因子模型產生，僅供參考
+            </p>
+          </div>
+          <ExitAlertPanel exitAlerts={exitAlerts} pnl={pnl ?? null} />
+        </div>
+      )}
 
       {/* Citation */}
       <p className="text-[10px] text-zinc-400 dark:text-zinc-500 text-center pt-1 leading-relaxed">

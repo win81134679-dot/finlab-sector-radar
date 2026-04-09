@@ -63,6 +63,7 @@ const SectorSchema = z.object({
   cycle_stage: z.enum(["萌芽期", "確認期", "加速期", "過熱期"]).nullable().optional(),
   exit_risk: ExitRiskSchema.nullable().optional(),
   rs_momentum: z.number().nullable().optional(),
+  constituent_count: z.number().optional(),
   stocks: z.array(StockSchema).optional().default([]),
 });
 
