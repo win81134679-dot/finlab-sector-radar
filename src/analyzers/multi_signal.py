@@ -582,8 +582,12 @@ def build_trend_string(sector_id: str, history: List[Dict[str, Any]]) -> str:
 
 def _generate_stock_names_json(config) -> None:
     """
-    產生 output/stock_names.json —— 所有板塊股票的 代碼→{name_zh, sector} 對照。
-    前端持倉表單用來辨識任意股票代碼。
+    產生 output/stock_names.json —— 完整台股代碼→{name_zh, sector, sector_name} 對照。
+    資料來源優先級：
+      1. stock_universe.json（TWSE/TPEx 全市場 ~1,900 筆）
+      2. STOCK_NAMES 硬編碼（補充/覆蓋簡稱）
+      3. custom_sectors.csv（板塊歸屬）
+    非板塊股票的 sector 設為 "other"。
     """
     import os
     from src.stock_names import STOCK_NAMES
@@ -592,16 +596,38 @@ def _generate_stock_names_json(config) -> None:
     sm = SectorMap()
     sm.load()
 
-    lookup: Dict[str, Dict[str, str]] = {}
+    # 建構板塊歸屬反查表：stock_id → (sector_id, sector_name)
+    stock_to_sector: Dict[str, tuple] = {}
     for sid in sm.all_sector_ids():
-        sector_name = sm.get_sector_name(sid)
+        sname = sm.get_sector_name(sid)
         for stock_id in sm.get_stocks(sid):
-            if stock_id not in lookup:
-                lookup[stock_id] = {
-                    "name_zh": STOCK_NAMES.get(stock_id, stock_id),
-                    "sector":  sid,
-                    "sector_name": sector_name,
-                }
+            if stock_id not in stock_to_sector:
+                stock_to_sector[stock_id] = (sid, sname)
+
+    # 讀取完整市場清單
+    universe_path = config.OUTPUT_DIR / "stock_universe.json"
+    universe: Dict[str, str] = {}
+    if universe_path.exists():
+        try:
+            universe = json.loads(universe_path.read_text(encoding="utf-8"))
+            logger.info("讀取 stock_universe.json：%d 筆", len(universe))
+        except Exception as e:
+            logger.warning("stock_universe.json 讀取失敗: %s", e)
+
+    # 合併所有來源
+    all_ids = set(universe.keys()) | set(stock_to_sector.keys()) | set(STOCK_NAMES.keys())
+
+    lookup: Dict[str, Dict[str, str]] = {}
+    for stock_id in sorted(all_ids):
+        # 名稱優先級：硬編碼 > universe > 代碼本身
+        name = STOCK_NAMES.get(stock_id) or universe.get(stock_id) or stock_id
+        # 板塊歸屬
+        sec_id, sec_name = stock_to_sector.get(stock_id, ("other", "其他"))
+        lookup[stock_id] = {
+            "name_zh":     name,
+            "sector":      sec_id,
+            "sector_name": sec_name,
+        }
 
     out_path = config.OUTPUT_DIR / "stock_names.json"
     tmp_path = config.OUTPUT_DIR / "stock_names.tmp.json"

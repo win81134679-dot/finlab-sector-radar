@@ -77,6 +77,10 @@ jobs:
                       f.write('SKIP=false\n')
           EOF
 
+      - name: 🚀 更新股票代碼對照表
+        if: steps.holiday_check.outputs.SKIP != 'true'
+        run: python scripts/update_stock_universe.py
+
       - name: 🚀 執行 7 燈板塊分析
         if: steps.holiday_check.outputs.SKIP != 'true'
         run: python src/main.py --auto

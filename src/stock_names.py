@@ -1,10 +1,18 @@
 """
 stock_names.py — 台股股票代碼→中文簡稱對照表
 
-FinLab API 不提供公司簡稱欄位，改用靜態查詢。
-來源：TWSE/TPEx 公開資訊。
+優先讀取 output/stock_universe.json（TWSE/TPEx 全市場），
+fallback 到硬編碼 STOCK_NAMES。
 """
 from __future__ import annotations
+
+import json
+import logging
+from pathlib import Path
+
+logger = logging.getLogger(__name__)
+
+# ── 靜態 fallback（不依賴外部檔案） ──────────────────────────────────────
 
 STOCK_NAMES: dict[str, str] = {
     # ── 晶圓代工 / 封測 ────────────────────────────────────────────────
@@ -75,5 +83,32 @@ STOCK_NAMES: dict[str, str] = {
 
 
 def get_name(stock_id: str) -> str:
-    """回傳中文簡稱；查無則回傳空字串。"""
-    return STOCK_NAMES.get(stock_id, "")
+    """
+    回傳中文簡稱。
+    優先級：硬編碼 STOCK_NAMES → stock_universe.json → 空字串
+    """
+    if stock_id in STOCK_NAMES:
+        return STOCK_NAMES[stock_id]
+    return _load_universe().get(stock_id, "")
+
+
+# ── 延遲載入 stock_universe.json ────────────────────────────────────────
+_universe_cache: dict[str, str] | None = None
+
+_UNIVERSE_PATH = Path(__file__).resolve().parent.parent / "output" / "stock_universe.json"
+
+
+def _load_universe() -> dict[str, str]:
+    """延遲載入 + 快取 stock_universe.json。"""
+    global _universe_cache
+    if _universe_cache is not None:
+        return _universe_cache
+    if _UNIVERSE_PATH.exists():
+        try:
+            _universe_cache = json.loads(_UNIVERSE_PATH.read_text(encoding="utf-8"))
+            logger.debug("stock_universe.json 載入：%d 筆", len(_universe_cache))
+            return _universe_cache
+        except Exception as e:
+            logger.warning("stock_universe.json 載入失敗: %s", e)
+    _universe_cache = {}
+    return _universe_cache
