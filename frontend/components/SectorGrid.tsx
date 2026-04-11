@@ -56,7 +56,7 @@ export function SectorGrid({ data, isLoading = false, composite }: SectorGridPro
 
       {/* Desktop: Bento Grid */}
       <div className="hidden md:grid grid-cols-3 lg:grid-cols-4 gap-3">
-        {sectors.map((s) => (
+        {sectors.map((s, i) => (
           <div
             key={s.id}
             className={featuredIds.has(s.id) ? "col-span-2" : ""}
@@ -68,6 +68,7 @@ export function SectorGrid({ data, isLoading = false, composite }: SectorGridPro
               defaultExpanded={featuredIds.has(s.id)}
               composite={composite}
               macroWarning={data?.macro?.warning}
+              animIndex={i}
             />
           </div>
         ))}
@@ -75,7 +76,7 @@ export function SectorGrid({ data, isLoading = false, composite }: SectorGridPro
 
       {/* Mobile: Accordion list */}
       <div className="flex flex-col gap-3 md:hidden">
-        {sectors.map((s) => (
+        {sectors.map((s, i) => (
           <SectorCard
             key={s.id}
             sectorId={s.id}
@@ -84,6 +85,7 @@ export function SectorGrid({ data, isLoading = false, composite }: SectorGridPro
             defaultExpanded={false}
             composite={composite}
             macroWarning={data?.macro?.warning}
+            animIndex={i}
           />
         ))}
       </div>

@@ -198,7 +198,7 @@ export function TabContainer({ snapshot, historyIndex, commodities, magaData, co
       {runAt && <StaleDataBanner runAt={runAt} />}
 
       {/* Tab 導航列 */}
-      <div className="sticky top-(--header-h,56px) z-30 bg-(--bg-page)/90 backdrop-blur-sm border-b border-zinc-200/40 dark:border-zinc-800/40">
+      <div className="sticky top-(--header-h,56px) z-30 bg-(--bg-page)/90 header-glass border-b border-zinc-200/40 dark:border-white/6">
         <div className="max-w-7xl mx-auto px-4 flex items-center gap-0.5 pt-1 overflow-x-auto">
           {TABS.map(tab => (
             <button
@@ -206,8 +206,8 @@ export function TabContainer({ snapshot, historyIndex, commodities, magaData, co
               onClick={() => setActiveTab(tab.id)}
               className={`px-3 py-2 text-sm font-medium rounded-t-lg border-b-2 transition-colors whitespace-nowrap ${
                 activeTab === tab.id
-                  ? "border-blue-500 text-blue-600 dark:text-blue-400 bg-blue-500/5"
-                  : "border-transparent text-zinc-500 hover:text-zinc-700 dark:hover:text-zinc-300"
+                  ? "border-emerald-500 text-emerald-600 dark:text-emerald-400 bg-emerald-500/10"
+                  : "border-transparent text-zinc-500 hover:text-zinc-700 dark:hover:text-zinc-300 hover:bg-zinc-500/5"
               }`}
             >
               {tab.label}

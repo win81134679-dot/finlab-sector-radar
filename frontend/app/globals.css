@@ -3,22 +3,39 @@
 /* Tailwind v4：啟用 .dark class 觸發 dark: 變體（預設為 media query）*/
 @custom-variant dark (&:where(.dark, .dark *));
 
+/* ─── Easing Tokens ─── */
+:root {
+  --ease:   cubic-bezier(.4, 0, .2, 1);
+  --spring: cubic-bezier(.34, 1.56, .64, 1);
+}
+
 /* ─── Light theme tokens ─── */
 :root {
-  --bg-page:    #ffffff;
-  --bg-card:    rgba(255, 255, 255, 0.85);
-  --border:     rgba(226, 232, 240, 0.7);
-  --text-base:  #18181b;
-  --text-muted: #71717a;
+  --bg-page:       oklch(98.5% 0.004 165);
+  --bg-card:       oklch(99% 0.003 165 / .92);
+  --border:        oklch(0% 0 0 / .07);
+  --border-accent: oklch(52% 0.15 165 / .20);
+  --text-base:     oklch(18% 0.01 175);
+  --text-muted:    oklch(52% 0.02 170);
+  /* Light Nebula — 極淡 emerald 暈光 */
+  --nebula:
+    radial-gradient(ellipse 70% 50% at 8%  10%, oklch(72% 0.12 165 / .08) 0%, transparent 55%),
+    radial-gradient(ellipse 50% 60% at 90% 85%, oklch(68% 0.10 195 / .06) 0%, transparent 55%);
 }
 
 /* ─── Dark theme tokens ─── */
 .dark {
-  --bg-page:    #09090b;  /* zinc-950 */
-  --bg-card:    rgba(39, 39, 42, 0.6);
-  --border:     rgba(63, 63, 70, 0.5);
-  --text-base:  #fafafa;
-  --text-muted: #a1a1aa;
+  --bg-page:       oklch(7% 0.015 175);
+  --bg-card:       oklch(14% 0.02 170 / .82);
+  --border:        oklch(100% 0 0 / .07);
+  --border-accent: oklch(52% 0.15 165 / .25);
+  --text-base:     oklch(93% 0.01 165);
+  --text-muted:    oklch(62% 0.02 170);
+  /* Dark Nebula — emerald + teal 金融暈光 */
+  --nebula:
+    radial-gradient(ellipse 80% 60% at 10% 15%, oklch(42% 0.15 165 / .14) 0%, transparent 55%),
+    radial-gradient(ellipse 60% 70% at 88% 80%, oklch(38% 0.13 195 / .11) 0%, transparent 55%),
+    radial-gradient(ellipse 50% 50% at 50% 50%, oklch(36% 0.10 180 / .06) 0%, transparent 70%);
 }
 
 @theme inline {
@@ -34,34 +51,68 @@ html {
 }
 
 body {
-  background: var(--bg-page);
+  /* Nebula 多層背景（fixed 避免捲動偏移）*/
+  background: var(--nebula), var(--bg-page);
+  background-attachment: fixed;
   color: var(--text-base);
   font-family: var(--font-sans, ui-sans-serif);
   min-height: 100dvh;
+  overflow-x: hidden;
 }
 
-/* ─── Signal dot glow variables ─── */
+/* ─── Signal dot glow ─── */
 .signal-on-glow {
-  box-shadow: 0 0 8px rgba(52, 211, 153, 0.7), 0 0 2px rgba(52, 211, 153, 0.4);
+  box-shadow: 0 0 8px oklch(67% 0.18 152 / .70), 0 0 3px oklch(67% 0.18 152 / .40);
 }
 .signal-half-glow {
-  box-shadow: 0 0 8px rgba(251, 191, 36, 0.7), 0 0 2px rgba(251, 191, 36, 0.4);
+  box-shadow: 0 0 8px oklch(78% 0.16 65 / .70), 0 0 3px oklch(78% 0.16 65 / .40);
 }
 
-/* ─── Glassmorphism card (utility, Tailwind also handles this) ─── */
+/* ─── Glassmorphism card ─── */
 .glass-card {
   background: var(--bg-card);
   border: 1px solid var(--border);
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
-  border-radius: 1rem;
+  backdrop-filter: blur(18px) saturate(1.4);
+  -webkit-backdrop-filter: blur(18px) saturate(1.4);
+  border-radius: 1.25rem;
+  box-shadow:
+    0 14px 44px oklch(0% 0 0 / .20),
+    inset 0 0 0 1px oklch(100% 0 0 / .08);
+  transition: transform .3s var(--spring), box-shadow .3s var(--ease);
+}
+.glass-card:hover {
+  transform: translateY(-4px);
+  box-shadow:
+    0 20px 56px oklch(0% 0 0 / .28),
+    inset 0 0 0 1px oklch(100% 0 0 / .12);
+}
+
+/* ─── Header / Tab bar glass ─── */
+.header-glass {
+  backdrop-filter: blur(28px) saturate(1.5);
+  -webkit-backdrop-filter: blur(28px) saturate(1.5);
+}
+
+/* ─── Card entrance animation ─── */
+@keyframes cardIn {
+  from {
+    opacity: 0;
+    transform: translateY(14px) scale(.97);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+.card-animate {
+  animation: cardIn .38s var(--spring) both;
 }
 
 /* ─── Scrollbar (thin, cross-browser) ─── */
 * {
   scrollbar-width: thin;
-  scrollbar-color: rgba(113, 113, 122, 0.4) transparent;
+  scrollbar-color: oklch(60% 0 0 / .30) transparent;
 }
 ::-webkit-scrollbar { width: 5px; height: 5px; }
 ::-webkit-scrollbar-track { background: transparent; }
-::-webkit-scrollbar-thumb { background: rgba(113, 113, 122, 0.4); border-radius: 99px; }
+::-webkit-scrollbar-thumb { background: oklch(60% 0 0 / .30); border-radius: 99px; }

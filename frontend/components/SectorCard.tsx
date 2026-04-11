@@ -14,9 +14,10 @@ interface SectorCardProps {
   defaultExpanded?: boolean;
   composite?: CompositeSnapshot | null;
   macroWarning?: boolean;
+  animIndex?: number;
 }
 
-export function SectorCard({ sectorId, sector, featured = false, defaultExpanded = false, composite, macroWarning }: SectorCardProps) {
+export function SectorCard({ sectorId, sector, featured = false, defaultExpanded = false, composite, macroWarning, animIndex = 0 }: SectorCardProps) {
   const [expanded, setExpanded] = useState(defaultExpanded);
   const levelCfg = LEVEL_CONFIG[sector.level] ?? LEVEL_CONFIG["忽略"];
   const stocks = sector.stocks ?? [];
@@ -29,11 +30,13 @@ export function SectorCard({ sectorId, sector, featured = false, defaultExpanded
     <article
       className={`
         group rounded-2xl border backdrop-blur-sm
+        card-animate hover:-translate-y-1
         transition-all duration-300
         ${levelCfg.bgClass}
-        ${expanded ? "shadow-lg" : "hover:shadow-md"}
+        ${expanded ? "shadow-lg" : "hover:shadow-md hover:shadow-emerald-900/10 dark:hover:shadow-emerald-900/30"}
         overflow-hidden
       `}
+      style={{ animationDelay: `${animIndex * 35}ms` }}
       aria-label={`${sector.name_zh} 板塊（${sector.level}）`}
     >
       {/* 卡片頭部 */}

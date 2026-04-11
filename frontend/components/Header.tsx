@@ -13,19 +13,22 @@ export function Header({ runAt, dateLabel }: HeaderProps) {
   return (
     <header className="
       sticky top-0 z-50
-      bg-white/90 dark:bg-zinc-950/90
-      backdrop-blur-md
-      border-b border-zinc-200/60 dark:border-zinc-800/60
+      bg-white/80 dark:bg-black/60
+      header-glass
+      border-b border-zinc-200/50 dark:border-white/6
     ">
       <div className="max-w-7xl mx-auto px-4 h-14 flex items-center justify-between gap-3">
 
         {/* Logo 區 */}
         <div className="flex items-center gap-2.5 min-w-0">
-          <div className="
-            w-8 h-8 rounded-lg flex items-center justify-center text-base
-            bg-linear-to-br from-emerald-400 to-emerald-600
-            shadow-sm shrink-0
-          ">
+          <div
+            className="
+              w-8 h-8 rounded-lg flex items-center justify-center text-base
+              bg-linear-to-br from-emerald-400 to-emerald-600
+              shrink-0
+            "
+            style={{ boxShadow: '0 0 14px oklch(52% 0.18 152 / .45), 0 2px 6px oklch(0% 0 0 / .30)' }}
+          >
             📡
           </div>
           <div className="min-w-0">
