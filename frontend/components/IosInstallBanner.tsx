@@ -6,12 +6,14 @@ export default function IosInstallBanner() {
   const [visible, setVisible] = useState(false);
 
   useEffect(() => {
-    // 只在 iOS Safari 顯示（非 standalone 模式）
-    const isIos = /iphone|ipad|ipod/i.test(navigator.userAgent);
+    const ua = navigator.userAgent;
+    // 只在 iOS Safari 顯示（排除 LINE、FB、IG 等 in-app browser）
+    const isIos = /iphone|ipad|ipod/i.test(ua);
+    const isInAppBrowser = /line\/|fbav|fban|instagram|crios|fxios|opios|edgios/i.test(ua);
     const isStandalone = ('standalone' in navigator) && (navigator as { standalone?: boolean }).standalone;
     const dismissed = sessionStorage.getItem('ios-install-dismissed');
 
-    if (isIos && !isStandalone && !dismissed) {
+    if (isIos && !isInAppBrowser && !isStandalone && !dismissed) {
       setVisible(true);
       // 5 秒後自動消失
       const timer = setTimeout(() => {
