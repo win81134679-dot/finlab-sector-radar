@@ -19,14 +19,14 @@
   --text-muted:    oklch(52% 0.02 170);
 }
 
-/* ─── Dark theme tokens — 方案 C 深紫奢華 ─── */
+/* ─── Dark theme tokens — 深藍黑 ─── */
 .dark {
-  --bg-page:       oklch(6% 0.05 280);
+  --bg-page:       oklch(8% 0.02 255);
   --bg-card:       oklch(100% 0 0 / .07);
-  --border:        oklch(100% 0 0 / .14);
-  --border-accent: oklch(65% 0.18 280 / .28);
-  --text-base:     oklch(93% 0.01 280);
-  --text-muted:    oklch(65% 0.03 280);
+  --border:        oklch(100% 0 0 / .10);
+  --border-accent: oklch(52% 0.18 255 / .25);
+  --text-base:     oklch(93% 0.01 250);
+  --text-muted:    oklch(62% 0.025 250);
 }
 
 @theme inline {
@@ -60,12 +60,12 @@ body::before {
     radial-gradient(ellipse 70% 50% at 8%  10%, oklch(62% 0.14 260 / .07) 0%, transparent 55%),
     radial-gradient(ellipse 50% 60% at 92% 85%, oklch(58% 0.12 210 / .05) 0%, transparent 55%);
 }
-/* Dark: 方案 C — 左上粉紫 + 右下桃紅 + 中心深紫填充 */
+/* Dark: 左上藍紫 + 右下青色暈光 + 中心填充 */
 .dark body::before {
   background:
-    radial-gradient(ellipse 80% 60% at 10% 15%, oklch(52% 0.22 290 / .22) 0%, transparent 55%),
-    radial-gradient(ellipse 60% 70% at 88% 80%, oklch(55% 0.20 0   / .16) 0%, transparent 55%),
-    radial-gradient(ellipse 55% 55% at 50% 50%, oklch(40% 0.14 275 / .10) 0%, transparent 70%);
+    radial-gradient(ellipse 80% 60% at 10% 15%, oklch(42% 0.16 270 / .18) 0%, transparent 55%),
+    radial-gradient(ellipse 60% 70% at 88% 80%, oklch(42% 0.16 220 / .14) 0%, transparent 55%),
+    radial-gradient(ellipse 50% 50% at 50% 50%, oklch(36% 0.12 250 / .07) 0%, transparent 70%);
 }
 
 /* ─── Signal dot glow ─── */
