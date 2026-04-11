@@ -4,35 +4,48 @@
       <stop offset="0%" stop-color="#ffffff"/>
       <stop offset="100%" stop-color="#efefef"/>
     </radialGradient>
-    <radialGradient id="sweep" cx="256" cy="256" r="175" gradientUnits="userSpaceOnUse">
-      <stop offset="0%" stop-color="#1a1a1a" stop-opacity="0.04"/>
-      <stop offset="100%" stop-color="#1a1a1a" stop-opacity="0.13"/>
-    </radialGradient>
   </defs>
 
   <rect width="512" height="512" fill="url(#bg)"/>
 
-  <!-- Outer ring -->
-  <circle cx="256" cy="256" r="176" fill="none" stroke="#1a1a1a" stroke-width="22" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Flask neck (rectangle, rounded top) -->
+  <rect x="210" y="80" width="92" height="148" rx="18" ry="18"
+        fill="none" stroke="#1a1a1a" stroke-width="22" stroke-linejoin="round"/>
 
-  <!-- Middle ring -->
-  <circle cx="256" cy="256" r="118" fill="none" stroke="#1a1a1a" stroke-width="16" stroke-linecap="round" opacity="0.5"/>
+  <!-- Flask body (wide rounded triangle / Erlenmeyer shape) -->
+  <!-- Using a path: neck-bottom left → sweep out → bottom arc → sweep back up → neck-bottom right -->
+  <path d="
+    M210,218
+    L130,360
+    Q104,412 138,440
+    Q162,464 256,464
+    Q350,464 374,440
+    Q408,412 382,360
+    L302,218
+    Z
+  " fill="none" stroke="#1a1a1a" stroke-width="22" stroke-linejoin="round" stroke-linecap="round"/>
 
-  <!-- Inner ring -->
-  <circle cx="256" cy="256" r="60"  fill="none" stroke="#1a1a1a" stroke-width="12" stroke-linecap="round" opacity="0.28"/>
+  <!-- Neck top rim (cap) -->
+  <rect x="198" y="72" width="116" height="26" rx="13" ry="13" fill="#1a1a1a"/>
 
-  <!-- Sweep sector -->
-  <path d="M256,256 L360,94 A176,176 0 0,1 432,354 Z" fill="url(#sweep)"/>
+  <!-- Liquid fill inside flask -->
+  <path d="
+    M152,370
+    Q130,408 152,434
+    Q176,458 256,458
+    Q336,458 360,434
+    Q382,408 360,370
+    Z
+  " fill="#1a1a1a" opacity="0.12"/>
 
-  <!-- Sweep arm -->
-  <line x1="256" y1="256" x2="432" y2="354" stroke="#1a1a1a" stroke-width="18" stroke-linecap="round" opacity="0.88"/>
+  <!-- Bubble 1 -->
+  <circle cx="210" cy="390" r="16" fill="#1a1a1a" opacity="0.25"/>
+  <!-- Bubble 2 -->
+  <circle cx="280" cy="415" r="11" fill="#1a1a1a" opacity="0.18"/>
+  <!-- Bubble 3 (small) -->
+  <circle cx="316" cy="385" r="7" fill="#1a1a1a" opacity="0.15"/>
 
-  <!-- Blip dot -->
-  <circle cx="343" cy="140" r="22" fill="#1a1a1a"/>
-
-  <!-- Blip halo -->
-  <circle cx="343" cy="140" r="38" fill="none" stroke="#1a1a1a" stroke-width="8" opacity="0.18"/>
-
-  <!-- Center dot -->
-  <circle cx="256" cy="256" r="16" fill="#1a1a1a"/>
+  <!-- Shine line on neck -->
+  <line x1="238" y1="96" x2="238" y2="210"
+        stroke="white" stroke-width="8" stroke-linecap="round" opacity="0.55"/>
 </svg>
