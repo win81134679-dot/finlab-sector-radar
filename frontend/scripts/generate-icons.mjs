@@ -27,7 +27,7 @@ for (const { file, size, padding } of sizes) {
     .extend({
       top: padding, bottom: padding,
       left: padding, right: padding,
-      background: { r: 9, g: 9, b: 11, alpha: 1 }, // #09090b
+      background: { r: 255, g: 255, b: 255, alpha: 1 }, // #ffffff
     })
     .png()
     .toFile(join(outDir, file));

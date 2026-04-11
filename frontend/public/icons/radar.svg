@@ -1,38 +1,62 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
-  <!-- Background -->
-  <rect width="512" height="512" rx="80" fill="#09090b"/>
-
-  <!-- Radar rings -->
-  <circle cx="256" cy="256" r="190" fill="none" stroke="#d4af37" stroke-width="1.5" opacity="0.25"/>
-  <circle cx="256" cy="256" r="140" fill="none" stroke="#d4af37" stroke-width="1.5" opacity="0.35"/>
-  <circle cx="256" cy="256" r="90"  fill="none" stroke="#d4af37" stroke-width="1.5" opacity="0.45"/>
-  <circle cx="256" cy="256" r="40"  fill="none" stroke="#d4af37" stroke-width="2"   opacity="0.7"/>
-
-  <!-- Cross hairs -->
-  <line x1="256" y1="66"  x2="256" y2="446" stroke="#d4af37" stroke-width="1" opacity="0.2"/>
-  <line x1="66"  y1="256" x2="446" y2="256" stroke="#d4af37" stroke-width="1" opacity="0.2"/>
-
-  <!-- Radar sweep (sector arc) -->
-  <path d="M256,256 L256,66 A190,190 0 0,1 436.5,321 Z"
-        fill="url(#sweep)" opacity="0.55"/>
-
-  <!-- Sweep gradient -->
   <defs>
-    <radialGradient id="sweep" cx="0%" cy="0%" r="100%">
-      <stop offset="0%"   stop-color="#d4af37" stop-opacity="0.0"/>
-      <stop offset="100%" stop-color="#d4af37" stop-opacity="0.6"/>
+    <!-- Sweep gradient: transparent center → gold edge -->
+    <radialGradient id="sweepGrad" cx="256" cy="256" r="200" gradientUnits="userSpaceOnUse">
+      <stop offset="0%"   stop-color="#F59E0B" stop-opacity="0.05"/>
+      <stop offset="60%"  stop-color="#F59E0B" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#F59E0B" stop-opacity="0.6"/>
     </radialGradient>
+
+    <!-- Blip glow -->
+    <radialGradient id="blipGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%"   stop-color="#FDE68A" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#F59E0B" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Subtle drop shadow for radar disk -->
+    <filter id="diskShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="6" stdDeviation="12" flood-color="#1B2B5E" flood-opacity="0.18"/>
+    </filter>
   </defs>
 
-  <!-- Blips on radar -->
-  <circle cx="310" cy="170" r="6" fill="#d4af37" opacity="0.9"/>
-  <circle cx="310" cy="170" r="12" fill="none" stroke="#d4af37" stroke-width="1.5" opacity="0.4"/>
+  <!-- White background -->
+  <rect width="512" height="512" fill="#FFFFFF"/>
 
-  <circle cx="360" cy="290" r="5" fill="#d4af37" opacity="0.75"/>
-  <circle cx="360" cy="290" r="10" fill="none" stroke="#d4af37" stroke-width="1" opacity="0.3"/>
+  <!-- Main radar disk (deep navy) -->
+  <circle cx="256" cy="256" r="202" fill="#1B2B5E" filter="url(#diskShadow)"/>
+  <!-- Slightly lighter inner disk for depth -->
+  <circle cx="256" cy="256" r="200" fill="#1E3270"/>
 
-  <circle cx="200" cy="310" r="4" fill="#d4af37" opacity="0.6"/>
+  <!-- Radar rings (white, subtle) -->
+  <circle cx="256" cy="256" r="150" fill="none" stroke="white" stroke-width="1.5" opacity="0.18"/>
+  <circle cx="256" cy="256" r="100" fill="none" stroke="white" stroke-width="1.5" opacity="0.25"/>
+  <circle cx="256" cy="256" r="50"  fill="none" stroke="white" stroke-width="1.5" opacity="0.35"/>
+
+  <!-- Cross hairs -->
+  <line x1="256" y1="56"  x2="256" y2="456" stroke="white" stroke-width="1" opacity="0.12"/>
+  <line x1="56"  y1="256" x2="456" y2="256" stroke="white" stroke-width="1" opacity="0.12"/>
+
+  <!-- Radar sweep sector (gold, ~90° arc in upper-right) -->
+  <!-- From ~15° to ~105° clockwise from 12 o'clock -->
+  <path d="M256,256 L308,63 A200,200 0 0,1 449,308 Z"
+        fill="url(#sweepGrad)"/>
+
+  <!-- Sweep leading edge (bright gold line) -->
+  <line x1="256" y1="256" x2="449" y2="308" stroke="#F59E0B" stroke-width="2" opacity="0.7"/>
+
+  <!-- Blip 1 – bright, primary signal (upper right) -->
+  <circle cx="352" cy="148" r="18" fill="#F59E0B" opacity="0.15"/>
+  <circle cx="352" cy="148" r="9"  fill="#FDE68A"/>
+  <circle cx="352" cy="148" r="9"  fill="url(#blipGlow)"/>
+
+  <!-- Blip 2 – secondary signal (right) -->
+  <circle cx="390" cy="295" r="12" fill="#F59E0B" opacity="0.12"/>
+  <circle cx="390" cy="295" r="6"  fill="#FCD34D"/>
+
+  <!-- Blip 3 – dim older signal (upper center) -->
+  <circle cx="230" cy="120" r="5"  fill="white" opacity="0.35"/>
 
   <!-- Center dot -->
-  <circle cx="256" cy="256" r="5" fill="#d4af37" opacity="1"/>
+  <circle cx="256" cy="256" r="7"  fill="white"/>
+  <circle cx="256" cy="256" r="3"  fill="#F59E0B"/>
 </svg>
