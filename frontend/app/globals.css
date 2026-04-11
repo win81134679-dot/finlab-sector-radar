@@ -21,12 +21,12 @@
 
 /* ─── Dark theme tokens ─── */
 .dark {
-  --bg-page:       oklch(7% 0.015 175);
-  --bg-card:       oklch(14% 0.02 170 / .82);
+  --bg-page:       oklch(8% 0.02 255);
+  --bg-card:       oklch(14% 0.03 255 / .82);
   --border:        oklch(100% 0 0 / .07);
-  --border-accent: oklch(52% 0.15 165 / .25);
-  --text-base:     oklch(93% 0.01 165);
-  --text-muted:    oklch(62% 0.02 170);
+  --border-accent: oklch(52% 0.18 255 / .25);
+  --text-base:     oklch(93% 0.01 250);
+  --text-muted:    oklch(62% 0.025 250);
 }
 
 @theme inline {
@@ -49,7 +49,7 @@ body {
 }
 
 /* ─── Nebula 背景（fixed 偽元素，不受 bg-background 覆蓋）─── */
-/* Light: 極淡 emerald 暈光 */
+/* Light: 極淡藍紫暈光 */
 body::before {
   content: "";
   position: fixed;
@@ -57,15 +57,15 @@ body::before {
   z-index: 0;
   pointer-events: none;
   background:
-    radial-gradient(ellipse 70% 50% at 8%  10%, oklch(72% 0.12 165 / .10) 0%, transparent 55%),
-    radial-gradient(ellipse 50% 60% at 92% 85%, oklch(68% 0.10 195 / .07) 0%, transparent 55%);
+    radial-gradient(ellipse 70% 50% at 8%  10%, oklch(62% 0.14 260 / .07) 0%, transparent 55%),
+    radial-gradient(ellipse 50% 60% at 92% 85%, oklch(58% 0.12 210 / .05) 0%, transparent 55%);
 }
-/* Dark: emerald + teal 三層暈光（明顯可見）*/
+/* Dark: 左上紫藍 + 右下青色（與截圖 Vault 相同配色）*/
 .dark body::before {
   background:
-    radial-gradient(ellipse 75% 60% at 10% 15%, oklch(42% 0.18 152 / .22) 0%, transparent 55%),
-    radial-gradient(ellipse 65% 70% at 88% 82%, oklch(38% 0.16 185 / .18) 0%, transparent 55%),
-    radial-gradient(ellipse 55% 55% at 50% 50%, oklch(36% 0.12 168 / .08) 0%, transparent 70%);
+    radial-gradient(ellipse 80% 60% at 10% 15%, oklch(42% 0.16 270 / .18) 0%, transparent 55%),
+    radial-gradient(ellipse 60% 70% at 88% 80%, oklch(42% 0.16 220 / .14) 0%, transparent 55%),
+    radial-gradient(ellipse 50% 50% at 50% 50%, oklch(36% 0.12 250 / .07) 0%, transparent 70%);
 }
 
 /* ─── Signal dot glow ─── */
