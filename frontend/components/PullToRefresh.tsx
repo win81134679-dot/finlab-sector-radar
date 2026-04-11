@@ -122,7 +122,7 @@ export default function PullToRefresh({ children }: { children: React.ReactNode 
       {(pullDistance > 0 || refreshing) && (
         <div
           aria-hidden="true"
-          className="fixed top-0 inset-x-0 flex justify-center z-[60] pointer-events-none"
+          className="fixed top-0 inset-x-0 flex justify-center z-60 pointer-events-none"
           style={{
             transform: `translateY(${refreshing ? 16 : Math.max(0, pullDistance - 24)}px)`,
             transition: refreshing || pullDistance === 0 ? 'transform 300ms ease' : 'none',
