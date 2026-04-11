@@ -5,7 +5,7 @@
 
 /* ─── Light theme tokens ─── */
 :root {
-  --bg-page:    #f8fafc;  /* slate-50 */
+  --bg-page:    #ffffff;
   --bg-card:    rgba(255, 255, 255, 0.85);
   --border:     rgba(226, 232, 240, 0.7);
   --text-base:  #18181b;
