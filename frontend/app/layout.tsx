@@ -2,6 +2,7 @@ import type { Metadata, Viewport } from "next";
 import { Geist, Geist_Mono, Noto_Sans_TC } from "next/font/google";
 import { Analytics } from "@vercel/analytics/next";
 import IosInstallBanner from "@/components/IosInstallBanner";
+import PullToRefresh from "@/components/PullToRefresh";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -80,7 +81,9 @@ export default function RootLayout({
         />
       </head>
       <body className="min-h-dvh bg-background text-foreground flex flex-col">
-        {children}
+        <PullToRefresh>
+          {children}
+        </PullToRefresh>
         <Analytics />
         <IosInstallBanner />
         <footer className="mt-auto py-5 px-4 border-t border-zinc-200/60 dark:border-zinc-800/60">
