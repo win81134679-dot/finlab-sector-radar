@@ -4,6 +4,7 @@
   "buildCommand": "npm run build",
   "installCommand": "npm ci",
   "outputDirectory": ".next",
+  "ignoreCommand": "bash ../vercel-ignore-build-step.sh",
   "crons": [
     { "path": "/api/trigger-analysis", "schedule": "30 12 * * 1-5" }
   ]
