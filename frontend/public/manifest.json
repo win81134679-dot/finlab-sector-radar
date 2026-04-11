@@ -1,0 +1,40 @@
+{
+  "name": "FinLab 板塊偵測",
+  "short_name": "板塊偵測",
+  "description": "即時監控台股 45 個板塊的 7 大信號，結合宏觀經濟濾網，自動偵測強勢輪動板塊",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#09090b",
+  "theme_color": "#09090b",
+  "lang": "zh-TW",
+  "categories": ["finance", "productivity"],
+  "icons": [
+    {
+      "src": "/icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icons/icon-512-maskable.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "最新分析",
+      "url": "/",
+      "description": "查看最新板塊分析結果"
+    }
+  ]
+}

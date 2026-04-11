@@ -19,6 +19,7 @@ const notoTC = Noto_Sans_TC({
   variable: "--font-noto-tc",
   weight: ["400", "500", "700"],
   display: "swap",
+  preload: false,
 });
 
 export const viewport: Viewport = {
@@ -31,6 +32,19 @@ export const viewport: Viewport = {
 export const metadata: Metadata = {
   title: "FinLab 板塊偵測 | 台股輪動分析",
   description: "即時監控台股 45 個板塊的 7 大信號，結合宏褈0經濟濃網，自動偵測強勢輪動板塊",
+  manifest: "/manifest.json",
+  appleWebApp: {
+    capable: true,
+    statusBarStyle: "black-translucent",
+    title: "板塊偵測",
+  },
+  icons: {
+    apple: "/icons/apple-touch-icon.png",
+    icon: [
+      { url: "/icons/icon-192.png", sizes: "192x192", type: "image/png" },
+      { url: "/icons/icon-512.png", sizes: "512x512", type: "image/png" },
+    ],
+  },
   openGraph: {
     title: "FinLab 板塊偵測",
     description: "台股板塊輪動 × 7大信號 × 宏褈0濃網",
