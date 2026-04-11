@@ -1,43 +1,44 @@
 'use client';
 
-import { useEffect, useState } from 'react';
+import { useEffect, useState, useMemo } from 'react';
 
 type BannerMode = 'safari' | 'line' | 'inapp';
 
+function detectBannerMode(): BannerMode | null {
+  if (typeof window === 'undefined') return null;
+
+  const ua = navigator.userAgent;
+  const isIos = /iphone|ipad|ipod/i.test(ua);
+  if (!isIos) return null;
+
+  const isStandalone = ('standalone' in navigator) && (navigator as { standalone?: boolean }).standalone;
+  if (isStandalone) return null;  // 已安裝，不顯示
+
+  const dismissed = sessionStorage.getItem('ios-install-dismissed');
+  if (dismissed) return null;
+
+  const isLine = /line\//i.test(ua);
+  const isOtherInApp = /fbav|fban|instagram|crios|fxios|opios|edgios/i.test(ua);
+
+  if (isLine) return 'line';
+  if (isOtherInApp) return 'inapp';
+  return 'safari';
+}
+
 export default function IosInstallBanner() {
-  const [mode, setMode] = useState<BannerMode | null>(null);
+  const initialMode = useMemo(() => detectBannerMode(), []);
+  const [mode, setMode] = useState<BannerMode | null>(initialMode);
 
+  // Safari 版：5 秒後自動消失
   useEffect(() => {
-    const ua = navigator.userAgent;
-    const isIos = /iphone|ipad|ipod/i.test(ua);
-    if (!isIos) return;
-
-    const isStandalone = ('standalone' in navigator) && (navigator as { standalone?: boolean }).standalone;
-    if (isStandalone) return;  // 已安裝，不顯示
-
-    const dismissed = sessionStorage.getItem('ios-install-dismissed');
-    if (dismissed) return;
-
-    const isLine = /line\//i.test(ua);
-    const isOtherInApp = /fbav|fban|instagram|crios|fxios|opios|edgios/i.test(ua);
-
-    if (isLine) {
-      setMode('line');
-    } else if (isOtherInApp) {
-      setMode('inapp');
-    } else {
-      setMode('safari');
-    }
-
-    // Safari 版：5 秒後自動消失
-    if (!isLine && !isOtherInApp) {
+    if (mode === 'safari') {
       const timer = setTimeout(() => {
         setMode(null);
         sessionStorage.setItem('ios-install-dismissed', '1');
       }, 5000);
       return () => clearTimeout(timer);
     }
-  }, []);
+  }, [mode]);
 
   if (!mode) return null;
 
