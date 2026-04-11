@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-11T13:14:47.246Z",
+  "updatedAt": "2026-04-11T16:47:45.065Z",
   "posts": [
     {
       "text": "How Trump’s Tariffs Are Choking U.S.-China Trade - WSJ How Trump’s Tariffs Are Choking U.S.-China Trade  WSJ",
@@ -193,29 +193,6 @@
       }
     },
     {
-      "text": "Trump’s tariff powers tested again as court questions ‘deficit’ justification - South China Morning Post Trump’s tariff powers tested again as court questions ‘deficit’ justification  South China Morning Post",
-      "timestamp": "2026-04-10T21:43:51.000Z",
-      "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxNd2RFa2pWcnFPV0dlZWJ3TjZEVUE2ZjdCeTZ5OVJnS05qeTlIUHdCd3RZcHZWdnVEYXd6UmRLNkctcGdJWXZOUEpVa0V2QlRIQmkzeHA4bXZOMHFoUkxmNDBjQzhQSUhGRDJjVUF6cU5Cdk5wZThzZ2xGLTF0TE01RE1rRHZvUC1qMEJhQTdvU1Z3UEpGQXItendVR0E0S0xHTFhvV0ZxQVVRVzhQYldFNUwtR2cxU1hQa2cySVBOLUJ2dTAwVzdJVk12YkNaZmJ6dU5TRDV30gHWAUFVX3lxTE9tV3FfMWl5MV9MWFpFaXNNeC0yVmp6ZUtSazgyYVlQa1ZkX1NwMl9XWkh1U09NLXhJbTQwSzB1anBUSWoxcjREN2l1dHA3enNQbEhsSnowQ1Z5WHlUakJfRVZRUGotMEdkbnd3SzlBQU1FQUFadVVlVDUya2s4YXptZFZNU0JiSE93bHVHUjlLMmNpMGFFb2J6Y3dPWWxXdm51bUJ0OEpKWlNlMWFHVjU5MEZmYW1INUhhc2lFXzNQNi1YcWJ1WF81NV9VZWJyQ0pVU09IY0E?oc=5",
-      "keywords": [
-        "ai",
-        "tariff",
-        "china"
-      ],
-      "impacts": {
-        "ai_server": 0.7,
-        "foundry": -0.4,
-        "shipping": -0.9,
-        "steel": -0.5,
-        "ic_design": -1,
-        "display": -0.9,
-        "ev_supply": -0.7
-      },
-      "sentiment": {
-        "compound": -0.7184,
-        "label": "強烈利空"
-      }
-    },
-    {
       "text": "Trump calls for 50% tariff on goods from nations arming Iran - Supply Chain Dive Trump calls for 50% tariff on goods from nations arming Iran  Supply Chain Dive",
       "timestamp": "2026-04-08T14:47:43.000Z",
       "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQejJGVmpNU3VHeHFxSkdsUUR0V0hYSHQ4UVkxNjl6RjlOaU5YS2o5aHhCNWkxY1FaSXRDSWdKaDNkNm5icVlzWkh4RkFDYmZrZVFTY2ljSDRxdWpuTWpXbEVJd3htRHRNN1Z0c3BPTF9TOXhpLUQxVUE3THdObWNaRGpFRV9YWlB0aU1V?oc=5",
@@ -255,6 +232,29 @@
         "display": -1,
         "ev_supply": -1,
         "petrochemical": 0.4
+      },
+      "sentiment": {
+        "compound": -0.7184,
+        "label": "強烈利空"
+      }
+    },
+    {
+      "text": "Trump’s tariff powers tested again as court questions ‘deficit’ justification - South China Morning Post Trump’s tariff powers tested again as court questions ‘deficit’ justification  South China Morning Post",
+      "timestamp": "2026-04-10T21:43:51.000Z",
+      "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxNd2RFa2pWcnFPV0dlZWJ3TjZEVUE2ZjdCeTZ5OVJnS05qeTlIUHdCd3RZcHZWdnVEYXd6UmRLNkctcGdJWXZOUEpVa0V2QlRIQmkzeHA4bXZOMHFoUkxmNDBjQzhQSUhGRDJjVUF6cU5Cdk5wZThzZ2xGLTF0TE01RE1rRHZvUC1qMEJhQTdvU1Z3UEpGQXItendVR0E0S0xHTFhvV0ZxQVVRVzhQYldFNUwtR2cxU1hQa2cySVBOLUJ2dTAwVzdJVk12YkNaZmJ6dU5TRDV30gHWAUFVX3lxTE9tV3FfMWl5MV9MWFpFaXNNeC0yVmp6ZUtSazgyYVlQa1ZkX1NwMl9XWkh1U09NLXhJbTQwSzB1anBUSWoxcjREN2l1dHA3enNQbEhsSnowQ1Z5WHlUakJfRVZRUGotMEdkbnd3SzlBQU1FQUFadVVlVDUya2s4YXptZFZNU0JiSE93bHVHUjlLMmNpMGFFb2J6Y3dPWWxXdm51bUJ0OEpKWlNlMWFHVjU5MEZmYW1INUhhc2lFXzNQNi1YcWJ1WF81NV9VZWJyQ0pVU09IY0E?oc=5",
+      "keywords": [
+        "ai",
+        "tariff",
+        "china"
+      ],
+      "impacts": {
+        "ai_server": 0.7,
+        "foundry": -0.4,
+        "shipping": -0.9,
+        "steel": -0.5,
+        "ic_design": -1,
+        "display": -0.9,
+        "ev_supply": -0.7
       },
       "sentiment": {
         "compound": -0.7184,
@@ -443,10 +443,9 @@
   ],
   "sectorState": {
     "foundry": {
-      "score": -0.854,
-      "lastUpdated": "2026-04-11T13:14:47.246Z",
+      "score": -0.859,
+      "lastUpdated": "2026-04-11T16:47:45.065Z",
       "deltaHistory": [
-        0.015000000000000013,
         -0.0010000000000000009,
         -0.01100000000000001,
         0.0010000000000000009,
@@ -455,14 +454,14 @@
         -0.007000000000000006,
         0.02200000000000002,
         -0.0010000000000000009,
-        0.016000000000000014
+        0.016000000000000014,
+        -0.0050000000000000044
       ]
     },
     "shipping": {
       "score": -0.958,
-      "lastUpdated": "2026-04-11T13:14:47.246Z",
+      "lastUpdated": "2026-04-11T16:47:45.065Z",
       "deltaHistory": [
-        0.007000000000000006,
         -0.0010000000000000009,
         0,
         0,
@@ -471,14 +470,14 @@
         -0.008000000000000007,
         0.008000000000000007,
         0,
-        0.007000000000000006
+        0.007000000000000006,
+        0
       ]
     },
     "steel": {
-      "score": -0.767,
-      "lastUpdated": "2026-04-11T13:14:47.246Z",
+      "score": -0.771,
+      "lastUpdated": "2026-04-11T16:47:45.065Z",
       "deltaHistory": [
-        0.040000000000000036,
         -0.016000000000000014,
         -0.006000000000000005,
         0.0010000000000000009,
@@ -487,12 +486,13 @@
         0.135,
         -0.13,
         -0.0020000000000000018,
-        0.027000000000000024
+        0.027000000000000024,
+        -0.0040000000000000036
       ]
     },
     "ic_design": {
       "score": -1,
-      "lastUpdated": "2026-04-11T13:14:47.246Z",
+      "lastUpdated": "2026-04-11T16:47:45.065Z",
       "deltaHistory": [
         0,
         0,
@@ -507,10 +507,9 @@
       ]
     },
     "display": {
-      "score": -0.9,
-      "lastUpdated": "2026-04-11T13:14:47.246Z",
+      "score": -0.901,
+      "lastUpdated": "2026-04-11T16:47:45.065Z",
       "deltaHistory": [
-        0.02200000000000002,
         -0.020000000000000018,
         0.009000000000000008,
         0,
@@ -519,14 +518,14 @@
         0.08900000000000008,
         -0.08600000000000008,
         0,
-        0.007000000000000006
+        0.007000000000000006,
+        -0.0010000000000000009
       ]
     },
     "ev_supply": {
-      "score": -0.749,
-      "lastUpdated": "2026-04-11T13:14:47.246Z",
+      "score": -0.751,
+      "lastUpdated": "2026-04-11T16:47:45.065Z",
       "deltaHistory": [
-        0.04700000000000004,
         -0.03300000000000003,
         0.025000000000000022,
         -0.0030000000000000027,
@@ -535,14 +534,14 @@
         0.08000000000000007,
         -0.07600000000000007,
         0,
-        0.015000000000000013
+        0.015000000000000013,
+        -0.0020000000000000018
       ]
     },
     "ai_server": {
-      "score": 0.123,
-      "lastUpdated": "2026-04-11T13:14:47.246Z",
+      "score": 0.12,
+      "lastUpdated": "2026-04-11T16:47:45.065Z",
       "deltaHistory": [
-        0.032,
         -0.034999999999999996,
         0.036,
         0.0010000000000000009,
@@ -551,14 +550,14 @@
         0.0040000000000000036,
         0.023000000000000007,
         0,
-        0.0059999999999999915
+        0.0059999999999999915,
+        -0.0030000000000000027
       ]
     },
     "defense": {
       "score": 0.028,
-      "lastUpdated": "2026-04-11T13:14:47.246Z",
+      "lastUpdated": "2026-04-11T16:47:45.065Z",
       "deltaHistory": [
-        -0.002999999999999999,
         0.0019999999999999983,
         0,
         0.005000000000000001,
@@ -567,7 +566,8 @@
         -0.005999999999999998,
         0.0019999999999999983,
         0,
-        0.0010000000000000009
+        0.0010000000000000009,
+        0
       ]
     },
     "solar": {
@@ -603,10 +603,9 @@
       ]
     },
     "petrochemical": {
-      "score": 0.011,
-      "lastUpdated": "2026-04-11T13:14:47.246Z",
+      "score": 0.013,
+      "lastUpdated": "2026-04-11T16:47:45.065Z",
       "deltaHistory": [
-        -0.043000000000000003,
         0.034,
         -0.034,
         0,
@@ -615,12 +614,13 @@
         -0.004,
         0.002,
         0,
-        0
+        0,
+        0.002
       ]
     },
     "semiconductor_equip": {
       "score": 0.001,
-      "lastUpdated": "2026-04-11T13:14:47.246Z",
+      "lastUpdated": "2026-04-11T16:47:45.065Z",
       "deltaHistory": [
         0,
         0,
@@ -636,7 +636,7 @@
     },
     "robotics": {
       "score": 0.001,
-      "lastUpdated": "2026-04-11T13:14:47.246Z",
+      "lastUpdated": "2026-04-11T16:47:45.065Z",
       "deltaHistory": [
         0,
         0,
@@ -691,9 +691,9 @@
     },
     "gaming": {
       "score": 0.001,
-      "lastUpdated": "2026-04-11T13:14:47.246Z",
+      "lastUpdated": "2026-04-11T16:47:45.065Z",
       "deltaHistory": [
-        -0.002,
+        0,
         0,
         0,
         0,
