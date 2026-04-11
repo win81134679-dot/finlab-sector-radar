@@ -1,21 +1,38 @@
 ﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
   <defs>
-    <radialGradient id="bgGrad" cx="50%" cy="40%" r="60%">
+    <radialGradient id="bg" cx="50%" cy="45%" r="65%">
       <stop offset="0%" stop-color="#ffffff"/>
-      <stop offset="100%" stop-color="#f4f4f5"/>
+      <stop offset="100%" stop-color="#efefef"/>
     </radialGradient>
-    <radialGradient id="sweepFill" cx="256" cy="256" r="180" gradientUnits="userSpaceOnUse">
-      <stop offset="0%" stop-color="#18181b" stop-opacity="0.06"/>
-      <stop offset="100%" stop-color="#18181b" stop-opacity="0.16"/>
+    <radialGradient id="sweep" cx="256" cy="256" r="175" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#1a1a1a" stop-opacity="0.04"/>
+      <stop offset="100%" stop-color="#1a1a1a" stop-opacity="0.13"/>
     </radialGradient>
   </defs>
-  <rect width="512" height="512" fill="url(#bgGrad)"/>
-  <circle cx="256" cy="256" r="184" fill="none" stroke="#18181b" stroke-width="11"/>
-  <circle cx="256" cy="256" r="124" fill="none" stroke="#18181b" stroke-width="8" opacity="0.5"/>
-  <circle cx="256" cy="256" r="64" fill="none" stroke="#18181b" stroke-width="6" opacity="0.3"/>
-  <path d="M256,256 L362,97 A184,184 0 0,1 440,362 Z" fill="url(#sweepFill)"/>
-  <line x1="256" y1="256" x2="440" y2="362" stroke="#18181b" stroke-width="9" stroke-linecap="round" opacity="0.9"/>
-  <circle cx="346" cy="142" r="16" fill="#18181b"/>
-  <circle cx="346" cy="142" r="28" fill="none" stroke="#18181b" stroke-width="5" opacity="0.2"/>
-  <circle cx="256" cy="256" r="11" fill="#18181b"/>
+
+  <rect width="512" height="512" fill="url(#bg)"/>
+
+  <!-- Outer ring -->
+  <circle cx="256" cy="256" r="176" fill="none" stroke="#1a1a1a" stroke-width="22" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Middle ring -->
+  <circle cx="256" cy="256" r="118" fill="none" stroke="#1a1a1a" stroke-width="16" stroke-linecap="round" opacity="0.5"/>
+
+  <!-- Inner ring -->
+  <circle cx="256" cy="256" r="60"  fill="none" stroke="#1a1a1a" stroke-width="12" stroke-linecap="round" opacity="0.28"/>
+
+  <!-- Sweep sector -->
+  <path d="M256,256 L360,94 A176,176 0 0,1 432,354 Z" fill="url(#sweep)"/>
+
+  <!-- Sweep arm -->
+  <line x1="256" y1="256" x2="432" y2="354" stroke="#1a1a1a" stroke-width="18" stroke-linecap="round" opacity="0.88"/>
+
+  <!-- Blip dot -->
+  <circle cx="343" cy="140" r="22" fill="#1a1a1a"/>
+
+  <!-- Blip halo -->
+  <circle cx="343" cy="140" r="38" fill="none" stroke="#1a1a1a" stroke-width="8" opacity="0.18"/>
+
+  <!-- Center dot -->
+  <circle cx="256" cy="256" r="16" fill="#1a1a1a"/>
 </svg>
