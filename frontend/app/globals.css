@@ -17,10 +17,6 @@
   --border-accent: oklch(52% 0.15 165 / .20);
   --text-base:     oklch(18% 0.01 175);
   --text-muted:    oklch(52% 0.02 170);
-  /* Light Nebula — 極淡 emerald 暈光 */
-  --nebula:
-    radial-gradient(ellipse 70% 50% at 8%  10%, oklch(72% 0.12 165 / .08) 0%, transparent 55%),
-    radial-gradient(ellipse 50% 60% at 90% 85%, oklch(68% 0.10 195 / .06) 0%, transparent 55%);
 }
 
 /* ─── Dark theme tokens ─── */
@@ -31,11 +27,6 @@
   --border-accent: oklch(52% 0.15 165 / .25);
   --text-base:     oklch(93% 0.01 165);
   --text-muted:    oklch(62% 0.02 170);
-  /* Dark Nebula — emerald + teal 金融暈光 */
-  --nebula:
-    radial-gradient(ellipse 80% 60% at 10% 15%, oklch(42% 0.15 165 / .14) 0%, transparent 55%),
-    radial-gradient(ellipse 60% 70% at 88% 80%, oklch(38% 0.13 195 / .11) 0%, transparent 55%),
-    radial-gradient(ellipse 50% 50% at 50% 50%, oklch(36% 0.10 180 / .06) 0%, transparent 70%);
 }
 
 @theme inline {
@@ -51,13 +42,30 @@ html {
 }
 
 body {
-  /* Nebula 多層背景（fixed 避免捲動偏移）*/
-  background: var(--nebula), var(--bg-page);
-  background-attachment: fixed;
   color: var(--text-base);
   font-family: var(--font-sans, ui-sans-serif);
   min-height: 100dvh;
   overflow-x: hidden;
+}
+
+/* ─── Nebula 背景（fixed 偽元素，不受 bg-background 覆蓋）─── */
+/* Light: 極淡 emerald 暈光 */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  background:
+    radial-gradient(ellipse 70% 50% at 8%  10%, oklch(72% 0.12 165 / .10) 0%, transparent 55%),
+    radial-gradient(ellipse 50% 60% at 92% 85%, oklch(68% 0.10 195 / .07) 0%, transparent 55%);
+}
+/* Dark: emerald + teal 三層暈光（明顯可見）*/
+.dark body::before {
+  background:
+    radial-gradient(ellipse 75% 60% at 10% 15%, oklch(42% 0.18 152 / .22) 0%, transparent 55%),
+    radial-gradient(ellipse 65% 70% at 88% 82%, oklch(38% 0.16 185 / .18) 0%, transparent 55%),
+    radial-gradient(ellipse 55% 55% at 50% 50%, oklch(36% 0.12 168 / .08) 0%, transparent 70%);
 }
 
 /* ─── Signal dot glow ─── */
