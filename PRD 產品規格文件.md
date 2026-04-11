@@ -1,6 +1,6 @@
 # FinLab 板塊偵測系統 — 產品規格文件（PRD）
 
-> **版本**：v1.5 | **日期**：2026-04-10 | **作者**：FinLab Sector Radar Team
+> **版本**：v1.5 | **日期**：2026-04-11 | **作者**：FinLab Sector Radar Team
 >
 > **一句話描述**：以學術量化七燈訊號系統偵測台股 45 板塊輪動週期，搭配自動化管道與即時儀表板，協助散戶投資人做出有紀律的板塊配置決策。
 
@@ -422,8 +422,8 @@ graph LR
 | **問題背景** | 演算法建議持倉每日重算，股票可能被輪換掉而永遠不觸發出場警報。管理員自選持倉讓出場警報針對實際持有的股票生成。 |
 | **主流程** | 1. 進入獨立「我的持倉 📌」頁籤<br>2. 預設顯示合併視圖（演算法 + 自選持倉）<br>3. 點擊「解鎖管理」→ 輸入密碼→ 驗證通過<br>4. 可新增股票（股號 + 名稱 + 板塊 + 可選成本價/張數/備註）<br>5. 可從演算法建議中一鍵加入<br>6. 可刪除單一持倉<br>7. 點擊「儲存」→ POST `/api/user-holdings` → 寫入 GitHub `output/portfolio/user_holdings.json` |
 | **替代流程** | A1: 密碼錯誤 → 顯示錯誤訊息，不解鎖<br>A2: 尚未設定自選持倉 → 顯示空狀態提示「尚未設定持倉」<br>A3: 網路失敗 → 顯示儲存失敗提示 |
-| **後置條件** | `user_holdings.json` 已更新；下次 Python 管道執行時 `exit_alert.py` 將優先以自選持倉生成出場警報 |
-| **商業規則** | BR-060: 自選持倉優先於演算法建議作為出場警報來源<br>BR-061: 密碼驗證共用 `admin-auth.ts` 模組（SHA-256 + timingSafeEqual + IP 速率限制 5次/15分）<br>BR-062: 演算法建議保留為參考視圖，不再直接影響出場警報<br>BR-063: 無自選持倉時 fallback 至演算法建議 |
+| **後置條件** | `user_holdings.json` 已更新；下次 Python 管道執行時 `portfolio.py` 的 `compute_pnl()` 會帶入自選持倉計算損益，`exit_alert.py` 將優先以自選持倉生成出場警報 |
+| **商業規則** | BR-060: 自選持倉優先於演算法建議作為出場警報來源<br>BR-061: 密碼驗證共用 `admin-auth.ts` 模組（SHA-256 + timingSafeEqual + IP 速率限制 5次/15分）<br>BR-062: 演算法建議保留為參考視圖，不再直接影響出場警報<br>BR-063: 無自選持倉時 fallback 至演算法建議<br>BR-064: `portfolio.py` `compute_pnl()` 以 `entry_date` 計算 `days_held`（而非 `added_at`），防止自選持倉的 `days_held` 計算錯誤<br>BR-065: 前端 `holdings-utils.ts` 雙道防線——① 優先讀取 `pnl.json` 損益；② `pnl.json` 無資料時以 `ohlcv_7d` 最後K棒收盤價估算 `pnlPct`（僅 `entryPrice` 不為 null 時啟用） |
 
 #### UC-004：查看宏觀環境面板
 
@@ -2877,7 +2877,9 @@ GITHUB_REPO=owner/repo
 graph LR
     DEV[本地開發] -->|git push main| GH[GitHub]
     GH -->|webhook| VC[Vercel]
-    VC --> BUILD[npm run build]
+    VC --> IGNORE{vercel-ignore-build-step.sh}
+    IGNORE -->|純資料更新 exit 0| SKIP[跳過建置]
+    IGNORE -->|前端程式碼變更 exit 1| BUILD[npm run build]
     BUILD -->|tsc + Next.js| DEPLOY[Production Deploy]
     BUILD -->|失敗| ROLLBACK[Auto Rollback]
 ```
@@ -2893,6 +2895,8 @@ graph LR
 | Preview | 每個 PR 自動建立 Preview Deploy |
 | Domain | Vercel 自動 HTTPS |
 | Region | Washington D.C.（iad1）— Vercel Hobby 預設 |
+| Ignored Build Step | `bash ../vercel-ignore-build-step.sh`（純 `output/` 資料更新跳過建置，節省資源） |
+| 專案名稱 | `FinLab Taiwan Stock Sector Detection`（Vercel Dashboard + `package.json`） |
 
 ### 41.3 建置檢查清單
 
@@ -3184,6 +3188,7 @@ output/
 | 1.2 | 2026-04-09 | FinLab Team | 統一 7 個元件展開收合過渡動畫：SectorCard 移除硬編碼 max-h-1250 改用 CSS grid-template-rows 0fr→1fr；CommodityAlertBanner / CommodityCard / AccStockCard / MagaWatchlist / ConvergencePanel / TrumpFeedPanel 補上平滑過渡 |
 | 1.3 | 2026-04-09 | FinLab Team | 新增 UC-003a 隨日出場訊號提醒：五因子學術加權模型（RRG 30% + 加速度 25% + 籌碼 20% + 量價 15% + 共振 10%）；新增 exit_alert.py 分析器 + ExitAlertPanel.tsx 前端面板；商業規則 BR-050～BR-053 |
 | 1.4 | 2026-04-09 | FinLab Team | 新增 UC-003b 管理員自選持倉：解決演算法輪換導致出場警報失效問題。新增 admin-auth.ts 共用認證模組；新增 UserHoldingsManager.tsx 前端管理介面；新增 /api/user-holdings API route；新增 user_holdings.json 資料檔；PortfolioPanel 雙視圖切換（📌我的持倉 / 💡演算法建議）；exit_alert.py 優先讀取自選持倉；重構 manual-update/route.ts 共用 admin-auth；商業規則 BR-060～BR-063 |
+| 1.5 | 2026-04-11 | FinLab Team | **手動持倉損益顯示修復**：① `portfolio.py` `compute_pnl()` 新增 `user_holdings` keyword-only 參數，`run_portfolio_update()` 自動載入自選持倉並從 FinLab API 補充股價，使自選持倉損益正確寫入 `pnl.json`；② `holdings-utils.ts` `fillMarketData()` 新增 OHLCV fallback（BR-065）；③ 新增 Python 測試 `tests/test_portfolio_pnl.py`（6 cases）、前端測試 `holdings-utils.test.ts`（4 cases）；商業規則 BR-064, BR-065。**CI/CD 優化**：新增 `vercel-ignore-build-step.sh`（Vercel Ignored Build Step），避免 GitHub Actions bot 每 4 小時推送 `trump_signals.json` 觸發不必要的 Vercel 建置；`frontend/vercel.json` 新增 `ignoreCommand`；更新第 41 章建置流程圖與部署策略表。**IosInstallBanner ESLint 修復**：重構 `useEffect` 同步 setState 為 `detectBannerMode()` pure function + `useMemo` 初始化。**專案重命名**：Vercel 專案名稱與 `package.json` 更新為 `FinLab Taiwan Stock Sector Detection` |
 
 ---
 
