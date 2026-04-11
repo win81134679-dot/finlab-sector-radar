@@ -1,62 +1,21 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
   <defs>
-    <!-- Sweep gradient: transparent center → gold edge -->
-    <radialGradient id="sweepGrad" cx="256" cy="256" r="200" gradientUnits="userSpaceOnUse">
-      <stop offset="0%"   stop-color="#F59E0B" stop-opacity="0.05"/>
-      <stop offset="60%"  stop-color="#F59E0B" stop-opacity="0.35"/>
-      <stop offset="100%" stop-color="#F59E0B" stop-opacity="0.6"/>
+    <radialGradient id="bgGrad" cx="50%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#f4f4f5"/>
     </radialGradient>
-
-    <!-- Blip glow -->
-    <radialGradient id="blipGlow" cx="50%" cy="50%" r="50%">
-      <stop offset="0%"   stop-color="#FDE68A" stop-opacity="1"/>
-      <stop offset="100%" stop-color="#F59E0B" stop-opacity="0"/>
+    <radialGradient id="sweepFill" cx="256" cy="256" r="180" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#18181b" stop-opacity="0.06"/>
+      <stop offset="100%" stop-color="#18181b" stop-opacity="0.16"/>
     </radialGradient>
-
-    <!-- Subtle drop shadow for radar disk -->
-    <filter id="diskShadow" x="-10%" y="-10%" width="120%" height="120%">
-      <feDropShadow dx="0" dy="6" stdDeviation="12" flood-color="#1B2B5E" flood-opacity="0.18"/>
-    </filter>
   </defs>
-
-  <!-- White background -->
-  <rect width="512" height="512" fill="#FFFFFF"/>
-
-  <!-- Main radar disk (deep navy) -->
-  <circle cx="256" cy="256" r="202" fill="#1B2B5E" filter="url(#diskShadow)"/>
-  <!-- Slightly lighter inner disk for depth -->
-  <circle cx="256" cy="256" r="200" fill="#1E3270"/>
-
-  <!-- Radar rings (white, subtle) -->
-  <circle cx="256" cy="256" r="150" fill="none" stroke="white" stroke-width="1.5" opacity="0.18"/>
-  <circle cx="256" cy="256" r="100" fill="none" stroke="white" stroke-width="1.5" opacity="0.25"/>
-  <circle cx="256" cy="256" r="50"  fill="none" stroke="white" stroke-width="1.5" opacity="0.35"/>
-
-  <!-- Cross hairs -->
-  <line x1="256" y1="56"  x2="256" y2="456" stroke="white" stroke-width="1" opacity="0.12"/>
-  <line x1="56"  y1="256" x2="456" y2="256" stroke="white" stroke-width="1" opacity="0.12"/>
-
-  <!-- Radar sweep sector (gold, ~90° arc in upper-right) -->
-  <!-- From ~15° to ~105° clockwise from 12 o'clock -->
-  <path d="M256,256 L308,63 A200,200 0 0,1 449,308 Z"
-        fill="url(#sweepGrad)"/>
-
-  <!-- Sweep leading edge (bright gold line) -->
-  <line x1="256" y1="256" x2="449" y2="308" stroke="#F59E0B" stroke-width="2" opacity="0.7"/>
-
-  <!-- Blip 1 – bright, primary signal (upper right) -->
-  <circle cx="352" cy="148" r="18" fill="#F59E0B" opacity="0.15"/>
-  <circle cx="352" cy="148" r="9"  fill="#FDE68A"/>
-  <circle cx="352" cy="148" r="9"  fill="url(#blipGlow)"/>
-
-  <!-- Blip 2 – secondary signal (right) -->
-  <circle cx="390" cy="295" r="12" fill="#F59E0B" opacity="0.12"/>
-  <circle cx="390" cy="295" r="6"  fill="#FCD34D"/>
-
-  <!-- Blip 3 – dim older signal (upper center) -->
-  <circle cx="230" cy="120" r="5"  fill="white" opacity="0.35"/>
-
-  <!-- Center dot -->
-  <circle cx="256" cy="256" r="7"  fill="white"/>
-  <circle cx="256" cy="256" r="3"  fill="#F59E0B"/>
+  <rect width="512" height="512" fill="url(#bgGrad)"/>
+  <circle cx="256" cy="256" r="184" fill="none" stroke="#18181b" stroke-width="11"/>
+  <circle cx="256" cy="256" r="124" fill="none" stroke="#18181b" stroke-width="8" opacity="0.5"/>
+  <circle cx="256" cy="256" r="64" fill="none" stroke="#18181b" stroke-width="6" opacity="0.3"/>
+  <path d="M256,256 L362,97 A184,184 0 0,1 440,362 Z" fill="url(#sweepFill)"/>
+  <line x1="256" y1="256" x2="440" y2="362" stroke="#18181b" stroke-width="9" stroke-linecap="round" opacity="0.9"/>
+  <circle cx="346" cy="142" r="16" fill="#18181b"/>
+  <circle cx="346" cy="142" r="28" fill="none" stroke="#18181b" stroke-width="5" opacity="0.2"/>
+  <circle cx="256" cy="256" r="11" fill="#18181b"/>
 </svg>
