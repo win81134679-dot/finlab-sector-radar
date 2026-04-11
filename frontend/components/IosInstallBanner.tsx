@@ -74,7 +74,7 @@ export default function IosInstallBanner() {
           <circle cx="12" cy="12" r="1"/><circle cx="19" cy="12" r="1"/><circle cx="5" cy="12" r="1"/>
         </svg>
         <span>
-          點右下角「<strong>···</strong>」→「<strong>在 Safari 中開啟</strong>」，即可安裝為 APP
+          點右下角「<strong>···</strong>」→「<strong>用瀏覽器開啟</strong>」，即可安裝為 APP
         </span>
         <button
           onClick={dismiss}
