@@ -2,8 +2,7 @@
 export function SkeletonCard() {
   return (
     <div
-      className="rounded-2xl border border-zinc-200/60 dark:border-zinc-700/50
-                 bg-zinc-100 dark:bg-zinc-800/40 p-4 animate-pulse"
+      className="glass-card p-4 animate-pulse"
       aria-hidden="true"
     >
       {/* 標題行 */}

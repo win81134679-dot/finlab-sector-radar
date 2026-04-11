@@ -46,7 +46,7 @@ export function CommodityCard({ asset, isExpanded, onToggle }: Props) {
   }
 
   return (
-    <div className="rounded-xl border border-zinc-200/60 dark:border-zinc-700/40 bg-white/60 dark:bg-zinc-800/40 backdrop-blur overflow-hidden">
+    <div className="glass-card-sm">
       {/* 卡片頭部 */}
       <div
         className="flex items-center justify-between px-3 py-2.5 cursor-pointer hover:bg-zinc-50/80 dark:hover:bg-zinc-700/30 transition-colors"

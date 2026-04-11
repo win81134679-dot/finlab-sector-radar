@@ -20,15 +20,7 @@ function MacroCard({ title, value, subtitle, trend, positive, icon }: MacroCardP
     "text-zinc-400";
 
   return (
-    <div className="
-      relative overflow-hidden rounded-2xl
-      bg-white/80 dark:bg-zinc-800/60
-      border border-zinc-200/60 dark:border-zinc-700/50
-      backdrop-blur-sm
-      p-4 flex flex-col gap-1.5
-      hover:border-zinc-300 dark:hover:border-zinc-600
-      transition-all duration-200
-    ">
+    <div className="glass-card-sm relative p-4 flex flex-col gap-1.5">
       <div className="flex items-center justify-between">
         <span className="text-sm text-zinc-500 dark:text-zinc-400 font-medium">{title}</span>
         <span className="text-2xl">{icon}</span>

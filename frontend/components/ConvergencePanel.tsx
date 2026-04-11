@@ -166,7 +166,7 @@ function StockCard({ stock, isExpanded, onToggle, macroWarning }: {
     : "border-zinc-200/60 dark:border-zinc-700/50";
 
   return (
-    <div className={`rounded-xl border bg-white/70 dark:bg-zinc-900/50 overflow-hidden ${cardBorder}`}>
+    <div className={`glass-card-sm ${isFeatured ? "glass-sm-hot" : ""}`}>
       {/* NLP 空方衝擊警示條 */}
       {stock.nlpBearish && stock.nlpSeverity && (
         <div className={`flex items-center gap-1.5 px-3.5 py-1.5 text-[11px] font-medium border-b ${

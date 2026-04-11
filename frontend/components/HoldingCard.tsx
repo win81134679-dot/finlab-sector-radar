@@ -137,13 +137,13 @@ export function HoldingCard({ holding, onRemove, onEdit, onReduce, positions, sh
 
   // 卡片外框色彩依行動等級
   const borderCls =
-    h.action === "出場" ? "border-red-300/60 dark:border-red-700/50 bg-red-50/20 dark:bg-red-950/15"
-    : h.action === "減碼" ? "border-orange-300/60 dark:border-orange-700/50 bg-orange-50/20 dark:bg-orange-950/15"
-    : h.action === "加碼" ? "border-emerald-200/60 dark:border-emerald-700/50 bg-emerald-50/20 dark:bg-emerald-950/15"
-    : "border-zinc-200/60 dark:border-zinc-700/50 bg-white/70 dark:bg-zinc-900/50";
+    h.action === "出場" ? "glass-sm-hot"
+    : h.action === "減碼" ? "glass-sm-orange"
+    : h.action === "加碼" ? "glass-sm-green"
+    : "";
 
   return (
-    <div className={`rounded-xl border overflow-hidden transition-shadow hover:shadow-md ${borderCls}`}>
+    <div className={`glass-card-sm ${borderCls}`}>
       {/* ── Header ── */}
       <div className="px-3.5 pt-3 pb-2.5 space-y-2">
         {/* Row 1: ID + Name + Action badge */}

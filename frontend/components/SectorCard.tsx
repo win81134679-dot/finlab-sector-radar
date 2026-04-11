@@ -28,14 +28,11 @@ export function SectorCard({ sectorId, sector, featured = false, defaultExpanded
 
   return (
     <article
-      className={`
-        group rounded-2xl border backdrop-blur-sm
-        card-animate hover:-translate-y-1
-        transition-all duration-300
-        ${levelCfg.bgClass}
-        ${expanded ? "shadow-lg" : "hover:shadow-md hover:shadow-emerald-900/10 dark:hover:shadow-emerald-900/30"}
-        overflow-hidden
-      `}
+      className={`group card-animate ${
+        sector.level === "強烈關注" ? "glass-card-hot" :
+        sector.level === "觀察中"  ? "glass-card-warn" :
+        "glass-card"
+      }`}
       style={{ animationDelay: `${animIndex * 35}ms` }}
       aria-label={`${sector.name_zh} 板塊（${sector.level}）`}
     >
