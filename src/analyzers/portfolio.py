@@ -52,12 +52,17 @@ PnL（output/portfolio/pnl.json）
 from __future__ import annotations
 
 import json
+import logging
 from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
 
+logger = logging.getLogger(__name__)
+
 # 輸出目錄
 _OUTPUT_DIR = Path(__file__).parents[2] / "output" / "portfolio"
+# 用戶自選持倉（由前端 /api/user-holdings 寫入）
+_USER_HOLDINGS_PATH = _OUTPUT_DIR / "user_holdings.json"
 
 # 組合限制
 MAX_POSITIONS = 20       # 最多持倉數
@@ -80,6 +85,22 @@ def _save_json(path: Path, data: dict) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
     with open(path, "w", encoding="utf-8") as f:
         json.dump(data, f, ensure_ascii=False, indent=2)
+
+
+def _load_user_holdings() -> dict | None:
+    """載入管理員自選持倉（user_holdings.json）。失敗時回傳 None，不中斷流程。"""
+    if not _USER_HOLDINGS_PATH.exists():
+        return None
+    try:
+        with open(_USER_HOLDINGS_PATH, encoding="utf-8") as f:
+            data = json.load(f)
+        positions = data.get("positions", {})
+        if not isinstance(positions, dict):
+            return None
+        return data
+    except Exception as e:
+        logger.warning("載入 user_holdings.json 失敗: %s", e)
+        return None
 
 
 # ══════════════════════════════════════════════════════════════════════════
@@ -247,14 +268,20 @@ def inject_cycle_acceleration(
     return holdings
 
 
-def compute_pnl(holdings: dict, current_prices: dict[str, float | None]) -> dict[str, Any]:
+def compute_pnl(
+    holdings: dict,
+    current_prices: dict[str, float | None],
+    *,
+    user_holdings: dict | None = None,
+) -> dict[str, Any]:
     """
-    計算組合損益。
+    計算組合損益，包含用戶自選持倉。
 
     Parameters
     ----------
-    holdings       : build_suggested_holdings() 的輸出
+    holdings       : build_suggested_holdings() 的輸出（演算法建議持倉）
     current_prices : {ticker: latest_price}（可從 maga_stocks 取得）
+    user_holdings  : _load_user_holdings() 的輸出（用戶手動持倉），可選
 
     Returns
     -------
@@ -264,6 +291,7 @@ def compute_pnl(holdings: dict, current_prices: dict[str, float | None]) -> dict
     positions_in = holdings.get("positions", {})
     positions_out: dict[str, dict] = {}
 
+    # ── 1. 演算法建議持倉（以 added_at 計算持有天數）────────────────────
     for ticker, pos in positions_in.items():
         entry = pos.get("entry_price")
         current = current_prices.get(ticker)
@@ -295,12 +323,55 @@ def compute_pnl(holdings: dict, current_prices: dict[str, float | None]) -> dict
             "days_held":     days_held,
         }
 
-    # 加權組合損益
+    # ── 2. 用戶自選持倉（以 entry_date 計算持有天數）───────────────────
+    if user_holdings:
+        user_positions = user_holdings.get("positions", {})
+        for ticker, pos in user_positions.items():
+            if ticker in positions_out:
+                # 已由演算法持倉處理，跳過避免重複
+                continue
+
+            entry = pos.get("entry_price")
+            current = current_prices.get(ticker)
+            shares = pos.get("shares") or 0
+
+            pnl_pct = None
+            pnl_abs = None
+            if entry and current and entry > 0:
+                pnl_pct = round((current - entry) / entry * 100, 2)
+                pnl_abs = round((current - entry) * shares, 0)
+
+            # 用 entry_date 計算持有天數（用戶持倉以進場日為準）
+            days_held = 0
+            entry_date_str = pos.get("entry_date", "")
+            if entry_date_str:
+                try:
+                    entry_dt = datetime.fromisoformat(entry_date_str)
+                    # entry_date 可能是純日期字串，需補時區
+                    if entry_dt.tzinfo is None:
+                        entry_dt = entry_dt.replace(tzinfo=timezone.utc)
+                    days_held = (datetime.now(timezone.utc) - entry_dt).days
+                except ValueError:
+                    pass
+
+            positions_out[ticker] = {
+                "name_zh":       pos.get("name_zh", ticker),
+                "sector":        pos.get("sector", ""),
+                "entry_price":   entry,
+                "current_price": current,
+                "pnl_pct":       pnl_pct,
+                "pnl_abs":       pnl_abs,
+                "shares":        shares,
+                "days_held":     days_held,
+            }
+
+    # 加權組合損益（僅演算法持倉使用 weight 加權；user-only 股票 weight=0 不納入計算）
     portfolio_pnl: float | None = None
     weighted_pnls = [
-        (positions_out[t]["pnl_pct"], positions_in[t].get("weight", 0.0))
+        (positions_out[t]["pnl_pct"], positions_in.get(t, {}).get("weight", 0.0))
         for t in positions_out
         if positions_out[t]["pnl_pct"] is not None
+           and positions_in.get(t, {}).get("weight", 0.0) > 0
     ]
     if weighted_pnls:
         portfolio_pnl = round(
@@ -336,20 +407,43 @@ def run_portfolio_update(
     """
     一鍵執行：
       1. 建立/更新建議持倉
-      2. 計算損益
+      2. 計算損益（含用戶自選持倉）
       3. 寫出兩份 JSON
 
     Returns (holdings, pnl)
     """
     holdings = build_suggested_holdings(composite_result, maga_stocks, budget)
 
-    # 收集當前價格
+    # 收集演算法持倉的當前價格（從 MAGA stocks）
     current_prices: dict[str, float | None] = {
         s["id"]: s.get("price") or s.get("latest_price")
         for s in maga_stocks
     }
 
-    pnl = compute_pnl(holdings, current_prices)
+    # 載入用戶自選持倉
+    user_h = _load_user_holdings()
+
+    # 補充用戶持倉中不在 MAGA stocks 的股票價格（嘗試從 FinLab 取得）
+    if user_h:
+        algo_tickers = set(current_prices.keys())
+        user_only_tickers = [
+            t for t in user_h.get("positions", {}).keys()
+            if t not in algo_tickers
+        ]
+        if user_only_tickers:
+            try:
+                from finlab import data as _fl_data
+                df_close = _fl_data.get("price:收盤價")
+                if df_close is not None:
+                    for ticker in user_only_tickers:
+                        if ticker in df_close.columns:
+                            series = df_close[ticker].dropna()
+                            if not series.empty:
+                                current_prices[ticker] = float(series.iloc[-1])
+            except Exception as _e:
+                logger.debug("補充用戶持倉股價失敗（不影響主流程）: %s", _e)
+
+    pnl = compute_pnl(holdings, current_prices, user_holdings=user_h)
     return holdings, pnl
 
 

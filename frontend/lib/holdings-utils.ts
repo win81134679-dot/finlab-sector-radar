@@ -165,13 +165,26 @@ export function mergeHoldings(
       }
     }
 
-    // PnL
+    // PnL（優先使用 pnl.json 的 Python 後端計算結果）
     const pp = pnlPositions[h.stockId];
     if (pp) {
       h.currentPrice = pp.current_price;
       h.pnlPct = pp.pnl_pct;
       h.pnlAbs = pp.pnl_abs;
       h.daysHeld = pp.days_held;
+    }
+
+    // OHLCV fallback：pnl.json 無資料時，用最後一根 K 棒收盤價估算
+    // 適用於 user-only 股票且 Python 尚未執行或 pnl.json 未涵蓋該 ticker
+    if (h.pnlPct == null && h.entryPrice != null && h.entryPrice > 0 && h.ohlcv7d.length > 0) {
+      const lastBar = h.ohlcv7d[h.ohlcv7d.length - 1];
+      if (lastBar && lastBar.c > 0) {
+        h.currentPrice = lastBar.c;
+        h.pnlPct = Math.round(((lastBar.c - h.entryPrice) / h.entryPrice) * 10000) / 100;
+        h.pnlAbs = h.shares != null
+          ? Math.round((lastBar.c - h.entryPrice) * h.shares)
+          : null;
+      }
     }
 
     // daysHeld 前端補算：當 Python 回傳 0 但有 entryDate 時
