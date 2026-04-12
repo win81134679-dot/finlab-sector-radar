@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-04-10T13:56:23.729161+00:00",
+  "updated_at": "2026-04-12T18:09:16.746525+00:00",
   "positions": {
     "2330": {
       "name_zh": "台積電",
@@ -110,9 +110,19 @@
       "pnl_abs": 0.0,
       "shares": 1000,
       "days_held": 0
+    },
+    "2316": {
+      "name_zh": "楠梓電",
+      "sector": "pcb",
+      "entry_price": 116,
+      "current_price": 118.0,
+      "pnl_pct": 1.72,
+      "pnl_abs": 400.0,
+      "shares": 200,
+      "days_held": 2
     }
   },
   "portfolio_pnl_pct": 0.0,
-  "best_position": "2369",
+  "best_position": "2316",
   "worst_position": "2330"
 }
