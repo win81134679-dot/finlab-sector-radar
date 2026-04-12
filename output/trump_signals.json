@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-12T05:58:41.201Z",
+  "updatedAt": "2026-04-12T08:59:03.826Z",
   "posts": [
     {
       "text": "Tracking the Economic Impact of the Trump Tariffs - Tax Foundation Tracking the Economic Impact of the Trump Tariffs  Tax Foundation",
@@ -177,28 +177,6 @@
       }
     },
     {
-      "text": "A Year After ‘Liberation Day,’ Experts Review the Costs of Trump’s Tariffs - Council on Foreign Relations A Year After ‘Liberation Day,’ Experts Review the Costs of Trump’s Tariffs  Council on Foreign Relations",
-      "timestamp": "2026-04-02T07:00:00.000Z",
-      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNWmlydGN5Mm1BbDAxZk53Mld4d05rOWpERDJsM09qTDRnd21BQ1gxN3VMQzdVdVhiODhQdlE0RjNFbm03R216VmViZENoc2hjZDRMN09zT3hBTXNhLUtvUG10UWs2MjctSGhQUlVkYUd1bzJYa2ZQTXAxamlfRi1TaWQtOC01Z19yUmxiRXBuRVlpMTN6OWJGc3hzcUk2SkpD?oc=5",
-      "keywords": [
-        "tariff",
-        "tariffs",
-        "ev"
-      ],
-      "impacts": {
-        "foundry": -1,
-        "shipping": -1,
-        "steel": -1,
-        "ic_design": -1,
-        "display": -1,
-        "ev_supply": -0.6
-      },
-      "sentiment": {
-        "compound": -0.7184,
-        "label": "強烈利空"
-      }
-    },
-    {
       "text": "Trump threatens 50 percent tariffs on Iran arms supplies. His legal path is murky. - Politico Trump threatens 50 percent tariffs on Iran arms supplies. His legal path is murky.  Politico",
       "timestamp": "2026-04-08T13:35:10.000Z",
       "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxOakJwMjFkWmQ4eDlOdjlHXzF6bWJTeEF1bkZad1NJcEg5NC1zR3puREtMTEJuaVI4V2lRLUY2RldhV0JmUnFVZnktS1RfS1lhRHJ5Tkl3cms4X0JHc0dkTnBFcndCVFNqRFpMQUtzaVZVckdmSGw3MkZQcWY2Q3VTMUJKLUw1RnVmYWFWbExfdXAxQjc0b3JILWdXc0prR2c2eldTN2NIU2JQd29kNGdsSTRZbFhzeFkzNU5RU0xacDhubGNpbC1QRnZn?oc=5",
@@ -325,6 +303,24 @@
       }
     },
     {
+      "text": "China Hits Back at U.S. With New Trade Probes Ahead of Trump-Xi Summit - WSJ China Hits Back at U.S. With New Trade Probes Ahead of Trump-Xi Summit  WSJ",
+      "timestamp": "2026-03-27T07:00:00.000Z",
+      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQdE5iZExGbXQyV3FpYml1cWxhM3VBQWNPNlZqTG1xQ2ZjLXNsbW9HZmt2aTBHVDNiaHJ3QUgxUkNjVl84NXV4NEtQcTNOdzhtVlduOFhiT1E4Sl9ubG1VUlR4Mm1xM09NQ1NiWDE1T3dfR0FLUzRQd21OZXA3QXdUcHAzTzZtVnphR2lmdGRXZlVySE91?oc=5",
+      "keywords": [
+        "china"
+      ],
+      "impacts": {
+        "ic_design": -0.5,
+        "shipping": -0.4,
+        "display": -0.4,
+        "ev_supply": -0.3
+      },
+      "sentiment": {
+        "compound": 0,
+        "label": "中性"
+      }
+    },
+    {
       "text": "Trump Officials Look to More Managed Approach to Trade With China - The New York Times Trump Officials Look to More Managed Approach to Trade With China  The New York Times",
       "timestamp": "2026-03-16T07:00:00.000Z",
       "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPa1hBRnBWcWRzdWpiNUNfVFgxMEpUWEQycXBwVk1mN3V1bU50ZVBQQWFneFlrNU5KUUdqdWdUSnhaWGxzSzBSUGcxMlJxaERYLVp4UGtJRjBPeFU1MVdWYVNSRVBXcmk1R0l1MUFvaDN0a0hSaEN2Z2tBVVB4SVlkWlVRNEl2cnBSSUtWemMwVVZ4MFlpSWVJ?oc=5",
@@ -425,10 +421,9 @@
   ],
   "sectorState": {
     "foundry": {
-      "score": -0.907,
-      "lastUpdated": "2026-04-12T05:58:41.201Z",
+      "score": -0.896,
+      "lastUpdated": "2026-04-12T08:59:03.826Z",
       "deltaHistory": [
-        -0.0030000000000000027,
         -0.019000000000000017,
         -0.007000000000000006,
         0.02200000000000002,
@@ -437,14 +432,14 @@
         -0.0050000000000000044,
         -0.0030000000000000027,
         -0.039000000000000035,
-        -0.006000000000000005
+        -0.006000000000000005,
+        0.01100000000000001
       ]
     },
     "shipping": {
-      "score": -0.96,
-      "lastUpdated": "2026-04-12T05:58:41.201Z",
+      "score": -0.956,
+      "lastUpdated": "2026-04-12T08:59:03.826Z",
       "deltaHistory": [
-        0,
         -0.006000000000000005,
         -0.008000000000000007,
         0.008000000000000007,
@@ -453,14 +448,14 @@
         0,
         -0.0010000000000000009,
         0.0010000000000000009,
-        -0.0020000000000000018
+        -0.0020000000000000018,
+        0.0040000000000000036
       ]
     },
     "steel": {
-      "score": -0.89,
-      "lastUpdated": "2026-04-12T05:58:41.201Z",
+      "score": -0.877,
+      "lastUpdated": "2026-04-12T08:59:03.826Z",
       "deltaHistory": [
-        -0.0040000000000000036,
         -0.029000000000000026,
         0.135,
         -0.13,
@@ -469,12 +464,13 @@
         -0.0040000000000000036,
         -0.0020000000000000018,
         -0.11499999999999999,
-        -0.0020000000000000018
+        -0.0020000000000000018,
+        0.013000000000000012
       ]
     },
     "ic_design": {
       "score": -1,
-      "lastUpdated": "2026-04-12T05:58:41.201Z",
+      "lastUpdated": "2026-04-12T08:59:03.826Z",
       "deltaHistory": [
         0,
         0,
@@ -489,10 +485,9 @@
       ]
     },
     "display": {
-      "score": -0.959,
-      "lastUpdated": "2026-04-12T05:58:41.201Z",
+      "score": -0.955,
+      "lastUpdated": "2026-04-12T08:59:03.826Z",
       "deltaHistory": [
-        0,
         -0.0050000000000000044,
         0.08900000000000008,
         -0.08600000000000008,
@@ -501,14 +496,14 @@
         -0.0010000000000000009,
         -0.0010000000000000009,
         -0.05399999999999994,
-        -0.0030000000000000027
+        -0.0030000000000000027,
+        0.0040000000000000036
       ]
     },
     "ev_supply": {
-      "score": -0.774,
-      "lastUpdated": "2026-04-12T05:58:41.201Z",
+      "score": -0.78,
+      "lastUpdated": "2026-04-12T08:59:03.826Z",
       "deltaHistory": [
-        0.0020000000000000018,
         -0.01100000000000001,
         0.08000000000000007,
         -0.07600000000000007,
@@ -517,14 +512,14 @@
         -0.0020000000000000018,
         -0.0010000000000000009,
         -0.020000000000000018,
-        -0.0020000000000000018
+        -0.0020000000000000018,
+        -0.006000000000000005
       ]
     },
     "ai_server": {
-      "score": 0.145,
-      "lastUpdated": "2026-04-12T05:58:41.201Z",
+      "score": 0.149,
+      "lastUpdated": "2026-04-12T08:59:03.826Z",
       "deltaHistory": [
-        0.0020000000000000018,
         -0.0050000000000000044,
         0.0040000000000000036,
         0.023000000000000007,
@@ -533,14 +528,14 @@
         -0.0030000000000000027,
         -0.0059999999999999915,
         0.052000000000000005,
-        -0.02100000000000002
+        -0.02100000000000002,
+        0.0040000000000000036
       ]
     },
     "defense": {
-      "score": 0.127,
-      "lastUpdated": "2026-04-12T05:58:41.201Z",
+      "score": 0.129,
+      "lastUpdated": "2026-04-12T08:59:03.826Z",
       "deltaHistory": [
-        0,
         0,
         -0.005999999999999998,
         0.0019999999999999983,
@@ -549,7 +544,8 @@
         0,
         0.005000000000000001,
         0.11199999999999999,
-        -0.017999999999999988
+        -0.017999999999999988,
+        0.0020000000000000018
       ]
     },
     "solar": {
@@ -602,7 +598,7 @@
     },
     "semiconductor_equip": {
       "score": 0.003,
-      "lastUpdated": "2026-04-12T05:58:41.201Z",
+      "lastUpdated": "2026-04-12T08:59:03.826Z",
       "deltaHistory": [
         0,
         0,
@@ -611,14 +607,14 @@
         0,
         0,
         0,
-        0,
         0.002,
+        0,
         0
       ]
     },
     "robotics": {
       "score": 0.003,
-      "lastUpdated": "2026-04-12T05:58:41.201Z",
+      "lastUpdated": "2026-04-12T08:59:03.826Z",
       "deltaHistory": [
         0,
         0,
@@ -627,8 +623,8 @@
         0,
         0,
         0,
-        0,
         0.002,
+        0,
         0
       ]
     },
@@ -673,7 +669,7 @@
     },
     "gaming": {
       "score": 0.001,
-      "lastUpdated": "2026-04-12T05:58:41.201Z",
+      "lastUpdated": "2026-04-12T08:59:03.826Z",
       "deltaHistory": [
         0,
         0,
