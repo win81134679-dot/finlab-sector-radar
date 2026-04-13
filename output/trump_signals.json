@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-13T03:38:27.436Z",
+  "updatedAt": "2026-04-13T06:22:12.190Z",
   "posts": [
     {
       "text": "Tracking the Economic Impact of the Trump Tariffs - Tax Foundation Tracking the Economic Impact of the Trump Tariffs  Tax Foundation",
@@ -23,29 +23,6 @@
       }
     },
     {
-      "text": "Trump Warns China Explicitly Over Iran Weapons, Threatens ‘50% Tariff’ - Newsweek Trump Warns China Explicitly Over Iran Weapons, Threatens ‘50% Tariff’  Newsweek",
-      "timestamp": "2026-04-12T21:18:00.000Z",
-      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNQk56VVlfU0hrcjNUYzE0SzJKRGVLSFByblU0UjExWDdkMUNYanpadGZSajJpTTlQd2F6RENXMXVTLWFZV0dvd2NzOU5pQTI0bFFzRkxFd1RmeVpQeV9aam1BWkZCWDNzSFpSMGdoamZhS05sUGdBSm1oRjdWR2p2UUYxYjMtd2RKenFueA?oc=5",
-      "keywords": [
-        "tariff",
-        "china",
-        "weapon"
-      ],
-      "impacts": {
-        "foundry": -0.7,
-        "shipping": -0.9,
-        "steel": -0.5,
-        "ic_design": -1,
-        "display": -0.9,
-        "ev_supply": -0.7,
-        "defense": 0.7
-      },
-      "sentiment": {
-        "compound": -0.7184,
-        "label": "強烈利空"
-      }
-    },
-    {
       "text": "Trump threatens 50% tariffs on countries that supply Iran with weapons - Al Jazeera Trump threatens 50% tariffs on countries that supply Iran with weapons  Al Jazeera",
       "timestamp": "2026-04-08T21:30:24.000Z",
       "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPOEdpaWR3eTFXcHFFUm5fd1hWYy1IcFRYamNZRWp2V1k2c29JZjdLWjRjcGxUVUZmR2dhdkZFWGd6ZUtCQm93cDF5eDZvbVF2ZDAzTGxnME5sLS1ESnRMNXBkeVVNMGhoeTZGMjVqcHdJTTlOZkQtQTluY3FRX0ViY3ZhMmN6S0stQTlmc3JsSVJxZWNnRHNUeFpPemVBeVd3OGlIQmdMYTR6amtkR3U3X2pR0gG3AUFVX3lxTE9uY1hxODcxYkdYMVk3ZXhYY1MzcGVvelBKNVNvOVdnS1BYak5adU4xc2lCbmowdlJYbmEyUmJvYkZSUXZYLU1DTWdSaUo5cGpFUFN4TTJxMGNOSGJQNFpZVXNEX1ItRnFoYjlQN2hlVEJEQU9DdzNMYzgzb1JGLWpWOEpFcHJtQndCNXJacVNhZXdNWVpJTXZ6N0VxdHMzQ2lITmQ1VW5FTHQ1T2E2Q0ZmWTQ0UDNSSQ?oc=5",
@@ -61,6 +38,29 @@
         "ic_design": -1,
         "display": -1,
         "ev_supply": -0.8,
+        "defense": 0.7
+      },
+      "sentiment": {
+        "compound": -0.7184,
+        "label": "強烈利空"
+      }
+    },
+    {
+      "text": "Trump Warns China Explicitly Over Iran Weapons, Threatens ‘50% Tariff’ - Newsweek Trump Warns China Explicitly Over Iran Weapons, Threatens ‘50% Tariff’  Newsweek",
+      "timestamp": "2026-04-12T21:18:00.000Z",
+      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNQk56VVlfU0hrcjNUYzE0SzJKRGVLSFByblU0UjExWDdkMUNYanpadGZSajJpTTlQd2F6RENXMXVTLWFZV0dvd2NzOU5pQTI0bFFzRkxFd1RmeVpQeV9aam1BWkZCWDNzSFpSMGdoamZhS05sUGdBSm1oRjdWR2p2UUYxYjMtd2RKenFueA?oc=5",
+      "keywords": [
+        "tariff",
+        "china",
+        "weapon"
+      ],
+      "impacts": {
+        "foundry": -0.7,
+        "shipping": -0.9,
+        "steel": -0.5,
+        "ic_design": -1,
+        "display": -0.9,
+        "ev_supply": -0.7,
         "defense": 0.7
       },
       "sentiment": {
@@ -175,6 +175,27 @@
       "sentiment": {
         "compound": 0,
         "label": "中性"
+      }
+    },
+    {
+      "text": "US-China Tariff Rates - What Are They Now? - China Briefing US-China Tariff Rates - What Are They Now?  China Briefing",
+      "timestamp": "2026-03-27T07:00:00.000Z",
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTFA3STlnT1E2aUIyX2JpeEFudzFKY290X0lPMU9lUDBwMTRXQ18yOVk0d1pYckszbGJ3MDVkakVBNHFFdW94N25jcUM3SHZRNnJBbHdkUWF4Q3BMQWFOb2s3dVpFaEgwSzd4MzhTYnlWRmI?oc=5",
+      "keywords": [
+        "tariff",
+        "china"
+      ],
+      "impacts": {
+        "foundry": -0.7,
+        "shipping": -0.9,
+        "steel": -0.5,
+        "ic_design": -1,
+        "display": -0.9,
+        "ev_supply": -0.7
+      },
+      "sentiment": {
+        "compound": -0.7184,
+        "label": "強烈利空"
       }
     },
     {
@@ -420,80 +441,19 @@
         "compound": -0.25,
         "label": "偏空"
       }
-    },
-    {
-      "text": "‘Never interrupt your adversary when he’s making a mistake’: Why Beijing isn't rushing to answer Trump’s tariff broadside - CNBC ‘Never interrupt your adversary when he’s making a mistake’: Why Beijing isn't rushing to answer Trump’s tariff broadside  CNBC",
-      "timestamp": "2026-01-27T08:00:00.000Z",
-      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNQ0pXaTBqMnRhalB1VFZxZGNSaXRwUDFraGtxZlA3NzFuMkdqRDNEUmY5TXNqVEhDaEliNzhmd2RMR1pEYWJCLUFUVVQtS1Y1TzBJYVFHdEQ5S19Ga1A3TzViTEhNNXFGY0tSSXFyTEFHZ1VYT0NkLUxfUU0wanA5d1RHU1JEZmlHSUxmM0dTa09aV2k2MXdDSGRFcVNmVU5JZllmRG1wWEVCU21ZY3A3ZDFKOW5Ga1BLOGZjUy1LZFfSAcYBQVVfeXFMUDFWT1ZnNldxX1o3MDJnaFpUVHVzNGFrX2dFWVJIa2s0akFSeHUtSjB3eDRyaktUYmZNaGZJR0g5NnM0VXpkZnNEVTJOVHM2TDduU1ktS2I5a3ZnRlNkSlBwX2hBYzFudi1ickdIbzROS1VVVk5xLXpNZ2gwTE55NFRkTDUwZm93Y3MzYjVZMWhRTDRUY3FKdWQ4VUE3dzJWVlVwN3dXOU5GRnQ2UUV6QXJ5cWtCTDJWc0V1OVhRbE9UWnFkUjVn?oc=5",
-      "keywords": [
-        "tariff",
-        "beijing",
-        "ev"
-      ],
-      "impacts": {
-        "foundry": -0.7,
-        "shipping": -0.8,
-        "steel": -0.5,
-        "ic_design": -1,
-        "display": -0.5,
-        "ev_supply": -0.2
-      },
-      "sentiment": {
-        "compound": -0.7184,
-        "label": "強烈利空"
-      }
     }
   ],
-  "deltas": [
-    {
-      "sector": "defense",
-      "sectorName": "國防/軍工",
-      "prev": 0.1,
-      "current": 0.175,
-      "delta": 0.075,
-      "momentum": "↑ 訊號強化",
-      "accelerating": true
-    },
-    {
-      "sector": "foundry",
-      "sectorName": "晶圓代工",
-      "prev": -0.784,
-      "current": -0.841,
-      "delta": -0.057,
-      "momentum": "↓ 壓力加深",
-      "accelerating": false
-    }
-  ],
-  "topDeltas": [
-    {
-      "sector": "defense",
-      "sectorName": "國防/軍工",
-      "prev": 0.1,
-      "current": 0.175,
-      "delta": 0.075,
-      "momentum": "↑ 訊號強化",
-      "accelerating": true
-    },
-    {
-      "sector": "foundry",
-      "sectorName": "晶圓代工",
-      "prev": -0.784,
-      "current": -0.841,
-      "delta": -0.057,
-      "momentum": "↓ 壓力加深",
-      "accelerating": false
-    }
-  ],
+  "deltas": [],
+  "topDeltas": [],
   "totalAnalyzed": 100,
   "sources": [
     "Google News"
   ],
   "sectorState": {
     "foundry": {
-      "score": -0.841,
-      "lastUpdated": "2026-04-13T03:38:27.436Z",
+      "score": -0.84,
+      "lastUpdated": "2026-04-13T06:22:12.190Z",
       "deltaHistory": [
-        0.016000000000000014,
         -0.0050000000000000044,
         -0.0030000000000000027,
         -0.039000000000000035,
@@ -502,14 +462,14 @@
         -0.006000000000000005,
         0.03700000000000003,
         0.08099999999999996,
-        -0.05699999999999994
+        -0.05699999999999994,
+        0.0010000000000000009
       ]
     },
     "shipping": {
-      "score": -0.938,
-      "lastUpdated": "2026-04-13T03:38:27.436Z",
+      "score": -0.942,
+      "lastUpdated": "2026-04-13T06:22:12.190Z",
       "deltaHistory": [
-        0.007000000000000006,
         0,
         -0.0010000000000000009,
         0.0010000000000000009,
@@ -518,14 +478,14 @@
         -0.030000000000000027,
         0,
         0.05499999999999994,
-        -0.006999999999999895
+        -0.006999999999999895,
+        -0.0040000000000000036
       ]
     },
     "steel": {
-      "score": -0.76,
-      "lastUpdated": "2026-04-13T03:38:27.436Z",
+      "score": -0.758,
+      "lastUpdated": "2026-04-13T06:22:12.190Z",
       "deltaHistory": [
-        0.027000000000000024,
         -0.0040000000000000036,
         -0.0020000000000000018,
         -0.11499999999999999,
@@ -534,12 +494,13 @@
         -0.018000000000000016,
         0.061000000000000054,
         0.10599999999999998,
-        -0.03200000000000003
+        -0.03200000000000003,
+        0.0020000000000000018
       ]
     },
     "ic_design": {
       "score": -1,
-      "lastUpdated": "2026-04-13T03:38:27.436Z",
+      "lastUpdated": "2026-04-13T06:22:12.190Z",
       "deltaHistory": [
         0,
         0,
@@ -555,9 +516,8 @@
     },
     "display": {
       "score": -0.931,
-      "lastUpdated": "2026-04-13T03:38:27.436Z",
+      "lastUpdated": "2026-04-13T06:22:12.190Z",
       "deltaHistory": [
-        0.007000000000000006,
         -0.0010000000000000009,
         -0.0010000000000000009,
         -0.05399999999999994,
@@ -566,14 +526,14 @@
         -0.006000000000000005,
         0.016000000000000014,
         0.0129999999999999,
-        0.0010000000000000009
+        0.0010000000000000009,
+        0
       ]
     },
     "ev_supply": {
-      "score": -0.759,
-      "lastUpdated": "2026-04-13T03:38:27.436Z",
+      "score": -0.756,
+      "lastUpdated": "2026-04-13T06:22:12.190Z",
       "deltaHistory": [
-        0.015000000000000013,
         -0.0020000000000000018,
         -0.0010000000000000009,
         -0.020000000000000018,
@@ -582,14 +542,14 @@
         0.0030000000000000027,
         0.0040000000000000036,
         -0.0040000000000000036,
-        0.018000000000000016
+        0.018000000000000016,
+        0.0030000000000000027
       ]
     },
     "ai_server": {
-      "score": 0.089,
-      "lastUpdated": "2026-04-13T03:38:27.436Z",
+      "score": 0.084,
+      "lastUpdated": "2026-04-13T06:22:12.190Z",
       "deltaHistory": [
-        0.0059999999999999915,
         -0.0030000000000000027,
         -0.0059999999999999915,
         0.052000000000000005,
@@ -598,14 +558,14 @@
         0.0020000000000000018,
         -0.0020000000000000018,
         -0.044,
-        -0.016
+        -0.016,
+        -0.0049999999999999906
       ]
     },
     "defense": {
-      "score": 0.175,
-      "lastUpdated": "2026-04-13T03:38:27.436Z",
+      "score": 0.174,
+      "lastUpdated": "2026-04-13T06:22:12.190Z",
       "deltaHistory": [
-        0.0010000000000000009,
         0,
         0.005000000000000001,
         0.11199999999999999,
@@ -614,7 +574,8 @@
         -0.0030000000000000027,
         0.017999999999999988,
         -0.043999999999999984,
-        0.07499999999999998
+        0.07499999999999998,
+        -0.0010000000000000009
       ]
     },
     "solar": {
@@ -667,15 +628,15 @@
     },
     "semiconductor_equip": {
       "score": 0,
-      "lastUpdated": "2026-04-13T03:38:27.436Z",
+      "lastUpdated": "2026-04-13T06:22:12.190Z",
       "deltaHistory": [
-        0,
         0,
         0,
         0.002,
         0,
         0,
         -0.003,
+        0,
         0,
         0,
         0
@@ -683,9 +644,8 @@
     },
     "robotics": {
       "score": 0,
-      "lastUpdated": "2026-04-13T03:38:27.436Z",
+      "lastUpdated": "2026-04-13T06:22:12.190Z",
       "deltaHistory": [
-        0,
         0,
         0,
         0.002,
@@ -694,18 +654,19 @@
         -0.003,
         0,
         0,
+        0,
         0
       ]
     },
     "packaging": {
       "score": 0,
-      "lastUpdated": "2026-04-13T03:38:27.436Z",
+      "lastUpdated": "2026-04-13T06:22:12.190Z",
       "deltaHistory": [
-        0.001,
         0,
         -0.001,
         0.002,
         0.001,
+        0,
         0,
         0,
         0,
