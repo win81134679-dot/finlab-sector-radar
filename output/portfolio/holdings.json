@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-04-15T12:58:41.593771+00:00",
+  "updated_at": "2026-04-15T13:41:56.768609+00:00",
   "positions": {
     "2330": {
       "name_zh": "台積電",
@@ -9,7 +9,7 @@
       "entry_price": 2080.0,
       "shares": 0,
       "weight": 0.0857,
-      "added_at": "2026-04-15T12:58:41.589259+00:00",
+      "added_at": "2026-04-15T13:41:55.510355+00:00",
       "reason": "訊號進場"
     },
     "2303": {
@@ -20,7 +20,7 @@
       "entry_price": 62.1,
       "shares": 1000,
       "weight": 0.0857,
-      "added_at": "2026-04-15T12:58:41.589259+00:00",
+      "added_at": "2026-04-15T13:41:55.510355+00:00",
       "reason": "訊號進場"
     },
     "5347": {
@@ -31,7 +31,7 @@
       "entry_price": 127.5,
       "shares": 0,
       "weight": 0.0857,
-      "added_at": "2026-04-15T12:58:41.589259+00:00",
+      "added_at": "2026-04-15T13:41:55.510355+00:00",
       "reason": "訊號進場"
     },
     "6770": {
@@ -42,7 +42,7 @@
       "entry_price": 53.2,
       "shares": 1000,
       "weight": 0.0857,
-      "added_at": "2026-04-15T12:58:41.589259+00:00",
+      "added_at": "2026-04-15T13:41:55.510355+00:00",
       "reason": "訊號進場"
     },
     "8150": {
@@ -53,7 +53,7 @@
       "entry_price": 67.0,
       "shares": 0,
       "weight": 0.0571,
-      "added_at": "2026-04-15T12:58:41.589259+00:00",
+      "added_at": "2026-04-15T13:41:55.510355+00:00",
       "reason": "訊號進場"
     },
     "3711": {
@@ -64,7 +64,7 @@
       "entry_price": 446.5,
       "shares": 0,
       "weight": 0.0714,
-      "added_at": "2026-04-15T12:58:41.589259+00:00",
+      "added_at": "2026-04-15T13:41:55.510355+00:00",
       "reason": "訊號進場"
     },
     "2449": {
@@ -75,7 +75,7 @@
       "entry_price": 291.0,
       "shares": 0,
       "weight": 0.0714,
-      "added_at": "2026-04-15T12:58:41.589259+00:00",
+      "added_at": "2026-04-15T13:41:55.510355+00:00",
       "reason": "訊號進場"
     },
     "6257": {
@@ -86,7 +86,7 @@
       "entry_price": 179.0,
       "shares": 0,
       "weight": 0.0714,
-      "added_at": "2026-04-15T12:58:41.589259+00:00",
+      "added_at": "2026-04-15T13:41:55.510355+00:00",
       "reason": "訊號進場"
     },
     "2441": {
@@ -97,7 +97,7 @@
       "entry_price": 88.7,
       "shares": 0,
       "weight": 0.0714,
-      "added_at": "2026-04-15T12:58:41.589259+00:00",
+      "added_at": "2026-04-15T13:41:55.510355+00:00",
       "reason": "訊號進場"
     },
     "6239": {
@@ -108,7 +108,7 @@
       "entry_price": 210.0,
       "shares": 0,
       "weight": 0.0714,
-      "added_at": "2026-04-15T12:58:41.589259+00:00",
+      "added_at": "2026-04-15T13:41:55.510355+00:00",
       "reason": "訊號進場"
     },
     "2369": {
@@ -119,66 +119,42 @@
       "entry_price": 31.4,
       "shares": 1000,
       "weight": 0.0429,
-      "added_at": "2026-04-15T12:58:41.589259+00:00",
+      "added_at": "2026-04-15T13:41:55.510355+00:00",
       "reason": "訊號進場"
     },
-    "2327": {
-      "name_zh": "2327",
-      "sector": "power_components",
+    "3665": {
+      "name_zh": "3665",
+      "sector": "connector",
       "category": "neutral",
       "composite_score": 0.0,
       "entry_price": null,
       "shares": null,
       "weight": 0.0,
-      "added_at": "2026-04-15T12:58:41.593771+00:00",
+      "added_at": "2026-04-15T13:41:56.768609+00:00",
       "reason": "cycle_acceleration (加速期)",
       "exit_alert": false
     },
-    "2308": {
-      "name_zh": "2308",
-      "sector": "power_components",
+    "5457": {
+      "name_zh": "5457",
+      "sector": "connector",
       "category": "neutral",
       "composite_score": 0.0,
       "entry_price": null,
       "shares": null,
       "weight": 0.0,
-      "added_at": "2026-04-15T12:58:41.593771+00:00",
+      "added_at": "2026-04-15T13:41:56.768609+00:00",
       "reason": "cycle_acceleration (加速期)",
       "exit_alert": false
     },
-    "2301": {
-      "name_zh": "2301",
-      "sector": "power_components",
+    "3533": {
+      "name_zh": "3533",
+      "sector": "connector",
       "category": "neutral",
       "composite_score": 0.0,
       "entry_price": null,
       "shares": null,
       "weight": 0.0,
-      "added_at": "2026-04-15T12:58:41.593771+00:00",
-      "reason": "cycle_acceleration (加速期)",
-      "exit_alert": false
-    },
-    "3026": {
-      "name_zh": "3026",
-      "sector": "power_components",
-      "category": "neutral",
-      "composite_score": 0.0,
-      "entry_price": null,
-      "shares": null,
-      "weight": 0.0,
-      "added_at": "2026-04-15T12:58:41.593771+00:00",
-      "reason": "cycle_acceleration (加速期)",
-      "exit_alert": false
-    },
-    "3211": {
-      "name_zh": "3211",
-      "sector": "energy_storage",
-      "category": "neutral",
-      "composite_score": 0.0,
-      "entry_price": null,
-      "shares": null,
-      "weight": 0.0,
-      "added_at": "2026-04-15T12:58:41.593771+00:00",
+      "added_at": "2026-04-15T13:41:56.768609+00:00",
       "reason": "cycle_acceleration (加速期)",
       "exit_alert": false
     }
