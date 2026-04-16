@@ -1,11 +1,11 @@
 {
-  "updated_at": "2026-04-15T13:41:56.764977+00:00",
+  "updated_at": "2026-04-16T12:56:46.165510+00:00",
   "positions": {
     "2330": {
       "name_zh": "台積電",
       "sector": "foundry",
-      "entry_price": 2080.0,
-      "current_price": 2080.0,
+      "entry_price": 2085.0,
+      "current_price": 2085.0,
       "pnl_pct": 0.0,
       "pnl_abs": 0.0,
       "shares": 0,
@@ -14,8 +14,8 @@
     "2303": {
       "name_zh": "聯電",
       "sector": "foundry",
-      "entry_price": 62.1,
-      "current_price": 62.1,
+      "entry_price": 68.3,
+      "current_price": 68.3,
       "pnl_pct": 0.0,
       "pnl_abs": 0.0,
       "shares": 1000,
@@ -24,8 +24,8 @@
     "5347": {
       "name_zh": "世界先進",
       "sector": "foundry",
-      "entry_price": 127.5,
-      "current_price": 127.5,
+      "entry_price": 132.5,
+      "current_price": 132.5,
       "pnl_pct": 0.0,
       "pnl_abs": 0.0,
       "shares": 0,
@@ -34,8 +34,8 @@
     "6770": {
       "name_zh": "力積電",
       "sector": "foundry",
-      "entry_price": 53.2,
-      "current_price": 53.2,
+      "entry_price": 54.0,
+      "current_price": 54.0,
       "pnl_pct": 0.0,
       "pnl_abs": 0.0,
       "shares": 1000,
@@ -44,8 +44,8 @@
     "8150": {
       "name_zh": "8150",
       "sector": "foundry",
-      "entry_price": 67.0,
-      "current_price": 67.0,
+      "entry_price": 73.7,
+      "current_price": 73.7,
       "pnl_pct": 0.0,
       "pnl_abs": 0.0,
       "shares": 0,
@@ -54,8 +54,8 @@
     "3711": {
       "name_zh": "日月光",
       "sector": "packaging",
-      "entry_price": 446.5,
-      "current_price": 446.5,
+      "entry_price": 450.5,
+      "current_price": 450.5,
       "pnl_pct": 0.0,
       "pnl_abs": 0.0,
       "shares": 0,
@@ -64,8 +64,8 @@
     "2449": {
       "name_zh": "京元電",
       "sector": "packaging",
-      "entry_price": 291.0,
-      "current_price": 291.0,
+      "entry_price": 283.5,
+      "current_price": 283.5,
       "pnl_pct": 0.0,
       "pnl_abs": 0.0,
       "shares": 0,
@@ -74,8 +74,8 @@
     "6257": {
       "name_zh": "矽格",
       "sector": "packaging",
-      "entry_price": 179.0,
-      "current_price": 179.0,
+      "entry_price": 180.0,
+      "current_price": 180.0,
       "pnl_pct": 0.0,
       "pnl_abs": 0.0,
       "shares": 0,
@@ -84,8 +84,8 @@
     "2441": {
       "name_zh": "超豐",
       "sector": "packaging",
-      "entry_price": 88.7,
-      "current_price": 88.7,
+      "entry_price": 89.5,
+      "current_price": 89.5,
       "pnl_pct": 0.0,
       "pnl_abs": 0.0,
       "shares": 0,
@@ -94,8 +94,8 @@
     "6239": {
       "name_zh": "6239",
       "sector": "packaging",
-      "entry_price": 210.0,
-      "current_price": 210.0,
+      "entry_price": 212.5,
+      "current_price": 212.5,
       "pnl_pct": 0.0,
       "pnl_abs": 0.0,
       "shares": 0,
@@ -104,8 +104,8 @@
     "2369": {
       "name_zh": "2369",
       "sector": "packaging",
-      "entry_price": 31.4,
-      "current_price": 31.4,
+      "entry_price": 31.1,
+      "current_price": 31.1,
       "pnl_pct": 0.0,
       "pnl_abs": 0.0,
       "shares": 1000,
@@ -115,11 +115,11 @@
       "name_zh": "楠梓電",
       "sector": "pcb",
       "entry_price": 116,
-      "current_price": 115.5,
-      "pnl_pct": -0.43,
-      "pnl_abs": -100.0,
+      "current_price": 114.5,
+      "pnl_pct": -1.29,
+      "pnl_abs": -300.0,
       "shares": 200,
-      "days_held": 5
+      "days_held": 6
     }
   },
   "portfolio_pnl_pct": 0.0,
