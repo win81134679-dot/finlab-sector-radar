@@ -1,22 +1,8 @@
 {
-  "updated_at": "2026-04-16T14:22:01.382436+00:00",
+  "updated_at": "2026-04-17T12:56:48.582163+00:00",
   "system_risk_level": "low",
   "systemic_sector_count": 0,
-  "sector_alerts": {
-    "solar": {
-      "score": 45,
-      "action": "留意",
-      "delta": 0,
-      "prev_score": 40,
-      "current_exit_risk": 40,
-      "triggers": [
-        "RRG 轉弱/落後象限（de Kempenaer 2014）",
-        "技術動能消退（Lo et al. 2000）"
-      ],
-      "cycle_stage": "加速期",
-      "sector_name": "太陽能"
-    }
-  },
+  "sector_alerts": {},
   "position_alerts": {},
   "summary": {
     "exit_count": 0,
