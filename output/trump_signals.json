@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-17T20:55:29.850Z",
+  "updatedAt": "2026-04-18T03:17:57.747Z",
   "posts": [
     {
       "text": "Are Trump's tariffs really dead? Here's what's happening behind the scenes - USA Today Are Trump's tariffs really dead? Here's what's happening behind the scenes  USA Today",
@@ -8,29 +8,6 @@
       "keywords": [
         "tariff",
         "tariffs"
-      ],
-      "impacts": {
-        "foundry": -1,
-        "shipping": -1,
-        "steel": -1,
-        "ic_design": -1,
-        "display": -1,
-        "ev_supply": -0.8
-      },
-      "sentiment": {
-        "compound": -0.7184,
-        "label": "強烈利空"
-      }
-    },
-    {
-      "text": "Trump’s tariffs dealt economic blows in all 50 states—hurting farmers, exporters, and shoppers alike - Fortune Trump’s tariffs dealt economic blows in all 50 states—hurting farmers, exporters, and shoppers alike  Fortune",
-      "timestamp": "2026-04-14T17:18:00.000Z",
-      "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxObl9CekI4SU1ucmFNd0ZSVFJVQkJJRVVRNXNaaUstQTI1R2RZVU9BaFRoNTlaSEgtSHl0SnplbUkxV3M2OWpTT3VqRGpFa0hEUkdzMjZMQ25rVHZoTFYtcWtWU0FKY3l6dENycE1RazV5NFVCdU5ObHZuX3VVTmhHVlFNNXo1RkU?oc=5",
-      "keywords": [
-        "tariff",
-        "tariffs",
-        "deal",
-        "port"
       ],
       "impacts": {
         "foundry": -1,
@@ -66,12 +43,14 @@
       }
     },
     {
-      "text": "How Americans view Trump’s handling of trade and tariffs - Pew Research Center How Americans view Trump’s handling of trade and tariffs  Pew Research Center",
-      "timestamp": "2026-04-01T07:00:00.000Z",
-      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQdTZKYXp1NzJEbDNrYlBnb3h0YmQweXl6ZUtmT0dLY0xhd2pVWXpDdWtrcWpXWjRwQUdPRFZuR2tEY0ZETHVFNy1Qb3A2dUlQOFpNNGx4cy1QVUlzTTNjUnM1VlMyallfRUVTX2h3T2ZoVlZuMmphX1hLZDBMVlpXX2p3UDF2X01rWUg2TTZnS25FY2g2amFwNThEY0Q4UTdkbGoyMUJZSXhvLVk?oc=5",
+      "text": "Trump’s tariffs dealt economic blows in all 50 states—hurting farmers, exporters, and shoppers alike - Fortune Trump’s tariffs dealt economic blows in all 50 states—hurting farmers, exporters, and shoppers alike  Fortune",
+      "timestamp": "2026-04-14T17:18:00.000Z",
+      "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxObl9CekI4SU1ucmFNd0ZSVFJVQkJJRVVRNXNaaUstQTI1R2RZVU9BaFRoNTlaSEgtSHl0SnplbUkxV3M2OWpTT3VqRGpFa0hEUkdzMjZMQ25rVHZoTFYtcWtWU0FKY3l6dENycE1RazV5NFVCdU5ObHZuX3VVTmhHVlFNNXo1RkU?oc=5",
       "keywords": [
         "tariff",
-        "tariffs"
+        "tariffs",
+        "deal",
+        "port"
       ],
       "impacts": {
         "foundry": -1,
@@ -102,6 +81,27 @@
         "ic_design": -1,
         "display": -1,
         "ev_supply": -0.6
+      },
+      "sentiment": {
+        "compound": -0.7184,
+        "label": "強烈利空"
+      }
+    },
+    {
+      "text": "How Americans view Trump’s handling of trade and tariffs - Pew Research Center How Americans view Trump’s handling of trade and tariffs  Pew Research Center",
+      "timestamp": "2026-04-01T07:00:00.000Z",
+      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQdTZKYXp1NzJEbDNrYlBnb3h0YmQweXl6ZUtmT0dLY0xhd2pVWXpDdWtrcWpXWjRwQUdPRFZuR2tEY0ZETHVFNy1Qb3A2dUlQOFpNNGx4cy1QVUlzTTNjUnM1VlMyallfRUVTX2h3T2ZoVlZuMmphX1hLZDBMVlpXX2p3UDF2X01rWUg2TTZnS25FY2g2amFwNThEY0Q4UTdkbGoyMUJZSXhvLVk?oc=5",
+      "keywords": [
+        "tariff",
+        "tariffs"
+      ],
+      "impacts": {
+        "foundry": -1,
+        "shipping": -1,
+        "steel": -1,
+        "ic_design": -1,
+        "display": -1,
+        "ev_supply": -0.8
       },
       "sentiment": {
         "compound": -0.7184,
@@ -152,27 +152,6 @@
       }
     },
     {
-      "text": "These U.S. companies think Trump's tariffs are great. Here's why - CBC These U.S. companies think Trump's tariffs are great. Here's why  CBC",
-      "timestamp": "2026-04-14T08:04:37.000Z",
-      "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxOeU53M3hDSW1uVFZIdGh5UFhTRDYxMW15ZWp4OEV0TENDTkRTeXVReWEyaUFaaXVacG1oelBTYVJZTlA5RmtrczZVaWhnV0w1aW1LcGdLaWRrMWozQVVidktpMXNEclAtVllEMGg4Wl9xWW84Uzc1SkxxMG84eTUyRzd3?oc=5",
-      "keywords": [
-        "tariff",
-        "tariffs"
-      ],
-      "impacts": {
-        "foundry": -1,
-        "shipping": -1,
-        "steel": -1,
-        "ic_design": -1,
-        "display": -1,
-        "ev_supply": -0.8
-      },
-      "sentiment": {
-        "compound": -0.25,
-        "label": "偏空"
-      }
-    },
-    {
       "text": "A Year After ‘Liberation Day,’ Experts Review the Costs of Trump’s Tariffs - Council on Foreign Relations A Year After ‘Liberation Day,’ Experts Review the Costs of Trump’s Tariffs  Council on Foreign Relations",
       "timestamp": "2026-04-02T07:00:00.000Z",
       "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNWmlydGN5Mm1BbDAxZk53Mld4d05rOWpERDJsM09qTDRnd21BQ1gxN3VMQzdVdVhiODhQdlE0RjNFbm03R216VmViZENoc2hjZDRMN09zT3hBTXNhLUtvUG10UWs2MjctSGhQUlVkYUd1bzJYa2ZQTXAxamlfRi1TaWQtOC01Z19yUmxiRXBuRVlpMTN6OWJGc3hzcUk2SkpD?oc=5",
@@ -196,7 +175,7 @@
     },
     {
       "text": "China opens investigations into US trade practices in response to Trump tariff moves - AP News China opens investigations into US trade practices in response to Trump tariff moves  AP News",
-      "timestamp": "2026-03-27T07:00:00.000Z",
+      "timestamp": "2026-03-27T11:15:51.000Z",
       "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQVGJGQkxHNlhfckEwNnZ2ZU5qQ3pYSW9UWms0Y1M0cjh1c0xGRW5TY19YTUtKTVRoZnlRUVQ0YmgwdFpValp2YjAzcEVMOTZIYkgzaHBGUk1aVWNmaTFTVExlZXUtb3BRRkJzZjJ1MXBGZTBXel96UnhzLWppTjVwc0xndHJ5RTljaXNaeUF1X1NuYmVGLW9qWW1DSklrWE1kZVBN?oc=5",
       "keywords": [
         "tariff",
@@ -216,21 +195,24 @@
       }
     },
     {
-      "text": "Trump-Xi summit worries, new fertiliser woes: 7 US-China relations reads - South China Morning Post Trump-Xi summit worries, new fertiliser woes: 7 US-China relations reads  South China Morning Post",
-      "timestamp": "2026-04-16T14:00:11.000Z",
-      "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPdjdhbktYZUIzVVhLWFVmTWxDWGNHUzU5TGlZUUItYlRybG9CQkNhZlBBbGVkYVJfdGpUVzZPZXdjRWhkRk8tMUEzU2EycUpxWU12TFFPR05ObzZ0eGU5b1ZjLXp3VnlsbE1HZ3VoeFVCSTViLTFOSEc5SFNJUHVfcm9YZVFJc0xhbUVWMmc1N3F6YkVvVS1qTzhEelBqRDhHcFlIWnZtaG1DMEk1U3c3bGtlNDVHQTZRcGNRRnBPUEdsTnJSZG1r0gHHAUFVX3lxTFAyN0FzQ2d6ZlprTW1Jb3N2cXVid0doY0FLUDBrV01nYXdmS2o1VE96dWpJSjdaemRXY2NBRFRqdGxZM3ZpbmdqOXVuZWpmYm1vT09nM1ZLVWxfX3F0MzZ4Q256cXVEd25BM2JibTVEMmlMVElJOHNlTTFoaVpnTEhMZTJhaTVHRHc4WkJXWXEwZ2xUTFdUWlNBRHZxMTB5WVlaUVlLQ3RmeC11M1BGcXRQSC1RSnJrMmFiZDc4VEVWZjdObWxpVUk?oc=5",
+      "text": "These U.S. companies think Trump's tariffs are great. Here's why - CBC These U.S. companies think Trump's tariffs are great. Here's why  CBC",
+      "timestamp": "2026-04-14T08:04:37.000Z",
+      "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxOeU53M3hDSW1uVFZIdGh5UFhTRDYxMW15ZWp4OEV0TENDTkRTeXVReWEyaUFaaXVacG1oelBTYVJZTlA5RmtrczZVaWhnV0w1aW1LcGdLaWRrMWozQVVidktpMXNEclAtVllEMGg4Wl9xWW84Uzc1SkxxMG84eTUyRzd3?oc=5",
       "keywords": [
-        "china"
+        "tariff",
+        "tariffs"
       ],
       "impacts": {
-        "ic_design": -0.5,
-        "shipping": -0.4,
-        "display": -0.4,
-        "ev_supply": -0.3
+        "foundry": -1,
+        "shipping": -1,
+        "steel": -1,
+        "ic_design": -1,
+        "display": -1,
+        "ev_supply": -0.8
       },
       "sentiment": {
-        "compound": 0,
-        "label": "中性"
+        "compound": -0.25,
+        "label": "偏空"
       }
     },
     {
@@ -253,6 +235,24 @@
       "sentiment": {
         "compound": -0.7184,
         "label": "強烈利空"
+      }
+    },
+    {
+      "text": "Trump-Xi summit worries, new fertiliser woes: 7 US-China relations reads - South China Morning Post Trump-Xi summit worries, new fertiliser woes: 7 US-China relations reads  South China Morning Post",
+      "timestamp": "2026-04-16T14:00:11.000Z",
+      "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPdjdhbktYZUIzVVhLWFVmTWxDWGNHUzU5TGlZUUItYlRybG9CQkNhZlBBbGVkYVJfdGpUVzZPZXdjRWhkRk8tMUEzU2EycUpxWU12TFFPR05ObzZ0eGU5b1ZjLXp3VnlsbE1HZ3VoeFVCSTViLTFOSEc5SFNJUHVfcm9YZVFJc0xhbUVWMmc1N3F6YkVvVS1qTzhEelBqRDhHcFlIWnZtaG1DMEk1U3c3bGtlNDVHQTZRcGNRRnBPUEdsTnJSZG1r0gHHAUFVX3lxTFAyN0FzQ2d6ZlprTW1Jb3N2cXVid0doY0FLUDBrV01nYXdmS2o1VE96dWpJSjdaemRXY2NBRFRqdGxZM3ZpbmdqOXVuZWpmYm1vT09nM1ZLVWxfX3F0MzZ4Q256cXVEd25BM2JibTVEMmlMVElJOHNlTTFoaVpnTEhMZTJhaTVHRHc4WkJXWXEwZ2xUTFdUWlNBRHZxMTB5WVlaUVlLQ3RmeC11M1BGcXRQSC1RSnJrMmFiZDc4VEVWZjdObWxpVUk?oc=5",
+      "keywords": [
+        "china"
+      ],
+      "impacts": {
+        "ic_design": -0.5,
+        "shipping": -0.4,
+        "display": -0.4,
+        "ev_supply": -0.3
+      },
+      "sentiment": {
+        "compound": 0,
+        "label": "中性"
       }
     },
     {
@@ -426,10 +426,9 @@
   ],
   "sectorState": {
     "foundry": {
-      "score": -0.946,
-      "lastUpdated": "2026-04-17T20:55:29.850Z",
+      "score": -0.948,
+      "lastUpdated": "2026-04-18T03:17:57.747Z",
       "deltaHistory": [
-        0.0050000000000000044,
         0.0040000000000000036,
         0.09499999999999997,
         0,
@@ -438,14 +437,14 @@
         -0.016000000000000014,
         -0.013999999999999901,
         -0.007000000000000006,
-        0.007000000000000006
+        0.007000000000000006,
+        -0.0020000000000000018
       ]
     },
     "shipping": {
-      "score": -0.968,
-      "lastUpdated": "2026-04-17T20:55:29.850Z",
+      "score": -0.964,
+      "lastUpdated": "2026-04-18T03:17:57.747Z",
       "deltaHistory": [
-        0.0020000000000000018,
         0.0010000000000000009,
         0.014000000000000012,
         0.0020000000000000018,
@@ -454,14 +453,14 @@
         -0.01200000000000001,
         -0.0030000000000000027,
         0.006000000000000005,
-        -0.0050000000000000044
+        -0.0050000000000000044,
+        0.0040000000000000036
       ]
     },
     "steel": {
-      "score": -0.91,
-      "lastUpdated": "2026-04-17T20:55:29.850Z",
+      "score": -0.907,
+      "lastUpdated": "2026-04-18T03:17:57.747Z",
       "deltaHistory": [
-        0.0010000000000000009,
         0.006000000000000005,
         0.08300000000000007,
         0.006000000000000005,
@@ -470,12 +469,13 @@
         -0.02100000000000002,
         -0.016000000000000014,
         0.0010000000000000009,
-        0
+        0,
+        0.0030000000000000027
       ]
     },
     "ic_design": {
       "score": -1,
-      "lastUpdated": "2026-04-17T20:55:29.850Z",
+      "lastUpdated": "2026-04-18T03:17:57.747Z",
       "deltaHistory": [
         0,
         0,
@@ -490,10 +490,9 @@
       ]
     },
     "display": {
-      "score": -0.972,
-      "lastUpdated": "2026-04-17T20:55:29.850Z",
+      "score": -0.969,
+      "lastUpdated": "2026-04-18T03:17:57.747Z",
       "deltaHistory": [
-        -0.0040000000000000036,
         0,
         0.013000000000000012,
         0,
@@ -502,14 +501,14 @@
         -0.009000000000000008,
         -0.0050000000000000044,
         0.007000000000000006,
-        -0.006000000000000005
+        -0.006000000000000005,
+        0.0030000000000000027
       ]
     },
     "ev_supply": {
-      "score": -0.771,
-      "lastUpdated": "2026-04-17T20:55:29.850Z",
+      "score": -0.764,
+      "lastUpdated": "2026-04-18T03:17:57.747Z",
       "deltaHistory": [
-        -0.006000000000000005,
         -0.0020000000000000018,
         0.028000000000000025,
         0.0010000000000000009,
@@ -518,14 +517,14 @@
         0.02100000000000002,
         -0.0040000000000000036,
         0.007000000000000006,
-        -0.009000000000000008
+        -0.009000000000000008,
+        0.007000000000000006
       ]
     },
     "ai_server": {
-      "score": 0.005,
-      "lastUpdated": "2026-04-17T20:55:29.850Z",
+      "score": 0.004,
+      "lastUpdated": "2026-04-18T03:17:57.747Z",
       "deltaHistory": [
-        -0.001,
         -0.001,
         0.001,
         0,
@@ -534,14 +533,14 @@
         -0.005999999999999999,
         0,
         0.002,
-        -0.002
+        -0.002,
+        -0.001
       ]
     },
     "defense": {
       "score": 0,
-      "lastUpdated": "2026-04-17T20:55:29.850Z",
+      "lastUpdated": "2026-04-18T03:17:57.747Z",
       "deltaHistory": [
-        -0.004,
         0,
         0,
         0,
@@ -550,7 +549,8 @@
         -0.003,
         -0.003,
         0.005,
-        -0.005
+        -0.005,
+        0
       ]
     },
     "solar": {
@@ -603,7 +603,7 @@
     },
     "semiconductor_equip": {
       "score": 0,
-      "lastUpdated": "2026-04-17T20:55:29.850Z",
+      "lastUpdated": "2026-04-18T03:17:57.747Z",
       "deltaHistory": [
         0,
         0,
@@ -619,7 +619,7 @@
     },
     "robotics": {
       "score": 0,
-      "lastUpdated": "2026-04-17T20:55:29.850Z",
+      "lastUpdated": "2026-04-18T03:17:57.747Z",
       "deltaHistory": [
         0,
         0,
@@ -676,9 +676,8 @@
     },
     "gaming": {
       "score": 0.007,
-      "lastUpdated": "2026-04-17T20:55:29.850Z",
+      "lastUpdated": "2026-04-18T03:17:57.747Z",
       "deltaHistory": [
-        -0.009000000000000005,
         -0.006999999999999999,
         -0.0019999999999999983,
         -0.0020000000000000018,
@@ -687,14 +686,14 @@
         -0.002999999999999999,
         0,
         0.001,
+        0,
         0
       ]
     },
     "pcb": {
-      "score": 0.014,
-      "lastUpdated": "2026-04-17T20:55:29.850Z",
+      "score": 0.017,
+      "lastUpdated": "2026-04-18T03:17:57.747Z",
       "deltaHistory": [
-        -0.002,
         0.002,
         0,
         0,
@@ -703,7 +702,8 @@
         -0.005000000000000001,
         0,
         0.004,
-        -0.002
+        -0.002,
+        0.003000000000000001
       ]
     },
     "financial_holding": {
