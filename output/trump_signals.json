@@ -1,6 +1,26 @@
 {
-  "updatedAt": "2026-04-20T17:14:25.554Z",
+  "updatedAt": "2026-04-20T20:57:11.120Z",
   "posts": [
+    {
+      "text": "Trump admin approves $166 billion tariff refund system tonight - thestreet.com Trump admin approves $166 billion tariff refund system tonight  thestreet.com",
+      "timestamp": "2026-04-20T14:05:19.000Z",
+      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOdjlwNGJ6bmduQTRqSHVfOXprSXFWcEhndmxHMmpFOUx2TU1rNFNBU1ZhV2dPclNkY0RLaVh6OW5PZ2kxdE5WUExMWGNMOHhvZUdiY3B5TzlSQVZ0Q3FTalZ4dU5udkFkM0lfRk5qa1FSTG02aHJMUEVFYjBlYTBWdnFjc2ZyZ0ZDSDZtX2lWOXRnWHZNZG1MYnZCSXEySFFvTmRz?oc=5",
+      "keywords": [
+        "tariff"
+      ],
+      "impacts": {
+        "foundry": -0.7,
+        "shipping": -0.5,
+        "steel": -0.5,
+        "ic_design": -0.6,
+        "display": -0.5,
+        "ev_supply": -0.4
+      },
+      "sentiment": {
+        "compound": -0.7184,
+        "label": "強烈利空"
+      }
+    },
     {
       "text": "Trump admin opens $166B tariff refund portal after Supreme Court ruling - Crypto Briefing Trump admin opens $166B tariff refund portal after Supreme Court ruling  Crypto Briefing",
       "timestamp": "2026-04-20T11:35:10.000Z",
@@ -18,26 +38,6 @@
         "display": -0.5,
         "ev_supply": -0.4,
         "gaming": 0.3
-      },
-      "sentiment": {
-        "compound": -0.7184,
-        "label": "強烈利空"
-      }
-    },
-    {
-      "text": "Trump admin approves $166 billion tariff refund sytem tonight - thestreet.com Trump admin approves $166 billion tariff refund sytem tonight  thestreet.com",
-      "timestamp": "2026-04-20T14:05:19.000Z",
-      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOdjlwNGJ6bmduQTRqSHVfOXprSXFWcEhndmxHMmpFOUx2TU1rNFNBU1ZhV2dPclNkY0RLaVh6OW5PZ2kxdE5WUExMWGNMOHhvZUdiY3B5TzlSQVZ0Q3FTalZ4dU5udkFkM0lfRk5qa1FSTG02aHJMUEVFYjBlYTBWdnFjc2ZyZ0ZDSDZtX2lWOXRnWHZNZG1MYnZCSXEySFFvTmRz?oc=5",
-      "keywords": [
-        "tariff"
-      ],
-      "impacts": {
-        "foundry": -0.7,
-        "shipping": -0.5,
-        "steel": -0.5,
-        "ic_design": -0.6,
-        "display": -0.5,
-        "ev_supply": -0.4
       },
       "sentiment": {
         "compound": -0.7184,
@@ -131,27 +131,6 @@
       }
     },
     {
-      "text": "A year on: Four ways Trump's tariffs have changed the global economy - BBC A year on: Four ways Trump's tariffs have changed the global economy  BBC",
-      "timestamp": "2026-04-02T07:00:00.000Z",
-      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5NcTJmTVo3ajMtLXFDTUw1bEVKbVd3UHh6MTdxb2NrQl9BNGxMN1NlRjUwXzdlT0ZWd3pKeE4wUlQ3dHRObGc0aVZZbzJMbXBnTWg2V0M1VHd4Zw?oc=5",
-      "keywords": [
-        "tariff",
-        "tariffs"
-      ],
-      "impacts": {
-        "foundry": -1,
-        "shipping": -1,
-        "steel": -1,
-        "ic_design": -1,
-        "display": -1,
-        "ev_supply": -0.8
-      },
-      "sentiment": {
-        "compound": -0.7184,
-        "label": "強烈利空"
-      }
-    },
-    {
       "text": "A Year After ‘Liberation Day,’ Experts Review the Costs of Trump’s Tariffs - Council on Foreign Relations A Year After ‘Liberation Day,’ Experts Review the Costs of Trump’s Tariffs  Council on Foreign Relations",
       "timestamp": "2026-04-02T07:00:00.000Z",
       "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNWmlydGN5Mm1BbDAxZk53Mld4d05rOWpERDJsM09qTDRnd21BQ1gxN3VMQzdVdVhiODhQdlE0RjNFbm03R216VmViZENoc2hjZDRMN09zT3hBTXNhLUtvUG10UWs2MjctSGhQUlVkYUd1bzJYa2ZQTXAxamlfRi1TaWQtOC01Z19yUmxiRXBuRVlpMTN6OWJGc3hzcUk2SkpD?oc=5",
@@ -214,24 +193,6 @@
       "sentiment": {
         "compound": -0.7184,
         "label": "強烈利空"
-      }
-    },
-    {
-      "text": "Trump-Xi summit worries, new fertiliser woes: 7 US-China relations reads - South China Morning Post Trump-Xi summit worries, new fertiliser woes: 7 US-China relations reads  South China Morning Post",
-      "timestamp": "2026-04-16T14:00:11.000Z",
-      "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPdjdhbktYZUIzVVhLWFVmTWxDWGNHUzU5TGlZUUItYlRybG9CQkNhZlBBbGVkYVJfdGpUVzZPZXdjRWhkRk8tMUEzU2EycUpxWU12TFFPR05ObzZ0eGU5b1ZjLXp3VnlsbE1HZ3VoeFVCSTViLTFOSEc5SFNJUHVfcm9YZVFJc0xhbUVWMmc1N3F6YkVvVS1qTzhEelBqRDhHcFlIWnZtaG1DMEk1U3c3bGtlNDVHQTZRcGNRRnBPUEdsTnJSZG1r0gHHAUFVX3lxTFAyN0FzQ2d6ZlprTW1Jb3N2cXVid0doY0FLUDBrV01nYXdmS2o1VE96dWpJSjdaemRXY2NBRFRqdGxZM3ZpbmdqOXVuZWpmYm1vT09nM1ZLVWxfX3F0MzZ4Q256cXVEd25BM2JibTVEMmlMVElJOHNlTTFoaVpnTEhMZTJhaTVHRHc4WkJXWXEwZ2xUTFdUWlNBRHZxMTB5WVlaUVlLQ3RmeC11M1BGcXRQSC1RSnJrMmFiZDc4VEVWZjdObWxpVUk?oc=5",
-      "keywords": [
-        "china"
-      ],
-      "impacts": {
-        "ic_design": -0.5,
-        "shipping": -0.4,
-        "display": -0.4,
-        "ev_supply": -0.3
-      },
-      "sentiment": {
-        "compound": 0,
-        "label": "中性"
       }
     },
     {
@@ -306,26 +267,25 @@
       }
     },
     {
-      "text": "How one factory in China learned to live with Trump, tariffs and turmoil - Reuters How one factory in China learned to live with Trump, tariffs and turmoil  Reuters",
-      "timestamp": "2026-04-07T07:00:00.000Z",
-      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQMl80UFk3LU5BWkl5cXktUGNfTm42TW9NeXJ4ZjRYRjB6aWpMUnBaQmF2eGs3eUVkb3djOThaUlVYanVYSXkySGZWRHdnSXJQZjhQZm1wczZLWGIxYURuUVNYazRXai1YX1ByRzdjVkMxUVdKNGlYOVhrOVhJamd4bExjM0NQWmZvOTVTbXRUQUR2dTU0THd4cUIzYW5yMGNxeW1FcHFwcV9wdEJ6R1E?oc=5",
+      "text": "Trump's tariffs: Asia braces for another year of Trump tariff turmoil - BBC Trump's tariffs: Asia braces for another year of Trump tariff turmoil  BBC",
+      "timestamp": "2026-02-25T08:00:00.000Z",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1JNDYzUHpvSS1lUGV1a3pWLXBUYWlZZFJBMlNhdTlJMXN3YS02bjRCRTVMNnBxTVVkRTZ4WGpRQ3FEVVhkc3ZUdnBkczBwckJtWjl2V3I3S3RYZw?oc=5",
       "keywords": [
         "tariff",
         "tariffs",
-        "china",
         "oil"
       ],
       "impacts": {
         "foundry": -1,
-        "shipping": -1,
+        "shipping": -0.8,
         "steel": -1,
         "ic_design": -1,
         "display": -1,
-        "ev_supply": -1,
+        "ev_supply": -0.8,
         "petrochemical": 0.4
       },
       "sentiment": {
-        "compound": -0.7184,
+        "compound": -0.9001,
         "label": "強烈利空"
       }
     },
@@ -397,6 +357,30 @@
       }
     },
     {
+      "text": "Beijing Sees Opening in U.S. Trade War After Court Blunts Trump’s Tariff Weapon - WSJ Beijing Sees Opening in U.S. Trade War After Court Blunts Trump’s Tariff Weapon  WSJ",
+      "timestamp": "2026-02-23T08:00:00.000Z",
+      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNb3F5SFlQNmNoSFh0aGszcVZwY3FWT0phM1pxQkdVSDIyaWpMSWQyMHBFdkxEeHNyUkFONWFDdmxVWGIzeDVla3RNenpibnFpdEhsUjRTcTVJNlhnQzNSaXlMWTBLeHhhbXpITG5JcVlua2VvVklaZUpPRDAyTmVGOTdGXzJiVnRua1BiTVFXbHY5amlra3VRNV8zYlhIM3N5aHdzRUo3ZmhzVzhOTEFNYm1VNEgyMGFnYnc?oc=5",
+      "keywords": [
+        "trade war",
+        "tariff",
+        "beijing",
+        "weapon"
+      ],
+      "impacts": {
+        "foundry": -1,
+        "ic_design": -1,
+        "shipping": -1,
+        "steel": -0.5,
+        "display": -0.5,
+        "ev_supply": -0.4,
+        "defense": 0.7
+      },
+      "sentiment": {
+        "compound": -0.7184,
+        "label": "強烈利空"
+      }
+    },
+    {
       "text": "What Happens to All These Trade Deals Now? - The New York Times What Happens to All These Trade Deals Now?  The New York Times",
       "timestamp": "2026-02-20T08:00:00.000Z",
       "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNNGVQMlRySWxUOUM0N1FnQXB3QTVCbjhMeVZoa3U3NnBrSHhrRk1CeVl0QjUzNEFvNEhlSTFJUXVVaFZObkttMmtOMzlZOXF6YkIxa3h3WGNnTEI1ZlRNeTRIZi1XX0JiOUdoZU5hY1dlLUVWdXl1UloyNzltUjJCM3FoQ0E0Y1FFcjRJYklvVzh2ZkJtUHdKaW1qVjU1OW8?oc=5",
@@ -413,6 +397,27 @@
         "compound": 0,
         "label": "中性"
       }
+    },
+    {
+      "text": "China threatens to retaliate over Trump’s 25% tariff on countries trading with Iran - The Guardian China threatens to retaliate over Trump’s 25% tariff on countries trading with Iran  The Guardian",
+      "timestamp": "2026-01-12T08:00:00.000Z",
+      "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE84N0VVeXFkOThhb1ZZVm5URm10b0VFMzIyeFl5S3RSYVFRTTVPb0dVcGZnQmtOUjllcXZVRjhVNHFkZHJ6dzc1WHRobzVBX05ZWTRhUVR3b09zUVpFSEczSkJpS29vWlVCRlF4Mzk2NHI3c1At?oc=5",
+      "keywords": [
+        "tariff",
+        "china"
+      ],
+      "impacts": {
+        "foundry": -0.7,
+        "shipping": -0.9,
+        "steel": -0.5,
+        "ic_design": -1,
+        "display": -0.9,
+        "ev_supply": -0.7
+      },
+      "sentiment": {
+        "compound": -0.7184,
+        "label": "強烈利空"
+      }
     }
   ],
   "deltas": [],
@@ -423,10 +428,9 @@
   ],
   "sectorState": {
     "foundry": {
-      "score": -0.971,
-      "lastUpdated": "2026-04-20T17:14:25.554Z",
+      "score": -0.977,
+      "lastUpdated": "2026-04-20T20:57:11.120Z",
       "deltaHistory": [
-        -0.006000000000000005,
         0.008000000000000007,
         -0.017000000000000015,
         0.006000000000000005,
@@ -435,14 +439,14 @@
         0.02100000000000002,
         -0.017000000000000015,
         -0.016000000000000014,
-        -0.03499999999999992
+        -0.03499999999999992,
+        -0.006000000000000005
       ]
     },
     "shipping": {
-      "score": -0.993,
-      "lastUpdated": "2026-04-20T17:14:25.554Z",
+      "score": -0.976,
+      "lastUpdated": "2026-04-20T20:57:11.120Z",
       "deltaHistory": [
-        0,
         0,
         -0.006000000000000005,
         0,
@@ -451,14 +455,14 @@
         0.0010000000000000009,
         -0.0020000000000000018,
         -0.019000000000000017,
-        0.0020000000000000018
+        0.0020000000000000018,
+        0.017000000000000015
       ]
     },
     "steel": {
-      "score": -0.881,
-      "lastUpdated": "2026-04-20T17:14:25.554Z",
+      "score": -0.874,
+      "lastUpdated": "2026-04-20T20:57:11.120Z",
       "deltaHistory": [
-        -0.0050000000000000044,
         0.007000000000000006,
         -0.02399999999999991,
         0.0029999999999998916,
@@ -467,12 +471,13 @@
         0.02400000000000002,
         -0.02200000000000002,
         0.031000000000000028,
-        -0.007000000000000006
+        -0.007000000000000006,
+        0.007000000000000006
       ]
     },
     "ic_design": {
       "score": -1,
-      "lastUpdated": "2026-04-20T17:14:25.554Z",
+      "lastUpdated": "2026-04-20T20:57:11.120Z",
       "deltaHistory": [
         0,
         0,
@@ -487,10 +492,9 @@
       ]
     },
     "display": {
-      "score": -0.944,
-      "lastUpdated": "2026-04-20T17:14:25.554Z",
+      "score": -0.937,
+      "lastUpdated": "2026-04-20T20:57:11.120Z",
       "deltaHistory": [
-        0.0010000000000000009,
         -0.0010000000000000009,
         -0.006000000000000005,
         -0.0020000000000000018,
@@ -499,14 +503,14 @@
         0.0050000000000000044,
         -0.0020000000000000018,
         0.029000000000000026,
-        0.006000000000000005
+        0.006000000000000005,
+        0.006999999999999895
       ]
     },
     "ev_supply": {
-      "score": -0.768,
-      "lastUpdated": "2026-04-20T17:14:25.554Z",
+      "score": -0.759,
+      "lastUpdated": "2026-04-20T20:57:11.120Z",
       "deltaHistory": [
-        -0.0010000000000000009,
         0.0020000000000000018,
         -0.010000000000000009,
         0,
@@ -515,14 +519,14 @@
         0.014000000000000012,
         -0.030000000000000027,
         0.017000000000000015,
-        0
+        0,
+        0.009000000000000008
       ]
     },
     "ai_server": {
-      "score": 0.004,
-      "lastUpdated": "2026-04-20T17:14:25.554Z",
+      "score": 0.005,
+      "lastUpdated": "2026-04-20T20:57:11.120Z",
       "deltaHistory": [
-        0.001,
         -0.001,
         -0.001,
         0,
@@ -531,14 +535,14 @@
         0.001,
         -0.002,
         0.002,
-        0
+        0,
+        0.001
       ]
     },
     "defense": {
-      "score": 0,
-      "lastUpdated": "2026-04-20T17:14:25.554Z",
+      "score": 0.008,
+      "lastUpdated": "2026-04-20T20:57:11.120Z",
       "deltaHistory": [
-        0.001,
         -0.002,
         0,
         -0.003,
@@ -547,7 +551,8 @@
         0,
         0,
         0.007,
-        -0.007
+        -0.007,
+        0.008
       ]
     },
     "solar": {
@@ -583,10 +588,9 @@
       ]
     },
     "petrochemical": {
-      "score": 0.006,
-      "lastUpdated": "2026-04-20T17:14:25.554Z",
+      "score": 0.009,
+      "lastUpdated": "2026-04-20T20:57:11.120Z",
       "deltaHistory": [
-        0,
         0.001,
         0.002,
         0,
@@ -595,12 +599,13 @@
         -0.003,
         0.039,
         -0.032,
-        -0.002999999999999999
+        -0.002999999999999999,
+        0.002999999999999999
       ]
     },
     "semiconductor_equip": {
       "score": 0,
-      "lastUpdated": "2026-04-20T17:14:25.554Z",
+      "lastUpdated": "2026-04-20T20:57:11.120Z",
       "deltaHistory": [
         0,
         0,
@@ -616,7 +621,7 @@
     },
     "robotics": {
       "score": 0,
-      "lastUpdated": "2026-04-20T17:14:25.554Z",
+      "lastUpdated": "2026-04-20T20:57:11.120Z",
       "deltaHistory": [
         0,
         0,
@@ -632,7 +637,7 @@
     },
     "packaging": {
       "score": 0,
-      "lastUpdated": "2026-04-20T14:01:36.673Z",
+      "lastUpdated": "2026-04-20T20:57:11.120Z",
       "deltaHistory": [
         0,
         0,
@@ -672,10 +677,9 @@
       ]
     },
     "gaming": {
-      "score": 0.055,
-      "lastUpdated": "2026-04-20T17:14:25.554Z",
+      "score": 0.047,
+      "lastUpdated": "2026-04-20T20:57:11.120Z",
       "deltaHistory": [
-        -0.001,
         0,
         0.001,
         0,
@@ -684,14 +688,14 @@
         0.001,
         0.002,
         0.046,
-        0.0020000000000000018
+        0.0020000000000000018,
+        -0.008
       ]
     },
     "pcb": {
-      "score": 0.021,
-      "lastUpdated": "2026-04-20T17:14:25.554Z",
+      "score": 0.025,
+      "lastUpdated": "2026-04-20T20:57:11.120Z",
       "deltaHistory": [
-        0,
         0,
         -0.003000000000000001,
         0.002,
@@ -700,7 +704,8 @@
         -0.005999999999999998,
         0.005999999999999998,
         0.010000000000000002,
-        -0.012
+        -0.012,
+        0.004
       ]
     },
     "financial_holding": {
