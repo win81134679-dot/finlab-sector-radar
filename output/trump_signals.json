@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-20T14:01:36.673Z",
+  "updatedAt": "2026-04-20T17:14:25.554Z",
   "posts": [
     {
       "text": "Trump admin opens $166B tariff refund portal after Supreme Court ruling - Crypto Briefing Trump admin opens $166B tariff refund portal after Supreme Court ruling  Crypto Briefing",
@@ -18,6 +18,26 @@
         "display": -0.5,
         "ev_supply": -0.4,
         "gaming": 0.3
+      },
+      "sentiment": {
+        "compound": -0.7184,
+        "label": "強烈利空"
+      }
+    },
+    {
+      "text": "Trump admin approves $166 billion tariff refund sytem tonight - thestreet.com Trump admin approves $166 billion tariff refund sytem tonight  thestreet.com",
+      "timestamp": "2026-04-20T14:05:19.000Z",
+      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOdjlwNGJ6bmduQTRqSHVfOXprSXFWcEhndmxHMmpFOUx2TU1rNFNBU1ZhV2dPclNkY0RLaVh6OW5PZ2kxdE5WUExMWGNMOHhvZUdiY3B5TzlSQVZ0Q3FTalZ4dU5udkFkM0lfRk5qa1FSTG02aHJMUEVFYjBlYTBWdnFjc2ZyZ0ZDSDZtX2lWOXRnWHZNZG1MYnZCSXEySFFvTmRz?oc=5",
+      "keywords": [
+        "tariff"
+      ],
+      "impacts": {
+        "foundry": -0.7,
+        "shipping": -0.5,
+        "steel": -0.5,
+        "ic_design": -0.6,
+        "display": -0.5,
+        "ev_supply": -0.4
       },
       "sentiment": {
         "compound": -0.7184,
@@ -111,6 +131,27 @@
       }
     },
     {
+      "text": "A year on: Four ways Trump's tariffs have changed the global economy - BBC A year on: Four ways Trump's tariffs have changed the global economy  BBC",
+      "timestamp": "2026-04-02T07:00:00.000Z",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5NcTJmTVo3ajMtLXFDTUw1bEVKbVd3UHh6MTdxb2NrQl9BNGxMN1NlRjUwXzdlT0ZWd3pKeE4wUlQ3dHRObGc0aVZZbzJMbXBnTWg2V0M1VHd4Zw?oc=5",
+      "keywords": [
+        "tariff",
+        "tariffs"
+      ],
+      "impacts": {
+        "foundry": -1,
+        "shipping": -1,
+        "steel": -1,
+        "ic_design": -1,
+        "display": -1,
+        "ev_supply": -0.8
+      },
+      "sentiment": {
+        "compound": -0.7184,
+        "label": "強烈利空"
+      }
+    },
+    {
       "text": "A Year After ‘Liberation Day,’ Experts Review the Costs of Trump’s Tariffs - Council on Foreign Relations A Year After ‘Liberation Day,’ Experts Review the Costs of Trump’s Tariffs  Council on Foreign Relations",
       "timestamp": "2026-04-02T07:00:00.000Z",
       "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNWmlydGN5Mm1BbDAxZk53Mld4d05rOWpERDJsM09qTDRnd21BQ1gxN3VMQzdVdVhiODhQdlE0RjNFbm03R216VmViZENoc2hjZDRMN09zT3hBTXNhLUtvUG10UWs2MjctSGhQUlVkYUd1bzJYa2ZQTXAxamlfRi1TaWQtOC01Z19yUmxiRXBuRVlpMTN6OWJGc3hzcUk2SkpD?oc=5",
@@ -133,6 +174,27 @@
       }
     },
     {
+      "text": "China opens investigations into US trade practices in response to Trump tariff moves - AP News China opens investigations into US trade practices in response to Trump tariff moves  AP News",
+      "timestamp": "2026-03-27T07:00:00.000Z",
+      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQVGJGQkxHNlhfckEwNnZ2ZU5qQ3pYSW9UWms0Y1M0cjh1c0xGRW5TY19YTUtKTVRoZnlRUVQ0YmgwdFpValp2YjAzcEVMOTZIYkgzaHBGUk1aVWNmaTFTVExlZXUtb3BRRkJzZjJ1MXBGZTBXel96UnhzLWppTjVwc0xndHJ5RTljaXNaeUF1X1NuYmVGLW9qWW1DSklrWE1kZVBN?oc=5",
+      "keywords": [
+        "tariff",
+        "china"
+      ],
+      "impacts": {
+        "foundry": -0.7,
+        "shipping": -0.9,
+        "steel": -0.5,
+        "ic_design": -1,
+        "display": -0.9,
+        "ev_supply": -0.7
+      },
+      "sentiment": {
+        "compound": -0.7184,
+        "label": "強烈利空"
+      }
+    },
+    {
       "text": "Trump tariff fallout: Some industries grapple with lingering effects one year later - CNBC Trump tariff fallout: Some industries grapple with lingering effects one year later  CNBC",
       "timestamp": "2026-04-03T07:00:00.000Z",
       "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE4wQTdudlByQ24zTjlIZ19CVm82OTliTVFwZmg4amNONTVDVjNBNXA0Y1NFLTB1WlFMTHNqVWVGTENhOFNnMVJpSG5RblpLcHNnZFl0bFRLYTdSMWNqV0RYUVpDd2hfSnlsanFpRC1lUUxlMXBxQ2fSAXtBVV95cUxPbmdSTV9FQlh6WmJuVXRZempURXB1cW5QVnV6T25NVXcwejY2OHEzM3oxdDVsYjZRcXYtSzZHUXVTMkZtUzVfcTQ0UFlVaWdhaXg5QUZpSjZpd25yejFNbWVFU1VGVHVVWW9jd2Z2ZnRnMXVJZlF3ZWNUcHM?oc=5",
@@ -148,27 +210,6 @@
         "display": -0.5,
         "ev_supply": -0.4,
         "pcb": 0.5
-      },
-      "sentiment": {
-        "compound": -0.7184,
-        "label": "強烈利空"
-      }
-    },
-    {
-      "text": "China opens investigations into US trade practices in response to Trump tariff moves - AP News China opens investigations into US trade practices in response to Trump tariff moves  AP News",
-      "timestamp": "2026-03-27T07:00:00.000Z",
-      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQVGJGQkxHNlhfckEwNnZ2ZU5qQ3pYSW9UWms0Y1M0cjh1c0xGRW5TY19YTUtKTVRoZnlRUVQ0YmgwdFpValp2YjAzcEVMOTZIYkgzaHBGUk1aVWNmaTFTVExlZXUtb3BRRkJzZjJ1MXBGZTBXel96UnhzLWppTjVwc0xndHJ5RTljaXNaeUF1X1NuYmVGLW9qWW1DSklrWE1kZVBN?oc=5",
-      "keywords": [
-        "tariff",
-        "china"
-      ],
-      "impacts": {
-        "foundry": -0.7,
-        "shipping": -0.9,
-        "steel": -0.5,
-        "ic_design": -1,
-        "display": -0.9,
-        "ev_supply": -0.7
       },
       "sentiment": {
         "compound": -0.7184,
@@ -215,24 +256,14 @@
       }
     },
     {
-      "text": "These U.S. companies think Trump's tariffs are great. Here's why - CBC These U.S. companies think Trump's tariffs are great. Here's why  CBC",
-      "timestamp": "2026-04-14T08:04:37.000Z",
-      "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxOeU53M3hDSW1uVFZIdGh5UFhTRDYxMW15ZWp4OEV0TENDTkRTeXVReWEyaUFaaXVacG1oelBTYVJZTlA5RmtrczZVaWhnV0w1aW1LcGdLaWRrMWozQVVidktpMXNEclAtVllEMGg4Wl9xWW84Uzc1SkxxMG84eTUyRzd3?oc=5",
-      "keywords": [
-        "tariff",
-        "tariffs"
-      ],
-      "impacts": {
-        "foundry": -1,
-        "shipping": -1,
-        "steel": -1,
-        "ic_design": -1,
-        "display": -1,
-        "ev_supply": -0.8
-      },
+      "text": "Carney says Canada's U.S. ties have become 'weaknesses' that must be corrected - CBC Carney says Canada's U.S. ties have become 'weaknesses' that must be corrected  CBC",
+      "timestamp": "2026-04-19T14:52:00.000Z",
+      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPT0ZnZEJGNjM4WE5ZTmliLVdjOEkweC1RWGR6TnctdjR3d0J3eTdDNjdQZnhaYUxDVWI5SU5nWlZWTy1CdTh1eWhyeDFQWUpHRGMtNzVPQ3F4akM4M0xYOE5pbWZBeTdNeEJQNG9wcUhwcXQydkxkVVpDTG9QYU1uZmUzZ09LU3lnWS1RYnF2U0xGVzQ?oc=5",
+      "keywords": [],
+      "impacts": {},
       "sentiment": {
-        "compound": -0.25,
-        "label": "偏空"
+        "compound": 0,
+        "label": "中性"
       }
     },
     {
@@ -275,25 +306,26 @@
       }
     },
     {
-      "text": "Trump's tariffs: Asia braces for another year of Trump tariff turmoil - BBC Trump's tariffs: Asia braces for another year of Trump tariff turmoil  BBC",
-      "timestamp": "2026-02-25T08:00:00.000Z",
-      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1JNDYzUHpvSS1lUGV1a3pWLXBUYWlZZFJBMlNhdTlJMXN3YS02bjRCRTVMNnBxTVVkRTZ4WGpRQ3FEVVhkc3ZUdnBkczBwckJtWjl2V3I3S3RYZw?oc=5",
+      "text": "How one factory in China learned to live with Trump, tariffs and turmoil - Reuters How one factory in China learned to live with Trump, tariffs and turmoil  Reuters",
+      "timestamp": "2026-04-07T07:00:00.000Z",
+      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQMl80UFk3LU5BWkl5cXktUGNfTm42TW9NeXJ4ZjRYRjB6aWpMUnBaQmF2eGs3eUVkb3djOThaUlVYanVYSXkySGZWRHdnSXJQZjhQZm1wczZLWGIxYURuUVNYazRXai1YX1ByRzdjVkMxUVdKNGlYOVhrOVhJamd4bExjM0NQWmZvOTVTbXRUQUR2dTU0THd4cUIzYW5yMGNxeW1FcHFwcV9wdEJ6R1E?oc=5",
       "keywords": [
         "tariff",
         "tariffs",
+        "china",
         "oil"
       ],
       "impacts": {
         "foundry": -1,
-        "shipping": -0.8,
+        "shipping": -1,
         "steel": -1,
         "ic_design": -1,
         "display": -1,
-        "ev_supply": -0.8,
+        "ev_supply": -1,
         "petrochemical": 0.4
       },
       "sentiment": {
-        "compound": -0.9001,
+        "compound": -0.7184,
         "label": "強烈利空"
       }
     },
@@ -319,17 +351,6 @@
       "sentiment": {
         "compound": -0.25,
         "label": "偏空"
-      }
-    },
-    {
-      "text": "Carney says Canada's U.S. ties have become 'weaknesses' that must be corrected - CBC Carney says Canada's U.S. ties have become 'weaknesses' that must be corrected  CBC",
-      "timestamp": "2026-04-19T14:52:00.000Z",
-      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPT0ZnZEJGNjM4WE5ZTmliLVdjOEkweC1RWGR6TnctdjR3d0J3eTdDNjdQZnhaYUxDVWI5SU5nWlZWTy1CdTh1eWhyeDFQWUpHRGMtNzVPQ3F4akM4M0xYOE5pbWZBeTdNeEJQNG9wcUhwcXQydkxkVVpDTG9QYU1uZmUzZ09LU3lnWS1RYnF2U0xGVzQ?oc=5",
-      "keywords": [],
-      "impacts": {},
-      "sentiment": {
-        "compound": 0,
-        "label": "中性"
       }
     },
     {
@@ -376,30 +397,6 @@
       }
     },
     {
-      "text": "Beijing Sees Opening in U.S. Trade War After Court Blunts Trump’s Tariff Weapon - WSJ Beijing Sees Opening in U.S. Trade War After Court Blunts Trump’s Tariff Weapon  WSJ",
-      "timestamp": "2026-02-23T08:00:00.000Z",
-      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNb3F5SFlQNmNoSFh0aGszcVZwY3FWT0phM1pxQkdVSDIyaWpMSWQyMHBFdkxEeHNyUkFONWFDdmxVWGIzeDVla3RNenpibnFpdEhsUjRTcTVJNlhnQzNSaXlMWTBLeHhhbXpITG5JcVlua2VvVklaZUpPRDAyTmVGOTdGXzJiVnRua1BiTVFXbHY5amlra3VRNV8zYlhIM3N5aHdzRUo3ZmhzVzhOTEFNYm1VNEgyMGFnYnc?oc=5",
-      "keywords": [
-        "trade war",
-        "tariff",
-        "beijing",
-        "weapon"
-      ],
-      "impacts": {
-        "foundry": -1,
-        "ic_design": -1,
-        "shipping": -1,
-        "steel": -0.5,
-        "display": -0.5,
-        "ev_supply": -0.4,
-        "defense": 0.7
-      },
-      "sentiment": {
-        "compound": -0.7184,
-        "label": "強烈利空"
-      }
-    },
-    {
       "text": "What Happens to All These Trade Deals Now? - The New York Times What Happens to All These Trade Deals Now?  The New York Times",
       "timestamp": "2026-02-20T08:00:00.000Z",
       "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNNGVQMlRySWxUOUM0N1FnQXB3QTVCbjhMeVZoa3U3NnBrSHhrRk1CeVl0QjUzNEFvNEhlSTFJUXVVaFZObkttMmtOMzlZOXF6YkIxa3h3WGNnTEI1ZlRNeTRIZi1XX0JiOUdoZU5hY1dlLUVWdXl1UloyNzltUjJCM3FoQ0E0Y1FFcjRJYklvVzh2ZkJtUHdKaW1qVjU1OW8?oc=5",
@@ -426,10 +423,9 @@
   ],
   "sectorState": {
     "foundry": {
-      "score": -0.936,
-      "lastUpdated": "2026-04-20T14:01:36.673Z",
+      "score": -0.971,
+      "lastUpdated": "2026-04-20T17:14:25.554Z",
       "deltaHistory": [
-        -0.07899999999999996,
         -0.006000000000000005,
         0.008000000000000007,
         -0.017000000000000015,
@@ -438,14 +434,14 @@
         -0.05800000000000005,
         0.02100000000000002,
         -0.017000000000000015,
-        -0.016000000000000014
+        -0.016000000000000014,
+        -0.03499999999999992
       ]
     },
     "shipping": {
-      "score": -0.995,
-      "lastUpdated": "2026-04-20T14:01:36.673Z",
+      "score": -0.993,
+      "lastUpdated": "2026-04-20T17:14:25.554Z",
       "deltaHistory": [
-        -0.013000000000000012,
         0,
         0,
         -0.006000000000000005,
@@ -454,14 +450,14 @@
         -0.02100000000000002,
         0.0010000000000000009,
         -0.0020000000000000018,
-        -0.019000000000000017
+        -0.019000000000000017,
+        0.0020000000000000018
       ]
     },
     "steel": {
-      "score": -0.874,
-      "lastUpdated": "2026-04-20T14:01:36.673Z",
+      "score": -0.881,
+      "lastUpdated": "2026-04-20T17:14:25.554Z",
       "deltaHistory": [
-        -0.07300000000000006,
         -0.0050000000000000044,
         0.007000000000000006,
         -0.02399999999999991,
@@ -470,12 +466,13 @@
         -0.07500000000000007,
         0.02400000000000002,
         -0.02200000000000002,
-        0.031000000000000028
+        0.031000000000000028,
+        -0.007000000000000006
       ]
     },
     "ic_design": {
       "score": -1,
-      "lastUpdated": "2026-04-20T14:01:36.673Z",
+      "lastUpdated": "2026-04-20T17:14:25.554Z",
       "deltaHistory": [
         0,
         0,
@@ -490,10 +487,9 @@
       ]
     },
     "display": {
-      "score": -0.95,
-      "lastUpdated": "2026-04-20T14:01:36.673Z",
+      "score": -0.944,
+      "lastUpdated": "2026-04-20T17:14:25.554Z",
       "deltaHistory": [
-        -0.01200000000000001,
         0.0010000000000000009,
         -0.0010000000000000009,
         -0.006000000000000005,
@@ -502,14 +498,14 @@
         -0.029000000000000026,
         0.0050000000000000044,
         -0.0020000000000000018,
-        0.029000000000000026
+        0.029000000000000026,
+        0.006000000000000005
       ]
     },
     "ev_supply": {
       "score": -0.768,
-      "lastUpdated": "2026-04-20T14:01:36.673Z",
+      "lastUpdated": "2026-04-20T17:14:25.554Z",
       "deltaHistory": [
-        -0.0030000000000000027,
         -0.0010000000000000009,
         0.0020000000000000018,
         -0.010000000000000009,
@@ -518,14 +514,14 @@
         -0.02200000000000002,
         0.014000000000000012,
         -0.030000000000000027,
-        0.017000000000000015
+        0.017000000000000015,
+        0
       ]
     },
     "ai_server": {
       "score": 0.004,
-      "lastUpdated": "2026-04-20T14:01:36.673Z",
+      "lastUpdated": "2026-04-20T17:14:25.554Z",
       "deltaHistory": [
-        0.001,
         0.001,
         -0.001,
         -0.001,
@@ -534,14 +530,14 @@
         0.002,
         0.001,
         -0.002,
-        0.002
+        0.002,
+        0
       ]
     },
     "defense": {
-      "score": 0.007,
-      "lastUpdated": "2026-04-20T14:01:36.673Z",
+      "score": 0,
+      "lastUpdated": "2026-04-20T17:14:25.554Z",
       "deltaHistory": [
-        0.004,
         0.001,
         -0.002,
         0,
@@ -550,7 +546,8 @@
         -0.006,
         0,
         0,
-        0.007
+        0.007,
+        -0.007
       ]
     },
     "solar": {
@@ -586,10 +583,9 @@
       ]
     },
     "petrochemical": {
-      "score": 0.009,
-      "lastUpdated": "2026-04-20T14:01:36.673Z",
+      "score": 0.006,
+      "lastUpdated": "2026-04-20T17:14:25.554Z",
       "deltaHistory": [
-        0,
         0,
         0.001,
         0.002,
@@ -598,12 +594,13 @@
         -0.001,
         -0.003,
         0.039,
-        -0.032
+        -0.032,
+        -0.002999999999999999
       ]
     },
     "semiconductor_equip": {
       "score": 0,
-      "lastUpdated": "2026-04-20T14:01:36.673Z",
+      "lastUpdated": "2026-04-20T17:14:25.554Z",
       "deltaHistory": [
         0,
         0,
@@ -619,7 +616,7 @@
     },
     "robotics": {
       "score": 0,
-      "lastUpdated": "2026-04-20T14:01:36.673Z",
+      "lastUpdated": "2026-04-20T17:14:25.554Z",
       "deltaHistory": [
         0,
         0,
@@ -675,10 +672,9 @@
       ]
     },
     "gaming": {
-      "score": 0.053,
-      "lastUpdated": "2026-04-20T14:01:36.673Z",
+      "score": 0.055,
+      "lastUpdated": "2026-04-20T17:14:25.554Z",
       "deltaHistory": [
-        0,
         -0.001,
         0,
         0.001,
@@ -687,14 +683,14 @@
         -0.002,
         0.001,
         0.002,
-        0.046
+        0.046,
+        0.0020000000000000018
       ]
     },
     "pcb": {
-      "score": 0.033,
-      "lastUpdated": "2026-04-20T14:01:36.673Z",
+      "score": 0.021,
+      "lastUpdated": "2026-04-20T17:14:25.554Z",
       "deltaHistory": [
-        0.0010000000000000009,
         0,
         0,
         -0.003000000000000001,
@@ -703,7 +699,8 @@
         0.005000000000000001,
         -0.005999999999999998,
         0.005999999999999998,
-        0.010000000000000002
+        0.010000000000000002,
+        -0.012
       ]
     },
     "financial_holding": {
