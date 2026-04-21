@@ -1,26 +1,26 @@
 {
-  "updated_at": "2026-04-21T12:56:33.111226+00:00",
+  "updated_at": "2026-04-21T14:16:04.809452+00:00",
   "assets": {
     "gold": {
       "slug": "gold",
       "name_zh": "黃金",
       "category": "precious_metal",
-      "price": 4800.6001,
-      "change_1d_pct": -0.12,
+      "price": 4800.5,
+      "change_1d_pct": -0.13,
       "change_7d_pct": 0.81,
       "signals": [
         {
           "key": "gold_above_200ma",
           "triggered": true,
           "severity": "medium",
-          "commentary": "黃金 $4800.60，200MA $4202.15。站上 200MA 確認上升趨勢，避險資金流入明顯，符合 Baur & Lucey (2010) 避險功能啟動條件。",
+          "commentary": "黃金 $4800.50，200MA $4202.15。站上 200MA 確認上升趨勢，避險資金流入明顯，符合 Baur & Lucey (2010) 避險功能啟動條件。",
           "source": "Baur & Lucey (2010), J. Banking & Finance."
         },
         {
           "key": "gold_silver_ratio",
           "triggered": false,
           "severity": "low",
-          "commentary": "金銀比率 = 61.0x。比率 61.0x，處於合理區間（歷史均值 ~65x）。",
+          "commentary": "金銀比率 = 60.9x。比率 60.9x，處於合理區間（歷史均值 ~65x）。",
           "source": "Faber (1988); Gorton & Rouwenhorst (2006), J. Finance."
         },
         {
@@ -31,85 +31,85 @@
           "source": "Wilder (1978)."
         }
       ],
-      "last_updated": "2026-04-21T12:56:33.091859+00:00"
+      "last_updated": "2026-04-21T14:16:04.794251+00:00"
     },
     "silver": {
       "slug": "silver",
       "name_zh": "白銀",
       "category": "precious_metal",
-      "price": 78.72,
-      "change_1d_pct": -1.54,
-      "change_7d_pct": 3.14,
+      "price": 78.89,
+      "change_1d_pct": -1.33,
+      "change_7d_pct": 3.36,
       "signals": [
         {
           "key": "silver_above_200ma",
           "triggered": true,
           "severity": "medium",
-          "commentary": "白銀 $78.72，200MA $60.31。站上 200MA，工業需求 + 貨幣屬性雙驅動，趨勢轉多。",
+          "commentary": "白銀 $78.89，200MA $60.31。站上 200MA，工業需求 + 貨幣屬性雙驅動，趨勢轉多。",
           "source": "Issler, Lima & Notini (2014), Empirical Economics."
         },
         {
           "key": "silver_undervalued",
           "triggered": false,
           "severity": "low",
-          "commentary": "以歷史金銀比均值（~65x）計算，白銀合理價約 $73.86，目前市價 $78.72（溢價 6.6%）。",
+          "commentary": "以歷史金銀比均值（~65x）計算，白銀合理價約 $73.85，目前市價 $78.89（溢價 6.8%）。",
           "source": "Gorton & Rouwenhorst (2006), J. Finance."
         },
         {
           "key": "silver_momentum",
           "triggered": false,
           "severity": "low",
-          "commentary": "白銀 30 日漲幅 -6.3%。動能溫和，尚未出現趨勢性突破信號。",
+          "commentary": "白銀 30 日漲幅 -6.1%。動能溫和，尚未出現趨勢性突破信號。",
           "source": "Jegadeesh & Titman (1993), J. Finance."
         }
       ],
-      "last_updated": "2026-04-21T12:56:33.093216+00:00"
+      "last_updated": "2026-04-21T14:16:04.795295+00:00"
     },
     "copper": {
       "slug": "copper",
       "name_zh": "銅",
       "category": "industrial",
-      "price": 6.048,
-      "change_1d_pct": 0.2,
-      "change_7d_pct": 3.02,
+      "price": 6.0605,
+      "change_1d_pct": 0.41,
+      "change_7d_pct": 3.24,
       "signals": [
         {
           "key": "copper_200ma",
           "triggered": true,
           "severity": "medium",
-          "commentary": "銅價 $6.048/磅，200MA $5.298/磅。站上 200MA，全球工業活動擴張中，Slade (1982) 指出銅的趨勢對鋼鐵等工業產出有 2-3 個月領先性。",
+          "commentary": "銅價 $6.061/磅，200MA $5.298/磅。站上 200MA，全球工業活動擴張中，Slade (1982) 指出銅的趨勢對鋼鐵等工業產出有 2-3 個月領先性。",
           "source": "Slade (1982); Frankel & Rose (2010), Am. Econ. Review."
         },
         {
           "key": "copper_recession_signal",
           "triggered": false,
           "severity": "low",
-          "commentary": "銅價 $6.048/磅。高於 $3.5/磅，工業需求尚無衰退警訊。",
+          "commentary": "銅價 $6.061/磅。高於 $3.5/磅，工業需求尚無衰退警訊。",
           "source": "Issler, Lima & Notini (2014), Empirical Economics."
         },
         {
           "key": "copper_rsi",
           "triggered": true,
           "severity": "medium",
-          "commentary": "銅 RSI(14)=77.8。超買區，短期可能面臨獲利了結壓力。",
+          "commentary": "銅 RSI(14)=78.1。超買區，短期可能面臨獲利了結壓力。",
           "source": "Wilder (1978)."
         }
       ],
-      "last_updated": "2026-04-21T12:56:33.094455+00:00"
+      "last_updated": "2026-04-21T14:16:04.796222+00:00"
     },
     "wti": {
       "slug": "wti",
       "name_zh": "WTI 原油",
       "category": "energy",
-      "price": 87.37,
-      "change_1d_pct": -2.5,
-      "change_7d_pct": -9.53,
+      "price": 87.23,
+      "change_1d_pct": -2.66,
+      "change_7d_pct": -9.67,
       "signals": [
         {
           "key": "oil_shock",
           "triggered": true,
           "severity": "high",
-          "commentary": "WTI 原油 $87.37/桶。突破 $85，達 Hamilton (2009) 供給衝擊門檻，對消費端 GDP 有顯著負向影響，歷史上每次油價衝擊後 2 季均出現增長放緩。",
+          "commentary": "WTI 原油 $87.23/桶。突破 $85，達 Hamilton (2009) 供給衝擊門檻，對消費端 GDP 有顯著負向影響，歷史上每次油價衝擊後 2 季均出現增長放緩。",
           "source": "Hamilton (2009), J. Economic Perspectives."
         },
         {
@@ -120,96 +120,96 @@
           "source": "Baumeister & Kilian (2016), J. Applied Econometrics."
         }
       ],
-      "last_updated": "2026-04-21T12:56:33.095688+00:00"
+      "last_updated": "2026-04-21T14:16:04.797160+00:00"
     },
     "brent": {
       "slug": "brent",
       "name_zh": "Brent 原油",
       "category": "energy",
-      "price": 90.95,
-      "change_1d_pct": -4.74,
-      "change_7d_pct": -4.46,
+      "price": 90.85,
+      "change_1d_pct": -4.85,
+      "change_7d_pct": -4.57,
       "signals": [
         {
           "key": "brent_shock",
           "triggered": true,
           "severity": "high",
-          "commentary": "Brent 原油 $90.95/桶。突破 $90，Baumeister & Kilian (2016) 研究顯示此水準開始對通膨產生顯著推升效果，新興市場受輸入型通膨壓力更大。",
+          "commentary": "Brent 原油 $90.85/桶。突破 $90，Baumeister & Kilian (2016) 研究顯示此水準開始對通膨產生顯著推升效果，新興市場受輸入型通膨壓力更大。",
           "source": "Baumeister & Kilian (2016), J. Applied Econometrics."
         },
         {
           "key": "brent_wti_spread",
           "triggered": false,
           "severity": "low",
-          "commentary": "Brent-WTI 價差 $3.58。價差 $3.58，保持正常（$2-4 區間），無顯著地緣溢價。",
+          "commentary": "Brent-WTI 價差 $3.62。價差 $3.62，保持正常（$2-4 區間），無顯著地緣溢價。",
           "source": "Hamilton (2009); EIA (2024), Oil Market Report."
         },
         {
           "key": "brent_below_opec_floor",
           "triggered": false,
           "severity": "low",
-          "commentary": "Brent $90.95。高於 $60，OPEC+ 成員普遍有利潤空間，增產衝突風險較低。",
+          "commentary": "Brent $90.85。高於 $60，OPEC+ 成員普遍有利潤空間，增產衝突風險較低。",
           "source": "Fattouh (2014), Oxford Energy Comment."
         }
       ],
-      "last_updated": "2026-04-21T12:56:33.096910+00:00"
+      "last_updated": "2026-04-21T14:16:04.798131+00:00"
     },
     "natgas": {
       "slug": "natgas",
       "name_zh": "天然氣",
       "category": "energy",
-      "price": 2.684,
-      "change_1d_pct": -0.19,
-      "change_7d_pct": 1.36,
+      "price": 2.675,
+      "change_1d_pct": -0.52,
+      "change_7d_pct": 1.02,
       "signals": [
         {
           "key": "natgas_price_regime",
           "triggered": false,
           "severity": "low",
-          "commentary": "天然氣 $2.684/MMBtu。處於 $2-4 合理區間，能源成本無顯著整體壓力或拖累。",
+          "commentary": "天然氣 $2.675/MMBtu。處於 $2-4 合理區間，能源成本無顯著整體壓力或拖累。",
           "source": "Pindyck (1999), J. Environmental Economics & Management."
         }
       ],
-      "last_updated": "2026-04-21T12:56:33.098103+00:00"
+      "last_updated": "2026-04-21T14:16:04.799098+00:00"
     },
     "vix": {
       "slug": "vix",
       "name_zh": "VIX 恐慌指數",
       "category": "index",
-      "price": 18.9,
-      "change_1d_pct": 0.16,
-      "change_7d_pct": -1.72,
+      "price": 19.14,
+      "change_1d_pct": 1.43,
+      "change_7d_pct": -0.47,
       "signals": [
         {
           "key": "vix_normal",
           "triggered": false,
           "severity": "low",
-          "commentary": "VIX=18.9，低於 20，市場情緒平穩。低波動環境有利風險資產，但也可能代表市場整體麻痺（Minsky 時刻前兆）。",
+          "commentary": "VIX=19.1，低於 20，市場情緒平穩。低波動環境有利風險資產，但也可能代表市場整體麻痺（Minsky 時刻前兆）。",
           "source": "Whaley (2000); Todorov (2010), J. Financial Economics."
         }
       ],
-      "last_updated": "2026-04-21T12:56:33.099249+00:00"
+      "last_updated": "2026-04-21T14:16:04.799992+00:00"
     },
     "dxy": {
       "slug": "dxy",
       "name_zh": "美元指數 DXY",
       "category": "index",
-      "price": 98.257,
-      "change_1d_pct": 0.21,
-      "change_7d_pct": -0.4,
+      "price": 98.2,
+      "change_1d_pct": 0.15,
+      "change_7d_pct": -0.46,
       "signals": [
         {
           "key": "dxy_strong",
           "triggered": false,
           "severity": "low",
-          "commentary": "DXY=98.26。低於 105，強美元壓力暫緩，有利新興市場及大宗商品資產。",
+          "commentary": "DXY=98.20。低於 105，強美元壓力暫緩，有利新興市場及大宗商品資產。",
           "source": "FRB (2024), Trade-Weighted Dollar Index; Lustig et al. (2011)."
         },
         {
           "key": "dxy_very_strong",
           "triggered": false,
           "severity": "high",
-          "commentary": "DXY=98.26，超過 110 歷史極值。尚未達到 110 極端水準。",
+          "commentary": "DXY=98.20，超過 110 歷史極值。尚未達到 110 極端水準。",
           "source": "Lustig, Roussanov & Verdelhan (2011), Am. Econ. Review."
         },
         {
@@ -220,15 +220,15 @@
           "source": "Meese & Rogoff (1983), J. International Economics."
         }
       ],
-      "last_updated": "2026-04-21T12:56:33.100410+00:00"
+      "last_updated": "2026-04-21T14:16:04.800920+00:00"
     },
     "us2y": {
       "slug": "us2y",
       "name_zh": "美債 2Y 殖利率",
       "category": "bonds",
-      "price": 3.603,
-      "change_1d_pct": 0.14,
-      "change_7d_pct": 0.28,
+      "price": 3.605,
+      "change_1d_pct": 0.19,
+      "change_7d_pct": 0.33,
       "signals": [
         {
           "key": "us2y_neutral",
@@ -238,21 +238,21 @@
           "source": "Taylor (1993), Carnegie-Rochester Conference Series."
         }
       ],
-      "last_updated": "2026-04-21T12:56:33.101562+00:00"
+      "last_updated": "2026-04-21T14:16:04.801810+00:00"
     },
     "us10y": {
       "slug": "us10y",
       "name_zh": "美債 10Y 殖利率",
       "category": "bonds",
-      "price": 4.268,
-      "change_1d_pct": 0.42,
-      "change_7d_pct": -1.14,
+      "price": 4.274,
+      "change_1d_pct": 0.56,
+      "change_7d_pct": -1.0,
       "signals": [
         {
           "key": "yield_inversion",
           "triggered": false,
           "severity": "low",
-          "commentary": "2-10Y 利差 = +0.665%。殖利率曲線正常（正利差），短期衰退風險相對可控。",
+          "commentary": "2-10Y 利差 = +0.669%。殖利率曲線正常（正利差），短期衰退風險相對可控。",
           "source": "Campbell & Shiller (1991); Estrella & Mishkin (1998), NBER."
         },
         {
@@ -263,65 +263,65 @@
           "source": "Shiller (1981), Am. Econ. Review."
         }
       ],
-      "last_updated": "2026-04-21T12:56:33.102690+00:00"
+      "last_updated": "2026-04-21T14:16:04.802679+00:00"
     },
     "us30y": {
       "slug": "us30y",
       "name_zh": "美債 30Y 殖利率",
       "category": "bonds",
-      "price": 4.883,
-      "change_1d_pct": 0.04,
-      "change_7d_pct": -0.63,
+      "price": 4.887,
+      "change_1d_pct": 0.12,
+      "change_7d_pct": -0.55,
       "signals": [
         {
           "key": "us30y_duration_risk",
           "triggered": true,
           "severity": "medium",
-          "commentary": "30Y 殖利率 4.88%。突破 4.5%，長期融資成本顯著偏高。基礎建設、商用不動產及長期公用事業資本計畫受到拖累。",
+          "commentary": "30Y 殖利率 4.89%。突破 4.5%，長期融資成本顯著偏高。基礎建設、商用不動產及長期公用事業資本計畫受到拖累。",
           "source": "Fama & Bliss (1987), J. Political Economy; Diebold & Li (2006)."
         },
         {
           "key": "us30y_vs_10y_slope",
           "triggered": false,
           "severity": "low",
-          "commentary": "30Y - 10Y 長端利差 +0.615%。長端利差 +0.615%，曲線正常向上傾斜，長期通膨預期穩定。",
+          "commentary": "30Y - 10Y 長端利差 +0.613%。長端利差 +0.613%，曲線正常向上傾斜，長期通膨預期穩定。",
           "source": "Diebold & Li (2006), J. Econometrics."
         }
       ],
-      "last_updated": "2026-04-21T12:56:33.103810+00:00"
+      "last_updated": "2026-04-21T14:16:04.803562+00:00"
     },
     "btc": {
       "slug": "btc",
       "name_zh": "比特幣 BTC",
       "category": "crypto",
-      "price": 76040.7578,
-      "change_1d_pct": 0.22,
-      "change_7d_pct": 2.51,
+      "price": 75986.8828,
+      "change_1d_pct": 0.15,
+      "change_7d_pct": 2.43,
       "signals": [
         {
           "key": "btc_neutral",
           "triggered": false,
           "severity": "low",
-          "commentary": "BTC 7日漲跌 +2.5%，維持正常波動區間，無顯著風險信號。",
+          "commentary": "BTC 7日漲跌 +2.4%，維持正常波動區間，無顯著風險信號。",
           "source": "Bouri et al. (2017), Finance Research Letters."
         },
         {
           "key": "btc_above_200ma",
           "triggered": false,
           "severity": "medium",
-          "commentary": "BTC $76,041，200MA $86,105。跌破 200MA，進入加密熊市區間，建議大幅降低風險資產暴露。",
+          "commentary": "BTC $75,987，200MA $86,105。跌破 200MA，進入加密熊市區間，建議大幅降低風險資產暴露。",
           "source": "Liu & Tsyvinski (2021), Rev. Financial Studies."
         }
       ],
-      "last_updated": "2026-04-21T12:56:33.105860+00:00"
+      "last_updated": "2026-04-21T14:16:04.805210+00:00"
     },
     "eth": {
       "slug": "eth",
       "name_zh": "以太坊 ETH",
       "category": "crypto",
-      "price": 2308.5701,
-      "change_1d_pct": -0.29,
-      "change_7d_pct": -0.63,
+      "price": 2310.8999,
+      "change_1d_pct": -0.19,
+      "change_7d_pct": -0.53,
       "signals": [
         {
           "key": "eth_btc_ratio",
@@ -334,84 +334,84 @@
           "key": "eth_above_200ma",
           "triggered": false,
           "severity": "medium",
-          "commentary": "ETH $2,309，200MA $2,834，空頭格局。",
+          "commentary": "ETH $2,311，200MA $2,834，空頭格局。",
           "source": "Liu & Tsyvinski (2021), Rev. Financial Studies."
         }
       ],
-      "last_updated": "2026-04-21T12:56:33.107728+00:00"
+      "last_updated": "2026-04-21T14:16:04.806697+00:00"
     },
     "sol": {
       "slug": "sol",
       "name_zh": "Solana SOL",
       "category": "crypto",
-      "price": 85.52,
-      "change_1d_pct": 0.22,
-      "change_7d_pct": 2.08,
+      "price": 85.92,
+      "change_1d_pct": 0.69,
+      "change_7d_pct": 2.56,
       "signals": [
         {
           "key": "sol_above_200ma",
           "triggered": false,
           "severity": "medium",
-          "commentary": "SOL $85.52，200MA $124.82，空頭格局。Layer-1 生態鏈 200MA 上/下方是市場認知的牛熊分界。",
+          "commentary": "SOL $85.92，200MA $124.82，空頭格局。Layer-1 生態鏈 200MA 上/下方是市場認知的牛熊分界。",
           "source": "Liu & Tsyvinski (2021), Rev. Financial Studies."
         }
       ],
-      "last_updated": "2026-04-21T12:56:33.109530+00:00"
+      "last_updated": "2026-04-21T14:16:04.808131+00:00"
     },
     "sp500": {
       "slug": "sp500",
       "name_zh": "S&P 500",
       "category": "index",
-      "price": 7109.1401,
-      "change_1d_pct": -0.24,
-      "change_7d_pct": 4.17,
+      "price": 7134.7998,
+      "change_1d_pct": 0.36,
+      "change_7d_pct": 4.66,
       "signals": [
         {
           "key": "sp500_above_200ma",
           "triggered": true,
           "severity": "low",
-          "commentary": "S&P 500 現值 7,109，200MA 6,688。站上 200MA，中期多頭格局延續。Faber (2007) 使用 10 月均線（近似 200DMA）做擇時，歷史夏普比率優於 Buy & Hold。",
+          "commentary": "S&P 500 現值 7,135，200MA 6,692。站上 200MA，中期多頭格局延續。Faber (2007) 使用 10 月均線（近似 200DMA）做擇時，歷史夏普比率優於 Buy & Hold。",
           "source": "Faber (2007), J. Wealth Management; Lo & MacKinlay (1988)."
         },
         {
           "key": "sp500_drawdown",
           "triggered": false,
           "severity": "low",
-          "commentary": "S&P 500 距 52 週高點 -0.5%。距高點僅 0.5%，接近歷史高位，估值需謹慎評估（Shiller 1981 警告過度樂觀風險）。",
+          "commentary": "S&P 500 距 52 週高點 -0.2%。距高點僅 0.2%，接近歷史高位，估值需謹慎評估（Shiller 1981 警告過度樂觀風險）。",
           "source": "Fama & French (1988), J. Finance; Shiller (1981), Am. Econ. Review."
         },
         {
           "key": "sp500_rsi_overbought",
           "triggered": true,
           "severity": "medium",
-          "commentary": "S&P 500 RSI(14)=97.0，短期超買。歷史上 RSI>75 後 30 日常出現震盪整理，但趨勢不一定逆轉。",
+          "commentary": "S&P 500 RSI(14)=96.2，短期超買。歷史上 RSI>75 後 30 日常出現震盪整理，但趨勢不一定逆轉。",
           "source": "Wilder (1978); Jegadeesh & Titman (1993), J. Finance."
         }
       ],
-      "last_updated": "2026-04-21T12:56:33.110808+00:00"
+      "last_updated": "2026-04-21T14:16:04.809128+00:00"
     }
   },
   "yield_curve": [
     {
       "tenor": "2Y",
       "years": 2,
-      "yield_pct": 3.603
+      "yield_pct": 3.605
     },
     {
       "tenor": "10Y",
       "years": 10,
-      "yield_pct": 4.268
+      "yield_pct": 4.274
     },
     {
       "tenor": "30Y",
       "years": 30,
-      "yield_pct": 4.883
+      "yield_pct": 4.887
     }
   ],
   "yield_curve_analysis": {
-    "spread_2_10": 0.665,
-    "spread_2_30": 1.28,
-    "spread_10_30": 0.615,
+    "spread_2_10": 0.669,
+    "spread_2_30": 1.282,
+    "spread_10_30": 0.613,
     "is_inverted": false,
     "slope_signal": "normal",
     "signals": [
@@ -419,7 +419,7 @@
         "key": "curve_2_10_inversion",
         "triggered": false,
         "severity": "low",
-        "commentary": "2Y-10Y 利差 +0.665%。曲線正常（利差 +0.665%），短期衰退風險相對可控。",
+        "commentary": "2Y-10Y 利差 +0.669%。曲線正常（利差 +0.669%），短期衰退風險相對可控。",
         "source": "Estrella & Mishkin (1998), Rev. Econ. & Stat.; Campbell & Shiller (1991)."
       },
       {
@@ -433,14 +433,14 @@
         "key": "curve_long_end_slope",
         "triggered": true,
         "severity": "medium",
-        "commentary": "10Y-30Y 長端利差 +0.615%（正值=長端倒掛）。長端倒掛，市場預期長期經濟增速與通膨雙雙疲弱，Diebold & Li (2006) 三因子曲率負值信號，通常反映末期緊縮周期。",
+        "commentary": "10Y-30Y 長端利差 +0.613%（正值=長端倒掛）。長端倒掛，市場預期長期經濟增速與通膨雙雙疲弱，Diebold & Li (2006) 三因子曲率負值信號，通常反映末期緊縮周期。",
         "source": "Diebold & Li (2006), J. Econometrics; Fama & Bliss (1987)."
       },
       {
         "key": "curve_normal_shape",
         "triggered": false,
         "severity": "low",
-        "commentary": "殖利率曲線正常向上傾斜，信貸環境健康，未來 12 個月系統性衰退風險相對可控。（2-10Y 利差=+0.665%）",
+        "commentary": "殖利率曲線正常向上傾斜，信貸環境健康，未來 12 個月系統性衰退風險相對可控。（2-10Y 利差=+0.669%）",
         "source": "Estrella & Mishkin (1998); Diebold & Li (2006)."
       }
     ]
@@ -452,8 +452,8 @@
     "overall": "risk_off",
     "headline": "🚨 高度警戒：2 項高危信號觸發，市場防禦模式全面啟動，建議大幅降低風險暴露",
     "key_alerts": [
-      "WTI 原油 $87.37/桶。突破 $85，達 Hamilton (2009) 供給衝擊門檻，對消費端 GDP 有顯著…",
-      "Brent 原油 $90.95/桶。突破 $90，Baumeister & Kilian (2016) 研究顯示此水準開…"
+      "WTI 原油 $87.23/桶。突破 $85，達 Hamilton (2009) 供給衝擊門檻，對消費端 GDP 有顯著…",
+      "Brent 原油 $90.85/桶。突破 $90，Baumeister & Kilian (2016) 研究顯示此水準開…"
     ]
   }
 }

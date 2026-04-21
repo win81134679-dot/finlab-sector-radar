@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-04-21T20:56:49+08:00",
+  "updated_at": "2026-04-21T22:16:13+08:00",
   "active_policies": [
     {
       "key": "tariff",
@@ -112,7 +112,7 @@
           "o": 2050.0,
           "h": 2075.0,
           "l": 2045.0,
-          "v": 27248761
+          "v": 28055761
         }
       ]
     },
@@ -189,7 +189,7 @@
           "o": 78.0,
           "h": 78.5,
           "l": 74.0,
-          "v": 317189735
+          "v": 317295735
         }
       ]
     },
@@ -574,7 +574,7 @@
           "o": 4030.0,
           "h": 4270.0,
           "l": 4030.0,
-          "v": 3795052
+          "v": 3796052
         }
       ]
     },
@@ -728,7 +728,7 @@
           "o": 210.0,
           "h": 213.0,
           "l": 209.5,
-          "v": 57428018
+          "v": 59285018
         }
       ]
     },
@@ -805,7 +805,7 @@
           "o": 1950.0,
           "h": 2035.0,
           "l": 1930.0,
-          "v": 9463108
+          "v": 11917108
         }
       ]
     },
@@ -1267,7 +1267,7 @@
           "o": 467.0,
           "h": 476.0,
           "l": 461.0,
-          "v": 17593768
+          "v": 17685768
         }
       ]
     },
@@ -3654,7 +3654,7 @@
           "o": 4440.0,
           "h": 4570.0,
           "l": 4170.0,
-          "v": 1176209
+          "v": 1180209
         }
       ]
     },
@@ -3808,7 +3808,7 @@
           "o": 2100.0,
           "h": 2205.0,
           "l": 2060.0,
-          "v": 6303329
+          "v": 6399329
         }
       ]
     },
@@ -5271,7 +5271,7 @@
           "o": 296.0,
           "h": 301.5,
           "l": 292.0,
-          "v": 9086899
+          "v": 9102899
         }
       ]
     },
@@ -5964,7 +5964,7 @@
           "o": 2560.0,
           "h": 2585.0,
           "l": 2450.0,
-          "v": 4104167
+          "v": 4107167
         }
       ]
     },
@@ -6195,7 +6195,7 @@
           "o": 5200.0,
           "h": 5520.0,
           "l": 5135.0,
-          "v": 1622127
+          "v": 1623127
         }
       ]
     },
@@ -6349,7 +6349,7 @@
           "o": 1930.0,
           "h": 2090.0,
           "l": 1925.0,
-          "v": 19452855
+          "v": 19459855
         }
       ]
     },
@@ -6657,7 +6657,7 @@
           "o": 377.5,
           "h": 398.5,
           "l": 364.5,
-          "v": 20047999
+          "v": 20094999
         }
       ]
     },
@@ -6734,7 +6734,7 @@
           "o": 14885.0,
           "h": 15680.0,
           "l": 14885.0,
-          "v": 366084
+          "v": 390084
         }
       ]
     },
@@ -7350,7 +7350,7 @@
           "o": 2570.0,
           "h": 2600.0,
           "l": 2400.0,
-          "v": 2641876
+          "v": 2722946
         }
       ]
     },
@@ -7812,7 +7812,7 @@
           "o": 285.5,
           "h": 297.5,
           "l": 275.0,
-          "v": 51293233
+          "v": 51314233
         }
       ]
     },
@@ -9906,6 +9906,12 @@
   },
   "news": [
     {
+      "date": "2026-04-21T13:21:07+00:00",
+      "headline": "台積電股價已漲21％但仍值得「強力買進」 美分析機構給3個原因 - 自由財經",
+      "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE8waG9OTW9TQ0R2M1BPSTJiOFpsNVV1M0xScGpBT1dnMVJMREdLSC16MldIbEFMTjltUWFqQnV5ajdJMDJFTThWamJjXzRuRFB6ajBEVXhGaEFPU1FxVW5z0gFkQVVfeXFMUDh3SmRkN2w3N0RFaDR3clNSeGxDc2VvNXNic3dWLUtWRDF6cVg0enJ2ZDIyQVk3OWFfWUVGbEhIT1kwR183Nm5HNDA3WHpGVjBfUHN5cHNtZWFVMWZRR0prbTBWRQ?oc=5",
+      "sentiment": "neutral"
+    },
+    {
       "date": "2026-04-21T06:40:05+00:00",
       "headline": "美國小企業投資意願創2009年以來新低 經濟衰退疑慮升溫 - Yahoo股市",
       "url": "https://news.google.com/rss/articles/CBMi9gJBVV95cUxOX1BWTHhOUWd2Tm1zUWxHc3dSdDk4cGhVSTRGc24zeXc4cjRidUx4VU5BZHFsZElyUERfbzVxbEV3QlAtSmNFSDZ2VXNHNThMdWVfR1BXbkN1Z0NVejVyNjJNd1hMMjg3SUpIekRMc2RCdU9mOERsdUxjcll1Ylp4ZExlT0RIZV9BLW0zTGtsNnltUXpiMjRVa1kwUXNPRXo5SUctYUJNUUZINmZXd053Ty00NXRJTVZCaGVwQWJudUZLTUtmOHdjSkloZWdrWnExS1MwV3NhWE15N0Rlanh2ckxoamt0bnRERUQxT0lHV1BsZGtKNnYxaVVrcnRRdXVBcmVtZmFKWWdjM0J0WWRuRGtjamxwZmJJbGVqZklmVS0zNjJDRzZ3Rm5mejdZRzA4U21zajZEQjhQem1GU2tmaXhlWGhJcGx0SFBsTzF3a19vQW5EZTF2LXFSQkZwNmtfWlpiWEtFV1R5RjhrbFdPNzRSSU16QQ?oc=5",
@@ -9916,12 +9922,6 @@
       "headline": "美國與伊朗前景不明！ 美股4大指數多收跌、台積電ADR下跌1.15％ - Newtalk新聞",
       "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5BcjZrTFVXLUpxNEtNMkpDZzE3Y0VqVWFLbkVpRWU2VTJ1bmVXd3F2eXJxV1RlYnJrOW81ZGJPLUg1WjE3YS00YVlIa3JCYnM3N2htUXBHcnkxWHc?oc=5",
       "sentiment": "negative"
-    },
-    {
-      "date": "2026-04-20T19:13:22+00:00",
-      "headline": "台積電在美投資千億美元！台積電設備概念股將受惠？台積電設備概念股有哪些？（漢唐、亞翔、帆宣最新資訊） - StockFeel 股感",
-      "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxNenl0N09BakxUOGNwTjlxUmZjSERIZG5HcEduWkw0bWVBSDIzY2sxUTFaS3RoVXNfRUlXMmMtbmNNUEpOdEJLTmZUdTlLbkNOekotcXpWcTMtSkM2Vll5RDFraVY1ZTc5N2VFTXVTVVZmemRFVmtrSzU0ajk0a0l4Z2wtNi1QQjVzWGpreEp6eV85SlZSRzY3M2Z0Y3IybXdxLURRNzRzajJ4UkgwRDdvbWpXSnc2cmtybTcxSXJaYXBsS1g3OWdrZDBaSFlxQ1BsZXB4eDlGVnVWaFRvYkg4SnNTNA?oc=5",
-      "sentiment": "positive"
     },
     {
       "date": "2026-04-13T07:00:00+00:00",
@@ -9936,9 +9936,9 @@
       "sentiment": "neutral"
     },
     {
-      "date": "2026-04-03T07:00:00+00:00",
-      "headline": "台積電在美國要蓋「這麼多廠」！但最強秘密深藏台灣 - 自由財經",
-      "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE13MmJSTXR3MFBmS1k4ZlA5c3oydW9PRXg3M1NuaHh4OUkyZTVoQUljYTgtNDg5bGdPWjRaVTlYUENSR2dnRk9VSHZPRW1paGw2eFBTS2N3UlZkYlZqejBv0gFkQVVfeXFMUEJKdmIyWmtLWXFLdjFrcW9FeUNaaG82cnI3XzhlRURvYVNVOUxuLUVOT18wY1E4eXc5djZUM29PSkhKd25RMVVfLXgyY0RZOTNJSloyTUVHbkpOZXBtUUtyVjlRdw?oc=5",
+      "date": "2026-03-23T07:00:00+00:00",
+      "headline": "台積電美國四廠產能全被包了 - 經濟日報",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFA1MVZEa0hCdEFXZHNaV1I1WWdTeUNJdkphY2ZaN2JXZ3VESTlkbjl0RnkzRHZKWWVoWmRhWFVNLUI5Y0dhYldKMi1XTzJvTjBtemE1ZE9QYklad9IBX0FVX3lxTFBQdkEzdlRiSGVTaWEtbVNZbE9WYU1oRnRuc1ZhMW1hVWItTE9oSHBGMGxoWU5QYVdJdW9rLVkyRndjZFk1dk1lRXlPVlBjN045ZlB3MU9adVhaamFuS0tn?oc=5",
       "sentiment": "neutral"
     },
     {
@@ -9984,9 +9984,9 @@
       "sentiment": "neutral"
     },
     {
-      "date": "2025-07-08T07:00:00+00:00",
-      "headline": "TSMC says U.S. investment won't impact projects elsewhere|English News - 僑務電子報",
-      "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE1LeXNEMUhEUHh6RnB6QlNUVjg0YVJIczg5N1ZqdjhRUE5Tbk1VOXcweldiOUxfd1hXNGtsei1jU1h0b3I3d0RxWk1ENA?oc=5",
+      "date": "2025-07-24T07:00:00+00:00",
+      "headline": "Taiwan government think tank urges US cooperation on semiconductors|English News - 僑務電子報",
+      "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE1rZWlBVjNSSTZOVC1YZGhMZzNkbEtiSFE1NVQ3ZG1Gb244WnNjeXMxQ3lVd0xmZXhVTzlHOG50MlFWd3lOUUR0Z0FiVQ?oc=5",
       "sentiment": "neutral"
     },
     {
