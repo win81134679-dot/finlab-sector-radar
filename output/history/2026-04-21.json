@@ -1,7 +1,7 @@
 {
   "schema_version": "2.0",
   "date": "2026-04-21",
-  "run_at": "2026-04-21T20:31:27+08:00",
+  "run_at": "2026-04-21T20:56:30+08:00",
   "last_trading_date": "2026-04-21",
   "macro": {
     "warning": false,
@@ -12,7 +12,7 @@
       "bond": "US10Y=4.26% (↑均線❌)",
       "pmi": "INDPRO=101.8 (擴張✅)",
       "sox": "SOXX=417.55 (站上20MA✅)",
-      "twd": "USD/TWD=31.427 (台幣升值✅)"
+      "twd": "USD/TWD=31.440 (台幣升值✅)"
     },
     "us_bond_10y": 4.26,
     "bond_trend": "up",
@@ -20,7 +20,7 @@
     "ip_trend": "up",
     "sox_price": 417.55,
     "sox_trend": "up",
-    "usd_twd": 31.427,
+    "usd_twd": 31.44,
     "twd_trend": "down"
   },
   "macro_warning": false,
