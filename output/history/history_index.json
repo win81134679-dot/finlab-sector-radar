@@ -40,7 +40,7 @@
         4.0,
         3.5,
         4.0,
-        4.0
+        5.0
       ],
       "levels": [
         "強烈關注",
@@ -384,7 +384,7 @@
         2.0,
         2.5,
         3.0,
-        3.5
+        4.5
       ],
       "levels": [
         "觀察中",
@@ -404,7 +404,7 @@
         "觀察中",
         "觀察中",
         "觀察中",
-        "觀察中"
+        "強烈關注"
       ]
     },
     "food": {
@@ -1029,7 +1029,7 @@
         3.5,
         3.5,
         3.5,
-        3.5
+        2.5
       ],
       "levels": [
         "觀察中",
@@ -2302,21 +2302,20 @@
     {
       "warning": false,
       "signal": true,
-      "positive_count": 3,
-      "total_available": 4,
+      "positive_count": 2,
+      "total_available": 3,
       "details": {
         "bond": "US10Y=4.26% (↑均線❌)",
-        "pmi": "INDPRO=101.8 (擴張✅)",
-        "sox": "SOXX=420.70 (站上20MA✅)",
-        "twd": "USD/TWD=31.502 (台幣升值✅)"
+        "pmi": "INDPRO 取得失敗",
+        "sox": "SOXX=425.30 (站上20MA✅)",
+        "twd": "USD/TWD=31.468 (台幣升值✅)"
       },
       "us_bond_10y": 4.26,
       "bond_trend": "up",
-      "ip_index": 101.8,
-      "ip_trend": "up",
-      "sox_price": 420.7,
+      "ip_trend": "unknown",
+      "sox_price": 425.3,
       "sox_trend": "up",
-      "usd_twd": 31.502,
+      "usd_twd": 31.468,
       "twd_trend": "down",
       "date": "2026-04-22"
     }
