@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-22T17:10:11.127Z",
+  "updatedAt": "2026-04-22T21:03:32.783Z",
   "posts": [
     {
       "text": "With tariffs stalled, Trump's China policy drifts - Reuters With tariffs stalled, Trump's China policy drifts  Reuters",
@@ -25,7 +25,7 @@
     },
     {
       "text": "Trump Administration Takes Steps to Refund $166 Billion in Tariffs - The New York Times Trump Administration Takes Steps to Refund $166 Billion in Tariffs  The New York Times",
-      "timestamp": "2026-04-21T13:52:00.000Z",
+      "timestamp": "2026-04-21T12:14:04.000Z",
       "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNM21VdEVncGp3Tm5kWHl6RlhMZjhBY2xxeFBQWm05TDVQY2JoRC0xWS1CczZvdXhVOXBEM01xLUhXNkU5RmpUdnF4anZsOVFFSC14MTlmdmpXTy1udk9fdUwxNTRCY0tPRDNRVnd2WFdlZENqRzd3Qnhhb0pOaUttNDRuVmxVYnNPVmFiRGZqZ1g?oc=5",
       "keywords": [
         "tariff",
@@ -170,6 +170,27 @@
         "ic_design": -1,
         "display": -0.9,
         "ev_supply": -0.7
+      },
+      "sentiment": {
+        "compound": -0.7184,
+        "label": "強烈利空"
+      }
+    },
+    {
+      "text": "Tracking Trump’s Tariffs Across the Global Economy - Bloomberg.com Tracking Trump’s Tariffs Across the Global Economy  Bloomberg.com",
+      "timestamp": "2026-04-09T07:00:00.000Z",
+      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE44cWRvMnZYODk0SmduSElrclpzbDRtOF80VHhJRGpiWDJHTGJxNXM4TjEteEhqWGhGaGFPd3ZXWGE0cnFHQzBLdVhha2J3UXZWZkRwUENCMkduUENkb2w3WWd5VzZmLU14?oc=5",
+      "keywords": [
+        "tariff",
+        "tariffs"
+      ],
+      "impacts": {
+        "foundry": -1,
+        "shipping": -1,
+        "steel": -1,
+        "ic_design": -1,
+        "display": -1,
+        "ev_supply": -0.8
       },
       "sentiment": {
         "compound": -0.7184,
@@ -399,30 +420,6 @@
         "compound": 0,
         "label": "中性"
       }
-    },
-    {
-      "text": "Trump threatens Canada with 100% tariffs over its new trade deal with China - NPR Trump threatens Canada with 100% tariffs over its new trade deal with China  NPR",
-      "timestamp": "2026-01-24T08:00:00.000Z",
-      "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTFBWcXBKSERnaHdtVjBpM0VKQ0hUYVBzYWtDWEVTV3NVV2FTaVFjcXVBakxzNWRIb1AxWmpuZkttU1VxRGZCckRmeWsyNEdBYjRrREdZTWw5NVJ0ZkxrS0JETEdkalA5czFTNXBJbTI3ckpzQzQzamV5TXozWQ?oc=5",
-      "keywords": [
-        "trade deal",
-        "tariff",
-        "tariffs",
-        "china",
-        "deal"
-      ],
-      "impacts": {
-        "shipping": -0.7,
-        "ic_design": -1,
-        "display": -1,
-        "foundry": -1,
-        "steel": -1,
-        "ev_supply": -1
-      },
-      "sentiment": {
-        "compound": -0.25,
-        "label": "偏空"
-      }
     }
   ],
   "deltas": [],
@@ -433,10 +430,9 @@
   ],
   "sectorState": {
     "foundry": {
-      "score": -0.95,
-      "lastUpdated": "2026-04-22T17:10:11.127Z",
+      "score": -0.951,
+      "lastUpdated": "2026-04-22T21:03:32.783Z",
       "deltaHistory": [
-        0.0030000000000000027,
         0.010000000000000009,
         0.03399999999999992,
         -0.013999999999999901,
@@ -445,14 +441,14 @@
         -0.019999999999999907,
         -0.016000000000000014,
         0,
-        0.006000000000000005
+        0.006000000000000005,
+        -0.0010000000000000009
       ]
     },
     "shipping": {
-      "score": -0.971,
-      "lastUpdated": "2026-04-22T17:10:11.127Z",
+      "score": -0.973,
+      "lastUpdated": "2026-04-22T21:03:32.783Z",
       "deltaHistory": [
-        0.007000000000000006,
         -0.006000000000000005,
         0.030000000000000027,
         -0.0010000000000000009,
@@ -461,14 +457,14 @@
         -0.013000000000000012,
         -0.008000000000000007,
         -0.0010000000000000009,
-        0.013000000000000012
+        0.013000000000000012,
+        -0.0020000000000000018
       ]
     },
     "steel": {
-      "score": -0.895,
-      "lastUpdated": "2026-04-22T17:10:11.127Z",
+      "score": -0.903,
+      "lastUpdated": "2026-04-22T21:03:32.783Z",
       "deltaHistory": [
-        -0.0030000000000000027,
         -0.03500000000000003,
         0.07600000000000007,
         -0.008000000000000007,
@@ -477,12 +473,13 @@
         -0.03400000000000003,
         -0.02400000000000002,
         0.0050000000000000044,
-        0.019000000000000017
+        0.019000000000000017,
+        -0.008000000000000007
       ]
     },
     "ic_design": {
       "score": -1,
-      "lastUpdated": "2026-04-22T17:10:11.127Z",
+      "lastUpdated": "2026-04-22T21:03:32.783Z",
       "deltaHistory": [
         0,
         0,
@@ -497,10 +494,9 @@
       ]
     },
     "display": {
-      "score": -0.963,
-      "lastUpdated": "2026-04-22T17:10:11.127Z",
+      "score": -0.967,
+      "lastUpdated": "2026-04-22T21:03:32.783Z",
       "deltaHistory": [
-        -0.0030000000000000027,
         -0.030000000000000027,
         0.026000000000000023,
         0.007000000000000006,
@@ -509,14 +505,14 @@
         -0.009000000000000008,
         -0.0030000000000000027,
         0.0020000000000000018,
-        0.01100000000000001
+        0.01100000000000001,
+        -0.0040000000000000036
       ]
     },
     "ev_supply": {
-      "score": -0.826,
-      "lastUpdated": "2026-04-22T17:10:11.127Z",
+      "score": -0.828,
+      "lastUpdated": "2026-04-22T21:03:32.783Z",
       "deltaHistory": [
-        -0.02400000000000002,
         -0.017000000000000015,
         0.025000000000000022,
         0.0020000000000000018,
@@ -525,14 +521,14 @@
         -0.014000000000000012,
         -0.030999999999999917,
         0.009000000000000008,
-        0
+        0,
+        -0.0020000000000000018
       ]
     },
     "ai_server": {
-      "score": 0.086,
-      "lastUpdated": "2026-04-22T17:10:11.127Z",
+      "score": 0.085,
+      "lastUpdated": "2026-04-22T21:03:32.783Z",
       "deltaHistory": [
-        0.002,
         -0.003,
         0,
         0.001,
@@ -541,14 +537,14 @@
         -0.002,
         0.081,
         0.018000000000000002,
-        -0.015000000000000013
+        -0.015000000000000013,
+        -0.000999999999999987
       ]
     },
     "defense": {
-      "score": 0.005,
-      "lastUpdated": "2026-04-22T17:10:11.127Z",
+      "score": 0.004,
+      "lastUpdated": "2026-04-22T21:03:32.783Z",
       "deltaHistory": [
-        0.006999999999999999,
         -0.015,
         0.012,
         0,
@@ -557,14 +553,14 @@
         0,
         0,
         0,
-        0.005
+        0.005,
+        -0.001
       ]
     },
     "solar": {
       "score": 0,
-      "lastUpdated": "2026-04-22T09:43:25.388Z",
+      "lastUpdated": "2026-04-22T21:03:32.783Z",
       "deltaHistory": [
-        0.001,
         0,
         0,
         0,
@@ -572,15 +568,15 @@
         0,
         0.001,
         0.001,
+        0,
         0,
         0
       ]
     },
     "wind_energy": {
       "score": 0,
-      "lastUpdated": "2026-04-22T09:43:25.388Z",
+      "lastUpdated": "2026-04-22T21:03:32.783Z",
       "deltaHistory": [
-        0.001,
         0,
         0,
         0,
@@ -588,15 +584,15 @@
         0,
         0.001,
         0.001,
+        0,
         0,
         0
       ]
     },
     "petrochemical": {
-      "score": 0.007,
-      "lastUpdated": "2026-04-22T17:10:11.127Z",
+      "score": 0.006,
+      "lastUpdated": "2026-04-22T21:03:32.783Z",
       "deltaHistory": [
-        0.001,
         -0.001,
         -0.003,
         0.039,
@@ -605,12 +601,13 @@
         0.002999999999999999,
         0.0010000000000000009,
         0,
-        -0.003
+        -0.003,
+        -0.001
       ]
     },
     "semiconductor_equip": {
       "score": 0,
-      "lastUpdated": "2026-04-22T17:10:11.127Z",
+      "lastUpdated": "2026-04-22T21:03:32.783Z",
       "deltaHistory": [
         0,
         0,
@@ -626,7 +623,7 @@
     },
     "robotics": {
       "score": 0,
-      "lastUpdated": "2026-04-22T17:10:11.127Z",
+      "lastUpdated": "2026-04-22T21:03:32.783Z",
       "deltaHistory": [
         0,
         0,
@@ -682,10 +679,9 @@
       ]
     },
     "gaming": {
-      "score": 0.018,
-      "lastUpdated": "2026-04-22T17:10:11.127Z",
+      "score": 0.015,
+      "lastUpdated": "2026-04-22T21:03:32.783Z",
       "deltaHistory": [
-        -0.018,
         0.014999999999999996,
         -0.006999999999999999,
         0,
@@ -694,14 +690,14 @@
         -0.011,
         -0.002,
         0.007000000000000001,
-        -0.0030000000000000027
+        -0.0030000000000000027,
+        -0.002999999999999999
       ]
     },
     "pcb": {
       "score": 0.031,
-      "lastUpdated": "2026-04-22T17:10:11.127Z",
+      "lastUpdated": "2026-04-22T21:03:32.783Z",
       "deltaHistory": [
-        -0.0010000000000000009,
         -0.005000000000000001,
         0.009000000000000001,
         -0.005000000000000001,
@@ -710,7 +706,8 @@
         -0.005000000000000001,
         0,
         0.010000000000000002,
-        -0.0010000000000000009
+        -0.0010000000000000009,
+        0
       ]
     },
     "financial_holding": {
