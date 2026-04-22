@@ -1,6 +1,27 @@
 {
-  "updatedAt": "2026-04-22T03:28:57.659Z",
+  "updatedAt": "2026-04-22T06:05:12.276Z",
   "posts": [
+    {
+      "text": "Trump Administration Takes Steps to Refund $166 Billion in Tariffs - The New York Times Trump Administration Takes Steps to Refund $166 Billion in Tariffs  The New York Times",
+      "timestamp": "2026-04-21T12:14:04.000Z",
+      "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNM21VdEVncGp3Tm5kWHl6RlhMZjhBY2xxeFBQWm05TDVQY2JoRC0xWS1CczZvdXhVOXBEM01xLUhXNkU5RmpUdnF4anZsOVFFSC14MTlmdmpXTy1udk9fdUwxNTRCY0tPRDNRVnd2WFdlZENqRzd3Qnhhb0pOaUttNDRuVmxVYnNPVmFiRGZqZ1g?oc=5",
+      "keywords": [
+        "tariff",
+        "tariffs"
+      ],
+      "impacts": {
+        "foundry": -1,
+        "shipping": -1,
+        "steel": -1,
+        "ic_design": -1,
+        "display": -1,
+        "ev_supply": -0.8
+      },
+      "sentiment": {
+        "compound": -0.7184,
+        "label": "強烈利空"
+      }
+    },
     {
       "text": "With tariffs stalled, Trump's China policy drifts - Reuters With tariffs stalled, Trump's China policy drifts  Reuters",
       "timestamp": "2026-04-21T05:01:00.000Z",
@@ -45,27 +66,6 @@
       }
     },
     {
-      "text": "Trump’s China Strategy Drifts as Tariff Push Falters and Policy Signals Clash - Modern Diplomacy Trump’s China Strategy Drifts as Tariff Push Falters and Policy Signals Clash  Modern Diplomacy",
-      "timestamp": "2026-04-21T06:37:03.000Z",
-      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQWENDVVNKVXFLb1c2OV95b3hFOHZNV1hvUHRLeVo1bUdkMjFnUlhBNVJlUkJhWE5vMi1zaldGQ3BjdW1GMVdtdTFycFNObzBPNF9oYTBsa2VPeW9GMTlJbTd2dUlRR1ZoaEw2QkQxYk55S2pvOWJiR0VScjdFOHhubEhZNHBoc19kSXp1Wm9VM3ZyRmE3R3VvZDA4Z1hNUGpyN3E3aGY0TjNxbzdVdzZISEJPenBvdw?oc=5",
-      "keywords": [
-        "tariff",
-        "china"
-      ],
-      "impacts": {
-        "foundry": -0.7,
-        "shipping": -0.9,
-        "steel": -0.5,
-        "ic_design": -1,
-        "display": -0.9,
-        "ev_supply": -0.7
-      },
-      "sentiment": {
-        "compound": -0.7184,
-        "label": "強烈利空"
-      }
-    },
-    {
       "text": "A year on: Four ways Trump's tariffs have changed the global economy - BBC A year on: Four ways Trump's tariffs have changed the global economy  BBC",
       "timestamp": "2026-04-02T07:00:00.000Z",
       "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5NcTJmTVo3ajMtLXFDTUw1bEVKbVd3UHh6MTdxb2NrQl9BNGxMN1NlRjUwXzdlT0ZWd3pKeE4wUlQ3dHRObGc0aVZZbzJMbXBnTWg2V0M1VHd4Zw?oc=5",
@@ -80,6 +80,27 @@
         "ic_design": -1,
         "display": -1,
         "ev_supply": -0.8
+      },
+      "sentiment": {
+        "compound": -0.7184,
+        "label": "強烈利空"
+      }
+    },
+    {
+      "text": "Trump’s China Strategy Drifts as Tariff Push Falters and Policy Signals Clash - Modern Diplomacy Trump’s China Strategy Drifts as Tariff Push Falters and Policy Signals Clash  Modern Diplomacy",
+      "timestamp": "2026-04-21T06:37:03.000Z",
+      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQWENDVVNKVXFLb1c2OV95b3hFOHZNV1hvUHRLeVo1bUdkMjFnUlhBNVJlUkJhWE5vMi1zaldGQ3BjdW1GMVdtdTFycFNObzBPNF9oYTBsa2VPeW9GMTlJbTd2dUlRR1ZoaEw2QkQxYk55S2pvOWJiR0VScjdFOHhubEhZNHBoc19kSXp1Wm9VM3ZyRmE3R3VvZDA4Z1hNUGpyN3E3aGY0TjNxbzdVdzZISEJPenBvdw?oc=5",
+      "keywords": [
+        "tariff",
+        "china"
+      ],
+      "impacts": {
+        "foundry": -0.7,
+        "shipping": -0.9,
+        "steel": -0.5,
+        "ic_design": -1,
+        "display": -0.9,
+        "ev_supply": -0.7
       },
       "sentiment": {
         "compound": -0.7184,
@@ -109,13 +130,13 @@
       }
     },
     {
-      "text": "US Supreme Court ends tariffs, triggering $166B refund process in 2026 - Crypto Briefing US Supreme Court ends tariffs, triggering $166B refund process in 2026  Crypto Briefing",
-      "timestamp": "2026-04-21T09:05:51.000Z",
-      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPbmFhX1V4YWdPdDNpRDZvejdTQk0tLWtGQ2pONWU0MHZPWFdOY2FpOGFGaTlwNE0tdTgwcWtOY08xWFd6SllxVHlPRTV3ZF9WZHRiUEd6XzluWmI5NTA4a19Ma2pqcmVpZWduZFM4NTJSbWpTZm9LTkJuM1F4Yk1TMUJsSVplbWtkZDV4Z2lsa01YcldxNC0xbTVwc2c?oc=5",
+      "text": "How Trump’s Tariffs Are Choking U.S.-China Trade - WSJ How Trump’s Tariffs Are Choking U.S.-China Trade  WSJ",
+      "timestamp": "2026-03-27T07:00:00.000Z",
+      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOcXlMTFpuVVVUa3R5ZWlfc3BHWElJQWh4SWVGajVYb19ieUJ5QUprOFpGYXhRTTVwY1UxYXpZNm9FTlZqTTBxMnpxUlZzR0xVaTlaQ09tZVJ3U0lOQmRsdHdSeURpem9KLVZuVHhvV1E1UlBsY1YxR1Y3X0UwNlFFc2NxdjVxVWNzbXU3VVhmZjdSUWM?oc=5",
       "keywords": [
         "tariff",
         "tariffs",
-        "crypto"
+        "china"
       ],
       "impacts": {
         "foundry": -1,
@@ -123,8 +144,7 @@
         "steel": -1,
         "ic_design": -1,
         "display": -1,
-        "ev_supply": -0.8,
-        "gaming": 0.3
+        "ev_supply": -1
       },
       "sentiment": {
         "compound": -0.7184,
@@ -168,6 +188,29 @@
         "display": -0.5,
         "ev_supply": -0.4,
         "pcb": 0.5
+      },
+      "sentiment": {
+        "compound": -0.7184,
+        "label": "強烈利空"
+      }
+    },
+    {
+      "text": "US Supreme Court ends tariffs, triggering $166B refund process in 2026 - Crypto Briefing US Supreme Court ends tariffs, triggering $166B refund process in 2026  Crypto Briefing",
+      "timestamp": "2026-04-21T09:05:51.000Z",
+      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPbmFhX1V4YWdPdDNpRDZvejdTQk0tLWtGQ2pONWU0MHZPWFdOY2FpOGFGaTlwNE0tdTgwcWtOY08xWFd6SllxVHlPRTV3ZF9WZHRiUEd6XzluWmI5NTA4a19Ma2pqcmVpZWduZFM4NTJSbWpTZm9LTkJuM1F4Yk1TMUJsSVplbWtkZDV4Z2lsa01YcldxNC0xbTVwc2c?oc=5",
+      "keywords": [
+        "tariff",
+        "tariffs",
+        "crypto"
+      ],
+      "impacts": {
+        "foundry": -1,
+        "shipping": -1,
+        "steel": -1,
+        "ic_design": -1,
+        "display": -1,
+        "ev_supply": -0.8,
+        "gaming": 0.3
       },
       "sentiment": {
         "compound": -0.7184,
@@ -248,24 +291,6 @@
       }
     },
     {
-      "text": "Trump Officials Look to More Managed Approach to Trade With China - The New York Times Trump Officials Look to More Managed Approach to Trade With China  The New York Times",
-      "timestamp": "2026-03-16T07:00:00.000Z",
-      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPa1hBRnBWcWRzdWpiNUNfVFgxMEpUWEQycXBwVk1mN3V1bU50ZVBQQWFneFlrNU5KUUdqdWdUSnhaWGxzSzBSUGcxMlJxaERYLVp4UGtJRjBPeFU1MVdWYVNSRVBXcmk1R0l1MUFvaDN0a0hSaEN2Z2tBVVB4SVlkWlVRNEl2cnBSSUtWemMwVVZ4MFlpSWVJ?oc=5",
-      "keywords": [
-        "china"
-      ],
-      "impacts": {
-        "ic_design": -0.5,
-        "shipping": -0.4,
-        "display": -0.4,
-        "ev_supply": -0.3
-      },
-      "sentiment": {
-        "compound": 0,
-        "label": "中性"
-      }
-    },
-    {
       "text": "China no longer buys US exports: Drawing the right lessons for the next Trump-Xi deal - Peterson Institute for International Economics China no longer buys US exports: Drawing the right lessons for the next Trump-Xi deal  Peterson Institute for International Economics",
       "timestamp": "2026-03-03T08:00:00.000Z",
       "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQT256T3FlbnliMXRKY213d3htcmM1ZVpPU0dQWE83Rk5KYUVsSzdTSnItcDB2U2p2WVJHdTRERDBaT0VFQUxSWE8xX2M2cmMwSlpWMTdNVnlxMm5udEp2NEhWX3JpeVRfWm4wNmx6RTl4TTJqb181aF9ucnpHemRPZ3lpeFFGYlFES25XYkF6dERaUmRyTm1tSXd6SGp3R2RiUmpTbkJnTkVEWDl1V0RtRHM4YWpRdWNoMGc?oc=5",
@@ -283,30 +308,6 @@
       "sentiment": {
         "compound": 0.6124,
         "label": "強烈利多"
-      }
-    },
-    {
-      "text": "Trump threatens Canada with 100% tariffs over its new trade deal with China - NPR Trump threatens Canada with 100% tariffs over its new trade deal with China  NPR",
-      "timestamp": "2026-01-24T08:00:00.000Z",
-      "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTFBWcXBKSERnaHdtVjBpM0VKQ0hUYVBzYWtDWEVTV3NVV2FTaVFjcXVBakxzNWRIb1AxWmpuZkttU1VxRGZCckRmeWsyNEdBYjRrREdZTWw5NVJ0ZkxrS0JETEdkalA5czFTNXBJbTI3ckpzQzQzamV5TXozWQ?oc=5",
-      "keywords": [
-        "trade deal",
-        "tariff",
-        "tariffs",
-        "china",
-        "deal"
-      ],
-      "impacts": {
-        "shipping": -0.7,
-        "ic_design": -1,
-        "display": -1,
-        "foundry": -1,
-        "steel": -1,
-        "ev_supply": -1
-      },
-      "sentiment": {
-        "compound": -0.25,
-        "label": "偏空"
       }
     },
     {
@@ -376,17 +377,17 @@
       }
     },
     {
-      "text": "What Happens to All These Trade Deals Now? - The New York Times What Happens to All These Trade Deals Now?  The New York Times",
-      "timestamp": "2026-02-20T08:00:00.000Z",
-      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNNGVQMlRySWxUOUM0N1FnQXB3QTVCbjhMeVZoa3U3NnBrSHhrRk1CeVl0QjUzNEFvNEhlSTFJUXVVaFZObkttMmtOMzlZOXF6YkIxa3h3WGNnTEI1ZlRNeTRIZi1XX0JiOUdoZU5hY1dlLUVWdXl1UloyNzltUjJCM3FoQ0E0Y1FFcjRJYklvVzh2ZkJtUHdKaW1qVjU1OW8?oc=5",
+      "text": "Trump Officials Look to More Managed Approach to Trade With China - The New York Times Trump Officials Look to More Managed Approach to Trade With China  The New York Times",
+      "timestamp": "2026-03-16T07:00:00.000Z",
+      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPa1hBRnBWcWRzdWpiNUNfVFgxMEpUWEQycXBwVk1mN3V1bU50ZVBQQWFneFlrNU5KUUdqdWdUSnhaWGxzSzBSUGcxMlJxaERYLVp4UGtJRjBPeFU1MVdWYVNSRVBXcmk1R0l1MUFvaDN0a0hSaEN2Z2tBVVB4SVlkWlVRNEl2cnBSSUtWemMwVVZ4MFlpSWVJ?oc=5",
       "keywords": [
-        "trade deal",
-        "deal"
+        "china"
       ],
       "impacts": {
-        "shipping": 0.7,
-        "ic_design": 0.6,
-        "display": 0.3
+        "ic_design": -0.5,
+        "shipping": -0.4,
+        "display": -0.4,
+        "ev_supply": -0.3
       },
       "sentiment": {
         "compound": 0,
@@ -394,21 +395,20 @@
       }
     },
     {
-      "text": "Trump tariff chaos: What does 15% levy mean for trade deals the US signed? - Al Jazeera Trump tariff chaos: What does 15% levy mean for trade deals the US signed?  Al Jazeera",
-      "timestamp": "2026-02-22T08:00:00.000Z",
-      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOZGdYT25BeHZZTXV2T3N0QW9lS2x4WXhzX0lpV3Jja3ktSzF4Wno3aWpUZFQzTzd1VmF5clI1WGthUDdzVkdpR2E4RzAyM3g2N1ktSzlKMjRHa3Q4dURRc0dGSVVudi1xSVhrRlJnWWpoT1hUQjQzVVJCOXdXOEktVm5aQUxUV2hDZElZTGlxdWZSUGlrT29ZeWx0MjhDcTVIVW0yRkJOWS12SEZBamd0OUhn0gG3AUFVX3lxTFBvZnN5TDhXUDdScTVCWnNGR1NaMkZCZWZSVkpuck5BaTM0N0tvZVktZFd6c2hmYkpWc2NqZTVOUFdaVXdLMTVvZWRkLWhZMTR6ZWJSMlpsOEFEVkZoU1FzYi1fZ1g3bTJsOUQyelZRa040R3pRUllRUXVpRlN2NEQtYWRkaTFkYlctcmFic0h5SDQ4R2dNT3NVdXZQUWRFUXpseHMtOVlyS3FNWkdPU1hsd0xoWTY2NA?oc=5",
+      "text": "The Unrepentant Tariff Tool Has No Place in China-U.S. Trade Relations - China-US Focus The Unrepentant Tariff Tool Has No Place in China-U.S. Trade Relations  China-US Focus",
+      "timestamp": "2026-03-10T07:00:00.000Z",
+      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOeUo5RC1oYWtSbzM1WGctUVdSTUpFejA3UHZtbnJNaGFBT2V6SXVrblU5UWtBSGlZdXdXRllDaTlHY19GcVNoQ3BXaFVkVXA0N2JpUDNfUFlYZUpfUWVBRHNVYjBkNnBIY2pva3RMZnpBY3NoYTZwRU5ybzQ0elo2dmhwUHNFTVdkdW9BbFlDX3VKRnRURmR0aWVqcmNVSWZLRktJX0YwZEhLN3M3cWdfdndOQQ?oc=5",
       "keywords": [
-        "trade deal",
         "tariff",
-        "deal",
-        "ev"
+        "china"
       ],
       "impacts": {
-        "shipping": 0.2,
-        "display": -0.2,
         "foundry": -0.7,
+        "shipping": -0.9,
         "steel": -0.5,
-        "ev_supply": -0.2
+        "ic_design": -1,
+        "display": -0.9,
+        "ev_supply": -0.7
       },
       "sentiment": {
         "compound": -0.7184,
@@ -424,10 +424,9 @@
   ],
   "sectorState": {
     "foundry": {
-      "score": -0.92,
-      "lastUpdated": "2026-04-22T03:28:57.659Z",
+      "score": -0.94,
+      "lastUpdated": "2026-04-22T06:05:12.276Z",
       "deltaHistory": [
-        -0.016000000000000014,
         -0.03499999999999992,
         -0.006000000000000005,
         0.0040000000000000036,
@@ -436,14 +435,14 @@
         0.03399999999999992,
         -0.013999999999999901,
         0.013999999999999901,
-        0.006000000000000005
+        0.006000000000000005,
+        -0.019999999999999907
       ]
     },
     "shipping": {
-      "score": -0.962,
-      "lastUpdated": "2026-04-22T03:28:57.659Z",
+      "score": -0.975,
+      "lastUpdated": "2026-04-22T06:05:12.276Z",
       "deltaHistory": [
-        -0.019000000000000017,
         0.0020000000000000018,
         0.017000000000000015,
         -0.0020000000000000018,
@@ -452,14 +451,14 @@
         0.030000000000000027,
         -0.0010000000000000009,
         0,
-        -0.014000000000000012
+        -0.014000000000000012,
+        -0.013000000000000012
       ]
     },
     "steel": {
-      "score": -0.861,
-      "lastUpdated": "2026-04-22T03:28:57.659Z",
+      "score": -0.895,
+      "lastUpdated": "2026-04-22T06:05:12.276Z",
       "deltaHistory": [
-        0.031000000000000028,
         -0.007000000000000006,
         0.007000000000000006,
         -0.006000000000000005,
@@ -468,12 +467,13 @@
         0.07600000000000007,
         -0.008000000000000007,
         -0.0040000000000000036,
-        -0.007000000000000006
+        -0.007000000000000006,
+        -0.03400000000000003
       ]
     },
     "ic_design": {
       "score": -1,
-      "lastUpdated": "2026-04-22T03:28:57.659Z",
+      "lastUpdated": "2026-04-22T06:05:12.276Z",
       "deltaHistory": [
         0,
         0,
@@ -488,10 +488,9 @@
       ]
     },
     "display": {
-      "score": -0.964,
-      "lastUpdated": "2026-04-22T03:28:57.659Z",
+      "score": -0.973,
+      "lastUpdated": "2026-04-22T06:05:12.276Z",
       "deltaHistory": [
-        0.029000000000000026,
         0.006000000000000005,
         0.006999999999999895,
         -0.004999999999999893,
@@ -500,14 +499,14 @@
         0.026000000000000023,
         0.007000000000000006,
         -0.013000000000000012,
+        -0.009000000000000008,
         -0.009000000000000008
       ]
     },
     "ev_supply": {
-      "score": -0.79,
-      "lastUpdated": "2026-04-22T03:28:57.659Z",
+      "score": -0.804,
+      "lastUpdated": "2026-04-22T06:05:12.276Z",
       "deltaHistory": [
-        0.017000000000000015,
         0,
         0.009000000000000008,
         -0.0050000000000000044,
@@ -516,14 +515,14 @@
         0.025000000000000022,
         0.0020000000000000018,
         -0.006000000000000005,
-        -0.006000000000000005
+        -0.006000000000000005,
+        -0.014000000000000012
       ]
     },
     "ai_server": {
-      "score": 0.004,
-      "lastUpdated": "2026-04-22T03:28:57.659Z",
+      "score": 0.002,
+      "lastUpdated": "2026-04-22T06:05:12.276Z",
       "deltaHistory": [
-        0.002,
         0,
         0.001,
         0,
@@ -532,14 +531,14 @@
         0,
         0.001,
         -0.001,
-        0
+        0,
+        -0.002
       ]
     },
     "defense": {
       "score": 0,
-      "lastUpdated": "2026-04-22T03:28:57.659Z",
+      "lastUpdated": "2026-04-22T06:05:12.276Z",
       "deltaHistory": [
-        0.007,
         -0.007,
         0.008,
         0,
@@ -548,14 +547,14 @@
         0.012,
         0,
         -0.007,
-        -0.005
+        -0.005,
+        0
       ]
     },
     "solar": {
       "score": 0,
-      "lastUpdated": "2026-04-21T17:11:35.776Z",
+      "lastUpdated": "2026-04-22T06:05:12.276Z",
       "deltaHistory": [
-        -0.001,
         0,
         0.001,
         0,
@@ -564,14 +563,14 @@
         0,
         0,
         0.001,
-        0.001
+        0.001,
+        0
       ]
     },
     "wind_energy": {
       "score": 0,
-      "lastUpdated": "2026-04-21T17:11:35.776Z",
+      "lastUpdated": "2026-04-22T06:05:12.276Z",
       "deltaHistory": [
-        -0.001,
         0,
         0.001,
         0,
@@ -580,7 +579,8 @@
         0,
         0,
         0.001,
-        0.001
+        0.001,
+        0
       ]
     },
     "petrochemical": {
@@ -601,7 +601,7 @@
     },
     "semiconductor_equip": {
       "score": 0,
-      "lastUpdated": "2026-04-22T03:28:57.659Z",
+      "lastUpdated": "2026-04-22T06:05:12.276Z",
       "deltaHistory": [
         0,
         0,
@@ -617,7 +617,7 @@
     },
     "robotics": {
       "score": 0,
-      "lastUpdated": "2026-04-22T03:28:57.659Z",
+      "lastUpdated": "2026-04-22T06:05:12.276Z",
       "deltaHistory": [
         0,
         0,
@@ -673,10 +673,9 @@
       ]
     },
     "gaming": {
-      "score": 0.027,
-      "lastUpdated": "2026-04-22T03:28:57.659Z",
+      "score": 0.016,
+      "lastUpdated": "2026-04-22T06:05:12.276Z",
       "deltaHistory": [
-        0.046,
         0.0020000000000000018,
         -0.008,
         -0.0010000000000000009,
@@ -685,14 +684,14 @@
         -0.006999999999999999,
         0,
         0,
-        -0.008999999999999998
+        -0.008999999999999998,
+        -0.011
       ]
     },
     "pcb": {
-      "score": 0.027,
-      "lastUpdated": "2026-04-22T03:28:57.659Z",
+      "score": 0.022,
+      "lastUpdated": "2026-04-22T06:05:12.276Z",
       "deltaHistory": [
-        0.010000000000000002,
         -0.012,
         0.004,
         0.004,
@@ -701,6 +700,7 @@
         0.009000000000000001,
         -0.005000000000000001,
         0.005000000000000001,
+        -0.005000000000000001,
         -0.005000000000000001
       ]
     },
