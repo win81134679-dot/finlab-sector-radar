@@ -105,14 +105,30 @@ export function analyzeKBar(bars: OHLCBar[]): KBarAnalysis {
 
   const isRegular = avgDailyRange < 4 && consecutive === 0;
 
+  // 近5日漲跌幅（判斷長上影線是高位派發還是低位洗盤）
+  const pctChange5d = bars.length >= 5
+    ? (() => { const o = bars[bars.length - 5].c; const n = bars[bars.length - 1].c; return o > 0 ? ((n - o) / o) * 100 : 0; })()
+    : 0;
+  // 從期間最高點回撤幅度
+  const maxHigh5 = Math.max(...bars.slice(-Math.min(bars.length, 7)).map(b => b.h));
+  const fromPeak5 = maxHigh5 > 0 ? (bars[bars.length - 1].c - maxHigh5) / maxHigh5 : 0;
+
   let label: string;
   let score: number;
   if (consecutive >= 2) {
     label = `連 ${consecutive} 漲停 · 大戶攻勢`;
     score = -2; // 偏向大戶盤
   } else if (longUpper >= 2) {
-    label = `${longUpper} 次長上影線 · 疑似派發`;
-    score = -3; // 偏向散戶盤（主力派發）
+    // 長上影線只有在「有漲幅可出」時才視為高位派發
+    // 低位長上影線 = 逢高測試壓力 / 洗盤，不等於主力出貨
+    const isHighDistribution = pctChange5d > 5 || fromPeak5 < -0.03;
+    if (isHighDistribution) {
+      label = `${longUpper} 次長上影線 · 高位派發訊號`;
+      score = -3;
+    } else {
+      label = `${longUpper} 次長上影線 · 低位整理（非派發）`;
+      score = -1; // 輕度負面，但不判定為主力出貨
+    }
   } else if (isRegular) {
     label = `K棒規律 · 振幅 ${avgDailyRange.toFixed(1)}%`;
     score = 2; // 利好法人盤
