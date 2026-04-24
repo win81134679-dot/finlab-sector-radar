@@ -127,16 +127,16 @@ function SignalLight({ score, supported }: { score: number; supported: boolean }
 
 // ── 個股七訊號展開 ──────────────────────────────────────────────────────────
 
-function StockSignalDetail({ result, sectorBadge }: { result: StockRegimeResult; sectorBadge?: string }) {
+function StockSignalDetail({ result, sectorBadges }: { result: StockRegimeResult; sectorBadges?: string[] }) {
   return (
     <div className="bg-zinc-50/80 dark:bg-zinc-800/40 rounded-lg p-3 space-y-1.5">
       {/* 個股標頭 */}
       <div className="flex items-center gap-2 pb-1.5 border-b border-zinc-200/40 dark:border-zinc-700/30 flex-wrap">
         <span className="font-mono font-bold text-zinc-900 dark:text-zinc-100">{result.stockId}</span>
         {result.stockName && <span className="text-xs text-zinc-500">{result.stockName}</span>}
-        {sectorBadge && (
-          <span className="text-[10px] px-1.5 py-0.5 rounded bg-zinc-200 dark:bg-zinc-700 text-zinc-500 font-medium">{sectorBadge}</span>
-        )}
+        {sectorBadges && sectorBadges.map(name => (
+          <span key={name} className="text-[10px] px-1.5 py-0.5 rounded bg-zinc-200 dark:bg-zinc-700 text-zinc-500 font-medium">{name}</span>
+        ))}
         <span className={`text-[11px] px-2 py-0.5 rounded-full border font-bold ${REGIME_COLOR[result.regime]}`}>
           {REGIME_ICON[result.regime]} {result.regime}
         </span>
@@ -287,7 +287,7 @@ function FilterToolbar({ state, onChange, resultCount, hasActive }: FilterToolba
 // ── 篩選結果：個股平鋪列表 ───────────────────────────────────────────────────
 
 interface FilteredStock extends StockRegimeResult {
-  sectorName:  string;
+  sectorNames: string[];  // 可能跞多個板塊
   sectorLevel: string;
 }
 
@@ -306,9 +306,9 @@ function FilteredStockList({ stocks }: { stocks: FilteredStock[] }) {
     <div className="space-y-3">
       {stocks.map(s => (
         <StockSignalDetail
-          key={`${s.sectorName}-${s.stockId}`}
+          key={s.stockId}
           result={s}
-          sectorBadge={s.sectorName}
+          sectorBadges={s.sectorNames}
         />
       ))}
     </div>
@@ -418,7 +418,8 @@ export function RegimePanel({ snapshot }: RegimePanelProps) {
   const filteredStocks = useMemo<FilteredStock[]>(() => {
     if (!hasActiveFilter || !snapshot?.sectors) return [];
 
-    const result: FilteredStock[] = [];
+    // 以 stockId 為 key 去重：保留信心度最高那筆，並合並板塊名稱
+    const seen = new Map<string, FilteredStock>();
 
     for (const [, sectorRaw] of Object.entries(snapshot.sectors)) {
       const sector = sectorRaw as SectorData;
@@ -445,16 +446,31 @@ export function RegimePanel({ snapshot }: RegimePanelProps) {
           if (!signalMatch) continue;
         }
 
-        result.push({
-          ...regimeResult,
-          sectorName:  sector.name_zh,
-          sectorLevel: sector.level,
-        });
+        const existing = seen.get(regimeResult.stockId);
+        if (existing) {
+          // 已存在：合並板塊名稱，保留信心度較高的
+          if (!existing.sectorNames.includes(sector.name_zh)) {
+            existing.sectorNames.push(sector.name_zh);
+          }
+          if (regimeResult.confidence > existing.confidence) {
+            seen.set(regimeResult.stockId, {
+              ...regimeResult,
+              sectorNames: existing.sectorNames,
+              sectorLevel: sector.level,
+            });
+          }
+        } else {
+          seen.set(regimeResult.stockId, {
+            ...regimeResult,
+            sectorNames: [sector.name_zh],
+            sectorLevel: sector.level,
+          });
+        }
       }
     }
 
     // 可進場優先，再按信心度降序
-    return result.sort((a, b) => {
+    return [...seen.values()].sort((a, b) => {
       const aEntry = ACTION_GROUPS.entry.includes(a.action);
       const bEntry = ACTION_GROUPS.entry.includes(b.action);
       if (aEntry !== bEntry) return aEntry ? -1 : 1;
