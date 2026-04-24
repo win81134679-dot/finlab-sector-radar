@@ -17,6 +17,7 @@ import { TrumpFeedPanel } from "@/components/TrumpFeedPanel";
 import { AccelerationPanel } from "@/components/AccelerationPanel";
 import { HoldingsTab } from "@/components/HoldingsTab";
 import { UpdateButton } from "@/components/UpdateButton";
+import { ThemePanel } from "@/components/ThemePanel";
 
 interface Props {
   snapshot:    Awaited<ReturnType<typeof import("@/lib/fetcher").fetchLatestSnapshot>>;
@@ -32,10 +33,11 @@ interface Props {
   stockNames:   StockNamesMap | null;
 }
 
-type Tab = "sector" | "convergence" | "acceleration" | "longterm" | "trumpfeed" | "commodity" | "holdings";
+type Tab = "sector" | "themes" | "convergence" | "acceleration" | "longterm" | "trumpfeed" | "commodity" | "holdings";
 
 const TABS: { id: Tab; label: string }[] = [
   { id: "sector",       label: "短線趨勢 📊" },
+  { id: "themes",       label: "風口選股 🎯" },
   { id: "convergence",  label: "雙線共振 🎯" },
   { id: "acceleration", label: "週期監控 🔄" },
   { id: "longterm",     label: "長線趨勢 📐" },
@@ -243,6 +245,12 @@ export function TabContainer({ snapshot, historyIndex, commodities, magaData, co
               <TrendSection historyIndex={historyIndex} snapshot={snapshot} />
             </ErrorBoundary>
           </>
+        )}
+
+        {activeTab === "themes" && snapshot?.sectors && (
+          <ErrorBoundary label="風口選股">
+            <ThemePanel sectors={snapshot.sectors} />
+          </ErrorBoundary>
         )}
 
         {activeTab === "convergence" && (
