@@ -48,6 +48,11 @@ frontend/.env.local
 # Vercel
 .vercel/
 
+# 本地個股進場分析（純本機使用，不上傳 GitHub）
+local_analysis/
+本地個股分析.py
+本地個股分析.cmd
+
 # OS
 .DS_Store
 Thumbs.db
