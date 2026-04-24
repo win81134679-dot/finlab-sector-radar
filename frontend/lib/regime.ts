@@ -210,16 +210,18 @@ interface KDJResult {
   crossover: "金叉" | "死叉" | "高位鈍化" | "低位" | "中性";
   label: string;
   score: number;
-  isPrecise: boolean; // bars >= 14 才算精確
+  isPrecise:    boolean; // bars >= 30：殘差 0.02%，標準精確
+  isAcceptable: boolean; // bars >= 20：殘差 0.77%，可接受
 }
 
 export function calcKDJ(bars: OHLCBar[]): KDJResult {
   const N = 9;
   if (bars.length < N) {
-    return { K: 50, D: 50, J: 50, crossover: "中性", label: "資料不足（需≥9棒）", score: 0, isPrecise: false };
+    return { K: 50, D: 50, J: 50, crossover: "中性", label: "資料不足（需≥9棒）", score: 0, isPrecise: false, isAcceptable: false };
   }
 
-  const isPrecise = bars.length >= 14;
+  const isPrecise = bars.length >= 30;  // 30棒 = 22次迭代，殘差 0.02%，精確
+  const isAcceptable = bars.length >= 20; // 20棒 = 12次迭代，殘差 0.77%，良好
 
   // 計算 RSV（Raw Stochastic Value）
   let K = 50, D = 50;
@@ -254,7 +256,7 @@ export function calcKDJ(bars: OHLCBar[]): KDJResult {
     crossover = "中性"; score = 0; label = `中位 K${K.toFixed(0)} D${D.toFixed(0)} · 無明確訊號`;
   }
 
-  return { K, D, J, crossover, label, score, isPrecise };
+  return { K, D, J, crossover, label, score, isPrecise, isAcceptable };
 }
 
 // ────────────────────────────────────────────────────────────────────────────
@@ -486,7 +488,11 @@ export function classifyStockRegime(
     {
       label: "⑥ KDJ 指標",
       value: kdj.label,
-      detail: `K=${kdj.K.toFixed(1)} D=${kdj.D.toFixed(1)} J=${kdj.J.toFixed(1)}${kdj.isPrecise ? "" : " · ⚠️ 僅" + bars.length + "棒，精準度有限"}`,
+      detail: `K=${kdj.K.toFixed(1)} D=${kdj.D.toFixed(1)} J=${kdj.J.toFixed(1)}${
+        kdj.isPrecise    ? " · 精准度：標準" :
+        kdj.isAcceptable ? " · 精准度：良好" :
+        ` · ⚠️ 僅${bars.length}棒（需≥20棒），參考用`
+      }`,
       score: kdj.score,
       bullish: kdj.score > 0 ? true : kdj.score < 0 ? false : null,
       supported: bars.length >= 9,

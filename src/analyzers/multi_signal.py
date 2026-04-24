@@ -482,9 +482,11 @@ def _save_snapshot(result: Dict[str, Any], config, sector_map) -> Optional[Path]
         if _all_sids:
             _trading_status = _fetcher.get_trading_status(_all_sids, _last_trading_date)
             _ohlcv_full_batch = _fetcher.get_ohlcv_batch(_all_sids, days=400)
-            # KDJ 計算需 ≥14日，前端 ohlcv_7d 實際裝 20 棒（命名保留向後相容）
-            # 主快照剛保留最近 10 日（做快預覽用）
-            _ohlcv_batch = {sid: bars[-20:] for sid, bars in _ohlcv_full_batch.items()}
+            # KDJ 正確計算需要足夠的 warm-up 迭代：
+            # 迭代次數 = bars - 8，(2/3)^n 為残差比：
+            # 10棒→2iter(44%偏差) | 20棒→12iter(0.77%) | 30棒→22iter(0.02%=精確)
+            # ohlcv_7d 字段名保留向後相容，實際裝 30 棒
+            _ohlcv_batch = {sid: bars[-30:] for sid, bars in _ohlcv_full_batch.items()}
     except Exception as _e:
         logger.warning("取得 OHLCV/交易狀態失敗: %s", _e)
 
