@@ -164,7 +164,8 @@ export function analyzeVolume(bars: OHLCBar[]): VolumeAnalysis {
     trend = "溫和放量"; score = 2; label = `溫和放量 ${ratio.toFixed(1)}x · 主力佈局特徵`;
   } else if (ratio < 0.5) {
     if (priceChange > 2) {
-      trend = "量減價漲"; score = -1; label = `量縮價漲 · 需確認是否主力控盤`;
+      // 量縮價漲：可能是主力控盤，也可能是無量虛漲，中性觀察
+      trend = "量減價漲"; score = 0; label = `量縮價漲 ${ratio.toFixed(1)}x · 需確認籌碼支撐`;
     } else {
       trend = "窒息量"; score = -1; label = `窒息量 ${ratio.toFixed(1)}x · 觀望盤`;
     }
@@ -242,6 +243,11 @@ export function calcKDJ(bars: OHLCBar[]): KDJResult {
     crossover = "高位鈍化"; score = -1; label = `高位 K${K.toFixed(0)} · 注意鈍化風險`;
   } else if (K < D && K > 70) {
     crossover = "死叉"; score = -2; label = `高位死叉 K${K.toFixed(0)} D${D.toFixed(0)} · 轉弱訊號`;
+  } else if (K > D && K >= 30 && K <= 80) {
+    // 中位金叉：方向向上但非極端區，給小正分
+    crossover = "金叉"; score = 1; label = `中位金叉 K${K.toFixed(0)} D${D.toFixed(0)} · 偏多格局`;
+  } else if (K < D && K <= 70) {
+    crossover = "死叉"; score = -1; label = `中位死叉 K${K.toFixed(0)} D${D.toFixed(0)} · 偏弱`;
   } else if (K < 30) {
     crossover = "低位"; score = 1; label = `低位盤整 K${K.toFixed(0)} · 等待金叉`;
   } else {
@@ -381,9 +387,13 @@ export function classifyStockRegime(
   const media      = analyzeMediaHeat(stock);
 
   // 盤性評分加總
-  const institutional = inst.score + kbar.score + (leader.score * 0.5);
+  // ① 法人分：法人籌碼 + 領頭地位 + 量能（溫和放量是法人特徵）
+  //    K棒移出 institutional，改讓 K棒負面訊號直接貢獻到 retail（長上影線）
+  const institutional = inst.score + (leader.score * 0.5) + (vol.trend === "溫和放量" ? 1 : 0);
+  // ② 大戶分：連漲停爆發力 + 暴量
   const whale         = (kbar.consecutiveLimitUp >= 2 ? 4 : 0) + (vol.trend === "爆量" ? 2 : 0);
-  const retail        = media.score * -1 + (vol.trend === "量增不漲" ? 3 : 0) + (kbar.longUpperShadows >= 2 ? 2 : 0);
+  // ③ 散戶分：量增不漲（派發）+ 熱度過高 + 長上影線（派發特徵）
+  const retail        = (media.score * -1) + (vol.trend === "量增不漲" ? 3 : 0) + (kbar.longUpperShadows >= 2 ? 2 : 0);
 
   const maxScore = Math.max(institutional, whale, retail);
   let regime: RegimeType;
@@ -407,7 +417,8 @@ export function classifyStockRegime(
     const pctChange = oldest > 0 ? ((latest - oldest) / oldest) * 100 : 0;
 
     if (kbar.consecutiveLimitUp >= 2 || pctChange > 15) {
-      phase = kbar.longUpperShadows >= 1 ? "派發期" : "拉升期";
+      // 強勢上漲：需>=2根長上影線才判派發（1根可能只是單日震盪）
+      phase = kbar.longUpperShadows >= 2 ? "派發期" : "拉升期";
     } else if (pctChange > 5 && vol.trend !== "量增不漲") {
       phase = "拉升期";
     } else if (vol.trend === "溫和放量" && pctChange < 5 && inst.hasForeign) {
@@ -484,7 +495,8 @@ export function classifyStockRegime(
       label: "⑦ 媒體/散戶熱度",
       value: media.label,
       detail: `漲跌${stock.change_pct != null ? (stock.change_pct > 0 ? "+" : "") + stock.change_pct.toFixed(2) + "%" : "N/A"} · 訊號數${(stock.triggered ?? []).length} · 評分${(stock.score ?? 0).toFixed(1)}（Proxy指標）`,
-      score: media.score * -1,   // 過熱是負面
+      // score 用 media.score 本身：冷門=+2=綠燈，過熱=-3=紅燈（原 *-1 為 regime 公式用，顯示應為正向=好）
+      score: media.score,
       bullish: media.heatLevel === "冷門" ? true : media.heatLevel === "過熱" ? false : null,
       supported: true,
     },
