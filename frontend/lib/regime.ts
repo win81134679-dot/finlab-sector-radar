@@ -388,24 +388,35 @@ export function classifyStockRegime(
   const leader     = analyzeLeader(stock, sectorStocks);
   const media      = analyzeMediaHeat(stock);
 
-  // 盤性評分加總
+  // ─── 盤性原始評分 ───────────────────────────────────────────────────────
   // ① 法人分：法人籌碼 + 領頭地位 + 量能（溫和放量是法人特徵）
-  //    K棒移出 institutional，改讓 K棒負面訊號直接貢獻到 retail（長上影線）
   const institutional = inst.score + (leader.score * 0.5) + (vol.trend === "溫和放量" ? 1 : 0);
   // ② 大戶分：連漲停爆發力 + 暴量
   const whale         = (kbar.consecutiveLimitUp >= 2 ? 4 : 0) + (vol.trend === "爆量" ? 2 : 0);
   // ③ 散戶分：量增不漲（派發）+ 熱度過高 + 長上影線（派發特徵）
   const retail        = (media.score * -1) + (vol.trend === "量增不漲" ? 3 : 0) + (kbar.longUpperShadows >= 2 ? 2 : 0);
 
-  const maxScore = Math.max(institutional, whale, retail);
+  // ─── 正規化（各維度量綱不同，對齊後比較才有意義）──────────────────────────
+  // INST_MAX=8：inst最高6(外資+投信+籌碼+加分) + leader×0.5最高1 + vol加成最高1
+  // WHALE_MAX=6：連漲停4 + 爆量2
+  // RETAIL_MAX=8：媒體過熱3 + 量增不漲3 + 長上影線2
+  const INST_MAX   = 8.0;
+  const WHALE_MAX  = 6.0;
+  const RETAIL_MAX = 8.0;
+  const instNorm   = Math.max(0, institutional) / INST_MAX;
+  const whaleNorm  = Math.max(0, whale)         / WHALE_MAX;
+  const retailNorm = Math.max(0, retail)        / RETAIL_MAX;
+
+  // ─── 盤性判定（正規化後比較，差距 ≥ 0.25 才判明確盤性）──────────────────
+  const maxNorm = Math.max(instNorm, whaleNorm, retailNorm);
   let regime: RegimeType;
-  if (maxScore < 2) {
+  if (maxNorm < 0.25) {
     regime = "不明";
-  } else if (institutional >= whale && institutional >= retail && institutional - Math.max(whale, retail) >= 1.5) {
+  } else if (instNorm >= whaleNorm && instNorm >= retailNorm && instNorm - Math.max(whaleNorm, retailNorm) >= 0.25) {
     regime = "法人盤";
-  } else if (whale >= institutional && whale >= retail && whale - Math.max(institutional, retail) >= 1.5) {
+  } else if (whaleNorm >= instNorm && whaleNorm >= retailNorm && whaleNorm - Math.max(instNorm, retailNorm) >= 0.25) {
     regime = "大戶盤";
-  } else if (retail >= institutional && retail >= whale && retail - Math.max(institutional, whale) >= 1.5) {
+  } else if (retailNorm >= instNorm && retailNorm >= whaleNorm && retailNorm - Math.max(instNorm, whaleNorm) >= 0.25) {
     regime = "散戶情緒盤";
   } else {
     regime = "混合盤";
@@ -425,20 +436,27 @@ export function classifyStockRegime(
       phase = "拉升期";
     } else if (vol.trend === "溫和放量" && pctChange < 5 && inst.hasForeign) {
       phase = "建倉期";
-    } else if (vol.trend === "量增不漲" || kbar.longUpperShadows >= 2) {
+    } else if (vol.trend === "量增不漲" || (kbar.longUpperShadows >= 2 && pctChange > 5)) {
+      // 長上影線需有一定漲幅（> 5%）才判派發，避免 7 棒低波動環境誤觸發
       phase = "派發期";
     } else {
       phase = "整理期";
     }
   }
 
-  // 建議動作
+  // ─── 第零層：排除條件（兩條進場路徑共用，最先判定）─────────────────────
+  const isDistribution = phase === "派發期";
+  const isRetailDriven = regime === "散戶情緒盤";
+
+  // ─── 建議動作 ────────────────────────────────────────────────────────────
   let action: ActionType;
-  if (phase === "派發期" || regime === "散戶情緒盤") {
+  if (isDistribution || isRetailDriven) {
+    // 排除條件：派發期或散戶情緒主導，兩條進場路徑均不適用
     action = "⚠️ 出場或空手";
   } else if (regime === "法人盤" && (phase === "建倉期" || phase === "拉升期")) {
     action = "可跟進 · 追蹤法人動向";
   } else if (regime === "大戶盤") {
+    // 到達此處時 isDistribution 已確認為 false（派發期已在最外層排除）
     action = "短線機動（嚴設停損）";
   } else if (regime === "混合盤" || regime === "不明") {
     action = "觀望";
@@ -446,9 +464,11 @@ export function classifyStockRegime(
     action = "⚠️ 不建議 · 等回調確認";
   }
 
-  // 信心度（0~100）
-  const scoreDiff = maxScore - (maxScore === institutional ? Math.max(whale, retail) : maxScore === whale ? Math.max(institutional, retail) : Math.max(institutional, whale));
-  const confidence = Math.min(100, Math.round(40 + scoreDiff * 10));
+  // 信心度（0~100）：使用正規化差距計算，差距越大信心越高
+  const normSecond = maxNorm === instNorm ? Math.max(whaleNorm, retailNorm)
+                   : maxNorm === whaleNorm ? Math.max(instNorm, retailNorm)
+                   : Math.max(instNorm, whaleNorm);
+  const confidence = Math.min(100, Math.round(40 + (maxNorm - normSecond) * 80));
 
   // 七訊號明細清單
   const signals: SignalResult[] = [
