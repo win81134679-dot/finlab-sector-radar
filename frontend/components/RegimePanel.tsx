@@ -8,6 +8,7 @@ import { fetchLatestSnapshot } from "@/lib/fetcher";
 import {
   classifyMarketRegime,
   classifySectorRegime,
+  classifyStockRegime,
   type RegimeType,
   type PhaseType,
   type ActionType,
@@ -55,6 +56,37 @@ const ACTION_COLOR: Record<ActionType, string> = {
 const SECTOR_FILTER_OPTIONS = ["全部", "法人盤", "大戶盤", "散戶情緒盤", "混合盤"] as const;
 type FilterOption = typeof SECTOR_FILTER_OPTIONS[number];
 
+// ── 篩選維度定義 ──────────────────────────────────────────────────────────────
+
+type ActionGroup = "entry" | "watch" | "exit";
+
+const ACTION_GROUPS: Record<ActionGroup, ActionType[]> = {
+  entry: ["可跟進 · 追蹤法人動向", "短線機動（嚴設停損）"],
+  watch: ["觀望"],
+  exit:  ["⚠️ 出場或空手", "⚠️ 不建議 · 等回調確認"],
+};
+
+const ACTION_GROUP_LABELS: Record<ActionGroup, string> = {
+  entry: "🟢 可進場",
+  watch: "👁 觀望",
+  exit:  "🔴 出場訊號",
+};
+
+// 訊號篩選選項（跳過③499張，不支援）
+const SIGNAL_FILTER_OPTIONS = [
+  { idx: 0, label: "①K棒",  desc: "K棒規律" },
+  { idx: 1, label: "②量能", desc: "溫和放量" },
+  { idx: 3, label: "④法人", desc: "法人籌碼觸發" },
+  { idx: 4, label: "⑤領頭", desc: "板塊前1/3" },
+  { idx: 5, label: "⑥KDJ", desc: "KDJ向上" },
+  { idx: 6, label: "⑦冷門", desc: "無散戶追高" },
+] as const;
+
+interface FilterState {
+  actionGroups:  Set<ActionGroup>;
+  signalIndices: Set<number>;
+}
+
 // ── 大盤盤性 Banner ──────────────────────────────────────────────────────────
 
 function MarketRegimeBanner({ result }: { result: MarketRegimeResult }) {
@@ -95,13 +127,16 @@ function SignalLight({ score, supported }: { score: number; supported: boolean }
 
 // ── 個股七訊號展開 ──────────────────────────────────────────────────────────
 
-function StockSignalDetail({ result }: { result: StockRegimeResult }) {
+function StockSignalDetail({ result, sectorBadge }: { result: StockRegimeResult; sectorBadge?: string }) {
   return (
     <div className="bg-zinc-50/80 dark:bg-zinc-800/40 rounded-lg p-3 space-y-1.5">
       {/* 個股標頭 */}
       <div className="flex items-center gap-2 pb-1.5 border-b border-zinc-200/40 dark:border-zinc-700/30 flex-wrap">
         <span className="font-mono font-bold text-zinc-900 dark:text-zinc-100">{result.stockId}</span>
         {result.stockName && <span className="text-xs text-zinc-500">{result.stockName}</span>}
+        {sectorBadge && (
+          <span className="text-[10px] px-1.5 py-0.5 rounded bg-zinc-200 dark:bg-zinc-700 text-zinc-500 font-medium">{sectorBadge}</span>
+        )}
         <span className={`text-[11px] px-2 py-0.5 rounded-full border font-bold ${REGIME_COLOR[result.regime]}`}>
           {REGIME_ICON[result.regime]} {result.regime}
         </span>
@@ -135,6 +170,147 @@ function StockSignalDetail({ result }: { result: StockRegimeResult }) {
         <span>🐑 散戶 {result.regimeScores.retail.toFixed(1)}</span>
         <span className="ml-auto">信心 {result.confidence}%</span>
       </div>
+    </div>
+  );
+}
+
+// ── 篩選工具列 ────────────────────────────────────────────────────────────────
+
+interface FilterToolbarProps {
+  state:       FilterState;
+  onChange:    (next: FilterState) => void;
+  resultCount: number;
+  hasActive:   boolean;
+}
+
+function FilterToolbar({ state, onChange, resultCount, hasActive }: FilterToolbarProps) {
+  function toggleAction(group: ActionGroup) {
+    const next = new Set(state.actionGroups);
+    if (next.has(group)) next.delete(group); else next.add(group);
+    onChange({ ...state, actionGroups: next });
+  }
+
+  function toggleSignal(idx: number) {
+    const next = new Set(state.signalIndices);
+    if (next.has(idx)) next.delete(idx); else next.add(idx);
+    onChange({ ...state, signalIndices: next });
+  }
+
+  function clearAll() {
+    onChange({ actionGroups: new Set<ActionGroup>(), signalIndices: new Set<number>() });
+  }
+
+  function applyPreset(preset: "entry" | "entry_strong") {
+    if (preset === "entry") {
+      onChange({ actionGroups: new Set<ActionGroup>(["entry"]), signalIndices: new Set<number>() });
+    } else {
+      onChange({ actionGroups: new Set<ActionGroup>(["entry"]), signalIndices: new Set<number>([3, 4]) });
+    }
+  }
+
+  return (
+    <div className="border border-zinc-200/50 dark:border-zinc-700/30 rounded-xl p-3 space-y-2.5 bg-white/50 dark:bg-zinc-900/30">
+      {/* 第一排：動作狀態篩選 */}
+      <div className="flex items-center gap-2 flex-wrap">
+        <span className="text-[10px] font-bold text-zinc-400 uppercase tracking-wider shrink-0 w-10">動作</span>
+        {(["entry", "watch", "exit"] as ActionGroup[]).map(group => (
+          <button
+            key={group}
+            onClick={() => toggleAction(group)}
+            className={`px-2.5 py-1 text-xs font-medium rounded-full border transition-colors ${
+              state.actionGroups.has(group)
+                ? group === "entry"
+                  ? "bg-emerald-600 text-white border-emerald-600"
+                  : group === "watch"
+                  ? "bg-zinc-600 text-white border-zinc-600"
+                  : "bg-red-600 text-white border-red-600"
+                : "bg-transparent text-zinc-500 border-zinc-300 dark:border-zinc-600 hover:border-zinc-400"
+            }`}
+          >
+            {ACTION_GROUP_LABELS[group]}
+          </button>
+        ))}
+        <div className="w-px h-4 bg-zinc-200 dark:bg-zinc-700 shrink-0 mx-1" />
+        <span className="text-[10px] text-zinc-400 shrink-0">快速：</span>
+        <button
+          onClick={() => applyPreset("entry")}
+          className="px-2 py-0.5 text-[11px] font-medium rounded border border-emerald-300 dark:border-emerald-700 text-emerald-600 dark:text-emerald-400 hover:bg-emerald-50 dark:hover:bg-emerald-900/20 transition-colors"
+        >
+          可進場
+        </button>
+        <button
+          onClick={() => applyPreset("entry_strong")}
+          className="px-2 py-0.5 text-[11px] font-medium rounded border border-emerald-300 dark:border-emerald-700 text-emerald-600 dark:text-emerald-400 hover:bg-emerald-50 dark:hover:bg-emerald-900/20 transition-colors"
+        >
+          可進場＋法人④⑤
+        </button>
+      </div>
+
+      {/* 第二排：訊號篩選（AND 邏輯） */}
+      <div className="flex items-center gap-2 flex-wrap">
+        <span className="text-[10px] font-bold text-zinc-400 uppercase tracking-wider shrink-0 w-10">訊號</span>
+        {SIGNAL_FILTER_OPTIONS.map(({ idx, label, desc }) => (
+          <button
+            key={idx}
+            onClick={() => toggleSignal(idx)}
+            title={desc}
+            className={`px-2.5 py-1 text-xs font-mono font-medium rounded-full border transition-colors ${
+              state.signalIndices.has(idx)
+                ? "bg-sky-600 text-white border-sky-600"
+                : "bg-transparent text-zinc-500 border-zinc-300 dark:border-zinc-600 hover:border-zinc-400"
+            }`}
+          >
+            {label}
+          </button>
+        ))}
+        <span className="text-[10px] text-zinc-400 ml-1 hidden sm:inline">AND 邏輯 · 全部亮才顯示</span>
+      </div>
+
+      {/* 第三排：結果統計 */}
+      {hasActive && (
+        <div className="flex items-center justify-between pt-1 border-t border-zinc-100 dark:border-zinc-800">
+          <span className="text-xs text-zinc-500">
+            找到 <strong className="text-zinc-900 dark:text-white">{resultCount}</strong> 支符合標的
+          </span>
+          <button
+            onClick={clearAll}
+            className="text-[11px] text-zinc-400 hover:text-red-500 dark:hover:text-red-400 transition-colors"
+          >
+            ✕ 清除篩選
+          </button>
+        </div>
+      )}
+    </div>
+  );
+}
+
+// ── 篩選結果：個股平鋪列表 ───────────────────────────────────────────────────
+
+interface FilteredStock extends StockRegimeResult {
+  sectorName:  string;
+  sectorLevel: string;
+}
+
+function FilteredStockList({ stocks }: { stocks: FilteredStock[] }) {
+  if (stocks.length === 0) {
+    return (
+      <div className="text-center py-12 text-zinc-400">
+        <div className="text-2xl mb-2">🔍</div>
+        <p className="text-sm">無符合條件的標的</p>
+        <p className="text-xs mt-1">試著調整篩選條件，或清除部分選項</p>
+      </div>
+    );
+  }
+
+  return (
+    <div className="space-y-3">
+      {stocks.map(s => (
+        <StockSignalDetail
+          key={`${s.sectorName}-${s.stockId}`}
+          result={s}
+          sectorBadge={s.sectorName}
+        />
+      ))}
     </div>
   );
 }
@@ -203,7 +379,13 @@ interface RegimePanelProps {
 }
 
 export function RegimePanel({ snapshot }: RegimePanelProps) {
-  const [filter, setFilter] = useState<FilterOption>("全部");
+  const [sectorFilter, setSectorFilter] = useState<FilterOption>("全部");
+  const [filterState, setFilterState] = useState<FilterState>({
+    actionGroups:  new Set<ActionGroup>(),
+    signalIndices: new Set<number>(),
+  });
+
+  const hasActiveFilter = filterState.actionGroups.size > 0 || filterState.signalIndices.size > 0;
 
   const { marketResult, sectorResults } = useMemo(() => {
     if (!snapshot?.sectors) {
@@ -232,13 +414,61 @@ export function RegimePanel({ snapshot }: RegimePanelProps) {
     return { marketResult, sectorResults };
   }, [snapshot]);
 
-  // 篩選板塊
-  const filtered = useMemo(() => {
-    if (filter === "全部") return sectorResults;
-    return sectorResults.filter(r => r.regime === filter);
-  }, [sectorResults, filter]);
+  // ── 篩選結果計算（有篩選條件才跑全量個股掃描）
+  const filteredStocks = useMemo<FilteredStock[]>(() => {
+    if (!hasActiveFilter || !snapshot?.sectors) return [];
 
-  const counts = useMemo(() => {
+    const result: FilteredStock[] = [];
+
+    for (const [, sectorRaw] of Object.entries(snapshot.sectors)) {
+      const sector = sectorRaw as SectorData;
+      const stocks = sector.stocks ?? [];
+      if (stocks.length === 0) continue;
+
+      for (const stock of stocks) {
+        const regimeResult = classifyStockRegime(stock, sector, stocks);
+
+        // 動作狀態篩選（OR：符合任一 group 即通過）
+        if (filterState.actionGroups.size > 0) {
+          const actionMatch = [...filterState.actionGroups].some(group =>
+            ACTION_GROUPS[group].includes(regimeResult.action)
+          );
+          if (!actionMatch) continue;
+        }
+
+        // 訊號篩選（AND：選中的訊號必須全部 bullish=true）
+        if (filterState.signalIndices.size > 0) {
+          const signalMatch = [...filterState.signalIndices].every(idx => {
+            const sig = regimeResult.signals[idx];
+            return sig && sig.supported && sig.bullish === true;
+          });
+          if (!signalMatch) continue;
+        }
+
+        result.push({
+          ...regimeResult,
+          sectorName:  sector.name_zh,
+          sectorLevel: sector.level,
+        });
+      }
+    }
+
+    // 可進場優先，再按信心度降序
+    return result.sort((a, b) => {
+      const aEntry = ACTION_GROUPS.entry.includes(a.action);
+      const bEntry = ACTION_GROUPS.entry.includes(b.action);
+      if (aEntry !== bEntry) return aEntry ? -1 : 1;
+      return b.confidence - a.confidence;
+    });
+  }, [hasActiveFilter, snapshot, filterState]);
+
+  // 板塊盤性篩選（無進階篩選時才用）
+  const filteredSectors = useMemo(() => {
+    if (sectorFilter === "全部") return sectorResults;
+    return sectorResults.filter(r => r.regime === sectorFilter);
+  }, [sectorResults, sectorFilter]);
+
+  const sectorCounts = useMemo(() => {
     const c: Record<string, number> = { 全部: sectorResults.length };
     for (const r of sectorResults) {
       c[r.regime] = (c[r.regime] ?? 0) + 1;
@@ -256,7 +486,7 @@ export function RegimePanel({ snapshot }: RegimePanelProps) {
       <div>
         <h2 className="text-xl font-bold text-zinc-900 dark:text-white">盤性診斷 🔍</h2>
         <p className="text-sm text-zinc-500 dark:text-zinc-400 mt-0.5">
-          依老師心法辨識每個板塊屬於法人盤 / 大戶盤 / 散戶情緒盤，點板塊展開七項訊號明細
+          辨識每個板塊屬於法人盤 / 大戶盤 / 散戶情緒盤，使用篩選器找出可進場標的
         </p>
       </div>
 
@@ -268,38 +498,51 @@ export function RegimePanel({ snapshot }: RegimePanelProps) {
         </div>
       )}
 
-      {/* 板塊篩選 */}
+      {/* ━━ 篩選工具列 ━━ */}
       <div>
-        <div className="flex items-center justify-between mb-3 flex-wrap gap-2">
-          <h3 className="text-sm font-bold text-zinc-500 dark:text-zinc-400 uppercase tracking-wider">板塊盤性掃描</h3>
-          <div className="flex gap-1 p-1 bg-zinc-100 dark:bg-zinc-800/60 rounded-lg flex-wrap">
-            {SECTOR_FILTER_OPTIONS.map(opt => (
-              <button
-                key={opt}
-                onClick={() => setFilter(opt)}
-                className={`px-2.5 py-1 text-xs font-medium rounded-md transition-colors whitespace-nowrap ${
-                  filter === opt
-                    ? "bg-white dark:bg-zinc-700 text-zinc-900 dark:text-white shadow-sm"
-                    : "text-zinc-500 hover:text-zinc-700 dark:hover:text-zinc-300"
-                }`}
-              >
-                {opt === "全部" ? `全部 (${counts["全部"] ?? 0})` : (
-                  `${REGIME_ICON[opt as RegimeType]} ${opt} (${counts[opt] ?? 0})`
-                )}
-              </button>
-            ))}
+        <h3 className="text-sm font-bold text-zinc-500 dark:text-zinc-400 mb-2 uppercase tracking-wider">篩選標的</h3>
+        <FilterToolbar
+          state={filterState}
+          onChange={setFilterState}
+          resultCount={filteredStocks.length}
+          hasActive={hasActiveFilter}
+        />
+      </div>
+
+      {/* ━━ 有篩選：個股平鋪列表  ||  無篩選：板塊盤性掃描 ━━ */}
+      {hasActiveFilter ? (
+        <FilteredStockList stocks={filteredStocks} />
+      ) : (
+        <div>
+          <div className="flex items-center justify-between mb-3 flex-wrap gap-2">
+            <h3 className="text-sm font-bold text-zinc-500 dark:text-zinc-400 uppercase tracking-wider">板塊盤性掃描</h3>
+            <div className="flex gap-1 p-1 bg-zinc-100 dark:bg-zinc-800/60 rounded-lg flex-wrap">
+              {SECTOR_FILTER_OPTIONS.map(opt => (
+                <button
+                  key={opt}
+                  onClick={() => setSectorFilter(opt)}
+                  className={`px-2.5 py-1 text-xs font-medium rounded-md transition-colors whitespace-nowrap ${
+                    sectorFilter === opt
+                      ? "bg-white dark:bg-zinc-700 text-zinc-900 dark:text-white shadow-sm"
+                      : "text-zinc-500 hover:text-zinc-700 dark:hover:text-zinc-300"
+                  }`}
+                >
+                  {opt === "全部" ? `全部 (${sectorCounts["全部"] ?? 0})` : (
+                    `${REGIME_ICON[opt as RegimeType]} ${opt} (${sectorCounts[opt] ?? 0})`
+                  )}
+                </button>
+              ))}
+            </div>
+          </div>
+          <div className="space-y-2">
+            {filteredSectors.length === 0 ? (
+              <p className="text-zinc-400 text-sm text-center py-8">此盤性分類無板塊</p>
+            ) : (
+              filteredSectors.map(r => <SectorRow key={r.sectorId} result={r} />)
+            )}
           </div>
         </div>
-
-        {/* 板塊列表 */}
-        <div className="space-y-2">
-          {filtered.length === 0 ? (
-            <p className="text-zinc-400 text-sm text-center py-8">此盤性分類無板塊</p>
-          ) : (
-            filtered.map(r => <SectorRow key={r.sectorId} result={r} />)
-          )}
-        </div>
-      </div>
+      )}
 
       {/* 方法說明 */}
       <details className="text-xs text-zinc-400 border border-zinc-200/40 dark:border-zinc-700/30 rounded-lg">
