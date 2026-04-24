@@ -26,6 +26,11 @@ from __future__ import annotations
 import argparse
 import logging
 import sys
+
+# Windows cp950 終端相容：強制 utf-8 輸出
+if sys.stdout.encoding and sys.stdout.encoding.lower() in ("cp950", "cp936", "gbk"):
+    sys.stdout.reconfigure(encoding="utf-8", errors="replace")  # type: ignore[attr-defined]
+
 from collections import defaultdict
 from datetime import datetime, timedelta
 from pathlib import Path
@@ -215,7 +220,243 @@ def _compute_lamp4_stock(stock_id: str, fetcher, config) -> Dict[str, Any]:
 
 
 # ════════════════════════════════════════════════════════════════════════════
-# 四、個股信號彙整與進場建議
+# 四、吸籌評分系統（Accumulation Score）
+# ════════════════════════════════════════════════════════════════════════════
+
+def _compute_accumulation_extras(stock_id: str, fetcher, config) -> Dict[str, Any]:
+    """
+    計算吸籌評分所需的額外指標（現有七燈尚未覆蓋的部分）：
+    - 集保大戶（千張以上）持股佔比週增幅
+    - 投信連續買超天數
+    - 20 日均週轉率 + 當日週轉率（位階）
+    - K棒近 N 日均振幅
+    - 外資連買天數
+    """
+    result: Dict[str, Any] = {
+        "large_holder_chg":    None,   # 集保千張以上佔比週增幅（百分點）
+        "trust_consec_days":   None,   # 投信連買天數
+        "turnover_ratio_20ma": None,   # 20日均週轉率 (%)
+        "turnover_ratio_last": None,   # 最新日週轉率 (%)
+        "turnover_vs_20ma":    None,   # 最新週轉率 / 20MA 倍數
+        "amplitude_avg":       None,   # 近10日均振幅 (%)
+        "foreign_consec_days": None,   # 外資連買天數
+    }
+
+    # ── 集保大戶佔比週增 ─────────────────────────────────────────────────
+    try:
+        holder_df = fetcher.get("etl:inventory:大於一千張佔比")
+        if holder_df is not None and stock_id in holder_df.columns:
+            series = holder_df[stock_id].dropna()
+            if len(series) >= 2:
+                result["large_holder_chg"] = round(
+                    float(series.iloc[-1]) - float(series.iloc[-2]), 3
+                )
+    except Exception as e:
+        logger.debug("集保大戶 %s 失敗: %s", stock_id, e)
+
+    # ── 投信連買天數 ─────────────────────────────────────────────────────
+    try:
+        trust_df = fetcher.get(
+            "institutional_investors_trading_summary:投信買賣超股數"
+        )
+        if trust_df is not None and stock_id in trust_df.columns:
+            series = trust_df[stock_id].dropna().iloc[-60:]
+            consec = 0
+            for v in reversed(series.values):
+                if v > 0:
+                    consec += 1
+                else:
+                    break
+            result["trust_consec_days"] = consec
+    except Exception as e:
+        logger.debug("投信連買 %s 失敗: %s", stock_id, e)
+
+    # ── 外資連買天數 ─────────────────────────────────────────────────────
+    try:
+        foreign_df = fetcher.get(
+            "institutional_investors_trading_summary:外陸資買賣超股數(不含外資自營商)"
+        )
+        if foreign_df is not None and stock_id in foreign_df.columns:
+            series = foreign_df[stock_id].dropna().iloc[-60:]
+            consec = 0
+            for v in reversed(series.values):
+                if v > 0:
+                    consec += 1
+                else:
+                    break
+            result["foreign_consec_days"] = consec
+    except Exception as e:
+        logger.debug("外資連買 %s 失敗: %s", stock_id, e)
+
+    # ── 週轉率 ───────────────────────────────────────────────────────────
+    try:
+        vol_df   = fetcher.get("price:成交股數")
+        issue_df = fetcher.get("foreign_investors_shareholding:發行股數")
+        if (vol_df is not None and issue_df is not None
+                and stock_id in vol_df.columns and stock_id in issue_df.columns):
+            vol_s   = vol_df[stock_id].dropna().iloc[-30:]
+            # 發行股數為週頻，用 ffill 補日頻
+            issue_s = issue_df[stock_id].dropna()
+            # 對齊日期
+            common  = vol_s.index.intersection(issue_s.index)
+            if len(common) == 0:
+                # 取最新發行股數補齊
+                latest_issue = float(issue_s.iloc[-1])
+                if latest_issue > 0:
+                    turnover = (vol_s / latest_issue * 100).dropna()
+                    if len(turnover) >= 20:
+                        result["turnover_ratio_20ma"] = round(float(turnover.rolling(20).mean().iloc[-1]), 3)
+                        result["turnover_ratio_last"] = round(float(turnover.iloc[-1]), 3)
+                        if result["turnover_ratio_20ma"] > 0:
+                            result["turnover_vs_20ma"] = round(
+                                result["turnover_ratio_last"] / result["turnover_ratio_20ma"], 2
+                            )
+    except Exception as e:
+        logger.debug("週轉率 %s 失敗: %s", stock_id, e)
+
+    # ── K棒振幅 ─────────────────────────────────────────────────────────
+    try:
+        high_df = fetcher.get("price:最高價")
+        low_df  = fetcher.get("price:最低價")
+        if (high_df is not None and low_df is not None
+                and stock_id in high_df.columns and stock_id in low_df.columns):
+            high = high_df[stock_id].dropna().iloc[-10:]
+            low  = low_df[stock_id].dropna().iloc[-10:]
+            common = high.index.intersection(low.index)
+            if len(common) >= 5:
+                amp = ((high.loc[common] - low.loc[common]) / low.loc[common] * 100)
+                result["amplitude_avg"] = round(float(amp.mean()), 2)
+    except Exception as e:
+        logger.debug("K棒振幅 %s 失敗: %s", stock_id, e)
+
+    return result
+
+
+def _compute_accumulation_score(
+    stock_id: str,
+    sig: Dict[str, Any],
+    extras: Dict[str, Any],
+) -> Tuple[int, List[str]]:
+    """
+    吸籌強度評分（100 分制），評估主力吸籌跡象。
+
+    必要條件（任一不符直接 0 分）：
+      - 融資借券雙降（燈6）
+      - 外資買超（燈2）
+
+    加分項目（共 90 分）：
+      +20  溫和放量 > 1.5x
+      +25  集保千張以上週增 ≥ +0.5%
+      +20  投信連買 ≥ 5 日
+      +10  KDJ 金叉（燈4 已站 MA60 + 量比代替）
+      +10  板塊排名前 33%
+      +5   媒體熱度正常（目前無媒體分析，保留接口暫不計）
+
+    扣分項目：
+      -15  外資未連買 3 日
+      -10  過度放量（量比 > 4x，爆量出貨風險）
+      -5   K棒振幅 > 5%（震盪劇烈）
+
+    Returns (score, reasons_list)
+    """
+    reasons: List[str] = []
+
+    # ── 必要條件 ────────────────────────────────────────────────────────
+    l6_lit      = sig.get("l6_lit", False)
+    l6_cover    = sig.get("l6_cover", False)
+    l2_foreign  = sig.get("l2_foreign", False) or sig.get("l2_resonate", False)
+
+    if not (l6_lit or l6_cover):
+        return 0, ["🚫 籌碼不乾淨（融資借券未雙降），直接排除"]
+    if not l2_foreign:
+        return 0, ["🚫 無外資買超支撐，直接排除"]
+
+    score = 0
+
+    # ── 加分 ────────────────────────────────────────────────────────────
+    vol_ratio = sig.get("vol_ratio")
+    if vol_ratio is not None and vol_ratio >= 1.5:
+        score += 20
+        reasons.append(f"✅ 溫和放量 {vol_ratio:.2f}x")
+
+    large_holder_chg = extras.get("large_holder_chg")
+    if large_holder_chg is not None and large_holder_chg >= 0.5:
+        score += 25
+        reasons.append(f"✅ 集保千張大戶週增 +{large_holder_chg:.2f}%")
+    elif large_holder_chg is not None and large_holder_chg >= 0.0:
+        score += 8
+        reasons.append(f"🟡 集保千張大戶持平/微增 +{large_holder_chg:.2f}%")
+    elif large_holder_chg is None:
+        reasons.append("⚪ 集保大戶資料不可用")
+    else:
+        reasons.append(f"⚠️ 集保千張大戶本週減少 {large_holder_chg:.2f}%")
+
+    trust_days = extras.get("trust_consec_days")
+    if trust_days is not None and trust_days >= 5:
+        score += 20
+        reasons.append(f"✅ 投信連買 {trust_days} 日")
+    elif trust_days is not None and trust_days >= 3:
+        score += 10
+        reasons.append(f"🟡 投信連買 {trust_days} 日（≥5日更強）")
+    elif trust_days is not None and trust_days > 0:
+        reasons.append(f"⚪ 投信連買 {trust_days} 日（未達門檻）")
+    elif trust_days == 0:
+        reasons.append("⚪ 投信近期未連續買超")
+
+    # KDJ 金叉代替：使用 l4_above + vol_ratio > 1.2
+    l4_above = sig.get("l4_above", False)
+    if l4_above and vol_ratio is not None and vol_ratio >= 1.2:
+        score += 10
+        reasons.append(f"✅ 站 MA60 + 量比 {vol_ratio:.2f}x（技術金叉確認）")
+
+    # 板塊排名前 33%
+    l5_rank = sig.get("l5_rank")
+    if l5_rank is not None and l5_rank <= 33.0:
+        score += 10
+        reasons.append(f"✅ 板塊排名前 {l5_rank:.0f}%（領頭股）")
+    elif l5_rank is not None and l5_rank <= 50.0:
+        score += 5
+        reasons.append(f"🟡 板塊排名 {l5_rank:.0f}%（前半段）")
+
+    # 週轉率位階（籌碼沉澱 + 當日微升放量）
+    tr_20ma = extras.get("turnover_ratio_20ma")
+    tr_vs   = extras.get("turnover_vs_20ma")
+    if tr_20ma is not None and tr_vs is not None:
+        if tr_20ma < 3.0 and tr_vs >= 1.5:
+            score += 5
+            reasons.append(f"✅ 週轉率低位放量（20MA={tr_20ma:.2f}%，今日={tr_vs:.1f}x）")
+
+    # ── 扣分 ────────────────────────────────────────────────────────────
+    foreign_days = extras.get("foreign_consec_days")
+    if foreign_days is not None and foreign_days < 3:
+        score -= 15
+        reasons.append(f"⚠️ 外資連買不足 3 日（僅 {foreign_days} 日）")
+
+    if vol_ratio is not None and vol_ratio > 4.0:
+        score -= 10
+        reasons.append(f"⚠️ 量比過大 {vol_ratio:.2f}x（爆量出貨風險）")
+
+    amplitude = extras.get("amplitude_avg")
+    if amplitude is not None and amplitude > 5.0:
+        score -= 5
+        reasons.append(f"⚠️ K棒振幅過大 {amplitude:.2f}%（震盪劇烈）")
+    elif amplitude is not None:
+        reasons.append(f"✅ K棒振幅 {amplitude:.2f}%（走勢穩定）")
+
+    score = max(0, min(score, 100))
+
+    if score >= 60:
+        reasons.insert(0, f"🔥 吸籌強度高（{score}/100）")
+    elif score >= 35:
+        reasons.insert(0, f"🟡 吸籌強度中（{score}/100）")
+    else:
+        reasons.insert(0, f"🔵 吸籌強度偏低（{score}/100）")
+
+    return score, reasons
+
+
+# ════════════════════════════════════════════════════════════════════════════
+# 五、個股信號彙整與進場建議
 # ════════════════════════════════════════════════════════════════════════════
 
 def _extract_stock_signals(
@@ -229,7 +470,8 @@ def _extract_stock_signals(
 ) -> Dict[str, Any]:
     """
     從 7 燈原始結果提取某股票的個別信號，
-    注入個股層級燈4計算結果後呼叫 stock_scorer 取得評分。
+    注入個股層級燈4計算結果後呼叫 stock_scorer 取得評分，
+    並計算吸籌評分所需的額外指標。
     """
     raw   = analysis["raw"]
     macro = analysis["macro"]
@@ -314,7 +556,10 @@ def _extract_stock_signals(
         fetcher, config,
     )
 
-    return {
+    # ── 吸籌評分（額外指標）
+    extras = _compute_accumulation_extras(stock_id, fetcher, config)
+
+    result = {
         "stock_id":      stock_id,
         "sector_id":     sector_id,
         "is_standalone": is_standalone,
@@ -347,6 +592,12 @@ def _extract_stock_signals(
         # 評分
         "score_data": score_data,
     }
+
+    # 計算吸籌評分（需要 result 本身已建構完）
+    accum_score, accum_reasons = _compute_accumulation_score(stock_id, result, extras)
+    result["accum_score"]   = accum_score
+    result["accum_reasons"] = accum_reasons
+    return result
 
 
 def _call_scorer(
@@ -640,6 +891,26 @@ def _generate_markdown(
         ]
 
         # ── 技術關鍵指標 ────────────────────────────────────────────────────
+        extras      = sig.get("accumulation_extras", {})
+        accum_score = sig.get("accum_score", 0)
+        accum_rsns  = sig.get("accum_reasons", [])
+
+        trust_days    = extras.get("trust_consec_days")
+        foreign_days  = extras.get("foreign_consec_days")
+        holder_chg    = extras.get("large_holder_chg")
+        turnover_20ma = extras.get("turnover_ratio_20ma")
+        turnover_last = extras.get("turnover_ratio_last")
+        turnover_vs   = extras.get("turnover_vs_20ma")
+        amplitude     = extras.get("amplitude_avg")
+
+        holder_s    = f"{holder_chg:+.2f}%" if holder_chg is not None else "N/A"
+        trust_s     = f"{trust_days} 日" if trust_days is not None else "N/A"
+        foreign_d_s = f"{foreign_days} 日" if foreign_days is not None else "N/A"
+        tr_20ma_s   = f"{turnover_20ma:.2f}%" if turnover_20ma is not None else "N/A"
+        tr_last_s   = f"{turnover_last:.2f}%" if turnover_last is not None else "N/A"
+        tr_vs_s     = f"{turnover_vs:.2f}x" if turnover_vs is not None else "N/A"
+        amp_s       = f"{amplitude:.2f}%" if amplitude is not None else "N/A"
+
         lines += [
             "### 技術關鍵指標",
             "",
@@ -648,11 +919,42 @@ def _generate_markdown(
             f"| 最近收盤價 | `{price_s}` | — |",
             f"| MA60（60日均線） | `{ma60_s}` | 關鍵支撐/進場基準 |",
             f"| 距離 MA60 | `{dist_s}` | 0%~+10% 為甜蜜進場區 |",
-            f"| 量比（最新/20MA均量） | `{vol_s}` | ≥ 1.5x 為有效放量 |",
+            f"| 量比（最新/20MA均量） | `{vol_s}` | ≥ 1.5x 溫和放量，>4x 爆量警戒 |",
             f"| RS-Ratio（vs TAIEX） | `{rs_s}` | ≥ 1.0 為市場相對強勢 |",
             f"| 板塊內 RS 排名 | `{rank_s}` | ≥ 70% 得技術面加分 |",
+            f"| K棒近10日均振幅 | `{amp_s}` | < 3% 為低振幅壓盤整理 |",
+            f"| 外資連買天數 | `{foreign_d_s}` | ≥ 3 日有持續性 |",
+            f"| 投信連買天數 | `{trust_s}` | ≥ 5 日（勝率高於外資）|",
+            f"| 集保千張以上佔比週增 | `{holder_s}` | ≥ +0.5% 大戶增持訊號 |",
+            f"| 20日均週轉率 | `{tr_20ma_s}` | < 3% 籌碼沉澱（安全區）|",
+            f"| 最新日週轉率 | `{tr_last_s}` | — |",
+            f"| 週轉率 vs 20MA 倍數 | `{tr_vs_s}` | 沉澱區 1.5x 以上為微升放量 |",
             "",
         ]
+
+        # ── 吸籌評分 ────────────────────────────────────────────────────────
+        # 吸籌強度視覺化
+        filled_bars = min(accum_score // 10, 10)
+        bar = "█" * filled_bars + "░" * (10 - filled_bars)
+        accum_grade = (
+            "🔥 強烈吸籌" if accum_score >= 60
+            else "🟡 溫和吸籌" if accum_score >= 35
+            else "🔵 跡象偏弱"
+        )
+
+        lines += [
+            "### 🧲 吸籌強度評分（Accumulation Score）",
+            "",
+            f"**評分**：`{accum_score}/100`  {accum_grade}",
+            "",
+            f"`{bar}` {accum_score}%",
+            "",
+            "**評分明細**：",
+            "",
+        ]
+        for r in accum_rsns:
+            lines.append(f"- {r}")
+        lines.append("")
 
         # ── 三面合一評分 ────────────────────────────────────────────────────
         f_trig = [t for t in triggered if any(k in t for k in ["燈1", "燈3", "EPS"])]
@@ -686,7 +988,7 @@ def _generate_markdown(
             ">",
             f"> {sig['rec_reason']}",
             f">",
-            f"> 亮燈：**{sig['lit_count']}/6**（加權 {sig['lit_count_w']}）　評分：**{score_s}** {grade}",
+            f"> 亮燈：**{sig['lit_count']}/6**（加權 {sig['lit_count_w']}）　評分：**{score_s}** {grade}　吸籌：**{accum_score}/100** {accum_grade}",
             stop_loss,
             "",
             "---",
@@ -700,8 +1002,8 @@ def _generate_markdown(
     lines += [
         "## 📋 整體摘要對比",
         "",
-        "| 股票 | 板塊 | 燈1 | 燈2 | 燈3 | 燈4站MA60 | 燈5強勢 | 燈6籌碼 | 亮燈數 | 評分 | 宏觀 | 建議 |",
-        "|------|------|:---:|:---:|:---:|:---------:|:-------:|:-------:|:------:|:----:|:----:|------|",
+        "| 股票 | 板塊 | 燈1 | 燈2 | 燈3 | 燈4站MA60 | 燈5強勢 | 燈6籌碼 | 亮燈數 | 評分 | 吸籌 | 宏觀 | 建議 |",
+        "|------|------|:---:|:---:|:---:|:---------:|:-------:|:-------:|:------:|:----:|:----:|:----:|------|",
     ]
     for stock_id in target_stocks:
         sig = stock_signals.get(stock_id)
@@ -714,7 +1016,9 @@ def _generate_markdown(
         sd_  = sig.get("score_data", {})
         scr_ = sd_.get("score")
         grd_ = sd_.get("grade", "")
-        scr_d = f"{scr_:.1f}{grd_}" if scr_ is not None else "—"
+        scr_d   = f"{scr_:.1f}{grd_}" if scr_ is not None else "—"
+        accum_  = sig.get("accum_score")
+        accum_d = f"{accum_}" if accum_ is not None else "—"
         lines.append(
             f"| {stock_id} | {sname_short} "
             f"| {_b(sig['l1_lit'] or sig['l1_mom'])} "
@@ -725,6 +1029,7 @@ def _generate_markdown(
             f"| {_b(sig['l6_lit'] or sig['l6_cover'])} "
             f"| **{sig['lit_count']}/6** "
             f"| {scr_d} "
+            f"| {accum_d} "
             f"| {_b(sig['l7_signal'])} "
             f"| {sig['rec_icon']} {sig['recommendation']} |"
         )
