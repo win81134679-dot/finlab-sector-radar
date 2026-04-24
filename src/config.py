@@ -94,6 +94,27 @@ STOCK_ROE_MIN: float = 15.0             # ROE 加分門檻（%）
 STOCK_SCORE_TARGET_LEVELS: tuple = ("強烈關注", "觀察中")
 
 
+# ── P1 大盤三態分類器（軟版，不修改七燈閾值）────────────────────────────────
+MARKET_STATE_BULL_MA: int = 200        # 牛熊判定均線（TAIEX vs N日MA）
+MARKET_STATE_MOMENTUM_DAYS: int = 20   # 動能計算窗口（近N日報酬率）
+
+# ── P3 垃圾股五大業障過濾（每項可獨立開關）──────────────────────────────────
+JUNK_FILTER_ENABLED: bool = True
+JUNK_FILTER_PO: bool   = True    # 破：price < MA120 且 MA120 下彎
+JUNK_FILTER_GU: bool   = True    # 孤：不在燈2任何法人集合內
+JUNK_FILTER_XU: bool   = False   # 虛：現金流量為負（需確認FinLab欄位，預設關閉）
+JUNK_FILTER_PIAN: bool = True    # 偏：PE < 0 或 PE > 80
+JUNK_FILTER_SAN: bool  = True    # 散：近20日平均成交量 < 50萬股
+JUNK_SECTOR_THRESHOLD: float = 0.60  # 垃圾股比例 ≥ 此值 → quality_warning=True
+
+# ── P4 52週相對位階法 ───────────────────────────────────────────────────────
+RS52W_LOOKBACK_DAYS: int = 252         # 52週約252個交易日
+RS52W_WARN_THRESHOLD: float = -0.10   # 板塊落後 TAIEX 超過 -10% → underperforming_52w=True
+
+# ── P5 沉寂板塊突破偵測 ─────────────────────────────────────────────────────
+DORMANT_MIN_IGNORE_PERIODS: int = 5   # 連續忽略 ≥ N 期才算沉寂
+
+
 def is_discord_configured() -> bool:
     """至少有一個 Discord Webhook 已設定。"""
     return any([

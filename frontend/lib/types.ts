@@ -49,6 +49,27 @@ export interface SectorData {
   homogeneity?: number | null;
   member_count?: number;
   stocks: StockData[];
+  // P2: 領頭股健康度
+  leader_weak?: boolean;
+  // P3: 垃圾股品質過濾
+  quality_filter?: {
+    junk_ratio: number;
+    quality_warning: boolean;
+    enabled_filters: string[];
+    details: string;
+    junk_flags: Record<string, {
+      label: string;
+      count: number;
+      ratio: number;
+    }>;
+  };
+  // P4: 52週相對位階
+  sector_52w_return?: number | null;
+  taiex_52w_return?: number | null;
+  sector_vs_taiex_52w?: number | null;
+  underperforming_52w?: boolean;
+  // P5: 沉寂板塊突破
+  dormant_awakening?: boolean;
 }
 
 export interface MacroData {
@@ -67,6 +88,15 @@ export interface MacroData {
   twd_trend?: "up" | "down" | "unknown";
 }
 
+export interface MarketState {
+  state: "bull" | "sideways" | "bear" | "unknown";
+  state_zh: string;
+  confidence: number;
+  taiex_vs_200ma_pct?: number | null;
+  momentum_20d_pct?: number | null;
+  details: string;
+}
+
 export interface SignalSnapshot {
   schema_version?: string;
   date: string;
@@ -74,6 +104,7 @@ export interface SignalSnapshot {
   last_trading_date?: string;
   macro: MacroData;
   macro_warning?: boolean;  // 向下相容
+  market_state?: MarketState;  // P1: 大盤三態
   sectors: Record<string, SectorData>;
 }
 

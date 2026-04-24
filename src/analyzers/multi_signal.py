@@ -96,6 +96,8 @@ def run_all(fetcher, sector_map, config,
     from src.analyzers import rs_ratio, chipset, macro
     from src.analyzers import momentum_season, revenue_surprise
     from src.analyzers import correlation_gate
+    from src.analyzers import market_state as _market_state_mod
+    from src.analyzers import sector_quality_filter as _sqf_mod
 
     # ── 相關性品質閘門（Phase 2）────────────────────────────────────────
     # 先計算各板塊 intra-sector correlation，再建立過濾後的 sector_map
@@ -166,6 +168,14 @@ def run_all(fetcher, sector_map, config,
             except Exception as e:
                 logger.error(f"{name} 執行失敗: {e}")
                 raw[name] = {}
+
+    # ── P1 大盤三態分類器（軟版，不影響七燈閾值）────────────────────────
+    _market_state: dict = {}
+    try:
+        _market_state = _market_state_mod.analyze(fetcher, config)
+        logger.info("P1 大盤三態: %s (confidence=%.2f)", _market_state.get("state_zh"), _market_state.get("confidence", 0))
+    except Exception as _e_ms:
+        logger.warning("P1 大盤三態計算失敗（不影響主分析）: %s", _e_ms)
 
     # ── 資料可用性閘門 ─────────────────────────────────────────────────
     # 防止 FinLab API 全掛 / 部分掛時覆蓋正常資料（GitHub Actions 預防性機制）
@@ -277,9 +287,57 @@ def run_all(fetcher, sector_map, config,
                         change_pct_map=change_pct_map,
                     )
                     sorted_sectors[_sid]["stock_rankings"] = _rankings
+
+                    # ── P2 領頭股健康度確認 ──────────────────────────────
+                    # 取前2名領頭股，若技術面+法人面均無支撐 → leader_weak=True
+                    try:
+                        _top2 = list(_rankings.items())[:2]
+                        _leader_has_tech = any(
+                            _sr.get("breakdown", {}).get("technical", 0.0) >= 1.0
+                            for _, _sr in _top2
+                        )
+                        _leader_has_inst = any(
+                            "燈2✓" in _sr.get("triggered", [])
+                            or "外資獨買✓" in _sr.get("triggered", [])
+                            or "投信獨買✓" in _sr.get("triggered", [])
+                            for _, _sr in _top2
+                        )
+                        sorted_sectors[_sid]["leader_weak"] = (
+                            not _leader_has_tech and not _leader_has_inst
+                        )
+                    except Exception as _e_p2:
+                        logger.debug("P2 領頭股健康度檢查失敗 [%s]: %s", _sid, _e_p2)
+                        sorted_sectors[_sid]["leader_weak"] = False
                 except Exception as _e:
                     logger.warning("stock_scorer [%s] 失敗: %s", _sid, _e)
                     sorted_sectors[_sid]["stock_rankings"] = {}
+
+    # ── P3 垃圾股五大業障過濾（批次計算，預先取 DataFrame 避免重複 API 呼叫）────
+    _sqf_results: dict = {}
+    try:
+        _sqf_price_df  = fetcher.get("price:收盤價")  # 已快取，不會重複拉取
+        _sqf_volume_df = fetcher.get("price:成交股數")
+        _sqf_pe_df     = fetcher.get("price_earning_ratio:本益比")
+        _sqf_pe_df     = _sqf_pe_df.ffill() if _sqf_pe_df is not None else None
+        _sqf_ocf_df    = None  # JUNK_FILTER_XU 預設 False，省略拉取
+        if getattr(config, "JUNK_FILTER_XU", False):
+            _sqf_ocf_df = fetcher.get("fundamental_features:營業現金流量")
+
+        for _sqf_sid in sector_map.all_sector_ids():
+            _sqf_results[_sqf_sid] = _sqf_mod.analyze_sector(
+                _sqf_sid,
+                sector_map.get_stocks(_sqf_sid),
+                raw,
+                fetcher,
+                config,
+                price_df=_sqf_price_df,
+                volume_df=_sqf_volume_df,
+                pe_df=_sqf_pe_df,
+                ocf_df=_sqf_ocf_df,
+            )
+        logger.info("P3 品質過濾完成：%d 個板塊", len(_sqf_results))
+    except Exception as _e_sqf:
+        logger.warning("P3 品質過濾批次計算失敗（不影響主分析）: %s", _e_sqf)
 
     result = {
         "run_at":        datetime.now().isoformat(),
@@ -287,6 +345,8 @@ def run_all(fetcher, sector_map, config,
         "macro_signal":   macro_result,
         "macro_warning":  macro_warning,
         "raw_results":    raw,
+        "market_state":   _market_state,    # P1 大盤三態
+        "quality_filter": _sqf_results,     # P3 垃圾股過濾
         "summary": {
             "strong":  [sid for sid, v in sorted_sectors.items() if v["level"] == "強烈關注"],
             "watch":   [sid for sid, v in sorted_sectors.items() if v["level"] == "觀察中"],
@@ -461,6 +521,18 @@ def _save_snapshot(result: Dict[str, Any], config, sector_map) -> Optional[Path]
         _rs_data = result.get("raw_results", {}).get("燈5 相對強度", {}).get(sid, {})
         _rs_mom = _rs_data.get("rs_momentum")
 
+        # P2: 領頭股健康度
+        _leader_weak = v.get("leader_weak", False)
+
+        # P3: 垃圾股品質過濾
+        _qf = result.get("quality_filter", {}).get(sid, {})
+
+        # P4: 52週相對位階
+        _underperforming_52w = _rs_data.get("underperforming_52w", False)
+        _sector_vs_taiex_52w = _rs_data.get("sector_vs_taiex_52w")
+        _sector_52w_ret      = _rs_data.get("sector_52w_return")
+        _taiex_52w_ret       = _rs_data.get("taiex_52w_return")
+
         sectors_payload[sid] = {
             "name_zh":      v["name"],
             "total":        v["total"],
@@ -474,7 +546,38 @@ def _save_snapshot(result: Dict[str, Any], config, sector_map) -> Optional[Path]
             "homogeneity":  _nan_to_none(v.get("homogeneity")),
             "member_count": v.get("member_count", len(sector_map.get_stocks(sid))),
             "stocks":       stock_list,
+            # P2: 領頭股健康度
+            "leader_weak":  _leader_weak,
+            # P3: 垃圾股品質過濾
+            "quality_filter": {
+                "junk_ratio":      _qf.get("junk_ratio", 0.0),
+                "quality_warning": _qf.get("quality_warning", False),
+                "enabled_filters": _qf.get("enabled_filters", []),
+                "details":         _qf.get("details", ""),
+                "junk_flags": {
+                    k: {"label": v2.get("label"), "count": v2.get("count"), "ratio": v2.get("ratio")}
+                    for k, v2 in _qf.get("junk_flags", {}).items()
+                },
+            },
+            # P4: 52週相對位階
+            "sector_52w_return":   _sector_52w_ret,
+            "taiex_52w_return":    _taiex_52w_ret,
+            "sector_vs_taiex_52w": _sector_vs_taiex_52w,
+            "underperforming_52w": _underperforming_52w,
         }
+
+    # ── P5 沉寂板塊突破偵測（讀取歷史快照，偵測後注入 sectors_payload）──
+    try:
+        _dormant_map = _detect_dormant_sectors(config, sectors_payload)
+        for _dsid in sectors_payload:
+            sectors_payload[_dsid]["dormant_awakening"] = _dormant_map.get(_dsid, False)
+        _dormant_count = sum(1 for v in _dormant_map.values() if v)
+        if _dormant_count:
+            logger.info("P5 沉寂板塊突破偵測: %d 個板塊觸發 dormant_awakening", _dormant_count)
+    except Exception as _e_p5:
+        logger.warning("P5 沉寂板塊偵測失敗（不影響主分析）: %s", _e_p5)
+        for _dsid in sectors_payload:
+            sectors_payload[_dsid]["dormant_awakening"] = False
 
     # ── 構建完整 snapshot dict ──────────────────────────────────────────
     run_dt  = datetime.now()
@@ -496,6 +599,8 @@ def _save_snapshot(result: Dict[str, Any], config, sector_map) -> Optional[Path]
         "macro":   macro_payload,
         # 保留舊欄位向下相容
         "macro_warning": result.get("macro_warning", False),
+        # P1: 大盤三態（軟版，不影響七燈閾值）
+        "market_state": result.get("market_state", {}),
         "sectors": sectors_payload,
     }
 
@@ -560,6 +665,76 @@ def _save_snapshot(result: Dict[str, Any], config, sector_map) -> Optional[Path]
         logger.warning("個股 OHLCV 寫出失敗: %s", e)
 
     return saved_paths[0] if saved_paths else None
+
+
+def _detect_dormant_sectors(
+    config,
+    current_sectors_payload: Dict[str, Any],
+) -> Dict[str, bool]:
+    """
+    P5 — 沉寂板塊突破偵測
+
+    讀取 output/history/*.json 歷史快照，找出「連續≥N期為忽略」且
+    「當前 RS-Momentum 剛轉正（Left-Upper 象限）」的板塊，標記 dormant_awakening=True。
+
+    策略依據：
+      冷門板塊長期無法人關注，RS 悄悄改善但訊號量不足，
+      是領先大多數人的早期發現機會（Wyckoff Accumulation Phase C/D）。
+
+    Returns
+    -------
+    {sector_id: bool}  True = 觸發 dormant_awakening
+    """
+    min_ignore = int(getattr(config, "DORMANT_MIN_IGNORE_PERIODS", 5))
+    history_dir: Path = config.OUTPUT_HISTORY_DIR
+
+    dormant_map: Dict[str, bool] = {}
+
+    try:
+        # 列出所有歷史快照，按日期排序（不含今天，今天尚未寫入）
+        history_files = sorted(history_dir.glob("*.json"))
+        # 需要至少 min_ignore 期過去資料
+        if len(history_files) < min_ignore:
+            return {}
+
+        # 取最近 min_ignore+2 期（多讀 2 期以防資料缺失）
+        past_files = history_files[-(min_ignore + 2):]
+
+        # 建立歷史 level 記錄：{sid: [oldest_level, ..., newest_level]}
+        history_levels: Dict[str, List[str]] = {}
+        for f in past_files:
+            try:
+                data = json.loads(f.read_text(encoding="utf-8"))
+                for sid, sector in data.get("sectors", {}).items():
+                    if sid not in history_levels:
+                        history_levels[sid] = []
+                    history_levels[sid].append(sector.get("level", "忽略"))
+            except Exception:
+                continue
+
+        # 判斷每個板塊是否符合沉寂突破條件
+        for sid, levels in history_levels.items():
+            if len(levels) < min_ignore:
+                dormant_map[sid] = False
+                continue
+
+            # 最近 N 期是否全為「忽略」（不含當前正在處理的這一期）
+            past_n = levels[-min_ignore:]
+            all_ignore = all(lv == "忽略" for lv in past_n)
+
+            if not all_ignore:
+                dormant_map[sid] = False
+                continue
+
+            # 當前 RS-Momentum 是否剛轉正（Left-Upper 或 Right-Upper 象限）
+            current_sector = current_sectors_payload.get(sid, {})
+            rs_mom = current_sector.get("rs_momentum")
+            dormant_map[sid] = rs_mom is not None and float(rs_mom) > 0
+
+    except Exception as e:
+        logger.warning("P5 _detect_dormant_sectors 失敗: %s", e)
+
+    return dormant_map
 
 
 def _update_history_index(

@@ -91,6 +91,18 @@ def analyze(fetcher, sector_map, config) -> Dict[str, Dict[str, Any]]:
 
     lookback = config.RS_LOOKBACK_DAYS
 
+    # ── P4: 預先計算 TAIEX 52週報酬率 ──────────────────────────────────
+    _n52w         = int(getattr(config, "RS52W_LOOKBACK_DAYS", 252))
+    _warn_thresh  = float(getattr(config, "RS52W_WARN_THRESHOLD", -0.10))
+    _taiex_52w_ret: float | None = None
+    try:
+        if len(benchmark) >= _n52w:
+            _t_cur  = float(benchmark.iloc[-1])
+            _t_prev = float(benchmark.iloc[-_n52w])
+            _taiex_52w_ret = round((_t_cur - _t_prev) / _t_prev, 4) if _t_prev else None
+    except Exception:
+        pass
+
     for sector_id in sector_map.all_sector_ids():
         stocks = sector_map.get_stocks(sector_id)
         avail = [s for s in stocks if s in price_df.columns]
@@ -129,6 +141,24 @@ def analyze(fetcher, sector_map, config) -> Dict[str, Dict[str, Any]]:
             for sid in stock_rs:
                 stock_rs[sid]["rank_pct"] = 50.0
 
+        # ── P4: 計算板塊52週相對位階 ────────────────────────────────────
+        _sector_52w_ret: float | None = None
+        _sector_vs_taiex_52w: float | None = None
+        _underperforming_52w: bool = False
+        try:
+            avail_52 = [s for s in stocks if s in price_df.columns]
+            if avail_52 and len(benchmark) >= _n52w:
+                sec_avg_52 = price_df[avail_52].mean(axis=1).dropna()
+                if len(sec_avg_52) >= _n52w:
+                    _s_cur  = float(sec_avg_52.iloc[-1])
+                    _s_prev = float(sec_avg_52.iloc[-_n52w])
+                    _sector_52w_ret = round((_s_cur - _s_prev) / _s_prev, 4) if _s_prev else None
+                    if _sector_52w_ret is not None and _taiex_52w_ret is not None:
+                        _sector_vs_taiex_52w = round(_sector_52w_ret - _taiex_52w_ret, 4)
+                        _underperforming_52w  = _sector_vs_taiex_52w < _warn_thresh
+        except Exception as _e52:
+            logger.debug("P4 52週位階計算失敗 [%s]: %s", sector_id, _e52)
+
         results[sector_id] = {
             "signal":       signal,
             "score":        round(min(max(rs_ratio - 0.8, 0) / 0.4, 1.0), 3) if not np.isnan(rs_ratio) else 0.0,
@@ -138,6 +168,11 @@ def analyze(fetcher, sector_map, config) -> Dict[str, Dict[str, Any]]:
             "quadrant":     quadrant,
             "total_stocks": len(avail),
             "stock_rs":     stock_rs,   # per-stock RS 數據（新增）
+            # P4: 52週相對位階欄位
+            "sector_52w_return":    _sector_52w_ret,
+            "taiex_52w_return":     _taiex_52w_ret,
+            "sector_vs_taiex_52w":  _sector_vs_taiex_52w,
+            "underperforming_52w":  _underperforming_52w,
             "details": (
                 f"RS-Ratio={rs_ratio:.3f} | RS-Mom={rs_moment:.4f} | {quadrant}"
                 if not np.isnan(rs_ratio) else "數據不足"
@@ -153,4 +188,6 @@ def _empty() -> Dict[str, Any]:
         "rs_ratio": None, "rs_momentum": None,
         "quadrant": "insufficient_data", "total_stocks": 0,
         "stock_rs": {}, "details": "無數據",
+        "sector_52w_return": None, "taiex_52w_return": None,
+        "sector_vs_taiex_52w": None, "underperforming_52w": False,
     }
