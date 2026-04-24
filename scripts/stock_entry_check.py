@@ -234,6 +234,7 @@ def _compute_accumulation_extras(stock_id: str, fetcher, config) -> Dict[str, An
     """
     result: Dict[str, Any] = {
         "large_holder_chg":    None,   # 集保千張以上佔比週增幅（百分點）
+        "inv_data_date":        None,   # 集保資料截止日（字串）
         "trust_consec_days":   None,   # 投信連買天數
         "turnover_ratio_20ma": None,   # 20日均週轉率 (%)
         "turnover_ratio_last": None,   # 最新日週轉率 (%)
@@ -247,6 +248,7 @@ def _compute_accumulation_extras(stock_id: str, fetcher, config) -> Dict[str, An
         holder_df = fetcher.get("etl:inventory:大於一千張佔比")
         if holder_df is not None and stock_id in holder_df.columns:
             series = holder_df[stock_id].dropna()
+            result["inv_data_date"] = str(series.index[-1])[:10] if len(series) >= 1 else None
             if len(series) >= 2:
                 result["large_holder_chg"] = round(
                     float(series.iloc[-1]) - float(series.iloc[-2]), 3
@@ -898,12 +900,14 @@ def _generate_markdown(
         trust_days    = extras.get("trust_consec_days")
         foreign_days  = extras.get("foreign_consec_days")
         holder_chg    = extras.get("large_holder_chg")
+        inv_date      = extras.get("inv_data_date")
         turnover_20ma = extras.get("turnover_ratio_20ma")
         turnover_last = extras.get("turnover_ratio_last")
         turnover_vs   = extras.get("turnover_vs_20ma")
         amplitude     = extras.get("amplitude_avg")
 
         holder_s    = f"{holder_chg:+.2f}%" if holder_chg is not None else "N/A"
+        inv_date_s  = f"截至 {inv_date}（週五更新）" if inv_date else "N/A"
         trust_s     = f"{trust_days} 日" if trust_days is not None else "N/A"
         foreign_d_s = f"{foreign_days} 日" if foreign_days is not None else "N/A"
         tr_20ma_s   = f"{turnover_20ma:.2f}%" if turnover_20ma is not None else "N/A"
@@ -926,6 +930,7 @@ def _generate_markdown(
             f"| 外資連買天數 | `{foreign_d_s}` | ≥ 3 日有持續性 |",
             f"| 投信連買天數 | `{trust_s}` | ≥ 5 日（勝率高於外資）|",
             f"| 集保千張以上佔比週增 | `{holder_s}` | ≥ +0.5% 大戶增持訊號 |",
+            f"| 集保資料截止日 | {inv_date_s} | ⚠️ 週一～四跑分析時差 3~5 日 |",
             f"| 20日均週轉率 | `{tr_20ma_s}` | < 3% 籌碼沉澱（安全區）|",
             f"| 最新日週轉率 | `{tr_last_s}` | — |",
             f"| 週轉率 vs 20MA 倍數 | `{tr_vs_s}` | 沉澱區 1.5x 以上為微升放量 |",
