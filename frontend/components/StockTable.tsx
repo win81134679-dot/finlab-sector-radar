@@ -61,6 +61,8 @@ const GRADE_STARS: Record<string, string> = {
 
 export function StockTable({ stocks, sectorLevel, macroWarning, cycleStage }: StockTableProps) {
   const [expandedId, setExpandedId] = useState<string | null>(null);
+  const [showAll, setShowAll] = useState(false);
+  const TOP_N = 5;
 
   if (!stocks || stocks.length === 0) {
     return (
@@ -72,6 +74,8 @@ export function StockTable({ stocks, sectorLevel, macroWarning, cycleStage }: St
 
   // 依評分由高到低排序
   const sorted = [...stocks].sort((a, b) => (b.score ?? 0) - (a.score ?? 0));
+  const displayed = showAll ? sorted : sorted.slice(0, TOP_N);
+  const hiddenCount = sorted.length - TOP_N;
 
   return (
     <div className="overflow-x-auto -mx-1">
@@ -86,7 +90,7 @@ export function StockTable({ stocks, sectorLevel, macroWarning, cycleStage }: St
           </tr>
         </thead>
         <tbody>
-          {sorted.map((stock) => (
+          {displayed.map((stock) => (
             <StockRow
               key={stock.id}
               stock={stock}
@@ -101,6 +105,29 @@ export function StockTable({ stocks, sectorLevel, macroWarning, cycleStage }: St
           ))}
         </tbody>
       </table>
+      {/* 展開更多 / 收起 按鈕 */}
+      {sorted.length > TOP_N && (
+        <button
+          onClick={() => { setShowAll(!showAll); if (showAll) setExpandedId(null); }}
+          className="mt-2 w-full py-1.5 text-xs text-zinc-500 dark:text-zinc-400
+                     hover:text-blue-600 dark:hover:text-blue-400
+                     border border-zinc-200/40 dark:border-zinc-700/40
+                     rounded-lg hover:border-blue-400/50
+                     transition-colors flex items-center justify-center gap-1"
+        >
+          {showAll ? (
+            <>
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" className="rotate-180"><path d="M6 9l6 6 6-6"/></svg>
+              收起
+            </>
+          ) : (
+            <>
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5"><path d="M6 9l6 6 6-6"/></svg>
+              展開更多 ({hiddenCount} 支)
+            </>
+          )}
+        </button>
+      )}
     </div>
   );
 }

@@ -288,4 +288,11 @@ def score_stocks(
     sorted_scored = dict(
         sorted(scored.items(), key=lambda kv: kv[1]["score"], reverse=True)
     )
+
+    # 龍頭股上限：只保留前 N 支（避免跟風股塞爆前端）
+    max_n = int(getattr(config, "STOCK_MAX_DISPLAY", 8))
+    if len(sorted_scored) > max_n:
+        top_keys = list(sorted_scored.keys())[:max_n]
+        sorted_scored = {k: sorted_scored[k] for k in top_keys}
+
     return sorted_scored
