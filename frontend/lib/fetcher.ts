@@ -72,6 +72,15 @@ const SectorSchema = z.object({
   stocks: z.array(StockSchema).optional().default([]),
 });
 
+const MarketStateSchema = z.object({
+  state: z.enum(["bull", "sideways", "bear", "unknown"]).default("unknown"),
+  state_zh: z.string().optional().default(""),
+  confidence: z.number().optional().default(0),
+  taiex_vs_200ma_pct: z.number().nullable().optional(),
+  momentum_20d_pct: z.number().nullable().optional(),
+  details: z.string().optional().default(""),
+});
+
 const SnapshotSchema = z.object({
   schema_version: z.string().optional(),
   date: z.string(),
@@ -79,6 +88,7 @@ const SnapshotSchema = z.object({
   last_trading_date: z.string().optional(),
   macro: MacroSchema,
   macro_warning: z.boolean().optional(),
+  market_state: MarketStateSchema.optional(),
   sectors: z.record(SectorSchema),
 });
 
