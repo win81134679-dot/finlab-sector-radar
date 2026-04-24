@@ -403,6 +403,12 @@ export function classifyStockRegime(
   const INST_MAX   = 8.0;
   const WHALE_MAX  = 6.0;
   const RETAIL_MAX = 8.0;
+  // 防呗：未來新增訊號忘記更新常數時，開發期間立刻發現
+  if (process.env.NODE_ENV !== "production") {
+    console.assert(institutional <= INST_MAX, `inst.score ${institutional.toFixed(2)} 超過 INST_MAX ${INST_MAX}`);
+    console.assert(whale <= WHALE_MAX,         `whale.score ${whale} 超過 WHALE_MAX ${WHALE_MAX}`);
+    console.assert(retail <= RETAIL_MAX,       `retail.score ${retail.toFixed(2)} 超過 RETAIL_MAX ${RETAIL_MAX}`);
+  }
   const instNorm   = Math.max(0, institutional) / INST_MAX;
   const whaleNorm  = Math.max(0, whale)         / WHALE_MAX;
   const retailNorm = Math.max(0, retail)        / RETAIL_MAX;
@@ -425,20 +431,28 @@ export function classifyStockRegime(
   // 階段判定（用 ohlcv 近期走勢）
   let phase: PhaseType = "不明";
   if (bars.length >= 5) {
-    const oldest = bars[bars.length - 5].c;
-    const latest = bars[bars.length - 1].c;
+    const oldest  = bars[bars.length - 5].c;
+    const latest  = bars[bars.length - 1].c;
     const pctChange = oldest > 0 ? ((latest - oldest) / oldest) * 100 : 0;
+
+    // 從期間最高點到現在的回撤（抓高檔震盪派發）
+    const maxHigh  = Math.max(...bars.map(b => b.h));
+    const fromPeak = maxHigh > 0 ? (latest - maxHigh) / maxHigh : 0; // 負値 = 回撤
+
+    // 派發判定：量增不漲，或長上影線 + （近期漲幅>5% OR 從高點回撤>3%）
+    const isDistributionPhase =
+      vol.trend === "量增不漲" ||
+      (kbar.longUpperShadows >= 2 && (pctChange > 5 || fromPeak < -0.03));
 
     if (kbar.consecutiveLimitUp >= 2 || pctChange > 15) {
       // 強勢上漲：需>=2根長上影線才判派發（1根可能只是單日震盪）
       phase = kbar.longUpperShadows >= 2 ? "派發期" : "拉升期";
+    } else if (isDistributionPhase) {
+      phase = "派發期";
     } else if (pctChange > 5 && vol.trend !== "量增不漲") {
       phase = "拉升期";
     } else if (vol.trend === "溫和放量" && pctChange < 5 && inst.hasForeign) {
       phase = "建倉期";
-    } else if (vol.trend === "量增不漲" || (kbar.longUpperShadows >= 2 && pctChange > 5)) {
-      // 長上影線需有一定漲幅（> 5%）才判派發，避免 7 棒低波動環境誤觸發
-      phase = "派發期";
     } else {
       phase = "整理期";
     }
@@ -468,7 +482,8 @@ export function classifyStockRegime(
   const normSecond = maxNorm === instNorm ? Math.max(whaleNorm, retailNorm)
                    : maxNorm === whaleNorm ? Math.max(instNorm, retailNorm)
                    : Math.max(instNorm, whaleNorm);
-  const confidence = Math.min(100, Math.round(40 + (maxNorm - normSecond) * 80));
+  // 上限 95：避免顯示 100%（不確定性永遠存在）
+  const confidence = Math.min(95, Math.round(40 + (maxNorm - normSecond) * 80));
 
   // 七訊號明細清單
   const signals: SignalResult[] = [
