@@ -1,97 +1,209 @@
 {
-  "updated_at": "2026-04-24T17:12:01.309089+00:00",
+  "updated_at": "2026-04-27T14:20:51.747796+00:00",
   "positions": {
-    "1410": {
-      "name_zh": "1410",
+    "2303": {
+      "name_zh": "聯電",
       "sector": "foundry",
       "category": "beneficiary",
       "composite_score": 0.3,
-      "entry_price": 30.5,
+      "entry_price": 72.7,
+      "shares": 0,
+      "weight": 0.0556,
+      "added_at": "2026-04-27T14:20:51.727792+00:00",
+      "reason": "訊號進場"
+    },
+    "2330": {
+      "name_zh": "台積電",
+      "sector": "foundry",
+      "category": "beneficiary",
+      "composite_score": 0.3,
+      "entry_price": 2265.0,
+      "shares": 0,
+      "weight": 0.0556,
+      "added_at": "2026-04-27T14:20:51.727792+00:00",
+      "reason": "訊號進場"
+    },
+    "5347": {
+      "name_zh": "世界先進",
+      "sector": "foundry",
+      "category": "beneficiary",
+      "composite_score": 0.3,
+      "entry_price": 138.5,
+      "shares": 0,
+      "weight": 0.0556,
+      "added_at": "2026-04-27T14:20:51.727792+00:00",
+      "reason": "訊號進場"
+    },
+    "6770": {
+      "name_zh": "力積電",
+      "sector": "foundry",
+      "category": "beneficiary",
+      "composite_score": 0.3,
+      "entry_price": 54.5,
       "shares": 1000,
-      "weight": 0.05,
-      "added_at": "2026-04-24T17:12:01.293913+00:00",
+      "weight": 0.0556,
+      "added_at": "2026-04-27T14:20:51.727792+00:00",
       "reason": "訊號進場"
     },
-    "1434": {
-      "name_zh": "1434",
+    "3105": {
+      "name_zh": "3105",
       "sector": "foundry",
       "category": "beneficiary",
       "composite_score": 0.3,
-      "entry_price": 15.75,
-      "shares": 3000,
-      "weight": 0.05,
-      "added_at": "2026-04-24T17:12:01.293913+00:00",
-      "reason": "訊號進場"
-    },
-    "1595": {
-      "name_zh": "1595",
-      "sector": "foundry",
-      "category": "beneficiary",
-      "composite_score": 0.3,
-      "entry_price": 66.6,
+      "entry_price": 492.5,
       "shares": 0,
-      "weight": 0.05,
-      "added_at": "2026-04-24T17:12:01.293913+00:00",
+      "weight": 0.0556,
+      "added_at": "2026-04-27T14:20:51.727792+00:00",
       "reason": "訊號進場"
     },
-    "1711": {
-      "name_zh": "1711",
+    "3016": {
+      "name_zh": "3016",
       "sector": "foundry",
       "category": "beneficiary",
       "composite_score": 0.3,
-      "entry_price": 50.9,
+      "entry_price": 67.5,
       "shares": 0,
-      "weight": 0.05,
-      "added_at": "2026-04-24T17:12:01.293913+00:00",
+      "weight": 0.0556,
+      "added_at": "2026-04-27T14:20:51.727792+00:00",
       "reason": "訊號進場"
     },
-    "1717": {
-      "name_zh": "1717",
+    "3443": {
+      "name_zh": "創意",
       "sector": "foundry",
       "category": "beneficiary",
       "composite_score": 0.3,
-      "entry_price": 77.6,
+      "entry_price": 3955.0,
       "shares": 0,
-      "weight": 0.05,
-      "added_at": "2026-04-24T17:12:01.293913+00:00",
+      "weight": 0.0556,
+      "added_at": "2026-04-27T14:20:51.727792+00:00",
       "reason": "訊號進場"
     },
-    "1727": {
-      "name_zh": "1727",
+    "2338": {
+      "name_zh": "2338",
       "sector": "foundry",
       "category": "beneficiary",
       "composite_score": 0.3,
-      "entry_price": 70.7,
+      "entry_price": 47.0,
       "shares": 0,
-      "weight": 0.05,
-      "added_at": "2026-04-24T17:12:01.293913+00:00",
+      "weight": 0.0111,
+      "added_at": "2026-04-27T14:20:51.727792+00:00",
       "reason": "訊號進場"
     },
-    "1742": {
-      "name_zh": "1742",
-      "sector": "foundry",
+    "3711": {
+      "name_zh": "日月光",
+      "sector": "packaging",
       "category": "beneficiary",
-      "composite_score": 0.3,
-      "entry_price": 15.55,
-      "shares": 3000,
-      "weight": 0.05,
-      "added_at": "2026-04-24T17:12:01.293913+00:00",
-      "reason": "訊號進場"
-    },
-    "1785": {
-      "name_zh": "1785",
-      "sector": "foundry",
-      "category": "beneficiary",
-      "composite_score": 0.3,
-      "entry_price": 146.0,
+      "composite_score": 0.25,
+      "entry_price": 495.5,
       "shares": 0,
-      "weight": 0.05,
-      "added_at": "2026-04-24T17:12:01.293913+00:00",
+      "weight": 0.0463,
+      "added_at": "2026-04-27T14:20:51.727792+00:00",
       "reason": "訊號進場"
+    },
+    "6239": {
+      "name_zh": "6239",
+      "sector": "packaging",
+      "category": "beneficiary",
+      "composite_score": 0.25,
+      "entry_price": 217.0,
+      "shares": 0,
+      "weight": 0.0463,
+      "added_at": "2026-04-27T14:20:51.727792+00:00",
+      "reason": "訊號進場"
+    },
+    "8150": {
+      "name_zh": "8150",
+      "sector": "packaging",
+      "category": "beneficiary",
+      "composite_score": 0.25,
+      "entry_price": 67.8,
+      "shares": 0,
+      "weight": 0.0463,
+      "added_at": "2026-04-27T14:20:51.727792+00:00",
+      "reason": "訊號進場"
+    },
+    "2441": {
+      "name_zh": "超豐",
+      "sector": "packaging",
+      "category": "beneficiary",
+      "composite_score": 0.25,
+      "entry_price": 89.7,
+      "shares": 0,
+      "weight": 0.0463,
+      "added_at": "2026-04-27T14:20:51.727792+00:00",
+      "reason": "訊號進場"
+    },
+    "6257": {
+      "name_zh": "矽格",
+      "sector": "packaging",
+      "category": "beneficiary",
+      "composite_score": 0.25,
+      "entry_price": 178.0,
+      "shares": 0,
+      "weight": 0.0463,
+      "added_at": "2026-04-27T14:20:51.727792+00:00",
+      "reason": "訊號進場"
+    },
+    "3264": {
+      "name_zh": "3264",
+      "sector": "packaging",
+      "category": "beneficiary",
+      "composite_score": 0.25,
+      "entry_price": 194.0,
+      "shares": 0,
+      "weight": 0.0463,
+      "added_at": "2026-04-27T14:20:51.727792+00:00",
+      "reason": "訊號進場"
+    },
+    "2449": {
+      "name_zh": "京元電",
+      "sector": "packaging",
+      "category": "beneficiary",
+      "composite_score": 0.25,
+      "entry_price": 283.5,
+      "shares": 0,
+      "weight": 0.0463,
+      "added_at": "2026-04-27T14:20:51.727792+00:00",
+      "reason": "訊號進場"
+    },
+    "2369": {
+      "name_zh": "2369",
+      "sector": "packaging",
+      "category": "beneficiary",
+      "composite_score": 0.25,
+      "entry_price": 30.75,
+      "shares": 1000,
+      "weight": 0.0463,
+      "added_at": "2026-04-27T14:20:51.727792+00:00",
+      "reason": "訊號進場"
+    },
+    "2434": {
+      "name_zh": "2434",
+      "sector": "packaging",
+      "category": "beneficiary",
+      "composite_score": 0.25,
+      "entry_price": 30.3,
+      "shares": 0,
+      "weight": 0.0296,
+      "added_at": "2026-04-27T14:20:51.727792+00:00",
+      "reason": "訊號進場"
+    },
+    "5443": {
+      "name_zh": "5443",
+      "sector": "display",
+      "category": "neutral",
+      "composite_score": 0.0,
+      "entry_price": null,
+      "shares": null,
+      "weight": 0.0,
+      "added_at": "2026-04-27T14:20:51.747796+00:00",
+      "reason": "cycle_acceleration (加速期)",
+      "exit_alert": false
     }
   },
-  "total_weight": 0.4,
+  "total_weight": 0.8003,
   "sector_weights": {
-    "foundry": 0.4
+    "foundry": 0.4003,
+    "packaging": 0.4
   }
 }

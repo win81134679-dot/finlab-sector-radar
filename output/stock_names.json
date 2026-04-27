@@ -96,8 +96,8 @@
   },
   "1229": {
     "name_zh": "聯華",
-    "sector": "software_saas",
-    "sector_name": "軟體/SaaS"
+    "sector": "food",
+    "sector_name": "食品"
   },
   "1231": {
     "name_zh": "聯華食",
@@ -221,8 +221,8 @@
   },
   "1315": {
     "name_zh": "達新",
-    "sector": "thermal",
-    "sector_name": "散熱/熱管理"
+    "sector": "petrochemical",
+    "sector_name": "塑化"
   },
   "1316": {
     "name_zh": "上曜",
@@ -261,8 +261,8 @@
   },
   "1336": {
     "name_zh": "台翰",
-    "sector": "ai_server",
-    "sector_name": "AI伺服器/ODM"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "1337": {
     "name_zh": "再生-KY",
@@ -276,8 +276,8 @@
   },
   "1339": {
     "name_zh": "昭輝",
-    "sector": "vehicle_elec",
-    "sector_name": "車用電子"
+    "sector": "petrochemical",
+    "sector_name": "塑化"
   },
   "1340": {
     "name_zh": "勝悅-KY",
@@ -296,8 +296,8 @@
   },
   "1402": {
     "name_zh": "遠東新",
-    "sector": "construction",
-    "sector_name": "建設/營造"
+    "sector": "petrochemical",
+    "sector_name": "塑化"
   },
   "1409": {
     "name_zh": "新纖",
@@ -306,8 +306,8 @@
   },
   "1410": {
     "name_zh": "南染",
-    "sector": "foundry",
-    "sector_name": "晶圓代工"
+    "sector": "petrochemical",
+    "sector_name": "塑化"
   },
   "1413": {
     "name_zh": "宏洲",
@@ -321,8 +321,8 @@
   },
   "1416": {
     "name_zh": "廣豐",
-    "sector": "construction",
-    "sector_name": "建設/營造"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "1417": {
     "name_zh": "嘉裕",
@@ -351,8 +351,8 @@
   },
   "1434": {
     "name_zh": "福懋",
-    "sector": "foundry",
-    "sector_name": "晶圓代工"
+    "sector": "petrochemical",
+    "sector_name": "塑化"
   },
   "1435": {
     "name_zh": "中福",
@@ -506,8 +506,8 @@
   },
   "1471": {
     "name_zh": "首利",
-    "sector": "ai_server",
-    "sector_name": "AI伺服器/ODM"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "1472": {
     "name_zh": "三洋實業",
@@ -546,18 +546,18 @@
   },
   "1504": {
     "name_zh": "東元",
-    "sector": "ai_server",
-    "sector_name": "AI伺服器/ODM"
+    "sector": "ev_supply",
+    "sector_name": "電動車供應鏈"
   },
   "1506": {
     "name_zh": "正道",
-    "sector": "thermal",
-    "sector_name": "散熱/熱管理"
+    "sector": "power_infra",
+    "sector_name": "重電/電力設備"
   },
   "1512": {
     "name_zh": "瑞利",
-    "sector": "thermal",
-    "sector_name": "散熱/熱管理"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "1513": {
     "name_zh": "中興電",
@@ -566,13 +566,13 @@
   },
   "1514": {
     "name_zh": "東元",
-    "sector": "thermal",
-    "sector_name": "散熱/熱管理"
+    "sector": "power_infra",
+    "sector_name": "重電/電力設備"
   },
   "1515": {
     "name_zh": "力山",
-    "sector": "thermal",
-    "sector_name": "散熱/熱管理"
+    "sector": "robotics",
+    "sector_name": "機器人/自動化"
   },
   "1516": {
     "name_zh": "川湖",
@@ -581,8 +581,8 @@
   },
   "1517": {
     "name_zh": "利奇",
-    "sector": "thermal",
-    "sector_name": "散熱/熱管理"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "1519": {
     "name_zh": "華城",
@@ -601,23 +601,23 @@
   },
   "1524": {
     "name_zh": "耿鼎",
-    "sector": "vehicle_elec",
-    "sector_name": "車用電子"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "1525": {
     "name_zh": "江申",
-    "sector": "vehicle_elec",
-    "sector_name": "車用電子"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "1526": {
     "name_zh": "日馳",
-    "sector": "thermal",
-    "sector_name": "散熱/熱管理"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "1527": {
     "name_zh": "鑽全",
-    "sector": "thermal",
-    "sector_name": "散熱/熱管理"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "1528": {
     "name_zh": "恩德",
@@ -636,13 +636,13 @@
   },
   "1531": {
     "name_zh": "高林股",
-    "sector": "thermal",
-    "sector_name": "散熱/熱管理"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "1532": {
     "name_zh": "勤美",
-    "sector": "construction",
-    "sector_name": "建設/營造"
+    "sector": "gaming",
+    "sector_name": "遊戲"
   },
   "1533": {
     "name_zh": "車王電",
@@ -651,8 +651,8 @@
   },
   "1535": {
     "name_zh": "中宇",
-    "sector": "thermal",
-    "sector_name": "散熱/熱管理"
+    "sector": "power_infra",
+    "sector_name": "重電/電力設備"
   },
   "1536": {
     "name_zh": "和大",
@@ -666,38 +666,38 @@
   },
   "1538": {
     "name_zh": "正峰",
-    "sector": "thermal",
-    "sector_name": "散熱/熱管理"
+    "sector": "led_lighting",
+    "sector_name": "LED照明"
   },
   "1539": {
     "name_zh": "巨庭",
-    "sector": "thermal",
-    "sector_name": "散熱/熱管理"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "1540": {
     "name_zh": "喬福",
-    "sector": "thermal",
-    "sector_name": "散熱/熱管理"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "1541": {
     "name_zh": "錩泰",
-    "sector": "thermal",
-    "sector_name": "散熱/熱管理"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "1558": {
     "name_zh": "伸興",
-    "sector": "thermal",
-    "sector_name": "散熱/熱管理"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "1560": {
     "name_zh": "中砂",
-    "sector": "thermal",
-    "sector_name": "散熱/熱管理"
+    "sector": "medical_device",
+    "sector_name": "醫材"
   },
   "1563": {
     "name_zh": "巧新",
-    "sector": "thermal",
-    "sector_name": "散熱/熱管理"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "1565": {
     "name_zh": "精華",
@@ -706,33 +706,33 @@
   },
   "1568": {
     "name_zh": "倉佑",
-    "sector": "thermal",
-    "sector_name": "散熱/熱管理"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "1569": {
     "name_zh": "濱川",
-    "sector": "ai_server",
-    "sector_name": "AI伺服器/ODM"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "1570": {
     "name_zh": "力肯",
-    "sector": "thermal",
-    "sector_name": "散熱/熱管理"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "1580": {
     "name_zh": "新麥",
-    "sector": "thermal",
-    "sector_name": "散熱/熱管理"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "1582": {
     "name_zh": "信錦",
-    "sector": "ai_server",
-    "sector_name": "AI伺服器/ODM"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "1583": {
     "name_zh": "程泰",
-    "sector": "thermal",
-    "sector_name": "散熱/熱管理"
+    "sector": "robotics",
+    "sector_name": "機器人/自動化"
   },
   "1584": {
     "name_zh": "精剛",
@@ -741,43 +741,43 @@
   },
   "1586": {
     "name_zh": "和勤",
-    "sector": "ai_server",
-    "sector_name": "AI伺服器/ODM"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "1587": {
     "name_zh": "吉茂",
-    "sector": "vehicle_elec",
-    "sector_name": "車用電子"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "1589": {
     "name_zh": "永冠-KY",
-    "sector": "thermal",
-    "sector_name": "散熱/熱管理"
+    "sector": "robotics",
+    "sector_name": "機器人/自動化"
   },
   "1590": {
     "name_zh": "亞德客-KY",
-    "sector": "thermal",
-    "sector_name": "散熱/熱管理"
+    "sector": "power_infra",
+    "sector_name": "重電/電力設備"
   },
   "1591": {
     "name_zh": "駿吉-KY",
-    "sector": "thermal",
-    "sector_name": "散熱/熱管理"
+    "sector": "robotics",
+    "sector_name": "機器人/自動化"
   },
   "1593": {
     "name_zh": "祺驊",
-    "sector": "medical_device",
-    "sector_name": "醫材"
+    "sector": "sports_tech",
+    "sector_name": "運動科技"
   },
   "1595": {
     "name_zh": "川寶",
-    "sector": "foundry",
-    "sector_name": "晶圓代工"
+    "sector": "pcb",
+    "sector_name": "PCB板"
   },
   "1597": {
     "name_zh": "直得",
-    "sector": "thermal",
-    "sector_name": "散熱/熱管理"
+    "sector": "robotics",
+    "sector_name": "機器人/自動化"
   },
   "1598": {
     "name_zh": "岱宇",
@@ -791,13 +791,13 @@
   },
   "1603": {
     "name_zh": "華電",
-    "sector": "construction",
-    "sector_name": "建設/營造"
+    "sector": "smart_grid",
+    "sector_name": "智慧電網"
   },
   "1604": {
     "name_zh": "聲寶",
-    "sector": "display",
-    "sector_name": "面板顯示"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "1605": {
     "name_zh": "華新",
@@ -806,8 +806,8 @@
   },
   "1608": {
     "name_zh": "華榮",
-    "sector": "networking",
-    "sector_name": "網通設備"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "1609": {
     "name_zh": "大亞",
@@ -821,18 +821,18 @@
   },
   "1612": {
     "name_zh": "宏泰",
-    "sector": "construction",
-    "sector_name": "建設/營造"
+    "sector": "optical_comm",
+    "sector_name": "光通訊"
   },
   "1614": {
     "name_zh": "三洋電",
-    "sector": "networking",
-    "sector_name": "網通設備"
+    "sector": "trading",
+    "sector_name": "貿易百貨"
   },
   "1615": {
     "name_zh": "大山",
-    "sector": "networking",
-    "sector_name": "網通設備"
+    "sector": "gas_energy",
+    "sector_name": "天然氣/能源"
   },
   "1616": {
     "name_zh": "億泰",
@@ -841,18 +841,18 @@
   },
   "1617": {
     "name_zh": "榮星",
-    "sector": "networking",
-    "sector_name": "網通設備"
+    "sector": "connector",
+    "sector_name": "連接器/線材"
   },
   "1618": {
     "name_zh": "合機",
-    "sector": "networking",
-    "sector_name": "網通設備"
+    "sector": "wind_energy",
+    "sector_name": "風電/綠能"
   },
   "1623": {
     "name_zh": "大東電",
-    "sector": "power_infra",
-    "sector_name": "重電/電力設備"
+    "sector": "wind_energy",
+    "sector_name": "風電/綠能"
   },
   "1626": {
     "name_zh": "艾美特-KY",
@@ -886,8 +886,8 @@
   },
   "1711": {
     "name_zh": "永光",
-    "sector": "foundry",
-    "sector_name": "晶圓代工"
+    "sector": "solar",
+    "sector_name": "太陽能"
   },
   "1712": {
     "name_zh": "興農",
@@ -906,8 +906,8 @@
   },
   "1717": {
     "name_zh": "長興",
-    "sector": "foundry",
-    "sector_name": "晶圓代工"
+    "sector": "solar",
+    "sector_name": "太陽能"
   },
   "1718": {
     "name_zh": "中纖",
@@ -946,8 +946,8 @@
   },
   "1727": {
     "name_zh": "中華化",
-    "sector": "foundry",
-    "sector_name": "晶圓代工"
+    "sector": "petrochemical",
+    "sector_name": "塑化"
   },
   "1730": {
     "name_zh": "花仙子",
@@ -991,8 +991,8 @@
   },
   "1742": {
     "name_zh": "台蠟",
-    "sector": "foundry",
-    "sector_name": "晶圓代工"
+    "sector": "trading",
+    "sector_name": "貿易百貨"
   },
   "1752": {
     "name_zh": "南光",
@@ -1011,8 +1011,8 @@
   },
   "1773": {
     "name_zh": "勝一",
-    "sector": "display",
-    "sector_name": "面板顯示"
+    "sector": "petrochemical",
+    "sector_name": "塑化"
   },
   "1776": {
     "name_zh": "展宇",
@@ -1041,8 +1041,8 @@
   },
   "1785": {
     "name_zh": "光洋科",
-    "sector": "foundry",
-    "sector_name": "晶圓代工"
+    "sector": "power_components",
+    "sector_name": "電源/被動元件"
   },
   "1786": {
     "name_zh": "科妍",
@@ -1081,28 +1081,28 @@
   },
   "1805": {
     "name_zh": "寶徠",
-    "sector": "construction",
-    "sector_name": "建設/營造"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "1806": {
     "name_zh": "冠軍",
-    "sector": "construction",
-    "sector_name": "建設/營造"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "1808": {
     "name_zh": "潤隆",
-    "sector": "construction",
-    "sector_name": "建設/營造"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "1809": {
     "name_zh": "中釉",
-    "sector": "construction",
-    "sector_name": "建設/營造"
+    "sector": "led_lighting",
+    "sector_name": "LED照明"
   },
   "1810": {
     "name_zh": "和成",
-    "sector": "construction",
-    "sector_name": "建設/營造"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "1813": {
     "name_zh": "寶利徠",
@@ -1116,8 +1116,8 @@
   },
   "1817": {
     "name_zh": "凱撒衛",
-    "sector": "construction",
-    "sector_name": "建設/營造"
+    "sector": "trading",
+    "sector_name": "貿易百貨"
   },
   "1903": {
     "name_zh": "士紙",
@@ -1176,8 +1176,8 @@
   },
   "2010": {
     "name_zh": "春源",
-    "sector": "construction",
-    "sector_name": "建設/營造"
+    "sector": "steel",
+    "sector_name": "鋼鐵"
   },
   "2012": {
     "name_zh": "春雨",
@@ -1206,8 +1206,8 @@
   },
   "2020": {
     "name_zh": "美亞",
-    "sector": "construction",
-    "sector_name": "建設/營造"
+    "sector": "steel",
+    "sector_name": "鋼鐵"
   },
   "2022": {
     "name_zh": "聚亨",
@@ -1281,13 +1281,13 @@
   },
   "2049": {
     "name_zh": "上銀",
-    "sector": "thermal",
-    "sector_name": "散熱/熱管理"
+    "sector": "robotics",
+    "sector_name": "機器人/自動化"
   },
   "2059": {
     "name_zh": "川湖",
-    "sector": "ai_server",
-    "sector_name": "AI伺服器/ODM"
+    "sector": "ev_supply",
+    "sector_name": "電動車供應鏈"
   },
   "2061": {
     "name_zh": "風青",
@@ -1321,8 +1321,8 @@
   },
   "2067": {
     "name_zh": "嘉鋼",
-    "sector": "thermal",
-    "sector_name": "散熱/熱管理"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "2069": {
     "name_zh": "運錩",
@@ -1331,8 +1331,8 @@
   },
   "2070": {
     "name_zh": "精湛",
-    "sector": "thermal",
-    "sector_name": "散熱/熱管理"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "2072": {
     "name_zh": "世紀風電",
@@ -1346,13 +1346,13 @@
   },
   "2101": {
     "name_zh": "南港",
-    "sector": "vehicle_elec",
-    "sector_name": "車用電子"
+    "sector": "rubber",
+    "sector_name": "橡膠/輪胎"
   },
   "2102": {
     "name_zh": "泰豐",
-    "sector": "vehicle_elec",
-    "sector_name": "車用電子"
+    "sector": "petrochemical",
+    "sector_name": "塑化"
   },
   "2103": {
     "name_zh": "台橡",
@@ -1401,18 +1401,18 @@
   },
   "2201": {
     "name_zh": "裕隆",
-    "sector": "vehicle_elec",
-    "sector_name": "車用電子"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "2204": {
     "name_zh": "中華",
-    "sector": "vehicle_elec",
-    "sector_name": "車用電子"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "2206": {
     "name_zh": "三陽工業",
-    "sector": "vehicle_elec",
-    "sector_name": "車用電子"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "2207": {
     "name_zh": "和泰車",
@@ -1436,18 +1436,18 @@
   },
   "2227": {
     "name_zh": "裕日車",
-    "sector": "vehicle_elec",
-    "sector_name": "車用電子"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "2228": {
     "name_zh": "劍麟",
-    "sector": "vehicle_elec",
-    "sector_name": "車用電子"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "2230": {
     "name_zh": "泰茂",
-    "sector": "thermal",
-    "sector_name": "散熱/熱管理"
+    "sector": "power_infra",
+    "sector_name": "重電/電力設備"
   },
   "2231": {
     "name_zh": "為升",
@@ -1456,13 +1456,13 @@
   },
   "2233": {
     "name_zh": "宇隆",
-    "sector": "thermal",
-    "sector_name": "散熱/熱管理"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "2235": {
     "name_zh": "謚源",
-    "sector": "thermal",
-    "sector_name": "散熱/熱管理"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "2236": {
     "name_zh": "百達-KY",
@@ -1471,13 +1471,13 @@
   },
   "2239": {
     "name_zh": "英利-KY",
-    "sector": "vehicle_elec",
-    "sector_name": "車用電子"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "2241": {
     "name_zh": "艾姆勒",
-    "sector": "vehicle_elec",
-    "sector_name": "車用電子"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "2243": {
     "name_zh": "宏旭-KY",
@@ -1486,13 +1486,13 @@
   },
   "2247": {
     "name_zh": "汎德永業",
-    "sector": "vehicle_elec",
-    "sector_name": "車用電子"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "2248": {
     "name_zh": "華勝-KY",
-    "sector": "thermal",
-    "sector_name": "散熱/熱管理"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "2250": {
     "name_zh": "IKKA-KY",
@@ -1501,8 +1501,8 @@
   },
   "2254": {
     "name_zh": "巨鎧精密-創",
-    "sector": "thermal",
-    "sector_name": "散熱/熱管理"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "2258": {
     "name_zh": "鴻華先進-創",
@@ -1516,8 +1516,8 @@
   },
   "2302": {
     "name_zh": "麗正",
-    "sector": "foundry",
-    "sector_name": "晶圓代工"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "2303": {
     "name_zh": "聯電",
@@ -1526,18 +1526,18 @@
   },
   "2305": {
     "name_zh": "全友",
-    "sector": "ai_server",
-    "sector_name": "AI伺服器/ODM"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "2308": {
     "name_zh": "台達電",
-    "sector": "foundry",
-    "sector_name": "晶圓代工"
+    "sector": "ai_server",
+    "sector_name": "AI伺服器/ODM"
   },
   "2312": {
     "name_zh": "金寶",
-    "sector": "ai_server",
-    "sector_name": "AI伺服器/ODM"
+    "sector": "space_satellite",
+    "sector_name": "太空衛星科技"
   },
   "2313": {
     "name_zh": "華通",
@@ -1566,13 +1566,13 @@
   },
   "2323": {
     "name_zh": "中環",
-    "sector": "ai_server",
-    "sector_name": "AI伺服器/ODM"
+    "sector": "optical_comm",
+    "sector_name": "光通訊"
   },
   "2324": {
     "name_zh": "仁寶",
-    "sector": "ai_server",
-    "sector_name": "AI伺服器/ODM"
+    "sector": "sports_tech",
+    "sector_name": "運動科技"
   },
   "2327": {
     "name_zh": "國巨*",
@@ -1581,13 +1581,13 @@
   },
   "2328": {
     "name_zh": "廣宇",
-    "sector": "ai_server",
-    "sector_name": "AI伺服器/ODM"
+    "sector": "pcb",
+    "sector_name": "PCB板"
   },
   "2329": {
     "name_zh": "華泰",
-    "sector": "foundry",
-    "sector_name": "晶圓代工"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "2330": {
     "name_zh": "台積電",
@@ -1596,8 +1596,8 @@
   },
   "2331": {
     "name_zh": "精英",
-    "sector": "ai_server",
-    "sector_name": "AI伺服器/ODM"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "2332": {
     "name_zh": "友訊",
@@ -1606,8 +1606,8 @@
   },
   "2337": {
     "name_zh": "旺宏",
-    "sector": "foundry",
-    "sector_name": "晶圓代工"
+    "sector": "memory",
+    "sector_name": "記憶體/DRAM"
   },
   "2338": {
     "name_zh": "光罩",
@@ -1616,18 +1616,18 @@
   },
   "2340": {
     "name_zh": "台亞",
-    "sector": "foundry",
-    "sector_name": "晶圓代工"
+    "sector": "led_lighting",
+    "sector_name": "LED照明"
   },
   "2342": {
     "name_zh": "茂矽",
-    "sector": "foundry",
-    "sector_name": "晶圓代工"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "2344": {
     "name_zh": "華邦電",
-    "sector": "foundry",
-    "sector_name": "晶圓代工"
+    "sector": "memory",
+    "sector_name": "記憶體/DRAM"
   },
   "2345": {
     "name_zh": "智邦",
@@ -1636,8 +1636,8 @@
   },
   "2347": {
     "name_zh": "聯強",
-    "sector": "foundry",
-    "sector_name": "晶圓代工"
+    "sector": "software_saas",
+    "sector_name": "軟體/SaaS"
   },
   "2348": {
     "name_zh": "海悅",
@@ -1646,13 +1646,13 @@
   },
   "2349": {
     "name_zh": "錸德",
-    "sector": "ai_server",
-    "sector_name": "AI伺服器/ODM"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "2351": {
     "name_zh": "順德",
-    "sector": "foundry",
-    "sector_name": "晶圓代工"
+    "sector": "steel",
+    "sector_name": "鋼鐵"
   },
   "2352": {
     "name_zh": "佳世達",
@@ -1666,8 +1666,8 @@
   },
   "2354": {
     "name_zh": "鴻準",
-    "sector": "ai_server",
-    "sector_name": "AI伺服器/ODM"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "2355": {
     "name_zh": "敬鵬",
@@ -1686,33 +1686,33 @@
   },
   "2359": {
     "name_zh": "所羅門",
-    "sector": "robotics",
-    "sector_name": "機器人/自動化"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "2360": {
     "name_zh": "致茂",
-    "sector": "foundry",
-    "sector_name": "晶圓代工"
+    "sector": "ev_supply",
+    "sector_name": "電動車供應鏈"
   },
   "2362": {
     "name_zh": "藍天",
-    "sector": "ai_server",
-    "sector_name": "AI伺服器/ODM"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "2363": {
     "name_zh": "矽統",
-    "sector": "foundry",
-    "sector_name": "晶圓代工"
+    "sector": "ic_design",
+    "sector_name": "IC設計"
   },
   "2364": {
     "name_zh": "倫飛",
-    "sector": "ai_server",
-    "sector_name": "AI伺服器/ODM"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "2365": {
     "name_zh": "昆盈",
-    "sector": "ai_server",
-    "sector_name": "AI伺服器/ODM"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "2367": {
     "name_zh": "燿華",
@@ -1726,13 +1726,13 @@
   },
   "2369": {
     "name_zh": "菱生",
-    "sector": "foundry",
-    "sector_name": "晶圓代工"
+    "sector": "packaging",
+    "sector_name": "封測"
   },
   "2371": {
     "name_zh": "大同",
-    "sector": "foundry",
-    "sector_name": "晶圓代工"
+    "sector": "power_components",
+    "sector_name": "電源/被動元件"
   },
   "2373": {
     "name_zh": "震旦行",
@@ -1741,8 +1741,8 @@
   },
   "2374": {
     "name_zh": "佳能",
-    "sector": "ai_server",
-    "sector_name": "AI伺服器/ODM"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "2375": {
     "name_zh": "凱美",
@@ -1761,13 +1761,13 @@
   },
   "2379": {
     "name_zh": "瑞昱",
-    "sector": "foundry",
-    "sector_name": "晶圓代工"
+    "sector": "ic_design",
+    "sector_name": "IC設計"
   },
   "2380": {
     "name_zh": "虹光",
-    "sector": "ai_server",
-    "sector_name": "AI伺服器/ODM"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "2382": {
     "name_zh": "廣達",
@@ -1781,23 +1781,23 @@
   },
   "2385": {
     "name_zh": "群光",
-    "sector": "ai_server",
-    "sector_name": "AI伺服器/ODM"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "2387": {
     "name_zh": "精元",
-    "sector": "ai_server",
-    "sector_name": "AI伺服器/ODM"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "2388": {
     "name_zh": "威盛",
-    "sector": "ai_server",
-    "sector_name": "AI伺服器/ODM"
+    "sector": "ic_design",
+    "sector_name": "IC設計"
   },
   "2390": {
     "name_zh": "云辰",
-    "sector": "software_saas",
-    "sector_name": "軟體/SaaS"
+    "sector": "cloud_computing",
+    "sector_name": "雲端運算"
   },
   "2392": {
     "name_zh": "正崴",
@@ -1806,8 +1806,8 @@
   },
   "2393": {
     "name_zh": "億光",
-    "sector": "display",
-    "sector_name": "面板顯示"
+    "sector": "networking",
+    "sector_name": "網通設備"
   },
   "2395": {
     "name_zh": "研華",
@@ -1821,13 +1821,13 @@
   },
   "2399": {
     "name_zh": "映泰",
-    "sector": "ai_server",
-    "sector_name": "AI伺服器/ODM"
+    "sector": "blockchain",
+    "sector_name": "區塊鏈"
   },
   "2401": {
     "name_zh": "凌陽",
-    "sector": "foundry",
-    "sector_name": "晶圓代工"
+    "sector": "ic_design",
+    "sector_name": "IC設計"
   },
   "2402": {
     "name_zh": "毅嘉",
@@ -1841,8 +1841,8 @@
   },
   "2405": {
     "name_zh": "輔信",
-    "sector": "ai_server",
-    "sector_name": "AI伺服器/ODM"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "2406": {
     "name_zh": "國碩",
@@ -1851,8 +1851,8 @@
   },
   "2408": {
     "name_zh": "南亞科",
-    "sector": "foundry",
-    "sector_name": "晶圓代工"
+    "sector": "memory",
+    "sector_name": "記憶體/DRAM"
   },
   "2409": {
     "name_zh": "友達",
@@ -1866,13 +1866,13 @@
   },
   "2413": {
     "name_zh": "環科",
-    "sector": "ai_server",
-    "sector_name": "AI伺服器/ODM"
+    "sector": "networking",
+    "sector_name": "網通設備"
   },
   "2414": {
     "name_zh": "精技",
-    "sector": "other",
-    "sector_name": "其他"
+    "sector": "telecom",
+    "sector_name": "電信"
   },
   "2415": {
     "name_zh": "錩新",
@@ -1881,8 +1881,8 @@
   },
   "2417": {
     "name_zh": "圓剛",
-    "sector": "ai_server",
-    "sector_name": "AI伺服器/ODM"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "2419": {
     "name_zh": "仲琦",
@@ -1906,23 +1906,23 @@
   },
   "2424": {
     "name_zh": "隴華",
-    "sector": "ai_server",
-    "sector_name": "AI伺服器/ODM"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "2425": {
     "name_zh": "承啟",
-    "sector": "ai_server",
-    "sector_name": "AI伺服器/ODM"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "2426": {
     "name_zh": "鼎元",
-    "sector": "ai_server",
-    "sector_name": "AI伺服器/ODM"
+    "sector": "display",
+    "sector_name": "面板顯示"
   },
   "2427": {
     "name_zh": "三商電",
-    "sector": "display",
-    "sector_name": "面板顯示"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "2428": {
     "name_zh": "興勤",
@@ -1931,18 +1931,18 @@
   },
   "2429": {
     "name_zh": "銘旺科",
-    "sector": "display",
-    "sector_name": "面板顯示"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "2430": {
     "name_zh": "燦坤",
-    "sector": "ai_server",
-    "sector_name": "AI伺服器/ODM"
+    "sector": "trading",
+    "sector_name": "貿易百貨"
   },
   "2431": {
     "name_zh": "聯昌",
-    "sector": "ai_server",
-    "sector_name": "AI伺服器/ODM"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "2432": {
     "name_zh": "倚天酷碁-創",
@@ -1956,48 +1956,48 @@
   },
   "2434": {
     "name_zh": "統懋",
-    "sector": "foundry",
-    "sector_name": "晶圓代工"
+    "sector": "solar",
+    "sector_name": "太陽能"
   },
   "2436": {
     "name_zh": "偉詮電",
-    "sector": "foundry",
-    "sector_name": "晶圓代工"
+    "sector": "metaverse",
+    "sector_name": "元宇宙"
   },
   "2438": {
     "name_zh": "翔耀",
-    "sector": "foundry",
-    "sector_name": "晶圓代工"
+    "sector": "led_lighting",
+    "sector_name": "LED照明"
   },
   "2439": {
     "name_zh": "美律",
-    "sector": "ai_server",
-    "sector_name": "AI伺服器/ODM"
+    "sector": "networking",
+    "sector_name": "網通設備"
   },
   "2440": {
     "name_zh": "太空梭",
-    "sector": "ai_server",
-    "sector_name": "AI伺服器/ODM"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "2441": {
     "name_zh": "超豐",
-    "sector": "foundry",
-    "sector_name": "晶圓代工"
+    "sector": "packaging",
+    "sector_name": "封測"
   },
   "2442": {
     "name_zh": "新美齊",
-    "sector": "construction",
-    "sector_name": "建設/營造"
+    "sector": "optical_comm",
+    "sector_name": "光通訊"
   },
   "2444": {
     "name_zh": "兆勁",
-    "sector": "ai_server",
-    "sector_name": "AI伺服器/ODM"
+    "sector": "networking",
+    "sector_name": "網通設備"
   },
   "2449": {
     "name_zh": "京元電",
-    "sector": "foundry",
-    "sector_name": "晶圓代工"
+    "sector": "packaging",
+    "sector_name": "封測"
   },
   "2450": {
     "name_zh": "神腦",
@@ -2006,38 +2006,38 @@
   },
   "2451": {
     "name_zh": "創見",
-    "sector": "foundry",
-    "sector_name": "晶圓代工"
+    "sector": "memory",
+    "sector_name": "記憶體/DRAM"
   },
   "2453": {
     "name_zh": "凌群",
-    "sector": "ai_server",
-    "sector_name": "AI伺服器/ODM"
+    "sector": "ai_themes",
+    "sector_name": "人工智慧主題"
   },
   "2454": {
     "name_zh": "聯發科",
-    "sector": "foundry",
-    "sector_name": "晶圓代工"
+    "sector": "ic_design",
+    "sector_name": "IC設計"
   },
   "2455": {
     "name_zh": "全新",
-    "sector": "foundry",
-    "sector_name": "晶圓代工"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "2457": {
     "name_zh": "飛宏",
-    "sector": "ai_server",
-    "sector_name": "AI伺服器/ODM"
+    "sector": "ev_supply",
+    "sector_name": "電動車供應鏈"
   },
   "2458": {
     "name_zh": "義隆",
-    "sector": "foundry",
-    "sector_name": "晶圓代工"
+    "sector": "ic_design",
+    "sector_name": "IC設計"
   },
   "2459": {
     "name_zh": "敦吉",
-    "sector": "foundry",
-    "sector_name": "晶圓代工"
+    "sector": "power_components",
+    "sector_name": "電源/被動元件"
   },
   "2460": {
     "name_zh": "建通",
@@ -2056,13 +2056,13 @@
   },
   "2464": {
     "name_zh": "盟立",
-    "sector": "ai_server",
-    "sector_name": "AI伺服器/ODM"
+    "sector": "thermal",
+    "sector_name": "散熱/熱管理"
   },
   "2465": {
     "name_zh": "麗臺",
-    "sector": "ai_server",
-    "sector_name": "AI伺服器/ODM"
+    "sector": "gaming",
+    "sector_name": "遊戲"
   },
   "2466": {
     "name_zh": "冠西電",
@@ -2071,18 +2071,18 @@
   },
   "2467": {
     "name_zh": "志聖",
-    "sector": "foundry",
-    "sector_name": "晶圓代工"
+    "sector": "pcb",
+    "sector_name": "PCB板"
   },
   "2468": {
     "name_zh": "華經",
-    "sector": "software_saas",
-    "sector_name": "軟體/SaaS"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "2471": {
     "name_zh": "資通",
-    "sector": "ai_server",
-    "sector_name": "AI伺服器/ODM"
+    "sector": "ai_themes",
+    "sector_name": "人工智慧主題"
   },
   "2472": {
     "name_zh": "立隆電",
@@ -2091,13 +2091,13 @@
   },
   "2474": {
     "name_zh": "可成",
-    "sector": "ai_server",
-    "sector_name": "AI伺服器/ODM"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "2476": {
     "name_zh": "鉅祥",
-    "sector": "networking",
-    "sector_name": "網通設備"
+    "sector": "connector",
+    "sector_name": "連接器/線材"
   },
   "2477": {
     "name_zh": "美隆電",
@@ -2106,18 +2106,18 @@
   },
   "2478": {
     "name_zh": "大毅",
-    "sector": "ai_server",
-    "sector_name": "AI伺服器/ODM"
+    "sector": "power_components",
+    "sector_name": "電源/被動元件"
   },
   "2480": {
     "name_zh": "敦陽科",
-    "sector": "ai_server",
-    "sector_name": "AI伺服器/ODM"
+    "sector": "ai_themes",
+    "sector_name": "人工智慧主題"
   },
   "2481": {
     "name_zh": "強茂",
-    "sector": "foundry",
-    "sector_name": "晶圓代工"
+    "sector": "power_semi",
+    "sector_name": "功率半導體"
   },
   "2482": {
     "name_zh": "連宇",
@@ -2126,8 +2126,8 @@
   },
   "2483": {
     "name_zh": "百容",
-    "sector": "foundry",
-    "sector_name": "晶圓代工"
+    "sector": "ev_supply",
+    "sector_name": "電動車供應鏈"
   },
   "2484": {
     "name_zh": "希華",
@@ -2136,13 +2136,13 @@
   },
   "2485": {
     "name_zh": "兆赫",
-    "sector": "networking",
-    "sector_name": "網通設備"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "2486": {
     "name_zh": "一詮",
-    "sector": "foundry",
-    "sector_name": "晶圓代工"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "2488": {
     "name_zh": "漢平",
@@ -2151,13 +2151,13 @@
   },
   "2489": {
     "name_zh": "瑞軒",
-    "sector": "display",
-    "sector_name": "面板顯示"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "2491": {
     "name_zh": "吉祥全",
-    "sector": "ai_server",
-    "sector_name": "AI伺服器/ODM"
+    "sector": "led_lighting",
+    "sector_name": "LED照明"
   },
   "2492": {
     "name_zh": "華新科",
@@ -2166,13 +2166,13 @@
   },
   "2493": {
     "name_zh": "揚博",
-    "sector": "foundry",
-    "sector_name": "晶圓代工"
+    "sector": "pcb",
+    "sector_name": "PCB板"
   },
   "2495": {
     "name_zh": "普安",
-    "sector": "ai_server",
-    "sector_name": "AI伺服器/ODM"
+    "sector": "ai_themes",
+    "sector_name": "人工智慧主題"
   },
   "2496": {
     "name_zh": "卓越",
@@ -2181,18 +2181,18 @@
   },
   "2497": {
     "name_zh": "怡利電",
-    "sector": "vehicle_elec",
-    "sector_name": "車用電子"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "2498": {
     "name_zh": "宏達電",
-    "sector": "ai_server",
-    "sector_name": "AI伺服器/ODM"
+    "sector": "ai_themes",
+    "sector_name": "人工智慧主題"
   },
   "2501": {
     "name_zh": "國建",
-    "sector": "construction",
-    "sector_name": "建設/營造"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "2504": {
     "name_zh": "國產",
@@ -2206,13 +2206,13 @@
   },
   "2506": {
     "name_zh": "太設",
-    "sector": "construction",
-    "sector_name": "建設/營造"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "2509": {
     "name_zh": "全坤建",
-    "sector": "construction",
-    "sector_name": "建設/營造"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "2511": {
     "name_zh": "太子",
@@ -2236,8 +2236,8 @@
   },
   "2520": {
     "name_zh": "冠德",
-    "sector": "construction",
-    "sector_name": "建設/營造"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "2524": {
     "name_zh": "京城",
@@ -2251,8 +2251,8 @@
   },
   "2528": {
     "name_zh": "皇普",
-    "sector": "construction",
-    "sector_name": "建設/營造"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "2530": {
     "name_zh": "華建",
@@ -2316,23 +2316,23 @@
   },
   "2547": {
     "name_zh": "日勝生",
-    "sector": "construction",
-    "sector_name": "建設/營造"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "2548": {
     "name_zh": "華固",
-    "sector": "construction",
-    "sector_name": "建設/營造"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "2596": {
     "name_zh": "綠意",
-    "sector": "construction",
-    "sector_name": "建設/營造"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "2597": {
     "name_zh": "潤弘",
-    "sector": "construction",
-    "sector_name": "建設/營造"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "2601": {
     "name_zh": "益航",
@@ -2506,8 +2506,8 @@
   },
   "2718": {
     "name_zh": "全心投控",
-    "sector": "construction",
-    "sector_name": "建設/營造"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "2719": {
     "name_zh": "燦星旅",
@@ -2806,8 +2806,8 @@
   },
   "2910": {
     "name_zh": "統領",
-    "sector": "construction",
-    "sector_name": "建設/營造"
+    "sector": "trading",
+    "sector_name": "貿易百貨"
   },
   "2911": {
     "name_zh": "麗嬰房",
@@ -2836,8 +2836,8 @@
   },
   "2923": {
     "name_zh": "鼎固-KY",
-    "sector": "construction",
-    "sector_name": "建設/營造"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "2924": {
     "name_zh": "宏太-KY",
@@ -2891,8 +2891,8 @@
   },
   "3002": {
     "name_zh": "歐格",
-    "sector": "ai_server",
-    "sector_name": "AI伺服器/ODM"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "3003": {
     "name_zh": "健和興",
@@ -2906,43 +2906,43 @@
   },
   "3005": {
     "name_zh": "神基",
-    "sector": "ai_server",
-    "sector_name": "AI伺服器/ODM"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "3006": {
     "name_zh": "晶豪科",
-    "sector": "foundry",
-    "sector_name": "晶圓代工"
+    "sector": "memory",
+    "sector_name": "記憶體/DRAM"
   },
   "3008": {
     "name_zh": "大立光",
-    "sector": "ai_server",
-    "sector_name": "AI伺服器/ODM"
+    "sector": "lens_optics",
+    "sector_name": "鏡頭/光學"
   },
   "3010": {
     "name_zh": "華立",
-    "sector": "foundry",
-    "sector_name": "晶圓代工"
+    "sector": "ev_supply",
+    "sector_name": "電動車供應鏈"
   },
   "3011": {
     "name_zh": "今皓",
-    "sector": "ai_server",
-    "sector_name": "AI伺服器/ODM"
+    "sector": "connector",
+    "sector_name": "連接器/線材"
   },
   "3013": {
     "name_zh": "晟銘電",
-    "sector": "ai_server",
-    "sector_name": "AI伺服器/ODM"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "3014": {
     "name_zh": "聯陽",
-    "sector": "foundry",
-    "sector_name": "晶圓代工"
+    "sector": "ic_design",
+    "sector_name": "IC設計"
   },
   "3015": {
     "name_zh": "全漢",
-    "sector": "ai_server",
-    "sector_name": "AI伺服器/ODM"
+    "sector": "ev_supply",
+    "sector_name": "電動車供應鏈"
   },
   "3016": {
     "name_zh": "嘉晶",
@@ -2956,13 +2956,13 @@
   },
   "3018": {
     "name_zh": "隆銘綠能",
-    "sector": "construction",
-    "sector_name": "建設/營造"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "3019": {
     "name_zh": "亞光",
-    "sector": "ai_server",
-    "sector_name": "AI伺服器/ODM"
+    "sector": "lens_optics",
+    "sector_name": "鏡頭/光學"
   },
   "3021": {
     "name_zh": "鴻名",
@@ -2971,78 +2971,78 @@
   },
   "3022": {
     "name_zh": "威強電",
-    "sector": "ai_server",
-    "sector_name": "AI伺服器/ODM"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "3023": {
     "name_zh": "信邦",
-    "sector": "ai_server",
-    "sector_name": "AI伺服器/ODM"
+    "sector": "ev_supply",
+    "sector_name": "電動車供應鏈"
   },
   "3024": {
     "name_zh": "憶聲",
-    "sector": "ai_server",
-    "sector_name": "AI伺服器/ODM"
+    "sector": "trading",
+    "sector_name": "貿易百貨"
   },
   "3025": {
     "name_zh": "星通",
-    "sector": "networking",
-    "sector_name": "網通設備"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "3026": {
     "name_zh": "禾伸堂",
-    "sector": "foundry",
-    "sector_name": "晶圓代工"
+    "sector": "power_components",
+    "sector_name": "電源/被動元件"
   },
   "3027": {
     "name_zh": "盛達",
-    "sector": "networking",
-    "sector_name": "網通設備"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "3028": {
     "name_zh": "增你強",
-    "sector": "foundry",
-    "sector_name": "晶圓代工"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "3029": {
     "name_zh": "零壹",
-    "sector": "ai_server",
-    "sector_name": "AI伺服器/ODM"
+    "sector": "ai_themes",
+    "sector_name": "人工智慧主題"
   },
   "3030": {
     "name_zh": "德律",
-    "sector": "foundry",
-    "sector_name": "晶圓代工"
+    "sector": "pcb",
+    "sector_name": "PCB板"
   },
   "3031": {
     "name_zh": "佰鴻",
-    "sector": "display",
-    "sector_name": "面板顯示"
+    "sector": "led_lighting",
+    "sector_name": "LED照明"
   },
   "3032": {
     "name_zh": "偉訓",
-    "sector": "ai_server",
-    "sector_name": "AI伺服器/ODM"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "3033": {
     "name_zh": "威健",
-    "sector": "foundry",
-    "sector_name": "晶圓代工"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "3034": {
     "name_zh": "聯詠",
-    "sector": "foundry",
-    "sector_name": "晶圓代工"
+    "sector": "ic_design",
+    "sector_name": "IC設計"
   },
   "3035": {
     "name_zh": "智原",
-    "sector": "foundry",
-    "sector_name": "晶圓代工"
+    "sector": "ic_design",
+    "sector_name": "IC設計"
   },
   "3036": {
     "name_zh": "文曄",
-    "sector": "foundry",
-    "sector_name": "晶圓代工"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "3037": {
     "name_zh": "欣興",
@@ -3051,8 +3051,8 @@
   },
   "3038": {
     "name_zh": "全台",
-    "sector": "ai_server",
-    "sector_name": "AI伺服器/ODM"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "3040": {
     "name_zh": "遠見",
@@ -3061,8 +3061,8 @@
   },
   "3041": {
     "name_zh": "揚智",
-    "sector": "foundry",
-    "sector_name": "晶圓代工"
+    "sector": "ic_design",
+    "sector_name": "IC設計"
   },
   "3042": {
     "name_zh": "晶技",
@@ -3086,8 +3086,8 @@
   },
   "3046": {
     "name_zh": "建碁",
-    "sector": "ai_server",
-    "sector_name": "AI伺服器/ODM"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "3047": {
     "name_zh": "訊舟",
@@ -3096,63 +3096,63 @@
   },
   "3048": {
     "name_zh": "益登",
-    "sector": "foundry",
-    "sector_name": "晶圓代工"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "3049": {
     "name_zh": "精金",
-    "sector": "display",
-    "sector_name": "面板顯示"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "3050": {
     "name_zh": "鈺德",
-    "sector": "ai_server",
-    "sector_name": "AI伺服器/ODM"
+    "sector": "solar",
+    "sector_name": "太陽能"
   },
   "3051": {
     "name_zh": "力旺",
-    "sector": "ic_design",
-    "sector_name": "IC設計"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "3052": {
     "name_zh": "夆典",
-    "sector": "construction",
-    "sector_name": "建設/營造"
+    "sector": "networking",
+    "sector_name": "網通設備"
   },
   "3054": {
     "name_zh": "立萬利",
-    "sector": "foundry",
-    "sector_name": "晶圓代工"
+    "sector": "biotech",
+    "sector_name": "生技醫療"
   },
   "3055": {
     "name_zh": "蔚華科",
-    "sector": "foundry",
-    "sector_name": "晶圓代工"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "3056": {
     "name_zh": "富華新",
-    "sector": "construction",
-    "sector_name": "建設/營造"
+    "sector": "software_saas",
+    "sector_name": "軟體/SaaS"
   },
   "3057": {
     "name_zh": "喬鼎",
-    "sector": "ai_server",
-    "sector_name": "AI伺服器/ODM"
+    "sector": "cloud_computing",
+    "sector_name": "雲端運算"
   },
   "3058": {
     "name_zh": "立德",
-    "sector": "ai_server",
-    "sector_name": "AI伺服器/ODM"
+    "sector": "ev_supply",
+    "sector_name": "電動車供應鏈"
   },
   "3059": {
     "name_zh": "華晶科",
-    "sector": "ai_server",
-    "sector_name": "AI伺服器/ODM"
+    "sector": "display",
+    "sector_name": "面板顯示"
   },
   "3060": {
     "name_zh": "銘異",
-    "sector": "ai_server",
-    "sector_name": "AI伺服器/ODM"
+    "sector": "lens_optics",
+    "sector_name": "鏡頭/光學"
   },
   "3062": {
     "name_zh": "建漢",
@@ -3176,23 +3176,23 @@
   },
   "3071": {
     "name_zh": "協禧",
-    "sector": "ai_server",
-    "sector_name": "AI伺服器/ODM"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "3073": {
     "name_zh": "天方能源",
-    "sector": "foundry",
-    "sector_name": "晶圓代工"
+    "sector": "solar",
+    "sector_name": "太陽能"
   },
   "3078": {
     "name_zh": "僑威",
-    "sector": "ai_server",
-    "sector_name": "AI伺服器/ODM"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "3081": {
     "name_zh": "聯亞",
-    "sector": "networking",
-    "sector_name": "網通設備"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "3083": {
     "name_zh": "網龍",
@@ -3211,8 +3211,8 @@
   },
   "3088": {
     "name_zh": "艾訊",
-    "sector": "ai_server",
-    "sector_name": "AI伺服器/ODM"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "3090": {
     "name_zh": "日電貿",
@@ -3221,23 +3221,23 @@
   },
   "3092": {
     "name_zh": "鴻碩",
-    "sector": "ai_server",
-    "sector_name": "AI伺服器/ODM"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "3093": {
     "name_zh": "港建*",
-    "sector": "foundry",
-    "sector_name": "晶圓代工"
+    "sector": "pcb",
+    "sector_name": "PCB板"
   },
   "3094": {
     "name_zh": "聯傑",
-    "sector": "foundry",
-    "sector_name": "晶圓代工"
+    "sector": "ic_design",
+    "sector_name": "IC設計"
   },
   "3095": {
     "name_zh": "及成",
-    "sector": "ai_server",
-    "sector_name": "AI伺服器/ODM"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "3105": {
     "name_zh": "穩懋",
@@ -3246,8 +3246,8 @@
   },
   "3114": {
     "name_zh": "好德",
-    "sector": "foundry",
-    "sector_name": "晶圓代工"
+    "sector": "pcb",
+    "sector_name": "PCB板"
   },
   "3115": {
     "name_zh": "富榮綱",
@@ -3261,13 +3261,13 @@
   },
   "3122": {
     "name_zh": "笙泉",
-    "sector": "foundry",
-    "sector_name": "晶圓代工"
+    "sector": "ic_design",
+    "sector_name": "IC設計"
   },
   "3128": {
     "name_zh": "昇銳",
-    "sector": "ai_server",
-    "sector_name": "AI伺服器/ODM"
+    "sector": "ai_themes",
+    "sector_name": "人工智慧主題"
   },
   "3130": {
     "name_zh": "一零四",
@@ -3276,58 +3276,58 @@
   },
   "3131": {
     "name_zh": "弘塑",
-    "sector": "foundry",
-    "sector_name": "晶圓代工"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "3135": {
     "name_zh": "凌航",
-    "sector": "foundry",
-    "sector_name": "晶圓代工"
+    "sector": "big_data",
+    "sector_name": "大數據"
   },
   "3138": {
     "name_zh": "耀登",
-    "sector": "networking",
-    "sector_name": "網通設備"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "3141": {
     "name_zh": "晶宏",
-    "sector": "foundry",
-    "sector_name": "晶圓代工"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "3147": {
     "name_zh": "大綜",
-    "sector": "ai_server",
-    "sector_name": "AI伺服器/ODM"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "3149": {
     "name_zh": "正文",
-    "sector": "networking",
-    "sector_name": "網通設備"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "3150": {
     "name_zh": "鈺寶-創",
-    "sector": "foundry",
-    "sector_name": "晶圓代工"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "3152": {
     "name_zh": "璟德",
-    "sector": "networking",
-    "sector_name": "網通設備"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "3158": {
     "name_zh": "嘉實",
-    "sector": "software_saas",
-    "sector_name": "軟體/SaaS"
+    "sector": "fintech",
+    "sector_name": "金融科技"
   },
   "3162": {
     "name_zh": "精確",
-    "sector": "ai_server",
-    "sector_name": "AI伺服器/ODM"
+    "sector": "vehicle_elec",
+    "sector_name": "車用電子"
   },
   "3163": {
     "name_zh": "波若威",
-    "sector": "networking",
-    "sector_name": "網通設備"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "3164": {
     "name_zh": "景岳",
@@ -3341,13 +3341,13 @@
   },
   "3168": {
     "name_zh": "眾福科",
-    "sector": "display",
-    "sector_name": "面板顯示"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "3169": {
     "name_zh": "亞信",
-    "sector": "foundry",
-    "sector_name": "晶圓代工"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "3171": {
     "name_zh": "炎洲流通",
@@ -3361,23 +3361,23 @@
   },
   "3178": {
     "name_zh": "公信",
-    "sector": "foundry",
-    "sector_name": "晶圓代工"
+    "sector": "solar",
+    "sector_name": "太陽能"
   },
   "3188": {
     "name_zh": "鑫龍騰",
-    "sector": "construction",
-    "sector_name": "建設/營造"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "3189": {
     "name_zh": "景碩",
-    "sector": "foundry",
-    "sector_name": "晶圓代工"
+    "sector": "pcb",
+    "sector_name": "PCB板"
   },
   "3191": {
     "name_zh": "雲嘉南",
-    "sector": "ai_server",
-    "sector_name": "AI伺服器/ODM"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "3205": {
     "name_zh": "佰研",
@@ -3386,8 +3386,8 @@
   },
   "3206": {
     "name_zh": "志豐",
-    "sector": "ai_server",
-    "sector_name": "AI伺服器/ODM"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "3207": {
     "name_zh": "耀勝",
@@ -3396,58 +3396,58 @@
   },
   "3209": {
     "name_zh": "全科",
-    "sector": "foundry",
-    "sector_name": "晶圓代工"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "3211": {
     "name_zh": "順達",
-    "sector": "ai_server",
-    "sector_name": "AI伺服器/ODM"
+    "sector": "ev_supply",
+    "sector_name": "電動車供應鏈"
   },
   "3213": {
     "name_zh": "茂訊",
-    "sector": "ai_server",
-    "sector_name": "AI伺服器/ODM"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "3217": {
     "name_zh": "優群",
-    "sector": "ai_server",
-    "sector_name": "AI伺服器/ODM"
+    "sector": "connector",
+    "sector_name": "連接器/線材"
   },
   "3218": {
     "name_zh": "大學光",
-    "sector": "medical_device",
-    "sector_name": "醫材"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "3219": {
     "name_zh": "倚強科",
-    "sector": "foundry",
-    "sector_name": "晶圓代工"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "3221": {
     "name_zh": "台嘉碩",
-    "sector": "networking",
-    "sector_name": "網通設備"
+    "sector": "power_components",
+    "sector_name": "電源/被動元件"
   },
   "3224": {
     "name_zh": "三顧",
-    "sector": "foundry",
-    "sector_name": "晶圓代工"
+    "sector": "biotech",
+    "sector_name": "生技醫療"
   },
   "3226": {
     "name_zh": "龍鋒",
-    "sector": "thermal",
-    "sector_name": "散熱/熱管理"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "3227": {
     "name_zh": "原相",
-    "sector": "foundry",
-    "sector_name": "晶圓代工"
+    "sector": "ic_design",
+    "sector_name": "IC設計"
   },
   "3228": {
     "name_zh": "金麗科",
-    "sector": "foundry",
-    "sector_name": "晶圓代工"
+    "sector": "software_saas",
+    "sector_name": "軟體/SaaS"
   },
   "3229": {
     "name_zh": "晟鈦",
@@ -3456,8 +3456,8 @@
   },
   "3230": {
     "name_zh": "錦明",
-    "sector": "ai_server",
-    "sector_name": "AI伺服器/ODM"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "3231": {
     "name_zh": "緯創",
@@ -3466,13 +3466,13 @@
   },
   "3232": {
     "name_zh": "昱捷",
-    "sector": "foundry",
-    "sector_name": "晶圓代工"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "3234": {
     "name_zh": "光環",
-    "sector": "foundry",
-    "sector_name": "晶圓代工"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "3236": {
     "name_zh": "千如",
@@ -3481,48 +3481,48 @@
   },
   "3252": {
     "name_zh": "海灣",
-    "sector": "construction",
-    "sector_name": "建設/營造"
+    "sector": "gaming",
+    "sector_name": "遊戲"
   },
   "3257": {
     "name_zh": "虹冠電",
-    "sector": "foundry",
-    "sector_name": "晶圓代工"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "3259": {
     "name_zh": "鑫創",
-    "sector": "foundry",
-    "sector_name": "晶圓代工"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "3260": {
     "name_zh": "威剛",
-    "sector": "foundry",
-    "sector_name": "晶圓代工"
+    "sector": "led_lighting",
+    "sector_name": "LED照明"
   },
   "3264": {
     "name_zh": "欣銓",
-    "sector": "foundry",
-    "sector_name": "晶圓代工"
+    "sector": "packaging",
+    "sector_name": "封測"
   },
   "3265": {
     "name_zh": "台星科",
-    "sector": "foundry",
-    "sector_name": "晶圓代工"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "3266": {
     "name_zh": "昇陽",
-    "sector": "construction",
-    "sector_name": "建設/營造"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "3268": {
     "name_zh": "海德威",
-    "sector": "foundry",
-    "sector_name": "晶圓代工"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "3272": {
     "name_zh": "東碩",
-    "sector": "ai_server",
-    "sector_name": "AI伺服器/ODM"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "3276": {
     "name_zh": "宇環",
@@ -3536,18 +3536,18 @@
   },
   "3285": {
     "name_zh": "微端",
-    "sector": "ai_server",
-    "sector_name": "AI伺服器/ODM"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "3287": {
     "name_zh": "廣寰科",
-    "sector": "ai_server",
-    "sector_name": "AI伺服器/ODM"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "3288": {
     "name_zh": "點晶",
-    "sector": "foundry",
-    "sector_name": "晶圓代工"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "3289": {
     "name_zh": "宜特",
@@ -3556,8 +3556,8 @@
   },
   "3290": {
     "name_zh": "東浦",
-    "sector": "ai_server",
-    "sector_name": "AI伺服器/ODM"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "3293": {
     "name_zh": "鈊象",
@@ -3566,63 +3566,63 @@
   },
   "3294": {
     "name_zh": "英濟",
-    "sector": "ai_server",
-    "sector_name": "AI伺服器/ODM"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "3296": {
     "name_zh": "勝德",
-    "sector": "ai_server",
-    "sector_name": "AI伺服器/ODM"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "3297": {
     "name_zh": "杭特",
-    "sector": "ai_server",
-    "sector_name": "AI伺服器/ODM"
+    "sector": "ai_themes",
+    "sector_name": "人工智慧主題"
   },
   "3303": {
     "name_zh": "岱稜",
-    "sector": "display",
-    "sector_name": "面板顯示"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "3305": {
     "name_zh": "昇貿",
-    "sector": "foundry",
-    "sector_name": "晶圓代工"
+    "sector": "solar",
+    "sector_name": "太陽能"
   },
   "3306": {
     "name_zh": "鼎天",
-    "sector": "networking",
-    "sector_name": "網通設備"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "3308": {
     "name_zh": "聯德",
-    "sector": "ai_server",
-    "sector_name": "AI伺服器/ODM"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "3310": {
     "name_zh": "佳穎",
-    "sector": "foundry",
-    "sector_name": "晶圓代工"
+    "sector": "ev_supply",
+    "sector_name": "電動車供應鏈"
   },
   "3311": {
     "name_zh": "閎暉",
-    "sector": "display",
-    "sector_name": "面板顯示"
+    "sector": "petrochemical",
+    "sector_name": "塑化"
   },
   "3312": {
     "name_zh": "弘憶股",
-    "sector": "foundry",
-    "sector_name": "晶圓代工"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "3313": {
     "name_zh": "斐成",
-    "sector": "construction",
-    "sector_name": "建設/營造"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "3317": {
     "name_zh": "尼克森",
-    "sector": "foundry",
-    "sector_name": "晶圓代工"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "3321": {
     "name_zh": "同泰",
@@ -3631,13 +3631,13 @@
   },
   "3322": {
     "name_zh": "建舜電",
-    "sector": "ai_server",
-    "sector_name": "AI伺服器/ODM"
+    "sector": "connector",
+    "sector_name": "連接器/線材"
   },
   "3323": {
     "name_zh": "加百裕",
-    "sector": "ai_server",
-    "sector_name": "AI伺服器/ODM"
+    "sector": "ev_supply",
+    "sector_name": "電動車供應鏈"
   },
   "3324": {
     "name_zh": "雙鴻",
@@ -3646,13 +3646,13 @@
   },
   "3325": {
     "name_zh": "旭品",
-    "sector": "ai_server",
-    "sector_name": "AI伺服器/ODM"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "3332": {
     "name_zh": "幸康",
-    "sector": "ai_server",
-    "sector_name": "AI伺服器/ODM"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "3338": {
     "name_zh": "泰碩",
@@ -3671,8 +3671,8 @@
   },
   "3349": {
     "name_zh": "寶德",
-    "sector": "ai_server",
-    "sector_name": "AI伺服器/ODM"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "3354": {
     "name_zh": "律勝",
@@ -3681,8 +3681,8 @@
   },
   "3356": {
     "name_zh": "奇偶",
-    "sector": "ai_server",
-    "sector_name": "AI伺服器/ODM"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "3357": {
     "name_zh": "臺慶科",
@@ -3691,38 +3691,38 @@
   },
   "3360": {
     "name_zh": "尚立",
-    "sector": "foundry",
-    "sector_name": "晶圓代工"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "3362": {
     "name_zh": "先進光",
-    "sector": "ai_server",
-    "sector_name": "AI伺服器/ODM"
+    "sector": "lens_optics",
+    "sector_name": "鏡頭/光學"
   },
   "3363": {
     "name_zh": "上詮",
-    "sector": "networking",
-    "sector_name": "網通設備"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "3372": {
     "name_zh": "典範",
-    "sector": "foundry",
-    "sector_name": "晶圓代工"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "3373": {
     "name_zh": "熱映",
-    "sector": "medical_device",
-    "sector_name": "醫材"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "3374": {
     "name_zh": "精材",
-    "sector": "foundry",
-    "sector_name": "晶圓代工"
+    "sector": "semiconductor_equip",
+    "sector_name": "半導體設備"
   },
   "3376": {
     "name_zh": "新日興",
-    "sector": "ai_server",
-    "sector_name": "AI伺服器/ODM"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "3379": {
     "name_zh": "彬台",
@@ -3731,13 +3731,13 @@
   },
   "3380": {
     "name_zh": "明泰",
-    "sector": "networking",
-    "sector_name": "網通設備"
+    "sector": "cloud_computing",
+    "sector_name": "雲端運算"
   },
   "3388": {
     "name_zh": "崇越電",
-    "sector": "networking",
-    "sector_name": "網通設備"
+    "sector": "pcb",
+    "sector_name": "PCB板"
   },
   "3390": {
     "name_zh": "旭軟",
@@ -3746,33 +3746,33 @@
   },
   "3402": {
     "name_zh": "漢科",
-    "sector": "foundry",
-    "sector_name": "晶圓代工"
+    "sector": "solar",
+    "sector_name": "太陽能"
   },
   "3406": {
     "name_zh": "玉晶光",
-    "sector": "ai_server",
-    "sector_name": "AI伺服器/ODM"
+    "sector": "lens_optics",
+    "sector_name": "鏡頭/光學"
   },
   "3413": {
     "name_zh": "京鼎",
-    "sector": "foundry",
-    "sector_name": "晶圓代工"
+    "sector": "display",
+    "sector_name": "面板顯示"
   },
   "3416": {
     "name_zh": "融程電",
-    "sector": "ai_server",
-    "sector_name": "AI伺服器/ODM"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "3419": {
     "name_zh": "譁裕",
-    "sector": "networking",
-    "sector_name": "網通設備"
+    "sector": "connector",
+    "sector_name": "連接器/線材"
   },
   "3426": {
     "name_zh": "台興",
-    "sector": "thermal",
-    "sector_name": "散熱/熱管理"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "3430": {
     "name_zh": "奇鈦科",
@@ -3786,23 +3786,23 @@
   },
   "3434": {
     "name_zh": "哲固",
-    "sector": "ai_server",
-    "sector_name": "AI伺服器/ODM"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "3437": {
     "name_zh": "榮創",
-    "sector": "display",
-    "sector_name": "面板顯示"
+    "sector": "led_lighting",
+    "sector_name": "LED照明"
   },
   "3438": {
     "name_zh": "類比科",
-    "sector": "foundry",
-    "sector_name": "晶圓代工"
+    "sector": "power_semi",
+    "sector_name": "功率半導體"
   },
   "3441": {
     "name_zh": "聯一光電",
-    "sector": "ai_server",
-    "sector_name": "AI伺服器/ODM"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "3443": {
     "name_zh": "創意",
@@ -3811,28 +3811,23 @@
   },
   "3444": {
     "name_zh": "利機",
-    "sector": "foundry",
-    "sector_name": "晶圓代工"
+    "sector": "led_lighting",
+    "sector_name": "LED照明"
   },
   "3447": {
     "name_zh": "展達",
-    "sector": "networking",
-    "sector_name": "網通設備"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "3450": {
     "name_zh": "聯鈞",
-    "sector": "foundry",
-    "sector_name": "晶圓代工"
-  },
-  "3454": {
-    "name_zh": "3454",
-    "sector": "ai_server",
-    "sector_name": "AI伺服器/ODM"
+    "sector": "display",
+    "sector_name": "面板顯示"
   },
   "3455": {
     "name_zh": "由田",
-    "sector": "foundry",
-    "sector_name": "晶圓代工"
+    "sector": "pcb",
+    "sector_name": "PCB板"
   },
   "3465": {
     "name_zh": "進泰電子",
@@ -3841,18 +3836,18 @@
   },
   "3466": {
     "name_zh": "德晉",
-    "sector": "networking",
-    "sector_name": "網通設備"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "3467": {
     "name_zh": "台灣精材",
-    "sector": "foundry",
-    "sector_name": "晶圓代工"
+    "sector": "semiconductor_equip",
+    "sector_name": "半導體設備"
   },
   "3479": {
     "name_zh": "安勤",
-    "sector": "ai_server",
-    "sector_name": "AI伺服器/ODM"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "3481": {
     "name_zh": "群創",
@@ -3861,23 +3856,23 @@
   },
   "3483": {
     "name_zh": "力致",
-    "sector": "ai_server",
-    "sector_name": "AI伺服器/ODM"
+    "sector": "led_lighting",
+    "sector_name": "LED照明"
   },
   "3484": {
     "name_zh": "崧騰",
-    "sector": "ai_server",
-    "sector_name": "AI伺服器/ODM"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "3489": {
     "name_zh": "森寶",
-    "sector": "construction",
-    "sector_name": "建設/營造"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "3490": {
     "name_zh": "單井",
-    "sector": "foundry",
-    "sector_name": "晶圓代工"
+    "sector": "solar",
+    "sector_name": "太陽能"
   },
   "3491": {
     "name_zh": "昇達科",
@@ -3891,8 +3886,8 @@
   },
   "3494": {
     "name_zh": "誠研",
-    "sector": "ai_server",
-    "sector_name": "AI伺服器/ODM"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "3498": {
     "name_zh": "陽程",
@@ -3901,8 +3896,8 @@
   },
   "3499": {
     "name_zh": "環天科",
-    "sector": "networking",
-    "sector_name": "網通設備"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "3501": {
     "name_zh": "維熹",
@@ -3911,8 +3906,8 @@
   },
   "3504": {
     "name_zh": "揚明光",
-    "sector": "ai_server",
-    "sector_name": "AI伺服器/ODM"
+    "sector": "lens_optics",
+    "sector_name": "鏡頭/光學"
   },
   "3508": {
     "name_zh": "位速",
@@ -3926,23 +3921,23 @@
   },
   "3512": {
     "name_zh": "皇龍",
-    "sector": "ai_server",
-    "sector_name": "AI伺服器/ODM"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "3515": {
     "name_zh": "華擎",
-    "sector": "ai_server",
-    "sector_name": "AI伺服器/ODM"
+    "sector": "software_saas",
+    "sector_name": "軟體/SaaS"
   },
   "3516": {
     "name_zh": "亞帝歐",
-    "sector": "ai_server",
-    "sector_name": "AI伺服器/ODM"
+    "sector": "led_lighting",
+    "sector_name": "LED照明"
   },
   "3518": {
     "name_zh": "柏騰",
-    "sector": "ai_server",
-    "sector_name": "AI伺服器/ODM"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "3520": {
     "name_zh": "華盈",
@@ -3951,8 +3946,8 @@
   },
   "3521": {
     "name_zh": "台鋼建設",
-    "sector": "ai_server",
-    "sector_name": "AI伺服器/ODM"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "3522": {
     "name_zh": "御嵿",
@@ -3961,8 +3956,8 @@
   },
   "3523": {
     "name_zh": "迎輝",
-    "sector": "display",
-    "sector_name": "面板顯示"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "3526": {
     "name_zh": "凡甲",
@@ -3971,33 +3966,33 @@
   },
   "3527": {
     "name_zh": "聚積",
-    "sector": "foundry",
-    "sector_name": "晶圓代工"
+    "sector": "ic_design",
+    "sector_name": "IC設計"
   },
   "3528": {
     "name_zh": "安馳",
-    "sector": "foundry",
-    "sector_name": "晶圓代工"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "3529": {
     "name_zh": "力旺",
-    "sector": "foundry",
-    "sector_name": "晶圓代工"
+    "sector": "ic_design",
+    "sector_name": "IC設計"
   },
   "3530": {
     "name_zh": "晶相光",
-    "sector": "foundry",
-    "sector_name": "晶圓代工"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "3531": {
     "name_zh": "先益",
-    "sector": "display",
-    "sector_name": "面板顯示"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "3532": {
     "name_zh": "台勝科",
-    "sector": "foundry",
-    "sector_name": "晶圓代工"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "3533": {
     "name_zh": "嘉澤",
@@ -4006,8 +4001,8 @@
   },
   "3535": {
     "name_zh": "晶彩科",
-    "sector": "foundry",
-    "sector_name": "晶圓代工"
+    "sector": "pcb",
+    "sector_name": "PCB板"
   },
   "3536": {
     "name_zh": "誠創",
@@ -4016,28 +4011,28 @@
   },
   "3537": {
     "name_zh": "堡達",
-    "sector": "foundry",
-    "sector_name": "晶圓代工"
+    "sector": "power_components",
+    "sector_name": "電源/被動元件"
   },
   "3540": {
     "name_zh": "曜越",
-    "sector": "ai_server",
-    "sector_name": "AI伺服器/ODM"
+    "sector": "networking",
+    "sector_name": "網通設備"
   },
   "3541": {
     "name_zh": "西柏",
-    "sector": "ai_server",
-    "sector_name": "AI伺服器/ODM"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "3543": {
     "name_zh": "州巧",
-    "sector": "display",
-    "sector_name": "面板顯示"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "3545": {
     "name_zh": "敦泰",
-    "sector": "foundry",
-    "sector_name": "晶圓代工"
+    "sector": "ic_design",
+    "sector_name": "IC設計"
   },
   "3546": {
     "name_zh": "宇峻",
@@ -4046,18 +4041,18 @@
   },
   "3548": {
     "name_zh": "兆利",
-    "sector": "ai_server",
-    "sector_name": "AI伺服器/ODM"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "3550": {
     "name_zh": "聯穎",
-    "sector": "ai_server",
-    "sector_name": "AI伺服器/ODM"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "3551": {
     "name_zh": "世禾",
-    "sector": "foundry",
-    "sector_name": "晶圓代工"
+    "sector": "led_lighting",
+    "sector_name": "LED照明"
   },
   "3552": {
     "name_zh": "同致",
@@ -4066,13 +4061,13 @@
   },
   "3555": {
     "name_zh": "博士旺",
-    "sector": "foundry",
-    "sector_name": "晶圓代工"
+    "sector": "biotech",
+    "sector_name": "生技醫療"
   },
   "3556": {
     "name_zh": "禾瑞亞",
-    "sector": "foundry",
-    "sector_name": "晶圓代工"
+    "sector": "ic_design",
+    "sector_name": "IC設計"
   },
   "3557": {
     "name_zh": "嘉威",
@@ -4081,8 +4076,8 @@
   },
   "3558": {
     "name_zh": "神準",
-    "sector": "networking",
-    "sector_name": "網通設備"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "3563": {
     "name_zh": "牧德",
@@ -4091,18 +4086,18 @@
   },
   "3564": {
     "name_zh": "其陽",
-    "sector": "ai_server",
-    "sector_name": "AI伺服器/ODM"
+    "sector": "cybersecurity",
+    "sector_name": "資安"
   },
   "3567": {
     "name_zh": "逸昌",
-    "sector": "foundry",
-    "sector_name": "晶圓代工"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "3570": {
     "name_zh": "大塚",
-    "sector": "software_saas",
-    "sector_name": "軟體/SaaS"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "3576": {
     "name_zh": "聯合再生",
@@ -4111,8 +4106,8 @@
   },
   "3577": {
     "name_zh": "泓格",
-    "sector": "ai_server",
-    "sector_name": "AI伺服器/ODM"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "3580": {
     "name_zh": "友威科",
@@ -4121,13 +4116,13 @@
   },
   "3581": {
     "name_zh": "博磊",
-    "sector": "foundry",
-    "sector_name": "晶圓代工"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "3583": {
     "name_zh": "辛耘",
-    "sector": "foundry",
-    "sector_name": "晶圓代工"
+    "sector": "solar",
+    "sector_name": "太陽能"
   },
   "3587": {
     "name_zh": "閎康",
@@ -4136,8 +4131,8 @@
   },
   "3588": {
     "name_zh": "通嘉",
-    "sector": "foundry",
-    "sector_name": "晶圓代工"
+    "sector": "power_semi",
+    "sector_name": "功率半導體"
   },
   "3591": {
     "name_zh": "艾笛森",
@@ -4146,23 +4141,23 @@
   },
   "3592": {
     "name_zh": "瑞鼎",
-    "sector": "foundry",
-    "sector_name": "晶圓代工"
+    "sector": "ic_design",
+    "sector_name": "IC設計"
   },
   "3593": {
     "name_zh": "力銘",
-    "sector": "ai_server",
-    "sector_name": "AI伺服器/ODM"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "3594": {
     "name_zh": "磐儀",
-    "sector": "ai_server",
-    "sector_name": "AI伺服器/ODM"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "3596": {
     "name_zh": "智易",
-    "sector": "networking",
-    "sector_name": "網通設備"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "3597": {
     "name_zh": "映興",
@@ -4176,38 +4171,38 @@
   },
   "3607": {
     "name_zh": "谷崧",
-    "sector": "ai_server",
-    "sector_name": "AI伺服器/ODM"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "3609": {
     "name_zh": "三一東林",
-    "sector": "vehicle_elec",
-    "sector_name": "車用電子"
+    "sector": "led_lighting",
+    "sector_name": "LED照明"
   },
   "3611": {
     "name_zh": "鼎翰",
-    "sector": "ai_server",
-    "sector_name": "AI伺服器/ODM"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "3615": {
     "name_zh": "安可",
-    "sector": "display",
-    "sector_name": "面板顯示"
+    "sector": "led_lighting",
+    "sector_name": "LED照明"
   },
   "3617": {
     "name_zh": "碩天",
-    "sector": "ai_server",
-    "sector_name": "AI伺服器/ODM"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "3622": {
     "name_zh": "洋華",
-    "sector": "display",
-    "sector_name": "面板顯示"
+    "sector": "smart_grid",
+    "sector_name": "智慧電網"
   },
   "3623": {
     "name_zh": "富晶通",
-    "sector": "display",
-    "sector_name": "面板顯示"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "3624": {
     "name_zh": "光頡",
@@ -4216,8 +4211,8 @@
   },
   "3625": {
     "name_zh": "西勝",
-    "sector": "ai_server",
-    "sector_name": "AI伺服器/ODM"
+    "sector": "ev_supply",
+    "sector_name": "電動車供應鏈"
   },
   "3628": {
     "name_zh": "盈正",
@@ -4231,18 +4226,18 @@
   },
   "3630": {
     "name_zh": "新鉅科",
-    "sector": "ai_server",
-    "sector_name": "AI伺服器/ODM"
+    "sector": "lens_optics",
+    "sector_name": "鏡頭/光學"
   },
   "3631": {
     "name_zh": "晟楠",
-    "sector": "ai_server",
-    "sector_name": "AI伺服器/ODM"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "3632": {
     "name_zh": "研勤",
-    "sector": "ai_server",
-    "sector_name": "AI伺服器/ODM"
+    "sector": "ai_themes",
+    "sector_name": "人工智慧主題"
   },
   "3645": {
     "name_zh": "達邁",
@@ -4256,18 +4251,18 @@
   },
   "3652": {
     "name_zh": "精聯",
-    "sector": "ai_server",
-    "sector_name": "AI伺服器/ODM"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "3653": {
     "name_zh": "健策",
-    "sector": "foundry",
-    "sector_name": "晶圓代工"
+    "sector": "ai_server",
+    "sector_name": "AI伺服器/ODM"
   },
   "3661": {
     "name_zh": "世芯-KY",
-    "sector": "foundry",
-    "sector_name": "晶圓代工"
+    "sector": "ic_design",
+    "sector_name": "IC設計"
   },
   "3663": {
     "name_zh": "鑫科",
@@ -4276,53 +4271,53 @@
   },
   "3664": {
     "name_zh": "安瑞-KY",
-    "sector": "networking",
-    "sector_name": "網通設備"
+    "sector": "cybersecurity",
+    "sector_name": "資安"
   },
   "3665": {
     "name_zh": "貿聯-KY",
-    "sector": "ai_server",
-    "sector_name": "AI伺服器/ODM"
+    "sector": "ev_supply",
+    "sector_name": "電動車供應鏈"
   },
   "3666": {
     "name_zh": "光耀",
-    "sector": "display",
-    "sector_name": "面板顯示"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "3669": {
     "name_zh": "圓展",
-    "sector": "ai_server",
-    "sector_name": "AI伺服器/ODM"
+    "sector": "ai_themes",
+    "sector_name": "人工智慧主題"
   },
   "3672": {
     "name_zh": "康聯訊",
-    "sector": "networking",
-    "sector_name": "網通設備"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "3673": {
     "name_zh": "TPK-KY",
-    "sector": "display",
-    "sector_name": "面板顯示"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "3675": {
     "name_zh": "德微",
-    "sector": "foundry",
-    "sector_name": "晶圓代工"
+    "sector": "power_semi",
+    "sector_name": "功率半導體"
   },
   "3679": {
     "name_zh": "新至陞",
-    "sector": "ai_server",
-    "sector_name": "AI伺服器/ODM"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "3680": {
     "name_zh": "家登",
-    "sector": "foundry",
-    "sector_name": "晶圓代工"
+    "sector": "semiconductor_equip",
+    "sector_name": "半導體設備"
   },
   "3684": {
     "name_zh": "榮昌",
-    "sector": "networking",
-    "sector_name": "網通設備"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "3685": {
     "name_zh": "元創精密",
@@ -4351,33 +4346,33 @@
   },
   "3693": {
     "name_zh": "營邦",
-    "sector": "ai_server",
-    "sector_name": "AI伺服器/ODM"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "3694": {
     "name_zh": "海華",
-    "sector": "networking",
-    "sector_name": "網通設備"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "3701": {
     "name_zh": "大眾控",
-    "sector": "ai_server",
-    "sector_name": "AI伺服器/ODM"
+    "sector": "software_saas",
+    "sector_name": "軟體/SaaS"
   },
   "3702": {
     "name_zh": "大聯大",
-    "sector": "foundry",
-    "sector_name": "晶圓代工"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "3703": {
     "name_zh": "欣陸",
-    "sector": "construction",
-    "sector_name": "建設/營造"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "3704": {
     "name_zh": "合勤控",
-    "sector": "networking",
-    "sector_name": "網通設備"
+    "sector": "cybersecurity",
+    "sector_name": "資安"
   },
   "3705": {
     "name_zh": "永信",
@@ -4386,13 +4381,13 @@
   },
   "3706": {
     "name_zh": "神達",
-    "sector": "ai_server",
-    "sector_name": "AI伺服器/ODM"
+    "sector": "vehicle_elec",
+    "sector_name": "車用電子"
   },
   "3707": {
     "name_zh": "漢磊",
-    "sector": "foundry",
-    "sector_name": "晶圓代工"
+    "sector": "power_semi",
+    "sector_name": "功率半導體"
   },
   "3708": {
     "name_zh": "上緯投控",
@@ -4401,23 +4396,23 @@
   },
   "3709": {
     "name_zh": "鑫聯大投控",
-    "sector": "ai_server",
-    "sector_name": "AI伺服器/ODM"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "3710": {
     "name_zh": "連展投控",
-    "sector": "networking",
-    "sector_name": "網通設備"
+    "sector": "connector",
+    "sector_name": "連接器/線材"
   },
   "3711": {
     "name_zh": "日月光",
-    "sector": "foundry",
-    "sector_name": "晶圓代工"
+    "sector": "packaging",
+    "sector_name": "封測"
   },
   "3712": {
     "name_zh": "永崴投控",
-    "sector": "ai_server",
-    "sector_name": "AI伺服器/ODM"
+    "sector": "solar",
+    "sector_name": "太陽能"
   },
   "3713": {
     "name_zh": "新晶投控",
@@ -4461,13 +4456,13 @@
   },
   "4106": {
     "name_zh": "雃博",
-    "sector": "medical_device",
-    "sector_name": "醫材"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "4107": {
     "name_zh": "邦特",
-    "sector": "medical_device",
-    "sector_name": "醫材"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "4108": {
     "name_zh": "懷特",
@@ -4486,8 +4481,8 @@
   },
   "4113": {
     "name_zh": "聯上",
-    "sector": "construction",
-    "sector_name": "建設/營造"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "4114": {
     "name_zh": "健喬",
@@ -4496,8 +4491,8 @@
   },
   "4116": {
     "name_zh": "明基醫",
-    "sector": "medical_device",
-    "sector_name": "醫材"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "4119": {
     "name_zh": "旭富",
@@ -4546,13 +4541,13 @@
   },
   "4131": {
     "name_zh": "浩泰",
-    "sector": "medical_device",
-    "sector_name": "醫材"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "4133": {
     "name_zh": "亞諾法",
-    "sector": "medical_device",
-    "sector_name": "醫材"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "4137": {
     "name_zh": "麗豐-KY",
@@ -4561,8 +4556,8 @@
   },
   "4138": {
     "name_zh": "曜亞",
-    "sector": "medical_device",
-    "sector_name": "醫材"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "4139": {
     "name_zh": "馬光-KY",
@@ -4581,13 +4576,13 @@
   },
   "4148": {
     "name_zh": "全宇生技-KY",
-    "sector": "other",
-    "sector_name": "其他"
+    "sector": "medical_device",
+    "sector_name": "醫材"
   },
   "4153": {
     "name_zh": "鈺緯",
-    "sector": "medical_device",
-    "sector_name": "醫材"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "4154": {
     "name_zh": "樂威科-KY",
@@ -4596,8 +4591,8 @@
   },
   "4155": {
     "name_zh": "訊映",
-    "sector": "medical_device",
-    "sector_name": "醫材"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "4157": {
     "name_zh": "太景*-KY",
@@ -4606,13 +4601,13 @@
   },
   "4160": {
     "name_zh": "訊聯基因",
-    "sector": "software_saas",
-    "sector_name": "軟體/SaaS"
+    "sector": "big_data",
+    "sector_name": "大數據"
   },
   "4161": {
     "name_zh": "聿新科",
-    "sector": "medical_device",
-    "sector_name": "醫材"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "4162": {
     "name_zh": "智擎",
@@ -4621,13 +4616,13 @@
   },
   "4163": {
     "name_zh": "鐿鈦",
-    "sector": "medical_device",
-    "sector_name": "醫材"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "4164": {
     "name_zh": "承業醫",
-    "sector": "medical_device",
-    "sector_name": "醫材"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "4166": {
     "name_zh": "友霖",
@@ -4674,6 +4669,11 @@
     "sector": "medical_device",
     "sector_name": "醫材"
   },
+  "4186": {
+    "name_zh": "4186",
+    "sector": "medical_device",
+    "sector_name": "醫材"
+  },
   "4188": {
     "name_zh": "安克",
     "sector": "medical_device",
@@ -4689,10 +4689,15 @@
     "sector": "biotech",
     "sector_name": "生技醫療"
   },
-  "4198": {
-    "name_zh": "欣大健康",
+  "4197": {
+    "name_zh": "4197",
     "sector": "medical_device",
     "sector_name": "醫材"
+  },
+  "4198": {
+    "name_zh": "欣大健康",
+    "sector": "other",
+    "sector_name": "其他"
   },
   "4205": {
     "name_zh": "中華食",
@@ -4751,8 +4756,8 @@
   },
   "4416": {
     "name_zh": "三圓",
-    "sector": "construction",
-    "sector_name": "建設/營造"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "4417": {
     "name_zh": "金洲",
@@ -4816,8 +4821,8 @@
   },
   "4502": {
     "name_zh": "健信",
-    "sector": "thermal",
-    "sector_name": "散熱/熱管理"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "4503": {
     "name_zh": "金雨",
@@ -4826,38 +4831,38 @@
   },
   "4506": {
     "name_zh": "崇友",
-    "sector": "thermal",
-    "sector_name": "散熱/熱管理"
+    "sector": "power_infra",
+    "sector_name": "重電/電力設備"
   },
   "4510": {
     "name_zh": "高鋒",
-    "sector": "thermal",
-    "sector_name": "散熱/熱管理"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "4513": {
     "name_zh": "福裕",
-    "sector": "thermal",
-    "sector_name": "散熱/熱管理"
+    "sector": "robotics",
+    "sector_name": "機器人/自動化"
   },
   "4523": {
     "name_zh": "永彥",
-    "sector": "semiconductor_equip",
-    "sector_name": "半導體設備"
+    "sector": "power_infra",
+    "sector_name": "重電/電力設備"
   },
   "4526": {
     "name_zh": "東台",
-    "sector": "thermal",
-    "sector_name": "散熱/熱管理"
+    "sector": "power_infra",
+    "sector_name": "重電/電力設備"
   },
   "4527": {
     "name_zh": "方方土霖",
-    "sector": "thermal",
-    "sector_name": "散熱/熱管理"
+    "sector": "robotics",
+    "sector_name": "機器人/自動化"
   },
   "4528": {
     "name_zh": "江興鍛",
-    "sector": "thermal",
-    "sector_name": "散熱/熱管理"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "4529": {
     "name_zh": "淳紳",
@@ -4871,18 +4876,18 @@
   },
   "4532": {
     "name_zh": "瑞智",
-    "sector": "thermal",
-    "sector_name": "散熱/熱管理"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "4533": {
     "name_zh": "協易機",
-    "sector": "thermal",
-    "sector_name": "散熱/熱管理"
+    "sector": "robotics",
+    "sector_name": "機器人/自動化"
   },
   "4534": {
     "name_zh": "慶騰",
-    "sector": "thermal",
-    "sector_name": "散熱/熱管理"
+    "sector": "vehicle_elec",
+    "sector_name": "車用電子"
   },
   "4535": {
     "name_zh": "至興",
@@ -4901,13 +4906,13 @@
   },
   "4538": {
     "name_zh": "大詠城",
-    "sector": "thermal",
-    "sector_name": "散熱/熱管理"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "4540": {
     "name_zh": "全球傳動",
-    "sector": "thermal",
-    "sector_name": "散熱/熱管理"
+    "sector": "power_infra",
+    "sector_name": "重電/電力設備"
   },
   "4541": {
     "name_zh": "晟田",
@@ -4921,28 +4926,28 @@
   },
   "4543": {
     "name_zh": "萬在",
-    "sector": "thermal",
-    "sector_name": "散熱/熱管理"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "4545": {
     "name_zh": "銘鈺",
-    "sector": "ai_server",
-    "sector_name": "AI伺服器/ODM"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "4549": {
     "name_zh": "桓達",
-    "sector": "thermal",
-    "sector_name": "散熱/熱管理"
+    "sector": "robotics",
+    "sector_name": "機器人/自動化"
   },
   "4550": {
     "name_zh": "長佳",
-    "sector": "thermal",
-    "sector_name": "散熱/熱管理"
+    "sector": "robotics",
+    "sector_name": "機器人/自動化"
   },
   "4551": {
     "name_zh": "智伸科",
-    "sector": "vehicle_elec",
-    "sector_name": "車用電子"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "4552": {
     "name_zh": "力達-KY",
@@ -4951,13 +4956,13 @@
   },
   "4554": {
     "name_zh": "橙的",
-    "sector": "vehicle_elec",
-    "sector_name": "車用電子"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "4555": {
     "name_zh": "氣立",
-    "sector": "thermal",
-    "sector_name": "散熱/熱管理"
+    "sector": "robotics",
+    "sector_name": "機器人/自動化"
   },
   "4556": {
     "name_zh": "旭然",
@@ -4971,8 +4976,8 @@
   },
   "4558": {
     "name_zh": "寶緯",
-    "sector": "thermal",
-    "sector_name": "散熱/熱管理"
+    "sector": "robotics",
+    "sector_name": "機器人/自動化"
   },
   "4560": {
     "name_zh": "強信-KY",
@@ -4981,33 +4986,33 @@
   },
   "4561": {
     "name_zh": "健椿",
-    "sector": "thermal",
-    "sector_name": "散熱/熱管理"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "4562": {
     "name_zh": "穎漢",
-    "sector": "thermal",
-    "sector_name": "散熱/熱管理"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "4563": {
     "name_zh": "百德",
-    "sector": "thermal",
-    "sector_name": "散熱/熱管理"
+    "sector": "robotics",
+    "sector_name": "機器人/自動化"
   },
   "4564": {
     "name_zh": "元翎",
-    "sector": "thermal",
-    "sector_name": "散熱/熱管理"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "4566": {
     "name_zh": "時碩工業",
-    "sector": "thermal",
-    "sector_name": "散熱/熱管理"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "4568": {
     "name_zh": "科際精密",
-    "sector": "thermal",
-    "sector_name": "散熱/熱管理"
+    "sector": "robotics",
+    "sector_name": "機器人/自動化"
   },
   "4569": {
     "name_zh": "六方科-KY",
@@ -5021,13 +5026,13 @@
   },
   "4572": {
     "name_zh": "駐龍",
-    "sector": "thermal",
-    "sector_name": "散熱/熱管理"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "4576": {
     "name_zh": "大銀微系統",
-    "sector": "thermal",
-    "sector_name": "散熱/熱管理"
+    "sector": "robotics",
+    "sector_name": "機器人/自動化"
   },
   "4577": {
     "name_zh": "達航科技",
@@ -5036,8 +5041,8 @@
   },
   "4580": {
     "name_zh": "捷流閥業",
-    "sector": "thermal",
-    "sector_name": "散熱/熱管理"
+    "sector": "robotics",
+    "sector_name": "機器人/自動化"
   },
   "4581": {
     "name_zh": "光隆精密-KY",
@@ -5046,28 +5051,28 @@
   },
   "4583": {
     "name_zh": "台灣精銳",
-    "sector": "thermal",
-    "sector_name": "散熱/熱管理"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "4584": {
     "name_zh": "君帆",
-    "sector": "thermal",
-    "sector_name": "散熱/熱管理"
+    "sector": "robotics",
+    "sector_name": "機器人/自動化"
   },
   "4585": {
     "name_zh": "達明",
-    "sector": "ai_server",
-    "sector_name": "AI伺服器/ODM"
+    "sector": "ai_themes",
+    "sector_name": "人工智慧主題"
   },
   "4588": {
     "name_zh": "玖鼎電力",
-    "sector": "power_infra",
-    "sector_name": "重電/電力設備"
+    "sector": "smart_grid",
+    "sector_name": "智慧電網"
   },
   "4590": {
     "name_zh": "富田-創",
-    "sector": "thermal",
-    "sector_name": "散熱/熱管理"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "4609": {
     "name_zh": "唐鋒",
@@ -5096,8 +5101,8 @@
   },
   "4714": {
     "name_zh": "永捷",
-    "sector": "construction",
-    "sector_name": "建設/營造"
+    "sector": "petrochemical",
+    "sector_name": "塑化"
   },
   "4716": {
     "name_zh": "大立",
@@ -5106,8 +5111,8 @@
   },
   "4720": {
     "name_zh": "德淵",
-    "sector": "foundry",
-    "sector_name": "晶圓代工"
+    "sector": "petrochemical",
+    "sector_name": "塑化"
   },
   "4721": {
     "name_zh": "美琪瑪",
@@ -5116,8 +5121,8 @@
   },
   "4722": {
     "name_zh": "國精化",
-    "sector": "foundry",
-    "sector_name": "晶圓代工"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "4726": {
     "name_zh": "永昕",
@@ -5126,28 +5131,28 @@
   },
   "4728": {
     "name_zh": "雙美",
-    "sector": "medical_device",
-    "sector_name": "醫材"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "4729": {
     "name_zh": "熒茂",
-    "sector": "display",
-    "sector_name": "面板顯示"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "4735": {
     "name_zh": "豪展",
-    "sector": "medical_device",
-    "sector_name": "醫材"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "4736": {
     "name_zh": "泰博",
-    "sector": "medical_device",
-    "sector_name": "醫材"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "4737": {
     "name_zh": "華廣",
-    "sector": "medical_device",
-    "sector_name": "醫材"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "4739": {
     "name_zh": "康普",
@@ -5166,13 +5171,13 @@
   },
   "4744": {
     "name_zh": "皇將",
-    "sector": "medical_device",
-    "sector_name": "醫材"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "4745": {
     "name_zh": "合富-KY",
-    "sector": "medical_device",
-    "sector_name": "醫材"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "4746": {
     "name_zh": "台耀",
@@ -5186,8 +5191,8 @@
   },
   "4749": {
     "name_zh": "新應材",
-    "sector": "foundry",
-    "sector_name": "晶圓代工"
+    "sector": "semiconductor_equip",
+    "sector_name": "半導體設備"
   },
   "4754": {
     "name_zh": "國碳科",
@@ -5196,8 +5201,8 @@
   },
   "4755": {
     "name_zh": "三福化",
-    "sector": "foundry",
-    "sector_name": "晶圓代工"
+    "sector": "connector",
+    "sector_name": "連接器/線材"
   },
   "4760": {
     "name_zh": "勤凱科技",
@@ -5211,8 +5216,8 @@
   },
   "4764": {
     "name_zh": "雙鍵",
-    "sector": "foundry",
-    "sector_name": "晶圓代工"
+    "sector": "pcb",
+    "sector_name": "PCB板"
   },
   "4766": {
     "name_zh": "南寶",
@@ -5226,23 +5231,23 @@
   },
   "4768": {
     "name_zh": "晶呈科技",
-    "sector": "foundry",
-    "sector_name": "晶圓代工"
+    "sector": "solar",
+    "sector_name": "太陽能"
   },
   "4770": {
     "name_zh": "上品",
-    "sector": "foundry",
-    "sector_name": "晶圓代工"
+    "sector": "petrochemical",
+    "sector_name": "塑化"
   },
   "4771": {
     "name_zh": "望隼",
-    "sector": "medical_device",
-    "sector_name": "醫材"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "4772": {
     "name_zh": "台特化",
-    "sector": "foundry",
-    "sector_name": "晶圓代工"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "4804": {
     "name_zh": "大略-KY",
@@ -5261,8 +5266,8 @@
   },
   "4903": {
     "name_zh": "聯光通",
-    "sector": "networking",
-    "sector_name": "網通設備"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "4904": {
     "name_zh": "遠傳",
@@ -5271,28 +5276,28 @@
   },
   "4905": {
     "name_zh": "台聯電",
-    "sector": "networking",
-    "sector_name": "網通設備"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "4906": {
     "name_zh": "正文",
-    "sector": "networking",
-    "sector_name": "網通設備"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "4907": {
     "name_zh": "富宇",
-    "sector": "construction",
-    "sector_name": "建設/營造"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "4908": {
     "name_zh": "前鼎",
-    "sector": "networking",
-    "sector_name": "網通設備"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "4909": {
     "name_zh": "新復興",
-    "sector": "networking",
-    "sector_name": "網通設備"
+    "sector": "pcb",
+    "sector_name": "PCB板"
   },
   "4911": {
     "name_zh": "德英",
@@ -5301,33 +5306,38 @@
   },
   "4912": {
     "name_zh": "聯德控股-KY",
-    "sector": "ai_server",
-    "sector_name": "AI伺服器/ODM"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "4915": {
     "name_zh": "致伸",
-    "sector": "ai_server",
-    "sector_name": "AI伺服器/ODM"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "4916": {
     "name_zh": "事欣科",
-    "sector": "ai_server",
-    "sector_name": "AI伺服器/ODM"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "4919": {
     "name_zh": "新唐",
-    "sector": "foundry",
-    "sector_name": "晶圓代工"
+    "sector": "ic_design",
+    "sector_name": "IC設計"
   },
   "4923": {
     "name_zh": "力士",
-    "sector": "foundry",
-    "sector_name": "晶圓代工"
+    "sector": "power_semi",
+    "sector_name": "功率半導體"
   },
   "4924": {
     "name_zh": "欣厚-KY",
-    "sector": "ai_server",
-    "sector_name": "AI伺服器/ODM"
+    "sector": "led_lighting",
+    "sector_name": "LED照明"
+  },
+  "4925": {
+    "name_zh": "4925",
+    "sector": "power_semi",
+    "sector_name": "功率半導體"
   },
   "4927": {
     "name_zh": "泰鼎-KY",
@@ -5341,13 +5351,13 @@
   },
   "4931": {
     "name_zh": "新盛力",
-    "sector": "ai_server",
-    "sector_name": "AI伺服器/ODM"
+    "sector": "ev_supply",
+    "sector_name": "電動車供應鏈"
   },
   "4933": {
     "name_zh": "友輝",
-    "sector": "display",
-    "sector_name": "面板顯示"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "4934": {
     "name_zh": "太極",
@@ -5356,13 +5366,13 @@
   },
   "4935": {
     "name_zh": "茂林-KY",
-    "sector": "ai_server",
-    "sector_name": "AI伺服器/ODM"
+    "sector": "petrochemical",
+    "sector_name": "塑化"
   },
   "4938": {
     "name_zh": "和碩",
-    "sector": "foundry",
-    "sector_name": "晶圓代工"
+    "sector": "ai_server",
+    "sector_name": "AI伺服器/ODM"
   },
   "4939": {
     "name_zh": "亞電",
@@ -5371,8 +5381,8 @@
   },
   "4942": {
     "name_zh": "嘉彰",
-    "sector": "display",
-    "sector_name": "面板顯示"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "4943": {
     "name_zh": "康控-KY",
@@ -5386,8 +5396,8 @@
   },
   "4949": {
     "name_zh": "有成精密",
-    "sector": "foundry",
-    "sector_name": "晶圓代工"
+    "sector": "solar",
+    "sector_name": "太陽能"
   },
   "4950": {
     "name_zh": "金耘國際",
@@ -5396,18 +5406,18 @@
   },
   "4951": {
     "name_zh": "精拓科",
-    "sector": "foundry",
-    "sector_name": "晶圓代工"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "4952": {
     "name_zh": "凌通",
-    "sector": "foundry",
-    "sector_name": "晶圓代工"
+    "sector": "ic_design",
+    "sector_name": "IC設計"
   },
   "4953": {
     "name_zh": "緯軟",
-    "sector": "ai_server",
-    "sector_name": "AI伺服器/ODM"
+    "sector": "ai_themes",
+    "sector_name": "人工智慧主題"
   },
   "4956": {
     "name_zh": "光鋐",
@@ -5421,18 +5431,18 @@
   },
   "4960": {
     "name_zh": "誠美材",
-    "sector": "display",
-    "sector_name": "面板顯示"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "4961": {
     "name_zh": "天鈺",
-    "sector": "foundry",
-    "sector_name": "晶圓代工"
+    "sector": "ic_design",
+    "sector_name": "IC設計"
   },
   "4966": {
     "name_zh": "譜瑞-KY",
-    "sector": "foundry",
-    "sector_name": "晶圓代工"
+    "sector": "ic_design",
+    "sector_name": "IC設計"
   },
   "4967": {
     "name_zh": "十銓",
@@ -5441,13 +5451,13 @@
   },
   "4968": {
     "name_zh": "立積",
-    "sector": "foundry",
-    "sector_name": "晶圓代工"
+    "sector": "ic_design",
+    "sector_name": "IC設計"
   },
   "4971": {
     "name_zh": "IET-KY",
-    "sector": "foundry",
-    "sector_name": "晶圓代工"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "4972": {
     "name_zh": "湯石照明",
@@ -5456,18 +5466,18 @@
   },
   "4973": {
     "name_zh": "廣穎電通",
-    "sector": "foundry",
-    "sector_name": "晶圓代工"
+    "sector": "memory",
+    "sector_name": "記憶體/DRAM"
   },
   "4974": {
     "name_zh": "亞泰",
-    "sector": "ai_server",
-    "sector_name": "AI伺服器/ODM"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "4976": {
     "name_zh": "佳凌",
-    "sector": "ai_server",
-    "sector_name": "AI伺服器/ODM"
+    "sector": "lens_optics",
+    "sector_name": "鏡頭/光學"
   },
   "4977": {
     "name_zh": "眾達-KY",
@@ -5476,13 +5486,13 @@
   },
   "4979": {
     "name_zh": "華星光",
-    "sector": "networking",
-    "sector_name": "網通設備"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "4987": {
     "name_zh": "科誠",
-    "sector": "ai_server",
-    "sector_name": "AI伺服器/ODM"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "4989": {
     "name_zh": "榮科",
@@ -5491,8 +5501,8 @@
   },
   "4991": {
     "name_zh": "環宇-KY",
-    "sector": "foundry",
-    "sector_name": "晶圓代工"
+    "sector": "semiconductor_equip",
+    "sector_name": "半導體設備"
   },
   "4994": {
     "name_zh": "傳奇",
@@ -5501,13 +5511,13 @@
   },
   "4995": {
     "name_zh": "晶達",
-    "sector": "display",
-    "sector_name": "面板顯示"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "4999": {
     "name_zh": "鑫禾",
-    "sector": "ai_server",
-    "sector_name": "AI伺服器/ODM"
+    "sector": "optical_comm",
+    "sector_name": "光通訊"
   },
   "5007": {
     "name_zh": "三星",
@@ -5546,18 +5556,18 @@
   },
   "5201": {
     "name_zh": "凱衛",
-    "sector": "software_saas",
-    "sector_name": "軟體/SaaS"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "5202": {
     "name_zh": "力新",
-    "sector": "software_saas",
-    "sector_name": "軟體/SaaS"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "5203": {
     "name_zh": "訊連",
-    "sector": "ai_server",
-    "sector_name": "AI伺服器/ODM"
+    "sector": "ai_themes",
+    "sector_name": "人工智慧主題"
   },
   "5205": {
     "name_zh": "中茂",
@@ -5566,13 +5576,13 @@
   },
   "5206": {
     "name_zh": "坤悅",
-    "sector": "construction",
-    "sector_name": "建設/營造"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "5209": {
     "name_zh": "新鼎",
-    "sector": "ai_server",
-    "sector_name": "AI伺服器/ODM"
+    "sector": "ai_themes",
+    "sector_name": "人工智慧主題"
   },
   "5210": {
     "name_zh": "寶碩",
@@ -5581,38 +5591,38 @@
   },
   "5211": {
     "name_zh": "蒙恬",
-    "sector": "software_saas",
-    "sector_name": "軟體/SaaS"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "5212": {
     "name_zh": "凌網",
-    "sector": "software_saas",
-    "sector_name": "軟體/SaaS"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "5213": {
     "name_zh": "亞昕",
-    "sector": "construction",
-    "sector_name": "建設/營造"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "5215": {
     "name_zh": "科嘉-KY",
-    "sector": "ai_server",
-    "sector_name": "AI伺服器/ODM"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "5220": {
     "name_zh": "萬達光電",
-    "sector": "display",
-    "sector_name": "面板顯示"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "5222": {
     "name_zh": "全訊",
-    "sector": "foundry",
-    "sector_name": "晶圓代工"
+    "sector": "ic_design",
+    "sector_name": "IC設計"
   },
   "5223": {
     "name_zh": "安力-KY",
-    "sector": "ai_server",
-    "sector_name": "AI伺服器/ODM"
+    "sector": "cloud_computing",
+    "sector_name": "雲端運算"
   },
   "5225": {
     "name_zh": "東科-KY",
@@ -5631,23 +5641,23 @@
   },
   "5230": {
     "name_zh": "雷笛克光學",
-    "sector": "vehicle_elec",
-    "sector_name": "車用電子"
+    "sector": "led_lighting",
+    "sector_name": "LED照明"
   },
   "5234": {
     "name_zh": "達興材料",
-    "sector": "foundry",
-    "sector_name": "晶圓代工"
+    "sector": "ev_supply",
+    "sector_name": "電動車供應鏈"
   },
   "5236": {
     "name_zh": "凌陽創新",
-    "sector": "foundry",
-    "sector_name": "晶圓代工"
+    "sector": "ai_themes",
+    "sector_name": "人工智慧主題"
   },
   "5243": {
     "name_zh": "乙盛-KY",
-    "sector": "display",
-    "sector_name": "面板顯示"
+    "sector": "steel",
+    "sector_name": "鋼鐵"
   },
   "5244": {
     "name_zh": "弘凱",
@@ -5656,23 +5666,23 @@
   },
   "5245": {
     "name_zh": "智晶",
-    "sector": "display",
-    "sector_name": "面板顯示"
+    "sector": "software_saas",
+    "sector_name": "軟體/SaaS"
   },
   "5251": {
     "name_zh": "天鉞電",
-    "sector": "ai_server",
-    "sector_name": "AI伺服器/ODM"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "5258": {
     "name_zh": "虹堡",
-    "sector": "ai_server",
-    "sector_name": "AI伺服器/ODM"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "5263": {
     "name_zh": "智崴",
-    "sector": "software_saas",
-    "sector_name": "軟體/SaaS"
+    "sector": "gaming",
+    "sector_name": "遊戲"
   },
   "5264": {
     "name_zh": "鎧勝-KY",
@@ -5681,18 +5691,18 @@
   },
   "5269": {
     "name_zh": "祥碩",
-    "sector": "foundry",
-    "sector_name": "晶圓代工"
+    "sector": "ic_design",
+    "sector_name": "IC設計"
   },
   "5272": {
     "name_zh": "笙科",
-    "sector": "foundry",
-    "sector_name": "晶圓代工"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "5274": {
     "name_zh": "信驊",
-    "sector": "foundry",
-    "sector_name": "晶圓代工"
+    "sector": "ic_design",
+    "sector_name": "IC設計"
   },
   "5276": {
     "name_zh": "達輝-KY",
@@ -5711,28 +5721,28 @@
   },
   "5284": {
     "name_zh": "jpp-KY",
-    "sector": "networking",
-    "sector_name": "網通設備"
+    "sector": "solar",
+    "sector_name": "太陽能"
   },
   "5285": {
     "name_zh": "界霖",
-    "sector": "foundry",
-    "sector_name": "晶圓代工"
+    "sector": "semiconductor_equip",
+    "sector_name": "半導體設備"
   },
   "5287": {
     "name_zh": "數字",
-    "sector": "ecommerce",
-    "sector_name": "電商/網路平台"
+    "sector": "software_saas",
+    "sector_name": "軟體/SaaS"
   },
   "5288": {
     "name_zh": "豐祥-KY",
-    "sector": "thermal",
-    "sector_name": "散熱/熱管理"
+    "sector": "robotics",
+    "sector_name": "機器人/自動化"
   },
   "5289": {
     "name_zh": "宜鼎",
-    "sector": "ai_server",
-    "sector_name": "AI伺服器/ODM"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "5291": {
     "name_zh": "邑昇",
@@ -5744,10 +5754,15 @@
     "sector": "other",
     "sector_name": "其他"
   },
+  "5297": {
+    "name_zh": "5297",
+    "sector": "semiconductor_equip",
+    "sector_name": "半導體設備"
+  },
   "5299": {
     "name_zh": "杰力",
-    "sector": "foundry",
-    "sector_name": "晶圓代工"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "5301": {
     "name_zh": "寶得利",
@@ -5756,8 +5771,8 @@
   },
   "5302": {
     "name_zh": "太欣",
-    "sector": "foundry",
-    "sector_name": "晶圓代工"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "5306": {
     "name_zh": "桂盟",
@@ -5766,28 +5781,28 @@
   },
   "5309": {
     "name_zh": "系統電",
-    "sector": "ai_server",
-    "sector_name": "AI伺服器/ODM"
+    "sector": "energy_storage",
+    "sector_name": "儲能/電池"
   },
   "5310": {
     "name_zh": "天剛",
-    "sector": "software_saas",
-    "sector_name": "軟體/SaaS"
+    "sector": "gaming",
+    "sector_name": "遊戲"
   },
   "5312": {
     "name_zh": "寶島科",
-    "sector": "medical_device",
-    "sector_name": "醫材"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "5314": {
     "name_zh": "世紀*",
-    "sector": "construction",
-    "sector_name": "建設/營造"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "5315": {
     "name_zh": "光聯",
-    "sector": "ai_server",
-    "sector_name": "AI伺服器/ODM"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "5321": {
     "name_zh": "美而快",
@@ -5796,8 +5811,8 @@
   },
   "5324": {
     "name_zh": "士開",
-    "sector": "construction",
-    "sector_name": "建設/營造"
+    "sector": "gaming",
+    "sector_name": "遊戲"
   },
   "5328": {
     "name_zh": "華容",
@@ -5811,8 +5826,8 @@
   },
   "5344": {
     "name_zh": "立衛",
-    "sector": "foundry",
-    "sector_name": "晶圓代工"
+    "sector": "led_lighting",
+    "sector_name": "LED照明"
   },
   "5345": {
     "name_zh": "馥鴻",
@@ -5826,18 +5841,18 @@
   },
   "5348": {
     "name_zh": "正能量智能",
-    "sector": "networking",
-    "sector_name": "網通設備"
+    "sector": "sports_tech",
+    "sector_name": "運動科技"
   },
   "5351": {
     "name_zh": "鈺創",
-    "sector": "foundry",
-    "sector_name": "晶圓代工"
+    "sector": "memory",
+    "sector_name": "記憶體/DRAM"
   },
   "5353": {
     "name_zh": "台林",
-    "sector": "ai_server",
-    "sector_name": "AI伺服器/ODM"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "5355": {
     "name_zh": "佳總",
@@ -5846,8 +5861,8 @@
   },
   "5356": {
     "name_zh": "協益",
-    "sector": "ai_server",
-    "sector_name": "AI伺服器/ODM"
+    "sector": "petrochemical",
+    "sector_name": "塑化"
   },
   "5364": {
     "name_zh": "力麗店",
@@ -5856,8 +5871,8 @@
   },
   "5371": {
     "name_zh": "中光電",
-    "sector": "ai_server",
-    "sector_name": "AI伺服器/ODM"
+    "sector": "ai_themes",
+    "sector_name": "人工智慧主題"
   },
   "5381": {
     "name_zh": "光譜",
@@ -5866,18 +5881,18 @@
   },
   "5386": {
     "name_zh": "青雲",
-    "sector": "ai_server",
-    "sector_name": "AI伺服器/ODM"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "5388": {
     "name_zh": "中磊",
-    "sector": "networking",
-    "sector_name": "網通設備"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "5392": {
     "name_zh": "能率",
-    "sector": "ai_server",
-    "sector_name": "AI伺服器/ODM"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "5398": {
     "name_zh": "慕康生醫",
@@ -5886,23 +5901,23 @@
   },
   "5403": {
     "name_zh": "中菲",
-    "sector": "software_saas",
-    "sector_name": "軟體/SaaS"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "5410": {
     "name_zh": "國眾",
-    "sector": "software_saas",
-    "sector_name": "軟體/SaaS"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "5425": {
     "name_zh": "台半",
-    "sector": "foundry",
-    "sector_name": "晶圓代工"
+    "sector": "power_semi",
+    "sector_name": "功率半導體"
   },
   "5426": {
     "name_zh": "振發",
-    "sector": "ai_server",
-    "sector_name": "AI伺服器/ODM"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "5432": {
     "name_zh": "新門",
@@ -5911,23 +5926,23 @@
   },
   "5434": {
     "name_zh": "崇越",
-    "sector": "foundry",
-    "sector_name": "晶圓代工"
+    "sector": "power_components",
+    "sector_name": "電源/被動元件"
   },
   "5438": {
     "name_zh": "東友",
-    "sector": "ai_server",
-    "sector_name": "AI伺服器/ODM"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "5439": {
     "name_zh": "高技",
-    "sector": "networking",
-    "sector_name": "網通設備"
+    "sector": "ev_supply",
+    "sector_name": "電動車供應鏈"
   },
   "5443": {
     "name_zh": "均豪",
-    "sector": "foundry",
-    "sector_name": "晶圓代工"
+    "sector": "display",
+    "sector_name": "面板顯示"
   },
   "5450": {
     "name_zh": "南良",
@@ -5941,18 +5956,18 @@
   },
   "5455": {
     "name_zh": "昇益",
-    "sector": "construction",
-    "sector_name": "建設/營造"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "5457": {
     "name_zh": "宣德",
-    "sector": "ai_server",
-    "sector_name": "AI伺服器/ODM"
+    "sector": "ev_supply",
+    "sector_name": "電動車供應鏈"
   },
   "5460": {
     "name_zh": "同協",
-    "sector": "ai_server",
-    "sector_name": "AI伺服器/ODM"
+    "sector": "connector",
+    "sector_name": "連接器/線材"
   },
   "5464": {
     "name_zh": "霖宏",
@@ -5961,13 +5976,13 @@
   },
   "5465": {
     "name_zh": "富驊",
-    "sector": "ai_server",
-    "sector_name": "AI伺服器/ODM"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "5468": {
     "name_zh": "凱鈺",
-    "sector": "foundry",
-    "sector_name": "晶圓代工"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "5469": {
     "name_zh": "瀚宇博",
@@ -5976,13 +5991,13 @@
   },
   "5471": {
     "name_zh": "松翰",
-    "sector": "foundry",
-    "sector_name": "晶圓代工"
+    "sector": "ic_design",
+    "sector_name": "IC設計"
   },
   "5474": {
     "name_zh": "聰泰",
-    "sector": "ai_server",
-    "sector_name": "AI伺服器/ODM"
+    "sector": "ai_themes",
+    "sector_name": "人工智慧主題"
   },
   "5475": {
     "name_zh": "德宏",
@@ -6001,38 +6016,38 @@
   },
   "5483": {
     "name_zh": "中美晶",
-    "sector": "foundry",
-    "sector_name": "晶圓代工"
+    "sector": "solar",
+    "sector_name": "太陽能"
   },
   "5484": {
     "name_zh": "慧友",
-    "sector": "ai_server",
-    "sector_name": "AI伺服器/ODM"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "5487": {
     "name_zh": "通泰",
-    "sector": "foundry",
-    "sector_name": "晶圓代工"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "5488": {
     "name_zh": "松普",
-    "sector": "ai_server",
-    "sector_name": "AI伺服器/ODM"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "5489": {
     "name_zh": "彩富",
-    "sector": "ai_server",
-    "sector_name": "AI伺服器/ODM"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "5490": {
     "name_zh": "同亨",
-    "sector": "ai_server",
-    "sector_name": "AI伺服器/ODM"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "5493": {
     "name_zh": "三聯",
-    "sector": "foundry",
-    "sector_name": "晶圓代工"
+    "sector": "sports_tech",
+    "sector_name": "運動科技"
   },
   "5498": {
     "name_zh": "凱崴",
@@ -6041,38 +6056,38 @@
   },
   "5508": {
     "name_zh": "永信建",
-    "sector": "construction",
-    "sector_name": "建設/營造"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "5511": {
     "name_zh": "德昌",
-    "sector": "construction",
-    "sector_name": "建設/營造"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "5512": {
     "name_zh": "力麒",
-    "sector": "construction",
-    "sector_name": "建設/營造"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "5514": {
     "name_zh": "三豐",
-    "sector": "construction",
-    "sector_name": "建設/營造"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "5515": {
     "name_zh": "建國",
-    "sector": "construction",
-    "sector_name": "建設/營造"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "5516": {
     "name_zh": "雙喜",
-    "sector": "construction",
-    "sector_name": "建設/營造"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "5519": {
     "name_zh": "隆大",
-    "sector": "construction",
-    "sector_name": "建設/營造"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "5520": {
     "name_zh": "力泰",
@@ -6081,33 +6096,33 @@
   },
   "5521": {
     "name_zh": "工信",
-    "sector": "construction",
-    "sector_name": "建設/營造"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "5522": {
     "name_zh": "遠雄",
-    "sector": "construction",
-    "sector_name": "建設/營造"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "5523": {
     "name_zh": "豐謙",
-    "sector": "construction",
-    "sector_name": "建設/營造"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "5525": {
     "name_zh": "順天",
-    "sector": "construction",
-    "sector_name": "建設/營造"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "5529": {
     "name_zh": "鉅陞",
-    "sector": "construction",
-    "sector_name": "建設/營造"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "5530": {
     "name_zh": "龍巖",
-    "sector": "construction",
-    "sector_name": "建設/營造"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "5531": {
     "name_zh": "鄉林",
@@ -6121,18 +6136,18 @@
   },
   "5534": {
     "name_zh": "長虹",
-    "sector": "construction",
-    "sector_name": "建設/營造"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "5536": {
     "name_zh": "聖暉*",
-    "sector": "foundry",
-    "sector_name": "晶圓代工"
+    "sector": "solar",
+    "sector_name": "太陽能"
   },
   "5538": {
     "name_zh": "東明-KY",
-    "sector": "steel",
-    "sector_name": "鋼鐵"
+    "sector": "construction",
+    "sector_name": "建設/營造"
   },
   "5543": {
     "name_zh": "桓鼎-KY",
@@ -6151,8 +6166,8 @@
   },
   "5548": {
     "name_zh": "安倉",
-    "sector": "construction",
-    "sector_name": "建設/營造"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "5601": {
     "name_zh": "台聯櫃",
@@ -6311,13 +6326,13 @@
   },
   "6103": {
     "name_zh": "合邦",
-    "sector": "foundry",
-    "sector_name": "晶圓代工"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "6104": {
     "name_zh": "創惟",
-    "sector": "foundry",
-    "sector_name": "晶圓代工"
+    "sector": "ic_design",
+    "sector_name": "IC設計"
   },
   "6108": {
     "name_zh": "競國",
@@ -6326,8 +6341,8 @@
   },
   "6109": {
     "name_zh": "亞元",
-    "sector": "ai_server",
-    "sector_name": "AI伺服器/ODM"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "6111": {
     "name_zh": "光聚晶電",
@@ -6336,33 +6351,33 @@
   },
   "6112": {
     "name_zh": "邁達特",
-    "sector": "ai_server",
-    "sector_name": "AI伺服器/ODM"
+    "sector": "ai_themes",
+    "sector_name": "人工智慧主題"
   },
   "6113": {
     "name_zh": "亞矽",
-    "sector": "foundry",
-    "sector_name": "晶圓代工"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "6114": {
     "name_zh": "久威",
-    "sector": "ai_server",
-    "sector_name": "AI伺服器/ODM"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "6115": {
     "name_zh": "鎰勝",
-    "sector": "ai_server",
-    "sector_name": "AI伺服器/ODM"
+    "sector": "connector",
+    "sector_name": "連接器/線材"
   },
   "6116": {
     "name_zh": "彩晶",
-    "sector": "display",
-    "sector_name": "面板顯示"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "6117": {
     "name_zh": "迎廣",
-    "sector": "ai_server",
-    "sector_name": "AI伺服器/ODM"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "6118": {
     "name_zh": "建達",
@@ -6371,28 +6386,28 @@
   },
   "6120": {
     "name_zh": "達運",
-    "sector": "display",
-    "sector_name": "面板顯示"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "6121": {
     "name_zh": "新普",
-    "sector": "ai_server",
-    "sector_name": "AI伺服器/ODM"
+    "sector": "ev_supply",
+    "sector_name": "電動車供應鏈"
   },
   "6122": {
     "name_zh": "擎邦",
-    "sector": "construction",
-    "sector_name": "建設/營造"
+    "sector": "power_infra",
+    "sector_name": "重電/電力設備"
   },
   "6123": {
     "name_zh": "上奇",
-    "sector": "software_saas",
-    "sector_name": "軟體/SaaS"
+    "sector": "cloud_computing",
+    "sector_name": "雲端運算"
   },
   "6124": {
     "name_zh": "業強",
-    "sector": "ai_server",
-    "sector_name": "AI伺服器/ODM"
+    "sector": "led_lighting",
+    "sector_name": "LED照明"
   },
   "6125": {
     "name_zh": "廣運",
@@ -6411,18 +6426,18 @@
   },
   "6128": {
     "name_zh": "上福",
-    "sector": "ai_server",
-    "sector_name": "AI伺服器/ODM"
+    "sector": "gaming",
+    "sector_name": "遊戲"
   },
   "6129": {
     "name_zh": "普誠",
-    "sector": "foundry",
-    "sector_name": "晶圓代工"
+    "sector": "power_semi",
+    "sector_name": "功率半導體"
   },
   "6130": {
     "name_zh": "上亞科技",
-    "sector": "foundry",
-    "sector_name": "晶圓代工"
+    "sector": "solar",
+    "sector_name": "太陽能"
   },
   "6133": {
     "name_zh": "金橋",
@@ -6431,18 +6446,18 @@
   },
   "6134": {
     "name_zh": "萬旭",
-    "sector": "ai_server",
-    "sector_name": "AI伺服器/ODM"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "6136": {
     "name_zh": "富爾特",
-    "sector": "networking",
-    "sector_name": "網通設備"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "6138": {
     "name_zh": "茂達",
-    "sector": "foundry",
-    "sector_name": "晶圓代工"
+    "sector": "ev_supply",
+    "sector_name": "電動車供應鏈"
   },
   "6139": {
     "name_zh": "亞翔",
@@ -6451,8 +6466,8 @@
   },
   "6140": {
     "name_zh": "訊達電腦",
-    "sector": "ai_server",
-    "sector_name": "AI伺服器/ODM"
+    "sector": "ai_themes",
+    "sector_name": "人工智慧主題"
   },
   "6141": {
     "name_zh": "柏承",
@@ -6461,13 +6476,13 @@
   },
   "6142": {
     "name_zh": "友勁",
-    "sector": "networking",
-    "sector_name": "網通設備"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "6143": {
     "name_zh": "振曜",
-    "sector": "ai_server",
-    "sector_name": "AI伺服器/ODM"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "6144": {
     "name_zh": "得利影",
@@ -6481,18 +6496,18 @@
   },
   "6147": {
     "name_zh": "頎邦",
-    "sector": "foundry",
-    "sector_name": "晶圓代工"
+    "sector": "display",
+    "sector_name": "面板顯示"
   },
   "6148": {
     "name_zh": "驊宏資",
-    "sector": "software_saas",
-    "sector_name": "軟體/SaaS"
+    "sector": "cloud_computing",
+    "sector_name": "雲端運算"
   },
   "6150": {
     "name_zh": "撼訊",
-    "sector": "ai_server",
-    "sector_name": "AI伺服器/ODM"
+    "sector": "blockchain",
+    "sector_name": "區塊鏈"
   },
   "6151": {
     "name_zh": "晉倫",
@@ -6501,8 +6516,8 @@
   },
   "6152": {
     "name_zh": "百一",
-    "sector": "networking",
-    "sector_name": "網通設備"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "6153": {
     "name_zh": "嘉聯益",
@@ -6511,8 +6526,8 @@
   },
   "6154": {
     "name_zh": "順發",
-    "sector": "ai_server",
-    "sector_name": "AI伺服器/ODM"
+    "sector": "trading",
+    "sector_name": "貿易百貨"
   },
   "6155": {
     "name_zh": "鈞寶",
@@ -6531,18 +6546,18 @@
   },
   "6160": {
     "name_zh": "欣技",
-    "sector": "ai_server",
-    "sector_name": "AI伺服器/ODM"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "6161": {
     "name_zh": "捷波",
-    "sector": "ai_server",
-    "sector_name": "AI伺服器/ODM"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "6163": {
     "name_zh": "華電網",
-    "sector": "ai_server",
-    "sector_name": "AI伺服器/ODM"
+    "sector": "ai_themes",
+    "sector_name": "人工智慧主題"
   },
   "6164": {
     "name_zh": "華興",
@@ -6556,33 +6571,33 @@
   },
   "6166": {
     "name_zh": "凌華",
-    "sector": "ai_server",
-    "sector_name": "AI伺服器/ODM"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "6167": {
     "name_zh": "久正",
-    "sector": "ai_server",
-    "sector_name": "AI伺服器/ODM"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "6168": {
     "name_zh": "宏齊",
-    "sector": "display",
-    "sector_name": "面板顯示"
+    "sector": "led_lighting",
+    "sector_name": "LED照明"
   },
   "6169": {
     "name_zh": "昱泉",
-    "sector": "gaming",
-    "sector_name": "遊戲"
+    "sector": "construction",
+    "sector_name": "建設/營造"
   },
   "6170": {
     "name_zh": "統振",
-    "sector": "networking",
-    "sector_name": "網通設備"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "6171": {
     "name_zh": "大城地產",
-    "sector": "construction",
-    "sector_name": "建設/營造"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "6173": {
     "name_zh": "信昌電",
@@ -6601,18 +6616,18 @@
   },
   "6176": {
     "name_zh": "瑞儀",
-    "sector": "display",
-    "sector_name": "面板顯示"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "6177": {
     "name_zh": "達麗",
-    "sector": "construction",
-    "sector_name": "建設/營造"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "6179": {
     "name_zh": "亞通",
-    "sector": "construction",
-    "sector_name": "建設/營造"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "6180": {
     "name_zh": "橘子",
@@ -6621,13 +6636,13 @@
   },
   "6182": {
     "name_zh": "合晶",
-    "sector": "foundry",
-    "sector_name": "晶圓代工"
+    "sector": "semiconductor_equip",
+    "sector_name": "半導體設備"
   },
   "6183": {
     "name_zh": "關貿",
-    "sector": "software_saas",
-    "sector_name": "軟體/SaaS"
+    "sector": "networking",
+    "sector_name": "網通設備"
   },
   "6184": {
     "name_zh": "大豐電",
@@ -6641,28 +6656,28 @@
   },
   "6186": {
     "name_zh": "新潤",
-    "sector": "construction",
-    "sector_name": "建設/營造"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "6187": {
     "name_zh": "萬潤",
-    "sector": "semiconductor_equip",
-    "sector_name": "半導體設備"
+    "sector": "display",
+    "sector_name": "面板顯示"
   },
   "6188": {
     "name_zh": "廣明",
-    "sector": "ai_server",
-    "sector_name": "AI伺服器/ODM"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "6189": {
     "name_zh": "豐藝",
-    "sector": "foundry",
-    "sector_name": "晶圓代工"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "6190": {
     "name_zh": "萬泰科",
-    "sector": "networking",
-    "sector_name": "網通設備"
+    "sector": "space_satellite",
+    "sector_name": "太空衛星科技"
   },
   "6191": {
     "name_zh": "精成科",
@@ -6671,8 +6686,8 @@
   },
   "6192": {
     "name_zh": "巨路",
-    "sector": "foundry",
-    "sector_name": "晶圓代工"
+    "sector": "gas_energy",
+    "sector_name": "天然氣/能源"
   },
   "6194": {
     "name_zh": "育富",
@@ -6686,18 +6701,18 @@
   },
   "6196": {
     "name_zh": "帆宣",
-    "sector": "semiconductor_equip",
-    "sector_name": "半導體設備"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "6197": {
     "name_zh": "佳必琪",
-    "sector": "networking",
-    "sector_name": "網通設備"
+    "sector": "connector",
+    "sector_name": "連接器/線材"
   },
   "6198": {
     "name_zh": "瑞築",
-    "sector": "construction",
-    "sector_name": "建設/營造"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "6199": {
     "name_zh": "天品",
@@ -6706,48 +6721,48 @@
   },
   "6201": {
     "name_zh": "亞弘電",
-    "sector": "ai_server",
-    "sector_name": "AI伺服器/ODM"
+    "sector": "trading",
+    "sector_name": "貿易百貨"
   },
   "6202": {
     "name_zh": "盛群",
-    "sector": "foundry",
-    "sector_name": "晶圓代工"
+    "sector": "ic_design",
+    "sector_name": "IC設計"
   },
   "6203": {
     "name_zh": "海韻電",
-    "sector": "ai_server",
-    "sector_name": "AI伺服器/ODM"
-  },
-  "6204": {
-    "name_zh": "艾華",
-    "sector": "ai_server",
-    "sector_name": "AI伺服器/ODM"
-  },
-  "6205": {
-    "name_zh": "詮欣",
-    "sector": "ai_server",
-    "sector_name": "AI伺服器/ODM"
-  },
-  "6206": {
-    "name_zh": "飛捷",
-    "sector": "ai_server",
-    "sector_name": "AI伺服器/ODM"
-  },
-  "6207": {
-    "name_zh": "雷科",
-    "sector": "foundry",
-    "sector_name": "晶圓代工"
-  },
-  "6208": {
-    "name_zh": "日揚",
     "sector": "other",
     "sector_name": "其他"
   },
+  "6204": {
+    "name_zh": "艾華",
+    "sector": "power_components",
+    "sector_name": "電源/被動元件"
+  },
+  "6205": {
+    "name_zh": "詮欣",
+    "sector": "connector",
+    "sector_name": "連接器/線材"
+  },
+  "6206": {
+    "name_zh": "飛捷",
+    "sector": "other",
+    "sector_name": "其他"
+  },
+  "6207": {
+    "name_zh": "雷科",
+    "sector": "power_components",
+    "sector_name": "電源/被動元件"
+  },
+  "6208": {
+    "name_zh": "日揚",
+    "sector": "semiconductor_equip",
+    "sector_name": "半導體設備"
+  },
   "6209": {
     "name_zh": "今國光",
-    "sector": "ai_server",
-    "sector_name": "AI伺服器/ODM"
+    "sector": "lens_optics",
+    "sector_name": "鏡頭/光學"
   },
   "6210": {
     "name_zh": "慶生",
@@ -6756,8 +6771,8 @@
   },
   "6212": {
     "name_zh": "理銘",
-    "sector": "construction",
-    "sector_name": "建設/營造"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "6213": {
     "name_zh": "聯茂",
@@ -6776,8 +6791,8 @@
   },
   "6216": {
     "name_zh": "居易",
-    "sector": "networking",
-    "sector_name": "網通設備"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "6217": {
     "name_zh": "中探針",
@@ -6786,23 +6801,23 @@
   },
   "6218": {
     "name_zh": "豪勉",
-    "sector": "foundry",
-    "sector_name": "晶圓代工"
+    "sector": "cloud_computing",
+    "sector_name": "雲端運算"
   },
   "6219": {
     "name_zh": "富旺",
-    "sector": "construction",
-    "sector_name": "建設/營造"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "6220": {
     "name_zh": "岳豐",
-    "sector": "ai_server",
-    "sector_name": "AI伺服器/ODM"
+    "sector": "ecommerce",
+    "sector_name": "電商/網路平台"
   },
   "6221": {
     "name_zh": "晉泰",
-    "sector": "ai_server",
-    "sector_name": "AI伺服器/ODM"
+    "sector": "cloud_computing",
+    "sector_name": "雲端運算"
   },
   "6222": {
     "name_zh": "立軒",
@@ -6811,18 +6826,18 @@
   },
   "6223": {
     "name_zh": "旺矽",
-    "sector": "foundry",
-    "sector_name": "晶圓代工"
+    "sector": "semiconductor_equip",
+    "sector_name": "半導體設備"
   },
   "6224": {
     "name_zh": "聚鼎",
-    "sector": "ai_server",
-    "sector_name": "AI伺服器/ODM"
+    "sector": "power_components",
+    "sector_name": "電源/被動元件"
   },
   "6225": {
     "name_zh": "天瀚",
-    "sector": "ai_server",
-    "sector_name": "AI伺服器/ODM"
+    "sector": "trading",
+    "sector_name": "貿易百貨"
   },
   "6226": {
     "name_zh": "光鼎",
@@ -6831,18 +6846,18 @@
   },
   "6227": {
     "name_zh": "茂綸",
-    "sector": "foundry",
-    "sector_name": "晶圓代工"
+    "sector": "medical_device",
+    "sector_name": "醫材"
   },
   "6228": {
     "name_zh": "全譜",
-    "sector": "ai_server",
-    "sector_name": "AI伺服器/ODM"
+    "sector": "trading",
+    "sector_name": "貿易百貨"
   },
   "6229": {
     "name_zh": "研通",
-    "sector": "foundry",
-    "sector_name": "晶圓代工"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "6230": {
     "name_zh": "超眾",
@@ -6851,13 +6866,13 @@
   },
   "6231": {
     "name_zh": "系微",
-    "sector": "ai_server",
-    "sector_name": "AI伺服器/ODM"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "6233": {
     "name_zh": "旺玖",
-    "sector": "foundry",
-    "sector_name": "晶圓代工"
+    "sector": "metaverse",
+    "sector_name": "元宇宙"
   },
   "6234": {
     "name_zh": "高僑",
@@ -6866,8 +6881,8 @@
   },
   "6235": {
     "name_zh": "華孚",
-    "sector": "ai_server",
-    "sector_name": "AI伺服器/ODM"
+    "sector": "petrochemical",
+    "sector_name": "塑化"
   },
   "6236": {
     "name_zh": "中湛",
@@ -6876,13 +6891,13 @@
   },
   "6237": {
     "name_zh": "驊訊",
-    "sector": "foundry",
-    "sector_name": "晶圓代工"
+    "sector": "ic_design",
+    "sector_name": "IC設計"
   },
   "6239": {
     "name_zh": "力成",
-    "sector": "foundry",
-    "sector_name": "晶圓代工"
+    "sector": "packaging",
+    "sector_name": "封測"
   },
   "6240": {
     "name_zh": "松崗",
@@ -6891,8 +6906,8 @@
   },
   "6241": {
     "name_zh": "鑫永洋",
-    "sector": "networking",
-    "sector_name": "網通設備"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "6242": {
     "name_zh": "立康",
@@ -6901,8 +6916,8 @@
   },
   "6243": {
     "name_zh": "迅杰",
-    "sector": "foundry",
-    "sector_name": "晶圓代工"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "6244": {
     "name_zh": "茂迪",
@@ -6911,13 +6926,13 @@
   },
   "6245": {
     "name_zh": "立端",
-    "sector": "ai_server",
-    "sector_name": "AI伺服器/ODM"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "6246": {
     "name_zh": "臺龍",
-    "sector": "display",
-    "sector_name": "面板顯示"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "6248": {
     "name_zh": "沛波",
@@ -6926,8 +6941,8 @@
   },
   "6257": {
     "name_zh": "矽格",
-    "sector": "foundry",
-    "sector_name": "晶圓代工"
+    "sector": "packaging",
+    "sector_name": "封測"
   },
   "6259": {
     "name_zh": "百徽",
@@ -6936,23 +6951,23 @@
   },
   "6261": {
     "name_zh": "久元",
-    "sector": "foundry",
-    "sector_name": "晶圓代工"
+    "sector": "packaging",
+    "sector_name": "封測"
   },
   "6263": {
     "name_zh": "普萊德",
-    "sector": "ai_server",
-    "sector_name": "AI伺服器/ODM"
+    "sector": "ai_themes",
+    "sector_name": "人工智慧主題"
   },
   "6264": {
     "name_zh": "富裔",
-    "sector": "construction",
-    "sector_name": "建設/營造"
+    "sector": "gaming",
+    "sector_name": "遊戲"
   },
   "6265": {
     "name_zh": "方土昶",
-    "sector": "foundry",
-    "sector_name": "晶圓代工"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "6266": {
     "name_zh": "泰詠",
@@ -6966,13 +6981,13 @@
   },
   "6270": {
     "name_zh": "倍微",
-    "sector": "foundry",
-    "sector_name": "晶圓代工"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "6271": {
     "name_zh": "同欣電",
-    "sector": "foundry",
-    "sector_name": "晶圓代工"
+    "sector": "pcb",
+    "sector_name": "PCB板"
   },
   "6272": {
     "name_zh": "驊陞",
@@ -6986,18 +7001,18 @@
   },
   "6275": {
     "name_zh": "元山",
-    "sector": "ai_server",
-    "sector_name": "AI伺服器/ODM"
+    "sector": "ev_supply",
+    "sector_name": "電動車供應鏈"
   },
   "6276": {
     "name_zh": "安鈦克",
-    "sector": "ai_server",
-    "sector_name": "AI伺服器/ODM"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "6277": {
     "name_zh": "宏正",
-    "sector": "foundry",
-    "sector_name": "晶圓代工"
+    "sector": "ecommerce",
+    "sector_name": "電商/網路平台"
   },
   "6278": {
     "name_zh": "台表科",
@@ -7016,23 +7031,23 @@
   },
   "6282": {
     "name_zh": "康舒",
-    "sector": "ai_server",
-    "sector_name": "AI伺服器/ODM"
+    "sector": "ev_supply",
+    "sector_name": "電動車供應鏈"
   },
   "6283": {
     "name_zh": "淳安",
-    "sector": "ai_server",
-    "sector_name": "AI伺服器/ODM"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "6284": {
     "name_zh": "佳邦",
-    "sector": "networking",
-    "sector_name": "網通設備"
+    "sector": "power_components",
+    "sector_name": "電源/被動元件"
   },
   "6285": {
     "name_zh": "啟碁",
-    "sector": "networking",
-    "sector_name": "網通設備"
+    "sector": "lens_optics",
+    "sector_name": "鏡頭/光學"
   },
   "6290": {
     "name_zh": "良維",
@@ -7041,8 +7056,8 @@
   },
   "6291": {
     "name_zh": "沛亨",
-    "sector": "foundry",
-    "sector_name": "晶圓代工"
+    "sector": "power_semi",
+    "sector_name": "功率半導體"
   },
   "6292": {
     "name_zh": "迅德",
@@ -7056,68 +7071,68 @@
   },
   "6405": {
     "name_zh": "悅城",
-    "sector": "display",
-    "sector_name": "面板顯示"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "6409": {
     "name_zh": "旭隼",
-    "sector": "ai_server",
-    "sector_name": "AI伺服器/ODM"
+    "sector": "solar",
+    "sector_name": "太陽能"
   },
   "6411": {
     "name_zh": "晶焱",
-    "sector": "foundry",
-    "sector_name": "晶圓代工"
+    "sector": "power_semi",
+    "sector_name": "功率半導體"
   },
   "6412": {
     "name_zh": "群電",
-    "sector": "ai_server",
-    "sector_name": "AI伺服器/ODM"
+    "sector": "ai_themes",
+    "sector_name": "人工智慧主題"
   },
   "6414": {
     "name_zh": "樺漢",
-    "sector": "ai_server",
-    "sector_name": "AI伺服器/ODM"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "6415": {
     "name_zh": "矽力*-KY",
-    "sector": "foundry",
-    "sector_name": "晶圓代工"
+    "sector": "packaging",
+    "sector_name": "封測"
   },
   "6416": {
     "name_zh": "瑞祺電通",
-    "sector": "networking",
-    "sector_name": "網通設備"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "6417": {
     "name_zh": "韋僑",
-    "sector": "networking",
-    "sector_name": "網通設備"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "6418": {
     "name_zh": "詠昇",
-    "sector": "ai_server",
-    "sector_name": "AI伺服器/ODM"
+    "sector": "connector",
+    "sector_name": "連接器/線材"
   },
   "6419": {
     "name_zh": "京晨科",
-    "sector": "ai_server",
-    "sector_name": "AI伺服器/ODM"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "6423": {
     "name_zh": "億而得",
-    "sector": "foundry",
-    "sector_name": "晶圓代工"
+    "sector": "power_semi",
+    "sector_name": "功率半導體"
   },
   "6425": {
     "name_zh": "易發",
-    "sector": "display",
-    "sector_name": "面板顯示"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "6426": {
     "name_zh": "統新",
-    "sector": "networking",
-    "sector_name": "網通設備"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "6431": {
     "name_zh": "光麗-KY",
@@ -7131,23 +7146,23 @@
   },
   "6435": {
     "name_zh": "大中",
-    "sector": "foundry",
-    "sector_name": "晶圓代工"
+    "sector": "power_semi",
+    "sector_name": "功率半導體"
   },
   "6438": {
     "name_zh": "迅得",
-    "sector": "foundry",
-    "sector_name": "晶圓代工"
+    "sector": "pcb",
+    "sector_name": "PCB板"
   },
   "6441": {
     "name_zh": "廣錠",
-    "sector": "ai_server",
-    "sector_name": "AI伺服器/ODM"
+    "sector": "energy_storage",
+    "sector_name": "儲能/電池"
   },
   "6442": {
     "name_zh": "光聖",
-    "sector": "networking",
-    "sector_name": "網通設備"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "6443": {
     "name_zh": "元晶",
@@ -7166,8 +7181,8 @@
   },
   "6451": {
     "name_zh": "訊芯-KY",
-    "sector": "other",
-    "sector_name": "其他"
+    "sector": "ic_design",
+    "sector_name": "IC設計"
   },
   "6456": {
     "name_zh": "GIS-KY",
@@ -7181,8 +7196,8 @@
   },
   "6462": {
     "name_zh": "神盾",
-    "sector": "foundry",
-    "sector_name": "晶圓代工"
+    "sector": "ic_design",
+    "sector_name": "IC設計"
   },
   "6464": {
     "name_zh": "台數科",
@@ -7191,8 +7206,8 @@
   },
   "6465": {
     "name_zh": "威潤",
-    "sector": "networking",
-    "sector_name": "網通設備"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "6469": {
     "name_zh": "大樹",
@@ -7201,8 +7216,8 @@
   },
   "6470": {
     "name_zh": "宇智",
-    "sector": "networking",
-    "sector_name": "網通設備"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "6472": {
     "name_zh": "保瑞",
@@ -7211,8 +7226,8 @@
   },
   "6474": {
     "name_zh": "華豫寧",
-    "sector": "foundry",
-    "sector_name": "晶圓代工"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "6477": {
     "name_zh": "安集",
@@ -7226,23 +7241,23 @@
   },
   "6485": {
     "name_zh": "點序",
-    "sector": "foundry",
-    "sector_name": "晶圓代工"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "6486": {
     "name_zh": "互動",
-    "sector": "networking",
-    "sector_name": "網通設備"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "6488": {
     "name_zh": "環球晶",
-    "sector": "foundry",
-    "sector_name": "晶圓代工"
+    "sector": "semiconductor_equip",
+    "sector_name": "半導體設備"
   },
   "6491": {
     "name_zh": "晶碩",
-    "sector": "medical_device",
-    "sector_name": "醫材"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "6492": {
     "name_zh": "生華科",
@@ -7251,8 +7266,8 @@
   },
   "6494": {
     "name_zh": "九齊",
-    "sector": "foundry",
-    "sector_name": "晶圓代工"
+    "sector": "ic_design",
+    "sector_name": "IC設計"
   },
   "6496": {
     "name_zh": "科懋",
@@ -7261,13 +7276,13 @@
   },
   "6498": {
     "name_zh": "久禾光",
-    "sector": "ai_server",
-    "sector_name": "AI伺服器/ODM"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "6499": {
     "name_zh": "益安",
-    "sector": "medical_device",
-    "sector_name": "醫材"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "6504": {
     "name_zh": "南六",
@@ -7296,28 +7311,28 @@
   },
   "6510": {
     "name_zh": "精測",
-    "sector": "foundry",
-    "sector_name": "晶圓代工"
+    "sector": "semiconductor_equip",
+    "sector_name": "半導體設備"
   },
   "6512": {
     "name_zh": "啟發電",
-    "sector": "networking",
-    "sector_name": "網通設備"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "6515": {
     "name_zh": "穎崴",
-    "sector": "foundry",
-    "sector_name": "晶圓代工"
+    "sector": "packaging",
+    "sector_name": "封測"
   },
   "6516": {
     "name_zh": "勤崴國際",
-    "sector": "ai_server",
-    "sector_name": "AI伺服器/ODM"
+    "sector": "ai_themes",
+    "sector_name": "人工智慧主題"
   },
   "6517": {
     "name_zh": "保勝光學",
-    "sector": "ai_server",
-    "sector_name": "AI伺服器/ODM"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "6523": {
     "name_zh": "達爾膚",
@@ -7331,33 +7346,33 @@
   },
   "6526": {
     "name_zh": "達發",
-    "sector": "foundry",
-    "sector_name": "晶圓代工"
+    "sector": "ic_design",
+    "sector_name": "IC設計"
   },
   "6527": {
     "name_zh": "明達醫",
-    "sector": "medical_device",
-    "sector_name": "醫材"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "6530": {
     "name_zh": "創威",
-    "sector": "networking",
-    "sector_name": "網通設備"
+    "sector": "cybersecurity",
+    "sector_name": "資安"
   },
   "6531": {
     "name_zh": "愛普*",
-    "sector": "foundry",
-    "sector_name": "晶圓代工"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "6532": {
     "name_zh": "瑞耘",
-    "sector": "foundry",
-    "sector_name": "晶圓代工"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "6533": {
     "name_zh": "晶心科",
-    "sector": "foundry",
-    "sector_name": "晶圓代工"
+    "sector": "ic_design",
+    "sector_name": "IC設計"
   },
   "6534": {
     "name_zh": "正瀚-創",
@@ -7386,8 +7401,8 @@
   },
   "6546": {
     "name_zh": "正基",
-    "sector": "networking",
-    "sector_name": "網通設備"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "6547": {
     "name_zh": "高端疫苗",
@@ -7396,8 +7411,8 @@
   },
   "6548": {
     "name_zh": "長科*",
-    "sector": "foundry",
-    "sector_name": "晶圓代工"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "6550": {
     "name_zh": "北極星藥業-KY",
@@ -7406,13 +7421,13 @@
   },
   "6552": {
     "name_zh": "易華電",
-    "sector": "foundry",
-    "sector_name": "晶圓代工"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "6556": {
     "name_zh": "勝品",
-    "sector": "ai_server",
-    "sector_name": "AI伺服器/ODM"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "6558": {
     "name_zh": "興能高",
@@ -7421,28 +7436,33 @@
   },
   "6560": {
     "name_zh": "欣普羅",
-    "sector": "ai_server",
-    "sector_name": "AI伺服器/ODM"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "6561": {
     "name_zh": "是方",
-    "sector": "networking",
-    "sector_name": "網通設備"
+    "sector": "cloud_computing",
+    "sector_name": "雲端運算"
+  },
+  "6563": {
+    "name_zh": "6563",
+    "sector": "ic_design",
+    "sector_name": "IC設計"
   },
   "6568": {
     "name_zh": "宏觀",
-    "sector": "foundry",
-    "sector_name": "晶圓代工"
+    "sector": "space_satellite",
+    "sector_name": "太空衛星科技"
   },
   "6569": {
     "name_zh": "醫揚",
-    "sector": "medical_device",
-    "sector_name": "醫材"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "6570": {
     "name_zh": "維田",
-    "sector": "ai_server",
-    "sector_name": "AI伺服器/ODM"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "6573": {
     "name_zh": "虹揚-KY",
@@ -7461,8 +7481,8 @@
   },
   "6577": {
     "name_zh": "勁豐",
-    "sector": "display",
-    "sector_name": "面板顯示"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "6578": {
     "name_zh": "達邦蛋白",
@@ -7471,8 +7491,8 @@
   },
   "6579": {
     "name_zh": "研揚",
-    "sector": "ai_server",
-    "sector_name": "AI伺服器/ODM"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "6581": {
     "name_zh": "鋼聯",
@@ -7486,8 +7506,8 @@
   },
   "6584": {
     "name_zh": "南俊國際",
-    "sector": "ai_server",
-    "sector_name": "AI伺服器/ODM"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "6585": {
     "name_zh": "鼎基",
@@ -7496,8 +7516,8 @@
   },
   "6588": {
     "name_zh": "東典光電",
-    "sector": "networking",
-    "sector_name": "網通設備"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "6589": {
     "name_zh": "台康生技",
@@ -7506,13 +7526,13 @@
   },
   "6590": {
     "name_zh": "普鴻",
-    "sector": "software_saas",
-    "sector_name": "軟體/SaaS"
+    "sector": "ecommerce",
+    "sector_name": "電商/網路平台"
   },
   "6591": {
     "name_zh": "動力-KY",
-    "sector": "ai_server",
-    "sector_name": "AI伺服器/ODM"
+    "sector": "software_saas",
+    "sector_name": "軟體/SaaS"
   },
   "6592": {
     "name_zh": "和潤企業",
@@ -7521,8 +7541,8 @@
   },
   "6593": {
     "name_zh": "台灣銘板",
-    "sector": "software_saas",
-    "sector_name": "軟體/SaaS"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "6596": {
     "name_zh": "寬宏藝術",
@@ -7531,48 +7551,48 @@
   },
   "6597": {
     "name_zh": "立誠",
-    "sector": "networking",
-    "sector_name": "網通設備"
+    "sector": "pcb",
+    "sector_name": "PCB板"
   },
   "6598": {
     "name_zh": "ABC-KY",
-    "sector": "medical_device",
-    "sector_name": "醫材"
+    "sector": "software_saas",
+    "sector_name": "軟體/SaaS"
   },
   "6603": {
     "name_zh": "富強鑫",
-    "sector": "thermal",
-    "sector_name": "散熱/熱管理"
+    "sector": "power_infra",
+    "sector_name": "重電/電力設備"
   },
   "6605": {
     "name_zh": "帝寶",
-    "sector": "vehicle_elec",
-    "sector_name": "車用電子"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "6606": {
     "name_zh": "建德工業",
-    "sector": "thermal",
-    "sector_name": "散熱/熱管理"
+    "sector": "power_infra",
+    "sector_name": "重電/電力設備"
   },
   "6609": {
     "name_zh": "瀧澤科",
-    "sector": "thermal",
-    "sector_name": "散熱/熱管理"
+    "sector": "robotics",
+    "sector_name": "機器人/自動化"
   },
   "6612": {
     "name_zh": "奈米醫材",
-    "sector": "medical_device",
-    "sector_name": "醫材"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "6613": {
     "name_zh": "朋億*",
-    "sector": "foundry",
-    "sector_name": "晶圓代工"
+    "sector": "led_lighting",
+    "sector_name": "LED照明"
   },
   "6614": {
     "name_zh": "資拓宏宇",
-    "sector": "ai_server",
-    "sector_name": "AI伺服器/ODM"
+    "sector": "ecommerce",
+    "sector_name": "電商/網路平台"
   },
   "6615": {
     "name_zh": "慧智",
@@ -7611,13 +7631,13 @@
   },
   "6637": {
     "name_zh": "醫影",
-    "sector": "medical_device",
-    "sector_name": "醫材"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "6640": {
     "name_zh": "均華",
-    "sector": "foundry",
-    "sector_name": "晶圓代工"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "6641": {
     "name_zh": "基士德-KY",
@@ -7631,23 +7651,23 @@
   },
   "6643": {
     "name_zh": "M31",
-    "sector": "foundry",
-    "sector_name": "晶圓代工"
+    "sector": "ic_design",
+    "sector_name": "IC設計"
   },
   "6645": {
     "name_zh": "金萬林-創",
-    "sector": "medical_device",
-    "sector_name": "醫材"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "6649": {
     "name_zh": "台生材",
-    "sector": "medical_device",
-    "sector_name": "醫材"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "6651": {
     "name_zh": "全宇昕",
-    "sector": "foundry",
-    "sector_name": "晶圓代工"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "6654": {
     "name_zh": "天正國際",
@@ -7666,8 +7686,8 @@
   },
   "6658": {
     "name_zh": "聯策",
-    "sector": "foundry",
-    "sector_name": "晶圓代工"
+    "sector": "pcb",
+    "sector_name": "PCB板"
   },
   "6661": {
     "name_zh": "威健生技",
@@ -7681,8 +7701,8 @@
   },
   "6664": {
     "name_zh": "群翊",
-    "sector": "foundry",
-    "sector_name": "晶圓代工"
+    "sector": "pcb",
+    "sector_name": "PCB板"
   },
   "6666": {
     "name_zh": "羅麗芬-KY",
@@ -7691,13 +7711,13 @@
   },
   "6667": {
     "name_zh": "信紘科",
-    "sector": "foundry",
-    "sector_name": "晶圓代工"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "6668": {
     "name_zh": "中揚光",
-    "sector": "ai_server",
-    "sector_name": "AI伺服器/ODM"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "6669": {
     "name_zh": "緯穎",
@@ -7721,38 +7741,38 @@
   },
   "6674": {
     "name_zh": "鋐寶科技",
-    "sector": "networking",
-    "sector_name": "網通設備"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "6679": {
     "name_zh": "鈺太",
-    "sector": "foundry",
-    "sector_name": "晶圓代工"
+    "sector": "sports_tech",
+    "sector_name": "運動科技"
   },
   "6680": {
     "name_zh": "鑫創電子",
-    "sector": "ai_server",
-    "sector_name": "AI伺服器/ODM"
+    "sector": "ai_themes",
+    "sector_name": "人工智慧主題"
   },
   "6683": {
     "name_zh": "雍智科技",
-    "sector": "foundry",
-    "sector_name": "晶圓代工"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "6684": {
     "name_zh": "安格",
-    "sector": "foundry",
-    "sector_name": "晶圓代工"
+    "sector": "metaverse",
+    "sector_name": "元宇宙"
   },
   "6689": {
     "name_zh": "伊雲谷",
-    "sector": "ai_server",
-    "sector_name": "AI伺服器/ODM"
+    "sector": "ai_themes",
+    "sector_name": "人工智慧主題"
   },
   "6690": {
     "name_zh": "安碁資訊",
-    "sector": "software_saas",
-    "sector_name": "軟體/SaaS"
+    "sector": "cybersecurity",
+    "sector_name": "資安"
   },
   "6691": {
     "name_zh": "洋基工程",
@@ -7766,18 +7786,18 @@
   },
   "6693": {
     "name_zh": "廣閎科",
-    "sector": "foundry",
-    "sector_name": "晶圓代工"
+    "sector": "power_semi",
+    "sector_name": "功率半導體"
   },
   "6695": {
     "name_zh": "芯鼎",
-    "sector": "foundry",
-    "sector_name": "晶圓代工"
+    "sector": "power_semi",
+    "sector_name": "功率半導體"
   },
   "6697": {
     "name_zh": "東捷資訊",
-    "sector": "ai_server",
-    "sector_name": "AI伺服器/ODM"
+    "sector": "ai_themes",
+    "sector_name": "人工智慧主題"
   },
   "6698": {
     "name_zh": "旭暉應材",
@@ -7791,13 +7811,13 @@
   },
   "6706": {
     "name_zh": "惠特",
-    "sector": "foundry",
-    "sector_name": "晶圓代工"
+    "sector": "pcb",
+    "sector_name": "PCB板"
   },
   "6708": {
     "name_zh": "天擎",
-    "sector": "foundry",
-    "sector_name": "晶圓代工"
+    "sector": "cloud_computing",
+    "sector_name": "雲端運算"
   },
   "6712": {
     "name_zh": "長聖",
@@ -7811,18 +7831,18 @@
   },
   "6716": {
     "name_zh": "應廣",
-    "sector": "foundry",
-    "sector_name": "晶圓代工"
+    "sector": "ic_design",
+    "sector_name": "IC設計"
   },
   "6719": {
     "name_zh": "力智",
-    "sector": "foundry",
-    "sector_name": "晶圓代工"
+    "sector": "power_semi",
+    "sector_name": "功率半導體"
   },
   "6720": {
     "name_zh": "久昌",
-    "sector": "foundry",
-    "sector_name": "晶圓代工"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "6721": {
     "name_zh": "信實",
@@ -7831,13 +7851,13 @@
   },
   "6722": {
     "name_zh": "輝創",
-    "sector": "vehicle_elec",
-    "sector_name": "車用電子"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "6725": {
     "name_zh": "矽科宏晟",
-    "sector": "foundry",
-    "sector_name": "晶圓代工"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "6727": {
     "name_zh": "亞泰金屬",
@@ -7851,53 +7871,53 @@
   },
   "6730": {
     "name_zh": "常廣",
-    "sector": "medical_device",
-    "sector_name": "醫材"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "6732": {
     "name_zh": "昇佳電子",
-    "sector": "foundry",
-    "sector_name": "晶圓代工"
+    "sector": "ic_design",
+    "sector_name": "IC設計"
   },
   "6733": {
     "name_zh": "博晟生醫",
-    "sector": "medical_device",
-    "sector_name": "醫材"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "6735": {
     "name_zh": "美達科技",
-    "sector": "foundry",
-    "sector_name": "晶圓代工"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "6739": {
     "name_zh": "竹陞科技",
-    "sector": "ai_server",
-    "sector_name": "AI伺服器/ODM"
+    "sector": "ai_themes",
+    "sector_name": "人工智慧主題"
   },
   "6741": {
     "name_zh": "91APP*-KY",
-    "sector": "ai_server",
-    "sector_name": "AI伺服器/ODM"
+    "sector": "ecommerce",
+    "sector_name": "電商/網路平台"
   },
   "6742": {
     "name_zh": "澤米",
-    "sector": "ai_server",
-    "sector_name": "AI伺服器/ODM"
+    "sector": "experience_tech",
+    "sector_name": "體驗科技"
   },
   "6743": {
     "name_zh": "安普新",
-    "sector": "ai_server",
-    "sector_name": "AI伺服器/ODM"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "6751": {
     "name_zh": "智聯服務",
-    "sector": "software_saas",
-    "sector_name": "軟體/SaaS"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "6752": {
     "name_zh": "叡揚",
-    "sector": "ai_server",
-    "sector_name": "AI伺服器/ODM"
+    "sector": "ai_themes",
+    "sector_name": "人工智慧主題"
   },
   "6753": {
     "name_zh": "龍德造船",
@@ -7906,13 +7926,13 @@
   },
   "6754": {
     "name_zh": "匯僑設計",
-    "sector": "construction",
-    "sector_name": "建設/營造"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "6756": {
     "name_zh": "威鋒電子",
-    "sector": "foundry",
-    "sector_name": "晶圓代工"
+    "sector": "ic_design",
+    "sector_name": "IC設計"
   },
   "6757": {
     "name_zh": "台灣虎航",
@@ -7926,8 +7946,8 @@
   },
   "6762": {
     "name_zh": "達亞",
-    "sector": "medical_device",
-    "sector_name": "醫材"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "6763": {
     "name_zh": "綠界科技*",
@@ -7936,8 +7956,8 @@
   },
   "6767": {
     "name_zh": "台微醫",
-    "sector": "medical_device",
-    "sector_name": "醫材"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "6768": {
     "name_zh": "志強-KY",
@@ -7966,8 +7986,8 @@
   },
   "6782": {
     "name_zh": "視陽",
-    "sector": "medical_device",
-    "sector_name": "醫材"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "6785": {
     "name_zh": "昱展新藥",
@@ -7976,13 +7996,13 @@
   },
   "6788": {
     "name_zh": "華景電",
-    "sector": "foundry",
-    "sector_name": "晶圓代工"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "6789": {
     "name_zh": "采鈺",
-    "sector": "foundry",
-    "sector_name": "晶圓代工"
+    "sector": "lens_optics",
+    "sector_name": "鏡頭/光學"
   },
   "6790": {
     "name_zh": "永豐實",
@@ -7991,13 +8011,13 @@
   },
   "6791": {
     "name_zh": "虎門科技",
-    "sector": "ai_server",
-    "sector_name": "AI伺服器/ODM"
+    "sector": "ai_themes",
+    "sector_name": "人工智慧主題"
   },
   "6792": {
     "name_zh": "詠業",
-    "sector": "networking",
-    "sector_name": "網通設備"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "6794": {
     "name_zh": "向榮生技",
@@ -8006,13 +8026,13 @@
   },
   "6796": {
     "name_zh": "晉弘",
-    "sector": "medical_device",
-    "sector_name": "醫材"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "6799": {
     "name_zh": "來頡",
-    "sector": "foundry",
-    "sector_name": "晶圓代工"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "6803": {
     "name_zh": "崑鼎",
@@ -8026,8 +8046,8 @@
   },
   "6805": {
     "name_zh": "富世達",
-    "sector": "ai_server",
-    "sector_name": "AI伺服器/ODM"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "6806": {
     "name_zh": "森崴能源",
@@ -8041,8 +8061,13 @@
   },
   "6811": {
     "name_zh": "宏碁資訊",
-    "sector": "ai_server",
-    "sector_name": "AI伺服器/ODM"
+    "sector": "ai_themes",
+    "sector_name": "人工智慧主題"
+  },
+  "6819": {
+    "name_zh": "6819",
+    "sector": "ic_design",
+    "sector_name": "IC設計"
   },
   "6821": {
     "name_zh": "聯寶",
@@ -8051,13 +8076,13 @@
   },
   "6823": {
     "name_zh": "濾能",
-    "sector": "foundry",
-    "sector_name": "晶圓代工"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "6829": {
     "name_zh": "千附精密",
-    "sector": "foundry",
-    "sector_name": "晶圓代工"
+    "sector": "wind_energy",
+    "sector_name": "風電/綠能"
   },
   "6830": {
     "name_zh": "汎銓",
@@ -8066,8 +8091,8 @@
   },
   "6831": {
     "name_zh": "邁科",
-    "sector": "ai_server",
-    "sector_name": "AI伺服器/ODM"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "6834": {
     "name_zh": "天二科技",
@@ -8091,13 +8116,13 @@
   },
   "6841": {
     "name_zh": "長佳智能",
-    "sector": "ai_server",
-    "sector_name": "AI伺服器/ODM"
+    "sector": "ai_themes",
+    "sector_name": "人工智慧主題"
   },
   "6843": {
     "name_zh": "進典",
-    "sector": "thermal",
-    "sector_name": "散熱/熱管理"
+    "sector": "robotics",
+    "sector_name": "機器人/自動化"
   },
   "6844": {
     "name_zh": "諾貝兒",
@@ -8111,8 +8136,8 @@
   },
   "6854": {
     "name_zh": "錼創科技-KY創",
-    "sector": "other",
-    "sector_name": "其他"
+    "sector": "ic_design",
+    "sector_name": "IC設計"
   },
   "6855": {
     "name_zh": "數泓科",
@@ -8126,13 +8151,13 @@
   },
   "6859": {
     "name_zh": "伯特光",
-    "sector": "ai_server",
-    "sector_name": "AI伺服器/ODM"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "6861": {
     "name_zh": "睿生光電",
-    "sector": "medical_device",
-    "sector_name": "醫材"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "6862": {
     "name_zh": "三集瑞-KY",
@@ -8146,8 +8171,8 @@
   },
   "6865": {
     "name_zh": "偉康科技",
-    "sector": "ai_server",
-    "sector_name": "AI伺服器/ODM"
+    "sector": "ai_themes",
+    "sector_name": "人工智慧主題"
   },
   "6869": {
     "name_zh": "雲豹能源",
@@ -8156,13 +8181,13 @@
   },
   "6870": {
     "name_zh": "騰雲",
-    "sector": "ai_server",
-    "sector_name": "AI伺服器/ODM"
+    "sector": "ecommerce",
+    "sector_name": "電商/網路平台"
   },
   "6872": {
     "name_zh": "浩宇生醫",
-    "sector": "medical_device",
-    "sector_name": "醫材"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "6873": {
     "name_zh": "泓德能源",
@@ -8171,8 +8196,8 @@
   },
   "6874": {
     "name_zh": "倍力",
-    "sector": "software_saas",
-    "sector_name": "軟體/SaaS"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "6875": {
     "name_zh": "國邑*",
@@ -8181,8 +8206,8 @@
   },
   "6877": {
     "name_zh": "鏵友益",
-    "sector": "foundry",
-    "sector_name": "晶圓代工"
+    "sector": "pcb",
+    "sector_name": "PCB板"
   },
   "6881": {
     "name_zh": "潤德",
@@ -8191,8 +8216,8 @@
   },
   "6884": {
     "name_zh": "海柏特",
-    "sector": "ai_server",
-    "sector_name": "AI伺服器/ODM"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "6885": {
     "name_zh": "全福生技",
@@ -8216,13 +8241,13 @@
   },
   "6895": {
     "name_zh": "宏碩系統",
-    "sector": "foundry",
-    "sector_name": "晶圓代工"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "6899": {
     "name_zh": "創為精密",
-    "sector": "display",
-    "sector_name": "面板顯示"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "6901": {
     "name_zh": "鑽石投資",
@@ -8246,33 +8271,33 @@
   },
   "6906": {
     "name_zh": "現觀科",
-    "sector": "ai_server",
-    "sector_name": "AI伺服器/ODM"
+    "sector": "ai_themes",
+    "sector_name": "人工智慧主題"
   },
   "6907": {
     "name_zh": "雅特力-KY",
-    "sector": "foundry",
-    "sector_name": "晶圓代工"
+    "sector": "ic_design",
+    "sector_name": "IC設計"
   },
   "6908": {
     "name_zh": "宏碁遊戲-創",
-    "sector": "ai_server",
-    "sector_name": "AI伺服器/ODM"
+    "sector": "creative_industry",
+    "sector_name": "文化創意"
   },
   "6909": {
     "name_zh": "創控",
-    "sector": "foundry",
-    "sector_name": "晶圓代工"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "6910": {
     "name_zh": "德鴻",
-    "sector": "ai_server",
-    "sector_name": "AI伺服器/ODM"
+    "sector": "ecommerce",
+    "sector_name": "電商/網路平台"
   },
   "6913": {
     "name_zh": "鴻呈",
-    "sector": "ai_server",
-    "sector_name": "AI伺服器/ODM"
+    "sector": "connector",
+    "sector_name": "連接器/線材"
   },
   "6914": {
     "name_zh": "阜爾運通",
@@ -8281,13 +8306,13 @@
   },
   "6916": {
     "name_zh": "華凌",
-    "sector": "display",
-    "sector_name": "面板顯示"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "6918": {
     "name_zh": "愛派司",
-    "sector": "medical_device",
-    "sector_name": "醫材"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "6919": {
     "name_zh": "康霈*",
@@ -8301,8 +8326,8 @@
   },
   "6922": {
     "name_zh": "宸曜",
-    "sector": "ai_server",
-    "sector_name": "AI伺服器/ODM"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "6923": {
     "name_zh": "中台",
@@ -8316,23 +8341,23 @@
   },
   "6925": {
     "name_zh": "意藍",
-    "sector": "ai_server",
-    "sector_name": "AI伺服器/ODM"
+    "sector": "ecommerce",
+    "sector_name": "電商/網路平台"
   },
   "6928": {
     "name_zh": "攸泰科技",
-    "sector": "ai_server",
-    "sector_name": "AI伺服器/ODM"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "6929": {
     "name_zh": "佑全",
-    "sector": "medical_device",
-    "sector_name": "醫材"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "6931": {
     "name_zh": "青松健康",
-    "sector": "medical_device",
-    "sector_name": "醫材"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "6933": {
     "name_zh": "AMAX-KY",
@@ -8341,8 +8366,8 @@
   },
   "6934": {
     "name_zh": "心誠鎂",
-    "sector": "medical_device",
-    "sector_name": "醫材"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "6936": {
     "name_zh": "永鴻生技",
@@ -8351,8 +8376,8 @@
   },
   "6937": {
     "name_zh": "天虹",
-    "sector": "foundry",
-    "sector_name": "晶圓代工"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "6944": {
     "name_zh": "兆聯實業",
@@ -8376,13 +8401,13 @@
   },
   "6953": {
     "name_zh": "家碩",
-    "sector": "foundry",
-    "sector_name": "晶圓代工"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "6955": {
     "name_zh": "邦睿生技-創",
-    "sector": "medical_device",
-    "sector_name": "醫材"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "6957": {
     "name_zh": "裕慶-KY",
@@ -8411,8 +8436,8 @@
   },
   "6967": {
     "name_zh": "汎瑋材料",
-    "sector": "ai_server",
-    "sector_name": "AI伺服器/ODM"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "6968": {
     "name_zh": "萬達寵物",
@@ -8431,8 +8456,8 @@
   },
   "6982": {
     "name_zh": "大井泵浦",
-    "sector": "thermal",
-    "sector_name": "散熱/熱管理"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "6988": {
     "name_zh": "威力暘-創",
@@ -8446,28 +8471,28 @@
   },
   "6996": {
     "name_zh": "力領科技",
-    "sector": "foundry",
-    "sector_name": "晶圓代工"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "6997": {
     "name_zh": "博弘",
-    "sector": "ai_server",
-    "sector_name": "AI伺服器/ODM"
+    "sector": "ai_themes",
+    "sector_name": "人工智慧主題"
   },
   "7402": {
     "name_zh": "邑錡",
-    "sector": "ai_server",
-    "sector_name": "AI伺服器/ODM"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "7547": {
     "name_zh": "碩網",
-    "sector": "ai_server",
-    "sector_name": "AI伺服器/ODM"
+    "sector": "ai_themes",
+    "sector_name": "人工智慧主題"
   },
   "7556": {
     "name_zh": "意德士科技",
-    "sector": "foundry",
-    "sector_name": "晶圓代工"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "7584": {
     "name_zh": "樂意",
@@ -8481,23 +8506,23 @@
   },
   "7631": {
     "name_zh": "聚賢研發-創",
-    "sector": "foundry",
-    "sector_name": "晶圓代工"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "7642": {
     "name_zh": "昶瑞機電",
-    "sector": "thermal",
-    "sector_name": "散熱/熱管理"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "7703": {
     "name_zh": "銳澤",
-    "sector": "foundry",
-    "sector_name": "晶圓代工"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "7704": {
     "name_zh": "明遠精密",
-    "sector": "foundry",
-    "sector_name": "晶圓代工"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "7705": {
     "name_zh": "三商餐飲",
@@ -8511,18 +8536,18 @@
   },
   "7709": {
     "name_zh": "榮田",
-    "sector": "thermal",
-    "sector_name": "散熱/熱管理"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "7711": {
     "name_zh": "永擎",
-    "sector": "ai_server",
-    "sector_name": "AI伺服器/ODM"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "7712": {
     "name_zh": "博盛半導體",
-    "sector": "foundry",
-    "sector_name": "晶圓代工"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "7713": {
     "name_zh": "威力德生醫",
@@ -8531,8 +8556,8 @@
   },
   "7714": {
     "name_zh": "創泓科技",
-    "sector": "ai_server",
-    "sector_name": "AI伺服器/ODM"
+    "sector": "ai_themes",
+    "sector_name": "人工智慧主題"
   },
   "7715": {
     "name_zh": "裕山",
@@ -8551,8 +8576,8 @@
   },
   "7718": {
     "name_zh": "友鋮",
-    "sector": "vehicle_elec",
-    "sector_name": "車用電子"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "7721": {
     "name_zh": "微程式",
@@ -8571,28 +8596,28 @@
   },
   "7728": {
     "name_zh": "光焱科技",
-    "sector": "foundry",
-    "sector_name": "晶圓代工"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "7730": {
     "name_zh": "暉盛-創",
-    "sector": "foundry",
-    "sector_name": "晶圓代工"
+    "sector": "pcb",
+    "sector_name": "PCB板"
   },
   "7732": {
     "name_zh": "金興精密",
-    "sector": "thermal",
-    "sector_name": "散熱/熱管理"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "7734": {
     "name_zh": "印能科技",
-    "sector": "foundry",
-    "sector_name": "晶圓代工"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "7736": {
     "name_zh": "虎山",
-    "sector": "thermal",
-    "sector_name": "散熱/熱管理"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "7738": {
     "name_zh": "東聯互動",
@@ -8601,8 +8626,8 @@
   },
   "7740": {
     "name_zh": "熙特爾-創",
-    "sector": "power_infra",
-    "sector_name": "重電/電力設備"
+    "sector": "smart_grid",
+    "sector_name": "智慧電網"
   },
   "7743": {
     "name_zh": "金利食安",
@@ -8611,13 +8636,13 @@
   },
   "7744": {
     "name_zh": "崴寶",
-    "sector": "ai_server",
-    "sector_name": "AI伺服器/ODM"
+    "sector": "ev_supply",
+    "sector_name": "電動車供應鏈"
   },
   "7747": {
     "name_zh": "昕奇雲端",
-    "sector": "ai_server",
-    "sector_name": "AI伺服器/ODM"
+    "sector": "ai_themes",
+    "sector_name": "人工智慧主題"
   },
   "7749": {
     "name_zh": "意騰-KY",
@@ -8626,13 +8651,13 @@
   },
   "7750": {
     "name_zh": "新代",
-    "sector": "thermal",
-    "sector_name": "散熱/熱管理"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "7751": {
     "name_zh": "竑騰",
-    "sector": "foundry",
-    "sector_name": "晶圓代工"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "7753": {
     "name_zh": "星亞",
@@ -8646,23 +8671,23 @@
   },
   "7765": {
     "name_zh": "中華資安",
-    "sector": "software_saas",
-    "sector_name": "軟體/SaaS"
+    "sector": "ecommerce",
+    "sector_name": "電商/網路平台"
   },
   "7767": {
     "name_zh": "仁大資訊",
-    "sector": "ai_server",
-    "sector_name": "AI伺服器/ODM"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "7769": {
     "name_zh": "鴻勁",
-    "sector": "foundry",
-    "sector_name": "晶圓代工"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "7770": {
     "name_zh": "君曜",
-    "sector": "foundry",
-    "sector_name": "晶圓代工"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "7777": {
     "name_zh": "能率亞洲",
@@ -8706,38 +8731,33 @@
   },
   "7795": {
     "name_zh": "長廣",
-    "sector": "foundry",
-    "sector_name": "晶圓代工"
+    "sector": "pcb",
+    "sector_name": "PCB板"
   },
   "7799": {
     "name_zh": "禾榮科",
-    "sector": "medical_device",
-    "sector_name": "醫材"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "7805": {
     "name_zh": "威聯通",
-    "sector": "ai_server",
-    "sector_name": "AI伺服器/ODM"
+    "sector": "cloud_computing",
+    "sector_name": "雲端運算"
   },
   "7810": {
     "name_zh": "捷創科技",
-    "sector": "foundry",
-    "sector_name": "晶圓代工"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "7811": {
     "name_zh": "民盛",
     "sector": "sports_tech",
     "sector_name": "運動科技"
   },
-  "7821": {
-    "name_zh": "7821",
-    "sector": "vehicle_elec",
-    "sector_name": "車用電子"
-  },
   "7822": {
     "name_zh": "倍利科",
-    "sector": "foundry",
-    "sector_name": "晶圓代工"
+    "sector": "ai_themes",
+    "sector_name": "人工智慧主題"
   },
   "7823": {
     "name_zh": "奧義賽博-KY創",
@@ -8746,13 +8766,13 @@
   },
   "8011": {
     "name_zh": "台通",
-    "sector": "networking",
-    "sector_name": "網通設備"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "8016": {
     "name_zh": "矽創",
-    "sector": "foundry",
-    "sector_name": "晶圓代工"
+    "sector": "ic_design",
+    "sector_name": "IC設計"
   },
   "8021": {
     "name_zh": "尖點",
@@ -8761,23 +8781,23 @@
   },
   "8024": {
     "name_zh": "佑華",
-    "sector": "foundry",
-    "sector_name": "晶圓代工"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "8027": {
     "name_zh": "鈦昇",
-    "sector": "foundry",
-    "sector_name": "晶圓代工"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "8028": {
     "name_zh": "昇陽半導體",
-    "sector": "foundry",
-    "sector_name": "晶圓代工"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "8032": {
     "name_zh": "光菱",
-    "sector": "foundry",
-    "sector_name": "晶圓代工"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "8033": {
     "name_zh": "雷虎",
@@ -8786,8 +8806,8 @@
   },
   "8034": {
     "name_zh": "榮群",
-    "sector": "networking",
-    "sector_name": "網通設備"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "8038": {
     "name_zh": "長園科",
@@ -8801,8 +8821,8 @@
   },
   "8040": {
     "name_zh": "九暘",
-    "sector": "foundry",
-    "sector_name": "晶圓代工"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "8042": {
     "name_zh": "金山電",
@@ -8821,8 +8841,8 @@
   },
   "8045": {
     "name_zh": "達運光電",
-    "sector": "networking",
-    "sector_name": "網通設備"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "8046": {
     "name_zh": "南電",
@@ -8836,33 +8856,33 @@
   },
   "8048": {
     "name_zh": "德勝",
-    "sector": "networking",
-    "sector_name": "網通設備"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "8049": {
     "name_zh": "晶采",
-    "sector": "display",
-    "sector_name": "面板顯示"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "8050": {
     "name_zh": "廣積",
-    "sector": "ai_server",
-    "sector_name": "AI伺服器/ODM"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "8054": {
     "name_zh": "安國",
-    "sector": "foundry",
-    "sector_name": "晶圓代工"
+    "sector": "ic_design",
+    "sector_name": "IC設計"
   },
   "8059": {
     "name_zh": "凱碩",
-    "sector": "networking",
-    "sector_name": "網通設備"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "8064": {
     "name_zh": "東捷",
-    "sector": "foundry",
-    "sector_name": "晶圓代工"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "8066": {
     "name_zh": "來思達",
@@ -8871,28 +8891,28 @@
   },
   "8067": {
     "name_zh": "志旭",
-    "sector": "foundry",
-    "sector_name": "晶圓代工"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "8068": {
     "name_zh": "全達",
-    "sector": "foundry",
-    "sector_name": "晶圓代工"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "8069": {
     "name_zh": "元太",
-    "sector": "display",
-    "sector_name": "面板顯示"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "8070": {
     "name_zh": "長華*",
-    "sector": "foundry",
-    "sector_name": "晶圓代工"
+    "sector": "solar",
+    "sector_name": "太陽能"
   },
   "8071": {
     "name_zh": "能率網通",
-    "sector": "ai_server",
-    "sector_name": "AI伺服器/ODM"
+    "sector": "power_components",
+    "sector_name": "電源/被動元件"
   },
   "8072": {
     "name_zh": "陞泰",
@@ -8906,8 +8926,8 @@
   },
   "8076": {
     "name_zh": "伍豐",
-    "sector": "ai_server",
-    "sector_name": "AI伺服器/ODM"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "8077": {
     "name_zh": "洛碁",
@@ -8916,13 +8936,13 @@
   },
   "8080": {
     "name_zh": "泰霖",
-    "sector": "construction",
-    "sector_name": "建設/營造"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "8081": {
     "name_zh": "致新",
-    "sector": "foundry",
-    "sector_name": "晶圓代工"
+    "sector": "power_semi",
+    "sector_name": "功率半導體"
   },
   "8083": {
     "name_zh": "瑞穎",
@@ -8931,18 +8951,18 @@
   },
   "8084": {
     "name_zh": "巨虹",
-    "sector": "foundry",
-    "sector_name": "晶圓代工"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "8085": {
     "name_zh": "福華",
-    "sector": "ai_server",
-    "sector_name": "AI伺服器/ODM"
+    "sector": "power_components",
+    "sector_name": "電源/被動元件"
   },
   "8086": {
     "name_zh": "宏捷科",
-    "sector": "foundry",
-    "sector_name": "晶圓代工"
+    "sector": "power_semi",
+    "sector_name": "功率半導體"
   },
   "8087": {
     "name_zh": "麗升能源",
@@ -8951,83 +8971,83 @@
   },
   "8088": {
     "name_zh": "品安",
-    "sector": "foundry",
-    "sector_name": "晶圓代工"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "8089": {
     "name_zh": "康全電訊",
-    "sector": "networking",
-    "sector_name": "網通設備"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "8091": {
     "name_zh": "翔名",
-    "sector": "foundry",
-    "sector_name": "晶圓代工"
+    "sector": "led_lighting",
+    "sector_name": "LED照明"
   },
   "8092": {
     "name_zh": "建暐",
-    "sector": "foundry",
-    "sector_name": "晶圓代工"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "8093": {
     "name_zh": "保銳",
-    "sector": "ai_server",
-    "sector_name": "AI伺服器/ODM"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "8096": {
     "name_zh": "擎亞",
-    "sector": "foundry",
-    "sector_name": "晶圓代工"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "8097": {
     "name_zh": "常珵",
-    "sector": "networking",
-    "sector_name": "網通設備"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "8099": {
     "name_zh": "大世科",
-    "sector": "ai_server",
-    "sector_name": "AI伺服器/ODM"
+    "sector": "ai_themes",
+    "sector_name": "人工智慧主題"
   },
   "8101": {
     "name_zh": "華冠",
-    "sector": "networking",
-    "sector_name": "網通設備"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "8102": {
     "name_zh": "傑霖科技",
-    "sector": "foundry",
-    "sector_name": "晶圓代工"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "8103": {
     "name_zh": "瀚荃",
-    "sector": "ai_server",
-    "sector_name": "AI伺服器/ODM"
+    "sector": "connector",
+    "sector_name": "連接器/線材"
   },
   "8104": {
     "name_zh": "錸寶",
-    "sector": "display",
-    "sector_name": "面板顯示"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "8105": {
     "name_zh": "凌巨",
-    "sector": "display",
-    "sector_name": "面板顯示"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "8107": {
     "name_zh": "大億金茂",
-    "sector": "vehicle_elec",
-    "sector_name": "車用電子"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "8109": {
     "name_zh": "博大",
-    "sector": "foundry",
-    "sector_name": "晶圓代工"
+    "sector": "ev_supply",
+    "sector_name": "電動車供應鏈"
   },
   "8110": {
     "name_zh": "華東",
-    "sector": "foundry",
-    "sector_name": "晶圓代工"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "8111": {
     "name_zh": "立碁",
@@ -9036,13 +9056,13 @@
   },
   "8112": {
     "name_zh": "至上",
-    "sector": "foundry",
-    "sector_name": "晶圓代工"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "8114": {
     "name_zh": "振樺電",
-    "sector": "ai_server",
-    "sector_name": "AI伺服器/ODM"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "8121": {
     "name_zh": "越峰",
@@ -9051,8 +9071,8 @@
   },
   "8131": {
     "name_zh": "福懋科",
-    "sector": "foundry",
-    "sector_name": "晶圓代工"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "8147": {
     "name_zh": "正淩",
@@ -9061,8 +9081,8 @@
   },
   "8150": {
     "name_zh": "南茂",
-    "sector": "foundry",
-    "sector_name": "晶圓代工"
+    "sector": "display",
+    "sector_name": "面板顯示"
   },
   "8155": {
     "name_zh": "博智",
@@ -9071,23 +9091,23 @@
   },
   "8162": {
     "name_zh": "微矽電子-創",
-    "sector": "foundry",
-    "sector_name": "晶圓代工"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "8163": {
     "name_zh": "達方",
-    "sector": "ai_server",
-    "sector_name": "AI伺服器/ODM"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "8171": {
     "name_zh": "天宇",
-    "sector": "networking",
-    "sector_name": "網通設備"
+    "sector": "ev_supply",
+    "sector_name": "電動車供應鏈"
   },
   "8176": {
     "name_zh": "智捷",
-    "sector": "networking",
-    "sector_name": "網通設備"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "8182": {
     "name_zh": "加高",
@@ -9106,8 +9126,8 @@
   },
   "8210": {
     "name_zh": "勤誠",
-    "sector": "ai_server",
-    "sector_name": "AI伺服器/ODM"
+    "sector": "cloud_computing",
+    "sector_name": "雲端運算"
   },
   "8213": {
     "name_zh": "志超",
@@ -9121,43 +9141,43 @@
   },
   "8222": {
     "name_zh": "寶一",
-    "sector": "thermal",
-    "sector_name": "散熱/熱管理"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "8227": {
     "name_zh": "巨有科技",
-    "sector": "foundry",
-    "sector_name": "晶圓代工"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "8234": {
     "name_zh": "新漢",
-    "sector": "ai_server",
-    "sector_name": "AI伺服器/ODM"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "8240": {
     "name_zh": "華宏",
-    "sector": "ai_server",
-    "sector_name": "AI伺服器/ODM"
+    "sector": "pcb",
+    "sector_name": "PCB板"
   },
   "8249": {
     "name_zh": "菱光",
-    "sector": "ai_server",
-    "sector_name": "AI伺服器/ODM"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "8255": {
     "name_zh": "朋程",
-    "sector": "foundry",
-    "sector_name": "晶圓代工"
+    "sector": "ev_supply",
+    "sector_name": "電動車供應鏈"
   },
   "8261": {
     "name_zh": "富鼎",
-    "sector": "foundry",
-    "sector_name": "晶圓代工"
+    "sector": "ev_supply",
+    "sector_name": "電動車供應鏈"
   },
   "8271": {
     "name_zh": "宇瞻",
-    "sector": "foundry",
-    "sector_name": "晶圓代工"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "8272": {
     "name_zh": "全景軟體",
@@ -9166,8 +9186,8 @@
   },
   "8277": {
     "name_zh": "商丞",
-    "sector": "foundry",
-    "sector_name": "晶圓代工"
+    "sector": "cloud_computing",
+    "sector_name": "雲端運算"
   },
   "8279": {
     "name_zh": "生展",
@@ -9176,8 +9196,8 @@
   },
   "8284": {
     "name_zh": "三竹",
-    "sector": "software_saas",
-    "sector_name": "軟體/SaaS"
+    "sector": "ecommerce",
+    "sector_name": "電商/網路平台"
   },
   "8289": {
     "name_zh": "泰藝",
@@ -9191,8 +9211,8 @@
   },
   "8299": {
     "name_zh": "群聯",
-    "sector": "foundry",
-    "sector_name": "晶圓代工"
+    "sector": "memory",
+    "sector_name": "記憶體/DRAM"
   },
   "8341": {
     "name_zh": "日友",
@@ -9226,13 +9246,13 @@
   },
   "8374": {
     "name_zh": "羅昇",
-    "sector": "foundry",
-    "sector_name": "晶圓代工"
+    "sector": "solar",
+    "sector_name": "太陽能"
   },
   "8383": {
     "name_zh": "千附",
-    "sector": "foundry",
-    "sector_name": "晶圓代工"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "8390": {
     "name_zh": "金益鼎",
@@ -9256,13 +9276,13 @@
   },
   "8409": {
     "name_zh": "商之器",
-    "sector": "medical_device",
-    "sector_name": "醫材"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "8410": {
     "name_zh": "森田",
-    "sector": "ai_server",
-    "sector_name": "AI伺服器/ODM"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "8411": {
     "name_zh": "福貞-KY",
@@ -9276,13 +9296,13 @@
   },
   "8416": {
     "name_zh": "實威",
-    "sector": "software_saas",
-    "sector_name": "軟體/SaaS"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "8421": {
     "name_zh": "旭源",
-    "sector": "thermal",
-    "sector_name": "散熱/熱管理"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "8422": {
     "name_zh": "可寧衛*",
@@ -9296,8 +9316,8 @@
   },
   "8424": {
     "name_zh": "惠普",
-    "sector": "construction",
-    "sector_name": "建設/營造"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "8426": {
     "name_zh": "紅木-KY",
@@ -9381,8 +9401,8 @@
   },
   "8455": {
     "name_zh": "大拓-KY",
-    "sector": "ai_server",
-    "sector_name": "AI伺服器/ODM"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "8462": {
     "name_zh": "柏文",
@@ -9391,8 +9411,8 @@
   },
   "8463": {
     "name_zh": "潤泰材",
-    "sector": "construction",
-    "sector_name": "建設/營造"
+    "sector": "wind_energy",
+    "sector_name": "風電/綠能"
   },
   "8464": {
     "name_zh": "億豐",
@@ -9466,8 +9486,8 @@
   },
   "8905": {
     "name_zh": "裕國",
-    "sector": "construction",
-    "sector_name": "建設/營造"
+    "sector": "food",
+    "sector_name": "食品"
   },
   "8906": {
     "name_zh": "花王",
@@ -9521,13 +9541,13 @@
   },
   "8929": {
     "name_zh": "富堡",
-    "sector": "medical_device",
-    "sector_name": "醫材"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "8930": {
     "name_zh": "青鋼",
-    "sector": "construction",
-    "sector_name": "建設/營造"
+    "sector": "steel",
+    "sector_name": "鋼鐵"
   },
   "8931": {
     "name_zh": "大汽電",
@@ -9551,8 +9571,8 @@
   },
   "8936": {
     "name_zh": "國統",
-    "sector": "construction",
-    "sector_name": "建設/營造"
+    "sector": "steel",
+    "sector_name": "鋼鐵"
   },
   "8937": {
     "name_zh": "合騏",
@@ -9576,8 +9596,8 @@
   },
   "8942": {
     "name_zh": "森鉅",
-    "sector": "construction",
-    "sector_name": "建設/營造"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "8996": {
     "name_zh": "高力",
@@ -9626,8 +9646,8 @@
   },
   "9906": {
     "name_zh": "欣巴巴",
-    "sector": "construction",
-    "sector_name": "建設/營造"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "9907": {
     "name_zh": "統一實",
@@ -9651,8 +9671,8 @@
   },
   "9912": {
     "name_zh": "偉聯",
-    "sector": "ai_server",
-    "sector_name": "AI伺服器/ODM"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "9914": {
     "name_zh": "美利達",
@@ -9721,8 +9741,8 @@
   },
   "9933": {
     "name_zh": "中鼎",
-    "sector": "construction",
-    "sector_name": "建設/營造"
+    "sector": "wind_energy",
+    "sector_name": "風電/綠能"
   },
   "9934": {
     "name_zh": "成霖",
@@ -9761,8 +9781,8 @@
   },
   "9942": {
     "name_zh": "茂順",
-    "sector": "vehicle_elec",
-    "sector_name": "車用電子"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "9943": {
     "name_zh": "好樂迪",
@@ -9776,13 +9796,13 @@
   },
   "9945": {
     "name_zh": "潤泰新",
-    "sector": "construction",
-    "sector_name": "建設/營造"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "9946": {
     "name_zh": "三發地產",
-    "sector": "construction",
-    "sector_name": "建設/營造"
+    "sector": "trading",
+    "sector_name": "貿易百貨"
   },
   "9949": {
     "name_zh": "琉園",
@@ -9796,8 +9816,8 @@
   },
   "9951": {
     "name_zh": "皇田",
-    "sector": "thermal",
-    "sector_name": "散熱/熱管理"
+    "sector": "other",
+    "sector_name": "其他"
   },
   "9955": {
     "name_zh": "佳龍",
@@ -9806,8 +9826,8 @@
   },
   "9958": {
     "name_zh": "世紀鋼",
-    "sector": "construction",
-    "sector_name": "建設/營造"
+    "sector": "steel",
+    "sector_name": "鋼鐵"
   },
   "9960": {
     "name_zh": "邁達康",

@@ -1,81 +1,171 @@
 {
-  "updated_at": "2026-04-24T17:12:01.295407+00:00",
+  "updated_at": "2026-04-27T14:20:51.733792+00:00",
   "positions": {
-    "1410": {
-      "name_zh": "1410",
+    "2303": {
+      "name_zh": "聯電",
       "sector": "foundry",
-      "entry_price": 30.5,
-      "current_price": 30.5,
+      "entry_price": 72.7,
+      "current_price": 72.7,
+      "pnl_pct": 0.0,
+      "pnl_abs": 0.0,
+      "shares": 0,
+      "days_held": 0
+    },
+    "2330": {
+      "name_zh": "台積電",
+      "sector": "foundry",
+      "entry_price": 2265.0,
+      "current_price": 2265.0,
+      "pnl_pct": 0.0,
+      "pnl_abs": 0.0,
+      "shares": 0,
+      "days_held": 0
+    },
+    "5347": {
+      "name_zh": "世界先進",
+      "sector": "foundry",
+      "entry_price": 138.5,
+      "current_price": 138.5,
+      "pnl_pct": 0.0,
+      "pnl_abs": 0.0,
+      "shares": 0,
+      "days_held": 0
+    },
+    "6770": {
+      "name_zh": "力積電",
+      "sector": "foundry",
+      "entry_price": 54.5,
+      "current_price": 54.5,
       "pnl_pct": 0.0,
       "pnl_abs": 0.0,
       "shares": 1000,
       "days_held": 0
     },
-    "1434": {
-      "name_zh": "1434",
+    "3105": {
+      "name_zh": "3105",
       "sector": "foundry",
-      "entry_price": 15.75,
-      "current_price": 15.75,
-      "pnl_pct": 0.0,
-      "pnl_abs": 0.0,
-      "shares": 3000,
-      "days_held": 0
-    },
-    "1595": {
-      "name_zh": "1595",
-      "sector": "foundry",
-      "entry_price": 66.6,
-      "current_price": 66.6,
+      "entry_price": 492.5,
+      "current_price": 492.5,
       "pnl_pct": 0.0,
       "pnl_abs": 0.0,
       "shares": 0,
       "days_held": 0
     },
-    "1711": {
-      "name_zh": "1711",
+    "3016": {
+      "name_zh": "3016",
       "sector": "foundry",
-      "entry_price": 50.9,
-      "current_price": 50.9,
+      "entry_price": 67.5,
+      "current_price": 67.5,
       "pnl_pct": 0.0,
       "pnl_abs": 0.0,
       "shares": 0,
       "days_held": 0
     },
-    "1717": {
-      "name_zh": "1717",
+    "3443": {
+      "name_zh": "創意",
       "sector": "foundry",
-      "entry_price": 77.6,
-      "current_price": 77.6,
+      "entry_price": 3955.0,
+      "current_price": 3955.0,
       "pnl_pct": 0.0,
       "pnl_abs": 0.0,
       "shares": 0,
       "days_held": 0
     },
-    "1727": {
-      "name_zh": "1727",
+    "2338": {
+      "name_zh": "2338",
       "sector": "foundry",
-      "entry_price": 70.7,
-      "current_price": 70.7,
+      "entry_price": 47.0,
+      "current_price": 47.0,
       "pnl_pct": 0.0,
       "pnl_abs": 0.0,
       "shares": 0,
       "days_held": 0
     },
-    "1742": {
-      "name_zh": "1742",
-      "sector": "foundry",
-      "entry_price": 15.55,
-      "current_price": 15.55,
+    "3711": {
+      "name_zh": "日月光",
+      "sector": "packaging",
+      "entry_price": 495.5,
+      "current_price": 495.5,
       "pnl_pct": 0.0,
       "pnl_abs": 0.0,
-      "shares": 3000,
+      "shares": 0,
       "days_held": 0
     },
-    "1785": {
-      "name_zh": "1785",
-      "sector": "foundry",
-      "entry_price": 146.0,
-      "current_price": 146.0,
+    "6239": {
+      "name_zh": "6239",
+      "sector": "packaging",
+      "entry_price": 217.0,
+      "current_price": 217.0,
+      "pnl_pct": 0.0,
+      "pnl_abs": 0.0,
+      "shares": 0,
+      "days_held": 0
+    },
+    "8150": {
+      "name_zh": "8150",
+      "sector": "packaging",
+      "entry_price": 67.8,
+      "current_price": 67.8,
+      "pnl_pct": 0.0,
+      "pnl_abs": 0.0,
+      "shares": 0,
+      "days_held": 0
+    },
+    "2441": {
+      "name_zh": "超豐",
+      "sector": "packaging",
+      "entry_price": 89.7,
+      "current_price": 89.7,
+      "pnl_pct": 0.0,
+      "pnl_abs": 0.0,
+      "shares": 0,
+      "days_held": 0
+    },
+    "6257": {
+      "name_zh": "矽格",
+      "sector": "packaging",
+      "entry_price": 178.0,
+      "current_price": 178.0,
+      "pnl_pct": 0.0,
+      "pnl_abs": 0.0,
+      "shares": 0,
+      "days_held": 0
+    },
+    "3264": {
+      "name_zh": "3264",
+      "sector": "packaging",
+      "entry_price": 194.0,
+      "current_price": 194.0,
+      "pnl_pct": 0.0,
+      "pnl_abs": 0.0,
+      "shares": 0,
+      "days_held": 0
+    },
+    "2449": {
+      "name_zh": "京元電",
+      "sector": "packaging",
+      "entry_price": 283.5,
+      "current_price": 283.5,
+      "pnl_pct": 0.0,
+      "pnl_abs": 0.0,
+      "shares": 0,
+      "days_held": 0
+    },
+    "2369": {
+      "name_zh": "2369",
+      "sector": "packaging",
+      "entry_price": 30.75,
+      "current_price": 30.75,
+      "pnl_pct": 0.0,
+      "pnl_abs": 0.0,
+      "shares": 1000,
+      "days_held": 0
+    },
+    "2434": {
+      "name_zh": "2434",
+      "sector": "packaging",
+      "entry_price": 30.3,
+      "current_price": 30.3,
       "pnl_pct": 0.0,
       "pnl_abs": 0.0,
       "shares": 0,
@@ -89,10 +179,10 @@
       "pnl_pct": 1.72,
       "pnl_abs": 400.0,
       "shares": 200,
-      "days_held": 14
+      "days_held": 17
     }
   },
   "portfolio_pnl_pct": 0.0,
   "best_position": "2316",
-  "worst_position": "1410"
+  "worst_position": "2303"
 }
