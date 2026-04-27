@@ -1,26 +1,25 @@
 {
   "schema_version": "2.0",
   "date": "2026-04-27",
-  "run_at": "2026-04-27T22:19:20+08:00",
+  "run_at": "2026-04-27T22:26:26+08:00",
   "last_trading_date": "2026-04-27",
   "macro": {
     "warning": false,
     "signal": true,
     "positive_count": 3,
-    "total_available": 4,
+    "total_available": 3,
     "details": {
-      "bond": "US10Y=4.34% (↑均線❌)",
+      "bond": "DGS10 取得失敗",
       "pmi": "INDPRO=101.8 (擴張✅)",
-      "sox": "SOXX=456.11 (站上20MA✅)",
-      "twd": "USD/TWD=31.410 (台幣升值✅)"
+      "sox": "SOXX=453.56 (站上20MA✅)",
+      "twd": "USD/TWD=31.412 (台幣升值✅)"
     },
-    "us_bond_10y": 4.34,
-    "bond_trend": "up",
+    "bond_trend": "unknown",
     "ip_index": 101.8,
     "ip_trend": "up",
-    "sox_price": 456.11,
+    "sox_price": 453.56,
     "sox_trend": "up",
-    "usd_twd": 31.41,
+    "usd_twd": 31.412,
     "twd_trend": "down"
   },
   "macro_warning": false,
