@@ -1,9 +1,9 @@
 {
-  "updatedAt": "2026-05-02T03:34:44.106Z",
+  "updatedAt": "2026-05-02T06:15:05.098Z",
   "posts": [
     {
       "text": "Trump Administration Pushes Forward With Tariffs Based on Forced Labor Laws - The New York Times Trump Administration Pushes Forward With Tariffs Based on Forced Labor Laws  The New York Times",
-      "timestamp": "2026-05-01T18:44:47.000Z",
+      "timestamp": "2026-05-01T15:40:08.000Z",
       "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPWGtFUGpUTkJuREtmYVVuWHUyckEtdTdEaU9wMjlZY20yVGE5cmhGQzZ0Z3FoZkh1MTRUQ2VpbkhpemRIS3hWOTVESU16elNqb3JQU1NTaUJHMklBaFJrNXBiYXpXNUN0endPNWh5U1FJQTRnaVJxZEJIREsxU2k1di1JTzVsdWZlcTk0?oc=5",
       "keywords": [
         "ase",
@@ -65,6 +65,24 @@
       }
     },
     {
+      "text": "The U.S.-China Trade Relationship: What’s Behind the Competition? - Council on Foreign Relations The U.S.-China Trade Relationship: What’s Behind the Competition?  Council on Foreign Relations",
+      "timestamp": "2026-04-16T07:00:00.000Z",
+      "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE85R1Rxa096czZxUGpuWjB0T0RCeWtvNzUwM2kxcHRhVXp4MjBJUXVIbC1vU2EtRGZ6c2MxQnVNamVJUHhpZU4yMVBqRUZ3YUgxNGVRT0pRSWYteGpFeW1mRlBuazdselRXZDdpaVY1NW0xS2hzSlUtb1p1VWhwdw?oc=5",
+      "keywords": [
+        "china"
+      ],
+      "impacts": {
+        "ic_design": -0.5,
+        "shipping": -0.4,
+        "display": -0.4,
+        "ev_supply": -0.3
+      },
+      "sentiment": {
+        "compound": 0,
+        "label": "中性"
+      }
+    },
+    {
       "text": "Trump pursues new import taxes to replace the tariffs the Supreme Court rejected - AP News Trump pursues new import taxes to replace the tariffs the Supreme Court rejected  AP News",
       "timestamp": "2026-04-28T20:04:00.000Z",
       "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOTjQ1eTBHOTRRNDNfclhsV0tucHJBMnpTSnVpZzlqYkg3akt6LUhfTElFem1YeWJwZVRVMDgwM1JCdktrdUlFd2ZQcUtYdWxOcF9YQ2k2MW80azMxZFdlSnV1ODc2Mkh4WFI4TF9FYnZYUHMwNUFndFpnU1FXekNoVWQ3czhESHRhd3hHX2VSWkR3Uk1ja0t5RnAyanZZcTl6ZkVXcmxNMzlMdw?oc=5",
@@ -85,24 +103,6 @@
       "sentiment": {
         "compound": -0.7184,
         "label": "強烈利空"
-      }
-    },
-    {
-      "text": "The U.S.-China Trade Relationship: What’s Behind the Competition? - Council on Foreign Relations The U.S.-China Trade Relationship: What’s Behind the Competition?  Council on Foreign Relations",
-      "timestamp": "2026-04-16T07:00:00.000Z",
-      "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE85R1Rxa096czZxUGpuWjB0T0RCeWtvNzUwM2kxcHRhVXp4MjBJUXVIbC1vU2EtRGZ6c2MxQnVNamVJUHhpZU4yMVBqRUZ3YUgxNGVRT0pRSWYteGpFeW1mRlBuazdselRXZDdpaVY1NW0xS2hzSlUtb1p1VWhwdw?oc=5",
-      "keywords": [
-        "china"
-      ],
-      "impacts": {
-        "ic_design": -0.5,
-        "shipping": -0.4,
-        "display": -0.4,
-        "ev_supply": -0.3
-      },
-      "sentiment": {
-        "compound": 0,
-        "label": "中性"
       }
     },
     {
@@ -408,38 +408,17 @@
       }
     }
   ],
-  "deltas": [
-    {
-      "sector": "display",
-      "sectorName": "面板/顯示",
-      "prev": -0.966,
-      "current": -0.913,
-      "delta": 0.053,
-      "momentum": "↑ 壓力緩解",
-      "accelerating": true
-    }
-  ],
-  "topDeltas": [
-    {
-      "sector": "display",
-      "sectorName": "面板/顯示",
-      "prev": -0.966,
-      "current": -0.913,
-      "delta": 0.053,
-      "momentum": "↑ 壓力緩解",
-      "accelerating": true
-    }
-  ],
+  "deltas": [],
+  "topDeltas": [],
   "totalAnalyzed": 100,
   "sources": [
     "Google News"
   ],
   "sectorState": {
     "foundry": {
-      "score": -0.85,
-      "lastUpdated": "2026-05-02T03:34:44.106Z",
+      "score": -0.84,
+      "lastUpdated": "2026-05-02T06:15:05.098Z",
       "deltaHistory": [
-        0.009000000000000008,
         -0.06300000000000006,
         0.08000000000000007,
         0.06699999999999995,
@@ -448,14 +427,14 @@
         -0.122,
         -0.008000000000000007,
         0.123,
-        -0.013000000000000012
+        -0.013000000000000012,
+        0.010000000000000009
       ]
     },
     "shipping": {
-      "score": -0.938,
-      "lastUpdated": "2026-05-02T03:34:44.106Z",
+      "score": -0.935,
+      "lastUpdated": "2026-05-02T06:15:05.098Z",
       "deltaHistory": [
-        -0.0020000000000000018,
         0.0129999999999999,
         0.049000000000000044,
         -0.03400000000000003,
@@ -464,14 +443,14 @@
         0.0010000000000000009,
         -0.008999999999999897,
         -0.01200000000000001,
-        0.018000000000000016
+        0.018000000000000016,
+        0.0029999999999998916
       ]
     },
     "steel": {
-      "score": -0.774,
-      "lastUpdated": "2026-05-02T03:34:44.106Z",
+      "score": -0.763,
+      "lastUpdated": "2026-05-02T06:15:05.098Z",
       "deltaHistory": [
-        0.0030000000000000027,
         -0.007000000000000006,
         0.19399999999999995,
         -0.07299999999999995,
@@ -480,12 +459,13 @@
         -0.09299999999999997,
         -0.020000000000000018,
         0.08499999999999996,
-        0.026000000000000023
+        0.026000000000000023,
+        0.01100000000000001
       ]
     },
     "ic_design": {
       "score": -1,
-      "lastUpdated": "2026-05-02T03:34:44.106Z",
+      "lastUpdated": "2026-05-02T06:15:05.098Z",
       "deltaHistory": [
         0,
         0,
@@ -500,10 +480,9 @@
       ]
     },
     "display": {
-      "score": -0.913,
-      "lastUpdated": "2026-05-02T03:34:44.106Z",
+      "score": -0.91,
+      "lastUpdated": "2026-05-02T06:15:05.098Z",
       "deltaHistory": [
-        0.0010000000000000009,
         0.019999999999999907,
         0.15300000000000002,
         -0.14600000000000002,
@@ -512,14 +491,14 @@
         0.0040000000000000036,
         -0.008000000000000007,
         -0.019000000000000017,
-        0.052999999999999936
+        0.052999999999999936,
+        0.0030000000000000027
       ]
     },
     "ev_supply": {
-      "score": -0.715,
-      "lastUpdated": "2026-05-02T03:34:44.106Z",
+      "score": -0.712,
+      "lastUpdated": "2026-05-02T06:15:05.098Z",
       "deltaHistory": [
-        0.0030000000000000027,
         0.025000000000000022,
         0.16300000000000003,
         -0.09599999999999997,
@@ -528,14 +507,14 @@
         -0.014000000000000012,
         -0.01100000000000001,
         -0.008000000000000007,
-        0.03600000000000003
+        0.03600000000000003,
+        0.0030000000000000027
       ]
     },
     "ai_server": {
       "score": 0.006,
-      "lastUpdated": "2026-05-02T03:34:44.106Z",
+      "lastUpdated": "2026-05-02T06:15:05.098Z",
       "deltaHistory": [
-        0.019,
         -0.020999999999999998,
         0.003,
         -0.001,
@@ -544,14 +523,14 @@
         0,
         0,
         0.001,
-        0.003
+        0.003,
+        0
       ]
     },
     "defense": {
       "score": 0,
-      "lastUpdated": "2026-05-02T03:34:44.106Z",
+      "lastUpdated": "2026-05-02T06:15:05.098Z",
       "deltaHistory": [
-        -0.015,
         0,
         0,
         0.004,
@@ -560,6 +539,7 @@
         0.016,
         -0.0010000000000000009,
         -0.015,
+        0,
         0
       ]
     },
@@ -613,7 +593,7 @@
     },
     "semiconductor_equip": {
       "score": 0,
-      "lastUpdated": "2026-05-02T03:34:44.106Z",
+      "lastUpdated": "2026-05-02T06:15:05.098Z",
       "deltaHistory": [
         0,
         0,
@@ -629,7 +609,7 @@
     },
     "robotics": {
       "score": 0,
-      "lastUpdated": "2026-05-02T03:34:44.106Z",
+      "lastUpdated": "2026-05-02T06:15:05.098Z",
       "deltaHistory": [
         0,
         0,
@@ -644,10 +624,9 @@
       ]
     },
     "packaging": {
-      "score": -0.134,
-      "lastUpdated": "2026-05-02T03:34:44.106Z",
+      "score": -0.135,
+      "lastUpdated": "2026-05-02T06:15:05.098Z",
       "deltaHistory": [
-        0,
         0,
         0,
         0,
@@ -656,7 +635,8 @@
         0,
         -0.124,
         -0.007000000000000006,
-        -0.0030000000000000027
+        -0.0030000000000000027,
+        -0.0010000000000000009
       ]
     },
     "banking": {
@@ -705,9 +685,8 @@
     },
     "pcb": {
       "score": 0.002,
-      "lastUpdated": "2026-05-02T03:34:44.106Z",
+      "lastUpdated": "2026-05-02T06:15:05.098Z",
       "deltaHistory": [
-        -0.002999999999999999,
         -0.008,
         -0.013,
         0.012,
@@ -716,7 +695,8 @@
         0.01,
         -0.0010000000000000009,
         -0.011,
-        -0.002
+        -0.002,
+        0
       ]
     },
     "financial_holding": {
