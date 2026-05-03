@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-05-03T03:56:23.040Z",
+  "updatedAt": "2026-05-03T06:32:57.289Z",
   "posts": [
     {
       "text": "Trump Administration Pushes Forward With Tariffs Based on Forced Labor Laws - The New York Times Trump Administration Pushes Forward With Tariffs Based on Forced Labor Laws  The New York Times",
@@ -63,6 +63,24 @@
       }
     },
     {
+      "text": "The U.S.-China Trade Relationship: What’s Behind the Competition? - Council on Foreign Relations The U.S.-China Trade Relationship: What’s Behind the Competition?  Council on Foreign Relations",
+      "timestamp": "2026-04-16T07:00:00.000Z",
+      "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE85R1Rxa096czZxUGpuWjB0T0RCeWtvNzUwM2kxcHRhVXp4MjBJUXVIbC1vU2EtRGZ6c2MxQnVNamVJUHhpZU4yMVBqRUZ3YUgxNGVRT0pRSWYteGpFeW1mRlBuazdselRXZDdpaVY1NW0xS2hzSlUtb1p1VWhwdw?oc=5",
+      "keywords": [
+        "china"
+      ],
+      "impacts": {
+        "ic_design": -0.5,
+        "shipping": -0.4,
+        "display": -0.4,
+        "ev_supply": -0.3
+      },
+      "sentiment": {
+        "compound": 0,
+        "label": "中性"
+      }
+    },
+    {
       "text": "White House quiet as China ramps up trade leverage before Trump-Xi summit - Reuters White House quiet as China ramps up trade leverage before Trump-Xi summit  Reuters",
       "timestamp": "2026-04-30T05:02:00.000Z",
       "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPSnVvUzZ2QjdFYkxTUjZzNC1JZHlYTmw4Y2ZscmRfVXB0TGN0azZMMmZaX0o0THBTcGdvQnNlZWEyaHZkbENhcFFvNlVjbV9haHdxcjVnWXlfeURuMzhZY2dSajFRZV9wMS1TbnE4Sll1Q3ZNNTdpZEtmTXpUV1hWWDBSNnFHNUc0VE1XdFBDNUhtQXRtVU11SXdUSnFsOTIwbFdBNzF3M3BVRmp2andjc3E3ekp1WTQ1aWc?oc=5",
@@ -75,24 +93,6 @@
         "shipping": -0.4,
         "display": -0.4,
         "ev_supply": -0.1
-      },
-      "sentiment": {
-        "compound": 0,
-        "label": "中性"
-      }
-    },
-    {
-      "text": "The U.S.-China Trade Relationship: What’s Behind the Competition? - Council on Foreign Relations The U.S.-China Trade Relationship: What’s Behind the Competition?  Council on Foreign Relations",
-      "timestamp": "2026-04-16T07:00:00.000Z",
-      "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE85R1Rxa096czZxUGpuWjB0T0RCeWtvNzUwM2kxcHRhVXp4MjBJUXVIbC1vU2EtRGZ6c2MxQnVNamVJUHhpZU4yMVBqRUZ3YUgxNGVRT0pRSWYteGpFeW1mRlBuazdselRXZDdpaVY1NW0xS2hzSlUtb1p1VWhwdw?oc=5",
-      "keywords": [
-        "china"
-      ],
-      "impacts": {
-        "ic_design": -0.5,
-        "shipping": -0.4,
-        "display": -0.4,
-        "ev_supply": -0.3
       },
       "sentiment": {
         "compound": 0,
@@ -415,9 +415,8 @@
   "sectorState": {
     "foundry": {
       "score": -0.863,
-      "lastUpdated": "2026-05-03T03:56:23.040Z",
+      "lastUpdated": "2026-05-03T06:32:57.289Z",
       "deltaHistory": [
-        -0.122,
         -0.008000000000000007,
         0.123,
         -0.013000000000000012,
@@ -426,14 +425,14 @@
         0.0050000000000000044,
         -0.015000000000000013,
         0.018000000000000016,
-        0.038000000000000034
+        0.038000000000000034,
+        0
       ]
     },
     "shipping": {
       "score": -0.931,
-      "lastUpdated": "2026-05-03T03:56:23.040Z",
+      "lastUpdated": "2026-05-03T06:32:57.289Z",
       "deltaHistory": [
-        0.0010000000000000009,
         -0.008999999999999897,
         -0.01200000000000001,
         0.018000000000000016,
@@ -442,14 +441,14 @@
         0.007000000000000006,
         -0.014000000000000012,
         -0.020999999999999908,
-        0.009999999999999898
+        0.009999999999999898,
+        0
       ]
     },
     "steel": {
       "score": -0.764,
-      "lastUpdated": "2026-05-03T03:56:23.040Z",
+      "lastUpdated": "2026-05-03T06:32:57.289Z",
       "deltaHistory": [
-        -0.09299999999999997,
         -0.020000000000000018,
         0.08499999999999996,
         0.026000000000000023,
@@ -458,12 +457,13 @@
         -0.031000000000000028,
         0,
         0.0050000000000000044,
-        0.040000000000000036
+        0.040000000000000036,
+        0
       ]
     },
     "ic_design": {
       "score": -1,
-      "lastUpdated": "2026-05-03T03:56:23.040Z",
+      "lastUpdated": "2026-05-03T06:32:57.289Z",
       "deltaHistory": [
         0,
         0,
@@ -479,9 +479,8 @@
     },
     "display": {
       "score": -0.87,
-      "lastUpdated": "2026-05-03T03:56:23.040Z",
+      "lastUpdated": "2026-05-03T06:32:57.289Z",
       "deltaHistory": [
-        0.0040000000000000036,
         -0.008000000000000007,
         -0.019000000000000017,
         0.052999999999999936,
@@ -490,14 +489,14 @@
         -0.02400000000000002,
         0.013000000000000012,
         -0.01100000000000001,
-        0.03200000000000003
+        0.03200000000000003,
+        0
       ]
     },
     "ev_supply": {
-      "score": -0.688,
-      "lastUpdated": "2026-05-03T03:56:23.040Z",
+      "score": -0.692,
+      "lastUpdated": "2026-05-03T06:32:57.289Z",
       "deltaHistory": [
-        -0.014000000000000012,
         -0.01100000000000001,
         -0.008000000000000007,
         0.03600000000000003,
@@ -506,14 +505,14 @@
         -0.04999999999999993,
         0.025000000000000022,
         -0.025000000000000022,
-        0.031000000000000028
+        0.031000000000000028,
+        -0.0040000000000000036
       ]
     },
     "ai_server": {
       "score": 0.002,
-      "lastUpdated": "2026-05-03T03:56:23.040Z",
+      "lastUpdated": "2026-05-03T06:32:57.289Z",
       "deltaHistory": [
-        0,
         0,
         0.001,
         0.003,
@@ -522,14 +521,14 @@
         -0.002,
         0.001,
         0.002,
-        -0.004
+        -0.004,
+        0
       ]
     },
     "defense": {
       "score": 0.002,
-      "lastUpdated": "2026-05-03T03:56:23.040Z",
+      "lastUpdated": "2026-05-03T06:32:57.289Z",
       "deltaHistory": [
-        -0.004,
         0.016,
         -0.0010000000000000009,
         -0.015,
@@ -538,7 +537,8 @@
         0.018,
         -0.002999999999999999,
         0.006000000000000002,
-        -0.019000000000000003
+        -0.019000000000000003,
+        0
       ]
     },
     "solar": {
@@ -591,7 +591,7 @@
     },
     "semiconductor_equip": {
       "score": 0,
-      "lastUpdated": "2026-05-03T03:56:23.040Z",
+      "lastUpdated": "2026-05-03T06:32:57.289Z",
       "deltaHistory": [
         0,
         0,
@@ -607,7 +607,7 @@
     },
     "robotics": {
       "score": 0,
-      "lastUpdated": "2026-05-03T03:56:23.040Z",
+      "lastUpdated": "2026-05-03T06:32:57.289Z",
       "deltaHistory": [
         0,
         0,
@@ -623,9 +623,8 @@
     },
     "packaging": {
       "score": -0.125,
-      "lastUpdated": "2026-05-03T03:56:23.040Z",
+      "lastUpdated": "2026-05-03T06:32:57.289Z",
       "deltaHistory": [
-        0,
         -0.124,
         -0.007000000000000006,
         -0.0030000000000000027,
@@ -634,7 +633,8 @@
         0.006000000000000005,
         -0.0030000000000000027,
         -0.014000000000000012,
-        0.01200000000000001
+        0.01200000000000001,
+        0
       ]
     },
     "banking": {
@@ -683,9 +683,8 @@
     },
     "pcb": {
       "score": 0,
-      "lastUpdated": "2026-05-03T03:56:23.040Z",
+      "lastUpdated": "2026-05-03T06:32:57.289Z",
       "deltaHistory": [
-        0.01,
         -0.0010000000000000009,
         -0.011,
         -0.002,
@@ -693,6 +692,7 @@
         -0.001,
         0,
         -0.001,
+        0,
         0,
         0
       ]
