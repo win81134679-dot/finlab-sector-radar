@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-05-06T20:48:40+08:00",
+  "updated_at": "2026-05-06T23:12:51+08:00",
   "active_policies": [
     {
       "key": "tariff",
@@ -189,7 +189,7 @@
           "o": 2250.0,
           "h": 2285.0,
           "l": 2240.0,
-          "v": 34181963
+          "v": 38026963
         }
       ]
     },
@@ -266,7 +266,7 @@
           "o": 169.0,
           "h": 169.0,
           "l": 165.5,
-          "v": 46462570
+          "v": 55462570
         }
       ]
     },
@@ -343,7 +343,7 @@
           "o": 58.8,
           "h": 59.8,
           "l": 56.3,
-          "v": 245770836
+          "v": 255770836
         }
       ]
     },
@@ -1036,7 +1036,7 @@
           "o": 246.5,
           "h": 253.0,
           "l": 245.0,
-          "v": 239432399
+          "v": 240330399
         }
       ]
     },
@@ -1575,7 +1575,7 @@
           "o": 2215.0,
           "h": 2270.0,
           "l": 2150.0,
-          "v": 15041046
+          "v": 15562046
         }
       ]
     },
@@ -1960,7 +1960,7 @@
           "o": 4305.0,
           "h": 4305.0,
           "l": 4305.0,
-          "v": 890821
+          "v": 920109
         }
       ]
     },
@@ -2191,7 +2191,7 @@
           "o": 175.0,
           "h": 187.0,
           "l": 173.5,
-          "v": 87710922
+          "v": 90200922
         }
       ]
     },
@@ -2345,7 +2345,7 @@
           "o": 400.5,
           "h": 415.0,
           "l": 399.0,
-          "v": 6187460
+          "v": 7142460
         }
       ]
     },
@@ -2499,7 +2499,7 @@
           "o": 3470.0,
           "h": 3470.0,
           "l": 3155.0,
-          "v": 38462460
+          "v": 39638460
         }
       ]
     },
@@ -2576,7 +2576,7 @@
           "o": 18550.0,
           "h": 19195.0,
           "l": 17790.0,
-          "v": 424143
+          "v": 428143
         }
       ]
     },
@@ -3038,7 +3038,7 @@
           "o": 541.0,
           "h": 544.0,
           "l": 514.0,
-          "v": 31163923
+          "v": 31498923
         }
       ]
     },
@@ -5271,7 +5271,7 @@
           "o": 2545.0,
           "h": 2620.0,
           "l": 2325.0,
-          "v": 6226364
+          "v": 6256364
         }
       ]
     },
@@ -7678,7 +7678,7 @@
           "o": 96.8,
           "h": 96.8,
           "l": 95.1,
-          "v": 5139066
+          "v": 5452066
         }
       ]
     },
@@ -32065,15 +32065,27 @@
   },
   "news": [
     {
-      "date": "2026-05-06T11:40:01+00:00",
-      "headline": "台積電斥資62億亞利桑那買地 與當地政府商討電力供應 - 公視新聞網PNN",
-      "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE1kSUhEMGYyc2VzWk1nZDJIemNNYXBDbC16RHpjNUtOWVNBc0x4ZzEzVVF3cEcteWlvU29xbXZUN2VCMGI4RGFocGhSZWhTQmM?oc=5",
+      "date": "2026-05-06T13:55:29+00:00",
+      "headline": "美國、伊朗可望達成停戰協議？美股3大指數開盤走高 - Yahoo股市",
+      "url": "https://news.google.com/rss/articles/CBMi2wJBVV95cUxQRTIwWUhpSGdDUlczRkxmdkl0LVVScGpESy1jelNHanNPUy1CV2xlQjRnOVVFWF9pLV9nVlBRTXpuZFdmUEVDbzhydlVQTnU0a2t5QV9yYlhzamRfUXVCNTJpVzFVTUtZWm5JUU5FMVpfWEJOWDlTWDhjSXVmS3dOalZGR3FQV0V6dFNFdm5ybDVab1lfcEFSd2E0bl9ZU1NyVm5XR3FjZkVTUWx5bVdfVGktZHk2eTZIY25lbWlkQmF5a3hsRUNDbXdWNW5DdzZ5OUl1Q3lYUmdVMEVKTGNzWlFKS3NONkxFNnFwU3Yxd0VybG9FTHZ6NnMzUE82ZF9UQk95MEVpNEp0bWNBQ2RnQWlYVFlPQzBlWG1yeExxUEVJWTRpVnVTN0RKR08weElUSms1M09pa2syY3QxTlhRTkRET3h1enBEd0dwb0NDbVhub0lNMGE0TmJvTQ?oc=5",
       "sentiment": "neutral"
     },
     {
-      "date": "2026-05-06T06:57:45+00:00",
-      "headline": "野村看好美國市場：「股六債四」維持正向表現 - Yahoo股市",
-      "url": "https://news.google.com/rss/articles/CBMi1wJBVV95cUxORVlzSU9fYktvaHg5a0FOdmd0SDc1XzJlQ2NMYUpxekt1eWJyZ0VzQ19jUWdndTVPY09TajBuNmtmWUxRM3haLVZpWThkZWZtaVJzSjEzblVkWXNUZGdEX0drV1I1bldWeWJtZFBtenpibFJjYlpjcXAwUGJiMm1sd1dJdW9RbmJrc2tFMlVKUEFWajJrY2NuQUxSNlBSdUtBZzBsZGJfZE5NdjI0anJvX0U4V2psbUdyRV8xOUhxZS1IamRwcGNhUGxrSmdfZHU4TDc3bnp0aV9TR3hPS05maFFoY2I2N1F6WXVtVXFzWGtkcENHdjUtMnYyOHB4LVlPdHlBX2xmYmlpeXpRcDNnU3Y5SE1mbWhlS0hyU0szTF9ja1VIOTJpLV9uNTd5ZExqbktNQVU4WFBzbWFXMkNwak1tOFhSLVJnLVJYVnZtYlUwbXJGV3Zr?oc=5",
+      "date": "2026-05-06T13:06:31+00:00",
+      "headline": "再加碼美國？台積電高層：為新機會做好準備 - Yahoo新聞",
+      "url": "https://news.google.com/rss/articles/CBMirgJBVV95cUxPVFlVcWd0Wm4xM0hPUm9KQndLU2xlSG9nYTZNa3l5SWhFME9wbHM0Wk9vZlREZkIxVGRQRy1zZExQbm9NTnBYVTMzT2ZNWFUwdFdMZ0xlanNLWjlIamNFYmhJYWIyd1hQYjBqRlVUc0twa3pZck1HNDIzaVVIR1dpMGhkRVdkOXUtelhXUGJKQUtuMnhQSjVFdllPZV9fVFAwUTBSMWlKOThCUjg4S1BfOHFRT0NCSzlrUndCb1V5dTNmZzJmOWt6ci1NN0tuR0hyLXdSSnJtcXdadUtPUzJRel9xejFUdlk0ZkRfNURSd0lBYTdHZXBCMFFTQldQVV9XYlZDdm82Skw3VGN2VlBacElreGwwbHpRenZYTWJJdVRTWF9oRzI5d0t2QUZKdw?oc=5",
+      "sentiment": "neutral"
+    },
+    {
+      "date": "2026-05-06T12:37:51+00:00",
+      "headline": "台積電斥資62億亞利桑那買地 與當地政府商討電力供應｜20260506 公視晚間新聞 - 公視新聞網PNN",
+      "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTFBTMGw1QmZWMDNUSTlZckVUUUtaUWxiN0lzM3hVUlFQTm5KUFJfQnJ2OUhPN0UtaFV2RXlvTXNZUHFnTEhhOUJrU1BMYw?oc=5",
+      "sentiment": "neutral"
+    },
+    {
+      "date": "2026-05-06T11:40:01+00:00",
+      "headline": "台積電斥資62億亞利桑那買地 與當地政府商討電力供應 - 公視新聞網PNN",
+      "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE1kSUhEMGYyc2VzWk1nZDJIemNNYXBDbC16RHpjNUtOWVNBc0x4ZzEzVVF3cEcteWlvU29xbXZUN2VCMGI4RGFocGhSZWhTQmM?oc=5",
       "sentiment": "neutral"
     },
     {
@@ -32083,28 +32095,10 @@
       "sentiment": "neutral"
     },
     {
-      "date": "2026-05-06T05:40:00+00:00",
-      "headline": "台積電資深副總侯永清：不排除加碼在美投資 - DIGITIMES",
-      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQWTV0UzA3SHJMRjlENndlSmJIdGdrY2s2TXpHc2cxWnJ4UHEtRnB2am9LTTAzNjR3TXozZFkxZDRPUExVSUU1TnlUbExtallUc21JbGcybU9XbldXR1F6Y0haV2RSOHN1NnhrT1VDWVUwbTdEX2QwTEdVdzBacFBQckZRLWlQVWlQU1hFUU1XRHRZOVdQWWpsaGdBMk41QTdjdnc?oc=5",
-      "sentiment": "neutral"
-    },
-    {
-      "date": "2026-05-06T04:21:04+00:00",
-      "headline": "投資美國再加碼？台積電高層：為任何新機會做好準備 - TechNews 科技新報",
-      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNNU5pbmZpZzJOV1dUbFRUQ3lVSnQ5NXEta1ZNYmVUR0lCOGVkT2xVV1ZLT0otakptS0VBdXdqQWNsdjdMY0dNZDNqNVc5QU1teXR0N2Q1ajZLV0dSQWVGTUl4Q2JydlZ0SVhjZ3lnU09IbmZJc3V3OXJEVEg2NENDQUJ1emJpTTNtaURKMDhsQU1VLVM3X21ZdnA3cmcxZXJxcHlnU2JyQk5CMHJsM29JOXI5U25rQQ?oc=5",
-      "sentiment": "neutral"
-    },
-    {
       "date": "2026-05-05T04:04:00+00:00",
       "headline": "川普又抱怨「台灣偷美國晶片」 自誇靠關稅讓半導體產業回流 - TVBS新聞網",
       "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE9fcTd3OEtnMDhrdmxmb255UUxFcjl1TFlqNXllR2VMZ2RLdGZabXl0Wk5EbmRNNzZjMmZKOTJxNldMTGt1c1EwdW50RWp3NFE?oc=5",
       "sentiment": "neutral"
-    },
-    {
-      "date": "2026-03-31T13:28:33+00:00",
-      "headline": "美國擬課徵半導體100%高額關稅，已在美投資之台廠可望受惠 - KPMG",
-      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNRWJobDFDRjNSamI2RThmVm9Oc1hlVzlnaVFBV1NOUmdteHc1SkduTUJadzhqTUhiQ2pHOTAyZk5Tc3RFMU9iNlljVzZkYmRGQXpId050NEFBZ245NGM5M0FJSDBpeGFoRmFHYnNsN1lnVFNVcXoyMlE3SVZPWkRELTVwNnhncFVocmpINg?oc=5",
-      "sentiment": "positive"
     },
     {
       "date": "2026-03-16T07:00:00+00:00",
@@ -32113,15 +32107,21 @@
       "sentiment": "neutral"
     },
     {
-      "date": "2026-02-21T08:00:00+00:00",
-      "headline": "最高法院擋關稅！ 川普反手加徵10% 台灣半導體壓力升溫| 國際 - Newtalk新聞",
-      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1GTnhjYy1kY21DRWRrRWVTT3dnUDR2cU9kZjZiTFVBN3QyMkkyMjRObXRLbW9IMlA0bjBGOVRONHZMdGhsUFM3WF9kczJzc3E0a0VnVWhZNWp3Z2s?oc=5",
+      "date": "2026-01-22T08:00:00+00:00",
+      "headline": "台美關稅協議後，台灣與韓國在半導體出口競爭的優劣比較 - tejwin.com",
+      "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxPVFNWNTdYMk5BU2hPWms2OHJya2xRSmVpQU9YM3RzYjJZRGNRa29SazRkZmlJWnE4QV9sM2Z0cy1vVFpCVWlOOFlrYjR0WWRGbmY1TTg5Z25ORUo3dElSUnZFM01xbEJ3aWFNdlNwMHVRT1RWcU1sT1pwaFJkZWFHX3pwTVV0bnVJbHpTN2VZa3cwcHZLTDZfdGUyNTFtXzhMYndCNUJReXJ1cld4M19tb3l3Vy1qN2I4N256UXZYUzhINk1LYl9OQkpmbHY2d1hMSldiZ0k4VQ?oc=5",
       "sentiment": "neutral"
     },
     {
-      "date": "2026-02-21T08:00:00+00:00",
-      "headline": "川普關稅違法》紐時：台灣輸美半導體為主，最高院判決影響不大－中央社 - 商周",
-      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1yZFJ1Rmd5Z0NHMjZ2SkU5cUFRdTFnYkNCMGJwaVVFLTNCajU4Zk5jOW5lN3J6OW4zbF85LUQtcExBaDFzb0d6SklJTlNLWk9WQm1zN2Fsc1p5eklOV2k5LWVSdlhBQzRsQTJRUQ?oc=5",
+      "date": "2026-01-20T08:00:00+00:00",
+      "headline": "台美關稅解析》232最優惠待遇、半導體零關稅配額 5大談判成果一次看 - 天下雜誌",
+      "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE1vcGI1dDhGaGU3eWlfcmVleWlmVEVnaVR5ak51VDJSS3JJMGZPeGlaeEtwNk5xNVBFV1Nic29mMk1BRkZLX3Z6cWhEYUZvQQ?oc=5",
+      "sentiment": "neutral"
+    },
+    {
+      "date": "2026-01-15T08:00:00+00:00",
+      "headline": "川普對晶片開徵25％關稅台灣可豁免？政院回應了 - 自由財經",
+      "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFBjSFdiNUxRM0ZLVG1zX0NfeDRXLW9qQzBvckplWVdGSWlxR0NpRUtOemVOQlFHVW91aTY4UTdtczhlVklfanlfNkhObjRhWmhTaGRhZElydUZ6aUhVdlJN0gFkQVVfeXFMTTdwaEFXeUQ4eXh3RUJacHJCcFhyYXlEbTFubkdKOFI5RkFRQ0tSVlJ5a29pNG5qd2Nzd0NlTkNkbi1sV2NFU3pySnh2ejlQY2VHRFZic29JSC1zQUU2dW9FZVpTMA?oc=5",
       "sentiment": "neutral"
     },
     {
