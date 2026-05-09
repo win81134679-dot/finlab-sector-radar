@@ -1,9 +1,9 @@
 {
-  "updatedAt": "2026-05-09T09:25:52.461Z",
+  "updatedAt": "2026-05-09T13:41:30.041Z",
   "posts": [
     {
       "text": "Trump’s Latest Tariff Setback Looms Over China Talks - The New York Times Trump’s Latest Tariff Setback Looms Over China Talks  The New York Times",
-      "timestamp": "2026-05-08T16:00:22.000Z",
+      "timestamp": "2026-05-08T20:21:57.000Z",
       "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1xZk53NFUybTdOUDA2T0lCUUZ4bi10M3hja1N4MW9tYVgzc2dOUkdEa1dRUTc2MjNSVGpMWWF5aUd4SVJlS3p4NUIxcDJ6ODF3VEdGQk5lckpMbFl0QzFPQ2I4R3FFX09HbHV0TTJSMVpoTjd0VlVEdVBLYnBfZzQ?oc=5",
       "keywords": [
         "tariff",
@@ -60,6 +60,24 @@
       }
     },
     {
+      "text": "Trump’s Board of Trade Move Signals the U.S. has Given Up on Changing China - The Wire China Trump’s Board of Trade Move Signals the U.S. has Given Up on Changing China  The Wire China",
+      "timestamp": "2026-05-07T10:37:48.000Z",
+      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNUk9QSjQ3d01qdVRnZXZVRFdVMHZzbnpoaF9mdlFfTjNnSjZUV1FvSTN0bnYxWENuUENHZVFGazlfLWt1c0JZNWlaUUYzVGUyekhRQ0xObWdHaDNFNHNiNm5mUWN3azI3MG5uSUhaM2lzLTNNSHNwR010SlE4MkNodlo3S0hiRFZlTFpiaXlJbE5OUlNtcEhwbTF4OE1JMGtfTFRGWWt4Q0RFRUNnazVsemdIQlI?oc=5",
+      "keywords": [
+        "china"
+      ],
+      "impacts": {
+        "ic_design": -0.5,
+        "shipping": -0.4,
+        "display": -0.4,
+        "ev_supply": -0.3
+      },
+      "sentiment": {
+        "compound": 0,
+        "label": "中性"
+      }
+    },
+    {
       "text": "Trump Tariff Tracker – May 8, 2026 (via Passle) - Baker Botts Trump Tariff Tracker – May 8, 2026 (via Passle)  Baker Botts",
       "timestamp": "2026-05-08T20:02:16.000Z",
       "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPeHdnb3ZnUmVOTXlvWjVYeEJwNG9MdWxVdmZWUi1rVjhiMFhlanpPbzZGSHFhN05KdExZbFpnQ0VGZVFxWGhIZTZLTEFFTFVRNS13eWI3UDMxMWY2SEEzdldZTjBaWmtaXzJDU0U0aFNnbVZvTTJac0pPNDF0RFpBYw?oc=5",
@@ -80,21 +98,46 @@
       }
     },
     {
-      "text": "Trump’s Board of Trade Move Signals the U.S. has Given Up on Changing China - The Wire China Trump’s Board of Trade Move Signals the U.S. has Given Up on Changing China  The Wire China",
-      "timestamp": "2026-05-07T10:37:48.000Z",
-      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNUk9QSjQ3d01qdVRnZXZVRFdVMHZzbnpoaF9mdlFfTjNnSjZUV1FvSTN0bnYxWENuUENHZVFGazlfLWt1c0JZNWlaUUYzVGUyekhRQ0xObWdHaDNFNHNiNm5mUWN3azI3MG5uSUhaM2lzLTNNSHNwR010SlE4MkNodlo3S0hiRFZlTFpiaXlJbE5OUlNtcEhwbTF4OE1JMGtfTFRGWWt4Q0RFRUNnazVsemdIQlI?oc=5",
+      "text": "U.S. President Trump's renewed trade war with China - Reuters U.S. President Trump's renewed trade war with China  Reuters",
+      "timestamp": "2026-05-06T23:09:43.000Z",
+      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQWl9jV2ItS2ZFcUFmSGU0SVlHLTNwU2xBeWY3dnowOWRPd0YxNHhQa1Y4LVNSODFPR29pNmVWREpwNjBMZnpjcndGTWRzTzAxWGxraFRGVlhXeW9taVFFRUJ6Q09SWEV6akg5dFRXQ252RkdKcVA1UHNkQUQ2MGRFd3JtaUIxRnUxQ2thalNLSFlBeW1yYnRZTTJCMnQ?oc=5",
       "keywords": [
+        "trade war with china",
+        "trade war",
         "china"
       ],
       "impacts": {
-        "ic_design": -0.5,
-        "shipping": -0.4,
+        "foundry": -1,
+        "ic_design": -1,
+        "shipping": -1,
         "display": -0.4,
         "ev_supply": -0.3
       },
       "sentiment": {
         "compound": 0,
         "label": "中性"
+      }
+    },
+    {
+      "text": "Court rules against the tariff Trump enacted after Supreme Court defeat - The Washington Post Court rules against the tariff Trump enacted after Supreme Court defeat  The Washington Post",
+      "timestamp": "2026-05-08T03:39:00.000Z",
+      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPVlliTXpRb0hLdWJWbnJSVFNfbEx0aUZRSDdKU205MTdpQmdJNlZmR0MwWHNCR1M1eExUV2hlQTN4VDlWbnFtdWxSY3VkR1Q3MndFQTVRUUZJY0FqbTN3cTFYQnVhQXRSNlhXcXpTU2lrU0Z1czBIaWI2NWk5QW1DZzdaTVp0OXg0RnB6Qw?oc=5",
+      "keywords": [
+        "ai",
+        "tariff"
+      ],
+      "impacts": {
+        "ai_server": 0.7,
+        "foundry": -0.4,
+        "shipping": -0.5,
+        "steel": -0.5,
+        "ic_design": -0.6,
+        "display": -0.5,
+        "ev_supply": -0.4
+      },
+      "sentiment": {
+        "compound": -0.7184,
+        "label": "強烈利空"
       }
     },
     {
@@ -144,49 +187,6 @@
       }
     },
     {
-      "text": "Court rules against the tariff Trump enacted after Supreme Court defeat - The Washington Post Court rules against the tariff Trump enacted after Supreme Court defeat  The Washington Post",
-      "timestamp": "2026-05-08T03:39:00.000Z",
-      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPVlliTXpRb0hLdWJWbnJSVFNfbEx0aUZRSDdKU205MTdpQmdJNlZmR0MwWHNCR1M1eExUV2hlQTN4VDlWbnFtdWxSY3VkR1Q3MndFQTVRUUZJY0FqbTN3cTFYQnVhQXRSNlhXcXpTU2lrU0Z1czBIaWI2NWk5QW1DZzdaTVp0OXg0RnB6Qw?oc=5",
-      "keywords": [
-        "ai",
-        "tariff"
-      ],
-      "impacts": {
-        "ai_server": 0.7,
-        "foundry": -0.4,
-        "shipping": -0.5,
-        "steel": -0.5,
-        "ic_design": -0.6,
-        "display": -0.5,
-        "ev_supply": -0.4
-      },
-      "sentiment": {
-        "compound": -0.7184,
-        "label": "強烈利空"
-      }
-    },
-    {
-      "text": "U.S. President Trump's renewed trade war with China - Reuters U.S. President Trump's renewed trade war with China  Reuters",
-      "timestamp": "2026-05-06T23:09:43.000Z",
-      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQWl9jV2ItS2ZFcUFmSGU0SVlHLTNwU2xBeWY3dnowOWRPd0YxNHhQa1Y4LVNSODFPR29pNmVWREpwNjBMZnpjcndGTWRzTzAxWGxraFRGVlhXeW9taVFFRUJ6Q09SWEV6akg5dFRXQ252RkdKcVA1UHNkQUQ2MGRFd3JtaUIxRnUxQ2thalNLSFlBeW1yYnRZTTJCMnQ?oc=5",
-      "keywords": [
-        "trade war with china",
-        "trade war",
-        "china"
-      ],
-      "impacts": {
-        "foundry": -1,
-        "ic_design": -1,
-        "shipping": -1,
-        "display": -0.4,
-        "ev_supply": -0.3
-      },
-      "sentiment": {
-        "compound": 0,
-        "label": "中性"
-      }
-    },
-    {
       "text": "Iran focus at Trump-Xi summit may delay progress on tariffs, rare earths - CNBC Iran focus at Trump-Xi summit may delay progress on tariffs, rare earths  CNBC",
       "timestamp": "2026-05-08T00:56:00.000Z",
       "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPU25aTWhBVE5LazF5N1dJc1NfdWx4bXhEQTRVLXpoLVRuQjZxU0NaQTctdExJYngydFpna1dvUFpkRjhEVEZwVExrdGdEd2pUdDFkVzF2WkdCTHlLd1AxMFdEOFV4RFBoZzFtY2hRVUhlRVFnci00YzJYZ0tMRUs5emdpaEVobXJ4OXVDa0FEYUQzM2FldTdBVnZnR0twd05GY29NTDEtd2NYYkRH0gGyAUFVX3lxTE40bW9uZnlCaFFobnlCZjRPWUVvSlA4UUU0d3pRbHplU25IamI4RkF1a3pOMlhzOGR0WDJ2TFZacWx0MHhER0h2ekFaT29VUlRfcmZvMFBBWU05X2ZaRXNNS3RxRXNVOVJDMHQ4THc4d0VxREV1dzBYV1RDb1NpVFFqNjJRMUwxbnNrZEplWG9XTjZaelhxZ3JPcDNMQnpidWdRYWVmaTA0QXV3S3pwNjJhQUE?oc=5",
@@ -208,12 +208,13 @@
       }
     },
     {
-      "text": "Trump Administration Appeals 10% Global Tariffs Ruling As Judges Say Trade Law Was Misused - Benzinga Trump Administration Appeals 10% Global Tariffs Ruling As Judges Say Trade Law Was Misused  Benzinga",
-      "timestamp": "2026-05-09T06:57:40.000Z",
-      "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxORmo0U1ZkeGZaTWNZczNOYTA0WU5YVUdyUkdDVC02V29QNEc2VG9FS0s2eGp0RFVDUDgwY2tGNmpSbG0tOUJZNkpLbGZtSDQzMkZraU5iYUtYYThaaW8wczJlVmdSblpFQmtHdWlKdGRVSURhQ01xdnpVTnhWWXhWMzVFekNrd0VlMmMwSXVCVExSYTJ4enI4c0Nza0pRVGxweUd3dHdwVHBQOXMyTjliM0wxUGQ3QWhXTG9fS01GeklYNlpFakViOEw1REpfVktyRGpfbjVJQQ?oc=5",
+      "text": "The Man Trying to Make Trump’s Tariffs Go on Forever - Politico The Man Trying to Make Trump’s Tariffs Go on Forever  Politico",
+      "timestamp": "2026-05-08T07:00:00.000Z",
+      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQR004bUdQZnpGS0NwTkJocnMxS0dBYnRoSFFKemg4VE9hTGRXNnY1V3kxcXg5bXNtejZFMVVjdnlGeU9RcnZUX18zS0w2WWhNdUVJTG5kOU1qY3M1Z0trSW42dDB3dUtNTzdCc05ERmZmWkUwZjFYaUQ3S2VFVm1nV05qZTQ4S2VKWDZMaTVoSGlOMXZsUmpZLWo3aw?oc=5",
       "keywords": [
         "tariff",
-        "tariffs"
+        "tariffs",
+        "ev"
       ],
       "impacts": {
         "foundry": -1,
@@ -221,28 +222,7 @@
         "steel": -1,
         "ic_design": -1,
         "display": -1,
-        "ev_supply": -0.8
-      },
-      "sentiment": {
-        "compound": -0.7184,
-        "label": "強烈利空"
-      }
-    },
-    {
-      "text": "Trade court rules Trump’s 10% global tariffs illegal - Finance & Commerce Trade court rules Trump’s 10% global tariffs illegal  Finance & Commerce",
-      "timestamp": "2026-05-08T20:09:07.000Z",
-      "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQdDdHcEEycDl3U094N3YzaTd4SGJrcXRqbEVfcXBSTWU0clJSYkZJTGEwbkgyN1ZoVUo2TjRrNS1HeUl5LTVpVVZlTEQzNjUyaWcxUjZvZVBvZEJlWjBvSFc5b21MUWhmbXpTOTJSeFp6RHBJSlhpNnZCdDQ0TlRCUFhoU2RxRGZSVUd3?oc=5",
-      "keywords": [
-        "tariff",
-        "tariffs"
-      ],
-      "impacts": {
-        "foundry": -1,
-        "shipping": -1,
-        "steel": -1,
-        "ic_design": -1,
-        "display": -1,
-        "ev_supply": -0.8
+        "ev_supply": -0.6
       },
       "sentiment": {
         "compound": -0.7184,
@@ -312,13 +292,12 @@
       }
     },
     {
-      "text": "The Man Trying to Make Trump’s Tariffs Go on Forever - Politico The Man Trying to Make Trump’s Tariffs Go on Forever  Politico",
-      "timestamp": "2026-05-08T07:00:00.000Z",
-      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQR004bUdQZnpGS0NwTkJocnMxS0dBYnRoSFFKemg4VE9hTGRXNnY1V3kxcXg5bXNtejZFMVVjdnlGeU9RcnZUX18zS0w2WWhNdUVJTG5kOU1qY3M1Z0trSW42dDB3dUtNTzdCc05ERmZmWkUwZjFYaUQ3S2VFVm1nV05qZTQ4S2VKWDZMaTVoSGlOMXZsUmpZLWo3aw?oc=5",
+      "text": "Trump Administration Appeals 10% Global Tariffs Ruling As Judges Say Trade Law Was Misused - Benzinga Trump Administration Appeals 10% Global Tariffs Ruling As Judges Say Trade Law Was Misused  Benzinga",
+      "timestamp": "2026-05-09T06:57:40.000Z",
+      "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxORmo0U1ZkeGZaTWNZczNOYTA0WU5YVUdyUkdDVC02V29QNEc2VG9FS0s2eGp0RFVDUDgwY2tGNmpSbG0tOUJZNkpLbGZtSDQzMkZraU5iYUtYYThaaW8wczJlVmdSblpFQmtHdWlKdGRVSURhQ01xdnpVTnhWWXhWMzVFekNrd0VlMmMwSXVCVExSYTJ4enI4c0Nza0pRVGxweUd3dHdwVHBQOXMyTjliM0wxUGQ3QWhXTG9fS01GeklYNlpFakViOEw1REpfVktyRGpfbjVJQQ?oc=5",
       "keywords": [
         "tariff",
-        "tariffs",
-        "ev"
+        "tariffs"
       ],
       "impacts": {
         "foundry": -1,
@@ -326,7 +305,33 @@
         "steel": -1,
         "ic_design": -1,
         "display": -1,
-        "ev_supply": -0.6
+        "ev_supply": -0.8
+      },
+      "sentiment": {
+        "compound": -0.7184,
+        "label": "強烈利空"
+      }
+    },
+    {
+      "text": "Federal court rules against new global tariffs Trump imposed after loss at the Supreme Court - NBC News Federal court rules against new global tariffs Trump imposed after loss at the Supreme Court  NBC News",
+      "timestamp": "2026-05-08T00:00:00.000Z",
+      "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOM0pkVHVsQ3JwRGdldG1ncXJVbVE2cjBMVnM5TzVpOW0tV1ZiTTY5TldoX01JOHN6aXVGcjFtdVZsV2l0QlNyUXlZSm5HYTJ1ZXI0YzJLbXg3S2I5c3ExX2tsMkVVNnBnN0VZeWdqbm51dDJDbE5OeDBoclVHV2liX2FOSS1ETm84UjYxeXIyS2R2Yk53NkVSSV9pcURhU2psendUN1diZWpkaDFqTDBTYUp3eGZWTjBNb1NUNGJkVFZuN00?oc=5",
+      "keywords": [
+        "ai",
+        "tariff",
+        "tariffs",
+        "fed"
+      ],
+      "impacts": {
+        "ai_server": 0.7,
+        "foundry": -1,
+        "shipping": -1,
+        "steel": -1,
+        "ic_design": -1,
+        "display": -1,
+        "ev_supply": -0.8,
+        "banking": -0.3,
+        "financial_holding": -0.3
       },
       "sentiment": {
         "compound": -0.7184,
@@ -373,6 +378,27 @@
       }
     },
     {
+      "text": "US trade court rules Trump tariffs illegal, but issues narrow block - Reuters US trade court rules Trump tariffs illegal, but issues narrow block  Reuters",
+      "timestamp": "2026-05-07T21:04:00.000Z",
+      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNWVVLLXRwc2ZYclkxUkZLVFJwVERMaF96WGpsOUdndDcyNXhXaEhvaU5WME9LT2xiWnJIbkRDX3hWSGpmbllUX2txRjRLWG8wWVg2Z090R2R6dk1PVUUtWmRoaGk2c3NLX0JxLUJNWDV2a2hVZUtqQUlaOUNybmFYMXl3RDhNX0VZcm1OVGhJZ0tSdEpVU3FoTk13?oc=5",
+      "keywords": [
+        "tariff",
+        "tariffs"
+      ],
+      "impacts": {
+        "foundry": -1,
+        "shipping": -1,
+        "steel": -1,
+        "ic_design": -1,
+        "display": -1,
+        "ev_supply": -0.8
+      },
+      "sentiment": {
+        "compound": -0.7184,
+        "label": "強烈利空"
+      }
+    },
+    {
       "text": "Trade Court Rules Trump’s 10% Global Tariff Is Illegal - The New York Times Trade Court Rules Trump’s 10% Global Tariff Is Illegal  The New York Times",
       "timestamp": "2026-05-07T21:10:13.000Z",
       "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQNWhVMTRnWFFVMnBkZnVIdG1YV1NSSWtSb2x1X2ozX21EdXVwbTZ4Y1BtMUhrdVBadmIyVnRKUXRsWUVWamRNeWZUR3JZYzlaRVl6bmtCN3pwdFNKUE5ITU1zYVlNczlXMTJmSWVFTHg3RUxiazZlYnRuaVdQVXhDYmJzckJUc0NZVWpIZnllYVZaVWpm?oc=5",
@@ -391,32 +417,6 @@
         "compound": -0.7184,
         "label": "強烈利空"
       }
-    },
-    {
-      "text": "Federal court rules against new global tariffs Trump imposed after loss at the Supreme Court - NBC News Federal court rules against new global tariffs Trump imposed after loss at the Supreme Court  NBC News",
-      "timestamp": "2026-05-08T00:00:00.000Z",
-      "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOM0pkVHVsQ3JwRGdldG1ncXJVbVE2cjBMVnM5TzVpOW0tV1ZiTTY5TldoX01JOHN6aXVGcjFtdVZsV2l0QlNyUXlZSm5HYTJ1ZXI0YzJLbXg3S2I5c3ExX2tsMkVVNnBnN0VZeWdqbm51dDJDbE5OeDBoclVHV2liX2FOSS1ETm84UjYxeXIyS2R2Yk53NkVSSV9pcURhU2psendUN1diZWpkaDFqTDBTYUp3eGZWTjBNb1NUNGJkVFZuN00?oc=5",
-      "keywords": [
-        "ai",
-        "tariff",
-        "tariffs",
-        "fed"
-      ],
-      "impacts": {
-        "ai_server": 0.7,
-        "foundry": -1,
-        "shipping": -1,
-        "steel": -1,
-        "ic_design": -1,
-        "display": -1,
-        "ev_supply": -0.8,
-        "banking": -0.3,
-        "financial_holding": -0.3
-      },
-      "sentiment": {
-        "compound": -0.7184,
-        "label": "強烈利空"
-      }
     }
   ],
   "deltas": [],
@@ -427,10 +427,9 @@
   ],
   "sectorState": {
     "foundry": {
-      "score": -0.813,
-      "lastUpdated": "2026-05-09T09:25:52.461Z",
+      "score": -0.807,
+      "lastUpdated": "2026-05-09T13:41:30.041Z",
       "deltaHistory": [
-        -0.02400000000000002,
         0.04500000000000004,
         0.016000000000000014,
         0.008000000000000007,
@@ -439,14 +438,14 @@
         -0.04299999999999993,
         0.007000000000000006,
         0.018000000000000016,
-        0.010000000000000009
+        0.010000000000000009,
+        0.005999999999999894
       ]
     },
     "shipping": {
       "score": -0.933,
-      "lastUpdated": "2026-05-09T09:25:52.461Z",
+      "lastUpdated": "2026-05-09T13:41:30.041Z",
       "deltaHistory": [
-        0.0119999999999999,
         0.009000000000000008,
         -0.008000000000000007,
         -0.014999999999999902,
@@ -455,14 +454,14 @@
         0.016000000000000014,
         -0.009000000000000008,
         0,
-        -0.0050000000000000044
+        -0.0050000000000000044,
+        0
       ]
     },
     "steel": {
-      "score": -0.729,
-      "lastUpdated": "2026-05-09T09:25:52.461Z",
+      "score": -0.688,
+      "lastUpdated": "2026-05-09T13:41:30.041Z",
       "deltaHistory": [
-        -0.028000000000000025,
         -0.040000000000000036,
         -0.07499999999999996,
         -0.019000000000000017,
@@ -471,12 +470,13 @@
         0.0010000000000000009,
         0.051000000000000045,
         0.010000000000000009,
-        0.008000000000000007
+        0.008000000000000007,
+        0.041000000000000036
       ]
     },
     "ic_design": {
       "score": -1,
-      "lastUpdated": "2026-05-09T09:25:52.461Z",
+      "lastUpdated": "2026-05-09T13:41:30.041Z",
       "deltaHistory": [
         0,
         0,
@@ -491,10 +491,9 @@
       ]
     },
     "display": {
-      "score": -0.898,
-      "lastUpdated": "2026-05-09T09:25:52.461Z",
+      "score": -0.878,
+      "lastUpdated": "2026-05-09T13:41:30.041Z",
       "deltaHistory": [
-        -0.018000000000000016,
         -0.0020000000000000018,
         -0.007000000000000006,
         -0.016999999999999904,
@@ -503,14 +502,14 @@
         0.008000000000000007,
         0.02400000000000002,
         0.0020000000000000018,
-        0
+        0,
+        0.020000000000000018
       ]
     },
     "ev_supply": {
-      "score": -0.717,
-      "lastUpdated": "2026-05-09T09:25:52.461Z",
+      "score": -0.69,
+      "lastUpdated": "2026-05-09T13:41:30.041Z",
       "deltaHistory": [
-        -0.015999999999999903,
         -0.025000000000000022,
         -0.015000000000000013,
         0.014000000000000012,
@@ -519,14 +518,14 @@
         -0.0010000000000000009,
         0.006000000000000005,
         -0.0010000000000000009,
-        -0.0020000000000000018
+        -0.0020000000000000018,
+        0.027000000000000024
       ]
     },
     "ai_server": {
-      "score": 0.281,
-      "lastUpdated": "2026-05-09T09:25:52.461Z",
+      "score": 0.261,
+      "lastUpdated": "2026-05-09T13:41:30.041Z",
       "deltaHistory": [
-        -0.002,
         0.154,
         0.19699999999999998,
         -0.014000000000000012,
@@ -535,19 +534,20 @@
         -0.030999999999999972,
         0.009000000000000008,
         0.020999999999999963,
-        -0.01899999999999996
+        -0.01899999999999996,
+        -0.020000000000000018
       ]
     },
     "defense": {
       "score": 0,
-      "lastUpdated": "2026-05-09T09:25:52.461Z",
+      "lastUpdated": "2026-05-09T13:41:30.041Z",
       "deltaHistory": [
-        -0.009,
         -0.006,
         0,
         0,
         0.001,
         -0.001,
+        0,
         0,
         0,
         0,
@@ -588,9 +588,8 @@
     },
     "petrochemical": {
       "score": 0,
-      "lastUpdated": "2026-05-09T09:25:52.461Z",
+      "lastUpdated": "2026-05-09T13:41:30.041Z",
       "deltaHistory": [
-        0.002,
         0,
         -0.004999999999999999,
         -0.001,
@@ -599,12 +598,13 @@
         -0.001,
         -0.001,
         0,
+        0,
         0
       ]
     },
     "semiconductor_equip": {
       "score": 0,
-      "lastUpdated": "2026-05-09T09:25:52.461Z",
+      "lastUpdated": "2026-05-09T13:41:30.041Z",
       "deltaHistory": [
         0,
         0,
@@ -620,7 +620,7 @@
     },
     "robotics": {
       "score": 0,
-      "lastUpdated": "2026-05-09T09:25:52.461Z",
+      "lastUpdated": "2026-05-09T13:41:30.041Z",
       "deltaHistory": [
         0,
         0,
@@ -651,10 +651,9 @@
       ]
     },
     "banking": {
-      "score": -0.003,
-      "lastUpdated": "2026-05-09T09:25:52.461Z",
+      "score": -0.005,
+      "lastUpdated": "2026-05-09T13:41:30.041Z",
       "deltaHistory": [
-        0,
         0,
         -0.015,
         0,
@@ -663,7 +662,8 @@
         0.005,
         0.002,
         0,
-        0.002
+        0.002,
+        -0.002
       ]
     },
     "power_infra": {
@@ -700,7 +700,7 @@
     },
     "pcb": {
       "score": 0,
-      "lastUpdated": "2026-05-09T09:25:52.461Z",
+      "lastUpdated": "2026-05-09T13:41:30.041Z",
       "deltaHistory": [
         0,
         0,
@@ -715,10 +715,9 @@
       ]
     },
     "financial_holding": {
-      "score": -0.003,
-      "lastUpdated": "2026-05-09T09:25:52.461Z",
+      "score": -0.005,
+      "lastUpdated": "2026-05-09T13:41:30.041Z",
       "deltaHistory": [
-        0,
         0,
         -0.015,
         0,
@@ -727,7 +726,8 @@
         0.005,
         0.002,
         0,
-        0.002
+        0.002,
+        -0.002
       ]
     }
   }
