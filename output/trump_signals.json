@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-05-10T03:58:22.116Z",
+  "updatedAt": "2026-05-10T06:39:16.345Z",
   "posts": [
     {
       "text": "Tracking the Economic Impact of the Trump Tariffs - Tax Foundation Tracking the Economic Impact of the Trump Tariffs  Tax Foundation",
@@ -182,6 +182,28 @@
       }
     },
     {
+      "text": "The Man Trying to Make Trump’s Tariffs Go on Forever - Politico The Man Trying to Make Trump’s Tariffs Go on Forever  Politico",
+      "timestamp": "2026-05-08T07:00:00.000Z",
+      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQR004bUdQZnpGS0NwTkJocnMxS0dBYnRoSFFKemg4VE9hTGRXNnY1V3kxcXg5bXNtejZFMVVjdnlGeU9RcnZUX18zS0w2WWhNdUVJTG5kOU1qY3M1Z0trSW42dDB3dUtNTzdCc05ERmZmWkUwZjFYaUQ3S2VFVm1nV05qZTQ4S2VKWDZMaTVoSGlOMXZsUmpZLWo3aw?oc=5",
+      "keywords": [
+        "tariff",
+        "tariffs",
+        "ev"
+      ],
+      "impacts": {
+        "foundry": -1,
+        "shipping": -1,
+        "steel": -1,
+        "ic_design": -1,
+        "display": -1,
+        "ev_supply": -0.6
+      },
+      "sentiment": {
+        "compound": -0.7184,
+        "label": "強烈利空"
+      }
+    },
+    {
       "text": "Trump Tariff Tracker – May 8, 2026 (via Passle) - Baker Botts Trump Tariff Tracker – May 8, 2026 (via Passle)  Baker Botts",
       "timestamp": "2026-05-08T20:02:16.000Z",
       "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPeHdnb3ZnUmVOTXlvWjVYeEJwNG9MdWxVdmZWUi1rVjhiMFhlanpPbzZGSHFhN05KdExZbFpnQ0VGZVFxWGhIZTZLTEFFTFVRNS13eWI3UDMxMWY2SEEzdldZTjBaWmtaXzJDU0U0aFNnbVZvTTJac0pPNDF0RFpBYw?oc=5",
@@ -288,6 +310,24 @@
       }
     },
     {
+      "text": "The U.S.-China Trade Relationship: What’s Behind the Competition? - Council on Foreign Relations The U.S.-China Trade Relationship: What’s Behind the Competition?  Council on Foreign Relations",
+      "timestamp": "2026-04-16T07:00:00.000Z",
+      "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE85R1Rxa096czZxUGpuWjB0T0RCeWtvNzUwM2kxcHRhVXp4MjBJUXVIbC1vU2EtRGZ6c2MxQnVNamVJUHhpZU4yMVBqRUZ3YUgxNGVRT0pRSWYteGpFeW1mRlBuazdselRXZDdpaVY1NW0xS2hzSlUtb1p1VWhwdw?oc=5",
+      "keywords": [
+        "china"
+      ],
+      "impacts": {
+        "ic_design": -0.5,
+        "shipping": -0.4,
+        "display": -0.4,
+        "ev_supply": -0.3
+      },
+      "sentiment": {
+        "compound": 0,
+        "label": "中性"
+      }
+    },
+    {
       "text": "China’s Exports and Imports Set Records in April Amid High Energy Costs - The New York Times China’s Exports and Imports Set Records in April Amid High Energy Costs  The New York Times",
       "timestamp": "2026-05-09T15:24:48.000Z",
       "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOdWR1NUNxejNzeGFBV29WTGY1UnA5dkROcmVmS1RCOGVwQi1Kb1QzQmF5Um1kZDV2VzZJeXR0eWJhd1dMTVJxMXJHX1laUERyaTExQy0xSVJsMWhUQWpPUjJKakg2SC1lVXpKZV9sZXdqdjJNbzlOd1d5ZUlzU3duNmdnTWtzQ2hac2c?oc=5",
@@ -307,30 +347,9 @@
       }
     },
     {
-      "text": "Trade court rules Trump’s 10% global tariffs illegal - Finance & Commerce Trade court rules Trump’s 10% global tariffs illegal  Finance & Commerce",
-      "timestamp": "2026-05-08T20:09:07.000Z",
-      "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQdDdHcEEycDl3U094N3YzaTd4SGJrcXRqbEVfcXBSTWU0clJSYkZJTGEwbkgyN1ZoVUo2TjRrNS1HeUl5LTVpVVZlTEQzNjUyaWcxUjZvZVBvZEJlWjBvSFc5b21MUWhmbXpTOTJSeFp6RHBJSlhpNnZCdDQ0TlRCUFhoU2RxRGZSVUd3?oc=5",
-      "keywords": [
-        "tariff",
-        "tariffs"
-      ],
-      "impacts": {
-        "foundry": -1,
-        "shipping": -1,
-        "steel": -1,
-        "ic_design": -1,
-        "display": -1,
-        "ev_supply": -0.8
-      },
-      "sentiment": {
-        "compound": -0.7184,
-        "label": "強烈利空"
-      }
-    },
-    {
-      "text": "US trade court rules Trump tariffs illegal, but issues narrow block - Lee News Central US trade court rules Trump tariffs illegal, but issues narrow block  Lee News Central",
-      "timestamp": "2026-05-07T21:55:00.000Z",
-      "url": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxQQWM0UWRfYS14ZWczbWN0TWRvQnpyYWF5dVQ3N2VWLWxuQUhxTGcycGNDenlTSnBqNVFuWHpZeVVId3NQY0lQYVNIZkt6Vm53NURwS19SZ1Vua1dUSVhUWkZ4T1lNUjFyRXlRYW1LSktWRl9Ma2NkX0xtT01RX0lZWnF4d19YTlE4VExrY2lnZ2FIUXFlZDI3TmlJQmtqaks1ZkFyeVRyUktNZlN1ZVE4enJRc190MWxSdjlPaEh2bS1YY2xwYUdtMHIxR0o2VEpTLVVFbmxjcE5CU1RwbTNaaXItYTNaVE5fc2hubjhpNkVGSHBuT1dr?oc=5",
+      "text": "US trade court rules Trump tariffs illegal, but issues narrow block - Reuters US trade court rules Trump tariffs illegal, but issues narrow block  Reuters",
+      "timestamp": "2026-05-07T21:04:00.000Z",
+      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNWVVLLXRwc2ZYclkxUkZLVFJwVERMaF96WGpsOUdndDcyNXhXaEhvaU5WME9LT2xiWnJIbkRDX3hWSGpmbllUX2txRjRLWG8wWVg2Z090R2R6dk1PVUUtWmRoaGk2c3NLX0JxLUJNWDV2a2hVZUtqQUlaOUNybmFYMXl3RDhNX0VZcm1OVGhJZ0tSdEpVU3FoTk13?oc=5",
       "keywords": [
         "tariff",
         "tariffs"
@@ -378,27 +397,6 @@
         "compound": 0,
         "label": "中性"
       }
-    },
-    {
-      "text": "Tracking Trump’s Tariffs Across the Global Economy - Bloomberg.com Tracking Trump’s Tariffs Across the Global Economy  Bloomberg.com",
-      "timestamp": "2026-05-01T07:00:00.000Z",
-      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE44cWRvMnZYODk0SmduSElrclpzbDRtOF80VHhJRGpiWDJHTGJxNXM4TjEteEhqWGhGaGFPd3ZXWGE0cnFHQzBLdVhha2J3UXZWZkRwUENCMkduUENkb2w3WWd5VzZmLU14?oc=5",
-      "keywords": [
-        "tariff",
-        "tariffs"
-      ],
-      "impacts": {
-        "foundry": -1,
-        "shipping": -1,
-        "steel": -1,
-        "ic_design": -1,
-        "display": -1,
-        "ev_supply": -0.8
-      },
-      "sentiment": {
-        "compound": -0.7184,
-        "label": "強烈利空"
-      }
     }
   ],
   "deltas": [],
@@ -409,10 +407,9 @@
   ],
   "sectorState": {
     "foundry": {
-      "score": -0.771,
-      "lastUpdated": "2026-05-10T03:58:22.116Z",
+      "score": -0.762,
+      "lastUpdated": "2026-05-10T06:39:16.345Z",
       "deltaHistory": [
-        -0.030000000000000027,
         0.06499999999999995,
         -0.04299999999999993,
         0.007000000000000006,
@@ -421,14 +418,14 @@
         0.005999999999999894,
         0,
         -0.0010000000000000009,
-        0.03700000000000003
+        0.03700000000000003,
+        0.009000000000000008
       ]
     },
     "shipping": {
       "score": -0.933,
-      "lastUpdated": "2026-05-10T03:58:22.116Z",
+      "lastUpdated": "2026-05-10T06:39:16.345Z",
       "deltaHistory": [
-        0,
         0.010999999999999899,
         0.016000000000000014,
         -0.009000000000000008,
@@ -437,14 +434,14 @@
         0,
         -0.004999999999999893,
         -0.0020000000000000018,
-        0.006999999999999895
+        0.006999999999999895,
+        0
       ]
     },
     "steel": {
-      "score": -0.649,
-      "lastUpdated": "2026-05-10T03:58:22.116Z",
+      "score": -0.647,
+      "lastUpdated": "2026-05-10T06:39:16.345Z",
       "deltaHistory": [
-        -0.018000000000000016,
         0.10099999999999998,
         0.0010000000000000009,
         0.051000000000000045,
@@ -453,12 +450,13 @@
         0.041000000000000036,
         0.009999999999999898,
         -0.013999999999999901,
-        0.04299999999999993
+        0.04299999999999993,
+        0.0020000000000000018
       ]
     },
     "ic_design": {
       "score": -1,
-      "lastUpdated": "2026-05-10T03:58:22.116Z",
+      "lastUpdated": "2026-05-10T06:39:16.345Z",
       "deltaHistory": [
         0,
         0,
@@ -473,10 +471,9 @@
       ]
     },
     "display": {
-      "score": -0.868,
-      "lastUpdated": "2026-05-10T03:58:22.116Z",
+      "score": -0.869,
+      "lastUpdated": "2026-05-10T06:39:16.345Z",
       "deltaHistory": [
-        -0.0030000000000000027,
         0.009999999999999898,
         0.008000000000000007,
         0.02400000000000002,
@@ -485,14 +482,14 @@
         0.020000000000000018,
         0.0040000000000000036,
         -0.0030000000000000027,
-        0.009000000000000008
+        0.009000000000000008,
+        -0.0010000000000000009
       ]
     },
     "ev_supply": {
-      "score": -0.682,
-      "lastUpdated": "2026-05-10T03:58:22.116Z",
+      "score": -0.673,
+      "lastUpdated": "2026-05-10T06:39:16.345Z",
       "deltaHistory": [
-        -0.0040000000000000036,
         0.0050000000000000044,
         -0.0010000000000000009,
         0.006000000000000005,
@@ -501,14 +498,14 @@
         0.027000000000000024,
         0.0010000000000000009,
         0.006999999999999895,
-        0
+        0,
+        0.009000000000000008
       ]
     },
     "ai_server": {
-      "score": 0.229,
-      "lastUpdated": "2026-05-10T03:58:22.116Z",
+      "score": 0.226,
+      "lastUpdated": "2026-05-10T06:39:16.345Z",
       "deltaHistory": [
-        0.008000000000000007,
         -0.05299999999999999,
         -0.030999999999999972,
         0.009000000000000008,
@@ -517,15 +514,16 @@
         -0.020000000000000018,
         0.0010000000000000009,
         -0.007000000000000006,
-        -0.025999999999999995
+        -0.025999999999999995,
+        -0.0030000000000000027
       ]
     },
     "defense": {
       "score": 0,
-      "lastUpdated": "2026-05-10T03:58:22.116Z",
+      "lastUpdated": "2026-05-10T06:39:16.345Z",
       "deltaHistory": [
-        0.001,
         -0.001,
+        0,
         0,
         0,
         0,
@@ -586,7 +584,7 @@
     },
     "semiconductor_equip": {
       "score": 0,
-      "lastUpdated": "2026-05-10T03:58:22.116Z",
+      "lastUpdated": "2026-05-10T06:39:16.345Z",
       "deltaHistory": [
         0,
         0,
@@ -602,7 +600,7 @@
     },
     "robotics": {
       "score": 0,
-      "lastUpdated": "2026-05-10T03:58:22.116Z",
+      "lastUpdated": "2026-05-10T06:39:16.345Z",
       "deltaHistory": [
         0,
         0,
@@ -682,7 +680,7 @@
     },
     "pcb": {
       "score": 0,
-      "lastUpdated": "2026-05-10T03:58:22.116Z",
+      "lastUpdated": "2026-05-10T06:39:16.345Z",
       "deltaHistory": [
         0,
         0,
