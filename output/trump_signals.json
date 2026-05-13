@@ -1,17 +1,57 @@
 {
-  "updatedAt": "2026-05-13T10:36:55.461Z",
+  "updatedAt": "2026-05-13T14:50:58.443Z",
   "posts": [
     {
-      "text": "Trump’s Trade War With China: How We Got to a Stalemate In 3 Numbers - The New York Times Trump’s Trade War With China: How We Got to a Stalemate In 3 Numbers  The New York Times",
-      "timestamp": "2026-05-13T04:00:06.000Z",
-      "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE9COEZCcUdCRXhfSTNja28waDRNTHVzX3ZfSTBIYUs1Q1dDWXRTZTZHM2JNNXVvY2x0TDd1Z3JTUzQ1NUJvbk9icUpkZFpfSmdhcGJqeFlmdFVfamtmNnpPOEtFU0liVUF5REhDWE10UGRhZkF6OHY0?oc=5",
+      "text": "Trump and Xi dialed down the trade war, but challenges lurk at their China summit - AP News Trump and Xi dialed down the trade war, but challenges lurk at their China summit  AP News",
+      "timestamp": "2026-05-12T00:00:00.000Z",
+      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOOG1BR1hJeWxkbHZndVlGMUdoODROcXdYRnpJbEl3Z280LWtmLW00UGxmZ2o1ZmtHVFFGeWdBZEJuWjNjd1pjbkxNX21TcXQ3NnQ0bXpaVElGVWo3aXFGU1lNTWlRa2tGV1JTRkZRVGVIM3VsV203QXRYMGFiSjB0NVFGZjF2U2VPNFJJTmhJN2hWdnJXNlhUM015TQ?oc=5",
       "keywords": [
-        "trade war with china",
         "trade war",
         "china"
       ],
       "impacts": {
-        "foundry": -1,
+        "foundry": -0.6,
+        "ic_design": -1,
+        "shipping": -1,
+        "display": -0.4,
+        "ev_supply": -0.3
+      },
+      "sentiment": {
+        "compound": 0,
+        "label": "中性"
+      }
+    },
+    {
+      "text": "Trump, Xi to weigh tariff cuts on $30 billion of imports in managed trade push - Reuters Trump, Xi to weigh tariff cuts on $30 billion of imports in managed trade push  Reuters",
+      "timestamp": "2026-05-13T13:22:17.000Z",
+      "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPZHBka0lybnhwRXkzY1pwOWpFSnN5Njd0RnFpNlg0ZlRYN1lqY3FFZ1dFOXJQUTBKczZITllGdU1TU01iMGNIWnNfYXVBeFVNZnVlaE02Wkd6T2lFTUo2VXBzeDBZVVAxNVZKUC1OZG9LUFVaQmMyR1dhaTMxYi1KZ0owc3JpNkhXYkUyY2xQaUcyNmI5YlU4U3FCVU9aNFk5SzJueFAwd3VNU0xOTmtXWHlNNTdxUW0wMGFtRnBaMmRTc0haakpTd25B?oc=5",
+      "keywords": [
+        "tariff",
+        "port"
+      ],
+      "impacts": {
+        "foundry": -0.7,
+        "shipping": -0.8,
+        "steel": -0.5,
+        "ic_design": -0.6,
+        "display": -0.5,
+        "ev_supply": -0.4
+      },
+      "sentiment": {
+        "compound": -0.7184,
+        "label": "強烈利空"
+      }
+    },
+    {
+      "text": "Here’s How Trump’s Trade War on China Ended Up in a Stalemate - The New York Times Here’s How Trump’s Trade War on China Ended Up in a Stalemate  The New York Times",
+      "timestamp": "2026-05-13T07:05:22.000Z",
+      "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE9COEZCcUdCRXhfSTNja28waDRNTHVzX3ZfSTBIYUs1Q1dDWXRTZTZHM2JNNXVvY2x0TDd1Z3JTUzQ1NUJvbk9icUpkZFpfSmdhcGJqeFlmdFVfamtmNnpPOEtFU0liVUF5REhDWE10UGRhZkF6OHY0?oc=5",
+      "keywords": [
+        "trade war",
+        "china"
+      ],
+      "impacts": {
+        "foundry": -0.6,
         "ic_design": -1,
         "shipping": -1,
         "display": -0.4,
@@ -45,28 +85,8 @@
       }
     },
     {
-      "text": "Trump and Xi dialed down the trade war, but challenges lurk at their China summit - AP News Trump and Xi dialed down the trade war, but challenges lurk at their China summit  AP News",
-      "timestamp": "2026-05-12T00:26:58.000Z",
-      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOOG1BR1hJeWxkbHZndVlGMUdoODROcXdYRnpJbEl3Z280LWtmLW00UGxmZ2o1ZmtHVFFGeWdBZEJuWjNjd1pjbkxNX21TcXQ3NnQ0bXpaVElGVWo3aXFGU1lNTWlRa2tGV1JTRkZRVGVIM3VsV203QXRYMGFiSjB0NVFGZjF2U2VPNFJJTmhJN2hWdnJXNlhUM015TQ?oc=5",
-      "keywords": [
-        "trade war",
-        "china"
-      ],
-      "impacts": {
-        "foundry": -0.6,
-        "ic_design": -1,
-        "shipping": -1,
-        "display": -0.4,
-        "ev_supply": -0.3
-      },
-      "sentiment": {
-        "compound": 0,
-        "label": "中性"
-      }
-    },
-    {
       "text": "China’s Xi expected to press Trump on Taiwan, tariffs during summit - Al Jazeera China’s Xi expected to press Trump on Taiwan, tariffs during summit  Al Jazeera",
-      "timestamp": "2026-05-13T07:52:30.000Z",
+      "timestamp": "2026-05-13T07:57:57.000Z",
       "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPTU1vTG5sY0YzeW1Ha3lsdktUdnZHYXFSVHJQYVl4al9ob2NxeUpxSW05eUpDZDRMVldFUTAzQVJKSXRnSXRoaEQ0enZhMWZPUXNCODkyYnUxdV9NMjBLTjJhd29mUVRCMV9UbV9lZmREc29CSkZiSjJkeGpnVllSUXZDaG1nNkRWUHBzcFVJUExJbVJfdEFFYVozSmJhZ9IBowFBVV95cUxOOHRWb3FFVS1pcU04bVBMbFc0WDV5bjRuNWd1eWdWM25FVVZBY3dHWkNVNy1ORUhqMEVfc0liUFFLOEt1bHItODV1RGR2SFlHSjdTOF9abEd4TV9ZRmM4SGpwc2dTVU95aWM0ZXZEaDhNSjRFckJQNHhDOTJvaURQdzFzck91STQ1bDBtOC1INksxSlMtWUoydnl6ZTVZeU4yM0VZ?oc=5",
       "keywords": [
         "ai",
@@ -91,37 +111,71 @@
       }
     },
     {
-      "text": "Fentanyl, China, and Trump's 2025 tariffs - Peterson Institute for International Economics Fentanyl, China, and Trump's 2025 tariffs  Peterson Institute for International Economics",
-      "timestamp": "2026-05-11T13:00:00.000Z",
-      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQbjBrQVRfUk5JeDNjeXI5bGN3d0lVbU9Pbm1MWEp4cmFPUEJXbVVEWXNQaVlXd3RQUUZXTnRsZkQzTVdYa1VpVkRFVmZZc1NXSndteWJMUU9QTUNreEZjUEc3RFlsMndEYmJBZFprTERrZjIyRzlNQkQwSmsxMGVFenVqeGZkaTV5ODdEeFpRZmpXR00?oc=5",
+      "text": "Trump arrives in Beijing for pomp-filled talks on Iran war and US-China trade - Scripps News Trump arrives in Beijing for pomp-filled talks on Iran war and US-China trade  Scripps News",
+      "timestamp": "2026-05-13T12:02:42.000Z",
+      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQZzZGZk1qNUU4WXNWUkpUd3d2eEtXTDdEaWdRcENaQWtkajhZaXpiTjV2d1VxSEQySjNIODBXQVhkS09RQlNPNmxmZUMxeGg2M2luLTJWdTA2UWFrU1JlMDZVbFZubHVXRlB0aE5faDlPY1VHZ2hEVmlxTVhUTGtLbFZrUkNBUmhFRzR6UHdxSkZJT3g5N1Znb2VpQjdyQ0laeHR2X2FwaEIwRURLR081ay1kMVlzTEE?oc=5",
       "keywords": [
-        "tariff",
-        "tariffs",
-        "china"
+        "china",
+        "beijing"
       ],
       "impacts": {
-        "foundry": -1,
-        "shipping": -1,
-        "steel": -1,
-        "ic_design": -1,
-        "display": -1,
-        "ev_supply": -1
+        "ic_design": -0.9,
+        "shipping": -0.7,
+        "display": -0.4,
+        "ev_supply": -0.3
       },
       "sentiment": {
-        "compound": -0.7184,
-        "label": "強烈利空"
+        "compound": 0,
+        "label": "中性"
       }
     },
     {
-      "text": "Trump’s approach on China has changed, now appears focused on getting along - The Washington Post Trump’s approach on China has changed, now appears focused on getting along  The Washington Post",
-      "timestamp": "2026-05-12T16:00:41.000Z",
-      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQVldyWGtvWjNOOF8wemtJbHRlaGtCdnlhSjJlTm5FWE5lbzZCclp5Z2JGVjEwVXQxRDZpVnV1bmNzVUhRMnYyMy1ZX003ak9nRWJKMEd3RWpuWmxFaF9yXzNUbUNHYW1QZFd4RTZfRkxtUTVRX3hSWDBCM2pYbnpjVg?oc=5",
+      "text": "Trump's China visit set to test fragile truce - BBC Trump's China visit set to test fragile truce  BBC",
+      "timestamp": "2026-05-11T09:26:33.000Z",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFAxbjMxdzRiSC1SMEdXVzdzcmhCcC1PN2JNc1VpenBISWZKd2FtYjAyZWZLVThHSnpRdzRiZWc4aG5wTE96X1FVX3NGQUhtYU1OakhXM0hLODd1dw?oc=5",
       "keywords": [
         "china"
       ],
       "impacts": {
         "ic_design": -0.5,
         "shipping": -0.4,
+        "display": -0.4,
+        "ev_supply": -0.3
+      },
+      "sentiment": {
+        "compound": 0,
+        "label": "中性"
+      }
+    },
+    {
+      "text": "Trump’s Shrinking Ambitions on China - The New York Times Trump’s Shrinking Ambitions on China  The New York Times",
+      "timestamp": "2026-05-13T04:01:05.000Z",
+      "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTFBheE9zdDFtdmRoWkw1YmdyTk1GNWV2c1h5MkRxWE1FTVFoX1RqRkpJNzNCX2RtdE9TMnJaZzYtWjRwc3VFOFowLTRWd3J2WHg3SmdjM05pM0E2eU5XcDBLUml1Q3U3MzBOampwUUlQa0hXNnV6NmppamlTSjE?oc=5",
+      "keywords": [
+        "china"
+      ],
+      "impacts": {
+        "ic_design": -0.5,
+        "shipping": -0.4,
+        "display": -0.4,
+        "ev_supply": -0.3
+      },
+      "sentiment": {
+        "compound": 0,
+        "label": "中性"
+      }
+    },
+    {
+      "text": "The Latest: Trump arrives in China to meet with Xi in Beijing - KTAR News 92.3 FM The Latest: Trump arrives in China to meet with Xi in Beijing  KTAR News 92.3 FM",
+      "timestamp": "2026-05-13T12:03:51.000Z",
+      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOaklzeVdlSlBnaUg3a1V0cmNCQXNZcXRibEhrS2dBelc1MUFqWklCUnpDc2pHYlJKZ1RzbGVKUFl3aTNFenMxTHJSMmZVYU9qSnFWX3ZPYVBnQ05iV1RoU2c4OVYtOURNa0NlRUdiSHJyVTZkNGdmbnBvUGFUakFuMTA2WmV6em5ha1QzNV91azJZb3I5bVdHRnhvd0FHVVpZYVE?oc=5",
+      "keywords": [
+        "china",
+        "beijing"
+      ],
+      "impacts": {
+        "ic_design": -0.9,
+        "shipping": -0.7,
         "display": -0.4,
         "ev_supply": -0.3
       },
@@ -153,21 +207,23 @@
       }
     },
     {
-      "text": "Trump’s Shrinking Ambitions on China - The New York Times Trump’s Shrinking Ambitions on China  The New York Times",
-      "timestamp": "2026-05-13T08:21:04.000Z",
-      "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOdlVlNEZHWVdnSmQ3cTFEQ0gwcllPLVJJejBrTGdnbjlyYnF2U3N5NGEtaXJ4LURaNWpSUGdGYWJyRTdRNEJGV2FEZTVaNVJfWDlMa3RPVTRsMXllU21iTFcxejJPdnYweG1uYjJndTJOUnNsd2tjNlgxS0pmUXRKQzhheEtQMmZ6cUFGOGNGc2E?oc=5",
+      "text": "Trump’s Tariff Playbook in Tatters Ahead of Xi Summit - Global Finance Magazine Trump’s Tariff Playbook in Tatters Ahead of Xi Summit  Global Finance Magazine",
+      "timestamp": "2026-05-12T06:00:00.000Z",
+      "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTFBpTk5pRGlrVnNuYlNCcDVQZE1sR0RTSXpwU196UnVwRVVOc0J0OC1hNVg0UHR0Y1QyREVycld1blJyYWNMOFg3Y3B0NkRGZGVsdUxkOURMSnI5X3FWQm03aUZQZTJNdk5iQTd2empPbm1lVVNnQnhqcWt3?oc=5",
       "keywords": [
-        "china"
+        "tariff"
       ],
       "impacts": {
-        "ic_design": -0.5,
-        "shipping": -0.4,
-        "display": -0.4,
-        "ev_supply": -0.3
+        "foundry": -0.7,
+        "shipping": -0.5,
+        "steel": -0.5,
+        "ic_design": -0.6,
+        "display": -0.5,
+        "ev_supply": -0.4
       },
       "sentiment": {
-        "compound": 0,
-        "label": "中性"
+        "compound": -0.7184,
+        "label": "強烈利空"
       }
     },
     {
@@ -194,63 +250,6 @@
       }
     },
     {
-      "text": "Trump set to meet with Xi in Beijing as war and inflation weigh on his presidency - ABC News - Breaking News, Latest News and Videos Trump set to meet with Xi in Beijing as war and inflation weigh on his presidency  ABC News - Breaking News, Latest News and Videos",
-      "timestamp": "2026-05-13T08:19:21.000Z",
-      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOX1N4SjdGX3lZNDdxUUlSVU5ZMUM1MW1qRzgwdFA1MFNubExfVU9WWW00SG5ITWJhay1KdFBTZXNHZ2NFbTVrRTRMVVlXZHd0TEdnWHRqdW9HT2VOa1BhVmk5aWtVdmtZa1VDc2lBQ1pwZXVSWEJjUnVyWjJGdXhLNDdTTW5KdkRsNUJobzByM1ZkZC01SXFrV0lB0gGfAUFVX3lxTFBFSXNiWjZJVndWN29Ca0JCSWxhZVVFU0tQaVlkeXpkT2ZKMkthU3dGUjNwM0Z1THlWWDFXeDRaeHFSYkVCZHFUZzRoMjlWMzNqa25QS3haT19sN1o1Rm5HeUc2UXkydzZiTW0wS1BVb1phRUJVQ1BKa3VLRzA0VndUTGlSXy0zV2dGYmJQQU1vTlk1bGVONV80a3YxanhYbw?oc=5",
-      "keywords": [
-        "beijing",
-        "inflation"
-      ],
-      "impacts": {
-        "ic_design": -0.4,
-        "shipping": -0.3,
-        "banking": -0.3,
-        "petrochemical": 0.3
-      },
-      "sentiment": {
-        "compound": 0,
-        "label": "中性"
-      }
-    },
-    {
-      "text": "Trump's China visit set to test fragile truce - BBC Trump's China visit set to test fragile truce  BBC",
-      "timestamp": "2026-05-11T09:26:33.000Z",
-      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFAxbjMxdzRiSC1SMEdXVzdzcmhCcC1PN2JNc1VpenBISWZKd2FtYjAyZWZLVThHSnpRdzRiZWc4aG5wTE96X1FVX3NGQUhtYU1OakhXM0hLODd1dw?oc=5",
-      "keywords": [
-        "china"
-      ],
-      "impacts": {
-        "ic_design": -0.5,
-        "shipping": -0.4,
-        "display": -0.4,
-        "ev_supply": -0.3
-      },
-      "sentiment": {
-        "compound": 0,
-        "label": "中性"
-      }
-    },
-    {
-      "text": "Trump’s Tariff Playbook in Tatters Ahead of Xi Summit - Global Finance Magazine Trump’s Tariff Playbook in Tatters Ahead of Xi Summit  Global Finance Magazine",
-      "timestamp": "2026-05-12T06:00:00.000Z",
-      "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTFBpTk5pRGlrVnNuYlNCcDVQZE1sR0RTSXpwU196UnVwRVVOc0J0OC1hNVg0UHR0Y1QyREVycld1blJyYWNMOFg3Y3B0NkRGZGVsdUxkOURMSnI5X3FWQm03aUZQZTJNdk5iQTd2empPbm1lVVNnQnhqcWt3?oc=5",
-      "keywords": [
-        "tariff"
-      ],
-      "impacts": {
-        "foundry": -0.7,
-        "shipping": -0.5,
-        "steel": -0.5,
-        "ic_design": -0.6,
-        "display": -0.5,
-        "ev_supply": -0.4
-      },
-      "sentiment": {
-        "compound": -0.7184,
-        "label": "強烈利空"
-      }
-    },
-    {
       "text": "Trump loses his trade superpower - Financial Times Trump loses his trade superpower  Financial Times",
       "timestamp": "2026-05-12T04:00:57.000Z",
       "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOc3RXMzgxaEFzWlVJcWkyQXdpSTRzUkNydW1GbkN5ZVdCSnoxaDJYbXNvREdrLTBjdTh2WkhtZGZxR2NZOG5lajJQV0Nld3BHWlI0a04zZ3NGTlgwbEpSeHFGemR0TTFkelFucWx3Z09JdW5xcmR5V2VlSVdfS080SGZVVU4?oc=5",
@@ -262,125 +261,21 @@
       }
     },
     {
-      "text": "Trump tariff blow leaves importers in limbo - Politico Trump tariff blow leaves importers in limbo  Politico",
-      "timestamp": "2026-05-11T14:00:00.000Z",
-      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQUWlST1hzLVptYTRUUWdXLTIzY04xR1JQV2ZrU0VqT0tvM0hlTzhYX19rZml2bmRfMjFtN1pjckphdzdJcnB0LVFlQ1N6akY0aDk0X3kwMnRQOVdfcnM4Wm5xNlFsS1hfTC1CVFBiNnY0YnZ0WjFIWlU0NFpyRkRuRldaQW1fSWFYM25CXzhGRXFoQTdXa1JST3V5WkxDNmR1Rm5rRGNvZGxSZmQydk81R2o3aw?oc=5",
+      "text": "The Dragon and the Dealmaker: Tariff warrior Trump arrives in Beijing as a trade pilgrim - The Times of India The Dragon and the Dealmaker: Tariff warrior Trump arrives in Beijing as a trade pilgrim  The Times of India",
+      "timestamp": "2026-05-13T11:58:00.000Z",
+      "url": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxPbzV3VEFhUVhqNW1vMWtCWnNUU2wyeG1RczNHNThXVF9FcjlNY0J3dXFvLVlkc19uLXBubGp5TDhTYnNRZEVkQzZSRHJGUzFwMUJwelV2UFI2MzF6ZTdCbmxWTGNsYzR0TkdreExUdHl1VmVyNlpRZDgwLUxtdFZTcnRSTFZvem1NTEIwM1hCMFJwR0JtbnZJMWhMVlJCMFlxS3RUWmE2ekJfMXRsUTFoVmtUYlk5dlZFRzExTmx6Z21qdmdlWF9nZm4zakxaMlZJX0F1dXVsYV9vTGpLQ014dkFZM0ZQYXd2b1dsRlRaVdIB9AFBVV95cUxOMmVNMlpJZ1ZoazNGaW5iSlYtMFB1ZFA5c1ZielYtZ3V2WUotRGhkSDlCbFlFUy1pVkpjOGdFZjA1a3k4VEdxckowaUttTjFvaHQ2MHdzTkRCZkhEdEFRNzdJLVRvZ3hKSkEzMTNhcmhHMHE3VERKRWZheFc0MlBsMVVYbUNGbWQ1YUtHOUZQR3hRMkpqWUY4UnhWeUp2RURlOXhjbEZkX1pITHQ5dGZQQ0pQTEZ6SDZtaXcySTBxUGFJaGZvV0txaXZCdmdpTzdrV3dnZWZiRkFZcUx3UzRIZURxd3h0QnVrMHFRajBob2hGSm1l?oc=5",
       "keywords": [
         "tariff",
-        "port"
+        "beijing",
+        "deal"
       ],
       "impacts": {
         "foundry": -0.7,
-        "shipping": -0.8,
+        "shipping": -0.6,
         "steel": -0.5,
-        "ic_design": -0.6,
+        "ic_design": -0.8,
         "display": -0.5,
         "ev_supply": -0.4
-      },
-      "sentiment": {
-        "compound": -0.7184,
-        "label": "強烈利空"
-      }
-    },
-    {
-      "text": "The big questions hanging over the Trump-Xi meeting in China - The Guardian The big questions hanging over the Trump-Xi meeting in China  The Guardian",
-      "timestamp": "2026-05-11T23:49:00.000Z",
-      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOY2dyYmZrSHlKU3ljSnMwVHc5Q3lSZjlZcFlYazRSQzAyYjNNbWJrMzhSQlQ2NHVETjVRakZQMG9Yb2xrVUxJOE9UWTlPM2ZrWUxERDJEUnVnTGxmV3VibE1sLV9pYkE4NFJKT3BFZl90Y1FzYWFiUTNoSFVTQVpOTjFENV82VGowdzZuZEp5MEtxR0NoVlNLT0ZEVmpPa095bmFtUEJMdm9sdw?oc=5",
-      "keywords": [
-        "china"
-      ],
-      "impacts": {
-        "ic_design": -0.5,
-        "shipping": -0.4,
-        "display": -0.4,
-        "ev_supply": -0.3
-      },
-      "sentiment": {
-        "compound": 0,
-        "label": "中性"
-      }
-    },
-    {
-      "text": "China Inc.'s global growth curbs Trump tariff powers undercut by courts - Nikkei Asia China Inc.'s global growth curbs Trump tariff powers undercut by courts  Nikkei Asia",
-      "timestamp": "2026-05-12T05:01:00.000Z",
-      "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQNmhkU0tsXzJ2ZlFySkd1LWJQM0dKbFlpdXlMamV6R3dFNEl6dWgtdkZiZHppYkYwaWhxQWtxdGsyR2pJRmNBcm5ici0ycVczcHVRX1RRSVNnWFBvWWRVcERsU1FJMWdvSkg3eUJtTHM1aHgyT3Z3aHYzT0FCdXpRVVVpY080djlRb1FUZzdWRDhDcGMteG5uZm04ZGR3aW1kRG42Y0o0ajVETGR3b3loNFdMaUZjZUE1MUdiNkVkS1lLQ0pLR2c?oc=5",
-      "keywords": [
-        "tariff",
-        "china"
-      ],
-      "impacts": {
-        "foundry": -0.7,
-        "shipping": -0.9,
-        "steel": -0.5,
-        "ic_design": -1,
-        "display": -0.9,
-        "ev_supply": -0.7
-      },
-      "sentiment": {
-        "compound": -0.7184,
-        "label": "強烈利空"
-      }
-    },
-    {
-      "text": "What's at stake for trade, Taiwan and Iran in Trump's high-risk summit with China's Xi - CNBC What's at stake for trade, Taiwan and Iran in Trump's high-risk summit with China's Xi  CNBC",
-      "timestamp": "2026-05-12T10:00:01.000Z",
-      "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE9Cc1dIQ3FqVFd3UV9IUEZCWVBLSVo1Z3Z5RFdFOVBIWmx0Mlo0Ymx2RmM3cXdrcW1PTWpnMk9ycldXTmhiZ3RyQ0MxUGlZVzhxTzgzckRrVXhlTGNvR3liMVhCd3kzWlFlZjVoZXNXMllsTVI3b0ZncdIBfkFVX3lxTE9Jby0zcXZKUmFkTUllYXZSS3VTOWxxZmMxX1lDNTVYTXRmUWdOUkNqUHpLVjZVTk1FTEdGeWdBVWREelV3T0dPNmg4YVJyd2ZhRkFJSklzeHZKZmlmdlBEeEltN2tOUExFTDh4VFp1MUdoSFBLNVBKdURpWlA0UQ?oc=5",
-      "keywords": [
-        "ai",
-        "china",
-        "taiwan"
-      ],
-      "impacts": {
-        "ai_server": 0.7,
-        "ic_design": -0.5,
-        "shipping": -0.4,
-        "display": -0.4,
-        "ev_supply": -0.3,
-        "defense": 0.4
-      },
-      "sentiment": {
-        "compound": 0,
-        "label": "中性"
-      }
-    },
-    {
-      "text": "Trump heads to Beijing with tariff uncertainty, AI communication, and the Strait of Hormuz in focus - Yahoo Finance Trump heads to Beijing with tariff uncertainty, AI communication, and the Strait of Hormuz in focus  Yahoo Finance",
-      "timestamp": "2026-05-11T12:59:43.000Z",
-      "url": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxPLXRsZDQwOU5INUMtTkh1bDg0ZkVqbUpWQ19obHZRbVRtOXE4WTFHUF9PM1V2MkZwdjZQWC0yM0xZSzc5WUhqRFN4U3BJUFJ3Mk93d2NuRmY4aVNRRk44WkNKNVpEeGdOTWgxVlVrcVAtRGJ3RTNmSG5ValZmN1hDM1ZBcjcyM19NeVozbW05NFo5c29TOTcwR3g3YS1uNTFtU2dPWGI2RGlYc3QtZHpjODdGSnlSZFQwYUN0dWdjQ3BKNkFkbUxGemVnYkJDRERhT1NIQ1p2UDc0WTNpX1B5aWNJMk9jMGRzX2dQNTZ6RTJiOTQ?oc=5",
-      "keywords": [
-        "ai",
-        "tariff",
-        "beijing"
-      ],
-      "impacts": {
-        "ai_server": 0.7,
-        "foundry": -0.4,
-        "shipping": -0.8,
-        "steel": -0.5,
-        "ic_design": -1,
-        "display": -0.5,
-        "ev_supply": -0.4
-      },
-      "sentiment": {
-        "compound": -0.7184,
-        "label": "強烈利空"
-      }
-    },
-    {
-      "text": "Trump’s Latest Tariff Setback Looms Over China Talks - The New York Times Trump’s Latest Tariff Setback Looms Over China Talks  The New York Times",
-      "timestamp": "2026-05-08T16:00:22.000Z",
-      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1xZk53NFUybTdOUDA2T0lCUUZ4bi10M3hja1N4MW9tYVgzc2dOUkdEa1dRUTc2MjNSVGpMWWF5aUd4SVJlS3p4NUIxcDJ6ODF3VEdGQk5lckpMbFl0QzFPQ2I4R3FFX09HbHV0TTJSMVpoTjd0VlVEdVBLYnBfZzQ?oc=5",
-      "keywords": [
-        "tariff",
-        "china"
-      ],
-      "impacts": {
-        "foundry": -0.7,
-        "shipping": -0.9,
-        "steel": -0.5,
-        "ic_design": -1,
-        "display": -0.9,
-        "ev_supply": -0.7
       },
       "sentiment": {
         "compound": -0.7184,
@@ -408,63 +303,145 @@
         "compound": -0.7184,
         "label": "強烈利空"
       }
+    },
+    {
+      "text": "Tech, Trade and Tariffs: Inside the High-Stakes Xi-Trump Meeting - outlookbusiness.com Tech, Trade and Tariffs: Inside the High-Stakes Xi-Trump Meeting  outlookbusiness.com",
+      "timestamp": "2026-05-13T07:50:37.000Z",
+      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNQXFLTnZQSFdtSGpEY2g3bVliNXUyZUJQSUVaaEdwTmNSUmVKYlhnNlZVTTBkeURnWEZBM2RTTlFObFJnRFBzTUxDdzh4VVVmZnA0cDBlN1hrU0Z5Q2VaMkVnLXhuNkdMbVBpWldtYloyeldhcG8yWDdPRDZOdjMzbW9DUUVPd1lwaGlBdGhtMjg1X1hNMFIwOFdqbGRmOVlH0gGuAUFVX3lxTE1kQ28tSjU4aGNnODdpNHZZYXU4ZFg3T0RrQXdrMmxPbUpPcXlNU2s0YXlPaDVQN1YxVWtHYTBTT2hnbmNxZmFCb3FYX245dkpUZHdiX2FzbFZjNmFTckR3Y1J6N2ZrSXJLZDlnOEdNbDFQSDVYcHZGZ2JxSlZ2bmZ4N2I1WGVGUlZhZTFOUXlCbzlIQk5RT2RHWTc1c2FHRXJueG5meDc3TE5CNUZ4Zw?oc=5",
+      "keywords": [
+        "tariff",
+        "tariffs"
+      ],
+      "impacts": {
+        "foundry": -1,
+        "shipping": -1,
+        "steel": -1,
+        "ic_design": -1,
+        "display": -1,
+        "ev_supply": -0.8
+      },
+      "sentiment": {
+        "compound": -0.7184,
+        "label": "強烈利空"
+      }
+    },
+    {
+      "text": "Trump’s approach on China has changed, now appears focused on getting along - The Washington Post Trump’s approach on China has changed, now appears focused on getting along  The Washington Post",
+      "timestamp": "2026-05-12T16:00:41.000Z",
+      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQVldyWGtvWjNOOF8wemtJbHRlaGtCdnlhSjJlTm5FWE5lbzZCclp5Z2JGVjEwVXQxRDZpVnV1bmNzVUhRMnYyMy1ZX003ak9nRWJKMEd3RWpuWmxFaF9yXzNUbUNHYW1QZFd4RTZfRkxtUTVRX3hSWDBCM2pYbnpjVg?oc=5",
+      "keywords": [
+        "china"
+      ],
+      "impacts": {
+        "ic_design": -0.5,
+        "shipping": -0.4,
+        "display": -0.4,
+        "ev_supply": -0.3
+      },
+      "sentiment": {
+        "compound": 0,
+        "label": "中性"
+      }
+    },
+    {
+      "text": "Trump’s shrinking ambitions on China - The Business Times Trump’s shrinking ambitions on China  The Business Times",
+      "timestamp": "2026-05-13T10:22:00.000Z",
+      "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPRG5Pazg1REFSckE1eVE5akhDQ3BoRFV0WHA0RThQYjJFN0NBem9NenVRODhQZjhVdXZuaUdlTXlieVQzRmR2NzU1TU9FRkdNN2R5YTl2NWlZVGFQZ1FLbkEtSUc0UERSMFhDR3hZTUNENlNLdGVMY3QyRU5oSHl6V3U4WjFHS212N0JFMjdQaw?oc=5",
+      "keywords": [
+        "china"
+      ],
+      "impacts": {
+        "ic_design": -0.5,
+        "shipping": -0.4,
+        "display": -0.4,
+        "ev_supply": -0.3
+      },
+      "sentiment": {
+        "compound": 0,
+        "label": "中性"
+      }
+    },
+    {
+      "text": "Tracking Trump’s Tariffs Across the Global Economy - Bloomberg.com Tracking Trump’s Tariffs Across the Global Economy  Bloomberg.com",
+      "timestamp": "2026-05-01T07:00:00.000Z",
+      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE44cWRvMnZYODk0SmduSElrclpzbDRtOF80VHhJRGpiWDJHTGJxNXM4TjEteEhqWGhGaGFPd3ZXWGE0cnFHQzBLdVhha2J3UXZWZkRwUENCMkduUENkb2w3WWd5VzZmLU14?oc=5",
+      "keywords": [
+        "tariff",
+        "tariffs"
+      ],
+      "impacts": {
+        "foundry": -1,
+        "shipping": -1,
+        "steel": -1,
+        "ic_design": -1,
+        "display": -1,
+        "ev_supply": -0.8
+      },
+      "sentiment": {
+        "compound": -0.7184,
+        "label": "強烈利空"
+      }
+    },
+    {
+      "text": "China weathered Trump's tariffs - but the Iran war is taking a toll - BBC China weathered Trump's tariffs - but the Iran war is taking a toll  BBC",
+      "timestamp": "2026-04-22T07:00:00.000Z",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5VOUo3cF80cll0SXNxZkZTN0x2b3hwcDhyaXR0eEhUNDdQV0VMTG1nTWcxQ3B1Wm1RbVhRUkVMMVJsdXgyUElzTXFhMlhfM3JzYjFlQ3pxQnd0QQ?oc=5",
+      "keywords": [
+        "tariff",
+        "tariffs",
+        "china"
+      ],
+      "impacts": {
+        "foundry": -1,
+        "shipping": -1,
+        "steel": -1,
+        "ic_design": -1,
+        "display": -1,
+        "ev_supply": -1
+      },
+      "sentiment": {
+        "compound": -0.7184,
+        "label": "強烈利空"
+      }
     }
   ],
   "deltas": [
     {
-      "sector": "display",
-      "sectorName": "面板/顯示",
-      "prev": -0.841,
-      "current": -0.705,
-      "delta": 0.136,
+      "sector": "foundry",
+      "sectorName": "晶圓代工",
+      "prev": -0.668,
+      "current": -0.599,
+      "delta": 0.069,
       "momentum": "↑ 壓力緩解",
       "accelerating": true
     },
     {
-      "sector": "steel",
-      "sectorName": "鋼鐵",
-      "prev": -0.508,
-      "current": -0.39,
-      "delta": 0.118,
-      "momentum": "↑ 壓力緩解",
-      "accelerating": true
-    },
-    {
-      "sector": "ev_supply",
-      "sectorName": "電動車供應鏈",
-      "prev": -0.629,
-      "current": -0.547,
-      "delta": 0.082,
-      "momentum": "↑ 壓力緩解",
+      "sector": "ai_server",
+      "sectorName": "AI 伺服器",
+      "prev": 0.179,
+      "current": 0.119,
+      "delta": -0.06,
+      "momentum": "↓ 訊號弱化",
       "accelerating": true
     }
   ],
   "topDeltas": [
     {
-      "sector": "display",
-      "sectorName": "面板/顯示",
-      "prev": -0.841,
-      "current": -0.705,
-      "delta": 0.136,
+      "sector": "foundry",
+      "sectorName": "晶圓代工",
+      "prev": -0.668,
+      "current": -0.599,
+      "delta": 0.069,
       "momentum": "↑ 壓力緩解",
       "accelerating": true
     },
     {
-      "sector": "steel",
-      "sectorName": "鋼鐵",
-      "prev": -0.508,
-      "current": -0.39,
-      "delta": 0.118,
-      "momentum": "↑ 壓力緩解",
-      "accelerating": true
-    },
-    {
-      "sector": "ev_supply",
-      "sectorName": "電動車供應鏈",
-      "prev": -0.629,
-      "current": -0.547,
-      "delta": 0.082,
-      "momentum": "↑ 壓力緩解",
+      "sector": "ai_server",
+      "sectorName": "AI 伺服器",
+      "prev": 0.179,
+      "current": 0.119,
+      "delta": -0.06,
+      "momentum": "↓ 訊號弱化",
       "accelerating": true
     }
   ],
@@ -474,10 +451,9 @@
   ],
   "sectorState": {
     "foundry": {
-      "score": -0.668,
-      "lastUpdated": "2026-05-13T10:36:55.461Z",
+      "score": -0.599,
+      "lastUpdated": "2026-05-13T14:50:58.443Z",
       "deltaHistory": [
-        0.09799999999999998,
         -0.018999999999999906,
         0.06899999999999995,
         -0.08599999999999997,
@@ -486,14 +462,14 @@
         -0.016000000000000014,
         -0.052000000000000046,
         0.02300000000000002,
-        -0.027000000000000024
+        -0.027000000000000024,
+        0.06900000000000006
       ]
     },
     "shipping": {
-      "score": -0.965,
-      "lastUpdated": "2026-05-13T10:36:55.461Z",
+      "score": -0.976,
+      "lastUpdated": "2026-05-13T14:50:58.443Z",
       "deltaHistory": [
-        0.03499999999999992,
         -0.009999999999999898,
         0.0040000000000000036,
         0.0019999999999998908,
@@ -502,14 +478,14 @@
         -0.03299999999999992,
         0.013999999999999901,
         -0.02299999999999991,
-        -0.006000000000000005
+        -0.006000000000000005,
+        -0.01100000000000001
       ]
     },
     "steel": {
-      "score": -0.39,
-      "lastUpdated": "2026-05-13T10:36:55.461Z",
+      "score": -0.359,
+      "lastUpdated": "2026-05-13T14:50:58.443Z",
       "deltaHistory": [
-        0.06299999999999994,
         -0.013000000000000012,
         0.1070000000000001,
         -0.05500000000000005,
@@ -518,12 +494,13 @@
         -0.01100000000000001,
         -0.10000000000000003,
         0.051000000000000045,
-        0.118
+        0.118,
+        0.031000000000000028
       ]
     },
     "ic_design": {
       "score": -1,
-      "lastUpdated": "2026-05-13T10:36:55.461Z",
+      "lastUpdated": "2026-05-13T14:50:58.443Z",
       "deltaHistory": [
         0,
         0,
@@ -538,10 +515,9 @@
       ]
     },
     "display": {
-      "score": -0.705,
-      "lastUpdated": "2026-05-13T10:36:55.461Z",
+      "score": -0.667,
+      "lastUpdated": "2026-05-13T14:50:58.443Z",
       "deltaHistory": [
-        0.09700000000000009,
         -0.016000000000000014,
         0.03299999999999992,
         -0.0129999999999999,
@@ -550,14 +526,14 @@
         -0.013000000000000012,
         -0.020999999999999908,
         -0.01200000000000001,
-        0.136
+        0.136,
+        0.03799999999999992
       ]
     },
     "ev_supply": {
-      "score": -0.547,
-      "lastUpdated": "2026-05-13T10:36:55.461Z",
+      "score": -0.51,
+      "lastUpdated": "2026-05-13T14:50:58.443Z",
       "deltaHistory": [
-        0.07500000000000007,
         -0.015000000000000013,
         0.03499999999999992,
         -0.015999999999999903,
@@ -566,14 +542,14 @@
         0.009000000000000008,
         -0.05799999999999994,
         0.07899999999999996,
-        0.08199999999999996
+        0.08199999999999996,
+        0.03700000000000003
       ]
     },
     "ai_server": {
-      "score": 0.179,
-      "lastUpdated": "2026-05-13T10:36:55.461Z",
+      "score": 0.119,
+      "lastUpdated": "2026-05-13T14:50:58.443Z",
       "deltaHistory": [
-        0.07700000000000001,
         -0.006000000000000005,
         -0.018000000000000016,
         -0.04299999999999998,
@@ -582,14 +558,14 @@
         -0.03900000000000001,
         0.033,
         -0.036000000000000004,
-        0.017999999999999988
+        0.017999999999999988,
+        -0.06
       ]
     },
     "defense": {
-      "score": 0.051,
-      "lastUpdated": "2026-05-13T10:36:55.461Z",
+      "score": 0.039,
+      "lastUpdated": "2026-05-13T14:50:58.443Z",
       "deltaHistory": [
-        -0.002,
         0,
         0.002,
         0,
@@ -598,7 +574,8 @@
         -0.019999999999999997,
         -0.0020000000000000018,
         -0.003999999999999997,
-        0.0029999999999999957
+        0.0029999999999999957,
+        -0.011999999999999997
       ]
     },
     "solar": {
@@ -634,10 +611,9 @@
       ]
     },
     "petrochemical": {
-      "score": 0.013,
-      "lastUpdated": "2026-05-13T10:36:55.461Z",
+      "score": 0.001,
+      "lastUpdated": "2026-05-13T14:50:58.443Z",
       "deltaHistory": [
-        0.001,
         0.002,
         -0.001,
         0,
@@ -646,12 +622,13 @@
         0,
         0,
         0.001,
-        0.009999999999999998
+        0.009999999999999998,
+        -0.012
       ]
     },
     "semiconductor_equip": {
       "score": 0,
-      "lastUpdated": "2026-05-13T10:36:55.461Z",
+      "lastUpdated": "2026-05-13T14:50:58.443Z",
       "deltaHistory": [
         0,
         0,
@@ -667,7 +644,7 @@
     },
     "robotics": {
       "score": 0,
-      "lastUpdated": "2026-05-13T10:36:55.461Z",
+      "lastUpdated": "2026-05-13T14:50:58.443Z",
       "deltaHistory": [
         0,
         0,
@@ -747,7 +724,7 @@
     },
     "pcb": {
       "score": 0,
-      "lastUpdated": "2026-05-13T10:36:55.461Z",
+      "lastUpdated": "2026-05-13T14:50:58.443Z",
       "deltaHistory": [
         0,
         0,
