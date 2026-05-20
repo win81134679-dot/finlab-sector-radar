@@ -1,7 +1,7 @@
 {
   "schema_version": "2.0",
   "date": "2026-05-20",
-  "run_at": "2026-05-20T20:47:38+08:00",
+  "run_at": "2026-05-20T21:26:30+08:00",
   "last_trading_date": "2026-05-20",
   "macro": {
     "warning": true,
@@ -12,7 +12,7 @@
       "bond": "US10Y=4.61% (↑均線❌)",
       "pmi": "INDPRO=102.5 (擴張✅)",
       "sox": "SOXX=496.74 (站上20MA✅)",
-      "twd": "USD/TWD=31.617 (台幣貶值❌)"
+      "twd": "USD/TWD=31.635 (台幣貶值❌)"
     },
     "us_bond_10y": 4.61,
     "bond_trend": "up",
@@ -20,7 +20,7 @@
     "ip_trend": "up",
     "sox_price": 496.74,
     "sox_trend": "up",
-    "usd_twd": 31.617,
+    "usd_twd": 31.635,
     "twd_trend": "up"
   },
   "macro_warning": true,
@@ -7070,7 +7070,7 @@
       ],
       "leader_weak": true,
       "quality_filter": {
-        "junk_ratio": 1.0,
+        "junk_ratio": 0.9444,
         "quality_warning": true,
         "enabled_filters": [
           "po",
@@ -7078,7 +7078,7 @@
           "pian",
           "san"
         ],
-        "details": "垃圾股比例=100.0% (18/18股) | 觸發: 孤、偏、散 ⚠️品質警示",
+        "details": "垃圾股比例=94.4% (17/18股) | 觸發: 孤、偏、散 ⚠️品質警示",
         "junk_flags": {
           "po": {
             "label": "破",
@@ -7087,8 +7087,8 @@
           },
           "gu": {
             "label": "孤",
-            "count": 15,
-            "ratio": 0.833
+            "count": 14,
+            "ratio": 0.778
           },
           "pian": {
             "label": "偏",
@@ -13956,7 +13956,7 @@
       ],
       "leader_weak": false,
       "quality_filter": {
-        "junk_ratio": 0.9681,
+        "junk_ratio": 0.9574,
         "quality_warning": true,
         "enabled_filters": [
           "po",
@@ -13964,7 +13964,7 @@
           "pian",
           "san"
         ],
-        "details": "垃圾股比例=96.8% (91/94股) | 觸發: 破、孤、偏、散 ⚠️品質警示",
+        "details": "垃圾股比例=95.7% (90/94股) | 觸發: 破、孤、偏、散 ⚠️品質警示",
         "junk_flags": {
           "po": {
             "label": "破",
@@ -13973,8 +13973,8 @@
           },
           "gu": {
             "label": "孤",
-            "count": 85,
-            "ratio": 0.904
+            "count": 84,
+            "ratio": 0.894
           },
           "pian": {
             "label": "偏",
@@ -24192,7 +24192,7 @@
       "taiex_52w_return": 0.9481,
       "sector_vs_taiex_52w": -0.6907,
       "underperforming_52w": true,
-      "dormant_awakening": false
+      "dormant_awakening": true
     },
     "power_infra": {
       "name_zh": "重電/電力設備",
@@ -25315,7 +25315,7 @@
       "stocks": [],
       "leader_weak": false,
       "quality_filter": {
-        "junk_ratio": 0.9545,
+        "junk_ratio": 0.9091,
         "quality_warning": true,
         "enabled_filters": [
           "po",
@@ -25323,7 +25323,7 @@
           "pian",
           "san"
         ],
-        "details": "垃圾股比例=95.5% (21/22股) | 觸發: 破、孤、偏、散 ⚠️品質警示",
+        "details": "垃圾股比例=90.9% (20/22股) | 觸發: 破、孤、偏、散 ⚠️品質警示",
         "junk_flags": {
           "po": {
             "label": "破",
@@ -25332,8 +25332,8 @@
           },
           "gu": {
             "label": "孤",
-            "count": 19,
-            "ratio": 0.864
+            "count": 18,
+            "ratio": 0.818
           },
           "pian": {
             "label": "偏",
@@ -25473,7 +25473,7 @@
       "taiex_52w_return": 0.9481,
       "sector_vs_taiex_52w": -0.6522,
       "underperforming_52w": true,
-      "dormant_awakening": false
+      "dormant_awakening": true
     },
     "defense": {
       "name_zh": "國防/軍工",
@@ -25595,7 +25595,7 @@
       "taiex_52w_return": 0.9481,
       "sector_vs_taiex_52w": -0.8389,
       "underperforming_52w": true,
-      "dormant_awakening": false
+      "dormant_awakening": true
     },
     "blockchain": {
       "name_zh": "區塊鏈",
@@ -25778,7 +25778,7 @@
       "taiex_52w_return": 0.9481,
       "sector_vs_taiex_52w": -0.8038,
       "underperforming_52w": true,
-      "dormant_awakening": false
+      "dormant_awakening": true
     }
   }
 }
