@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-05-21T09:20:06.157Z",
+  "updatedAt": "2026-05-21T13:25:48.995Z",
   "posts": [
     {
       "text": "The U.S.-China Trade Relationship: What’s Behind the Competition? - Council on Foreign Relations The U.S.-China Trade Relationship: What’s Behind the Competition?  Council on Foreign Relations",
@@ -167,39 +167,25 @@
       }
     },
     {
-      "text": "Trump says China agreed to buy $17 billion of American beef per year - Fortune Trump says China agreed to buy $17 billion of American beef per year  Fortune",
-      "timestamp": "2026-05-18T14:25:00.000Z",
-      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPYUYyOUxpQ1J4eWhQMHIxeEpTbG5Ib0J6QzZFcC1Rc3czS2RDWjZZM3o5NG03NHcwbmZmSDM5a05GUkRzclQ5amlrMzRPMW13ZEpBWjBNZC1rVFR5TExkQl9LWEZGczV3dF9acTBIVmlzWTVVOWRYVjJPcTJqOG56U0V1MGhVaE1YZGtoRmtCek1zaW0tdGJrMWxNTVVkZW9E?oc=5",
+      "text": "China says US agreed to a maximum tariff rate. Could the trade war be waning? - South China Morning Post China says US agreed to a maximum tariff rate. Could the trade war be waning?  South China Morning Post",
+      "timestamp": "2026-05-20T12:00:06.000Z",
+      "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPdU9lQVd3OExPZE1FcEpaNUtQSzBOTVhPYXVPaFdTdFJURkZTOF93aHRLQnZpNDIyZ1FVWXg2LXlnZDFfcmdib2F5ZmU3bUNHMVFETlpNTGxCdm1RQmo0LURleGJfbVBFTFJYdzhoY3NaU0xVckJLS29DQndCdXR3QURnMEpoZTZUZ013UzhvVEhKR2hlMEpxWWZRallVTUZFZHVrOTMxQzN0UE9ZREpiMHFoQmZXbEZaeHo5dDJVZjMtaXRTUk15dNIByAFBVV95cUxONmZWTmZuNmczS3JDMDFhWmpaT09NQnFmS0U2VllsZ2dhV1g5LWd3b3c4c1FMNWphdmlHU2lPU3JCODkwUGh4UmpGbktWYVUzaWNGdE9YTXl1b1hkZzFIV3NJc3VQcmRzRUFJc25rV1hmbURGUDVwazg3TXVNRkFxVlJFU2VQcURVMW8wd0RuUXlfakE5V3ZUc0VUT0MtVWlZOHlNVlFlR096ZzJGTzFyQXh4RkVWNWJhUmtVNEpDeFFuVnRXZ19EZg?oc=5",
       "keywords": [
+        "trade war",
+        "tariff",
         "china"
       ],
       "impacts": {
-        "ic_design": -0.5,
-        "shipping": -0.4,
-        "display": -0.4,
-        "ev_supply": -0.3
+        "foundry": -1,
+        "ic_design": -1,
+        "shipping": -1,
+        "steel": -0.5,
+        "display": -0.9,
+        "ev_supply": -0.7
       },
       "sentiment": {
-        "compound": 0,
-        "label": "中性"
-      }
-    },
-    {
-      "text": "US-China Relations in the Trump 2.0 Era: A Timeline - China Briefing US-China Relations in the Trump 2.0 Era: A Timeline  China Briefing",
-      "timestamp": "2026-05-15T01:00:32.000Z",
-      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQVl9rOHkwQl9VYldidlJVajgtZzY4VE5TQmt6eEQ2czIxaTk5N3Ywd3diVXdCT3dKVmhUNmxMRjJ0UnJKdGE2TUtuNklrdWx4UTVGZG5kY1pvWnNEWUhkdmZ5WkV3R0plREV6aTlGc1JEUHVQeG02VzRsVE82OERteXhsMGNfTEVPMllnN0p3?oc=5",
-      "keywords": [
-        "china"
-      ],
-      "impacts": {
-        "ic_design": -0.5,
-        "shipping": -0.4,
-        "display": -0.4,
-        "ev_supply": -0.3
-      },
-      "sentiment": {
-        "compound": 0,
-        "label": "中性"
+        "compound": -0.7184,
+        "label": "強烈利空"
       }
     },
     {
@@ -231,6 +217,24 @@
       "sentiment": {
         "compound": -0.7184,
         "label": "強烈利空"
+      }
+    },
+    {
+      "text": "US-China Relations in the Trump 2.0 Era: A Timeline - China Briefing US-China Relations in the Trump 2.0 Era: A Timeline  China Briefing",
+      "timestamp": "2026-05-15T01:00:32.000Z",
+      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQVl9rOHkwQl9VYldidlJVajgtZzY4VE5TQmt6eEQ2czIxaTk5N3Ywd3diVXdCT3dKVmhUNmxMRjJ0UnJKdGE2TUtuNklrdWx4UTVGZG5kY1pvWnNEWUhkdmZ5WkV3R0plREV6aTlGc1JEUHVQeG02VzRsVE82OERteXhsMGNfTEVPMllnN0p3?oc=5",
+      "keywords": [
+        "china"
+      ],
+      "impacts": {
+        "ic_design": -0.5,
+        "shipping": -0.4,
+        "display": -0.4,
+        "ev_supply": -0.3
+      },
+      "sentiment": {
+        "compound": 0,
+        "label": "中性"
       }
     },
     {
@@ -294,27 +298,9 @@
       }
     },
     {
-      "text": "Exclusive: US not in a hurry to extend China trade truce, Bessent says - Reuters Exclusive: US not in a hurry to extend China trade truce, Bessent says  Reuters",
-      "timestamp": "2026-05-19T21:00:12.000Z",
-      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPdll1aXJvdlI4dEQxSllZSngwV2F2S1c0a2ozMDlkSnlUUXRlekFtT28tanFuRVZmenpvdEZtcmM5STZ6bHNPZzVubWV5YW9iRTNib0pFbTNoNmlBNFZGYkVFQWpYS3lhZnhGWmxRQXRseTZNOS1pZHh0VVVxcTFiSUpDRlNGUzR6MVhKemNESnBtRURMMW9LaGF0OFhOZGc?oc=5",
-      "keywords": [
-        "china"
-      ],
-      "impacts": {
-        "ic_design": -0.5,
-        "shipping": -0.4,
-        "display": -0.4,
-        "ev_supply": -0.3
-      },
-      "sentiment": {
-        "compound": 0,
-        "label": "中性"
-      }
-    },
-    {
-      "text": "China warns Trump’s latest tariff moves could damage trade ties - AP News China warns Trump’s latest tariff moves could damage trade ties  AP News",
-      "timestamp": "2026-03-16T07:00:00.000Z",
-      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOMlRvSmdFeGxqMHZLY2NyZjI0cWc1UlEyTUNaRTR4WjlBWC1nVnNTRXVpQjhJWE9aWDUtWlUzTDZKMnp3WlZoOHByNmoycFczbldhWlFHNmp3S1VwNW9NN0EyeTRSQzliZkVuVjBleVhIUlc1dXNYanlCVHRMcTRpSE16dngzeWdPenpGeUk4T29Ma1JJaFpR?oc=5",
+      "text": "China Signals New Tariff Cuts After Trump-Xi Summit, Boosting U.S. Farm Trade - Agrolatam China Signals New Tariff Cuts After Trump-Xi Summit, Boosting U.S. Farm Trade  Agrolatam",
+      "timestamp": "2026-05-20T12:36:00.000Z",
+      "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNT0dCMVVnNFhiSjc4RG5ldU1zek1LWmlmT0tyY0Nxcmwxb2NORFVPS29LenlpQm92amVSa2U0bzhTM29nTVdqX3lHWEc2b0FmOFd2UEVyVWlVcWduajRPWDVnUWR6WC15Y29TZ0R3MlFIVGl5TU9PYVJTRUVEWjdPcTBMWnBaUQ?oc=5",
       "keywords": [
         "tariff",
         "china"
@@ -330,6 +316,24 @@
       "sentiment": {
         "compound": -0.7184,
         "label": "強烈利空"
+      }
+    },
+    {
+      "text": "Exclusive: US not in a hurry to extend China trade truce, Bessent says - Reuters Exclusive: US not in a hurry to extend China trade truce, Bessent says  Reuters",
+      "timestamp": "2026-05-19T21:00:12.000Z",
+      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPdll1aXJvdlI4dEQxSllZSngwV2F2S1c0a2ozMDlkSnlUUXRlekFtT28tanFuRVZmenpvdEZtcmM5STZ6bHNPZzVubWV5YW9iRTNib0pFbTNoNmlBNFZGYkVFQWpYS3lhZnhGWmxRQXRseTZNOS1pZHh0VVVxcTFiSUpDRlNGUzR6MVhKemNESnBtRURMMW9LaGF0OFhOZGc?oc=5",
+      "keywords": [
+        "china"
+      ],
+      "impacts": {
+        "ic_design": -0.5,
+        "shipping": -0.4,
+        "display": -0.4,
+        "ev_supply": -0.3
+      },
+      "sentiment": {
+        "compound": 0,
+        "label": "中性"
       }
     },
     {
@@ -372,20 +376,20 @@
       }
     },
     {
-      "text": "Here Are the Countries and Products Subject to Tariffs Now - The New York Times Here Are the Countries and Products Subject to Tariffs Now  The New York Times",
-      "timestamp": "2026-04-28T07:00:00.000Z",
-      "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOUjg2dnFmWVhreXFuam9oQ3dmbnJIM1NrS2VaSkYwbnBZR0I4cjRXODItSHBEX2xmaVI3VmhMNXZfSWVWaDNtOHhHNVZxbjVidWFYYXVvNXZ6UDg3WVQ0N283V1lDdXJiZjFMNDZYdi1pTlIzX2NZS21CQWtaSHJ1a0JzcVh4dGJfamdn?oc=5",
+      "text": "China warns Trump’s latest tariff moves could damage trade ties - AP News China warns Trump’s latest tariff moves could damage trade ties  AP News",
+      "timestamp": "2026-03-16T07:00:00.000Z",
+      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOMlRvSmdFeGxqMHZLY2NyZjI0cWc1UlEyTUNaRTR4WjlBWC1nVnNTRXVpQjhJWE9aWDUtWlUzTDZKMnp3WlZoOHByNmoycFczbldhWlFHNmp3S1VwNW9NN0EyeTRSQzliZkVuVjBleVhIUlc1dXNYanlCVHRMcTRpSE16dngzeWdPenpGeUk4T29Ma1JJaFpR?oc=5",
       "keywords": [
         "tariff",
-        "tariffs"
+        "china"
       ],
       "impacts": {
-        "foundry": -1,
-        "shipping": -1,
-        "steel": -1,
+        "foundry": -0.7,
+        "shipping": -0.9,
+        "steel": -0.5,
         "ic_design": -1,
-        "display": -1,
-        "ev_supply": -0.8
+        "display": -0.9,
+        "ev_supply": -0.7
       },
       "sentiment": {
         "compound": -0.7184,
@@ -395,23 +399,23 @@
   ],
   "deltas": [
     {
-      "sector": "ai_server",
-      "sectorName": "AI 伺服器",
-      "prev": 0.201,
-      "current": 0.147,
-      "delta": -0.054,
-      "momentum": "↓ 訊號弱化",
+      "sector": "foundry",
+      "sectorName": "晶圓代工",
+      "prev": -0.585,
+      "current": -0.636,
+      "delta": -0.051,
+      "momentum": "↓ 壓力加深",
       "accelerating": true
     }
   ],
   "topDeltas": [
     {
-      "sector": "ai_server",
-      "sectorName": "AI 伺服器",
-      "prev": 0.201,
-      "current": 0.147,
-      "delta": -0.054,
-      "momentum": "↓ 訊號弱化",
+      "sector": "foundry",
+      "sectorName": "晶圓代工",
+      "prev": -0.585,
+      "current": -0.636,
+      "delta": -0.051,
+      "momentum": "↓ 壓力加深",
       "accelerating": true
     }
   ],
@@ -421,10 +425,9 @@
   ],
   "sectorState": {
     "foundry": {
-      "score": -0.585,
-      "lastUpdated": "2026-05-21T09:20:06.157Z",
+      "score": -0.636,
+      "lastUpdated": "2026-05-21T13:25:48.995Z",
       "deltaHistory": [
-        -0.01200000000000001,
         0.11099999999999999,
         -0.052000000000000046,
         0.119,
@@ -433,14 +436,14 @@
         0.08399999999999996,
         -0.02300000000000002,
         -0.122,
-        0.04300000000000004
+        0.04300000000000004,
+        -0.051000000000000045
       ]
     },
     "shipping": {
-      "score": -0.848,
-      "lastUpdated": "2026-05-21T09:20:06.157Z",
+      "score": -0.86,
+      "lastUpdated": "2026-05-21T13:25:48.995Z",
       "deltaHistory": [
-        -0.009000000000000008,
         0.0050000000000000044,
         -0.01200000000000001,
         0.02300000000000002,
@@ -449,14 +452,14 @@
         0.009000000000000008,
         0.010000000000000009,
         -0.020000000000000018,
-        0.017000000000000015
+        0.017000000000000015,
+        -0.01200000000000001
       ]
     },
     "steel": {
-      "score": -0.535,
-      "lastUpdated": "2026-05-21T09:20:06.157Z",
+      "score": -0.552,
+      "lastUpdated": "2026-05-21T13:25:48.995Z",
       "deltaHistory": [
-        -0.017000000000000015,
         0.09600000000000009,
         -0.025000000000000022,
         0.10899999999999999,
@@ -465,12 +468,13 @@
         0.07900000000000001,
         -0.0010000000000000009,
         -0.11899999999999994,
-        0.03499999999999992
+        0.03499999999999992,
+        -0.017000000000000015
       ]
     },
     "ic_design": {
       "score": -1,
-      "lastUpdated": "2026-05-21T09:20:06.157Z",
+      "lastUpdated": "2026-05-21T13:25:48.995Z",
       "deltaHistory": [
         0,
         0,
@@ -485,10 +489,9 @@
       ]
     },
     "display": {
-      "score": -0.94,
-      "lastUpdated": "2026-05-21T09:20:06.157Z",
+      "score": -0.942,
+      "lastUpdated": "2026-05-21T13:25:48.995Z",
       "deltaHistory": [
-        0.006000000000000005,
         0.027000000000000024,
         0.027999999999999914,
         0.010000000000000009,
@@ -497,14 +500,14 @@
         0.019000000000000017,
         -0.014000000000000012,
         -0.02200000000000002,
-        -0.005999999999999894
+        -0.005999999999999894,
+        -0.0020000000000000018
       ]
     },
     "ev_supply": {
       "score": -0.797,
-      "lastUpdated": "2026-05-21T09:20:06.157Z",
+      "lastUpdated": "2026-05-21T13:25:48.995Z",
       "deltaHistory": [
-        0.013000000000000012,
         0.038000000000000034,
         0.027999999999999914,
         0.014000000000000012,
@@ -513,14 +516,14 @@
         0.03400000000000003,
         -0.019000000000000017,
         -0.027000000000000024,
-        -0.020000000000000018
+        -0.020000000000000018,
+        0
       ]
     },
     "ai_server": {
-      "score": 0.147,
-      "lastUpdated": "2026-05-21T09:20:06.157Z",
+      "score": 0.141,
+      "lastUpdated": "2026-05-21T13:25:48.995Z",
       "deltaHistory": [
-        -0.010000000000000002,
         0.009000000000000001,
         0.010999999999999996,
         -0.008,
@@ -529,14 +532,14 @@
         0.014999999999999986,
         -0.005999999999999978,
         0.0010000000000000009,
-        -0.05400000000000002
+        -0.05400000000000002,
+        -0.006000000000000005
       ]
     },
     "defense": {
       "score": 0.017,
-      "lastUpdated": "2026-05-21T09:20:06.157Z",
+      "lastUpdated": "2026-05-21T13:25:48.995Z",
       "deltaHistory": [
-        0.029,
         -0.018000000000000002,
         0.02,
         -0.015,
@@ -545,7 +548,8 @@
         0.004,
         0,
         0.014000000000000002,
-        -0.018000000000000002
+        -0.018000000000000002,
+        0
       ]
     },
     "solar": {
@@ -598,12 +602,12 @@
     },
     "semiconductor_equip": {
       "score": 0,
-      "lastUpdated": "2026-05-21T09:20:06.157Z",
+      "lastUpdated": "2026-05-21T13:25:48.995Z",
       "deltaHistory": [
         0,
         0,
-        0,
         -0.001,
+        0,
         0,
         0,
         0,
@@ -614,7 +618,7 @@
     },
     "robotics": {
       "score": 0,
-      "lastUpdated": "2026-05-21T09:20:06.157Z",
+      "lastUpdated": "2026-05-21T13:25:48.995Z",
       "deltaHistory": [
         0,
         0,
@@ -694,7 +698,7 @@
     },
     "pcb": {
       "score": 0,
-      "lastUpdated": "2026-05-21T09:20:06.157Z",
+      "lastUpdated": "2026-05-21T13:25:48.995Z",
       "deltaHistory": [
         0,
         0,
