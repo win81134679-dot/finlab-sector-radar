@@ -1,6 +1,24 @@
 {
-  "updatedAt": "2026-05-21T20:43:13.728Z",
+  "updatedAt": "2026-05-22T01:09:59.138Z",
   "posts": [
+    {
+      "text": "The U.S.-China Trade Relationship: What’s Behind the Competition? - Council on Foreign Relations The U.S.-China Trade Relationship: What’s Behind the Competition?  Council on Foreign Relations",
+      "timestamp": "2026-05-15T18:56:00.000Z",
+      "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE85R1Rxa096czZxUGpuWjB0T0RCeWtvNzUwM2kxcHRhVXp4MjBJUXVIbC1vU2EtRGZ6c2MxQnVNamVJUHhpZU4yMVBqRUZ3YUgxNGVRT0pRSWYteGpFeW1mRlBuazdselRXZDdpaVY1NW0xS2hzSlUtb1p1VWhwdw?oc=5",
+      "keywords": [
+        "china"
+      ],
+      "impacts": {
+        "ic_design": -0.5,
+        "shipping": -0.4,
+        "display": -0.4,
+        "ev_supply": -0.3
+      },
+      "sentiment": {
+        "compound": 0,
+        "label": "中性"
+      }
+    },
     {
       "text": "From Tesla to Visa, C.E.O.s on Trump’s China Trip Sought Relief - The New York Times From Tesla to Visa, C.E.O.s on Trump’s China Trip Sought Relief  The New York Times",
       "timestamp": "2026-05-21T16:24:34.000Z",
@@ -17,43 +35,6 @@
       "sentiment": {
         "compound": 0,
         "label": "中性"
-      }
-    },
-    {
-      "text": "Trump is trying to get permanent trade war powers - The Hill Trump is trying to get permanent trade war powers  The Hill",
-      "timestamp": "2026-05-21T15:30:00.000Z",
-      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPb2ZUbElfSEM3T0UyLU5uVVd2a2VFc2QweDZlbDFTZ2pDZlpmaHFXTXh6dE5KLVRPOTFUN1ZXbi1sN2NXVFJpU191Y0U1VlF4SW13cHdOM1pWU1NuMlJLTWxtX3p5LXZ0ME5LTDQ2MnkzOHZ2MV9zREJTSWFlREI2R24zaTk1LTFX0gGOAUFVX3lxTE5VaHNpLWFLa3JLbkRxbk10RGtBal8tSjlWUVd5eFRNWTgxbEF4ajNtT3hmRnpEdnBraWlVRFhheFFlUlNPWVBEMFdUX3NqUUhDbEtRUkcyZmx1M1VqYVJWU2hpVEFCVVd0TlJpdUZGbUd6SjAzdS00aHc4akVoaUItcXhCLWVyWG5hSE9ubGc?oc=5",
-      "keywords": [
-        "trade war"
-      ],
-      "impacts": {
-        "foundry": -0.6,
-        "ic_design": -0.8,
-        "shipping": -0.6
-      },
-      "sentiment": {
-        "compound": 0,
-        "label": "中性"
-      }
-    },
-    {
-      "text": "Wisconsin farmers hopeful for relief from Trump’s new trade deal with China - WPR Wisconsin farmers hopeful for relief from Trump’s new trade deal with China  WPR",
-      "timestamp": "2026-05-18T20:49:15.000Z",
-      "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNamRSVXJucVZDcmd2VGp2WGw2Tjh5NWNvMUhUY2IxV0UwcTJldUNxX0V0NnZ2TVowUkt2WWZJMTlNTzZnakxHNDFZNlZ3ZmNtRTVObnVMcTRWR1c0TlBIdXduOENRSFE5LS03eWtpWnpjLVJhSWRHZkNEZXBlbnh5U18yNnp5YUE?oc=5",
-      "keywords": [
-        "trade deal",
-        "china",
-        "deal"
-      ],
-      "impacts": {
-        "shipping": 0.3,
-        "ic_design": 0.1,
-        "display": -0.1,
-        "ev_supply": -0.3
-      },
-      "sentiment": {
-        "compound": 0.6124,
-        "label": "強烈利多"
       }
     },
     {
@@ -77,6 +58,43 @@
       "sentiment": {
         "compound": -0.7184,
         "label": "強烈利空"
+      }
+    },
+    {
+      "text": "Wisconsin farmers hopeful for relief from Trump’s new trade deal with China - WPR Wisconsin farmers hopeful for relief from Trump’s new trade deal with China  WPR",
+      "timestamp": "2026-05-18T20:49:15.000Z",
+      "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNamRSVXJucVZDcmd2VGp2WGw2Tjh5NWNvMUhUY2IxV0UwcTJldUNxX0V0NnZ2TVowUkt2WWZJMTlNTzZnakxHNDFZNlZ3ZmNtRTVObnVMcTRWR1c0TlBIdXduOENRSFE5LS03eWtpWnpjLVJhSWRHZkNEZXBlbnh5U18yNnp5YUE?oc=5",
+      "keywords": [
+        "trade deal",
+        "china",
+        "deal"
+      ],
+      "impacts": {
+        "shipping": 0.3,
+        "ic_design": 0.1,
+        "display": -0.1,
+        "ev_supply": -0.3
+      },
+      "sentiment": {
+        "compound": 0.6124,
+        "label": "強烈利多"
+      }
+    },
+    {
+      "text": "Trump is trying to get permanent trade war powers - The Hill Trump is trying to get permanent trade war powers  The Hill",
+      "timestamp": "2026-05-21T15:30:00.000Z",
+      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPb2ZUbElfSEM3T0UyLU5uVVd2a2VFc2QweDZlbDFTZ2pDZlpmaHFXTXh6dE5KLVRPOTFUN1ZXbi1sN2NXVFJpU191Y0U1VlF4SW13cHdOM1pWU1NuMlJLTWxtX3p5LXZ0ME5LTDQ2MnkzOHZ2MV9zREJTSWFlREI2R24zaTk1LTFX0gGOAUFVX3lxTE5VaHNpLWFLa3JLbkRxbk10RGtBal8tSjlWUVd5eFRNWTgxbEF4ajNtT3hmRnpEdnBraWlVRFhheFFlUlNPWVBEMFdUX3NqUUhDbEtRUkcyZmx1M1VqYVJWU2hpVEFCVVd0TlJpdUZGbUd6SjAzdS00aHc4akVoaUItcXhCLWVyWG5hSE9ubGc?oc=5",
+      "keywords": [
+        "trade war"
+      ],
+      "impacts": {
+        "foundry": -0.6,
+        "ic_design": -0.8,
+        "shipping": -0.6
+      },
+      "sentiment": {
+        "compound": 0,
+        "label": "中性"
       }
     },
     {
@@ -119,7 +137,7 @@
       }
     },
     {
-      "text": "China Seeks to Extend US Trade Truce, Sets Limit on 301 Tariffs - Bloomberg.com China Seeks to Extend US Trade Truce, Sets Limit on 301 Tariffs  Bloomberg.com",
+      "text": "China Seeks to Extend US Trade Truce, Sets Limit on 301 Tariffs - Bloomberg China Seeks to Extend US Trade Truce, Sets Limit on 301 Tariffs  Bloomberg",
       "timestamp": "2026-05-20T10:38:30.000Z",
       "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOM1NmQmVUWmFRbGVCM0lMSUpQeFh3YzJDdW9jT0NGTVg5VllNelVLdHlKbk9JVGJXdC1XLTdHN2plTU9laWZ6Mzh0VHRmMUxZM2hEYnZEUGkyanczTHZ1VVRyQjFwc3NNT3Y3amFYeTlVVU5VQ1Y3WmRRYXZ4NXBibnFrRVA5YVFwRG9VYlRmM2dXX1VqdEtiajRiVW5JZEdtOWRFOS05SWk0OTZxQ18yUFJWZw?oc=5",
       "keywords": [
@@ -134,6 +152,26 @@
         "ic_design": -1,
         "display": -1,
         "ev_supply": -1
+      },
+      "sentiment": {
+        "compound": -0.7184,
+        "label": "強烈利空"
+      }
+    },
+    {
+      "text": "Where Are the Tariff Refunds for American Consumers? - The New Yorker Where Are the Tariff Refunds for American Consumers?  The New Yorker",
+      "timestamp": "2026-05-18T10:00:00.000Z",
+      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNOUFIZ01tZF9nZkJkTWVaZE5raVhWNnBJUlJlM2dzak81ZG9HQkd2bzItN18zTW1fUVhheE5TbkQ0ZERodnlPSHJsR0NiSEdHRl9ZYUsxUFhTY0xETWRsWGV0NDdhY05sbGFVcXBmNHdGSnd0Skt0LW1xc0VmNHVLalFheEd6WU9vdk91d0JMcE1ZNzNiczEtZUdDR1g0a0xxLVQw?oc=5",
+      "keywords": [
+        "tariff"
+      ],
+      "impacts": {
+        "foundry": -0.7,
+        "shipping": -0.5,
+        "steel": -0.5,
+        "ic_design": -0.6,
+        "display": -0.5,
+        "ev_supply": -0.4
       },
       "sentiment": {
         "compound": -0.7184,
@@ -160,6 +198,24 @@
       "sentiment": {
         "compound": -0.7184,
         "label": "強烈利空"
+      }
+    },
+    {
+      "text": "US-China Relations in the Trump 2.0 Era: A Timeline - China Briefing US-China Relations in the Trump 2.0 Era: A Timeline  China Briefing",
+      "timestamp": "2026-05-15T01:00:32.000Z",
+      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQVl9rOHkwQl9VYldidlJVajgtZzY4VE5TQmt6eEQ2czIxaTk5N3Ywd3diVXdCT3dKVmhUNmxMRjJ0UnJKdGE2TUtuNklrdWx4UTVGZG5kY1pvWnNEWUhkdmZ5WkV3R0plREV6aTlGc1JEUHVQeG02VzRsVE82OERteXhsMGNfTEVPMllnN0p3?oc=5",
+      "keywords": [
+        "china"
+      ],
+      "impacts": {
+        "ic_design": -0.5,
+        "shipping": -0.4,
+        "display": -0.4,
+        "ev_supply": -0.3
+      },
+      "sentiment": {
+        "compound": 0,
+        "label": "中性"
       }
     },
     {
@@ -196,48 +252,6 @@
       "sentiment": {
         "compound": 0,
         "label": "中性"
-      }
-    },
-    {
-      "text": "Exclusive: US not in a hurry to extend China trade truce, Bessent says - Reuters Exclusive: US not in a hurry to extend China trade truce, Bessent says  Reuters",
-      "timestamp": "2026-05-19T21:00:12.000Z",
-      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPdll1aXJvdlI4dEQxSllZSngwV2F2S1c0a2ozMDlkSnlUUXRlekFtT28tanFuRVZmenpvdEZtcmM5STZ6bHNPZzVubWV5YW9iRTNib0pFbTNoNmlBNFZGYkVFQWpYS3lhZnhGWmxRQXRseTZNOS1pZHh0VVVxcTFiSUpDRlNGUzR6MVhKemNESnBtRURMMW9LaGF0OFhOZGc?oc=5",
-      "keywords": [
-        "china"
-      ],
-      "impacts": {
-        "ic_design": -0.5,
-        "shipping": -0.4,
-        "display": -0.4,
-        "ev_supply": -0.3
-      },
-      "sentiment": {
-        "compound": 0,
-        "label": "中性"
-      }
-    },
-    {
-      "text": "Weaponised dependency: Chinese mercantilism is more damaging to global trade than Trump tariffs - The Economic Times Weaponised dependency: Chinese mercantilism is more damaging to global trade than Trump tariffs  The Economic Times",
-      "timestamp": "2026-05-19T18:27:00.000Z",
-      "url": "https://news.google.com/rss/articles/CBMi_wFBVV95cUxObU1rUXJ6M2RNcy01eWpkeFdiZ2JvSjdSeEFNc0N0cFZwVDZQa0YyQVpwdWtxNFVBbDNEYjdTUGtaWmtfUUExaGJJd1VKMTNMMmpsallVb2dFdWZFZlVVNFRZS0FjRVlQTk54UV9xeE9sMU1HTG9GSF8wTHNJYTMtS01ES0FPb25uakdpdzU2N3hTUl9IdmZFYS1pc0lIMG40MXV6a1RFUDliUng4U3JhNG5mNFpvWkZJdjFQT2Q0YmRkT3lhZlU3VmVVb2tMRmVzS3NiUGJrQTNZQXdOVWU2dXBfS2dVZlZzMU1jVk5nSFRRWEJXRU9NMEd4NDllWkXSAYQCQVVfeXFMTXl4cFFDS2p0QUZvQVpSV013RXZFYUl3T0xUUFA1UFFhQldwWjA5Ump3YkE3dms1QmlEdE5XVE43VVRDT3E2MFR1UFctOW53UUVIaHhxakR1MV96dVd4b0VzNzJXdjZUd2hCRGZsTm4tdGNTODJ1N0tmdUt2UUFIZVNoMmYydUVFMjhBdEVxRTRyaGNDaDVEaE91dC05Y2duZWVEeTJpOVk5dE1WNFRMZHVRX0NtLXRPVXkzZm9sU1hhYlpYdTAxcFh0UmxzOXJhNFRKUGI4dE1ScnRfd29UVWJ4b2ZRZThhNUF6WnF4NExvUFVXZGJZY3dzRUxxTWNMZFh2WFA?oc=5",
-      "keywords": [
-        "tariff",
-        "tariffs",
-        "chinese",
-        "weapon"
-      ],
-      "impacts": {
-        "foundry": -1,
-        "shipping": -1,
-        "steel": -1,
-        "ic_design": -1,
-        "display": -1,
-        "ev_supply": -0.8,
-        "defense": 0.7
-      },
-      "sentiment": {
-        "compound": -0.7184,
-        "label": "強烈利空"
       }
     },
     {
@@ -283,6 +297,24 @@
       }
     },
     {
+      "text": "Exclusive: US not in a hurry to extend China trade truce, Bessent says - Reuters Exclusive: US not in a hurry to extend China trade truce, Bessent says  Reuters",
+      "timestamp": "2026-05-19T21:00:12.000Z",
+      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPdll1aXJvdlI4dEQxSllZSngwV2F2S1c0a2ozMDlkSnlUUXRlekFtT28tanFuRVZmenpvdEZtcmM5STZ6bHNPZzVubWV5YW9iRTNib0pFbTNoNmlBNFZGYkVFQWpYS3lhZnhGWmxRQXRseTZNOS1pZHh0VVVxcTFiSUpDRlNGUzR6MVhKemNESnBtRURMMW9LaGF0OFhOZGc?oc=5",
+      "keywords": [
+        "china"
+      ],
+      "impacts": {
+        "ic_design": -0.5,
+        "shipping": -0.4,
+        "display": -0.4,
+        "ev_supply": -0.3
+      },
+      "sentiment": {
+        "compound": 0,
+        "label": "中性"
+      }
+    },
+    {
       "text": "China warns Trump’s latest tariff moves could damage trade ties - AP News China warns Trump’s latest tariff moves could damage trade ties  AP News",
       "timestamp": "2026-03-16T07:00:00.000Z",
       "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOMlRvSmdFeGxqMHZLY2NyZjI0cWc1UlEyTUNaRTR4WjlBWC1nVnNTRXVpQjhJWE9aWDUtWlUzTDZKMnp3WlZoOHByNmoycFczbldhWlFHNmp3S1VwNW9NN0EyeTRSQzliZkVuVjBleVhIUlc1dXNYanlCVHRMcTRpSE16dngzeWdPenpGeUk4T29Ma1JJaFpR?oc=5",
@@ -297,48 +329,6 @@
         "ic_design": -1,
         "display": -0.9,
         "ev_supply": -0.7
-      },
-      "sentiment": {
-        "compound": -0.7184,
-        "label": "強烈利空"
-      }
-    },
-    {
-      "text": "Tracking Trump’s Tariffs Across the Global Economy - Bloomberg.com Tracking Trump’s Tariffs Across the Global Economy  Bloomberg.com",
-      "timestamp": "2026-05-01T07:00:00.000Z",
-      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE44cWRvMnZYODk0SmduSElrclpzbDRtOF80VHhJRGpiWDJHTGJxNXM4TjEteEhqWGhGaGFPd3ZXWGE0cnFHQzBLdVhha2J3UXZWZkRwUENCMkduUENkb2w3WWd5VzZmLU14?oc=5",
-      "keywords": [
-        "tariff",
-        "tariffs"
-      ],
-      "impacts": {
-        "foundry": -1,
-        "shipping": -1,
-        "steel": -1,
-        "ic_design": -1,
-        "display": -1,
-        "ev_supply": -0.8
-      },
-      "sentiment": {
-        "compound": -0.7184,
-        "label": "強烈利空"
-      }
-    },
-    {
-      "text": "Trump threatens 'much higher' tariffs on EU by 4 of July - BBC Trump threatens 'much higher' tariffs on EU by 4 of July  BBC",
-      "timestamp": "2026-05-07T07:00:00.000Z",
-      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9HUGZxd05pZXVhYzEtN1FYYVhrWEhHRXRjWEJPZzFaQmVaWU85b1hRd0cyeUJpNU5ickRhUWF0cHBHWWg3SXlPblRDTFlBSDdKSDdWVGt0OGVXQQ?oc=5",
-      "keywords": [
-        "tariff",
-        "tariffs"
-      ],
-      "impacts": {
-        "foundry": -1,
-        "shipping": -1,
-        "steel": -1,
-        "ic_design": -1,
-        "display": -1,
-        "ev_supply": -0.8
       },
       "sentiment": {
         "compound": -0.7184,
@@ -364,27 +354,6 @@
       }
     },
     {
-      "text": "Here Are the Countries and Products Subject to Tariffs Now - The New York Times Here Are the Countries and Products Subject to Tariffs Now  The New York Times",
-      "timestamp": "2026-04-28T07:00:00.000Z",
-      "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOUjg2dnFmWVhreXFuam9oQ3dmbnJIM1NrS2VaSkYwbnBZR0I4cjRXODItSHBEX2xmaVI3VmhMNXZfSWVWaDNtOHhHNVZxbjVidWFYYXVvNXZ6UDg3WVQ0N283V1lDdXJiZjFMNDZYdi1pTlIzX2NZS21CQWtaSHJ1a0JzcVh4dGJfamdn?oc=5",
-      "keywords": [
-        "tariff",
-        "tariffs"
-      ],
-      "impacts": {
-        "foundry": -1,
-        "shipping": -1,
-        "steel": -1,
-        "ic_design": -1,
-        "display": -1,
-        "ev_supply": -0.8
-      },
-      "sentiment": {
-        "compound": -0.7184,
-        "label": "強烈利空"
-      }
-    },
-    {
       "text": "The Supreme Court’s Tariff Decision Could Affect U.S.-China Negotiations - Council on Foreign Relations The Supreme Court’s Tariff Decision Could Affect U.S.-China Negotiations  Council on Foreign Relations",
       "timestamp": "2026-02-23T08:00:00.000Z",
       "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPOVBHZzlnWWpycEVRZkliM2VEaFRZbFZQX1Z4bHlPNGtIZUNNSktmMWFOZEpVVXFiMzRNNVNBeUVKZl9DQ3ZIM3hIOVdxME1VMEVPZURBamR0U2lycWQ4b3dZZ1dpRVV1WmlrTnVzRTFLVHc0MnpiNmE3S1lKbHhMV1B2ZEI3OWp3Z1U2RDc5a09Ld2Q3RXZGMWszbzRVYzR1MVZkeFdjU3A?oc=5",
@@ -405,20 +374,81 @@
         "compound": -0.7184,
         "label": "強烈利空"
       }
+    },
+    {
+      "text": "Weaponised dependency: Chinese mercantilism is more damaging to global trade than Trump tariffs - The Economic Times Weaponised dependency: Chinese mercantilism is more damaging to global trade than Trump tariffs  The Economic Times",
+      "timestamp": "2026-05-19T18:27:00.000Z",
+      "url": "https://news.google.com/rss/articles/CBMi_wFBVV95cUxObU1rUXJ6M2RNcy01eWpkeFdiZ2JvSjdSeEFNc0N0cFZwVDZQa0YyQVpwdWtxNFVBbDNEYjdTUGtaWmtfUUExaGJJd1VKMTNMMmpsallVb2dFdWZFZlVVNFRZS0FjRVlQTk54UV9xeE9sMU1HTG9GSF8wTHNJYTMtS01ES0FPb25uakdpdzU2N3hTUl9IdmZFYS1pc0lIMG40MXV6a1RFUDliUng4U3JhNG5mNFpvWkZJdjFQT2Q0YmRkT3lhZlU3VmVVb2tMRmVzS3NiUGJrQTNZQXdOVWU2dXBfS2dVZlZzMU1jVk5nSFRRWEJXRU9NMEd4NDllWkXSAYQCQVVfeXFMTXl4cFFDS2p0QUZvQVpSV013RXZFYUl3T0xUUFA1UFFhQldwWjA5Ump3YkE3dms1QmlEdE5XVE43VVRDT3E2MFR1UFctOW53UUVIaHhxakR1MV96dVd4b0VzNzJXdjZUd2hCRGZsTm4tdGNTODJ1N0tmdUt2UUFIZVNoMmYydUVFMjhBdEVxRTRyaGNDaDVEaE91dC05Y2duZWVEeTJpOVk5dE1WNFRMZHVRX0NtLXRPVXkzZm9sU1hhYlpYdTAxcFh0UmxzOXJhNFRKUGI4dE1ScnRfd29UVWJ4b2ZRZThhNUF6WnF4NExvUFVXZGJZY3dzRUxxTWNMZFh2WFA?oc=5",
+      "keywords": [
+        "tariff",
+        "tariffs",
+        "chinese",
+        "weapon"
+      ],
+      "impacts": {
+        "foundry": -1,
+        "shipping": -1,
+        "steel": -1,
+        "ic_design": -1,
+        "display": -1,
+        "ev_supply": -0.8,
+        "defense": 0.7
+      },
+      "sentiment": {
+        "compound": -0.7184,
+        "label": "強烈利空"
+      }
     }
   ],
-  "deltas": [],
-  "topDeltas": [],
+  "deltas": [
+    {
+      "sector": "foundry",
+      "sectorName": "晶圓代工",
+      "prev": -0.641,
+      "current": -0.539,
+      "delta": 0.102,
+      "momentum": "↑ 壓力緩解",
+      "accelerating": true
+    },
+    {
+      "sector": "steel",
+      "sectorName": "鋼鐵",
+      "prev": -0.471,
+      "current": -0.414,
+      "delta": 0.057,
+      "momentum": "↑ 壓力緩解",
+      "accelerating": true
+    }
+  ],
+  "topDeltas": [
+    {
+      "sector": "foundry",
+      "sectorName": "晶圓代工",
+      "prev": -0.641,
+      "current": -0.539,
+      "delta": 0.102,
+      "momentum": "↑ 壓力緩解",
+      "accelerating": true
+    },
+    {
+      "sector": "steel",
+      "sectorName": "鋼鐵",
+      "prev": -0.471,
+      "current": -0.414,
+      "delta": 0.057,
+      "momentum": "↑ 壓力緩解",
+      "accelerating": true
+    }
+  ],
   "totalAnalyzed": 100,
   "sources": [
     "Google News"
   ],
   "sectorState": {
     "foundry": {
-      "score": -0.641,
-      "lastUpdated": "2026-05-21T20:43:13.728Z",
+      "score": -0.539,
+      "lastUpdated": "2026-05-22T01:09:59.138Z",
       "deltaHistory": [
-        0.119,
         -0.133,
         0.09400000000000008,
         0.08399999999999996,
@@ -427,14 +457,14 @@
         0.04300000000000004,
         -0.051000000000000045,
         -0.040000000000000036,
-        0.03500000000000003
+        0.03500000000000003,
+        0.10199999999999998
       ]
     },
     "shipping": {
-      "score": -0.865,
-      "lastUpdated": "2026-05-21T20:43:13.728Z",
+      "score": -0.853,
+      "lastUpdated": "2026-05-22T01:09:59.138Z",
       "deltaHistory": [
-        0.02300000000000002,
         -0.019000000000000017,
         0.013000000000000012,
         0.009000000000000008,
@@ -443,14 +473,14 @@
         0.017000000000000015,
         -0.01200000000000001,
         0.01200000000000001,
-        -0.017000000000000015
+        -0.017000000000000015,
+        0.01200000000000001
       ]
     },
     "steel": {
-      "score": -0.471,
-      "lastUpdated": "2026-05-21T20:43:13.728Z",
+      "score": -0.414,
+      "lastUpdated": "2026-05-22T01:09:59.138Z",
       "deltaHistory": [
-        0.10899999999999999,
         -0.129,
         0.08599999999999997,
         0.07900000000000001,
@@ -459,12 +489,13 @@
         0.03499999999999992,
         -0.017000000000000015,
         0.08000000000000007,
-        0.0010000000000000009
+        0.0010000000000000009,
+        0.056999999999999995
       ]
     },
     "ic_design": {
       "score": -1,
-      "lastUpdated": "2026-05-21T20:43:13.728Z",
+      "lastUpdated": "2026-05-22T01:09:59.138Z",
       "deltaHistory": [
         0,
         0,
@@ -479,10 +510,9 @@
       ]
     },
     "display": {
-      "score": -0.782,
-      "lastUpdated": "2026-05-21T20:43:13.728Z",
+      "score": -0.814,
+      "lastUpdated": "2026-05-22T01:09:59.138Z",
       "deltaHistory": [
-        0.010000000000000009,
         -0.02300000000000002,
         0.019000000000000017,
         0.019000000000000017,
@@ -491,14 +521,14 @@
         -0.005999999999999894,
         -0.0020000000000000018,
         0.17299999999999993,
-        -0.013000000000000012
+        -0.013000000000000012,
+        -0.03199999999999992
       ]
     },
     "ev_supply": {
-      "score": -0.667,
-      "lastUpdated": "2026-05-21T20:43:13.728Z",
+      "score": -0.683,
+      "lastUpdated": "2026-05-22T01:09:59.138Z",
       "deltaHistory": [
-        0.014000000000000012,
         -0.018999999999999906,
         0.04799999999999993,
         0.03400000000000003,
@@ -507,14 +537,14 @@
         -0.020000000000000018,
         0,
         0.14400000000000002,
-        -0.014000000000000012
+        -0.014000000000000012,
+        -0.016000000000000014
       ]
     },
     "ai_server": {
-      "score": 0.138,
-      "lastUpdated": "2026-05-21T20:43:13.728Z",
+      "score": 0.147,
+      "lastUpdated": "2026-05-22T01:09:59.138Z",
       "deltaHistory": [
-        -0.008,
         0.11500000000000002,
         0.023999999999999994,
         0.014999999999999986,
@@ -523,14 +553,14 @@
         -0.05400000000000002,
         -0.006000000000000005,
         -0.015999999999999986,
-        0.013000000000000012
+        0.013000000000000012,
+        0.00899999999999998
       ]
     },
     "defense": {
-      "score": 0.026,
-      "lastUpdated": "2026-05-21T20:43:13.728Z",
+      "score": 0.008,
+      "lastUpdated": "2026-05-22T01:09:59.138Z",
       "deltaHistory": [
-        -0.015,
         0.004,
         -0.002999999999999999,
         0.004,
@@ -539,7 +569,8 @@
         -0.018000000000000002,
         0,
         0.006999999999999999,
-        0.0019999999999999983
+        0.0019999999999999983,
+        -0.018
       ]
     },
     "solar": {
@@ -592,9 +623,9 @@
     },
     "semiconductor_equip": {
       "score": 0,
-      "lastUpdated": "2026-05-21T20:43:13.728Z",
+      "lastUpdated": "2026-05-22T01:09:59.138Z",
       "deltaHistory": [
-        -0.001,
+        0,
         0,
         0,
         0,
@@ -608,7 +639,7 @@
     },
     "robotics": {
       "score": 0,
-      "lastUpdated": "2026-05-21T20:43:13.728Z",
+      "lastUpdated": "2026-05-22T01:09:59.138Z",
       "deltaHistory": [
         0,
         0,
