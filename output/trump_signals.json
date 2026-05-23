@@ -1,27 +1,22 @@
 {
-  "updatedAt": "2026-05-22T20:39:16.349Z",
+  "updatedAt": "2026-05-23T01:06:05.398Z",
   "posts": [
     {
-      "text": "China’s Retaliatory Tariffs Cost U.S. Ag Exporters $15 Billion, Study Says - Successful Farming China’s Retaliatory Tariffs Cost U.S. Ag Exporters $15 Billion, Study Says  Successful Farming",
-      "timestamp": "2026-05-22T16:53:37.000Z",
-      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPN1N0N1AtVXpyaHBTaFdLemNoZktMNXlOSHpaWGlXSnM3dS1aZnJBcHVQQnpHVjBqbFRlcExIYnRHQkNuWHBMWi0tQzFTbDBINEJwcXVCSnkxSVE5QnUtdUlkdGswM3VUZXBZNVRMNmxCRTdfWnc0dVozWmxpMk53aEY4cVU1b0diT3VraHRxZERLeDcyV2NYbjZaMU9sdHJIMVF4Z3NPQTAxSC0zWDV5b1NabDBvQmExcm42Tg?oc=5",
+      "text": "The aftermath of Trump-Xi summit: comparing U.S. and China announcements - NPR The aftermath of Trump-Xi summit: comparing U.S. and China announcements  NPR",
+      "timestamp": "2026-05-22T11:39:37.000Z",
+      "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNMVNrTFRWN3FRYWRoYlBYWHBUWWJ6c0ZzaGZ1eE55ZDl0dXlWSlVfYW5TQm9wdUNLN2hjTGREWWlCLW9RajJvZENicEhtX2lnSk42U2pERGRvMXdodnB5azgyWEJMbWVoTWdiaGEzQUo3NjV2NU51V3RfTXNWN3dGNlhGTWhXV3M?oc=5",
       "keywords": [
-        "tariff",
-        "tariffs",
-        "china",
-        "port"
+        "china"
       ],
       "impacts": {
-        "foundry": -1,
-        "shipping": -1,
-        "steel": -1,
-        "ic_design": -1,
-        "display": -1,
-        "ev_supply": -1
+        "ic_design": -0.5,
+        "shipping": -0.4,
+        "display": -0.4,
+        "ev_supply": -0.3
       },
       "sentiment": {
-        "compound": -0.7184,
-        "label": "強烈利空"
+        "compound": 0,
+        "label": "中性"
       }
     },
     {
@@ -41,6 +36,47 @@
         "ic_design": -1,
         "display": -0.9,
         "ev_supply": -0.7
+      },
+      "sentiment": {
+        "compound": -0.7184,
+        "label": "強烈利空"
+      }
+    },
+    {
+      "text": "The U.S.-China Trade Relationship: What’s Behind the Competition? - Council on Foreign Relations The U.S.-China Trade Relationship: What’s Behind the Competition?  Council on Foreign Relations",
+      "timestamp": "2026-05-15T18:56:00.000Z",
+      "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE85R1Rxa096czZxUGpuWjB0T0RCeWtvNzUwM2kxcHRhVXp4MjBJUXVIbC1vU2EtRGZ6c2MxQnVNamVJUHhpZU4yMVBqRUZ3YUgxNGVRT0pRSWYteGpFeW1mRlBuazdselRXZDdpaVY1NW0xS2hzSlUtb1p1VWhwdw?oc=5",
+      "keywords": [
+        "china"
+      ],
+      "impacts": {
+        "ic_design": -0.5,
+        "shipping": -0.4,
+        "display": -0.4,
+        "ev_supply": -0.3
+      },
+      "sentiment": {
+        "compound": 0,
+        "label": "中性"
+      }
+    },
+    {
+      "text": "China’s Retaliatory Tariffs Cost U.S. Ag Exporters $15 Billion, Study Says - Successful Farming China’s Retaliatory Tariffs Cost U.S. Ag Exporters $15 Billion, Study Says  Successful Farming",
+      "timestamp": "2026-05-22T16:53:37.000Z",
+      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPN1N0N1AtVXpyaHBTaFdLemNoZktMNXlOSHpaWGlXSnM3dS1aZnJBcHVQQnpHVjBqbFRlcExIYnRHQkNuWHBMWi0tQzFTbDBINEJwcXVCSnkxSVE5QnUtdUlkdGswM3VUZXBZNVRMNmxCRTdfWnc0dVozWmxpMk53aEY4cVU1b0diT3VraHRxZERLeDcyV2NYbjZaMU9sdHJIMVF4Z3NPQTAxSC0zWDV5b1NabDBvQmExcm42Tg?oc=5",
+      "keywords": [
+        "tariff",
+        "tariffs",
+        "china",
+        "port"
+      ],
+      "impacts": {
+        "foundry": -1,
+        "shipping": -1,
+        "steel": -1,
+        "ic_design": -1,
+        "display": -1,
+        "ev_supply": -1
       },
       "sentiment": {
         "compound": -0.7184,
@@ -69,21 +105,47 @@
       }
     },
     {
-      "text": "From Tesla to Visa, C.E.O.s on Trump’s China Trip Sought Relief - The New York Times From Tesla to Visa, C.E.O.s on Trump’s China Trip Sought Relief  The New York Times",
-      "timestamp": "2026-05-21T22:31:07.000Z",
-      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPSWFSa1JLUHhaMXVsQkx5QVo2OHZpMFp6SkR0TzRibWVSUjVHNllGb3hmTEVlbzRoUU0xdkZIWGU3Zlhkb3ZaOWJqdldmSWxScUJhSVhTUXBMT0xabHhER1JrcWxZR18yWVQ1cWx5RVMtcGdKX2FtTTRadVNCdnpJUkVybUktLWNYNDBqT1lGTUcyYnM?oc=5",
+      "text": "U.S. and China seek to repair damage from tariff war that sent trade into a freefall - PBS U.S. and China seek to repair damage from tariff war that sent trade into a freefall  PBS",
+      "timestamp": "2026-05-13T07:00:00.000Z",
+      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOaXpVTGFveHN3VENvRUpwRkIwYnRGcmk2aGtXVlE0eVpERTgwR3pIV3pVVUowT0hGb0gxMHlhQXBxNmR0N0VUUFllcVh3QXk3d3dTT05nR2dSX3JzcGJrR29hSmRxYVhZODA2OHJjSHdVaWdTUE9RVWJmZ1YzbFRXZHZsUU5vdXRVOHVSMFJjVjVMUjV4TFB0NVV3TnpMdVZLYmpIb18wYm9NaktmanVQUVg2WTNfdURxMEZOdNIBwgFBVV95cUxPUmZrQ0hsOHNQWUw0M1dvZHBfeFBWaFRobWZERmNlczVVZ2JsMlkyTl9TbUw0SGRyenE3Q0VHaGQzLW05T3k2S3NLVGNIQzh5SWxybU50RGVUXzJSSk9xQ0VnbHJEMVFUOGtfQUhFT210cjBRd2lWQUl5Q2duNmd6cFpzZmVRZHRTOGJaZlVuMWhSMm5WbGFOSEc2SkJHajM4WXk1cjVPSTZXSk0wWjM3NEo4ZWtPTkpzME1uZzRpTHR6QQ?oc=5",
       "keywords": [
+        "ai",
+        "tariff",
         "china"
       ],
       "impacts": {
-        "ic_design": -0.5,
-        "shipping": -0.4,
-        "display": -0.4,
-        "ev_supply": -0.3
+        "ai_server": 0.7,
+        "foundry": -0.4,
+        "shipping": -0.9,
+        "steel": -0.5,
+        "ic_design": -1,
+        "display": -0.9,
+        "ev_supply": -0.7
       },
       "sentiment": {
-        "compound": 0,
-        "label": "中性"
+        "compound": -0.7184,
+        "label": "強烈利空"
+      }
+    },
+    {
+      "text": "Trump’s Latest Tariff Setback Looms Over China Talks - The New York Times Trump’s Latest Tariff Setback Looms Over China Talks  The New York Times",
+      "timestamp": "2026-05-08T07:00:00.000Z",
+      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1xZk53NFUybTdOUDA2T0lCUUZ4bi10M3hja1N4MW9tYVgzc2dOUkdEa1dRUTc2MjNSVGpMWWF5aUd4SVJlS3p4NUIxcDJ6ODF3VEdGQk5lckpMbFl0QzFPQ2I4R3FFX09HbHV0TTJSMVpoTjd0VlVEdVBLYnBfZzQ?oc=5",
+      "keywords": [
+        "tariff",
+        "china"
+      ],
+      "impacts": {
+        "foundry": -0.7,
+        "shipping": -0.9,
+        "steel": -0.5,
+        "ic_design": -1,
+        "display": -0.9,
+        "ev_supply": -0.7
+      },
+      "sentiment": {
+        "compound": -0.7184,
+        "label": "強烈利空"
       }
     },
     {
@@ -166,6 +228,24 @@
       }
     },
     {
+      "text": "Trump’s Board of Trade Move Signals the U.S. has Given Up on Changing China - The Wire China Trump’s Board of Trade Move Signals the U.S. has Given Up on Changing China  The Wire China",
+      "timestamp": "2026-05-07T07:00:00.000Z",
+      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNUk9QSjQ3d01qdVRnZXZVRFdVMHZzbnpoaF9mdlFfTjNnSjZUV1FvSTN0bnYxWENuUENHZVFGazlfLWt1c0JZNWlaUUYzVGUyekhRQ0xObWdHaDNFNHNiNm5mUWN3azI3MG5uSUhaM2lzLTNNSHNwR010SlE4MkNodlo3S0hiRFZlTFpiaXlJbE5OUlNtcEhwbTF4OE1JMGtfTFRGWWt4Q0RFRUNnazVsemdIQlI?oc=5",
+      "keywords": [
+        "china"
+      ],
+      "impacts": {
+        "ic_design": -0.5,
+        "shipping": -0.4,
+        "display": -0.4,
+        "ev_supply": -0.3
+      },
+      "sentiment": {
+        "compound": 0,
+        "label": "中性"
+      }
+    },
+    {
       "text": "US-China trade talks back in focus at APEC meeting - Nikkei Asia US-China trade talks back in focus at APEC meeting  Nikkei Asia",
       "timestamp": "2026-05-22T02:46:00.000Z",
       "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQRjNHdkVXUExfb1JxV1lmX2hNTXo0Y1FUc0JHLTNWSnc2X0FfVm1Nb2F5YWxBdktSWFc2UjNVZ0VSVjY2MEFKeXA2bU51dWpBbUpYbTRnZ3JNTWgtOHlTU1pwUUtSNTJwZ2hhMDFVazZjVnpiLUxzS01qNVJVUXRkc0FaMEVzMXhTUUVNZVNTYkc4N2JGS2xF?oc=5",
@@ -205,27 +285,6 @@
       }
     },
     {
-      "text": "Trump’s Latest Tariff Setback Looms Over China Talks - The New York Times Trump’s Latest Tariff Setback Looms Over China Talks  The New York Times",
-      "timestamp": "2026-05-08T07:00:00.000Z",
-      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1xZk53NFUybTdOUDA2T0lCUUZ4bi10M3hja1N4MW9tYVgzc2dOUkdEa1dRUTc2MjNSVGpMWWF5aUd4SVJlS3p4NUIxcDJ6ODF3VEdGQk5lckpMbFl0QzFPQ2I4R3FFX09HbHV0TTJSMVpoTjd0VlVEdVBLYnBfZzQ?oc=5",
-      "keywords": [
-        "tariff",
-        "china"
-      ],
-      "impacts": {
-        "foundry": -0.7,
-        "shipping": -0.9,
-        "steel": -0.5,
-        "ic_design": -1,
-        "display": -0.9,
-        "ev_supply": -0.7
-      },
-      "sentiment": {
-        "compound": -0.7184,
-        "label": "強烈利空"
-      }
-    },
-    {
       "text": "Trump’s China tinkering won’t end the trade war - SMH.com.au Trump’s China tinkering won’t end the trade war  SMH.com.au",
       "timestamp": "2026-05-20T02:04:00.000Z",
       "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxObmNjT2g0aV8yazJ1X1R2WkR2dU1Lem40ZFFwV1NDRVpEcl9mWm1ubDFEZWdZaHhKY3kyRkJNdi16aFlQZFVWT21zSjR2dVhTQUJjU1p2cTVpSzNLdzRuVy0yV1p1LVk0N3haRzlYeUxzamV3UjlhSEU5WG5DaHFwNGJ1TkYwVF8xUktIOFJuNG9RTjlyM1JUZ0ZSVENKRmNDem84emxMTWZ4NEZo?oc=5",
@@ -246,95 +305,48 @@
       }
     },
     {
-      "text": "China warns Trump’s latest tariff moves could damage trade ties - AP News China warns Trump’s latest tariff moves could damage trade ties  AP News",
-      "timestamp": "2026-03-16T07:00:00.000Z",
-      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOMlRvSmdFeGxqMHZLY2NyZjI0cWc1UlEyTUNaRTR4WjlBWC1nVnNTRXVpQjhJWE9aWDUtWlUzTDZKMnp3WlZoOHByNmoycFczbldhWlFHNmp3S1VwNW9NN0EyeTRSQzliZkVuVjBleVhIUlc1dXNYanlCVHRMcTRpSE16dngzeWdPenpGeUk4T29Ma1JJaFpR?oc=5",
+      "text": "From Tesla to Visa, C.E.O.s on Trump’s China Trip Sought Relief - The New York Times From Tesla to Visa, C.E.O.s on Trump’s China Trip Sought Relief  The New York Times",
+      "timestamp": "2026-05-21T16:24:34.000Z",
+      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPSWFSa1JLUHhaMXVsQkx5QVo2OHZpMFp6SkR0TzRibWVSUjVHNllGb3hmTEVlbzRoUU0xdkZIWGU3Zlhkb3ZaOWJqdldmSWxScUJhSVhTUXBMT0xabHhER1JrcWxZR18yWVQ1cWx5RVMtcGdKX2FtTTRadVNCdnpJUkVybUktLWNYNDBqT1lGTUcyYnM?oc=5",
       "keywords": [
-        "tariff",
         "china"
       ],
       "impacts": {
-        "foundry": -0.7,
-        "shipping": -0.9,
-        "steel": -0.5,
-        "ic_design": -1,
-        "display": -0.9,
-        "ev_supply": -0.7
+        "ic_design": -0.5,
+        "shipping": -0.4,
+        "display": -0.4,
+        "ev_supply": -0.3
       },
       "sentiment": {
-        "compound": -0.7184,
-        "label": "強烈利空"
+        "compound": 0,
+        "label": "中性"
       }
     },
     {
-      "text": "The Supreme Court’s Tariff Decision Could Affect U.S.-China Negotiations - Council on Foreign Relations The Supreme Court’s Tariff Decision Could Affect U.S.-China Negotiations  Council on Foreign Relations",
-      "timestamp": "2026-02-23T08:00:00.000Z",
-      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPOVBHZzlnWWpycEVRZkliM2VEaFRZbFZQX1Z4bHlPNGtIZUNNSktmMWFOZEpVVXFiMzRNNVNBeUVKZl9DQ3ZIM3hIOVdxME1VMEVPZURBamR0U2lycWQ4b3dZZ1dpRVV1WmlrTnVzRTFLVHc0MnpiNmE3S1lKbHhMV1B2ZEI3OWp3Z1U2RDc5a09Ld2Q3RXZGMWszbzRVYzR1MVZkeFdjU3A?oc=5",
+      "text": "U.S. President Trump's renewed trade war with China - Reuters U.S. President Trump's renewed trade war with China  Reuters",
+      "timestamp": "2026-05-06T07:00:00.000Z",
+      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQWl9jV2ItS2ZFcUFmSGU0SVlHLTNwU2xBeWY3dnowOWRPd0YxNHhQa1Y4LVNSODFPR29pNmVWREpwNjBMZnpjcndGTWRzTzAxWGxraFRGVlhXeW9taVFFRUJ6Q09SWEV6akg5dFRXQ252RkdKcVA1UHNkQUQ2MGRFd3JtaUIxRnUxQ2thalNLSFlBeW1yYnRZTTJCMnQ?oc=5",
       "keywords": [
-        "tariff",
-        "china",
-        "negotiation"
-      ],
-      "impacts": {
-        "foundry": -0.7,
-        "shipping": -0.7,
-        "steel": -0.5,
-        "ic_design": -0.9,
-        "display": -0.9,
-        "ev_supply": -0.7
-      },
-      "sentiment": {
-        "compound": -0.7184,
-        "label": "強烈利空"
-      }
-    },
-    {
-      "text": "How Trump’s Tariffs Are Choking U.S.-China Trade - WSJ How Trump’s Tariffs Are Choking U.S.-China Trade  WSJ",
-      "timestamp": "2026-03-27T07:00:00.000Z",
-      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOcXlMTFpuVVVUa3R5ZWlfc3BHWElJQWh4SWVGajVYb19ieUJ5QUprOFpGYXhRTTVwY1UxYXpZNm9FTlZqTTBxMnpxUlZzR0xVaTlaQ09tZVJ3U0lOQmRsdHdSeURpem9KLVZuVHhvV1E1UlBsY1YxR1Y3X0UwNlFFc2NxdjVxVWNzbXU3VVhmZjdSUWM?oc=5",
-      "keywords": [
-        "tariff",
-        "tariffs",
+        "trade war with china",
+        "trade war",
         "china"
       ],
       "impacts": {
         "foundry": -1,
-        "shipping": -1,
-        "steel": -1,
         "ic_design": -1,
-        "display": -1,
-        "ev_supply": -1
+        "shipping": -1,
+        "display": -0.4,
+        "ev_supply": -0.3
       },
       "sentiment": {
-        "compound": -0.7184,
-        "label": "強烈利空"
+        "compound": 0,
+        "label": "中性"
       }
     },
     {
       "text": "Tracking Trump’s Tariffs Across the Global Economy - Bloomberg.com Tracking Trump’s Tariffs Across the Global Economy  Bloomberg.com",
       "timestamp": "2026-05-01T07:00:00.000Z",
       "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE44cWRvMnZYODk0SmduSElrclpzbDRtOF80VHhJRGpiWDJHTGJxNXM4TjEteEhqWGhGaGFPd3ZXWGE0cnFHQzBLdVhha2J3UXZWZkRwUENCMkduUENkb2w3WWd5VzZmLU14?oc=5",
-      "keywords": [
-        "tariff",
-        "tariffs"
-      ],
-      "impacts": {
-        "foundry": -1,
-        "shipping": -1,
-        "steel": -1,
-        "ic_design": -1,
-        "display": -1,
-        "ev_supply": -0.8
-      },
-      "sentiment": {
-        "compound": -0.7184,
-        "label": "強烈利空"
-      }
-    },
-    {
-      "text": "Trump threatens 'much higher' tariffs on EU by 4 of July - BBC Trump threatens 'much higher' tariffs on EU by 4 of July  BBC",
-      "timestamp": "2026-05-07T07:00:00.000Z",
-      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9HUGZxd05pZXVhYzEtN1FYYVhrWEhHRXRjWEJPZzFaQmVaWU85b1hRd0cyeUJpNU5ickRhUWF0cHBHWWg3SXlPblRDTFlBSDdKSDdWVGt0OGVXQQ?oc=5",
       "keywords": [
         "tariff",
         "tariffs"
@@ -371,44 +383,20 @@
       }
     },
     {
-      "text": "Here Are the Countries and Products Subject to Tariffs Now - The New York Times Here Are the Countries and Products Subject to Tariffs Now  The New York Times",
-      "timestamp": "2026-04-28T07:00:00.000Z",
-      "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOUjg2dnFmWVhreXFuam9oQ3dmbnJIM1NrS2VaSkYwbnBZR0I4cjRXODItSHBEX2xmaVI3VmhMNXZfSWVWaDNtOHhHNVZxbjVidWFYYXVvNXZ6UDg3WVQ0N283V1lDdXJiZjFMNDZYdi1pTlIzX2NZS21CQWtaSHJ1a0JzcVh4dGJfamdn?oc=5",
+      "text": "China warns Trump’s latest tariff moves could damage trade ties - AP News China warns Trump’s latest tariff moves could damage trade ties  AP News",
+      "timestamp": "2026-03-16T07:00:00.000Z",
+      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOMlRvSmdFeGxqMHZLY2NyZjI0cWc1UlEyTUNaRTR4WjlBWC1nVnNTRXVpQjhJWE9aWDUtWlUzTDZKMnp3WlZoOHByNmoycFczbldhWlFHNmp3S1VwNW9NN0EyeTRSQzliZkVuVjBleVhIUlc1dXNYanlCVHRMcTRpSE16dngzeWdPenpGeUk4T29Ma1JJaFpR?oc=5",
       "keywords": [
         "tariff",
-        "tariffs"
+        "china"
       ],
       "impacts": {
-        "foundry": -1,
-        "shipping": -1,
-        "steel": -1,
+        "foundry": -0.7,
+        "shipping": -0.9,
+        "steel": -0.5,
         "ic_design": -1,
-        "display": -1,
-        "ev_supply": -0.8
-      },
-      "sentiment": {
-        "compound": -0.7184,
-        "label": "強烈利空"
-      }
-    },
-    {
-      "text": "Weaponised dependency: Chinese mercantilism is more damaging to global trade than Trump tariffs - The Economic Times Weaponised dependency: Chinese mercantilism is more damaging to global trade than Trump tariffs  The Economic Times",
-      "timestamp": "2026-05-19T18:27:00.000Z",
-      "url": "https://news.google.com/rss/articles/CBMi_wFBVV95cUxObU1rUXJ6M2RNcy01eWpkeFdiZ2JvSjdSeEFNc0N0cFZwVDZQa0YyQVpwdWtxNFVBbDNEYjdTUGtaWmtfUUExaGJJd1VKMTNMMmpsallVb2dFdWZFZlVVNFRZS0FjRVlQTk54UV9xeE9sMU1HTG9GSF8wTHNJYTMtS01ES0FPb25uakdpdzU2N3hTUl9IdmZFYS1pc0lIMG40MXV6a1RFUDliUng4U3JhNG5mNFpvWkZJdjFQT2Q0YmRkT3lhZlU3VmVVb2tMRmVzS3NiUGJrQTNZQXdOVWU2dXBfS2dVZlZzMU1jVk5nSFRRWEJXRU9NMEd4NDllWkXSAYQCQVVfeXFMTXl4cFFDS2p0QUZvQVpSV013RXZFYUl3T0xUUFA1UFFhQldwWjA5Ump3YkE3dms1QmlEdE5XVE43VVRDT3E2MFR1UFctOW53UUVIaHhxakR1MV96dVd4b0VzNzJXdjZUd2hCRGZsTm4tdGNTODJ1N0tmdUt2UUFIZVNoMmYydUVFMjhBdEVxRTRyaGNDaDVEaE91dC05Y2duZWVEeTJpOVk5dE1WNFRMZHVRX0NtLXRPVXkzZm9sU1hhYlpYdTAxcFh0UmxzOXJhNFRKUGI4dE1ScnRfd29UVWJ4b2ZRZThhNUF6WnF4NExvUFVXZGJZY3dzRUxxTWNMZFh2WFA?oc=5",
-      "keywords": [
-        "tariff",
-        "tariffs",
-        "chinese",
-        "weapon"
-      ],
-      "impacts": {
-        "foundry": -1,
-        "shipping": -1,
-        "steel": -1,
-        "ic_design": -1,
-        "display": -1,
-        "ev_supply": -0.8,
-        "defense": 0.7
+        "display": -0.9,
+        "ev_supply": -0.7
       },
       "sentiment": {
         "compound": -0.7184,
@@ -418,59 +406,59 @@
   ],
   "deltas": [
     {
-      "sector": "steel",
-      "sectorName": "鋼鐵",
-      "prev": -0.518,
-      "current": -0.628,
-      "delta": -0.11,
-      "momentum": "↓ 壓力加深",
-      "accelerating": true
-    },
-    {
       "sector": "foundry",
       "sectorName": "晶圓代工",
-      "prev": -0.62,
-      "current": -0.724,
-      "delta": -0.104,
-      "momentum": "↓ 壓力加深",
+      "prev": -0.724,
+      "current": -0.571,
+      "delta": 0.153,
+      "momentum": "↑ 壓力緩解",
       "accelerating": true
     },
     {
-      "sector": "shipping",
-      "sectorName": "航運",
-      "prev": -0.875,
-      "current": -0.931,
-      "delta": -0.056,
-      "momentum": "↓ 壓力加深",
+      "sector": "steel",
+      "sectorName": "鋼鐵",
+      "prev": -0.628,
+      "current": -0.503,
+      "delta": 0.125,
+      "momentum": "↑ 壓力緩解",
+      "accelerating": true
+    },
+    {
+      "sector": "ai_server",
+      "sectorName": "AI 伺服器",
+      "prev": 0.104,
+      "current": 0.17,
+      "delta": 0.066,
+      "momentum": "↑ 訊號強化",
       "accelerating": true
     }
   ],
   "topDeltas": [
     {
-      "sector": "steel",
-      "sectorName": "鋼鐵",
-      "prev": -0.518,
-      "current": -0.628,
-      "delta": -0.11,
-      "momentum": "↓ 壓力加深",
-      "accelerating": true
-    },
-    {
       "sector": "foundry",
       "sectorName": "晶圓代工",
-      "prev": -0.62,
-      "current": -0.724,
-      "delta": -0.104,
-      "momentum": "↓ 壓力加深",
+      "prev": -0.724,
+      "current": -0.571,
+      "delta": 0.153,
+      "momentum": "↑ 壓力緩解",
       "accelerating": true
     },
     {
-      "sector": "shipping",
-      "sectorName": "航運",
-      "prev": -0.875,
-      "current": -0.931,
-      "delta": -0.056,
-      "momentum": "↓ 壓力加深",
+      "sector": "steel",
+      "sectorName": "鋼鐵",
+      "prev": -0.628,
+      "current": -0.503,
+      "delta": 0.125,
+      "momentum": "↑ 壓力緩解",
+      "accelerating": true
+    },
+    {
+      "sector": "ai_server",
+      "sectorName": "AI 伺服器",
+      "prev": 0.104,
+      "current": 0.17,
+      "delta": 0.066,
+      "momentum": "↑ 訊號強化",
       "accelerating": true
     }
   ],
@@ -480,10 +468,9 @@
   ],
   "sectorState": {
     "foundry": {
-      "score": -0.724,
-      "lastUpdated": "2026-05-22T20:39:16.349Z",
+      "score": -0.571,
+      "lastUpdated": "2026-05-23T01:06:05.398Z",
       "deltaHistory": [
-        0.04300000000000004,
         -0.051000000000000045,
         -0.040000000000000036,
         0.03500000000000003,
@@ -492,14 +479,14 @@
         -0.03700000000000003,
         -0.02400000000000002,
         0.06300000000000006,
-        -0.10399999999999998
+        -0.10399999999999998,
+        0.15300000000000002
       ]
     },
     "shipping": {
-      "score": -0.931,
-      "lastUpdated": "2026-05-22T20:39:16.349Z",
+      "score": -0.91,
+      "lastUpdated": "2026-05-23T01:06:05.398Z",
       "deltaHistory": [
-        0.017000000000000015,
         -0.01200000000000001,
         0.01200000000000001,
         -0.017000000000000015,
@@ -508,14 +495,14 @@
         -0.0050000000000000044,
         -0.0030000000000000027,
         -0.0050000000000000044,
-        -0.05600000000000005
+        -0.05600000000000005,
+        0.02100000000000002
       ]
     },
     "steel": {
-      "score": -0.628,
-      "lastUpdated": "2026-05-22T20:39:16.349Z",
+      "score": -0.503,
+      "lastUpdated": "2026-05-23T01:06:05.398Z",
       "deltaHistory": [
-        0.03499999999999992,
         -0.017000000000000015,
         0.08000000000000007,
         0.0010000000000000009,
@@ -524,12 +511,13 @@
         -0.02100000000000002,
         -0.039999999999999925,
         0.05599999999999994,
-        -0.10999999999999999
+        -0.10999999999999999,
+        0.125
       ]
     },
     "ic_design": {
       "score": -1,
-      "lastUpdated": "2026-05-22T20:39:16.349Z",
+      "lastUpdated": "2026-05-23T01:06:05.398Z",
       "deltaHistory": [
         0,
         0,
@@ -544,10 +532,9 @@
       ]
     },
     "display": {
-      "score": -0.88,
-      "lastUpdated": "2026-05-22T20:39:16.349Z",
+      "score": -0.865,
+      "lastUpdated": "2026-05-23T01:06:05.398Z",
       "deltaHistory": [
-        -0.005999999999999894,
         -0.0020000000000000018,
         0.17299999999999993,
         -0.013000000000000012,
@@ -556,14 +543,14 @@
         -0.018000000000000016,
         -0.031000000000000028,
         -0.01200000000000001,
-        0.014000000000000012
+        0.014000000000000012,
+        0.015000000000000013
       ]
     },
     "ev_supply": {
-      "score": -0.747,
-      "lastUpdated": "2026-05-22T20:39:16.349Z",
+      "score": -0.71,
+      "lastUpdated": "2026-05-23T01:06:05.398Z",
       "deltaHistory": [
-        -0.020000000000000018,
         0,
         0.14400000000000002,
         -0.014000000000000012,
@@ -572,14 +559,14 @@
         -0.01200000000000001,
         -0.03700000000000003,
         0.007000000000000006,
-        0.0010000000000000009
+        0.0010000000000000009,
+        0.03700000000000003
       ]
     },
     "ai_server": {
-      "score": 0.104,
-      "lastUpdated": "2026-05-22T20:39:16.349Z",
+      "score": 0.17,
+      "lastUpdated": "2026-05-23T01:06:05.398Z",
       "deltaHistory": [
-        -0.05400000000000002,
         -0.006000000000000005,
         -0.015999999999999986,
         0.013000000000000012,
@@ -588,14 +575,14 @@
         -0.027999999999999997,
         0.0010000000000000009,
         0.0010000000000000009,
-        -0.045
+        -0.045,
+        0.06600000000000002
       ]
     },
     "defense": {
-      "score": 0.005,
-      "lastUpdated": "2026-05-22T20:39:16.349Z",
+      "score": 0.002,
+      "lastUpdated": "2026-05-23T01:06:05.398Z",
       "deltaHistory": [
-        -0.018000000000000002,
         0,
         0.006999999999999999,
         0.0019999999999999983,
@@ -604,7 +591,8 @@
         0.004999999999999999,
         0,
         -0.016,
-        0.002
+        0.002,
+        -0.003
       ]
     },
     "solar": {
@@ -657,7 +645,7 @@
     },
     "semiconductor_equip": {
       "score": 0,
-      "lastUpdated": "2026-05-22T20:39:16.349Z",
+      "lastUpdated": "2026-05-23T01:06:05.398Z",
       "deltaHistory": [
         0,
         0,
@@ -673,7 +661,7 @@
     },
     "robotics": {
       "score": 0,
-      "lastUpdated": "2026-05-22T20:39:16.349Z",
+      "lastUpdated": "2026-05-23T01:06:05.398Z",
       "deltaHistory": [
         0,
         0,
