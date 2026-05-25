@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-05-25T13:22:59.734Z",
+  "updatedAt": "2026-05-25T16:50:41.166Z",
   "posts": [
     {
       "text": "Tracking the Economic Impact of the Trump Tariffs - Tax Foundation Tracking the Economic Impact of the Trump Tariffs  Tax Foundation",
@@ -45,24 +45,21 @@
       }
     },
     {
-      "text": "US-China Tariff Rates - What Are They Now? - China Briefing US-China Tariff Rates - What Are They Now?  China Briefing",
-      "timestamp": "2026-05-20T01:00:49.000Z",
-      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTFA3STlnT1E2aUIyX2JpeEFudzFKY290X0lPMU9lUDBwMTRXQ18yOVk0d1pYckszbGJ3MDVkakVBNHFFdW94N25jcUM3SHZRNnJBbHdkUWF4Q3BMQWFOb2s3dVpFaEgwSzd4MzhTYnlWRmI?oc=5",
+      "text": "The aftermath of Trump-Xi summit: comparing U.S. and China announcements - NPR The aftermath of Trump-Xi summit: comparing U.S. and China announcements  NPR",
+      "timestamp": "2026-05-22T11:39:37.000Z",
+      "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNMVNrTFRWN3FRYWRoYlBYWHBUWWJ6c0ZzaGZ1eE55ZDl0dXlWSlVfYW5TQm9wdUNLN2hjTGREWWlCLW9RajJvZENicEhtX2lnSk42U2pERGRvMXdodnB5azgyWEJMbWVoTWdiaGEzQUo3NjV2NU51V3RfTXNWN3dGNlhGTWhXV3M?oc=5",
       "keywords": [
-        "tariff",
         "china"
       ],
       "impacts": {
-        "foundry": -0.7,
-        "shipping": -0.9,
-        "steel": -0.5,
-        "ic_design": -1,
-        "display": -0.9,
-        "ev_supply": -0.7
+        "ic_design": -0.5,
+        "shipping": -0.4,
+        "display": -0.4,
+        "ev_supply": -0.3
       },
       "sentiment": {
-        "compound": -0.7184,
-        "label": "強烈利空"
+        "compound": 0,
+        "label": "中性"
       }
     },
     {
@@ -87,17 +84,15 @@
       }
     },
     {
-      "text": "The aftermath of Trump-Xi summit: comparing U.S. and China announcements - NPR The aftermath of Trump-Xi summit: comparing U.S. and China announcements  NPR",
-      "timestamp": "2026-05-22T11:39:37.000Z",
-      "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNMVNrTFRWN3FRYWRoYlBYWHBUWWJ6c0ZzaGZ1eE55ZDl0dXlWSlVfYW5TQm9wdUNLN2hjTGREWWlCLW9RajJvZENicEhtX2lnSk42U2pERGRvMXdodnB5azgyWEJMbWVoTWdiaGEzQUo3NjV2NU51V3RfTXNWN3dGNlhGTWhXV3M?oc=5",
+      "text": "Gold prices surge again: Will the trend continue? - Gulf Business Gold prices surge again: Will the trend continue?  Gulf Business",
+      "timestamp": "2026-05-25T16:07:53.000Z",
+      "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNRm43bFdZT1NHcmlDTEhJcW5aTU9udWNqSVdpZEl0Wkc2THNISWFpdW8tVm1vWWgyc1BBM0NHOWhCcmpDZ1hLX0p0SXFnUmhTVnFYaFpyM3FySmxnOXFXTkhfRjhwaXd6VXJqTDBIN1NjRUhmZExuSVRNMGxhbW11TThtZ1ZYMlNyNzFRdG9jdw?oc=5",
       "keywords": [
-        "china"
+        "ai"
       ],
       "impacts": {
-        "ic_design": -0.5,
-        "shipping": -0.4,
-        "display": -0.4,
-        "ev_supply": -0.3
+        "ai_server": 0.7,
+        "foundry": 0.3
       },
       "sentiment": {
         "compound": 0,
@@ -253,24 +248,6 @@
       }
     },
     {
-      "text": "From Tesla to Visa, C.E.O.s on Trump’s China Trip Sought Relief - The New York Times From Tesla to Visa, C.E.O.s on Trump’s China Trip Sought Relief  The New York Times",
-      "timestamp": "2026-05-21T16:24:34.000Z",
-      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPSWFSa1JLUHhaMXVsQkx5QVo2OHZpMFp6SkR0TzRibWVSUjVHNllGb3hmTEVlbzRoUU0xdkZIWGU3Zlhkb3ZaOWJqdldmSWxScUJhSVhTUXBMT0xabHhER1JrcWxZR18yWVQ1cWx5RVMtcGdKX2FtTTRadVNCdnpJUkVybUktLWNYNDBqT1lGTUcyYnM?oc=5",
-      "keywords": [
-        "china"
-      ],
-      "impacts": {
-        "ic_design": -0.5,
-        "shipping": -0.4,
-        "display": -0.4,
-        "ev_supply": -0.3
-      },
-      "sentiment": {
-        "compound": 0,
-        "label": "中性"
-      }
-    },
-    {
       "text": "The Unrepentant Tariff Tool Has No Place in China-U.S. Trade Relations - China-US Focus The Unrepentant Tariff Tool Has No Place in China-U.S. Trade Relations  China-US Focus",
       "timestamp": "2026-03-10T07:00:00.000Z",
       "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOeUo5RC1oYWtSbzM1WGctUVdSTUpFejA3UHZtbnJNaGFBT2V6SXVrblU5UWtBSGlZdXdXRllDaTlHY19GcVNoQ3BXaFVkVXA0N2JpUDNfUFlYZUpfUWVBRHNVYjBkNnBIY2pva3RMZnpBY3NoYTZwRU5ybzQ0elo2dmhwUHNFTVdkdW9BbFlDX3VKRnRURmR0aWVqcmNVSWZLRktJX0YwZEhLN3M3cWdfdndOQQ?oc=5",
@@ -292,23 +269,42 @@
       }
     },
     {
-      "text": "Who's winning under Trump's tariff policy? - dw.com Who's winning under Trump's tariff policy?  dw.com",
-      "timestamp": "2026-04-02T07:00:00.000Z",
-      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQM2dOSWczS2JGS1B4RUVPZVItaExXbjlDOXJ5ZkFhYm5xLVh2Q3ZjcGIwdjIwajBCdzRxYjQyM1B3WDQ5QkRpWFpWTDd2VkhLSGprWDNqakYyMTcwV0Y4MXV4cGlDZ0lWNE4wWmZKTmFvOTFSUXEtc3NDQ0RpcmUxMUhBZzRxNkczYmVwLW5sRW5SVnFabE02U0JJb0swZHFFTHpyZ01B?oc=5",
+      "text": "From Tesla to Visa, C.E.O.s on Trump’s China Trip Sought Relief - The New York Times From Tesla to Visa, C.E.O.s on Trump’s China Trip Sought Relief  The New York Times",
+      "timestamp": "2026-05-21T16:24:34.000Z",
+      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPSWFSa1JLUHhaMXVsQkx5QVo2OHZpMFp6SkR0TzRibWVSUjVHNllGb3hmTEVlbzRoUU0xdkZIWGU3Zlhkb3ZaOWJqdldmSWxScUJhSVhTUXBMT0xabHhER1JrcWxZR18yWVQ1cWx5RVMtcGdKX2FtTTRadVNCdnpJUkVybUktLWNYNDBqT1lGTUcyYnM?oc=5",
       "keywords": [
-        "tariff"
+        "china"
       ],
       "impacts": {
-        "foundry": -0.7,
-        "shipping": -0.5,
-        "steel": -0.5,
-        "ic_design": -0.6,
-        "display": -0.5,
-        "ev_supply": -0.4
+        "ic_design": -0.5,
+        "shipping": -0.4,
+        "display": -0.4,
+        "ev_supply": -0.3
       },
       "sentiment": {
         "compound": 0,
         "label": "中性"
+      }
+    },
+    {
+      "text": "How Americans view Trump’s handling of trade and tariffs - Pew Research Center How Americans view Trump’s handling of trade and tariffs  Pew Research Center",
+      "timestamp": "2026-04-01T07:00:00.000Z",
+      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQdTZKYXp1NzJEbDNrYlBnb3h0YmQweXl6ZUtmT0dLY0xhd2pVWXpDdWtrcWpXWjRwQUdPRFZuR2tEY0ZETHVFNy1Qb3A2dUlQOFpNNGx4cy1QVUlzTTNjUnM1VlMyallfRUVTX2h3T2ZoVlZuMmphX1hLZDBMVlpXX2p3UDF2X01rWUg2TTZnS25FY2g2amFwNThEY0Q4UTdkbGoyMUJZSXhvLVk?oc=5",
+      "keywords": [
+        "tariff",
+        "tariffs"
+      ],
+      "impacts": {
+        "foundry": -1,
+        "shipping": -1,
+        "steel": -1,
+        "ic_design": -1,
+        "display": -1,
+        "ev_supply": -0.8
+      },
+      "sentiment": {
+        "compound": -0.7184,
+        "label": "強烈利空"
       }
     },
     {
@@ -422,41 +418,23 @@
   ],
   "deltas": [
     {
-      "sector": "foundry",
-      "sectorName": "晶圓代工",
-      "prev": -0.719,
-      "current": -0.833,
-      "delta": -0.114,
-      "momentum": "↓ 壓力加深",
-      "accelerating": true
-    },
-    {
-      "sector": "steel",
-      "sectorName": "鋼鐵",
-      "prev": -0.673,
-      "current": -0.762,
-      "delta": -0.089,
-      "momentum": "↓ 壓力加深",
+      "sector": "ai_server",
+      "sectorName": "AI 伺服器",
+      "prev": 0.003,
+      "current": 0.069,
+      "delta": 0.066,
+      "momentum": "↑ 訊號強化",
       "accelerating": true
     }
   ],
   "topDeltas": [
     {
-      "sector": "foundry",
-      "sectorName": "晶圓代工",
-      "prev": -0.719,
-      "current": -0.833,
-      "delta": -0.114,
-      "momentum": "↓ 壓力加深",
-      "accelerating": true
-    },
-    {
-      "sector": "steel",
-      "sectorName": "鋼鐵",
-      "prev": -0.673,
-      "current": -0.762,
-      "delta": -0.089,
-      "momentum": "↓ 壓力加深",
+      "sector": "ai_server",
+      "sectorName": "AI 伺服器",
+      "prev": 0.003,
+      "current": 0.069,
+      "delta": 0.066,
+      "momentum": "↑ 訊號強化",
       "accelerating": true
     }
   ],
@@ -466,10 +444,9 @@
   ],
   "sectorState": {
     "foundry": {
-      "score": -0.833,
-      "lastUpdated": "2026-05-25T13:22:59.734Z",
+      "score": -0.805,
+      "lastUpdated": "2026-05-25T16:50:41.166Z",
       "deltaHistory": [
-        -0.006000000000000005,
         0.05800000000000005,
         -0.007000000000000006,
         -0.007000000000000006,
@@ -478,14 +455,14 @@
         0.124,
         -0.11599999999999999,
         0.06300000000000006,
-        -0.11399999999999999
+        -0.11399999999999999,
+        0.027999999999999914
       ]
     },
     "shipping": {
-      "score": -0.944,
-      "lastUpdated": "2026-05-25T13:22:59.734Z",
+      "score": -0.949,
+      "lastUpdated": "2026-05-25T16:50:41.166Z",
       "deltaHistory": [
-        -0.0020000000000000018,
         0.0050000000000000044,
         -0.009000000000000008,
         0,
@@ -494,14 +471,14 @@
         0.013999999999999901,
         -0.0129999999999999,
         0.005999999999999894,
-        -0.009999999999999898
+        -0.009999999999999898,
+        -0.0050000000000000044
       ]
     },
     "steel": {
-      "score": -0.762,
-      "lastUpdated": "2026-05-25T13:22:59.734Z",
+      "score": -0.787,
+      "lastUpdated": "2026-05-25T16:50:41.166Z",
       "deltaHistory": [
-        0.025000000000000022,
         0.017000000000000015,
         -0.052000000000000046,
         -0.0020000000000000018,
@@ -510,12 +487,13 @@
         0.11099999999999999,
         -0.10799999999999998,
         0.06999999999999995,
-        -0.08899999999999997
+        -0.08899999999999997,
+        -0.025000000000000022
       ]
     },
     "ic_design": {
       "score": -1,
-      "lastUpdated": "2026-05-25T13:22:59.734Z",
+      "lastUpdated": "2026-05-25T16:50:41.166Z",
       "deltaHistory": [
         0,
         0,
@@ -530,10 +508,9 @@
       ]
     },
     "display": {
-      "score": -0.952,
-      "lastUpdated": "2026-05-25T13:22:59.734Z",
+      "score": -0.96,
+      "lastUpdated": "2026-05-25T16:50:41.166Z",
       "deltaHistory": [
-        0.01100000000000001,
         -0.006000000000000005,
         -0.06500000000000006,
         0,
@@ -542,14 +519,14 @@
         0.016999999999999904,
         -0.02299999999999991,
         0.014999999999999902,
-        -0.015999999999999903
+        -0.015999999999999903,
+        -0.008000000000000007
       ]
     },
     "ev_supply": {
-      "score": -0.813,
-      "lastUpdated": "2026-05-25T13:22:59.734Z",
+      "score": -0.827,
+      "lastUpdated": "2026-05-25T16:50:41.166Z",
       "deltaHistory": [
-        0.014000000000000012,
         -0.0040000000000000036,
         -0.05600000000000005,
         0,
@@ -558,14 +535,14 @@
         0.029000000000000026,
         -0.03500000000000003,
         0.01100000000000001,
-        -0.019999999999999907
+        -0.019999999999999907,
+        -0.014000000000000012
       ]
     },
     "ai_server": {
-      "score": 0.003,
-      "lastUpdated": "2026-05-25T13:22:59.734Z",
+      "score": 0.069,
+      "lastUpdated": "2026-05-25T16:50:41.166Z",
       "deltaHistory": [
-        -0.0049999999999999906,
         -0.015,
         -0.016,
         -0.01200000000000001,
@@ -574,14 +551,14 @@
         -0.019999999999999997,
         0.012000000000000004,
         -0.063,
-        0.001
+        0.001,
+        0.066
       ]
     },
     "defense": {
-      "score": 0.003,
-      "lastUpdated": "2026-05-25T13:22:59.734Z",
+      "score": 0,
+      "lastUpdated": "2026-05-25T16:50:41.166Z",
       "deltaHistory": [
-        -0.004,
         -0.006999999999999999,
         0.002999999999999999,
         -0.002999999999999999,
@@ -590,7 +567,8 @@
         -0.009000000000000001,
         0,
         -0.001,
-        0.003
+        0.003,
+        -0.003
       ]
     },
     "solar": {
@@ -626,10 +604,9 @@
       ]
     },
     "petrochemical": {
-      "score": 0.003,
-      "lastUpdated": "2026-05-25T13:22:59.734Z",
+      "score": 0.004,
+      "lastUpdated": "2026-05-25T16:50:41.166Z",
       "deltaHistory": [
-        -0.002,
         -0.002999999999999999,
         0.002,
         -0.003000000000000001,
@@ -638,12 +615,13 @@
         0.002,
         0,
         0,
-        0
+        0,
+        0.001
       ]
     },
     "semiconductor_equip": {
       "score": 0,
-      "lastUpdated": "2026-05-25T13:22:59.734Z",
+      "lastUpdated": "2026-05-25T16:50:41.166Z",
       "deltaHistory": [
         0,
         0,
@@ -659,7 +637,7 @@
     },
     "robotics": {
       "score": 0,
-      "lastUpdated": "2026-05-25T13:22:59.734Z",
+      "lastUpdated": "2026-05-25T16:50:41.166Z",
       "deltaHistory": [
         0,
         0,
@@ -675,11 +653,11 @@
     },
     "packaging": {
       "score": 0,
-      "lastUpdated": "2026-05-25T05:42:18.281Z",
+      "lastUpdated": "2026-05-25T16:50:41.166Z",
       "deltaHistory": [
-        -0.01,
         0,
         0.01,
+        0,
         0,
         0,
         0,
@@ -739,7 +717,7 @@
     },
     "pcb": {
       "score": 0,
-      "lastUpdated": "2026-05-25T13:22:59.734Z",
+      "lastUpdated": "2026-05-25T16:50:41.166Z",
       "deltaHistory": [
         0,
         0,
