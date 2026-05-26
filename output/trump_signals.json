@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-05-26T17:14:38.706Z",
+  "updatedAt": "2026-05-26T20:47:17.413Z",
   "posts": [
     {
       "text": "Tracking the Economic Impact of the Trump Tariffs - Tax Foundation Tracking the Economic Impact of the Trump Tariffs  Tax Foundation",
@@ -142,6 +142,25 @@
       }
     },
     {
+      "text": "The ‘No Headline’ China-US Summit Was Very Revealing - Cato Institute The ‘No Headline’ China-US Summit Was Very Revealing  Cato Institute",
+      "timestamp": "2026-05-22T07:22:22.000Z",
+      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNRnRsMjlqM0xPckJEUDdyTTZzcmtySF95WXdkSi1NdE85ODVlcnhpR0NjMkNXdHdMRldXQnpGRUZFbi13amRJSHdYc0xHRnBWa1RsX1lVU1NfTDhZdUpvUHVsME9hc3hVVVBtY1RTQkFHV1dHdnJ5T3lXdVVMQi1nb19LVlE?oc=5",
+      "keywords": [
+        "china",
+        "ev"
+      ],
+      "impacts": {
+        "ic_design": -0.5,
+        "shipping": -0.4,
+        "display": -0.4,
+        "ev_supply": -0.1
+      },
+      "sentiment": {
+        "compound": 0,
+        "label": "中性"
+      }
+    },
+    {
       "text": "China’s Retaliatory Tariffs Cost U.S. Ag Exporters $15 Billion, Study Says - Successful Farming China’s Retaliatory Tariffs Cost U.S. Ag Exporters $15 Billion, Study Says  Successful Farming",
       "timestamp": "2026-05-22T16:53:37.000Z",
       "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPN1N0N1AtVXpyaHBTaFdLemNoZktMNXlOSHpaWGlXSnM3dS1aZnJBcHVQQnpHVjBqbFRlcExIYnRHQkNuWHBMWi0tQzFTbDBINEJwcXVCSnkxSVE5QnUtdUlkdGswM3VUZXBZNVRMNmxCRTdfWnc0dVozWmxpMk53aEY4cVU1b0diT3VraHRxZERLeDcyV2NYbjZaMU9sdHJIMVF4Z3NPQTAxSC0zWDV5b1NabDBvQmExcm42Tg?oc=5",
@@ -180,6 +199,27 @@
         "ic_design": -1,
         "display": -1,
         "ev_supply": -1
+      },
+      "sentiment": {
+        "compound": -0.7184,
+        "label": "強烈利空"
+      }
+    },
+    {
+      "text": "Tracking Trump’s Tariffs Across the Global Economy - Bloomberg.com Tracking Trump’s Tariffs Across the Global Economy  Bloomberg.com",
+      "timestamp": "2026-05-01T07:00:00.000Z",
+      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE44cWRvMnZYODk0SmduSElrclpzbDRtOF80VHhJRGpiWDJHTGJxNXM4TjEteEhqWGhGaGFPd3ZXWGE0cnFHQzBLdVhha2J3UXZWZkRwUENCMkduUENkb2w3WWd5VzZmLU14?oc=5",
+      "keywords": [
+        "tariff",
+        "tariffs"
+      ],
+      "impacts": {
+        "foundry": -1,
+        "shipping": -1,
+        "steel": -1,
+        "ic_design": -1,
+        "display": -1,
+        "ev_supply": -0.8
       },
       "sentiment": {
         "compound": -0.7184,
@@ -370,46 +410,6 @@
         "compound": -0.7184,
         "label": "強烈利空"
       }
-    },
-    {
-      "text": "Trump's trade war wreaked little havoc on trade patterns last year - Peterson Institute for International Economics Trump's trade war wreaked little havoc on trade patterns last year  Peterson Institute for International Economics",
-      "timestamp": "2026-02-02T08:00:00.000Z",
-      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNV0VsQ0ZEbTBrRGJ4SVQtb0Y0c05oMDJaeW1OZVF4ckp2UWpPdlFYU0RfcFAyVHQ2WUpKYkNoaC1CaXo4REMzdHpjR1FkZm02dHVoTkhWbG0tZTVlTWx4MzZqUDk5cWJ4dHZlVFVzelFiVmtSZ0tiQ255MFgzeU5QckcxRlNLUXo5SF80SC0zVjdtNTRGZExfTlQ0NEdFRFE0ODE3N3FZc2lWVnEyWE9wTTRDOA?oc=5",
-      "keywords": [
-        "trade war"
-      ],
-      "impacts": {
-        "foundry": -0.6,
-        "ic_design": -0.8,
-        "shipping": -0.6
-      },
-      "sentiment": {
-        "compound": 0,
-        "label": "中性"
-      }
-    },
-    {
-      "text": "China exports surge despite Trump tariffs - BBC China exports surge despite Trump tariffs  BBC",
-      "timestamp": "2026-03-09T07:00:00.000Z",
-      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5JUEJwZVE3UFFZeFVFYV9BUHBBdVE4YTdoX2JIODJTSWEwaTFJcmZBLW9oTjliSjNrV1g4M3BhR2t5SXFqdUVKcmladG96U1U1Nlo2VHhOcDlTdw?oc=5",
-      "keywords": [
-        "tariff",
-        "tariffs",
-        "china",
-        "port"
-      ],
-      "impacts": {
-        "foundry": -1,
-        "shipping": -1,
-        "steel": -1,
-        "ic_design": -1,
-        "display": -1,
-        "ev_supply": -1
-      },
-      "sentiment": {
-        "compound": -0.7184,
-        "label": "強烈利空"
-      }
     }
   ],
   "deltas": [],
@@ -420,10 +420,9 @@
   ],
   "sectorState": {
     "foundry": {
-      "score": -0.766,
-      "lastUpdated": "2026-05-26T17:14:38.706Z",
+      "score": -0.745,
+      "lastUpdated": "2026-05-26T20:47:17.413Z",
       "deltaHistory": [
-        -0.11599999999999999,
         0.06300000000000006,
         -0.11399999999999999,
         0.027999999999999914,
@@ -432,14 +431,14 @@
         -0.08999999999999997,
         0.06499999999999995,
         -0.007000000000000006,
-        -0.007000000000000006
+        -0.007000000000000006,
+        0.02100000000000002
       ]
     },
     "shipping": {
-      "score": -0.948,
-      "lastUpdated": "2026-05-26T17:14:38.706Z",
+      "score": -0.944,
+      "lastUpdated": "2026-05-26T20:47:17.413Z",
       "deltaHistory": [
-        -0.0129999999999999,
         0.005999999999999894,
         -0.009999999999999898,
         -0.0050000000000000044,
@@ -448,14 +447,14 @@
         -0.0030000000000000027,
         -0.0010000000000000009,
         -0.0010000000000000009,
-        0.0020000000000000018
+        0.0020000000000000018,
+        0.0040000000000000036
       ]
     },
     "steel": {
-      "score": -0.68,
-      "lastUpdated": "2026-05-26T17:14:38.706Z",
+      "score": -0.663,
+      "lastUpdated": "2026-05-26T20:47:17.413Z",
       "deltaHistory": [
-        -0.10799999999999998,
         0.06999999999999995,
         -0.08899999999999997,
         -0.025000000000000022,
@@ -464,12 +463,13 @@
         -0.04899999999999993,
         0.03799999999999992,
         0.0040000000000000036,
-        -0.008000000000000007
+        -0.008000000000000007,
+        0.017000000000000015
       ]
     },
     "ic_design": {
       "score": -1,
-      "lastUpdated": "2026-05-26T17:14:38.706Z",
+      "lastUpdated": "2026-05-26T20:47:17.413Z",
       "deltaHistory": [
         0,
         0,
@@ -484,10 +484,9 @@
       ]
     },
     "display": {
-      "score": -0.938,
-      "lastUpdated": "2026-05-26T17:14:38.706Z",
+      "score": -0.933,
+      "lastUpdated": "2026-05-26T20:47:17.413Z",
       "deltaHistory": [
-        -0.02299999999999991,
         0.014999999999999902,
         -0.015999999999999903,
         -0.008000000000000007,
@@ -496,14 +495,14 @@
         -0.005999999999999894,
         0.0039999999999998925,
         0.0010000000000000009,
-        -0.0019999999999998908
+        -0.0019999999999998908,
+        0.004999999999999893
       ]
     },
     "ev_supply": {
-      "score": -0.796,
-      "lastUpdated": "2026-05-26T17:14:38.706Z",
+      "score": -0.775,
+      "lastUpdated": "2026-05-26T20:47:17.413Z",
       "deltaHistory": [
-        -0.03500000000000003,
         0.01100000000000001,
         -0.019999999999999907,
         -0.014000000000000012,
@@ -512,14 +511,14 @@
         -0.03499999999999992,
         0.03299999999999992,
         0.0020000000000000018,
-        -0.009000000000000008
+        -0.009000000000000008,
+        0.02100000000000002
       ]
     },
     "ai_server": {
-      "score": 0.03,
-      "lastUpdated": "2026-05-26T17:14:38.706Z",
+      "score": 0.022,
+      "lastUpdated": "2026-05-26T20:47:17.413Z",
       "deltaHistory": [
-        0.012000000000000004,
         -0.063,
         0.001,
         0.066,
@@ -528,14 +527,14 @@
         0.015,
         -0.023,
         -0.003999999999999997,
-        -0.0030000000000000027
+        -0.0030000000000000027,
+        -0.008
       ]
     },
     "defense": {
       "score": 0,
-      "lastUpdated": "2026-05-26T17:14:38.706Z",
+      "lastUpdated": "2026-05-26T20:47:17.413Z",
       "deltaHistory": [
-        0,
         -0.001,
         0.003,
         -0.003,
@@ -543,6 +542,7 @@
         -0.004,
         0.007,
         -0.007,
+        0,
         0,
         0
       ]
@@ -581,9 +581,8 @@
     },
     "petrochemical": {
       "score": 0,
-      "lastUpdated": "2026-05-26T17:14:38.706Z",
+      "lastUpdated": "2026-05-26T20:47:17.413Z",
       "deltaHistory": [
-        0,
         0,
         0,
         0.001,
@@ -592,12 +591,13 @@
         -0.002,
         0.002,
         -0.003,
+        0,
         0
       ]
     },
     "semiconductor_equip": {
       "score": 0,
-      "lastUpdated": "2026-05-26T17:14:38.706Z",
+      "lastUpdated": "2026-05-26T20:47:17.413Z",
       "deltaHistory": [
         0,
         0,
@@ -613,7 +613,7 @@
     },
     "robotics": {
       "score": 0,
-      "lastUpdated": "2026-05-26T17:14:38.706Z",
+      "lastUpdated": "2026-05-26T20:47:17.413Z",
       "deltaHistory": [
         0,
         0,
