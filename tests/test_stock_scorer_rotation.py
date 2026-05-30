@@ -87,3 +87,31 @@ def test_rotation_missing_data_no_crash():
     raw = {"燈1 月營收拐點": {}, "燈2 法人共振": {}}
     res = stock_scorer.score_stocks("semi", ["2330"], raw, _Fetcher(), _Cfg())
     assert res["2330"]["breakdown"]["bonus"] == 0.0
+
+
+def _raw_trust(trust_only_ids, in_window_dressing):
+    """構造含燈2 投信獨買 + 季末作帳旗標的 raw_results。"""
+    return {
+        "燈2 法人共振": {
+            "semi": {
+                "lit_stocks": [], "foreign_only": [], "trust_only": trust_only_ids,
+                "in_window_dressing": in_window_dressing,
+            }
+        },
+    }
+
+
+def test_trust_only_scores_when_not_window_dressing():
+    """非季末作帳期：投信獨買 → 籌碼面 +1.0 + 燈2_投信✓。"""
+    raw = _raw_trust(["2330"], in_window_dressing=False)
+    res = stock_scorer.score_stocks("semi", ["2330"], raw, _Fetcher(), _Cfg())
+    assert res["2330"]["breakdown"]["chipset"] == 1.0
+    assert "燈2_投信✓" in res["2330"]["triggered"]
+
+
+def test_trust_only_downgraded_in_window_dressing():
+    """季末作帳期：投信獨買不計分（§9.4.2 排除季末提升 alpha）。"""
+    raw = _raw_trust(["2330"], in_window_dressing=True)
+    res = stock_scorer.score_stocks("semi", ["2330"], raw, _Fetcher(), _Cfg())
+    assert res["2330"]["breakdown"]["chipset"] == 0.0
+    assert any("季末作帳" in t for t in res["2330"]["triggered"])

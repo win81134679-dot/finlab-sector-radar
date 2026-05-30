@@ -44,6 +44,48 @@ def net_buy_signal(net_df: pd.DataFrame, window: int = 20) -> pd.DataFrame:
     return net_df.rolling(window).sum() > 0
 
 
+# ── 投信因子細化（建立在 bakeoff 贏家「投信連買≥3日」之上）──────────────
+
+def amount_filter(
+    net_shares_df: pd.DataFrame,
+    price_df: pd.DataFrame,
+    n: int,
+    min_amount: float,
+) -> pd.DataFrame:
+    """
+    連 n 日買超 **且** 近 n 日累積買超金額 ≥ min_amount（過濾無意義的小額點火）。
+    金額 = 買超股數 × 當日收盤價，近 n 日加總。
+    """
+    consec = consecutive_buy_signal(net_shares_df, n)
+    px = price_df.reindex_like(net_shares_df).ffill()
+    amount = (net_shares_df * px).rolling(n).sum()
+    return consec & (amount >= min_amount)
+
+
+def quarter_end_mask(index: pd.DatetimeIndex, last_n_days: int = 10) -> pd.Series:
+    """
+    季末作帳期遮罩（P2 herding / window-dressing）：
+    3/6/9/12 月「最後 last_n_days 個交易日」為 True（= 應排除的低信度期）。
+    回傳以 index 為索引的布林 Series。
+    """
+    s = pd.Series(False, index=index)
+    df = pd.DataFrame({"d": index}, index=index)
+    df["ym"] = [(t.year, t.month) for t in index]
+    for (y, m), grp in df.groupby("ym"):
+        if m in (3, 6, 9, 12):
+            tail_idx = grp.index[-last_n_days:]
+            s.loc[tail_idx] = True
+    return s
+
+
+def exclude_quarter_end(signal_df: pd.DataFrame, last_n_days: int = 10) -> pd.DataFrame:
+    """把季末作帳期的訊號清為 False（其餘不變）。"""
+    qmask = quarter_end_mask(signal_df.index, last_n_days)  # type: ignore[arg-type]
+    out = signal_df.copy()
+    out.loc[qmask.values] = False
+    return out
+
+
 def forward_beat_matrix(
     price_df: pd.DataFrame,
     benchmark: pd.Series,
@@ -102,4 +144,5 @@ def reindex_month_end(daily_bool: pd.DataFrame, month_ends: list) -> pd.DataFram
 __all__ = [
     "consecutive_buy_signal", "holding_uptrend_signal", "net_buy_signal",
     "forward_beat_matrix", "evaluate_factor", "reindex_month_end",
+    "amount_filter", "quarter_end_mask", "exclude_quarter_end",
 ]

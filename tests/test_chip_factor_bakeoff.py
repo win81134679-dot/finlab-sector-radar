@@ -79,6 +79,45 @@ def test_evaluate_factor_ignores_nan_beat():
     assert r["hit_rate"] == 0.5       # 1 win / 2
 
 
+def test_amount_filter():
+    """連 n 日買超且金額達標才 True。"""
+    idx = pd.date_range("2024-01-01", periods=4, freq="B")
+    net = pd.DataFrame({"BIG": [1000, 1000, 1000, 1000],
+                        "SMALL": [10, 10, 10, 10]}, index=idx)
+    price = pd.DataFrame({"BIG": [50.0] * 4, "SMALL": [50.0] * 4}, index=idx)
+    # 近3日金額: BIG=1000*50*3=150000, SMALL=10*50*3=1500
+    sig = bk.amount_filter(net, price, n=3, min_amount=100000)
+    assert sig["BIG"].iloc[-1] == True    # noqa: E712 金額達標
+    assert sig["SMALL"].iloc[-1] == False  # 金額不足
+
+
+def test_quarter_end_mask():
+    """3/6/9/12 月最後 N 日為 True。"""
+    # 涵蓋 3 月（季末）與 4 月（非季末）
+    idx = pd.date_range("2024-03-01", "2024-04-30", freq="B")
+    mask = bk.quarter_end_mask(idx, last_n_days=5)
+    mar = [d for d in idx if d.month == 3]
+    apr = [d for d in idx if d.month == 4]
+    # 3 月最後 5 個交易日 True
+    assert mask.loc[mar[-1]] == True   # noqa: E712
+    assert mask.loc[mar[-5]] == True
+    assert mask.loc[mar[-6]] == False
+    # 4 月（非季末月）全 False
+    assert not mask.loc[apr].any()
+
+
+def test_exclude_quarter_end():
+    """季末期的 True 訊號被清為 False。"""
+    idx = pd.date_range("2024-03-01", "2024-03-31", freq="B")
+    sig = pd.DataFrame({"A": [True] * len(idx)}, index=idx)
+    out = bk.exclude_quarter_end(sig, last_n_days=5)
+    # 最後 5 日應被清掉
+    assert out["A"].iloc[-1] == False
+    assert out["A"].iloc[-5] == False
+    # 月初仍保留
+    assert out["A"].iloc[0] == True
+
+
 def test_reindex_month_end():
     didx = pd.date_range("2024-01-01", periods=40, freq="B")
     daily = pd.DataFrame({"A": [True] * 40}, index=didx)

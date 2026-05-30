@@ -148,6 +148,7 @@ def score_stocks(
 
     # 學術 bonus
     resonance_label = lamp2.get("resonance_label", "外資牛市共振")  # 燈2 市場狀態標籤
+    in_window_dressing = lamp2.get("in_window_dressing", False)      # 季末作帳期（投信降級）
     accel_stocks    = set(lamp_accel.get("accel_stocks", []))        # 學術9 營收加速
     season_bonus_label = lamp_season.get("season_bonus_label")       # 學術8 季節信號
 
@@ -245,8 +246,13 @@ def score_stocks(
             pts_chipset += 2.0
             triggered.append("燈2✓")
         if sid in trust_only:
-            pts_chipset += 1.0                 # 投信獨買：bakeoff 證實的最強籌碼因子
-            triggered.append("燈2_投信✓")
+            # 投信獨買：bakeoff 證實的最強籌碼因子（+3.7pp）；
+            # 但季末作帳期降級（§9.4.2：排除季末把 alpha 提到 +4.3pp）
+            if in_window_dressing:
+                triggered.append("燈2_投信(季末作帳⚠不計分)")
+            else:
+                pts_chipset += 1.0
+                triggered.append("燈2_投信✓")
         if sid in foreign_only:
             pts_chipset += 0.5                 # 外資獨買：對選股無顯著優勢，僅小幅加分
             triggered.append("燈2_外資")

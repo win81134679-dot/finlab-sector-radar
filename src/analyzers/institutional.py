@@ -31,6 +31,32 @@ def _consecutive_buy(series: pd.Series, n: int) -> bool:
     return all(float(v) > 0 for v in clean.iloc[-n:])
 
 
+def _is_quarter_end_window(trust_df: pd.DataFrame | None, last_n_days: int = 10) -> bool:
+    """
+    最新交易日是否落在「季末作帳期」= 3/6/9/12 月的最後 last_n_days 個交易日。
+    依據 bakeoff 實證（claude.md §9.4.2）：排除此期間的投信訊號可把 alpha
+    從 +3.7pp 提到 +4.3pp（持有1季）/ +5.4pp（持有1月）。P2 herding/作帳。
+    """
+    if trust_df is None or trust_df.empty:
+        return False
+    try:
+        idx = trust_df.dropna(how="all").index
+        if len(idx) == 0:
+            return False
+        latest = pd.Timestamp(idx[-1])
+        if latest.month not in (3, 6, 9, 12):
+            return False
+        # 用該月「日曆上的營業日」判斷 latest 是否在最後 last_n_days 個之內
+        # （以營業日日曆為準，不受 DataFrame 起點稀疏影響）
+        month_end = latest + pd.offsets.MonthEnd(0)
+        month_bdays = pd.bdate_range(latest.replace(day=1), month_end)
+        if len(month_bdays) == 0:
+            return False
+        return latest >= month_bdays[-last_n_days]
+    except Exception:
+        return False
+
+
 def _get_market_state(config) -> str:
     """
     判斷市場狀態（牛 / 熊）：加權指數收盤是否站上 260MA。
@@ -86,6 +112,11 @@ def analyze(fetcher, sector_map, config) -> Dict[str, Dict[str, Any]]:
 
     logger.info("燈2: 市場狀態=%s，法人連買門檻=%d 日（%s）", market_state, n, resonance_label)
 
+    # 季末作帳期偵測（bakeoff §9.4.2：此期間投信訊號低信度，個股評分不獎勵投信獨買）
+    in_window_dressing = _is_quarter_end_window(trust_df)
+    if in_window_dressing:
+        logger.info("燈2: 目前為季末作帳期，投信獨買訊號將降級（不計入個股評分加分）")
+
     for sector_id in sector_map.all_sector_ids():
         stocks = sector_map.get_stocks(sector_id)
         if not stocks:
@@ -133,6 +164,7 @@ def analyze(fetcher, sector_map, config) -> Dict[str, Dict[str, Any]]:
             "trust_only":      trust_only,
             "half_signal":     half_signal,
             "market_state":    market_state,
+            "in_window_dressing": in_window_dressing,
             "resonance_label": resonance_label,
             "details": (
                 f"共振: {len(resonance)}/{len(available)} 檔 ({resonance_label}) | "
