@@ -5,7 +5,8 @@ stock_scorer.py
 評分維度：
   基本面  5.5 pts  — 燈1 YoY +2 / MoM +0.5 / 燈3 +1 / EPS YoY>25% +2
   技術面  3.5 pts  — 燈4 tech_score=2 +2 / =1 +1 / dist_60ma 0-10% +0.5 / 燈5 rank>70 +1
-  籌碼面  4.0 pts  — 燈2 共振 +2 / 外資獨買 +0.5 / 投信獨買 +0.5 / 燈6 +1
+  籌碼面  4.5 pts  — 燈2 共振 +2 / 投信獨買 +1 / 外資獨買 +0.5 / 燈6 +1
+                    （投信權重依 bakeoff 實證提高，見 §9.4.2；投信連買≥3日 +3.7pp alpha）
   加分    2.0 pts  — PE<板塊均值 +1 / ROE>15% +1
 
 學術依據：
@@ -236,15 +237,19 @@ def score_stocks(
             triggered.append("燈5✓")
 
         # --- 籌碼面 ---
+        # 權重依 2026-05-30 因子 bakeoff 實證（claude.md §9.4.2，持有1季贏TAIEX alpha）：
+        #   投信連買≥3日 +3.7pp（唯一顯著 alpha，P2/P3）→ 投信獨買權重提高到 1.0
+        #   外資連買 ~baseline（10日 −0.2pp / 3日 −0.3pp，對選股無優勢）→ 維持 0.5
+        #   共振(外資+投信同步) 仍當品質閘門保留 2.0
         if sid in lit2:
             pts_chipset += 2.0
             triggered.append("燈2✓")
-        if sid in foreign_only:
-            pts_chipset += 0.5
-            triggered.append("燈2_外資")
         if sid in trust_only:
-            pts_chipset += 0.5
-            triggered.append("燈2_投信")
+            pts_chipset += 1.0                 # 投信獨買：bakeoff 證實的最強籌碼因子
+            triggered.append("燈2_投信✓")
+        if sid in foreign_only:
+            pts_chipset += 0.5                 # 外資獨買：對選股無顯著優勢，僅小幅加分
+            triggered.append("燈2_外資")
         if sid in lit6:
             pts_chipset += 1.0
             triggered.append("燈6✓")
