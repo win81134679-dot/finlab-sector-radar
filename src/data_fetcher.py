@@ -226,6 +226,31 @@ class DataFetcher:
             result[str(col)] = round(float(val), 2) if pd.notna(val) else None
         return result
 
+    def get_latest_vol_ratio(self, recent: int = 3, base: int = 20) -> dict:
+        """
+        回傳 {stock_id: 近 recent 日均量 / 近 base 日均量}（量能位階比）。
+        供 stock_scorer 帶量加分用（bakeoff §9.4.3：投信+帶量1.3x = +5.1pp）。
+        缺漏或分母為 0 → None。
+        """
+        try:
+            vol_df = self.get("price:成交股數")
+            if vol_df is None or not isinstance(vol_df, pd.DataFrame) or len(vol_df) < base:
+                return {}
+            r = vol_df.tail(recent).mean()
+            b = vol_df.tail(base).mean()
+            result: dict = {}
+            for col in b.index:
+                bv = b[col]
+                rv = r[col] if col in r.index else None
+                if pd.notna(bv) and bv > 0 and rv is not None and pd.notna(rv):
+                    result[str(col)] = round(float(rv) / float(bv), 3)
+                else:
+                    result[str(col)] = None
+            return result
+        except Exception as e:
+            logger.warning("get_latest_vol_ratio 失敗: %s", e)
+            return {}
+
     def get_last_trading_date(self) -> Optional[str]:
         """
         回傳最近一個交易日日期（YYYY-MM-DD）。

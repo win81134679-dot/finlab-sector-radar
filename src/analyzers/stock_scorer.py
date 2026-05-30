@@ -5,8 +5,8 @@ stock_scorer.py
 評分維度：
   基本面  5.5 pts  — 燈1 YoY +2 / MoM +0.5 / 燈3 +1 / EPS YoY>25% +2
   技術面  3.5 pts  — 燈4 tech_score=2 +2 / =1 +1 / dist_60ma 0-10% +0.5 / 燈5 rank>70 +1
-  籌碼面  4.5 pts  — 燈2 共振 +2 / 投信獨買 +1 / 外資獨買 +0.5 / 燈6 +1
-                    （投信權重依 bakeoff 實證提高，見 §9.4.2；投信連買≥3日 +3.7pp alpha）
+  籌碼面  5.0 pts  — 燈2 共振 +2 / 投信獨買 +1 / 外資獨買 +0.5 / 燈6 +1 / 投信帶量 +0.5
+                    （投信權重依 bakeoff 實證提高 §9.4.2；投信+帶量1.3x +5.1pp §9.4.3）
   加分    2.0 pts  — PE<板塊均值 +1 / ROE>15% +1
 
 學術依據：
@@ -33,6 +33,7 @@ logger = logging.getLogger(__name__)
 _DIST_MAX   = 10.0   # dist_60ma_pct 甜蜜區上限 %（0 < dist ≤ 10% → +0.5）
 _ROE_MIN    = 15.0   # ROE 加分下限 %（Greenblatt 2006 Magic Formula）
 _EPS_YOY_T  = 25.0   # EPS YoY 加分門檻 %（O'Neil 2009 CAN SLIM "C"；Lutey et al. 2014 驗證）
+_VOL_RATIO_MIN = 1.3 # 帶量門檻（近3日/近20日均量）；§9.4.3 投信+帶量1.3x = +5.1pp
 
 
 # ────────────────────────────────────────────────────────────────────────────
@@ -69,6 +70,7 @@ def score_stocks(
     fetcher: Any,
     config: Any,
     change_pct_map: Optional[Dict[str, Optional[float]]] = None,
+    vol_ratio_map: Optional[Dict[str, Optional[float]]] = None,
 ) -> Dict[str, Any]:
     """
     對指定板塊的個股執行三面合一評分。
@@ -259,6 +261,14 @@ def score_stocks(
         if sid in lit6:
             pts_chipset += 1.0
             triggered.append("燈6✓")
+
+        # 帶量加分（§9.4.3 bakeoff：投信 + 帶量1.3x = +5.1pp，最強組合）
+        # 僅當已有投信訊號（共振或投信獨買，且非季末作帳）+ 量比≥1.3 才 +0.5
+        _has_trust_sig = (sid in lit2) or (sid in trust_only and not in_window_dressing)
+        _vr = (vol_ratio_map or {}).get(sid)
+        if _has_trust_sig and _vr is not None and _vr >= _VOL_RATIO_MIN:
+            pts_chipset += 0.5
+            triggered.append(f"帶量{_vr:.1f}x✓")
 
         # 學術燈2 — 市場狀態標籤（牛市共振 vs 熊市防守）
         if sid in lit2 and resonance_label:

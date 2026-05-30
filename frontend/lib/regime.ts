@@ -113,18 +113,21 @@ export function analyzeKBar(bars: OHLCBar[]): KBarAnalysis {
   const maxHigh5 = Math.max(...bars.slice(-Math.min(bars.length, 7)).map(b => b.h));
   const fromPeak5 = maxHigh5 > 0 ? (bars[bars.length - 1].c - maxHigh5) / maxHigh5 : 0;
 
+  // 分數依 2026-05-30 回測校準（claude.md §9.4.4）：
+  //   連2漲停：回測 alpha +15.1%（但 n=53 樣本極小）→ 移除無據的 −2 重罰，改 0（中性，仍標記大戶特徵）
+  //   高位長上影線：回測 alpha +0.6%（≈中性，非派發）→ −3 改 −1（量價背離輕度警示，非確定派發）
   let label: string;
   let score: number;
   if (consecutive >= 2) {
-    label = `連 ${consecutive} 漲停 · 大戶攻勢`;
-    score = -2; // 偏向大戶盤
+    label = `連 ${consecutive} 漲停 · 大戶攻勢（回測樣本少，不判方向）`;
+    score = 0; // 原 −2 無據（回測偏多但樣本僅53），中性處理但保留大戶盤特徵標記
   } else if (longUpper >= 2) {
     // 長上影線只有在「有漲幅可出」時才視為高位派發
     // 低位長上影線 = 逢高測試壓力 / 洗盤，不等於主力出貨
     const isHighDistribution = pctChange5d > 5 || fromPeak5 < -0.03;
     if (isHighDistribution) {
-      label = `${longUpper} 次長上影線 · 高位派發訊號`;
-      score = -3;
+      label = `${longUpper} 次長上影線 · 量價背離（回測≈中性，非確定派發）`;
+      score = -1; // 原 −3 無據（回測 +0.6pp≈中性），降為輕度警示
     } else {
       label = `${longUpper} 次長上影線 · 低位整理（非派發）`;
       score = -1; // 輕度負面，但不判定為主力出貨
@@ -258,12 +261,14 @@ export function calcKDJ(bars: OHLCBar[]): KDJResult {
   let score: number;
   let label: string;
 
+  // 分數依 2026-05-30 回測校準（claude.md §9.4.4）：
+  //   低位金叉 alpha +1.7pp（弱）→ +2 改 +1；高位死叉 alpha +1.7pp（≈微正非轉弱）→ −2 改 0
   if (K > D && K < 30) {
-    crossover = "金叉"; score = 2; label = `低位金叉 K${K.toFixed(0)} D${D.toFixed(0)} · 主力啟動特徵`;
+    crossover = "金叉"; score = 1; label = `低位金叉 K${K.toFixed(0)} D${D.toFixed(0)} · 偏多（回測 +1.7pp，弱）`;
   } else if (K > D && K > 80) {
     crossover = "高位鈍化"; score = -1; label = `高位 K${K.toFixed(0)} · 注意鈍化風險`;
   } else if (K < D && K > 70) {
-    crossover = "死叉"; score = -2; label = `高位死叉 K${K.toFixed(0)} D${D.toFixed(0)} · 轉弱訊號`;
+    crossover = "死叉"; score = 0; label = `高位死叉 K${K.toFixed(0)} D${D.toFixed(0)} · 回測≈中性（非確定轉弱）`;
   } else if (K > D && K >= 30 && K <= 80) {
     // 中位金叉：方向向上但非極端區，給小正分
     crossover = "金叉"; score = 1; label = `中位金叉 K${K.toFixed(0)} D${D.toFixed(0)} · 偏多格局`;

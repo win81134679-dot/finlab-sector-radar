@@ -115,3 +115,41 @@ def test_trust_only_downgraded_in_window_dressing():
     res = stock_scorer.score_stocks("semi", ["2330"], raw, _Fetcher(), _Cfg())
     assert res["2330"]["breakdown"]["chipset"] == 0.0
     assert any("季末作帳" in t for t in res["2330"]["triggered"])
+
+
+def test_volume_bonus_with_trust_and_volume():
+    """投信獨買(非季末) + 量比≥1.3 → 籌碼面額外 +0.5（帶量加分）。"""
+    raw = _raw_trust(["2330"], in_window_dressing=False)
+    res = stock_scorer.score_stocks("semi", ["2330"], raw, _Fetcher(), _Cfg(),
+                                    vol_ratio_map={"2330": 1.8})
+    # 投信獨買 +1.0 + 帶量 +0.5 = 1.5
+    assert res["2330"]["breakdown"]["chipset"] == 1.5
+    assert any("帶量" in t for t in res["2330"]["triggered"])
+
+
+def test_no_volume_bonus_without_trust_signal():
+    """無投信訊號 → 即使帶量也不加分（帶量只在投信訊號上疊加）。"""
+    raw = {"燈2 法人共振": {"semi": {"lit_stocks": [], "foreign_only": ["2330"],
+                                     "trust_only": [], "in_window_dressing": False}}}
+    res = stock_scorer.score_stocks("semi", ["2330"], raw, _Fetcher(), _Cfg(),
+                                    vol_ratio_map={"2330": 2.0})
+    # 外資獨買 +0.5，無帶量加分（外資非投信）
+    assert res["2330"]["breakdown"]["chipset"] == 0.5
+    assert not any("帶量" in t for t in res["2330"]["triggered"])
+
+
+def test_no_volume_bonus_when_volume_low():
+    """投信獨買但量比 <1.3 → 無帶量加分。"""
+    raw = _raw_trust(["2330"], in_window_dressing=False)
+    res = stock_scorer.score_stocks("semi", ["2330"], raw, _Fetcher(), _Cfg(),
+                                    vol_ratio_map={"2330": 1.0})
+    assert res["2330"]["breakdown"]["chipset"] == 1.0  # 只有投信 +1.0
+    assert not any("帶量" in t for t in res["2330"]["triggered"])
+
+
+def test_no_volume_bonus_in_window_dressing():
+    """季末作帳期：投信不計分，帶量也不疊加（無投信訊號基底）。"""
+    raw = _raw_trust(["2330"], in_window_dressing=True)
+    res = stock_scorer.score_stocks("semi", ["2330"], raw, _Fetcher(), _Cfg(),
+                                    vol_ratio_map={"2330": 2.0})
+    assert res["2330"]["breakdown"]["chipset"] == 0.0

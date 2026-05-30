@@ -291,6 +291,13 @@ def run_all(fetcher, sector_map, config,
             logger.warning("取得漲跌幅失敗，個股 change_pct 將為 None: %s", _e)
             change_pct_map = {}
 
+        # 預先取得個股量能比（近3日/近20日均量），供帶量加分用（§9.4.3 投信+帶量 +5.1pp）
+        try:
+            vol_ratio_map = fetcher.get_latest_vol_ratio()
+        except Exception as _e:
+            logger.warning("取得量能比失敗，個股帶量加分將略過: %s", _e)
+            vol_ratio_map = {}
+
         from src.analyzers.stock_scorer import score_stocks as _score_stocks
         for _sid, _v in sorted_sectors.items():
             if _v["level"] in config.STOCK_SCORE_TARGET_LEVELS:
@@ -299,6 +306,7 @@ def run_all(fetcher, sector_map, config,
                     _rankings = _score_stocks(
                         _sid, _stocks, raw, fetcher, config,
                         change_pct_map=change_pct_map,
+                        vol_ratio_map=vol_ratio_map,
                     )
                     sorted_sectors[_sid]["stock_rankings"] = _rankings
 
