@@ -86,6 +86,35 @@ def exclude_quarter_end(signal_df: pd.DataFrame, last_n_days: int = 10) -> pd.Da
     return out
 
 
+# ── 盤性診斷驗證：量價型態因子（驗 regime.ts 的量能判斷是否真有預測力）──────
+
+def vol_ratio(volume_df: pd.DataFrame, recent: int = 3, base: int = 20) -> pd.DataFrame:
+    """近 recent 日均量 / 近 base 日均量（量能位階）。"""
+    r = volume_df.rolling(recent).mean()
+    b = volume_df.rolling(base).mean()
+    return r / b.replace(0, np.nan)
+
+
+def mild_volume_signal(volume_df: pd.DataFrame, price_df: pd.DataFrame) -> pd.DataFrame:
+    """
+    溫和放量（regime.ts 判為「主力佈局」，score +2）：量比 1.3–2.5×。
+    驗證此型態未來是否真的贏大盤。
+    """
+    vr = vol_ratio(volume_df, 3, 20)
+    return (vr >= 1.3) & (vr < 2.5)
+
+
+def vol_up_price_flat_signal(volume_df: pd.DataFrame, price_df: pd.DataFrame) -> pd.DataFrame:
+    """
+    量增不漲（regime.ts 判為「派發警示」，score −3）：量比 ≥2.5× 且近3日價漲 <1%。
+    驗證此型態未來是否真的輸大盤（若 alpha<0 則 regime 判斷成立）。
+    """
+    vr = vol_ratio(volume_df, 3, 20)
+    px = price_df.ffill()
+    pchg3 = (px / px.shift(3) - 1) * 100
+    return (vr >= 2.5) & (pchg3 < 1.0)
+
+
 def forward_beat_matrix(
     price_df: pd.DataFrame,
     benchmark: pd.Series,
@@ -145,4 +174,5 @@ __all__ = [
     "consecutive_buy_signal", "holding_uptrend_signal", "net_buy_signal",
     "forward_beat_matrix", "evaluate_factor", "reindex_month_end",
     "amount_filter", "quarter_end_mask", "exclude_quarter_end",
+    "vol_ratio", "mild_volume_signal", "vol_up_price_flat_signal",
 ]

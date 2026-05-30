@@ -125,3 +125,33 @@ def test_reindex_month_end():
     out = bk.reindex_month_end(daily, me)
     assert list(out.index) == me
     assert out["A"].all()
+
+
+def test_vol_ratio():
+    idx = pd.date_range("2024-01-01", periods=25, freq="B")
+    # 前20日量100，近3日量300 → 比值約3
+    vol = pd.DataFrame({"A": [100]*22 + [300, 300, 300]}, index=idx)
+    vr = bk.vol_ratio(vol, recent=3, base=20)
+    assert vr["A"].iloc[-1] > 2.0
+
+
+def test_mild_volume_signal():
+    idx = pd.date_range("2024-01-01", periods=25, freq="B")
+    price = pd.DataFrame({"A": [100.0]*25}, index=idx)
+    # 近3日量是均量的 ~1.5x（溫和放量區間 1.3–2.5）
+    vol = pd.DataFrame({"A": [100]*22 + [150, 150, 150]}, index=idx)
+    sig = bk.mild_volume_signal(vol, price)
+    assert sig["A"].iloc[-1] == True   # noqa: E712
+
+
+def test_vol_up_price_flat_signal():
+    idx = pd.date_range("2024-01-01", periods=25, freq="B")
+    # 量爆但價平 → 量增不漲。基期量50、近3日量500 → 近20均≈117.5，比值≈4.3(≥2.5)
+    vol = pd.DataFrame({"A": [50]*22 + [500, 500, 500]}, index=idx)
+    price = pd.DataFrame({"A": [100.0]*25}, index=idx)
+    sig = bk.vol_up_price_flat_signal(vol, price)
+    assert sig["A"].iloc[-1] == True   # noqa: E712
+    # 量爆但價也漲 → 非量增不漲
+    price2 = pd.DataFrame({"A": list(np.linspace(100, 130, 25))}, index=idx)
+    sig2 = bk.vol_up_price_flat_signal(vol, price2)
+    assert sig2["A"].iloc[-1] == False  # noqa: E712

@@ -170,14 +170,17 @@ export function analyzeVolume(bars: OHLCBar[]): VolumeAnalysis {
   let score: number;
   let label: string;
 
+  // 分數依 2026-05-30 回測校準（claude.md §9.4.3）：
+  //   量增不漲 alpha +0.1pp（≈中性，非派發）→ score −3 改 −1（移除無據的重罰）
+  //   溫和放量 alpha +1.0pp（弱正）→ score +2 改 +1（原 +2 過重）
   if (ratio >= 2.5) {
     if (priceChange < 1) {
-      trend = "量增不漲"; score = -3; label = `爆量滯漲（${ratio.toFixed(1)}x）· 派發警示`;
+      trend = "量增不漲"; score = -1; label = `爆量滯漲（${ratio.toFixed(1)}x）· 量價背離（回測≈中性，非確定派發）`;
     } else {
       trend = "爆量"; score = -1; label = `爆量 ${ratio.toFixed(1)}x · 可能主力拉抬或追高`;
     }
   } else if (ratio >= 1.3) {
-    trend = "溫和放量"; score = 2; label = `溫和放量 ${ratio.toFixed(1)}x · 主力佈局特徵`;
+    trend = "溫和放量"; score = 1; label = `溫和放量 ${ratio.toFixed(1)}x · 主力佈局特徵（回測 +1pp，弱正）`;
   } else if (ratio < 0.5) {
     if (priceChange > 2) {
       // 量縮價漲：可能是主力控盤，也可能是無量虛漲，中性觀察
