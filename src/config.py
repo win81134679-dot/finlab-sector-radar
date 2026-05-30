@@ -116,6 +116,20 @@ RS52W_WARN_THRESHOLD: float = -0.10   # 板塊落後 TAIEX 超過 -10% → under
 DORMANT_MIN_IGNORE_PERIODS: int = 5   # 連續忽略 ≥ N 期才算沉寂
 
 
+# ── 輪動層（中長期板塊輪動；不計入七燈總分）──────────────────────────────────
+# 移植自「台股主動式ETF換倉策略」三層藍圖 L2/L3
+# L2 產業 RSI（Wilder 1978）
+SECTOR_RSI_PERIOD: int = 60               # Wilder RSI 週期（藍圖用 60）
+SECTOR_RSI_PERCENTILE_LOOKBACK: int = 252  # 動態分位回看（約一年，自適應超買/超賣界）
+SECTOR_RSI_SLOPE_DAYS: int = 5            # RSI 斜率窗口（轉強速度）
+SECTOR_RSI_MOMENTUM_LOOKBACK: int = 60    # 產業動能回看（近 N 日報酬）
+# L3 板塊級法人籌碼合力（權重為候選，最終由 backtest 決定）
+# 中長期下 P5/P6 台股實證支持外資為主角（持股比例方向 + 月營收領先）
+INST_FLOW_WEIGHT_FOREIGN: float = 2.0     # 外資權重（候選；中長期適用，P5/P6）
+INST_FLOW_WEIGHT_TRUST:   float = 1.0     # 投信權重（候選；短線領先 P1/P2，待回測校準）
+INST_FLOW_WINDOW: int = 20                # 主力進駐判定窗口
+
+
 def is_discord_configured() -> bool:
     """至少有一個 Discord Webhook 已設定。"""
     return any([

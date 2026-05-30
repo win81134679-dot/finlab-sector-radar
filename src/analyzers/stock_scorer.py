@@ -131,6 +131,9 @@ def score_stocks(
     # 學術 bonus 分析器
     lamp_season  = raw_results.get("學術_季節動能",  {}).get(sector_id, {})
     lamp_accel   = raw_results.get("學術_營收加速",  {}).get(sector_id, {})
+    # 輪動層（板塊輪動 → 選個股）：板塊級訊號，套用到該板塊全部個股
+    rot_rsi   = raw_results.get("輪動_產業RSI",  {}).get(sector_id, {})
+    rot_chip  = raw_results.get("輪動_板塊籌碼", {}).get(sector_id, {})
 
     lit1       = set(lamp1.get("lit_stocks",      []))   # 燈1 YoY 拐點
     mom_accel  = set(lamp1.get("mom_accel_stocks", []))  # 燈1 MoM 加速
@@ -146,6 +149,30 @@ def score_stocks(
     resonance_label = lamp2.get("resonance_label", "外資牛市共振")  # 燈2 市場狀態標籤
     accel_stocks    = set(lamp_accel.get("accel_stocks", []))        # 學術9 營收加速
     season_bonus_label = lamp_season.get("season_bonus_label")       # 學術8 季節信號
+
+    # ── 輪動層加分（板塊級，套用到該板塊全部個股）─────────────────────────
+    # 連結「板塊輪動 → 選個股」：個股位於正在輪動的強勢板塊 → 加分。
+    #   ① 板塊 RSI 偏多/超買 且斜率轉強 → +0.5（動能領先）
+    #   ② 板塊法人系統性進駐（chip_flow.score ≥ 3，★以上）→ +0.5（籌碼確認）
+    # 上限 +1.0；**刻意保守**加在「加分」維度，不喧賓奪主壓過基本面。
+    #
+    # ⚠️ 實測警示（2026-05-30 全期回測，見 claude.md §9.4.1）：
+    #   單獨用「動能+籌碼」選板塊/個股，板塊命中率僅 47%、個股贏大盤僅 44%，
+    #   輪動策略單獨用風險調整後輸 TAIEX。故輪動只當**選股加分**（小權重），
+    #   真正的選股決策仍以基本面(燈1/3/EPS) + 法人(燈2) + 技術(燈4/5)為主。
+    #   勿放大此 bonus 權重或單獨用它選股。
+    _rot_bonus = 0.0
+    _rot_tags: List[str] = []
+    _rsi_state = rot_rsi.get("rsi_state", "")
+    _rsi_slope = rot_rsi.get("rsi_slope_5d")
+    if _rsi_state in ("偏多", "超買") and _rsi_slope is not None and float(_rsi_slope) > 0:
+        _rot_bonus += 0.5
+        _rot_tags.append("輪動RSI↑")
+    _chip_score = rot_chip.get("chip_flow", {}).get("score", 0)
+    if float(_chip_score or 0) >= 3:
+        _rot_bonus += 0.5
+        _rot_tags.append("輪動籌碼✓")
+    _rot_bonus = min(_rot_bonus, 1.0)
 
     stock_signals = lamp4.get("stock_signals", {})       # 燈4 per-stock tech
     stock_rs      = lamp5.get("stock_rs",      {})       # 燈5 per-stock RS
@@ -249,6 +276,11 @@ def score_stocks(
         # 學術燈8 — 季節動能（Fu & Hsieh 2024）— 板塊級別信號，注入個股
         if season_bonus_label:
             triggered.append(season_bonus_label)
+
+        # 輪動層 — 板塊輪動加分（板塊級，套用到全部個股）
+        if _rot_bonus > 0:
+            pts_bonus += _rot_bonus
+            triggered.extend(_rot_tags)
 
         total = pts_fundamental + pts_technical + pts_chipset + pts_bonus
 

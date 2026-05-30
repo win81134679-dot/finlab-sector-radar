@@ -95,6 +95,8 @@ def run_all(fetcher, sector_map, config,
     from src.analyzers import revenue, institutional, inventory, technical
     from src.analyzers import rs_ratio, chipset, macro
     from src.analyzers import momentum_season, revenue_surprise
+    from src.analyzers import sector_rsi as _sector_rsi_mod
+    from src.analyzers import sector_chips as _sector_chips_mod
     from src.analyzers import correlation_gate
     from src.analyzers import market_state as _market_state_mod
     from src.analyzers import sector_quality_filter as _sqf_mod
@@ -151,6 +153,9 @@ def run_all(fetcher, sector_map, config,
         # 學術 bonus 分析器（不計入七燈總分）
         ("學術_季節動能",   lambda: momentum_season.analyze(fetcher, sector_map, config)),
         ("學術_營收加速",   lambda: revenue_surprise.analyze(fetcher, sector_map, config)),
+        # 輪動層分析器（中長期板塊輪動；不計入七燈總分）
+        ("輪動_產業RSI",   lambda: _sector_rsi_mod.analyze(fetcher, sector_map, config)),
+        ("輪動_板塊籌碼",  lambda: _sector_chips_mod.analyze(fetcher, sector_map, config)),
     ]
 
     raw: Dict[str, Any] = {}
@@ -176,6 +181,15 @@ def run_all(fetcher, sector_map, config,
         logger.info("P1 大盤三態: %s (confidence=%.2f)", _market_state.get("state_zh"), _market_state.get("confidence", 0))
     except Exception as _e_ms:
         logger.warning("P1 大盤三態計算失敗（不影響主分析）: %s", _e_ms)
+
+    # ── 景氣循環時鐘（第一層宏觀濾網；官方 NDC 優先 + 代理 fallback）──────
+    _cycle_clock: dict = {}
+    try:
+        from src.analyzers import cycle_clock as _cycle_clock_mod
+        _cycle_clock = _cycle_clock_mod.analyze(fetcher, config)
+        logger.info("景氣象限: %s (%s)", _cycle_clock.get("phase_zh"), _cycle_clock.get("source"))
+    except Exception as _e_cc:
+        logger.warning("景氣象限計算失敗（不影響主分析）: %s", _e_cc)
 
     # ── 資料可用性閘門 ─────────────────────────────────────────────────
     # 防止 FinLab API 全掛 / 部分掛時覆蓋正常資料（GitHub Actions 預防性機制）
@@ -346,6 +360,7 @@ def run_all(fetcher, sector_map, config,
         "macro_warning":  macro_warning,
         "raw_results":    raw,
         "market_state":   _market_state,    # P1 大盤三態
+        "cycle_clock":    _cycle_clock,     # 景氣循環時鐘（第一層濾網）
         "quality_filter": _sqf_results,     # P3 垃圾股過濾
         "summary": {
             "strong":  [sid for sid, v in sorted_sectors.items() if v["level"] == "強烈關注"],
@@ -409,6 +424,49 @@ def _calc_cycle_stage(signals: list, total: float, level: str) -> Optional[str]:
     if (rev >= 0.5 or inv >= 0.5) and inst < 0.5 and tech < 0.5:
         return "萌芽期"
     return None
+
+
+def _compute_rotation_scores(raw_results: Dict[str, Any], sector_ids: List[str]) -> Dict[str, Optional[float]]:
+    """
+    輪動綜合強度（中長期板塊輪動）。
+    照 ETF 專案 rotation_engine.industry_strength：
+      strength = mean( z(產業動能), z(RSI斜率), z(籌碼進駐分) )
+    跨板塊標準化，回傳 {sid: rotation_score or None}。不計入七燈總分。
+    """
+    rsi_raw  = raw_results.get("輪動_產業RSI", {})
+    chip_raw = raw_results.get("輪動_板塊籌碼", {})
+
+    mom, slope, chip = {}, {}, {}
+    for sid in sector_ids:
+        r = rsi_raw.get(sid, {})
+        c = chip_raw.get(sid, {})
+        m_val = r.get("sector_momentum_pct")
+        s_val = r.get("rsi_slope_5d")
+        if m_val is not None:
+            mom[sid] = float(m_val)
+        if s_val is not None:
+            slope[sid] = float(s_val)
+        cf = c.get("chip_flow", {})
+        if cf:
+            chip[sid] = float(cf.get("score", 0))
+
+    def _z(d: Dict[str, float]) -> Dict[str, float]:
+        if len(d) < 2:
+            return {k: 0.0 for k in d}
+        vals = list(d.values())
+        mu = sum(vals) / len(vals)
+        var = sum((x - mu) ** 2 for x in vals) / len(vals)
+        sd = var ** 0.5
+        if sd == 0:
+            return {k: 0.0 for k in d}
+        return {k: (v - mu) / sd for k, v in d.items()}
+
+    zm, zs, zc = _z(mom), _z(slope), _z(chip)
+    out: Dict[str, Optional[float]] = {}
+    for sid in sector_ids:
+        parts = [z.get(sid) for z in (zm, zs, zc) if sid in z]
+        out[sid] = round(sum(parts) / len(parts), 3) if parts else None
+    return out
 
 
 def _save_snapshot(result: Dict[str, Any], config, sector_map) -> Optional[Path]:
@@ -493,6 +551,12 @@ def _save_snapshot(result: Dict[str, Any], config, sector_map) -> Optional[Path]
     # ── 建立完整板塊快照（含 name_zh + stocks）──────────────────
     from src.stock_names import get_name as _get_stock_name
 
+    # 輪動層：跨板塊綜合強度（中長期輪動；不計入七燈總分）
+    _rotation_scores = _compute_rotation_scores(
+        result.get("raw_results", {}),
+        list(result["sector_results"].keys()),
+    )
+
     sectors_payload: Dict[str, Any] = {}
     for sid, v in result["sector_results"].items():
         stock_list: List[Dict[str, Any]] = []
@@ -523,6 +587,10 @@ def _save_snapshot(result: Dict[str, Any], config, sector_map) -> Optional[Path]
         # 暴露 RS-Momentum 給前端
         _rs_data = result.get("raw_results", {}).get("燈5 相對強度", {}).get(sid, {})
         _rs_mom = _rs_data.get("rs_momentum")
+
+        # 輪動層：產業 RSI + 板塊籌碼 + 綜合強度（中長期輪動）
+        _rsi_data  = result.get("raw_results", {}).get("輪動_產業RSI", {}).get(sid, {})
+        _chip_data = result.get("raw_results", {}).get("輪動_板塊籌碼", {}).get(sid, {})
 
         # P2: 領頭股健康度
         _leader_weak = v.get("leader_weak", False)
@@ -567,6 +635,16 @@ def _save_snapshot(result: Dict[str, Any], config, sector_map) -> Optional[Path]
             "taiex_52w_return":    _taiex_52w_ret,
             "sector_vs_taiex_52w": _sector_vs_taiex_52w,
             "underperforming_52w": _underperforming_52w,
+            # 輪動層（L2 產業RSI + L3 板塊籌碼 + 綜合強度）— 中長期板塊輪動
+            "rotation": {
+                "rsi_60":              _rsi_data.get("rsi_60"),
+                "rsi_percentile":      _rsi_data.get("rsi_percentile"),
+                "rsi_state":           _rsi_data.get("rsi_state", "資料不足"),
+                "rsi_slope_5d":        _rsi_data.get("rsi_slope_5d"),
+                "sector_momentum_pct": _rsi_data.get("sector_momentum_pct"),
+                "chip_flow":           _chip_data.get("chip_flow", {}),
+                "rotation_score":      _rotation_scores.get(sid),
+            },
         }
 
     # ── P5 沉寂板塊突破偵測（讀取歷史快照，偵測後注入 sectors_payload）──
@@ -581,6 +659,25 @@ def _save_snapshot(result: Dict[str, Any], config, sector_map) -> Optional[Path]
         logger.warning("P5 沉寂板塊偵測失敗（不影響主分析）: %s", _e_p5)
         for _dsid in sectors_payload:
             sectors_payload[_dsid]["dormant_awakening"] = False
+
+    # ── 接棒訊號（領先板塊過熱 → 落後板塊接棒；讀固化 pairs.json）──────────
+    try:
+        from src.analyzers import rotation_pairs as _rp_mod
+        _pairs = _rp_mod.load_pairs(config)
+        _rot_map = {sid: v.get("rotation", {}) for sid, v in sectors_payload.items()}
+        _stage_map = {sid: v.get("cycle_stage") for sid, v in sectors_payload.items()}
+        _handoffs = _rp_mod.detect_handoffs(_rot_map, _stage_map, _pairs)
+        for _sid in sectors_payload:
+            _hf = _handoffs.get(_sid)
+            if _hf and _hf.get("from") in sectors_payload:
+                _hf = {**_hf, "from_name": sectors_payload[_hf["from"]].get("name_zh", _hf["from"])}
+            sectors_payload[_sid]["rotation_handoff"] = _hf
+        if _handoffs:
+            logger.info("接棒訊號: %d 個落後板塊觸發 rotation_handoff", len(_handoffs))
+    except Exception as _e_hf:
+        logger.warning("接棒訊號偵測失敗（不影響主分析）: %s", _e_hf)
+        for _sid in sectors_payload:
+            sectors_payload[_sid].setdefault("rotation_handoff", None)
 
     # ── 構建完整 snapshot dict ──────────────────────────────────────────
     run_dt  = datetime.now()
@@ -604,6 +701,7 @@ def _save_snapshot(result: Dict[str, Any], config, sector_map) -> Optional[Path]
         "macro_warning": result.get("macro_warning", False),
         # P1: 大盤三態（軟版，不影響七燈閾值）
         "market_state": result.get("market_state", {}),
+        "cycle_clock": result.get("cycle_clock", {}),
         "sectors": sectors_payload,
     }
 

@@ -57,6 +57,27 @@ const ExitRiskSchema = z.object({
   rs_quadrant: z.string(),
 });
 
+const ChipFlowSchema = z.object({
+  score: z.number(),
+  level: z.string(),
+  consec_buy: z.number(),
+  cum_chip: z.number(),
+  accel: z.number(),
+  z_score: z.number(),
+  breakout: z.boolean(),
+});
+
+// 輪動層（中長期板塊輪動）：L2 產業RSI + L3 板塊籌碼 + 綜合強度
+const RotationSchema = z.object({
+  rsi_60: z.number().nullable().optional(),
+  rsi_percentile: z.number().nullable().optional(),
+  rsi_state: z.string().optional().default("資料不足"),
+  rsi_slope_5d: z.number().nullable().optional(),
+  sector_momentum_pct: z.number().nullable().optional(),
+  chip_flow: ChipFlowSchema.partial().optional().default({}),
+  rotation_score: z.number().nullable().optional(),
+});
+
 const SectorSchema = z.object({
   name_zh: z.string(),
   total: z.number(),
@@ -70,6 +91,14 @@ const SectorSchema = z.object({
   homogeneity: z.number().nullable().optional(),
   member_count: z.number().optional(),
   stocks: z.array(StockSchema).optional().default([]),
+  rotation: RotationSchema.nullable().optional(),
+  rotation_handoff: z.object({
+    from: z.string(),
+    from_name: z.string().optional(),
+    lag_days: z.number().nullable().optional(),
+    corr: z.number().nullable().optional(),
+    signal: z.string(),
+  }).nullable().optional(),
 });
 
 const MarketStateSchema = z.object({
@@ -81,6 +110,15 @@ const MarketStateSchema = z.object({
   details: z.string().optional().default(""),
 });
 
+const CycleClockSchema = z.object({
+  phase: z.enum(["recovery", "expansion", "slowdown", "recession", "unknown"]).default("unknown"),
+  phase_zh: z.string().optional().default("數據不足"),
+  source: z.enum(["ndc_official", "proxy"]).optional(),
+  ndc_score: z.number().nullable().optional(),
+  favored_sectors: z.array(z.string()).optional().default([]),
+  details: z.string().optional().default(""),
+});
+
 const SnapshotSchema = z.object({
   schema_version: z.string().optional(),
   date: z.string(),
@@ -89,6 +127,7 @@ const SnapshotSchema = z.object({
   macro: MacroSchema,
   macro_warning: z.boolean().optional(),
   market_state: MarketStateSchema.optional(),
+  cycle_clock: CycleClockSchema.optional(),
   sectors: z.record(SectorSchema),
 });
 

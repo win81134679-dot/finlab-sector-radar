@@ -164,7 +164,8 @@ class TestGenerateExitAlerts:
 
     @patch("src.analyzers.exit_alert._save_json")
     @patch("src.analyzers.exit_alert._load_previous_snapshot", return_value=None)
-    def test_with_sector_alert_and_holdings(self, mock_load, mock_save):
+    @patch("src.analyzers.exit_alert._load_user_holdings", return_value=None)
+    def test_with_sector_alert_and_holdings(self, mock_user, mock_load, mock_save):
         sectors = {
             "s1": _make_sector(
                 exit_score=60,
@@ -199,7 +200,8 @@ class TestGenerateExitAlerts:
 
     @patch("src.analyzers.exit_alert._save_json")
     @patch("src.analyzers.exit_alert._load_previous_snapshot", return_value=None)
-    def test_safe_count_calculation(self, mock_load, mock_save):
+    @patch("src.analyzers.exit_alert._load_user_holdings", return_value=None)
+    def test_safe_count_calculation(self, mock_user, mock_load, mock_save):
         sectors = {
             "s1": _make_sector(exit_score=60, rs_quadrant="Weakening"),
         }

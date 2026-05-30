@@ -70,6 +70,38 @@ export interface SectorData {
   underperforming_52w?: boolean;
   // P5: 沉寂板塊突破
   dormant_awakening?: boolean;
+  // 輪動層（中長期板塊輪動）：L2 產業RSI + L3 板塊籌碼 + 綜合強度
+  rotation?: RotationData | null;
+  // 接棒訊號（領先板塊過熱 → 此落後板塊接棒候選）
+  rotation_handoff?: RotationHandoff | null;
+}
+
+export interface RotationHandoff {
+  from: string;        // 領先板塊 sector_id
+  from_name?: string;  // 領先板塊中文名
+  lag_days?: number | null;
+  corr?: number | null;
+  signal: string;      // "接棒候選"
+}
+
+export interface ChipFlow {
+  score: number;
+  level: string;
+  consec_buy: number;
+  cum_chip: number;
+  accel: number;
+  z_score: number;
+  breakout: boolean;
+}
+
+export interface RotationData {
+  rsi_60?: number | null;
+  rsi_percentile?: number | null;
+  rsi_state?: string;
+  rsi_slope_5d?: number | null;
+  sector_momentum_pct?: number | null;
+  chip_flow?: Partial<ChipFlow>;
+  rotation_score?: number | null;
 }
 
 export interface MacroData {
@@ -97,6 +129,16 @@ export interface MarketState {
   details: string;
 }
 
+// 景氣循環時鐘（第一層宏觀濾網）
+export interface CycleClock {
+  phase: "recovery" | "expansion" | "slowdown" | "recession" | "unknown";
+  phase_zh: string;
+  source?: "ndc_official" | "proxy";
+  ndc_score?: number | null;
+  favored_sectors: string[];
+  details: string;
+}
+
 export interface SignalSnapshot {
   schema_version?: string;
   date: string;
@@ -105,6 +147,7 @@ export interface SignalSnapshot {
   macro: MacroData;
   macro_warning?: boolean;  // 向下相容
   market_state?: MarketState;  // P1: 大盤三態
+  cycle_clock?: CycleClock;    // 景氣循環時鐘
   sectors: Record<string, SectorData>;
 }
 
