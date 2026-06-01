@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-05-31T20:31:46.868Z",
+  "updatedAt": "2026-06-01T01:18:43.468Z",
   "posts": [
     {
       "text": "Trump wants to ‘manage’ China trade. Businesses see a tariff opening. - Politico Trump wants to ‘manage’ China trade. Businesses see a tariff opening.  Politico",
@@ -56,6 +56,26 @@
       "impacts": {
         "ic_design": -0.5,
         "shipping": -0.4,
+        "display": -0.4,
+        "ev_supply": -0.3
+      },
+      "sentiment": {
+        "compound": 0,
+        "label": "中性"
+      }
+    },
+    {
+      "text": "Trump's Trade War Caused a $15 Billion Decline in U.S. Farm Sales to China - Yahoo Finance Trump's Trade War Caused a $15 Billion Decline in U.S. Farm Sales to China  Yahoo Finance",
+      "timestamp": "2026-05-27T20:05:04.000Z",
+      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOTDBleXpEcDB3WlBnaFp4NnJqa2xwZE5ZYUE1Q2R0TGs4V05CSmdrRTExUlNlN04xR2xhNmZ6bEpIVmNWTUNHMzAyTzlMRm4zZWhNTzM5aGhNempwZ1hEdHB0bVF0eEVkS1M0a3RzY1ZpUEN4ckhVWHd6WkFyRlNvOGNWVDlMMWxSTm5LcDBPbFEtRjBlOUE?oc=5",
+      "keywords": [
+        "trade war",
+        "china"
+      ],
+      "impacts": {
+        "foundry": -0.6,
+        "ic_design": -1,
+        "shipping": -1,
         "display": -0.4,
         "ev_supply": -0.3
       },
@@ -122,26 +142,6 @@
       "sentiment": {
         "compound": -0.7184,
         "label": "強烈利空"
-      }
-    },
-    {
-      "text": "Trump's Trade War Caused a $15 Billion Decline in U.S. Farm Sales to China - Reason Magazine Trump's Trade War Caused a $15 Billion Decline in U.S. Farm Sales to China  Reason Magazine",
-      "timestamp": "2026-05-27T20:05:04.000Z",
-      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNRlR5V1BjUXZfX0s5WlFKa3VxQjRlb2pGc2VoQ0JzSnc1LURLWTJoeWVuV1pFLW1jdUZpYzQtNk9uNHIzUEwzUnVCdjNxZ2c5dzZWeWlONC1IWDJHdFVJVmktWDFaZXRnTW5WOWRVMnVDN0xrNzRKM0xVUHcwZG5lQ29zdVhJdUpVZllMMFpMT1JwajU5aG5KVGItenc2NWdmUkFXdg?oc=5",
-      "keywords": [
-        "trade war",
-        "china"
-      ],
-      "impacts": {
-        "foundry": -0.6,
-        "ic_design": -1,
-        "shipping": -1,
-        "display": -0.4,
-        "ev_supply": -0.3
-      },
-      "sentiment": {
-        "compound": 0,
-        "label": "中性"
       }
     },
     {
@@ -284,7 +284,7 @@
       }
     },
     {
-      "text": "Who's winning under Trump's tariff policy? - dw.com Who's winning under Trump's tariff policy?  dw.com",
+      "text": "Who's winning under Trump's tariff policy? - DW.com Who's winning under Trump's tariff policy?  DW.com",
       "timestamp": "2026-04-02T07:00:00.000Z",
       "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQM2dOSWczS2JGS1B4RUVPZVItaExXbjlDOXJ5ZkFhYm5xLVh2Q3ZjcGIwdjIwajBCdzRxYjQyM1B3WDQ5QkRpWFpWTDd2VkhLSGprWDNqakYyMTcwV0Y4MXV4cGlDZ0lWNE4wWmZKTmFvOTFSUXEtc3NDQ0RpcmUxMUhBZzRxNkczYmVwLW5sRW5SVnFabE02U0JJb0swZHFFTHpyZ01B?oc=5",
       "keywords": [
@@ -419,38 +419,17 @@
       }
     }
   ],
-  "deltas": [
-    {
-      "sector": "foundry",
-      "sectorName": "晶圓代工",
-      "prev": -0.701,
-      "current": -0.756,
-      "delta": -0.055,
-      "momentum": "↓ 壓力加深",
-      "accelerating": true
-    }
-  ],
-  "topDeltas": [
-    {
-      "sector": "foundry",
-      "sectorName": "晶圓代工",
-      "prev": -0.701,
-      "current": -0.756,
-      "delta": -0.055,
-      "momentum": "↓ 壓力加深",
-      "accelerating": true
-    }
-  ],
+  "deltas": [],
+  "topDeltas": [],
   "totalAnalyzed": 100,
   "sources": [
     "Google News"
   ],
   "sectorState": {
     "foundry": {
-      "score": -0.756,
-      "lastUpdated": "2026-05-31T20:31:46.868Z",
+      "score": -0.753,
+      "lastUpdated": "2026-06-01T01:18:43.468Z",
       "deltaHistory": [
-        -0.08700000000000008,
         0.07300000000000006,
         -0.0010000000000000009,
         0.006000000000000005,
@@ -459,14 +438,14 @@
         0.010000000000000009,
         0.04600000000000004,
         0.010000000000000009,
-        -0.05500000000000005
+        -0.05500000000000005,
+        0.0030000000000000027
       ]
     },
     "shipping": {
-      "score": -0.93,
-      "lastUpdated": "2026-05-31T20:31:46.868Z",
+      "score": -0.931,
+      "lastUpdated": "2026-06-01T01:18:43.468Z",
       "deltaHistory": [
-        -0.007000000000000006,
         0.007000000000000006,
         0.004999999999999893,
         0.007000000000000006,
@@ -475,14 +454,14 @@
         0.0039999999999998925,
         0.007000000000000006,
         -0.008000000000000007,
-        0.0050000000000000044
+        0.0050000000000000044,
+        -0.0010000000000000009
       ]
     },
     "steel": {
-      "score": -0.629,
-      "lastUpdated": "2026-05-31T20:31:46.868Z",
+      "score": -0.604,
+      "lastUpdated": "2026-06-01T01:18:43.468Z",
       "deltaHistory": [
-        -0.05800000000000005,
         0.05900000000000005,
         0.018000000000000016,
         0.0010000000000000009,
@@ -491,12 +470,13 @@
         0.02300000000000002,
         0.040000000000000036,
         0.007000000000000006,
-        -0.04400000000000004
+        -0.04400000000000004,
+        0.025000000000000022
       ]
     },
     "ic_design": {
       "score": -1,
-      "lastUpdated": "2026-05-31T20:31:46.868Z",
+      "lastUpdated": "2026-06-01T01:18:43.468Z",
       "deltaHistory": [
         0,
         0,
@@ -511,10 +491,9 @@
       ]
     },
     "display": {
-      "score": -0.896,
-      "lastUpdated": "2026-05-31T20:31:46.868Z",
+      "score": -0.875,
+      "lastUpdated": "2026-06-01T01:18:43.468Z",
       "deltaHistory": [
-        -0.01200000000000001,
         0.016000000000000014,
         -0.007000000000000006,
         0.0050000000000000044,
@@ -523,14 +502,14 @@
         0,
         0.009000000000000008,
         -0.0030000000000000027,
-        -0.010000000000000009
+        -0.010000000000000009,
+        0.02100000000000002
       ]
     },
     "ev_supply": {
-      "score": -0.714,
-      "lastUpdated": "2026-05-31T20:31:46.868Z",
+      "score": -0.698,
+      "lastUpdated": "2026-06-01T01:18:43.468Z",
       "deltaHistory": [
-        -0.018000000000000016,
         0.016000000000000014,
         -0.0050000000000000044,
         0.02100000000000002,
@@ -539,14 +518,14 @@
         0.006000000000000005,
         0.009000000000000008,
         0,
-        -0.013000000000000012
+        -0.013000000000000012,
+        0.016000000000000014
       ]
     },
     "ai_server": {
-      "score": 0.112,
-      "lastUpdated": "2026-05-31T20:31:46.868Z",
+      "score": 0.111,
+      "lastUpdated": "2026-06-01T01:18:43.468Z",
       "deltaHistory": [
-        -0.007000000000000006,
         0.007000000000000006,
         -0.046,
         0.06699999999999999,
@@ -555,14 +534,14 @@
         -0.043,
         0.0010000000000000009,
         0.0020000000000000018,
+        -0.0010000000000000009,
         -0.0010000000000000009
       ]
     },
     "defense": {
       "score": 0.007,
-      "lastUpdated": "2026-05-31T20:31:46.868Z",
+      "lastUpdated": "2026-06-01T01:18:43.468Z",
       "deltaHistory": [
-        0.003,
         -0.003,
         0.002,
         -0.003,
@@ -571,7 +550,8 @@
         -0.001,
         -0.003,
         0,
-        0.003
+        0.003,
+        0
       ]
     },
     "solar": {
@@ -608,9 +588,8 @@
     },
     "petrochemical": {
       "score": 0.004,
-      "lastUpdated": "2026-05-31T20:31:46.868Z",
+      "lastUpdated": "2026-06-01T01:18:43.468Z",
       "deltaHistory": [
-        -0.001,
         0,
         0,
         0,
@@ -619,12 +598,13 @@
         0.002,
         -0.001,
         0,
-        0.001
+        0.001,
+        0
       ]
     },
     "semiconductor_equip": {
       "score": 0,
-      "lastUpdated": "2026-05-31T20:31:46.868Z",
+      "lastUpdated": "2026-06-01T01:18:43.468Z",
       "deltaHistory": [
         0,
         0,
@@ -640,7 +620,7 @@
     },
     "robotics": {
       "score": 0,
-      "lastUpdated": "2026-05-31T20:31:46.868Z",
+      "lastUpdated": "2026-06-01T01:18:43.468Z",
       "deltaHistory": [
         0,
         0,
@@ -655,8 +635,8 @@
       ]
     },
     "packaging": {
-      "score": -0.009,
-      "lastUpdated": "2026-05-30T16:29:20.973Z",
+      "score": 0,
+      "lastUpdated": "2026-06-01T01:18:43.468Z",
       "deltaHistory": [
         0,
         0,
@@ -666,8 +646,8 @@
         0,
         0,
         0,
-        0,
-        -0.009
+        -0.009,
+        0.009
       ]
     },
     "banking": {
@@ -720,7 +700,7 @@
     },
     "pcb": {
       "score": 0,
-      "lastUpdated": "2026-05-31T20:31:46.868Z",
+      "lastUpdated": "2026-06-01T01:18:43.468Z",
       "deltaHistory": [
         0,
         0,
