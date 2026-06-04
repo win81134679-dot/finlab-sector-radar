@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-04T13:22:08.698Z",
+  "updatedAt": "2026-06-04T17:12:24.458Z",
   "posts": [
     {
       "text": "U.S. says it plans extra tariffs of 10% or more for most trading partners after forced labor probe - PBS U.S. says it plans extra tariffs of 10% or more for most trading partners after forced labor probe  PBS",
@@ -133,19 +133,44 @@
       }
     },
     {
-      "text": "Trump administration announces new duties on much of the world as permanent tariff plans take shape - Yahoo Finance Trump administration announces new duties on much of the world as permanent tariff plans take shape  Yahoo Finance",
-      "timestamp": "2026-06-03T15:19:23.000Z",
-      "url": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxPaXEzNDVRUUlCVW5VT1VjbjZYRWxfT25hOVQyeVNtX3pNZU9xcXduTjNSM01NWFROQ3hzU1JHRmVlYm4zLXNnakxpVFdHZW9YbnNNUVhoSEhYNDRuaFhOYkpYNXktUHZYTU9OOTFHeWszQ1dDRkVXZkxqaTRyZWwwbU9VMWNmSm9Bb3dvM1ZHSW9paVdhbUpOZ0FfTC1ieVNBSGxKSjByVjZGNy1xQ0M4WnFjV3hWMUR4VV9mWkR6c3hjemhibnQxaW9UMFREYlNVdnNTeVduRTBuS3FvZkZkQTV5NEpLOTl4d0RnNQ?oc=5",
+      "text": "Trump's White House proposes 10% tariff plan on countries including China, EU, UK - Fortune Trump's White House proposes 10% tariff plan on countries including China, EU, UK  Fortune",
+      "timestamp": "2026-06-03T11:09:00.000Z",
+      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNcXZqQkVjSW04bjQwaUhjNVZTb0g3NjFLZHFyZFpUYWVycF9RTFcxaDBvYVA3RG1iMVluTjBMY0tZRmRJUlRKZnFTRUxkZ1RWZVZLTkt5OGhUTTluOTVPZ0ZSa2tNOVdsSERCaU5ZakNxcFZEQjFjbWtkWDlHcmlKZ19vZ0tIb2NUcl9EQ0JYTUpETkZuUkNv?oc=5",
       "keywords": [
-        "tariff"
+        "tariff",
+        "china"
       ],
       "impacts": {
         "foundry": -0.7,
-        "shipping": -0.5,
+        "shipping": -0.9,
         "steel": -0.5,
-        "ic_design": -0.6,
-        "display": -0.5,
-        "ev_supply": -0.4
+        "ic_design": -1,
+        "display": -0.9,
+        "ev_supply": -0.7
+      },
+      "sentiment": {
+        "compound": -0.7184,
+        "label": "強烈利空"
+      }
+    },
+    {
+      "text": "US eyes new tariffs for China, EU, Mexico and more after labor probes - Supply Chain Dive US eyes new tariffs for China, EU, Mexico and more after labor probes  Supply Chain Dive",
+      "timestamp": "2026-06-03T15:23:08.000Z",
+      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxONzg4SE5vNk5UYVB0NUxiWDZ3S1lwdERxejdBSGtRWE1lT19IdFhUZEF0bzlpM1R3elZoY05maUo4dUpHRzV2Tk5JYTBBaFQzaEZSdUJ2d2ctVG5nMTVrT1kxTVphZzM5U1ZkbzN4TVBaOVJhNDkzN2tqWHMyZ0JaSVh6dUVBSl9MOTVZWUEwWVNneU5JZmZVYWE4bFZJc24tQVByMFRJazIwU09qUjBIU0ZR?oc=5",
+      "keywords": [
+        "ai",
+        "tariff",
+        "tariffs",
+        "china"
+      ],
+      "impacts": {
+        "ai_server": 0.7,
+        "foundry": -1,
+        "shipping": -1,
+        "steel": -1,
+        "ic_design": -1,
+        "display": -1,
+        "ev_supply": -1
       },
       "sentiment": {
         "compound": -0.7184,
@@ -174,44 +199,19 @@
       }
     },
     {
-      "text": "Trump's White House proposes 10% tariff plan on countries including China, EU, UK - Fortune Trump's White House proposes 10% tariff plan on countries including China, EU, UK  Fortune",
-      "timestamp": "2026-06-03T11:09:00.000Z",
-      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNcXZqQkVjSW04bjQwaUhjNVZTb0g3NjFLZHFyZFpUYWVycF9RTFcxaDBvYVA3RG1iMVluTjBMY0tZRmRJUlRKZnFTRUxkZ1RWZVZLTkt5OGhUTTluOTVPZ0ZSa2tNOVdsSERCaU5ZakNxcFZEQjFjbWtkWDlHcmlKZ19vZ0tIb2NUcl9EQ0JYTUpETkZuUkNv?oc=5",
+      "text": "Trump administration announces new duties on much of the world as permanent tariff plans take shape - Yahoo Finance Trump administration announces new duties on much of the world as permanent tariff plans take shape  Yahoo Finance",
+      "timestamp": "2026-06-03T15:19:23.000Z",
+      "url": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxPaXEzNDVRUUlCVW5VT1VjbjZYRWxfT25hOVQyeVNtX3pNZU9xcXduTjNSM01NWFROQ3hzU1JHRmVlYm4zLXNnakxpVFdHZW9YbnNNUVhoSEhYNDRuaFhOYkpYNXktUHZYTU9OOTFHeWszQ1dDRkVXZkxqaTRyZWwwbU9VMWNmSm9Bb3dvM1ZHSW9paVdhbUpOZ0FfTC1ieVNBSGxKSjByVjZGNy1xQ0M4WnFjV3hWMUR4VV9mWkR6c3hjemhibnQxaW9UMFREYlNVdnNTeVduRTBuS3FvZkZkQTV5NEpLOTl4d0RnNQ?oc=5",
       "keywords": [
-        "tariff",
-        "china"
+        "tariff"
       ],
       "impacts": {
         "foundry": -0.7,
-        "shipping": -0.9,
+        "shipping": -0.5,
         "steel": -0.5,
-        "ic_design": -1,
-        "display": -0.9,
-        "ev_supply": -0.7
-      },
-      "sentiment": {
-        "compound": -0.7184,
-        "label": "強烈利空"
-      }
-    },
-    {
-      "text": "Trump administration plans new tariffs on 60 trading partners over forced labor import enforcement failures - Fox Business Trump administration plans new tariffs on 60 trading partners over forced labor import enforcement failures  Fox Business",
-      "timestamp": "2026-06-03T18:15:00.000Z",
-      "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxOdld4ZmVUZW03cUJlWlJmeGJHaFpSWHplcDgwSF9jbFJmUTBhXzJ4QXFJSVBubnh5YzBCZEJiazVSSTFTVHpybWpPSGtIZjRVMFp6OGpBN2RDMWJVYll3WmRVM2diN0xrakE2ZEw3Y3NwQ2RnNTRnZVVjR3dIX3N0TC1HcXNXeGF0bnExSUpoTmRaTGowWjdUNmw2Z0ZQUFFRYjJ3NHNZaG1qZDRQbDZYenI4VnNnUUhFT1g0QVVsZzM0R0loNzZzN01kYzdzZW5Vd1JTZjBXODTSAd4BQVVfeXFMTklFeUp1SG1WaEp0d0ZVSUtnbFNSblpDNVV4VmpJX0I3S2thLUhaemtzSG9DLU4wY0Zad3lFR3JoZy1uaGljaG1IVktHWm13RXVmaUt5TW9rM0ZlbVlaLVdpMHlBYXc4ZlZFc2RZQmw0Q05yVXQzTEtjLWMyMVRMVnc0NzNRYVYzQ3Z0SkpWeElqMkNhM2lVOUg4ZTR3SnQyMlpxVkF6bzFYRUJtanVOckRGMVQ0Tm9Jc1hQcG1oY1g3bmFPT3lLT0RHRVJXQkVRSjRHVHptTzdGV1d5MFVB?oc=5",
-      "keywords": [
-        "ai",
-        "tariff",
-        "tariffs",
-        "port"
-      ],
-      "impacts": {
-        "ai_server": 0.7,
-        "foundry": -1,
-        "shipping": -1,
-        "steel": -1,
-        "ic_design": -1,
-        "display": -1,
-        "ev_supply": -0.8
+        "ic_design": -0.6,
+        "display": -0.5,
+        "ev_supply": -0.4
       },
       "sentiment": {
         "compound": -0.7184,
@@ -283,6 +283,30 @@
       }
     },
     {
+      "text": "Trump administration plans new tariffs on 60 trading partners over forced labor import enforcement failures - Fox Business Trump administration plans new tariffs on 60 trading partners over forced labor import enforcement failures  Fox Business",
+      "timestamp": "2026-06-03T18:15:00.000Z",
+      "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxOdld4ZmVUZW03cUJlWlJmeGJHaFpSWHplcDgwSF9jbFJmUTBhXzJ4QXFJSVBubnh5YzBCZEJiazVSSTFTVHpybWpPSGtIZjRVMFp6OGpBN2RDMWJVYll3WmRVM2diN0xrakE2ZEw3Y3NwQ2RnNTRnZVVjR3dIX3N0TC1HcXNXeGF0bnExSUpoTmRaTGowWjdUNmw2Z0ZQUFFRYjJ3NHNZaG1qZDRQbDZYenI4VnNnUUhFT1g0QVVsZzM0R0loNzZzN01kYzdzZW5Vd1JTZjBXODTSAd4BQVVfeXFMTklFeUp1SG1WaEp0d0ZVSUtnbFNSblpDNVV4VmpJX0I3S2thLUhaemtzSG9DLU4wY0Zad3lFR3JoZy1uaGljaG1IVktHWm13RXVmaUt5TW9rM0ZlbVlaLVdpMHlBYXc4ZlZFc2RZQmw0Q05yVXQzTEtjLWMyMVRMVnc0NzNRYVYzQ3Z0SkpWeElqMkNhM2lVOUg4ZTR3SnQyMlpxVkF6bzFYRUJtanVOckRGMVQ0Tm9Jc1hQcG1oY1g3bmFPT3lLT0RHRVJXQkVRSjRHVHptTzdGV1d5MFVB?oc=5",
+      "keywords": [
+        "ai",
+        "tariff",
+        "tariffs",
+        "port"
+      ],
+      "impacts": {
+        "ai_server": 0.7,
+        "foundry": -1,
+        "shipping": -1,
+        "steel": -1,
+        "ic_design": -1,
+        "display": -1,
+        "ev_supply": -0.8
+      },
+      "sentiment": {
+        "compound": -0.7184,
+        "label": "強烈利空"
+      }
+    },
+    {
       "text": "US cites forced labor concerns as grounds for new tariffs - Reuters US cites forced labor concerns as grounds for new tariffs  Reuters",
       "timestamp": "2026-06-03T03:07:00.000Z",
       "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQZDdlM2ZsVEQ4RmFKOTBNbWdrZHEwaWpfc0kyOWJkcExOc1V2emFBamZLLW5ySlRoT0NpTnRKYi1FNnE1Y3l6TVZjNzRyTDFQWWlya3NZSXdSRWpSTTJ5azBUWVlvNVZJY2lYMnZsN2k2VWo1V1NGMWxkblRLcE1zTVhNdHdnM1I5bWV4NWljYzBjX201UEtCUjN5Njh4enB4LUxiNzZJOUpOZlQ3VzY0WnEyNFlrOEE2?oc=5",
@@ -304,44 +328,22 @@
       }
     },
     {
-      "text": "US eyes new tariffs for China, EU, Mexico and more after labor probes - Supply Chain Dive US eyes new tariffs for China, EU, Mexico and more after labor probes  Supply Chain Dive",
-      "timestamp": "2026-06-03T15:23:08.000Z",
-      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxONzg4SE5vNk5UYVB0NUxiWDZ3S1lwdERxejdBSGtRWE1lT19IdFhUZEF0bzlpM1R3elZoY05maUo4dUpHRzV2Tk5JYTBBaFQzaEZSdUJ2d2ctVG5nMTVrT1kxTVphZzM5U1ZkbzN4TVBaOVJhNDkzN2tqWHMyZ0JaSVh6dUVBSl9MOTVZWUEwWVNneU5JZmZVYWE4bFZJc24tQVByMFRJazIwU09qUjBIU0ZR?oc=5",
+      "text": "‘Utterly absurd’: China and EU push back on US forced labour tariff claims - South China Morning Post ‘Utterly absurd’: China and EU push back on US forced labour tariff claims  South China Morning Post",
+      "timestamp": "2026-06-03T20:32:33.000Z",
+      "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQZ09rbThzd0Z6eXB4MU5WQk14U0lDamNvQmZrUXZYUEQtVG5qTXVBalhSRlo1ektFTjk4aTYwQ3haV1pZOEJwMDhnRWNzNFlBcGVlY1BTdFl3SVUzVGlSWGVxVF9ZOEcyX1dUYml4YlVQTXpvaHAzSGVNWlgyQ3pZN3lNbVhzc0pEUUNLN01ZakpZODdmbVRJb05sdUkyaE1iN0cxYkVxdFFUR1FUMjVSV2U2YjJaUVFzM3FYZk1kbTQxUdIBwgFBVV95cUxOcF83RlNxV0c1VGd4a0hiU01QQzdBOExyWUQ5N1dWb2JBQnJyN0Fmd21UTG5IbEZrOVNvaVdLQUdmNEZNenM4SUZKYWFPUkZ2R0htVGxCMEdsMzZJbTBYNXJOcDZrdDJYTVc4cXN6OUE0Ry1kbHBnVFpZUnVtbzY2S2E0Qk1nODdjZUJtbjdHYVlwTFhoT25Jck1uYkJfWlpHMjFmaUpnc2dpOFNiRjFucXdORnRYZ0tfbk9QU1ZneldyQQ?oc=5",
       "keywords": [
         "ai",
         "tariff",
-        "tariffs",
         "china"
       ],
       "impacts": {
         "ai_server": 0.7,
-        "foundry": -1,
-        "shipping": -1,
-        "steel": -1,
+        "foundry": -0.4,
+        "shipping": -0.9,
+        "steel": -0.5,
         "ic_design": -1,
-        "display": -1,
-        "ev_supply": -1
-      },
-      "sentiment": {
-        "compound": -0.7184,
-        "label": "強烈利空"
-      }
-    },
-    {
-      "text": "Trump Administration Turns to a New Rationale to Justify Old Tariffs - The New York Times Trump Administration Turns to a New Rationale to Justify Old Tariffs  The New York Times",
-      "timestamp": "2026-06-03T22:42:08.000Z",
-      "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNbXdNLUtlQVpmdEZfY283WjIzMXNEZFdfeVlhMlpMbjJsWVBYVlNYb05mWUtnbVRkS2lSOThTbUhaeXB0ZGhmMnNHM0tSeTRsWFFZc242TlpQQ0d6Q2xzTEI1Q2pCelA3Y1ZZSlkwTk1yOVZDNzhMMlRDR0hLM3VCSGYzU0FLbVctSjFn?oc=5",
-      "keywords": [
-        "tariff",
-        "tariffs"
-      ],
-      "impacts": {
-        "foundry": -1,
-        "shipping": -1,
-        "steel": -1,
-        "ic_design": -1,
-        "display": -1,
-        "ev_supply": -0.8
+        "display": -0.9,
+        "ev_supply": -0.7
       },
       "sentiment": {
         "compound": -0.7184,
@@ -359,6 +361,27 @@
       ],
       "impacts": {
         "ai_server": 0.7,
+        "foundry": -1,
+        "shipping": -1,
+        "steel": -1,
+        "ic_design": -1,
+        "display": -1,
+        "ev_supply": -0.8
+      },
+      "sentiment": {
+        "compound": -0.7184,
+        "label": "強烈利空"
+      }
+    },
+    {
+      "text": "Trump Administration Turns to a New Rationale to Justify Old Tariffs - The New York Times Trump Administration Turns to a New Rationale to Justify Old Tariffs  The New York Times",
+      "timestamp": "2026-06-03T22:42:08.000Z",
+      "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNbXdNLUtlQVpmdEZfY283WjIzMXNEZFdfeVlhMlpMbjJsWVBYVlNYb05mWUtnbVRkS2lSOThTbUhaeXB0ZGhmMnNHM0tSeTRsWFFZc242TlpQQ0d6Q2xzTEI1Q2pCelA3Y1ZZSlkwTk1yOVZDNzhMMlRDR0hLM3VCSGYzU0FLbVctSjFn?oc=5",
+      "keywords": [
+        "tariff",
+        "tariffs"
+      ],
+      "impacts": {
         "foundry": -1,
         "shipping": -1,
         "steel": -1,
@@ -413,27 +436,6 @@
         "compound": -0.7184,
         "label": "強烈利空"
       }
-    },
-    {
-      "text": "U.S. proposes fresh tariffs on 60 economies over forced labor trade practices - CNBC U.S. proposes fresh tariffs on 60 economies over forced labor trade practices  CNBC",
-      "timestamp": "2026-06-03T03:19:00.000Z",
-      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQUzItN0Q2bGo3X1NIYU5fRHdCRVdlckhmbVFVOGtlTWlaLVQybURvSHVKbE0wNlRVSHN0Y2pCT0dEMFJPM2Q2UFJqN2M0eV8tbDVPUEN4S2lxS25hQy01S29YTy15cXl5OXY3dHJLRDdwV1RPTDd0bElIX01jdlRCbVZWSExudVpXX29mTXV2clh5c1RYX3oxeTZqTVJyb2thaTMwX9IBqgFBVV95cUxNWlhxYVlSMS1vWkRKdkc5Sk8yOHhscTZxTW94bDJ3dHUzTFpuZGpUcFVYNFVPSURMNkFuUmVZaE9qSFE4bG5UR2FvdnVIWlJtT1dyUHZUa0xCOTBNX3NXT2gtZkRpQU5Ed1hzSE1rVWVxdlFjSGFjcGpRVTYyYmVGd05obHdrZmNnTVJfOW0wdzVwOFpDMTZuQlZUbGlqZWJrWlNZdzBDX2xpQQ?oc=5",
-      "keywords": [
-        "tariff",
-        "tariffs"
-      ],
-      "impacts": {
-        "foundry": -1,
-        "shipping": -1,
-        "steel": -1,
-        "ic_design": -1,
-        "display": -1,
-        "ev_supply": -0.8
-      },
-      "sentiment": {
-        "compound": -0.7184,
-        "label": "強烈利空"
-      }
     }
   ],
   "deltas": [],
@@ -444,10 +446,9 @@
   ],
   "sectorState": {
     "foundry": {
-      "score": -0.985,
-      "lastUpdated": "2026-06-04T13:22:08.698Z",
+      "score": -0.973,
+      "lastUpdated": "2026-06-04T17:12:24.458Z",
       "deltaHistory": [
-        0.038000000000000034,
         -0.11599999999999999,
         -0.039000000000000035,
         -0.026999999999999913,
@@ -456,14 +457,14 @@
         -0.01100000000000001,
         -0.0020000000000000018,
         -0.0030000000000000027,
-        0.0040000000000000036
+        0.0040000000000000036,
+        0.01200000000000001
       ]
     },
     "shipping": {
-      "score": -0.988,
-      "lastUpdated": "2026-06-04T13:22:08.698Z",
+      "score": -0.987,
+      "lastUpdated": "2026-06-04T17:12:24.458Z",
       "deltaHistory": [
-        -0.0050000000000000044,
         -0.015000000000000013,
         -0.03599999999999992,
         -0.006000000000000005,
@@ -472,14 +473,14 @@
         -0.0050000000000000044,
         0.0030000000000000027,
         -0.0010000000000000009,
-        0
+        0,
+        0.0010000000000000009
       ]
     },
     "steel": {
-      "score": -0.962,
-      "lastUpdated": "2026-06-04T13:22:08.698Z",
+      "score": -0.951,
+      "lastUpdated": "2026-06-04T17:12:24.458Z",
       "deltaHistory": [
-        0.026999999999999913,
         -0.14500000000000002,
         -0.05999999999999994,
         -0.03300000000000003,
@@ -488,12 +489,13 @@
         -0.019000000000000017,
         0.0020000000000000018,
         -0.0050000000000000044,
-        0.0030000000000000027
+        0.0030000000000000027,
+        0.01100000000000001
       ]
     },
     "ic_design": {
       "score": -1,
-      "lastUpdated": "2026-06-04T13:22:08.698Z",
+      "lastUpdated": "2026-06-04T17:12:24.458Z",
       "deltaHistory": [
         0,
         0,
@@ -508,10 +510,9 @@
       ]
     },
     "display": {
-      "score": -0.988,
-      "lastUpdated": "2026-06-04T13:22:08.698Z",
+      "score": -0.987,
+      "lastUpdated": "2026-06-04T17:12:24.458Z",
       "deltaHistory": [
-        -0.0040000000000000036,
         -0.03399999999999992,
         -0.014000000000000012,
         -0.008000000000000007,
@@ -520,14 +521,14 @@
         -0.0050000000000000044,
         0.0020000000000000018,
         -0.0010000000000000009,
-        0
+        0,
+        0.0010000000000000009
       ]
     },
     "ev_supply": {
-      "score": -0.823,
-      "lastUpdated": "2026-06-04T13:22:08.698Z",
+      "score": -0.827,
+      "lastUpdated": "2026-06-04T17:12:24.458Z",
       "deltaHistory": [
-        -0.008000000000000007,
         -0.06600000000000006,
         -0.038999999999999924,
         0.009000000000000008,
@@ -536,14 +537,14 @@
         0.0040000000000000036,
         0.0010000000000000009,
         0.006000000000000005,
-        -0.009000000000000008
+        -0.009000000000000008,
+        -0.0040000000000000036
       ]
     },
     "ai_server": {
-      "score": 0.196,
-      "lastUpdated": "2026-06-04T13:22:08.698Z",
+      "score": 0.213,
+      "lastUpdated": "2026-06-04T17:12:24.458Z",
       "deltaHistory": [
-        0.01899999999999999,
         0.030000000000000027,
         -0.17600000000000002,
         0.011999999999999997,
@@ -552,12 +553,13 @@
         0.062,
         0.020000000000000018,
         -0.007000000000000006,
-        0
+        0,
+        0.016999999999999987
       ]
     },
     "defense": {
       "score": 0,
-      "lastUpdated": "2026-06-04T13:22:08.698Z",
+      "lastUpdated": "2026-06-04T17:12:24.458Z",
       "deltaHistory": [
         0,
         0,
@@ -653,9 +655,8 @@
     },
     "packaging": {
       "score": 0,
-      "lastUpdated": "2026-06-04T13:22:08.698Z",
+      "lastUpdated": "2026-06-04T17:12:24.458Z",
       "deltaHistory": [
-        0,
         -0.009,
         0.009,
         0,
@@ -664,7 +665,8 @@
         0,
         0,
         0,
-        0.001
+        0.001,
+        0
       ]
     },
     "banking": {
@@ -717,7 +719,7 @@
     },
     "pcb": {
       "score": 0,
-      "lastUpdated": "2026-06-04T13:22:08.698Z",
+      "lastUpdated": "2026-06-04T17:12:24.458Z",
       "deltaHistory": [
         0,
         0,
