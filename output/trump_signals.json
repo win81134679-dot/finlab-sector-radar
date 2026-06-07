@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-06T20:32:48.521Z",
+  "updatedAt": "2026-06-07T01:17:21.339Z",
   "posts": [
     {
       "text": "On China, Trump picked the right battle but the wrong strategy - The Guardian On China, Trump picked the right battle but the wrong strategy  The Guardian",
@@ -12,6 +12,153 @@
         "ic_design": -0.5,
         "shipping": -0.4,
         "display": -0.4,
+        "ev_supply": -0.3
+      },
+      "sentiment": {
+        "compound": 0,
+        "label": "中性"
+      }
+    },
+    {
+      "text": "Trump relaunches tariffs war after court struck down levies - Financial Times Trump relaunches tariffs war after court struck down levies  Financial Times",
+      "timestamp": "2026-06-06T12:00:04.000Z",
+      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNUzA3S3puYTBHRm0zd2ZTdWNIY2oxRm1XUnRDMF9MMm5PUC1UbFk2QU9ldUI4T0pmSWE2OXpxOTlVY2R6VEJUUy1uTlo1VmpkRGYwemZKak5vMTl3SmRBWW15cUtFaXdzbXVzVzhxcGFIVEpkTkVoWThfZDVWN19LNXk1RlA?oc=5",
+      "keywords": [
+        "tariff",
+        "tariffs",
+        "ev"
+      ],
+      "impacts": {
+        "foundry": -1,
+        "shipping": -1,
+        "steel": -1,
+        "ic_design": -1,
+        "display": -1,
+        "ev_supply": -0.6
+      },
+      "sentiment": {
+        "compound": -0.7184,
+        "label": "強烈利空"
+      }
+    },
+    {
+      "text": "Trump is quietly rebuilding his tariff engine - CNN Trump is quietly rebuilding his tariff engine  CNN",
+      "timestamp": "2026-06-03T14:54:09.000Z",
+      "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFBCUWFvY2pwbHRwUkNEdnlldVFrQk5SdFJ1bFhNQzY3dmVEaHFOalNVSzUyLURyVm9HaTZ5NHVrRzJkSm82amtYMUJZQjhhUkpNVzgxR2NLMEFkNWpScDQwWEJn?oc=5",
+      "keywords": [
+        "tariff"
+      ],
+      "impacts": {
+        "foundry": -0.7,
+        "shipping": -0.5,
+        "steel": -0.5,
+        "ic_design": -0.6,
+        "display": -0.5,
+        "ev_supply": -0.4
+      },
+      "sentiment": {
+        "compound": -0.7184,
+        "label": "強烈利空"
+      }
+    },
+    {
+      "text": "What to know about Trump's sweeping new tariff proposal - ABC News - Breaking News, Latest News and Videos What to know about Trump's sweeping new tariff proposal  ABC News - Breaking News, Latest News and Videos",
+      "timestamp": "2026-06-04T21:08:56.000Z",
+      "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPbS1Ca2RMOFVVTUFHWXo2aXRQT2NPekxJM1pGN2FMODhCQzZsVUxlYjJtZFJxeGRYNmxtdWtDV2llN0Fpb3RDR2xqZkpwN1lGMzYxMXIzb0JqUXVYTlpQa05CbE9PLVFmZVVYWGZLV1BFSExDRTdRbXBqaEx4NnlGMndNSDBaWVBsLXpZ0gGQAUFVX3lxTE5HMVVxbjNGZEVnOGxXTm1SUUZ4dDk5YjVNTVA2bUdQTlMzVmZEa1dsUFBSVFVaQUlUcWpGSUpSZFhVcVMtSTFjNHhRRXlrOUFaUl9vZm5ndnBuVUpXWXdQT1NRU21LeFFMVWZnYk1mcFhRVkhJdE9kUG9VNV9ORFQzSlR3ZkdZdVhIalVDbkY3Qg?oc=5",
+      "keywords": [
+        "tariff"
+      ],
+      "impacts": {
+        "foundry": -0.7,
+        "shipping": -0.5,
+        "steel": -0.5,
+        "ic_design": -0.6,
+        "display": -0.5,
+        "ev_supply": -0.4
+      },
+      "sentiment": {
+        "compound": -0.7184,
+        "label": "強烈利空"
+      }
+    },
+    {
+      "text": "Opinion | Trump tries a new trick to raise tariffs - The Washington Post Opinion | Trump tries a new trick to raise tariffs  The Washington Post",
+      "timestamp": "2026-06-04T03:58:03.000Z",
+      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOVF9jWW1zVFdKZ1hrV3lvbnZTMlZrTk9nTmNCZVJoVlJfQ1p1QnNzcWtneXJ6M3NmOUlwbGhkb1N5OXJQWHdoWjhZTWN3bzRhWE00R1pRemU1U1E0ZkFBYVNxWFU4VUZRbW9BdFY3bEtBc2xySVRrV2hqQlVLNFMyZml5Q1dJOUtQZ1dhZkNDMDNyMFE1ZXpSVEFjYWE2bGFUeVJ6aEl0LTVyQklFZVV5VFNNTXQ5dw?oc=5",
+      "keywords": [
+        "ai",
+        "tariff",
+        "tariffs"
+      ],
+      "impacts": {
+        "ai_server": 0.7,
+        "foundry": -1,
+        "shipping": -1,
+        "steel": -1,
+        "ic_design": -1,
+        "display": -1,
+        "ev_supply": -0.8
+      },
+      "sentiment": {
+        "compound": -0.7184,
+        "label": "強烈利空"
+      }
+    },
+    {
+      "text": "What to Know About Trump’s Latest Tariffs - WSJ What to Know About Trump’s Latest Tariffs  WSJ",
+      "timestamp": "2026-06-03T21:31:00.000Z",
+      "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQcFhSbWFkV3R4cTZMVnBabk9LU0JteG96c2xhS0JZaU8wN1V1WmN6cEE4MjJoenN1aEs4RGU3eXpOaXVrZUxHYlZfMGhYTnNPbGFPc2xsOE9FR3BfMjYtUGxEdFBuTXVyN3lGNXk0N21zWnhSUWhZejdFYlRNMkxZY1dTbzdId2RfeHdr?oc=5",
+      "keywords": [
+        "tariff",
+        "tariffs"
+      ],
+      "impacts": {
+        "foundry": -1,
+        "shipping": -1,
+        "steel": -1,
+        "ic_design": -1,
+        "display": -1,
+        "ev_supply": -0.8
+      },
+      "sentiment": {
+        "compound": -0.7184,
+        "label": "強烈利空"
+      }
+    },
+    {
+      "text": "US will uphold tariff caps in deals with EU, Japan and others, Trump's trade chief says - Reuters US will uphold tariff caps in deals with EU, Japan and others, Trump's trade chief says  Reuters",
+      "timestamp": "2026-06-04T21:53:10.000Z",
+      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOdWdGYXZfZkdvVnhwdWM2VGR4MDFONWUzM2w4YXJhSWticnFfR2VYZ204bHhYRkd3VjVRbVpCMXQ5U3JyWGpSSHM3cWplQlFWRFFyeGFJOV9UekpOVlFjeWFrSjU0YVdSclM0UHRIalZ4QXlYaEliYWhRdmtYMHlZRG9Ba1dnZFNYREdaSTVzMEdfM0ZOS2hDLTdiMk1EZXk3M05TdXRWOFowZmcweURjeFFlQnNXX2VDTVE?oc=5",
+      "keywords": [
+        "tariff",
+        "deal"
+      ],
+      "impacts": {
+        "foundry": -0.7,
+        "shipping": -0.3,
+        "steel": -0.5,
+        "ic_design": -0.4,
+        "display": -0.5,
+        "ev_supply": -0.4
+      },
+      "sentiment": {
+        "compound": -0.7184,
+        "label": "強烈利空"
+      }
+    },
+    {
+      "text": "US reciprocal trade deals built to push America's trade partners away from China - Peterson Institute for International Economics US reciprocal trade deals built to push America's trade partners away from China  Peterson Institute for International Economics",
+      "timestamp": "2026-06-04T17:20:57.000Z",
+      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNTGpDblg2UjI3dkszcVEtSVJEb3JsdkhaSkFZVGxmTHV6UUg0NWd3MFFlQ2prRG04dS00Vk9neHJ1MXozNm5BcnNGWmszNDE3NktxdzFoZVFiVjczS1F5Qi1ZV0dTbFFETHN6bTBNNHYwTWNhdnlzY09HU2g3YXlHRlhHcDdUcGl6N3FsVkpLZGE1RXFRT1VXem83SlY2MFJ6UU5wSGM5aUV0Y19RREZWdm4tZ1dpZ3c?oc=5",
+      "keywords": [
+        "trade deal",
+        "china",
+        "deal"
+      ],
+      "impacts": {
+        "shipping": 0.3,
+        "ic_design": 0.1,
+        "display": -0.1,
         "ev_supply": -0.3
       },
       "sentiment": {
@@ -41,23 +188,24 @@
       }
     },
     {
-      "text": "US reciprocal trade deals built to push America's trade partners away from China - Peterson Institute for International Economics US reciprocal trade deals built to push America's trade partners away from China  Peterson Institute for International Economics",
-      "timestamp": "2026-06-04T17:20:57.000Z",
-      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNTGpDblg2UjI3dkszcVEtSVJEb3JsdkhaSkFZVGxmTHV6UUg0NWd3MFFlQ2prRG04dS00Vk9neHJ1MXozNm5BcnNGWmszNDE3NktxdzFoZVFiVjczS1F5Qi1ZV0dTbFFETHN6bTBNNHYwTWNhdnlzY09HU2g3YXlHRlhHcDdUcGl6N3FsVkpLZGE1RXFRT1VXem83SlY2MFJ6UU5wSGM5aUV0Y19RREZWdm4tZ1dpZ3c?oc=5",
+      "text": "Trump Administration Turns to a New Rationale to Justify Old Tariffs - The New York Times Trump Administration Turns to a New Rationale to Justify Old Tariffs  The New York Times",
+      "timestamp": "2026-06-03T17:08:16.000Z",
+      "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNbXdNLUtlQVpmdEZfY283WjIzMXNEZFdfeVlhMlpMbjJsWVBYVlNYb05mWUtnbVRkS2lSOThTbUhaeXB0ZGhmMnNHM0tSeTRsWFFZc242TlpQQ0d6Q2xzTEI1Q2pCelA3Y1ZZSlkwTk1yOVZDNzhMMlRDR0hLM3VCSGYzU0FLbVctSjFn?oc=5",
       "keywords": [
-        "trade deal",
-        "china",
-        "deal"
+        "tariff",
+        "tariffs"
       ],
       "impacts": {
-        "shipping": 0.3,
-        "ic_design": 0.1,
-        "display": -0.1,
-        "ev_supply": -0.3
+        "foundry": -1,
+        "shipping": -1,
+        "steel": -1,
+        "ic_design": -1,
+        "display": -1,
+        "ev_supply": -0.8
       },
       "sentiment": {
-        "compound": 0,
-        "label": "中性"
+        "compound": -0.7184,
+        "label": "強烈利空"
       }
     },
     {
@@ -150,47 +298,6 @@
       }
     },
     {
-      "text": "What to Know About Trump’s Latest Tariffs - WSJ What to Know About Trump’s Latest Tariffs  WSJ",
-      "timestamp": "2026-06-03T21:31:00.000Z",
-      "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQcFhSbWFkV3R4cTZMVnBabk9LU0JteG96c2xhS0JZaU8wN1V1WmN6cEE4MjJoenN1aEs4RGU3eXpOaXVrZUxHYlZfMGhYTnNPbGFPc2xsOE9FR3BfMjYtUGxEdFBuTXVyN3lGNXk0N21zWnhSUWhZejdFYlRNMkxZY1dTbzdId2RfeHdr?oc=5",
-      "keywords": [
-        "tariff",
-        "tariffs"
-      ],
-      "impacts": {
-        "foundry": -1,
-        "shipping": -1,
-        "steel": -1,
-        "ic_design": -1,
-        "display": -1,
-        "ev_supply": -0.8
-      },
-      "sentiment": {
-        "compound": -0.7184,
-        "label": "強烈利空"
-      }
-    },
-    {
-      "text": "What to know about Trump's sweeping new tariff proposal - ABC News - Breaking News, Latest News and Videos What to know about Trump's sweeping new tariff proposal  ABC News - Breaking News, Latest News and Videos",
-      "timestamp": "2026-06-04T21:08:56.000Z",
-      "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPbS1Ca2RMOFVVTUFHWXo2aXRQT2NPekxJM1pGN2FMODhCQzZsVUxlYjJtZFJxeGRYNmxtdWtDV2llN0Fpb3RDR2xqZkpwN1lGMzYxMXIzb0JqUXVYTlpQa05CbE9PLVFmZVVYWGZLV1BFSExDRTdRbXBqaEx4NnlGMndNSDBaWVBsLXpZ0gGQAUFVX3lxTE5HMVVxbjNGZEVnOGxXTm1SUUZ4dDk5YjVNTVA2bUdQTlMzVmZEa1dsUFBSVFVaQUlUcWpGSUpSZFhVcVMtSTFjNHhRRXlrOUFaUl9vZm5ndnBuVUpXWXdQT1NRU21LeFFMVWZnYk1mcFhRVkhJdE9kUG9VNV9ORFQzSlR3ZkdZdVhIalVDbkY3Qg?oc=5",
-      "keywords": [
-        "tariff"
-      ],
-      "impacts": {
-        "foundry": -0.7,
-        "shipping": -0.5,
-        "steel": -0.5,
-        "ic_design": -0.6,
-        "display": -0.5,
-        "ev_supply": -0.4
-      },
-      "sentiment": {
-        "compound": -0.7184,
-        "label": "強烈利空"
-      }
-    },
-    {
       "text": "Trump's White House proposes 10% tariff plan on countries including China, EU, UK - Fortune Trump's White House proposes 10% tariff plan on countries including China, EU, UK  Fortune",
       "timestamp": "2026-06-03T11:09:00.000Z",
       "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNcXZqQkVjSW04bjQwaUhjNVZTb0g3NjFLZHFyZFpUYWVycF9RTFcxaDBvYVA3RG1iMVluTjBMY0tZRmRJUlRKZnFTRUxkZ1RWZVZLTkt5OGhUTTluOTVPZ0ZSa2tNOVdsSERCaU5ZakNxcFZEQjFjbWtkWDlHcmlKZ19vZ0tIb2NUcl9EQ0JYTUpETkZuUkNv?oc=5",
@@ -233,6 +340,27 @@
       }
     },
     {
+      "text": "US says it plans extra tariffs of 10% or more for most trading partners after forced labor probe - ABC7 New York US says it plans extra tariffs of 10% or more for most trading partners after forced labor probe  ABC7 New York",
+      "timestamp": "2026-06-03T11:51:58.000Z",
+      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOTFZZR3lyUXZJSFhnZkVlMmhXUFJVbzlKTmxWZUlLUFRqd1NweGVYeUpKSHNiMGNSWU9HckRUUUdoMEFCWENENmxjR25sUHJDT0dUWjRwUTFDOFRlWTJ6TnhLVUFzWVMxRGFzMFFSWnFWZk84N3FCQnkwMERCU005aWZXY2NibXVDRjdJblpaMnI4LUJETW1wMG54QjU4SHBZUno2RExhZS1peWo5UElZ0gG0AUFVX3lxTE5jLXJENHc1cTRfTmctTW5oV3R5VHRoV096c0I2Rmk4ZGFYbHFGN0xqRWN5Yl92U0p3Qml5eHNYb09hMjhERjR1Ynduc2JDS0MyWGQ5OUhKa0lMdXd6dEFlWmhQVHlFZUYyTVFfVklIdGRBTURET2lZdW1XVExkbk52d3lxX1JwQmJCRnZHRE05OVJPaUVOcG5kREJreV92NmhJS0tlWGQ5NV9JaEEtWC1aYjBnbg?oc=5",
+      "keywords": [
+        "tariff",
+        "tariffs"
+      ],
+      "impacts": {
+        "foundry": -1,
+        "shipping": -1,
+        "steel": -1,
+        "ic_design": -1,
+        "display": -1,
+        "ev_supply": -0.8
+      },
+      "sentiment": {
+        "compound": -0.7184,
+        "label": "強烈利空"
+      }
+    },
+    {
       "text": "Trump Aims New Tariffs at 59 Countries and the European Union - The New York Times Trump Aims New Tariffs at 59 Countries and the European Union  The New York Times",
       "timestamp": "2026-06-03T09:44:58.000Z",
       "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1FZlk1Z1NWZll1SVN5b3JVQzI4eVg1aDNkNkE4dDBIMU1CRFhuVDNXS2dZY01mbGF4MHcwTlUwLTEycWlURGVsS20yY3BVT25pQjkweFcyVWFWMTJBc2dsS3lMTG56ZFRuU045dDVDbjhYYl9HWXJKdlVRQy14QnM?oc=5",
@@ -256,44 +384,21 @@
       }
     },
     {
-      "text": "US says it plans extra tariffs of 10% or more for most trading partners after forced labor probe - ABC7 New York US says it plans extra tariffs of 10% or more for most trading partners after forced labor probe  ABC7 New York",
-      "timestamp": "2026-06-03T11:51:58.000Z",
-      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOTFZZR3lyUXZJSFhnZkVlMmhXUFJVbzlKTmxWZUlLUFRqd1NweGVYeUpKSHNiMGNSWU9HckRUUUdoMEFCWENENmxjR25sUHJDT0dUWjRwUTFDOFRlWTJ6TnhLVUFzWVMxRGFzMFFSWnFWZk84N3FCQnkwMERCU005aWZXY2NibXVDRjdJblpaMnI4LUJETW1wMG54QjU4SHBZUno2RExhZS1peWo5UElZ0gG0AUFVX3lxTE5jLXJENHc1cTRfTmctTW5oV3R5VHRoV096c0I2Rmk4ZGFYbHFGN0xqRWN5Yl92U0p3Qml5eHNYb09hMjhERjR1Ynduc2JDS0MyWGQ5OUhKa0lMdXd6dEFlWmhQVHlFZUYyTVFfVklIdGRBTURET2lZdW1XVExkbk52d3lxX1JwQmJCRnZHRE05OVJPaUVOcG5kREJreV92NmhJS0tlWGQ5NV9JaEEtWC1aYjBnbg?oc=5",
+      "text": "US-China Relations in the Trump 2.0 Era: A Timeline - China Briefing US-China Relations in the Trump 2.0 Era: A Timeline  China Briefing",
+      "timestamp": "2026-06-03T01:00:32.000Z",
+      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQVl9rOHkwQl9VYldidlJVajgtZzY4VE5TQmt6eEQ2czIxaTk5N3Ywd3diVXdCT3dKVmhUNmxMRjJ0UnJKdGE2TUtuNklrdWx4UTVGZG5kY1pvWnNEWUhkdmZ5WkV3R0plREV6aTlGc1JEUHVQeG02VzRsVE82OERteXhsMGNfTEVPMllnN0p3?oc=5",
       "keywords": [
-        "tariff",
-        "tariffs"
+        "china"
       ],
       "impacts": {
-        "foundry": -1,
-        "shipping": -1,
-        "steel": -1,
-        "ic_design": -1,
-        "display": -1,
-        "ev_supply": -0.8
+        "ic_design": -0.5,
+        "shipping": -0.4,
+        "display": -0.4,
+        "ev_supply": -0.3
       },
       "sentiment": {
-        "compound": -0.7184,
-        "label": "強烈利空"
-      }
-    },
-    {
-      "text": "Trump’s latest tariff salvo no fix for global issue of forced labor - The Japan Times Trump’s latest tariff salvo no fix for global issue of forced labor  The Japan Times",
-      "timestamp": "2026-06-06T02:07:00.000Z",
-      "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQS0JtYlRLaG90elA5U3U2WER6ZFFzdTBzemFOZjhULUVobk1FeG1ZbURVa3V1cTVJc2hkM3RyTmQ3UlhZVkl0Q3lfU3hWbGp1MmJuMExCNUxzbGFIUmFzeDByV2tsVi1ZNzJTcUlWY19LM2F6R3dHdzNhdnppV3NoZWNvN0ZmMGZDalVJcHhPd2g?oc=5",
-      "keywords": [
-        "tariff"
-      ],
-      "impacts": {
-        "foundry": -0.7,
-        "shipping": -0.5,
-        "steel": -0.5,
-        "ic_design": -0.6,
-        "display": -0.5,
-        "ev_supply": -0.4
-      },
-      "sentiment": {
-        "compound": -0.7184,
-        "label": "強烈利空"
+        "compound": 0,
+        "label": "中性"
       }
     },
     {
@@ -316,114 +421,39 @@
         "compound": -0.7184,
         "label": "強烈利空"
       }
-    },
-    {
-      "text": "Trump is quietly rebuilding his tariff engine - CNN Trump is quietly rebuilding his tariff engine  CNN",
-      "timestamp": "2026-06-03T14:54:09.000Z",
-      "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFBCUWFvY2pwbHRwUkNEdnlldVFrQk5SdFJ1bFhNQzY3dmVEaHFOalNVSzUyLURyVm9HaTZ5NHVrRzJkSm82amtYMUJZQjhhUkpNVzgxR2NLMEFkNWpScDQwWEJn?oc=5",
-      "keywords": [
-        "tariff"
-      ],
-      "impacts": {
-        "foundry": -0.7,
-        "shipping": -0.5,
-        "steel": -0.5,
-        "ic_design": -0.6,
-        "display": -0.5,
-        "ev_supply": -0.4
-      },
-      "sentiment": {
-        "compound": -0.7184,
-        "label": "強烈利空"
-      }
-    },
-    {
-      "text": "US cites forced labor concerns as grounds for new tariffs - Reuters US cites forced labor concerns as grounds for new tariffs  Reuters",
-      "timestamp": "2026-06-03T22:12:45.000Z",
-      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQZDdlM2ZsVEQ4RmFKOTBNbWdrZHEwaWpfc0kyOWJkcExOc1V2emFBamZLLW5ySlRoT0NpTnRKYi1FNnE1Y3l6TVZjNzRyTDFQWWlya3NZSXdSRWpSTTJ5azBUWVlvNVZJY2lYMnZsN2k2VWo1V1NGMWxkblRLcE1zTVhNdHdnM1I5bWV4NWljYzBjX201UEtCUjN5Njh4enB4LUxiNzZJOUpOZlQ3VzY0WnEyNFlrOEE2?oc=5",
-      "keywords": [
-        "tariff",
-        "tariffs"
-      ],
-      "impacts": {
-        "foundry": -1,
-        "shipping": -1,
-        "steel": -1,
-        "ic_design": -1,
-        "display": -1,
-        "ev_supply": -0.8
-      },
-      "sentiment": {
-        "compound": -0.7184,
-        "label": "強烈利空"
-      }
-    },
-    {
-      "text": "Trump’s rebuilding his tariffs. They could end up a lot narrower. - Politico Trump’s rebuilding his tariffs. They could end up a lot narrower.  Politico",
-      "timestamp": "2026-06-03T23:17:28.000Z",
-      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOUU1KbGh5aHhFZzI1MnRKY0VLdXpQcUtxdWI2a3plSG5UcDAzRkl4aGJkZ19ET0FLS2hPWWhoZmVtWmpoYy1fNi1fNFlzMmxnZDVXSzhLQkg5aUdOcE12OVV3aHI1cXlyNFBkcjFVVGlqYVViRzEwUmFUX0tEekhPM0pHR3YtVldx?oc=5",
-      "keywords": [
-        "tariff",
-        "tariffs"
-      ],
-      "impacts": {
-        "foundry": -1,
-        "shipping": -1,
-        "steel": -1,
-        "ic_design": -1,
-        "display": -1,
-        "ev_supply": -0.8
-      },
-      "sentiment": {
-        "compound": -0.7184,
-        "label": "強烈利空"
-      }
-    },
-    {
-      "text": "Washington Is Testing Singapore’s Patience - Foreign Policy Washington Is Testing Singapore’s Patience  Foreign Policy",
-      "timestamp": "2026-06-05T09:41:16.000Z",
-      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOajhlaGFWakZBb190NkpVSzREVDdyems5S0wwamZoTXNjeHhzOFRxU0pILWJselVsek84bmQxU20tck5pRXVzMGJibXM0Nmlmc3ZreGpnazRBUENhMnlFa0c4Vi02VWl3S2lfckJTb2d0T3p0SUJVY3hKeU4yaklmTDBKTUdweTVzNWgzZ0tfenlGUmVYWkktSjJaLXBEdlk?oc=5",
-      "keywords": [],
-      "impacts": {},
-      "sentiment": {
-        "compound": 0,
-        "label": "中性"
-      }
-    },
-    {
-      "text": "Trump admin proposes broad new tariffs on top trading partners - ABC News - Breaking News, Latest News and Videos Trump admin proposes broad new tariffs on top trading partners  ABC News - Breaking News, Latest News and Videos",
-      "timestamp": "2026-06-03T15:19:43.000Z",
-      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPbzZiZUl0T1FxWFFsbmd5VlBCWW9QYktOTjNaOXRKZ3ZWNTJ4bEpsU0UzN0c4TEdjZ21wUE1Fb3RUcjlJSWFfSGJMc3NGZ1NTUWROV1QxZzdnSWQ1OW5QcDZlNllCX0dnZ3lJM2F2OVNqY3NicHlydEN2NjFIQWJ0SnRSWGtIRkhZV1o2dUxGdm95UXVLVU1WQmZwbEcwWDjSAaQBQVVfeXFMTUMxeDA4bnhsUVJFSzZRZVNCS1ZnSUpWb2FiWVhITi1pN3BaTzF6eXZuRTFFV19XOTJfUnRvS3N4SHBvZDhLVXF1VWVHTHJvcGhnZXlRWTRVRGxIWmlLWmtvZ25idEI5eFRTVjh0UHQzY2RjRV80UHc4N3hjTzB0dW8wWGZVRUM5MHk4ZkVidHVRRkNsOGhKTkJjSGpRdkNvd011aEQ?oc=5",
-      "keywords": [
-        "tariff",
-        "tariffs"
-      ],
-      "impacts": {
-        "foundry": -1,
-        "shipping": -1,
-        "steel": -1,
-        "ic_design": -1,
-        "display": -1,
-        "ev_supply": -0.8
-      },
-      "sentiment": {
-        "compound": -0.7184,
-        "label": "強烈利空"
-      }
     }
   ],
-  "deltas": [],
-  "topDeltas": [],
+  "deltas": [
+    {
+      "sector": "ev_supply",
+      "sectorName": "電動車供應鏈",
+      "prev": -0.849,
+      "current": -0.758,
+      "delta": 0.091,
+      "momentum": "↑ 壓力緩解",
+      "accelerating": true
+    }
+  ],
+  "topDeltas": [
+    {
+      "sector": "ev_supply",
+      "sectorName": "電動車供應鏈",
+      "prev": -0.849,
+      "current": -0.758,
+      "delta": 0.091,
+      "momentum": "↑ 壓力緩解",
+      "accelerating": true
+    }
+  ],
   "totalAnalyzed": 100,
   "sources": [
     "Google News"
   ],
   "sectorState": {
     "foundry": {
-      "score": -0.914,
-      "lastUpdated": "2026-06-06T20:32:48.521Z",
+      "score": -0.941,
+      "lastUpdated": "2026-06-07T01:17:21.339Z",
       "deltaHistory": [
-        -0.0030000000000000027,
         0,
         -0.0030000000000000027,
         0,
@@ -432,14 +462,14 @@
         0,
         0,
         0.07899999999999996,
-        0.007000000000000006
+        0.007000000000000006,
+        -0.026999999999999913
       ]
     },
     "shipping": {
-      "score": -0.921,
-      "lastUpdated": "2026-06-06T20:32:48.521Z",
+      "score": -0.923,
+      "lastUpdated": "2026-06-07T01:17:21.339Z",
       "deltaHistory": [
-        -0.0020000000000000018,
         0,
         0,
         0.03300000000000003,
@@ -448,14 +478,14 @@
         0.017000000000000015,
         -0.008000000000000007,
         -0.0030000000000000027,
+        -0.0020000000000000018,
         -0.0020000000000000018
       ]
     },
     "steel": {
-      "score": -0.858,
-      "lastUpdated": "2026-06-06T20:32:48.521Z",
+      "score": -0.857,
+      "lastUpdated": "2026-06-07T01:17:21.339Z",
       "deltaHistory": [
-        -0.004999999999999893,
         0,
         -0.02400000000000002,
         0.01100000000000001,
@@ -464,14 +494,14 @@
         0.017999999999999905,
         -0.007000000000000006,
         0.08500000000000008,
-        -0.010000000000000009
+        -0.010000000000000009,
+        0.0010000000000000009
       ]
     },
     "ic_design": {
       "score": -1,
-      "lastUpdated": "2026-06-06T20:32:48.521Z",
+      "lastUpdated": "2026-06-07T01:17:21.339Z",
       "deltaHistory": [
-        0,
         0,
         0.010000000000000009,
         -0.0020000000000000018,
@@ -480,14 +510,14 @@
         0.008000000000000007,
         -0.0040000000000000036,
         -0.02300000000000002,
+        0,
         0
       ]
     },
     "display": {
-      "score": -0.98,
-      "lastUpdated": "2026-06-06T20:32:48.521Z",
+      "score": -0.964,
+      "lastUpdated": "2026-06-07T01:17:21.339Z",
       "deltaHistory": [
-        -0.0010000000000000009,
         0,
         0,
         -0.028000000000000025,
@@ -496,14 +526,14 @@
         0.018000000000000016,
         -0.008000000000000007,
         0.0020000000000000018,
-        -0.01200000000000001
+        -0.01200000000000001,
+        0.016000000000000014
       ]
     },
     "ev_supply": {
-      "score": -0.849,
-      "lastUpdated": "2026-06-06T20:32:48.521Z",
+      "score": -0.758,
+      "lastUpdated": "2026-06-07T01:17:21.339Z",
       "deltaHistory": [
-        -0.006000000000000005,
         0.0010000000000000009,
         -0.0040000000000000036,
         -0.05900000000000005,
@@ -512,14 +542,14 @@
         0.018000000000000016,
         -0.009000000000000008,
         0.016000000000000014,
-        -0.015000000000000013
+        -0.015000000000000013,
+        0.09099999999999997
       ]
     },
     "ai_server": {
-      "score": 0.16,
-      "lastUpdated": "2026-06-06T20:32:48.521Z",
+      "score": 0.129,
+      "lastUpdated": "2026-06-07T01:17:21.339Z",
       "deltaHistory": [
-        0.01100000000000001,
         -0.006000000000000005,
         -0.006000000000000005,
         0.02200000000000002,
@@ -528,12 +558,13 @@
         -0.02200000000000002,
         0.018000000000000016,
         -0.007000000000000006,
-        0.006000000000000005
+        0.006000000000000005,
+        -0.031
       ]
     },
     "defense": {
       "score": 0,
-      "lastUpdated": "2026-06-06T16:32:28.921Z",
+      "lastUpdated": "2026-06-07T01:17:21.339Z",
       "deltaHistory": [
         0,
         0,
@@ -581,7 +612,7 @@
     },
     "petrochemical": {
       "score": 0,
-      "lastUpdated": "2026-06-06T20:32:48.521Z",
+      "lastUpdated": "2026-06-07T01:17:21.339Z",
       "deltaHistory": [
         0,
         0,
@@ -628,10 +659,9 @@
       ]
     },
     "packaging": {
-      "score": -0.001,
-      "lastUpdated": "2026-06-06T20:32:48.521Z",
+      "score": 0,
+      "lastUpdated": "2026-06-07T01:17:21.339Z",
       "deltaHistory": [
-        0,
         0,
         0,
         -0.001,
@@ -640,7 +670,8 @@
         0,
         0,
         -0.001,
-        0
+        0,
+        0.001
       ]
     },
     "banking": {
@@ -693,7 +724,7 @@
     },
     "pcb": {
       "score": 0,
-      "lastUpdated": "2026-06-06T20:32:48.521Z",
+      "lastUpdated": "2026-06-07T01:17:21.339Z",
       "deltaHistory": [
         0,
         0,
