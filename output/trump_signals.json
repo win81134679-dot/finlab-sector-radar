@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-10T05:41:25.857Z",
+  "updatedAt": "2026-06-10T09:26:26.939Z",
   "posts": [
     {
       "text": "Trump's trade war has a new target: forced labor. The case behind it is far from simple - CNBC Trump's trade war has a new target: forced labor. The case behind it is far from simple  CNBC",
@@ -165,7 +165,7 @@
     },
     {
       "text": "China again flags tariff cuts for US agricultural trade after Trump-Xi meeting, but still no details - Reuters China again flags tariff cuts for US agricultural trade after Trump-Xi meeting, but still no details  Reuters",
-      "timestamp": "2026-05-19T07:00:00.000Z",
+      "timestamp": "2026-05-20T07:00:00.000Z",
       "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPZjZ6YUtsYkpDTHRyU0xxdEgyYlJOQWp6OG1hY1V4bVQ1d1hfYTVweV9aeEVGNlBHVkxzdW9rQndBOElCeVVIUnFnbUJ4RnZtRFVDNjd1eGVtOWxQVFVwSXFFSktodFZ3SnhudnUyeE9LX1UyeXVGTXZUY3NpZ0xERGpiYzZ2TWdyeXR1YzFwMVdNNVZFVk43Tlp2OHVwTDJrMW5EcmxMaWF4SFRnNkR2M0xkejdVdTJiemNRM0ZiYXlNaG9CeXJn?oc=5",
       "keywords": [
         "ai",
@@ -415,10 +415,9 @@
   ],
   "sectorState": {
     "foundry": {
-      "score": -0.824,
-      "lastUpdated": "2026-06-10T05:41:25.857Z",
+      "score": -0.825,
+      "lastUpdated": "2026-06-10T09:26:26.939Z",
       "deltaHistory": [
-        0.06799999999999995,
         0.0050000000000000044,
         -0.041999999999999926,
         0.07899999999999996,
@@ -427,14 +426,14 @@
         0.02100000000000002,
         -0.061999999999999944,
         -0.010000000000000009,
-        0.007000000000000006
+        0.007000000000000006,
+        -0.0010000000000000009
       ]
     },
     "shipping": {
       "score": -0.872,
-      "lastUpdated": "2026-06-10T05:41:25.857Z",
+      "lastUpdated": "2026-06-10T09:26:26.939Z",
       "deltaHistory": [
-        0,
         0.0010000000000000009,
         -0.013000000000000012,
         0.020000000000000018,
@@ -443,14 +442,14 @@
         0.009000000000000008,
         -0.0050000000000000044,
         0.0020000000000000018,
-        0.0010000000000000009
+        0.0010000000000000009,
+        0
       ]
     },
     "steel": {
       "score": -0.565,
-      "lastUpdated": "2026-06-10T05:41:25.857Z",
+      "lastUpdated": "2026-06-10T09:26:26.939Z",
       "deltaHistory": [
-        0.04200000000000004,
         0.0050000000000000044,
         -0.03700000000000003,
         0.07400000000000007,
@@ -459,18 +458,19 @@
         0.05799999999999994,
         -0.05699999999999994,
         -0.010000000000000009,
-        0.013000000000000012
+        0.013000000000000012,
+        0
       ]
     },
     "ic_design": {
       "score": -1,
-      "lastUpdated": "2026-06-10T05:41:25.857Z",
+      "lastUpdated": "2026-06-10T09:26:26.939Z",
       "deltaHistory": [
-        0.0030000000000000027,
         0,
         0.0040000000000000036,
         -0.0050000000000000044,
         -0.006000000000000005,
+        0,
         0,
         0,
         0,
@@ -480,9 +480,8 @@
     },
     "display": {
       "score": -0.736,
-      "lastUpdated": "2026-06-10T05:41:25.857Z",
+      "lastUpdated": "2026-06-10T09:26:26.939Z",
       "deltaHistory": [
-        0,
         0,
         0,
         0,
@@ -491,14 +490,14 @@
         0.05300000000000005,
         -0.01200000000000001,
         -0.03600000000000003,
-        0.014000000000000012
+        0.014000000000000012,
+        0
       ]
     },
     "ev_supply": {
       "score": -0.587,
-      "lastUpdated": "2026-06-10T05:41:25.857Z",
+      "lastUpdated": "2026-06-10T09:26:26.939Z",
       "deltaHistory": [
-        0.0040000000000000036,
         -0.007000000000000006,
         0.007000000000000006,
         0.027000000000000024,
@@ -507,14 +506,14 @@
         0.04999999999999993,
         -0.027999999999999914,
         -0.026000000000000023,
-        0.01200000000000001
+        0.01200000000000001,
+        0
       ]
     },
     "ai_server": {
-      "score": 0.037,
-      "lastUpdated": "2026-06-10T05:41:25.857Z",
+      "score": 0.038,
+      "lastUpdated": "2026-06-10T09:26:26.939Z",
       "deltaHistory": [
-        0.008999999999999994,
         -0.0049999999999999906,
         0.026999999999999996,
         0.0030000000000000027,
@@ -523,14 +522,14 @@
         0.001,
         0.039999999999999994,
         -0.006999999999999999,
-        0
+        0,
+        0.0010000000000000009
       ]
     },
     "defense": {
       "score": 0.001,
-      "lastUpdated": "2026-06-10T05:41:25.857Z",
+      "lastUpdated": "2026-06-10T09:26:26.939Z",
       "deltaHistory": [
-        0,
         0,
         0,
         0,
@@ -539,12 +538,13 @@
         0,
         0.001,
         0,
+        0,
         0
       ]
     },
     "solar": {
       "score": 0,
-      "lastUpdated": "2026-06-10T05:41:25.857Z",
+      "lastUpdated": "2026-06-10T09:26:26.939Z",
       "deltaHistory": [
         0,
         0,
@@ -560,7 +560,7 @@
     },
     "wind_energy": {
       "score": 0,
-      "lastUpdated": "2026-06-10T05:41:25.857Z",
+      "lastUpdated": "2026-06-10T09:26:26.939Z",
       "deltaHistory": [
         0,
         0,
@@ -623,10 +623,9 @@
       ]
     },
     "packaging": {
-      "score": -0.134,
-      "lastUpdated": "2026-06-10T05:41:25.857Z",
+      "score": -0.133,
+      "lastUpdated": "2026-06-10T09:26:26.939Z",
       "deltaHistory": [
-        -0.001,
         -0.001,
         -0.001,
         -0.001,
@@ -635,7 +634,8 @@
         -0.0030000000000000027,
         0.013999999999999985,
         0.019000000000000003,
-        -0.020000000000000004
+        -0.020000000000000004,
+        0.0010000000000000009
       ]
     },
     "banking": {
@@ -688,7 +688,7 @@
     },
     "pcb": {
       "score": 0,
-      "lastUpdated": "2026-06-10T05:41:25.857Z",
+      "lastUpdated": "2026-06-10T09:26:26.939Z",
       "deltaHistory": [
         0,
         0,
