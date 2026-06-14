@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-13T20:36:04.440Z",
+  "updatedAt": "2026-06-14T01:19:47.217Z",
   "posts": [
     {
       "text": "Trump's trade war has a new target: forced labor. The case behind it is far from simple - CNBC Trump's trade war has a new target: forced labor. The case behind it is far from simple  CNBC",
@@ -107,27 +107,24 @@
       }
     },
     {
-      "text": "China used ChatGPT to attack Trump's Tariffs: OpenAI has proof - The News International China used ChatGPT to attack Trump's Tariffs: OpenAI has proof  The News International",
-      "timestamp": "2026-06-11T08:15:43.000Z",
-      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOWlZYQjVla0gzaGp1aHdLak5sMEJXdF84TFpIUEl1M1QzdDlEWkIxWm01RTUtVjJ4T0tNczlERldCRm8xcm9ROTFxWVNQN0tqZmYxTE9HOGFsMFdxYmN1ekpGMGtzeHlkbFhmZG9vME1RNTdqak1RSFZOYWRSQTV5NlBWSjhhOXZIbjBCUjZpeS1CMEJ2NmVRQWJrMlpONU1wSE1jNQ?oc=5",
+      "text": "US farmers 'cautiously optimistic' on China trade - China Daily US farmers 'cautiously optimistic' on China trade  China Daily",
+      "timestamp": "2026-06-11T23:12:00.000Z",
+      "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE85RE03YmZsNHNpd1hmYmpfQWhfNldXNDJjb0RDelY0dmFOeWFxMEEyaGpHX0hVemVIa0tjVkxfLUZOcWpjX0drMERvQzExVDdxM19QQkxwSVhDNkJYa0tWOUVJOFdEZDduZ1NWX1ptc1FVcVJ6aWtuY1ZQSmxPZw?oc=5",
       "keywords": [
         "ai",
-        "tariff",
-        "tariffs",
         "china"
       ],
       "impacts": {
         "ai_server": 0.7,
-        "foundry": -1,
-        "shipping": -1,
-        "steel": -1,
-        "ic_design": -1,
-        "display": -1,
-        "ev_supply": -1
+        "foundry": 0.3,
+        "ic_design": -0.5,
+        "shipping": -0.4,
+        "display": -0.4,
+        "ev_supply": -0.3
       },
       "sentiment": {
-        "compound": -0.7184,
-        "label": "強烈利空"
+        "compound": 0,
+        "label": "中性"
       }
     },
     {
@@ -145,6 +142,30 @@
         "ic_design": -1,
         "display": -0.9,
         "ev_supply": -0.7
+      },
+      "sentiment": {
+        "compound": -0.7184,
+        "label": "強烈利空"
+      }
+    },
+    {
+      "text": "China used ChatGPT to attack Trump's Tariffs: OpenAI has proof - The News International China used ChatGPT to attack Trump's Tariffs: OpenAI has proof  The News International",
+      "timestamp": "2026-06-11T08:15:43.000Z",
+      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOWlZYQjVla0gzaGp1aHdLak5sMEJXdF84TFpIUEl1M1QzdDlEWkIxWm01RTUtVjJ4T0tNczlERldCRm8xcm9ROTFxWVNQN0tqZmYxTE9HOGFsMFdxYmN1ekpGMGtzeHlkbFhmZG9vME1RNTdqak1RSFZOYWRSQTV5NlBWSjhhOXZIbjBCUjZpeS1CMEJ2NmVRQWJrMlpONU1wSE1jNQ?oc=5",
+      "keywords": [
+        "ai",
+        "tariff",
+        "tariffs",
+        "china"
+      ],
+      "impacts": {
+        "ai_server": 0.7,
+        "foundry": -1,
+        "shipping": -1,
+        "steel": -1,
+        "ic_design": -1,
+        "display": -1,
+        "ev_supply": -1
       },
       "sentiment": {
         "compound": -0.7184,
@@ -339,28 +360,6 @@
       }
     },
     {
-      "text": "A Year After ‘Liberation Day,’ Experts Review the Costs of Trump’s Tariffs - Council on Foreign Relations A Year After ‘Liberation Day,’ Experts Review the Costs of Trump’s Tariffs  Council on Foreign Relations",
-      "timestamp": "2026-04-02T07:00:00.000Z",
-      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNWmlydGN5Mm1BbDAxZk53Mld4d05rOWpERDJsM09qTDRnd21BQ1gxN3VMQzdVdVhiODhQdlE0RjNFbm03R216VmViZENoc2hjZDRMN09zT3hBTXNhLUtvUG10UWs2MjctSGhQUlVkYUd1bzJYa2ZQTXAxamlfRi1TaWQtOC01Z19yUmxiRXBuRVlpMTN6OWJGc3hzcUk2SkpD?oc=5",
-      "keywords": [
-        "tariff",
-        "tariffs",
-        "ev"
-      ],
-      "impacts": {
-        "foundry": -1,
-        "shipping": -1,
-        "steel": -1,
-        "ic_design": -1,
-        "display": -1,
-        "ev_supply": -0.6
-      },
-      "sentiment": {
-        "compound": -0.7184,
-        "label": "強烈利空"
-      }
-    },
-    {
       "text": "China opens investigations into US trade practices in response to Trump tariff moves - AP News China opens investigations into US trade practices in response to Trump tariff moves  AP News",
       "timestamp": "2026-03-27T07:00:00.000Z",
       "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQVGJGQkxHNlhfckEwNnZ2ZU5qQ3pYSW9UWms0Y1M0cjh1c0xGRW5TY19YTUtKTVRoZnlRUVQ0YmgwdFpValp2YjAzcEVMOTZIYkgzaHBGUk1aVWNmaTFTVExlZXUtb3BRRkJzZjJ1MXBGZTBXel96UnhzLWppTjVwc0xndHJ5RTljaXNaeUF1X1NuYmVGLW9qWW1DSklrWE1kZVBN?oc=5",
@@ -433,10 +432,10 @@
     {
       "sector": "foundry",
       "sectorName": "晶圓代工",
-      "prev": -0.826,
-      "current": -0.879,
-      "delta": -0.053,
-      "momentum": "↓ 壓力加深",
+      "prev": -0.879,
+      "current": -0.818,
+      "delta": 0.061,
+      "momentum": "↑ 壓力緩解",
       "accelerating": true
     }
   ],
@@ -444,10 +443,10 @@
     {
       "sector": "foundry",
       "sectorName": "晶圓代工",
-      "prev": -0.826,
-      "current": -0.879,
-      "delta": -0.053,
-      "momentum": "↓ 壓力加深",
+      "prev": -0.879,
+      "current": -0.818,
+      "delta": 0.061,
+      "momentum": "↑ 壓力緩解",
       "accelerating": true
     }
   ],
@@ -457,10 +456,9 @@
   ],
   "sectorState": {
     "foundry": {
-      "score": -0.879,
-      "lastUpdated": "2026-06-13T20:36:04.440Z",
+      "score": -0.818,
+      "lastUpdated": "2026-06-14T01:19:47.217Z",
       "deltaHistory": [
-        -0.08000000000000007,
         0.009000000000000008,
         -0.03799999999999992,
         0.030999999999999917,
@@ -469,14 +467,14 @@
         0.06399999999999995,
         -0.03700000000000003,
         -0.03199999999999992,
-        -0.05300000000000005
+        -0.05300000000000005,
+        0.061000000000000054
       ]
     },
     "shipping": {
-      "score": -0.884,
-      "lastUpdated": "2026-06-13T20:36:04.440Z",
+      "score": -0.877,
+      "lastUpdated": "2026-06-14T01:19:47.217Z",
       "deltaHistory": [
-        -0.029000000000000026,
         0.01200000000000001,
         -0.0030000000000000027,
         0.015000000000000013,
@@ -485,14 +483,14 @@
         0.0040000000000000036,
         0.014000000000000012,
         -0.016000000000000014,
-        0.006000000000000005
+        0.006000000000000005,
+        0.007000000000000006
       ]
     },
     "steel": {
-      "score": -0.606,
-      "lastUpdated": "2026-06-13T20:36:04.440Z",
+      "score": -0.571,
+      "lastUpdated": "2026-06-14T01:19:47.217Z",
       "deltaHistory": [
-        -0.041000000000000036,
         0.02200000000000002,
         0.0050000000000000044,
         0.039000000000000035,
@@ -501,12 +499,13 @@
         0.041999999999999926,
         -0.008000000000000007,
         -0.030999999999999917,
-        -0.02300000000000002
+        -0.02300000000000002,
+        0.03500000000000003
       ]
     },
     "ic_design": {
       "score": -1,
-      "lastUpdated": "2026-06-13T20:36:04.440Z",
+      "lastUpdated": "2026-06-14T01:19:47.217Z",
       "deltaHistory": [
         0,
         0,
@@ -521,10 +520,9 @@
       ]
     },
     "display": {
-      "score": -0.748,
-      "lastUpdated": "2026-06-13T20:36:04.440Z",
+      "score": -0.742,
+      "lastUpdated": "2026-06-14T01:19:47.217Z",
       "deltaHistory": [
-        -0.041000000000000036,
         0.0020000000000000018,
         0.030000000000000027,
         0.016000000000000014,
@@ -533,14 +531,14 @@
         0.0020000000000000018,
         0.01200000000000001,
         -0.015000000000000013,
+        0.006000000000000005,
         0.006000000000000005
       ]
     },
     "ev_supply": {
-      "score": -0.635,
-      "lastUpdated": "2026-06-13T20:36:04.440Z",
+      "score": -0.625,
+      "lastUpdated": "2026-06-14T01:19:47.217Z",
       "deltaHistory": [
-        -0.018000000000000016,
         -0.0020000000000000018,
         0.02300000000000002,
         0.0030000000000000027,
@@ -549,14 +547,14 @@
         0.007000000000000006,
         -0.0010000000000000009,
         -0.0030000000000000027,
-        -0.009000000000000008
+        -0.009000000000000008,
+        0.010000000000000009
       ]
     },
     "ai_server": {
-      "score": 0.057,
-      "lastUpdated": "2026-06-13T20:36:04.440Z",
+      "score": 0.099,
+      "lastUpdated": "2026-06-14T01:19:47.217Z",
       "deltaHistory": [
-        -0.22699999999999998,
         0.020000000000000004,
         -0.0030000000000000027,
         0.023999999999999994,
@@ -565,14 +563,14 @@
         -0.021000000000000005,
         0.016,
         -0.059,
-        0.023
+        0.023,
+        0.042
       ]
     },
     "defense": {
       "score": 0.002,
-      "lastUpdated": "2026-06-13T20:36:04.440Z",
+      "lastUpdated": "2026-06-14T01:19:47.217Z",
       "deltaHistory": [
-        -0.001,
         0.001,
         -0.001,
         0.002,
@@ -581,12 +579,13 @@
         0,
         0.001,
         -0.001,
-        0.002
+        0.002,
+        0
       ]
     },
     "solar": {
       "score": 0,
-      "lastUpdated": "2026-06-13T20:36:04.440Z",
+      "lastUpdated": "2026-06-14T01:19:47.217Z",
       "deltaHistory": [
         0,
         0,
@@ -602,7 +601,7 @@
     },
     "wind_energy": {
       "score": 0,
-      "lastUpdated": "2026-06-13T20:36:04.440Z",
+      "lastUpdated": "2026-06-14T01:19:47.217Z",
       "deltaHistory": [
         0,
         0,
@@ -633,10 +632,9 @@
       ]
     },
     "semiconductor_equip": {
-      "score": -0.054,
-      "lastUpdated": "2026-06-13T20:36:04.440Z",
+      "score": -0.056,
+      "lastUpdated": "2026-06-14T01:19:47.217Z",
       "deltaHistory": [
-        -0.0020000000000000018,
         -0.006999999999999999,
         0.010000000000000002,
         -0.010000000000000002,
@@ -645,7 +643,8 @@
         -0.0030000000000000027,
         -0.009000000000000001,
         0.009000000000000001,
-        -0.0049999999999999975
+        -0.0049999999999999975,
+        -0.0020000000000000018
       ]
     },
     "robotics": {
@@ -665,10 +664,9 @@
       ]
     },
     "packaging": {
-      "score": -0.124,
-      "lastUpdated": "2026-06-13T20:36:04.440Z",
+      "score": -0.128,
+      "lastUpdated": "2026-06-14T01:19:47.217Z",
       "deltaHistory": [
-        0.015999999999999986,
         0.0020000000000000018,
         0.0040000000000000036,
         -0.0030000000000000027,
@@ -677,7 +675,8 @@
         -0.010000000000000009,
         0,
         0.0020000000000000018,
-        0.006000000000000005
+        0.006000000000000005,
+        -0.0040000000000000036
       ]
     },
     "banking": {
@@ -730,9 +729,8 @@
     },
     "pcb": {
       "score": 0.001,
-      "lastUpdated": "2026-06-13T20:36:04.440Z",
+      "lastUpdated": "2026-06-14T01:19:47.217Z",
       "deltaHistory": [
-        0,
         0,
         0,
         0.001,
@@ -741,7 +739,8 @@
         0,
         0,
         0,
-        0.001
+        0.001,
+        0
       ]
     },
     "financial_holding": {
