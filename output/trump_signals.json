@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-19T13:22:04.602Z",
+  "updatedAt": "2026-06-19T16:54:42.020Z",
   "posts": [
     {
       "text": "US Supreme Court declines to hear challenge to 2018 Trump tariffs on China - SeafoodSource US Supreme Court declines to hear challenge to 2018 Trump tariffs on China  SeafoodSource",
@@ -64,6 +64,27 @@
       }
     },
     {
+      "text": "U.S. says it plans extra tariffs of 10% or more for most trading partners after forced labor probe - PBS U.S. says it plans extra tariffs of 10% or more for most trading partners after forced labor probe  PBS",
+      "timestamp": "2026-06-03T07:00:00.000Z",
+      "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNYmVrSUEwV3c4b3FFaFZSREVvbkxudXlKbVFrMXNjcVZJaWxxbEgya2VOQ1ppV3NVd2hnRVZ0MmV1OGw4OTFOUjNxM1diekR0QWEteUFadTUwOWN1XzlxRUxySzhBWTFZd284VWw0b29ReDF1WjNSU2ZpaHBYbWNvd19CSl9VNDBPY1Bjcnl1clMtdVUyRjNXa1d6SVJWZmdFUlY1NExfSXhqQ1hzMFZOWU5udTRxZ2tleHpfS0lGMlZWRXFhbDgtR3RxclVld9IB0wFBVV95cUxNQjZEQ2FTdVBzU2NNZVBaSHROZ2lOdnN1Y1Q1bHlFQUNhdDI1aTBzcFVpUmUwT3J6XzdxdDh1WmpxV1JaUndWcGxGeTJReWZQaGEwUy0wcTBpb2t1NXdzMnZKbDEwcUFfODNnaTZkdGR1aDJaTzFwcUhlbVVBOS1tLVY3ZnE3ZWlfY1E0X2kyenQ3aDVlZmR5QVV2WVVXSzZ5TkhHM2szejRKS1c2eW12WnNkdE1rNFdVUG1rbWlxQlMtRTY2dTlhdmxoTjhaMW5Eamdn?oc=5",
+      "keywords": [
+        "tariff",
+        "tariffs"
+      ],
+      "impacts": {
+        "foundry": -1,
+        "shipping": -1,
+        "steel": -1,
+        "ic_design": -1,
+        "display": -1,
+        "ev_supply": -0.8
+      },
+      "sentiment": {
+        "compound": -0.7184,
+        "label": "強烈利空"
+      }
+    },
+    {
       "text": "Trump administration floats tariffs on 60 trading partners — including China, U.K., EU — after forced labor probes - CBS News Trump administration floats tariffs on 60 trading partners — including China, U.K., EU — after forced labor probes  CBS News",
       "timestamp": "2026-06-03T07:00:00.000Z",
       "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQd3NPakNfWGozTnR3Qk0zUWdHVE55ZG4xbnV5Wk1mckM3a0Etd1dvNmNDUWp1TElZeUN6ckpyWWhFc1E2TG1xcENZekItTHFDeWM0ZnNlVVcxcTFYQXFLN0tvYzJ6U0FTTFpQTVNMZXhrX2hoalVDX1JCYTdPaWVGMHZXVVJrc1hwclRRQml0RXd5ZGVUNFo1c21XbUIwR1E?oc=5",
@@ -101,29 +122,6 @@
         "steel": -0.5,
         "display": -0.9,
         "ev_supply": -0.7
-      },
-      "sentiment": {
-        "compound": 0,
-        "label": "中性"
-      }
-    },
-    {
-      "text": "China Shock 2.0: Surging Chinese exports threaten Europe's economy, raising concern at G7 summit - ABC News - Breaking News, Latest News and Videos China Shock 2.0: Surging Chinese exports threaten Europe's economy, raising concern at G7 summit  ABC News - Breaking News, Latest News and Videos",
-      "timestamp": "2026-06-16T07:46:36.000Z",
-      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxObHpyYm15R0hOd3FxdF9uUXJUWnZuQURELTVPRmNCY21aakkwNHd3a3dPSlp3Qk5GX21NWFE1bnpTSGZBUS1SSW01UFdsNGdOLXdDVFgzT3JBelFaMzRaenV6aHVQRHFsS1pyZWFlSXhNZ0FzdFlTNkZBcThZeEdVQUhaUFphcTZJRzM5REpxOUV0X3FOUE5lN3h3OGllNkNXd3c4bl82b9IBrAFBVV95cUxNcE1oYjRCM3k1RGZDemE5WGJOTnpSeEdWYkpUZkJNMmJlUHlHWVFhYndVWnVTMlVrM25penQxa1NEMzFhcXBabHltdF9CWUo3WDNRalJGcVlrN2U5R1M3cGFOTnNaUmVVNFQzSHQzRDdpZjF6VzN6bFFtYnhuSmdZWXJyWmNCTnJ5Ymw2TjZ5YUI3Nk9fQXFvTHIyQlktZ01qMUtCcHZkbXQ2aWlw?oc=5",
-      "keywords": [
-        "ai",
-        "china",
-        "chinese",
-        "port"
-      ],
-      "impacts": {
-        "ai_server": 0.7,
-        "foundry": 0.3,
-        "ic_design": -1,
-        "shipping": -1,
-        "display": -0.8,
-        "ev_supply": -0.3
       },
       "sentiment": {
         "compound": 0,
@@ -421,18 +419,73 @@
       }
     }
   ],
-  "deltas": [],
-  "topDeltas": [],
+  "deltas": [
+    {
+      "sector": "foundry",
+      "sectorName": "晶圓代工",
+      "prev": -0.847,
+      "current": -0.967,
+      "delta": -0.12,
+      "momentum": "↓ 壓力加深",
+      "accelerating": true
+    },
+    {
+      "sector": "steel",
+      "sectorName": "鋼鐵",
+      "prev": -0.743,
+      "current": -0.839,
+      "delta": -0.096,
+      "momentum": "↓ 壓力加深",
+      "accelerating": true
+    },
+    {
+      "sector": "ai_server",
+      "sectorName": "AI 伺服器",
+      "prev": 0.104,
+      "current": 0.041,
+      "delta": -0.063,
+      "momentum": "↓ 訊號弱化",
+      "accelerating": true
+    }
+  ],
+  "topDeltas": [
+    {
+      "sector": "foundry",
+      "sectorName": "晶圓代工",
+      "prev": -0.847,
+      "current": -0.967,
+      "delta": -0.12,
+      "momentum": "↓ 壓力加深",
+      "accelerating": true
+    },
+    {
+      "sector": "steel",
+      "sectorName": "鋼鐵",
+      "prev": -0.743,
+      "current": -0.839,
+      "delta": -0.096,
+      "momentum": "↓ 壓力加深",
+      "accelerating": true
+    },
+    {
+      "sector": "ai_server",
+      "sectorName": "AI 伺服器",
+      "prev": 0.104,
+      "current": 0.041,
+      "delta": -0.063,
+      "momentum": "↓ 訊號弱化",
+      "accelerating": true
+    }
+  ],
   "totalAnalyzed": 100,
   "sources": [
     "Google News"
   ],
   "sectorState": {
     "foundry": {
-      "score": -0.847,
-      "lastUpdated": "2026-06-19T13:22:04.602Z",
+      "score": -0.967,
+      "lastUpdated": "2026-06-19T16:54:42.020Z",
       "deltaHistory": [
-        -0.05700000000000005,
         0.02400000000000002,
         -0.061999999999999944,
         0.025000000000000022,
@@ -441,14 +494,14 @@
         0,
         -0.008000000000000007,
         0.01100000000000001,
-        -0.0030000000000000027
+        -0.0030000000000000027,
+        -0.12
       ]
     },
     "shipping": {
-      "score": -0.887,
-      "lastUpdated": "2026-06-19T13:22:04.602Z",
+      "score": -0.893,
+      "lastUpdated": "2026-06-19T16:54:42.020Z",
       "deltaHistory": [
-        0.009000000000000008,
         -0.0010000000000000009,
         -0.009000000000000008,
         0.04800000000000004,
@@ -457,14 +510,14 @@
         0,
         0.013000000000000012,
         0.0010000000000000009,
+        -0.006000000000000005,
         -0.006000000000000005
       ]
     },
     "steel": {
-      "score": -0.743,
-      "lastUpdated": "2026-06-19T13:22:04.602Z",
+      "score": -0.839,
+      "lastUpdated": "2026-06-19T16:54:42.020Z",
       "deltaHistory": [
-        -0.050000000000000044,
         0.019000000000000017,
         -0.06300000000000006,
         0.04400000000000004,
@@ -473,12 +526,13 @@
         0,
         0.006000000000000005,
         0.026000000000000023,
-        -0.0030000000000000027
+        -0.0030000000000000027,
+        -0.09599999999999997
       ]
     },
     "ic_design": {
       "score": -1,
-      "lastUpdated": "2026-06-19T13:22:04.602Z",
+      "lastUpdated": "2026-06-19T16:54:42.020Z",
       "deltaHistory": [
         0,
         0,
@@ -493,10 +547,9 @@
       ]
     },
     "display": {
-      "score": -0.954,
-      "lastUpdated": "2026-06-19T13:22:04.602Z",
+      "score": -0.97,
+      "lastUpdated": "2026-06-19T16:54:42.020Z",
       "deltaHistory": [
-        -0.015999999999999903,
         0.0030000000000000027,
         -0.007000000000000006,
         -0.03200000000000003,
@@ -505,14 +558,14 @@
         0,
         0.007000000000000006,
         0.01100000000000001,
-        0.0040000000000000036
+        0.0040000000000000036,
+        -0.016000000000000014
       ]
     },
     "ev_supply": {
-      "score": -0.835,
-      "lastUpdated": "2026-06-19T13:22:04.602Z",
+      "score": -0.875,
+      "lastUpdated": "2026-06-19T16:54:42.020Z",
       "deltaHistory": [
-        -0.031000000000000028,
         0.013000000000000012,
         -0.013000000000000012,
         -0.03199999999999992,
@@ -521,14 +574,14 @@
         0.0010000000000000009,
         -0.019000000000000017,
         0.010000000000000009,
-        0.0010000000000000009
+        0.0010000000000000009,
+        -0.040000000000000036
       ]
     },
     "ai_server": {
-      "score": 0.104,
-      "lastUpdated": "2026-06-19T13:22:04.602Z",
+      "score": 0.041,
+      "lastUpdated": "2026-06-19T16:54:42.020Z",
       "deltaHistory": [
-        0.007000000000000006,
         0.018000000000000002,
         -0.030000000000000013,
         0.040999999999999995,
@@ -537,12 +590,13 @@
         0,
         0.0069999999999999785,
         -0.03599999999999999,
-        -0.0010000000000000009
+        -0.0010000000000000009,
+        -0.063
       ]
     },
     "defense": {
       "score": 0,
-      "lastUpdated": "2026-06-19T13:22:04.602Z",
+      "lastUpdated": "2026-06-19T16:54:42.020Z",
       "deltaHistory": [
         0,
         0,
@@ -638,9 +692,8 @@
     },
     "packaging": {
       "score": -0.007,
-      "lastUpdated": "2026-06-19T13:22:04.602Z",
+      "lastUpdated": "2026-06-19T16:54:42.020Z",
       "deltaHistory": [
-        0,
         0,
         -0.003,
         0.003,
@@ -649,7 +702,8 @@
         0,
         0,
         0,
-        -0.007
+        -0.007,
+        0
       ]
     },
     "banking": {
@@ -702,7 +756,7 @@
     },
     "pcb": {
       "score": 0,
-      "lastUpdated": "2026-06-19T13:22:04.602Z",
+      "lastUpdated": "2026-06-19T16:54:42.020Z",
       "deltaHistory": [
         0,
         0,
