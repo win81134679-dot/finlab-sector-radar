@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-21T01:22:07.382Z",
+  "updatedAt": "2026-06-21T05:46:41.895Z",
   "posts": [
     {
       "text": "US reciprocal trade deals built to push America's trade partners away from China - Peterson Institute for International Economics US reciprocal trade deals built to push America's trade partners away from China  Peterson Institute for International Economics",
@@ -430,46 +430,8 @@
       }
     }
   ],
-  "deltas": [
-    {
-      "sector": "steel",
-      "sectorName": "鋼鐵",
-      "prev": -0.729,
-      "current": -0.805,
-      "delta": -0.076,
-      "momentum": "↓ 壓力加深",
-      "accelerating": false
-    },
-    {
-      "sector": "foundry",
-      "sectorName": "晶圓代工",
-      "prev": -0.92,
-      "current": -0.971,
-      "delta": -0.051,
-      "momentum": "↓ 壓力加深",
-      "accelerating": false
-    }
-  ],
-  "topDeltas": [
-    {
-      "sector": "steel",
-      "sectorName": "鋼鐵",
-      "prev": -0.729,
-      "current": -0.805,
-      "delta": -0.076,
-      "momentum": "↓ 壓力加深",
-      "accelerating": false
-    },
-    {
-      "sector": "foundry",
-      "sectorName": "晶圓代工",
-      "prev": -0.92,
-      "current": -0.971,
-      "delta": -0.051,
-      "momentum": "↓ 壓力加深",
-      "accelerating": false
-    }
-  ],
+  "deltas": [],
+  "topDeltas": [],
   "totalAnalyzed": 100,
   "sources": [
     "Google News"
@@ -477,9 +439,8 @@
   "sectorState": {
     "foundry": {
       "score": -0.971,
-      "lastUpdated": "2026-06-21T01:22:07.382Z",
+      "lastUpdated": "2026-06-21T05:46:41.895Z",
       "deltaHistory": [
-        -0.0030000000000000027,
         -0.12,
         0.379,
         -0.31700000000000006,
@@ -488,14 +449,14 @@
         -0.018000000000000016,
         0.254,
         -0.275,
-        -0.050999999999999934
+        -0.050999999999999934,
+        0
       ]
     },
     "shipping": {
       "score": -0.904,
-      "lastUpdated": "2026-06-21T01:22:07.382Z",
+      "lastUpdated": "2026-06-21T05:46:41.895Z",
       "deltaHistory": [
-        -0.006000000000000005,
         -0.006000000000000005,
         -0.013000000000000012,
         0.02200000000000002,
@@ -504,14 +465,14 @@
         -0.009000000000000008,
         -0.05300000000000005,
         0.051000000000000045,
-        -0.026000000000000023
+        -0.026000000000000023,
+        0
       ]
     },
     "steel": {
       "score": -0.805,
-      "lastUpdated": "2026-06-21T01:22:07.382Z",
+      "lastUpdated": "2026-06-21T05:46:41.895Z",
       "deltaHistory": [
-        -0.0030000000000000027,
         -0.09599999999999997,
         0.242,
         -0.21500000000000008,
@@ -520,12 +481,13 @@
         -0.041000000000000036,
         0.125,
         -0.10999999999999999,
-        -0.07600000000000007
+        -0.07600000000000007,
+        0
       ]
     },
     "ic_design": {
       "score": -1,
-      "lastUpdated": "2026-06-21T01:22:07.382Z",
+      "lastUpdated": "2026-06-21T05:46:41.895Z",
       "deltaHistory": [
         0,
         0,
@@ -541,9 +503,8 @@
     },
     "display": {
       "score": -0.941,
-      "lastUpdated": "2026-06-21T01:22:07.382Z",
+      "lastUpdated": "2026-06-21T05:46:41.895Z",
       "deltaHistory": [
-        0.0040000000000000036,
         -0.016000000000000014,
         0.038999999999999924,
         -0.06799999999999995,
@@ -552,14 +513,14 @@
         -0.014000000000000012,
         0.019000000000000017,
         0.025999999999999912,
-        -0.02199999999999991
+        -0.02199999999999991,
+        0
       ]
     },
     "ev_supply": {
       "score": -0.799,
-      "lastUpdated": "2026-06-21T01:22:07.382Z",
+      "lastUpdated": "2026-06-21T05:46:41.895Z",
       "deltaHistory": [
-        0.0010000000000000009,
         -0.040000000000000036,
         0.20799999999999996,
         -0.24,
@@ -568,14 +529,14 @@
         -0.02400000000000002,
         0.16099999999999992,
         -0.10099999999999998,
-        -0.01100000000000001
+        -0.01100000000000001,
+        0
       ]
     },
     "ai_server": {
       "score": 0.096,
-      "lastUpdated": "2026-06-21T01:22:07.382Z",
+      "lastUpdated": "2026-06-21T05:46:41.895Z",
       "deltaHistory": [
-        -0.0010000000000000009,
         -0.063,
         0.157,
         -0.07500000000000001,
@@ -584,14 +545,14 @@
         0.085,
         0.07300000000000001,
         -0.04600000000000001,
-        -0.024999999999999994
+        -0.024999999999999994,
+        0
       ]
     },
     "defense": {
       "score": 0.002,
-      "lastUpdated": "2026-06-21T01:22:07.382Z",
+      "lastUpdated": "2026-06-21T05:46:41.895Z",
       "deltaHistory": [
-        0,
         0,
         0.039,
         -0.038,
@@ -600,12 +561,13 @@
         0,
         -0.001,
         0.002,
+        0,
         0
       ]
     },
     "solar": {
       "score": 0,
-      "lastUpdated": "2026-06-21T01:22:07.382Z",
+      "lastUpdated": "2026-06-21T05:46:41.895Z",
       "deltaHistory": [
         0,
         0,
@@ -621,7 +583,7 @@
     },
     "wind_energy": {
       "score": 0,
-      "lastUpdated": "2026-06-21T01:22:07.382Z",
+      "lastUpdated": "2026-06-21T05:46:41.895Z",
       "deltaHistory": [
         0,
         0,
@@ -685,9 +647,8 @@
     },
     "packaging": {
       "score": 0,
-      "lastUpdated": "2026-06-21T01:22:07.382Z",
+      "lastUpdated": "2026-06-21T05:46:41.895Z",
       "deltaHistory": [
-        -0.007,
         0,
         0.005,
         -0.005,
@@ -696,7 +657,8 @@
         0.006,
         0.001,
         -0.001,
-        0.001
+        0.001,
+        0
       ]
     },
     "banking": {
@@ -749,7 +711,7 @@
     },
     "pcb": {
       "score": 0,
-      "lastUpdated": "2026-06-21T01:22:07.382Z",
+      "lastUpdated": "2026-06-21T05:46:41.895Z",
       "deltaHistory": [
         0,
         0,
