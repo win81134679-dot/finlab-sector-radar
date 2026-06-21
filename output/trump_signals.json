@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-20T20:35:54.714Z",
+  "updatedAt": "2026-06-21T01:22:07.382Z",
   "posts": [
     {
       "text": "US reciprocal trade deals built to push America's trade partners away from China - Peterson Institute for International Economics US reciprocal trade deals built to push America's trade partners away from China  Peterson Institute for International Economics",
@@ -19,6 +19,27 @@
       "sentiment": {
         "compound": 0,
         "label": "中性"
+      }
+    },
+    {
+      "text": "U.S. says it plans extra tariffs of 10% or more for most trading partners after forced labor probe - PBS U.S. says it plans extra tariffs of 10% or more for most trading partners after forced labor probe  PBS",
+      "timestamp": "2026-06-03T07:00:00.000Z",
+      "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNYmVrSUEwV3c4b3FFaFZSREVvbkxudXlKbVFrMXNjcVZJaWxxbEgya2VOQ1ppV3NVd2hnRVZ0MmV1OGw4OTFOUjNxM1diekR0QWEteUFadTUwOWN1XzlxRUxySzhBWTFZd284VWw0b29ReDF1WjNSU2ZpaHBYbWNvd19CSl9VNDBPY1Bjcnl1clMtdVUyRjNXa1d6SVJWZmdFUlY1NExfSXhqQ1hzMFZOWU5udTRxZ2tleHpfS0lGMlZWRXFhbDgtR3RxclVld9IB0wFBVV95cUxNQjZEQ2FTdVBzU2NNZVBaSHROZ2lOdnN1Y1Q1bHlFQUNhdDI1aTBzcFVpUmUwT3J6XzdxdDh1WmpxV1JaUndWcGxGeTJReWZQaGEwUy0wcTBpb2t1NXdzMnZKbDEwcUFfODNnaTZkdGR1aDJaTzFwcUhlbVVBOS1tLVY3ZnE3ZWlfY1E0X2kyenQ3aDVlZmR5QVV2WVVXSzZ5TkhHM2szejRKS1c2eW12WnNkdE1rNFdVUG1rbWlxQlMtRTY2dTlhdmxoTjhaMW5Eamdn?oc=5",
+      "keywords": [
+        "tariff",
+        "tariffs"
+      ],
+      "impacts": {
+        "foundry": -1,
+        "shipping": -1,
+        "steel": -1,
+        "ic_design": -1,
+        "display": -1,
+        "ev_supply": -0.8
+      },
+      "sentiment": {
+        "compound": -0.7184,
+        "label": "強烈利空"
       }
     },
     {
@@ -83,24 +104,6 @@
       "sentiment": {
         "compound": -0.7184,
         "label": "強烈利空"
-      }
-    },
-    {
-      "text": "China controls trade choke points beyond rare earths. It’s squeezing them. - The Washington Post China controls trade choke points beyond rare earths. It’s squeezing them.  The Washington Post",
-      "timestamp": "2026-06-16T16:00:00.000Z",
-      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPRjFfNVJxSUdSaWVYMWY5YlhHVVkwbGd0RnFRNURuSDI2VW1JQ3ZhVlM4ZW9rZFY4Vk5fc0FZTUlOT0FCdHA3c2xKTTg2NmpXaXljVzZYcnRITENfa2FQcHhPcVYtUzM2b2pLd1BuM1Nyd1hFb1lGeEpKMXhUc3Z0S1c2RjYycmxWc1Q2YkNSdjlqQmtaMU5UNWgxSUhiWFFsN1kyUk5TdTlJRmZ3d25lbkZTSFM4Zw?oc=5",
-      "keywords": [
-        "china"
-      ],
-      "impacts": {
-        "ic_design": -0.5,
-        "shipping": -0.4,
-        "display": -0.4,
-        "ev_supply": -0.3
-      },
-      "sentiment": {
-        "compound": 0,
-        "label": "中性"
       }
     },
     {
@@ -250,26 +253,6 @@
       }
     },
     {
-      "text": "US industries, trade groups split over Trump's tariff probe on excess factory capacity - Reuters US industries, trade groups split over Trump's tariff probe on excess factory capacity  Reuters",
-      "timestamp": "2026-05-05T07:00:00.000Z",
-      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQSE0tRmpkVzd6MjBDU3g5OGVnbUJWaDR5TEZPdUNBQWV0ODJ5enVzU28zNVpQVmlnc0ljbjhJVXRjSmYwbm9senhlekRQSVlSMW9xSFgybG42VHpMU2I0dElQeGNqUzltWmFSM2ItSWJSNHBwQVNoZEVkVUwxQzc1R3hDXzZIMmk2MDhGQUltUmswVzJLb1YwWFdHaTJRSC1FRUdmSFhlLXhoUkFMUUlkcS03ekpOUWJO?oc=5",
-      "keywords": [
-        "tariff"
-      ],
-      "impacts": {
-        "foundry": -0.7,
-        "shipping": -0.5,
-        "steel": -0.5,
-        "ic_design": -0.6,
-        "display": -0.5,
-        "ev_supply": -0.4
-      },
-      "sentiment": {
-        "compound": -0.7184,
-        "label": "強烈利空"
-      }
-    },
-    {
       "text": "A Year After ‘Liberation Day,’ Experts Review the Costs of Trump’s Tariffs - Council on Foreign Relations A Year After ‘Liberation Day,’ Experts Review the Costs of Trump’s Tariffs  Council on Foreign Relations",
       "timestamp": "2026-04-02T07:00:00.000Z",
       "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNWmlydGN5Mm1BbDAxZk53Mld4d05rOWpERDJsM09qTDRnd21BQ1gxN3VMQzdVdVhiODhQdlE0RjNFbm03R216VmViZENoc2hjZDRMN09zT3hBTXNhLUtvUG10UWs2MjctSGhQUlVkYUd1bzJYa2ZQTXAxamlfRi1TaWQtOC01Z19yUmxiRXBuRVlpMTN6OWJGc3hzcUk2SkpD?oc=5",
@@ -285,6 +268,29 @@
         "ic_design": -1,
         "display": -1,
         "ev_supply": -0.6
+      },
+      "sentiment": {
+        "compound": -0.7184,
+        "label": "強烈利空"
+      }
+    },
+    {
+      "text": "China’s leverage rises before high-stakes summit as Supreme Court curbs Trump tariffs - CNBC China’s leverage rises before high-stakes summit as Supreme Court curbs Trump tariffs  CNBC",
+      "timestamp": "2026-02-23T08:00:00.000Z",
+      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNMFpjTnU3MjlsNmY3M1NyUzB2OXFXTTM2aUhmVDYwc2VwQ0NVMEoxQ0JWSlJqUUdwMnRRWVdsSmR0eGtCdWdEcHE0UXE5M2Y5VmtrMFhXaU81TDV4YVJaMXUyV1I1bnljT0ZpQUd5SE1pdWVtVmY2aTVUVlF2cTVUYUdYVTI5YVRhWmplVlA1N1pVN1lxLUx3ODRjQTNGU0xXR1d4UGxoQVQ3UFU1T1h6dXQ2dzFMSEhwUlA2X9IBwgFBVV95cUxQWHYyWXktQ1VHR3hxdmdxcDRCOTN2Zm56aWFOcVpWWmZVRVZqU3pfbS1yUXB3UlluX2oxQzBXd0F0M2xEb042d0g0ZnhEcDN2QWJmZjBrbkVhRVBxTENBTlhwbTRudDh0WEdiSXNXQnI5a05FY3hGNTZ6UGUzQnpnMXE3eHdSWHltUmhLUmY4T0ZBSThBRUdxM1VYVGFCTEJ1c05zSzRzWFdkcUtFVVg3Mm5qT2RoTzRaSWRJc0xLYWozUQ?oc=5",
+      "keywords": [
+        "tariff",
+        "tariffs",
+        "china",
+        "ev"
+      ],
+      "impacts": {
+        "foundry": -1,
+        "shipping": -1,
+        "steel": -1,
+        "ic_design": -1,
+        "display": -1,
+        "ev_supply": -0.9
       },
       "sentiment": {
         "compound": -0.7184,
@@ -313,29 +319,6 @@
       "sentiment": {
         "compound": -0.25,
         "label": "偏空"
-      }
-    },
-    {
-      "text": "China’s leverage rises before high-stakes summit as Supreme Court curbs Trump tariffs - CNBC China’s leverage rises before high-stakes summit as Supreme Court curbs Trump tariffs  CNBC",
-      "timestamp": "2026-02-23T08:00:00.000Z",
-      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNMFpjTnU3MjlsNmY3M1NyUzB2OXFXTTM2aUhmVDYwc2VwQ0NVMEoxQ0JWSlJqUUdwMnRRWVdsSmR0eGtCdWdEcHE0UXE5M2Y5VmtrMFhXaU81TDV4YVJaMXUyV1I1bnljT0ZpQUd5SE1pdWVtVmY2aTVUVlF2cTVUYUdYVTI5YVRhWmplVlA1N1pVN1lxLUx3ODRjQTNGU0xXR1d4UGxoQVQ3UFU1T1h6dXQ2dzFMSEhwUlA2X9IBwgFBVV95cUxQWHYyWXktQ1VHR3hxdmdxcDRCOTN2Zm56aWFOcVpWWmZVRVZqU3pfbS1yUXB3UlluX2oxQzBXd0F0M2xEb042d0g0ZnhEcDN2QWJmZjBrbkVhRVBxTENBTlhwbTRudDh0WEdiSXNXQnI5a05FY3hGNTZ6UGUzQnpnMXE3eHdSWHltUmhLUmY4T0ZBSThBRUdxM1VYVGFCTEJ1c05zSzRzWFdkcUtFVVg3Mm5qT2RoTzRaSWRJc0xLYWozUQ?oc=5",
-      "keywords": [
-        "tariff",
-        "tariffs",
-        "china",
-        "ev"
-      ],
-      "impacts": {
-        "foundry": -1,
-        "shipping": -1,
-        "steel": -1,
-        "ic_design": -1,
-        "display": -1,
-        "ev_supply": -0.9
-      },
-      "sentiment": {
-        "compound": -0.7184,
-        "label": "強烈利空"
       }
     },
     {
@@ -403,6 +386,27 @@
       }
     },
     {
+      "text": "The Trump-China trade wars: Five takeaways from US imports in 2025 - Peterson Institute for International Economics The Trump-China trade wars: Five takeaways from US imports in 2025  Peterson Institute for International Economics",
+      "timestamp": "2026-03-16T07:00:00.000Z",
+      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNS25TQ0dndmJlWHZpb3pUQ3B3dFltMEhfNUN1S3BkRnJiaEk2VU9tdHNsbXREYzV2LWUzWkt4QnZXQUE2VlI3ZW9LRk8xTUItV0plWXBYLTRQQVRpeHByaHp0Y3VLRWRYWk9JNS15d1pTZEpyMzhVSUlpWWtiVm56d3FsbFFkMm1tZlpORW5rRzFtejRaX0dDZFFidXAxaXVTUGVOeWIzTQ?oc=5",
+      "keywords": [
+        "trade war",
+        "china",
+        "port"
+      ],
+      "impacts": {
+        "foundry": -0.6,
+        "ic_design": -1,
+        "shipping": -1,
+        "display": -0.4,
+        "ev_supply": -0.3
+      },
+      "sentiment": {
+        "compound": 0,
+        "label": "中性"
+      }
+    },
+    {
       "text": "US and China seek to repair damage from tariff war that sent trade into a freefall - AP News US and China seek to repair damage from tariff war that sent trade into a freefall  AP News",
       "timestamp": "2026-05-13T07:00:00.000Z",
       "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOdVVjejZrTXBEdXRCVDUyWmFNdnNxTXVrMUZ0TnM2ZXlWTlFncnpLZTlQTS1hczV4SmJlTXoxM0VSdjd1NFhubGhmQ1gzWGdBUVlYU2VvbTJjQ3J1MWJxaDRmRWsxUVZaelVXV1BzcWRtc3huUU9MOVdYZWNhTFFOaTF3UHQxdVJOX0tmdmJWUF9IdjNt?oc=5",
@@ -428,77 +432,41 @@
   ],
   "deltas": [
     {
-      "sector": "foundry",
-      "sectorName": "晶圓代工",
-      "prev": -0.645,
-      "current": -0.92,
-      "delta": -0.275,
-      "momentum": "↓ 壓力加深",
-      "accelerating": true
-    },
-    {
       "sector": "steel",
       "sectorName": "鋼鐵",
-      "prev": -0.619,
-      "current": -0.729,
-      "delta": -0.11,
+      "prev": -0.729,
+      "current": -0.805,
+      "delta": -0.076,
       "momentum": "↓ 壓力加深",
       "accelerating": false
     },
     {
-      "sector": "ev_supply",
-      "sectorName": "電動車供應鏈",
-      "prev": -0.687,
-      "current": -0.788,
-      "delta": -0.101,
+      "sector": "foundry",
+      "sectorName": "晶圓代工",
+      "prev": -0.92,
+      "current": -0.971,
+      "delta": -0.051,
       "momentum": "↓ 壓力加深",
-      "accelerating": false
-    },
-    {
-      "sector": "shipping",
-      "sectorName": "航運",
-      "prev": -0.929,
-      "current": -0.878,
-      "delta": 0.051,
-      "momentum": "↑ 壓力緩解",
       "accelerating": false
     }
   ],
   "topDeltas": [
     {
-      "sector": "foundry",
-      "sectorName": "晶圓代工",
-      "prev": -0.645,
-      "current": -0.92,
-      "delta": -0.275,
-      "momentum": "↓ 壓力加深",
-      "accelerating": true
-    },
-    {
       "sector": "steel",
       "sectorName": "鋼鐵",
-      "prev": -0.619,
-      "current": -0.729,
-      "delta": -0.11,
+      "prev": -0.729,
+      "current": -0.805,
+      "delta": -0.076,
       "momentum": "↓ 壓力加深",
       "accelerating": false
     },
     {
-      "sector": "ev_supply",
-      "sectorName": "電動車供應鏈",
-      "prev": -0.687,
-      "current": -0.788,
-      "delta": -0.101,
+      "sector": "foundry",
+      "sectorName": "晶圓代工",
+      "prev": -0.92,
+      "current": -0.971,
+      "delta": -0.051,
       "momentum": "↓ 壓力加深",
-      "accelerating": false
-    },
-    {
-      "sector": "shipping",
-      "sectorName": "航運",
-      "prev": -0.929,
-      "current": -0.878,
-      "delta": 0.051,
-      "momentum": "↑ 壓力緩解",
       "accelerating": false
     }
   ],
@@ -508,10 +476,9 @@
   ],
   "sectorState": {
     "foundry": {
-      "score": -0.92,
-      "lastUpdated": "2026-06-20T20:35:54.714Z",
+      "score": -0.971,
+      "lastUpdated": "2026-06-21T01:22:07.382Z",
       "deltaHistory": [
-        0.01100000000000001,
         -0.0030000000000000027,
         -0.12,
         0.379,
@@ -520,14 +487,14 @@
         -0.030000000000000027,
         -0.018000000000000016,
         0.254,
-        -0.275
+        -0.275,
+        -0.050999999999999934
       ]
     },
     "shipping": {
-      "score": -0.878,
-      "lastUpdated": "2026-06-20T20:35:54.714Z",
+      "score": -0.904,
+      "lastUpdated": "2026-06-21T01:22:07.382Z",
       "deltaHistory": [
-        0.0010000000000000009,
         -0.006000000000000005,
         -0.006000000000000005,
         -0.013000000000000012,
@@ -536,14 +503,14 @@
         -0.007000000000000006,
         -0.009000000000000008,
         -0.05300000000000005,
-        0.051000000000000045
+        0.051000000000000045,
+        -0.026000000000000023
       ]
     },
     "steel": {
-      "score": -0.729,
-      "lastUpdated": "2026-06-20T20:35:54.714Z",
+      "score": -0.805,
+      "lastUpdated": "2026-06-21T01:22:07.382Z",
       "deltaHistory": [
-        0.026000000000000023,
         -0.0030000000000000027,
         -0.09599999999999997,
         0.242,
@@ -552,12 +519,13 @@
         -0.015000000000000013,
         -0.041000000000000036,
         0.125,
-        -0.10999999999999999
+        -0.10999999999999999,
+        -0.07600000000000007
       ]
     },
     "ic_design": {
       "score": -1,
-      "lastUpdated": "2026-06-20T20:35:54.714Z",
+      "lastUpdated": "2026-06-21T01:22:07.382Z",
       "deltaHistory": [
         0,
         0,
@@ -572,10 +540,9 @@
       ]
     },
     "display": {
-      "score": -0.919,
-      "lastUpdated": "2026-06-20T20:35:54.714Z",
+      "score": -0.941,
+      "lastUpdated": "2026-06-21T01:22:07.382Z",
       "deltaHistory": [
-        0.01100000000000001,
         0.0040000000000000036,
         -0.016000000000000014,
         0.038999999999999924,
@@ -584,14 +551,14 @@
         0.0030000000000000027,
         -0.014000000000000012,
         0.019000000000000017,
-        0.025999999999999912
+        0.025999999999999912,
+        -0.02199999999999991
       ]
     },
     "ev_supply": {
-      "score": -0.788,
-      "lastUpdated": "2026-06-20T20:35:54.714Z",
+      "score": -0.799,
+      "lastUpdated": "2026-06-21T01:22:07.382Z",
       "deltaHistory": [
-        0.010000000000000009,
         0.0010000000000000009,
         -0.040000000000000036,
         0.20799999999999996,
@@ -600,14 +567,14 @@
         0.0050000000000000044,
         -0.02400000000000002,
         0.16099999999999992,
-        -0.10099999999999998
+        -0.10099999999999998,
+        -0.01100000000000001
       ]
     },
     "ai_server": {
-      "score": 0.121,
-      "lastUpdated": "2026-06-20T20:35:54.714Z",
+      "score": 0.096,
+      "lastUpdated": "2026-06-21T01:22:07.382Z",
       "deltaHistory": [
-        -0.03599999999999999,
         -0.0010000000000000009,
         -0.063,
         0.157,
@@ -616,14 +583,14 @@
         0,
         0.085,
         0.07300000000000001,
-        -0.04600000000000001
+        -0.04600000000000001,
+        -0.024999999999999994
       ]
     },
     "defense": {
       "score": 0.002,
-      "lastUpdated": "2026-06-20T20:35:54.714Z",
+      "lastUpdated": "2026-06-21T01:22:07.382Z",
       "deltaHistory": [
-        0,
         0,
         0,
         0.039,
@@ -632,12 +599,13 @@
         0,
         0,
         -0.001,
-        0.002
+        0.002,
+        0
       ]
     },
     "solar": {
       "score": 0,
-      "lastUpdated": "2026-06-20T20:35:54.714Z",
+      "lastUpdated": "2026-06-21T01:22:07.382Z",
       "deltaHistory": [
         0,
         0,
@@ -653,7 +621,7 @@
     },
     "wind_energy": {
       "score": 0,
-      "lastUpdated": "2026-06-20T20:35:54.714Z",
+      "lastUpdated": "2026-06-21T01:22:07.382Z",
       "deltaHistory": [
         0,
         0,
@@ -716,10 +684,9 @@
       ]
     },
     "packaging": {
-      "score": -0.001,
-      "lastUpdated": "2026-06-20T20:35:54.714Z",
+      "score": 0,
+      "lastUpdated": "2026-06-21T01:22:07.382Z",
       "deltaHistory": [
-        0,
         -0.007,
         0,
         0.005,
@@ -728,7 +695,8 @@
         0,
         0.006,
         0.001,
-        -0.001
+        -0.001,
+        0.001
       ]
     },
     "banking": {
@@ -781,7 +749,7 @@
     },
     "pcb": {
       "score": 0,
-      "lastUpdated": "2026-06-20T20:35:54.714Z",
+      "lastUpdated": "2026-06-21T01:22:07.382Z",
       "deltaHistory": [
         0,
         0,
