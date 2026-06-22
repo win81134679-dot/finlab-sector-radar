@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-22T17:37:36.823Z",
+  "updatedAt": "2026-06-22T21:07:19.625Z",
   "posts": [
     {
       "text": "US reciprocal trade deals built to push America's trade partners away from China - Peterson Institute for International Economics US reciprocal trade deals built to push America's trade partners away from China  Peterson Institute for International Economics",
@@ -22,6 +22,27 @@
       }
     },
     {
+      "text": "U.S. says it plans extra tariffs of 10% or more for most trading partners after forced labor probe - PBS U.S. says it plans extra tariffs of 10% or more for most trading partners after forced labor probe  PBS",
+      "timestamp": "2026-06-03T07:00:00.000Z",
+      "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNYmVrSUEwV3c4b3FFaFZSREVvbkxudXlKbVFrMXNjcVZJaWxxbEgya2VOQ1ppV3NVd2hnRVZ0MmV1OGw4OTFOUjNxM1diekR0QWEteUFadTUwOWN1XzlxRUxySzhBWTFZd284VWw0b29ReDF1WjNSU2ZpaHBYbWNvd19CSl9VNDBPY1Bjcnl1clMtdVUyRjNXa1d6SVJWZmdFUlY1NExfSXhqQ1hzMFZOWU5udTRxZ2tleHpfS0lGMlZWRXFhbDgtR3RxclVld9IB0wFBVV95cUxNQjZEQ2FTdVBzU2NNZVBaSHROZ2lOdnN1Y1Q1bHlFQUNhdDI1aTBzcFVpUmUwT3J6XzdxdDh1WmpxV1JaUndWcGxGeTJReWZQaGEwUy0wcTBpb2t1NXdzMnZKbDEwcUFfODNnaTZkdGR1aDJaTzFwcUhlbVVBOS1tLVY3ZnE3ZWlfY1E0X2kyenQ3aDVlZmR5QVV2WVVXSzZ5TkhHM2szejRKS1c2eW12WnNkdE1rNFdVUG1rbWlxQlMtRTY2dTlhdmxoTjhaMW5Eamdn?oc=5",
+      "keywords": [
+        "tariff",
+        "tariffs"
+      ],
+      "impacts": {
+        "foundry": -1,
+        "shipping": -1,
+        "steel": -1,
+        "ic_design": -1,
+        "display": -1,
+        "ev_supply": -0.8
+      },
+      "sentiment": {
+        "compound": -0.7184,
+        "label": "強烈利空"
+      }
+    },
+    {
       "text": "US Supreme Court declines to hear challenge to 2018 Trump tariffs on China - SeafoodSource US Supreme Court declines to hear challenge to 2018 Trump tariffs on China  SeafoodSource",
       "timestamp": "2026-06-16T18:21:34.000Z",
       "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQaGtPZmpXTGZoM3dKVTVTVEhQN1UweXd3ZXEtWUdiNHFFQ0d0TV9tT2EtYldZM0xlaWJMazBUbm1qZjBDakpfS0s1MkdnYi1QN0p6UDloVFJfWGhCZklhdHJsY2liSlMzbjR6ZEoycDBCczRxdWR3Zm1GRFFaODFyYlU3cVZ5VENLTHpTQ2NSVUplRUV2Z3k5T2doX3ZoNjl0NlpTdXdVNXZHa0NnTlRiUXlGZ1d5c0NESm45NTFhSQ?oc=5",
@@ -37,27 +58,6 @@
         "ic_design": -1,
         "display": -1,
         "ev_supply": -1
-      },
-      "sentiment": {
-        "compound": -0.7184,
-        "label": "強烈利空"
-      }
-    },
-    {
-      "text": "U.S. says it plans extra tariffs of 10% or more for most trading partners after forced labor probe - PBS U.S. says it plans extra tariffs of 10% or more for most trading partners after forced labor probe  PBS",
-      "timestamp": "2026-06-03T07:00:00.000Z",
-      "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNYmVrSUEwV3c4b3FFaFZSREVvbkxudXlKbVFrMXNjcVZJaWxxbEgya2VOQ1ppV3NVd2hnRVZ0MmV1OGw4OTFOUjNxM1diekR0QWEteUFadTUwOWN1XzlxRUxySzhBWTFZd284VWw0b29ReDF1WjNSU2ZpaHBYbWNvd19CSl9VNDBPY1Bjcnl1clMtdVUyRjNXa1d6SVJWZmdFUlY1NExfSXhqQ1hzMFZOWU5udTRxZ2tleHpfS0lGMlZWRXFhbDgtR3RxclVld9IB0wFBVV95cUxNQjZEQ2FTdVBzU2NNZVBaSHROZ2lOdnN1Y1Q1bHlFQUNhdDI1aTBzcFVpUmUwT3J6XzdxdDh1WmpxV1JaUndWcGxGeTJReWZQaGEwUy0wcTBpb2t1NXdzMnZKbDEwcUFfODNnaTZkdGR1aDJaTzFwcUhlbVVBOS1tLVY3ZnE3ZWlfY1E0X2kyenQ3aDVlZmR5QVV2WVVXSzZ5TkhHM2szejRKS1c2eW12WnNkdE1rNFdVUG1rbWlxQlMtRTY2dTlhdmxoTjhaMW5Eamdn?oc=5",
-      "keywords": [
-        "tariff",
-        "tariffs"
-      ],
-      "impacts": {
-        "foundry": -1,
-        "shipping": -1,
-        "steel": -1,
-        "ic_design": -1,
-        "display": -1,
-        "ev_supply": -0.8
       },
       "sentiment": {
         "compound": -0.7184,
@@ -440,10 +440,9 @@
   ],
   "sectorState": {
     "foundry": {
-      "score": -0.998,
-      "lastUpdated": "2026-06-22T17:37:36.823Z",
+      "score": -0.997,
+      "lastUpdated": "2026-06-22T21:07:19.625Z",
       "deltaHistory": [
-        0,
         0.006000000000000005,
         0.0030000000000000027,
         -0.017000000000000015,
@@ -452,14 +451,14 @@
         0.01100000000000001,
         -0.010000000000000009,
         0,
-        -0.0050000000000000044
+        -0.0050000000000000044,
+        0.0010000000000000009
       ]
     },
     "shipping": {
-      "score": -0.931,
-      "lastUpdated": "2026-06-22T17:37:36.823Z",
+      "score": -0.93,
+      "lastUpdated": "2026-06-22T21:07:19.625Z",
       "deltaHistory": [
-        0,
         0.013000000000000012,
         -0.0050000000000000044,
         -0.016000000000000014,
@@ -468,14 +467,14 @@
         -0.02199999999999991,
         0.005999999999999894,
         0,
+        0.0010000000000000009,
         0.0010000000000000009
       ]
     },
     "steel": {
       "score": -0.878,
-      "lastUpdated": "2026-06-22T17:37:36.823Z",
+      "lastUpdated": "2026-06-22T21:07:19.625Z",
       "deltaHistory": [
-        0,
         0.040000000000000036,
         -0.07899999999999996,
         -0.03400000000000003,
@@ -484,12 +483,13 @@
         -0.01100000000000001,
         0.049000000000000044,
         0,
-        -0.02100000000000002
+        -0.02100000000000002,
+        0
       ]
     },
     "ic_design": {
       "score": -1,
-      "lastUpdated": "2026-06-22T17:37:36.823Z",
+      "lastUpdated": "2026-06-22T21:07:19.625Z",
       "deltaHistory": [
         0,
         0,
@@ -505,9 +505,8 @@
     },
     "display": {
       "score": -0.97,
-      "lastUpdated": "2026-06-22T17:37:36.823Z",
+      "lastUpdated": "2026-06-22T21:07:19.625Z",
       "deltaHistory": [
-        0,
         0.019999999999999907,
         -0.04799999999999993,
         -0.013000000000000012,
@@ -516,14 +515,14 @@
         -0.0040000000000000036,
         0.03300000000000003,
         0,
-        -0.016000000000000014
+        -0.016000000000000014,
+        0
       ]
     },
     "ev_supply": {
-      "score": -0.891,
-      "lastUpdated": "2026-06-22T17:37:36.823Z",
+      "score": -0.886,
+      "lastUpdated": "2026-06-22T21:07:19.625Z",
       "deltaHistory": [
-        0,
         0.014000000000000012,
         -0.038999999999999924,
         -0.04300000000000004,
@@ -532,14 +531,14 @@
         -0.025000000000000022,
         -0.0010000000000000009,
         0,
-        -0.0040000000000000036
+        -0.0040000000000000036,
+        0.0050000000000000044
       ]
     },
     "ai_server": {
       "score": 0.071,
-      "lastUpdated": "2026-06-22T17:37:36.823Z",
+      "lastUpdated": "2026-06-22T21:07:19.625Z",
       "deltaHistory": [
-        0,
         0.019000000000000003,
         0.08800000000000001,
         -0.01200000000000001,
@@ -548,17 +547,18 @@
         -0.031,
         -0.051000000000000004,
         0,
-        -0.01100000000000001
+        -0.01100000000000001,
+        0
       ]
     },
     "defense": {
       "score": 0.002,
-      "lastUpdated": "2026-06-22T17:37:36.823Z",
+      "lastUpdated": "2026-06-22T21:07:19.625Z",
       "deltaHistory": [
-        0,
         0,
         -0.001,
         0.001,
+        0,
         0,
         0,
         0,
@@ -569,7 +569,7 @@
     },
     "solar": {
       "score": 0,
-      "lastUpdated": "2026-06-22T17:37:36.823Z",
+      "lastUpdated": "2026-06-22T21:07:19.625Z",
       "deltaHistory": [
         0,
         0,
@@ -585,7 +585,7 @@
     },
     "wind_energy": {
       "score": 0,
-      "lastUpdated": "2026-06-22T17:37:36.823Z",
+      "lastUpdated": "2026-06-22T21:07:19.625Z",
       "deltaHistory": [
         0,
         0,
@@ -649,7 +649,7 @@
     },
     "packaging": {
       "score": 0,
-      "lastUpdated": "2026-06-22T17:37:36.823Z",
+      "lastUpdated": "2026-06-22T21:07:19.625Z",
       "deltaHistory": [
         0,
         0,
@@ -713,12 +713,12 @@
     },
     "pcb": {
       "score": 0.001,
-      "lastUpdated": "2026-06-22T17:37:36.823Z",
+      "lastUpdated": "2026-06-22T21:07:19.625Z",
       "deltaHistory": [
-        0,
         0.001,
         -0.001,
         0.001,
+        0,
         0,
         0,
         0,
