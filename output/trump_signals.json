@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-23T05:30:13.059Z",
+  "updatedAt": "2026-06-23T09:19:44.618Z",
   "posts": [
     {
       "text": "US reciprocal trade deals built to push America's trade partners away from China - Peterson Institute for International Economics US reciprocal trade deals built to push America's trade partners away from China  Peterson Institute for International Economics",
@@ -36,28 +36,6 @@
         "ic_design": -1,
         "display": -1,
         "ev_supply": -0.8
-      },
-      "sentiment": {
-        "compound": -0.7184,
-        "label": "強烈利空"
-      }
-    },
-    {
-      "text": "US Supreme Court declines to hear challenge to 2018 Trump tariffs on China - SeafoodSource US Supreme Court declines to hear challenge to 2018 Trump tariffs on China  SeafoodSource",
-      "timestamp": "2026-06-16T18:21:34.000Z",
-      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQaGtPZmpXTGZoM3dKVTVTVEhQN1UweXd3ZXEtWUdiNHFFQ0d0TV9tT2EtYldZM0xlaWJMazBUbm1qZjBDakpfS0s1MkdnYi1QN0p6UDloVFJfWGhCZklhdHJsY2liSlMzbjR6ZEoycDBCczRxdWR3Zm1GRFFaODFyYlU3cVZ5VENLTHpTQ2NSVUplRUV2Z3k5T2doX3ZoNjl0NlpTdXdVNXZHa0NnTlRiUXlGZ1d5c0NESm45NTFhSQ?oc=5",
-      "keywords": [
-        "tariff",
-        "tariffs",
-        "china"
-      ],
-      "impacts": {
-        "foundry": -1,
-        "shipping": -1,
-        "steel": -1,
-        "ic_design": -1,
-        "display": -1,
-        "ev_supply": -1
       },
       "sentiment": {
         "compound": -0.7184,
@@ -349,7 +327,7 @@
       }
     },
     {
-      "text": "US Starts Trade Probe Into China, EU in Trump’s Tariffs Revival - Bloomberg.com US Starts Trade Probe Into China, EU in Trump’s Tariffs Revival  Bloomberg.com",
+      "text": "US Starts Trade Probe Into China, EU in Trump’s Tariffs Revival - Bloomberg US Starts Trade Probe Into China, EU in Trump’s Tariffs Revival  Bloomberg",
       "timestamp": "2026-03-11T07:00:00.000Z",
       "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQLUluRVBnTlJSZEltVlFfVGRuMDZrWS02RGRYYWlvcndOeGhOM0VtWVdyVHlMcXd1N05ycFloQzFxbW9aU2VKMGIwOTVmY2NpR0cxMkVHdjhGLVlCeVpqN1lFanNTN3BDX3J2b01qbk5ubHBBcFd5dEFqd0V6T29MT25SX25sa2VHSmdFUG5QUkEzWEc1QzIzeEI2dkpvemxXSUd2Y2s4MU4tTUlJU1BaTW5feG0?oc=5",
       "keywords": [
@@ -433,130 +411,39 @@
         "compound": 0,
         "label": "中性"
       }
+    },
+    {
+      "text": "The Supreme Court Clipped Trump’s Tariff Powers—and Opened New Trade Battlefronts - Council on Foreign Relations The Supreme Court Clipped Trump’s Tariff Powers—and Opened New Trade Battlefronts  Council on Foreign Relations",
+      "timestamp": "2026-02-23T08:00:00.000Z",
+      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQa0x6NFdlR0plUVV6c2VZa0F5SmdOcFd1dDdOYV83elVWZGlzVlFsTzdXUVFzSXJaSkJkUjlTRkt5aC1TejdSek1ZUE1XQ0hBZS1XbHhoZzRiUnlPb204cFVOckJZRzkxQWlrdTA3dEt1QUJCWllzX2RSeUQyYlIydWdiOFVVWGhfVUpiRGQ1NFJURGRXcXM1djBFSFNINWJHajNPLTZ6bkRyNXdyRnpN?oc=5",
+      "keywords": [
+        "tariff"
+      ],
+      "impacts": {
+        "foundry": -0.7,
+        "shipping": -0.5,
+        "steel": -0.5,
+        "ic_design": -0.6,
+        "display": -0.5,
+        "ev_supply": -0.4
+      },
+      "sentiment": {
+        "compound": -0.7184,
+        "label": "強烈利空"
+      }
     }
   ],
-  "deltas": [
-    {
-      "sector": "foundry",
-      "sectorName": "晶圓代工",
-      "prev": -0.405,
-      "current": -0.979,
-      "delta": -0.574,
-      "momentum": "↓ 壓力加深",
-      "accelerating": false
-    },
-    {
-      "sector": "steel",
-      "sectorName": "鋼鐵",
-      "prev": -0.401,
-      "current": -0.857,
-      "delta": -0.456,
-      "momentum": "↓ 壓力加深",
-      "accelerating": false
-    },
-    {
-      "sector": "ev_supply",
-      "sectorName": "電動車供應鏈",
-      "prev": -0.513,
-      "current": -0.879,
-      "delta": -0.366,
-      "momentum": "↓ 壓力加深",
-      "accelerating": false
-    },
-    {
-      "sector": "display",
-      "sectorName": "面板/顯示",
-      "prev": -0.632,
-      "current": -0.965,
-      "delta": -0.333,
-      "momentum": "↓ 壓力加深",
-      "accelerating": false
-    },
-    {
-      "sector": "shipping",
-      "sectorName": "航運",
-      "prev": -0.805,
-      "current": -0.94,
-      "delta": -0.135,
-      "momentum": "↓ 壓力加深",
-      "accelerating": true
-    },
-    {
-      "sector": "defense",
-      "sectorName": "國防/軍工",
-      "prev": 0.072,
-      "current": 0.003,
-      "delta": -0.069,
-      "momentum": "↓ 訊號弱化",
-      "accelerating": false
-    },
-    {
-      "sector": "ai_server",
-      "sectorName": "AI 伺服器",
-      "prev": 0.017,
-      "current": 0.081,
-      "delta": 0.064,
-      "momentum": "↑ 訊號強化",
-      "accelerating": true
-    }
-  ],
-  "topDeltas": [
-    {
-      "sector": "foundry",
-      "sectorName": "晶圓代工",
-      "prev": -0.405,
-      "current": -0.979,
-      "delta": -0.574,
-      "momentum": "↓ 壓力加深",
-      "accelerating": false
-    },
-    {
-      "sector": "steel",
-      "sectorName": "鋼鐵",
-      "prev": -0.401,
-      "current": -0.857,
-      "delta": -0.456,
-      "momentum": "↓ 壓力加深",
-      "accelerating": false
-    },
-    {
-      "sector": "ev_supply",
-      "sectorName": "電動車供應鏈",
-      "prev": -0.513,
-      "current": -0.879,
-      "delta": -0.366,
-      "momentum": "↓ 壓力加深",
-      "accelerating": false
-    },
-    {
-      "sector": "display",
-      "sectorName": "面板/顯示",
-      "prev": -0.632,
-      "current": -0.965,
-      "delta": -0.333,
-      "momentum": "↓ 壓力加深",
-      "accelerating": false
-    },
-    {
-      "sector": "shipping",
-      "sectorName": "航運",
-      "prev": -0.805,
-      "current": -0.94,
-      "delta": -0.135,
-      "momentum": "↓ 壓力加深",
-      "accelerating": true
-    }
-  ],
+  "deltas": [],
+  "topDeltas": [],
   "totalAnalyzed": 100,
   "sources": [
     "Google News"
   ],
   "sectorState": {
     "foundry": {
-      "score": -0.979,
-      "lastUpdated": "2026-06-23T05:30:13.059Z",
+      "score": -0.972,
+      "lastUpdated": "2026-06-23T09:19:44.618Z",
       "deltaHistory": [
-        -0.017000000000000015,
         -0.016000000000000014,
         0.0010000000000000009,
         0.01100000000000001,
@@ -565,14 +452,14 @@
         -0.0050000000000000044,
         0.0010000000000000009,
         0.592,
-        -0.574
+        -0.574,
+        0.007000000000000006
       ]
     },
     "shipping": {
-      "score": -0.94,
-      "lastUpdated": "2026-06-23T05:30:13.059Z",
+      "score": -0.936,
+      "lastUpdated": "2026-06-23T09:19:44.618Z",
       "deltaHistory": [
-        -0.016000000000000014,
         -0.0020000000000000018,
         -0.0020000000000000018,
         -0.02199999999999991,
@@ -581,14 +468,14 @@
         0.0010000000000000009,
         0.0010000000000000009,
         0.125,
-        -0.1349999999999999
+        -0.1349999999999999,
+        0.0039999999999998925
       ]
     },
     "steel": {
-      "score": -0.857,
-      "lastUpdated": "2026-06-23T05:30:13.059Z",
+      "score": -0.828,
+      "lastUpdated": "2026-06-23T09:19:44.618Z",
       "deltaHistory": [
-        -0.03400000000000003,
         -0.015000000000000013,
         -0.0020000000000000018,
         -0.01100000000000001,
@@ -597,12 +484,13 @@
         -0.02100000000000002,
         0,
         0.477,
-        -0.45599999999999996
+        -0.45599999999999996,
+        0.029000000000000026
       ]
     },
     "ic_design": {
       "score": -1,
-      "lastUpdated": "2026-06-23T05:30:13.059Z",
+      "lastUpdated": "2026-06-23T09:19:44.618Z",
       "deltaHistory": [
         0,
         0,
@@ -617,10 +505,9 @@
       ]
     },
     "display": {
-      "score": -0.965,
-      "lastUpdated": "2026-06-23T05:30:13.059Z",
+      "score": -0.952,
+      "lastUpdated": "2026-06-23T09:19:44.618Z",
       "deltaHistory": [
-        -0.013000000000000012,
         0,
         -0.0010000000000000009,
         -0.0040000000000000036,
@@ -629,14 +516,14 @@
         -0.016000000000000014,
         0,
         0.33799999999999997,
-        -0.33299999999999996
+        -0.33299999999999996,
+        0.013000000000000012
       ]
     },
     "ev_supply": {
-      "score": -0.879,
-      "lastUpdated": "2026-06-23T05:30:13.059Z",
+      "score": -0.849,
+      "lastUpdated": "2026-06-23T09:19:44.618Z",
       "deltaHistory": [
-        -0.04300000000000004,
         0.007000000000000006,
         -0.0010000000000000009,
         -0.025000000000000022,
@@ -645,14 +532,14 @@
         -0.0040000000000000036,
         0.0050000000000000044,
         0.373,
-        -0.366
+        -0.366,
+        0.030000000000000027
       ]
     },
     "ai_server": {
-      "score": 0.081,
-      "lastUpdated": "2026-06-23T05:30:13.059Z",
+      "score": 0.095,
+      "lastUpdated": "2026-06-23T09:19:44.618Z",
       "deltaHistory": [
-        -0.01200000000000001,
         -0.025999999999999995,
         -0.0010000000000000009,
         -0.031,
@@ -661,14 +548,14 @@
         -0.01100000000000001,
         0,
         -0.05399999999999999,
-        0.064
+        0.064,
+        0.013999999999999999
       ]
     },
     "defense": {
       "score": 0.003,
-      "lastUpdated": "2026-06-23T05:30:13.059Z",
+      "lastUpdated": "2026-06-23T09:19:44.618Z",
       "deltaHistory": [
-        0.001,
         0,
         0,
         0,
@@ -677,12 +564,13 @@
         0,
         0,
         0.06999999999999999,
-        -0.06899999999999999
+        -0.06899999999999999,
+        0
       ]
     },
     "solar": {
       "score": 0,
-      "lastUpdated": "2026-06-23T05:30:13.059Z",
+      "lastUpdated": "2026-06-23T09:19:44.618Z",
       "deltaHistory": [
         0,
         0,
@@ -698,7 +586,7 @@
     },
     "wind_energy": {
       "score": 0,
-      "lastUpdated": "2026-06-23T05:30:13.059Z",
+      "lastUpdated": "2026-06-23T09:19:44.618Z",
       "deltaHistory": [
         0,
         0,
@@ -762,7 +650,7 @@
     },
     "packaging": {
       "score": -0.001,
-      "lastUpdated": "2026-06-23T05:30:13.059Z",
+      "lastUpdated": "2026-06-23T09:19:44.618Z",
       "deltaHistory": [
         0,
         0,
@@ -772,8 +660,8 @@
         0,
         0,
         0,
-        0,
-        -0.001
+        -0.001,
+        0
       ]
     },
     "banking": {
@@ -826,9 +714,8 @@
     },
     "pcb": {
       "score": 0.001,
-      "lastUpdated": "2026-06-23T05:30:13.059Z",
+      "lastUpdated": "2026-06-23T09:19:44.618Z",
       "deltaHistory": [
-        0.001,
         0,
         0,
         0,
@@ -837,7 +724,8 @@
         0,
         0,
         -0.001,
-        0.001
+        0.001,
+        0
       ]
     },
     "financial_holding": {
