@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-26T16:48:07.425Z",
+  "updatedAt": "2026-06-26T20:41:03.096Z",
   "posts": [
     {
       "text": "Soumaya Keynes on the right way to fight a trade war - Reason Magazine Soumaya Keynes on the right way to fight a trade war  Reason Magazine",
@@ -420,82 +420,8 @@
       }
     }
   ],
-  "deltas": [
-    {
-      "sector": "foundry",
-      "sectorName": "晶圓代工",
-      "prev": -0.691,
-      "current": -0.842,
-      "delta": -0.151,
-      "momentum": "↓ 壓力加深",
-      "accelerating": false
-    },
-    {
-      "sector": "display",
-      "sectorName": "面板/顯示",
-      "prev": -0.874,
-      "current": -0.801,
-      "delta": 0.073,
-      "momentum": "↑ 壓力緩解",
-      "accelerating": true
-    },
-    {
-      "sector": "shipping",
-      "sectorName": "航運",
-      "prev": -0.949,
-      "current": -0.886,
-      "delta": 0.063,
-      "momentum": "↑ 壓力緩解",
-      "accelerating": true
-    },
-    {
-      "sector": "ai_server",
-      "sectorName": "AI 伺服器",
-      "prev": 0.11,
-      "current": 0.055,
-      "delta": -0.055,
-      "momentum": "↓ 訊號弱化",
-      "accelerating": true
-    }
-  ],
-  "topDeltas": [
-    {
-      "sector": "foundry",
-      "sectorName": "晶圓代工",
-      "prev": -0.691,
-      "current": -0.842,
-      "delta": -0.151,
-      "momentum": "↓ 壓力加深",
-      "accelerating": false
-    },
-    {
-      "sector": "display",
-      "sectorName": "面板/顯示",
-      "prev": -0.874,
-      "current": -0.801,
-      "delta": 0.073,
-      "momentum": "↑ 壓力緩解",
-      "accelerating": true
-    },
-    {
-      "sector": "shipping",
-      "sectorName": "航運",
-      "prev": -0.949,
-      "current": -0.886,
-      "delta": 0.063,
-      "momentum": "↑ 壓力緩解",
-      "accelerating": true
-    },
-    {
-      "sector": "ai_server",
-      "sectorName": "AI 伺服器",
-      "prev": 0.11,
-      "current": 0.055,
-      "delta": -0.055,
-      "momentum": "↓ 訊號弱化",
-      "accelerating": true
-    }
-  ],
+  "deltas": [],
+  "topDeltas": [],
   "totalAnalyzed": 100,
   "sources": [
     "Google News"
@@ -503,9 +429,8 @@
   "sectorState": {
     "foundry": {
       "score": -0.842,
-      "lastUpdated": "2026-06-26T16:48:07.425Z",
+      "lastUpdated": "2026-06-26T20:41:03.096Z",
       "deltaHistory": [
-        0,
         0,
         0,
         0.17100000000000004,
@@ -514,14 +439,14 @@
         0.027000000000000024,
         -0.0020000000000000018,
         0.19100000000000006,
-        -0.15100000000000002
+        -0.15100000000000002,
+        0
       ]
     },
     "shipping": {
       "score": -0.886,
-      "lastUpdated": "2026-06-26T16:48:07.425Z",
+      "lastUpdated": "2026-06-26T20:41:03.096Z",
       "deltaHistory": [
-        -0.0020000000000000018,
         -0.010000000000000009,
         -0.014000000000000012,
         -0.007000000000000006,
@@ -530,14 +455,14 @@
         0.0050000000000000044,
         0.0030000000000000027,
         -0.04799999999999993,
-        0.06299999999999994
+        0.06299999999999994,
+        0
       ]
     },
     "steel": {
-      "score": -0.635,
-      "lastUpdated": "2026-06-26T16:48:07.425Z",
+      "score": -0.634,
+      "lastUpdated": "2026-06-26T20:41:03.096Z",
       "deltaHistory": [
-        0.0010000000000000009,
         0,
         -0.0050000000000000044,
         0.14700000000000002,
@@ -546,17 +471,18 @@
         0.04300000000000004,
         -0.0040000000000000036,
         0.139,
-        -0.03200000000000003
+        -0.03200000000000003,
+        0.0010000000000000009
       ]
     },
     "ic_design": {
       "score": -1,
-      "lastUpdated": "2026-06-26T16:48:07.425Z",
+      "lastUpdated": "2026-06-26T20:41:03.096Z",
       "deltaHistory": [
-        -0.0010000000000000009,
         -0.006000000000000005,
         -0.010000000000000009,
         -0.03200000000000003,
+        0,
         0,
         0,
         0,
@@ -567,9 +493,8 @@
     },
     "display": {
       "score": -0.801,
-      "lastUpdated": "2026-06-26T16:48:07.425Z",
+      "lastUpdated": "2026-06-26T20:41:03.096Z",
       "deltaHistory": [
-        -0.0020000000000000018,
         -0.0020000000000000018,
         -0.013000000000000012,
         -0.0010000000000000009,
@@ -578,14 +503,14 @@
         0.008000000000000007,
         -0.0030000000000000027,
         0.052000000000000046,
-        0.07299999999999995
+        0.07299999999999995,
+        0
       ]
     },
     "ev_supply": {
-      "score": -0.65,
-      "lastUpdated": "2026-06-26T16:48:07.425Z",
+      "score": -0.649,
+      "lastUpdated": "2026-06-26T20:41:03.096Z",
       "deltaHistory": [
-        0.0050000000000000044,
         0.006000000000000005,
         -0.006000000000000005,
         0.07700000000000007,
@@ -594,14 +519,14 @@
         0.010000000000000009,
         -0.018000000000000016,
         0.14400000000000002,
-        -0.04500000000000004
+        -0.04500000000000004,
+        0.0010000000000000009
       ]
     },
     "ai_server": {
       "score": 0.055,
-      "lastUpdated": "2026-06-26T16:48:07.425Z",
+      "lastUpdated": "2026-06-26T20:41:03.096Z",
       "deltaHistory": [
-        0,
         -0.007000000000000006,
         -0.009000000000000001,
         -0.016,
@@ -610,14 +535,14 @@
         -0.006999999999999999,
         0.026000000000000002,
         0.053,
-        -0.055
+        -0.055,
+        0
       ]
     },
     "defense": {
       "score": 0,
-      "lastUpdated": "2026-06-26T16:48:07.425Z",
+      "lastUpdated": "2026-06-26T20:41:03.096Z",
       "deltaHistory": [
-        0,
         0,
         0.001,
         0,
@@ -626,7 +551,8 @@
         0,
         0,
         0.032,
-        -0.032
+        -0.032,
+        0
       ]
     },
     "solar": {
@@ -711,7 +637,7 @@
     },
     "packaging": {
       "score": 0,
-      "lastUpdated": "2026-06-26T16:48:07.425Z",
+      "lastUpdated": "2026-06-26T20:41:03.096Z",
       "deltaHistory": [
         0,
         0,
@@ -775,7 +701,7 @@
     },
     "pcb": {
       "score": 0,
-      "lastUpdated": "2026-06-26T16:48:07.425Z",
+      "lastUpdated": "2026-06-26T20:41:03.096Z",
       "deltaHistory": [
         0,
         0,
