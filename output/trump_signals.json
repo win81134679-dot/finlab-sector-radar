@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-25T20:47:23.506Z",
+  "updatedAt": "2026-06-26T01:12:57.999Z",
   "posts": [
     {
       "text": "Trump Builds a New US Tariff Wall in Shakeup of Winners, Losers - Yahoo Finance UK Trump Builds a New US Tariff Wall in Shakeup of Winners, Losers  Yahoo Finance UK",
@@ -15,6 +15,49 @@
         "ic_design": -0.6,
         "display": -0.5,
         "ev_supply": -0.4
+      },
+      "sentiment": {
+        "compound": -0.7184,
+        "label": "強烈利空"
+      }
+    },
+    {
+      "text": "U.S. says it plans extra tariffs of 10% or more for most trading partners after forced labor probe - PBS U.S. says it plans extra tariffs of 10% or more for most trading partners after forced labor probe  PBS",
+      "timestamp": "2026-06-03T07:00:00.000Z",
+      "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNYmVrSUEwV3c4b3FFaFZSREVvbkxudXlKbVFrMXNjcVZJaWxxbEgya2VOQ1ppV3NVd2hnRVZ0MmV1OGw4OTFOUjNxM1diekR0QWEteUFadTUwOWN1XzlxRUxySzhBWTFZd284VWw0b29ReDF1WjNSU2ZpaHBYbWNvd19CSl9VNDBPY1Bjcnl1clMtdVUyRjNXa1d6SVJWZmdFUlY1NExfSXhqQ1hzMFZOWU5udTRxZ2tleHpfS0lGMlZWRXFhbDgtR3RxclVld9IB0wFBVV95cUxNQjZEQ2FTdVBzU2NNZVBaSHROZ2lOdnN1Y1Q1bHlFQUNhdDI1aTBzcFVpUmUwT3J6XzdxdDh1WmpxV1JaUndWcGxGeTJReWZQaGEwUy0wcTBpb2t1NXdzMnZKbDEwcUFfODNnaTZkdGR1aDJaTzFwcUhlbVVBOS1tLVY3ZnE3ZWlfY1E0X2kyenQ3aDVlZmR5QVV2WVVXSzZ5TkhHM2szejRKS1c2eW12WnNkdE1rNFdVUG1rbWlxQlMtRTY2dTlhdmxoTjhaMW5Eamdn?oc=5",
+      "keywords": [
+        "tariff",
+        "tariffs"
+      ],
+      "impacts": {
+        "foundry": -1,
+        "shipping": -1,
+        "steel": -1,
+        "ic_design": -1,
+        "display": -1,
+        "ev_supply": -0.8
+      },
+      "sentiment": {
+        "compound": -0.7184,
+        "label": "強烈利空"
+      }
+    },
+    {
+      "text": "Trump administration floats tariffs on 60 trading partners — including China, U.K., EU — after forced labor probes - CBS News Trump administration floats tariffs on 60 trading partners — including China, U.K., EU — after forced labor probes  CBS News",
+      "timestamp": "2026-06-03T07:00:00.000Z",
+      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQd3NPakNfWGozTnR3Qk0zUWdHVE55ZG4xbnV5Wk1mckM3a0Etd1dvNmNDUWp1TElZeUN6ckpyWWhFc1E2TG1xcENZekItTHFDeWM0ZnNlVVcxcTFYQXFLN0tvYzJ6U0FTTFpQTVNMZXhrX2hoalVDX1JCYTdPaWVGMHZXVVJrc1hwclRRQml0RXd5ZGVUNFo1c21XbUIwR1E?oc=5",
+      "keywords": [
+        "tariff",
+        "tariffs",
+        "china"
+      ],
+      "impacts": {
+        "foundry": -1,
+        "shipping": -1,
+        "steel": -1,
+        "ic_design": -1,
+        "display": -1,
+        "ev_supply": -1
       },
       "sentiment": {
         "compound": -0.7184,
@@ -54,49 +97,6 @@
         "ic_design": -0.6,
         "display": -0.5,
         "ev_supply": -0.4
-      },
-      "sentiment": {
-        "compound": -0.7184,
-        "label": "強烈利空"
-      }
-    },
-    {
-      "text": "Trump administration floats tariffs on 60 trading partners — including China, U.K., EU — after forced labor probes - CBS News Trump administration floats tariffs on 60 trading partners — including China, U.K., EU — after forced labor probes  CBS News",
-      "timestamp": "2026-06-03T07:00:00.000Z",
-      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQd3NPakNfWGozTnR3Qk0zUWdHVE55ZG4xbnV5Wk1mckM3a0Etd1dvNmNDUWp1TElZeUN6ckpyWWhFc1E2TG1xcENZekItTHFDeWM0ZnNlVVcxcTFYQXFLN0tvYzJ6U0FTTFpQTVNMZXhrX2hoalVDX1JCYTdPaWVGMHZXVVJrc1hwclRRQml0RXd5ZGVUNFo1c21XbUIwR1E?oc=5",
-      "keywords": [
-        "tariff",
-        "tariffs",
-        "china"
-      ],
-      "impacts": {
-        "foundry": -1,
-        "shipping": -1,
-        "steel": -1,
-        "ic_design": -1,
-        "display": -1,
-        "ev_supply": -1
-      },
-      "sentiment": {
-        "compound": -0.7184,
-        "label": "強烈利空"
-      }
-    },
-    {
-      "text": "U.S. says it plans extra tariffs of 10% or more for most trading partners after forced labor probe - PBS U.S. says it plans extra tariffs of 10% or more for most trading partners after forced labor probe  PBS",
-      "timestamp": "2026-06-03T07:00:00.000Z",
-      "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNYmVrSUEwV3c4b3FFaFZSREVvbkxudXlKbVFrMXNjcVZJaWxxbEgya2VOQ1ppV3NVd2hnRVZ0MmV1OGw4OTFOUjNxM1diekR0QWEteUFadTUwOWN1XzlxRUxySzhBWTFZd284VWw0b29ReDF1WjNSU2ZpaHBYbWNvd19CSl9VNDBPY1Bjcnl1clMtdVUyRjNXa1d6SVJWZmdFUlY1NExfSXhqQ1hzMFZOWU5udTRxZ2tleHpfS0lGMlZWRXFhbDgtR3RxclVld9IB0wFBVV95cUxNQjZEQ2FTdVBzU2NNZVBaSHROZ2lOdnN1Y1Q1bHlFQUNhdDI1aTBzcFVpUmUwT3J6XzdxdDh1WmpxV1JaUndWcGxGeTJReWZQaGEwUy0wcTBpb2t1NXdzMnZKbDEwcUFfODNnaTZkdGR1aDJaTzFwcUhlbVVBOS1tLVY3ZnE3ZWlfY1E0X2kyenQ3aDVlZmR5QVV2WVVXSzZ5TkhHM2szejRKS1c2eW12WnNkdE1rNFdVUG1rbWlxQlMtRTY2dTlhdmxoTjhaMW5Eamdn?oc=5",
-      "keywords": [
-        "tariff",
-        "tariffs"
-      ],
-      "impacts": {
-        "foundry": -1,
-        "shipping": -1,
-        "steel": -1,
-        "ic_design": -1,
-        "display": -1,
-        "ev_supply": -0.8
       },
       "sentiment": {
         "compound": -0.7184,
@@ -176,6 +176,27 @@
       ],
       "impacts": {
         "ai_server": 0.7,
+        "foundry": -1,
+        "shipping": -1,
+        "steel": -1,
+        "ic_design": -1,
+        "display": -1,
+        "ev_supply": -0.8
+      },
+      "sentiment": {
+        "compound": -0.7184,
+        "label": "強烈利空"
+      }
+    },
+    {
+      "text": "US cites forced labor concerns as grounds for new tariffs - Reuters US cites forced labor concerns as grounds for new tariffs  Reuters",
+      "timestamp": "2026-06-03T07:00:00.000Z",
+      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQZDdlM2ZsVEQ4RmFKOTBNbWdrZHEwaWpfc0kyOWJkcExOc1V2emFBamZLLW5ySlRoT0NpTnRKYi1FNnE1Y3l6TVZjNzRyTDFQWWlya3NZSXdSRWpSTTJ5azBUWVlvNVZJY2lYMnZsN2k2VWo1V1NGMWxkblRLcE1zTVhNdHdnM1I5bWV4NWljYzBjX201UEtCUjN5Njh4enB4LUxiNzZJOUpOZlQ3VzY0WnEyNFlrOEE2?oc=5",
+      "keywords": [
+        "tariff",
+        "tariffs"
+      ],
+      "impacts": {
         "foundry": -1,
         "shipping": -1,
         "steel": -1,
@@ -306,26 +327,6 @@
       }
     },
     {
-      "text": "Donald Trump’s tariff wars are not just about trade - The London School of Economics and Political Science Donald Trump’s tariff wars are not just about trade  The London School of Economics and Political Science",
-      "timestamp": "2026-05-13T07:00:00.000Z",
-      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPVDBYMXNKX3g1d3dxc19Eb3dNTHBkNklpM1dkV1YySF93a0plbGJSTlU4RHB1RGRNNG4tdHlSNnhjS2lCc1pCMzRpbWs0X3RLamljUFpCbEFYWS1TN2swa3VvQUl6bHN6RjB1M2NFenBSMXBscVN1WjFHeWZub1JrRFBKQ0xLZDdJNFcteFFwaHhxZGZHSGU3R1hsTVlOWEI1QzZ3?oc=5",
-      "keywords": [
-        "tariff"
-      ],
-      "impacts": {
-        "foundry": -0.7,
-        "shipping": -0.5,
-        "steel": -0.5,
-        "ic_design": -0.6,
-        "display": -0.5,
-        "ev_supply": -0.4
-      },
-      "sentiment": {
-        "compound": -0.7184,
-        "label": "強烈利空"
-      }
-    },
-    {
       "text": "Trump’s Trade War With China: How We Got to a Stalemate In 3 Numbers - The New York Times Trump’s Trade War With China: How We Got to a Stalemate In 3 Numbers  The New York Times",
       "timestamp": "2026-05-15T07:00:00.000Z",
       "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE9COEZCcUdCRXhfSTNja28waDRNTHVzX3ZfSTBIYUs1Q1dDWXRTZTZHM2JNNXVvY2x0TDd1Z3JTUzQ1NUJvbk9icUpkZFpfSmdhcGJqeFlmdFVfamtmNnpPOEtFU0liVUF5REhDWE10UGRhZkF6OHY0?oc=5",
@@ -411,18 +412,37 @@
       }
     }
   ],
-  "deltas": [],
-  "topDeltas": [],
+  "deltas": [
+    {
+      "sector": "steel",
+      "sectorName": "鋼鐵",
+      "prev": -0.714,
+      "current": -0.781,
+      "delta": -0.067,
+      "momentum": "↓ 壓力加深",
+      "accelerating": true
+    }
+  ],
+  "topDeltas": [
+    {
+      "sector": "steel",
+      "sectorName": "鋼鐵",
+      "prev": -0.714,
+      "current": -0.781,
+      "delta": -0.067,
+      "momentum": "↓ 壓力加深",
+      "accelerating": true
+    }
+  ],
   "totalAnalyzed": 100,
   "sources": [
     "Google News"
   ],
   "sectorState": {
     "foundry": {
-      "score": -0.859,
-      "lastUpdated": "2026-06-25T20:47:23.506Z",
+      "score": -0.907,
+      "lastUpdated": "2026-06-26T01:12:57.999Z",
       "deltaHistory": [
-        -0.0029999999999998916,
         -0.062000000000000055,
         0,
         0,
@@ -431,14 +451,14 @@
         0,
         0,
         0.17100000000000004,
-        -0.030000000000000027
+        -0.030000000000000027,
+        -0.04800000000000004
       ]
     },
     "shipping": {
-      "score": -0.891,
-      "lastUpdated": "2026-06-25T20:47:23.506Z",
+      "score": -0.909,
+      "lastUpdated": "2026-06-26T01:12:57.999Z",
       "deltaHistory": [
-        -0.0020000000000000018,
         0.030000000000000027,
         0.009000000000000008,
         -0.0010000000000000009,
@@ -447,14 +467,14 @@
         -0.010000000000000009,
         -0.014000000000000012,
         -0.007000000000000006,
-        -0.0020000000000000018
+        -0.0020000000000000018,
+        -0.018000000000000016
       ]
     },
     "steel": {
-      "score": -0.714,
-      "lastUpdated": "2026-06-25T20:47:23.506Z",
+      "score": -0.781,
+      "lastUpdated": "2026-06-26T01:12:57.999Z",
       "deltaHistory": [
-        -0.004999999999999893,
         -0.05600000000000005,
         0,
         0.0020000000000000018,
@@ -463,14 +483,14 @@
         0,
         -0.0050000000000000044,
         0.14700000000000002,
-        -0.02400000000000002
+        -0.02400000000000002,
+        -0.06700000000000006
       ]
     },
     "ic_design": {
       "score": -1,
-      "lastUpdated": "2026-06-25T20:47:23.506Z",
+      "lastUpdated": "2026-06-26T01:12:57.999Z",
       "deltaHistory": [
-        0,
         0.020000000000000018,
         0.007000000000000006,
         -0.0020000000000000018,
@@ -479,14 +499,14 @@
         -0.006000000000000005,
         -0.010000000000000009,
         -0.03200000000000003,
+        0,
         0
       ]
     },
     "display": {
-      "score": -0.912,
-      "lastUpdated": "2026-06-25T20:47:23.506Z",
+      "score": -0.931,
+      "lastUpdated": "2026-06-26T01:12:57.999Z",
       "deltaHistory": [
-        -0.0010000000000000009,
         0.017000000000000015,
         0.007000000000000006,
         -0.0010000000000000009,
@@ -495,14 +515,14 @@
         -0.0020000000000000018,
         -0.013000000000000012,
         -0.0010000000000000009,
-        -0.0010000000000000009
+        -0.0010000000000000009,
+        -0.019000000000000017
       ]
     },
     "ev_supply": {
-      "score": -0.705,
-      "lastUpdated": "2026-06-25T20:47:23.506Z",
+      "score": -0.741,
+      "lastUpdated": "2026-06-26T01:12:57.999Z",
       "deltaHistory": [
-        -0.008000000000000007,
         0,
         0.0040000000000000036,
         0,
@@ -511,14 +531,14 @@
         0.006000000000000005,
         -0.006000000000000005,
         0.07700000000000007,
-        -0.01100000000000001
+        -0.01100000000000001,
+        -0.03600000000000003
       ]
     },
     "ai_server": {
-      "score": 0.039,
-      "lastUpdated": "2026-06-25T20:47:23.506Z",
+      "score": 0.038,
+      "lastUpdated": "2026-06-26T01:12:57.999Z",
       "deltaHistory": [
-        0,
         -0.0050000000000000044,
         0.04700000000000001,
         0,
@@ -527,14 +547,14 @@
         -0.007000000000000006,
         -0.009000000000000001,
         -0.016,
-        0.0010000000000000009
+        0.0010000000000000009,
+        -0.0010000000000000009
       ]
     },
     "defense": {
-      "score": 0.001,
-      "lastUpdated": "2026-06-25T20:47:23.506Z",
+      "score": 0,
+      "lastUpdated": "2026-06-26T01:12:57.999Z",
       "deltaHistory": [
-        0,
         0,
         0,
         0,
@@ -543,7 +563,8 @@
         0,
         0.001,
         0,
-        0
+        0,
+        -0.001
       ]
     },
     "solar": {
@@ -628,7 +649,7 @@
     },
     "packaging": {
       "score": 0,
-      "lastUpdated": "2026-06-25T20:47:23.506Z",
+      "lastUpdated": "2026-06-26T01:12:57.999Z",
       "deltaHistory": [
         0,
         0,
@@ -692,7 +713,7 @@
     },
     "pcb": {
       "score": 0,
-      "lastUpdated": "2026-06-25T20:47:23.506Z",
+      "lastUpdated": "2026-06-26T01:12:57.999Z",
       "deltaHistory": [
         0,
         0,
