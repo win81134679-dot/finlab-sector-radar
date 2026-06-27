@@ -1,6 +1,28 @@
 {
-  "updatedAt": "2026-06-26T20:41:03.096Z",
+  "updatedAt": "2026-06-27T01:08:36.403Z",
   "posts": [
+    {
+      "text": "Trump’s tariffs stoke global trade jitters as China, EU vow response - Gulf Business Trump’s tariffs stoke global trade jitters as China, EU vow response  Gulf Business",
+      "timestamp": "2026-06-26T21:26:37.000Z",
+      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPRHFVZjg2ZFptY3NHME1XU1hvX0FmeU9XM3hUS3d3S1Nob1VWblVKU1BOS2IyRVRaMzhBY3BJdkpLQm8wMkVIZ0pKRER1NHR0ZkJFX1ExVG1IWmZRdFNQSks1c29mb1U3eUxBZ19xWEhia3NMNkM4RDhEV1BfS0QzYWNsOVZrd3pORVNOVm04VTlFTVJTNVEtRi0zeTI4N1BHS3MwdE93?oc=5",
+      "keywords": [
+        "tariff",
+        "tariffs",
+        "china"
+      ],
+      "impacts": {
+        "foundry": -1,
+        "shipping": -1,
+        "steel": -1,
+        "ic_design": -1,
+        "display": -1,
+        "ev_supply": -1
+      },
+      "sentiment": {
+        "compound": -0.7184,
+        "label": "強烈利空"
+      }
+    },
     {
       "text": "Soumaya Keynes on the right way to fight a trade war - Reason Magazine Soumaya Keynes on the right way to fight a trade war  Reason Magazine",
       "timestamp": "2026-06-26T15:00:24.000Z",
@@ -141,6 +163,27 @@
       }
     },
     {
+      "text": "Trump administration seeks new path forward with tariffs after first attempt hit legal roadblocks - AP News Trump administration seeks new path forward with tariffs after first attempt hit legal roadblocks  AP News",
+      "timestamp": "2026-06-03T07:00:00.000Z",
+      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNR3FZVThJWnRyOURYSHREeVZON2NOYWs1ZXNObEJQMzM3VkZUNi1TcmM3UDFtemF0Z0dBTFc1MnZXVkFncU1uOGRTeFQtY09DYjc1aXVBVTBHUlc5d0E5clpnSnFOR01qMlZDZFF0MzlPRjQwNFUxWmNKZmx3bUZFQ1duMTdfV2s4a3Bha2JROGljTDVC?oc=5",
+      "keywords": [
+        "tariff",
+        "tariffs"
+      ],
+      "impacts": {
+        "foundry": -1,
+        "shipping": -1,
+        "steel": -1,
+        "ic_design": -1,
+        "display": -1,
+        "ev_supply": -0.8
+      },
+      "sentiment": {
+        "compound": -0.7184,
+        "label": "強烈利空"
+      }
+    },
+    {
       "text": "Trump admin proposes broad new tariffs on top trading partners - ABC News - Breaking News, Latest News and Videos Trump admin proposes broad new tariffs on top trading partners  ABC News - Breaking News, Latest News and Videos",
       "timestamp": "2026-06-03T07:00:00.000Z",
       "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPbzZiZUl0T1FxWFFsbmd5VlBCWW9QYktOTjNaOXRKZ3ZWNTJ4bEpsU0UzN0c4TEdjZ21wUE1Fb3RUcjlJSWFfSGJMc3NGZ1NTUWROV1QxZzdnSWQ1OW5QcDZlNllCX0dnZ3lJM2F2OVNqY3NicHlydEN2NjFIQWJ0SnRSWGtIRkhZV1o2dUxGdm95UXVLVU1WQmZwbEcwWDjSAaQBQVVfeXFMTUMxeDA4bnhsUVJFSzZRZVNCS1ZnSUpWb2FiWVhITi1pN3BaTzF6eXZuRTFFV19XOTJfUnRvS3N4SHBvZDhLVXF1VWVHTHJvcGhnZXlRWTRVRGxIWmlLWmtvZ25idEI5eFRTVjh0UHQzY2RjRV80UHc4N3hjTzB0dW8wWGZVRUM5MHk4ZkVidHVRRkNsOGhKTkJjSGpRdkNvd011aEQ?oc=5",
@@ -224,26 +267,6 @@
         "ic_design": -1,
         "display": -1,
         "ev_supply": -0.8
-      },
-      "sentiment": {
-        "compound": -0.7184,
-        "label": "強烈利空"
-      }
-    },
-    {
-      "text": "Trump Administration Tariff Tracker - Wiley Law Trump Administration Tariff Tracker  Wiley Law",
-      "timestamp": "2026-06-11T07:00:00.000Z",
-      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBmOHhPR2NIU2JYTmJnT251UXkyUlNwTFNqWlJtZjFadl84QWdGazFTOExtMk1GQzV4dzVMbTFJbWlzalZUZW9ZT0V5VGZ2YXBib1pJcEpIak9fd1dIaFp1WDNtWTJ6NnNx?oc=5",
-      "keywords": [
-        "tariff"
-      ],
-      "impacts": {
-        "foundry": -0.7,
-        "shipping": -0.5,
-        "steel": -0.5,
-        "ic_design": -0.6,
-        "display": -0.5,
-        "ev_supply": -0.4
       },
       "sentiment": {
         "compound": -0.7184,
@@ -377,28 +400,6 @@
       }
     },
     {
-      "text": "Fentanyl, China, and Trump's 2025 tariffs - Peterson Institute for International Economics Fentanyl, China, and Trump's 2025 tariffs  Peterson Institute for International Economics",
-      "timestamp": "2026-05-11T07:00:00.000Z",
-      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQbjBrQVRfUk5JeDNjeXI5bGN3d0lVbU9Pbm1MWEp4cmFPUEJXbVVEWXNQaVlXd3RQUUZXTnRsZkQzTVdYa1VpVkRFVmZZc1NXSndteWJMUU9QTUNreEZjUEc3RFlsMndEYmJBZFprTERrZjIyRzlNQkQwSmsxMGVFenVqeGZkaTV5ODdEeFpRZmpXR00?oc=5",
-      "keywords": [
-        "tariff",
-        "tariffs",
-        "china"
-      ],
-      "impacts": {
-        "foundry": -1,
-        "shipping": -1,
-        "steel": -1,
-        "ic_design": -1,
-        "display": -1,
-        "ev_supply": -1
-      },
-      "sentiment": {
-        "compound": -0.7184,
-        "label": "強烈利空"
-      }
-    },
-    {
       "text": "Trump’s Latest Tariff Setback Looms Over China Talks - The New York Times Trump’s Latest Tariff Setback Looms Over China Talks  The New York Times",
       "timestamp": "2026-05-08T07:00:00.000Z",
       "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1xZk53NFUybTdOUDA2T0lCUUZ4bi10M3hja1N4MW9tYVgzc2dOUkdEa1dRUTc2MjNSVGpMWWF5aUd4SVJlS3p4NUIxcDJ6ODF3VEdGQk5lckpMbFl0QzFPQ2I4R3FFX09HbHV0TTJSMVpoTjd0VlVEdVBLYnBfZzQ?oc=5",
@@ -420,18 +421,55 @@
       }
     }
   ],
-  "deltas": [],
-  "topDeltas": [],
+  "deltas": [
+    {
+      "sector": "steel",
+      "sectorName": "鋼鐵",
+      "prev": -0.634,
+      "current": -0.703,
+      "delta": -0.069,
+      "momentum": "↓ 壓力加深",
+      "accelerating": true
+    },
+    {
+      "sector": "ev_supply",
+      "sectorName": "電動車供應鏈",
+      "prev": -0.649,
+      "current": -0.714,
+      "delta": -0.065,
+      "momentum": "↓ 壓力加深",
+      "accelerating": true
+    }
+  ],
+  "topDeltas": [
+    {
+      "sector": "steel",
+      "sectorName": "鋼鐵",
+      "prev": -0.634,
+      "current": -0.703,
+      "delta": -0.069,
+      "momentum": "↓ 壓力加深",
+      "accelerating": true
+    },
+    {
+      "sector": "ev_supply",
+      "sectorName": "電動車供應鏈",
+      "prev": -0.649,
+      "current": -0.714,
+      "delta": -0.065,
+      "momentum": "↓ 壓力加深",
+      "accelerating": true
+    }
+  ],
   "totalAnalyzed": 100,
   "sources": [
     "Google News"
   ],
   "sectorState": {
     "foundry": {
-      "score": -0.842,
-      "lastUpdated": "2026-06-26T20:41:03.096Z",
+      "score": -0.868,
+      "lastUpdated": "2026-06-27T01:08:36.403Z",
       "deltaHistory": [
-        0,
         0,
         0.17100000000000004,
         -0.030000000000000027,
@@ -440,14 +478,14 @@
         -0.0020000000000000018,
         0.19100000000000006,
         -0.15100000000000002,
-        0
+        0,
+        -0.026000000000000023
       ]
     },
     "shipping": {
-      "score": -0.886,
-      "lastUpdated": "2026-06-26T20:41:03.096Z",
+      "score": -0.909,
+      "lastUpdated": "2026-06-27T01:08:36.403Z",
       "deltaHistory": [
-        -0.010000000000000009,
         -0.014000000000000012,
         -0.007000000000000006,
         -0.0020000000000000018,
@@ -456,14 +494,14 @@
         0.0030000000000000027,
         -0.04799999999999993,
         0.06299999999999994,
-        0
+        0,
+        -0.02300000000000002
       ]
     },
     "steel": {
-      "score": -0.634,
-      "lastUpdated": "2026-06-26T20:41:03.096Z",
+      "score": -0.703,
+      "lastUpdated": "2026-06-27T01:08:36.403Z",
       "deltaHistory": [
-        0,
         -0.0050000000000000044,
         0.14700000000000002,
         -0.02400000000000002,
@@ -472,16 +510,17 @@
         -0.0040000000000000036,
         0.139,
         -0.03200000000000003,
-        0.0010000000000000009
+        0.0010000000000000009,
+        -0.06899999999999995
       ]
     },
     "ic_design": {
       "score": -1,
-      "lastUpdated": "2026-06-26T20:41:03.096Z",
+      "lastUpdated": "2026-06-27T01:08:36.403Z",
       "deltaHistory": [
-        -0.006000000000000005,
         -0.010000000000000009,
         -0.03200000000000003,
+        0,
         0,
         0,
         0,
@@ -492,10 +531,9 @@
       ]
     },
     "display": {
-      "score": -0.801,
-      "lastUpdated": "2026-06-26T20:41:03.096Z",
+      "score": -0.84,
+      "lastUpdated": "2026-06-27T01:08:36.403Z",
       "deltaHistory": [
-        -0.0020000000000000018,
         -0.013000000000000012,
         -0.0010000000000000009,
         -0.0010000000000000009,
@@ -504,14 +542,14 @@
         -0.0030000000000000027,
         0.052000000000000046,
         0.07299999999999995,
-        0
+        0,
+        -0.038999999999999924
       ]
     },
     "ev_supply": {
-      "score": -0.649,
-      "lastUpdated": "2026-06-26T20:41:03.096Z",
+      "score": -0.714,
+      "lastUpdated": "2026-06-27T01:08:36.403Z",
       "deltaHistory": [
-        0.006000000000000005,
         -0.006000000000000005,
         0.07700000000000007,
         -0.01100000000000001,
@@ -520,14 +558,14 @@
         -0.018000000000000016,
         0.14400000000000002,
         -0.04500000000000004,
-        0.0010000000000000009
+        0.0010000000000000009,
+        -0.06499999999999995
       ]
     },
     "ai_server": {
-      "score": 0.055,
-      "lastUpdated": "2026-06-26T20:41:03.096Z",
+      "score": 0.038,
+      "lastUpdated": "2026-06-27T01:08:36.403Z",
       "deltaHistory": [
-        -0.007000000000000006,
         -0.009000000000000001,
         -0.016,
         0.0010000000000000009,
@@ -536,14 +574,14 @@
         0.026000000000000002,
         0.053,
         -0.055,
-        0
+        0,
+        -0.017
       ]
     },
     "defense": {
       "score": 0,
-      "lastUpdated": "2026-06-26T20:41:03.096Z",
+      "lastUpdated": "2026-06-27T01:08:36.403Z",
       "deltaHistory": [
-        0,
         0.001,
         0,
         0,
@@ -552,6 +590,7 @@
         0,
         0.032,
         -0.032,
+        0,
         0
       ]
     },
@@ -637,7 +676,7 @@
     },
     "packaging": {
       "score": 0,
-      "lastUpdated": "2026-06-26T20:41:03.096Z",
+      "lastUpdated": "2026-06-27T01:08:36.403Z",
       "deltaHistory": [
         0,
         0,
@@ -701,7 +740,7 @@
     },
     "pcb": {
       "score": 0,
-      "lastUpdated": "2026-06-26T20:41:03.096Z",
+      "lastUpdated": "2026-06-27T01:08:36.403Z",
       "deltaHistory": [
         0,
         0,
