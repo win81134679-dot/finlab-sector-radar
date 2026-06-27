@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-27T12:38:59.914Z",
+  "updatedAt": "2026-06-27T16:31:35.603Z",
   "posts": [
     {
       "text": "Trump’s tariffs stoke global trade jitters as China, EU vow response - Gulf Business Trump’s tariffs stoke global trade jitters as China, EU vow response  Gulf Business",
@@ -44,20 +44,23 @@
       }
     },
     {
-      "text": "Soumaya Keynes on the right way to fight a trade war - Reason Magazine Soumaya Keynes on the right way to fight a trade war  Reason Magazine",
-      "timestamp": "2026-06-26T15:00:24.000Z",
-      "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE5ObElsUTVDa29LNGhRZURDbTBPRHotM3B2UXJLYi16anNDaEJiclRsbWttVlhpVkduZjhFNWJ4TXVfaGs1TzB3UDcxLTRvZWxDcDcwQVBGcGV2Xzg1YlBQaENWd0pXUmhIWFZfckdsamFEbWtTRVlPazdlQXNPdw?oc=5",
+      "text": "From rules to discretion: How Trump reconfigured US tariff policy - Brookings From rules to discretion: How Trump reconfigured US tariff policy  Brookings",
+      "timestamp": "2026-06-09T15:04:46.000Z",
+      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPanVpQ2p0NFNFcTh0c3JkVGZ3aS10NjFXWjB4ZGZBSDRwNE1qa19SLXAzRDVfZ0xabmNmdUkwb0dSMHA0WFU3ZDhLc0NTS21DVV96a0JDRk9ESUxYWlJwUElPNG5JVUJDV1hBZWpHS3N1c3piNENtRkVCaUI2MHFmeXhyRHJPdzhMci10TVVRSjhDOXoxWEtLUHBzSmFPY0tSMXc?oc=5",
       "keywords": [
-        "trade war"
+        "tariff"
       ],
       "impacts": {
-        "foundry": -0.6,
-        "ic_design": -0.8,
-        "shipping": -0.6
+        "foundry": -0.7,
+        "shipping": -0.5,
+        "steel": -0.5,
+        "ic_design": -0.6,
+        "display": -0.5,
+        "ev_supply": -0.4
       },
       "sentiment": {
-        "compound": 0,
-        "label": "中性"
+        "compound": -0.7184,
+        "label": "強烈利空"
       }
     },
     {
@@ -75,26 +78,6 @@
         "ic_design": -1,
         "display": -0.9,
         "ev_supply": -0.7
-      },
-      "sentiment": {
-        "compound": -0.7184,
-        "label": "強烈利空"
-      }
-    },
-    {
-      "text": "From rules to discretion: How Trump reconfigured US tariff policy - Brookings From rules to discretion: How Trump reconfigured US tariff policy  Brookings",
-      "timestamp": "2026-06-09T15:04:46.000Z",
-      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPanVpQ2p0NFNFcTh0c3JkVGZ3aS10NjFXWjB4ZGZBSDRwNE1qa19SLXAzRDVfZ0xabmNmdUkwb0dSMHA0WFU3ZDhLc0NTS21DVV96a0JDRk9ESUxYWlJwUElPNG5JVUJDV1hBZWpHS3N1c3piNENtRkVCaUI2MHFmeXhyRHJPdzhMci10TVVRSjhDOXoxWEtLUHBzSmFPY0tSMXc?oc=5",
-      "keywords": [
-        "tariff"
-      ],
-      "impacts": {
-        "foundry": -0.7,
-        "shipping": -0.5,
-        "steel": -0.5,
-        "ic_design": -0.6,
-        "display": -0.5,
-        "ev_supply": -0.4
       },
       "sentiment": {
         "compound": -0.7184,
@@ -121,6 +104,23 @@
       "sentiment": {
         "compound": -0.7184,
         "label": "強烈利空"
+      }
+    },
+    {
+      "text": "Soumaya Keynes on the right way to fight a trade war - Reason Magazine Soumaya Keynes on the right way to fight a trade war  Reason Magazine",
+      "timestamp": "2026-06-26T15:00:24.000Z",
+      "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE5ObElsUTVDa29LNGhRZURDbTBPRHotM3B2UXJLYi16anNDaEJiclRsbWttVlhpVkduZjhFNWJ4TXVfaGs1TzB3UDcxLTRvZWxDcDcwQVBGcGV2Xzg1YlBQaENWd0pXUmhIWFZfckdsamFEbWtTRVlPazdlQXNPdw?oc=5",
+      "keywords": [
+        "trade war"
+      ],
+      "impacts": {
+        "foundry": -0.6,
+        "ic_design": -0.8,
+        "shipping": -0.6
+      },
+      "sentiment": {
+        "compound": 0,
+        "label": "中性"
       }
     },
     {
@@ -176,27 +176,6 @@
         "ic_design": -0.6,
         "display": -0.5,
         "ev_supply": -0.4
-      },
-      "sentiment": {
-        "compound": -0.7184,
-        "label": "強烈利空"
-      }
-    },
-    {
-      "text": "Trump administration seeks new path forward with tariffs after first attempt hit legal roadblocks - AP News Trump administration seeks new path forward with tariffs after first attempt hit legal roadblocks  AP News",
-      "timestamp": "2026-06-03T07:00:00.000Z",
-      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNR3FZVThJWnRyOURYSHREeVZON2NOYWs1ZXNObEJQMzM3VkZUNi1TcmM3UDFtemF0Z0dBTFc1MnZXVkFncU1uOGRTeFQtY09DYjc1aXVBVTBHUlc5d0E5clpnSnFOR01qMlZDZFF0MzlPRjQwNFUxWmNKZmx3bUZFQ1duMTdfV2s4a3Bha2JROGljTDVC?oc=5",
-      "keywords": [
-        "tariff",
-        "tariffs"
-      ],
-      "impacts": {
-        "foundry": -1,
-        "shipping": -1,
-        "steel": -1,
-        "ic_design": -1,
-        "display": -1,
-        "ev_supply": -0.8
       },
       "sentiment": {
         "compound": -0.7184,
@@ -356,6 +335,27 @@
       }
     },
     {
+      "text": "China warns Trump’s latest tariff moves could damage trade ties - AP News China warns Trump’s latest tariff moves could damage trade ties  AP News",
+      "timestamp": "2026-03-16T07:00:00.000Z",
+      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOMlRvSmdFeGxqMHZLY2NyZjI0cWc1UlEyTUNaRTR4WjlBWC1nVnNTRXVpQjhJWE9aWDUtWlUzTDZKMnp3WlZoOHByNmoycFczbldhWlFHNmp3S1VwNW9NN0EyeTRSQzliZkVuVjBleVhIUlc1dXNYanlCVHRMcTRpSE16dngzeWdPenpGeUk4T29Ma1JJaFpR?oc=5",
+      "keywords": [
+        "tariff",
+        "china"
+      ],
+      "impacts": {
+        "foundry": -0.7,
+        "shipping": -0.9,
+        "steel": -0.5,
+        "ic_design": -1,
+        "display": -0.9,
+        "ev_supply": -0.7
+      },
+      "sentiment": {
+        "compound": -0.7184,
+        "label": "強烈利空"
+      }
+    },
+    {
       "text": "Donald Trump relaunches tariffs war after court struck down levies - Financial Times Donald Trump relaunches tariffs war after court struck down levies  Financial Times",
       "timestamp": "2026-06-06T07:00:00.000Z",
       "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNUzA3S3puYTBHRm0zd2ZTdWNIY2oxRm1XUnRDMF9MMm5PUC1UbFk2QU9ldUI4T0pmSWE2OXpxOTlVY2R6VEJUUy1uTlo1VmpkRGYwemZKak5vMTl3SmRBWW15cUtFaXdzbXVzVzhxcGFIVEpkTkVoWThfZDVWN19LNXk1RlA?oc=5",
@@ -371,27 +371,6 @@
         "ic_design": -1,
         "display": -1,
         "ev_supply": -0.6
-      },
-      "sentiment": {
-        "compound": -0.7184,
-        "label": "強烈利空"
-      }
-    },
-    {
-      "text": "China warns Trump’s latest tariff moves could damage trade ties - AP News China warns Trump’s latest tariff moves could damage trade ties  AP News",
-      "timestamp": "2026-03-16T07:00:00.000Z",
-      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOMlRvSmdFeGxqMHZLY2NyZjI0cWc1UlEyTUNaRTR4WjlBWC1nVnNTRXVpQjhJWE9aWDUtWlUzTDZKMnp3WlZoOHByNmoycFczbldhWlFHNmp3S1VwNW9NN0EyeTRSQzliZkVuVjBleVhIUlc1dXNYanlCVHRMcTRpSE16dngzeWdPenpGeUk4T29Ma1JJaFpR?oc=5",
-      "keywords": [
-        "tariff",
-        "china"
-      ],
-      "impacts": {
-        "foundry": -0.7,
-        "shipping": -0.9,
-        "steel": -0.5,
-        "ic_design": -1,
-        "display": -0.9,
-        "ev_supply": -0.7
       },
       "sentiment": {
         "compound": -0.7184,
@@ -418,6 +397,27 @@
         "compound": 0,
         "label": "中性"
       }
+    },
+    {
+      "text": "Trump’s Latest Tariff Setback Looms Over China Talks - The New York Times Trump’s Latest Tariff Setback Looms Over China Talks  The New York Times",
+      "timestamp": "2026-05-08T07:00:00.000Z",
+      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1xZk53NFUybTdOUDA2T0lCUUZ4bi10M3hja1N4MW9tYVgzc2dOUkdEa1dRUTc2MjNSVGpMWWF5aUd4SVJlS3p4NUIxcDJ6ODF3VEdGQk5lckpMbFl0QzFPQ2I4R3FFX09HbHV0TTJSMVpoTjd0VlVEdVBLYnBfZzQ?oc=5",
+      "keywords": [
+        "tariff",
+        "china"
+      ],
+      "impacts": {
+        "foundry": -0.7,
+        "shipping": -0.9,
+        "steel": -0.5,
+        "ic_design": -1,
+        "display": -0.9,
+        "ev_supply": -0.7
+      },
+      "sentiment": {
+        "compound": -0.7184,
+        "label": "強烈利空"
+      }
     }
   ],
   "deltas": [],
@@ -428,10 +428,9 @@
   ],
   "sectorState": {
     "foundry": {
-      "score": -0.91,
-      "lastUpdated": "2026-06-27T12:38:59.914Z",
+      "score": -0.92,
+      "lastUpdated": "2026-06-27T16:31:35.603Z",
       "deltaHistory": [
-        -0.04800000000000004,
         0.027000000000000024,
         -0.0020000000000000018,
         0.19100000000000006,
@@ -440,14 +439,14 @@
         -0.026000000000000023,
         0.0010000000000000009,
         -0.03200000000000003,
-        -0.01100000000000001
+        -0.01100000000000001,
+        -0.010000000000000009
       ]
     },
     "shipping": {
-      "score": -0.902,
-      "lastUpdated": "2026-06-27T12:38:59.914Z",
+      "score": -0.907,
+      "lastUpdated": "2026-06-27T16:31:35.603Z",
       "deltaHistory": [
-        -0.018000000000000016,
         0.0050000000000000044,
         0.0030000000000000027,
         -0.04799999999999993,
@@ -456,14 +455,14 @@
         -0.02300000000000002,
         -0.0010000000000000009,
         0.007000000000000006,
-        0.0010000000000000009
+        0.0010000000000000009,
+        -0.0050000000000000044
       ]
     },
     "steel": {
-      "score": -0.728,
-      "lastUpdated": "2026-06-27T12:38:59.914Z",
+      "score": -0.758,
+      "lastUpdated": "2026-06-27T16:31:35.603Z",
       "deltaHistory": [
-        -0.06700000000000006,
         0.04300000000000004,
         -0.0040000000000000036,
         0.139,
@@ -472,12 +471,13 @@
         -0.06899999999999995,
         0,
         -0.016000000000000014,
-        -0.009000000000000008
+        -0.009000000000000008,
+        -0.030000000000000027
       ]
     },
     "ic_design": {
       "score": -1,
-      "lastUpdated": "2026-06-27T12:38:59.914Z",
+      "lastUpdated": "2026-06-27T16:31:35.603Z",
       "deltaHistory": [
         0,
         0,
@@ -492,10 +492,9 @@
       ]
     },
     "display": {
-      "score": -0.844,
-      "lastUpdated": "2026-06-27T12:38:59.914Z",
+      "score": -0.878,
+      "lastUpdated": "2026-06-27T16:31:35.603Z",
       "deltaHistory": [
-        -0.019000000000000017,
         0.008000000000000007,
         -0.0030000000000000027,
         0.052000000000000046,
@@ -504,14 +503,14 @@
         -0.038999999999999924,
         0,
         -0.0010000000000000009,
-        -0.0030000000000000027
+        -0.0030000000000000027,
+        -0.03400000000000003
       ]
     },
     "ev_supply": {
-      "score": -0.724,
-      "lastUpdated": "2026-06-27T12:38:59.914Z",
+      "score": -0.756,
+      "lastUpdated": "2026-06-27T16:31:35.603Z",
       "deltaHistory": [
-        -0.03600000000000003,
         0.010000000000000009,
         -0.018000000000000016,
         0.14400000000000002,
@@ -520,14 +519,14 @@
         -0.06499999999999995,
         0,
         -0.0030000000000000027,
-        -0.007000000000000006
+        -0.007000000000000006,
+        -0.03200000000000003
       ]
     },
     "ai_server": {
-      "score": 0.04,
-      "lastUpdated": "2026-06-27T12:38:59.914Z",
+      "score": 0.048,
+      "lastUpdated": "2026-06-27T16:31:35.603Z",
       "deltaHistory": [
-        -0.0010000000000000009,
         -0.006999999999999999,
         0.026000000000000002,
         0.053,
@@ -536,18 +535,19 @@
         -0.017,
         0,
         0.0020000000000000018,
-        0
+        0,
+        0.008
       ]
     },
     "defense": {
       "score": 0,
-      "lastUpdated": "2026-06-27T12:38:59.914Z",
+      "lastUpdated": "2026-06-27T16:31:35.603Z",
       "deltaHistory": [
-        -0.001,
         0,
         0,
         0.032,
         -0.032,
+        0,
         0,
         0,
         0,
@@ -637,7 +637,7 @@
     },
     "packaging": {
       "score": 0,
-      "lastUpdated": "2026-06-27T12:38:59.914Z",
+      "lastUpdated": "2026-06-27T16:31:35.603Z",
       "deltaHistory": [
         0,
         0,
@@ -701,7 +701,7 @@
     },
     "pcb": {
       "score": 0,
-      "lastUpdated": "2026-06-27T12:38:59.914Z",
+      "lastUpdated": "2026-06-27T16:31:35.603Z",
       "deltaHistory": [
         0,
         0,
