@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-27T01:08:36.403Z",
+  "updatedAt": "2026-06-27T05:25:45.797Z",
   "posts": [
     {
       "text": "Trump’s tariffs stoke global trade jitters as China, EU vow response - Gulf Business Trump’s tariffs stoke global trade jitters as China, EU vow response  Gulf Business",
@@ -400,20 +400,21 @@
       }
     },
     {
-      "text": "Trump’s Latest Tariff Setback Looms Over China Talks - The New York Times Trump’s Latest Tariff Setback Looms Over China Talks  The New York Times",
-      "timestamp": "2026-05-08T07:00:00.000Z",
-      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1xZk53NFUybTdOUDA2T0lCUUZ4bi10M3hja1N4MW9tYVgzc2dOUkdEa1dRUTc2MjNSVGpMWWF5aUd4SVJlS3p4NUIxcDJ6ODF3VEdGQk5lckpMbFl0QzFPQ2I4R3FFX09HbHV0TTJSMVpoTjd0VlVEdVBLYnBfZzQ?oc=5",
+      "text": "Fentanyl, China, and Trump's 2025 tariffs - Peterson Institute for International Economics Fentanyl, China, and Trump's 2025 tariffs  Peterson Institute for International Economics",
+      "timestamp": "2026-05-11T07:00:00.000Z",
+      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQbjBrQVRfUk5JeDNjeXI5bGN3d0lVbU9Pbm1MWEp4cmFPUEJXbVVEWXNQaVlXd3RQUUZXTnRsZkQzTVdYa1VpVkRFVmZZc1NXSndteWJMUU9QTUNreEZjUEc3RFlsMndEYmJBZFprTERrZjIyRzlNQkQwSmsxMGVFenVqeGZkaTV5ODdEeFpRZmpXR00?oc=5",
       "keywords": [
         "tariff",
+        "tariffs",
         "china"
       ],
       "impacts": {
-        "foundry": -0.7,
-        "shipping": -0.9,
-        "steel": -0.5,
+        "foundry": -1,
+        "shipping": -1,
+        "steel": -1,
         "ic_design": -1,
-        "display": -0.9,
-        "ev_supply": -0.7
+        "display": -1,
+        "ev_supply": -1
       },
       "sentiment": {
         "compound": -0.7184,
@@ -421,56 +422,17 @@
       }
     }
   ],
-  "deltas": [
-    {
-      "sector": "steel",
-      "sectorName": "鋼鐵",
-      "prev": -0.634,
-      "current": -0.703,
-      "delta": -0.069,
-      "momentum": "↓ 壓力加深",
-      "accelerating": true
-    },
-    {
-      "sector": "ev_supply",
-      "sectorName": "電動車供應鏈",
-      "prev": -0.649,
-      "current": -0.714,
-      "delta": -0.065,
-      "momentum": "↓ 壓力加深",
-      "accelerating": true
-    }
-  ],
-  "topDeltas": [
-    {
-      "sector": "steel",
-      "sectorName": "鋼鐵",
-      "prev": -0.634,
-      "current": -0.703,
-      "delta": -0.069,
-      "momentum": "↓ 壓力加深",
-      "accelerating": true
-    },
-    {
-      "sector": "ev_supply",
-      "sectorName": "電動車供應鏈",
-      "prev": -0.649,
-      "current": -0.714,
-      "delta": -0.065,
-      "momentum": "↓ 壓力加深",
-      "accelerating": true
-    }
-  ],
+  "deltas": [],
+  "topDeltas": [],
   "totalAnalyzed": 100,
   "sources": [
     "Google News"
   ],
   "sectorState": {
     "foundry": {
-      "score": -0.868,
-      "lastUpdated": "2026-06-27T01:08:36.403Z",
+      "score": -0.867,
+      "lastUpdated": "2026-06-27T05:25:45.797Z",
       "deltaHistory": [
-        0,
         0.17100000000000004,
         -0.030000000000000027,
         -0.04800000000000004,
@@ -479,14 +441,14 @@
         0.19100000000000006,
         -0.15100000000000002,
         0,
-        -0.026000000000000023
+        -0.026000000000000023,
+        0.0010000000000000009
       ]
     },
     "shipping": {
-      "score": -0.909,
-      "lastUpdated": "2026-06-27T01:08:36.403Z",
+      "score": -0.91,
+      "lastUpdated": "2026-06-27T05:25:45.797Z",
       "deltaHistory": [
-        -0.014000000000000012,
         -0.007000000000000006,
         -0.0020000000000000018,
         -0.018000000000000016,
@@ -495,14 +457,14 @@
         -0.04799999999999993,
         0.06299999999999994,
         0,
-        -0.02300000000000002
+        -0.02300000000000002,
+        -0.0010000000000000009
       ]
     },
     "steel": {
       "score": -0.703,
-      "lastUpdated": "2026-06-27T01:08:36.403Z",
+      "lastUpdated": "2026-06-27T05:25:45.797Z",
       "deltaHistory": [
-        -0.0050000000000000044,
         0.14700000000000002,
         -0.02400000000000002,
         -0.06700000000000006,
@@ -511,15 +473,16 @@
         0.139,
         -0.03200000000000003,
         0.0010000000000000009,
-        -0.06899999999999995
+        -0.06899999999999995,
+        0
       ]
     },
     "ic_design": {
       "score": -1,
-      "lastUpdated": "2026-06-27T01:08:36.403Z",
+      "lastUpdated": "2026-06-27T05:25:45.797Z",
       "deltaHistory": [
-        -0.010000000000000009,
         -0.03200000000000003,
+        0,
         0,
         0,
         0,
@@ -532,9 +495,8 @@
     },
     "display": {
       "score": -0.84,
-      "lastUpdated": "2026-06-27T01:08:36.403Z",
+      "lastUpdated": "2026-06-27T05:25:45.797Z",
       "deltaHistory": [
-        -0.013000000000000012,
         -0.0010000000000000009,
         -0.0010000000000000009,
         -0.019000000000000017,
@@ -543,14 +505,14 @@
         0.052000000000000046,
         0.07299999999999995,
         0,
-        -0.038999999999999924
+        -0.038999999999999924,
+        0
       ]
     },
     "ev_supply": {
       "score": -0.714,
-      "lastUpdated": "2026-06-27T01:08:36.403Z",
+      "lastUpdated": "2026-06-27T05:25:45.797Z",
       "deltaHistory": [
-        -0.006000000000000005,
         0.07700000000000007,
         -0.01100000000000001,
         -0.03600000000000003,
@@ -559,14 +521,14 @@
         0.14400000000000002,
         -0.04500000000000004,
         0.0010000000000000009,
-        -0.06499999999999995
+        -0.06499999999999995,
+        0
       ]
     },
     "ai_server": {
       "score": 0.038,
-      "lastUpdated": "2026-06-27T01:08:36.403Z",
+      "lastUpdated": "2026-06-27T05:25:45.797Z",
       "deltaHistory": [
-        -0.009000000000000001,
         -0.016,
         0.0010000000000000009,
         -0.0010000000000000009,
@@ -575,14 +537,14 @@
         0.053,
         -0.055,
         0,
-        -0.017
+        -0.017,
+        0
       ]
     },
     "defense": {
       "score": 0,
-      "lastUpdated": "2026-06-27T01:08:36.403Z",
+      "lastUpdated": "2026-06-27T05:25:45.797Z",
       "deltaHistory": [
-        0.001,
         0,
         0,
         -0.001,
@@ -590,6 +552,7 @@
         0,
         0.032,
         -0.032,
+        0,
         0,
         0
       ]
@@ -676,7 +639,7 @@
     },
     "packaging": {
       "score": 0,
-      "lastUpdated": "2026-06-27T01:08:36.403Z",
+      "lastUpdated": "2026-06-27T05:25:45.797Z",
       "deltaHistory": [
         0,
         0,
@@ -740,7 +703,7 @@
     },
     "pcb": {
       "score": 0,
-      "lastUpdated": "2026-06-27T01:08:36.403Z",
+      "lastUpdated": "2026-06-27T05:25:45.797Z",
       "deltaHistory": [
         0,
         0,
