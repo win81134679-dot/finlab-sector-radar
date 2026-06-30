@@ -1,6 +1,25 @@
 {
-  "updatedAt": "2026-06-30T09:18:00.549Z",
+  "updatedAt": "2026-06-30T12:53:21.377Z",
   "posts": [
+    {
+      "text": "Trump's trade war has a new target: forced labor. The case behind it is far from simple - CNBC Trump's trade war has a new target: forced labor. The case behind it is far from simple  CNBC",
+      "timestamp": "2026-06-09T07:00:00.000Z",
+      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPNjdDRzB3Q3VlZU1pakpuTXVwX1U0UWZVMWVMZFZBMks3RFNpaFpqbFhtaHFUejBFcnJwRVU0eGY4WVFSM3ZHTWM4VnVtUDNVYWZNcEotWGZMWVlqN3JtUVJYRldFcF9vZy1PczNNRkVMWE1zVld1SkdsSFNKMXVmbNIBhgFBVV95cUxOakdWQTB4c0R0cEp3eGFVaTI5VVpQUFhfb25qbko0ZGhPM2NyNFM0dU5ndGprYnFGc0ItNjZQMGxSd1VCSHJZWUxxSHJ1LTBwNFpFekxkVkNhUEdmVFB6QWV1UG9FNGViQnZHU3hieWhYZXpuQzlqeHMySUVHdk1kOEhCeEt5UQ?oc=5",
+      "keywords": [
+        "trade war",
+        "ase"
+      ],
+      "impacts": {
+        "foundry": -0.6,
+        "ic_design": -0.8,
+        "shipping": -0.6,
+        "packaging": -0.7
+      },
+      "sentiment": {
+        "compound": 0,
+        "label": "中性"
+      }
+    },
     {
       "text": "How China wriggled free when Trump closed a tariff loophole - Financial Times How China wriggled free when Trump closed a tariff loophole  Financial Times",
       "timestamp": "2026-06-29T11:31:06.000Z",
@@ -78,27 +97,6 @@
         "ic_design": -0.6,
         "display": -0.5,
         "ev_supply": -0.4
-      },
-      "sentiment": {
-        "compound": -0.7184,
-        "label": "強烈利空"
-      }
-    },
-    {
-      "text": "Tracking the Economic Impact of the Trump Tariffs - Tax Foundation Tracking the Economic Impact of the Trump Tariffs  Tax Foundation",
-      "timestamp": "2026-05-05T07:00:00.000Z",
-      "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE5Xd2Q5aC00U3p1VGNlTWdtMjlPTVByTFhDUFNKS1I4VTQ2bVhRV0dTVU5VQTR6SnBXam9adnRiUTdMRkRTMmtKajdkRUpXQTFjZnh5bWgtWUtwTFZBUHBfTnJLVmZVT0plbWExSGh6QkdDLTJmNWRtSFp5aw?oc=5",
-      "keywords": [
-        "tariff",
-        "tariffs"
-      ],
-      "impacts": {
-        "foundry": -1,
-        "shipping": -1,
-        "steel": -1,
-        "ic_design": -1,
-        "display": -1,
-        "ev_supply": -0.8
       },
       "sentiment": {
         "compound": -0.7184,
@@ -277,20 +275,20 @@
       }
     },
     {
-      "text": "US-China Tariff Rates - What Are They Now? - China Briefing US-China Tariff Rates - What Are They Now?  China Briefing",
+      "text": "Trump threatens tariffs on 60 trading partners including UK and Canada over ‘forced labour’ - The Guardian Trump threatens tariffs on 60 trading partners including UK and Canada over ‘forced labour’  The Guardian",
       "timestamp": "2026-06-03T07:00:00.000Z",
-      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTFA3STlnT1E2aUIyX2JpeEFudzFKY290X0lPMU9lUDBwMTRXQ18yOVk0d1pYckszbGJ3MDVkakVBNHFFdW94N25jcUM3SHZRNnJBbHdkUWF4Q3BMQWFOb2s3dVpFaEgwSzd4MzhTYnlWRmI?oc=5",
+      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQYjRrRTdrMG85bWE0cHRmeWltMlczMF9ybWE2Q0E1NjlhYjBrQm5USHFOZm5IU0ZrSW52amw3REJ1V1NQci1nNmNNNl84eVk5emx2eHlPSHZGVjc1ZGRfZENTWGJaTXZCZC1YTGMwYndwaHNUWHFnU01RR1Z3NWtSSUtfOThSeEJia1J2R2w1Q3lNSXVGQlpiZnNjZ3R6LXgz?oc=5",
       "keywords": [
         "tariff",
-        "china"
+        "tariffs"
       ],
       "impacts": {
-        "foundry": -0.7,
-        "shipping": -0.9,
-        "steel": -0.5,
+        "foundry": -1,
+        "shipping": -1,
+        "steel": -1,
         "ic_design": -1,
-        "display": -0.9,
-        "ev_supply": -0.7
+        "display": -1,
+        "ev_supply": -0.8
       },
       "sentiment": {
         "compound": -0.7184,
@@ -298,9 +296,9 @@
       }
     },
     {
-      "text": "Trump threatens tariffs on 60 trading partners including UK and Canada over ‘forced labour’ - The Guardian Trump threatens tariffs on 60 trading partners including UK and Canada over ‘forced labour’  The Guardian",
+      "text": "US announces new tariffs over forced labour concerns - BBC US announces new tariffs over forced labour concerns  BBC",
       "timestamp": "2026-06-03T07:00:00.000Z",
-      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQYjRrRTdrMG85bWE0cHRmeWltMlczMF9ybWE2Q0E1NjlhYjBrQm5USHFOZm5IU0ZrSW52amw3REJ1V1NQci1nNmNNNl84eVk5emx2eHlPSHZGVjc1ZGRfZENTWGJaTXZCZC1YTGMwYndwaHNUWHFnU01RR1Z3NWtSSUtfOThSeEJia1J2R2w1Q3lNSXVGQlpiZnNjZ3R6LXgz?oc=5",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE4wNlYxSVlQODUyQ2J1a0x5Z2x2Mnl3WUJQUk5hQkFSLXJScE9mY0tyOTFleTRzT1hpRlRNRlZFVDU1a3psNGdBcHY0NWZKb2VFbjc1WGxjRFpvdw?oc=5",
       "keywords": [
         "tariff",
         "tariffs"
@@ -339,26 +337,6 @@
       }
     },
     {
-      "text": "What to know about Trump's sweeping new tariff proposal - ABC News - Breaking News, Latest News and Videos What to know about Trump's sweeping new tariff proposal  ABC News - Breaking News, Latest News and Videos",
-      "timestamp": "2026-06-04T07:00:00.000Z",
-      "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPbS1Ca2RMOFVVTUFHWXo2aXRQT2NPekxJM1pGN2FMODhCQzZsVUxlYjJtZFJxeGRYNmxtdWtDV2llN0Fpb3RDR2xqZkpwN1lGMzYxMXIzb0JqUXVYTlpQa05CbE9PLVFmZVVYWGZLV1BFSExDRTdRbXBqaEx4NnlGMndNSDBaWVBsLXpZ0gGQAUFVX3lxTE5HMVVxbjNGZEVnOGxXTm1SUUZ4dDk5YjVNTVA2bUdQTlMzVmZEa1dsUFBSVFVaQUlUcWpGSUpSZFhVcVMtSTFjNHhRRXlrOUFaUl9vZm5ndnBuVUpXWXdQT1NRU21LeFFMVWZnYk1mcFhRVkhJdE9kUG9VNV9ORFQzSlR3ZkdZdVhIalVDbkY3Qg?oc=5",
-      "keywords": [
-        "tariff"
-      ],
-      "impacts": {
-        "foundry": -0.7,
-        "shipping": -0.5,
-        "steel": -0.5,
-        "ic_design": -0.6,
-        "display": -0.5,
-        "ev_supply": -0.4
-      },
-      "sentiment": {
-        "compound": -0.7184,
-        "label": "強烈利空"
-      }
-    },
-    {
       "text": "China warns Trump’s latest tariff moves could damage trade ties - AP News China warns Trump’s latest tariff moves could damage trade ties  AP News",
       "timestamp": "2026-03-16T07:00:00.000Z",
       "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOMlRvSmdFeGxqMHZLY2NyZjI0cWc1UlEyTUNaRTR4WjlBWC1nVnNTRXVpQjhJWE9aWDUtWlUzTDZKMnp3WlZoOHByNmoycFczbldhWlFHNmp3S1VwNW9NN0EyeTRSQzliZkVuVjBleVhIUlc1dXNYanlCVHRMcTRpSE16dngzeWdPenpGeUk4T29Ma1JJaFpR?oc=5",
@@ -380,20 +358,41 @@
       }
     },
     {
-      "text": "Trump’s Latest Tariff Setback Looms Over China Talks - The New York Times Trump’s Latest Tariff Setback Looms Over China Talks  The New York Times",
-      "timestamp": "2026-05-08T07:00:00.000Z",
-      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1xZk53NFUybTdOUDA2T0lCUUZ4bi10M3hja1N4MW9tYVgzc2dOUkdEa1dRUTc2MjNSVGpMWWF5aUd4SVJlS3p4NUIxcDJ6ODF3VEdGQk5lckpMbFl0QzFPQ2I4R3FFX09HbHV0TTJSMVpoTjd0VlVEdVBLYnBfZzQ?oc=5",
+      "text": "Fentanyl, China, and Trump's 2025 tariffs - Peterson Institute for International Economics Fentanyl, China, and Trump's 2025 tariffs  Peterson Institute for International Economics",
+      "timestamp": "2026-05-11T07:00:00.000Z",
+      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQbjBrQVRfUk5JeDNjeXI5bGN3d0lVbU9Pbm1MWEp4cmFPUEJXbVVEWXNQaVlXd3RQUUZXTnRsZkQzTVdYa1VpVkRFVmZZc1NXSndteWJMUU9QTUNreEZjUEc3RFlsMndEYmJBZFprTERrZjIyRzlNQkQwSmsxMGVFenVqeGZkaTV5ODdEeFpRZmpXR00?oc=5",
       "keywords": [
         "tariff",
+        "tariffs",
         "china"
       ],
       "impacts": {
-        "foundry": -0.7,
-        "shipping": -0.9,
-        "steel": -0.5,
+        "foundry": -1,
+        "shipping": -1,
+        "steel": -1,
         "ic_design": -1,
-        "display": -0.9,
-        "ev_supply": -0.7
+        "display": -1,
+        "ev_supply": -1
+      },
+      "sentiment": {
+        "compound": -0.7184,
+        "label": "強烈利空"
+      }
+    },
+    {
+      "text": "Donald Trump’s replacement tariff wall continues to rise - Financial Times Donald Trump’s replacement tariff wall continues to rise  Financial Times",
+      "timestamp": "2026-06-08T07:00:00.000Z",
+      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNQnRxamR3ZlplbWY3NE93SHE4QjdlS1gyN29ybHJSQXRFdE9GMnAxdVllc0R5VTZ6RDlXUlFGdHpVVXozcmhhbTVRZTJ4bGY2YkZvR1c1NExzVFN4YWFkR25ZdHNBLVZCel8zZld2WUt5ZEh5ajhETzFzRHdmNlMyVWM0TFo?oc=5",
+      "keywords": [
+        "tariff"
+      ],
+      "impacts": {
+        "foundry": -0.7,
+        "shipping": -0.5,
+        "steel": -0.5,
+        "ic_design": -0.6,
+        "display": -0.5,
+        "ev_supply": -0.4
       },
       "sentiment": {
         "compound": -0.7184,
@@ -423,18 +422,91 @@
       }
     }
   ],
-  "deltas": [],
-  "topDeltas": [],
+  "deltas": [
+    {
+      "sector": "display",
+      "sectorName": "面板/顯示",
+      "prev": -0.946,
+      "current": -0.808,
+      "delta": 0.138,
+      "momentum": "↑ 壓力緩解",
+      "accelerating": true
+    },
+    {
+      "sector": "packaging",
+      "sectorName": "封測",
+      "prev": 0,
+      "current": -0.128,
+      "delta": -0.128,
+      "momentum": "↓ 壓力加深",
+      "accelerating": true
+    },
+    {
+      "sector": "steel",
+      "sectorName": "鋼鐵",
+      "prev": -0.823,
+      "current": -0.703,
+      "delta": 0.12,
+      "momentum": "↑ 壓力緩解",
+      "accelerating": true
+    },
+    {
+      "sector": "ev_supply",
+      "sectorName": "電動車供應鏈",
+      "prev": -0.794,
+      "current": -0.682,
+      "delta": 0.112,
+      "momentum": "↑ 壓力緩解",
+      "accelerating": true
+    }
+  ],
+  "topDeltas": [
+    {
+      "sector": "display",
+      "sectorName": "面板/顯示",
+      "prev": -0.946,
+      "current": -0.808,
+      "delta": 0.138,
+      "momentum": "↑ 壓力緩解",
+      "accelerating": true
+    },
+    {
+      "sector": "packaging",
+      "sectorName": "封測",
+      "prev": 0,
+      "current": -0.128,
+      "delta": -0.128,
+      "momentum": "↓ 壓力加深",
+      "accelerating": true
+    },
+    {
+      "sector": "steel",
+      "sectorName": "鋼鐵",
+      "prev": -0.823,
+      "current": -0.703,
+      "delta": 0.12,
+      "momentum": "↑ 壓力緩解",
+      "accelerating": true
+    },
+    {
+      "sector": "ev_supply",
+      "sectorName": "電動車供應鏈",
+      "prev": -0.794,
+      "current": -0.682,
+      "delta": 0.112,
+      "momentum": "↑ 壓力緩解",
+      "accelerating": true
+    }
+  ],
   "totalAnalyzed": 100,
   "sources": [
     "Google News"
   ],
   "sectorState": {
     "foundry": {
-      "score": -0.952,
-      "lastUpdated": "2026-06-30T09:18:00.549Z",
+      "score": -0.925,
+      "lastUpdated": "2026-06-30T12:53:21.377Z",
       "deltaHistory": [
-        -0.01100000000000001,
         0.052999999999999936,
         -0.0010000000000000009,
         0.01100000000000001,
@@ -443,14 +515,14 @@
         -0.02400000000000002,
         0.0020000000000000018,
         0.0010000000000000009,
-        0.009000000000000008
+        0.009000000000000008,
+        0.026999999999999913
       ]
     },
     "shipping": {
-      "score": -0.928,
-      "lastUpdated": "2026-06-30T09:18:00.549Z",
+      "score": -0.899,
+      "lastUpdated": "2026-06-30T12:53:21.377Z",
       "deltaHistory": [
-        0.0040000000000000036,
         0.014000000000000012,
         0.0040000000000000036,
         0.007000000000000006,
@@ -459,14 +531,14 @@
         0.009000000000000008,
         0.0010000000000000009,
         0.0010000000000000009,
-        -0.01100000000000001
+        -0.01100000000000001,
+        0.029000000000000026
       ]
     },
     "steel": {
-      "score": -0.823,
-      "lastUpdated": "2026-06-30T09:18:00.549Z",
+      "score": -0.703,
+      "lastUpdated": "2026-06-30T12:53:21.377Z",
       "deltaHistory": [
-        -0.015000000000000013,
         0.05999999999999994,
         0.006000000000000005,
         0.06300000000000006,
@@ -475,14 +547,14 @@
         -0.018999999999999906,
         0.0040000000000000036,
         -0.01100000000000001,
-        0.008000000000000007
+        0.008000000000000007,
+        0.12
       ]
     },
     "ic_design": {
       "score": -1,
-      "lastUpdated": "2026-06-30T09:18:00.549Z",
+      "lastUpdated": "2026-06-30T12:53:21.377Z",
       "deltaHistory": [
-        0,
         0,
         0,
         0,
@@ -491,14 +563,14 @@
         0,
         0,
         0,
+        0,
         0
       ]
     },
     "display": {
-      "score": -0.946,
-      "lastUpdated": "2026-06-30T09:18:00.549Z",
+      "score": -0.808,
+      "lastUpdated": "2026-06-30T12:53:21.377Z",
       "deltaHistory": [
-        -0.0040000000000000036,
         0.013999999999999901,
         0.0040000000000000036,
         0.09000000000000008,
@@ -507,14 +579,14 @@
         -0.0050000000000000044,
         0,
         -0.007000000000000006,
-        0.009000000000000008
+        0.009000000000000008,
+        0.1379999999999999
       ]
     },
     "ev_supply": {
-      "score": -0.794,
-      "lastUpdated": "2026-06-30T09:18:00.549Z",
+      "score": -0.682,
+      "lastUpdated": "2026-06-30T12:53:21.377Z",
       "deltaHistory": [
-        -0.007000000000000006,
         0.031000000000000028,
         0.0010000000000000009,
         0.136,
@@ -523,14 +595,14 @@
         -0.01200000000000001,
         0.0010000000000000009,
         -0.005999999999999894,
-        0.020999999999999908
+        0.020999999999999908,
+        0.11199999999999999
       ]
     },
     "ai_server": {
-      "score": 0.046,
-      "lastUpdated": "2026-06-30T09:18:00.549Z",
+      "score": 0.047,
+      "lastUpdated": "2026-06-30T12:53:21.377Z",
       "deltaHistory": [
-        -0.006999999999999999,
         0.008999999999999994,
         0.01100000000000001,
         -0.04800000000000001,
@@ -539,12 +611,13 @@
         -0.006999999999999999,
         0,
         -0.0030000000000000027,
-        -0.006999999999999999
+        -0.006999999999999999,
+        0.0010000000000000009
       ]
     },
     "defense": {
       "score": 0,
-      "lastUpdated": "2026-06-30T09:18:00.549Z",
+      "lastUpdated": "2026-06-30T12:53:21.377Z",
       "deltaHistory": [
         0,
         0,
@@ -639,10 +712,9 @@
       ]
     },
     "packaging": {
-      "score": 0,
-      "lastUpdated": "2026-06-30T09:18:00.549Z",
+      "score": -0.128,
+      "lastUpdated": "2026-06-30T12:53:21.377Z",
       "deltaHistory": [
-        0,
         0,
         0,
         -0.098,
@@ -651,7 +723,8 @@
         0,
         0,
         0,
-        0
+        0,
+        -0.128
       ]
     },
     "banking": {
@@ -704,7 +777,7 @@
     },
     "pcb": {
       "score": 0,
-      "lastUpdated": "2026-06-30T09:18:00.549Z",
+      "lastUpdated": "2026-06-30T12:53:21.377Z",
       "deltaHistory": [
         0,
         0,
