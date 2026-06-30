@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-29T20:43:05.737Z",
+  "updatedAt": "2026-06-30T01:09:43.025Z",
   "posts": [
     {
       "text": "How China wriggled free when Trump closed a tariff loophole - Financial Times How China wriggled free when Trump closed a tariff loophole  Financial Times",
@@ -147,27 +147,6 @@
       }
     },
     {
-      "text": "Trump administration seeks new path forward with tariffs after first attempt hit legal roadblocks - AP News Trump administration seeks new path forward with tariffs after first attempt hit legal roadblocks  AP News",
-      "timestamp": "2026-06-03T07:00:00.000Z",
-      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNR3FZVThJWnRyOURYSHREeVZON2NOYWs1ZXNObEJQMzM3VkZUNi1TcmM3UDFtemF0Z0dBTFc1MnZXVkFncU1uOGRTeFQtY09DYjc1aXVBVTBHUlc5d0E5clpnSnFOR01qMlZDZFF0MzlPRjQwNFUxWmNKZmx3bUZFQ1duMTdfV2s4a3Bha2JROGljTDVC?oc=5",
-      "keywords": [
-        "tariff",
-        "tariffs"
-      ],
-      "impacts": {
-        "foundry": -1,
-        "shipping": -1,
-        "steel": -1,
-        "ic_design": -1,
-        "display": -1,
-        "ev_supply": -0.8
-      },
-      "sentiment": {
-        "compound": -0.7184,
-        "label": "強烈利空"
-      }
-    },
-    {
       "text": "Trump wants to ‘manage’ China trade. Businesses see a tariff opening. - Politico Trump wants to ‘manage’ China trade. Businesses see a tariff opening.  Politico",
       "timestamp": "2026-05-30T07:00:00.000Z",
       "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPbGZ0RElvZWg0Y0xtbTNTNXVkS2lrYU5fTG9RY054MVYwOVBwMzVua1dmMjJHQjNwRmVvRUp5WDRiZkhXb0ZfOHV6dzBjSDNXclN3RGNWUjRvRy1PXzhNcndxcHZCNW1TX3UxTHVIRHJHOWJhSzNEV0RvcW91N0xmRVN6VGZOa3l2UkhMNHhKbUI?oc=5",
@@ -182,6 +161,27 @@
         "ic_design": -1,
         "display": -0.9,
         "ev_supply": -0.7
+      },
+      "sentiment": {
+        "compound": -0.7184,
+        "label": "強烈利空"
+      }
+    },
+    {
+      "text": "Trump administration seeks new path forward with tariffs after first attempt hit legal roadblocks - AP News Trump administration seeks new path forward with tariffs after first attempt hit legal roadblocks  AP News",
+      "timestamp": "2026-06-03T07:00:00.000Z",
+      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNR3FZVThJWnRyOURYSHREeVZON2NOYWs1ZXNObEJQMzM3VkZUNi1TcmM3UDFtemF0Z0dBTFc1MnZXVkFncU1uOGRTeFQtY09DYjc1aXVBVTBHUlc5d0E5clpnSnFOR01qMlZDZFF0MzlPRjQwNFUxWmNKZmx3bUZFQ1duMTdfV2s4a3Bha2JROGljTDVC?oc=5",
+      "keywords": [
+        "tariff",
+        "tariffs"
+      ],
+      "impacts": {
+        "foundry": -1,
+        "shipping": -1,
+        "steel": -1,
+        "ic_design": -1,
+        "display": -1,
+        "ev_supply": -0.8
       },
       "sentiment": {
         "compound": -0.7184,
@@ -432,10 +432,9 @@
   ],
   "sectorState": {
     "foundry": {
-      "score": -0.964,
-      "lastUpdated": "2026-06-29T20:43:05.737Z",
+      "score": -0.962,
+      "lastUpdated": "2026-06-30T01:09:43.025Z",
       "deltaHistory": [
-        -0.03700000000000003,
         -0.0010000000000000009,
         -0.013999999999999901,
         -0.01100000000000001,
@@ -444,14 +443,14 @@
         0.01100000000000001,
         -0.10699999999999998,
         0.06000000000000005,
-        -0.02400000000000002
+        -0.02400000000000002,
+        0.0020000000000000018
       ]
     },
     "shipping": {
-      "score": -0.919,
-      "lastUpdated": "2026-06-29T20:43:05.737Z",
+      "score": -0.918,
+      "lastUpdated": "2026-06-30T01:09:43.025Z",
       "deltaHistory": [
-        -0.01200000000000001,
         -0.0030000000000000027,
         -0.009000000000000008,
         0.0040000000000000036,
@@ -460,14 +459,14 @@
         0.007000000000000006,
         0,
         -0.041000000000000036,
-        0.009000000000000008
+        0.009000000000000008,
+        0.0010000000000000009
       ]
     },
     "steel": {
-      "score": -0.824,
-      "lastUpdated": "2026-06-29T20:43:05.737Z",
+      "score": -0.82,
+      "lastUpdated": "2026-06-30T01:09:43.025Z",
       "deltaHistory": [
-        -0.08400000000000007,
         0.0010000000000000009,
         -0.03199999999999992,
         -0.015000000000000013,
@@ -476,14 +475,14 @@
         0.06300000000000006,
         -0.14,
         0.038999999999999924,
-        -0.018999999999999906
+        -0.018999999999999906,
+        0.0040000000000000036
       ]
     },
     "ic_design": {
       "score": -1,
-      "lastUpdated": "2026-06-29T20:43:05.737Z",
+      "lastUpdated": "2026-06-30T01:09:43.025Z",
       "deltaHistory": [
-        0,
         0,
         0,
         0,
@@ -492,14 +491,14 @@
         0,
         0.02400000000000002,
         -0.02400000000000002,
+        0,
         0
       ]
     },
     "display": {
       "score": -0.948,
-      "lastUpdated": "2026-06-29T20:43:05.737Z",
+      "lastUpdated": "2026-06-30T01:09:43.025Z",
       "deltaHistory": [
-        -0.09300000000000008,
         0.0040000000000000036,
         -0.010999999999999899,
         -0.0040000000000000036,
@@ -508,14 +507,14 @@
         0.09000000000000008,
         -0.08200000000000007,
         -0.02399999999999991,
-        -0.0050000000000000044
+        -0.0050000000000000044,
+        0
       ]
     },
     "ev_supply": {
-      "score": -0.81,
-      "lastUpdated": "2026-06-29T20:43:05.737Z",
+      "score": -0.809,
+      "lastUpdated": "2026-06-30T01:09:43.025Z",
       "deltaHistory": [
-        -0.08200000000000007,
         0.006000000000000005,
         -0.01200000000000001,
         -0.007000000000000006,
@@ -524,14 +523,14 @@
         0.136,
         -0.17300000000000004,
         0.007000000000000006,
-        -0.01200000000000001
+        -0.01200000000000001,
+        0.0010000000000000009
       ]
     },
     "ai_server": {
       "score": 0.056,
-      "lastUpdated": "2026-06-29T20:43:05.737Z",
+      "lastUpdated": "2026-06-30T01:09:43.025Z",
       "deltaHistory": [
-        0.012000000000000004,
         -0.0010000000000000009,
         -0.011000000000000003,
         -0.006999999999999999,
@@ -540,12 +539,13 @@
         -0.04800000000000001,
         0.060000000000000005,
         -0.019000000000000003,
-        -0.006999999999999999
+        -0.006999999999999999,
+        0
       ]
     },
     "defense": {
       "score": 0,
-      "lastUpdated": "2026-06-29T20:43:05.737Z",
+      "lastUpdated": "2026-06-30T01:09:43.025Z",
       "deltaHistory": [
         0,
         0,
@@ -641,9 +641,8 @@
     },
     "packaging": {
       "score": 0,
-      "lastUpdated": "2026-06-29T20:43:05.737Z",
+      "lastUpdated": "2026-06-30T01:09:43.025Z",
       "deltaHistory": [
-        0,
         0,
         0,
         0,
@@ -651,6 +650,7 @@
         0,
         -0.098,
         0.098,
+        0,
         0,
         0
       ]
@@ -705,7 +705,7 @@
     },
     "pcb": {
       "score": 0,
-      "lastUpdated": "2026-06-29T20:43:05.737Z",
+      "lastUpdated": "2026-06-30T01:09:43.025Z",
       "deltaHistory": [
         0,
         0,
