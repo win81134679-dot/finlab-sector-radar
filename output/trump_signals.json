@@ -1,6 +1,24 @@
 {
-  "updatedAt": "2026-07-01T20:41:12.444Z",
+  "updatedAt": "2026-07-02T01:10:37.633Z",
   "posts": [
+    {
+      "text": "Fate of $2 trillion North American trade deal in doubt as July 1 deadline passes - The Washington Post Fate of $2 trillion North American trade deal in doubt as July 1 deadline passes  The Washington Post",
+      "timestamp": "2026-07-02T00:54:18.000Z",
+      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQN1llaWJZdXlEbkxWa1VBQWNVbFpqdk4zaHFzMURhRVRqeVNVOVRzQVBVc0p6cFd3NU5jd3FjMmc4Rk00RlhkeFF1UTdsVVNWWHhiR256cTR0VzItdGEtenZ1SVRhdFdKSVQ1TkdaQV9hRWllSGpOem1ESzUwRzhiUDVaREZOUWFESGxmZkNCSmY2QWFNVXp2VzU4N21OZE0wTklTOGl1NlhwSG4tVG1B?oc=5",
+      "keywords": [
+        "trade deal",
+        "deal"
+      ],
+      "impacts": {
+        "shipping": 0.7,
+        "ic_design": 0.6,
+        "display": 0.3
+      },
+      "sentiment": {
+        "compound": 0.6124,
+        "label": "強烈利多"
+      }
+    },
     {
       "text": "Trump's trade war has a new target: forced labor. The case behind it is far from simple - CNBC Trump's trade war has a new target: forced labor. The case behind it is far from simple  CNBC",
       "timestamp": "2026-06-09T07:00:00.000Z",
@@ -45,26 +63,6 @@
       "text": "From rules to discretion: How Trump reconfigured US tariff policy - Brookings From rules to discretion: How Trump reconfigured US tariff policy  Brookings",
       "timestamp": "2026-06-09T07:00:00.000Z",
       "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPanVpQ2p0NFNFcTh0c3JkVGZ3aS10NjFXWjB4ZGZBSDRwNE1qa19SLXAzRDVfZ0xabmNmdUkwb0dSMHA0WFU3ZDhLc0NTS21DVV96a0JDRk9ESUxYWlJwUElPNG5JVUJDV1hBZWpHS3N1c3piNENtRkVCaUI2MHFmeXhyRHJPdzhMci10TVVRSjhDOXoxWEtLUHBzSmFPY0tSMXc?oc=5",
-      "keywords": [
-        "tariff"
-      ],
-      "impacts": {
-        "foundry": -0.7,
-        "shipping": -0.5,
-        "steel": -0.5,
-        "ic_design": -0.6,
-        "display": -0.5,
-        "ev_supply": -0.4
-      },
-      "sentiment": {
-        "compound": -0.7184,
-        "label": "強烈利空"
-      }
-    },
-    {
-      "text": "Trump Tariff Tracker – June 12, 2026 (via Passle) - Baker Botts Trump Tariff Tracker – June 12, 2026 (via Passle)  Baker Botts",
-      "timestamp": "2026-06-12T07:00:00.000Z",
-      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNdHM4b3dUZXR1UWd3b3hMekhMaDNST051QUZtb0hJNXhIak02MHlVeWo2dlYwNUw1X0lkc1p2ODlycjhQcjRTRFlXZ2xNNmx6QzJhdEVERkFrdG0tZV81eG1PQVYyaFNjNjdkb2hvczgyTjNlV2x3MTdLUEtPTllqWVNWdw?oc=5",
       "keywords": [
         "tariff"
       ],
@@ -128,43 +126,19 @@
       }
     },
     {
-      "text": "US and China seek to repair damage from tariff war that sent trade into a freefall - AP News US and China seek to repair damage from tariff war that sent trade into a freefall  AP News",
-      "timestamp": "2026-05-13T07:00:00.000Z",
-      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOdVVjejZrTXBEdXRCVDUyWmFNdnNxTXVrMUZ0TnM2ZXlWTlFncnpLZTlQTS1hczV4SmJlTXoxM0VSdjd1NFhubGhmQ1gzWGdBUVlYU2VvbTJjQ3J1MWJxaDRmRWsxUVZaelVXV1BzcWRtc3huUU9MOVdYZWNhTFFOaTF3UHQxdVJOX0tmdmJWUF9IdjNt?oc=5",
+      "text": "Trump Tariff Tracker – June 12, 2026 (via Passle) - Baker Botts Trump Tariff Tracker – June 12, 2026 (via Passle)  Baker Botts",
+      "timestamp": "2026-06-12T07:00:00.000Z",
+      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNdHM4b3dUZXR1UWd3b3hMekhMaDNST051QUZtb0hJNXhIak02MHlVeWo2dlYwNUw1X0lkc1p2ODlycjhQcjRTRFlXZ2xNNmx6QzJhdEVERkFrdG0tZV81eG1PQVYyaFNjNjdkb2hvczgyTjNlV2x3MTdLUEtPTllqWVNWdw?oc=5",
       "keywords": [
-        "ai",
-        "tariff",
-        "china"
+        "tariff"
       ],
       "impacts": {
-        "ai_server": 0.7,
-        "foundry": -0.4,
-        "shipping": -0.9,
+        "foundry": -0.7,
+        "shipping": -0.5,
         "steel": -0.5,
-        "ic_design": -1,
-        "display": -0.9,
-        "ev_supply": -0.7
-      },
-      "sentiment": {
-        "compound": -0.7184,
-        "label": "強烈利空"
-      }
-    },
-    {
-      "text": "Trump admin proposes broad new tariffs on top trading partners - ABC News - Breaking News, Latest News and Videos Trump admin proposes broad new tariffs on top trading partners  ABC News - Breaking News, Latest News and Videos",
-      "timestamp": "2026-06-03T07:00:00.000Z",
-      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPbzZiZUl0T1FxWFFsbmd5VlBCWW9QYktOTjNaOXRKZ3ZWNTJ4bEpsU0UzN0c4TEdjZ21wUE1Fb3RUcjlJSWFfSGJMc3NGZ1NTUWROV1QxZzdnSWQ1OW5QcDZlNllCX0dnZ3lJM2F2OVNqY3NicHlydEN2NjFIQWJ0SnRSWGtIRkhZV1o2dUxGdm95UXVLVU1WQmZwbEcwWDjSAaQBQVVfeXFMTUMxeDA4bnhsUVJFSzZRZVNCS1ZnSUpWb2FiWVhITi1pN3BaTzF6eXZuRTFFV19XOTJfUnRvS3N4SHBvZDhLVXF1VWVHTHJvcGhnZXlRWTRVRGxIWmlLWmtvZ25idEI5eFRTVjh0UHQzY2RjRV80UHc4N3hjTzB0dW8wWGZVRUM5MHk4ZkVidHVRRkNsOGhKTkJjSGpRdkNvd011aEQ?oc=5",
-      "keywords": [
-        "tariff",
-        "tariffs"
-      ],
-      "impacts": {
-        "foundry": -1,
-        "shipping": -1,
-        "steel": -1,
-        "ic_design": -1,
-        "display": -1,
-        "ev_supply": -0.8
+        "ic_design": -0.6,
+        "display": -0.5,
+        "ev_supply": -0.4
       },
       "sentiment": {
         "compound": -0.7184,
@@ -205,6 +179,29 @@
         "ic_design": -0.6,
         "display": -0.5,
         "ev_supply": -0.4
+      },
+      "sentiment": {
+        "compound": -0.7184,
+        "label": "強烈利空"
+      }
+    },
+    {
+      "text": "US and China seek to repair damage from tariff war that sent trade into a freefall - AP News US and China seek to repair damage from tariff war that sent trade into a freefall  AP News",
+      "timestamp": "2026-05-13T07:00:00.000Z",
+      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOdVVjejZrTXBEdXRCVDUyWmFNdnNxTXVrMUZ0TnM2ZXlWTlFncnpLZTlQTS1hczV4SmJlTXoxM0VSdjd1NFhubGhmQ1gzWGdBUVlYU2VvbTJjQ3J1MWJxaDRmRWsxUVZaelVXV1BzcWRtc3huUU9MOVdYZWNhTFFOaTF3UHQxdVJOX0tmdmJWUF9IdjNt?oc=5",
+      "keywords": [
+        "ai",
+        "tariff",
+        "china"
+      ],
+      "impacts": {
+        "ai_server": 0.7,
+        "foundry": -0.4,
+        "shipping": -0.9,
+        "steel": -0.5,
+        "ic_design": -1,
+        "display": -0.9,
+        "ev_supply": -0.7
       },
       "sentiment": {
         "compound": -0.7184,
@@ -302,14 +299,24 @@
       }
     },
     {
-      "text": "From a ‘board of trade’ to Boeing planes, what did Xi and Trump actually agree to? - CNN From a ‘board of trade’ to Boeing planes, what did Xi and Trump actually agree to?  CNN",
-      "timestamp": "2026-05-18T07:00:00.000Z",
-      "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOT29Mek5sVHJ3a2F3akFMQnNhQ2xzX0ZzaVZzQ1NfZ0gtN1J5a1RtRGFnRFpETkJrd0huTzg5clp6ZGFKLTFQS3c3WW05Zm5YbUVDLWhKYmM4UWlTdG8yYnY3aFI1ZlU1anRpSEp3dE9zc1RXS3RlZU9hUnFSWGRaUDRBTFkwYzA2X2xz?oc=5",
-      "keywords": [],
-      "impacts": {},
+      "text": "US-China Tariff Rates - What Are They Now? - China Briefing US-China Tariff Rates - What Are They Now?  China Briefing",
+      "timestamp": "2026-06-03T07:00:00.000Z",
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTFA3STlnT1E2aUIyX2JpeEFudzFKY290X0lPMU9lUDBwMTRXQ18yOVk0d1pYckszbGJ3MDVkakVBNHFFdW94N25jcUM3SHZRNnJBbHdkUWF4Q3BMQWFOb2s3dVpFaEgwSzd4MzhTYnlWRmI?oc=5",
+      "keywords": [
+        "tariff",
+        "china"
+      ],
+      "impacts": {
+        "foundry": -0.7,
+        "shipping": -0.9,
+        "steel": -0.5,
+        "ic_design": -1,
+        "display": -0.9,
+        "ev_supply": -0.7
+      },
       "sentiment": {
-        "compound": 0,
-        "label": "中性"
+        "compound": -0.7184,
+        "label": "強烈利空"
       }
     },
     {
@@ -419,18 +426,73 @@
       }
     }
   ],
-  "deltas": [],
-  "topDeltas": [],
+  "deltas": [
+    {
+      "sector": "foundry",
+      "sectorName": "晶圓代工",
+      "prev": -0.815,
+      "current": -0.926,
+      "delta": -0.111,
+      "momentum": "↓ 壓力加深",
+      "accelerating": true
+    },
+    {
+      "sector": "ev_supply",
+      "sectorName": "電動車供應鏈",
+      "prev": -0.634,
+      "current": -0.736,
+      "delta": -0.102,
+      "momentum": "↓ 壓力加深",
+      "accelerating": true
+    },
+    {
+      "sector": "steel",
+      "sectorName": "鋼鐵",
+      "prev": -0.59,
+      "current": -0.656,
+      "delta": -0.066,
+      "momentum": "↓ 壓力加深",
+      "accelerating": true
+    }
+  ],
+  "topDeltas": [
+    {
+      "sector": "foundry",
+      "sectorName": "晶圓代工",
+      "prev": -0.815,
+      "current": -0.926,
+      "delta": -0.111,
+      "momentum": "↓ 壓力加深",
+      "accelerating": true
+    },
+    {
+      "sector": "ev_supply",
+      "sectorName": "電動車供應鏈",
+      "prev": -0.634,
+      "current": -0.736,
+      "delta": -0.102,
+      "momentum": "↓ 壓力加深",
+      "accelerating": true
+    },
+    {
+      "sector": "steel",
+      "sectorName": "鋼鐵",
+      "prev": -0.59,
+      "current": -0.656,
+      "delta": -0.066,
+      "momentum": "↓ 壓力加深",
+      "accelerating": true
+    }
+  ],
   "totalAnalyzed": 100,
   "sources": [
     "Google News"
   ],
   "sectorState": {
     "foundry": {
-      "score": -0.815,
-      "lastUpdated": "2026-07-01T20:41:12.444Z",
+      "score": -0.926,
+      "lastUpdated": "2026-07-02T01:10:37.633Z",
       "deltaHistory": [
-        0.009000000000000008,
         0.026999999999999913,
         0.09400000000000008,
         0.008000000000000007,
@@ -439,14 +501,14 @@
         -0.014000000000000012,
         -0.015000000000000013,
         0.014000000000000012,
-        0.027000000000000024
+        0.027000000000000024,
+        -0.1110000000000001
       ]
     },
     "shipping": {
-      "score": -0.886,
-      "lastUpdated": "2026-07-01T20:41:12.444Z",
+      "score": -0.837,
+      "lastUpdated": "2026-07-02T01:10:37.633Z",
       "deltaHistory": [
-        -0.01100000000000001,
         0.029000000000000026,
         -0.025000000000000022,
         0.010000000000000009,
@@ -455,14 +517,14 @@
         -0.0010000000000000009,
         0.009000000000000008,
         0.008000000000000007,
-        0
+        0,
+        0.049000000000000044
       ]
     },
     "steel": {
-      "score": -0.59,
-      "lastUpdated": "2026-07-01T20:41:12.444Z",
+      "score": -0.656,
+      "lastUpdated": "2026-07-02T01:10:37.633Z",
       "deltaHistory": [
-        0.008000000000000007,
         0.12,
         0.02499999999999991,
         0.02300000000000002,
@@ -471,12 +533,13 @@
         -0.014000000000000012,
         0.01100000000000001,
         0.02300000000000002,
-        0.015000000000000013
+        0.015000000000000013,
+        -0.06600000000000006
       ]
     },
     "ic_design": {
       "score": -1,
-      "lastUpdated": "2026-07-01T20:41:12.444Z",
+      "lastUpdated": "2026-07-02T01:10:37.633Z",
       "deltaHistory": [
         0,
         0,
@@ -491,10 +554,9 @@
       ]
     },
     "display": {
-      "score": -0.782,
-      "lastUpdated": "2026-07-01T20:41:12.444Z",
+      "score": -0.825,
+      "lastUpdated": "2026-07-02T01:10:37.633Z",
       "deltaHistory": [
-        0.009000000000000008,
         0.1379999999999999,
         -0.02299999999999991,
         0.007000000000000006,
@@ -503,14 +565,14 @@
         -0.0020000000000000018,
         0.01200000000000001,
         0.0050000000000000044,
-        0.0030000000000000027
+        0.0030000000000000027,
+        -0.04299999999999993
       ]
     },
     "ev_supply": {
-      "score": -0.634,
-      "lastUpdated": "2026-07-01T20:41:12.444Z",
+      "score": -0.736,
+      "lastUpdated": "2026-07-02T01:10:37.633Z",
       "deltaHistory": [
-        0.020999999999999908,
         0.11199999999999999,
         -0.0030000000000000027,
         0.016000000000000014,
@@ -519,14 +581,14 @@
         -0.0020000000000000018,
         0.009000000000000008,
         0.0010000000000000009,
-        0.006000000000000005
+        0.006000000000000005,
+        -0.10199999999999998
       ]
     },
     "ai_server": {
-      "score": 0.165,
-      "lastUpdated": "2026-07-01T20:41:12.444Z",
+      "score": 0.199,
+      "lastUpdated": "2026-07-02T01:10:37.633Z",
       "deltaHistory": [
-        -0.006999999999999999,
         0.0010000000000000009,
         0.106,
         0.016000000000000014,
@@ -535,12 +597,13 @@
         -0.008000000000000007,
         -0.008000000000000007,
         0.014000000000000012,
-        0.033
+        0.033,
+        0.034
       ]
     },
     "defense": {
       "score": 0,
-      "lastUpdated": "2026-07-01T20:41:12.444Z",
+      "lastUpdated": "2026-07-02T01:10:37.633Z",
       "deltaHistory": [
         0,
         0,
@@ -635,10 +698,9 @@
       ]
     },
     "packaging": {
-      "score": -0.13,
-      "lastUpdated": "2026-07-01T20:41:12.444Z",
+      "score": -0.151,
+      "lastUpdated": "2026-07-02T01:10:37.633Z",
       "deltaHistory": [
-        0,
         -0.128,
         -0.04899999999999999,
         -0.0050000000000000044,
@@ -647,7 +709,8 @@
         -0.013999999999999985,
         0.087,
         -0.0020000000000000018,
-        0.0020000000000000018
+        0.0020000000000000018,
+        -0.02099999999999999
       ]
     },
     "banking": {
@@ -700,7 +763,7 @@
     },
     "pcb": {
       "score": 0,
-      "lastUpdated": "2026-07-01T20:41:12.444Z",
+      "lastUpdated": "2026-07-02T01:10:37.633Z",
       "deltaHistory": [
         0,
         0,
