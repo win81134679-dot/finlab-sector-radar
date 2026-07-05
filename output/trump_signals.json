@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-05T09:09:23.685Z",
+  "updatedAt": "2026-07-05T12:36:58.294Z",
   "posts": [
     {
       "text": "Trump Tariff Tracker – July 2, 2026 (via Passle) - Baker Botts Trump Tariff Tracker – July 2, 2026 (via Passle)  Baker Botts",
@@ -64,21 +64,25 @@
       }
     },
     {
-      "text": "Fate of $2 trillion North American trade deal in doubt as July 1 deadline passes - The Washington Post Fate of $2 trillion North American trade deal in doubt as July 1 deadline passes  The Washington Post",
-      "timestamp": "2026-07-02T01:28:01.000Z",
-      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQN1llaWJZdXlEbkxWa1VBQWNVbFpqdk4zaHFzMURhRVRqeVNVOVRzQVBVc0p6cFd3NU5jd3FjMmc4Rk00RlhkeFF1UTdsVVNWWHhiR256cTR0VzItdGEtenZ1SVRhdFdKSVQ1TkdaQV9hRWllSGpOem1ESzUwRzhiUDVaREZOUWFESGxmZkNCSmY2QWFNVXp2VzU4N21OZE0wTklTOGl1NlhwSG4tVG1B?oc=5",
+      "text": "US Supreme Court declines to hear challenge to 2018 Trump tariffs on China - SeafoodSource US Supreme Court declines to hear challenge to 2018 Trump tariffs on China  SeafoodSource",
+      "timestamp": "2026-06-16T07:00:00.000Z",
+      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQaGtPZmpXTGZoM3dKVTVTVEhQN1UweXd3ZXEtWUdiNHFFQ0d0TV9tT2EtYldZM0xlaWJMazBUbm1qZjBDakpfS0s1MkdnYi1QN0p6UDloVFJfWGhCZklhdHJsY2liSlMzbjR6ZEoycDBCczRxdWR3Zm1GRFFaODFyYlU3cVZ5VENLTHpTQ2NSVUplRUV2Z3k5T2doX3ZoNjl0NlpTdXdVNXZHa0NnTlRiUXlGZ1d5c0NESm45NTFhSQ?oc=5",
       "keywords": [
-        "trade deal",
-        "deal"
+        "tariff",
+        "tariffs",
+        "china"
       ],
       "impacts": {
-        "shipping": 0.7,
-        "ic_design": 0.6,
-        "display": 0.3
+        "foundry": -1,
+        "shipping": -1,
+        "steel": -1,
+        "ic_design": -1,
+        "display": -1,
+        "ev_supply": -1
       },
       "sentiment": {
-        "compound": 0.6124,
-        "label": "強烈利多"
+        "compound": -0.7184,
+        "label": "強烈利空"
       }
     },
     {
@@ -95,28 +99,6 @@
         "ic_design": -0.6,
         "display": -0.5,
         "ev_supply": -0.4
-      },
-      "sentiment": {
-        "compound": -0.7184,
-        "label": "強烈利空"
-      }
-    },
-    {
-      "text": "US Supreme Court declines to hear challenge to 2018 Trump tariffs on China - SeafoodSource US Supreme Court declines to hear challenge to 2018 Trump tariffs on China  SeafoodSource",
-      "timestamp": "2026-06-16T07:00:00.000Z",
-      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQaGtPZmpXTGZoM3dKVTVTVEhQN1UweXd3ZXEtWUdiNHFFQ0d0TV9tT2EtYldZM0xlaWJMazBUbm1qZjBDakpfS0s1MkdnYi1QN0p6UDloVFJfWGhCZklhdHJsY2liSlMzbjR6ZEoycDBCczRxdWR3Zm1GRFFaODFyYlU3cVZ5VENLTHpTQ2NSVUplRUV2Z3k5T2doX3ZoNjl0NlpTdXdVNXZHa0NnTlRiUXlGZ1d5c0NESm45NTFhSQ?oc=5",
-      "keywords": [
-        "tariff",
-        "tariffs",
-        "china"
-      ],
-      "impacts": {
-        "foundry": -1,
-        "shipping": -1,
-        "steel": -1,
-        "ic_design": -1,
-        "display": -1,
-        "ev_supply": -1
       },
       "sentiment": {
         "compound": -0.7184,
@@ -192,7 +174,7 @@
     {
       "text": "U.S. says it plans extra tariffs of 10% or more for most trading partners after forced labor probe - PBS U.S. says it plans extra tariffs of 10% or more for most trading partners after forced labor probe  PBS",
       "timestamp": "2026-06-03T07:00:00.000Z",
-      "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNYmVrSUEwV3c4b3FFaFZSREVvbkxudXlKbVFrMXNjcVZJaWxxbEgya2VOQ1ppV3NVd2hnRVZ0MmV1OGw4OTFOUjNxM1diekR0QWEteUFadTUwOWN1XzlxRUxySzhBWTFZd284VWw0b29ReDF1WjNSU2ZpaHBYbWNvd19CSl9VNDBPY1Bjcnl1clMtdVUyRjNXa1d6SVJWZmdFUlY1NExfSXhqQ1hzMFZOWU5udTRxZ2tleHpfS0lGMlZWRXFhbDgtR3RxclVld9IB0wFBVV95cUxNQjZEQ2FTdVBzU2NNZVBaSHROZ2lOdnN1Y1Q1bHlFQUNhdDI1aTBzcFVpUmUwT3J6XzdxdDh1WmpxV1JaUndWcGxGeTJReWZQaGEwUy0wcTBpb2t1NXdzMnZKbDEwcUFfODNnaTZkdGR1aDJaTzFwcUhlbVVBOS1tLVY3ZnE3ZWlfY1E0X2kyenQ3aDVlZmR5QVV2WVVXSzZ5TkhHM2szejRKS1c2eW12WnNkdE1rNFdVUG1rbWlxQlMtRTY2dTlhdmxoTjhaMW5Eamdn?oc=5",
+      "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNYmVrSUEwV3c4b3FFaFZSREVvbkxudXlKbVFrMXNjcVZJaWxxbEgya2VOQ1ppV3NVd2hnRVZ0MmV1OGw4OTFOUjNxM1diekR0QWEteUFadTUwOWN1XzlxRUxySzhBWTFZd284VWw0b29ReDF1WjNSU2ZpaHBYbWNvd19CSl9VNDBPY1Bjcnl1clMtdVUyRjNXa1d6SVJWZmdFUlY1NExfSXhqQ1hzMFZOWU5udTRxZ2tleHpfS0lGMlZWRXFhbDgtR3RxclVldw?oc=5",
       "keywords": [
         "tariff",
         "tariffs"
@@ -350,6 +332,27 @@
       }
     },
     {
+      "text": "Trump’s Tariff Playbook in Tatters as China Talks Start - Global Finance Magazine Trump’s Tariff Playbook in Tatters as China Talks Start  Global Finance Magazine",
+      "timestamp": "2026-05-12T07:00:00.000Z",
+      "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTFBpTk5pRGlrVnNuYlNCcDVQZE1sR0RTSXpwU196UnVwRVVOc0J0OC1hNVg0UHR0Y1QyREVycld1blJyYWNMOFg3Y3B0NkRGZGVsdUxkOURMSnI5X3FWQm03aUZQZTJNdk5iQTd2empPbm1lVVNnQnhqcWt3?oc=5",
+      "keywords": [
+        "tariff",
+        "china"
+      ],
+      "impacts": {
+        "foundry": -0.7,
+        "shipping": -0.9,
+        "steel": -0.5,
+        "ic_design": -1,
+        "display": -0.9,
+        "ev_supply": -0.7
+      },
+      "sentiment": {
+        "compound": -0.7184,
+        "label": "強烈利空"
+      }
+    },
+    {
       "text": "Trump Tariff Tracker – June 12, 2026 (via Passle) - Baker Botts Trump Tariff Tracker – June 12, 2026 (via Passle)  Baker Botts",
       "timestamp": "2026-06-12T07:00:00.000Z",
       "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNdHM4b3dUZXR1UWd3b3hMekhMaDNST051QUZtb0hJNXhIak02MHlVeWo2dlYwNUw1X0lkc1p2ODlycjhQcjRTRFlXZ2xNNmx6QzJhdEVERkFrdG0tZV81eG1PQVYyaFNjNjdkb2hvczgyTjNlV2x3MTdLUEtPTllqWVNWdw?oc=5",
@@ -413,41 +416,59 @@
   ],
   "deltas": [
     {
-      "sector": "steel",
-      "sectorName": "鋼鐵",
-      "prev": -0.754,
-      "current": -0.807,
-      "delta": -0.053,
-      "momentum": "↓ 壓力加深",
+      "sector": "foundry",
+      "sectorName": "晶圓代工",
+      "prev": -0.995,
+      "current": -0.92,
+      "delta": 0.075,
+      "momentum": "↑ 壓力緩解",
       "accelerating": true
     },
     {
-      "sector": "foundry",
-      "sectorName": "晶圓代工",
-      "prev": -0.944,
-      "current": -0.995,
-      "delta": -0.051,
-      "momentum": "↓ 壓力加深",
+      "sector": "steel",
+      "sectorName": "鋼鐵",
+      "prev": -0.807,
+      "current": -0.749,
+      "delta": 0.058,
+      "momentum": "↑ 壓力緩解",
+      "accelerating": true
+    },
+    {
+      "sector": "ev_supply",
+      "sectorName": "電動車供應鏈",
+      "prev": -0.797,
+      "current": -0.744,
+      "delta": 0.053,
+      "momentum": "↑ 壓力緩解",
       "accelerating": true
     }
   ],
   "topDeltas": [
     {
-      "sector": "steel",
-      "sectorName": "鋼鐵",
-      "prev": -0.754,
-      "current": -0.807,
-      "delta": -0.053,
-      "momentum": "↓ 壓力加深",
+      "sector": "foundry",
+      "sectorName": "晶圓代工",
+      "prev": -0.995,
+      "current": -0.92,
+      "delta": 0.075,
+      "momentum": "↑ 壓力緩解",
       "accelerating": true
     },
     {
-      "sector": "foundry",
-      "sectorName": "晶圓代工",
-      "prev": -0.944,
-      "current": -0.995,
-      "delta": -0.051,
-      "momentum": "↓ 壓力加深",
+      "sector": "steel",
+      "sectorName": "鋼鐵",
+      "prev": -0.807,
+      "current": -0.749,
+      "delta": 0.058,
+      "momentum": "↑ 壓力緩解",
+      "accelerating": true
+    },
+    {
+      "sector": "ev_supply",
+      "sectorName": "電動車供應鏈",
+      "prev": -0.797,
+      "current": -0.744,
+      "delta": 0.053,
+      "momentum": "↑ 壓力緩解",
       "accelerating": true
     }
   ],
@@ -457,10 +478,9 @@
   ],
   "sectorState": {
     "foundry": {
-      "score": -0.995,
-      "lastUpdated": "2026-07-05T09:09:23.685Z",
+      "score": -0.92,
+      "lastUpdated": "2026-07-05T12:36:58.294Z",
       "deltaHistory": [
-        0.0010000000000000009,
         0.0010000000000000009,
         0.04800000000000004,
         0,
@@ -469,14 +489,14 @@
         0,
         -0.0020000000000000018,
         0.0010000000000000009,
-        -0.051000000000000045
+        -0.051000000000000045,
+        0.07499999999999996
       ]
     },
     "shipping": {
-      "score": -0.906,
-      "lastUpdated": "2026-07-05T09:09:23.685Z",
+      "score": -0.928,
+      "lastUpdated": "2026-07-05T12:36:58.294Z",
       "deltaHistory": [
-        -0.006000000000000005,
         -0.01200000000000001,
         -0.018000000000000016,
         0.01100000000000001,
@@ -485,14 +505,14 @@
         0,
         -0.0010000000000000009,
         0.0010000000000000009,
-        -0.01200000000000001
+        -0.01200000000000001,
+        -0.02200000000000002
       ]
     },
     "steel": {
-      "score": -0.807,
-      "lastUpdated": "2026-07-05T09:09:23.685Z",
+      "score": -0.749,
+      "lastUpdated": "2026-07-05T12:36:58.294Z",
       "deltaHistory": [
-        -0.015000000000000013,
         -0.017000000000000015,
         -0.014000000000000012,
         0.02200000000000002,
@@ -501,12 +521,13 @@
         0,
         -0.0020000000000000018,
         0.0030000000000000027,
-        -0.05300000000000005
+        -0.05300000000000005,
+        0.05800000000000005
       ]
     },
     "ic_design": {
       "score": -1,
-      "lastUpdated": "2026-07-05T09:09:23.685Z",
+      "lastUpdated": "2026-07-05T12:36:58.294Z",
       "deltaHistory": [
         0,
         0,
@@ -521,10 +542,9 @@
       ]
     },
     "display": {
-      "score": -0.938,
-      "lastUpdated": "2026-07-05T09:09:23.685Z",
+      "score": -0.908,
+      "lastUpdated": "2026-07-05T12:36:58.294Z",
       "deltaHistory": [
-        -0.0050000000000000044,
         -0.008000000000000007,
         -0.09299999999999997,
         0.010999999999999899,
@@ -533,14 +553,14 @@
         0,
         -0.0010000000000000009,
         0,
-        -0.007999999999999896
+        -0.007999999999999896,
+        0.029999999999999916
       ]
     },
     "ev_supply": {
-      "score": -0.797,
-      "lastUpdated": "2026-07-05T09:09:23.685Z",
+      "score": -0.744,
+      "lastUpdated": "2026-07-05T12:36:58.294Z",
       "deltaHistory": [
-        -0.01200000000000001,
         -0.0040000000000000036,
         -0.05399999999999994,
         0.014999999999999902,
@@ -549,14 +569,14 @@
         0,
         -0.0020000000000000018,
         -0.0020000000000000018,
-        -0.008000000000000007
+        -0.008000000000000007,
+        0.05300000000000005
       ]
     },
     "ai_server": {
-      "score": 0.046,
-      "lastUpdated": "2026-07-05T09:09:23.685Z",
+      "score": 0.045,
+      "lastUpdated": "2026-07-05T12:36:58.294Z",
       "deltaHistory": [
-        0.006999999999999999,
         0.0040000000000000036,
         -0.013000000000000005,
         -0.0030000000000000027,
@@ -565,12 +585,13 @@
         0,
         -0.0010000000000000009,
         0.0010000000000000009,
-        0.0049999999999999975
+        0.0049999999999999975,
+        -0.0010000000000000009
       ]
     },
     "defense": {
       "score": 0,
-      "lastUpdated": "2026-07-05T09:09:23.685Z",
+      "lastUpdated": "2026-07-05T12:36:58.294Z",
       "deltaHistory": [
         0,
         0,
@@ -666,11 +687,11 @@
     },
     "packaging": {
       "score": 0,
-      "lastUpdated": "2026-07-05T09:09:23.685Z",
+      "lastUpdated": "2026-07-05T12:36:58.294Z",
       "deltaHistory": [
-        0.0010000000000000009,
         0.0050000000000000044,
         0.104,
+        0,
         0,
         0,
         0,
@@ -730,7 +751,7 @@
     },
     "pcb": {
       "score": 0,
-      "lastUpdated": "2026-07-05T09:09:23.685Z",
+      "lastUpdated": "2026-07-05T12:36:58.294Z",
       "deltaHistory": [
         0,
         0,
