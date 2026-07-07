@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-06T20:43:45.226Z",
+  "updatedAt": "2026-07-07T00:57:40.745Z",
   "posts": [
     {
       "text": "Trump Tariff Tracker – July 2, 2026 (via Passle) - Baker Botts Trump Tariff Tracker – July 2, 2026 (via Passle)  Baker Botts",
@@ -15,6 +15,27 @@
         "ic_design": -0.6,
         "display": -0.5,
         "ev_supply": -0.4
+      },
+      "sentiment": {
+        "compound": -0.7184,
+        "label": "強烈利空"
+      }
+    },
+    {
+      "text": "What the Supreme Court didn’t answer about Trump’s Section 301 tariffs - The Hill What the Supreme Court didn’t answer about Trump’s Section 301 tariffs  The Hill",
+      "timestamp": "2026-07-02T15:30:00.000Z",
+      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOTGJNa2prUXF6aVliMVAyZHZERDFDbW9MU1kyaHZaNlFDUFd2NmxXLVAwQVh3eVVMT3ZrcHFKdk9JMGNwYUo1ZV9YZnZsMFV2N2xfc3pPbm1TQVhIVDVPS2FYRUxSeDVjZUg0aTREazY5VnV3OGJqVFdSazdCWWJPamIyWEVuU2NGU1ZEdFI0MXc3ajlyeFROUNIBngFBVV95cUxPRGlsSkZHRGFaRTE4NEIwcFZKU2MteS1sR0J6ejJYQmVIWHZBaHluTVZpeDBwWjduRnRVSndjYk9GYllhYUplZUNvOEQ4T3duSUFmNTBQOFZLMkVZNU1PUXhXUGI5ekxEVm9NSlJ3Njl6R0RKMzNVMG14Y3R4SkRBaTYtMXk1RFlZay1lMVNsVEtTSEFwMXZhT3RnYkV1dw?oc=5",
+      "keywords": [
+        "tariff",
+        "tariffs"
+      ],
+      "impacts": {
+        "foundry": -1,
+        "shipping": -1,
+        "steel": -1,
+        "ic_design": -1,
+        "display": -1,
+        "ev_supply": -0.8
       },
       "sentiment": {
         "compound": -0.7184,
@@ -67,27 +88,6 @@
       }
     },
     {
-      "text": "What the Supreme Court didn’t answer about Trump’s Section 301 tariffs - The Hill What the Supreme Court didn’t answer about Trump’s Section 301 tariffs  The Hill",
-      "timestamp": "2026-07-02T15:30:00.000Z",
-      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOTGJNa2prUXF6aVliMVAyZHZERDFDbW9MU1kyaHZaNlFDUFd2NmxXLVAwQVh3eVVMT3ZrcHFKdk9JMGNwYUo1ZV9YZnZsMFV2N2xfc3pPbm1TQVhIVDVPS2FYRUxSeDVjZUg0aTREazY5VnV3OGJqVFdSazdCWWJPamIyWEVuU2NGU1ZEdFI0MXc3ajlyeFROUNIBngFBVV95cUxPRGlsSkZHRGFaRTE4NEIwcFZKU2MteS1sR0J6ejJYQmVIWHZBaHluTVZpeDBwWjduRnRVSndjYk9GYllhYUplZUNvOEQ4T3duSUFmNTBQOFZLMkVZNU1PUXhXUGI5ekxEVm9NSlJ3Njl6R0RKMzNVMG14Y3R4SkRBaTYtMXk1RFlZay1lMVNsVEtTSEFwMXZhT3RnYkV1dw?oc=5",
-      "keywords": [
-        "tariff",
-        "tariffs"
-      ],
-      "impacts": {
-        "foundry": -1,
-        "shipping": -1,
-        "steel": -1,
-        "ic_design": -1,
-        "display": -1,
-        "ev_supply": -0.8
-      },
-      "sentiment": {
-        "compound": -0.7184,
-        "label": "強烈利空"
-      }
-    },
-    {
       "text": "China and US Target Tariff Reductions on Agricultural Products - Bloomberg.com China and US Target Tariff Reductions on Agricultural Products  Bloomberg.com",
       "timestamp": "2026-07-02T09:57:24.000Z",
       "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOMzRrZEhjNVNGaEY0U3FiNGVWMVJyUngwZ1VrLVdub1ZXVDJpZURocXhzQ0Y2ellwYUNjR2tqaTFUZ0hseGdqXzc1ZUF5WDBielR6Vk9jcm9udnNKWEdUUHptYXZfaFc4QlRlbzRaLW5DN2J0MGZZVWh3UFE5SDZrdG5OYVN4RXJjRU9KX0EtcS0wb1h2YXAwV1ozRGNISFNaSVJoVExCeF9VMmdPRXRjejZ3cw?oc=5",
@@ -130,23 +130,42 @@
       }
     },
     {
-      "text": "From rules to discretion: How Trump reconfigured US tariff policy - Brookings From rules to discretion: How Trump reconfigured US tariff policy  Brookings",
-      "timestamp": "2026-06-09T15:04:46.000Z",
-      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPanVpQ2p0NFNFcTh0c3JkVGZ3aS10NjFXWjB4ZGZBSDRwNE1qa19SLXAzRDVfZ0xabmNmdUkwb0dSMHA0WFU3ZDhLc0NTS21DVV96a0JDRk9ESUxYWlJwUElPNG5JVUJDV1hBZWpHS3N1c3piNENtRkVCaUI2MHFmeXhyRHJPdzhMci10TVVRSjhDOXoxWEtLUHBzSmFPY0tSMXc?oc=5",
+      "text": "Trump wants to ‘manage’ China trade. Businesses see a tariff opening. - Politico Trump wants to ‘manage’ China trade. Businesses see a tariff opening.  Politico",
+      "timestamp": "2026-05-30T07:00:00.000Z",
+      "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPbGZ0RElvZWg0Y0xtbTNTNXVkS2lrYU5fTG9RY054MVYwOVBwMzVua1dmMjJHQjNwRmVvRUp5WDRiZkhXb0ZfOHV6dzBjSDNXclN3RGNWUjRvRy1PXzhNcndxcHZCNW1TX3UxTHVIRHJHOWJhSzNEV0RvcW91N0xmRVN6VGZOa3l2UkhMNHhKbUI?oc=5",
       "keywords": [
-        "tariff"
+        "tariff",
+        "china"
       ],
       "impacts": {
         "foundry": -0.7,
-        "shipping": -0.5,
+        "shipping": -0.9,
         "steel": -0.5,
-        "ic_design": -0.6,
-        "display": -0.5,
-        "ev_supply": -0.4
+        "ic_design": -1,
+        "display": -0.9,
+        "ev_supply": -0.7
       },
       "sentiment": {
         "compound": -0.7184,
         "label": "強烈利空"
+      }
+    },
+    {
+      "text": "China Just Had Its Best Trade Year in History. | by Vikas | The Geopolitical Economist | Jul, 2026 - Medium China Just Had Its Best Trade Year in History. | by Vikas | The Geopolitical Economist | Jul, 2026  Medium",
+      "timestamp": "2026-07-05T15:28:04.000Z",
+      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOVDlQSEpQdEc5aXFOT1BKYm5nLW5oRVp3MmFhUno2V1Bnci1RVENpT2NfLUc0c0xVbzBWWGM1Qm0zeUZyWjJSamhFRy1XUk5LZHNHem5ZZ3Y3blBkTEVCYUdJNGFqTjBqZmlONE5fREZzZkdDNnFPTUZpaGU1eUxxR1lqbWVueHgzc1FmdkJ2dm94VVBINWF3dmotWnVuV2k1ZkZiM0FqWQ?oc=5",
+      "keywords": [
+        "china"
+      ],
+      "impacts": {
+        "ic_design": -0.5,
+        "shipping": -0.4,
+        "display": -0.4,
+        "ev_supply": -0.3
+      },
+      "sentiment": {
+        "compound": 0.6124,
+        "label": "強烈利多"
       }
     },
     {
@@ -170,20 +189,19 @@
       }
     },
     {
-      "text": "Trump wants to ‘manage’ China trade. Businesses see a tariff opening. - Politico Trump wants to ‘manage’ China trade. Businesses see a tariff opening.  Politico",
-      "timestamp": "2026-05-30T07:00:00.000Z",
-      "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPbGZ0RElvZWg0Y0xtbTNTNXVkS2lrYU5fTG9RY054MVYwOVBwMzVua1dmMjJHQjNwRmVvRUp5WDRiZkhXb0ZfOHV6dzBjSDNXclN3RGNWUjRvRy1PXzhNcndxcHZCNW1TX3UxTHVIRHJHOWJhSzNEV0RvcW91N0xmRVN6VGZOa3l2UkhMNHhKbUI?oc=5",
+      "text": "From rules to discretion: How Trump reconfigured US tariff policy - Brookings From rules to discretion: How Trump reconfigured US tariff policy  Brookings",
+      "timestamp": "2026-06-09T15:04:46.000Z",
+      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPanVpQ2p0NFNFcTh0c3JkVGZ3aS10NjFXWjB4ZGZBSDRwNE1qa19SLXAzRDVfZ0xabmNmdUkwb0dSMHA0WFU3ZDhLc0NTS21DVV96a0JDRk9ESUxYWlJwUElPNG5JVUJDV1hBZWpHS3N1c3piNENtRkVCaUI2MHFmeXhyRHJPdzhMci10TVVRSjhDOXoxWEtLUHBzSmFPY0tSMXc?oc=5",
       "keywords": [
-        "tariff",
-        "china"
+        "tariff"
       ],
       "impacts": {
         "foundry": -0.7,
-        "shipping": -0.9,
+        "shipping": -0.5,
         "steel": -0.5,
-        "ic_design": -1,
-        "display": -0.9,
-        "ev_supply": -0.7
+        "ic_design": -0.6,
+        "display": -0.5,
+        "ev_supply": -0.4
       },
       "sentiment": {
         "compound": -0.7184,
@@ -215,27 +233,6 @@
       "text": "China warns Trump’s latest tariff moves could damage trade ties - AP News China warns Trump’s latest tariff moves could damage trade ties  AP News",
       "timestamp": "2026-03-16T07:00:00.000Z",
       "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOMlRvSmdFeGxqMHZLY2NyZjI0cWc1UlEyTUNaRTR4WjlBWC1nVnNTRXVpQjhJWE9aWDUtWlUzTDZKMnp3WlZoOHByNmoycFczbldhWlFHNmp3S1VwNW9NN0EyeTRSQzliZkVuVjBleVhIUlc1dXNYanlCVHRMcTRpSE16dngzeWdPenpGeUk4T29Ma1JJaFpR?oc=5",
-      "keywords": [
-        "tariff",
-        "china"
-      ],
-      "impacts": {
-        "foundry": -0.7,
-        "shipping": -0.9,
-        "steel": -0.5,
-        "ic_design": -1,
-        "display": -0.9,
-        "ev_supply": -0.7
-      },
-      "sentiment": {
-        "compound": -0.7184,
-        "label": "強烈利空"
-      }
-    },
-    {
-      "text": "Trump’s Latest Tariff Setback Looms Over China Talks - The New York Times Trump’s Latest Tariff Setback Looms Over China Talks  The New York Times",
-      "timestamp": "2026-05-08T07:00:00.000Z",
-      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1xZk53NFUybTdOUDA2T0lCUUZ4bi10M3hja1N4MW9tYVgzc2dOUkdEa1dRUTc2MjNSVGpMWWF5aUd4SVJlS3p4NUIxcDJ6ODF3VEdGQk5lckpMbFl0QzFPQ2I4R3FFX09HbHV0TTJSMVpoTjd0VlVEdVBLYnBfZzQ?oc=5",
       "keywords": [
         "tariff",
         "china"
@@ -420,10 +417,9 @@
   ],
   "sectorState": {
     "foundry": {
-      "score": -0.894,
-      "lastUpdated": "2026-07-06T20:43:45.226Z",
+      "score": -0.875,
+      "lastUpdated": "2026-07-07T00:57:40.745Z",
       "deltaHistory": [
-        -0.051000000000000045,
         0.07499999999999996,
         0.0010000000000000009,
         0.007000000000000006,
@@ -432,14 +428,14 @@
         -0.03200000000000003,
         0.008000000000000007,
         -0.026000000000000023,
-        -0.025000000000000022
+        -0.025000000000000022,
+        0.019000000000000017
       ]
     },
     "shipping": {
-      "score": -0.925,
-      "lastUpdated": "2026-07-06T20:43:45.226Z",
+      "score": -0.927,
+      "lastUpdated": "2026-07-07T00:57:40.745Z",
       "deltaHistory": [
-        -0.01200000000000001,
         -0.02200000000000002,
         0,
         0.0020000000000000018,
@@ -448,14 +444,14 @@
         -0.0010000000000000009,
         0.006000000000000005,
         -0.010000000000000009,
-        -0.0040000000000000036
+        -0.0040000000000000036,
+        -0.0020000000000000018
       ]
     },
     "steel": {
-      "score": -0.73,
-      "lastUpdated": "2026-07-06T20:43:45.226Z",
+      "score": -0.724,
+      "lastUpdated": "2026-07-07T00:57:40.745Z",
       "deltaHistory": [
-        -0.05300000000000005,
         0.05800000000000005,
         0.0010000000000000009,
         0.006000000000000005,
@@ -464,12 +460,13 @@
         -0.02399999999999991,
         0.02399999999999991,
         -0.04499999999999993,
-        -0.017000000000000015
+        -0.017000000000000015,
+        0.006000000000000005
       ]
     },
     "ic_design": {
       "score": -1,
-      "lastUpdated": "2026-07-06T20:43:45.226Z",
+      "lastUpdated": "2026-07-07T00:57:40.745Z",
       "deltaHistory": [
         0,
         0,
@@ -484,10 +481,9 @@
       ]
     },
     "display": {
-      "score": -0.9,
-      "lastUpdated": "2026-07-06T20:43:45.226Z",
+      "score": -0.903,
+      "lastUpdated": "2026-07-07T00:57:40.745Z",
       "deltaHistory": [
-        -0.007999999999999896,
         0.029999999999999916,
         0,
         0,
@@ -496,14 +492,14 @@
         -0.006000000000000005,
         0.009000000000000008,
         -0.01200000000000001,
+        -0.0030000000000000027,
         -0.0030000000000000027
       ]
     },
     "ev_supply": {
-      "score": -0.717,
-      "lastUpdated": "2026-07-06T20:43:45.226Z",
+      "score": -0.719,
+      "lastUpdated": "2026-07-07T00:57:40.745Z",
       "deltaHistory": [
-        -0.008000000000000007,
         0.05300000000000005,
         0,
         -0.0010000000000000009,
@@ -512,14 +508,14 @@
         -0.006000000000000005,
         0.007000000000000006,
         -0.01100000000000001,
-        -0.0030000000000000027
+        -0.0030000000000000027,
+        -0.0020000000000000018
       ]
     },
     "ai_server": {
-      "score": 0.097,
-      "lastUpdated": "2026-07-06T20:43:45.226Z",
+      "score": 0.084,
+      "lastUpdated": "2026-07-07T00:57:40.745Z",
       "deltaHistory": [
-        0.0049999999999999975,
         -0.0010000000000000009,
         0,
         0,
@@ -528,12 +524,13 @@
         -0.027999999999999997,
         0.0010000000000000009,
         -0.0020000000000000018,
-        -0.0020000000000000018
+        -0.0020000000000000018,
+        -0.012999999999999998
       ]
     },
     "defense": {
       "score": 0,
-      "lastUpdated": "2026-07-06T20:43:45.226Z",
+      "lastUpdated": "2026-07-07T00:57:40.745Z",
       "deltaHistory": [
         0,
         0,
@@ -629,7 +626,7 @@
     },
     "packaging": {
       "score": 0,
-      "lastUpdated": "2026-07-06T20:43:45.226Z",
+      "lastUpdated": "2026-07-07T00:57:40.745Z",
       "deltaHistory": [
         0,
         0,
@@ -693,7 +690,7 @@
     },
     "pcb": {
       "score": 0,
-      "lastUpdated": "2026-07-06T20:43:45.226Z",
+      "lastUpdated": "2026-07-07T00:57:40.745Z",
       "deltaHistory": [
         0,
         0,
