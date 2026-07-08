@@ -1,10 +1,51 @@
 {
-  "updatedAt": "2026-07-08T16:36:43.056Z",
+  "updatedAt": "2026-07-08T20:33:58.489Z",
   "posts": [
+    {
+      "text": "Asian nations are building new trading zones to deflect the Trump tariff impact - American Journal of Transportation Asian nations are building new trading zones to deflect the Trump tariff impact  American Journal of Transportation",
+      "timestamp": "2026-07-08T17:04:00.000Z",
+      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQbmpiQ3ZOSi1UQV80akFxY2JUTVRWSi1EVENKQ2QxSy16ZDU5bzNqZWJ5VWNXa3pYV0V6Q0RfRGRGZTI3RE5yRE9udjh3cjAtLU1EdENEOGwwNGRHQmFpZWVDa0VGbnpBX1ozbWt1WmpOUTFEVnF5elRqRHQ0bHYtTnFoTy1iLUR5ZXN4dVdSenItQ2xlOTc4WEd5WUo0aE5OamVsdWJIcWZSOW5UamRvODlUSElNZjNj?oc=5",
+      "keywords": [
+        "tariff",
+        "port"
+      ],
+      "impacts": {
+        "foundry": -0.7,
+        "shipping": -0.8,
+        "steel": -0.5,
+        "ic_design": -0.6,
+        "display": -0.5,
+        "ev_supply": -0.4
+      },
+      "sentiment": {
+        "compound": -0.7184,
+        "label": "強烈利空"
+      }
+    },
     {
       "text": "Trump Administration Tariff Tracker - Wiley Rein Trump Administration Tariff Tracker  Wiley Rein",
       "timestamp": "2026-07-02T16:30:00.000Z",
       "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBmOHhPR2NIU2JYTmJnT251UXkyUlNwTFNqWlJtZjFadl84QWdGazFTOExtMk1GQzV4dzVMbTFJbWlzalZUZW9ZT0V5VGZ2YXBib1pJcEpIak9fd1dIaFp1WDNtWTJ6NnNx?oc=5",
+      "keywords": [
+        "tariff"
+      ],
+      "impacts": {
+        "foundry": -0.7,
+        "shipping": -0.5,
+        "steel": -0.5,
+        "ic_design": -0.6,
+        "display": -0.5,
+        "ev_supply": -0.4
+      },
+      "sentiment": {
+        "compound": -0.7184,
+        "label": "強烈利空"
+      }
+    },
+    {
+      "text": "How Trump is relaunching a tariff war citing ‘forced labour’ concerns - Al Jazeera How Trump is relaunching a tariff war citing ‘forced labour’ concerns  Al Jazeera",
+      "timestamp": "2026-06-15T07:00:00.000Z",
+      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPeHpSUExhLUk3WUUzWEo2N29vckJ4ZXppTHVwMkw0RVlCMll0N0hmOXpQNTNPeENYZ2hTMFV3aERBNFM4ZVZLRlpERjVyXzY5NHVKZXdLZWxuQ0c4S0Y1ZHR1XzBmSVZkOGRRYzRXQTh1R0llejEybGNObkNWVV9tdlhibk50WEkycVFOT0hsTkE2dHdiVllWaWtqTjhHYy1xLWNqVDV5NWV4b2c10gGyAUFVX3lxTE1YSXZBVC04VUU3NVlRRjNfOVhtNlhFb3ZZcUFIUFdXVkx1bkd1MDdXV2IxOHFNamhjUTlPUk1zTU5pamdYakhWbFM0cDJCbjhseG53SFQwbTNnV3huZTZOOHJJYjYwWW9EN2FUZk9HTjQ1dk5fNGxWZXFFNGVHaVFxNEZRb3NXRHB6V2hpSEU4c3kxbm9oNDkzdWdEYnE4bmlpZkNrWDNfQXoyVFpBTlhVV1E?oc=5",
       "keywords": [
         "tariff"
       ],
@@ -36,26 +77,6 @@
         "ic_design": -1,
         "display": -0.9,
         "ev_supply": -0.7
-      },
-      "sentiment": {
-        "compound": -0.7184,
-        "label": "強烈利空"
-      }
-    },
-    {
-      "text": "How Trump is relaunching a tariff war citing ‘forced labour’ concerns - Al Jazeera How Trump is relaunching a tariff war citing ‘forced labour’ concerns  Al Jazeera",
-      "timestamp": "2026-06-15T07:00:00.000Z",
-      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPeHpSUExhLUk3WUUzWEo2N29vckJ4ZXppTHVwMkw0RVlCMll0N0hmOXpQNTNPeENYZ2hTMFV3aERBNFM4ZVZLRlpERjVyXzY5NHVKZXdLZWxuQ0c4S0Y1ZHR1XzBmSVZkOGRRYzRXQTh1R0llejEybGNObkNWVV9tdlhibk50WEkycVFOT0hsTkE2dHdiVllWaWtqTjhHYy1xLWNqVDV5NWV4b2c10gGyAUFVX3lxTE1YSXZBVC04VUU3NVlRRjNfOVhtNlhFb3ZZcUFIUFdXVkx1bkd1MDdXV2IxOHFNamhjUTlPUk1zTU5pamdYakhWbFM0cDJCbjhseG53SFQwbTNnV3huZTZOOHJJYjYwWW9EN2FUZk9HTjQ1dk5fNGxWZXFFNGVHaVFxNEZRb3NXRHB6V2hpSEU4c3kxbm9oNDkzdWdEYnE4bmlpZkNrWDNfQXoyVFpBTlhVV1E?oc=5",
-      "keywords": [
-        "tariff"
-      ],
-      "impacts": {
-        "foundry": -0.7,
-        "shipping": -0.5,
-        "steel": -0.5,
-        "ic_design": -0.6,
-        "display": -0.5,
-        "ev_supply": -0.4
       },
       "sentiment": {
         "compound": -0.7184,
@@ -350,27 +371,6 @@
       }
     },
     {
-      "text": "US-China Tariff Rates - What Are They Now? - China Briefing US-China Tariff Rates - What Are They Now?  China Briefing",
-      "timestamp": "2026-06-03T07:00:00.000Z",
-      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTFA3STlnT1E2aUIyX2JpeEFudzFKY290X0lPMU9lUDBwMTRXQ18yOVk0d1pYckszbGJ3MDVkakVBNHFFdW94N25jcUM3SHZRNnJBbHdkUWF4Q3BMQWFOb2s3dVpFaEgwSzd4MzhTYnlWRmI?oc=5",
-      "keywords": [
-        "tariff",
-        "china"
-      ],
-      "impacts": {
-        "foundry": -0.7,
-        "shipping": -0.9,
-        "steel": -0.5,
-        "ic_design": -1,
-        "display": -0.9,
-        "ev_supply": -0.7
-      },
-      "sentiment": {
-        "compound": -0.7184,
-        "label": "強烈利空"
-      }
-    },
-    {
       "text": "China opens investigations into US trade practices in response to Trump tariff moves - AP News China opens investigations into US trade practices in response to Trump tariff moves  AP News",
       "timestamp": "2026-03-27T07:00:00.000Z",
       "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQVGJGQkxHNlhfckEwNnZ2ZU5qQ3pYSW9UWms0Y1M0cjh1c0xGRW5TY19YTUtKTVRoZnlRUVQ0YmgwdFpValp2YjAzcEVMOTZIYkgzaHBGUk1aVWNmaTFTVExlZXUtb3BRRkJzZjJ1MXBGZTBXel96UnhzLWppTjVwc0xndHJ5RTljaXNaeUF1X1NuYmVGLW9qWW1DSklrWE1kZVBN?oc=5",
@@ -420,86 +420,94 @@
   ],
   "sectorState": {
     "foundry": {
-      "score": -0.969,
-      "lastUpdated": "2026-07-08T16:36:43.056Z",
+      "score": -1,
+      "lastUpdated": "2026-07-08T20:33:58.489Z",
       "deltaHistory": [
         -0.991,
         0.051000000000000045,
         -0.04600000000000004,
         0.02300000000000002,
-        -0.006000000000000005
+        -0.006000000000000005,
+        -0.031000000000000028
       ]
     },
     "shipping": {
-      "score": -0.906,
-      "lastUpdated": "2026-07-08T16:36:43.056Z",
+      "score": -0.955,
+      "lastUpdated": "2026-07-08T20:33:58.489Z",
       "deltaHistory": [
         -0.912,
         0.03600000000000003,
         -0.03500000000000003,
         0.009000000000000008,
-        -0.0040000000000000036
+        -0.0040000000000000036,
+        -0.04899999999999993
       ]
     },
     "steel": {
-      "score": -0.719,
-      "lastUpdated": "2026-07-08T16:36:43.056Z",
+      "score": -0.738,
+      "lastUpdated": "2026-07-08T20:33:58.489Z",
       "deltaHistory": [
         -0.752,
         0.04300000000000004,
         -0.03700000000000003,
         0.05400000000000005,
-        -0.027000000000000024
+        -0.027000000000000024,
+        -0.019000000000000017
       ]
     },
     "ic_design": {
-      "score": -1,
-      "lastUpdated": "2026-07-08T16:36:43.056Z",
+      "score": -0.998,
+      "lastUpdated": "2026-07-08T20:33:58.489Z",
       "deltaHistory": [
         -1,
         0,
         0,
         0,
-        0
+        0,
+        0.0020000000000000018
       ]
     },
     "display": {
-      "score": -0.875,
-      "lastUpdated": "2026-07-08T16:36:43.056Z",
+      "score": -0.866,
+      "lastUpdated": "2026-07-08T20:33:58.489Z",
       "deltaHistory": [
         -0.88,
         -0.010000000000000009,
         0.010000000000000009,
         0.016000000000000014,
-        -0.01100000000000001
+        -0.01100000000000001,
+        0.009000000000000008
       ]
     },
     "ev_supply": {
-      "score": -0.694,
-      "lastUpdated": "2026-07-08T16:36:43.056Z",
+      "score": -0.688,
+      "lastUpdated": "2026-07-08T20:33:58.489Z",
       "deltaHistory": [
         -0.699,
         -0.03400000000000003,
         0.03400000000000003,
         0.013999999999999901,
-        -0.008999999999999897
+        -0.008999999999999897,
+        0.006000000000000005
       ]
     },
     "ai_server": {
-      "score": 0.013,
-      "lastUpdated": "2026-07-08T16:36:43.056Z",
+      "score": 0.011,
+      "lastUpdated": "2026-07-08T20:33:58.489Z",
       "deltaHistory": [
         0.013,
         0.015000000000000001,
         -0.015000000000000001,
         0.002,
+        -0.002,
         -0.002
       ]
     },
     "pcb": {
       "score": 0,
-      "lastUpdated": "2026-07-08T16:36:43.056Z",
+      "lastUpdated": "2026-07-08T20:33:58.489Z",
       "deltaHistory": [
+        0,
         0,
         0,
         0,
@@ -509,22 +517,24 @@
     },
     "defense": {
       "score": 0,
-      "lastUpdated": "2026-07-08T16:36:43.056Z",
+      "lastUpdated": "2026-07-08T20:33:58.489Z",
       "deltaHistory": [
         0,
         0.001,
         -0.001,
+        0,
         0,
         0
       ]
     },
     "packaging": {
       "score": 0,
-      "lastUpdated": "2026-07-08T16:36:43.056Z",
+      "lastUpdated": "2026-07-08T20:33:58.489Z",
       "deltaHistory": [
         0,
         -0.005,
         0.005,
+        0,
         0,
         0
       ]
