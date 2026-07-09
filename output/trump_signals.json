@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-08T20:33:58.489Z",
+  "updatedAt": "2026-07-09T00:54:00.257Z",
   "posts": [
     {
       "text": "Asian nations are building new trading zones to deflect the Trump tariff impact - American Journal of Transportation Asian nations are building new trading zones to deflect the Trump tariff impact  American Journal of Transportation",
@@ -117,27 +117,6 @@
         "ic_design": -0.6,
         "display": -0.5,
         "ev_supply": -0.4
-      },
-      "sentiment": {
-        "compound": -0.7184,
-        "label": "強烈利空"
-      }
-    },
-    {
-      "text": "U.S. says it plans extra tariffs of 10% or more for most trading partners after forced labor probe - PBS U.S. says it plans extra tariffs of 10% or more for most trading partners after forced labor probe  PBS",
-      "timestamp": "2026-06-03T07:00:00.000Z",
-      "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNYmVrSUEwV3c4b3FFaFZSREVvbkxudXlKbVFrMXNjcVZJaWxxbEgya2VOQ1ppV3NVd2hnRVZ0MmV1OGw4OTFOUjNxM1diekR0QWEteUFadTUwOWN1XzlxRUxySzhBWTFZd284VWw0b29ReDF1WjNSU2ZpaHBYbWNvd19CSl9VNDBPY1Bjcnl1clMtdVUyRjNXa1d6SVJWZmdFUlY1NExfSXhqQ1hzMFZOWU5udTRxZ2tleHpfS0lGMlZWRXFhbDgtR3RxclVld9IB0wFBVV95cUxNQjZEQ2FTdVBzU2NNZVBaSHROZ2lOdnN1Y1Q1bHlFQUNhdDI1aTBzcFVpUmUwT3J6XzdxdDh1WmpxV1JaUndWcGxGeTJReWZQaGEwUy0wcTBpb2t1NXdzMnZKbDEwcUFfODNnaTZkdGR1aDJaTzFwcUhlbVVBOS1tLVY3ZnE3ZWlfY1E0X2kyenQ3aDVlZmR5QVV2WVVXSzZ5TkhHM2szejRKS1c2eW12WnNkdE1rNFdVUG1rbWlxQlMtRTY2dTlhdmxoTjhaMW5Eamdn?oc=5",
-      "keywords": [
-        "tariff",
-        "tariffs"
-      ],
-      "impacts": {
-        "foundry": -1,
-        "shipping": -1,
-        "steel": -1,
-        "ic_design": -1,
-        "display": -1,
-        "ev_supply": -0.8
       },
       "sentiment": {
         "compound": -0.7184,
@@ -410,6 +389,27 @@
         "compound": -0.7184,
         "label": "強烈利空"
       }
+    },
+    {
+      "text": "Trump administration seeks new path forward with tariffs after first attempt hit legal roadblocks - AP News Trump administration seeks new path forward with tariffs after first attempt hit legal roadblocks  AP News",
+      "timestamp": "2026-06-03T07:00:00.000Z",
+      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNR3FZVThJWnRyOURYSHREeVZON2NOYWs1ZXNObEJQMzM3VkZUNi1TcmM3UDFtemF0Z0dBTFc1MnZXVkFncU1uOGRTeFQtY09DYjc1aXVBVTBHUlc5d0E5clpnSnFOR01qMlZDZFF0MzlPRjQwNFUxWmNKZmx3bUZFQ1duMTdfV2s4a3Bha2JROGljTDVC?oc=5",
+      "keywords": [
+        "tariff",
+        "tariffs"
+      ],
+      "impacts": {
+        "foundry": -1,
+        "shipping": -1,
+        "steel": -1,
+        "ic_design": -1,
+        "display": -1,
+        "ev_supply": -0.8
+      },
+      "sentiment": {
+        "compound": -0.7184,
+        "label": "強烈利空"
+      }
     }
   ],
   "deltas": [],
@@ -420,93 +420,101 @@
   ],
   "sectorState": {
     "foundry": {
-      "score": -1,
-      "lastUpdated": "2026-07-08T20:33:58.489Z",
+      "score": -0.998,
+      "lastUpdated": "2026-07-09T00:54:00.257Z",
       "deltaHistory": [
         -0.991,
         0.051000000000000045,
         -0.04600000000000004,
         0.02300000000000002,
         -0.006000000000000005,
-        -0.031000000000000028
+        -0.031000000000000028,
+        0.0020000000000000018
       ]
     },
     "shipping": {
-      "score": -0.955,
-      "lastUpdated": "2026-07-08T20:33:58.489Z",
+      "score": -0.954,
+      "lastUpdated": "2026-07-09T00:54:00.257Z",
       "deltaHistory": [
         -0.912,
         0.03600000000000003,
         -0.03500000000000003,
         0.009000000000000008,
         -0.0040000000000000036,
-        -0.04899999999999993
+        -0.04899999999999993,
+        0.0010000000000000009
       ]
     },
     "steel": {
-      "score": -0.738,
-      "lastUpdated": "2026-07-08T20:33:58.489Z",
+      "score": -0.717,
+      "lastUpdated": "2026-07-09T00:54:00.257Z",
       "deltaHistory": [
         -0.752,
         0.04300000000000004,
         -0.03700000000000003,
         0.05400000000000005,
         -0.027000000000000024,
-        -0.019000000000000017
+        -0.019000000000000017,
+        0.02100000000000002
       ]
     },
     "ic_design": {
-      "score": -0.998,
-      "lastUpdated": "2026-07-08T20:33:58.489Z",
+      "score": -1,
+      "lastUpdated": "2026-07-09T00:54:00.257Z",
       "deltaHistory": [
         -1,
         0,
         0,
         0,
         0,
-        0.0020000000000000018
+        0.0020000000000000018,
+        -0.0020000000000000018
       ]
     },
     "display": {
-      "score": -0.866,
-      "lastUpdated": "2026-07-08T20:33:58.489Z",
+      "score": -0.859,
+      "lastUpdated": "2026-07-09T00:54:00.257Z",
       "deltaHistory": [
         -0.88,
         -0.010000000000000009,
         0.010000000000000009,
         0.016000000000000014,
         -0.01100000000000001,
-        0.009000000000000008
+        0.009000000000000008,
+        0.007000000000000006
       ]
     },
     "ev_supply": {
-      "score": -0.688,
-      "lastUpdated": "2026-07-08T20:33:58.489Z",
+      "score": -0.682,
+      "lastUpdated": "2026-07-09T00:54:00.257Z",
       "deltaHistory": [
         -0.699,
         -0.03400000000000003,
         0.03400000000000003,
         0.013999999999999901,
         -0.008999999999999897,
-        0.006000000000000005
+        0.006000000000000005,
+        0.005999999999999894
       ]
     },
     "ai_server": {
-      "score": 0.011,
-      "lastUpdated": "2026-07-08T20:33:58.489Z",
+      "score": 0.013,
+      "lastUpdated": "2026-07-09T00:54:00.257Z",
       "deltaHistory": [
         0.013,
         0.015000000000000001,
         -0.015000000000000001,
         0.002,
         -0.002,
-        -0.002
+        -0.002,
+        0.002
       ]
     },
     "pcb": {
       "score": 0,
-      "lastUpdated": "2026-07-08T20:33:58.489Z",
+      "lastUpdated": "2026-07-09T00:54:00.257Z",
       "deltaHistory": [
+        0,
         0,
         0,
         0,
@@ -517,11 +525,12 @@
     },
     "defense": {
       "score": 0,
-      "lastUpdated": "2026-07-08T20:33:58.489Z",
+      "lastUpdated": "2026-07-09T00:54:00.257Z",
       "deltaHistory": [
         0,
         0.001,
         -0.001,
+        0,
         0,
         0,
         0
@@ -529,11 +538,12 @@
     },
     "packaging": {
       "score": 0,
-      "lastUpdated": "2026-07-08T20:33:58.489Z",
+      "lastUpdated": "2026-07-09T00:54:00.257Z",
       "deltaHistory": [
         0,
         -0.005,
         0.005,
+        0,
         0,
         0,
         0
