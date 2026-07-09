@@ -1,6 +1,28 @@
 {
-  "updatedAt": "2026-07-09T00:54:00.257Z",
+  "updatedAt": "2026-07-09T05:25:48.922Z",
   "posts": [
+    {
+      "text": "A year into Trump’s tariffs, Brazil trades less with US and more with China - South China Morning Post A year into Trump’s tariffs, Brazil trades less with US and more with China  South China Morning Post",
+      "timestamp": "2026-07-08T22:17:55.000Z",
+      "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxPNUtZa0F2d21WYjY5M1pZWVdTSWs4a2hHS0hxeEwyWWFtZ21IenZDYWhucEIyM2FGdDA5NFJGdGh6WnNLQ2t0RnVMdlVaZUl5SEpIOHZJNXpUUEtJQnpISTRZVER4WGh4NE5WclpSOW1mVWlDdGUzMDYxRTUtU2IyVEhrYUJ4QmxIZDBvb2hVS3ZaRFlzMmVmd1F1SjlmbGlCWUliNmZhN0xEMjh3NmZ0TGVrN1ZKaW1QY282TWRDQ1BJOGVZVUZTNVdLTDBYUlpV0gHQAUFVX3lxTE5MeWtIcXZKcjZyOWVSNHV1c0NreTA2MHI2TFFxeThrenpGTDJiU3hnSDdZQ3h4ZkRwRk1oOFJrRjRISzhiRXBOdmF1ZHdQejN0RGRCbHNWbVdlMWRBbW5CZ1pjQU83Y2RlNzg2RjNlNHltNTk4N3pvbXM1dTZWdTc5SUFXRVZKRmFWRmxvTUt1dTZ3NEZVU1ZHTE5kMFhtZG51T1hEM0FsRVVPS3E3bktYMC1SV0h3UjU5amt4R1NjZWV0Q1dPNWdmRzJLdHJrSWY?oc=5",
+      "keywords": [
+        "tariff",
+        "tariffs",
+        "china"
+      ],
+      "impacts": {
+        "foundry": -1,
+        "shipping": -1,
+        "steel": -1,
+        "ic_design": -1,
+        "display": -1,
+        "ev_supply": -1
+      },
+      "sentiment": {
+        "compound": -0.7184,
+        "label": "強烈利空"
+      }
+    },
     {
       "text": "Asian nations are building new trading zones to deflect the Trump tariff impact - American Journal of Transportation Asian nations are building new trading zones to deflect the Trump tariff impact  American Journal of Transportation",
       "timestamp": "2026-07-08T17:04:00.000Z",
@@ -104,6 +126,26 @@
       }
     },
     {
+      "text": "US Forced Labour Hearings: Trump's next tariff threat looms over 60 countries, including India - The Economic Times US Forced Labour Hearings: Trump's next tariff threat looms over 60 countries, including India  The Economic Times",
+      "timestamp": "2026-07-07T09:05:02.000Z",
+      "url": "https://news.google.com/rss/articles/CBMiowJBVV95cUxPaHl5TzRqVnBlMHp6YnRqNmhoeUdSX0tVTUNjbmllbDJUNDVfN0lvNGd2cFR6M3E3WGFYdTExcDJ1SHlPTk1UWDY2NXhjck9TdjBsUEJjTEUtbU92Qzd2VE5Wb21ORGZFbDhGNVd1RGY3OXFlcFV6VkJLREFXMExwRUZtSWpRWWdyVnN2RFJLa0hPOFFKdlhwZWtPU2IzMGo0Qmg1TF96WXFVMWVka1lzMDJOM2FYOG9GUzA3M2lhaEJzcURTU1QxeVpNU0FTYnZEenB6eS1uYnhhLWZMNnZLZ1JYQ3JQc1o1aWd6OU92RWJaSzFXWGlKZVpqcS1fV193XzhKMWxRa1JmZmotdkZkdmduS0YybjZZb2FCUkhzeVNBeG_SAagCQVVfeXFMUG40XzBRekZwcFZZaHhnNl9pajJoR19ORXlhYnpyallaR3gyRGVtLUNpdFlGMTc4NWhnZlF2MWV2NmVzQk9zVTNiSWNjZV82RllMVEk1STUxZVYyTm1rM09WNFRFZV9IV0lkTjZSWVFRUGxvVWs2WG5uMW1LTjBjeUpFc0ZVSlZXb3lTNVo0TGZEaEttOVpxMGxYYnI0MEZaWmVpYUxvZFdVRWNCX2RQaGxTUnlNelF2dGN6RHozMUtxTWN1X2dxcGltRExsd0EtLXdkOVY5U3E3bHVsRVB6MkRBZDF0eVN6LTZ5QUZGOE16U0I2NFRyeFg0Sy1pSTdlS0Q3MlpHTjllS2JKeVlNZ1BibkpFRi1sU25mMG02VkttTVh5OUZyWEM?oc=5",
+      "keywords": [
+        "tariff"
+      ],
+      "impacts": {
+        "foundry": -0.7,
+        "shipping": -0.5,
+        "steel": -0.5,
+        "ic_design": -0.6,
+        "display": -0.5,
+        "ev_supply": -0.4
+      },
+      "sentiment": {
+        "compound": -0.9001,
+        "label": "強烈利空"
+      }
+    },
+    {
       "text": "From rules to discretion: How Trump reconfigured US tariff policy - Brookings From rules to discretion: How Trump reconfigured US tariff policy  Brookings",
       "timestamp": "2026-06-09T15:04:46.000Z",
       "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPanVpQ2p0NFNFcTh0c3JkVGZ3aS10NjFXWjB4ZGZBSDRwNE1qa19SLXAzRDVfZ0xabmNmdUkwb0dSMHA0WFU3ZDhLc0NTS21DVV96a0JDRk9ESUxYWlJwUElPNG5JVUJDV1hBZWpHS3N1c3piNENtRkVCaUI2MHFmeXhyRHJPdzhMci10TVVRSjhDOXoxWEtLUHBzSmFPY0tSMXc?oc=5",
@@ -141,26 +183,6 @@
       },
       "sentiment": {
         "compound": -0.7184,
-        "label": "強烈利空"
-      }
-    },
-    {
-      "text": "US Forced Labour Hearings: Trump's next tariff threat looms over 60 countries, including India - The Economic Times US Forced Labour Hearings: Trump's next tariff threat looms over 60 countries, including India  The Economic Times",
-      "timestamp": "2026-07-07T09:05:02.000Z",
-      "url": "https://news.google.com/rss/articles/CBMiowJBVV95cUxPaHl5TzRqVnBlMHp6YnRqNmhoeUdSX0tVTUNjbmllbDJUNDVfN0lvNGd2cFR6M3E3WGFYdTExcDJ1SHlPTk1UWDY2NXhjck9TdjBsUEJjTEUtbU92Qzd2VE5Wb21ORGZFbDhGNVd1RGY3OXFlcFV6VkJLREFXMExwRUZtSWpRWWdyVnN2RFJLa0hPOFFKdlhwZWtPU2IzMGo0Qmg1TF96WXFVMWVka1lzMDJOM2FYOG9GUzA3M2lhaEJzcURTU1QxeVpNU0FTYnZEenB6eS1uYnhhLWZMNnZLZ1JYQ3JQc1o1aWd6OU92RWJaSzFXWGlKZVpqcS1fV193XzhKMWxRa1JmZmotdkZkdmduS0YybjZZb2FCUkhzeVNBeG_SAagCQVVfeXFMUG40XzBRekZwcFZZaHhnNl9pajJoR19ORXlhYnpyallaR3gyRGVtLUNpdFlGMTc4NWhnZlF2MWV2NmVzQk9zVTNiSWNjZV82RllMVEk1STUxZVYyTm1rM09WNFRFZV9IV0lkTjZSWVFRUGxvVWs2WG5uMW1LTjBjeUpFc0ZVSlZXb3lTNVo0TGZEaEttOVpxMGxYYnI0MEZaWmVpYUxvZFdVRWNCX2RQaGxTUnlNelF2dGN6RHozMUtxTWN1X2dxcGltRExsd0EtLXdkOVY5U3E3bHVsRVB6MkRBZDF0eVN6LTZ5QUZGOE16U0I2NFRyeFg0Sy1pSTdlS0Q3MlpHTjllS2JKeVlNZ1BibkpFRi1sU25mMG02VkttTVh5OUZyWEM?oc=5",
-      "keywords": [
-        "tariff"
-      ],
-      "impacts": {
-        "foundry": -0.7,
-        "shipping": -0.5,
-        "steel": -0.5,
-        "ic_design": -0.6,
-        "display": -0.5,
-        "ev_supply": -0.4
-      },
-      "sentiment": {
-        "compound": -0.9001,
         "label": "強烈利空"
       }
     },
@@ -371,26 +393,6 @@
       }
     },
     {
-      "text": "Trump Tariff Tracker – April 27, 2026 (via Passle) - Baker Botts Trump Tariff Tracker – April 27, 2026 (via Passle)  Baker Botts",
-      "timestamp": "2026-04-27T07:00:00.000Z",
-      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPRGh3S1ZLZVhaUFBZWUhwRFFFcUY4b2piV3ZmdHExYUJVQ05KYVBhTHhlTzBvRzJGX1VPMGYyOUVUdlJ4bVBrbzkxZlNzc1FrakZFc0R5RmNaMzJGcEV0U29oUG1mcHJnNWpocTgzdDltUmFRLVB4ZEw1NlJ1eVV2RFRzMzA?oc=5",
-      "keywords": [
-        "tariff"
-      ],
-      "impacts": {
-        "foundry": -0.7,
-        "shipping": -0.5,
-        "steel": -0.5,
-        "ic_design": -0.6,
-        "display": -0.5,
-        "ev_supply": -0.4
-      },
-      "sentiment": {
-        "compound": -0.7184,
-        "label": "強烈利空"
-      }
-    },
-    {
       "text": "Trump administration seeks new path forward with tariffs after first attempt hit legal roadblocks - AP News Trump administration seeks new path forward with tariffs after first attempt hit legal roadblocks  AP News",
       "timestamp": "2026-06-03T07:00:00.000Z",
       "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNR3FZVThJWnRyOURYSHREeVZON2NOYWs1ZXNObEJQMzM3VkZUNi1TcmM3UDFtemF0Z0dBTFc1MnZXVkFncU1uOGRTeFQtY09DYjc1aXVBVTBHUlc5d0E5clpnSnFOR01qMlZDZFF0MzlPRjQwNFUxWmNKZmx3bUZFQ1duMTdfV2s4a3Bha2JROGljTDVC?oc=5",
@@ -412,16 +414,54 @@
       }
     }
   ],
-  "deltas": [],
-  "topDeltas": [],
+  "deltas": [
+    {
+      "sector": "ev_supply",
+      "sectorName": "電動車供應鏈",
+      "prev": -0.682,
+      "current": -0.742,
+      "delta": -0.06,
+      "momentum": "↓ 壓力加深",
+      "accelerating": true
+    },
+    {
+      "sector": "steel",
+      "sectorName": "鋼鐵",
+      "prev": -0.717,
+      "current": -0.773,
+      "delta": -0.056,
+      "momentum": "↓ 壓力加深",
+      "accelerating": true
+    }
+  ],
+  "topDeltas": [
+    {
+      "sector": "ev_supply",
+      "sectorName": "電動車供應鏈",
+      "prev": -0.682,
+      "current": -0.742,
+      "delta": -0.06,
+      "momentum": "↓ 壓力加深",
+      "accelerating": true
+    },
+    {
+      "sector": "steel",
+      "sectorName": "鋼鐵",
+      "prev": -0.717,
+      "current": -0.773,
+      "delta": -0.056,
+      "momentum": "↓ 壓力加深",
+      "accelerating": true
+    }
+  ],
   "totalAnalyzed": 100,
   "sources": [
     "Google News"
   ],
   "sectorState": {
     "foundry": {
-      "score": -0.998,
-      "lastUpdated": "2026-07-09T00:54:00.257Z",
+      "score": -1,
+      "lastUpdated": "2026-07-09T05:25:48.922Z",
       "deltaHistory": [
         -0.991,
         0.051000000000000045,
@@ -429,12 +469,13 @@
         0.02300000000000002,
         -0.006000000000000005,
         -0.031000000000000028,
-        0.0020000000000000018
+        0.0020000000000000018,
+        -0.0020000000000000018
       ]
     },
     "shipping": {
-      "score": -0.954,
-      "lastUpdated": "2026-07-09T00:54:00.257Z",
+      "score": -0.961,
+      "lastUpdated": "2026-07-09T05:25:48.922Z",
       "deltaHistory": [
         -0.912,
         0.03600000000000003,
@@ -442,12 +483,13 @@
         0.009000000000000008,
         -0.0040000000000000036,
         -0.04899999999999993,
-        0.0010000000000000009
+        0.0010000000000000009,
+        -0.007000000000000006
       ]
     },
     "steel": {
-      "score": -0.717,
-      "lastUpdated": "2026-07-09T00:54:00.257Z",
+      "score": -0.773,
+      "lastUpdated": "2026-07-09T05:25:48.922Z",
       "deltaHistory": [
         -0.752,
         0.04300000000000004,
@@ -455,12 +497,13 @@
         0.05400000000000005,
         -0.027000000000000024,
         -0.019000000000000017,
-        0.02100000000000002
+        0.02100000000000002,
+        -0.05600000000000005
       ]
     },
     "ic_design": {
-      "score": -1,
-      "lastUpdated": "2026-07-09T00:54:00.257Z",
+      "score": -0.998,
+      "lastUpdated": "2026-07-09T05:25:48.922Z",
       "deltaHistory": [
         -1,
         0,
@@ -468,12 +511,13 @@
         0,
         0,
         0.0020000000000000018,
-        -0.0020000000000000018
+        -0.0020000000000000018,
+        0.0020000000000000018
       ]
     },
     "display": {
-      "score": -0.859,
-      "lastUpdated": "2026-07-09T00:54:00.257Z",
+      "score": -0.885,
+      "lastUpdated": "2026-07-09T05:25:48.922Z",
       "deltaHistory": [
         -0.88,
         -0.010000000000000009,
@@ -481,12 +525,13 @@
         0.016000000000000014,
         -0.01100000000000001,
         0.009000000000000008,
-        0.007000000000000006
+        0.007000000000000006,
+        -0.026000000000000023
       ]
     },
     "ev_supply": {
-      "score": -0.682,
-      "lastUpdated": "2026-07-09T00:54:00.257Z",
+      "score": -0.742,
+      "lastUpdated": "2026-07-09T05:25:48.922Z",
       "deltaHistory": [
         -0.699,
         -0.03400000000000003,
@@ -494,12 +539,13 @@
         0.013999999999999901,
         -0.008999999999999897,
         0.006000000000000005,
-        0.005999999999999894
+        0.005999999999999894,
+        -0.05999999999999994
       ]
     },
     "ai_server": {
-      "score": 0.013,
-      "lastUpdated": "2026-07-09T00:54:00.257Z",
+      "score": 0.011,
+      "lastUpdated": "2026-07-09T05:25:48.922Z",
       "deltaHistory": [
         0.013,
         0.015000000000000001,
@@ -507,13 +553,15 @@
         0.002,
         -0.002,
         -0.002,
-        0.002
+        0.002,
+        -0.002
       ]
     },
     "pcb": {
       "score": 0,
-      "lastUpdated": "2026-07-09T00:54:00.257Z",
+      "lastUpdated": "2026-07-09T05:25:48.922Z",
       "deltaHistory": [
+        0,
         0,
         0,
         0,
@@ -525,11 +573,12 @@
     },
     "defense": {
       "score": 0,
-      "lastUpdated": "2026-07-09T00:54:00.257Z",
+      "lastUpdated": "2026-07-09T05:25:48.922Z",
       "deltaHistory": [
         0,
         0.001,
         -0.001,
+        0,
         0,
         0,
         0,
@@ -538,11 +587,12 @@
     },
     "packaging": {
       "score": 0,
-      "lastUpdated": "2026-07-09T00:54:00.257Z",
+      "lastUpdated": "2026-07-09T05:25:48.922Z",
       "deltaHistory": [
         0,
         -0.005,
         0.005,
+        0,
         0,
         0,
         0,
