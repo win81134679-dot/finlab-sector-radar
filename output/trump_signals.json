@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-11T12:26:14.213Z",
+  "updatedAt": "2026-07-11T16:21:58.618Z",
   "posts": [
     {
       "text": "Trump says he's not planning to extend pause on most of his tariffs beyond July 9 - PBS Trump says he's not planning to extend pause on most of his tariffs beyond July 9  PBS",
@@ -276,27 +276,6 @@
       }
     },
     {
-      "text": "U.S. President Trump's renewed trade war with China - Reuters U.S. President Trump's renewed trade war with China  Reuters",
-      "timestamp": "2026-05-06T07:00:00.000Z",
-      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQWl9jV2ItS2ZFcUFmSGU0SVlHLTNwU2xBeWY3dnowOWRPd0YxNHhQa1Y4LVNSODFPR29pNmVWREpwNjBMZnpjcndGTWRzTzAxWGxraFRGVlhXeW9taVFFRUJ6Q09SWEV6akg5dFRXQ252RkdKcVA1UHNkQUQ2MGRFd3JtaUIxRnUxQ2thalNLSFlBeW1yYnRZTTJCMnQ?oc=5",
-      "keywords": [
-        "trade war with china",
-        "trade war",
-        "china"
-      ],
-      "impacts": {
-        "foundry": -1,
-        "ic_design": -1,
-        "shipping": -1,
-        "display": -0.4,
-        "ev_supply": -0.3
-      },
-      "sentiment": {
-        "compound": 0,
-        "label": "中性"
-      }
-    },
-    {
       "text": "From a ‘board of trade’ to Boeing planes, what did Xi and Trump actually agree to? - CNN From a ‘board of trade’ to Boeing planes, what did Xi and Trump actually agree to?  CNN",
       "timestamp": "2026-05-18T07:00:00.000Z",
       "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOT29Mek5sVHJ3a2F3akFMQnNhQ2xzX0ZzaVZzQ1NfZ0gtN1J5a1RtRGFnRFpETkJrd0huTzg5clp6ZGFKLTFQS3c3WW05Zm5YbUVDLWhKYmM4UWlTdG8yYnY3aFI1ZlU1anRpSEp3dE9zc1RXS3RlZU9hUnFSWGRaUDRBTFkwYzA2X2xz?oc=5",
@@ -373,6 +352,28 @@
       }
     },
     {
+      "text": "Trump Tariff Fallout: Indiana Farmers Lost $607M from US-China Trade War - Hoosier Ag Today Trump Tariff Fallout: Indiana Farmers Lost $607M from US-China Trade War  Hoosier Ag Today",
+      "timestamp": "2026-05-24T07:00:00.000Z",
+      "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQZGUzYS1EMUJWNzhNTGczMWZBVmEzUEYwUGlwRjhOWmUxaWViMDYwTGd6WThsUHBaUl9nUS1ISXd3ZGthb3I2dVNXcGRjVGVnYlFEMU1OSU1tRnA0SjZuZjNNV05SaXRCcHhVRV9PS3JROWo3cEYySGRRaUoyYnF3OGc5VS03QQ?oc=5",
+      "keywords": [
+        "trade war",
+        "tariff",
+        "china"
+      ],
+      "impacts": {
+        "foundry": -1,
+        "ic_design": -1,
+        "shipping": -1,
+        "steel": -0.5,
+        "display": -0.9,
+        "ev_supply": -0.7
+      },
+      "sentiment": {
+        "compound": -0.7184,
+        "label": "強烈利空"
+      }
+    },
+    {
       "text": "U.S. says it plans extra tariffs of 10% or more for most trading partners after forced labor probe - PBS U.S. says it plans extra tariffs of 10% or more for most trading partners after forced labor probe  PBS",
       "timestamp": "2026-06-03T07:00:00.000Z",
       "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNYmVrSUEwV3c4b3FFaFZSREVvbkxudXlKbVFrMXNjcVZJaWxxbEgya2VOQ1ppV3NVd2hnRVZ0MmV1OGw4OTFOUjNxM1diekR0QWEteUFadTUwOWN1XzlxRUxySzhBWTFZd284VWw0b29ReDF1WjNSU2ZpaHBYbWNvd19CSl9VNDBPY1Bjcnl1clMtdVUyRjNXa1d6SVJWZmdFUlY1NExfSXhqQ1hzMFZOWU5udTRxZ2tleHpfS0lGMlZWRXFhbDgtR3RxclVld9IB0wFBVV95cUxNQjZEQ2FTdVBzU2NNZVBaSHROZ2lOdnN1Y1Q1bHlFQUNhdDI1aTBzcFVpUmUwT3J6XzdxdDh1WmpxV1JaUndWcGxGeTJReWZQaGEwUy0wcTBpb2t1NXdzMnZKbDEwcUFfODNnaTZkdGR1aDJaTzFwcUhlbVVBOS1tLVY3ZnE3ZWlfY1E0X2kyenQ3aDVlZmR5QVV2WVVXSzZ5TkhHM2szejRKS1c2eW12WnNkdE1rNFdVUG1rbWlxQlMtRTY2dTlhdmxoTjhaMW5Eamdn?oc=5",
@@ -423,10 +424,9 @@
   ],
   "sectorState": {
     "foundry": {
-      "score": -0.99,
-      "lastUpdated": "2026-07-11T12:26:14.213Z",
+      "score": -0.989,
+      "lastUpdated": "2026-07-11T16:21:58.618Z",
       "deltaHistory": [
-        -0.009000000000000008,
         -0.02100000000000002,
         0,
         0.019000000000000017,
@@ -435,14 +435,14 @@
         -0.030000000000000027,
         0,
         0.0040000000000000036,
-        0.0040000000000000036
+        0.0040000000000000036,
+        0.0010000000000000009
       ]
     },
     "shipping": {
-      "score": -0.978,
-      "lastUpdated": "2026-07-11T12:26:14.213Z",
+      "score": -0.977,
+      "lastUpdated": "2026-07-11T16:21:58.618Z",
       "deltaHistory": [
-        -0.0020000000000000018,
         0.017000000000000015,
         0,
         0.030999999999999917,
@@ -451,14 +451,14 @@
         -0.04399999999999993,
         0,
         -0.0040000000000000036,
-        -0.0030000000000000027
+        -0.0030000000000000027,
+        0.0010000000000000009
       ]
     },
     "steel": {
-      "score": -0.867,
-      "lastUpdated": "2026-07-11T12:26:14.213Z",
+      "score": -0.883,
+      "lastUpdated": "2026-07-11T16:21:58.618Z",
       "deltaHistory": [
-        -0.02100000000000002,
         -0.008000000000000007,
         0,
         0.006000000000000005,
@@ -467,17 +467,18 @@
         -0.08699999999999997,
         0.0010000000000000009,
         0.006000000000000005,
-        -0.015000000000000013
+        -0.015000000000000013,
+        -0.016000000000000014
       ]
     },
     "ic_design": {
       "score": -1,
-      "lastUpdated": "2026-07-11T12:26:14.213Z",
+      "lastUpdated": "2026-07-11T16:21:58.618Z",
       "deltaHistory": [
-        0,
         0.0010000000000000009,
         0,
         -0.0010000000000000009,
+        0,
         0,
         0,
         0,
@@ -487,10 +488,9 @@
       ]
     },
     "display": {
-      "score": -0.937,
-      "lastUpdated": "2026-07-11T12:26:14.213Z",
+      "score": -0.948,
+      "lastUpdated": "2026-07-11T16:21:58.618Z",
       "deltaHistory": [
-        -0.006000000000000005,
         0.007000000000000006,
         0,
         -0.007000000000000006,
@@ -499,14 +499,14 @@
         -0.030000000000000027,
         0.0010000000000000009,
         0.0010000000000000009,
-        -0.010000000000000009
+        -0.010000000000000009,
+        -0.010999999999999899
       ]
     },
     "ev_supply": {
-      "score": -0.797,
-      "lastUpdated": "2026-07-11T12:26:14.213Z",
+      "score": -0.806,
+      "lastUpdated": "2026-07-11T16:21:58.618Z",
       "deltaHistory": [
-        -0.0050000000000000044,
         0.010000000000000009,
         0,
         -0.010000000000000009,
@@ -515,14 +515,14 @@
         -0.04700000000000004,
         0,
         -0.0030000000000000027,
-        0.0030000000000000027
+        0.0030000000000000027,
+        -0.009000000000000008
       ]
     },
     "ai_server": {
       "score": 0.108,
-      "lastUpdated": "2026-07-11T12:26:14.213Z",
+      "lastUpdated": "2026-07-11T16:21:58.618Z",
       "deltaHistory": [
-        -0.002,
         0.0009999999999999992,
         0,
         0.0010000000000000009,
@@ -531,12 +531,13 @@
         0.11800000000000001,
         -0.0020000000000000018,
         0,
-        -0.022000000000000006
+        -0.022000000000000006,
+        0
       ]
     },
     "pcb": {
       "score": 0,
-      "lastUpdated": "2026-07-11T12:26:14.213Z",
+      "lastUpdated": "2026-07-11T16:21:58.618Z",
       "deltaHistory": [
         0,
         0,
@@ -552,7 +553,7 @@
     },
     "defense": {
       "score": 0,
-      "lastUpdated": "2026-07-11T12:26:14.213Z",
+      "lastUpdated": "2026-07-11T16:21:58.618Z",
       "deltaHistory": [
         0,
         0,
@@ -568,7 +569,7 @@
     },
     "packaging": {
       "score": 0,
-      "lastUpdated": "2026-07-11T12:26:14.213Z",
+      "lastUpdated": "2026-07-11T16:21:58.618Z",
       "deltaHistory": [
         0,
         0,
