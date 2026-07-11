@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-11T05:08:10.065Z",
+  "updatedAt": "2026-07-11T08:39:42.566Z",
   "posts": [
     {
       "text": "Did Trump’s tariffs paint the US into an economic corner? - South China Morning Post Did Trump’s tariffs paint the US into an economic corner?  South China Morning Post",
@@ -39,27 +39,6 @@
         "ic_design": -0.6,
         "display": -0.5,
         "ev_supply": -0.4
-      },
-      "sentiment": {
-        "compound": -0.7184,
-        "label": "強烈利空"
-      }
-    },
-    {
-      "text": "Asia’s big trade pacts soften damage from Trump tariffs - KrASIA Asia’s big trade pacts soften damage from Trump tariffs  KrASIA",
-      "timestamp": "2026-07-11T00:32:51.000Z",
-      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1PY3ZnVTJjNFFBQmQxMlNsNklXcEVoNm12dldfUWp1VEc2MWtKMGZvUk82YWtCcVlQX0ZWdFRhQWFLWVN5UTlLNWxmVHhZWDduZDhadFJTeV9OV1ZHVzZTV1VqMXBaYl9KdHN3NWo2bDJlaHhYeUw0WnN6bHAyQjg?oc=5",
-      "keywords": [
-        "tariff",
-        "tariffs"
-      ],
-      "impacts": {
-        "foundry": -1,
-        "shipping": -1,
-        "steel": -1,
-        "ic_design": -1,
-        "display": -1,
-        "ev_supply": -0.8
       },
       "sentiment": {
         "compound": -0.7184,
@@ -110,19 +89,20 @@
       }
     },
     {
-      "text": "How Trump is relaunching a tariff war citing ‘forced labour’ concerns - Al Jazeera How Trump is relaunching a tariff war citing ‘forced labour’ concerns  Al Jazeera",
-      "timestamp": "2026-06-15T07:00:00.000Z",
-      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPeHpSUExhLUk3WUUzWEo2N29vckJ4ZXppTHVwMkw0RVlCMll0N0hmOXpQNTNPeENYZ2hTMFV3aERBNFM4ZVZLRlpERjVyXzY5NHVKZXdLZWxuQ0c4S0Y1ZHR1XzBmSVZkOGRRYzRXQTh1R0llejEybGNObkNWVV9tdlhibk50WEkycVFOT0hsTkE2dHdiVllWaWtqTjhHYy1xLWNqVDV5NWV4b2c10gGyAUFVX3lxTE1YSXZBVC04VUU3NVlRRjNfOVhtNlhFb3ZZcUFIUFdXVkx1bkd1MDdXV2IxOHFNamhjUTlPUk1zTU5pamdYakhWbFM0cDJCbjhseG53SFQwbTNnV3huZTZOOHJJYjYwWW9EN2FUZk9HTjQ1dk5fNGxWZXFFNGVHaVFxNEZRb3NXRHB6V2hpSEU4c3kxbm9oNDkzdWdEYnE4bmlpZkNrWDNfQXoyVFpBTlhVV1E?oc=5",
+      "text": "Asia’s big trade pacts soften damage from Trump tariffs - KrASIA Asia’s big trade pacts soften damage from Trump tariffs  KrASIA",
+      "timestamp": "2026-07-11T00:32:51.000Z",
+      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1PY3ZnVTJjNFFBQmQxMlNsNklXcEVoNm12dldfUWp1VEc2MWtKMGZvUk82YWtCcVlQX0ZWdFRhQWFLWVN5UTlLNWxmVHhZWDduZDhadFJTeV9OV1ZHVzZTV1VqMXBaYl9KdHN3NWo2bDJlaHhYeUw0WnN6bHAyQjg?oc=5",
       "keywords": [
-        "tariff"
+        "tariff",
+        "tariffs"
       ],
       "impacts": {
-        "foundry": -0.7,
-        "shipping": -0.5,
-        "steel": -0.5,
-        "ic_design": -0.6,
-        "display": -0.5,
-        "ev_supply": -0.4
+        "foundry": -1,
+        "shipping": -1,
+        "steel": -1,
+        "ic_design": -1,
+        "display": -1,
+        "ev_supply": -0.8
       },
       "sentiment": {
         "compound": -0.7184,
@@ -144,6 +124,26 @@
         "ic_design": -1,
         "display": -0.9,
         "ev_supply": -0.7
+      },
+      "sentiment": {
+        "compound": -0.7184,
+        "label": "強烈利空"
+      }
+    },
+    {
+      "text": "How Trump is relaunching a tariff war citing ‘forced labour’ concerns - Al Jazeera How Trump is relaunching a tariff war citing ‘forced labour’ concerns  Al Jazeera",
+      "timestamp": "2026-06-15T07:00:00.000Z",
+      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPeHpSUExhLUk3WUUzWEo2N29vckJ4ZXppTHVwMkw0RVlCMll0N0hmOXpQNTNPeENYZ2hTMFV3aERBNFM4ZVZLRlpERjVyXzY5NHVKZXdLZWxuQ0c4S0Y1ZHR1XzBmSVZkOGRRYzRXQTh1R0llejEybGNObkNWVV9tdlhibk50WEkycVFOT0hsTkE2dHdiVllWaWtqTjhHYy1xLWNqVDV5NWV4b2c10gGyAUFVX3lxTE1YSXZBVC04VUU3NVlRRjNfOVhtNlhFb3ZZcUFIUFdXVkx1bkd1MDdXV2IxOHFNamhjUTlPUk1zTU5pamdYakhWbFM0cDJCbjhseG53SFQwbTNnV3huZTZOOHJJYjYwWW9EN2FUZk9HTjQ1dk5fNGxWZXFFNGVHaVFxNEZRb3NXRHB6V2hpSEU4c3kxbm9oNDkzdWdEYnE4bmlpZkNrWDNfQXoyVFpBTlhVV1E?oc=5",
+      "keywords": [
+        "tariff"
+      ],
+      "impacts": {
+        "foundry": -0.7,
+        "shipping": -0.5,
+        "steel": -0.5,
+        "ic_design": -0.6,
+        "display": -0.5,
+        "ev_supply": -0.4
       },
       "sentiment": {
         "compound": -0.7184,
@@ -213,26 +213,6 @@
       }
     },
     {
-      "text": "From rules to discretion: How Trump reconfigured US tariff policy - Brookings From rules to discretion: How Trump reconfigured US tariff policy  Brookings",
-      "timestamp": "2026-06-09T15:04:46.000Z",
-      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPanVpQ2p0NFNFcTh0c3JkVGZ3aS10NjFXWjB4ZGZBSDRwNE1qa19SLXAzRDVfZ0xabmNmdUkwb0dSMHA0WFU3ZDhLc0NTS21DVV96a0JDRk9ESUxYWlJwUElPNG5JVUJDV1hBZWpHS3N1c3piNENtRkVCaUI2MHFmeXhyRHJPdzhMci10TVVRSjhDOXoxWEtLUHBzSmFPY0tSMXc?oc=5",
-      "keywords": [
-        "tariff"
-      ],
-      "impacts": {
-        "foundry": -0.7,
-        "shipping": -0.5,
-        "steel": -0.5,
-        "ic_design": -0.6,
-        "display": -0.5,
-        "ev_supply": -0.4
-      },
-      "sentiment": {
-        "compound": -0.7184,
-        "label": "強烈利空"
-      }
-    },
-    {
       "text": "Trump admin proposes broad new tariffs on top trading partners - ABC News - Breaking News, Latest News and Videos Trump admin proposes broad new tariffs on top trading partners  ABC News - Breaking News, Latest News and Videos",
       "timestamp": "2026-06-03T07:00:00.000Z",
       "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPbzZiZUl0T1FxWFFsbmd5VlBCWW9QYktOTjNaOXRKZ3ZWNTJ4bEpsU0UzN0c4TEdjZ21wUE1Fb3RUcjlJSWFfSGJMc3NGZ1NTUWROV1QxZzdnSWQ1OW5QcDZlNllCX0dnZ3lJM2F2OVNqY3NicHlydEN2NjFIQWJ0SnRSWGtIRkhZV1o2dUxGdm95UXVLVU1WQmZwbEcwWDjSAaQBQVVfeXFMTUMxeDA4bnhsUVJFSzZRZVNCS1ZnSUpWb2FiWVhITi1pN3BaTzF6eXZuRTFFV19XOTJfUnRvS3N4SHBvZDhLVXF1VWVHTHJvcGhnZXlRWTRVRGxIWmlLWmtvZ25idEI5eFRTVjh0UHQzY2RjRV80UHc4N3hjTzB0dW8wWGZVRUM5MHk4ZkVidHVRRkNsOGhKTkJjSGpRdkNvd011aEQ?oc=5",
@@ -247,6 +227,26 @@
         "ic_design": -1,
         "display": -1,
         "ev_supply": -0.8
+      },
+      "sentiment": {
+        "compound": -0.7184,
+        "label": "強烈利空"
+      }
+    },
+    {
+      "text": "From rules to discretion: How Trump reconfigured US tariff policy - Brookings From rules to discretion: How Trump reconfigured US tariff policy  Brookings",
+      "timestamp": "2026-06-09T15:04:46.000Z",
+      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPanVpQ2p0NFNFcTh0c3JkVGZ3aS10NjFXWjB4ZGZBSDRwNE1qa19SLXAzRDVfZ0xabmNmdUkwb0dSMHA0WFU3ZDhLc0NTS21DVV96a0JDRk9ESUxYWlJwUElPNG5JVUJDV1hBZWpHS3N1c3piNENtRkVCaUI2MHFmeXhyRHJPdzhMci10TVVRSjhDOXoxWEtLUHBzSmFPY0tSMXc?oc=5",
+      "keywords": [
+        "tariff"
+      ],
+      "impacts": {
+        "foundry": -0.7,
+        "shipping": -0.5,
+        "steel": -0.5,
+        "ic_design": -0.6,
+        "display": -0.5,
+        "ev_supply": -0.4
       },
       "sentiment": {
         "compound": -0.7184,
@@ -424,10 +424,9 @@
   ],
   "sectorState": {
     "foundry": {
-      "score": -0.998,
-      "lastUpdated": "2026-07-11T05:08:10.065Z",
+      "score": -0.994,
+      "lastUpdated": "2026-07-11T08:39:42.566Z",
       "deltaHistory": [
-        0.0040000000000000036,
         0.020000000000000018,
         -0.009000000000000008,
         -0.02100000000000002,
@@ -436,14 +435,14 @@
         0.013000000000000012,
         0,
         -0.030000000000000027,
-        0
+        0,
+        0.0040000000000000036
       ]
     },
     "shipping": {
-      "score": -0.971,
-      "lastUpdated": "2026-07-11T05:08:10.065Z",
+      "score": -0.975,
+      "lastUpdated": "2026-07-11T08:39:42.566Z",
       "deltaHistory": [
-        -0.0010000000000000009,
         -0.0040000000000000036,
         -0.0020000000000000018,
         0.017000000000000015,
@@ -452,14 +451,14 @@
         -0.006000000000000005,
         0,
         -0.04399999999999993,
-        0
+        0,
+        -0.0040000000000000036
       ]
     },
     "steel": {
-      "score": -0.858,
-      "lastUpdated": "2026-07-11T05:08:10.065Z",
+      "score": -0.852,
+      "lastUpdated": "2026-07-11T08:39:42.566Z",
       "deltaHistory": [
-        0.0030000000000000027,
         0.015000000000000013,
         -0.02100000000000002,
         -0.008000000000000007,
@@ -468,14 +467,14 @@
         0.007000000000000006,
         0,
         -0.08699999999999997,
-        0.0010000000000000009
+        0.0010000000000000009,
+        0.006000000000000005
       ]
     },
     "ic_design": {
       "score": -1,
-      "lastUpdated": "2026-07-11T05:08:10.065Z",
+      "lastUpdated": "2026-07-11T08:39:42.566Z",
       "deltaHistory": [
-        0,
         0,
         0,
         0.0010000000000000009,
@@ -484,14 +483,14 @@
         0,
         0,
         0,
+        0,
         0
       ]
     },
     "display": {
-      "score": -0.928,
-      "lastUpdated": "2026-07-11T05:08:10.065Z",
+      "score": -0.927,
+      "lastUpdated": "2026-07-11T08:39:42.566Z",
       "deltaHistory": [
-        0,
         -0.0020000000000000018,
         -0.006000000000000005,
         0.007000000000000006,
@@ -500,14 +499,14 @@
         -0.0030000000000000027,
         0,
         -0.030000000000000027,
+        0.0010000000000000009,
         0.0010000000000000009
       ]
     },
     "ev_supply": {
-      "score": -0.797,
-      "lastUpdated": "2026-07-11T05:08:10.065Z",
+      "score": -0.8,
+      "lastUpdated": "2026-07-11T08:39:42.566Z",
       "deltaHistory": [
-        -0.0010000000000000009,
         0,
         -0.0050000000000000044,
         0.010000000000000009,
@@ -516,14 +515,14 @@
         -0.0010000000000000009,
         0,
         -0.04700000000000004,
-        0
+        0,
+        -0.0030000000000000027
       ]
     },
     "ai_server": {
       "score": 0.13,
-      "lastUpdated": "2026-07-11T05:08:10.065Z",
+      "lastUpdated": "2026-07-11T08:39:42.566Z",
       "deltaHistory": [
-        0,
         0.0010000000000000009,
         -0.002,
         0.0009999999999999992,
@@ -532,12 +531,13 @@
         0.002,
         0,
         0.11800000000000001,
-        -0.0020000000000000018
+        -0.0020000000000000018,
+        0
       ]
     },
     "pcb": {
       "score": 0,
-      "lastUpdated": "2026-07-11T05:08:10.065Z",
+      "lastUpdated": "2026-07-11T08:39:42.566Z",
       "deltaHistory": [
         0,
         0,
@@ -553,7 +553,7 @@
     },
     "defense": {
       "score": 0,
-      "lastUpdated": "2026-07-11T05:08:10.065Z",
+      "lastUpdated": "2026-07-11T08:39:42.566Z",
       "deltaHistory": [
         0,
         0,
@@ -569,7 +569,7 @@
     },
     "packaging": {
       "score": 0,
-      "lastUpdated": "2026-07-11T05:08:10.065Z",
+      "lastUpdated": "2026-07-11T08:39:42.566Z",
       "deltaHistory": [
         0,
         0,
