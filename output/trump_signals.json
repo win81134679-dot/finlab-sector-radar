@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-13T16:52:31.625Z",
+  "updatedAt": "2026-07-13T20:31:26.333Z",
   "posts": [
     {
       "text": "Did Trump’s tariffs paint the US into an economic corner? - South China Morning Post Did Trump’s tariffs paint the US into an economic corner?  South China Morning Post",
@@ -19,26 +19,6 @@
         "ic_design": -1,
         "display": -1,
         "ev_supply": -1
-      },
-      "sentiment": {
-        "compound": -0.7184,
-        "label": "強烈利空"
-      }
-    },
-    {
-      "text": "Trump’s latest tariff proposal has a new rationale, but the same outcome - The Hill Trump’s latest tariff proposal has a new rationale, but the same outcome  The Hill",
-      "timestamp": "2026-07-09T15:00:00.000Z",
-      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9xTVJtOUh1MTVFMnpXcFluMjdxUXo4MkZhYi1DWVJJLWI0UlctSG9pd2tnR1RvRE1WOG03YWhzVGNnN3VYOUhobG5qbXJfTWNDMHAxcmI2UFR0RDZHVGhESEUtcktEb1VLZmQyUDJpTy1Ka3ZrLVBqUFFtZXRBcFnSAYQBQVVfeXFMT1JkdDh5dzUwakF4LU5UaDNaRGpPMmRHT2Nnb3g0NlJBQWdBTjNPZjVJRXgwVllFc0NRcXNibi0tNllpNDEwVUN0cXkxRHlvanVCLXYtMFphbGFzSk95YjFLVnhXNHZUM0trRXplTkZxX1BFZGZxYlZXTDREMEpLbGFjY0Y2?oc=5",
-      "keywords": [
-        "tariff"
-      ],
-      "impacts": {
-        "foundry": -0.7,
-        "shipping": -0.5,
-        "steel": -0.5,
-        "ic_design": -0.6,
-        "display": -0.5,
-        "ev_supply": -0.4
       },
       "sentiment": {
         "compound": -0.7184,
@@ -362,6 +342,27 @@
       }
     },
     {
+      "text": "Trump administration cites forced labor concerns as grounds for new tariffs - NBC News Trump administration cites forced labor concerns as grounds for new tariffs  NBC News",
+      "timestamp": "2026-06-03T07:00:00.000Z",
+      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNRi1icENRMU1aejB5X29kODBYdGh6ZXhNYy1vUTczTElLczNUREt4dHptQlY5a3loaEZudTFfTHlMUnE5U1pMSmp0ZS1BLTN0RWIxVnRsUWpCTk42eE04bTRGRUx4djFCNWxvQmotcXhvZ3FCZEVNNlIxQzd1aFE0ZDZGeXo5d3RONWYtdg?oc=5",
+      "keywords": [
+        "tariff",
+        "tariffs"
+      ],
+      "impacts": {
+        "foundry": -1,
+        "shipping": -1,
+        "steel": -1,
+        "ic_design": -1,
+        "display": -1,
+        "ev_supply": -0.8
+      },
+      "sentiment": {
+        "compound": -0.7184,
+        "label": "強烈利空"
+      }
+    },
+    {
       "text": "China opens investigations into US trade practices in response to Trump tariff moves - AP News China opens investigations into US trade practices in response to Trump tariff moves  AP News",
       "timestamp": "2026-03-27T07:00:00.000Z",
       "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQVGJGQkxHNlhfckEwNnZ2ZU5qQ3pYSW9UWms0Y1M0cjh1c0xGRW5TY19YTUtKTVRoZnlRUVQ0YmgwdFpValp2YjAzcEVMOTZIYkgzaHBGUk1aVWNmaTFTVExlZXUtb3BRRkJzZjJ1MXBGZTBXel96UnhzLWppTjVwc0xndHJ5RTljaXNaeUF1X1NuYmVGLW9qWW1DSklrWE1kZVBN?oc=5",
@@ -432,10 +433,9 @@
   ],
   "sectorState": {
     "foundry": {
-      "score": -0.921,
-      "lastUpdated": "2026-07-13T16:52:31.625Z",
+      "score": -0.894,
+      "lastUpdated": "2026-07-13T20:31:26.333Z",
       "deltaHistory": [
-        0.018000000000000016,
         -0.0010000000000000009,
         0.0010000000000000009,
         -0.03200000000000003,
@@ -444,14 +444,14 @@
         -0.0010000000000000009,
         0.041000000000000036,
         -0.006000000000000005,
-        0.02499999999999991
+        0.02499999999999991,
+        0.027000000000000024
       ]
     },
     "shipping": {
-      "score": -0.937,
-      "lastUpdated": "2026-07-13T16:52:31.625Z",
+      "score": -0.946,
+      "lastUpdated": "2026-07-13T20:31:26.333Z",
       "deltaHistory": [
-        0.027000000000000024,
         0.0010000000000000009,
         -0.0020000000000000018,
         -0.027000000000000024,
@@ -460,14 +460,14 @@
         0.0020000000000000018,
         0.06299999999999994,
         -0.06099999999999994,
-        0.03199999999999992
+        0.03199999999999992,
+        -0.008999999999999897
       ]
     },
     "steel": {
-      "score": -0.835,
-      "lastUpdated": "2026-07-13T16:52:31.625Z",
+      "score": -0.831,
+      "lastUpdated": "2026-07-13T20:31:26.333Z",
       "deltaHistory": [
-        0.010000000000000009,
         0.0010000000000000009,
         -0.0040000000000000036,
         -0.0040000000000000036,
@@ -476,12 +476,13 @@
         -0.0010000000000000009,
         0.05599999999999994,
         -0.040999999999999925,
+        0.0040000000000000036,
         0.0040000000000000036
       ]
     },
     "ic_design": {
       "score": -1,
-      "lastUpdated": "2026-07-13T16:52:31.625Z",
+      "lastUpdated": "2026-07-13T20:31:26.333Z",
       "deltaHistory": [
         0,
         0,
@@ -496,10 +497,9 @@
       ]
     },
     "display": {
-      "score": -0.938,
-      "lastUpdated": "2026-07-13T16:52:31.625Z",
+      "score": -0.947,
+      "lastUpdated": "2026-07-13T20:31:26.333Z",
       "deltaHistory": [
-        -0.0050000000000000044,
         0.0010000000000000009,
         -0.0020000000000000018,
         0.013999999999999901,
@@ -508,14 +508,14 @@
         -0.0010000000000000009,
         0.005999999999999894,
         0.0030000000000000027,
-        -0.007999999999999896
+        -0.007999999999999896,
+        -0.009000000000000008
       ]
     },
     "ev_supply": {
-      "score": -0.805,
-      "lastUpdated": "2026-07-13T16:52:31.625Z",
+      "score": -0.813,
+      "lastUpdated": "2026-07-13T20:31:26.333Z",
       "deltaHistory": [
-        -0.0050000000000000044,
         0,
         0.0020000000000000018,
         0,
@@ -524,14 +524,14 @@
         -0.0030000000000000027,
         -0.030000000000000027,
         0.01200000000000001,
-        -0.006000000000000005
+        -0.006000000000000005,
+        -0.007999999999999896
       ]
     },
     "ai_server": {
-      "score": 0.135,
-      "lastUpdated": "2026-07-13T16:52:31.625Z",
+      "score": 0.131,
+      "lastUpdated": "2026-07-13T20:31:26.333Z",
       "deltaHistory": [
-        0.012999999999999998,
         0,
         -0.013999999999999999,
         0.00399999999999999,
@@ -540,12 +540,13 @@
         0.0010000000000000009,
         0.040999999999999995,
         -0.017999999999999988,
-        0
+        0,
+        -0.0040000000000000036
       ]
     },
     "pcb": {
       "score": 0,
-      "lastUpdated": "2026-07-13T16:52:31.625Z",
+      "lastUpdated": "2026-07-13T20:31:26.333Z",
       "deltaHistory": [
         0,
         0,
@@ -560,10 +561,9 @@
       ]
     },
     "defense": {
-      "score": 0.044,
-      "lastUpdated": "2026-07-13T16:52:31.625Z",
+      "score": 0.05,
+      "lastUpdated": "2026-07-13T20:31:26.333Z",
       "deltaHistory": [
-        0,
         0,
         0,
         0,
@@ -572,14 +572,14 @@
         0,
         0.005,
         0.034,
-        0.0049999999999999975
+        0.0049999999999999975,
+        0.006000000000000005
       ]
     },
     "packaging": {
       "score": 0,
-      "lastUpdated": "2026-07-13T16:52:31.625Z",
+      "lastUpdated": "2026-07-13T20:31:26.333Z",
       "deltaHistory": [
-        0,
         0,
         0,
         0,
@@ -588,6 +588,7 @@
         0,
         -0.005,
         0.005,
+        0,
         0
       ]
     },
@@ -610,12 +611,13 @@
       ]
     },
     "petrochemical": {
-      "score": 0.077,
-      "lastUpdated": "2026-07-13T16:52:31.625Z",
+      "score": 0.087,
+      "lastUpdated": "2026-07-13T20:31:26.333Z",
       "deltaHistory": [
         0.008,
         0.060000000000000005,
-        0.008999999999999994
+        0.008999999999999994,
+        0.009999999999999995
       ]
     }
   }
