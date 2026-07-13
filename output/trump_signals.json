@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-12T20:20:28.867Z",
+  "updatedAt": "2026-07-13T00:51:03.462Z",
   "posts": [
     {
       "text": "Trump says he's not planning to extend pause on most of his tariffs beyond July 9 - PBS Trump says he's not planning to extend pause on most of his tariffs beyond July 9  PBS",
@@ -191,27 +191,6 @@
       }
     },
     {
-      "text": "Trump admin proposes broad new tariffs on top trading partners - ABC News - Breaking News, Latest News and Videos Trump admin proposes broad new tariffs on top trading partners  ABC News - Breaking News, Latest News and Videos",
-      "timestamp": "2026-06-03T07:00:00.000Z",
-      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPbzZiZUl0T1FxWFFsbmd5VlBCWW9QYktOTjNaOXRKZ3ZWNTJ4bEpsU0UzN0c4TEdjZ21wUE1Fb3RUcjlJSWFfSGJMc3NGZ1NTUWROV1QxZzdnSWQ1OW5QcDZlNllCX0dnZ3lJM2F2OVNqY3NicHlydEN2NjFIQWJ0SnRSWGtIRkhZV1o2dUxGdm95UXVLVU1WQmZwbEcwWDjSAaQBQVVfeXFMTUMxeDA4bnhsUVJFSzZRZVNCS1ZnSUpWb2FiWVhITi1pN3BaTzF6eXZuRTFFV19XOTJfUnRvS3N4SHBvZDhLVXF1VWVHTHJvcGhnZXlRWTRVRGxIWmlLWmtvZ25idEI5eFRTVjh0UHQzY2RjRV80UHc4N3hjTzB0dW8wWGZVRUM5MHk4ZkVidHVRRkNsOGhKTkJjSGpRdkNvd011aEQ?oc=5",
-      "keywords": [
-        "tariff",
-        "tariffs"
-      ],
-      "impacts": {
-        "foundry": -1,
-        "shipping": -1,
-        "steel": -1,
-        "ic_design": -1,
-        "display": -1,
-        "ev_supply": -0.8
-      },
-      "sentiment": {
-        "compound": -0.7184,
-        "label": "強烈利空"
-      }
-    },
-    {
       "text": "Fentanyl, China, and Trump's 2025 tariffs - Peterson Institute for International Economics Fentanyl, China, and Trump's 2025 tariffs  Peterson Institute for International Economics",
       "timestamp": "2026-05-11T07:00:00.000Z",
       "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQbjBrQVRfUk5JeDNjeXI5bGN3d0lVbU9Pbm1MWEp4cmFPUEJXbVVEWXNQaVlXd3RQUUZXTnRsZkQzTVdYa1VpVkRFVmZZc1NXSndteWJMUU9QTUNreEZjUEc3RFlsMndEYmJBZFprTERrZjIyRzlNQkQwSmsxMGVFenVqeGZkaTV5ODdEeFpRZmpXR00?oc=5",
@@ -227,6 +206,27 @@
         "ic_design": -1,
         "display": -1,
         "ev_supply": -1
+      },
+      "sentiment": {
+        "compound": -0.7184,
+        "label": "強烈利空"
+      }
+    },
+    {
+      "text": "Trump admin proposes broad new tariffs on top trading partners - ABC News - Breaking News, Latest News and Videos Trump admin proposes broad new tariffs on top trading partners  ABC News - Breaking News, Latest News and Videos",
+      "timestamp": "2026-06-03T07:00:00.000Z",
+      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPbzZiZUl0T1FxWFFsbmd5VlBCWW9QYktOTjNaOXRKZ3ZWNTJ4bEpsU0UzN0c4TEdjZ21wUE1Fb3RUcjlJSWFfSGJMc3NGZ1NTUWROV1QxZzdnSWQ1OW5QcDZlNllCX0dnZ3lJM2F2OVNqY3NicHlydEN2NjFIQWJ0SnRSWGtIRkhZV1o2dUxGdm95UXVLVU1WQmZwbEcwWDjSAaQBQVVfeXFMTUMxeDA4bnhsUVJFSzZRZVNCS1ZnSUpWb2FiWVhITi1pN3BaTzF6eXZuRTFFV19XOTJfUnRvS3N4SHBvZDhLVXF1VWVHTHJvcGhnZXlRWTRVRGxIWmlLWmtvZ25idEI5eFRTVjh0UHQzY2RjRV80UHc4N3hjTzB0dW8wWGZVRUM5MHk4ZkVidHVRRkNsOGhKTkJjSGpRdkNvd011aEQ?oc=5",
+      "keywords": [
+        "tariff",
+        "tariffs"
+      ],
+      "impacts": {
+        "foundry": -1,
+        "shipping": -1,
+        "steel": -1,
+        "ic_design": -1,
+        "display": -1,
+        "ev_supply": -0.8
       },
       "sentiment": {
         "compound": -0.7184,
@@ -424,9 +424,8 @@
   "sectorState": {
     "foundry": {
       "score": -0.98,
-      "lastUpdated": "2026-07-12T20:20:28.867Z",
+      "lastUpdated": "2026-07-13T00:51:03.462Z",
       "deltaHistory": [
-        0.0040000000000000036,
         0.0040000000000000036,
         0.0010000000000000009,
         0.0020000000000000018,
@@ -435,14 +434,14 @@
         -0.0010000000000000009,
         0.0010000000000000009,
         -0.03200000000000003,
-        0.018000000000000016
+        0.018000000000000016,
+        0
       ]
     },
     "shipping": {
-      "score": -0.972,
-      "lastUpdated": "2026-07-12T20:20:28.867Z",
+      "score": -0.973,
+      "lastUpdated": "2026-07-13T00:51:03.462Z",
       "deltaHistory": [
-        -0.0040000000000000036,
         -0.0030000000000000027,
         0.0010000000000000009,
         -0.0010000000000000009,
@@ -451,14 +450,14 @@
         0.0010000000000000009,
         -0.0020000000000000018,
         -0.027000000000000024,
-        0.006000000000000005
+        0.006000000000000005,
+        -0.0010000000000000009
       ]
     },
     "steel": {
       "score": -0.853,
-      "lastUpdated": "2026-07-12T20:20:28.867Z",
+      "lastUpdated": "2026-07-13T00:51:03.462Z",
       "deltaHistory": [
-        0.006000000000000005,
         -0.015000000000000013,
         -0.016000000000000014,
         0.009000000000000008,
@@ -467,12 +466,13 @@
         0.0010000000000000009,
         -0.0040000000000000036,
         -0.0040000000000000036,
-        0.013000000000000012
+        0.013000000000000012,
+        0
       ]
     },
     "ic_design": {
       "score": -1,
-      "lastUpdated": "2026-07-12T20:20:28.867Z",
+      "lastUpdated": "2026-07-13T00:51:03.462Z",
       "deltaHistory": [
         0,
         0,
@@ -488,9 +488,8 @@
     },
     "display": {
       "score": -0.938,
-      "lastUpdated": "2026-07-12T20:20:28.867Z",
+      "lastUpdated": "2026-07-13T00:51:03.462Z",
       "deltaHistory": [
-        0.0010000000000000009,
         -0.010000000000000009,
         -0.010999999999999899,
         0.0040000000000000036,
@@ -499,14 +498,14 @@
         0.0010000000000000009,
         -0.0020000000000000018,
         0.013999999999999901,
-        -0.0029999999999998916
+        -0.0029999999999998916,
+        0
       ]
     },
     "ev_supply": {
-      "score": -0.777,
-      "lastUpdated": "2026-07-12T20:20:28.867Z",
+      "score": -0.778,
+      "lastUpdated": "2026-07-13T00:51:03.462Z",
       "deltaHistory": [
-        -0.0030000000000000027,
         0.0030000000000000027,
         -0.009000000000000008,
         0.006000000000000005,
@@ -515,14 +514,14 @@
         0,
         0.0020000000000000018,
         0,
-        0.025000000000000022
+        0.025000000000000022,
+        -0.0010000000000000009
       ]
     },
     "ai_server": {
-      "score": 0.112,
-      "lastUpdated": "2026-07-12T20:20:28.867Z",
+      "score": 0.111,
+      "lastUpdated": "2026-07-13T00:51:03.462Z",
       "deltaHistory": [
-        0,
         -0.022000000000000006,
         0,
         -0.03899999999999999,
@@ -531,12 +530,13 @@
         0,
         -0.013999999999999999,
         0.00399999999999999,
-        0.04000000000000001
+        0.04000000000000001,
+        -0.0010000000000000009
       ]
     },
     "pcb": {
       "score": 0,
-      "lastUpdated": "2026-07-12T20:20:28.867Z",
+      "lastUpdated": "2026-07-13T00:51:03.462Z",
       "deltaHistory": [
         0,
         0,
@@ -552,7 +552,7 @@
     },
     "defense": {
       "score": 0,
-      "lastUpdated": "2026-07-12T20:20:28.867Z",
+      "lastUpdated": "2026-07-13T00:51:03.462Z",
       "deltaHistory": [
         0,
         0,
@@ -568,7 +568,7 @@
     },
     "packaging": {
       "score": 0,
-      "lastUpdated": "2026-07-12T20:20:28.867Z",
+      "lastUpdated": "2026-07-13T00:51:03.462Z",
       "deltaHistory": [
         0,
         0,
