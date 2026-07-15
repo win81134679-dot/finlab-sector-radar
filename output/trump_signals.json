@@ -1,9 +1,9 @@
 {
-  "updatedAt": "2026-07-15T00:42:33.071Z",
+  "updatedAt": "2026-07-15T05:05:58.871Z",
   "posts": [
     {
       "text": "China’s monthly car ‌exports top 1m for first time as overall trade soars - The Guardian China’s monthly car ‌exports top 1m for first time as overall trade soars  The Guardian",
-      "timestamp": "2026-07-14T19:19:00.000Z",
+      "timestamp": "2026-07-15T01:31:00.000Z",
       "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxObmw0YjBHaWxRVHVPeG05dXBFUWt5YzdMNTF6OENDdGlQLXRDYVNxeG91V1p6V0dUTHlBUHlSMmM4Q0VmWXBYUHZaN2dTRWYxMW44Z2JCWFc1VVFCWk9rLWx5Uk1uMEwwS3p4UnhPd05hUGtUTVBEMkctTFNmNVg0VUgyMjRXdGlkQU0wM0M2bFJ5MFhxOEFUNTBSdkRFZw?oc=5",
       "keywords": [
         "china",
@@ -18,29 +18,6 @@
       "sentiment": {
         "compound": 0,
         "label": "中性"
-      }
-    },
-    {
-      "text": "Trump Tariffs Shift US Trade, Mexico Gains Ground: BBVA Research - Mexico Business News Trump Tariffs Shift US Trade, Mexico Gains Ground: BBVA Research  Mexico Business News",
-      "timestamp": "2026-07-14T19:25:00.000Z",
-      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOUUpCVGgxNDMzY1Q3ZFI1NGd1ck1USzFzZmg5NDhqcjNqNmFVOEdhbTR3SjU5ZW1tV3AteHpMQTZucDZENHpKMFFzckNtZmVCWFI1U3h2M01tVXdfazRiOFhab19WVGNRV1JpX0F6QVd1UVluVF92UzBjUFFJUDZodi1WeWt2djRoYkZ4NlNIM3EzU254NU9RMndad1lvVnJtaU0yUHFma0s?oc=5",
-      "keywords": [
-        "ai",
-        "tariff",
-        "tariffs"
-      ],
-      "impacts": {
-        "ai_server": 0.7,
-        "foundry": -1,
-        "shipping": -1,
-        "steel": -1,
-        "ic_design": -1,
-        "display": -1,
-        "ev_supply": -0.8
-      },
-      "sentiment": {
-        "compound": -0.7184,
-        "label": "強烈利空"
       }
     },
     {
@@ -60,6 +37,29 @@
         "ic_design": -1,
         "display": -0.9,
         "ev_supply": -0.7
+      },
+      "sentiment": {
+        "compound": -0.7184,
+        "label": "強烈利空"
+      }
+    },
+    {
+      "text": "Trump Tariffs Shift US Trade, Mexico Gains Ground: BBVA Research - Mexico Business News Trump Tariffs Shift US Trade, Mexico Gains Ground: BBVA Research  Mexico Business News",
+      "timestamp": "2026-07-14T19:25:00.000Z",
+      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOUUpCVGgxNDMzY1Q3ZFI1NGd1ck1USzFzZmg5NDhqcjNqNmFVOEdhbTR3SjU5ZW1tV3AteHpMQTZucDZENHpKMFFzckNtZmVCWFI1U3h2M01tVXdfazRiOFhab19WVGNRV1JpX0F6QVd1UVluVF92UzBjUFFJUDZodi1WeWt2djRoYkZ4NlNIM3EzU254NU9RMndad1lvVnJtaU0yUHFma0s?oc=5",
+      "keywords": [
+        "ai",
+        "tariff",
+        "tariffs"
+      ],
+      "impacts": {
+        "ai_server": 0.7,
+        "foundry": -1,
+        "shipping": -1,
+        "steel": -1,
+        "ic_design": -1,
+        "display": -1,
+        "ev_supply": -0.8
       },
       "sentiment": {
         "compound": -0.7184,
@@ -245,6 +245,27 @@
       }
     },
     {
+      "text": "Trump’s tariff war pushes Brazil’s trade towards China as US share hits record low - The Star Trump’s tariff war pushes Brazil’s trade towards China as US share hits record low  The Star",
+      "timestamp": "2026-07-10T15:22:00.000Z",
+      "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxQZEh1b18yTDVXQUNlRFpmazl6UDlLWTlyRWhZTW55c1dBajlSTmcxcmNyQVVWTDV4STFBY1U1UmRGeEc4bFRYX0U5VU5fMjhBZG1BcGRtWmg1UVFsNld3ZlNsRl9mWGRkOWtlM2Q4dFhMaWVIUEMxV1dtSFdKS09qRjdJUmpGZW9WcFRRcGtmVnZlRWUxRERQaTJGSHJEQldTOHZnZHZkbllYRUJMTXE1ZllDUTcyTUdFcjZSUTc3SDhhMTJpbjlCTGU1TEtSeGFURUUxSDFEVnpKWWc?oc=5",
+      "keywords": [
+        "tariff",
+        "china"
+      ],
+      "impacts": {
+        "foundry": -0.7,
+        "shipping": -0.9,
+        "steel": -0.5,
+        "ic_design": -1,
+        "display": -0.9,
+        "ev_supply": -0.7
+      },
+      "sentiment": {
+        "compound": -0.7184,
+        "label": "強烈利空"
+      }
+    },
+    {
       "text": "How Trump is relaunching a tariff war citing ‘forced labour’ concerns - Al Jazeera How Trump is relaunching a tariff war citing ‘forced labour’ concerns  Al Jazeera",
       "timestamp": "2026-06-15T07:00:00.000Z",
       "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPeHpSUExhLUk3WUUzWEo2N29vckJ4ZXppTHVwMkw0RVlCMll0N0hmOXpQNTNPeENYZ2hTMFV3aERBNFM4ZVZLRlpERjVyXzY5NHVKZXdLZWxuQ0c4S0Y1ZHR1XzBmSVZkOGRRYzRXQTh1R0llejEybGNObkNWVV9tdlhibk50WEkycVFOT0hsTkE2dHdiVllWaWtqTjhHYy1xLWNqVDV5NWV4b2c10gGyAUFVX3lxTE1YSXZBVC04VUU3NVlRRjNfOVhtNlhFb3ZZcUFIUFdXVkx1bkd1MDdXV2IxOHFNamhjUTlPUk1zTU5pamdYakhWbFM0cDJCbjhseG53SFQwbTNnV3huZTZOOHJJYjYwWW9EN2FUZk9HTjQ1dk5fNGxWZXFFNGVHaVFxNEZRb3NXRHB6V2hpSEU4c3kxbm9oNDkzdWdEYnE4bmlpZkNrWDNfQXoyVFpBTlhVV1E?oc=5",
@@ -314,29 +335,6 @@
       "sentiment": {
         "compound": 0,
         "label": "中性"
-      }
-    },
-    {
-      "text": "Trump Aims New Tariffs at 59 Countries and the European Union - The New York Times Trump Aims New Tariffs at 59 Countries and the European Union  The New York Times",
-      "timestamp": "2026-06-03T07:00:00.000Z",
-      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1FZlk1Z1NWZll1SVN5b3JVQzI4eVg1aDNkNkE4dDBIMU1CRFhuVDNXS2dZY01mbGF4MHcwTlUwLTEycWlURGVsS20yY3BVT25pQjkweFcyVWFWMTJBc2dsS3lMTG56ZFRuU045dDVDbjhYYl9HWXJKdlVRQy14QnM?oc=5",
-      "keywords": [
-        "ai",
-        "tariff",
-        "tariffs"
-      ],
-      "impacts": {
-        "ai_server": 0.7,
-        "foundry": -1,
-        "shipping": -1,
-        "steel": -1,
-        "ic_design": -1,
-        "display": -1,
-        "ev_supply": -0.8
-      },
-      "sentiment": {
-        "compound": -0.7184,
-        "label": "強烈利空"
       }
     },
     {
@@ -432,10 +430,9 @@
   ],
   "sectorState": {
     "foundry": {
-      "score": -0.747,
-      "lastUpdated": "2026-07-15T00:42:33.071Z",
+      "score": -0.726,
+      "lastUpdated": "2026-07-15T05:05:58.871Z",
       "deltaHistory": [
-        -0.006000000000000005,
         0.02499999999999991,
         0.027000000000000024,
         0,
@@ -444,14 +441,14 @@
         0.026000000000000023,
         -0.03300000000000003,
         0.0010000000000000009,
-        0.013000000000000012
+        0.013000000000000012,
+        0.02100000000000002
       ]
     },
     "shipping": {
-      "score": -0.997,
-      "lastUpdated": "2026-07-15T00:42:33.071Z",
+      "score": -0.993,
+      "lastUpdated": "2026-07-15T05:05:58.871Z",
       "deltaHistory": [
-        -0.06099999999999994,
         0.03199999999999992,
         -0.008999999999999897,
         0.0010000000000000009,
@@ -460,14 +457,14 @@
         -0.03200000000000003,
         -0.0010000000000000009,
         -0.015000000000000013,
-        0.0010000000000000009
+        0.0010000000000000009,
+        0.0040000000000000036
       ]
     },
     "steel": {
-      "score": -0.717,
-      "lastUpdated": "2026-07-15T00:42:33.071Z",
+      "score": -0.695,
+      "lastUpdated": "2026-07-15T05:05:58.871Z",
       "deltaHistory": [
-        -0.040999999999999925,
         0.0040000000000000036,
         0.0040000000000000036,
         0.0030000000000000027,
@@ -476,12 +473,13 @@
         0.020000000000000018,
         -0.0040000000000000036,
         -0.0010000000000000009,
-        0.016000000000000014
+        0.016000000000000014,
+        0.02200000000000002
       ]
     },
     "ic_design": {
       "score": -1,
-      "lastUpdated": "2026-07-15T00:42:33.071Z",
+      "lastUpdated": "2026-07-15T05:05:58.871Z",
       "deltaHistory": [
         0,
         0,
@@ -496,10 +494,9 @@
       ]
     },
     "display": {
-      "score": -0.936,
-      "lastUpdated": "2026-07-15T00:42:33.071Z",
+      "score": -0.932,
+      "lastUpdated": "2026-07-15T05:05:58.871Z",
       "deltaHistory": [
-        0.0030000000000000027,
         -0.007999999999999896,
         -0.009000000000000008,
         0.0020000000000000018,
@@ -508,14 +505,14 @@
         0.0010000000000000009,
         0.0009999999999998899,
         -0.0019999999999998908,
-        0.0029999999999998916
+        0.0029999999999998916,
+        0.0040000000000000036
       ]
     },
     "ev_supply": {
-      "score": -0.764,
-      "lastUpdated": "2026-07-15T00:42:33.071Z",
+      "score": -0.759,
+      "lastUpdated": "2026-07-15T05:05:58.871Z",
       "deltaHistory": [
-        0.01200000000000001,
         -0.006000000000000005,
         -0.007999999999999896,
         -0.0010000000000000009,
@@ -524,14 +521,14 @@
         0.010000000000000009,
         0.013000000000000012,
         -0.0010000000000000009,
-        -0.0020000000000000018
+        -0.0020000000000000018,
+        0.0050000000000000044
       ]
     },
     "ai_server": {
-      "score": 0.341,
-      "lastUpdated": "2026-07-15T00:42:33.071Z",
+      "score": 0.332,
+      "lastUpdated": "2026-07-15T05:05:58.871Z",
       "deltaHistory": [
-        -0.017999999999999988,
         0,
         -0.0040000000000000036,
         0.0030000000000000027,
@@ -540,12 +537,13 @@
         -0.03999999999999998,
         -0.017000000000000015,
         0.07100000000000001,
-        0.02300000000000002
+        0.02300000000000002,
+        -0.009000000000000008
       ]
     },
     "pcb": {
       "score": 0,
-      "lastUpdated": "2026-07-15T00:42:33.071Z",
+      "lastUpdated": "2026-07-15T05:05:58.871Z",
       "deltaHistory": [
         0,
         0,
@@ -561,9 +559,8 @@
     },
     "defense": {
       "score": 0,
-      "lastUpdated": "2026-07-15T00:42:33.071Z",
+      "lastUpdated": "2026-07-15T05:05:58.871Z",
       "deltaHistory": [
-        0.034,
         0.0049999999999999975,
         0.006000000000000005,
         0,
@@ -572,14 +569,15 @@
         -0.007000000000000003,
         -0.022,
         0,
+        0,
         0
       ]
     },
     "packaging": {
       "score": 0,
-      "lastUpdated": "2026-07-15T00:42:33.071Z",
+      "lastUpdated": "2026-07-15T05:05:58.871Z",
       "deltaHistory": [
-        0.005,
+        0,
         0,
         0,
         0,
@@ -593,7 +591,7 @@
     },
     "semiconductor_equip": {
       "score": 0.011,
-      "lastUpdated": "2026-07-15T00:42:33.071Z",
+      "lastUpdated": "2026-07-15T05:05:58.871Z",
       "deltaHistory": [
         0,
         0.022,
@@ -603,12 +601,13 @@
         -0.005000000000000001,
         0,
         -0.002,
-        -0.002
+        -0.002,
+        0
       ]
     },
     "robotics": {
       "score": 0.011,
-      "lastUpdated": "2026-07-15T00:42:33.071Z",
+      "lastUpdated": "2026-07-15T05:05:58.871Z",
       "deltaHistory": [
         0,
         0.022,
@@ -618,7 +617,8 @@
         -0.005000000000000001,
         0,
         -0.002,
-        -0.002
+        -0.002,
+        0
       ]
     },
     "petrochemical": {
