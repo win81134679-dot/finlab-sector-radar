@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-16T08:53:47.196Z",
+  "updatedAt": "2026-07-16T12:41:53.924Z",
   "posts": [
     {
       "text": "The costs of the Trump administration’s tariffs diverge for countries and industries so far in 2026 - Equitable Growth The costs of the Trump administration’s tariffs diverge for countries and industries so far in 2026  Equitable Growth",
@@ -261,32 +261,6 @@
       }
     },
     {
-      "text": "Only China would be ahead if Trump confirms the 25% tariff hike by this Wednesday. Brazil will jump from 13th to 2nd place among the most taxed countries by the United States, in a trade attack that targets even Pix, referred to in the American document as a - CPG Click Oil and Gas Only China would be ahead if Trump confirms the 25% tariff hike by this Wednesday. Brazil will jump from 13th to 2nd place among the most taxed countries by the United States, in a trade attack that targets even Pix, referred to in the American document as a  CPG Click Oil and Gas",
-      "timestamp": "2026-07-15T18:48:00.000Z",
-      "url": "https://news.google.com/rss/articles/CBMikgJBVV95cUxNdUtRWW5OOW1JYjI2LWpKaGdUTTlwdlQ4NVFicG5IM01LZjNOamppd0wtZkVSOUZ2V0I2TVJUazVJcGtJNXp4U0VuS2t3dE01S2V4VWR0V0RsOHg1d2ZPOGFnLXFCTE9vWE5mWU9MZXdSRk9KckJpbmNMYWg2LXpHS2UtS1gxWmM1ckhkR3BheUVDSVBENFRZek5OalZGc19oMkVoWU5ITUo4LURxTURzUll2YXpzLUFLVkU4djdFXzZQQmxmMGdsU0UyZUg2Yk1sX1lKaENrQlpOSW5hWnhXU2dUQnZ0UUV6SlVOWkV4SUFOSk0tMDhQazE1d2J3MTYyNE5paXNkYmNSbldYUTNrLU5R?oc=5",
-      "keywords": [
-        "tariff",
-        "china",
-        "oil",
-        "gas",
-        "ev"
-      ],
-      "impacts": {
-        "foundry": -0.7,
-        "shipping": -0.7,
-        "steel": -0.5,
-        "ic_design": -1,
-        "display": -0.9,
-        "ev_supply": -0.5,
-        "petrochemical": 0.6,
-        "gas_energy": 0.3
-      },
-      "sentiment": {
-        "compound": -0.7184,
-        "label": "強烈利空"
-      }
-    },
-    {
       "text": "From rules to discretion: How Trump reconfigured US tariff policy - Brookings From rules to discretion: How Trump reconfigured US tariff policy  Brookings",
       "timestamp": "2026-06-09T15:04:46.000Z",
       "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPanVpQ2p0NFNFcTh0c3JkVGZ3aS10NjFXWjB4ZGZBSDRwNE1qa19SLXAzRDVfZ0xabmNmdUkwb0dSMHA0WFU3ZDhLc0NTS21DVV96a0JDRk9ESUxYWlJwUElPNG5JVUJDV1hBZWpHS3N1c3piNENtRkVCaUI2MHFmeXhyRHJPdzhMci10TVVRSjhDOXoxWEtLUHBzSmFPY0tSMXc?oc=5",
@@ -356,6 +330,32 @@
       "sentiment": {
         "compound": 0,
         "label": "中性"
+      }
+    },
+    {
+      "text": "Only China would be ahead if Trump confirms the 25% tariff hike by this Wednesday. Brazil will jump from 13th to 2nd place among the most taxed countries by the United States, in a trade attack that targets even Pix, referred to in the American document as a - CPG Click Oil and Gas Only China would be ahead if Trump confirms the 25% tariff hike by this Wednesday. Brazil will jump from 13th to 2nd place among the most taxed countries by the United States, in a trade attack that targets even Pix, referred to in the American document as a  CPG Click Oil and Gas",
+      "timestamp": "2026-07-15T18:48:00.000Z",
+      "url": "https://news.google.com/rss/articles/CBMikgJBVV95cUxNdUtRWW5OOW1JYjI2LWpKaGdUTTlwdlQ4NVFicG5IM01LZjNOamppd0wtZkVSOUZ2V0I2TVJUazVJcGtJNXp4U0VuS2t3dE01S2V4VWR0V0RsOHg1d2ZPOGFnLXFCTE9vWE5mWU9MZXdSRk9KckJpbmNMYWg2LXpHS2UtS1gxWmM1ckhkR3BheUVDSVBENFRZek5OalZGc19oMkVoWU5ITUo4LURxTURzUll2YXpzLUFLVkU4djdFXzZQQmxmMGdsU0UyZUg2Yk1sX1lKaENrQlpOSW5hWnhXU2dUQnZ0UUV6SlVOWkV4SUFOSk0tMDhQazE1d2J3MTYyNE5paXNkYmNSbldYUTNrLU5R?oc=5",
+      "keywords": [
+        "tariff",
+        "china",
+        "oil",
+        "gas",
+        "ev"
+      ],
+      "impacts": {
+        "foundry": -0.7,
+        "shipping": -0.7,
+        "steel": -0.5,
+        "ic_design": -1,
+        "display": -0.9,
+        "ev_supply": -0.5,
+        "petrochemical": 0.6,
+        "gas_energy": 0.3
+      },
+      "sentiment": {
+        "compound": -0.7184,
+        "label": "強烈利空"
       }
     },
     {
@@ -431,10 +431,9 @@
   ],
   "sectorState": {
     "foundry": {
-      "score": -0.797,
-      "lastUpdated": "2026-07-16T08:53:47.196Z",
+      "score": -0.8,
+      "lastUpdated": "2026-07-16T12:41:53.924Z",
       "deltaHistory": [
-        0.0010000000000000009,
         0.013000000000000012,
         0.02100000000000002,
         -0.017000000000000015,
@@ -443,14 +442,14 @@
         -0.06800000000000006,
         -0.018999999999999906,
         0.03399999999999992,
-        0
+        0,
+        -0.0030000000000000027
       ]
     },
     "shipping": {
-      "score": -0.962,
-      "lastUpdated": "2026-07-16T08:53:47.196Z",
+      "score": -0.965,
+      "lastUpdated": "2026-07-16T12:41:53.924Z",
       "deltaHistory": [
-        -0.015000000000000013,
         0.0010000000000000009,
         0.0040000000000000036,
         -0.0040000000000000036,
@@ -459,14 +458,14 @@
         0.014000000000000012,
         0.0050000000000000044,
         0.009000000000000008,
-        0
+        0,
+        -0.0030000000000000027
       ]
     },
     "steel": {
-      "score": -0.733,
-      "lastUpdated": "2026-07-16T08:53:47.196Z",
+      "score": -0.736,
+      "lastUpdated": "2026-07-16T12:41:53.924Z",
       "deltaHistory": [
-        -0.0010000000000000009,
         0.016000000000000014,
         0.02200000000000002,
         -0.026000000000000023,
@@ -475,12 +474,13 @@
         -0.07500000000000007,
         0.0050000000000000044,
         0.05300000000000005,
-        0.009000000000000008
+        0.009000000000000008,
+        -0.0030000000000000027
       ]
     },
     "ic_design": {
       "score": -1,
-      "lastUpdated": "2026-07-16T08:53:47.196Z",
+      "lastUpdated": "2026-07-16T12:41:53.924Z",
       "deltaHistory": [
         0,
         0,
@@ -496,9 +496,8 @@
     },
     "display": {
       "score": -0.925,
-      "lastUpdated": "2026-07-16T08:53:47.196Z",
+      "lastUpdated": "2026-07-16T12:41:53.924Z",
       "deltaHistory": [
-        -0.0019999999999998908,
         0.0029999999999998916,
         0.0040000000000000036,
         -0.006999999999999895,
@@ -507,14 +506,14 @@
         -0.015000000000000013,
         0.01200000000000001,
         0.013999999999999901,
-        0.0040000000000000036
+        0.0040000000000000036,
+        0
       ]
     },
     "ev_supply": {
-      "score": -0.733,
-      "lastUpdated": "2026-07-16T08:53:47.196Z",
+      "score": -0.735,
+      "lastUpdated": "2026-07-16T12:41:53.924Z",
       "deltaHistory": [
-        -0.0010000000000000009,
         -0.0020000000000000018,
         0.0050000000000000044,
         -0.0030000000000000027,
@@ -523,14 +522,14 @@
         -0.01200000000000001,
         0.01200000000000001,
         0.026000000000000023,
-        0.0030000000000000027
+        0.0030000000000000027,
+        -0.0020000000000000018
       ]
     },
     "ai_server": {
       "score": 0.177,
-      "lastUpdated": "2026-07-16T08:53:47.196Z",
+      "lastUpdated": "2026-07-16T12:41:53.924Z",
       "deltaHistory": [
-        0.07100000000000001,
         0.02300000000000002,
         -0.009000000000000008,
         -0.02400000000000002,
@@ -539,12 +538,13 @@
         -0.044999999999999984,
         -0.008000000000000007,
         -0.07500000000000001,
-        -0.008000000000000007
+        -0.008000000000000007,
+        0
       ]
     },
     "pcb": {
       "score": 0,
-      "lastUpdated": "2026-07-16T08:53:47.196Z",
+      "lastUpdated": "2026-07-16T12:41:53.924Z",
       "deltaHistory": [
         0,
         0,
@@ -560,9 +560,8 @@
     },
     "defense": {
       "score": 0,
-      "lastUpdated": "2026-07-16T08:53:47.196Z",
+      "lastUpdated": "2026-07-16T12:41:53.924Z",
       "deltaHistory": [
-        0,
         0,
         0,
         0,
@@ -571,12 +570,13 @@
         0.001,
         -0.001,
         0,
+        0,
         0
       ]
     },
     "packaging": {
       "score": 0,
-      "lastUpdated": "2026-07-16T08:53:47.196Z",
+      "lastUpdated": "2026-07-16T12:41:53.924Z",
       "deltaHistory": [
         0,
         0,
@@ -591,10 +591,9 @@
       ]
     },
     "semiconductor_equip": {
-      "score": 0.012,
-      "lastUpdated": "2026-07-16T08:53:47.196Z",
+      "score": 0.013,
+      "lastUpdated": "2026-07-16T12:41:53.924Z",
       "deltaHistory": [
-        -0.002,
         -0.002,
         0,
         -0.002,
@@ -603,14 +602,14 @@
         -0.001999999999999999,
         0,
         0.001999999999999999,
-        0.003000000000000001
+        0.003000000000000001,
+        0.0009999999999999992
       ]
     },
     "robotics": {
-      "score": 0.012,
-      "lastUpdated": "2026-07-16T08:53:47.196Z",
+      "score": 0.013,
+      "lastUpdated": "2026-07-16T12:41:53.924Z",
       "deltaHistory": [
-        -0.002,
         -0.002,
         0,
         -0.002,
@@ -619,14 +618,14 @@
         -0.001999999999999999,
         0,
         0.001999999999999999,
-        0.003000000000000001
+        0.003000000000000001,
+        0.0009999999999999992
       ]
     },
     "petrochemical": {
-      "score": 0.014,
-      "lastUpdated": "2026-07-16T08:53:47.196Z",
+      "score": 0.007,
+      "lastUpdated": "2026-07-16T12:41:53.924Z",
       "deltaHistory": [
-        0.060000000000000005,
         0.008999999999999994,
         0.009999999999999995,
         0.0010000000000000009,
@@ -635,15 +634,17 @@
         -0.012999999999999998,
         -0.037,
         0.009000000000000001,
-        0.004
+        0.004,
+        -0.007
       ]
     },
     "gas_energy": {
-      "score": 0.007,
-      "lastUpdated": "2026-07-16T08:53:47.196Z",
+      "score": 0.004,
+      "lastUpdated": "2026-07-16T12:41:53.924Z",
       "deltaHistory": [
         0.005,
-        0.002
+        0.002,
+        -0.003
       ]
     }
   }
