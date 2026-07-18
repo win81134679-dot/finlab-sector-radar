@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-18T12:25:04.541Z",
+  "updatedAt": "2026-07-18T16:23:12.995Z",
   "posts": [
     {
       "text": "Trump administration races to rebuild tariff wall knocked down by Supreme Court - PBS Trump administration races to rebuild tariff wall knocked down by Supreme Court  PBS",
@@ -322,23 +322,14 @@
       }
     },
     {
-      "text": "How Trump is relaunching a tariff war citing ‘forced labour’ concerns - Al Jazeera How Trump is relaunching a tariff war citing ‘forced labour’ concerns  Al Jazeera",
-      "timestamp": "2026-06-15T07:00:00.000Z",
-      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPeHpSUExhLUk3WUUzWEo2N29vckJ4ZXppTHVwMkw0RVlCMll0N0hmOXpQNTNPeENYZ2hTMFV3aERBNFM4ZVZLRlpERjVyXzY5NHVKZXdLZWxuQ0c4S0Y1ZHR1XzBmSVZkOGRRYzRXQTh1R0llejEybGNObkNWVV9tdlhibk50WEkycVFOT0hsTkE2dHdiVllWaWtqTjhHYy1xLWNqVDV5NWV4b2c10gGyAUFVX3lxTE1YSXZBVC04VUU3NVlRRjNfOVhtNlhFb3ZZcUFIUFdXVkx1bkd1MDdXV2IxOHFNamhjUTlPUk1zTU5pamdYakhWbFM0cDJCbjhseG53SFQwbTNnV3huZTZOOHJJYjYwWW9EN2FUZk9HTjQ1dk5fNGxWZXFFNGVHaVFxNEZRb3NXRHB6V2hpSEU4c3kxbm9oNDkzdWdEYnE4bmlpZkNrWDNfQXoyVFpBTlhVV1E?oc=5",
-      "keywords": [
-        "tariff"
-      ],
-      "impacts": {
-        "foundry": -0.7,
-        "shipping": -0.5,
-        "steel": -0.5,
-        "ic_design": -0.6,
-        "display": -0.5,
-        "ev_supply": -0.4
-      },
+      "text": "From a ‘board of trade’ to Boeing planes, what did Xi and Trump actually agree to? - CNN From a ‘board of trade’ to Boeing planes, what did Xi and Trump actually agree to?  CNN",
+      "timestamp": "2026-05-18T07:00:00.000Z",
+      "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOT29Mek5sVHJ3a2F3akFMQnNhQ2xzX0ZzaVZzQ1NfZ0gtN1J5a1RtRGFnRFpETkJrd0huTzg5clp6ZGFKLTFQS3c3WW05Zm5YbUVDLWhKYmM4UWlTdG8yYnY3aFI1ZlU1anRpSEp3dE9zc1RXS3RlZU9hUnFSWGRaUDRBTFkwYzA2X2xz?oc=5",
+      "keywords": [],
+      "impacts": {},
       "sentiment": {
-        "compound": -0.7184,
-        "label": "強烈利空"
+        "compound": 0,
+        "label": "中性"
       }
     },
     {
@@ -425,56 +416,17 @@
       }
     }
   ],
-  "deltas": [
-    {
-      "sector": "foundry",
-      "sectorName": "晶圓代工",
-      "prev": -0.855,
-      "current": -0.914,
-      "delta": -0.059,
-      "momentum": "↓ 壓力加深",
-      "accelerating": true
-    },
-    {
-      "sector": "steel",
-      "sectorName": "鋼鐵",
-      "prev": -0.773,
-      "current": -0.828,
-      "delta": -0.055,
-      "momentum": "↓ 壓力加深",
-      "accelerating": true
-    }
-  ],
-  "topDeltas": [
-    {
-      "sector": "foundry",
-      "sectorName": "晶圓代工",
-      "prev": -0.855,
-      "current": -0.914,
-      "delta": -0.059,
-      "momentum": "↓ 壓力加深",
-      "accelerating": true
-    },
-    {
-      "sector": "steel",
-      "sectorName": "鋼鐵",
-      "prev": -0.773,
-      "current": -0.828,
-      "delta": -0.055,
-      "momentum": "↓ 壓力加深",
-      "accelerating": true
-    }
-  ],
+  "deltas": [],
+  "topDeltas": [],
   "totalAnalyzed": 100,
   "sources": [
     "Google News"
   ],
   "sectorState": {
     "foundry": {
-      "score": -0.914,
-      "lastUpdated": "2026-07-18T12:25:04.541Z",
+      "score": -0.912,
+      "lastUpdated": "2026-07-18T16:23:12.995Z",
       "deltaHistory": [
-        -0.052000000000000046,
         0.007000000000000006,
         0.007000000000000006,
         0.015000000000000013,
@@ -483,14 +435,14 @@
         -0.0040000000000000036,
         0.061000000000000054,
         0.0020000000000000018,
-        -0.05900000000000005
+        -0.05900000000000005,
+        0.0020000000000000018
       ]
     },
     "shipping": {
       "score": -0.984,
-      "lastUpdated": "2026-07-18T12:25:04.541Z",
+      "lastUpdated": "2026-07-18T16:23:12.995Z",
       "deltaHistory": [
-        0.006000000000000005,
         0.006000000000000005,
         -0.006000000000000005,
         0.0040000000000000036,
@@ -499,14 +451,14 @@
         0.0010000000000000009,
         0.014000000000000012,
         0.0050000000000000044,
-        -0.015000000000000013
+        -0.015000000000000013,
+        0
       ]
     },
     "steel": {
       "score": -0.828,
-      "lastUpdated": "2026-07-18T12:25:04.541Z",
+      "lastUpdated": "2026-07-18T16:23:12.995Z",
       "deltaHistory": [
-        -0.06099999999999994,
         0.020000000000000018,
         -0.0030000000000000027,
         0.03699999999999992,
@@ -515,12 +467,13 @@
         -0.0050000000000000044,
         0.05799999999999994,
         0.013000000000000012,
-        -0.05499999999999994
+        -0.05499999999999994,
+        0
       ]
     },
     "ic_design": {
       "score": -1,
-      "lastUpdated": "2026-07-18T12:25:04.541Z",
+      "lastUpdated": "2026-07-18T16:23:12.995Z",
       "deltaHistory": [
         0,
         0,
@@ -535,10 +488,9 @@
       ]
     },
     "display": {
-      "score": -0.923,
-      "lastUpdated": "2026-07-18T12:25:04.541Z",
+      "score": -0.924,
+      "lastUpdated": "2026-07-18T16:23:12.995Z",
       "deltaHistory": [
-        -0.014000000000000012,
         0.0050000000000000044,
         -0.0010000000000000009,
         0.015000000000000013,
@@ -547,14 +499,14 @@
         -0.0010000000000000009,
         0.009000000000000008,
         0.006000000000000005,
-        -0.008000000000000007
+        -0.008000000000000007,
+        -0.0010000000000000009
       ]
     },
     "ev_supply": {
       "score": -0.756,
-      "lastUpdated": "2026-07-18T12:25:04.541Z",
+      "lastUpdated": "2026-07-18T16:23:12.995Z",
       "deltaHistory": [
-        -0.025000000000000022,
         0.0010000000000000009,
         -0.0010000000000000009,
         0.009000000000000008,
@@ -563,14 +515,14 @@
         0,
         0.01200000000000001,
         0.0040000000000000036,
-        -0.01100000000000001
+        -0.01100000000000001,
+        0
       ]
     },
     "ai_server": {
       "score": 0.148,
-      "lastUpdated": "2026-07-18T12:25:04.541Z",
+      "lastUpdated": "2026-07-18T16:23:12.995Z",
       "deltaHistory": [
-        -0.034,
         -0.008000000000000007,
         0.017000000000000015,
         0.012999999999999984,
@@ -579,12 +531,13 @@
         -0.0010000000000000009,
         -0.015999999999999986,
         0.0010000000000000009,
-        0.016999999999999987
+        0.016999999999999987,
+        0
       ]
     },
     "pcb": {
       "score": 0,
-      "lastUpdated": "2026-07-18T12:25:04.541Z",
+      "lastUpdated": "2026-07-18T16:23:12.995Z",
       "deltaHistory": [
         0,
         0,
@@ -600,7 +553,7 @@
     },
     "defense": {
       "score": 0,
-      "lastUpdated": "2026-07-18T12:25:04.541Z",
+      "lastUpdated": "2026-07-18T16:23:12.995Z",
       "deltaHistory": [
         0,
         0,
@@ -616,7 +569,7 @@
     },
     "packaging": {
       "score": 0,
-      "lastUpdated": "2026-07-18T12:25:04.541Z",
+      "lastUpdated": "2026-07-18T16:23:12.995Z",
       "deltaHistory": [
         0,
         0,
@@ -632,9 +585,8 @@
     },
     "semiconductor_equip": {
       "score": 0.007,
-      "lastUpdated": "2026-07-18T12:25:04.541Z",
+      "lastUpdated": "2026-07-18T16:23:12.995Z",
       "deltaHistory": [
-        -0.004,
         0.001,
         0,
         0.001999999999999999,
@@ -643,14 +595,14 @@
         0.001999999999999999,
         -0.002999999999999999,
         0.001,
+        0,
         0
       ]
     },
     "robotics": {
       "score": 0.007,
-      "lastUpdated": "2026-07-18T12:25:04.541Z",
+      "lastUpdated": "2026-07-18T16:23:12.995Z",
       "deltaHistory": [
-        -0.004,
         0.001,
         0,
         0.001999999999999999,
@@ -659,6 +611,7 @@
         0.001999999999999999,
         -0.002999999999999999,
         0.001,
+        0,
         0
       ]
     },
