@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-18T20:20:03.552Z",
+  "updatedAt": "2026-07-19T00:50:06.347Z",
   "posts": [
     {
       "text": "Trump administration races to rebuild tariff wall knocked down by Supreme Court - PBS Trump administration races to rebuild tariff wall knocked down by Supreme Court  PBS",
@@ -123,26 +123,6 @@
       }
     },
     {
-      "text": "Trump administration slaps 25% tariff on Brazil as ties deteriorate - Financial Times Trump administration slaps 25% tariff on Brazil as ties deteriorate  Financial Times",
-      "timestamp": "2026-07-16T12:27:36.000Z",
-      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOWXRrM3JSQXpNVy1RX1VaRjF6UkI1YnNLd0dYTEFPbWwyZV9YenJMQTBrdnpMV0hxNWhILWlRQWRBRVFvTjJuV3pIUFdlZGgwXzFxREktLURwdE1YaENjV3FTVDRrREdRNnlKOVltMEJUbHpBYVRER0FmYUg4M2psVGtVZ1k?oc=5",
-      "keywords": [
-        "tariff"
-      ],
-      "impacts": {
-        "foundry": -0.7,
-        "shipping": -0.5,
-        "steel": -0.5,
-        "ic_design": -0.6,
-        "display": -0.5,
-        "ev_supply": -0.4
-      },
-      "sentiment": {
-        "compound": -0.7184,
-        "label": "強烈利空"
-      }
-    },
-    {
       "text": "A year into Trump’s tariffs, Brazil trades less with US and more with China - South China Morning Post A year into Trump’s tariffs, Brazil trades less with US and more with China  South China Morning Post",
       "timestamp": "2026-07-08T22:17:55.000Z",
       "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxPNUtZa0F2d21WYjY5M1pZWVdTSWs4a2hHS0hxeEwyWWFtZ21IenZDYWhucEIyM2FGdDA5NFJGdGh6WnNLQ2t0RnVMdlVaZUl5SEpIOHZJNXpUUEtJQnpISTRZVER4WGh4NE5WclpSOW1mVWlDdGUzMDYxRTUtU2IyVEhrYUJ4QmxIZDBvb2hVS3ZaRFlzMmVmd1F1SjlmbGlCWUliNmZhN0xEMjh3NmZ0TGVrN1ZKaW1QY282TWRDQ1BJOGVZVUZTNVdLTDBYUlpV0gHQAUFVX3lxTE5MeWtIcXZKcjZyOWVSNHV1c0NreTA2MHI2TFFxeThrenpGTDJiU3hnSDdZQ3h4ZkRwRk1oOFJrRjRISzhiRXBOdmF1ZHdQejN0RGRCbHNWbVdlMWRBbW5CZ1pjQU83Y2RlNzg2RjNlNHltNTk4N3pvbXM1dTZWdTc5SUFXRVZKRmFWRmxvTUt1dTZ3NEZVU1ZHTE5kMFhtZG51T1hEM0FsRVVPS3E3bktYMC1SV0h3UjU5amt4R1NjZWV0Q1dPNWdmRzJLdHJrSWY?oc=5",
@@ -158,6 +138,26 @@
         "ic_design": -1,
         "display": -1,
         "ev_supply": -1
+      },
+      "sentiment": {
+        "compound": -0.7184,
+        "label": "強烈利空"
+      }
+    },
+    {
+      "text": "Trump administration slaps 25% tariff on Brazil as ties deteriorate - Financial Times Trump administration slaps 25% tariff on Brazil as ties deteriorate  Financial Times",
+      "timestamp": "2026-07-16T12:27:36.000Z",
+      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOWXRrM3JSQXpNVy1RX1VaRjF6UkI1YnNLd0dYTEFPbWwyZV9YenJMQTBrdnpMV0hxNWhILWlRQWRBRVFvTjJuV3pIUFdlZGgwXzFxREktLURwdE1YaENjV3FTVDRrREdRNnlKOVltMEJUbHpBYVRER0FmYUg4M2psVGtVZ1k?oc=5",
+      "keywords": [
+        "tariff"
+      ],
+      "impacts": {
+        "foundry": -0.7,
+        "shipping": -0.5,
+        "steel": -0.5,
+        "ic_design": -0.6,
+        "display": -0.5,
+        "ev_supply": -0.4
       },
       "sentiment": {
         "compound": -0.7184,
@@ -421,46 +421,8 @@
       }
     }
   ],
-  "deltas": [
-    {
-      "sector": "foundry",
-      "sectorName": "晶圓代工",
-      "prev": -0.912,
-      "current": -0.8,
-      "delta": 0.112,
-      "momentum": "↑ 壓力緩解",
-      "accelerating": true
-    },
-    {
-      "sector": "steel",
-      "sectorName": "鋼鐵",
-      "prev": -0.828,
-      "current": -0.723,
-      "delta": 0.105,
-      "momentum": "↑ 壓力緩解",
-      "accelerating": true
-    }
-  ],
-  "topDeltas": [
-    {
-      "sector": "foundry",
-      "sectorName": "晶圓代工",
-      "prev": -0.912,
-      "current": -0.8,
-      "delta": 0.112,
-      "momentum": "↑ 壓力緩解",
-      "accelerating": true
-    },
-    {
-      "sector": "steel",
-      "sectorName": "鋼鐵",
-      "prev": -0.828,
-      "current": -0.723,
-      "delta": 0.105,
-      "momentum": "↑ 壓力緩解",
-      "accelerating": true
-    }
-  ],
+  "deltas": [],
+  "topDeltas": [],
   "totalAnalyzed": 100,
   "sources": [
     "Google News"
@@ -468,9 +430,8 @@
   "sectorState": {
     "foundry": {
       "score": -0.8,
-      "lastUpdated": "2026-07-18T20:20:03.552Z",
+      "lastUpdated": "2026-07-19T00:50:06.347Z",
       "deltaHistory": [
-        0.007000000000000006,
         0.015000000000000013,
         -0.014000000000000012,
         -0.0030000000000000027,
@@ -479,14 +440,14 @@
         0.0020000000000000018,
         -0.05900000000000005,
         0.0020000000000000018,
-        0.11199999999999999
+        0.11199999999999999,
+        0
       ]
     },
     "shipping": {
-      "score": -0.955,
-      "lastUpdated": "2026-07-18T20:20:03.552Z",
+      "score": -0.956,
+      "lastUpdated": "2026-07-19T00:50:06.347Z",
       "deltaHistory": [
-        -0.006000000000000005,
         0.0040000000000000036,
         -0.0030000000000000027,
         0.0010000000000000009,
@@ -495,14 +456,14 @@
         0.0050000000000000044,
         -0.015000000000000013,
         0,
-        0.029000000000000026
+        0.029000000000000026,
+        -0.0010000000000000009
       ]
     },
     "steel": {
-      "score": -0.723,
-      "lastUpdated": "2026-07-18T20:20:03.552Z",
+      "score": -0.726,
+      "lastUpdated": "2026-07-19T00:50:06.347Z",
       "deltaHistory": [
-        -0.0030000000000000027,
         0.03699999999999992,
         -0.04599999999999993,
         -0.008000000000000007,
@@ -511,12 +472,13 @@
         0.013000000000000012,
         -0.05499999999999994,
         0,
-        0.10499999999999998
+        0.10499999999999998,
+        -0.0030000000000000027
       ]
     },
     "ic_design": {
       "score": -1,
-      "lastUpdated": "2026-07-18T20:20:03.552Z",
+      "lastUpdated": "2026-07-19T00:50:06.347Z",
       "deltaHistory": [
         0,
         0,
@@ -531,10 +493,9 @@
       ]
     },
     "display": {
-      "score": -0.908,
-      "lastUpdated": "2026-07-18T20:20:03.552Z",
+      "score": -0.909,
+      "lastUpdated": "2026-07-19T00:50:06.347Z",
       "deltaHistory": [
-        -0.0010000000000000009,
         0.015000000000000013,
         -0.02100000000000002,
         -0.007000000000000006,
@@ -543,14 +504,14 @@
         0.006000000000000005,
         -0.008000000000000007,
         -0.0010000000000000009,
-        0.016000000000000014
+        0.016000000000000014,
+        -0.0010000000000000009
       ]
     },
     "ev_supply": {
-      "score": -0.734,
-      "lastUpdated": "2026-07-18T20:20:03.552Z",
+      "score": -0.738,
+      "lastUpdated": "2026-07-19T00:50:06.347Z",
       "deltaHistory": [
-        -0.0010000000000000009,
         0.009000000000000008,
         -0.014000000000000012,
         -0.006000000000000005,
@@ -559,14 +520,14 @@
         0.0040000000000000036,
         -0.01100000000000001,
         0,
-        0.02200000000000002
+        0.02200000000000002,
+        -0.0040000000000000036
       ]
     },
     "ai_server": {
       "score": 0.115,
-      "lastUpdated": "2026-07-18T20:20:03.552Z",
+      "lastUpdated": "2026-07-19T00:50:06.347Z",
       "deltaHistory": [
-        0.017000000000000015,
         0.012999999999999984,
         -0.011999999999999983,
         -0.019000000000000017,
@@ -575,12 +536,13 @@
         0.0010000000000000009,
         0.016999999999999987,
         0,
-        -0.03299999999999999
+        -0.03299999999999999,
+        0
       ]
     },
     "pcb": {
       "score": 0,
-      "lastUpdated": "2026-07-18T20:20:03.552Z",
+      "lastUpdated": "2026-07-19T00:50:06.347Z",
       "deltaHistory": [
         0,
         0,
@@ -596,7 +558,7 @@
     },
     "defense": {
       "score": 0,
-      "lastUpdated": "2026-07-18T20:20:03.552Z",
+      "lastUpdated": "2026-07-19T00:50:06.347Z",
       "deltaHistory": [
         0,
         0,
@@ -612,7 +574,7 @@
     },
     "packaging": {
       "score": 0,
-      "lastUpdated": "2026-07-18T20:20:03.552Z",
+      "lastUpdated": "2026-07-19T00:50:06.347Z",
       "deltaHistory": [
         0,
         0,
@@ -628,9 +590,8 @@
     },
     "semiconductor_equip": {
       "score": 0.006,
-      "lastUpdated": "2026-07-18T20:20:03.552Z",
+      "lastUpdated": "2026-07-19T00:50:06.347Z",
       "deltaHistory": [
-        0,
         0.001999999999999999,
         -0.001999999999999999,
         0,
@@ -639,14 +600,14 @@
         0.001,
         0,
         0,
-        -0.001
+        -0.001,
+        0
       ]
     },
     "robotics": {
       "score": 0.006,
-      "lastUpdated": "2026-07-18T20:20:03.552Z",
+      "lastUpdated": "2026-07-19T00:50:06.347Z",
       "deltaHistory": [
-        0,
         0.001999999999999999,
         -0.001999999999999999,
         0,
@@ -655,7 +616,8 @@
         0.001,
         0,
         0,
-        -0.001
+        -0.001,
+        0
       ]
     },
     "petrochemical": {
