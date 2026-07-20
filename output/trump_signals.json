@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-20T12:51:20.437Z",
+  "updatedAt": "2026-07-20T16:34:22.299Z",
   "posts": [
     {
       "text": "Trump administration races to rebuild tariff wall knocked down by Supreme Court - PBS Trump administration races to rebuild tariff wall knocked down by Supreme Court  PBS",
@@ -25,6 +25,27 @@
       "text": "Trump’s New Tariffs: What to Know - Council on Foreign Relations Trump’s New Tariffs: What to Know  Council on Foreign Relations",
       "timestamp": "2026-07-17T18:38:44.000Z",
       "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE95MzM5ams5dVdVUVhQZUcxMUx4VC1wR1l3eEY0VmY4RWdzbkFMQXBjMHlvdnpDd1hsMXd5YXBHbE1nVURMQ2lnSWVRZUVqelJHU0xLUG5NWnJQMFdWRWlGMHN1OVBLaU1XclhQRg?oc=5",
+      "keywords": [
+        "tariff",
+        "tariffs"
+      ],
+      "impacts": {
+        "foundry": -1,
+        "shipping": -1,
+        "steel": -1,
+        "ic_design": -1,
+        "display": -1,
+        "ev_supply": -0.8
+      },
+      "sentiment": {
+        "compound": -0.7184,
+        "label": "強烈利空"
+      }
+    },
+    {
+      "text": "Trump's new tariffs on Brazil reflect the weakness of US trade strategy - Peterson Institute for International Economics Trump's new tariffs on Brazil reflect the weakness of US trade strategy  Peterson Institute for International Economics",
+      "timestamp": "2026-07-17T17:23:20.000Z",
+      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOQ3BBSWptQUt5N2VVNzlfTWFxUjdDT3ZfN3lBY29MdEc1UTg0bHZSX2ZMc01CZWJybWNnMV81WkpsdlZIVG5VdmJjTkxaTm5NdElqdUlocXBIdnJxVWs4S1ZiT1o5ZHBTcXluN0U5VHR5Z2NMbF9PamN0NUhEbW1oOURHem9lTGszbkR4U05YUEdxc2lEVzRJd2dCMnNfT3BIV3Z4Sm5iRmpTaGp0SUxnbA?oc=5",
       "keywords": [
         "tariff",
         "tariffs"
@@ -155,26 +176,6 @@
       }
     },
     {
-      "text": "Trump’s temporary global tariff ends soon. Here’s what the auto industry should know about its replacement - Automotive News Trump’s temporary global tariff ends soon. Here’s what the auto industry should know about its replacement  Automotive News",
-      "timestamp": "2026-07-17T10:00:00.000Z",
-      "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPLVJDeXk0RmZxaFdrTXNfWWU1amVlQk42WDNBRlc0Wnd5dzlxSlQzejNELWJHV0c0em4xdE1OVlJoc0ZJS21lTzJ1enVlRUNvZU50UTQtR0RmOW1HazRUbDV6UzB5UTU2WS1UOVVtcTZjblhZd0d5RDFVWWdXNjZwb1ZLckdKSzQ?oc=5",
-      "keywords": [
-        "tariff"
-      ],
-      "impacts": {
-        "foundry": -0.7,
-        "shipping": -0.5,
-        "steel": -0.5,
-        "ic_design": -0.6,
-        "display": -0.5,
-        "ev_supply": -0.4
-      },
-      "sentiment": {
-        "compound": -0.7184,
-        "label": "強烈利空"
-      }
-    },
-    {
       "text": "Trump Tariff Tracker – July 2, 2026 (via Passle) - Baker Botts Trump Tariff Tracker – July 2, 2026 (via Passle)  Baker Botts",
       "timestamp": "2026-07-02T07:00:00.000Z",
       "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxOMEtpWUN4ZVFJU3k1ekVmcWo4alZCenR6RGJTVzBGZi16SVU4dDRZQUhNMnBoYl9RWmR4YlRLVFg3SjZmakxsdkhqSGJpNjVNeGpSX2prSm0tYzE1N1d2TDdRN1B3aDBPY3hfMWRyZ3pmU21XNjFhNTdLXzFkbUcwYmhB?oc=5",
@@ -282,28 +283,6 @@
       }
     },
     {
-      "text": "Fentanyl, China, and Trump's 2025 tariffs - Peterson Institute for International Economics Fentanyl, China, and Trump's 2025 tariffs  Peterson Institute for International Economics",
-      "timestamp": "2026-05-11T07:00:00.000Z",
-      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQbjBrQVRfUk5JeDNjeXI5bGN3d0lVbU9Pbm1MWEp4cmFPUEJXbVVEWXNQaVlXd3RQUUZXTnRsZkQzTVdYa1VpVkRFVmZZc1NXSndteWJMUU9QTUNreEZjUEc3RFlsMndEYmJBZFprTERrZjIyRzlNQkQwSmsxMGVFenVqeGZkaTV5ODdEeFpRZmpXR00?oc=5",
-      "keywords": [
-        "tariff",
-        "tariffs",
-        "china"
-      ],
-      "impacts": {
-        "foundry": -1,
-        "shipping": -1,
-        "steel": -1,
-        "ic_design": -1,
-        "display": -1,
-        "ev_supply": -1
-      },
-      "sentiment": {
-        "compound": -0.7184,
-        "label": "強烈利空"
-      }
-    },
-    {
       "text": "How Americans view Trump’s handling of trade and tariffs - Pew Research Center How Americans view Trump’s handling of trade and tariffs  Pew Research Center",
       "timestamp": "2026-04-01T07:00:00.000Z",
       "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQdTZKYXp1NzJEbDNrYlBnb3h0YmQweXl6ZUtmT0dLY0xhd2pVWXpDdWtrcWpXWjRwQUdPRFZuR2tEY0ZETHVFNy1Qb3A2dUlQOFpNNGx4cy1QVUlzTTNjUnM1VlMyallfRUVTX2h3T2ZoVlZuMmphX1hLZDBMVlpXX2p3UDF2X01rWUg2TTZnS25FY2g2amFwNThEY0Q4UTdkbGoyMUJZSXhvLVk?oc=5",
@@ -397,6 +376,28 @@
       }
     },
     {
+      "text": "Fentanyl, China, and Trump's 2025 tariffs - Peterson Institute for International Economics Fentanyl, China, and Trump's 2025 tariffs  Peterson Institute for International Economics",
+      "timestamp": "2026-05-11T07:00:00.000Z",
+      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQbjBrQVRfUk5JeDNjeXI5bGN3d0lVbU9Pbm1MWEp4cmFPUEJXbVVEWXNQaVlXd3RQUUZXTnRsZkQzTVdYa1VpVkRFVmZZc1NXSndteWJMUU9QTUNreEZjUEc3RFlsMndEYmJBZFprTERrZjIyRzlNQkQwSmsxMGVFenVqeGZkaTV5ODdEeFpRZmpXR00?oc=5",
+      "keywords": [
+        "tariff",
+        "tariffs",
+        "china"
+      ],
+      "impacts": {
+        "foundry": -1,
+        "shipping": -1,
+        "steel": -1,
+        "ic_design": -1,
+        "display": -1,
+        "ev_supply": -1
+      },
+      "sentiment": {
+        "compound": -0.7184,
+        "label": "強烈利空"
+      }
+    },
+    {
       "text": "China opens investigations into US trade practices in response to Trump tariff moves - AP News China opens investigations into US trade practices in response to Trump tariff moves  AP News",
       "timestamp": "2026-03-27T07:00:00.000Z",
       "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQVGJGQkxHNlhfckEwNnZ2ZU5qQ3pYSW9UWms0Y1M0cjh1c0xGRW5TY19YTUtKTVRoZnlRUVQ0YmgwdFpValp2YjAzcEVMOTZIYkgzaHBGUk1aVWNmaTFTVExlZXUtb3BRRkJzZjJ1MXBGZTBXel96UnhzLWppTjVwc0xndHJ5RTljaXNaeUF1X1NuYmVGLW9qWW1DSklrWE1kZVBN?oc=5",
@@ -426,10 +427,9 @@
   ],
   "sectorState": {
     "foundry": {
-      "score": -0.86,
-      "lastUpdated": "2026-07-20T12:51:20.437Z",
+      "score": -0.879,
+      "lastUpdated": "2026-07-20T16:34:22.299Z",
       "deltaHistory": [
-        0,
         0.014000000000000012,
         0,
         -0.040999999999999925,
@@ -438,14 +438,14 @@
         -0.041000000000000036,
         0.0010000000000000009,
         0.007000000000000006,
-        0
+        0,
+        -0.019000000000000017
       ]
     },
     "shipping": {
-      "score": -0.962,
-      "lastUpdated": "2026-07-20T12:51:20.437Z",
+      "score": -0.967,
+      "lastUpdated": "2026-07-20T16:34:22.299Z",
       "deltaHistory": [
-        -0.0010000000000000009,
         0.010000000000000009,
         0,
         -0.007000000000000006,
@@ -454,14 +454,14 @@
         -0.010000000000000009,
         0,
         0.0010000000000000009,
-        0
+        0,
+        -0.0050000000000000044
       ]
     },
     "steel": {
-      "score": -0.781,
-      "lastUpdated": "2026-07-20T12:51:20.437Z",
+      "score": -0.811,
+      "lastUpdated": "2026-07-20T16:34:22.299Z",
       "deltaHistory": [
-        -0.0030000000000000027,
         0.02100000000000002,
         0,
         -0.051000000000000045,
@@ -470,12 +470,13 @@
         -0.03700000000000003,
         0.0010000000000000009,
         0.01100000000000001,
-        0
+        0,
+        -0.030000000000000027
       ]
     },
     "ic_design": {
       "score": -1,
-      "lastUpdated": "2026-07-20T12:51:20.437Z",
+      "lastUpdated": "2026-07-20T16:34:22.299Z",
       "deltaHistory": [
         0,
         0,
@@ -490,10 +491,9 @@
       ]
     },
     "display": {
-      "score": -0.919,
-      "lastUpdated": "2026-07-20T12:51:20.437Z",
+      "score": -0.932,
+      "lastUpdated": "2026-07-20T16:34:22.299Z",
       "deltaHistory": [
-        -0.0010000000000000009,
         0.0010000000000000009,
         0,
         -0.014000000000000012,
@@ -502,14 +502,14 @@
         -0.0050000000000000044,
         0,
         0.008000000000000007,
-        0
+        0,
+        -0.013000000000000012
       ]
     },
     "ev_supply": {
-      "score": -0.77,
-      "lastUpdated": "2026-07-20T12:51:20.437Z",
+      "score": -0.772,
+      "lastUpdated": "2026-07-20T16:34:22.299Z",
       "deltaHistory": [
-        -0.0040000000000000036,
         -0.0020000000000000018,
         0,
         -0.03600000000000003,
@@ -518,14 +518,14 @@
         -0.008000000000000007,
         0,
         0.014000000000000012,
-        0
+        0,
+        -0.0020000000000000018
       ]
     },
     "ai_server": {
-      "score": 0.136,
-      "lastUpdated": "2026-07-20T12:51:20.437Z",
+      "score": 0.112,
+      "lastUpdated": "2026-07-20T16:34:22.299Z",
       "deltaHistory": [
-        0,
         0.015,
         0,
         -0.023000000000000007,
@@ -534,12 +534,13 @@
         0.015,
         -0.0010000000000000009,
         0.015000000000000013,
-        0
+        0,
+        -0.024000000000000007
       ]
     },
     "pcb": {
       "score": 0,
-      "lastUpdated": "2026-07-20T12:51:20.437Z",
+      "lastUpdated": "2026-07-20T16:34:22.299Z",
       "deltaHistory": [
         0,
         0,
@@ -555,7 +556,7 @@
     },
     "defense": {
       "score": 0,
-      "lastUpdated": "2026-07-20T12:51:20.437Z",
+      "lastUpdated": "2026-07-20T16:34:22.299Z",
       "deltaHistory": [
         0,
         0,
@@ -570,10 +571,9 @@
       ]
     },
     "packaging": {
-      "score": -0.034,
-      "lastUpdated": "2026-07-20T12:51:20.437Z",
+      "score": -0.028,
+      "lastUpdated": "2026-07-20T16:34:22.299Z",
       "deltaHistory": [
-        0,
         0,
         0,
         -0.055,
@@ -582,14 +582,14 @@
         0.0010000000000000009,
         0,
         0.013999999999999999,
-        0.005999999999999998
+        0.005999999999999998,
+        0.006000000000000002
       ]
     },
     "semiconductor_equip": {
       "score": 0.006,
-      "lastUpdated": "2026-07-20T12:51:20.437Z",
+      "lastUpdated": "2026-07-20T16:34:22.299Z",
       "deltaHistory": [
-        0,
         0.002,
         0,
         -0.002,
@@ -598,14 +598,14 @@
         0.001,
         0,
         -0.001,
+        0,
         0
       ]
     },
     "robotics": {
       "score": 0.006,
-      "lastUpdated": "2026-07-20T12:51:20.437Z",
+      "lastUpdated": "2026-07-20T16:34:22.299Z",
       "deltaHistory": [
-        0,
         0.002,
         0,
         -0.002,
@@ -614,6 +614,7 @@
         0.001,
         0,
         -0.001,
+        0,
         0
       ]
     },
