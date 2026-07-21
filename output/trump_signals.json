@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-21T05:10:00.378Z",
+  "updatedAt": "2026-07-21T09:00:53.310Z",
   "posts": [
     {
       "text": "Trump imposes 50% tariffs on Canadian goods, citing disputes over autos, alcohol and cheese - PBS Trump imposes 50% tariffs on Canadian goods, citing disputes over autos, alcohol and cheese  PBS",
@@ -14,28 +14,6 @@
         "shipping": -1,
         "steel": -1,
         "ic_design": -1,
-        "display": -1,
-        "ev_supply": -0.8
-      },
-      "sentiment": {
-        "compound": -0.7184,
-        "label": "強烈利空"
-      }
-    },
-    {
-      "text": "U.S. to slap 50% tariffs on Canadian goods, deepening North America trade war - Axios U.S. to slap 50% tariffs on Canadian goods, deepening North America trade war  Axios",
-      "timestamp": "2026-07-21T01:25:10.000Z",
-      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9Eb2l3RjBjZVQxSk8zLUZkcGlHX1h5aWtQQ0FCdFppXzUwQ2FsUmV6REdCeUo2MXNMRlExUVpNd3VuTjAwZ0NwTWc3eHdZUmpvUTNQSExqU1NrMTQxbUZxNXV0WExWcE4zVDFqekxLVG8?oc=5",
-      "keywords": [
-        "trade war",
-        "tariff",
-        "tariffs"
-      ],
-      "impacts": {
-        "foundry": -1,
-        "ic_design": -1,
-        "shipping": -1,
-        "steel": -1,
         "display": -1,
         "ev_supply": -0.8
       },
@@ -90,9 +68,9 @@
       }
     },
     {
-      "text": "Trump's temporary global tariffs are set to expire this Friday - Yahoo Finance Trump's temporary global tariffs are set to expire this Friday  Yahoo Finance",
-      "timestamp": "2026-07-20T13:13:45.000Z",
-      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOSVVuZVFXaTl1TVAwSFI2cERIMURXaE9YRTQ0bEpQVXVfSzZLWktXY09DUWxMMzlzUnJzVUZQUnBiNXh0TlpzTEpqekxMa20xVGxRaTI2QnUxbS1PbC1weThzenhCOXFEVHlnR3gyaVp1NzB0RFkyU3BERTVuLXJhOGY4aXNDTE9Vd2RtVFgyWWdpaWVUZUg0dGpFQnJzSkJUa01xUThsaW5RT0ptUDVNaEtJdHU1VDNsLWc?oc=5",
+      "text": "Trump imposes 50% US tariffs on some Canadian goods, citing discrimination - Al Jazeera Trump imposes 50% US tariffs on some Canadian goods, citing discrimination  Al Jazeera",
+      "timestamp": "2026-07-21T02:45:38.000Z",
+      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQRDhuclEtUW5BY1dJUW1VZnl6MjBSeTJyX1RLUUt0bkdJZnpjTzd0R1VaM0JTdGttdTR1WGNNdUI5SG5BX2pXQXBuTGtfLXFGOS02TF9Sa24xZTRHdDFqakFwc2NNWS13VWVXTW80RS10N3BTOTAtZERIOE5uN1Q4cUJMNUg2M2k1Q3ZVa2NvSWJVSnV3cllMT09YUGVnU2J6VjdZRW9hWGdKUlVZelpobGc5Y9IBuAFBVV95cUxPVWY5ZExPYWhaNXBFcWxXVWcwT0xFLUYtTlJMSk9JVlFEYXFucWxSa0xiRTN1ck1RTzZ1R215ei13NV96TEp4NnBVTjJZRE5TWDdxakQ4QnB6WFgteXJKeWR6STBFTTg3LVVjNHdXMDFVX2NWXzFIX1pSOHp0MlE0RGRRR1l4SENsRWhJSzF0YUdid0g4WnhaTEE4bkg5NEIzdTlCM1BEcEVmZHRHZEJUTzQydFptS0s3?oc=5",
       "keywords": [
         "tariff",
         "tariffs"
@@ -111,13 +89,34 @@
       }
     },
     {
-      "text": "Trump slaps 50% tariffs on Canada, citing disputes over cars, alcohol and cheese - South China Morning Post Trump slaps 50% tariffs on Canada, citing disputes over cars, alcohol and cheese  South China Morning Post",
+      "text": "Trump orders new 50% tariff on many Canadian goods, escalating trade war - South China Morning Post Trump orders new 50% tariff on many Canadian goods, escalating trade war  South China Morning Post",
       "timestamp": "2026-07-20T21:59:49.000Z",
       "url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxNaS1xcVgxdHpDUmtYcHZpUXc1WnhKMlhKZlh1ZXlpUUZCMXlpYnBDRFA2dUk2TDhZVmlrR29zZ2puWVc1SEFhRVF6dHNzZGdRSVZEX05MbE16UXVLQy00MnlVaVFBblZjR2VaQWpvLXR1TnY0ZHZwbnZYbzlYUWZtX2h4WWRDdkRMdDhXcWV3Vlc2cjA5eUFoNG8yT2dlRlpzNklrY3g5WEFMdXpydjdQUnJtNVZHOUxIN096N25wQzVSc0Rid2JqTHY3dDJGX0FQVzlOcXh2aUZEemM3UlAyRUVfaVJqcUFT0gHoAUFVX3lxTFBKbHVJSTlmNXlOM2tYZlFPM00wNDg5azJ1aU14dGk5dEI2ZXBQQW9meFJvYjlTWUo3QjBQNlZHeVBsYkViekllcnJtNUlPXzRiaDBWbUFsVnRRTHRJdGlkVTY1VDc0ZWNWUTRVY2JwWTFuTXpZdTE0eEhSYTh4ektZZ196Zy1PaXZaRHZ6UFRFOHhnaTE4OXo3Q3Y5amt6Tm9YS25VOEpoMVNfSFJPQzZYYW5qUTl1TmRGQS1sSlJkWTloMEZ2Nll0Vm1wWEd6X0tQT0U0S3NRMkFRMTk5ZkZMVlhoRDBuYjg?oc=5",
       "keywords": [
+        "trade war",
         "tariff",
-        "tariffs",
         "china"
+      ],
+      "impacts": {
+        "foundry": -1,
+        "ic_design": -1,
+        "shipping": -1,
+        "steel": -0.5,
+        "display": -0.9,
+        "ev_supply": -0.7
+      },
+      "sentiment": {
+        "compound": -0.7184,
+        "label": "強烈利空"
+      }
+    },
+    {
+      "text": "Trump's temporary global tariffs are set to expire this Friday - Yahoo Finance Trump's temporary global tariffs are set to expire this Friday  Yahoo Finance",
+      "timestamp": "2026-07-20T13:13:45.000Z",
+      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOSVVuZVFXaTl1TVAwSFI2cERIMURXaE9YRTQ0bEpQVXVfSzZLWktXY09DUWxMMzlzUnJzVUZQUnBiNXh0TlpzTEpqekxMa20xVGxRaTI2QnUxbS1PbC1weThzenhCOXFEVHlnR3gyaVp1NzB0RFkyU3BERTVuLXJhOGY4aXNDTE9Vd2RtVFgyWWdpaWVUZUg0dGpFQnJzSkJUa01xUThsaW5RT0ptUDVNaEtJdHU1VDNsLWc?oc=5",
+      "keywords": [
+        "tariff",
+        "tariffs"
       ],
       "impacts": {
         "foundry": -1,
@@ -125,7 +124,7 @@
         "steel": -1,
         "ic_design": -1,
         "display": -1,
-        "ev_supply": -1
+        "ev_supply": -0.8
       },
       "sentiment": {
         "compound": -0.7184,
@@ -431,46 +430,8 @@
       }
     }
   ],
-  "deltas": [
-    {
-      "sector": "ai_server",
-      "sectorName": "AI 伺服器",
-      "prev": 0.013,
-      "current": 0.094,
-      "delta": 0.081,
-      "momentum": "↑ 訊號強化",
-      "accelerating": true
-    },
-    {
-      "sector": "steel",
-      "sectorName": "鋼鐵",
-      "prev": -0.841,
-      "current": -0.902,
-      "delta": -0.061,
-      "momentum": "↓ 壓力加深",
-      "accelerating": true
-    }
-  ],
-  "topDeltas": [
-    {
-      "sector": "ai_server",
-      "sectorName": "AI 伺服器",
-      "prev": 0.013,
-      "current": 0.094,
-      "delta": 0.081,
-      "momentum": "↑ 訊號強化",
-      "accelerating": true
-    },
-    {
-      "sector": "steel",
-      "sectorName": "鋼鐵",
-      "prev": -0.841,
-      "current": -0.902,
-      "delta": -0.061,
-      "momentum": "↓ 壓力加深",
-      "accelerating": true
-    }
-  ],
+  "deltas": [],
+  "topDeltas": [],
   "totalAnalyzed": 100,
   "sources": [
     "Google News"
@@ -478,9 +439,8 @@
   "sectorState": {
     "foundry": {
       "score": -0.954,
-      "lastUpdated": "2026-07-21T05:10:00.378Z",
+      "lastUpdated": "2026-07-21T09:00:53.310Z",
       "deltaHistory": [
-        0,
         0,
         -0.041000000000000036,
         0.0010000000000000009,
@@ -489,14 +449,14 @@
         -0.019000000000000017,
         -0.040000000000000036,
         -0.0010000000000000009,
-        -0.03399999999999992
+        -0.03399999999999992,
+        0
       ]
     },
     "shipping": {
       "score": -0.968,
-      "lastUpdated": "2026-07-21T05:10:00.378Z",
+      "lastUpdated": "2026-07-21T09:00:53.310Z",
       "deltaHistory": [
-        0,
         0,
         -0.010000000000000009,
         0,
@@ -505,14 +465,14 @@
         -0.0050000000000000044,
         0.025000000000000022,
         -0.010000000000000009,
-        -0.016000000000000014
+        -0.016000000000000014,
+        0
       ]
     },
     "steel": {
-      "score": -0.902,
-      "lastUpdated": "2026-07-21T05:10:00.378Z",
+      "score": -0.859,
+      "lastUpdated": "2026-07-21T09:00:53.310Z",
       "deltaHistory": [
-        0,
         0,
         -0.03700000000000003,
         0.0010000000000000009,
@@ -521,12 +481,13 @@
         -0.030000000000000027,
         -0.013999999999999901,
         -0.016000000000000014,
-        -0.061000000000000054
+        -0.061000000000000054,
+        0.04300000000000004
       ]
     },
     "ic_design": {
       "score": -1,
-      "lastUpdated": "2026-07-21T05:10:00.378Z",
+      "lastUpdated": "2026-07-21T09:00:53.310Z",
       "deltaHistory": [
         0,
         0,
@@ -541,10 +502,9 @@
       ]
     },
     "display": {
-      "score": -0.967,
-      "lastUpdated": "2026-07-21T05:10:00.378Z",
+      "score": -0.959,
+      "lastUpdated": "2026-07-21T09:00:53.310Z",
       "deltaHistory": [
-        0,
         0,
         -0.0050000000000000044,
         0,
@@ -553,14 +513,14 @@
         -0.013000000000000012,
         -0.008999999999999897,
         -0.009000000000000008,
-        -0.017000000000000015
+        -0.017000000000000015,
+        0.008000000000000007
       ]
     },
     "ev_supply": {
-      "score": -0.794,
-      "lastUpdated": "2026-07-21T05:10:00.378Z",
+      "score": -0.77,
+      "lastUpdated": "2026-07-21T09:00:53.310Z",
       "deltaHistory": [
-        0,
         0,
         -0.008000000000000007,
         0,
@@ -569,14 +529,14 @@
         -0.0020000000000000018,
         -0.015000000000000013,
         0.010000000000000009,
-        -0.017000000000000015
+        -0.017000000000000015,
+        0.02400000000000002
       ]
     },
     "ai_server": {
-      "score": 0.094,
-      "lastUpdated": "2026-07-21T05:10:00.378Z",
+      "score": 0.109,
+      "lastUpdated": "2026-07-21T09:00:53.310Z",
       "deltaHistory": [
-        0,
         0,
         0.015,
         -0.0010000000000000009,
@@ -585,12 +545,13 @@
         -0.024000000000000007,
         -0.099,
         0,
-        0.081
+        0.081,
+        0.015
       ]
     },
     "pcb": {
       "score": 0,
-      "lastUpdated": "2026-07-21T05:10:00.378Z",
+      "lastUpdated": "2026-07-21T09:00:53.310Z",
       "deltaHistory": [
         0,
         0,
@@ -606,7 +567,7 @@
     },
     "defense": {
       "score": 0.018,
-      "lastUpdated": "2026-07-21T05:10:00.378Z",
+      "lastUpdated": "2026-07-21T09:00:53.310Z",
       "deltaHistory": [
         0,
         0,
@@ -616,15 +577,14 @@
         0,
         0,
         0,
-        0,
-        0.018
+        0.018,
+        0
       ]
     },
     "packaging": {
       "score": 0,
-      "lastUpdated": "2026-07-21T05:10:00.378Z",
+      "lastUpdated": "2026-07-21T09:00:53.310Z",
       "deltaHistory": [
-        0,
         0,
         0.0010000000000000009,
         0,
@@ -633,14 +593,14 @@
         0.006000000000000002,
         -0.004,
         0.032,
+        0,
         0
       ]
     },
     "semiconductor_equip": {
       "score": 0.003,
-      "lastUpdated": "2026-07-21T05:10:00.378Z",
+      "lastUpdated": "2026-07-21T09:00:53.310Z",
       "deltaHistory": [
-        0,
         0,
         0.001,
         0,
@@ -649,14 +609,14 @@
         0,
         0,
         0,
-        -0.003
+        -0.003,
+        0
       ]
     },
     "robotics": {
       "score": 0.003,
-      "lastUpdated": "2026-07-21T05:10:00.378Z",
+      "lastUpdated": "2026-07-21T09:00:53.310Z",
       "deltaHistory": [
-        0,
         0,
         0.001,
         0,
@@ -665,7 +625,8 @@
         0,
         0,
         0,
-        -0.003
+        -0.003,
+        0
       ]
     },
     "petrochemical": {
