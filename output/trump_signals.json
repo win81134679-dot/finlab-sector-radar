@@ -1,6 +1,27 @@
 {
-  "updatedAt": "2026-07-23T16:35:57.585Z",
+  "updatedAt": "2026-07-23T20:29:04.469Z",
   "posts": [
+    {
+      "text": "Trump Prepares Yet Another Strategy to Resurrect Global Tariffs - The New York Times Trump Prepares Yet Another Strategy to Resurrect Global Tariffs  The New York Times",
+      "timestamp": "2026-07-23T17:18:13.000Z",
+      "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE9sMVBwRnFDcGlLQjFxSWxUQXFaTUcydS1mS0RrRkVMUXUwYTVmeFRNcHUwbjdwa04wa2xLOGpYUWJLdF80cHdjYkRrTmpYVjczWjVNdHNEaVlMYTAzeFdqR1ZjRFFJMUtQNDk1UUctb0x2eE5YMGo1N0ZB?oc=5",
+      "keywords": [
+        "tariff",
+        "tariffs"
+      ],
+      "impacts": {
+        "foundry": -1,
+        "shipping": -1,
+        "steel": -1,
+        "ic_design": -1,
+        "display": -1,
+        "ev_supply": -0.8
+      },
+      "sentiment": {
+        "compound": -0.7184,
+        "label": "強烈利空"
+      }
+    },
     {
       "text": "What are tariffs, how do they work and why is Trump using them? - BBC What are tariffs, how do they work and why is Trump using them?  BBC",
       "timestamp": "2026-07-22T11:02:23.000Z",
@@ -38,27 +59,6 @@
         "ic_design": -0.6,
         "display": -0.5,
         "ev_supply": -0.4
-      },
-      "sentiment": {
-        "compound": -0.7184,
-        "label": "強烈利空"
-      }
-    },
-    {
-      "text": "WATCH: U.S. trade chief Jamieson Greer testifies on Trump's agenda after latest tariffs - PBS WATCH: U.S. trade chief Jamieson Greer testifies on Trump's agenda after latest tariffs  PBS",
-      "timestamp": "2026-07-22T13:46:21.000Z",
-      "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPUzMwWk9NWGthcjE4SHNLOHJhMHIyN0VQTjVXeG9JTjNvTjhzLW5qOEZGYUZzVHBKTFpObEY2SXVuLUxsaUpPdkMyTFlMNkJPMl9DYi1tbHF2X3pjV2kybkJwVjVaUmdPRTg1bVhlNFpjdHJvTFA0MjNweThCZ2pmVDZHbjVHVjlrUnB6OXlQMnIyWjdCNl9zOWY4VjlCWlhFcFZmeXY3MnVpOGJkSVlVbmFqOWEydHpqc3pJdGd0aVNqd0tsNkHSAcsBQVVfeXFMTjNIOG55MlVPZUlHSS1xNnc4ZmJPWUx6cnVKNVo1UV8zMzNZc1JYcXNqb3NkWW0zZEhJYkc2aWhSM2xRVUZSRmdjVFJZNU5QYkVjVi1mNm83ZDNKQ3ZTbEdpVlM0QVZsX25jMHFYYXBrT3ZxS0Z1dGNPZTR3SXlGR1JEWFRVU2kySTRDS3VsMGJhSHZUbWQwbGxIck52YWxFSVlKd2RUeHh2Q2xER3h2enI2a2hZVkU5SXJfa2dYY3FCLUZHZ1pIU1NfLVE?oc=5",
-      "keywords": [
-        "tariff",
-        "tariffs"
-      ],
-      "impacts": {
-        "foundry": -1,
-        "shipping": -1,
-        "steel": -1,
-        "ic_design": -1,
-        "display": -1,
-        "ev_supply": -0.8
       },
       "sentiment": {
         "compound": -0.7184,
@@ -152,6 +152,26 @@
       }
     },
     {
+      "text": "US-China trade war reaches India’s streets as Modi weighs Washington bet - South China Morning Post US-China trade war reaches India’s streets as Modi weighs Washington bet  South China Morning Post",
+      "timestamp": "2026-07-23T04:00:14.000Z",
+      "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQbGRiOV9HZFlCSlhUSUk2NExKX3dFcEwzMFo0ZDFOQnJLMlkxNnlVaHJEZE1LcVJVY3JHUU1maDFwdkhjaks5dlRMYUN3LW5EYXlaV3AwNEFOcWlWcTl1dUJZV3NocmRlUkdReFFCQlpQRG1XRWktcGNFbU1acDNPZFhSNnpmdEphUHpUS3Z5bHVXR2ItVy1sS0FwOVBPNHRlOVJEM08xQjl4bGJ1b0E5Vi1GRXNSakQtdTdoXzhJS3NMdlk1aXdweDBRb1fSAcwBQVVfeXFMT1dkY2xXeGcyQ2JYdzBuZm5hRG8tdGJmaEk0SGg0RDZXcjNSQ05kYWZFX0o4dklXVXlicUtWd2dFWGpJOG02NnVuQnJDWkxsdi1FNFJCMU1Dc3dRbVpZQ1praU5GRFpVTHdQMGM5RVNvU0lDR2VFalRFcVBuZjIyajhXbHJ2Y2FrVUJvOVFEUF9KM252bW0tWGh3anRUZGQwS3U2UjNKVzUzaEF3azZwNFl6Y2xhc1dnR2VXNDBfZk9RdDRqTmt6OGxnamlU?oc=5",
+      "keywords": [
+        "trade war",
+        "china"
+      ],
+      "impacts": {
+        "foundry": -0.6,
+        "ic_design": -1,
+        "shipping": -1,
+        "display": -0.4,
+        "ev_supply": -0.3
+      },
+      "sentiment": {
+        "compound": 0,
+        "label": "中性"
+      }
+    },
+    {
       "text": "US, Mexico resume USMCA trade talks as Trump hits Canada with new tariffs - Reuters US, Mexico resume USMCA trade talks as Trump hits Canada with new tariffs  Reuters",
       "timestamp": "2026-07-21T23:46:00.000Z",
       "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOLTlwelkwN2NBdS1QaUlkVkdWOGVOUFJ6eWtYZzNsbUtpWkpjLW9FbFRHWlY5UEZCOS1zc0xHRzZ3UkdqRUZwQ2tmd1IxLWJTRXI0ZnlHZEZzNDk0QkZuTktUc3d5RTJsZXZVVWtLRTNGaTVQNW5HamNVZUFRdERzV09jejJ6cUVuYk5uLVkyMmdwWmh2eTV1YXVUSGF0MHBKTUZGRXBTUF9lRWRIMGhJbFNtejd5b1Bx?oc=5",
@@ -173,32 +193,9 @@
       }
     },
     {
-      "text": "China braces as new US global tariffs loom: fresh trade war or managed friction? - South China Morning Post China braces as new US global tariffs loom: fresh trade war or managed friction?  South China Morning Post",
-      "timestamp": "2026-07-22T14:30:08.000Z",
-      "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQbEcyUVVocG1RT1BadUcyN2JwU1BwOHdjMGlKUUpIYm5xX0NzemFMT2dFWnIzS0ZyUDZaX044SHNZQ0JoSERiRmhVYUVFWFY1cjVBdnFDTllRT0had3FZQUdGcU8weE9xOGQyNVljamoyR1YySXB5U09fcm84NnM5NGdsY1dqZVhVOVhiejVNYW5uU01USVAzX2VDSDRwYmw2ZnUxdTZPYkNzSDVtNV9WbE5WQzhHNGtBcnJHMVNWNU0xMThoQ1NkMENuQ2RTWTUz0gHQAUFVX3lxTE5qX2lNVFhqU3V3MVZBSmI0MkppWWE0R1FObTNidzNyMWtXNmh2ODBrYzRFWUNqQ3lNWFJmSGlwMU1McVYxWUJ2RkhGRDBHdnBQbjBtaHhCREVpYlJVVzFkOWl1NFA3YzJxY1RURkhhdi16bXdoeU9iUkZ3aVdRb1hXUTIzcHVCLUxtcmNVUElRWVl6UGxWSk9DbzRpYW5wS0tkT3FOMEV4REZic0pYczFkQmxDX2RTNWJpZVNfME5ndWRVR25WRWxHb1oyTUV3UGU?oc=5",
-      "keywords": [
-        "trade war",
-        "tariff",
-        "tariffs",
-        "china"
-      ],
-      "impacts": {
-        "foundry": -1,
-        "ic_design": -1,
-        "shipping": -1,
-        "steel": -1,
-        "display": -1,
-        "ev_supply": -1
-      },
-      "sentiment": {
-        "compound": -0.7184,
-        "label": "強烈利空"
-      }
-    },
-    {
-      "text": "Trump issues 50% tariffs on Canada ahead of Gordie Howe Bridge opening - The Detroit News Trump issues 50% tariffs on Canada ahead of Gordie Howe Bridge opening  The Detroit News",
-      "timestamp": "2026-07-20T21:45:33.000Z",
-      "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxNZHJKSHAtSUM1OHRodWVjTWV2UXFER0hiZVNvM0FHTEhuX0QxS2NmZ3NaREV6UlBYUUhPV2NYb2xtSHgtTUdTVkNMc0IwZ0F6WVJodWRYZzNsU05Ebkg0MlFKcjBUcklTOHQ5UHljeHRxdWRoRXp0b3o0YW50WGEybHRxcXkwUU5nLUsyS1k0eElNWU9IYjNyV01yUUZDS3JnNmUyczl6cEJiYjdzSTNTdXFIbVdQaTBFbnhmQ1ZoSXNZUHRVN1I0Um1ReHY?oc=5",
+      "text": "Trump to impose 50% tariffs on Canadian hockey sticks, milk, alcohol and other goods - CBS News Trump to impose 50% tariffs on Canadian hockey sticks, milk, alcohol and other goods  CBS News",
+      "timestamp": "2026-07-20T21:43:00.000Z",
+      "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTFBSS0ZQSHlWS2Zfd1h6Z3hJeDIwWk1NY1VxTTgybTlwS2NLV0FjS205OFRreDJZSTA0Vlh2RVlBS1lXSzFLbE03RW9TdWRIWVhlTWRHcUZQbXlyejdwZVpYdFQ2NDAtVTNmQmg2b2NvNW5jaEx3RVBmTW93?oc=5",
       "keywords": [
         "tariff",
         "tariffs"
@@ -212,7 +209,7 @@
         "ev_supply": -0.8
       },
       "sentiment": {
-        "compound": -0.7184,
+        "compound": -0.875,
         "label": "強烈利空"
       }
     },
@@ -325,14 +322,12 @@
       }
     },
     {
-      "text": "‘Canada Tariffs Worse Than China?’: Trump’s Trade Chief Confirms Revenge Plot; ‘carney In Trouble?’ - The Times of India ‘Canada Tariffs Worse Than China?’: Trump’s Trade Chief Confirms Revenge Plot; ‘carney In Trouble?’  The Times of India",
-      "timestamp": "2026-07-22T20:21:27.000Z",
-      "url": "https://news.google.com/rss/articles/CBMigAJBVV95cUxQb05zc1RxNGo5NGxwdFVBTFhOc1QxUVJIbmJCeW1zSklmVEhJaVoxb1JpZUtDd3lUd3hHRlpPUmxITzI2WHowdmRVSzhCcm51MG5iSnl3bEozYVpGT3BiMVpYajROZ0d0enZpUDk4YU1uM0JxS2p5VnJOZFZSdXFSV3E0U0hITjdDdWoyX3d5OGh0OEkyQXdDVy00eDNQaFV0Y09TM21jRHg1SHZTYkNoeTFxR010d2xaUUV5V2pMa0FTSFU2ZHNjM1RlZkVza2lhT1ZVWEZxeXFEbTFvOFR0MVZUdUkzUThZZjB5NnlmMGkzTVRDR3VRWWhCUFVvaklz0gGGAkFVX3lxTFBSbVA4cHBORG1LcjFoeS1kTUQ1OXZoVkVmSFRnRUxMdk9LN0xBbEZkSC1hR0ZKdUN6Y3JxRnlsUXI5QXEtQ2NXaDZucGZPUU5tTHZsVkRiRWk1eDhWSDZsS3R4T2s5dkJIX1p5X1l0WkVRTUwxeDlQSG8tWU5SUk4wbHBad2hDc3htUHVIcVVVaXdhT1ItRUtDREZiSzFmY0NDN0s0V2xBUUZkUDM5ZlBTbF90d0xUM1E3eTFmdVRMdUt3NTl0MlBvR01NYUgwYzFYcExDaVNsS3p3LUhFWERGUEFPVmxCV255c3EtU21ZMmhrRXRXYThJdGs3dE5oTlN3WUJEcnc?oc=5",
+      "text": "Trump's trade rep defends new tariffs on Canada - CBC Trump's trade rep defends new tariffs on Canada  CBC",
+      "timestamp": "2026-07-22T15:54:00.000Z",
+      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQeldPQ05Bck9QdFkyQmZQcnRLOWxmbk1mZXVkODdRdms2RWs1RGZZeFFiLVBVNWlvek5MdFlOUzdYZFpIUjNLMy13d29vQzFRSDhBTVF4YjJvNTVhRkRtSmJEaDlZMHdqOVJ0dDZwRkR5a0NLQzdIMzc2YzUzb1A0YUJnMGFUY1ZfaVFUS0pHejNVWDJr?oc=5",
       "keywords": [
         "tariff",
-        "tariffs",
-        "china",
-        "ev"
+        "tariffs"
       ],
       "impacts": {
         "foundry": -1,
@@ -340,7 +335,7 @@
         "steel": -1,
         "ic_design": -1,
         "display": -1,
-        "ev_supply": -0.9
+        "ev_supply": -0.8
       },
       "sentiment": {
         "compound": -0.7184,
@@ -369,20 +364,42 @@
       }
     },
     {
-      "text": "Trump's trade rep defends new tariffs on Canada - CBC Trump's trade rep defends new tariffs on Canada  CBC",
-      "timestamp": "2026-07-22T15:54:00.000Z",
-      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQeldPQ05Bck9QdFkyQmZQcnRLOWxmbk1mZXVkODdRdms2RWs1RGZZeFFiLVBVNWlvek5MdFlOUzdYZFpIUjNLMy13d29vQzFRSDhBTVF4YjJvNTVhRkRtSmJEaDlZMHdqOVJ0dDZwRkR5a0NLQzdIMzc2YzUzb1A0YUJnMGFUY1ZfaVFUS0pHejNVWDJr?oc=5",
+      "text": "China braces as new US global tariffs loom: fresh trade war or managed friction? - South China Morning Post China braces as new US global tariffs loom: fresh trade war or managed friction?  South China Morning Post",
+      "timestamp": "2026-07-22T14:30:08.000Z",
+      "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQbEcyUVVocG1RT1BadUcyN2JwU1BwOHdjMGlKUUpIYm5xX0NzemFMT2dFWnIzS0ZyUDZaX044SHNZQ0JoSERiRmhVYUVFWFY1cjVBdnFDTllRT0had3FZQUdGcU8weE9xOGQyNVljamoyR1YySXB5U09fcm84NnM5NGdsY1dqZVhVOVhiejVNYW5uU01USVAzX2VDSDRwYmw2ZnUxdTZPYkNzSDVtNV9WbE5WQzhHNGtBcnJHMVNWNU0xMThoQ1NkMENuQ2RTWTUz0gHQAUFVX3lxTE5qX2lNVFhqU3V3MVZBSmI0MkppWWE0R1FObTNidzNyMWtXNmh2ODBrYzRFWUNqQ3lNWFJmSGlwMU1McVYxWUJ2RkhGRDBHdnBQbjBtaHhCREVpYlJVVzFkOWl1NFA3YzJxY1RURkhhdi16bXdoeU9iUkZ3aVdRb1hXUTIzcHVCLUxtcmNVUElRWVl6UGxWSk9DbzRpYW5wS0tkT3FOMEV4REZic0pYczFkQmxDX2RTNWJpZVNfME5ndWRVR25WRWxHb1oyTUV3UGU?oc=5",
       "keywords": [
+        "trade war",
         "tariff",
-        "tariffs"
+        "tariffs",
+        "china"
       ],
       "impacts": {
         "foundry": -1,
+        "ic_design": -1,
         "shipping": -1,
         "steel": -1,
-        "ic_design": -1,
         "display": -1,
-        "ev_supply": -0.8
+        "ev_supply": -1
+      },
+      "sentiment": {
+        "compound": -0.7184,
+        "label": "強烈利空"
+      }
+    },
+    {
+      "text": "Trump Tariff Tracker – July 2, 2026 (via Passle) - Baker Botts Trump Tariff Tracker – July 2, 2026 (via Passle)  Baker Botts",
+      "timestamp": "2026-07-02T07:00:00.000Z",
+      "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxOMEtpWUN4ZVFJU3k1ekVmcWo4alZCenR6RGJTVzBGZi16SVU4dDRZQUhNMnBoYl9RWmR4YlRLVFg3SjZmakxsdkhqSGJpNjVNeGpSX2prSm0tYzE1N1d2TDdRN1B3aDBPY3hfMWRyZ3pmU21XNjFhNTdLXzFkbUcwYmhB?oc=5",
+      "keywords": [
+        "tariff"
+      ],
+      "impacts": {
+        "foundry": -0.7,
+        "shipping": -0.5,
+        "steel": -0.5,
+        "ic_design": -0.6,
+        "display": -0.5,
+        "ev_supply": -0.4
       },
       "sentiment": {
         "compound": -0.7184,
@@ -410,28 +427,6 @@
         "compound": -0.7184,
         "label": "強烈利空"
       }
-    },
-    {
-      "text": "Why Trump is threatening new 50% tariffs on Canadian exports right now - CBC Why Trump is threatening new 50% tariffs on Canadian exports right now  CBC",
-      "timestamp": "2026-07-21T15:00:18.000Z",
-      "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE9ZRHIxYndndmJRSVVwTm9menRoaG5nQnZuckdSdmhWb3ZSTFM1UXN3T0RrSzF0U2lxU3RkNGFTb0FNZWdDalBfZlFJakxnTXhxTVF1NVBFOTVHeks1ZndhVldVNXd4UUZzd3lBSU9hd1ZZaEs1SVhr?oc=5",
-      "keywords": [
-        "tariff",
-        "tariffs",
-        "port"
-      ],
-      "impacts": {
-        "foundry": -1,
-        "shipping": -1,
-        "steel": -1,
-        "ic_design": -1,
-        "display": -1,
-        "ev_supply": -0.8
-      },
-      "sentiment": {
-        "compound": -0.7184,
-        "label": "強烈利空"
-      }
     }
   ],
   "deltas": [],
@@ -442,10 +437,9 @@
   ],
   "sectorState": {
     "foundry": {
-      "score": -1,
-      "lastUpdated": "2026-07-23T16:35:57.585Z",
+      "score": -0.996,
+      "lastUpdated": "2026-07-23T20:29:04.469Z",
       "deltaHistory": [
-        -0.0010000000000000009,
         0,
         0,
         0,
@@ -454,14 +448,14 @@
         0,
         0,
         0,
-        0
+        0,
+        0.0040000000000000036
       ]
     },
     "shipping": {
-      "score": -0.954,
-      "lastUpdated": "2026-07-23T16:35:57.585Z",
+      "score": -0.975,
+      "lastUpdated": "2026-07-23T20:29:04.469Z",
       "deltaHistory": [
-        0.03400000000000003,
         -0.0050000000000000044,
         -0.007000000000000006,
         -0.0020000000000000018,
@@ -470,14 +464,14 @@
         0.006000000000000005,
         -0.0010000000000000009,
         0.009000000000000008,
-        -0.0050000000000000044
+        -0.0050000000000000044,
+        -0.02100000000000002
       ]
     },
     "steel": {
-      "score": -0.947,
-      "lastUpdated": "2026-07-23T16:35:57.585Z",
+      "score": -0.913,
+      "lastUpdated": "2026-07-23T20:29:04.469Z",
       "deltaHistory": [
-        0.02299999999999991,
         0.0040000000000000036,
         -0.015000000000000013,
         -0.0050000000000000044,
@@ -486,14 +480,14 @@
         0,
         0,
         0.010000000000000009,
-        -0.0020000000000000018
+        -0.0020000000000000018,
+        0.03399999999999992
       ]
     },
     "ic_design": {
-      "score": -0.98,
-      "lastUpdated": "2026-07-23T16:35:57.585Z",
+      "score": -1,
+      "lastUpdated": "2026-07-23T20:29:04.469Z",
       "deltaHistory": [
-        0.026000000000000023,
         -0.006000000000000005,
         -0.0050000000000000044,
         0.0010000000000000009,
@@ -502,14 +496,14 @@
         0.006000000000000005,
         0,
         0.0040000000000000036,
-        -0.0040000000000000036
+        -0.0040000000000000036,
+        -0.020000000000000018
       ]
     },
     "display": {
-      "score": -0.953,
-      "lastUpdated": "2026-07-23T16:35:57.585Z",
+      "score": -0.942,
+      "lastUpdated": "2026-07-23T20:29:04.469Z",
       "deltaHistory": [
-        0.03399999999999992,
         -0.0039999999999998925,
         -0.009000000000000008,
         -0.0020000000000000018,
@@ -518,14 +512,14 @@
         0.0050000000000000044,
         -0.0010000000000000009,
         0.010000000000000009,
-        -0.0050000000000000044
+        -0.0050000000000000044,
+        0.01100000000000001
       ]
     },
     "ev_supply": {
-      "score": -0.765,
-      "lastUpdated": "2026-07-23T16:35:57.585Z",
+      "score": -0.747,
+      "lastUpdated": "2026-07-23T20:29:04.469Z",
       "deltaHistory": [
-        0.03400000000000003,
         -0.006000000000000005,
         -0.009000000000000008,
         -0.0010000000000000009,
@@ -534,14 +528,14 @@
         0.006000000000000005,
         -0.020000000000000018,
         0.013000000000000012,
-        0
+        0,
+        0.018000000000000016
       ]
     },
     "ai_server": {
-      "score": 0.025,
-      "lastUpdated": "2026-07-23T16:35:57.585Z",
+      "score": 0.026,
+      "lastUpdated": "2026-07-23T20:29:04.469Z",
       "deltaHistory": [
-        -0.042,
         0.012999999999999998,
         -0.0010000000000000009,
         -0.011999999999999997,
@@ -550,12 +544,13 @@
         -0.013999999999999999,
         -0.023,
         -0.003999999999999997,
-        -0.008
+        -0.008,
+        0.0009999999999999974
       ]
     },
     "pcb": {
       "score": 0,
-      "lastUpdated": "2026-07-23T16:35:57.585Z",
+      "lastUpdated": "2026-07-23T20:29:04.469Z",
       "deltaHistory": [
         0,
         0,
@@ -570,10 +565,9 @@
       ]
     },
     "defense": {
-      "score": 0.002,
-      "lastUpdated": "2026-07-23T16:35:57.585Z",
+      "score": 0.003,
+      "lastUpdated": "2026-07-23T20:29:04.469Z",
       "deltaHistory": [
-        0,
         0,
         0,
         0,
@@ -582,14 +576,14 @@
         -0.001,
         0,
         0,
-        0
+        0,
+        0.001
       ]
     },
     "packaging": {
-      "score": -0.167,
-      "lastUpdated": "2026-07-23T16:35:57.585Z",
+      "score": -0.155,
+      "lastUpdated": "2026-07-23T20:29:04.469Z",
       "deltaHistory": [
-        -0.0020000000000000018,
         0.017,
         0.02800000000000001,
         -0.128,
@@ -598,14 +592,15 @@
         0.028999999999999998,
         0,
         -0.028999999999999998,
-        0.012999999999999984
+        0.012999999999999984,
+        0.01200000000000001
       ]
     },
     "semiconductor_equip": {
       "score": 0,
-      "lastUpdated": "2026-07-23T16:35:57.585Z",
+      "lastUpdated": "2026-07-23T20:29:04.469Z",
       "deltaHistory": [
-        -0.001,
+        0,
         0,
         0,
         0,
@@ -619,9 +614,9 @@
     },
     "robotics": {
       "score": 0,
-      "lastUpdated": "2026-07-23T16:35:57.585Z",
+      "lastUpdated": "2026-07-23T20:29:04.469Z",
       "deltaHistory": [
-        -0.001,
+        0,
         0,
         0,
         0,
