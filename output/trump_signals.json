@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-24T16:37:45.739Z",
+  "updatedAt": "2026-07-24T20:34:42.785Z",
   "posts": [
     {
       "text": "China Has Come Through Trump’s Trade War in a Good Position - The New York Times China Has Come Through Trump’s Trade War in a Good Position  The New York Times",
@@ -22,14 +22,37 @@
       }
     },
     {
-      "text": "US hits dozens of countries with new wave of tariffs - BBC US hits dozens of countries with new wave of tariffs  BBC",
-      "timestamp": "2026-07-24T12:40:44.000Z",
-      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE15N2M3Ym54N2RUUGFma3o4WVVESF9SQTFpSXJnOWVyZ3hQbnhfZWNtWXZyTzc0MWFZTXFSRGxudEtVc1dwbDhENTY0MmsxRkY3cDhHM2tnYUZRdw?oc=5",
+      "text": "U.S. allies hit with new tariffs object to Trump's forced labor allegations - NPR U.S. allies hit with new tariffs object to Trump's forced labor allegations  NPR",
+      "timestamp": "2026-07-24T19:25:47.000Z",
+      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNQmJLczZYZkZFZFBvdlp4TGJRcTRzQ2xRV21hbHd2T3J6bURsbHB6NDVtLUpfaml2RHM5VHF4NVdFTEw0YVU1RDVpcWNvQUpFdURkQ0xhRWhZQmpYV1pSa000cU83YTUzZjU2bzdLcFRBUktoU3pDM2dsSUxELU5HYUp0SQ?oc=5",
       "keywords": [
         "tariff",
         "tariffs"
       ],
       "impacts": {
+        "foundry": -1,
+        "shipping": -1,
+        "steel": -1,
+        "ic_design": -1,
+        "display": -1,
+        "ev_supply": -0.8
+      },
+      "sentiment": {
+        "compound": -0.7184,
+        "label": "強烈利空"
+      }
+    },
+    {
+      "text": "New US tariffs linked to claims of foreign forced labor dismay and anger trading partners - AP News New US tariffs linked to claims of foreign forced labor dismay and anger trading partners  AP News",
+      "timestamp": "2026-07-24T19:13:00.000Z",
+      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPNE9QZlB2aENlVDVYTkdNcHRXNXdMMWQ3aGw2MkZZaDA1UUZFWVBSZlRVcFFFN2F5OXU2XzNPNGNzQmJySlFDd0NidE8zVlg2ZXFYUW1ZYlpWanpzdjAzaWt4UXJxSFNrZXJaUzh4MGNfcmxFRS1hQW12X0dsaTBqcERSTU9Odm5KWUR0Tlg4UEFYbVZTeGlTbXFkeHhkcmQ2Ykhnbg?oc=5",
+      "keywords": [
+        "ai",
+        "tariff",
+        "tariffs"
+      ],
+      "impacts": {
+        "ai_server": 0.7,
         "foundry": -1,
         "shipping": -1,
         "steel": -1,
@@ -84,16 +107,14 @@
       }
     },
     {
-      "text": "U.S. allies hit with new tariffs object to Trump’s forced labor claims - NPR U.S. allies hit with new tariffs object to Trump’s forced labor claims  NPR",
-      "timestamp": "2026-07-24T10:31:08.000Z",
-      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNQmJLczZYZkZFZFBvdlp4TGJRcTRzQ2xRV21hbHd2T3J6bURsbHB6NDVtLUpfaml2RHM5VHF4NVdFTEw0YVU1RDVpcWNvQUpFdURkQ0xhRWhZQmpYV1pSa000cU83YTUzZjU2bzdLcFRBUktoU3pDM2dsSUxELU5HYUp0SQ?oc=5",
+      "text": "Why Trump's 'forced labor' tariffs leave the world puzzled - dw.com Why Trump's 'forced labor' tariffs leave the world puzzled  dw.com",
+      "timestamp": "2026-07-24T15:32:24.000Z",
+      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNVWNkRkVaY2hRdFlSVEQtOG5hR3VBQjVuTUtySVp1d3Z2VDhGdzVwNjFVRUxZQ0NNT0p6SlBaVlRWTGs1c1BBUWVYSW1lM1JLbk94aks4UVJfaW9FMnpmU3VQRDhqOFpuUmI4dlJCYk5ON3NRSmRDUWNDblQ0VHZCc1k4WHdwZUNNSTNPbmxSTEM2ajBOZEHSAZYBQVVfeXFMTm41Z0JSV2xBX2YweG9OU0g2RFRRang3QTV3UWRQYUt4dXRGX29ITUpxWFBfanBoTHpvLW9rY3g2VkxiRkJDT0FYLTRFS1c0RnpFSFZsSHlHeFRRS3pRc21kLW96QVVRaERPVHRVd0Jfb3hPYWRaRDM2cE5fcW1NSVh3bWd3a2xxbVQyTkVLQ211aGY1QzFn?oc=5",
       "keywords": [
-        "ai",
         "tariff",
         "tariffs"
       ],
       "impacts": {
-        "ai_server": 0.7,
         "foundry": -1,
         "shipping": -1,
         "steel": -1,
@@ -115,6 +136,30 @@
         "tariffs"
       ],
       "impacts": {
+        "foundry": -1,
+        "shipping": -1,
+        "steel": -1,
+        "ic_design": -1,
+        "display": -1,
+        "ev_supply": -0.8
+      },
+      "sentiment": {
+        "compound": -0.7184,
+        "label": "強烈利空"
+      }
+    },
+    {
+      "text": "Trump's next phase of global tariffs goes into effect, affecting countries that provide 99.4% of US imports - Yahoo Finance Trump's next phase of global tariffs goes into effect, affecting countries that provide 99.4% of US imports  Yahoo Finance",
+      "timestamp": "2026-07-24T15:17:58.000Z",
+      "url": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxQTkRQcUdhQVZMZm8wdUxJOWJUYW96bHZVQ2RRRVJUenJJXzR1TUxXSzhyaGgxSGtoUHJFa21KMjgtZWRyRUR2eHk5WW5UUl9CLWhnN2pDYXJfS2hTdWhQVU1wMEQ5UEo3bU04Ujg5QThnNGw1S2pyRHNfZ0h1SXJsTEpaN0Vta3d3alJKanNWb0VNMUs0QWhFeTVxellmV0xFNVR0Ml9vam0xTE9iQjZKbGJYVURjV2JIQmgxR2ptck1hNmc2TlA2R21uemhOd3N5T1Bvb0VGYXJBSkJXdGN6SE1KZXpSa2gwSnJocm54ZmhCX0w5ZkRaamFkdw?oc=5",
+      "keywords": [
+        "ase",
+        "tariff",
+        "tariffs",
+        "port"
+      ],
+      "impacts": {
+        "packaging": -0.7,
         "foundry": -1,
         "shipping": -1,
         "steel": -1,
@@ -151,30 +196,9 @@
       }
     },
     {
-      "text": "Trump set to impose sweeping tariffs on 60 trade partners - ABC News - Breaking News, Latest News and Videos Trump set to impose sweeping tariffs on 60 trade partners  ABC News - Breaking News, Latest News and Videos",
-      "timestamp": "2026-07-23T23:35:40.000Z",
-      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNa1BDcjdFRHFWaGlkYlMzZi1ZY2hCaVR5dGRpalctVTI1Q2poOGxFcXZqdmZfX2lqaVZxRmo3MWZIZ2ZUU0xCMm44OFdibDRCNF9BOVNmT1VHNURxR0tabkNtaVdoNTRaTW81cVIyVUdvanhBUS1rX3pEZFdyQmNSbDVDa0VMM2tPVGhYbDkwR1VhcUJJTDJXVmhNZVVVNi1L0gGmAUFVX3lxTE5UdFo2TDl4c1R2ZWRuX1ZxbTA3UmdwQnlrbVh1OXUyd1pucVlQS2dqY2VsbnRNSGt3WWljNkZ3V2kySmZNUzJ4WVBaT2NXSGRuUFlqRmx1UXNzSlEwZkV1MGRWVWxNbHdBcnY3Vm9CMVFqSWZxdnI3TkZqbWxValByNzBMRWxBR3BraFBtbEVuUFBvNDNpUVNBdWVkN3V6enc1YjlIWXc?oc=5",
-      "keywords": [
-        "tariff",
-        "tariffs"
-      ],
-      "impacts": {
-        "foundry": -1,
-        "shipping": -1,
-        "steel": -1,
-        "ic_design": -1,
-        "display": -1,
-        "ev_supply": -0.8
-      },
-      "sentiment": {
-        "compound": -0.875,
-        "label": "強烈利空"
-      }
-    },
-    {
-      "text": "Why Trump's 'forced labor' tariffs leave the world puzzled - DW.com Why Trump's 'forced labor' tariffs leave the world puzzled  DW.com",
-      "timestamp": "2026-07-24T15:32:24.000Z",
-      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNVWNkRkVaY2hRdFlSVEQtOG5hR3VBQjVuTUtySVp1d3Z2VDhGdzVwNjFVRUxZQ0NNT0p6SlBaVlRWTGs1c1BBUWVYSW1lM1JLbk94aks4UVJfaW9FMnpmU3VQRDhqOFpuUmI4dlJCYk5ON3NRSmRDUWNDblQ0VHZCc1k4WHdwZUNNSTNPbmxSTEM2ajBOZEHSAZYBQVVfeXFMTm41Z0JSV2xBX2YweG9OU0g2RFRRang3QTV3UWRQYUt4dXRGX29ITUpxWFBfanBoTHpvLW9rY3g2VkxiRkJDT0FYLTRFS1c0RnpFSFZsSHlHeFRRS3pRc21kLW96QVVRaERPVHRVd0Jfb3hPYWRaRDM2cE5fcW1NSVh3bWd3a2xxbVQyTkVLQ211aGY1QzFn?oc=5",
+      "text": "Trump accused of using forced labor as ‘convenient’ justification for tariffs - The Guardian Trump accused of using forced labor as ‘convenient’ justification for tariffs  The Guardian",
+      "timestamp": "2026-07-24T12:27:00.000Z",
+      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9zamtici02MmdBNnd4TURoNzZqOTVFMjliTlgtcHUtTV9nYTloenRobGkwaDRHeW9pUG8yam8xQmtQbGhiSWEtLUYxMmVQNGlNaFlJaEtZUmtyclVxZUVyZldaLWtuUW1nLWdzSlUyZEh1TUMySFR2VGlySllyTzA?oc=5",
       "keywords": [
         "tariff",
         "tariffs"
@@ -214,37 +238,14 @@
       }
     },
     {
-      "text": "What to know about Trump’s new tariffs on more than 80 countries - The Guardian What to know about Trump’s new tariffs on more than 80 countries  The Guardian",
-      "timestamp": "2026-07-24T01:56:00.000Z",
-      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1EcVNFeEZCN1dYckRSa1pmS0I4ZEdjazMzNnBRUy1LQ1psdjJjRFVpYmNNYUdEWjVzdHc3UDhhRGpTMHJMVUg5cms3OW5GVjFPOF9HM2UyRWZVQmdGM0FyS1hiaWRGQWdnZGt2R2dJUlhJYXJxX0N2OWhEYk9lYjg?oc=5",
+      "text": "Trump tariff wall set to stay after Supreme Court blow: analysts - France 24 Trump tariff wall set to stay after Supreme Court blow: analysts  France 24",
+      "timestamp": "2026-07-24T20:29:10.000Z",
+      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNQ0dENDd0MWw0Wm1FOWlSSndwUEZtQkFjVzJ0UnRnV3ZfamxpUDBVcnZ1UjEteDRYY04wTklvR01NVFhrV3JlYlRIeXoxRUc2N01rWVFFQmZ1LVFoeERwdHJubWZSeVFwOU5uNU1wZlZjdnBsU2M3UDhPZkhCSWlLZ3dPMnZUS1I1WWN1WkFsSlJCUVgzLTQ1UjNiUWtYeFF0aXFIVHpLTEpaMExHMFlF?oc=5",
       "keywords": [
-        "tariff",
-        "tariffs"
-      ],
-      "impacts": {
-        "foundry": -1,
-        "shipping": -1,
-        "steel": -1,
-        "ic_design": -1,
-        "display": -1,
-        "ev_supply": -0.8
-      },
-      "sentiment": {
-        "compound": -0.7184,
-        "label": "強烈利空"
-      }
-    },
-    {
-      "text": "US tariff hikes linked to claims of foreign forced labor dismay and anger trading partners - AP News US tariff hikes linked to claims of foreign forced labor dismay and anger trading partners  AP News",
-      "timestamp": "2026-07-24T09:34:00.000Z",
-      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPNE9QZlB2aENlVDVYTkdNcHRXNXdMMWQ3aGw2MkZZaDA1UUZFWVBSZlRVcFFFN2F5OXU2XzNPNGNzQmJySlFDd0NidE8zVlg2ZXFYUW1ZYlpWanpzdjAzaWt4UXJxSFNrZXJaUzh4MGNfcmxFRS1hQW12X0dsaTBqcERSTU9Odm5KWUR0Tlg4UEFYbVZTeGlTbXFkeHhkcmQ2Ykhnbg?oc=5",
-      "keywords": [
-        "ai",
         "tariff"
       ],
       "impacts": {
-        "ai_server": 0.7,
-        "foundry": -0.4,
+        "foundry": -0.7,
         "shipping": -0.5,
         "steel": -0.5,
         "ic_design": -0.6,
@@ -257,31 +258,7 @@
       }
     },
     {
-      "text": "Trump's next phase of global tariffs goes into effect, affecting countries that provide 99.4% of US imports - Yahoo Finance Trump's next phase of global tariffs goes into effect, affecting countries that provide 99.4% of US imports  Yahoo Finance",
-      "timestamp": "2026-07-24T13:00:35.000Z",
-      "url": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxQTkRQcUdhQVZMZm8wdUxJOWJUYW96bHZVQ2RRRVJUenJJXzR1TUxXSzhyaGgxSGtoUHJFa21KMjgtZWRyRUR2eHk5WW5UUl9CLWhnN2pDYXJfS2hTdWhQVU1wMEQ5UEo3bU04Ujg5QThnNGw1S2pyRHNfZ0h1SXJsTEpaN0Vta3d3alJKanNWb0VNMUs0QWhFeTVxellmV0xFNVR0Ml9vam0xTE9iQjZKbGJYVURjV2JIQmgxR2ptck1hNmc2TlA2R21uemhOd3N5T1Bvb0VGYXJBSkJXdGN6SE1KZXpSa2gwSnJocm54ZmhCX0w5ZkRaamFkdw?oc=5",
-      "keywords": [
-        "ase",
-        "tariff",
-        "tariffs",
-        "port"
-      ],
-      "impacts": {
-        "packaging": -0.7,
-        "foundry": -1,
-        "shipping": -1,
-        "steel": -1,
-        "ic_design": -1,
-        "display": -1,
-        "ev_supply": -0.8
-      },
-      "sentiment": {
-        "compound": -0.7184,
-        "label": "強烈利空"
-      }
-    },
-    {
-      "text": "Here are the new tariff rates on 60 countries targeted by President Trump - CBS News Here are the new tariff rates on 60 countries targeted by President Trump  CBS News",
+      "text": "Here are the new tariff rates on dozens of countries targeted by President Trump - CBS News Here are the new tariff rates on dozens of countries targeted by President Trump  CBS News",
       "timestamp": "2026-07-24T14:13:00.000Z",
       "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE81cEkzcU1raHhIS3dKc1dGOEkwcmFoSGloYkRoa0Z5R2dweTFUMVJZb3ZqYVJKS21XejNWakJaQmZXcHVJalozb0oxVV82MC1xNC1jYUxlbHR4TVg4V3pyamVUMUluSHZBODF4d2UxZ2pULUlQb3BPNW1mLVptOEE?oc=5",
       "keywords": [
@@ -301,9 +278,9 @@
       }
     },
     {
-      "text": "Trump imposes new tariffs targeting dozens of countries - CNN Trump imposes new tariffs targeting dozens of countries  CNN",
-      "timestamp": "2026-07-23T21:03:19.000Z",
-      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1tbzdkbUtPQWNTSzVCb21SZklWTDAxbWg2eDI3ckZJN0ZqNG5SUEtnRzZTQnNTZ2hONzNOUVF1aVlfRHdZRlVmd2s1aXZUXzVVYWwyQzdRYUhCRlZGQ3haTzlRTXZTSUk?oc=5",
+      "text": "Trump set to impose sweeping tariffs on 60 trade partners - ABC News - Breaking News, Latest News and Videos Trump set to impose sweeping tariffs on 60 trade partners  ABC News - Breaking News, Latest News and Videos",
+      "timestamp": "2026-07-22T07:00:00.000Z",
+      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNa1BDcjdFRHFWaGlkYlMzZi1ZY2hCaVR5dGRpalctVTI1Q2poOGxFcXZqdmZfX2lqaVZxRmo3MWZIZ2ZUU0xCMm44OFdibDRCNF9BOVNmT1VHNURxR0tabkNtaVdoNTRaTW81cVIyVUdvanhBUS1rX3pEZFdyQmNSbDVDa0VMM2tPVGhYbDkwR1VhcUJJTDJXVmhNZVVVNi1L0gGmAUFVX3lxTE5UdFo2TDl4c1R2ZWRuX1ZxbTA3UmdwQnlrbVh1OXUyd1pucVlQS2dqY2VsbnRNSGt3WWljNkZ3V2kySmZNUzJ4WVBaT2NXSGRuUFlqRmx1UXNzSlEwZkV1MGRWVWxNbHdBcnY3Vm9CMVFqSWZxdnI3TkZqbWxValByNzBMRWxBR3BraFBtbEVuUFBvNDNpUVNBdWVkN3V6enc1YjlIWXc?oc=5",
       "keywords": [
         "tariff",
         "tariffs"
@@ -317,7 +294,7 @@
         "ev_supply": -0.8
       },
       "sentiment": {
-        "compound": -0.7184,
+        "compound": -0.875,
         "label": "強烈利空"
       }
     },
@@ -364,9 +341,51 @@
       }
     },
     {
+      "text": "What to know about Trump’s new tariffs on more than 80 countries - The Guardian What to know about Trump’s new tariffs on more than 80 countries  The Guardian",
+      "timestamp": "2026-07-24T01:56:00.000Z",
+      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1EcVNFeEZCN1dYckRSa1pmS0I4ZEdjazMzNnBRUy1LQ1psdjJjRFVpYmNNYUdEWjVzdHc3UDhhRGpTMHJMVUg5cms3OW5GVjFPOF9HM2UyRWZVQmdGM0FyS1hiaWRGQWdnZGt2R2dJUlhJYXJxX0N2OWhEYk9lYjg?oc=5",
+      "keywords": [
+        "tariff",
+        "tariffs"
+      ],
+      "impacts": {
+        "foundry": -1,
+        "shipping": -1,
+        "steel": -1,
+        "ic_design": -1,
+        "display": -1,
+        "ev_supply": -0.8
+      },
+      "sentiment": {
+        "compound": -0.7184,
+        "label": "強烈利空"
+      }
+    },
+    {
       "text": "European Commission gives guarded welcome to new Trump tariffs - Reuters European Commission gives guarded welcome to new Trump tariffs  Reuters",
       "timestamp": "2026-07-24T06:30:00.000Z",
       "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPR0lfaDB3SHJ6STlnLXIyYWtTMHBUaE5qXzBDXy1VMDJkcHp1NjROSFFtbGVMWUEtQTl5RTNXVmFFajFrS1JIbFFjVzJLdEhMeW53ODB1c010VHBpYjNYbXNIbnBscEpGbXVmSHJjMUl3QXhiemlOc2oxbFpjYk1pZklSMnUwako2Sl8zWG9KcU04Z29McllZNVNTb3JrZUM1X19UZ3ctZFNneEE?oc=5",
+      "keywords": [
+        "tariff",
+        "tariffs"
+      ],
+      "impacts": {
+        "foundry": -1,
+        "shipping": -1,
+        "steel": -1,
+        "ic_design": -1,
+        "display": -1,
+        "ev_supply": -0.8
+      },
+      "sentiment": {
+        "compound": -0.7184,
+        "label": "強烈利空"
+      }
+    },
+    {
+      "text": "Trump’s Section 301 Tariffs: Map of Countries Targeted With New Rates - The New York Times Trump’s Section 301 Tariffs: Map of Countries Targeted With New Rates  The New York Times",
+      "timestamp": "2026-07-24T13:57:42.000Z",
+      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9BLW9tbWk2anRIaEdtTGVXd1Iwbjc4dnVOWkVXWTA1Ml9CMjdnT1VMUnNQVEtGbE5Oam5KaGJDdEI1LUFNeFpVSVI4aXFudlJxbG5majd3aVR1VDlhQ0RKbG5nYXl4YjQ?oc=5",
       "keywords": [
         "tariff",
         "tariffs"
@@ -404,134 +423,19 @@
         "compound": -0.7184,
         "label": "強烈利空"
       }
-    },
-    {
-      "text": "New Tariffs as Old Ones Expire: The Latest on Trump’s Trade War - The New York Times New Tariffs as Old Ones Expire: The Latest on Trump’s Trade War  The New York Times",
-      "timestamp": "2026-07-24T13:57:42.000Z",
-      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9BLW9tbWk2anRIaEdtTGVXd1Iwbjc4dnVOWkVXWTA1Ml9CMjdnT1VMUnNQVEtGbE5Oam5KaGJDdEI1LUFNeFpVSVI4aXFudlJxbG5majd3aVR1VDlhQ0RKbG5nYXl4YjQ?oc=5",
-      "keywords": [
-        "trade war",
-        "tariff",
-        "tariffs"
-      ],
-      "impacts": {
-        "foundry": -1,
-        "ic_design": -1,
-        "shipping": -1,
-        "steel": -1,
-        "display": -1,
-        "ev_supply": -0.8
-      },
-      "sentiment": {
-        "compound": -0.7184,
-        "label": "強烈利空"
-      }
     }
   ],
-  "deltas": [
-    {
-      "sector": "steel",
-      "sectorName": "鋼鐵",
-      "prev": -0.97,
-      "current": -0.824,
-      "delta": 0.146,
-      "momentum": "↑ 壓力緩解",
-      "accelerating": true
-    },
-    {
-      "sector": "display",
-      "sectorName": "面板/顯示",
-      "prev": -0.975,
-      "current": -0.889,
-      "delta": 0.086,
-      "momentum": "↑ 壓力緩解",
-      "accelerating": true
-    },
-    {
-      "sector": "ev_supply",
-      "sectorName": "電動車供應鏈",
-      "prev": -0.789,
-      "current": -0.711,
-      "delta": 0.078,
-      "momentum": "↑ 壓力緩解",
-      "accelerating": true
-    },
-    {
-      "sector": "ai_server",
-      "sectorName": "AI 伺服器",
-      "prev": 0.046,
-      "current": 0.124,
-      "delta": 0.078,
-      "momentum": "↑ 訊號強化",
-      "accelerating": true
-    },
-    {
-      "sector": "foundry",
-      "sectorName": "晶圓代工",
-      "prev": -1,
-      "current": -0.942,
-      "delta": 0.058,
-      "momentum": "↑ 壓力緩解",
-      "accelerating": true
-    }
-  ],
-  "topDeltas": [
-    {
-      "sector": "steel",
-      "sectorName": "鋼鐵",
-      "prev": -0.97,
-      "current": -0.824,
-      "delta": 0.146,
-      "momentum": "↑ 壓力緩解",
-      "accelerating": true
-    },
-    {
-      "sector": "display",
-      "sectorName": "面板/顯示",
-      "prev": -0.975,
-      "current": -0.889,
-      "delta": 0.086,
-      "momentum": "↑ 壓力緩解",
-      "accelerating": true
-    },
-    {
-      "sector": "ev_supply",
-      "sectorName": "電動車供應鏈",
-      "prev": -0.789,
-      "current": -0.711,
-      "delta": 0.078,
-      "momentum": "↑ 壓力緩解",
-      "accelerating": true
-    },
-    {
-      "sector": "ai_server",
-      "sectorName": "AI 伺服器",
-      "prev": 0.046,
-      "current": 0.124,
-      "delta": 0.078,
-      "momentum": "↑ 訊號強化",
-      "accelerating": true
-    },
-    {
-      "sector": "foundry",
-      "sectorName": "晶圓代工",
-      "prev": -1,
-      "current": -0.942,
-      "delta": 0.058,
-      "momentum": "↑ 壓力緩解",
-      "accelerating": true
-    }
-  ],
+  "deltas": [],
+  "topDeltas": [],
   "totalAnalyzed": 100,
   "sources": [
     "Google News"
   ],
   "sectorState": {
     "foundry": {
-      "score": -0.942,
-      "lastUpdated": "2026-07-24T16:37:45.739Z",
+      "score": -0.946,
+      "lastUpdated": "2026-07-24T20:34:42.785Z",
       "deltaHistory": [
-        0,
         0,
         0,
         0,
@@ -540,14 +444,14 @@
         -0.008000000000000007,
         0,
         0,
-        0.05800000000000005
+        0.05800000000000005,
+        -0.0040000000000000036
       ]
     },
     "shipping": {
-      "score": -0.985,
-      "lastUpdated": "2026-07-24T16:37:45.739Z",
+      "score": -0.987,
+      "lastUpdated": "2026-07-24T20:34:42.785Z",
       "deltaHistory": [
-        0.006000000000000005,
         -0.0010000000000000009,
         0.009000000000000008,
         -0.0050000000000000044,
@@ -556,14 +460,14 @@
         0,
         0.039000000000000035,
         -0.02300000000000002,
-        -0.010000000000000009
+        -0.010000000000000009,
+        -0.0020000000000000018
       ]
     },
     "steel": {
-      "score": -0.824,
-      "lastUpdated": "2026-07-24T16:37:45.739Z",
+      "score": -0.821,
+      "lastUpdated": "2026-07-24T20:34:42.785Z",
       "deltaHistory": [
-        0,
         0,
         0.010000000000000009,
         -0.0020000000000000018,
@@ -572,14 +476,14 @@
         -0.01200000000000001,
         0.038000000000000034,
         -0.02300000000000002,
-        0.14600000000000002
+        0.14600000000000002,
+        0.0030000000000000027
       ]
     },
     "ic_design": {
       "score": -1,
-      "lastUpdated": "2026-07-24T16:37:45.739Z",
+      "lastUpdated": "2026-07-24T20:34:42.785Z",
       "deltaHistory": [
-        0.006000000000000005,
         0,
         0.0040000000000000036,
         -0.0040000000000000036,
@@ -588,14 +492,14 @@
         0.0010000000000000009,
         0.020000000000000018,
         -0.01100000000000001,
-        -0.010000000000000009
+        -0.010000000000000009,
+        0
       ]
     },
     "display": {
-      "score": -0.889,
-      "lastUpdated": "2026-07-24T16:37:45.739Z",
+      "score": -0.888,
+      "lastUpdated": "2026-07-24T20:34:42.785Z",
       "deltaHistory": [
-        0.0050000000000000044,
         -0.0010000000000000009,
         0.010000000000000009,
         -0.0050000000000000044,
@@ -604,14 +508,14 @@
         -0.0030000000000000027,
         0.038000000000000034,
         -0.025000000000000022,
-        0.08599999999999997
+        0.08599999999999997,
+        0.0010000000000000009
       ]
     },
     "ev_supply": {
-      "score": -0.711,
-      "lastUpdated": "2026-07-24T16:37:45.739Z",
+      "score": -0.708,
+      "lastUpdated": "2026-07-24T20:34:42.785Z",
       "deltaHistory": [
-        0.006000000000000005,
         -0.020000000000000018,
         0.013000000000000012,
         0,
@@ -620,14 +524,14 @@
         -0.007000000000000006,
         0.02100000000000002,
         -0.0050000000000000044,
-        0.07800000000000007
+        0.07800000000000007,
+        0.0030000000000000027
       ]
     },
     "ai_server": {
-      "score": 0.124,
-      "lastUpdated": "2026-07-24T16:37:45.739Z",
+      "score": 0.113,
+      "lastUpdated": "2026-07-24T20:34:42.785Z",
       "deltaHistory": [
-        -0.013999999999999999,
         -0.023,
         -0.003999999999999997,
         -0.008,
@@ -636,12 +540,13 @@
         -0.009,
         -0.002,
         0.038,
-        0.078
+        0.078,
+        -0.010999999999999996
       ]
     },
     "pcb": {
       "score": 0,
-      "lastUpdated": "2026-07-24T16:37:45.739Z",
+      "lastUpdated": "2026-07-24T20:34:42.785Z",
       "deltaHistory": [
         0,
         0,
@@ -657,9 +562,8 @@
     },
     "defense": {
       "score": 0,
-      "lastUpdated": "2026-07-24T16:37:45.739Z",
+      "lastUpdated": "2026-07-24T20:34:42.785Z",
       "deltaHistory": [
-        -0.004,
         -0.001,
         0,
         0,
@@ -668,14 +572,14 @@
         -0.002,
         -0.001,
         0,
+        0,
         0
       ]
     },
     "packaging": {
-      "score": -0.019,
-      "lastUpdated": "2026-07-24T16:37:45.739Z",
+      "score": -0.037,
+      "lastUpdated": "2026-07-24T20:34:42.785Z",
       "deltaHistory": [
-        0.028999999999999998,
         0,
         -0.028999999999999998,
         0.012999999999999984,
@@ -684,12 +588,13 @@
         0.027999999999999997,
         -0.0030000000000000027,
         0.059000000000000004,
-        -0.013
+        -0.013,
+        -0.018
       ]
     },
     "semiconductor_equip": {
       "score": 0,
-      "lastUpdated": "2026-07-24T16:37:45.739Z",
+      "lastUpdated": "2026-07-24T20:34:42.785Z",
       "deltaHistory": [
         0,
         0,
@@ -705,7 +610,7 @@
     },
     "robotics": {
       "score": 0,
-      "lastUpdated": "2026-07-24T16:37:45.739Z",
+      "lastUpdated": "2026-07-24T20:34:42.785Z",
       "deltaHistory": [
         0,
         0,
