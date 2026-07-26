@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-26T08:53:42.539Z",
+  "updatedAt": "2026-07-26T12:31:25.177Z",
   "posts": [
     {
       "text": "China Has Come Through Trump’s Trade War in a Good Position - The New York Times China Has Come Through Trump’s Trade War in a Good Position  The New York Times",
@@ -234,30 +234,9 @@
       }
     },
     {
-      "text": "Trump imposes new tariffs targeting dozens of countries - CNN Trump imposes new tariffs targeting dozens of countries  CNN",
-      "timestamp": "2026-07-23T21:03:19.000Z",
-      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1tbzdkbUtPQWNTSzVCb21SZklWTDAxbWg2eDI3ckZJN0ZqNG5SUEtnRzZTQnNTZ2hONzNOUVF1aVlfRHdZRlVmd2s1aXZUXzVVYWwyQzdRYUhCRlZGQ3haTzlRTXZTSUk?oc=5",
-      "keywords": [
-        "tariff",
-        "tariffs"
-      ],
-      "impacts": {
-        "foundry": -1,
-        "shipping": -1,
-        "steel": -1,
-        "ic_design": -1,
-        "display": -1,
-        "ev_supply": -0.8
-      },
-      "sentiment": {
-        "compound": -0.7184,
-        "label": "強烈利空"
-      }
-    },
-    {
-      "text": "Trump finalizes new tariffs on dozens of countries - Politico Trump finalizes new tariffs on dozens of countries  Politico",
-      "timestamp": "2026-07-23T21:46:00.000Z",
-      "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOSlZpbDFtcGI2bTBTMXZPVnVhbGZXZE03cndOQlNaTDR3Q0lFTFdXRlMtT1RJbEJLSDU1Rm1WenRlVTJudjNmZ3lDekhsT0xYTjdXUFJ2eVJFMkhhRWg1Mzlvc0lPX1NYcm9DZnpCOWdYQldIMlhVV0VPMG5qaUVQNkd4TFR4cEFwWnhGVTUxcGk?oc=5",
+      "text": "Trump administration imposes new tariffs on dozens of countries, citing forced labor concerns - CBS News Trump administration imposes new tariffs on dozens of countries, citing forced labor concerns  CBS News",
+      "timestamp": "2026-07-23T21:31:00.000Z",
+      "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTFBqRHhXcTl4Tk5RdlFWWWdJeHpaNEcwN0R5MHk3ZlJTMWFQM1N3cC1Zb21pUnJPaGt2VG1RU0dlZUZrOFl3WXE5V1R5VlZmbktGdEEwMnBlOTZBSDhlVXJUQnB2UnM3TjBNdjNoeGVBZFBZVlp1YzlQdm9qdHYtZw?oc=5",
       "keywords": [
         "tariff",
         "tariffs"
@@ -300,8 +279,31 @@
       }
     },
     {
+      "text": "New US tariffs linked to claims of foreign forced labor dismay and anger trading partners - AP News New US tariffs linked to claims of foreign forced labor dismay and anger trading partners  AP News",
+      "timestamp": "2026-07-24T19:13:00.000Z",
+      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPNE9QZlB2aENlVDVYTkdNcHRXNXdMMWQ3aGw2MkZZaDA1UUZFWVBSZlRVcFFFN2F5OXU2XzNPNGNzQmJySlFDd0NidE8zVlg2ZXFYUW1ZYlpWanpzdjAzaWt4UXJxSFNrZXJaUzh4MGNfcmxFRS1hQW12X0dsaTBqcERSTU9Odm5KWUR0Tlg4UEFYbVZTeGlTbXFkeHhkcmQ2Ykhnbg?oc=5",
+      "keywords": [
+        "ai",
+        "tariff",
+        "tariffs"
+      ],
+      "impacts": {
+        "ai_server": 0.7,
+        "foundry": -1,
+        "shipping": -1,
+        "steel": -1,
+        "ic_design": -1,
+        "display": -1,
+        "ev_supply": -0.8
+      },
+      "sentiment": {
+        "compound": -0.7184,
+        "label": "強烈利空"
+      }
+    },
+    {
       "text": "Trump imposes new global tariffs, drawing protests from trading partners - Reuters Trump imposes new global tariffs, drawing protests from trading partners  Reuters",
-      "timestamp": "2026-07-24T18:14:18.000Z",
+      "timestamp": "2026-07-24T10:21:28.000Z",
       "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPcTlxTFMtLUhVcTNocVRYQ0t0NkdRamtCSUEySEhFbHE5N0FnNFlvMDNENWcyRVlHWUloTXRna3RlRVptLVFyZ0dfeG04cmhUZ1RSbkViNFNhM0FKZ0k5N29mUmY0UU9lUXlHMGw0ckJxVHFiZFJ3cjFhbFRQTUpSNEMzdFQ4U0REUzJlU2FFY2h3Q0U2UmxnS2lUbm90RnM0WUVfVEJiaFFEdUlGYWs2YXp4NzlRekdtQTEyZjYtMA?oc=5",
       "keywords": [
         "tariff",
@@ -437,9 +439,8 @@
   "sectorState": {
     "foundry": {
       "score": -0.947,
-      "lastUpdated": "2026-07-26T08:53:42.539Z",
+      "lastUpdated": "2026-07-26T12:31:25.177Z",
       "deltaHistory": [
-        -0.0040000000000000036,
         -0.0030000000000000027,
         0.0040000000000000036,
         0.0030000000000000027,
@@ -448,14 +449,14 @@
         0.006000000000000005,
         0.0030000000000000027,
         -0.0020000000000000018,
-        0.0020000000000000018
+        0.0020000000000000018,
+        0
       ]
     },
     "shipping": {
       "score": -0.99,
-      "lastUpdated": "2026-07-26T08:53:42.539Z",
+      "lastUpdated": "2026-07-26T12:31:25.177Z",
       "deltaHistory": [
-        -0.0020000000000000018,
         0.0010000000000000009,
         -0.007000000000000006,
         -0.0040000000000000036,
@@ -464,14 +465,14 @@
         0.0040000000000000036,
         -0.0040000000000000036,
         0.0020000000000000018,
-        -0.0020000000000000018
+        -0.0020000000000000018,
+        0
       ]
     },
     "steel": {
-      "score": -0.832,
-      "lastUpdated": "2026-07-26T08:53:42.539Z",
+      "score": -0.831,
+      "lastUpdated": "2026-07-26T12:31:25.177Z",
       "deltaHistory": [
-        0.0030000000000000027,
         -0.0020000000000000018,
         -0.014000000000000012,
         -0.007000000000000006,
@@ -480,12 +481,13 @@
         0.030000000000000027,
         -0.0050000000000000044,
         0.0030000000000000027,
-        -0.0030000000000000027
+        -0.0030000000000000027,
+        0.0010000000000000009
       ]
     },
     "ic_design": {
       "score": -1,
-      "lastUpdated": "2026-07-26T08:53:42.539Z",
+      "lastUpdated": "2026-07-26T12:31:25.177Z",
       "deltaHistory": [
         0,
         0,
@@ -501,9 +503,8 @@
     },
     "display": {
       "score": -0.895,
-      "lastUpdated": "2026-07-26T08:53:42.539Z",
+      "lastUpdated": "2026-07-26T12:31:25.177Z",
       "deltaHistory": [
-        0.0010000000000000009,
         0,
         -0.01100000000000001,
         -0.006000000000000005,
@@ -512,14 +513,14 @@
         0.019000000000000017,
         -0.0040000000000000036,
         0.0020000000000000018,
-        -0.0020000000000000018
+        -0.0020000000000000018,
+        0
       ]
     },
     "ev_supply": {
       "score": -0.714,
-      "lastUpdated": "2026-07-26T08:53:42.539Z",
+      "lastUpdated": "2026-07-26T12:31:25.177Z",
       "deltaHistory": [
-        0.0030000000000000027,
         -0.0020000000000000018,
         -0.008000000000000007,
         -0.0050000000000000044,
@@ -528,14 +529,14 @@
         0.016000000000000014,
         -0.0040000000000000036,
         0.0020000000000000018,
-        -0.0020000000000000018
+        -0.0020000000000000018,
+        0
       ]
     },
     "ai_server": {
-      "score": 0.038,
-      "lastUpdated": "2026-07-26T08:53:42.539Z",
+      "score": 0.05,
+      "lastUpdated": "2026-07-26T12:31:25.177Z",
       "deltaHistory": [
-        -0.010999999999999996,
         0.03499999999999999,
         -0.045,
         -0.025999999999999995,
@@ -544,12 +545,13 @@
         -0.032,
         0.008,
         0.007000000000000003,
-        0.0029999999999999957
+        0.0029999999999999957,
+        0.012000000000000004
       ]
     },
     "pcb": {
       "score": 0,
-      "lastUpdated": "2026-07-26T08:53:42.539Z",
+      "lastUpdated": "2026-07-26T12:31:25.177Z",
       "deltaHistory": [
         0,
         0,
@@ -565,9 +567,9 @@
     },
     "defense": {
       "score": 0,
-      "lastUpdated": "2026-07-26T08:53:42.539Z",
+      "lastUpdated": "2026-07-26T12:31:25.177Z",
       "deltaHistory": [
-        -0.001,
+        0,
         0,
         0,
         0,
@@ -580,10 +582,9 @@
       ]
     },
     "packaging": {
-      "score": -0.013,
-      "lastUpdated": "2026-07-26T08:53:42.539Z",
+      "score": -0.016,
+      "lastUpdated": "2026-07-26T12:31:25.177Z",
       "deltaHistory": [
-        -0.018,
         0.005999999999999998,
         0.005000000000000001,
         0.013,
@@ -592,12 +593,13 @@
         0.001,
         -0.002,
         0.001,
-        -0.009999999999999998
+        -0.009999999999999998,
+        -0.003000000000000001
       ]
     },
     "semiconductor_equip": {
       "score": 0,
-      "lastUpdated": "2026-07-26T08:53:42.539Z",
+      "lastUpdated": "2026-07-26T12:31:25.177Z",
       "deltaHistory": [
         0,
         0,
@@ -613,7 +615,7 @@
     },
     "robotics": {
       "score": 0,
-      "lastUpdated": "2026-07-26T08:53:42.539Z",
+      "lastUpdated": "2026-07-26T12:31:25.177Z",
       "deltaHistory": [
         0,
         0,
