@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-27T00:52:33.193Z",
+  "updatedAt": "2026-07-27T05:23:25.747Z",
   "posts": [
     {
       "text": "China Has Come Through Trump’s Trade War in a Good Position - The New York Times China Has Come Through Trump’s Trade War in a Good Position  The New York Times",
@@ -22,12 +22,13 @@
       }
     },
     {
-      "text": "What Trump’s Latest Tariffs Mean for the American Economy - WSJ What Trump’s Latest Tariffs Mean for the American Economy  WSJ",
-      "timestamp": "2026-07-26T14:21:50.000Z",
-      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPaWd5cGlOSG9vQmxHSFBtUndHY3k3QkRVYk9fWjlMa3NjLXRxakhtOGRkbVlURy0wb0l4aHQ1eEhTNzYzeC1CUkRTanhmMmZaYjEyUnFxdlEyZlEtUkhEeGdfejYtTE54d2dTU1pYakxUQkZ1SzNwMUVGbTNfX19nNE13QUxORXdFWFVpUkhrTzhBSE1ud0x0dXRYYktmRFBa?oc=5",
+      "text": "Trump sets new tariffs on trading partners, covering nearly all U.S. imports - PBS Trump sets new tariffs on trading partners, covering nearly all U.S. imports  PBS",
+      "timestamp": "2026-07-24T22:55:48.000Z",
+      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNVkFyUnF0MW5EOWZmOE9fWkxuNkl1b1BmU3VXWlNqU0xKSkJWeDU2X1NRbzFEczd2dkpmdzFNdVZ4cUw4Y0tPeVlJTHozdW5VbFItaWt4djJ2bFdIZWRkV2ZSWncxdWt6TDRFZHJ3YUQ5Y29BczM1RV84V2xBak1waEdzZXEtX292QzNqZlEySms3aUF3VHE4dkNyOHpURzVIRDNXWU9GNU4tSXpt?oc=5",
       "keywords": [
         "tariff",
-        "tariffs"
+        "tariffs",
+        "port"
       ],
       "impacts": {
         "foundry": -1,
@@ -43,13 +44,12 @@
       }
     },
     {
-      "text": "Trump sets new tariffs on trading partners, covering nearly all U.S. imports - PBS Trump sets new tariffs on trading partners, covering nearly all U.S. imports  PBS",
-      "timestamp": "2026-07-24T22:55:48.000Z",
-      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNVkFyUnF0MW5EOWZmOE9fWkxuNkl1b1BmU3VXWlNqU0xKSkJWeDU2X1NRbzFEczd2dkpmdzFNdVZ4cUw4Y0tPeVlJTHozdW5VbFItaWt4djJ2bFdIZWRkV2ZSWncxdWt6TDRFZHJ3YUQ5Y29BczM1RV84V2xBak1waEdzZXEtX292QzNqZlEySms3aUF3VHE4dkNyOHpURzVIRDNXWU9GNU4tSXpt?oc=5",
+      "text": "What Trump’s Latest Tariffs Mean for the American Economy - WSJ What Trump’s Latest Tariffs Mean for the American Economy  WSJ",
+      "timestamp": "2026-07-26T18:51:52.000Z",
+      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPaWd5cGlOSG9vQmxHSFBtUndHY3k3QkRVYk9fWjlMa3NjLXRxakhtOGRkbVlURy0wb0l4aHQ1eEhTNzYzeC1CUkRTanhmMmZaYjEyUnFxdlEyZlEtUkhEeGdfejYtTE54d2dTU1pYakxUQkZ1SzNwMUVGbTNfX19nNE13QUxORXdFWFVpUkhrTzhBSE1ud0x0dXRYYktmRFBa?oc=5",
       "keywords": [
         "tariff",
-        "tariffs",
-        "port"
+        "tariffs"
       ],
       "impacts": {
         "foundry": -1,
@@ -102,6 +102,27 @@
       },
       "sentiment": {
         "compound": -0.875,
+        "label": "強烈利空"
+      }
+    },
+    {
+      "text": "This wave of Trump tariffs is likely here to stay; more are coming - Reuters This wave of Trump tariffs is likely here to stay; more are coming  Reuters",
+      "timestamp": "2026-07-25T19:58:39.000Z",
+      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOWEhnbzZuUVgwb2duQzN4ZGpYM1hkWXRKUTlBZUVpWFRLUjVQaDFWQVkzdm5qLWpfckwtZ3QyZFlpMTZSYkJlNWhxT1lXcGFETW12Z1JNWUtnQWxzRE8xSWFmcmhhMXhMbjlOMVBXbFBJRHBjc3BGdXdOX3Brc1A2VkltcTdRcHRQeUEyUnlSVUtESDY5MU1QeDhxZUNub0gxSjFTaEVHaEpJYVQxWkh4c0VR?oc=5",
+      "keywords": [
+        "tariff",
+        "tariffs"
+      ],
+      "impacts": {
+        "foundry": -1,
+        "shipping": -1,
+        "steel": -1,
+        "ic_design": -1,
+        "display": -1,
+        "ev_supply": -0.8
+      },
+      "sentiment": {
+        "compound": -0.7184,
         "label": "強烈利空"
       }
     },
@@ -171,20 +192,22 @@
       }
     },
     {
-      "text": "Trump imposes new global tariffs, drawing protests from trading partners - Reuters Trump imposes new global tariffs, drawing protests from trading partners  Reuters",
-      "timestamp": "2026-07-24T10:21:28.000Z",
-      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPcTlxTFMtLUhVcTNocVRYQ0t0NkdRamtCSUEySEhFbHE5N0FnNFlvMDNENWcyRVlHWUloTXRna3RlRVptLVFyZ0dfeG04cmhUZ1RSbkViNFNhM0FKZ0k5N29mUmY0UU9lUXlHMGw0ckJxVHFiZFJ3cjFhbFRQTUpSNEMzdFQ4U0REUzJlU2FFY2h3Q0U2UmxnS2lUbm90RnM0WUVfVEJiaFFEdUlGYWs2YXp4NzlRekdtQTEyZjYtMA?oc=5",
+      "text": "US Presses Mexico to Mirror Its Steel Tariff Wall Aimed at China - Bloomberg.com US Presses Mexico to Mirror Its Steel Tariff Wall Aimed at China  Bloomberg.com",
+      "timestamp": "2026-07-26T14:23:00.000Z",
+      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPQlhVclNYVG9sNlhoT240V0ltOG9BV1BDSVhvZXg1VE00VmFMdmkxcVdfaUZKTk51WHE2b3B4OElSOWROTm81MDl3VUJTTWdUNDR2SUc5OHBzRXNMTUZNZmowOGdmaXZsU3FPZkhhOWU1NWRKcGRpMEtPTThjSEJSdjBZQjY0Mm5vQUxYazVmT1BwbXUyUFZ6RklKSm1sazlLdlU5YmFsTzRpczJVRjdMSmluLU9lUQ?oc=5",
       "keywords": [
+        "ai",
         "tariff",
-        "tariffs"
+        "china"
       ],
       "impacts": {
-        "foundry": -1,
-        "shipping": -1,
-        "steel": -1,
+        "ai_server": 0.7,
+        "foundry": -0.4,
+        "shipping": -0.9,
+        "steel": -0.5,
         "ic_design": -1,
-        "display": -1,
-        "ev_supply": -0.8
+        "display": -0.9,
+        "ev_supply": -0.7
       },
       "sentiment": {
         "compound": -0.7184,
@@ -234,9 +257,9 @@
       }
     },
     {
-      "text": "Trump’s tariff addiction Can Europe survive another hit? - UnHerd Trump’s tariff addiction Can Europe survive another hit?  UnHerd",
-      "timestamp": "2026-07-26T23:06:21.000Z",
-      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE1TU25JNGNhVjdBYmIxRWRtOE15bmp2SDFmUGtra2Z1SmpKSFpaYXY0S2w2V0d3WXRuR0VOb3E5QndBdEhCWGQ3bFk5RzFBUW1qek5FWGhtd01BYWx0WHVZQnYya0RvX29PVldWaWx6TQ?oc=5",
+      "text": "Shein warns of Trump tariff impact after posting quarterly loss - USA Today Shein warns of Trump tariff impact after posting quarterly loss  USA Today",
+      "timestamp": "2026-07-27T01:07:00.000Z",
+      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPMkw2YXZHODhiYklscXBJZUcxWnRSTGVDYjE2QlFLN0dmdkZJZ2NmdDZQWHVoeHNKdEFIelNlZDZ2Ri1SUTNZZTBMUTBiUU43bU5Fa1JnUVNrbldyVnNzZkZyWDVlUTZWS0Fyc3pLcllYclRjVnBHbDJwMWhodzgwcEEwYnJuREtjbkZmUg?oc=5",
       "keywords": [
         "tariff"
       ],
@@ -280,6 +303,27 @@
       "text": "‘Extremely disappointing’: US trade partners respond to Trump’s new tariffs - Al Jazeera ‘Extremely disappointing’: US trade partners respond to Trump’s new tariffs  Al Jazeera",
       "timestamp": "2026-07-24T16:32:54.000Z",
       "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPVFBrcFVYYzJodDNEWUI3bjNpU2F0OEVFbmdyZGJOT2g0VGhnRUxoenRaVzladXhIMkphVFlaYm41amdzVzBIYW41eU1FSFY2aU9OU2I2dFFzM01BQXI0UlhDOWhaRlJkMk9OcWN0ZU9zN2dCWFB6Z2JDbjZ0Z3MtQzBCcGw1ZGhMVXFiYnJYTmVkTHh1WXc2aUdzYmFVNmJwN3Z2cmwzZTZaYXpmUXlWVzVn0gG3AUFVX3lxTE81TUNJeUhQdmc3X01Vc0ZXWUxCWDNiTzVMUzFuNUlRMjhSMS1zdlpNenJYcnJKMGFyT3pSOFhKX3dVeXQ4REpPWlJwaU1uSHdXTE1yYzhDWkhkdl9BUm54YUpOTDZDVEd4b1o1N1RiZ1I1VU5jR3MzQlR0QktCNlNsUE56VXBRUnJINEZ0RWxNNm1LZDhJWnpyTFVOcXRGaV9SWFJPdThwT2ROa0t6VXNHUThqNk1ybw?oc=5",
+      "keywords": [
+        "tariff",
+        "tariffs"
+      ],
+      "impacts": {
+        "foundry": -1,
+        "shipping": -1,
+        "steel": -1,
+        "ic_design": -1,
+        "display": -1,
+        "ev_supply": -0.8
+      },
+      "sentiment": {
+        "compound": -0.7184,
+        "label": "強烈利空"
+      }
+    },
+    {
+      "text": "Trump imposes new global tariffs, drawing protests from trading partners - Reuters Trump imposes new global tariffs, drawing protests from trading partners  Reuters",
+      "timestamp": "2026-07-24T10:21:28.000Z",
+      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPcTlxTFMtLUhVcTNocVRYQ0t0NkdRamtCSUEySEhFbHE5N0FnNFlvMDNENWcyRVlHWUloTXRna3RlRVptLVFyZ0dfeG04cmhUZ1RSbkViNFNhM0FKZ0k5N29mUmY0UU9lUXlHMGw0ckJxVHFiZFJ3cjFhbFRQTUpSNEMzdFQ4U0REUzJlU2FFY2h3Q0U2UmxnS2lUbm90RnM0WUVfVEJiaFFEdUlGYWs2YXp4NzlRekdtQTEyZjYtMA?oc=5",
       "keywords": [
         "tariff",
         "tariffs"
@@ -363,48 +407,6 @@
       }
     },
     {
-      "text": "This wave of Trump tariffs is likely here to stay; more are coming - Reuters This wave of Trump tariffs is likely here to stay; more are coming  Reuters",
-      "timestamp": "2026-07-25T19:58:39.000Z",
-      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOWEhnbzZuUVgwb2duQzN4ZGpYM1hkWXRKUTlBZUVpWFRLUjVQaDFWQVkzdm5qLWpfckwtZ3QyZFlpMTZSYkJlNWhxT1lXcGFETW12Z1JNWUtnQWxzRE8xSWFmcmhhMXhMbjlOMVBXbFBJRHBjc3BGdXdOX3Brc1A2VkltcTdRcHRQeUEyUnlSVUtESDY5MU1QeDhxZUNub0gxSjFTaEVHaEpJYVQxWkh4c0VR?oc=5",
-      "keywords": [
-        "tariff",
-        "tariffs"
-      ],
-      "impacts": {
-        "foundry": -1,
-        "shipping": -1,
-        "steel": -1,
-        "ic_design": -1,
-        "display": -1,
-        "ev_supply": -0.8
-      },
-      "sentiment": {
-        "compound": -0.7184,
-        "label": "強烈利空"
-      }
-    },
-    {
-      "text": "Trump to impose 'forced labor' duties on Friday as temporary 10% US tariffs expire - Reuters Trump to impose 'forced labor' duties on Friday as temporary 10% US tariffs expire  Reuters",
-      "timestamp": "2026-07-23T21:10:00.000Z",
-      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOZjlYNnVfaDJNN2FOQldfTTRPclB4cmxtTWxaSDkyUGJJZHhtYjJEVUZnRmxhNjZEV0daUkZJS1ZHWHFJM1hSNDlBcVlwUlRIdVN4ZmVzVmgtbUpxM1NyVlotQVA3NmhUb090NVFzamlaUkhCTjFuRzZWTjVTUTYxMzhBLXNld09NWGdadEx1bXdnemUwbWdtbzg1X0I2Y3VJZFpiOFk0blpFSS1ieklCeFItZzQ4UQ?oc=5",
-      "keywords": [
-        "tariff",
-        "tariffs"
-      ],
-      "impacts": {
-        "foundry": -1,
-        "shipping": -1,
-        "steel": -1,
-        "ic_design": -1,
-        "display": -1,
-        "ev_supply": -0.8
-      },
-      "sentiment": {
-        "compound": -0.875,
-        "label": "強烈利空"
-      }
-    },
-    {
       "text": "Trump accused of using forced labor as ‘convenient’ justification for tariffs - The Guardian Trump accused of using forced labor as ‘convenient’ justification for tariffs  The Guardian",
       "timestamp": "2026-07-24T12:27:00.000Z",
       "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9zamtici02MmdBNnd4TURoNzZqOTVFMjliTlgtcHUtTV9nYTloenRobGkwaDRHeW9pUG8yam8xQmtQbGhiSWEtLUYxMmVQNGlNaFlJaEtZUmtyclVxZUVyZldaLWtuUW1nLWdzSlUyZEh1TUMySFR2VGlySllyTzA?oc=5",
@@ -434,10 +436,9 @@
   ],
   "sectorState": {
     "foundry": {
-      "score": -0.949,
-      "lastUpdated": "2026-07-27T00:52:33.193Z",
+      "score": -0.927,
+      "lastUpdated": "2026-07-27T05:23:25.747Z",
       "deltaHistory": [
-        -0.009000000000000008,
         -0.0050000000000000044,
         0.006000000000000005,
         0.0030000000000000027,
@@ -446,14 +447,14 @@
         0,
         -0.0010000000000000009,
         0,
-        -0.0010000000000000009
+        -0.0010000000000000009,
+        0.02199999999999991
       ]
     },
     "shipping": {
-      "score": -0.987,
-      "lastUpdated": "2026-07-27T00:52:33.193Z",
+      "score": -0.984,
+      "lastUpdated": "2026-07-27T05:23:25.747Z",
       "deltaHistory": [
-        0,
         0.007000000000000006,
         0.0040000000000000036,
         -0.0040000000000000036,
@@ -462,14 +463,14 @@
         0,
         0.0020000000000000018,
         0,
-        0.0010000000000000009
+        0.0010000000000000009,
+        0.0030000000000000027
       ]
     },
     "steel": {
-      "score": -0.828,
-      "lastUpdated": "2026-07-27T00:52:33.193Z",
+      "score": -0.81,
+      "lastUpdated": "2026-07-27T05:23:25.747Z",
       "deltaHistory": [
-        -0.02300000000000002,
         0.010000000000000009,
         0.030000000000000027,
         -0.0050000000000000044,
@@ -478,12 +479,13 @@
         0.0010000000000000009,
         0.0020000000000000018,
         0,
-        0.0010000000000000009
+        0.0010000000000000009,
+        0.017999999999999905
       ]
     },
     "ic_design": {
       "score": -1,
-      "lastUpdated": "2026-07-27T00:52:33.193Z",
+      "lastUpdated": "2026-07-27T05:23:25.747Z",
       "deltaHistory": [
         0,
         0,
@@ -498,10 +500,9 @@
       ]
     },
     "display": {
-      "score": -0.892,
-      "lastUpdated": "2026-07-27T00:52:33.193Z",
+      "score": -0.889,
+      "lastUpdated": "2026-07-27T05:23:25.747Z",
       "deltaHistory": [
-        -0.014000000000000012,
         0.009000000000000008,
         0.019000000000000017,
         -0.0040000000000000036,
@@ -510,14 +511,14 @@
         0,
         0.0020000000000000018,
         0,
-        0.0010000000000000009
+        0.0010000000000000009,
+        0.0030000000000000027
       ]
     },
     "ev_supply": {
-      "score": -0.711,
-      "lastUpdated": "2026-07-27T00:52:33.193Z",
+      "score": -0.708,
+      "lastUpdated": "2026-07-27T05:23:25.747Z",
       "deltaHistory": [
-        -0.015000000000000013,
         0.01200000000000001,
         0.016000000000000014,
         -0.0040000000000000036,
@@ -526,14 +527,14 @@
         0,
         0.0020000000000000018,
         0,
-        0.0010000000000000009
+        0.0010000000000000009,
+        0.0030000000000000027
       ]
     },
     "ai_server": {
-      "score": 0.065,
-      "lastUpdated": "2026-07-27T00:52:33.193Z",
+      "score": 0.078,
+      "lastUpdated": "2026-07-27T05:23:25.747Z",
       "deltaHistory": [
-        -0.006000000000000005,
         -0.018999999999999996,
         -0.032,
         0.008,
@@ -542,12 +543,13 @@
         0.012000000000000004,
         -0.011000000000000003,
         0.013999999999999999,
-        0.012000000000000004
+        0.012000000000000004,
+        0.012999999999999998
       ]
     },
     "pcb": {
       "score": 0,
-      "lastUpdated": "2026-07-27T00:52:33.193Z",
+      "lastUpdated": "2026-07-27T05:23:25.747Z",
       "deltaHistory": [
         0,
         0,
@@ -578,10 +580,9 @@
       ]
     },
     "packaging": {
-      "score": -0.004,
-      "lastUpdated": "2026-07-27T00:52:33.193Z",
+      "score": -0.003,
+      "lastUpdated": "2026-07-27T05:23:25.747Z",
       "deltaHistory": [
-        0.009999999999999998,
         0,
         0.001,
         -0.002,
@@ -590,12 +591,13 @@
         -0.003000000000000001,
         0.012,
         0,
-        0
+        0,
+        0.001
       ]
     },
     "semiconductor_equip": {
       "score": 0,
-      "lastUpdated": "2026-07-27T00:52:33.193Z",
+      "lastUpdated": "2026-07-27T05:23:25.747Z",
       "deltaHistory": [
         0,
         0,
@@ -611,7 +613,7 @@
     },
     "robotics": {
       "score": 0,
-      "lastUpdated": "2026-07-27T00:52:33.193Z",
+      "lastUpdated": "2026-07-27T05:23:25.747Z",
       "deltaHistory": [
         0,
         0,
