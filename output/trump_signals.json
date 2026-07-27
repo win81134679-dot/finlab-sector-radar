@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-27T16:46:58.372Z",
+  "updatedAt": "2026-07-27T20:36:05.780Z",
   "posts": [
     {
       "text": "Why Trump's new tariff blitz is very different this time around - CNBC Why Trump's new tariff blitz is very different this time around  CNBC",
@@ -64,6 +64,29 @@
       }
     },
     {
+      "text": "Squeezed by US tariffs, Brazil backs China-Mercosur deal it long tried to kill - South China Morning Post Squeezed by US tariffs, Brazil backs China-Mercosur deal it long tried to kill  South China Morning Post",
+      "timestamp": "2026-07-27T18:46:32.000Z",
+      "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQTThUOWFwMlY5WnFXTWVERnc5SDdxdDNMbnhBYW5rclUwMjBDTlloV0had2tyVFdQWUwxMzVPcndXTW13MVkxbTdZVE1qYmFuUG5kX18xeFFjeWFrWXJ5UFlHYjBlYkUyTGpfVVVMVVcwczZUbTZPT1AzREF1NlJ1alliNTA3SUpYV1FsRzdBcnNQLU9xLXpEOXFZcnlSTGQ4V1Z1MlRybGxOMFlBQmlDaHZLOGVWdkNCSF9Eb2swaXhxeFEtamxvadIByAFBVV95cUxObE5RQlMtTVdRX0tmQ3VhVWR5R0FTRFkzRnZycVQtbjZ4eW1zZjZSNENsV2RsbG5Qbi1jY1pVUGlMWk9YajNFNmlFS3k5YjNSN19tRGdYZlJQMWZpekJtM0pkUTVCR0hsTzZvdzRHak1MaUN3UnczRU96SFloQmI5dHkxTlhMbGQxTjlsR0RzaG9VVy14N1NGckNwYUhtRTgwUzlDMjRmTkJDaGlocXMxNWlYT2M2VXZubjgtLUI4VHlKcTVqUWN2Qw?oc=5",
+      "keywords": [
+        "tariff",
+        "tariffs",
+        "china",
+        "deal"
+      ],
+      "impacts": {
+        "foundry": -1,
+        "shipping": -1,
+        "steel": -1,
+        "ic_design": -1,
+        "display": -1,
+        "ev_supply": -1
+      },
+      "sentiment": {
+        "compound": -0.25,
+        "label": "偏空"
+      }
+    },
+    {
       "text": "What are tariffs, how do they work and why is Trump using them? - BBC What are tariffs, how do they work and why is Trump using them?  BBC",
       "timestamp": "2026-07-24T08:28:16.000Z",
       "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBweHdveUp5S2F0aGJwSEs2U2lOMkF6NzRNZTd3bEJUdTQwVjhRX0pjZmFzZ25hRzk4MHE0WW9KVkEtUjIxRUNWbXRzX3pmd1A5UWhyaE5Ja1ZWdw?oc=5",
@@ -100,28 +123,6 @@
         "ic_design": -1,
         "display": -1,
         "ev_supply": -0.8
-      },
-      "sentiment": {
-        "compound": -0.7184,
-        "label": "強烈利空"
-      }
-    },
-    {
-      "text": "Trump, tariffs and ties with China at stake in Brazilian presidential race - South China Morning Post Trump, tariffs and ties with China at stake in Brazilian presidential race  South China Morning Post",
-      "timestamp": "2026-07-27T15:00:08.000Z",
-      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPdG9HWHNTQl81YzZrMnc4WlZUUnk1em9tcEljVlowNGpEeXkxVktyWFBGUjgtYlcwNDUwbUNDNk1vSE4xdjlFTExvNU52UVJ0dFlTNHozaUR3NmtuWG4zR3VZRHRRbzZZUWllMFRiSWtESlBhNHBVVzRVXzJKRFpvbksxYndJR2ZXOWRXeTdqOGhEZmh1dWhob3BzUC1mNGJucHdKTFdaclJweW8wOGdWaGtVVUVZVzZrU0xMT9IBvAFBVV95cUxPeDQ5RTRncjJKRmoxNUw3ZDkwRGtpQUhzcW5oVlByNXRUVG05amQyb2xUX1pSWEhRZEszSzMydXMyMDUwTFo1aUZ2TXVqWVhPUVNETTNnRUVLMkI4MXRZb3NSUC1qVzFBUDlqUF9wUF9pQkU5dlpnd050c1A4My1hRFBwS3d4NnZaTHk4NUZZVDljQjYtQU5teldZc2RRVm5jeFg4dlA4bWMyeHc3TnVKSlV6ZzYwZVBxVzMzRQ?oc=5",
-      "keywords": [
-        "tariff",
-        "tariffs",
-        "china"
-      ],
-      "impacts": {
-        "foundry": -1,
-        "shipping": -1,
-        "steel": -1,
-        "ic_design": -1,
-        "display": -1,
-        "ev_supply": -1
       },
       "sentiment": {
         "compound": -0.7184,
@@ -299,23 +300,21 @@
       }
     },
     {
-      "text": "Trump's next phase of global tariffs goes into effect, affecting countries that provide 99.4% of US imports - Yahoo Finance Trump's next phase of global tariffs goes into effect, affecting countries that provide 99.4% of US imports  Yahoo Finance",
-      "timestamp": "2026-07-24T13:00:35.000Z",
-      "url": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxQTkRQcUdhQVZMZm8wdUxJOWJUYW96bHZVQ2RRRVJUenJJXzR1TUxXSzhyaGgxSGtoUHJFa21KMjgtZWRyRUR2eHk5WW5UUl9CLWhnN2pDYXJfS2hTdWhQVU1wMEQ5UEo3bU04Ujg5QThnNGw1S2pyRHNfZ0h1SXJsTEpaN0Vta3d3alJKanNWb0VNMUs0QWhFeTVxellmV0xFNVR0Ml9vam0xTE9iQjZKbGJYVURjV2JIQmgxR2ptck1hNmc2TlA2R21uemhOd3N5T1Bvb0VGYXJBSkJXdGN6SE1KZXpSa2gwSnJocm54ZmhCX0w5ZkRaamFkdw?oc=5",
+      "text": "Trump, tariffs and ties with China at stake in Brazilian presidential race - South China Morning Post Trump, tariffs and ties with China at stake in Brazilian presidential race  South China Morning Post",
+      "timestamp": "2026-07-27T15:00:08.000Z",
+      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPdG9HWHNTQl81YzZrMnc4WlZUUnk1em9tcEljVlowNGpEeXkxVktyWFBGUjgtYlcwNDUwbUNDNk1vSE4xdjlFTExvNU52UVJ0dFlTNHozaUR3NmtuWG4zR3VZRHRRbzZZUWllMFRiSWtESlBhNHBVVzRVXzJKRFpvbksxYndJR2ZXOWRXeTdqOGhEZmh1dWhob3BzUC1mNGJucHdKTFdaclJweW8wOGdWaGtVVUVZVzZrU0xMT9IBvAFBVV95cUxPeDQ5RTRncjJKRmoxNUw3ZDkwRGtpQUhzcW5oVlByNXRUVG05amQyb2xUX1pSWEhRZEszSzMydXMyMDUwTFo1aUZ2TXVqWVhPUVNETTNnRUVLMkI4MXRZb3NSUC1qVzFBUDlqUF9wUF9pQkU5dlpnd050c1A4My1hRFBwS3d4NnZaTHk4NUZZVDljQjYtQU5teldZc2RRVm5jeFg4dlA4bWMyeHc3TnVKSlV6ZzYwZVBxVzMzRQ?oc=5",
       "keywords": [
-        "ase",
         "tariff",
         "tariffs",
-        "port"
+        "china"
       ],
       "impacts": {
-        "packaging": -0.7,
         "foundry": -1,
         "shipping": -1,
         "steel": -1,
         "ic_design": -1,
         "display": -1,
-        "ev_supply": -0.8
+        "ev_supply": -1
       },
       "sentiment": {
         "compound": -0.7184,
@@ -438,10 +437,9 @@
   ],
   "sectorState": {
     "foundry": {
-      "score": -0.954,
-      "lastUpdated": "2026-07-27T16:46:58.372Z",
+      "score": -0.953,
+      "lastUpdated": "2026-07-27T20:36:05.780Z",
       "deltaHistory": [
-        -0.0020000000000000018,
         0.0020000000000000018,
         0,
         -0.0010000000000000009,
@@ -450,14 +448,14 @@
         0.02199999999999991,
         -0.02499999999999991,
         -0.0020000000000000018,
-        0
+        0,
+        0.0010000000000000009
       ]
     },
     "shipping": {
       "score": -0.981,
-      "lastUpdated": "2026-07-27T16:46:58.372Z",
+      "lastUpdated": "2026-07-27T20:36:05.780Z",
       "deltaHistory": [
-        0.0020000000000000018,
         -0.0020000000000000018,
         0,
         0.0020000000000000018,
@@ -466,14 +464,14 @@
         0.0030000000000000027,
         0.0050000000000000044,
         0.0010000000000000009,
-        -0.0030000000000000027
+        -0.0030000000000000027,
+        0
       ]
     },
     "steel": {
       "score": -0.834,
-      "lastUpdated": "2026-07-27T16:46:58.372Z",
+      "lastUpdated": "2026-07-27T20:36:05.780Z",
       "deltaHistory": [
-        0.0030000000000000027,
         -0.0030000000000000027,
         0.0010000000000000009,
         0.0020000000000000018,
@@ -482,12 +480,13 @@
         0.017999999999999905,
         -0.02299999999999991,
         0.0040000000000000036,
-        -0.0050000000000000044
+        -0.0050000000000000044,
+        0
       ]
     },
     "ic_design": {
       "score": -1,
-      "lastUpdated": "2026-07-27T16:46:58.372Z",
+      "lastUpdated": "2026-07-27T20:36:05.780Z",
       "deltaHistory": [
         0,
         0,
@@ -503,9 +502,8 @@
     },
     "display": {
       "score": -0.899,
-      "lastUpdated": "2026-07-27T16:46:58.372Z",
+      "lastUpdated": "2026-07-27T20:36:05.780Z",
       "deltaHistory": [
-        0.0020000000000000018,
         -0.0020000000000000018,
         0,
         0.0020000000000000018,
@@ -514,14 +512,14 @@
         0.0030000000000000027,
         -0.007000000000000006,
         0.0010000000000000009,
-        -0.0040000000000000036
+        -0.0040000000000000036,
+        0
       ]
     },
     "ev_supply": {
-      "score": -0.731,
-      "lastUpdated": "2026-07-27T16:46:58.372Z",
+      "score": -0.74,
+      "lastUpdated": "2026-07-27T20:36:05.780Z",
       "deltaHistory": [
-        0.0020000000000000018,
         -0.0020000000000000018,
         0,
         0.0020000000000000018,
@@ -530,14 +528,14 @@
         0.0030000000000000027,
         -0.007000000000000006,
         0.0010000000000000009,
-        -0.017000000000000015
+        -0.017000000000000015,
+        -0.009000000000000008
       ]
     },
     "ai_server": {
-      "score": 0.027,
-      "lastUpdated": "2026-07-27T16:46:58.372Z",
+      "score": 0.029,
+      "lastUpdated": "2026-07-27T20:36:05.780Z",
       "deltaHistory": [
-        0.007000000000000003,
         0.0029999999999999957,
         0.012000000000000004,
         -0.011000000000000003,
@@ -546,12 +544,13 @@
         0.012999999999999998,
         -0.017,
         -0.009000000000000001,
-        -0.024999999999999998
+        -0.024999999999999998,
+        0.0020000000000000018
       ]
     },
     "pcb": {
       "score": 0,
-      "lastUpdated": "2026-07-27T16:46:58.372Z",
+      "lastUpdated": "2026-07-27T20:36:05.780Z",
       "deltaHistory": [
         0,
         0,
@@ -582,10 +581,9 @@
       ]
     },
     "packaging": {
-      "score": -0.012,
-      "lastUpdated": "2026-07-27T16:46:58.372Z",
+      "score": -0.004,
+      "lastUpdated": "2026-07-27T20:36:05.780Z",
       "deltaHistory": [
-        0.001,
         -0.009999999999999998,
         -0.003000000000000001,
         0.012,
@@ -594,12 +592,13 @@
         0.001,
         0,
         -0.011,
-        0.002
+        0.002,
+        0.008
       ]
     },
     "semiconductor_equip": {
       "score": 0,
-      "lastUpdated": "2026-07-27T16:46:58.372Z",
+      "lastUpdated": "2026-07-27T20:36:05.780Z",
       "deltaHistory": [
         0,
         0,
@@ -615,7 +614,7 @@
     },
     "robotics": {
       "score": 0,
-      "lastUpdated": "2026-07-27T16:46:58.372Z",
+      "lastUpdated": "2026-07-27T20:36:05.780Z",
       "deltaHistory": [
         0,
         0,
