@@ -1,7 +1,7 @@
 {
   "schema_version": "2.0",
   "date": "2026-07-29",
-  "run_at": "2026-07-29T21:09:52+08:00",
+  "run_at": "2026-07-29T21:26:50+08:00",
   "last_trading_date": "2026-07-29",
   "macro": {
     "warning": true,
@@ -11,16 +11,16 @@
     "details": {
       "bond": "US10Y=4.65% (↑均線❌)",
       "pmi": "INDPRO=102.6 (擴張✅)",
-      "sox": "SOXX=491.46 (20MA下方❌)",
-      "twd": "USD/TWD=32.378 (台幣貶值❌)"
+      "sox": "SOXX=516.23 (20MA下方❌)",
+      "twd": "USD/TWD=32.377 (台幣貶值❌)"
     },
     "us_bond_10y": 4.65,
     "bond_trend": "up",
     "ip_index": 102.6,
     "ip_trend": "up",
-    "sox_price": 491.46,
+    "sox_price": 516.23,
     "sox_trend": "down",
-    "usd_twd": 32.378,
+    "usd_twd": 32.377,
     "twd_trend": "up"
   },
   "macro_warning": true,
