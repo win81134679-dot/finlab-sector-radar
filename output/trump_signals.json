@@ -1,6 +1,28 @@
 {
-  "updatedAt": "2026-07-29T09:03:35.569Z",
+  "updatedAt": "2026-07-29T12:49:30.286Z",
   "posts": [
+    {
+      "text": "Trump’s Tariffs Are Sending Some Companies Back to China - The New York Times Trump’s Tariffs Are Sending Some Companies Back to China  The New York Times",
+      "timestamp": "2026-07-29T09:02:02.000Z",
+      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNYVNoRmhoZG5NMHVjRERYWWp4bGNHTUdfUnl2aVdLTFpMbXplOHdqQ3BRUjR0X1FRc0tjMUt4amU4RVdldUdUU3ZBN1dobkxQVGdla2l5SzVxVFpZR0N0RjY1cUlTdDhWbUJGeWprTGR4S0dOUzdOWFU5MThVblZ6QjJsekVMVFhPYTJ3OHJMNlR4N054R2trN2NNbUoyVDY3eDNJV3RpVVV6cGFlLWV1RDJ3?oc=5",
+      "keywords": [
+        "tariff",
+        "tariffs",
+        "china"
+      ],
+      "impacts": {
+        "foundry": -1,
+        "shipping": -1,
+        "steel": -1,
+        "ic_design": -1,
+        "display": -1,
+        "ev_supply": -1
+      },
+      "sentiment": {
+        "compound": -0.7184,
+        "label": "強烈利空"
+      }
+    },
     {
       "text": "Why Trump's new tariff blitz is very different this time around - CNBC Why Trump's new tariff blitz is very different this time around  CNBC",
       "timestamp": "2026-07-27T05:00:01.000Z",
@@ -154,7 +176,7 @@
       }
     },
     {
-      "text": "China Says US Pledged to Cap Replacement Tariffs at 20% - Bloomberg.com China Says US Pledged to Cap Replacement Tariffs at 20%  Bloomberg.com",
+      "text": "China Says US Pledged to Cap Replacement Tariffs at 20% - Bloomberg China Says US Pledged to Cap Replacement Tariffs at 20%  Bloomberg",
       "timestamp": "2026-07-27T11:47:03.000Z",
       "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOdmZMR3FFdTNEQk13bHVOV1o2MVN4ck00Q01xUXBiMmRHM2lKRmg2OVBULUViNUI2dGRSR0dnZ2UwazA5M280Z1pPQ1VmOXFnM1V2T3VEZGE2YkN2alhkYWpQNVNhV2tKWmFZRXdTQmZhMzdwVnVSVUp0MUQzWF9WOWd4bzAzMlV5VHRTc0RJLTctTDZvd3NWMEtaalNRWDVyaGdfMVZkRTQ?oc=5",
       "keywords": [
@@ -238,6 +260,49 @@
       }
     },
     {
+      "text": "Trump’s tariff addiction Can Europe survive another hit? - UnHerd Trump’s tariff addiction Can Europe survive another hit?  UnHerd",
+      "timestamp": "2026-07-26T23:11:44.000Z",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE92SC0xOHBQRVV5eW1tbVpEVEJLdTM1NUF1NlljMU1GczFVdTh3WHpaekRhOWRVdzFpRElpR2NyMzJSTGk5X3c3SWpqVTY0MzBDdS1nWnp1Q2NMRUJpTnFBZw?oc=5",
+      "keywords": [
+        "tariff"
+      ],
+      "impacts": {
+        "foundry": -0.7,
+        "shipping": -0.5,
+        "steel": -0.5,
+        "ic_design": -0.6,
+        "display": -0.5,
+        "ev_supply": -0.4
+      },
+      "sentiment": {
+        "compound": -0.7184,
+        "label": "強烈利空"
+      }
+    },
+    {
+      "text": "U.S. Presses Mexico to Adopt Trump's Steel Tariffs on Chinese Import - Latin Times U.S. Presses Mexico to Adopt Trump's Steel Tariffs on Chinese Import  Latin Times",
+      "timestamp": "2026-07-27T13:48:31.000Z",
+      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOMTJiTDNwWDN5V1pERHFrNlpBQW5PVWVMVVd2bG40RGhkNWNSLVZ5WXJHeGphdFpMTTZpa1kwc3BvbUZodlotMFYzVFJkNVJPT0JLWjFOajdZLUVhdW4yNWxoT3pLT3hST29FQy1JRVFGRGRNSjEwTktLelJ4X1A5ZE01RmlNc1hvYjlZMHphTmJfT0M4cldkbQ?oc=5",
+      "keywords": [
+        "tariff",
+        "tariffs",
+        "chinese",
+        "port"
+      ],
+      "impacts": {
+        "foundry": -1,
+        "shipping": -1,
+        "steel": -1,
+        "ic_design": -1,
+        "display": -1,
+        "ev_supply": -0.8
+      },
+      "sentiment": {
+        "compound": -0.7184,
+        "label": "強烈利空"
+      }
+    },
+    {
       "text": "New Republican ads slam Democrats opposed to Trump's tariffs - CNBC New Republican ads slam Democrats opposed to Trump's tariffs  CNBC",
       "timestamp": "2026-07-28T11:00:01.000Z",
       "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQZURPc2NOZmh4eTZQdENCc3Q3MVRnYl9CWVBkUnRISVQzdjFrYTd1aEFoMVo4ckd1YllxanFFWTVpMjBPMlhiZnRpRHlYRTRNdXJ2XzdpUmNVTzdsY0dDZjJLd3VHRDFFN18xYUZEQk1pSjJoQmhPRzFvRHRqeXdOM2dwWdIBiAFBVV95cUxOOElvRmUzcjRjM2RrS0pnaUhNYkZmZzhfMG43RTVKdy1vdVZVanotdmlWVVZKVFF1dmc5ZE9uVWZWZTRkejJtRWdoVVphbVVocUcxZHFLNjVpQjU4dFVaVTZGSTFwYkxlSjVYR2QxTEFWRFJTcnNUWEVORUhNQjgtUnh6aXh2OTNP?oc=5",
@@ -259,50 +324,9 @@
       }
     },
     {
-      "text": "Trump imposes new global tariffs, drawing protests from trading partners - Reuters Trump imposes new global tariffs, drawing protests from trading partners  Reuters",
-      "timestamp": "2026-07-24T10:21:28.000Z",
-      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPcTlxTFMtLUhVcTNocVRYQ0t0NkdRamtCSUEySEhFbHE5N0FnNFlvMDNENWcyRVlHWUloTXRna3RlRVptLVFyZ0dfeG04cmhUZ1RSbkViNFNhM0FKZ0k5N29mUmY0UU9lUXlHMGw0ckJxVHFiZFJ3cjFhbFRQTUpSNEMzdFQ4U0REUzJlU2FFY2h3Q0U2UmxnS2lUbm90RnM0WUVfVEJiaFFEdUlGYWs2YXp4NzlRekdtQTEyZjYtMA?oc=5",
-      "keywords": [
-        "tariff",
-        "tariffs"
-      ],
-      "impacts": {
-        "foundry": -1,
-        "shipping": -1,
-        "steel": -1,
-        "ic_design": -1,
-        "display": -1,
-        "ev_supply": -0.8
-      },
-      "sentiment": {
-        "compound": -0.7184,
-        "label": "強烈利空"
-      }
-    },
-    {
-      "text": "Trump’s tariff addiction Can Europe survive another hit? - UnHerd Trump’s tariff addiction Can Europe survive another hit?  UnHerd",
-      "timestamp": "2026-07-26T23:11:44.000Z",
-      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE92SC0xOHBQRVV5eW1tbVpEVEJLdTM1NUF1NlljMU1GczFVdTh3WHpaekRhOWRVdzFpRElpR2NyMzJSTGk5X3c3SWpqVTY0MzBDdS1nWnp1Q2NMRUJpTnFBZw?oc=5",
-      "keywords": [
-        "tariff"
-      ],
-      "impacts": {
-        "foundry": -0.7,
-        "shipping": -0.5,
-        "steel": -0.5,
-        "ic_design": -0.6,
-        "display": -0.5,
-        "ev_supply": -0.4
-      },
-      "sentiment": {
-        "compound": -0.7184,
-        "label": "強烈利空"
-      }
-    },
-    {
-      "text": "Shein swings to $99m loss as Trump tariffs hit sales - BBC Shein swings to $99m loss as Trump tariffs hit sales  BBC",
-      "timestamp": "2026-07-27T02:08:36.000Z",
-      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1sQjV5UVM3bllOSko0ekpHS1BjVzBJbXZjaWV0ZTA1TUxybEd1RWFJeXl2aWE2eWlNUVNRWV9YellPMGlYTGJyS1hudWdUSnRoVjFtem54V3VZQQ?oc=5",
+      "text": "USTR's Greer says Trump's latest tariffs won't have an economic impact - Reuters USTR's Greer says Trump's latest tariffs won't have an economic impact  Reuters",
+      "timestamp": "2026-07-27T23:35:00.000Z",
+      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPSy1MV0VXRXF6SWIzTXliVUFjWFM1cUl1UDdnZmpKR2JMb2J3TmxNUk4xcU1hN1ROcVJYWDZDU2xKekp2VE9hVXI0UkRabFgwWDJseU5JV1JVRmROS1RWU3B2bFQtM1cyeEQ5VXktWFdaZjNUWXJMUGFjaGVfYmJuMU9wRGNwSUgxUmRvRFFjeVBmUi1wSWtQTmFtUVRPV0RJUE9pUzZ2V0tLUkhielZoQTlR?oc=5",
       "keywords": [
         "tariff",
         "tariffs"
@@ -343,7 +367,7 @@
       }
     },
     {
-      "text": "US Presses Mexico to Mirror Its Steel Tariff Wall Aimed at China - Bloomberg.com US Presses Mexico to Mirror Its Steel Tariff Wall Aimed at China  Bloomberg.com",
+      "text": "US Presses Mexico to Mirror Its Steel Tariff Wall Aimed at China - Bloomberg US Presses Mexico to Mirror Its Steel Tariff Wall Aimed at China  Bloomberg",
       "timestamp": "2026-07-26T14:23:00.000Z",
       "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPQlhVclNYVG9sNlhoT240V0ltOG9BV1BDSVhvZXg1VE00VmFMdmkxcVdfaUZKTk51WHE2b3B4OElSOWROTm81MDl3VUJTTWdUNDR2SUc5OHBzRXNMTUZNZmowOGdmaXZsU3FPZkhhOWU1NWRKcGRpMEtPTThjSEJSdjBZQjY0Mm5vQUxYazVmT1BwbXUyUFZ6RklKSm1sazlLdlU5YmFsTzRpczJVRjdMSmluLU9lUQ?oc=5",
       "keywords": [
@@ -359,27 +383,6 @@
         "ic_design": -1,
         "display": -0.9,
         "ev_supply": -0.7
-      },
-      "sentiment": {
-        "compound": -0.7184,
-        "label": "強烈利空"
-      }
-    },
-    {
-      "text": "USTR's Greer says Trump's latest tariffs won't have an economic impact - Reuters USTR's Greer says Trump's latest tariffs won't have an economic impact  Reuters",
-      "timestamp": "2026-07-27T23:35:00.000Z",
-      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPSy1MV0VXRXF6SWIzTXliVUFjWFM1cUl1UDdnZmpKR2JMb2J3TmxNUk4xcU1hN1ROcVJYWDZDU2xKekp2VE9hVXI0UkRabFgwWDJseU5JV1JVRmROS1RWU3B2bFQtM1cyeEQ5VXktWFdaZjNUWXJMUGFjaGVfYmJuMU9wRGNwSUgxUmRvRFFjeVBmUi1wSWtQTmFtUVRPV0RJUE9pUzZ2V0tLUkhielZoQTlR?oc=5",
-      "keywords": [
-        "tariff",
-        "tariffs"
-      ],
-      "impacts": {
-        "foundry": -1,
-        "shipping": -1,
-        "steel": -1,
-        "ic_design": -1,
-        "display": -1,
-        "ev_supply": -0.8
       },
       "sentiment": {
         "compound": -0.7184,
@@ -409,14 +412,14 @@
       }
     },
     {
-      "text": "U.S. Presses Mexico to Adopt Trump's Steel Tariffs on Chinese Import - Latin Times U.S. Presses Mexico to Adopt Trump's Steel Tariffs on Chinese Import  Latin Times",
-      "timestamp": "2026-07-27T13:48:31.000Z",
-      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOMTJiTDNwWDN5V1pERHFrNlpBQW5PVWVMVVd2bG40RGhkNWNSLVZ5WXJHeGphdFpMTTZpa1kwc3BvbUZodlotMFYzVFJkNVJPT0JLWjFOajdZLUVhdW4yNWxoT3pLT3hST29FQy1JRVFGRGRNSjEwTktLelJ4X1A5ZE01RmlNc1hvYjlZMHphTmJfT0M4cldkbQ?oc=5",
+      "text": "Trump Revives Court-Blocked Reciprocal Tariffs as ‘Forced Labor Tariffs,’ China Warns of Retaliation With ‘All Necessary Measures’ - economy.ac Trump Revives Court-Blocked Reciprocal Tariffs as ‘Forced Labor Tariffs,’ China Warns of Retaliation With ‘All Necessary Measures’  economy.ac",
+      "timestamp": "2026-07-28T08:27:52.000Z",
+      "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE90alJBalNpdmhON081YWxSUUFzUmRPNW5lZ3RxOGVVRUNGMmU0WEd0MXhpOWRIbllQX2VJcHFONlYtaGRhdWxmd3BmS1N2S0VFbXAxanlaQQ?oc=5",
       "keywords": [
         "tariff",
         "tariffs",
-        "chinese",
-        "port"
+        "china",
+        "ev"
       ],
       "impacts": {
         "foundry": -1,
@@ -424,10 +427,10 @@
         "steel": -1,
         "ic_design": -1,
         "display": -1,
-        "ev_supply": -0.8
+        "ev_supply": -0.9
       },
       "sentiment": {
-        "compound": -0.7184,
+        "compound": -0.9001,
         "label": "強烈利空"
       }
     }
@@ -440,10 +443,9 @@
   ],
   "sectorState": {
     "foundry": {
-      "score": -0.997,
-      "lastUpdated": "2026-07-29T09:03:35.569Z",
+      "score": -0.999,
+      "lastUpdated": "2026-07-29T12:49:30.286Z",
       "deltaHistory": [
-        0.0010000000000000009,
         0.015000000000000013,
         -0.0020000000000000018,
         0.0010000000000000009,
@@ -452,14 +454,14 @@
         0,
         -0.01100000000000001,
         0.01100000000000001,
-        -0.018000000000000016
+        -0.018000000000000016,
+        -0.0020000000000000018
       ]
     },
     "shipping": {
-      "score": -0.929,
-      "lastUpdated": "2026-07-29T09:03:35.569Z",
+      "score": -0.939,
+      "lastUpdated": "2026-07-29T12:49:30.286Z",
       "deltaHistory": [
-        0,
         0.03400000000000003,
         0.0030000000000000027,
         0.0010000000000000009,
@@ -468,14 +470,14 @@
         0.0129999999999999,
         0.007000000000000006,
         -0.006000000000000005,
-        0.0020000000000000018
+        0.0020000000000000018,
+        -0.009999999999999898
       ]
     },
     "steel": {
-      "score": -0.942,
-      "lastUpdated": "2026-07-29T09:03:35.569Z",
+      "score": -0.95,
+      "lastUpdated": "2026-07-29T12:49:30.286Z",
       "deltaHistory": [
-        0,
         0.026999999999999913,
         -0.007999999999999896,
         0.005999999999999894,
@@ -484,12 +486,13 @@
         0.028999999999999915,
         -0.009000000000000008,
         0.006000000000000005,
-        -0.018999999999999906
+        -0.018999999999999906,
+        -0.008000000000000007
       ]
     },
     "ic_design": {
       "score": -1,
-      "lastUpdated": "2026-07-29T09:03:35.569Z",
+      "lastUpdated": "2026-07-29T12:49:30.286Z",
       "deltaHistory": [
         0,
         0,
@@ -504,10 +507,9 @@
       ]
     },
     "display": {
-      "score": -0.97,
-      "lastUpdated": "2026-07-29T09:03:35.569Z",
+      "score": -0.974,
+      "lastUpdated": "2026-07-29T12:49:30.286Z",
       "deltaHistory": [
-        0,
         0.013000000000000012,
         -0.0040000000000000036,
         0.0020000000000000018,
@@ -516,14 +518,14 @@
         0.018000000000000016,
         -0.0010000000000000009,
         0,
-        -0.0030000000000000027
+        -0.0030000000000000027,
+        -0.0040000000000000036
       ]
     },
     "ev_supply": {
-      "score": -0.819,
-      "lastUpdated": "2026-07-29T09:03:35.569Z",
+      "score": -0.85,
+      "lastUpdated": "2026-07-29T12:49:30.286Z",
       "deltaHistory": [
-        -0.009000000000000008,
         0.008000000000000007,
         -0.020000000000000018,
         0.0050000000000000044,
@@ -532,14 +534,14 @@
         0.025999999999999912,
         -0.02399999999999991,
         0.02299999999999991,
-        -0.020999999999999908
+        -0.020999999999999908,
+        -0.031000000000000028
       ]
     },
     "ai_server": {
-      "score": 0.057,
-      "lastUpdated": "2026-07-29T09:03:35.569Z",
+      "score": 0.044,
+      "lastUpdated": "2026-07-29T12:49:30.286Z",
       "deltaHistory": [
-        0.0020000000000000018,
         0.023999999999999997,
         -0.017,
         0.012000000000000004,
@@ -548,12 +550,13 @@
         0.00399999999999999,
         -0.0010000000000000009,
         0.0010000000000000009,
-        -0.016999999999999994
+        -0.016999999999999994,
+        -0.013000000000000005
       ]
     },
     "pcb": {
       "score": 0,
-      "lastUpdated": "2026-07-29T09:03:35.569Z",
+      "lastUpdated": "2026-07-29T12:49:30.286Z",
       "deltaHistory": [
         0,
         0,
@@ -569,7 +572,7 @@
     },
     "defense": {
       "score": 0,
-      "lastUpdated": "2026-07-29T09:03:35.569Z",
+      "lastUpdated": "2026-07-29T12:49:30.286Z",
       "deltaHistory": [
         0,
         0,
@@ -585,12 +588,12 @@
     },
     "packaging": {
       "score": 0,
-      "lastUpdated": "2026-07-29T09:03:35.569Z",
+      "lastUpdated": "2026-07-29T12:49:30.286Z",
       "deltaHistory": [
-        0.008,
         -0.009,
         0,
         0.013,
+        0,
         0,
         0,
         0,
@@ -601,7 +604,7 @@
     },
     "semiconductor_equip": {
       "score": 0,
-      "lastUpdated": "2026-07-29T09:03:35.569Z",
+      "lastUpdated": "2026-07-29T12:49:30.286Z",
       "deltaHistory": [
         0,
         0,
@@ -617,7 +620,7 @@
     },
     "robotics": {
       "score": 0,
-      "lastUpdated": "2026-07-29T09:03:35.569Z",
+      "lastUpdated": "2026-07-29T12:49:30.286Z",
       "deltaHistory": [
         0,
         0,
