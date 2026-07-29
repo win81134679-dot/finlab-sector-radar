@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-28T20:31:37.737Z",
+  "updatedAt": "2026-07-29T00:46:07.727Z",
   "posts": [
     {
       "text": "Why Trump's new tariff blitz is very different this time around - CNBC Why Trump's new tariff blitz is very different this time around  CNBC",
@@ -15,27 +15,6 @@
         "ic_design": -0.6,
         "display": -0.5,
         "ev_supply": -0.4
-      },
-      "sentiment": {
-        "compound": -0.7184,
-        "label": "強烈利空"
-      }
-    },
-    {
-      "text": "This wave of Trump tariffs is likely here to stay; more are coming - Reuters This wave of Trump tariffs is likely here to stay; more are coming  Reuters",
-      "timestamp": "2026-07-25T19:58:39.000Z",
-      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOWEhnbzZuUVgwb2duQzN4ZGpYM1hkWXRKUTlBZUVpWFRLUjVQaDFWQVkzdm5qLWpfckwtZ3QyZFlpMTZSYkJlNWhxT1lXcGFETW12Z1JNWUtnQWxzRE8xSWFmcmhhMXhMbjlOMVBXbFBJRHBjc3BGdXdOX3Brc1A2VkltcTdRcHRQeUEyUnlSVUtESDY5MU1QeDhxZUNub0gxSjFTaEVHaEpJYVQxWkh4c0VR?oc=5",
-      "keywords": [
-        "tariff",
-        "tariffs"
-      ],
-      "impacts": {
-        "foundry": -1,
-        "shipping": -1,
-        "steel": -1,
-        "ic_design": -1,
-        "display": -1,
-        "ev_supply": -0.8
       },
       "sentiment": {
         "compound": -0.7184,
@@ -67,9 +46,9 @@
       }
     },
     {
-      "text": "Trump to impose double-digit tariffs on dozens of countries - NPR Trump to impose double-digit tariffs on dozens of countries  NPR",
-      "timestamp": "2026-07-23T22:06:50.000Z",
-      "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTFBqcWdJU0FnRnVWMmUwNnJtTDdCSGlmcVdHb2k0MlVUTl83V2l6RlFPT0NoR3dBcjlIVlo4S1RkMEdVaE4wbm5JdklsRXF4eUZ1QlpSdGYzU2xYZVA0R09RZmQydnJsNEVubjQ0YjRtRWp6bTVKMFZ5Z19B?oc=5",
+      "text": "This wave of Trump tariffs is likely here to stay; more are coming - Reuters This wave of Trump tariffs is likely here to stay; more are coming  Reuters",
+      "timestamp": "2026-07-25T19:58:39.000Z",
+      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOWEhnbzZuUVgwb2duQzN4ZGpYM1hkWXRKUTlBZUVpWFRLUjVQaDFWQVkzdm5qLWpfckwtZ3QyZFlpMTZSYkJlNWhxT1lXcGFETW12Z1JNWUtnQWxzRE8xSWFmcmhhMXhMbjlOMVBXbFBJRHBjc3BGdXdOX3Brc1A2VkltcTdRcHRQeUEyUnlSVUtESDY5MU1QeDhxZUNub0gxSjFTaEVHaEpJYVQxWkh4c0VR?oc=5",
       "keywords": [
         "tariff",
         "tariffs"
@@ -83,7 +62,7 @@
         "ev_supply": -0.8
       },
       "sentiment": {
-        "compound": -0.875,
+        "compound": -0.7184,
         "label": "強烈利空"
       }
     },
@@ -126,6 +105,28 @@
         "ic_design": -1,
         "display": -1,
         "ev_supply": -0.8
+      },
+      "sentiment": {
+        "compound": -0.7184,
+        "label": "強烈利空"
+      }
+    },
+    {
+      "text": "China Says US Pledged to Cap Replacement Tariffs at 20% - Bloomberg.com China Says US Pledged to Cap Replacement Tariffs at 20%  Bloomberg.com",
+      "timestamp": "2026-07-27T11:47:03.000Z",
+      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOdmZMR3FFdTNEQk13bHVOV1o2MVN4ck00Q01xUXBiMmRHM2lKRmg2OVBULUViNUI2dGRSR0dnZ2UwazA5M280Z1pPQ1VmOXFnM1V2T3VEZGE2YkN2alhkYWpQNVNhV2tKWmFZRXdTQmZhMzdwVnVSVUp0MUQzWF9WOWd4bzAzMlV5VHRTc0RJLTctTDZvd3NWMEtaalNRWDVyaGdfMVZkRTQ?oc=5",
+      "keywords": [
+        "tariff",
+        "tariffs",
+        "china"
+      ],
+      "impacts": {
+        "foundry": -1,
+        "shipping": -1,
+        "steel": -1,
+        "ic_design": -1,
+        "display": -1,
+        "ev_supply": -1
       },
       "sentiment": {
         "compound": -0.7184,
@@ -196,27 +197,6 @@
       }
     },
     {
-      "text": "‘Forced labour’ rationale for Trump tariffs met with bewilderment - The Guardian ‘Forced labour’ rationale for Trump tariffs met with bewilderment  The Guardian",
-      "timestamp": "2026-07-24T05:35:00.000Z",
-      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPbkV1aHp2ZU5hQzFLeGVmYTdMb1cxVWoxeUx5YUxmLWhGZnczdVEzVDk4aDEzVy1UWmZBRlBaMUk3akptX1dCZ2xtTnlKVEVERFdUMFJISzhGU0Q0QlM2UlZQUlNSVFR6TzlyNF9rT05vLUctVkpPV1VWbHVJZUZNR242M0x4ZDVwcWRYMy1rc1NycXlQSkRjQXNJZWgzQkNvUWc?oc=5",
-      "keywords": [
-        "tariff",
-        "tariffs"
-      ],
-      "impacts": {
-        "foundry": -1,
-        "shipping": -1,
-        "steel": -1,
-        "ic_design": -1,
-        "display": -1,
-        "ev_supply": -0.8
-      },
-      "sentiment": {
-        "compound": -0.7184,
-        "label": "強烈利空"
-      }
-    },
-    {
       "text": "New Republican ads slam Democrats opposed to Trump's tariffs - CNBC New Republican ads slam Democrats opposed to Trump's tariffs  CNBC",
       "timestamp": "2026-07-28T11:00:01.000Z",
       "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQZURPc2NOZmh4eTZQdENCc3Q3MVRnYl9CWVBkUnRISVQzdjFrYTd1aEFoMVo4ckd1YllxanFFWTVpMjBPMlhiZnRpRHlYRTRNdXJ2XzdpUmNVTzdsY0dDZjJLd3VHRDFFN18xYUZEQk1pSjJoQmhPRzFvRHRqeXdOM2dwWdIBiAFBVV95cUxOOElvRmUzcjRjM2RrS0pnaUhNYkZmZzhfMG43RTVKdy1vdVZVanotdmlWVVZKVFF1dmc5ZE9uVWZWZTRkejJtRWdoVVphbVVocUcxZHFLNjVpQjU4dFVaVTZGSTFwYkxlSjVYR2QxTEFWRFJTcnNUWEVORUhNQjgtUnh6aXh2OTNP?oc=5",
@@ -238,31 +218,8 @@
       }
     },
     {
-      "text": "US Presses Mexico to Mirror Its Steel Tariff Wall Aimed at China - Bloomberg.com US Presses Mexico to Mirror Its Steel Tariff Wall Aimed at China  Bloomberg.com",
-      "timestamp": "2026-07-26T14:23:00.000Z",
-      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPQlhVclNYVG9sNlhoT240V0ltOG9BV1BDSVhvZXg1VE00VmFMdmkxcVdfaUZKTk51WHE2b3B4OElSOWROTm81MDl3VUJTTWdUNDR2SUc5OHBzRXNMTUZNZmowOGdmaXZsU3FPZkhhOWU1NWRKcGRpMEtPTThjSEJSdjBZQjY0Mm5vQUxYazVmT1BwbXUyUFZ6RklKSm1sazlLdlU5YmFsTzRpczJVRjdMSmluLU9lUQ?oc=5",
-      "keywords": [
-        "ai",
-        "tariff",
-        "china"
-      ],
-      "impacts": {
-        "ai_server": 0.7,
-        "foundry": -0.4,
-        "shipping": -0.9,
-        "steel": -0.5,
-        "ic_design": -1,
-        "display": -0.9,
-        "ev_supply": -0.7
-      },
-      "sentiment": {
-        "compound": -0.7184,
-        "label": "強烈利空"
-      }
-    },
-    {
       "text": "Shein warns of Trump tariff impact after posting quarterly loss - USA Today Shein warns of Trump tariff impact after posting quarterly loss  USA Today",
-      "timestamp": "2026-07-27T01:07:00.000Z",
+      "timestamp": "2026-07-27T01:10:12.000Z",
       "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPMkw2YXZHODhiYklscXBJZUcxWnRSTGVDYjE2QlFLN0dmdkZJZ2NmdDZQWHVoeHNKdEFIelNlZDZ2Ri1SUTNZZTBMUTBiUU43bU5Fa1JnUVNrbldyVnNzZkZyWDVlUTZWS0Fyc3pLcllYclRjVnBHbDJwMWhodzgwcEEwYnJuREtjbkZmUg?oc=5",
       "keywords": [
         "tariff"
@@ -302,6 +259,29 @@
       }
     },
     {
+      "text": "U.S. Presses Mexico to Adopt Trump's Steel Tariffs on Chinese Import - Latin Times U.S. Presses Mexico to Adopt Trump's Steel Tariffs on Chinese Import  Latin Times",
+      "timestamp": "2026-07-27T13:48:31.000Z",
+      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOMTJiTDNwWDN5V1pERHFrNlpBQW5PVWVMVVd2bG40RGhkNWNSLVZ5WXJHeGphdFpMTTZpa1kwc3BvbUZodlotMFYzVFJkNVJPT0JLWjFOajdZLUVhdW4yNWxoT3pLT3hST29FQy1JRVFGRGRNSjEwTktLelJ4X1A5ZE01RmlNc1hvYjlZMHphTmJfT0M4cldkbQ?oc=5",
+      "keywords": [
+        "tariff",
+        "tariffs",
+        "chinese",
+        "port"
+      ],
+      "impacts": {
+        "foundry": -1,
+        "shipping": -1,
+        "steel": -1,
+        "ic_design": -1,
+        "display": -1,
+        "ev_supply": -0.8
+      },
+      "sentiment": {
+        "compound": -0.7184,
+        "label": "強烈利空"
+      }
+    },
+    {
       "text": "Trump’s tariff addiction Can Europe survive another hit? - UnHerd Trump’s tariff addiction Can Europe survive another hit?  UnHerd",
       "timestamp": "2026-07-26T23:11:44.000Z",
       "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE92SC0xOHBQRVV5eW1tbVpEVEJLdTM1NUF1NlljMU1GczFVdTh3WHpaekRhOWRVdzFpRElpR2NyMzJSTGk5X3c3SWpqVTY0MzBDdS1nWnp1Q2NMRUJpTnFBZw?oc=5",
@@ -315,27 +295,6 @@
         "ic_design": -0.6,
         "display": -0.5,
         "ev_supply": -0.4
-      },
-      "sentiment": {
-        "compound": -0.7184,
-        "label": "強烈利空"
-      }
-    },
-    {
-      "text": "Why Trump’s ‘forced labor’ tariffs leave the world puzzled - Inquirer.net Why Trump’s ‘forced labor’ tariffs leave the world puzzled  Inquirer.net",
-      "timestamp": "2026-07-26T05:09:00.000Z",
-      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPRUhYVUJobzFSY18tVmt0MC11S1ltY25YNVZ2QjR2cXZzckZLSDVjUk9GZWlIeVBadTJhTzJ0RFFhMXBMTFpRU1ZmWXE2bERfclFBY0xVdm82aU10c0FNdTN1ZnVTSm9HTWl1SFFJQnZNV0FPellJc1dBS3FORWs4RjRQWnAtM3hMN0drSE1zNlB6MXRMRW9qbXpoelXSAaIBQVVfeXFMT01MZ0F0aG1lVHlJNmpnc1NySWNfWDZabjN6UmJGWmRVdllqM2JRU2FwS2xUSklxVkxDbU5abHA0MGZ0djR1REZZLUtBUVBmNG1ZNkFlSV8zd0dSZXVxSUJWRzN2NHIwa1pPd3FtV2w4YVJmRllVMmRMRGl2WEdTTm4weGo2Zzltbk1wWW1VYnlINzR4anBMWldIeUlYQ040YWZn?oc=5",
-      "keywords": [
-        "tariff",
-        "tariffs"
-      ],
-      "impacts": {
-        "foundry": -1,
-        "shipping": -1,
-        "steel": -1,
-        "ic_design": -1,
-        "display": -1,
-        "ev_supply": -0.8
       },
       "sentiment": {
         "compound": -0.7184,
@@ -387,6 +346,29 @@
       }
     },
     {
+      "text": "US Presses Mexico to Mirror Its Steel Tariff Wall Aimed at China - Bloomberg.com US Presses Mexico to Mirror Its Steel Tariff Wall Aimed at China  Bloomberg.com",
+      "timestamp": "2026-07-26T14:23:00.000Z",
+      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPQlhVclNYVG9sNlhoT240V0ltOG9BV1BDSVhvZXg1VE00VmFMdmkxcVdfaUZKTk51WHE2b3B4OElSOWROTm81MDl3VUJTTWdUNDR2SUc5OHBzRXNMTUZNZmowOGdmaXZsU3FPZkhhOWU1NWRKcGRpMEtPTThjSEJSdjBZQjY0Mm5vQUxYazVmT1BwbXUyUFZ6RklKSm1sazlLdlU5YmFsTzRpczJVRjdMSmluLU9lUQ?oc=5",
+      "keywords": [
+        "ai",
+        "tariff",
+        "china"
+      ],
+      "impacts": {
+        "ai_server": 0.7,
+        "foundry": -0.4,
+        "shipping": -0.9,
+        "steel": -0.5,
+        "ic_design": -1,
+        "display": -0.9,
+        "ev_supply": -0.7
+      },
+      "sentiment": {
+        "compound": -0.7184,
+        "label": "強烈利空"
+      }
+    },
+    {
       "text": "USTR's Greer says Trump's latest tariffs won't have an economic impact - Reuters USTR's Greer says Trump's latest tariffs won't have an economic impact  Reuters",
       "timestamp": "2026-07-27T23:35:00.000Z",
       "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPSy1MV0VXRXF6SWIzTXliVUFjWFM1cUl1UDdnZmpKR2JMb2J3TmxNUk4xcU1hN1ROcVJYWDZDU2xKekp2VE9hVXI0UkRabFgwWDJseU5JV1JVRmROS1RWU3B2bFQtM1cyeEQ5VXktWFdaZjNUWXJMUGFjaGVfYmJuMU9wRGNwSUgxUmRvRFFjeVBmUi1wSWtQTmFtUVRPV0RJUE9pUzZ2V0tLUkhielZoQTlR?oc=5",
@@ -408,19 +390,40 @@
       }
     },
     {
-      "text": "US probes Chinese factories in Vietnam, stoking new tariff fears - The Business Times US probes Chinese factories in Vietnam, stoking new tariff fears  The Business Times",
-      "timestamp": "2026-07-28T07:02:00.000Z",
-      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQeEsyUnB6ZFd3SWUxdEs5LXhBVTFRbWEtQ3VxMVpSV3BKNmtuNWc5dGx2cEZTdTg2anJxYlJrQ19fQ3lMTjVONGYtZWJkcVBTcVluaGZqdGp2TThjS3llN1JMd1NMS3RUM0F3LW1lRTV4cUdFSi1XWi0wZzRFZWtQUm1nZkQtWlZtTWwzY1VKaVZJeGVsUTFka3B6RUtYbHN3M3Bsa3F6dUJyNEdwWnF0Y19PSQ?oc=5",
+      "text": "A year into Trump’s tariffs, Brazil trades less with US and more with China - South China Morning Post A year into Trump’s tariffs, Brazil trades less with US and more with China  South China Morning Post",
+      "timestamp": "2026-07-09T07:00:00.000Z",
+      "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxPNUtZa0F2d21WYjY5M1pZWVdTSWs4a2hHS0hxeEwyWWFtZ21IenZDYWhucEIyM2FGdDA5NFJGdGh6WnNLQ2t0RnVMdlVaZUl5SEpIOHZJNXpUUEtJQnpISTRZVER4WGh4NE5WclpSOW1mVWlDdGUzMDYxRTUtU2IyVEhrYUJ4QmxIZDBvb2hVS3ZaRFlzMmVmd1F1SjlmbGlCWUliNmZhN0xEMjh3NmZ0TGVrN1ZKaW1QY282TWRDQ1BJOGVZVUZTNVdLTDBYUlpV?oc=5",
       "keywords": [
         "tariff",
-        "chinese"
+        "tariffs",
+        "china"
+      ],
+      "impacts": {
+        "foundry": -1,
+        "shipping": -1,
+        "steel": -1,
+        "ic_design": -1,
+        "display": -1,
+        "ev_supply": -1
+      },
+      "sentiment": {
+        "compound": -0.7184,
+        "label": "強烈利空"
+      }
+    },
+    {
+      "text": "Trump Tariff Tracker – July 2, 2026 (via Passle) - Baker Botts Trump Tariff Tracker – July 2, 2026 (via Passle)  Baker Botts",
+      "timestamp": "2026-07-02T07:00:00.000Z",
+      "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxOMEtpWUN4ZVFJU3k1ekVmcWo4alZCenR6RGJTVzBGZi16SVU4dDRZQUhNMnBoYl9RWmR4YlRLVFg3SjZmakxsdkhqSGJpNjVNeGpSX2prSm0tYzE1N1d2TDdRN1B3aDBPY3hfMWRyZ3pmU21XNjFhNTdLXzFkbUcwYmhB?oc=5",
+      "keywords": [
+        "tariff"
       ],
       "impacts": {
         "foundry": -0.7,
-        "shipping": -0.9,
+        "shipping": -0.5,
         "steel": -0.5,
-        "ic_design": -1,
-        "display": -0.9,
+        "ic_design": -0.6,
+        "display": -0.5,
         "ev_supply": -0.4
       },
       "sentiment": {
@@ -437,10 +440,9 @@
   ],
   "sectorState": {
     "foundry": {
-      "score": -0.979,
-      "lastUpdated": "2026-07-28T20:31:37.737Z",
+      "score": -0.99,
+      "lastUpdated": "2026-07-29T00:46:07.727Z",
       "deltaHistory": [
-        -0.02499999999999991,
         -0.0020000000000000018,
         0,
         0.0010000000000000009,
@@ -449,14 +451,14 @@
         0.0010000000000000009,
         0.013999999999999901,
         -0.05399999999999994,
-        0
+        0,
+        -0.01100000000000001
       ]
     },
     "shipping": {
-      "score": -0.932,
-      "lastUpdated": "2026-07-28T20:31:37.737Z",
+      "score": -0.925,
+      "lastUpdated": "2026-07-29T00:46:07.727Z",
       "deltaHistory": [
-        0.0050000000000000044,
         0.0010000000000000009,
         -0.0030000000000000027,
         0,
@@ -465,14 +467,14 @@
         0.0010000000000000009,
         -0.016000000000000014,
         0.014000000000000012,
-        0.0129999999999999
+        0.0129999999999999,
+        0.007000000000000006
       ]
     },
     "steel": {
-      "score": -0.92,
-      "lastUpdated": "2026-07-28T20:31:37.737Z",
+      "score": -0.929,
+      "lastUpdated": "2026-07-29T00:46:07.727Z",
       "deltaHistory": [
-        -0.02299999999999991,
         0.0040000000000000036,
         -0.0050000000000000044,
         0,
@@ -481,12 +483,13 @@
         0.005999999999999894,
         -0.009999999999999898,
         -0.13,
-        0.028999999999999915
+        0.028999999999999915,
+        -0.009000000000000008
       ]
     },
     "ic_design": {
       "score": -1,
-      "lastUpdated": "2026-07-28T20:31:37.737Z",
+      "lastUpdated": "2026-07-29T00:46:07.727Z",
       "deltaHistory": [
         0,
         0,
@@ -501,10 +504,9 @@
       ]
     },
     "display": {
-      "score": -0.966,
-      "lastUpdated": "2026-07-28T20:31:37.737Z",
+      "score": -0.967,
+      "lastUpdated": "2026-07-29T00:46:07.727Z",
       "deltaHistory": [
-        -0.007000000000000006,
         0.0010000000000000009,
         -0.0040000000000000036,
         0,
@@ -513,14 +515,14 @@
         0.0020000000000000018,
         -0.01200000000000001,
         -0.08399999999999996,
-        0.018000000000000016
+        0.018000000000000016,
+        -0.0010000000000000009
       ]
     },
     "ev_supply": {
-      "score": -0.797,
-      "lastUpdated": "2026-07-28T20:31:37.737Z",
+      "score": -0.821,
+      "lastUpdated": "2026-07-29T00:46:07.727Z",
       "deltaHistory": [
-        -0.007000000000000006,
         0.0010000000000000009,
         -0.017000000000000015,
         -0.009000000000000008,
@@ -529,14 +531,14 @@
         0.0050000000000000044,
         -0.0020000000000000018,
         -0.07399999999999995,
-        0.025999999999999912
+        0.025999999999999912,
+        -0.02399999999999991
       ]
     },
     "ai_server": {
-      "score": 0.074,
-      "lastUpdated": "2026-07-28T20:31:37.737Z",
+      "score": 0.073,
+      "lastUpdated": "2026-07-29T00:46:07.727Z",
       "deltaHistory": [
-        -0.017,
         -0.009000000000000001,
         -0.024999999999999998,
         0.0020000000000000018,
@@ -545,12 +547,13 @@
         0.012000000000000004,
         0.0029999999999999957,
         0.01900000000000001,
-        0.00399999999999999
+        0.00399999999999999,
+        -0.0010000000000000009
       ]
     },
     "pcb": {
       "score": 0,
-      "lastUpdated": "2026-07-28T20:31:37.737Z",
+      "lastUpdated": "2026-07-29T00:46:07.727Z",
       "deltaHistory": [
         0,
         0,
@@ -566,7 +569,7 @@
     },
     "defense": {
       "score": 0,
-      "lastUpdated": "2026-07-28T20:31:37.737Z",
+      "lastUpdated": "2026-07-29T00:46:07.727Z",
       "deltaHistory": [
         0,
         0,
@@ -582,9 +585,8 @@
     },
     "packaging": {
       "score": 0,
-      "lastUpdated": "2026-07-28T20:31:37.737Z",
+      "lastUpdated": "2026-07-29T00:46:07.727Z",
       "deltaHistory": [
-        0,
         -0.011,
         0.002,
         0.008,
@@ -593,12 +595,13 @@
         0.013,
         0,
         0,
+        0,
         0
       ]
     },
     "semiconductor_equip": {
       "score": 0,
-      "lastUpdated": "2026-07-28T20:31:37.737Z",
+      "lastUpdated": "2026-07-29T00:46:07.727Z",
       "deltaHistory": [
         0,
         0,
@@ -614,7 +617,7 @@
     },
     "robotics": {
       "score": 0,
-      "lastUpdated": "2026-07-28T20:31:37.737Z",
+      "lastUpdated": "2026-07-29T00:46:07.727Z",
       "deltaHistory": [
         0,
         0,
