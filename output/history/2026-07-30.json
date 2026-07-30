@@ -1,7 +1,7 @@
 {
   "schema_version": "2.0",
   "date": "2026-07-30",
-  "run_at": "2026-07-30T21:03:57+08:00",
+  "run_at": "2026-07-30T21:26:43+08:00",
   "last_trading_date": "2026-07-30",
   "macro": {
     "warning": true,
@@ -12,7 +12,7 @@
       "bond": "US10Y=4.61% (↑均線❌)",
       "pmi": "INDPRO=102.6 (擴張✅)",
       "sox": "SOXX=465.00 (20MA下方❌)",
-      "twd": "USD/TWD=32.465 (台幣貶值❌)"
+      "twd": "USD/TWD=32.459 (台幣貶值❌)"
     },
     "us_bond_10y": 4.61,
     "bond_trend": "up",
@@ -20,7 +20,7 @@
     "ip_trend": "up",
     "sox_price": 465.0,
     "sox_trend": "down",
-    "usd_twd": 32.465,
+    "usd_twd": 32.459,
     "twd_trend": "up"
   },
   "macro_warning": true,
@@ -4521,8 +4521,8 @@
           "score": 1,
           "level": "觀望",
           "consec_buy": 0,
-          "cum_chip": 302456039.0,
-          "accel": -1.88,
+          "cum_chip": 303006549.0,
+          "accel": -1.87,
           "z_score": -0.01,
           "breakout": false
         },
@@ -5652,8 +5652,8 @@
           "score": 0,
           "level": "無訊號",
           "consec_buy": 0,
-          "cum_chip": -93134668.0,
-          "accel": -9.88,
+          "cum_chip": -94806668.0,
+          "accel": -9.63,
           "z_score": -0.0,
           "breakout": false
         },
@@ -6259,7 +6259,7 @@
           "score": 2,
           "level": "中性",
           "consec_buy": 2,
-          "cum_chip": 2778675602.0,
+          "cum_chip": 2777897602.0,
           "accel": 1.1,
           "z_score": 0.23,
           "breakout": true
@@ -6866,7 +6866,7 @@
           "score": 2,
           "level": "中性",
           "consec_buy": 2,
-          "cum_chip": 2778675602.0,
+          "cum_chip": 2777897602.0,
           "accel": 1.1,
           "z_score": 0.23,
           "breakout": true
@@ -8001,7 +8001,7 @@
           "score": 1,
           "level": "觀望",
           "consec_buy": 0,
-          "cum_chip": -231991617.0,
+          "cum_chip": -231413333.0,
           "accel": 3.24,
           "z_score": -0.19,
           "breakout": false
@@ -8608,7 +8608,7 @@
           "score": 2,
           "level": "中性",
           "consec_buy": 2,
-          "cum_chip": 2778675602.0,
+          "cum_chip": 2777897602.0,
           "accel": 1.1,
           "z_score": 0.23,
           "breakout": true
@@ -9215,7 +9215,7 @@
           "score": 2,
           "level": "中性",
           "consec_buy": 2,
-          "cum_chip": 2778675602.0,
+          "cum_chip": 2777897602.0,
           "accel": 1.1,
           "z_score": 0.23,
           "breakout": true
@@ -12366,7 +12366,7 @@
           "score": 0,
           "level": "無訊號",
           "consec_buy": 0,
-          "cum_chip": -909827664.0,
+          "cum_chip": -909703580.0,
           "accel": 0.76,
           "z_score": -0.28,
           "breakout": false
@@ -12709,9 +12709,9 @@
         "chip_flow": {
           "score": 1,
           "level": "觀望",
-          "consec_buy": 0,
-          "cum_chip": -5324674.0,
-          "accel": 1.63,
+          "consec_buy": 1,
+          "cum_chip": -5266674.0,
+          "accel": 1.6,
           "z_score": -0.14,
           "breakout": false
         },
@@ -13134,7 +13134,7 @@
           "score": 0,
           "level": "無訊號",
           "consec_buy": 0,
-          "cum_chip": -79058871.0,
+          "cum_chip": -79050406.0,
           "accel": 0.22,
           "z_score": -0.29,
           "breakout": false
@@ -13213,7 +13213,7 @@
           "score": 1,
           "level": "觀望",
           "consec_buy": 1,
-          "cum_chip": -516578083.0,
+          "cum_chip": -516536083.0,
           "accel": 1.77,
           "z_score": -0.25,
           "breakout": false
@@ -13292,7 +13292,7 @@
           "score": 4,
           "level": "★★ 明顯布局",
           "consec_buy": 11,
-          "cum_chip": 282194417.0,
+          "cum_chip": 282059392.0,
           "accel": 2.16,
           "z_score": 0.32,
           "breakout": true
@@ -13371,8 +13371,8 @@
           "score": 1,
           "level": "觀望",
           "consec_buy": 2,
-          "cum_chip": -50967529.0,
-          "accel": -3.22,
+          "cum_chip": -51694019.0,
+          "accel": -3.12,
           "z_score": -0.08,
           "breakout": true
         },
@@ -13450,8 +13450,8 @@
           "score": 1,
           "level": "觀望",
           "consec_buy": 0,
-          "cum_chip": -501450807.0,
-          "accel": 2.27,
+          "cum_chip": -501718097.0,
+          "accel": 2.28,
           "z_score": -0.3,
           "breakout": false
         },
@@ -13529,8 +13529,8 @@
           "score": 0,
           "level": "無訊號",
           "consec_buy": 0,
-          "cum_chip": -123771711.0,
-          "accel": 0.37,
+          "cum_chip": -126126711.0,
+          "accel": 0.44,
           "z_score": -0.02,
           "breakout": false
         },
@@ -13608,7 +13608,7 @@
           "score": 1,
           "level": "觀望",
           "consec_buy": 0,
-          "cum_chip": -672246489.0,
+          "cum_chip": -672673489.0,
           "accel": -0.71,
           "z_score": -0.24,
           "breakout": true
@@ -13845,9 +13845,9 @@
           "score": 1,
           "level": "觀望",
           "consec_buy": 0,
-          "cum_chip": 72763289.0,
-          "accel": 0.35,
-          "z_score": 0.03,
+          "cum_chip": 69226289.0,
+          "accel": 0.17,
+          "z_score": 0.02,
           "breakout": false
         },
         "rotation_score": -0.782
@@ -13924,8 +13924,8 @@
           "score": 0,
           "level": "無訊號",
           "consec_buy": 0,
-          "cum_chip": -70578356.0,
-          "accel": 0.74,
+          "cum_chip": -70119356.0,
+          "accel": 0.72,
           "z_score": -0.14,
           "breakout": false
         },
@@ -14003,8 +14003,8 @@
           "score": 1,
           "level": "觀望",
           "consec_buy": 1,
-          "cum_chip": -156796141.0,
-          "accel": 2.03,
+          "cum_chip": -156882631.0,
+          "accel": 2.04,
           "z_score": -0.29,
           "breakout": false
         },
@@ -14082,8 +14082,8 @@
           "score": 0,
           "level": "無訊號",
           "consec_buy": 0,
-          "cum_chip": -350970485.0,
-          "accel": 0.58,
+          "cum_chip": -354273440.0,
+          "accel": 0.61,
           "z_score": -0.25,
           "breakout": false
         },
@@ -14161,9 +14161,9 @@
           "score": 1,
           "level": "觀望",
           "consec_buy": 0,
-          "cum_chip": -69477902.0,
-          "accel": 2.42,
-          "z_score": 0.28,
+          "cum_chip": -68622902.0,
+          "accel": 2.4,
+          "z_score": 0.29,
           "breakout": false
         },
         "rotation_score": -0.367
@@ -14240,8 +14240,8 @@
           "score": 0,
           "level": "無訊號",
           "consec_buy": 0,
-          "cum_chip": -57977104.0,
-          "accel": 0.23,
+          "cum_chip": -57392904.0,
+          "accel": 0.19,
           "z_score": -0.15,
           "breakout": false
         },
@@ -14319,8 +14319,8 @@
           "score": 0,
           "level": "無訊號",
           "consec_buy": 0,
-          "cum_chip": -58883817.0,
-          "accel": -1.92,
+          "cum_chip": -59801817.0,
+          "accel": -1.83,
           "z_score": -0.1,
           "breakout": false
         },
@@ -14398,7 +14398,7 @@
           "score": 0,
           "level": "無訊號",
           "consec_buy": 0,
-          "cum_chip": -303911750.0,
+          "cum_chip": -303551750.0,
           "accel": 1.39,
           "z_score": -0.04,
           "breakout": false
@@ -14477,8 +14477,8 @@
           "score": 0,
           "level": "無訊號",
           "consec_buy": 0,
-          "cum_chip": -50294329.0,
-          "accel": 1.42,
+          "cum_chip": -50739329.0,
+          "accel": 1.44,
           "z_score": -0.4,
           "breakout": false
         },
@@ -14556,7 +14556,7 @@
           "score": 1,
           "level": "觀望",
           "consec_buy": 0,
-          "cum_chip": -177497917.0,
+          "cum_chip": -177256523.0,
           "accel": 3.24,
           "z_score": -0.28,
           "breakout": false
@@ -14635,8 +14635,8 @@
           "score": 1,
           "level": "觀望",
           "consec_buy": 0,
-          "cum_chip": 89338273.0,
-          "accel": 0.47,
+          "cum_chip": 89608273.0,
+          "accel": 0.48,
           "z_score": 0.24,
           "breakout": false
         },
@@ -14793,8 +14793,8 @@
           "score": 3,
           "level": "★ 初步觀察",
           "consec_buy": 2,
-          "cum_chip": 19597774.0,
-          "accel": 2.45,
+          "cum_chip": 20198774.0,
+          "accel": 2.49,
           "z_score": 0.4,
           "breakout": true
         },
@@ -15188,7 +15188,7 @@
           "score": 2,
           "level": "中性",
           "consec_buy": 2,
-          "cum_chip": 168047022.0,
+          "cum_chip": 168317022.0,
           "accel": 1.76,
           "z_score": -0.05,
           "breakout": false
@@ -15267,7 +15267,7 @@
           "score": 0,
           "level": "無訊號",
           "consec_buy": 0,
-          "cum_chip": -198529019.0,
+          "cum_chip": -198791019.0,
           "accel": 0.37,
           "z_score": -0.27,
           "breakout": false
@@ -15425,9 +15425,9 @@
           "score": 3,
           "level": "★ 初步觀察",
           "consec_buy": 2,
-          "cum_chip": 23306441.0,
-          "accel": 3.06,
-          "z_score": 0.4,
+          "cum_chip": 23907441.0,
+          "accel": 3.09,
+          "z_score": 0.41,
           "breakout": true
         },
         "rotation_score": 0.556
@@ -15504,8 +15504,8 @@
           "score": 1,
           "level": "觀望",
           "consec_buy": 0,
-          "cum_chip": -147149439.0,
-          "accel": 1.91,
+          "cum_chip": -146708439.0,
+          "accel": 1.9,
           "z_score": -0.03,
           "breakout": false
         },
@@ -15583,8 +15583,8 @@
           "score": 0,
           "level": "無訊號",
           "consec_buy": 0,
-          "cum_chip": -128029862.0,
-          "accel": 1.43,
+          "cum_chip": -127593352.0,
+          "accel": 1.42,
           "z_score": 0.02,
           "breakout": false
         },
@@ -15662,8 +15662,8 @@
           "score": 1,
           "level": "觀望",
           "consec_buy": 2,
-          "cum_chip": -18875233.0,
-          "accel": -8.71,
+          "cum_chip": -18515233.0,
+          "accel": -8.96,
           "z_score": 0.22,
           "breakout": true
         },
@@ -15741,8 +15741,8 @@
           "score": 0,
           "level": "無訊號",
           "consec_buy": 0,
-          "cum_chip": -96408170.0,
-          "accel": -0.33,
+          "cum_chip": -96758170.0,
+          "accel": -0.32,
           "z_score": 0.0,
           "breakout": false
         },
@@ -15978,8 +15978,8 @@
           "score": 0,
           "level": "無訊號",
           "consec_buy": 0,
-          "cum_chip": -164410535.0,
-          "accel": 0.7,
+          "cum_chip": -163785025.0,
+          "accel": 0.68,
           "z_score": -0.07,
           "breakout": false
         },
@@ -16057,8 +16057,8 @@
           "score": 1,
           "level": "觀望",
           "consec_buy": 0,
-          "cum_chip": -130834695.0,
-          "accel": 1.34,
+          "cum_chip": -130209185.0,
+          "accel": 1.32,
           "z_score": -0.12,
           "breakout": true
         },
@@ -16136,7 +16136,7 @@
           "score": 1,
           "level": "觀望",
           "consec_buy": 0,
-          "cum_chip": -141501497.0,
+          "cum_chip": -141145987.0,
           "accel": 2.47,
           "z_score": -0.29,
           "breakout": false
@@ -16530,9 +16530,9 @@
         "chip_flow": {
           "score": 3,
           "level": "★ 初步觀察",
-          "consec_buy": 0,
-          "cum_chip": 2707616.0,
-          "accel": 2.32,
+          "consec_buy": 2,
+          "cum_chip": 3042616.0,
+          "accel": 2.5,
           "z_score": 0.12,
           "breakout": true
         },
