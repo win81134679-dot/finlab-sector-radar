@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-30T00:44:19.389Z",
+  "updatedAt": "2026-07-30T05:08:07.072Z",
   "posts": [
     {
       "text": "Trump’s Tariffs Are Sending Some Companies Back to China - The New York Times Trump’s Tariffs Are Sending Some Companies Back to China  The New York Times",
@@ -86,7 +86,28 @@
       }
     },
     {
-      "text": "Trump Administration’s New Section 301 Tariffs Reach Nearly All U.S. Imports - Plataforma del Estado Peruano Trump Administration’s New Section 301 Tariffs Reach Nearly All U.S. Imports  Plataforma del Estado Peruano",
+      "text": "Trump imposes new global tariffs, drawing protests from trading partners - Reuters Trump imposes new global tariffs, drawing protests from trading partners  Reuters",
+      "timestamp": "2026-07-24T18:14:18.000Z",
+      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPcTlxTFMtLUhVcTNocVRYQ0t0NkdRamtCSUEySEhFbHE5N0FnNFlvMDNENWcyRVlHWUloTXRna3RlRVptLVFyZ0dfeG04cmhUZ1RSbkViNFNhM0FKZ0k5N29mUmY0UU9lUXlHMGw0ckJxVHFiZFJ3cjFhbFRQTUpSNEMzdFQ4U0REUzJlU2FFY2h3Q0U2UmxnS2lUbm90RnM0WUVfVEJiaFFEdUlGYWs2YXp4NzlRekdtQTEyZjYtMA?oc=5",
+      "keywords": [
+        "tariff",
+        "tariffs"
+      ],
+      "impacts": {
+        "foundry": -1,
+        "shipping": -1,
+        "steel": -1,
+        "ic_design": -1,
+        "display": -1,
+        "ev_supply": -0.8
+      },
+      "sentiment": {
+        "compound": -0.7184,
+        "label": "強烈利空"
+      }
+    },
+    {
+      "text": "Trump Administration’s New Section 301 Tariffs Reach Nearly All U.S. Imports - Ward and Smith, P.A. Trump Administration’s New Section 301 Tariffs Reach Nearly All U.S. Imports  Ward and Smith, P.A.",
       "timestamp": "2026-07-27T13:32:57.000Z",
       "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNUVBxS3Vzb2FPOXFsa2VWeXh3eFNTTHA0Zjgyeko1MmVaZnpXLWVKbWtQenFQQ3FnVDJ4Y2xoODNhMWlzWXJMQVR4ODJMaFRUdDQycnYwUDNySGdfd3cwWTkyZGREc0J3OTBHdDd4ZVI3NXlOQk85eE80cnBXRkdVR09BTUN2clBCYXJOZUQtRXYyQkZZbmpUTzU1c3BYTVZOWDc5dFp5czc2c0pSRnNwTA?oc=5",
       "keywords": [
@@ -174,27 +195,6 @@
       }
     },
     {
-      "text": "USTR's Greer says Trump's latest tariffs won't have an economic impact - Reuters USTR's Greer says Trump's latest tariffs won't have an economic impact  Reuters",
-      "timestamp": "2026-07-27T23:35:00.000Z",
-      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPSy1MV0VXRXF6SWIzTXliVUFjWFM1cUl1UDdnZmpKR2JMb2J3TmxNUk4xcU1hN1ROcVJYWDZDU2xKekp2VE9hVXI0UkRabFgwWDJseU5JV1JVRmROS1RWU3B2bFQtM1cyeEQ5VXktWFdaZjNUWXJMUGFjaGVfYmJuMU9wRGNwSUgxUmRvRFFjeVBmUi1wSWtQTmFtUVRPV0RJUE9pUzZ2V0tLUkhielZoQTlR?oc=5",
-      "keywords": [
-        "tariff",
-        "tariffs"
-      ],
-      "impacts": {
-        "foundry": -1,
-        "shipping": -1,
-        "steel": -1,
-        "ic_design": -1,
-        "display": -1,
-        "ev_supply": -0.8
-      },
-      "sentiment": {
-        "compound": -0.7184,
-        "label": "強烈利空"
-      }
-    },
-    {
       "text": "US-China Tariff Rates - What Are They Now? - China Briefing US-China Tariff Rates - What Are They Now?  China Briefing",
       "timestamp": "2026-07-24T01:00:49.000Z",
       "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTFA3STlnT1E2aUIyX2JpeEFudzFKY290X0lPMU9lUDBwMTRXQ18yOVk0d1pYckszbGJ3MDVkakVBNHFFdW94N25jcUM3SHZRNnJBbHdkUWF4Q3BMQWFOb2s3dVpFaEgwSzd4MzhTYnlWRmI?oc=5",
@@ -209,28 +209,6 @@
         "ic_design": -1,
         "display": -0.9,
         "ev_supply": -0.7
-      },
-      "sentiment": {
-        "compound": -0.7184,
-        "label": "強烈利空"
-      }
-    },
-    {
-      "text": "Trump's tariff wall takes shape as more trade actions loom | Daily Sabah - Daily Sabah Trump's tariff wall takes shape as more trade actions loom | Daily Sabah  Daily Sabah",
-      "timestamp": "2026-07-26T07:52:00.000Z",
-      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOUTBRaXBMR2dncm9KQzk4UWFuWWVEMkJJSkY2MkNTd3NMZVVFclpYdEk2WEE5Q1YtTjlfQzhTOExkeHloVGllb1I1S1ZCa3lUV3NkdzFneDk4TGFYUUlnX2xmVWFCN0NOejZDemlfWFNzVC1OenVOZk5HbGIyUFQwNm1lYTZKWWdOblF0aEtGZHBQRGoxaHl3czhGalVpNllaMVhz0gGoAUFVX3lxTE84RUJRUUphbDF2YjcxQjFKNXJNWGpQdTlmRU5BSS0ySDZQMkFNY0d6RlA5QXlKSmFlNk5tM09HaWtKemRlN1Z2UXFtVTJlTTVTWXUyaUVkaktnUlJMZDVVelczTFAxT3Nqdm5DWVFNUHZsODFGeC1IaUJwakZES21CZkh2Ny1iNGVkXzZZTXc5NmY0T2VWTldVNUgxN19wUmtQMGtSSnBxaA?oc=5",
-      "keywords": [
-        "ai",
-        "tariff"
-      ],
-      "impacts": {
-        "ai_server": 0.7,
-        "foundry": -0.4,
-        "shipping": -0.5,
-        "steel": -0.5,
-        "ic_design": -0.6,
-        "display": -0.5,
-        "ev_supply": -0.4
       },
       "sentiment": {
         "compound": -0.7184,
@@ -279,6 +257,27 @@
       },
       "sentiment": {
         "compound": -0.9584,
+        "label": "強烈利空"
+      }
+    },
+    {
+      "text": "This wave of Trump tariffs is likely here to stay; more are coming - FashionNetwork - The World's Fashion Business News This wave of Trump tariffs is likely here to stay; more are coming  FashionNetwork - The World's Fashion Business News",
+      "timestamp": "2026-07-27T01:12:30.000Z",
+      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPNE44SDkwbEVhdVVxS1M0MmNrWEVrLW52ZTZyN1Y2WXNiQzlfc3AtUllNa3FxNUVCbWhHUHNaR1pTMk50YVpnUnpfWHY4SmVNRFNrWGRqcU9fX0tBOFozVHhPaG12eFk4ZzJ1YzREZU9pZk52U2VRQjdDREtNYmU5UV9zS0IwZy1pOUhVTTZHNWRGZlQyeWw0WUtnMm5HdUJFQVFwRDltMUMzdTUxLThWTGtBTQ?oc=5",
+      "keywords": [
+        "tariff",
+        "tariffs"
+      ],
+      "impacts": {
+        "foundry": -1,
+        "shipping": -1,
+        "steel": -1,
+        "ic_design": -1,
+        "display": -1,
+        "ev_supply": -0.8
+      },
+      "sentiment": {
+        "compound": -0.7184,
         "label": "強烈利空"
       }
     },
@@ -347,20 +346,20 @@
       }
     },
     {
-      "text": "Trump wants to ‘manage’ China trade. Businesses see a tariff opening. - Politico Trump wants to ‘manage’ China trade. Businesses see a tariff opening.  Politico",
-      "timestamp": "2026-05-30T07:00:00.000Z",
-      "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPbGZ0RElvZWg0Y0xtbTNTNXVkS2lrYU5fTG9RY054MVYwOVBwMzVua1dmMjJHQjNwRmVvRUp5WDRiZkhXb0ZfOHV6dzBjSDNXclN3RGNWUjRvRy1PXzhNcndxcHZCNW1TX3UxTHVIRHJHOWJhSzNEV0RvcW91N0xmRVN6VGZOa3l2UkhMNHhKbUI?oc=5",
+      "text": "USTR's Greer says Trump's latest tariffs won't have an economic impact - Reuters USTR's Greer says Trump's latest tariffs won't have an economic impact  Reuters",
+      "timestamp": "2026-07-27T23:35:00.000Z",
+      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPSy1MV0VXRXF6SWIzTXliVUFjWFM1cUl1UDdnZmpKR2JMb2J3TmxNUk4xcU1hN1ROcVJYWDZDU2xKekp2VE9hVXI0UkRabFgwWDJseU5JV1JVRmROS1RWU3B2bFQtM1cyeEQ5VXktWFdaZjNUWXJMUGFjaGVfYmJuMU9wRGNwSUgxUmRvRFFjeVBmUi1wSWtQTmFtUVRPV0RJUE9pUzZ2V0tLUkhielZoQTlR?oc=5",
       "keywords": [
         "tariff",
-        "china"
+        "tariffs"
       ],
       "impacts": {
-        "foundry": -0.7,
-        "shipping": -0.9,
-        "steel": -0.5,
+        "foundry": -1,
+        "shipping": -1,
+        "steel": -1,
         "ic_design": -1,
-        "display": -0.9,
-        "ev_supply": -0.7
+        "display": -1,
+        "ev_supply": -0.8
       },
       "sentiment": {
         "compound": -0.7184,
@@ -432,56 +431,17 @@
       }
     }
   ],
-  "deltas": [
-    {
-      "sector": "foundry",
-      "sectorName": "晶圓代工",
-      "prev": -0.963,
-      "current": -0.892,
-      "delta": 0.071,
-      "momentum": "↑ 壓力緩解",
-      "accelerating": true
-    },
-    {
-      "sector": "steel",
-      "sectorName": "鋼鐵",
-      "prev": -0.926,
-      "current": -0.858,
-      "delta": 0.068,
-      "momentum": "↑ 壓力緩解",
-      "accelerating": true
-    }
-  ],
-  "topDeltas": [
-    {
-      "sector": "foundry",
-      "sectorName": "晶圓代工",
-      "prev": -0.963,
-      "current": -0.892,
-      "delta": 0.071,
-      "momentum": "↑ 壓力緩解",
-      "accelerating": true
-    },
-    {
-      "sector": "steel",
-      "sectorName": "鋼鐵",
-      "prev": -0.926,
-      "current": -0.858,
-      "delta": 0.068,
-      "momentum": "↑ 壓力緩解",
-      "accelerating": true
-    }
-  ],
+  "deltas": [],
+  "topDeltas": [],
   "totalAnalyzed": 100,
   "sources": [
     "Google News"
   ],
   "sectorState": {
     "foundry": {
-      "score": -0.892,
-      "lastUpdated": "2026-07-30T00:44:19.389Z",
+      "score": -0.898,
+      "lastUpdated": "2026-07-30T05:08:07.072Z",
       "deltaHistory": [
-        0.013999999999999901,
         -0.05399999999999994,
         0,
         -0.01100000000000001,
@@ -490,14 +450,14 @@
         -0.0020000000000000018,
         0.030000000000000027,
         0.006000000000000005,
-        0.07099999999999995
+        0.07099999999999995,
+        -0.006000000000000005
       ]
     },
     "shipping": {
-      "score": -0.911,
-      "lastUpdated": "2026-07-30T00:44:19.389Z",
+      "score": -0.914,
+      "lastUpdated": "2026-07-30T05:08:07.072Z",
       "deltaHistory": [
-        -0.016000000000000014,
         0.014000000000000012,
         0.0129999999999999,
         0.007000000000000006,
@@ -506,14 +466,14 @@
         -0.009999999999999898,
         0.014999999999999902,
         0.006000000000000005,
-        0.007000000000000006
+        0.007000000000000006,
+        -0.0030000000000000027
       ]
     },
     "steel": {
-      "score": -0.858,
-      "lastUpdated": "2026-07-30T00:44:19.389Z",
+      "score": -0.864,
+      "lastUpdated": "2026-07-30T05:08:07.072Z",
       "deltaHistory": [
-        -0.009999999999999898,
         -0.13,
         0.028999999999999915,
         -0.009000000000000008,
@@ -522,12 +482,13 @@
         -0.008000000000000007,
         0.01200000000000001,
         0.0119999999999999,
-        0.06800000000000006
+        0.06800000000000006,
+        -0.006000000000000005
       ]
     },
     "ic_design": {
       "score": -1,
-      "lastUpdated": "2026-07-30T00:44:19.389Z",
+      "lastUpdated": "2026-07-30T05:08:07.072Z",
       "deltaHistory": [
         0,
         0,
@@ -542,10 +503,9 @@
       ]
     },
     "display": {
-      "score": -0.943,
-      "lastUpdated": "2026-07-30T00:44:19.389Z",
+      "score": -0.945,
+      "lastUpdated": "2026-07-30T05:08:07.072Z",
       "deltaHistory": [
-        -0.01200000000000001,
         -0.08399999999999996,
         0.018000000000000016,
         -0.0010000000000000009,
@@ -554,14 +514,14 @@
         -0.0040000000000000036,
         0.015000000000000013,
         0.0050000000000000044,
-        0.01100000000000001
+        0.01100000000000001,
+        -0.0020000000000000018
       ]
     },
     "ev_supply": {
-      "score": -0.826,
-      "lastUpdated": "2026-07-30T00:44:19.389Z",
+      "score": -0.825,
+      "lastUpdated": "2026-07-30T05:08:07.072Z",
       "deltaHistory": [
-        -0.0020000000000000018,
         -0.07399999999999995,
         0.025999999999999912,
         -0.02399999999999991,
@@ -570,14 +530,14 @@
         -0.031000000000000028,
         0.01200000000000001,
         -0.0020000000000000018,
-        0.014000000000000012
+        0.014000000000000012,
+        0.0010000000000000009
       ]
     },
     "ai_server": {
-      "score": 0.071,
-      "lastUpdated": "2026-07-30T00:44:19.389Z",
+      "score": 0.039,
+      "lastUpdated": "2026-07-30T05:08:07.072Z",
       "deltaHistory": [
-        0.0029999999999999957,
         0.01900000000000001,
         0.00399999999999999,
         -0.0010000000000000009,
@@ -586,12 +546,13 @@
         -0.013000000000000005,
         -0.006999999999999999,
         0.042,
-        -0.008000000000000007
+        -0.008000000000000007,
+        -0.031999999999999994
       ]
     },
     "pcb": {
       "score": 0,
-      "lastUpdated": "2026-07-30T00:44:19.389Z",
+      "lastUpdated": "2026-07-30T05:08:07.072Z",
       "deltaHistory": [
         0,
         0,
@@ -606,10 +567,9 @@
       ]
     },
     "defense": {
-      "score": 0.01,
-      "lastUpdated": "2026-07-30T00:44:19.389Z",
+      "score": 0.012,
+      "lastUpdated": "2026-07-30T05:08:07.072Z",
       "deltaHistory": [
-        0,
         0,
         0,
         0,
@@ -618,12 +578,13 @@
         0,
         0.013,
         -0.002,
-        -0.0009999999999999992
+        -0.0009999999999999992,
+        0.002
       ]
     },
     "packaging": {
       "score": 0,
-      "lastUpdated": "2026-07-30T00:44:19.389Z",
+      "lastUpdated": "2026-07-30T05:08:07.072Z",
       "deltaHistory": [
         0,
         0,
@@ -639,7 +600,7 @@
     },
     "semiconductor_equip": {
       "score": 0,
-      "lastUpdated": "2026-07-30T00:44:19.389Z",
+      "lastUpdated": "2026-07-30T05:08:07.072Z",
       "deltaHistory": [
         0,
         0,
@@ -655,7 +616,7 @@
     },
     "robotics": {
       "score": 0,
-      "lastUpdated": "2026-07-30T00:44:19.389Z",
+      "lastUpdated": "2026-07-30T05:08:07.072Z",
       "deltaHistory": [
         0,
         0,
@@ -670,10 +631,9 @@
       ]
     },
     "petrochemical": {
-      "score": 0.007,
-      "lastUpdated": "2026-07-30T00:44:19.389Z",
+      "score": 0.009,
+      "lastUpdated": "2026-07-30T05:08:07.072Z",
       "deltaHistory": [
-        -0.010000000000000002,
         -0.012999999999999998,
         -0.037,
         0.009000000000000001,
@@ -682,7 +642,8 @@
         -0.006,
         0.009000000000000001,
         -0.002,
-        -0.001
+        -0.001,
+        0.001999999999999999
       ]
     },
     "gas_energy": {
