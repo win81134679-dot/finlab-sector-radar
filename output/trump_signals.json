@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-01T00:50:27.342Z",
+  "updatedAt": "2026-08-01T05:10:30.707Z",
   "posts": [
     {
       "text": "Trump’s Tariffs Push US Companies Back into China - Cato Institute Trump’s Tariffs Push US Companies Back into China  Cato Institute",
@@ -24,7 +24,7 @@
       }
     },
     {
-      "text": "Trump hit countries with tariffs over forced labor, while slowing enforcement of its own ban - Politico Trump hit countries with tariffs over forced labor, while slowing enforcement of its own ban  Politico",
+      "text": "Trump hit countries with tariffs over forced labor, while slowing enforcement of its own ban - politico.com Trump hit countries with tariffs over forced labor, while slowing enforcement of its own ban  politico.com",
       "timestamp": "2026-07-31T14:00:00.000Z",
       "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxQVFpVazdwT1VUc1V0X2J4eTlfdEtyX3UxS2YyMl9JM09KX3ZfU1FVZWdDOG4ycFZBN3FyYmRhR3d6TG1SU3lUdTZFR0J2Ym9jd3BVTDBGY2RaTENLam1vVnB4dHVQeGhYamZXZnE4eXJhN1JvVG9JV0xWemNZRVpwRHF5UU9FdTBHNXREVzdPcnRGZnlhT3QxMFBMV0R2ZlN2YjE0ay1Gcy1KYnlfaF9IVlNmOExRWDRhSVREcGJhcXNnc3JfTTNNbi11YnU1UQ?oc=5",
       "keywords": [
@@ -45,7 +45,7 @@
       }
     },
     {
-      "text": "How did Trump’s 2025 trade war affect the decoupling of US-China supply chains? - piie.com How did Trump’s 2025 trade war affect the decoupling of US-China supply chains?  piie.com",
+      "text": "How did Trump’s 2025 trade war affect the decoupling of US-China supply chains? - Peterson Institute for International Economics How did Trump’s 2025 trade war affect the decoupling of US-China supply chains?  Peterson Institute for International Economics",
       "timestamp": "2026-07-30T12:00:00.000Z",
       "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNU2daMko4NGt5aFRoSXN4WDBjdzVOallRZE9LaHNGbV9iVGpTQzMzRFZlWkdzd1VrVldaZm12UUM1QVdfemNtUEV5Q0pjMG9MOGN2Wm1sSUZEbGN5czJCeDhKVVVZQmZtSXhVbTY4bzd3c0VabEVrMDJRallGT2R0NzlubUg4Q2MzRkVhVUdUSWp1M05YaE9vZ2psOVE3NTRNU1FwZDJnVFJTY1MtTXRtV1lVLVhoRE5Y?oc=5",
       "keywords": [
@@ -437,10 +437,9 @@
   ],
   "sectorState": {
     "foundry": {
-      "score": -0.831,
-      "lastUpdated": "2026-08-01T00:50:27.342Z",
+      "score": -0.832,
+      "lastUpdated": "2026-08-01T05:10:30.707Z",
       "deltaHistory": [
-        -0.026000000000000023,
         -0.0050000000000000044,
         -0.0029999999999998916,
         0.0129999999999999,
@@ -449,14 +448,14 @@
         0.02300000000000002,
         0.0030000000000000027,
         -0.08899999999999997,
+        -0.0010000000000000009,
         -0.0010000000000000009
       ]
     },
     "shipping": {
       "score": -0.962,
-      "lastUpdated": "2026-08-01T00:50:27.342Z",
+      "lastUpdated": "2026-08-01T05:10:30.707Z",
       "deltaHistory": [
-        -0.010000000000000009,
         0.0020000000000000018,
         -0.0020000000000000018,
         0.0010000000000000009,
@@ -465,14 +464,14 @@
         -0.0029999999999998916,
         0.0010000000000000009,
         -0.02200000000000002,
-        -0.0020000000000000018
+        -0.0020000000000000018,
+        0
       ]
     },
     "steel": {
       "score": -0.82,
-      "lastUpdated": "2026-08-01T00:50:27.342Z",
+      "lastUpdated": "2026-08-01T05:10:30.707Z",
       "deltaHistory": [
-        -0.025000000000000022,
         -0.006000000000000005,
         -0.0030000000000000027,
         0.017000000000000015,
@@ -481,12 +480,13 @@
         -0.006000000000000005,
         0.0010000000000000009,
         -0.08699999999999997,
-        -0.0040000000000000036
+        -0.0040000000000000036,
+        0
       ]
     },
     "ic_design": {
       "score": -1,
-      "lastUpdated": "2026-08-01T00:50:27.342Z",
+      "lastUpdated": "2026-08-01T05:10:30.707Z",
       "deltaHistory": [
         0,
         0,
@@ -502,9 +502,8 @@
     },
     "display": {
       "score": -0.914,
-      "lastUpdated": "2026-08-01T00:50:27.342Z",
+      "lastUpdated": "2026-08-01T05:10:30.707Z",
       "deltaHistory": [
-        -0.009000000000000008,
         -0.0030000000000000027,
         -0.0020000000000000018,
         0.007000000000000006,
@@ -513,14 +512,14 @@
         -0.01100000000000001,
         0.0010000000000000009,
         -0.04200000000000004,
-        -0.0020000000000000018
+        -0.0020000000000000018,
+        0
       ]
     },
     "ev_supply": {
       "score": -0.797,
-      "lastUpdated": "2026-08-01T00:50:27.342Z",
+      "lastUpdated": "2026-08-01T05:10:30.707Z",
       "deltaHistory": [
-        -0.01200000000000001,
         -0.013000000000000012,
         0.0040000000000000036,
         0.020000000000000018,
@@ -529,14 +528,14 @@
         -0.018000000000000016,
         0.0010000000000000009,
         -0.052000000000000046,
-        -0.0010000000000000009
+        -0.0010000000000000009,
+        0
       ]
     },
     "ai_server": {
       "score": 0.094,
-      "lastUpdated": "2026-08-01T00:50:27.342Z",
+      "lastUpdated": "2026-08-01T05:10:30.707Z",
       "deltaHistory": [
-        0.05,
         -0.0010000000000000009,
         0,
         -0.041,
@@ -545,12 +544,13 @@
         -0.0040000000000000036,
         -0.0010000000000000009,
         -0.056999999999999995,
-        -0.0050000000000000044
+        -0.0050000000000000044,
+        0
       ]
     },
     "pcb": {
       "score": 0,
-      "lastUpdated": "2026-08-01T00:50:27.342Z",
+      "lastUpdated": "2026-08-01T05:10:30.707Z",
       "deltaHistory": [
         0,
         0,
@@ -566,9 +566,8 @@
     },
     "defense": {
       "score": 0.002,
-      "lastUpdated": "2026-08-01T00:50:27.342Z",
+      "lastUpdated": "2026-08-01T05:10:30.707Z",
       "deltaHistory": [
-        -0.004,
         0,
         -0.001,
         0.001,
@@ -577,12 +576,13 @@
         0.005,
         0.001,
         -0.006,
+        0,
         0
       ]
     },
     "packaging": {
       "score": 0,
-      "lastUpdated": "2026-08-01T00:50:27.342Z",
+      "lastUpdated": "2026-08-01T05:10:30.707Z",
       "deltaHistory": [
         0,
         0,
@@ -598,7 +598,7 @@
     },
     "semiconductor_equip": {
       "score": 0,
-      "lastUpdated": "2026-08-01T00:50:27.342Z",
+      "lastUpdated": "2026-08-01T05:10:30.707Z",
       "deltaHistory": [
         0,
         0,
@@ -614,7 +614,7 @@
     },
     "robotics": {
       "score": 0,
-      "lastUpdated": "2026-08-01T00:50:27.342Z",
+      "lastUpdated": "2026-08-01T05:10:30.707Z",
       "deltaHistory": [
         0,
         0,
@@ -630,9 +630,8 @@
     },
     "petrochemical": {
       "score": 0.001,
-      "lastUpdated": "2026-08-01T00:50:27.342Z",
+      "lastUpdated": "2026-08-01T05:10:30.707Z",
       "deltaHistory": [
-        -0.003,
         -0.001,
         0,
         0.001,
@@ -641,7 +640,8 @@
         0.004,
         0.001,
         -0.004,
-        -0.001
+        -0.001,
+        0
       ]
     },
     "gas_energy": {
