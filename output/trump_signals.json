@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-02T20:24:19.159Z",
+  "updatedAt": "2026-08-03T00:50:52.183Z",
   "posts": [
     {
       "text": "Trump’s Tariffs Push US Companies Back into China - Cato Institute Trump’s Tariffs Push US Companies Back into China  Cato Institute",
@@ -152,27 +152,6 @@
       }
     },
     {
-      "text": "New Republican ads slam Democrats opposed to Trump's tariffs - CNBC New Republican ads slam Democrats opposed to Trump's tariffs  CNBC",
-      "timestamp": "2026-07-28T11:00:01.000Z",
-      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQZURPc2NOZmh4eTZQdENCc3Q3MVRnYl9CWVBkUnRISVQzdjFrYTd1aEFoMVo4ckd1YllxanFFWTVpMjBPMlhiZnRpRHlYRTRNdXJ2XzdpUmNVTzdsY0dDZjJLd3VHRDFFN18xYUZEQk1pSjJoQmhPRzFvRHRqeXdOM2dwWdIBiAFBVV95cUxOOElvRmUzcjRjM2RrS0pnaUhNYkZmZzhfMG43RTVKdy1vdVZVanotdmlWVVZKVFF1dmc5ZE9uVWZWZTRkejJtRWdoVVphbVVocUcxZHFLNjVpQjU4dFVaVTZGSTFwYkxlSjVYR2QxTEFWRFJTcnNUWEVORUhNQjgtUnh6aXh2OTNP?oc=5",
-      "keywords": [
-        "tariff",
-        "tariffs"
-      ],
-      "impacts": {
-        "foundry": -1,
-        "shipping": -1,
-        "steel": -1,
-        "ic_design": -1,
-        "display": -1,
-        "ev_supply": -0.8
-      },
-      "sentiment": {
-        "compound": -0.7184,
-        "label": "強烈利空"
-      }
-    },
-    {
       "text": "Trump to impose double-digit tariffs on dozens of countries - NPR Trump to impose double-digit tariffs on dozens of countries  NPR",
       "timestamp": "2026-07-23T07:00:00.000Z",
       "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTFBqcWdJU0FnRnVWMmUwNnJtTDdCSGlmcVdHb2k0MlVUTl83V2l6RlFPT0NoR3dBcjlIVlo4S1RkMEdVaE4wbm5JdklsRXF4eUZ1QlpSdGYzU2xYZVA0R09RZmQydnJsNEVubjQ0YjRtRWp6bTVKMFZ5Z19B?oc=5",
@@ -190,6 +169,27 @@
       },
       "sentiment": {
         "compound": -0.875,
+        "label": "強烈利空"
+      }
+    },
+    {
+      "text": "New Republican ads slam Democrats opposed to Trump's tariffs - CNBC New Republican ads slam Democrats opposed to Trump's tariffs  CNBC",
+      "timestamp": "2026-07-28T11:00:01.000Z",
+      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQZURPc2NOZmh4eTZQdENCc3Q3MVRnYl9CWVBkUnRISVQzdjFrYTd1aEFoMVo4ckd1YllxanFFWTVpMjBPMlhiZnRpRHlYRTRNdXJ2XzdpUmNVTzdsY0dDZjJLd3VHRDFFN18xYUZEQk1pSjJoQmhPRzFvRHRqeXdOM2dwWdIBiAFBVV95cUxOOElvRmUzcjRjM2RrS0pnaUhNYkZmZzhfMG43RTVKdy1vdVZVanotdmlWVVZKVFF1dmc5ZE9uVWZWZTRkejJtRWdoVVphbVVocUcxZHFLNjVpQjU4dFVaVTZGSTFwYkxlSjVYR2QxTEFWRFJTcnNUWEVORUhNQjgtUnh6aXh2OTNP?oc=5",
+      "keywords": [
+        "tariff",
+        "tariffs"
+      ],
+      "impacts": {
+        "foundry": -1,
+        "shipping": -1,
+        "steel": -1,
+        "ic_design": -1,
+        "display": -1,
+        "ev_supply": -0.8
+      },
+      "sentiment": {
+        "compound": -0.7184,
         "label": "強烈利空"
       }
     },
@@ -441,9 +441,8 @@
   "sectorState": {
     "foundry": {
       "score": -0.808,
-      "lastUpdated": "2026-08-02T20:24:19.159Z",
+      "lastUpdated": "2026-08-03T00:50:52.183Z",
       "deltaHistory": [
-        -0.007000000000000006,
         0.02100000000000002,
         0,
         0,
@@ -452,14 +451,14 @@
         0.0010000000000000009,
         0.007999999999999896,
         0,
+        0,
         0
       ]
     },
     "shipping": {
-      "score": -0.961,
-      "lastUpdated": "2026-08-02T20:24:19.159Z",
+      "score": -0.962,
+      "lastUpdated": "2026-08-03T00:50:52.183Z",
       "deltaHistory": [
-        -0.0030000000000000027,
         0.0010000000000000009,
         -0.0010000000000000009,
         -0.0010000000000000009,
@@ -468,14 +467,14 @@
         -0.0010000000000000009,
         0.0050000000000000044,
         0.0010000000000000009,
-        0
+        0,
+        -0.0010000000000000009
       ]
     },
     "steel": {
       "score": -0.804,
-      "lastUpdated": "2026-08-02T20:24:19.159Z",
+      "lastUpdated": "2026-08-03T00:50:52.183Z",
       "deltaHistory": [
-        -0.013000000000000012,
         0.02199999999999991,
         0.0030000000000000027,
         -0.0010000000000000009,
@@ -484,12 +483,13 @@
         -0.0010000000000000009,
         0.0050000000000000044,
         0,
-        0.0010000000000000009
+        0.0010000000000000009,
+        0
       ]
     },
     "ic_design": {
       "score": -1,
-      "lastUpdated": "2026-08-02T20:24:19.159Z",
+      "lastUpdated": "2026-08-03T00:50:52.183Z",
       "deltaHistory": [
         0,
         0,
@@ -505,9 +505,8 @@
     },
     "display": {
       "score": -0.898,
-      "lastUpdated": "2026-08-02T20:24:19.159Z",
+      "lastUpdated": "2026-08-03T00:50:52.183Z",
       "deltaHistory": [
-        -0.0030000000000000027,
         0.013000000000000012,
         0.0030000000000000027,
         -0.0020000000000000018,
@@ -516,14 +515,14 @@
         -0.0020000000000000018,
         0.006000000000000005,
         0,
+        0,
         0
       ]
     },
     "ev_supply": {
       "score": -0.784,
-      "lastUpdated": "2026-08-02T20:24:19.159Z",
+      "lastUpdated": "2026-08-03T00:50:52.183Z",
       "deltaHistory": [
-        -0.0020000000000000018,
         0.01100000000000001,
         0,
         -0.0010000000000000009,
@@ -532,14 +531,14 @@
         0,
         0.0050000000000000044,
         0,
+        0,
         0
       ]
     },
     "ai_server": {
       "score": 0.108,
-      "lastUpdated": "2026-08-02T20:24:19.159Z",
+      "lastUpdated": "2026-08-03T00:50:52.183Z",
       "deltaHistory": [
-        0.0020000000000000018,
         0.015,
         0,
         -0.0030000000000000027,
@@ -548,12 +547,13 @@
         0.0050000000000000044,
         -0.0050000000000000044,
         0,
+        0,
         0
       ]
     },
     "pcb": {
       "score": 0,
-      "lastUpdated": "2026-08-02T20:24:19.159Z",
+      "lastUpdated": "2026-08-03T00:50:52.183Z",
       "deltaHistory": [
         0,
         0,
@@ -569,9 +569,8 @@
     },
     "defense": {
       "score": 0.006,
-      "lastUpdated": "2026-08-02T20:24:19.159Z",
+      "lastUpdated": "2026-08-03T00:50:52.183Z",
       "deltaHistory": [
-        0,
         0,
         0,
         0,
@@ -580,12 +579,13 @@
         0,
         0.004,
         0,
+        0,
         0
       ]
     },
     "packaging": {
       "score": 0,
-      "lastUpdated": "2026-08-02T20:24:19.159Z",
+      "lastUpdated": "2026-08-03T00:50:52.183Z",
       "deltaHistory": [
         0,
         0,
@@ -601,7 +601,7 @@
     },
     "semiconductor_equip": {
       "score": 0,
-      "lastUpdated": "2026-08-02T20:24:19.159Z",
+      "lastUpdated": "2026-08-03T00:50:52.183Z",
       "deltaHistory": [
         0,
         0,
@@ -617,7 +617,7 @@
     },
     "robotics": {
       "score": 0,
-      "lastUpdated": "2026-08-02T20:24:19.159Z",
+      "lastUpdated": "2026-08-03T00:50:52.183Z",
       "deltaHistory": [
         0,
         0,
@@ -633,9 +633,8 @@
     },
     "petrochemical": {
       "score": 0.004,
-      "lastUpdated": "2026-08-02T20:24:19.159Z",
+      "lastUpdated": "2026-08-03T00:50:52.183Z",
       "deltaHistory": [
-        0,
         0.001,
         -0.001,
         0.001,
@@ -643,6 +642,7 @@
         0,
         -0.001,
         0.003,
+        0,
         0,
         0
       ]
