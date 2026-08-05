@@ -1,8 +1,8 @@
 {
-  "updatedAt": "2026-08-05T17:47:35.523Z",
+  "updatedAt": "2026-08-05T21:18:38.663Z",
   "posts": [
     {
-      "text": "Trump's tariffs may be causing some U.S. companies to return manufacturing operations to China - Fortune Trump's tariffs may be causing some U.S. companies to return manufacturing operations to China  Fortune",
+      "text": "Trump’s tariffs may be causing some U.S. companies to return manufacturing operations to China - Fortune Trump’s tariffs may be causing some U.S. companies to return manufacturing operations to China  Fortune",
       "timestamp": "2026-08-05T07:01:00.000Z",
       "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNazdTMTNleEx5OXRxbnd3V3JySlYwbXNOLTdtYlJfaVBBN1kxX2kyT0RXMjJ1LXdCWXQ0dTB1NE91b2tEZUtzVW9WMnlrVkI1OE9IdFdNbkpUd2RSU2xkcFBla094dzEwSlBhQ1hpckZTc3c0TEtRSjhma2ZNd1JHYlFkNlVyWnk3ZTU1R1F1ZmJjOVg2UTNj?oc=5",
       "keywords": [
@@ -97,6 +97,26 @@
       }
     },
     {
+      "text": "Donald Trump’s Tariff Re-Do in Southeast Asia - The Diplomat – Asia-Pacific Donald Trump’s Tariff Re-Do in Southeast Asia  The Diplomat – Asia-Pacific",
+      "timestamp": "2026-08-04T04:00:54.000Z",
+      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOVWZ3YlVQT3VxSVpGaVRiaTBJMWdDRGJyRENCMVBtSjQyT0tsUU1sQW45c3c2Y2lMS2RQWGFvdmJ2RWppak1Wd2lMWXljRVN1V3hlQ3FFWEkwSDNkTmpHTFYwXzMyOWwwMG5hdkJiaXp2cTY0UEVlQmMwY0pHSWt6andMOA?oc=5",
+      "keywords": [
+        "tariff"
+      ],
+      "impacts": {
+        "foundry": -0.7,
+        "shipping": -0.5,
+        "steel": -0.5,
+        "ic_design": -0.6,
+        "display": -0.5,
+        "ev_supply": -0.4
+      },
+      "sentiment": {
+        "compound": -0.7184,
+        "label": "強烈利空"
+      }
+    },
+    {
       "text": "How did Trump’s 2025 trade war affect the decoupling of US-China supply chains? - Peterson Institute for International Economics How did Trump’s 2025 trade war affect the decoupling of US-China supply chains?  Peterson Institute for International Economics",
       "timestamp": "2026-07-30T12:00:00.000Z",
       "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNU2daMko4NGt5aFRoSXN4WDBjdzVOallRZE9LaHNGbV9iVGpTQzMzRFZlWkdzd1VrVldaZm12UUM1QVdfemNtUEV5Q0pjMG9MOGN2Wm1sSUZEbGN5czJCeDhKVVVZQmZtSXhVbTY4bzd3c0VabEVrMDJRallGT2R0NzlubUg4Q2MzRkVhVUdUSWp1M05YaE9vZ2psOVE3NTRNU1FwZDJnVFJTY1MtTXRtV1lVLVhoRE5Y?oc=5",
@@ -116,26 +136,6 @@
       "sentiment": {
         "compound": 0,
         "label": "中性"
-      }
-    },
-    {
-      "text": "Donald Trump’s Tariff Re-Do in Southeast Asia - The Diplomat – Asia-Pacific Donald Trump’s Tariff Re-Do in Southeast Asia  The Diplomat – Asia-Pacific",
-      "timestamp": "2026-08-04T04:00:54.000Z",
-      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOVWZ3YlVQT3VxSVpGaVRiaTBJMWdDRGJyRENCMVBtSjQyT0tsUU1sQW45c3c2Y2lMS2RQWGFvdmJ2RWppak1Wd2lMWXljRVN1V3hlQ3FFWEkwSDNkTmpHTFYwXzMyOWwwMG5hdkJiaXp2cTY0UEVlQmMwY0pHSWt6andMOA?oc=5",
-      "keywords": [
-        "tariff"
-      ],
-      "impacts": {
-        "foundry": -0.7,
-        "shipping": -0.5,
-        "steel": -0.5,
-        "ic_design": -0.6,
-        "display": -0.5,
-        "ev_supply": -0.4
-      },
-      "sentiment": {
-        "compound": -0.7184,
-        "label": "強烈利空"
       }
     },
     {
@@ -451,10 +451,9 @@
   ],
   "sectorState": {
     "foundry": {
-      "score": -0.928,
-      "lastUpdated": "2026-08-05T17:47:35.523Z",
+      "score": -0.942,
+      "lastUpdated": "2026-08-05T21:18:38.663Z",
       "deltaHistory": [
-        -0.09000000000000008,
         -0.0010000000000000009,
         -0.018000000000000016,
         0,
@@ -463,14 +462,14 @@
         -0.010999999999999899,
         -0.0010000000000000009,
         0,
-        0.0119999999999999
+        0.0119999999999999,
+        -0.013999999999999901
       ]
     },
     "shipping": {
-      "score": -0.985,
-      "lastUpdated": "2026-08-05T17:47:35.523Z",
+      "score": -0.983,
+      "lastUpdated": "2026-08-05T21:18:38.663Z",
       "deltaHistory": [
-        0.007000000000000006,
         -0.0040000000000000036,
         0.0010000000000000009,
         -0.0020000000000000018,
@@ -479,14 +478,14 @@
         -0.0020000000000000018,
         0,
         0,
+        0.0020000000000000018,
         0.0020000000000000018
       ]
     },
     "steel": {
-      "score": -0.903,
-      "lastUpdated": "2026-08-05T17:47:35.523Z",
+      "score": -0.914,
+      "lastUpdated": "2026-08-05T21:18:38.663Z",
       "deltaHistory": [
-        -0.06799999999999995,
         -0.0040000000000000036,
         -0.01200000000000001,
         0,
@@ -495,12 +494,13 @@
         -0.015000000000000013,
         0,
         0.0010000000000000009,
-        0.015000000000000013
+        0.015000000000000013,
+        -0.01100000000000001
       ]
     },
     "ic_design": {
       "score": -1,
-      "lastUpdated": "2026-08-05T17:47:35.523Z",
+      "lastUpdated": "2026-08-05T21:18:38.663Z",
       "deltaHistory": [
         0,
         0,
@@ -515,10 +515,9 @@
       ]
     },
     "display": {
-      "score": -0.938,
-      "lastUpdated": "2026-08-05T17:47:35.523Z",
+      "score": -0.944,
+      "lastUpdated": "2026-08-05T21:18:38.663Z",
       "deltaHistory": [
-        -0.018000000000000016,
         -0.0020000000000000018,
         -0.0050000000000000044,
         -0.0010000000000000009,
@@ -527,14 +526,14 @@
         -0.009000000000000008,
         0,
         0,
-        0.010000000000000009
+        0.010000000000000009,
+        -0.006000000000000005
       ]
     },
     "ev_supply": {
-      "score": -0.838,
-      "lastUpdated": "2026-08-05T17:47:35.523Z",
+      "score": -0.843,
+      "lastUpdated": "2026-08-05T21:18:38.663Z",
       "deltaHistory": [
-        -0.01100000000000001,
         0.0010000000000000009,
         0.0030000000000000027,
         0.0020000000000000018,
@@ -543,14 +542,14 @@
         0.0040000000000000036,
         -0.0020000000000000018,
         -0.0030000000000000027,
-        -0.014000000000000012
+        -0.014000000000000012,
+        -0.0050000000000000044
       ]
     },
     "ai_server": {
-      "score": 0.065,
-      "lastUpdated": "2026-08-05T17:47:35.523Z",
+      "score": 0.056,
+      "lastUpdated": "2026-08-05T21:18:38.663Z",
       "deltaHistory": [
-        -0.025999999999999995,
         0.007999999999999993,
         -0.009999999999999995,
         -0.0010000000000000009,
@@ -559,12 +558,13 @@
         -0.009000000000000001,
         0,
         0,
-        0.011000000000000003
+        0.011000000000000003,
+        -0.009000000000000001
       ]
     },
     "pcb": {
       "score": 0,
-      "lastUpdated": "2026-08-05T17:47:35.523Z",
+      "lastUpdated": "2026-08-05T21:18:38.663Z",
       "deltaHistory": [
         0,
         0,
@@ -595,10 +595,9 @@
       ]
     },
     "packaging": {
-      "score": -0.139,
-      "lastUpdated": "2026-08-05T17:47:35.523Z",
+      "score": -0.14,
+      "lastUpdated": "2026-08-05T21:18:38.663Z",
       "deltaHistory": [
-        -0.045,
         0.003999999999999997,
         0.022000000000000002,
         0.004999999999999999,
@@ -607,14 +606,14 @@
         0.031,
         0.04300000000000001,
         -0.007000000000000006,
-        -0.010000000000000009
+        -0.010000000000000009,
+        -0.0010000000000000009
       ]
     },
     "semiconductor_equip": {
-      "score": 0.031,
-      "lastUpdated": "2026-08-05T17:47:35.523Z",
+      "score": 0.032,
+      "lastUpdated": "2026-08-05T21:18:38.663Z",
       "deltaHistory": [
-        0,
         0,
         0,
         0,
@@ -623,14 +622,14 @@
         0,
         0.031,
         0,
-        0
+        0,
+        0.0010000000000000009
       ]
     },
     "robotics": {
-      "score": 0.031,
-      "lastUpdated": "2026-08-05T17:47:35.523Z",
+      "score": 0.032,
+      "lastUpdated": "2026-08-05T21:18:38.663Z",
       "deltaHistory": [
-        0,
         0,
         0,
         0,
@@ -639,7 +638,8 @@
         0,
         0.031,
         0,
-        0
+        0,
+        0.0010000000000000009
       ]
     },
     "petrochemical": {
@@ -670,12 +670,13 @@
     },
     "solar": {
       "score": -0.058,
-      "lastUpdated": "2026-08-05T17:47:35.523Z",
+      "lastUpdated": "2026-08-05T21:18:38.663Z",
       "deltaHistory": [
         -0.068,
         0.011000000000000003,
         0.008,
         -0.009000000000000001,
+        0,
         0
       ]
     }
