@@ -1,7 +1,7 @@
 {
   "schema_version": "2.0",
   "date": "2026-08-05",
-  "run_at": "2026-08-05T21:07:32+08:00",
+  "run_at": "2026-08-05T21:26:46+08:00",
   "last_trading_date": "2026-08-05",
   "macro": {
     "warning": false,
@@ -12,7 +12,7 @@
       "bond": "US10Y=4.70% (↑均線❌)",
       "pmi": "INDPRO=102.6 (擴張✅)",
       "sox": "SOXX=542.21 (站上20MA✅)",
-      "twd": "USD/TWD=32.281 (台幣升值✅)"
+      "twd": "USD/TWD=32.300 (台幣升值✅)"
     },
     "us_bond_10y": 4.7,
     "bond_trend": "up",
@@ -20,7 +20,7 @@
     "ip_trend": "up",
     "sox_price": 542.21,
     "sox_trend": "up",
-    "usd_twd": 32.281,
+    "usd_twd": 32.3,
     "twd_trend": "down"
   },
   "macro_warning": false,
@@ -911,7 +911,7 @@
           "score": 0,
           "level": "無訊號",
           "consec_buy": 2,
-          "cum_chip": -40685173.0,
+          "cum_chip": -40690173.0,
           "accel": 0.32,
           "z_score": -0.06,
           "breakout": false
@@ -2054,7 +2054,7 @@
           "score": 3,
           "level": "★ 初步觀察",
           "consec_buy": 4,
-          "cum_chip": 80135582.0,
+          "cum_chip": 80136523.0,
           "accel": 2.26,
           "z_score": 0.07,
           "breakout": true
@@ -4260,7 +4260,7 @@
           "score": 3,
           "level": "★ 初步觀察",
           "consec_buy": 4,
-          "cum_chip": 1192191594.0,
+          "cum_chip": 1192283495.0,
           "accel": 1.93,
           "z_score": 0.34,
           "breakout": true
@@ -4339,14 +4339,14 @@
           "score": 3,
           "level": "★ 初步觀察",
           "consec_buy": 15,
-          "cum_chip": 595501877.0,
+          "cum_chip": 595500371.0,
           "accel": 1.31,
           "z_score": 0.72,
           "breakout": true
         },
         "rotation_score": 0.645
       },
-      "dormant_awakening": true,
+      "dormant_awakening": false,
       "rotation_handoff": null
     },
     "optical_comm": {
@@ -5213,7 +5213,7 @@
           "score": 2,
           "level": "中性",
           "consec_buy": 5,
-          "cum_chip": -34296556.0,
+          "cum_chip": -34289062.0,
           "accel": -15.69,
           "z_score": -0.05,
           "breakout": true
@@ -5821,7 +5821,7 @@
           "score": 2,
           "level": "中性",
           "consec_buy": 2,
-          "cum_chip": 16821408.0,
+          "cum_chip": 16816408.0,
           "accel": -0.49,
           "z_score": 0.36,
           "breakout": true
@@ -7039,7 +7039,7 @@
           "score": 2,
           "level": "中性",
           "consec_buy": 2,
-          "cum_chip": 20786022.0,
+          "cum_chip": 20781022.0,
           "accel": 0.09,
           "z_score": 0.38,
           "breakout": true
@@ -7384,7 +7384,7 @@
           "score": 1,
           "level": "觀望",
           "consec_buy": 0,
-          "cum_chip": -1122289715.0,
+          "cum_chip": -1122201254.0,
           "accel": 1.6,
           "z_score": -0.32,
           "breakout": false
@@ -9587,14 +9587,14 @@
           "score": 3,
           "level": "★ 初步觀察",
           "consec_buy": 3,
-          "cum_chip": 31025030.0,
+          "cum_chip": 31034437.0,
           "accel": 7.58,
           "z_score": -0.06,
           "breakout": true
         },
         "rotation_score": -0.126
       },
-      "dormant_awakening": true,
+      "dormant_awakening": false,
       "rotation_handoff": null
     },
     "memory": {
@@ -11258,14 +11258,14 @@
           "score": 0,
           "level": "無訊號",
           "consec_buy": 3,
-          "cum_chip": -245141557.0,
+          "cum_chip": -245132557.0,
           "accel": -3.47,
           "z_score": -0.1,
           "breakout": false
         },
         "rotation_score": -0.516
       },
-      "dormant_awakening": true,
+      "dormant_awakening": false,
       "rotation_handoff": null
     },
     "power_components": {
@@ -12654,7 +12654,7 @@
           "score": 2,
           "level": "中性",
           "consec_buy": 3,
-          "cum_chip": 78560479.0,
+          "cum_chip": 78629569.0,
           "accel": 2.13,
           "z_score": 0.14,
           "breakout": false
@@ -14853,8 +14853,8 @@
           "score": 3,
           "level": "★ 初步觀察",
           "consec_buy": 4,
-          "cum_chip": 99637688.0,
-          "accel": 15.82,
+          "cum_chip": 99334688.0,
+          "accel": 15.85,
           "z_score": 0.03,
           "breakout": true
         },
@@ -17048,8 +17048,8 @@
           "score": 1,
           "level": "觀望",
           "consec_buy": 0,
-          "cum_chip": 6908222.0,
-          "accel": -12.24,
+          "cum_chip": 6903222.0,
+          "accel": -12.25,
           "z_score": 0.03,
           "breakout": false
         },
@@ -18970,7 +18970,7 @@
           "score": 1,
           "level": "觀望",
           "consec_buy": 0,
-          "cum_chip": -544508305.0,
+          "cum_chip": -544237305.0,
           "accel": 1.54,
           "z_score": -0.21,
           "breakout": false
@@ -19393,7 +19393,7 @@
           "score": 2,
           "level": "中性",
           "consec_buy": 1,
-          "cum_chip": 2201391355.0,
+          "cum_chip": 2201012545.0,
           "accel": 1.44,
           "z_score": 0.14,
           "breakout": true
@@ -19472,7 +19472,7 @@
           "score": 2,
           "level": "中性",
           "consec_buy": 1,
-          "cum_chip": 2201391355.0,
+          "cum_chip": 2201012545.0,
           "accel": 1.44,
           "z_score": 0.14,
           "breakout": true
@@ -24478,8 +24478,8 @@
           "score": 2,
           "level": "中性",
           "consec_buy": 0,
-          "cum_chip": -31433470.0,
-          "accel": 6.83,
+          "cum_chip": -31281920.0,
+          "accel": 6.84,
           "z_score": -0.21,
           "breakout": true
         },
@@ -25354,14 +25354,14 @@
           "score": 1,
           "level": "觀望",
           "consec_buy": 2,
-          "cum_chip": -47382436.0,
-          "accel": -0.13,
+          "cum_chip": -47298436.0,
+          "accel": -0.14,
           "z_score": -0.05,
           "breakout": true
         },
         "rotation_score": 0.625
       },
-      "dormant_awakening": true,
+      "dormant_awakening": false,
       "rotation_handoff": null
     },
     "packaging": {
@@ -26571,7 +26571,7 @@
           "score": 1,
           "level": "觀望",
           "consec_buy": 2,
-          "cum_chip": -68014739.0,
+          "cum_chip": -68019739.0,
           "accel": -1.42,
           "z_score": 0.24,
           "breakout": true
@@ -27261,8 +27261,8 @@
           "score": 3,
           "level": "★ 初步觀察",
           "consec_buy": 3,
-          "cum_chip": 3184589.0,
-          "accel": 4.25,
+          "cum_chip": 3250589.0,
+          "accel": 4.24,
           "z_score": 0.02,
           "breakout": true
         },
@@ -28134,7 +28134,7 @@
           "score": 1,
           "level": "觀望",
           "consec_buy": 4,
-          "cum_chip": -206868739.0,
+          "cum_chip": -206873739.0,
           "accel": -1.87,
           "z_score": 0.02,
           "breakout": true
@@ -29619,7 +29619,7 @@
         },
         "rotation_score": 0.537
       },
-      "dormant_awakening": true,
+      "dormant_awakening": false,
       "rotation_handoff": null
     },
     "software_saas": {
@@ -33521,7 +33521,7 @@
           "score": 2,
           "level": "中性",
           "consec_buy": 1,
-          "cum_chip": 2201391355.0,
+          "cum_chip": 2201012545.0,
           "accel": 1.44,
           "z_score": 0.14,
           "breakout": true
@@ -33600,7 +33600,7 @@
           "score": 2,
           "level": "中性",
           "consec_buy": 1,
-          "cum_chip": 2201391355.0,
+          "cum_chip": 2201012545.0,
           "accel": 1.44,
           "z_score": 0.14,
           "breakout": true
@@ -34549,8 +34549,8 @@
           "score": 0,
           "level": "無訊號",
           "consec_buy": 3,
-          "cum_chip": -162421499.0,
-          "accel": 0.23,
+          "cum_chip": -162724499.0,
+          "accel": 0.24,
           "z_score": -0.17,
           "breakout": false
         },
@@ -36212,14 +36212,14 @@
           "score": 1,
           "level": "觀望",
           "consec_buy": 4,
-          "cum_chip": -15843999.0,
-          "accel": -42.23,
+          "cum_chip": -15850505.0,
+          "accel": -42.21,
           "z_score": 0.08,
           "breakout": true
         },
         "rotation_score": 0.078
       },
-      "dormant_awakening": true,
+      "dormant_awakening": false,
       "rotation_handoff": null
     },
     "cloud_computing": {
@@ -37614,14 +37614,14 @@
           "score": 3,
           "level": "★ 初步觀察",
           "consec_buy": 4,
-          "cum_chip": 102469155.0,
+          "cum_chip": 102462649.0,
           "accel": 4.47,
           "z_score": 0.36,
           "breakout": true
         },
         "rotation_score": 0.56
       },
-      "dormant_awakening": true,
+      "dormant_awakening": false,
       "rotation_handoff": null
     },
     "big_data": {
@@ -38489,7 +38489,7 @@
           "score": 4,
           "level": "★★ 明顯布局",
           "consec_buy": 6,
-          "cum_chip": 49069642.0,
+          "cum_chip": 49064642.0,
           "accel": 2.93,
           "z_score": 0.43,
           "breakout": true
@@ -39181,8 +39181,8 @@
           "score": 2,
           "level": "中性",
           "consec_buy": 3,
-          "cum_chip": 13488453.0,
-          "accel": 10.79,
+          "cum_chip": 13524453.0,
+          "accel": 10.78,
           "z_score": 0.12,
           "breakout": false
         },
@@ -42244,8 +42244,8 @@
           "score": 3,
           "level": "★ 初步觀察",
           "consec_buy": 3,
-          "cum_chip": 33127503.0,
-          "accel": 13.53,
+          "cum_chip": 33122503.0,
+          "accel": 13.54,
           "z_score": 0.11,
           "breakout": true
         },
@@ -43729,7 +43729,7 @@
           "score": 3,
           "level": "★ 初步觀察",
           "consec_buy": 4,
-          "cum_chip": 39978765.0,
+          "cum_chip": 39973765.0,
           "accel": 19.63,
           "z_score": -0.01,
           "breakout": true
@@ -47775,7 +47775,7 @@
           "score": 3,
           "level": "★ 初步觀察",
           "consec_buy": 4,
-          "cum_chip": 124106578.0,
+          "cum_chip": 124101578.0,
           "accel": 7.98,
           "z_score": 0.19,
           "breakout": true
