@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-09T16:42:43.749Z",
+  "updatedAt": "2026-08-09T20:40:20.942Z",
   "posts": [
     {
       "text": "What to Know About Trump’s Tariffs on Canada, and What’s Next - The New York Times What to Know About Trump’s Tariffs on Canada, and What’s Next  The New York Times",
@@ -45,6 +45,29 @@
       }
     },
     {
+      "text": "Trump’s summer of tariffs means trade uncertainty is here to stay - Chatham House Trump’s summer of tariffs means trade uncertainty is here to stay  Chatham House",
+      "timestamp": "2026-08-07T15:59:26.000Z",
+      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPWUFuLVMtZ2dBeHJRMlhZMDAycmdBTlZMZE4zdXpQVUFXV0dTNDBCb2pRZWhaTEZJM0dBLVBSWXFLaUZ4cWVrUzdUczlzTnhEUmcxTHRKS1ZjeHpHa1VMNF9BaVdGaDUxd2hYOVlTdnZOeEVtNlpHVkRHZUd0aHVzeDJwd3VuRUE1bm9WR1ZQblkxVlRuQllz?oc=5",
+      "keywords": [
+        "ai",
+        "tariff",
+        "tariffs"
+      ],
+      "impacts": {
+        "ai_server": 0.7,
+        "foundry": -1,
+        "shipping": -1,
+        "steel": -1,
+        "ic_design": -1,
+        "display": -1,
+        "ev_supply": -0.8
+      },
+      "sentiment": {
+        "compound": -0.7184,
+        "label": "強烈利空"
+      }
+    },
+    {
       "text": "Trump orders new 15% tariff on key material for solar panels and microchips - The Guardian Trump orders new 15% tariff on key material for solar panels and microchips  The Guardian",
       "timestamp": "2026-08-07T09:45:00.000Z",
       "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQRldKVkFHa3F0anBkbkVNRHRxSWVMR0F0ZWpva0tfQXhWMUpZYldTQ0lPTll1d0s0c3p1NlcwWnloaFFRc21kSHFGcUJWdThzeGtVV29GTzJ1N3BhWEd0VlJpczQ5MkJwR1N1NmhkMEN5Z1RNQzB4QTUyVHFmZFRjZGxfQzdobGcyOEV2eWtPeDJ5elhOQXgzd3FYSGMta2dSbEJETjYyQk45WnFYUi1FNm9tSl95bG8?oc=5",
@@ -70,22 +93,24 @@
       }
     },
     {
-      "text": "Trump’s summer of tariffs means trade uncertainty is here to stay - Chatham House Trump’s summer of tariffs means trade uncertainty is here to stay  Chatham House",
-      "timestamp": "2026-08-07T15:59:26.000Z",
-      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPWUFuLVMtZ2dBeHJRMlhZMDAycmdBTlZMZE4zdXpQVUFXV0dTNDBCb2pRZWhaTEZJM0dBLVBSWXFLaUZ4cWVrUzdUczlzTnhEUmcxTHRKS1ZjeHpHa1VMNF9BaVdGaDUxd2hYOVlTdnZOeEVtNlpHVkRHZUd0aHVzeDJwd3VuRUE1bm9WR1ZQblkxVlRuQllz?oc=5",
+      "text": "Trump announces tariffs on key component for solar panels and semiconductors - Politico Trump announces tariffs on key component for solar panels and semiconductors  Politico",
+      "timestamp": "2026-08-06T22:00:00.000Z",
+      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQdWVIcmFfWk85NzhVellrUl9zdy1Qc0NKREVIby1uR1NMU1ZpN3MyZUJIOEdxcDloV193NnRiaHk0WUE2MFh0Z0FKOGhjcnNzMUU5ZldXWmZ3czNUcEk3cFlpSnBHb2ZHVzNvaUFOV2xqWHVDVk1KWkxuTVBpSXJXdXdiNUN0dWowV2JjVg?oc=5",
       "keywords": [
-        "ai",
+        "semiconductor",
         "tariff",
-        "tariffs"
+        "tariffs",
+        "solar"
       ],
       "impacts": {
-        "ai_server": 0.7,
         "foundry": -1,
+        "ic_design": -1,
+        "packaging": -0.5,
         "shipping": -1,
         "steel": -1,
-        "ic_design": -1,
         "display": -1,
-        "ev_supply": -0.8
+        "ev_supply": -0.8,
+        "solar": -0.6
       },
       "sentiment": {
         "compound": -0.7184,
@@ -114,31 +139,6 @@
       "sentiment": {
         "compound": 0,
         "label": "中性"
-      }
-    },
-    {
-      "text": "Trump announces tariffs on key component for solar panels and semiconductors - politico.com Trump announces tariffs on key component for solar panels and semiconductors  politico.com",
-      "timestamp": "2026-08-06T22:00:00.000Z",
-      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQdWVIcmFfWk85NzhVellrUl9zdy1Qc0NKREVIby1uR1NMU1ZpN3MyZUJIOEdxcDloV193NnRiaHk0WUE2MFh0Z0FKOGhjcnNzMUU5ZldXWmZ3czNUcEk3cFlpSnBHb2ZHVzNvaUFOV2xqWHVDVk1KWkxuTVBpSXJXdXdiNUN0dWowV2JjVg?oc=5",
-      "keywords": [
-        "semiconductor",
-        "tariff",
-        "tariffs",
-        "solar"
-      ],
-      "impacts": {
-        "foundry": -1,
-        "ic_design": -1,
-        "packaging": -0.5,
-        "shipping": -1,
-        "steel": -1,
-        "display": -1,
-        "ev_supply": -0.8,
-        "solar": -0.6
-      },
-      "sentiment": {
-        "compound": -0.7184,
-        "label": "強烈利空"
       }
     },
     {
@@ -178,6 +178,28 @@
       }
     },
     {
+      "text": "How did Trump’s 2025 trade war affect the decoupling of US-China supply chains? - Peterson Institute for International Economics How did Trump’s 2025 trade war affect the decoupling of US-China supply chains?  Peterson Institute for International Economics",
+      "timestamp": "2026-07-30T07:00:00.000Z",
+      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNU2daMko4NGt5aFRoSXN4WDBjdzVOallRZE9LaHNGbV9iVGpTQzMzRFZlWkdzd1VrVldaZm12UUM1QVdfemNtUEV5Q0pjMG9MOGN2Wm1sSUZEbGN5czJCeDhKVVVZQmZtSXhVbTY4bzd3c0VabEVrMDJRallGT2R0NzlubUg4Q2MzRkVhVUdUSWp1M05YaE9vZ2psOVE3NTRNU1FwZDJnVFJTY1MtTXRtV1lVLVhoRE5Y?oc=5",
+      "keywords": [
+        "trade war",
+        "ai",
+        "china",
+        "decoupling"
+      ],
+      "impacts": {
+        "ic_design": -1,
+        "shipping": -1,
+        "ai_server": 0.7,
+        "display": -0.4,
+        "ev_supply": -0.3
+      },
+      "sentiment": {
+        "compound": 0,
+        "label": "中性"
+      }
+    },
+    {
       "text": "US imposes 15% tariff on polysilicon in pushback against China - Nikkei Asia US imposes 15% tariff on polysilicon in pushback against China  Nikkei Asia",
       "timestamp": "2026-08-06T22:04:00.000Z",
       "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOVnpwU3JWNk1WX0VxdkppUllwejZEUDZRMV95NXh0X0dVTlY3TG5PTVdVZUhYeFN4QmRnVXNhSG96aDNxS2VORmxWRUlBMUM4SkYyOUdndG9MY0pSMHFCdTE4ZGRzbkprWFNUeDY0T1QwMWZwNF95Mm1WSVBzU2NwM2lEeW9jZUFQem14RTNrNkdDeGZOdTQ1ZFM1WHlONy1KdmpCdW5QUFVDNnR3MkRRSDJFM2ZqZkFM?oc=5",
@@ -198,28 +220,6 @@
       "sentiment": {
         "compound": -0.7184,
         "label": "強烈利空"
-      }
-    },
-    {
-      "text": "How did Trump’s 2025 trade war affect the decoupling of US-China supply chains? - Peterson Institute for International Economics How did Trump’s 2025 trade war affect the decoupling of US-China supply chains?  Peterson Institute for International Economics",
-      "timestamp": "2026-07-30T07:00:00.000Z",
-      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNU2daMko4NGt5aFRoSXN4WDBjdzVOallRZE9LaHNGbV9iVGpTQzMzRFZlWkdzd1VrVldaZm12UUM1QVdfemNtUEV5Q0pjMG9MOGN2Wm1sSUZEbGN5czJCeDhKVVVZQmZtSXhVbTY4bzd3c0VabEVrMDJRallGT2R0NzlubUg4Q2MzRkVhVUdUSWp1M05YaE9vZ2psOVE3NTRNU1FwZDJnVFJTY1MtTXRtV1lVLVhoRE5Y?oc=5",
-      "keywords": [
-        "trade war",
-        "ai",
-        "china",
-        "decoupling"
-      ],
-      "impacts": {
-        "ic_design": -1,
-        "shipping": -1,
-        "ai_server": 0.7,
-        "display": -0.4,
-        "ev_supply": -0.3
-      },
-      "sentiment": {
-        "compound": 0,
-        "label": "中性"
       }
     },
     {
@@ -267,7 +267,7 @@
       }
     },
     {
-      "text": "Trump's new global tariff draws rebukes from trade partners over forced labor justification - cnbc.com Trump's new global tariff draws rebukes from trade partners over forced labor justification  cnbc.com",
+      "text": "Trump's new global tariff draws rebukes from trade partners over forced labor justification - CNBC Trump's new global tariff draws rebukes from trade partners over forced labor justification  CNBC",
       "timestamp": "2026-07-23T07:00:00.000Z",
       "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQbDJwekxfMzNvUzJab19OTGl0M0tYLTNKRmRTVFZKYUJBak5sanM2ajNnS0hlWUNsTzQ3dWNwZWdXZ1NzcG1YTWRoSjNNY0I5YmljUjByX21iMnV4VDktZU02SGh6LTJkenoyeUdWdUluVGdlSnZvWnV0U1NlZ2w1UDdNZVIwc1RpdHk0M0tKb9IBlAFBVV95cUxPbnlFVEhUYV9kQ0NRaVNJbS1lamlUdFNJek5zbHNuY1dramRvSDRDU1o2NklyMXBENWNVLXctT1ZTV2k1WWUyVmJ0OWFDYjVFZnUzVjhueHJHb241Y1BLOWwxRl9sN3otX3hweGo4ZnpuOFNiZ0lKalNBc0VSeXlFeTVfR2V0cG1teTR3VHdsaGphakRm?oc=5",
       "keywords": [
@@ -283,6 +283,27 @@
       },
       "sentiment": {
         "compound": -0.7184,
+        "label": "強烈利空"
+      }
+    },
+    {
+      "text": "Trump to impose double-digit tariffs on dozens of countries - NPR Trump to impose double-digit tariffs on dozens of countries  NPR",
+      "timestamp": "2026-07-23T07:00:00.000Z",
+      "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTFBqcWdJU0FnRnVWMmUwNnJtTDdCSGlmcVdHb2k0MlVUTl83V2l6RlFPT0NoR3dBcjlIVlo4S1RkMEdVaE4wbm5JdklsRXF4eUZ1QlpSdGYzU2xYZVA0R09RZmQydnJsNEVubjQ0YjRtRWp6bTVKMFZ5Z19B?oc=5",
+      "keywords": [
+        "tariff",
+        "tariffs"
+      ],
+      "impacts": {
+        "foundry": -1,
+        "shipping": -1,
+        "steel": -1,
+        "ic_design": -1,
+        "display": -1,
+        "ev_supply": -0.8
+      },
+      "sentiment": {
+        "compound": -0.875,
         "label": "強烈利空"
       }
     },
@@ -308,27 +329,6 @@
       "sentiment": {
         "compound": -0.25,
         "label": "偏空"
-      }
-    },
-    {
-      "text": "Trump to impose double-digit tariffs on dozens of countries - NPR Trump to impose double-digit tariffs on dozens of countries  NPR",
-      "timestamp": "2026-07-23T07:00:00.000Z",
-      "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTFBqcWdJU0FnRnVWMmUwNnJtTDdCSGlmcVdHb2k0MlVUTl83V2l6RlFPT0NoR3dBcjlIVlo4S1RkMEdVaE4wbm5JdklsRXF4eUZ1QlpSdGYzU2xYZVA0R09RZmQydnJsNEVubjQ0YjRtRWp6bTVKMFZ5Z19B?oc=5",
-      "keywords": [
-        "tariff",
-        "tariffs"
-      ],
-      "impacts": {
-        "foundry": -1,
-        "shipping": -1,
-        "steel": -1,
-        "ic_design": -1,
-        "display": -1,
-        "ev_supply": -0.8
-      },
-      "sentiment": {
-        "compound": -0.875,
-        "label": "強烈利空"
       }
     },
     {
@@ -450,10 +450,9 @@
   ],
   "sectorState": {
     "foundry": {
-      "score": -0.931,
-      "lastUpdated": "2026-08-09T16:42:43.749Z",
+      "score": -0.929,
+      "lastUpdated": "2026-08-09T20:40:20.942Z",
       "deltaHistory": [
-        0.0129999999999999,
         0.009000000000000008,
         0.010000000000000009,
         -0.009000000000000008,
@@ -462,14 +461,14 @@
         -0.028000000000000025,
         -0.02300000000000002,
         0.0010000000000000009,
-        0.0030000000000000027
+        0.0030000000000000027,
+        0.0020000000000000018
       ]
     },
     "shipping": {
-      "score": -0.878,
-      "lastUpdated": "2026-08-09T16:42:43.749Z",
+      "score": -0.895,
+      "lastUpdated": "2026-08-09T20:40:20.942Z",
       "deltaHistory": [
-        0,
         -0.017000000000000015,
         0.014000000000000012,
         0.0020000000000000018,
@@ -478,14 +477,14 @@
         -0.04600000000000004,
         0.0040000000000000036,
         0.013000000000000012,
-        0.0010000000000000009
+        0.0010000000000000009,
+        -0.017000000000000015
       ]
     },
     "steel": {
-      "score": -0.779,
-      "lastUpdated": "2026-08-09T16:42:43.749Z",
+      "score": -0.797,
+      "lastUpdated": "2026-08-09T20:40:20.942Z",
       "deltaHistory": [
-        -0.0020000000000000018,
         0.015000000000000013,
         0.03500000000000003,
         -0.0050000000000000044,
@@ -494,12 +493,13 @@
         -0.10399999999999998,
         -0.049000000000000044,
         0.019000000000000017,
-        0.0050000000000000044
+        0.0050000000000000044,
+        -0.018000000000000016
       ]
     },
     "ic_design": {
       "score": -1,
-      "lastUpdated": "2026-08-09T16:42:43.749Z",
+      "lastUpdated": "2026-08-09T20:40:20.942Z",
       "deltaHistory": [
         0,
         0,
@@ -514,10 +514,9 @@
       ]
     },
     "display": {
-      "score": -0.853,
-      "lastUpdated": "2026-08-09T16:42:43.749Z",
+      "score": -0.866,
+      "lastUpdated": "2026-08-09T20:40:20.942Z",
       "deltaHistory": [
-        0.0010000000000000009,
         0.008000000000000007,
         0.020000000000000018,
         0.0020000000000000018,
@@ -526,14 +525,14 @@
         -0.06799999999999995,
         -0.027000000000000024,
         0.016000000000000014,
-        0.0050000000000000044
+        0.0050000000000000044,
+        -0.013000000000000012
       ]
     },
     "ev_supply": {
-      "score": -0.729,
-      "lastUpdated": "2026-08-09T16:42:43.749Z",
+      "score": -0.739,
+      "lastUpdated": "2026-08-09T20:40:20.942Z",
       "deltaHistory": [
-        0.0030000000000000027,
         -0.0050000000000000044,
         0.02200000000000002,
         0.0010000000000000009,
@@ -542,14 +541,14 @@
         -0.07999999999999996,
         -0.02300000000000002,
         0.01200000000000001,
-        -0.008000000000000007
+        -0.008000000000000007,
+        -0.010000000000000009
       ]
     },
     "ai_server": {
-      "score": 0.138,
-      "lastUpdated": "2026-08-09T16:42:43.749Z",
+      "score": 0.15,
+      "lastUpdated": "2026-08-09T20:40:20.942Z",
       "deltaHistory": [
-        0.021000000000000005,
         -0.010000000000000009,
         -0.000999999999999994,
         -0.0050000000000000044,
@@ -558,12 +557,13 @@
         0.065,
         -0.0030000000000000027,
         -0.0050000000000000044,
-        0.013000000000000012
+        0.013000000000000012,
+        0.011999999999999983
       ]
     },
     "pcb": {
       "score": 0,
-      "lastUpdated": "2026-08-09T16:42:43.749Z",
+      "lastUpdated": "2026-08-09T20:40:20.942Z",
       "deltaHistory": [
         0,
         0,
@@ -578,10 +578,9 @@
       ]
     },
     "defense": {
-      "score": 0.003,
-      "lastUpdated": "2026-08-09T16:42:43.749Z",
+      "score": 0.002,
+      "lastUpdated": "2026-08-09T20:40:20.942Z",
       "deltaHistory": [
-        -0.001,
         0,
         0,
         0,
@@ -590,14 +589,14 @@
         -0.004,
         -0.0020000000000000018,
         -0.006,
-        -0.005999999999999999
+        -0.005999999999999999,
+        -0.001
       ]
     },
     "packaging": {
-      "score": -0.197,
-      "lastUpdated": "2026-08-09T16:42:43.749Z",
+      "score": -0.179,
+      "lastUpdated": "2026-08-09T20:40:20.942Z",
       "deltaHistory": [
-        0.031,
         0.01899999999999999,
         -0.026999999999999996,
         -0.009000000000000008,
@@ -606,14 +605,14 @@
         0.08300000000000002,
         0.005999999999999978,
         -0.027999999999999997,
-        -0.0010000000000000009
+        -0.0010000000000000009,
+        0.018000000000000016
       ]
     },
     "semiconductor_equip": {
       "score": 0.012,
-      "lastUpdated": "2026-08-09T16:42:43.749Z",
+      "lastUpdated": "2026-08-09T20:40:20.942Z",
       "deltaHistory": [
-        -0.002999999999999999,
         0.002999999999999999,
         -0.007999999999999998,
         0,
@@ -622,14 +621,14 @@
         -0.001,
         0,
         0,
-        0.01
+        0.01,
+        0
       ]
     },
     "robotics": {
       "score": 0.012,
-      "lastUpdated": "2026-08-09T16:42:43.749Z",
+      "lastUpdated": "2026-08-09T20:40:20.942Z",
       "deltaHistory": [
-        -0.002999999999999999,
         0.002999999999999999,
         -0.007999999999999998,
         0,
@@ -638,14 +637,14 @@
         -0.001,
         0,
         0,
-        0.01
+        0.01,
+        0
       ]
     },
     "petrochemical": {
       "score": 0.002,
-      "lastUpdated": "2026-08-09T16:42:43.749Z",
+      "lastUpdated": "2026-08-09T20:40:20.942Z",
       "deltaHistory": [
-        0,
         0,
         -0.002,
         -0.002,
@@ -654,7 +653,8 @@
         -0.003000000000000001,
         -0.002,
         -0.003999999999999999,
-        -0.005
+        -0.005,
+        0
       ]
     },
     "gas_energy": {
@@ -668,10 +668,9 @@
       ]
     },
     "solar": {
-      "score": -0.167,
-      "lastUpdated": "2026-08-09T16:42:43.749Z",
+      "score": -0.157,
+      "lastUpdated": "2026-08-09T20:40:20.942Z",
       "deltaHistory": [
-        -0.0030000000000000027,
         0.01200000000000001,
         -0.023999999999999994,
         -0.009000000000000008,
@@ -680,7 +679,8 @@
         0.07300000000000001,
         0.008000000000000007,
         -0.02200000000000002,
-        -0.0010000000000000009
+        -0.0010000000000000009,
+        0.010000000000000009
       ]
     }
   }
