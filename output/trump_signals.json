@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-09T02:11:41.100Z",
+  "updatedAt": "2026-08-09T05:11:22.182Z",
   "posts": [
     {
       "text": "Trump is about to get 'unchecked authority' to impose tariffs of up to 100% on top trading partners - Fortune Trump is about to get 'unchecked authority' to impose tariffs of up to 100% on top trading partners  Fortune",
@@ -19,6 +19,51 @@
       },
       "sentiment": {
         "compound": -0.875,
+        "label": "強烈利空"
+      }
+    },
+    {
+      "text": "Trump Tariffs ‘Tortuous’ to Soybean Trade, China Diplomat Says - Bloomberg.com Trump Tariffs ‘Tortuous’ to Soybean Trade, China Diplomat Says  Bloomberg.com",
+      "timestamp": "2026-08-07T16:43:10.000Z",
+      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQQWZaU1JQN0l1ZUdDc0d3ZE00TlU1ZENGdko3TzhFQ09QemVoVXF2VmZNdGIwcjFVRnE3S295VXB0TEhiWEN2a3dVOXc5MFZTUHdrYllqTVFjMHFhYTFreHJOS0p0bTNsaC1LQ2NVY1hxX0szOG1DazdOdHdHTUlRZkFmQTZHeGl3MnpaY3RPR1JHbHVyeC13NWdUYzk3TzNPYVlPU09LU2ppNnprS2RJ?oc=5",
+      "keywords": [
+        "tariff",
+        "tariffs",
+        "china"
+      ],
+      "impacts": {
+        "foundry": -1,
+        "shipping": -1,
+        "steel": -1,
+        "ic_design": -1,
+        "display": -1,
+        "ev_supply": -1
+      },
+      "sentiment": {
+        "compound": -0.7184,
+        "label": "強烈利空"
+      }
+    },
+    {
+      "text": "Trump’s summer of tariffs means trade uncertainty is here to stay - Chatham House Trump’s summer of tariffs means trade uncertainty is here to stay  Chatham House",
+      "timestamp": "2026-08-07T15:59:26.000Z",
+      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPWUFuLVMtZ2dBeHJRMlhZMDAycmdBTlZMZE4zdXpQVUFXV0dTNDBCb2pRZWhaTEZJM0dBLVBSWXFLaUZ4cWVrUzdUczlzTnhEUmcxTHRKS1ZjeHpHa1VMNF9BaVdGaDUxd2hYOVlTdnZOeEVtNlpHVkRHZUd0aHVzeDJwd3VuRUE1bm9WR1ZQblkxVlRuQllz?oc=5",
+      "keywords": [
+        "ai",
+        "tariff",
+        "tariffs"
+      ],
+      "impacts": {
+        "ai_server": 0.7,
+        "foundry": -1,
+        "shipping": -1,
+        "steel": -1,
+        "ic_design": -1,
+        "display": -1,
+        "ev_supply": -0.8
+      },
+      "sentiment": {
+        "compound": -0.7184,
         "label": "強烈利空"
       }
     },
@@ -138,17 +183,6 @@
       }
     },
     {
-      "text": "Carney says US trade talks are 'nasty' after Trump criticizes Canada's leadership - ABC News - Breaking News, Latest News and Videos Carney says US trade talks are 'nasty' after Trump criticizes Canada's leadership  ABC News - Breaking News, Latest News and Videos",
-      "timestamp": "2026-08-07T04:21:11.000Z",
-      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNMUxpbEFLVmpDUlJaYUkxUmJCZk0zREYyN00wRV9xZFNicVo5aVV3dU5TRWRlNXRKOUtVYzVJbjBxYjUwUU1CanhtQkhlYnNJRHpKUTBLUGVzUGJXMTd1LU9hUmZmNXE4YWk1dzRBSHZGSVRkRkZsLXVnUzBDdUNsVHVZYUN0RWk0cjVDZnp6RWt2ZjIySjhMN1pndGs3OHBI0gGmAUFVX3lxTE40LVExTWhkTkY5b2RKTW52YktQTnczQkxMTkZoUHlkUk51eUdhZUNmVnVrNjhsNVRDMHoyLTVxRzFrQkoyZG5kc3NYb3NRQlI1TGM3eEgyZ2ViOF9OZzFLME4tRDN1RWNvXzZvemJSWHJuUlUxWS1xdnA3cU1iZzl4c3dPbEgwWUxmQ3hrS0RCaUZaZmd4dDBUVm5DSHpGbFV0cHlldUE?oc=5",
-      "keywords": [],
-      "impacts": {},
-      "sentiment": {
-        "compound": 0,
-        "label": "中性"
-      }
-    },
-    {
       "text": "Donald Trump shoots from Senate shoulders to punish Russia, by making India and China pay - The Times of India Donald Trump shoots from Senate shoulders to punish Russia, by making India and China pay  The Times of India",
       "timestamp": "2026-08-08T16:53:00.000Z",
       "url": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxNank2RHFPdVZXV05sdUJYb3lKR2hETXVCa2xTaU9xWUlnQ2VuNDZSbXVZWjJMSjIzSDgycGRweEhRY1B4ak9NaU1Ca2RpenEwVzc4TmpQQWFlSENOdUw2UEd4VEx6NWE5a1ZPVmJKbGI4Wm9uYlBqX3Q3R1FSamFHZXRIQWJPOWZMQmNIUHEzd0NnT0llbE9DWnFpMUxQVEVtVlNab2p6dGUycVFKMkE3V3lHRFppYi1IVU5BRUh1RFBNaHpZQ210dEt1Z0lJTkJQOUdQZ2VmdDhpY1lNb2JZZlg4WFE0RVBsV1A5Tk9GNlDSAfYBQVVfeXFMT0RFMzg5RktjeFF0Q0RodmRiRTkyZ0dUYnd0dDdUbFh1V3l0N2VQbWVUVXVDUGdUcm5lZXlFQ0UwTS1SRm1vZF9oOWZFOUN0ZWxEaXI2VmUzZEhEdzh5ZEJVc1FDOUU3dUdCVnZXczlWRkxMNkFfZTl4ckhDSUdXOHFTMVNYcnhXNmVJbWZzWU9GN25LU1d2TklneWZPOWZBa3lGM0FQaENOVjl2NjNOc0VvemwwY3VZaG9RYXR0ZkRjZUpUMDY5aEtDekJ0Sm5ZNWVkdmdEQ3hLRnpQaDFiSXBBajFNODJPb3dYWU5sYi1GalJ6MnNB?oc=5",
@@ -170,7 +204,7 @@
       }
     },
     {
-      "text": "US imposes 15% tariff on polysilicon in pushback against China - asia.nikkei.com US imposes 15% tariff on polysilicon in pushback against China  asia.nikkei.com",
+      "text": "US imposes 15% tariff on polysilicon in pushback against China - Nikkei Asia US imposes 15% tariff on polysilicon in pushback against China  Nikkei Asia",
       "timestamp": "2026-08-06T22:04:00.000Z",
       "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOVnpwU3JWNk1WX0VxdkppUllwejZEUDZRMV95NXh0X0dVTlY3TG5PTVdVZUhYeFN4QmRnVXNhSG96aDNxS2VORmxWRUlBMUM4SkYyOUdndG9MY0pSMHFCdTE4ZGRzbkprWFNUeDY0T1QwMWZwNF95Mm1WSVBzU2NwM2lEeW9jZUFQem14RTNrNkdDeGZOdTQ1ZFM1WHlONy1KdmpCdW5QUFVDNnR3MkRRSDJFM2ZqZkFM?oc=5",
       "keywords": [
@@ -410,43 +444,120 @@
         "compound": -0.7184,
         "label": "強烈利空"
       }
-    },
-    {
-      "text": "New U.S. Tariffs Aimed at Over 80 Countries Go Into Effect - The New York Times New U.S. Tariffs Aimed at Over 80 Countries Go Into Effect  The New York Times",
-      "timestamp": "2026-07-23T07:00:00.000Z",
-      "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE9sMVBwRnFDcGlLQjFxSWxUQXFaTUcydS1mS0RrRkVMUXUwYTVmeFRNcHUwbjdwa04wa2xLOGpYUWJLdF80cHdjYkRrTmpYVjczWjVNdHNEaVlMYTAzeFdqR1ZjRFFJMUtQNDk1UUctb0x2eE5YMGo1N0ZB?oc=5",
-      "keywords": [
-        "ai",
-        "tariff",
-        "tariffs"
-      ],
-      "impacts": {
-        "ai_server": 0.7,
-        "foundry": -1,
-        "shipping": -1,
-        "steel": -1,
-        "ic_design": -1,
-        "display": -1,
-        "ev_supply": -0.8
-      },
-      "sentiment": {
-        "compound": -0.7184,
-        "label": "強烈利空"
-      }
     }
   ],
-  "deltas": [],
-  "topDeltas": [],
+  "deltas": [
+    {
+      "sector": "steel",
+      "sectorName": "鋼鐵",
+      "prev": -0.65,
+      "current": -0.754,
+      "delta": -0.104,
+      "momentum": "↓ 壓力加深",
+      "accelerating": true
+    },
+    {
+      "sector": "packaging",
+      "sectorName": "封測",
+      "prev": -0.257,
+      "current": -0.174,
+      "delta": 0.083,
+      "momentum": "↑ 壓力緩解",
+      "accelerating": true
+    },
+    {
+      "sector": "ev_supply",
+      "sectorName": "電動車供應鏈",
+      "prev": -0.63,
+      "current": -0.71,
+      "delta": -0.08,
+      "momentum": "↓ 壓力加深",
+      "accelerating": true
+    },
+    {
+      "sector": "solar",
+      "sectorName": "太陽能",
+      "prev": -0.225,
+      "current": -0.152,
+      "delta": 0.073,
+      "momentum": "↑ 壓力緩解",
+      "accelerating": true
+    },
+    {
+      "sector": "display",
+      "sectorName": "面板/顯示",
+      "prev": -0.779,
+      "current": -0.847,
+      "delta": -0.068,
+      "momentum": "↓ 壓力加深",
+      "accelerating": true
+    },
+    {
+      "sector": "ai_server",
+      "sectorName": "AI 伺服器",
+      "prev": 0.068,
+      "current": 0.133,
+      "delta": 0.065,
+      "momentum": "↑ 訊號強化",
+      "accelerating": true
+    }
+  ],
+  "topDeltas": [
+    {
+      "sector": "steel",
+      "sectorName": "鋼鐵",
+      "prev": -0.65,
+      "current": -0.754,
+      "delta": -0.104,
+      "momentum": "↓ 壓力加深",
+      "accelerating": true
+    },
+    {
+      "sector": "packaging",
+      "sectorName": "封測",
+      "prev": -0.257,
+      "current": -0.174,
+      "delta": 0.083,
+      "momentum": "↑ 壓力緩解",
+      "accelerating": true
+    },
+    {
+      "sector": "ev_supply",
+      "sectorName": "電動車供應鏈",
+      "prev": -0.63,
+      "current": -0.71,
+      "delta": -0.08,
+      "momentum": "↓ 壓力加深",
+      "accelerating": true
+    },
+    {
+      "sector": "solar",
+      "sectorName": "太陽能",
+      "prev": -0.225,
+      "current": -0.152,
+      "delta": 0.073,
+      "momentum": "↑ 壓力緩解",
+      "accelerating": true
+    },
+    {
+      "sector": "display",
+      "sectorName": "面板/顯示",
+      "prev": -0.779,
+      "current": -0.847,
+      "delta": -0.068,
+      "momentum": "↓ 壓力加深",
+      "accelerating": true
+    }
+  ],
   "totalAnalyzed": 100,
   "sources": [
     "Google News"
   ],
   "sectorState": {
     "foundry": {
-      "score": -0.884,
-      "lastUpdated": "2026-08-09T02:11:41.100Z",
+      "score": -0.912,
+      "lastUpdated": "2026-08-09T05:11:22.182Z",
       "deltaHistory": [
-        -0.009000000000000008,
         -0.014000000000000012,
         0.01200000000000001,
         0.0030000000000000027,
@@ -455,14 +566,14 @@
         0.010000000000000009,
         -0.009000000000000008,
         0.04200000000000004,
-        -0.0020000000000000018
+        -0.0020000000000000018,
+        -0.028000000000000025
       ]
     },
     "shipping": {
-      "score": -0.85,
-      "lastUpdated": "2026-08-09T02:11:41.100Z",
+      "score": -0.896,
+      "lastUpdated": "2026-08-09T05:11:22.182Z",
       "deltaHistory": [
-        -0.0040000000000000036,
         0.04600000000000004,
         -0.019000000000000017,
         -0.0020000000000000018,
@@ -471,14 +582,14 @@
         0.014000000000000012,
         0.0020000000000000018,
         0.030000000000000027,
-        0
+        0,
+        -0.04600000000000004
       ]
     },
     "steel": {
-      "score": -0.65,
-      "lastUpdated": "2026-08-09T02:11:41.100Z",
+      "score": -0.754,
+      "lastUpdated": "2026-08-09T05:11:22.182Z",
       "deltaHistory": [
-        -0.013000000000000012,
         -0.0050000000000000044,
         -0.014000000000000012,
         -0.0030000000000000027,
@@ -487,12 +598,13 @@
         0.03500000000000003,
         -0.0050000000000000044,
         0.07299999999999995,
-        0.006000000000000005
+        0.006000000000000005,
+        -0.10399999999999998
       ]
     },
     "ic_design": {
       "score": -1,
-      "lastUpdated": "2026-08-09T02:11:41.100Z",
+      "lastUpdated": "2026-08-09T05:11:22.182Z",
       "deltaHistory": [
         0,
         0,
@@ -507,10 +619,9 @@
       ]
     },
     "display": {
-      "score": -0.779,
-      "lastUpdated": "2026-08-09T02:11:41.100Z",
+      "score": -0.847,
+      "lastUpdated": "2026-08-09T05:11:22.182Z",
       "deltaHistory": [
-        -0.006000000000000005,
         0.03600000000000003,
         -0.009000000000000008,
         0.0050000000000000044,
@@ -519,14 +630,14 @@
         0.020000000000000018,
         0.0020000000000000018,
         0.04299999999999993,
-        0.0050000000000000044
+        0.0050000000000000044,
+        -0.06799999999999995
       ]
     },
     "ev_supply": {
-      "score": -0.63,
-      "lastUpdated": "2026-08-09T02:11:41.100Z",
+      "score": -0.71,
+      "lastUpdated": "2026-08-09T05:11:22.182Z",
       "deltaHistory": [
-        -0.006000000000000005,
         0.013000000000000012,
         -0.020000000000000018,
         0.0020000000000000018,
@@ -535,14 +646,14 @@
         0.02200000000000002,
         0.0010000000000000009,
         0.07499999999999996,
-        0.006000000000000005
+        0.006000000000000005,
+        -0.07999999999999996
       ]
     },
     "ai_server": {
-      "score": 0.068,
-      "lastUpdated": "2026-08-09T02:11:41.100Z",
+      "score": 0.133,
+      "lastUpdated": "2026-08-09T05:11:22.182Z",
       "deltaHistory": [
-        -0.010000000000000002,
         -0.010000000000000002,
         0.003999999999999997,
         -0.0029999999999999957,
@@ -551,12 +662,13 @@
         -0.000999999999999994,
         -0.0050000000000000044,
         0.006999999999999999,
-        0.008000000000000007
+        0.008000000000000007,
+        0.065
       ]
     },
     "pcb": {
       "score": 0,
-      "lastUpdated": "2026-08-09T02:11:41.100Z",
+      "lastUpdated": "2026-08-09T05:11:22.182Z",
       "deltaHistory": [
         0,
         0,
@@ -571,10 +683,9 @@
       ]
     },
     "defense": {
-      "score": 0.021,
-      "lastUpdated": "2026-08-09T02:11:41.100Z",
+      "score": 0.017,
+      "lastUpdated": "2026-08-09T05:11:22.182Z",
       "deltaHistory": [
-        -0.006,
         0,
         0,
         0.001,
@@ -583,14 +694,14 @@
         0,
         0,
         0.021,
-        0
+        0,
+        -0.004
       ]
     },
     "packaging": {
-      "score": -0.257,
-      "lastUpdated": "2026-08-09T02:11:41.100Z",
+      "score": -0.174,
+      "lastUpdated": "2026-08-09T05:11:22.182Z",
       "deltaHistory": [
-        0.010000000000000009,
         -0.04600000000000001,
         0.030000000000000027,
         0.0020000000000000018,
@@ -599,14 +710,14 @@
         -0.026999999999999996,
         -0.009000000000000008,
         -0.035,
-        -0.0010000000000000009
+        -0.0010000000000000009,
+        0.08300000000000002
       ]
     },
     "semiconductor_equip": {
-      "score": 0.003,
-      "lastUpdated": "2026-08-09T02:11:41.100Z",
+      "score": 0.002,
+      "lastUpdated": "2026-08-09T05:11:22.182Z",
       "deltaHistory": [
-        0,
         0,
         0.004999999999999999,
         0.002999999999999999,
@@ -615,14 +726,14 @@
         -0.007999999999999998,
         0,
         -0.011,
-        0
+        0,
+        -0.001
       ]
     },
     "robotics": {
-      "score": 0.003,
-      "lastUpdated": "2026-08-09T02:11:41.100Z",
+      "score": 0.002,
+      "lastUpdated": "2026-08-09T05:11:22.182Z",
       "deltaHistory": [
-        0,
         0,
         0.004999999999999999,
         0.002999999999999999,
@@ -631,14 +742,14 @@
         -0.007999999999999998,
         0,
         -0.011,
-        0
+        0,
+        -0.001
       ]
     },
     "petrochemical": {
-      "score": 0.016,
-      "lastUpdated": "2026-08-09T02:11:41.100Z",
+      "score": 0.013,
+      "lastUpdated": "2026-08-09T05:11:22.182Z",
       "deltaHistory": [
-        0,
         -0.001,
         0.003,
         0,
@@ -647,7 +758,8 @@
         -0.002,
         -0.002,
         0.016,
-        0
+        0,
+        -0.003000000000000001
       ]
     },
     "gas_energy": {
@@ -661,10 +773,9 @@
       ]
     },
     "solar": {
-      "score": -0.225,
-      "lastUpdated": "2026-08-09T02:11:41.100Z",
+      "score": -0.152,
+      "lastUpdated": "2026-08-09T05:11:22.182Z",
       "deltaHistory": [
-        0,
         -0.004999999999999977,
         0.046999999999999986,
         0.0020000000000000018,
@@ -673,7 +784,8 @@
         -0.023999999999999994,
         -0.009000000000000008,
         -0.03900000000000001,
-        -0.0030000000000000027
+        -0.0030000000000000027,
+        0.07300000000000001
       ]
     }
   }
