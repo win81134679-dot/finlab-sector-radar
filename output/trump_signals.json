@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-13T09:18:34.701Z",
+  "updatedAt": "2026-08-13T13:25:29.919Z",
   "posts": [
     {
       "text": "How Trump's next tariffs could drive companies back to China - Peterson Institute for International Economics How Trump's next tariffs could drive companies back to China  Peterson Institute for International Economics",
@@ -24,20 +24,45 @@
       }
     },
     {
-      "text": "What to Know About Trump’s Tariffs on Canada, and What’s Next - The New York Times What to Know About Trump’s Tariffs on Canada, and What’s Next  The New York Times",
-      "timestamp": "2026-08-08T07:00:00.000Z",
-      "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNWFVvaGRrVTQ3X05xRjlJN3pBUE0xeXlUTTVKY0hHdVJVVzlEazZUclZoSkUzS3c2TnNmT3YxQnFsbl9uNzFvRmMwMGNrdTAyMGprVDBSaVJEZ1kwV1Ftdm85SDRmQmlOanVrOHFuRmV3NnBIbFN4SmpxaXFfNjlxQ2tDU2hwQQ?oc=5",
+      "text": "Trump Trade Enforcers Deploy AI to Crack Down on Tariff Dodging - Bloomberg.com Trump Trade Enforcers Deploy AI to Crack Down on Tariff Dodging  Bloomberg.com",
+      "timestamp": "2026-08-13T13:17:10.000Z",
+      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPQlBoa04ydlFzS0tMcmI0YVFOdk90c01WV3NtYzlfUmlUV2VJVlZOLWxxbEh6SEZkQllIaWZKekdaYjVUSlNBSFFIWjZ6aW41MlVMUEp6RUZUVVI2V1M4am1rcXdkQW9TX3lFZFctMEY0SU4ySndvbzhwa0MwRzFuNTl0b2pRdklIa1MxeTNRQVNrUjk5ZkhYWmJyR3dKUFQ3eEN4NTJrUnh0a1NvVW81Zk1vT3k?oc=5",
       "keywords": [
-        "tariff",
-        "tariffs"
+        "ai",
+        "tariff"
       ],
       "impacts": {
-        "foundry": -1,
-        "shipping": -1,
-        "steel": -1,
+        "ai_server": 0.7,
+        "foundry": -0.4,
+        "shipping": -0.5,
+        "steel": -0.5,
+        "ic_design": -0.6,
+        "display": -0.5,
+        "ev_supply": -0.4
+      },
+      "sentiment": {
+        "compound": -0.7184,
+        "label": "強烈利空"
+      }
+    },
+    {
+      "text": "Trump Administration Will Use AI to Combat $60 Billion China Tariff ‘Evasion’ - Barron's Trump Administration Will Use AI to Combat $60 Billion China Tariff ‘Evasion’  Barron's",
+      "timestamp": "2026-08-13T12:15:00.000Z",
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE05T0lmRmZ6QmIzV0dmbVZSWUJIVm9UVjAtdnlvSlc5VHV0Sm9kX0VsN29jcGhLUjVERDRDUWVSYjhKYkRFRUNucWMtWjZoZXFLMGRYaEIzdVVPdkZmbXNZbXA1ekxlU1Rfd3ppZFdCdWQ?oc=5",
+      "keywords": [
+        "ai",
+        "tariff",
+        "china",
+        "ev"
+      ],
+      "impacts": {
+        "ai_server": 0.7,
+        "foundry": -0.4,
+        "shipping": -0.9,
+        "steel": -0.5,
         "ic_design": -1,
-        "display": -1,
-        "ev_supply": -0.8
+        "display": -0.9,
+        "ev_supply": -0.5
       },
       "sentiment": {
         "compound": -0.7184,
@@ -67,7 +92,28 @@
       }
     },
     {
-      "text": "Whither Trump’s tariffs? - Financial Times Whither Trump’s tariffs?  Financial Times",
+      "text": "Trump Tariffs Force Some Canadian Companies to Move South of the Border - The New York Times Trump Tariffs Force Some Canadian Companies to Move South of the Border  The New York Times",
+      "timestamp": "2026-08-12T12:43:24.000Z",
+      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQM0taSWQ3b3FDM3hvVmZmTFhLc1k2ak5nQWhCeE9SQllLRE9nWnFfM2t6cnNzYnJYMEg2bWFWZDFNZmlEaXpkUlk0S1c2WHZ1UWRUdGZhUXBZSXBxYWthYXNnMU1UMWYwc2ZjdENqM0owdHR1d0RyM3RSTUljTS1BcXVNNWtOdk9UTldSQ0g5U2ktM1EyaFZJbA?oc=5",
+      "keywords": [
+        "tariff",
+        "tariffs"
+      ],
+      "impacts": {
+        "foundry": -1,
+        "shipping": -1,
+        "steel": -1,
+        "ic_design": -1,
+        "display": -1,
+        "ev_supply": -0.8
+      },
+      "sentiment": {
+        "compound": -0.7184,
+        "label": "強烈利空"
+      }
+    },
+    {
+      "text": "Whither Trump’s tariffs? - ft.com Whither Trump’s tariffs?  ft.com",
       "timestamp": "2026-08-10T11:31:03.000Z",
       "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPZTRjNTFtT0NtUHRDMkdmQkxESFM4SWRyTDVsTTU3cF9zWkRsQW1PQjZHT0d4M2VDVUwwVXU0RTdqOUc5d2JGR21taXZTZmhqMU51cmxkdEU3dm9rSkJOWnEtMXNuTGd3alk5R0s3ZzVQVGtON2FJQmRva09xc01yV1N3T3U?oc=5",
       "keywords": [
@@ -81,51 +127,6 @@
         "ic_design": -1,
         "display": -1,
         "ev_supply": -0.8
-      },
-      "sentiment": {
-        "compound": -0.7184,
-        "label": "強烈利空"
-      }
-    },
-    {
-      "text": "Trump’s summer of tariffs means trade uncertainty is here to stay - Chatham House Trump’s summer of tariffs means trade uncertainty is here to stay  Chatham House",
-      "timestamp": "2026-08-07T15:59:26.000Z",
-      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPWUFuLVMtZ2dBeHJRMlhZMDAycmdBTlZMZE4zdXpQVUFXV0dTNDBCb2pRZWhaTEZJM0dBLVBSWXFLaUZ4cWVrUzdUczlzTnhEUmcxTHRKS1ZjeHpHa1VMNF9BaVdGaDUxd2hYOVlTdnZOeEVtNlpHVkRHZUd0aHVzeDJwd3VuRUE1bm9WR1ZQblkxVlRuQllz?oc=5",
-      "keywords": [
-        "ai",
-        "tariff",
-        "tariffs"
-      ],
-      "impacts": {
-        "ai_server": 0.7,
-        "foundry": -1,
-        "shipping": -1,
-        "steel": -1,
-        "ic_design": -1,
-        "display": -1,
-        "ev_supply": -0.8
-      },
-      "sentiment": {
-        "compound": -0.7184,
-        "label": "強烈利空"
-      }
-    },
-    {
-      "text": "Trump Tariffs ‘Tortuous’ to Soybean Trade, China Diplomat Says - Bloomberg.com Trump Tariffs ‘Tortuous’ to Soybean Trade, China Diplomat Says  Bloomberg.com",
-      "timestamp": "2026-08-07T16:43:10.000Z",
-      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQQWZaU1JQN0l1ZUdDc0d3ZE00TlU1ZENGdko3TzhFQ09QemVoVXF2VmZNdGIwcjFVRnE3S295VXB0TEhiWEN2a3dVOXc5MFZTUHdrYllqTVFjMHFhYTFreHJOS0p0bTNsaC1LQ2NVY1hxX0szOG1DazdOdHdHTUlRZkFmQTZHeGl3MnpaY3RPR1JHbHVyeC13NWdUYzk3TzNPYVlPU09LU2ppNnprS2RJ?oc=5",
-      "keywords": [
-        "tariff",
-        "tariffs",
-        "china"
-      ],
-      "impacts": {
-        "foundry": -1,
-        "shipping": -1,
-        "steel": -1,
-        "ic_design": -1,
-        "display": -1,
-        "ev_supply": -1
       },
       "sentiment": {
         "compound": -0.7184,
@@ -154,7 +155,7 @@
       }
     },
     {
-      "text": "China moves to join Brazil’s WTO fight over Trump’s forced labour tariffs - scmp.com China moves to join Brazil’s WTO fight over Trump’s forced labour tariffs  scmp.com",
+      "text": "China moves to join Brazil’s WTO fight over Trump’s forced labour tariffs - South China Morning Post China moves to join Brazil’s WTO fight over Trump’s forced labour tariffs  South China Morning Post",
       "timestamp": "2026-08-10T22:05:12.000Z",
       "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQWFVkbnJWSVRjcGhIUTFqWGtnZE1fMW9nNTJ1NlQzT19ncGRMaHBnZnNWc1M0T0VtWEtBSE5sTDBtZml3MDNJZlFwWkV5NXA3TUMtQm5LcUxWWk9iQy1QTXE4NTFTVFFjeTViSEptVHNBTndGQm12dmdaZS12VFRFYlV4MjhIMXQwb2Znbklkb0JNMHpVSEZ5a1VJaG5xYmoxNXN6LWtuMHdCNlhWenBDeXFMc9IBswFBVV95cUxNYm5DNlVKWGlVeFZRNVJFV2ZudldpcWRkYzNRTHRTVmVHMVJQT245TERxMG5YX0RneTQ4V0JuMmxkcktiV0h6Q3c1RFRRUEtJLUJQOGRQd1VfSFU2NzRiYjMtcEZ3Z1BVYnRwR1dUX2t4TDVJWmczM1lZY0Q2VUZCVjd6S2Rmb2RNRWowZGN3dVdYcUVTckMxbWo1RnFReUV6OU1mUmEtVUJpS0ItVG9MamVhSQ?oc=5",
       "keywords": [
@@ -169,6 +170,28 @@
         "ic_design": -1,
         "display": -1,
         "ev_supply": -1
+      },
+      "sentiment": {
+        "compound": -0.7184,
+        "label": "強烈利空"
+      }
+    },
+    {
+      "text": "Trump trade enforcers deploy AI to crack down on tariff dodging - The Malaysian Reserve Trump trade enforcers deploy AI to crack down on tariff dodging  The Malaysian Reserve",
+      "timestamp": "2026-08-13T13:07:38.000Z",
+      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOY0pLUUxtbTVxQk1Tdlc1X0E5emRENndDVEVya1NZZmJOQUw3cmFJdWo5dEJlOHhnM3BIS1VqdGVWcmdUcHpwVVdkV0Vxb1JaYi1oc09ncW9xV0tjSHBIazVyZE5sV21Gc25hWEs4cTJLUHhyTHYyOVQ3V3BJSFZqQ1AweDVfQkM4eXA1T0ZSTGk2Z01wZXhlY1MzSmlfNW1od2lsN1ZwYnBLeTA?oc=5",
+      "keywords": [
+        "ai",
+        "tariff"
+      ],
+      "impacts": {
+        "ai_server": 0.7,
+        "foundry": -0.4,
+        "shipping": -0.5,
+        "steel": -0.5,
+        "ic_design": -0.6,
+        "display": -0.5,
+        "ev_supply": -0.4
       },
       "sentiment": {
         "compound": -0.7184,
@@ -238,7 +261,7 @@
       }
     },
     {
-      "text": "Trump imposes new global tariffs, drawing protests from trading partners - Reuters Trump imposes new global tariffs, drawing protests from trading partners  Reuters",
+      "text": "Trump imposes new global tariffs, drawing protests from trading partners - reuters.com Trump imposes new global tariffs, drawing protests from trading partners  reuters.com",
       "timestamp": "2026-07-24T07:00:00.000Z",
       "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPcTlxTFMtLUhVcTNocVRYQ0t0NkdRamtCSUEySEhFbHE5N0FnNFlvMDNENWcyRVlHWUloTXRna3RlRVptLVFyZ0dfeG04cmhUZ1RSbkViNFNhM0FKZ0k5N29mUmY0UU9lUXlHMGw0ckJxVHFiZFJ3cjFhbFRQTUpSNEMzdFQ4U0REUzJlU2FFY2h3Q0U2UmxnS2lUbm90RnM0WUVfVEJiaFFEdUlGYWs2YXp4NzlRekdtQTEyZjYtMA?oc=5",
       "keywords": [
@@ -259,7 +282,7 @@
       }
     },
     {
-      "text": "Trump’s Tariffs Enter New Phase, Ending Months of Calm - WSJ Trump’s Tariffs Enter New Phase, Ending Months of Calm  WSJ",
+      "text": "Trump’s Tariffs Enter New Phase, Ending Months of Calm - wsj.com Trump’s Tariffs Enter New Phase, Ending Months of Calm  wsj.com",
       "timestamp": "2026-07-21T07:00:00.000Z",
       "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQMHpOZ3JXbDROcFktNHJzSkdxOUQ4RjdNZ242YkxuRnR1SFJfaVJDMVlnLWk1VXFwLTVVcFRaT2hIVXQ3T3lWaGczRVlmUVk1bWUzM1EzX3ZUUjNIaDB1OUhJaTIyMk1NZmF4UHNBV0VER0FwblJVcldmNDFVQ1p0Q3luWmlvSDdEUC1HdlZKbXE2Tk5XdV8zR2owUQ?oc=5",
       "keywords": [
@@ -282,30 +305,9 @@
       }
     },
     {
-      "text": "Trump set to impose sweeping tariffs on 60 trade partners - ABC News - Breaking News, Latest News and Videos Trump set to impose sweeping tariffs on 60 trade partners  ABC News - Breaking News, Latest News and Videos",
-      "timestamp": "2026-07-23T07:00:00.000Z",
-      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNa1BDcjdFRHFWaGlkYlMzZi1ZY2hCaVR5dGRpalctVTI1Q2poOGxFcXZqdmZfX2lqaVZxRmo3MWZIZ2ZUU0xCMm44OFdibDRCNF9BOVNmT1VHNURxR0tabkNtaVdoNTRaTW81cVIyVUdvanhBUS1rX3pEZFdyQmNSbDVDa0VMM2tPVGhYbDkwR1VhcUJJTDJXVmhNZVVVNi1L0gGmAUFVX3lxTE5UdFo2TDl4c1R2ZWRuX1ZxbTA3UmdwQnlrbVh1OXUyd1pucVlQS2dqY2VsbnRNSGt3WWljNkZ3V2kySmZNUzJ4WVBaT2NXSGRuUFlqRmx1UXNzSlEwZkV1MGRWVWxNbHdBcnY3Vm9CMVFqSWZxdnI3TkZqbWxValByNzBMRWxBR3BraFBtbEVuUFBvNDNpUVNBdWVkN3V6enc1YjlIWXc?oc=5",
-      "keywords": [
-        "tariff",
-        "tariffs"
-      ],
-      "impacts": {
-        "foundry": -1,
-        "shipping": -1,
-        "steel": -1,
-        "ic_design": -1,
-        "display": -1,
-        "ev_supply": -0.8
-      },
-      "sentiment": {
-        "compound": -0.875,
-        "label": "強烈利空"
-      }
-    },
-    {
-      "text": "Trump finalizes new tariffs on dozens of countries - Politico Trump finalizes new tariffs on dozens of countries  Politico",
-      "timestamp": "2026-07-23T07:00:00.000Z",
-      "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOSlZpbDFtcGI2bTBTMXZPVnVhbGZXZE03cndOQlNaTDR3Q0lFTFdXRlMtT1RJbEJLSDU1Rm1WenRlVTJudjNmZ3lDekhsT0xYTjdXUFJ2eVJFMkhhRWg1Mzlvc0lPX1NYcm9DZnpCOWdYQldIMlhVV0VPMG5qaUVQNkd4TFR4cEFwWnhGVTUxcGk?oc=5",
+      "text": "What to Know About Trump’s Tariffs on Canada, and What’s Next - The New York Times What to Know About Trump’s Tariffs on Canada, and What’s Next  The New York Times",
+      "timestamp": "2026-08-08T07:00:00.000Z",
+      "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNWFVvaGRrVTQ3X05xRjlJN3pBUE0xeXlUTTVKY0hHdVJVVzlEazZUclZoSkUzS3c2TnNmT3YxQnFsbl9uNzFvRmMwMGNrdTAyMGprVDBSaVJEZ1kwV1Ftdm85SDRmQmlOanVrOHFuRmV3NnBIbFN4SmpxaXFfNjlxQ2tDU2hwQQ?oc=5",
       "keywords": [
         "tariff",
         "tariffs"
@@ -324,45 +326,21 @@
       }
     },
     {
-      "text": "Trump Tariffs Force Some Canadian Companies to Move South of the Border - The New York Times Trump Tariffs Force Some Canadian Companies to Move South of the Border  The New York Times",
-      "timestamp": "2026-08-12T09:02:04.000Z",
-      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQM0taSWQ3b3FDM3hvVmZmTFhLc1k2ak5nQWhCeE9SQllLRE9nWnFfM2t6cnNzYnJYMEg2bWFWZDFNZmlEaXpkUlk0S1c2WHZ1UWRUdGZhUXBZSXBxYWthYXNnMU1UMWYwc2ZjdENqM0owdHR1d0RyM3RSTUljTS1BcXVNNWtOdk9UTldSQ0g5U2ktM1EyaFZJbA?oc=5",
+      "text": "Trump Tariffs ‘Tortuous’ to Soybean Trade, China Diplomat Says - Bloomberg.com Trump Tariffs ‘Tortuous’ to Soybean Trade, China Diplomat Says  Bloomberg.com",
+      "timestamp": "2026-08-07T16:43:10.000Z",
+      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQQWZaU1JQN0l1ZUdDc0d3ZE00TlU1ZENGdko3TzhFQ09QemVoVXF2VmZNdGIwcjFVRnE3S295VXB0TEhiWEN2a3dVOXc5MFZTUHdrYllqTVFjMHFhYTFreHJOS0p0bTNsaC1LQ2NVY1hxX0szOG1DazdOdHdHTUlRZkFmQTZHeGl3MnpaY3RPR1JHbHVyeC13NWdUYzk3TzNPYVlPU09LU2ppNnprS2RJ?oc=5",
       "keywords": [
-        "tariff",
-        "tariffs"
-      ],
-      "impacts": {
-        "foundry": -1,
-        "shipping": -1,
-        "steel": -1,
-        "ic_design": -1,
-        "display": -1,
-        "ev_supply": -0.8
-      },
-      "sentiment": {
-        "compound": -0.7184,
-        "label": "強烈利空"
-      }
-    },
-    {
-      "text": "US Moves Past Tariffs to Focus on Supply Chain Revamps in China Trade Policy - Bloomberg.com US Moves Past Tariffs to Focus on Supply Chain Revamps in China Trade Policy  Bloomberg.com",
-      "timestamp": "2026-08-11T11:00:01.000Z",
-      "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxQX1h4N2FJZHhFYlFVYjYwTVVZMUNoYmZsMnlTYmRYcjNnTWQ3c1ZhRVFyZnM4TkUtYzlUenIwR1dKcGJvMERJMEVOSnZQZkFhZ25TMmdYdFhBcnRfMTM1SkQ3bERBNGtrQVM2dHNETHlvZDFxMjJTUC1HdjZKeGlIbjRUczhwYWVVUkRrT1EwOEpHSkxMTnUzQUFMM1hLRnhtU3VnNWRKZVI0VWRnX01LN0M4QWZVVEh4RjNpVzZ1SnVaNzVFWkhIeG53?oc=5",
-      "keywords": [
-        "ai",
         "tariff",
         "tariffs",
-        "china",
-        "ev"
+        "china"
       ],
       "impacts": {
-        "ai_server": 0.7,
         "foundry": -1,
         "shipping": -1,
         "steel": -1,
         "ic_design": -1,
         "display": -1,
-        "ev_supply": -0.9
+        "ev_supply": -1
       },
       "sentiment": {
         "compound": -0.7184,
@@ -410,6 +388,31 @@
       }
     },
     {
+      "text": "US Moves Past Tariffs to Focus on Supply Chain Revamps in China Trade Policy - Bloomberg.com US Moves Past Tariffs to Focus on Supply Chain Revamps in China Trade Policy  Bloomberg.com",
+      "timestamp": "2026-08-11T11:00:01.000Z",
+      "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxQX1h4N2FJZHhFYlFVYjYwTVVZMUNoYmZsMnlTYmRYcjNnTWQ3c1ZhRVFyZnM4TkUtYzlUenIwR1dKcGJvMERJMEVOSnZQZkFhZ25TMmdYdFhBcnRfMTM1SkQ3bERBNGtrQVM2dHNETHlvZDFxMjJTUC1HdjZKeGlIbjRUczhwYWVVUkRrT1EwOEpHSkxMTnUzQUFMM1hLRnhtU3VnNWRKZVI0VWRnX01LN0M4QWZVVEh4RjNpVzZ1SnVaNzVFWkhIeG53?oc=5",
+      "keywords": [
+        "ai",
+        "tariff",
+        "tariffs",
+        "china",
+        "ev"
+      ],
+      "impacts": {
+        "ai_server": 0.7,
+        "foundry": -1,
+        "shipping": -1,
+        "steel": -1,
+        "ic_design": -1,
+        "display": -1,
+        "ev_supply": -0.9
+      },
+      "sentiment": {
+        "compound": -0.7184,
+        "label": "強烈利空"
+      }
+    },
+    {
       "text": "Trump’s Tariffs Are Sending Some Companies Back to China - The New York Times Trump’s Tariffs Are Sending Some Companies Back to China  The New York Times",
       "timestamp": "2026-07-29T07:00:00.000Z",
       "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPQWgzYXdnSVRraEVPczFXNE1DTkdxWEFObEJ1WDkxOGhnb3MzT3lXSGJFeGJJVFVmbzBad0FsZ1N3OGpMOERwdHRrNC1TOTNudFJhbldPa3A2MlNGckV3cnNCS1B3YTZ0THVyZVpMaU1CTjFNeXNfZWN4UXAwd2pNWk9n?oc=5",
@@ -432,18 +435,91 @@
       }
     }
   ],
-  "deltas": [],
-  "topDeltas": [],
+  "deltas": [
+    {
+      "sector": "ai_server",
+      "sectorName": "AI 伺服器",
+      "prev": 0.068,
+      "current": 0.221,
+      "delta": 0.153,
+      "momentum": "↑ 訊號強化",
+      "accelerating": true
+    },
+    {
+      "sector": "foundry",
+      "sectorName": "晶圓代工",
+      "prev": -1,
+      "current": -0.892,
+      "delta": 0.108,
+      "momentum": "↑ 壓力緩解",
+      "accelerating": true
+    },
+    {
+      "sector": "steel",
+      "sectorName": "鋼鐵",
+      "prev": -0.985,
+      "current": -0.906,
+      "delta": 0.079,
+      "momentum": "↑ 壓力緩解",
+      "accelerating": true
+    },
+    {
+      "sector": "ev_supply",
+      "sectorName": "電動車供應鏈",
+      "prev": -0.848,
+      "current": -0.79,
+      "delta": 0.058,
+      "momentum": "↑ 壓力緩解",
+      "accelerating": true
+    }
+  ],
+  "topDeltas": [
+    {
+      "sector": "ai_server",
+      "sectorName": "AI 伺服器",
+      "prev": 0.068,
+      "current": 0.221,
+      "delta": 0.153,
+      "momentum": "↑ 訊號強化",
+      "accelerating": true
+    },
+    {
+      "sector": "foundry",
+      "sectorName": "晶圓代工",
+      "prev": -1,
+      "current": -0.892,
+      "delta": 0.108,
+      "momentum": "↑ 壓力緩解",
+      "accelerating": true
+    },
+    {
+      "sector": "steel",
+      "sectorName": "鋼鐵",
+      "prev": -0.985,
+      "current": -0.906,
+      "delta": 0.079,
+      "momentum": "↑ 壓力緩解",
+      "accelerating": true
+    },
+    {
+      "sector": "ev_supply",
+      "sectorName": "電動車供應鏈",
+      "prev": -0.848,
+      "current": -0.79,
+      "delta": 0.058,
+      "momentum": "↑ 壓力緩解",
+      "accelerating": true
+    }
+  ],
   "totalAnalyzed": 100,
   "sources": [
     "Google News"
   ],
   "sectorState": {
     "foundry": {
-      "score": -1,
-      "lastUpdated": "2026-08-13T09:18:34.701Z",
+      "score": -0.892,
+      "lastUpdated": "2026-08-13T13:25:29.919Z",
       "deltaHistory": [
-        -0.0020000000000000018,
         0.0010000000000000009,
         -0.0010000000000000009,
         0.0010000000000000009,
@@ -452,14 +528,14 @@
         -0.0010000000000000009,
         0,
         0,
-        -0.010000000000000009
+        -0.010000000000000009,
+        0.10799999999999998
       ]
     },
     "shipping": {
-      "score": -0.992,
-      "lastUpdated": "2026-08-13T09:18:34.701Z",
+      "score": -0.963,
+      "lastUpdated": "2026-08-13T13:25:29.919Z",
       "deltaHistory": [
-        0.006000000000000005,
         -0.007000000000000006,
         0.0010000000000000009,
         -0.01200000000000001,
@@ -468,14 +544,14 @@
         -0.0010000000000000009,
         0,
         0,
-        0.0010000000000000009
+        0.0010000000000000009,
+        0.029000000000000026
       ]
     },
     "steel": {
-      "score": -0.985,
-      "lastUpdated": "2026-08-13T09:18:34.701Z",
+      "score": -0.906,
+      "lastUpdated": "2026-08-13T13:25:29.919Z",
       "deltaHistory": [
-        0.0020000000000000018,
         -0.008000000000000007,
         -0.0010000000000000009,
         -0.02200000000000002,
@@ -484,12 +560,13 @@
         -0.0040000000000000036,
         0,
         -0.0010000000000000009,
-        -0.010000000000000009
+        -0.010000000000000009,
+        0.07899999999999996
       ]
     },
     "ic_design": {
-      "score": -0.999,
-      "lastUpdated": "2026-08-13T09:18:34.701Z",
+      "score": -1,
+      "lastUpdated": "2026-08-13T13:25:29.919Z",
       "deltaHistory": [
         0,
         0,
@@ -499,15 +576,14 @@
         0,
         0,
         0,
-        0,
-        0.0010000000000000009
+        0.0010000000000000009,
+        -0.0010000000000000009
       ]
     },
     "display": {
-      "score": -0.989,
-      "lastUpdated": "2026-08-13T09:18:34.701Z",
+      "score": -0.959,
+      "lastUpdated": "2026-08-13T13:25:29.919Z",
       "deltaHistory": [
-        0.0030000000000000027,
         -0.006999999999999895,
         0.0029999999999998916,
         -0.0129999999999999,
@@ -516,14 +592,14 @@
         -0.0030000000000000027,
         0,
         0,
-        -0.006000000000000005
+        -0.006000000000000005,
+        0.030000000000000027
       ]
     },
     "ev_supply": {
-      "score": -0.848,
-      "lastUpdated": "2026-08-13T09:18:34.701Z",
+      "score": -0.79,
+      "lastUpdated": "2026-08-13T13:25:29.919Z",
       "deltaHistory": [
-        0.015000000000000013,
         -0.007000000000000006,
         0.0030000000000000027,
         -0.038999999999999924,
@@ -532,14 +608,14 @@
         -0.0040000000000000036,
         0.02200000000000002,
         0,
-        -0.0040000000000000036
+        -0.0040000000000000036,
+        0.05799999999999994
       ]
     },
     "ai_server": {
-      "score": 0.068,
-      "lastUpdated": "2026-08-13T09:18:34.701Z",
+      "score": 0.221,
+      "lastUpdated": "2026-08-13T13:25:29.919Z",
       "deltaHistory": [
-        0.014000000000000012,
         0.0010000000000000009,
         0.0049999999999999906,
         -0.025999999999999995,
@@ -548,12 +624,13 @@
         -0.0030000000000000027,
         0,
         -0.0010000000000000009,
-        -0.007999999999999993
+        -0.007999999999999993,
+        0.153
       ]
     },
     "pcb": {
       "score": 0,
-      "lastUpdated": "2026-08-13T09:18:34.701Z",
+      "lastUpdated": "2026-08-13T13:25:29.919Z",
       "deltaHistory": [
         0,
         0,
@@ -569,13 +646,13 @@
     },
     "defense": {
       "score": 0,
-      "lastUpdated": "2026-08-13T09:18:34.701Z",
+      "lastUpdated": "2026-08-13T13:25:29.919Z",
       "deltaHistory": [
-        0.001,
         -0.001,
         0,
         0,
         -0.001,
+        0,
         0,
         0,
         0,
@@ -584,10 +661,9 @@
       ]
     },
     "packaging": {
-      "score": -0.017,
-      "lastUpdated": "2026-08-13T09:18:34.701Z",
+      "score": -0.016,
+      "lastUpdated": "2026-08-13T13:25:29.919Z",
       "deltaHistory": [
-        -0.006000000000000005,
         0.031,
         0.0050000000000000044,
         0.023999999999999994,
@@ -596,12 +672,13 @@
         -0.018000000000000002,
         0.004,
         0.002,
-        -0.003000000000000001
+        -0.003000000000000001,
+        0.0010000000000000009
       ]
     },
     "semiconductor_equip": {
       "score": 0,
-      "lastUpdated": "2026-08-13T09:18:34.701Z",
+      "lastUpdated": "2026-08-13T13:25:29.919Z",
       "deltaHistory": [
         0,
         0,
@@ -617,7 +694,7 @@
     },
     "robotics": {
       "score": 0,
-      "lastUpdated": "2026-08-13T09:18:34.701Z",
+      "lastUpdated": "2026-08-13T13:25:29.919Z",
       "deltaHistory": [
         0,
         0,
