@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-15T01:39:05.636Z",
+  "updatedAt": "2026-08-15T04:37:36.519Z",
   "posts": [
     {
       "text": "US accuses more than 40 countries of helping China avoid Donald Trump’s tariffs - Financial Times US accuses more than 40 countries of helping China avoid Donald Trump’s tariffs  Financial Times",
@@ -68,7 +68,7 @@
       }
     },
     {
-      "text": "Trump Slaps 100% Tariffs on Drones, Deepening China Supply Rift - Bloomberg Trump Slaps 100% Tariffs on Drones, Deepening China Supply Rift  Bloomberg",
+      "text": "Trump Slaps 100% Tariffs on Drones, Deepening China Supply Rift - Bloomberg.com Trump Slaps 100% Tariffs on Drones, Deepening China Supply Rift  Bloomberg.com",
       "timestamp": "2026-08-14T18:57:47.000Z",
       "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNVEc3Ml8wUHJHSzgwU0dza1dfRkJQSVdKZjBQZnBsSDdfcDNhMmZjY2ZDQjU0d2dSS2Y1R2tfOWVHUnRkaVhIWTFfSUNZMkRCQUUySUFjaDJPUTRxVVZDVW1CeEhUQWktWi1lc19ITFdlTGpLQUJ3VHhWLVhyMGN4NXQ3QWRhX2sxZ29VWXVOUTYtYk82OWpkRXpFWGpSa21aYkZ1T3l4S004bEZDZDRfVw?oc=5",
       "keywords": [
@@ -93,6 +93,51 @@
       "text": "White House accuses more than 40 countries of helping China avoid US tariffs - The Hill White House accuses more than 40 countries of helping China avoid US tariffs  The Hill",
       "timestamp": "2026-08-14T16:19:00.000Z",
       "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOQ0ljMi1ieU9ubUJsbWdrSno1WkVYY0hORHRqc2lVWEZlV1NlZGY5cENEbDg0ZVdNU2NCMFNncU5RUmpyeUJCdExZSUhtb2xDcEUxX2s4bEpyV05yRkJGWjBmcWVzcjhKanFXcXZ0elRUNldZdlJMZEcwcGgzSUpKUUNPT1pMZXlYSk5iZjdsS1hwNmNwbDdn0gGcAUFVX3lxTFBoM3JTb2FMcm5GdE8xV2pKSUhmTUlpVkd1cUNvZVIyMmVOVkFVcUVrR3JWLVVtNVRGUEdyVWxWY3lUVzV5WGZ0N2g4SDZGRlVobEdxSUJVOVI5QVJOZFZpR3ZUb1NPd1FtRE9hZDRmNEFaeTJfNkxfa2xEbWtLMnB4ZzJUVjgtaEhMWVZsak55a0Jia2lFSVU0b2dOUw?oc=5",
+      "keywords": [
+        "tariff",
+        "tariffs",
+        "china"
+      ],
+      "impacts": {
+        "foundry": -1,
+        "shipping": -1,
+        "steel": -1,
+        "ic_design": -1,
+        "display": -1,
+        "ev_supply": -1
+      },
+      "sentiment": {
+        "compound": -0.7184,
+        "label": "強烈利空"
+      }
+    },
+    {
+      "text": "Trump trade enforcers deploy AI in tariff evasion crackdown - Fortune Trump trade enforcers deploy AI in tariff evasion crackdown  Fortune",
+      "timestamp": "2026-08-13T15:01:00.000Z",
+      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOREVmbGNSdnpMWEFidzN3X3FOM0lKUXU1alNNNzNNYlktTml5ZGpTVmZ6QW9hbllzdWJIUTZhVTRKUndWcmFYU3pHYkR2UmJkMUtUZ2Q4M0k5eEloQjFmNjhzeFZyTEhUZ09iR1NYVVZSYUdkSTNFWWxRZ1hSUVRxRjJ1YkN6N3R1XzlaUlczVl9qN2Z3ZVE?oc=5",
+      "keywords": [
+        "ai",
+        "tariff",
+        "ev"
+      ],
+      "impacts": {
+        "ai_server": 0.7,
+        "foundry": -0.4,
+        "shipping": -0.5,
+        "steel": -0.5,
+        "ic_design": -0.6,
+        "display": -0.5,
+        "ev_supply": -0.2
+      },
+      "sentiment": {
+        "compound": -0.7184,
+        "label": "強烈利空"
+      }
+    },
+    {
+      "text": "White House says more than 40 nations help China dodge tariffs - The Washington Post White House says more than 40 nations help China dodge tariffs  The Washington Post",
+      "timestamp": "2026-08-14T01:45:00.000Z",
+      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPREFqd1dJbUx4Y1BwU2ZuRG9RVWZWN2MtTV9EUlRhNmpfd1pyOG4yblhDWjlIdTlMZW1IR0pMYUZ1UHRsQklOR3M5WEZsMV9fRzVHRUlWY2k2YTBHem1kQ18xekFocFh6Y1Ztc0lDNGtORFhhUFF2eGstTmlTR01RRURmeUJSN08wWDVyS1NraFJZTkN2b004T255LU95YkJHVlB1X2xlZkUzSVFHVlJ2Qmh0N2c?oc=5",
       "keywords": [
         "tariff",
         "tariffs",
@@ -153,51 +198,6 @@
       }
     },
     {
-      "text": "Trump trade enforcers deploy AI in tariff evasion crackdown - Fortune Trump trade enforcers deploy AI in tariff evasion crackdown  Fortune",
-      "timestamp": "2026-08-13T15:01:00.000Z",
-      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOREVmbGNSdnpMWEFidzN3X3FOM0lKUXU1alNNNzNNYlktTml5ZGpTVmZ6QW9hbllzdWJIUTZhVTRKUndWcmFYU3pHYkR2UmJkMUtUZ2Q4M0k5eEloQjFmNjhzeFZyTEhUZ09iR1NYVVZSYUdkSTNFWWxRZ1hSUVRxRjJ1YkN6N3R1XzlaUlczVl9qN2Z3ZVE?oc=5",
-      "keywords": [
-        "ai",
-        "tariff",
-        "ev"
-      ],
-      "impacts": {
-        "ai_server": 0.7,
-        "foundry": -0.4,
-        "shipping": -0.5,
-        "steel": -0.5,
-        "ic_design": -0.6,
-        "display": -0.5,
-        "ev_supply": -0.2
-      },
-      "sentiment": {
-        "compound": -0.7184,
-        "label": "強烈利空"
-      }
-    },
-    {
-      "text": "White House says more than 40 nations help China dodge tariffs - The Washington Post White House says more than 40 nations help China dodge tariffs  The Washington Post",
-      "timestamp": "2026-08-14T01:45:00.000Z",
-      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPREFqd1dJbUx4Y1BwU2ZuRG9RVWZWN2MtTV9EUlRhNmpfd1pyOG4yblhDWjlIdTlMZW1IR0pMYUZ1UHRsQklOR3M5WEZsMV9fRzVHRUlWY2k2YTBHem1kQ18xekFocFh6Y1Ztc0lDNGtORFhhUFF2eGstTmlTR01RRURmeUJSN08wWDVyS1NraFJZTkN2b004T255LU95YkJHVlB1X2xlZkUzSVFHVlJ2Qmh0N2c?oc=5",
-      "keywords": [
-        "tariff",
-        "tariffs",
-        "china"
-      ],
-      "impacts": {
-        "foundry": -1,
-        "shipping": -1,
-        "steel": -1,
-        "ic_design": -1,
-        "display": -1,
-        "ev_supply": -1
-      },
-      "sentiment": {
-        "compound": -0.7184,
-        "label": "強烈利空"
-      }
-    },
-    {
       "text": "Trump's tariffs unevenly reshape American manufacturing - Nikkei Asia Trump's tariffs unevenly reshape American manufacturing  Nikkei Asia",
       "timestamp": "2026-08-14T12:36:00.000Z",
       "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQVVNUN0tLQUM2eGtfTFdNdlFpRE1XWHFMYmpmaEphQ2x2R3dvbGVLVFdCU0tibXE3MEhCSnpQNzVUb1pCY0VlZGpoOGgyRHJJZGJHTkdJak9QdWhsQ2ZKRXUzNEFVUFpQcVNEU3FGa0RPWFFJU2lzRm05WTY4anlPdFVqRUtpQUs1NmxEd05HeU80N1h2OWZhS2h0VTFrU29iV1EwMExvN0xwOTlTR0thMw?oc=5",
@@ -244,7 +244,7 @@
       }
     },
     {
-      "text": "Trump wins legal battle to keep cheap imports subject to tariffs - Axios Trump wins legal battle to keep cheap imports subject to tariffs  Axios",
+      "text": "Trump wins legal battle to keep cheap imports subject to tariffs - axios.com Trump wins legal battle to keep cheap imports subject to tariffs  axios.com",
       "timestamp": "2026-08-13T19:48:03.000Z",
       "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTFBqTFEtWkgzMVl5czk0M1hDc3lETDZrWHJmbTBZbEpaVWJUeFI4NEJabG1LNjFxU2FSTWc3MkhZd2pjRmMtWXgxcDlWVkpFdW16ekgzamZKVmdnU0ZmWTlmRlRUeTYyU0hycmtGeTFVNA?oc=5",
       "keywords": [
@@ -314,26 +314,23 @@
       }
     },
     {
-      "text": "EU pushes back against Trump’s trade pressure as US targets green rules, China tariff evasion - Firstpost EU pushes back against Trump’s trade pressure as US targets green rules, China tariff evasion  Firstpost",
-      "timestamp": "2026-08-14T20:11:19.000Z",
-      "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxOSDFUTFBCNW80Uk5JSU43VTFNMFFGTXBmVXhCbXA2eE1UMlZSZ055LUczRXRoQ252MVZhbDRyNDB2Ti1JUkdzWWJSMmFSNGRKMWFIaEhsMU1pZGRfeWc0a2dER3NrV1paRHZ4QjdKbVhpTzJzRnBjejJrMEJObk9CUTExM042Q0YwbVJZeFBuckNSTU5zM1k5S0JiTWFPWmlsdVo5akZuSk9XNDF6endNbTk5Z1lVdUtoQ3FELWd4MEVncDZCSWhaaWVGVmNTRnBQOEk00gHYAUFVX3lxTE50MXYyMjFDUWpRNkdFcC0zOW5SRmRreUVUVTk0RHJRUzFTYVZTcUFqN25MVGlaajY4SXN4eVlYLTlKb0Z0ZXpXMFBpS2JmTHg5aVNITUdZcUtBQ0h1X29qMjJZcWJKLXczRlMxTDJNa2E5dnhCUjh0NzVpZzBZR2VZbWxfby1UT3BsTDJMaVlyaVlyMTFzY3BkVmhGRldfS3RYS2d5QXF5a3pFeVZoZ1pCZ2ZYVERKVjBIUGx5UFM2a0NWclltQkRUMUxMNldJVVd4WC0wSEo0TQ?oc=5",
+      "text": "China’s 20,000-Mile Solar Trade Route That Battled US Tariffs - Bloomberg.com China’s 20,000-Mile Solar Trade Route That Battled US Tariffs  Bloomberg.com",
+      "timestamp": "2026-08-14T23:00:02.000Z",
+      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPSU1kUmstUDBTMGFYa2N0RzFIR2ZUZVZYTDRaUEtHRUE5ZkxWVnRWRnY1QWlnbXZVUUpZMlZaUFJqM1pEYlVwMjVvZVdTUXY0YWFXSExRZ0d2ZVJvQzhMOUtwcVJxWE5hcXNfT21RM2ZuWHNEQTZHYzdfMXMzTS0taVRTc1NrTEJrMFpRN296MTBnU3FsRG1pUlpTT29zc2N0OTUtdUVzUEVUbjVzZ29JSXZR?oc=5",
       "keywords": [
-        "ai",
         "tariff",
+        "tariffs",
         "china",
-        "green",
-        "ev"
+        "solar"
       ],
       "impacts": {
-        "ai_server": 0.7,
-        "foundry": -0.4,
-        "shipping": -0.9,
-        "steel": -0.5,
+        "foundry": -1,
+        "shipping": -1,
+        "steel": -1,
         "ic_design": -1,
-        "display": -0.9,
-        "ev_supply": -0.5,
-        "solar": -0.5,
-        "wind_energy": -0.5
+        "display": -1,
+        "ev_supply": -1,
+        "solar": -0.6
       },
       "sentiment": {
         "compound": -0.7184,
@@ -448,10 +445,9 @@
   ],
   "sectorState": {
     "foundry": {
-      "score": -0.973,
-      "lastUpdated": "2026-08-15T01:39:05.636Z",
+      "score": -0.975,
+      "lastUpdated": "2026-08-15T04:37:36.519Z",
       "deltaHistory": [
-        0.10799999999999998,
         -0.0050000000000000044,
         -0.06599999999999995,
         0.0030000000000000027,
@@ -460,14 +456,14 @@
         0.02300000000000002,
         -0.010000000000000009,
         -0.01100000000000001,
-        0.0010000000000000009
+        0.0010000000000000009,
+        -0.0020000000000000018
       ]
     },
     "shipping": {
-      "score": -0.978,
-      "lastUpdated": "2026-08-15T01:39:05.636Z",
+      "score": -0.981,
+      "lastUpdated": "2026-08-15T04:37:36.519Z",
       "deltaHistory": [
-        0.029000000000000026,
         -0.0050000000000000044,
         -0.008000000000000007,
         0,
@@ -476,14 +472,14 @@
         0.0050000000000000044,
         -0.0020000000000000018,
         0.006000000000000005,
-        0.0030000000000000027
+        0.0030000000000000027,
+        -0.0030000000000000027
       ]
     },
     "steel": {
-      "score": -0.976,
-      "lastUpdated": "2026-08-15T01:39:05.636Z",
+      "score": -0.978,
+      "lastUpdated": "2026-08-15T04:37:36.519Z",
       "deltaHistory": [
-        0.07899999999999996,
         0.0040000000000000036,
         -0.06599999999999995,
         0.0040000000000000036,
@@ -492,14 +488,15 @@
         0.014000000000000012,
         -0.01200000000000001,
         -0.008000000000000007,
-        0.0020000000000000018
+        0.0020000000000000018,
+        -0.0020000000000000018
       ]
     },
     "ic_design": {
       "score": -1,
-      "lastUpdated": "2026-08-15T01:39:05.636Z",
+      "lastUpdated": "2026-08-15T04:37:36.519Z",
       "deltaHistory": [
-        -0.0010000000000000009,
+        0,
         0,
         0,
         0,
@@ -512,10 +509,9 @@
       ]
     },
     "display": {
-      "score": -0.998,
-      "lastUpdated": "2026-08-15T01:39:05.636Z",
+      "score": -0.994,
+      "lastUpdated": "2026-08-15T04:37:36.519Z",
       "deltaHistory": [
-        0.030000000000000027,
         -0.0040000000000000036,
         -0.008000000000000007,
         0.0010000000000000009,
@@ -524,14 +520,14 @@
         -0.0030000000000000027,
         -0.0020000000000000018,
         -0.010000000000000009,
-        0.0010000000000000009
+        0.0010000000000000009,
+        0.0040000000000000036
       ]
     },
     "ev_supply": {
-      "score": -0.934,
-      "lastUpdated": "2026-08-15T01:39:05.636Z",
+      "score": -0.93,
+      "lastUpdated": "2026-08-15T04:37:36.519Z",
       "deltaHistory": [
-        0.05799999999999994,
         -0.03399999999999992,
         -0.061000000000000054,
         0.0050000000000000044,
@@ -540,14 +536,14 @@
         0.028999999999999915,
         -0.0010000000000000009,
         -0.028999999999999915,
-        0.006999999999999895
+        0.006999999999999895,
+        0.0040000000000000036
       ]
     },
     "ai_server": {
-      "score": 0.093,
-      "lastUpdated": "2026-08-15T01:39:05.636Z",
+      "score": 0.098,
+      "lastUpdated": "2026-08-15T04:37:36.519Z",
       "deltaHistory": [
-        0.153,
         -0.04400000000000001,
         0.01100000000000001,
         0.01200000000000001,
@@ -556,12 +552,13 @@
         0.057999999999999996,
         -0.09499999999999999,
         -0.019000000000000003,
-        0.0020000000000000018
+        0.0020000000000000018,
+        0.0050000000000000044
       ]
     },
     "pcb": {
       "score": 0,
-      "lastUpdated": "2026-08-14T13:20:24.815Z",
+      "lastUpdated": "2026-08-15T04:37:36.519Z",
       "deltaHistory": [
         0,
         0,
@@ -593,9 +590,8 @@
     },
     "packaging": {
       "score": 0,
-      "lastUpdated": "2026-08-15T01:39:05.636Z",
+      "lastUpdated": "2026-08-15T04:37:36.519Z",
       "deltaHistory": [
-        0.0010000000000000009,
         0.012,
         0.001,
         0,
@@ -604,14 +600,14 @@
         0.001,
         0,
         0,
+        0,
         0
       ]
     },
     "semiconductor_equip": {
       "score": 0.008,
-      "lastUpdated": "2026-08-15T01:39:05.636Z",
+      "lastUpdated": "2026-08-15T04:37:36.519Z",
       "deltaHistory": [
-        0,
         0,
         0,
         0,
@@ -620,14 +616,14 @@
         0.014,
         0,
         -0.006,
+        0,
         0
       ]
     },
     "robotics": {
       "score": 0.008,
-      "lastUpdated": "2026-08-15T01:39:05.636Z",
+      "lastUpdated": "2026-08-15T04:37:36.519Z",
       "deltaHistory": [
-        0,
         0,
         0,
         0,
@@ -636,6 +632,7 @@
         0.014,
         0,
         -0.006,
+        0,
         0
       ]
     },
@@ -666,10 +663,9 @@
       ]
     },
     "solar": {
-      "score": -0.009,
-      "lastUpdated": "2026-08-15T01:39:05.636Z",
+      "score": -0.013,
+      "lastUpdated": "2026-08-15T04:37:36.519Z",
       "deltaHistory": [
-        0.03,
         0.00399999999999999,
         0.043000000000000003,
         -0.003999999999999997,
@@ -678,15 +674,17 @@
         0.002,
         0.003,
         -0.006,
-        -0.0009999999999999992
+        -0.0009999999999999992,
+        -0.004
       ]
     },
     "wind_energy": {
-      "score": -0.009,
-      "lastUpdated": "2026-08-15T01:39:05.636Z",
+      "score": -0.003,
+      "lastUpdated": "2026-08-15T04:37:36.519Z",
       "deltaHistory": [
         -0.008,
-        -0.0009999999999999992
+        -0.0009999999999999992,
+        0.005999999999999999
       ]
     }
   }
