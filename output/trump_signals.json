@@ -1,8 +1,8 @@
 {
-  "updatedAt": "2026-08-16T08:36:40.165Z",
+  "updatedAt": "2026-08-16T12:51:19.834Z",
   "posts": [
     {
-      "text": "Trump White House Says China Avoids Billions in Tariffs by Rerouting Goods - wsj.com Trump White House Says China Avoids Billions in Tariffs by Rerouting Goods  wsj.com",
+      "text": "Trump White House Says China Avoids Billions in Tariffs by Rerouting Goods - WSJ Trump White House Says China Avoids Billions in Tariffs by Rerouting Goods  WSJ",
       "timestamp": "2026-08-14T09:41:00.000Z",
       "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPTl9rN1VFalExV3BseFRBRGFjZjJBVzJOejAxSURNakZNankwNF9QcTVVbmhDbFp2Q0xaQW4xdFR6Y21hVnZzUUZjZGN0djMzU0QtQlNScmZTVnNIRFZIWHM3aXhTaEwwa1QwMlBHR1VfM0FJamU2QlUxYlo1RXlYU1R2c3JpT3FvOEZkZ1VPekZjOHdDcFhCcWt2d0FlT0VrSTBqeVhqY1hadjUwT01TeA?oc=5",
       "keywords": [
@@ -221,13 +221,14 @@
       }
     },
     {
-      "text": "Trump Slaps 100% Tariffs on Drones, Deepening China Supply Rift - bloomberg.com Trump Slaps 100% Tariffs on Drones, Deepening China Supply Rift  bloomberg.com",
-      "timestamp": "2026-08-13T21:35:57.000Z",
-      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNVEc3Ml8wUHJHSzgwU0dza1dfRkJQSVdKZjBQZnBsSDdfcDNhMmZjY2ZDQjU0d2dSS2Y1R2tfOWVHUnRkaVhIWTFfSUNZMkRCQUUySUFjaDJPUTRxVVZDVW1CeEhUQWktWi1lc19ITFdlTGpLQUJ3VHhWLVhyMGN4NXQ3QWRhX2sxZ29VWXVOUTYtYk82OWpkRXpFWGpSa21aYkZ1T3l4S004bEZDZDRfVw?oc=5",
+      "text": "China’s 20,000-Mile Solar Trade Route That Battled US Tariffs - Bloomberg.com China’s 20,000-Mile Solar Trade Route That Battled US Tariffs  Bloomberg.com",
+      "timestamp": "2026-08-14T23:00:02.000Z",
+      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPSU1kUmstUDBTMGFYa2N0RzFIR2ZUZVZYTDRaUEtHRUE5ZkxWVnRWRnY1QWlnbXZVUUpZMlZaUFJqM1pEYlVwMjVvZVdTUXY0YWFXSExRZ0d2ZVJvQzhMOUtwcVJxWE5hcXNfT21RM2ZuWHNEQTZHYzdfMXMzTS0taVRTc1NrTEJrMFpRN296MTBnU3FsRG1pUlpTT29zc2N0OTUtdUVzUEVUbjVzZ29JSXZR?oc=5",
       "keywords": [
         "tariff",
         "tariffs",
-        "china"
+        "china",
+        "solar"
       ],
       "impacts": {
         "foundry": -1,
@@ -235,7 +236,8 @@
         "steel": -1,
         "ic_design": -1,
         "display": -1,
-        "ev_supply": -1
+        "ev_supply": -1,
+        "solar": -0.6
       },
       "sentiment": {
         "compound": -0.7184,
@@ -258,6 +260,30 @@
         "ic_design": -1,
         "display": -1,
         "ev_supply": -1
+      },
+      "sentiment": {
+        "compound": -0.7184,
+        "label": "強烈利空"
+      }
+    },
+    {
+      "text": "US report says India part of network helping China evade tariffs: What it means for trade ties - The Indian Express US report says India part of network helping China evade tariffs: What it means for trade ties  The Indian Express",
+      "timestamp": "2026-08-16T07:45:00.000Z",
+      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPSG40X0prSWJHYUswQ05PREJHR3NNZHNSRFpnRVJPM1dpVTZMNmxORUFiQXQ0LU9UUmU5R1ZwUThYcGRjbHBOdEFwM1NuTjY2MnkwLTRQZWFEWjNadmN3VFpQdXRyLWc5WlNvb21LUE9HOGJhMUh6X1lHQWp0NjIyM3hBWWtObjBPMmhpejRRd0JDTXhBdm5PeUNZY3AyaWhiSThMenQzY0dRMFFmRTFuOWhSZ1loSy1acWVXdEtBZ9IBxgFBVV95cUxPVDRpRzZJd3BmSUI5S2tZek1aMEhJTnN2eTFkOFN1UmFWY0M1U2V6WVptbC1SRmJ2UVB2SlMzUmtKdEg3UzdWV0J0RzI5amQwY1d6T2JyNVBmYm1nOWN4OXRCZFpBdGliOUJDYVd2ZHZpWGtFMnVqQll1NWdwOGJIaUZzTHRjakFTajlvWVBPOWxXaGk1RUM5VGJ1WXFUbjYyRGMxVEIwYlFIeEpSRTlHVjJYcE9GcWFuRXNXNE9nWGZDTWVVLWc?oc=5",
+      "keywords": [
+        "tariff",
+        "tariffs",
+        "china",
+        "ev",
+        "port"
+      ],
+      "impacts": {
+        "foundry": -1,
+        "shipping": -1,
+        "steel": -1,
+        "ic_design": -1,
+        "display": -1,
+        "ev_supply": -0.9
       },
       "sentiment": {
         "compound": -0.7184,
@@ -290,7 +316,7 @@
       }
     },
     {
-      "text": "Trump Announces Drone Tariffs to Bolster U.S. Supply Chains and Counter China - wsj.com Trump Announces Drone Tariffs to Bolster U.S. Supply Chains and Counter China  wsj.com",
+      "text": "Trump Announces Drone Tariffs to Bolster U.S. Supply Chains and Counter China - WSJ Trump Announces Drone Tariffs to Bolster U.S. Supply Chains and Counter China  WSJ",
       "timestamp": "2026-08-14T11:46:00.000Z",
       "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxONVF4NmtNTmNvQVQ2T3FPUF9zWUtHT09QSlNtSi1tWmFwUXNTWHRQeUxiMGh2LVo1cHVFaDg1RkVFVHdtMGppeVVyOXo0RHBYaGE5alNVbnFsSlhFVXZqRFZYZEpBLW5xc3A2Y01RTjZScDNjaDEtVkZzSDdibDF2S1RiakUyRmptVFI4eXFJM2lXTUY3Vm5MLTZvRl9jSHN3OFlDY0llSGloNDRDUGxGLUF3VTBGbDJDY1pGZy1qZnpWUnJnTnc?oc=5",
       "keywords": [
@@ -336,14 +362,13 @@
       }
     },
     {
-      "text": "China’s 20,000-Mile Solar Trade Route That Battled US Tariffs - bloomberg.com China’s 20,000-Mile Solar Trade Route That Battled US Tariffs  bloomberg.com",
-      "timestamp": "2026-08-14T23:00:02.000Z",
-      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPSU1kUmstUDBTMGFYa2N0RzFIR2ZUZVZYTDRaUEtHRUE5ZkxWVnRWRnY1QWlnbXZVUUpZMlZaUFJqM1pEYlVwMjVvZVdTUXY0YWFXSExRZ0d2ZVJvQzhMOUtwcVJxWE5hcXNfT21RM2ZuWHNEQTZHYzdfMXMzTS0taVRTc1NrTEJrMFpRN296MTBnU3FsRG1pUlpTT29zc2N0OTUtdUVzUEVUbjVzZ29JSXZR?oc=5",
+      "text": "Trump Slaps 100% Tariffs on Drones, Deepening China Supply Rift - Bloomberg.com Trump Slaps 100% Tariffs on Drones, Deepening China Supply Rift  Bloomberg.com",
+      "timestamp": "2026-08-13T21:35:57.000Z",
+      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNVEc3Ml8wUHJHSzgwU0dza1dfRkJQSVdKZjBQZnBsSDdfcDNhMmZjY2ZDQjU0d2dSS2Y1R2tfOWVHUnRkaVhIWTFfSUNZMkRCQUUySUFjaDJPUTRxVVZDVW1CeEhUQWktWi1lc19ITFdlTGpLQUJ3VHhWLVhyMGN4NXQ3QWRhX2sxZ29VWXVOUTYtYk82OWpkRXpFWGpSa21aYkZ1T3l4S004bEZDZDRfVw?oc=5",
       "keywords": [
         "tariff",
         "tariffs",
-        "china",
-        "solar"
+        "china"
       ],
       "impacts": {
         "foundry": -1,
@@ -351,8 +376,7 @@
         "steel": -1,
         "ic_design": -1,
         "display": -1,
-        "ev_supply": -1,
-        "solar": -0.6
+        "ev_supply": -1
       },
       "sentiment": {
         "compound": -0.7184,
@@ -381,26 +405,6 @@
       }
     },
     {
-      "text": "‘If your tariff was 0%, there's no need to commit fraud’: The White House is sounding off on a $112 billion tariff-dodging scheme it made worse - Fortune ‘If your tariff was 0%, there's no need to commit fraud’: The White House is sounding off on a $112 billion tariff-dodging scheme it made worse  Fortune",
-      "timestamp": "2026-08-14T19:33:00.000Z",
-      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNM0ZNUTFyVmlXNW0wRmE2WjNKMHBweWJXU3FxQjlDN1R1WTd3cjBZTEVlQ25YMmZYM1NPYmNCZ0VKbVBmYUpfTkJpdzNyUTVzR0UxTGJhR3hXOWkwTVJLLWV1WHVkcE1LMGdHN29GZ21jX1otSVdkR0VyQTVhS1FFUmc4NjVRM3pXTTJrUVZLY0JXZFItbXZpR1NrRlNHMnRJb0Nicw?oc=5",
-      "keywords": [
-        "tariff"
-      ],
-      "impacts": {
-        "foundry": -0.7,
-        "shipping": -0.5,
-        "steel": -0.5,
-        "ic_design": -0.6,
-        "display": -0.5,
-        "ev_supply": -0.4
-      },
-      "sentiment": {
-        "compound": -0.7184,
-        "label": "強烈利空"
-      }
-    },
-    {
       "text": "China Has Come Through Trump’s Trade War in a Good Position - The New York Times China Has Come Through Trump’s Trade War in a Good Position  The New York Times",
       "timestamp": "2026-07-25T07:00:00.000Z",
       "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE5PRDkyX0ZpSzd2QmhBWnJiQVJDbHBqbWZlQzBGbGJacUVUekJmcHhYYVJXWlpXeUk4TVRSWG5MNzdnR2ZCSVNTbWtra3doaDg1ei10NlB4bk9JUXAzMXVRYmRuWU1NSGJVMnpub1Jybms5Q0xjTXRN?oc=5",
@@ -421,16 +425,14 @@
       }
     },
     {
-      "text": "Trump Trade Enforcers Deploy AI to Crack Down on Tariff Dodging - bloomberg.com Trump Trade Enforcers Deploy AI to Crack Down on Tariff Dodging  bloomberg.com",
-      "timestamp": "2026-08-13T13:17:10.000Z",
-      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPQlBoa04ydlFzS0tMcmI0YVFOdk90c01WV3NtYzlfUmlUV2VJVlZOLWxxbEh6SEZkQllIaWZKekdaYjVUSlNBSFFIWjZ6aW41MlVMUEp6RUZUVVI2V1M4am1rcXdkQW9TX3lFZFctMEY0SU4ySndvbzhwa0MwRzFuNTl0b2pRdklIa1MxeTNRQVNrUjk5ZkhYWmJyR3dKUFQ3eEN4NTJrUnh0a1NvVW81Zk1vT3k?oc=5",
+      "text": "‘If your tariff was 0%, there's no need to commit fraud’: The White House is sounding off on a $112 billion tariff-dodging scheme it made worse - Fortune ‘If your tariff was 0%, there's no need to commit fraud’: The White House is sounding off on a $112 billion tariff-dodging scheme it made worse  Fortune",
+      "timestamp": "2026-08-14T19:33:00.000Z",
+      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNM0ZNUTFyVmlXNW0wRmE2WjNKMHBweWJXU3FxQjlDN1R1WTd3cjBZTEVlQ25YMmZYM1NPYmNCZ0VKbVBmYUpfTkJpdzNyUTVzR0UxTGJhR3hXOWkwTVJLLWV1WHVkcE1LMGdHN29GZ21jX1otSVdkR0VyQTVhS1FFUmc4NjVRM3pXTTJrUVZLY0JXZFItbXZpR1NrRlNHMnRJb0Nicw?oc=5",
       "keywords": [
-        "ai",
         "tariff"
       ],
       "impacts": {
-        "ai_server": 0.7,
-        "foundry": -0.4,
+        "foundry": -0.7,
         "shipping": -0.5,
         "steel": -0.5,
         "ic_design": -0.6,
@@ -452,9 +454,8 @@
   "sectorState": {
     "foundry": {
       "score": -0.957,
-      "lastUpdated": "2026-08-16T08:36:40.165Z",
+      "lastUpdated": "2026-08-16T12:51:19.834Z",
       "deltaHistory": [
-        -0.01100000000000001,
         0.0010000000000000009,
         -0.0020000000000000018,
         0.0050000000000000044,
@@ -463,14 +464,14 @@
         0.0020000000000000018,
         0.008000000000000007,
         -0.0010000000000000009,
-        0.0040000000000000036
+        0.0040000000000000036,
+        0
       ]
     },
     "shipping": {
-      "score": -0.972,
-      "lastUpdated": "2026-08-16T08:36:40.165Z",
+      "score": -0.973,
+      "lastUpdated": "2026-08-16T12:51:19.834Z",
       "deltaHistory": [
-        0.006000000000000005,
         0.0030000000000000027,
         -0.0030000000000000027,
         0.0040000000000000036,
@@ -479,14 +480,14 @@
         -0.0030000000000000027,
         0.006000000000000005,
         0.0020000000000000018,
-        0.0010000000000000009
+        0.0010000000000000009,
+        -0.0010000000000000009
       ]
     },
     "steel": {
-      "score": -0.963,
-      "lastUpdated": "2026-08-16T08:36:40.165Z",
+      "score": -0.964,
+      "lastUpdated": "2026-08-16T12:51:19.834Z",
       "deltaHistory": [
-        -0.008000000000000007,
         0.0020000000000000018,
         -0.0020000000000000018,
         -0.0010000000000000009,
@@ -495,12 +496,13 @@
         0.0050000000000000044,
         0.006000000000000005,
         0,
-        0.0030000000000000027
+        0.0030000000000000027,
+        -0.0010000000000000009
       ]
     },
     "ic_design": {
       "score": -1,
-      "lastUpdated": "2026-08-16T08:36:40.165Z",
+      "lastUpdated": "2026-08-16T12:51:19.834Z",
       "deltaHistory": [
         0,
         0,
@@ -515,10 +517,9 @@
       ]
     },
     "display": {
-      "score": -0.988,
-      "lastUpdated": "2026-08-16T08:36:40.165Z",
+      "score": -0.989,
+      "lastUpdated": "2026-08-16T12:51:19.834Z",
       "deltaHistory": [
-        -0.010000000000000009,
         0.0010000000000000009,
         0.0040000000000000036,
         0.0030000000000000027,
@@ -527,14 +528,14 @@
         -0.0010000000000000009,
         0.0010000000000000009,
         -0.0010000000000000009,
-        0.0010000000000000009
+        0.0010000000000000009,
+        -0.0010000000000000009
       ]
     },
     "ev_supply": {
-      "score": -0.886,
-      "lastUpdated": "2026-08-16T08:36:40.165Z",
+      "score": -0.888,
+      "lastUpdated": "2026-08-16T12:51:19.834Z",
       "deltaHistory": [
-        -0.028999999999999915,
         0.006999999999999895,
         0.0040000000000000036,
         0.020000000000000018,
@@ -543,14 +544,14 @@
         -0.0010000000000000009,
         0.02200000000000002,
         0.0010000000000000009,
-        0.0030000000000000027
+        0.0030000000000000027,
+        -0.0020000000000000018
       ]
     },
     "ai_server": {
-      "score": 0.122,
-      "lastUpdated": "2026-08-16T08:36:40.165Z",
+      "score": 0.118,
+      "lastUpdated": "2026-08-16T12:51:19.834Z",
       "deltaHistory": [
-        -0.019000000000000003,
         0.0020000000000000018,
         0.0050000000000000044,
         0.044999999999999984,
@@ -559,7 +560,8 @@
         -0.04400000000000001,
         0.03,
         -0.031,
-        0.0030000000000000027
+        0.0030000000000000027,
+        -0.0040000000000000036
       ]
     },
     "pcb": {
@@ -596,7 +598,7 @@
     },
     "packaging": {
       "score": 0,
-      "lastUpdated": "2026-08-16T08:36:40.165Z",
+      "lastUpdated": "2026-08-16T12:51:19.834Z",
       "deltaHistory": [
         0,
         0,
@@ -611,10 +613,9 @@
       ]
     },
     "semiconductor_equip": {
-      "score": 0.005,
-      "lastUpdated": "2026-08-16T08:36:40.165Z",
+      "score": 0.004,
+      "lastUpdated": "2026-08-16T12:51:19.834Z",
       "deltaHistory": [
-        -0.006,
         0,
         0,
         -0.004,
@@ -623,14 +624,14 @@
         0,
         0.003,
         0.001,
-        0
+        0,
+        -0.001
       ]
     },
     "robotics": {
-      "score": 0.005,
-      "lastUpdated": "2026-08-16T08:36:40.165Z",
+      "score": 0.004,
+      "lastUpdated": "2026-08-16T12:51:19.834Z",
       "deltaHistory": [
-        -0.006,
         0,
         0,
         -0.004,
@@ -639,7 +640,8 @@
         0,
         0.003,
         0.001,
-        0
+        0,
+        -0.001
       ]
     },
     "petrochemical": {
@@ -669,10 +671,9 @@
       ]
     },
     "solar": {
-      "score": -0.009,
-      "lastUpdated": "2026-08-16T08:36:40.165Z",
+      "score": -0.02,
+      "lastUpdated": "2026-08-16T12:51:19.834Z",
       "deltaHistory": [
-        -0.006,
         -0.0009999999999999992,
         -0.004,
         -0.034,
@@ -681,19 +682,20 @@
         0.012999999999999998,
         0.013999999999999999,
         -0.005999999999999998,
-        0.014
+        0.014,
+        -0.011000000000000001
       ]
     },
     "wind_energy": {
       "score": 0,
-      "lastUpdated": "2026-08-16T08:36:40.165Z",
+      "lastUpdated": "2026-08-16T12:51:19.834Z",
       "deltaHistory": [
-        -0.008,
         -0.0009999999999999992,
         0.005999999999999999,
         0.001,
         0.001,
         0.001,
+        0,
         0,
         0,
         0,
