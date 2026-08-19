@@ -1,6 +1,51 @@
 {
-  "updatedAt": "2026-08-19T04:42:44.754Z",
+  "updatedAt": "2026-08-19T08:45:30.915Z",
   "posts": [
+    {
+      "text": "U.S. and Canada hold last-minute negotiations to prevent Trump's 50% tariffs - PBS U.S. and Canada hold last-minute negotiations to prevent Trump's 50% tariffs  PBS",
+      "timestamp": "2026-08-18T15:26:35.000Z",
+      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQOUt5dElyaDB4ekI1a1R3eFc2VVBveV9McmdyYWJMdTdvSzM3eGtEV2pmWGpZOHdheHlya3RUbFdOMXZ6NTZhQVIwVDRyUnQtU01yZXhsVlhSZHJNWjlvZVNmWWo0X2l1ZFViQVZibFctbGctMkdhTW0xOUpaSUdhWXBjeDZqUHpDd3V6TkkyVmc3NndWbl9aUnQ3UE9YaDdJc2FucVNpOHFPTDZD0gGyAUFVX3lxTFBjLTVTZTJGdVJ2YkcwTE1rQ19keTd1Tkl6WksxdkNpMzdXS2Fpb2JzR3RzdjkwQ2dKdk1hQVNINmtVbnNfV1hsaVVRQkdoQW1rQ2FxdHlVQzJVQ2I0Zm9YYjdLRzVHZVlFNGdUWjFPVm1TQ0ljMERfcDk1amtYY1lCTzJlWUctUzlqOHNJSTdDQ1l2M3UyLU1kVHdwZU5ZdVozVldPQkUtRHRfcHNCNUdoZlE?oc=5",
+      "keywords": [
+        "tariff",
+        "tariffs",
+        "negotiation",
+        "ev"
+      ],
+      "impacts": {
+        "foundry": -1,
+        "shipping": -0.8,
+        "steel": -1,
+        "ic_design": -1,
+        "display": -1,
+        "ev_supply": -0.6
+      },
+      "sentiment": {
+        "compound": -0.7184,
+        "label": "強烈利空"
+      }
+    },
+    {
+      "text": "Trump pauses new tariffs on Canada for three days, saying deal close - BBC Trump pauses new tariffs on Canada for three days, saying deal close  BBC",
+      "timestamp": "2026-08-19T03:56:35.000Z",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9zWE54bWFVak1sR2pLd1dHbUx3R1FGU2F2ZGpRVGRGd1VDbmVqQkp0MGQxM2lMTF9OR2J0RDJIOG1JenlEN21wdm4wYmJrX3d6SDhzTTRmVXpodw?oc=5",
+      "keywords": [
+        "tariff",
+        "tariffs",
+        "deal"
+      ],
+      "impacts": {
+        "foundry": -1,
+        "shipping": -0.8,
+        "steel": -1,
+        "ic_design": -1,
+        "display": -1,
+        "ev_supply": -0.8
+      },
+      "sentiment": {
+        "compound": -0.25,
+        "label": "偏空"
+      }
+    },
     {
       "text": "U.S.-China Trade Fight Tests Limits of Presidential Tariff Power - Legis1 U.S.-China Trade Fight Tests Limits of Presidential Tariff Power  Legis1",
       "timestamp": "2026-08-18T16:33:08.000Z",
@@ -23,29 +68,7 @@
       }
     },
     {
-      "text": "US accuses more than 40 countries of helping China avoid Donald Trump’s tariffs - Financial Times US accuses more than 40 countries of helping China avoid Donald Trump’s tariffs  Financial Times",
-      "timestamp": "2026-08-14T18:54:54.000Z",
-      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQVXQxbDRNaVRGbVZnTGFXME92QjhuQWJBaUlxZzQyNE02N0tvM19aQjFRZUI5Ujhtb1d2czlhS0ZGcUVSYWRhT3FkLWJlZXRqcHdNOTF0c19aTVRrbjA2NjR5Qks4eFpqTXVyZFpvcXZudllvaFFEY2tqTUpSUGktcm9OUVg?oc=5",
-      "keywords": [
-        "tariff",
-        "tariffs",
-        "china"
-      ],
-      "impacts": {
-        "foundry": -1,
-        "shipping": -1,
-        "steel": -1,
-        "ic_design": -1,
-        "display": -1,
-        "ev_supply": -1
-      },
-      "sentiment": {
-        "compound": -0.7184,
-        "label": "強烈利空"
-      }
-    },
-    {
-      "text": "Trump’s Tariffs Push US Companies Back into China - Cato Institute Trump’s Tariffs Push US Companies Back into China  Cato Institute",
+      "text": "Trump’s Tariffs Push US Companies Back into China - cato.org Trump’s Tariffs Push US Companies Back into China  cato.org",
       "timestamp": "2026-07-31T07:00:00.000Z",
       "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE5lT2tNMW1lR1JIVks1LUJpMWdydXg2cS03OUlSWWRnSFhGM1BDTldULUYxa1E4U1g4V0N4OE16MWtqcmdjSlVMdUlSOWd6OThYdEkzWDRTNkxaVEtDaHIxODVBSUdfSGxKYW1hQzIyZGo1cXlxZVNWdQ?oc=5",
       "keywords": [
@@ -180,6 +203,26 @@
       }
     },
     {
+      "text": "Why Trump's new tariff blitz is very different this time around - CNBC Why Trump's new tariff blitz is very different this time around  CNBC",
+      "timestamp": "2026-07-27T07:00:00.000Z",
+      "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTFBuVjlpeGxVWU1oTmJXNE42NjE0Rlh6YmI4TTFlS3lXaDhEQzFocktkR1Q4OU9CRl9vMElCUmxZUTVzRUl1U1lqdldTTjdNY1JqSHZfVzBWOHVuZUZqT1VBbWNuZ09Xc2RjeWZEcXlGN0E1V2pxMGdHTElobVfSAYIBQVVfeXFMT1g0a3p4SlJWZFlzaGh3bGM2aGVkV253cmp5d2Q1TlFoSm1rX2lObDZtSGRobWVRSXVvVUppVFNmOS05ZDZ6anZHVm5taGsxZnJSVjc5RkoxWjZNWjM0QUpIQ3RUSE1oNzdYaHVNQjBXQ0o4M0VkYlp1ZkwwLThSbWVVZw?oc=5",
+      "keywords": [
+        "tariff"
+      ],
+      "impacts": {
+        "foundry": -0.7,
+        "shipping": -0.5,
+        "steel": -0.5,
+        "ic_design": -0.6,
+        "display": -0.5,
+        "ev_supply": -0.4
+      },
+      "sentiment": {
+        "compound": -0.7184,
+        "label": "強烈利空"
+      }
+    },
+    {
       "text": "New reactionary Trump measures to intensify trade war - World Socialist Web Site New reactionary Trump measures to intensify trade war  World Socialist Web Site",
       "timestamp": "2026-08-18T04:37:38.000Z",
       "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5XNks2SDdZQkNXWWxRZFdrYmp3TEdjX1NFLTNvZXhzYVUtTTBGOG9wQmRfODhqNGU1aUNFeklUaC1YM0ZxMkxiY0ZjNlMtc2NvT19Oa1ZzdWNlR2Uxd3dTVlFvZ0xOUkcz?oc=5",
@@ -194,28 +237,6 @@
       "sentiment": {
         "compound": 0,
         "label": "中性"
-      }
-    },
-    {
-      "text": "US says dozens of countries helped China dodge Trump's tariffs - BBC US says dozens of countries helped China dodge Trump's tariffs  BBC",
-      "timestamp": "2026-08-14T03:09:48.000Z",
-      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFB0b1g2R19EZm9kalo2TjJENVY5TzNSZFVHQmREVXlZamVBUXVnT29MMmlJdnFBRjFhbWwya2RaZlBHMGhteTkwTjlvX3ZsY25RMzFSZFFCdVUzMUMt?oc=5",
-      "keywords": [
-        "tariff",
-        "tariffs",
-        "china"
-      ],
-      "impacts": {
-        "foundry": -1,
-        "shipping": -1,
-        "steel": -1,
-        "ic_design": -1,
-        "display": -1,
-        "ev_supply": -1
-      },
-      "sentiment": {
-        "compound": -0.7184,
-        "label": "強烈利空"
       }
     },
     {
@@ -239,19 +260,21 @@
       }
     },
     {
-      "text": "Trump's new global tariff draws rebukes from trade partners over forced labor justification - CNBC Trump's new global tariff draws rebukes from trade partners over forced labor justification  CNBC",
-      "timestamp": "2026-07-23T07:00:00.000Z",
-      "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQbDJwekxfMzNvUzJab19OTGl0M0tYLTNKRmRTVFZKYUJBak5sanM2ajNnS0hlWUNsTzQ3dWNwZWdXZ1NzcG1YTWRoSjNNY0I5YmljUjByX21iMnV4VDktZU02SGh6LTJkenoyeUdWdUluVGdlSnZvWnV0U1NlZ2w1UDdNZVIwc1RpdHk0M0tKb9IBlAFBVV95cUxPbnlFVEhUYV9kQ0NRaVNJbS1lamlUdFNJek5zbHNuY1dramRvSDRDU1o2NklyMXBENWNVLXctT1ZTV2k1WWUyVmJ0OWFDYjVFZnUzVjhueHJHb241Y1BLOWwxRl9sN3otX3hweGo4ZnpuOFNiZ0lKalNBc0VSeXlFeTVfR2V0cG1teTR3VHdsaGphakRm?oc=5",
+      "text": "US says dozens of countries helped China dodge Trump's tariffs - BBC US says dozens of countries helped China dodge Trump's tariffs  BBC",
+      "timestamp": "2026-08-14T03:09:48.000Z",
+      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFB0b1g2R19EZm9kalo2TjJENVY5TzNSZFVHQmREVXlZamVBUXVnT29MMmlJdnFBRjFhbWwya2RaZlBHMGhteTkwTjlvX3ZsY25RMzFSZFFCdVUzMUMt?oc=5",
       "keywords": [
-        "tariff"
+        "tariff",
+        "tariffs",
+        "china"
       ],
       "impacts": {
-        "foundry": -0.7,
-        "shipping": -0.5,
-        "steel": -0.5,
-        "ic_design": -0.6,
-        "display": -0.5,
-        "ev_supply": -0.4
+        "foundry": -1,
+        "shipping": -1,
+        "steel": -1,
+        "ic_design": -1,
+        "display": -1,
+        "ev_supply": -1
       },
       "sentiment": {
         "compound": -0.7184,
@@ -347,27 +370,6 @@
       }
     },
     {
-      "text": "US trading partners rip new Trump tariffs: ‘Completely unjustified’ - The Hill US trading partners rip new Trump tariffs: ‘Completely unjustified’  The Hill",
-      "timestamp": "2026-07-24T07:00:00.000Z",
-      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxObzA3d0ZHaDhoTWNlLVlmZ09SaFNyVFZBVllLWFFsQ2VNdHVkbi1LOGphYk1zeVFIUVUwa3owNU9vZDNfS19pX3RlV1Q3d2d4THMyaFYtdHY0eFhaaTVCSGJsQnY2OEo3Zy1MdFZRWUFZZTJrZjZ3UVplUzhmLUNMRHM4Y2V2cUNveEJ1TWVlZktlSXhzcmJQYW04ekl0Zm8ySW5yeC1pZGLSAa4BQVVfeXFMT2Vyc29ncW9EWjZIb0pvSFY3bThsX2xHeWtQMDc4OFduT2lERWsxUlk1T3h2SE1MaHZoSU5VV0ItU250RWpfVnJ1MkxOaE1GTGlFWVczQ1d5dGVfTUJsN2tSTWhSY1JyTTZnMFNZQjhTdHp2WXRha3RONkx5YkRIbUNZZlgwX2JJTUNsVnEwWWlzSVlCM1JmbFA1b0dMVXd5SVlwR01vaFhrdjlUczdn?oc=5",
-      "keywords": [
-        "tariff",
-        "tariffs"
-      ],
-      "impacts": {
-        "foundry": -1,
-        "shipping": -1,
-        "steel": -1,
-        "ic_design": -1,
-        "display": -1,
-        "ev_supply": -0.8
-      },
-      "sentiment": {
-        "compound": -0.7184,
-        "label": "強烈利空"
-      }
-    },
-    {
       "text": "Trump’s 50% Tariffs on Canada: What to Know, and What’s Next - The New York Times Trump’s 50% Tariffs on Canada: What to Know, and What’s Next  The New York Times",
       "timestamp": "2026-08-08T07:00:00.000Z",
       "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNWFVvaGRrVTQ3X05xRjlJN3pBUE0xeXlUTTVKY0hHdVJVVzlEazZUclZoSkUzS3c2TnNmT3YxQnFsbl9uNzFvRmMwMGNrdTAyMGprVDBSaVJEZ1kwV1Ftdm85SDRmQmlOanVrOHFuRmV3NnBIbFN4SmpxaXFfNjlxQ2tDU2hwQQ?oc=5",
@@ -389,9 +391,9 @@
       }
     },
     {
-      "text": "Why Trump's new tariff blitz is very different this time around - CNBC Why Trump's new tariff blitz is very different this time around  CNBC",
-      "timestamp": "2026-07-27T07:00:00.000Z",
-      "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTFBuVjlpeGxVWU1oTmJXNE42NjE0Rlh6YmI4TTFlS3lXaDhEQzFocktkR1Q4OU9CRl9vMElCUmxZUTVzRUl1U1lqdldTTjdNY1JqSHZfVzBWOHVuZUZqT1VBbWNuZ09Xc2RjeWZEcXlGN0E1V2pxMGdHTElobVfSAYIBQVVfeXFMT1g0a3p4SlJWZFlzaGh3bGM2aGVkV253cmp5d2Q1TlFoSm1rX2lObDZtSGRobWVRSXVvVUppVFNmOS05ZDZ6anZHVm5taGsxZnJSVjc5RkoxWjZNWjM0QUpIQ3RUSE1oNzdYaHVNQjBXQ0o4M0VkYlp1ZkwwLThSbWVVZw?oc=5",
+      "text": "Trump's new global tariff draws rebukes from trade partners over forced labor justification - CNBC Trump's new global tariff draws rebukes from trade partners over forced labor justification  CNBC",
+      "timestamp": "2026-07-23T07:00:00.000Z",
+      "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQbDJwekxfMzNvUzJab19OTGl0M0tYLTNKRmRTVFZKYUJBak5sanM2ajNnS0hlWUNsTzQ3dWNwZWdXZ1NzcG1YTWRoSjNNY0I5YmljUjByX21iMnV4VDktZU02SGh6LTJkenoyeUdWdUluVGdlSnZvWnV0U1NlZ2w1UDdNZVIwc1RpdHk0M0tKb9IBlAFBVV95cUxPbnlFVEhUYV9kQ0NRaVNJbS1lamlUdFNJek5zbHNuY1dramRvSDRDU1o2NklyMXBENWNVLXctT1ZTV2k1WWUyVmJ0OWFDYjVFZnUzVjhueHJHb241Y1BLOWwxRl9sN3otX3hweGo4ZnpuOFNiZ0lKalNBc0VSeXlFeTVfR2V0cG1teTR3VHdsaGphakRm?oc=5",
       "keywords": [
         "tariff"
       ],
@@ -430,18 +432,37 @@
       }
     }
   ],
-  "deltas": [],
-  "topDeltas": [],
+  "deltas": [
+    {
+      "sector": "steel",
+      "sectorName": "鋼鐵",
+      "prev": -0.688,
+      "current": -0.748,
+      "delta": -0.06,
+      "momentum": "↓ 壓力加深",
+      "accelerating": true
+    }
+  ],
+  "topDeltas": [
+    {
+      "sector": "steel",
+      "sectorName": "鋼鐵",
+      "prev": -0.688,
+      "current": -0.748,
+      "delta": -0.06,
+      "momentum": "↓ 壓力加深",
+      "accelerating": true
+    }
+  ],
   "totalAnalyzed": 100,
   "sources": [
     "Google News"
   ],
   "sectorState": {
     "foundry": {
-      "score": -0.885,
-      "lastUpdated": "2026-08-19T04:42:44.754Z",
+      "score": -0.911,
+      "lastUpdated": "2026-08-19T08:45:30.915Z",
       "deltaHistory": [
-        0,
         0.018000000000000016,
         -0.01100000000000001,
         0,
@@ -450,14 +471,14 @@
         0.03299999999999992,
         0.03600000000000003,
         -0.0040000000000000036,
-        0
+        0,
+        -0.026000000000000023
       ]
     },
     "shipping": {
-      "score": -0.925,
-      "lastUpdated": "2026-08-19T04:42:44.754Z",
+      "score": -0.88,
+      "lastUpdated": "2026-08-19T08:45:30.915Z",
       "deltaHistory": [
-        -0.0010000000000000009,
         0.0050000000000000044,
         -0.0030000000000000027,
         0.0020000000000000018,
@@ -466,14 +487,14 @@
         0.018000000000000016,
         0.0050000000000000044,
         0.016999999999999904,
-        0.0050000000000000044
+        0.0050000000000000044,
+        0.04500000000000004
       ]
     },
     "steel": {
-      "score": -0.688,
-      "lastUpdated": "2026-08-19T04:42:44.754Z",
+      "score": -0.748,
+      "lastUpdated": "2026-08-19T08:45:30.915Z",
       "deltaHistory": [
-        0.008000000000000007,
         0.05699999999999994,
         -0.018000000000000016,
         0.007000000000000006,
@@ -482,12 +503,13 @@
         0.08299999999999996,
         0.04300000000000004,
         0.026000000000000023,
-        0.007000000000000006
+        0.007000000000000006,
+        -0.06000000000000005
       ]
     },
     "ic_design": {
       "score": -1,
-      "lastUpdated": "2026-08-19T04:42:44.754Z",
+      "lastUpdated": "2026-08-19T08:45:30.915Z",
       "deltaHistory": [
         0,
         0,
@@ -502,10 +524,9 @@
       ]
     },
     "display": {
-      "score": -0.847,
-      "lastUpdated": "2026-08-19T04:42:44.754Z",
+      "score": -0.875,
+      "lastUpdated": "2026-08-19T08:45:30.915Z",
       "deltaHistory": [
-        0.0040000000000000036,
         0.006000000000000005,
         -0.0040000000000000036,
         0.0040000000000000036,
@@ -514,14 +535,14 @@
         0.04300000000000004,
         -0.010000000000000009,
         0.013000000000000012,
-        0
+        0,
+        -0.028000000000000025
       ]
     },
     "ev_supply": {
-      "score": -0.751,
-      "lastUpdated": "2026-08-19T04:42:44.754Z",
+      "score": -0.708,
+      "lastUpdated": "2026-08-19T08:45:30.915Z",
       "deltaHistory": [
-        0.0030000000000000027,
         0.0010000000000000009,
         -0.010000000000000009,
         0,
@@ -530,14 +551,14 @@
         0.05699999999999994,
         0.01100000000000001,
         0.01100000000000001,
-        0
+        0,
+        0.04300000000000004
       ]
     },
     "ai_server": {
-      "score": 0.001,
-      "lastUpdated": "2026-08-19T04:42:44.754Z",
+      "score": 0,
+      "lastUpdated": "2026-08-19T08:45:30.915Z",
       "deltaHistory": [
-        -0.0059999999999999915,
         -0.07300000000000001,
         0.0009999999999999992,
         -0.009,
@@ -546,12 +567,13 @@
         0.008000000000000002,
         -0.0030000000000000027,
         -0.016999999999999998,
-        0
+        0,
+        -0.001
       ]
     },
     "pcb": {
       "score": 0,
-      "lastUpdated": "2026-08-19T04:42:44.754Z",
+      "lastUpdated": "2026-08-19T08:45:30.915Z",
       "deltaHistory": [
         0,
         0,
@@ -582,10 +604,9 @@
       ]
     },
     "packaging": {
-      "score": -0.042,
-      "lastUpdated": "2026-08-19T04:42:44.754Z",
+      "score": -0.036,
+      "lastUpdated": "2026-08-19T08:45:30.915Z",
       "deltaHistory": [
-        0,
         0,
         0,
         -0.001,
@@ -594,14 +615,14 @@
         -0.002,
         0.001,
         -0.033,
-        -0.006999999999999999
+        -0.006999999999999999,
+        0.006000000000000005
       ]
     },
     "semiconductor_equip": {
-      "score": 0.014,
-      "lastUpdated": "2026-08-19T04:42:44.754Z",
+      "score": 0.012,
+      "lastUpdated": "2026-08-19T08:45:30.915Z",
       "deltaHistory": [
-        0.002,
         -0.001,
         0,
         0.001,
@@ -610,14 +631,14 @@
         0,
         0,
         0.014,
-        0
+        0,
+        -0.002
       ]
     },
     "robotics": {
-      "score": 0.014,
-      "lastUpdated": "2026-08-19T04:42:44.754Z",
+      "score": 0.012,
+      "lastUpdated": "2026-08-19T08:45:30.915Z",
       "deltaHistory": [
-        0.002,
         -0.001,
         0,
         0.001,
@@ -626,7 +647,8 @@
         0,
         0,
         0.014,
-        0
+        0,
+        -0.002
       ]
     },
     "petrochemical": {
@@ -656,10 +678,9 @@
       ]
     },
     "solar": {
-      "score": -0.03,
-      "lastUpdated": "2026-08-19T04:42:44.754Z",
+      "score": -0.025,
+      "lastUpdated": "2026-08-19T08:45:30.915Z",
       "deltaHistory": [
-        0.001999999999999999,
         -0.02,
         -0.004,
         0.0010000000000000009,
@@ -668,7 +689,8 @@
         0.000999999999999994,
         -0.022,
         0.032,
-        -0.0049999999999999975
+        -0.0049999999999999975,
+        0.0049999999999999975
       ]
     },
     "wind_energy": {
