@@ -1,6 +1,70 @@
 {
-  "updatedAt": "2026-08-20T13:01:10.880Z",
+  "updatedAt": "2026-08-20T16:41:14.471Z",
   "posts": [
+    {
+      "text": "The hidden tradeoffs of using Trump’s tariffs as leverage with China - Brookings The hidden tradeoffs of using Trump’s tariffs as leverage with China  Brookings",
+      "timestamp": "2026-08-20T15:04:56.000Z",
+      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQRmVXUmJmaVdnUFl3YTRlNFFyTEM2STJDdno5TGhBUVg2eko5S1hKVzBaU1RiQlJ4eEhYNlVGMzN1VWlwYzVxWmgwbzlXaUdlb3hEOXplX2R2TkV6THRpaV9aaXpvRkJRYzZNR3BBeTdyYVZYaEpRVTFWWGNUS21zWjF0Ml9GUTVTbl81UWo2TkZ0RzIzQy1COHZiTWtQcjFHSjdNZHRR?oc=5",
+      "keywords": [
+        "tariff",
+        "tariffs",
+        "china",
+        "ev"
+      ],
+      "impacts": {
+        "foundry": -1,
+        "shipping": -1,
+        "steel": -1,
+        "ic_design": -1,
+        "display": -1,
+        "ev_supply": -0.9
+      },
+      "sentiment": {
+        "compound": -0.7184,
+        "label": "強烈利空"
+      }
+    },
+    {
+      "text": "Trump’s tariff strategy has changed. But his goal hasn’t - CNN Trump’s tariff strategy has changed. But his goal hasn’t  CNN",
+      "timestamp": "2026-08-20T09:00:29.000Z",
+      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE0xbVRIcUpjdmI1bE40dDczNDFiWHhfVHJERWNHdVlZVHF1YWtKOUlfSE5FV2F0WWNXUTZVLXRNUmpnaHVHT1pGUV80SnI1N1gzQTh5X1JubUk5bE1jVmdVeVZ1TFNtb0xPYnVETFRuTQ?oc=5",
+      "keywords": [
+        "tariff"
+      ],
+      "impacts": {
+        "foundry": -0.7,
+        "shipping": -0.5,
+        "steel": -0.5,
+        "ic_design": -0.6,
+        "display": -0.5,
+        "ev_supply": -0.4
+      },
+      "sentiment": {
+        "compound": -0.7184,
+        "label": "強烈利空"
+      }
+    },
+    {
+      "text": "Trump pauses 50% tariffs on Canada for 3 days - NBC News Trump pauses 50% tariffs on Canada for 3 days  NBC News",
+      "timestamp": "2026-08-19T02:22:00.000Z",
+      "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOZ0JmNE9BTlRBeUhlOURZanBDcTVvb1Z0VEc1elUtblkwMU9PS0JqREVqb2xNRnVGOThwUlZ4VGRtRV9PcURZSjZxZlJ6UU5zakJHa1A0OWU0WGVQMzQ4OW9raHBXcnlsV01ldGFRaEtJaWx4TFV0NF8xcEZHXy1fV1dEWmk5dw?oc=5",
+      "keywords": [
+        "tariff",
+        "tariffs"
+      ],
+      "impacts": {
+        "foundry": -1,
+        "shipping": -1,
+        "steel": -1,
+        "ic_design": -1,
+        "display": -1,
+        "ev_supply": -0.8
+      },
+      "sentiment": {
+        "compound": -0.7184,
+        "label": "強烈利空"
+      }
+    },
     {
       "text": "Trump pauses new tariffs on Canada for three days, saying deal close - BBC Trump pauses new tariffs on Canada for three days, saying deal close  BBC",
       "timestamp": "2026-08-19T15:47:31.000Z",
@@ -37,27 +101,6 @@
         "ic_design": -0.6,
         "display": -0.5,
         "ev_supply": -0.4
-      },
-      "sentiment": {
-        "compound": -0.7184,
-        "label": "強烈利空"
-      }
-    },
-    {
-      "text": "Trump pauses 50% tariffs on Canada for 3 days - NBC News Trump pauses 50% tariffs on Canada for 3 days  NBC News",
-      "timestamp": "2026-08-19T02:22:00.000Z",
-      "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOZ0JmNE9BTlRBeUhlOURZanBDcTVvb1Z0VEc1elUtblkwMU9PS0JqREVqb2xNRnVGOThwUlZ4VGRtRV9PcURZSjZxZlJ6UU5zakJHa1A0OWU0WGVQMzQ4OW9raHBXcnlsV01ldGFRaEtJaWx4TFV0NF8xcEZHXy1fV1dEWmk5dw?oc=5",
-      "keywords": [
-        "tariff",
-        "tariffs"
-      ],
-      "impacts": {
-        "foundry": -1,
-        "shipping": -1,
-        "steel": -1,
-        "ic_design": -1,
-        "display": -1,
-        "ev_supply": -0.8
       },
       "sentiment": {
         "compound": -0.7184,
@@ -107,6 +150,30 @@
       }
     },
     {
+      "text": "Trump's three-day tariff pause gives Canada a reprieve, not a solution, experts say - China Daily Global Edition Trump's three-day tariff pause gives Canada a reprieve, not a solution, experts say  China Daily Global Edition",
+      "timestamp": "2026-08-20T02:48:15.000Z",
+      "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxOaHFZMFotSUVWYW8ybW9KUEVQTXVCZFExWUg3TDgxNlB0dk1RX1VOMFJQZlowSDlKVHJyZ1o4RHhrNmhDLXVuaGdoTFppUVVmbjJNWVpfS09XRHhUcHF0ZlBtMkJwb1JaRFFqR3dVTXZGSXRqYkU5OTZJa3E0X1o3bjZn?oc=5",
+      "keywords": [
+        "ai",
+        "tariff",
+        "china",
+        "ev"
+      ],
+      "impacts": {
+        "ai_server": 0.7,
+        "foundry": -0.4,
+        "shipping": -0.9,
+        "steel": -0.5,
+        "ic_design": -1,
+        "display": -0.9,
+        "ev_supply": -0.5
+      },
+      "sentiment": {
+        "compound": -0.7184,
+        "label": "強烈利空"
+      }
+    },
+    {
       "text": "Trump’s Tariffs Push US Companies Back into China - Cato Institute Trump’s Tariffs Push US Companies Back into China  Cato Institute",
       "timestamp": "2026-07-31T07:00:00.000Z",
       "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE5lT2tNMW1lR1JIVks1LUJpMWdydXg2cS03OUlSWWRnSFhGM1BDTldULUYxa1E4U1g4V0N4OE16MWtqcmdjSlVMdUlSOWd6OThYdEkzWDRTNkxaVEtDaHIxODVBSUdfSGxKYW1hQzIyZGo1cXlxZVNWdQ?oc=5",
@@ -122,30 +189,6 @@
         "ic_design": -1,
         "display": -1,
         "ev_supply": -1
-      },
-      "sentiment": {
-        "compound": -0.7184,
-        "label": "強烈利空"
-      }
-    },
-    {
-      "text": "Trump's three-day tariff pause gives Canada a reprieve, not a solution, experts say - China Daily Trump's three-day tariff pause gives Canada a reprieve, not a solution, experts say  China Daily",
-      "timestamp": "2026-08-20T02:48:15.000Z",
-      "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTFB6bm1aY3RVTDlzRkFhcVJxUi1RaGJJVGF6cXlIQkdrMlhrZ2lDVlZCbmRBVGVpenFVZFhSdmpzUE9OU1Z6NGJTelF0UG9tTGhTb3hmUXZEUDlqdEFIUjhhS2VIazhzSC1qNDZWSlY2a25LaVlaNmJyUGFIQkVyZw?oc=5",
-      "keywords": [
-        "ai",
-        "tariff",
-        "china",
-        "ev"
-      ],
-      "impacts": {
-        "ai_server": 0.7,
-        "foundry": -0.4,
-        "shipping": -0.9,
-        "steel": -0.5,
-        "ic_design": -1,
-        "display": -0.9,
-        "ev_supply": -0.5
       },
       "sentiment": {
         "compound": -0.7184,
@@ -370,43 +413,6 @@
       }
     },
     {
-      "text": "Trump Administration Tariff Tracker - Wiley Rein Trump Administration Tariff Tracker  Wiley Rein",
-      "timestamp": "2026-08-07T07:00:00.000Z",
-      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBmOHhPR2NIU2JYTmJnT251UXkyUlNwTFNqWlJtZjFadl84QWdGazFTOExtMk1GQzV4dzVMbTFJbWlzalZUZW9ZT0V5VGZ2YXBib1pJcEpIak9fd1dIaFp1WDNtWTJ6NnNx?oc=5",
-      "keywords": [
-        "tariff"
-      ],
-      "impacts": {
-        "foundry": -0.7,
-        "shipping": -0.5,
-        "steel": -0.5,
-        "ic_design": -0.6,
-        "display": -0.5,
-        "ev_supply": -0.4
-      },
-      "sentiment": {
-        "compound": -0.7184,
-        "label": "強烈利空"
-      }
-    },
-    {
-      "text": "New reactionary Trump measures to intensify trade war - World Socialist Web Site New reactionary Trump measures to intensify trade war  World Socialist Web Site",
-      "timestamp": "2026-08-18T04:37:38.000Z",
-      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5XNks2SDdZQkNXWWxRZFdrYmp3TEdjX1NFLTNvZXhzYVUtTTBGOG9wQmRfODhqNGU1aUNFeklUaC1YM0ZxMkxiY0ZjNlMtc2NvT19Oa1ZzdWNlR2Uxd3dTVlFvZ0xOUkcz?oc=5",
-      "keywords": [
-        "trade war"
-      ],
-      "impacts": {
-        "foundry": -0.6,
-        "ic_design": -0.8,
-        "shipping": -0.6
-      },
-      "sentiment": {
-        "compound": 0,
-        "label": "中性"
-      }
-    },
-    {
       "text": "Trump’s 50% Tariffs on Canada: What to Know, and What’s Next - The New York Times Trump’s 50% Tariffs on Canada: What to Know, and What’s Next  The New York Times",
       "timestamp": "2026-08-08T07:00:00.000Z",
       "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNWFVvaGRrVTQ3X05xRjlJN3pBUE0xeXlUTTVKY0hHdVJVVzlEazZUclZoSkUzS3c2TnNmT3YxQnFsbl9uNzFvRmMwMGNrdTAyMGprVDBSaVJEZ1kwV1Ftdm85SDRmQmlOanVrOHFuRmV3NnBIbFN4SmpxaXFfNjlxQ2tDU2hwQQ?oc=5",
@@ -428,38 +434,17 @@
       }
     }
   ],
-  "deltas": [
-    {
-      "sector": "foundry",
-      "sectorName": "晶圓代工",
-      "prev": -0.806,
-      "current": -0.866,
-      "delta": -0.06,
-      "momentum": "↓ 壓力加深",
-      "accelerating": true
-    }
-  ],
-  "topDeltas": [
-    {
-      "sector": "foundry",
-      "sectorName": "晶圓代工",
-      "prev": -0.806,
-      "current": -0.866,
-      "delta": -0.06,
-      "momentum": "↓ 壓力加深",
-      "accelerating": true
-    }
-  ],
+  "deltas": [],
+  "topDeltas": [],
   "totalAnalyzed": 100,
   "sources": [
     "Google News"
   ],
   "sectorState": {
     "foundry": {
-      "score": -0.866,
-      "lastUpdated": "2026-08-20T13:01:10.880Z",
+      "score": -0.91,
+      "lastUpdated": "2026-08-20T16:41:14.471Z",
       "deltaHistory": [
-        -0.0040000000000000036,
         0,
         -0.026000000000000023,
         0.07000000000000006,
@@ -468,14 +453,14 @@
         0.03200000000000003,
         0.04700000000000004,
         0.04399999999999993,
-        -0.05999999999999994
+        -0.05999999999999994,
+        -0.04400000000000004
       ]
     },
     "shipping": {
-      "score": -0.909,
-      "lastUpdated": "2026-08-20T13:01:10.880Z",
+      "score": -0.923,
+      "lastUpdated": "2026-08-20T16:41:14.471Z",
       "deltaHistory": [
-        0.016999999999999904,
         0.0050000000000000044,
         0.04500000000000004,
         -0.006000000000000005,
@@ -484,14 +469,14 @@
         0.020999999999999908,
         0.006000000000000005,
         0.0050000000000000044,
-        0.0050000000000000044
+        0.0050000000000000044,
+        -0.014000000000000012
       ]
     },
     "steel": {
-      "score": -0.787,
-      "lastUpdated": "2026-08-20T13:01:10.880Z",
+      "score": -0.828,
+      "lastUpdated": "2026-08-20T16:41:14.471Z",
       "deltaHistory": [
-        0.026000000000000023,
         0.007000000000000006,
         -0.06000000000000005,
         0.0040000000000000036,
@@ -500,12 +485,13 @@
         0.049000000000000044,
         0.03799999999999992,
         0.02400000000000002,
-        -0.018000000000000016
+        -0.018000000000000016,
+        -0.040999999999999925
       ]
     },
     "ic_design": {
       "score": -1,
-      "lastUpdated": "2026-08-20T13:01:10.880Z",
+      "lastUpdated": "2026-08-20T16:41:14.471Z",
       "deltaHistory": [
         0,
         0,
@@ -520,10 +506,9 @@
       ]
     },
     "display": {
-      "score": -0.912,
-      "lastUpdated": "2026-08-20T13:01:10.880Z",
+      "score": -0.922,
+      "lastUpdated": "2026-08-20T16:41:14.471Z",
       "deltaHistory": [
-        0.013000000000000012,
         0,
         -0.028000000000000025,
         -0.018000000000000016,
@@ -532,14 +517,14 @@
         0.025999999999999912,
         0.0050000000000000044,
         0.0030000000000000027,
-        0.009000000000000008
+        0.009000000000000008,
+        -0.010000000000000009
       ]
     },
     "ev_supply": {
-      "score": -0.732,
-      "lastUpdated": "2026-08-20T13:01:10.880Z",
+      "score": -0.753,
+      "lastUpdated": "2026-08-20T16:41:14.471Z",
       "deltaHistory": [
-        0.01100000000000001,
         0,
         0.04300000000000004,
         0.03699999999999992,
@@ -548,14 +533,14 @@
         0.019000000000000017,
         0.028000000000000025,
         0.007000000000000006,
-        -0.0050000000000000044
+        -0.0050000000000000044,
+        -0.02100000000000002
       ]
     },
     "ai_server": {
-      "score": 0.11,
-      "lastUpdated": "2026-08-20T13:01:10.880Z",
+      "score": 0.086,
+      "lastUpdated": "2026-08-20T16:41:14.471Z",
       "deltaHistory": [
-        -0.016999999999999998,
         0,
         -0.001,
         0.07,
@@ -564,12 +549,13 @@
         -0.002999999999999989,
         0.05099999999999999,
         0.033,
-        -0.041999999999999996
+        -0.041999999999999996,
+        -0.024000000000000007
       ]
     },
     "pcb": {
       "score": 0,
-      "lastUpdated": "2026-08-20T13:01:10.880Z",
+      "lastUpdated": "2026-08-20T16:41:14.471Z",
       "deltaHistory": [
         0,
         0,
@@ -600,10 +586,9 @@
       ]
     },
     "packaging": {
-      "score": -0.014,
-      "lastUpdated": "2026-08-20T13:01:10.880Z",
+      "score": -0.01,
+      "lastUpdated": "2026-08-20T16:41:14.471Z",
       "deltaHistory": [
-        -0.033,
         -0.006999999999999999,
         0.006000000000000005,
         0.013999999999999999,
@@ -612,14 +597,14 @@
         -0.004,
         0.0010000000000000009,
         0.0019999999999999983,
-        0.002
+        0.002,
+        0.004
       ]
     },
     "semiconductor_equip": {
-      "score": 0.009,
-      "lastUpdated": "2026-08-20T13:01:10.880Z",
+      "score": 0.006,
+      "lastUpdated": "2026-08-20T16:41:14.471Z",
       "deltaHistory": [
-        0.014,
         0,
         -0.002,
         -0.003000000000000001,
@@ -628,14 +613,14 @@
         0.005,
         -0.003000000000000001,
         -0.001999999999999999,
-        0.001999999999999999
+        0.001999999999999999,
+        -0.002999999999999999
       ]
     },
     "robotics": {
-      "score": 0.009,
-      "lastUpdated": "2026-08-20T13:01:10.880Z",
+      "score": 0.006,
+      "lastUpdated": "2026-08-20T16:41:14.471Z",
       "deltaHistory": [
-        0.014,
         0,
         -0.002,
         -0.003000000000000001,
@@ -644,7 +629,8 @@
         0.005,
         -0.003000000000000001,
         -0.001999999999999999,
-        0.001999999999999999
+        0.001999999999999999,
+        -0.002999999999999999
       ]
     },
     "petrochemical": {
@@ -674,10 +660,9 @@
       ]
     },
     "solar": {
-      "score": -0.01,
-      "lastUpdated": "2026-08-20T13:01:10.880Z",
+      "score": -0.008,
+      "lastUpdated": "2026-08-20T16:41:14.471Z",
       "deltaHistory": [
-        0.032,
         -0.0049999999999999975,
         0.0049999999999999975,
         0.009000000000000001,
@@ -685,6 +670,7 @@
         0,
         -0.003000000000000001,
         0,
+        0.002,
         0.002,
         0.002
       ]
