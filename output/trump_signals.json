@@ -1,6 +1,28 @@
 {
-  "updatedAt": "2026-08-24T13:02:54.554Z",
+  "updatedAt": "2026-08-24T16:45:44.034Z",
   "posts": [
+    {
+      "text": "US Eyes China Overcapacity Tariffs of 7.5% Before Xi-Trump Talks - Bloomberg US Eyes China Overcapacity Tariffs of 7.5% Before Xi-Trump Talks  Bloomberg",
+      "timestamp": "2026-08-24T15:29:51.000Z",
+      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOY1cySzg1bmVQS2h5QnlFSllIV3VwWWNnQzRTVURxSjlhNnlRd3lvTmtOcE83dWs4UVQ3S05sUVZiR1h1dENiWU9hWnZXeVh4SjRDbzFTX1lrUVRROTNIUTdXNGJlcFVqbGs4Q3RCRUFaWHpSNkxreTZkYnNCYWIxbEg3V19WdURwamwxaU83TllhdWQ5X0lRQ1VXd1MwUzB1WVUyTmNaU2xzbzlxZVNDTndlWEk?oc=5",
+      "keywords": [
+        "tariff",
+        "tariffs",
+        "china"
+      ],
+      "impacts": {
+        "foundry": -1,
+        "shipping": -1,
+        "steel": -1,
+        "ic_design": -1,
+        "display": -1,
+        "ev_supply": -1
+      },
+      "sentiment": {
+        "compound": -0.7184,
+        "label": "強烈利空"
+      }
+    },
     {
       "text": "The hidden tradeoffs of using Trump’s tariffs as leverage with China - Brookings The hidden tradeoffs of using Trump’s tariffs as leverage with China  Brookings",
       "timestamp": "2026-08-20T16:52:19.000Z",
@@ -25,23 +47,31 @@
       }
     },
     {
-      "text": "China Media Hails Canada’s ‘Chinese-Style’ Tariff Retaliation - Bloomberg.com China Media Hails Canada’s ‘Chinese-Style’ Tariff Retaliation  Bloomberg.com",
-      "timestamp": "2026-08-24T02:57:00.000Z",
-      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPTXBBTGdHMmNJRGlxaXhkNDJoS1JCZEE2TW9adUttLVE0MzdXVlNNM2VnNUlrbTFGRkpnN2hOU19tN3pLbV9BY01mZ2FpYTZQZE81OGtkcER3S1pfY0pKZFRDcFBXWG9OVVNKbU5HQlNOLXBaWUh2TXRfTW1VVlVNT2JvT09XanN5SzNlNGcybncxcHNwbGk3VjhvSDBGRVFldy1lZ29IV3FhY1JBQ0NB?oc=5",
+      "text": "The Moose That Roared - Paul Krugman | Substack The Moose That Roared  Paul Krugman | Substack",
+      "timestamp": "2026-08-24T10:31:13.000Z",
+      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5EQXB1TlV3QjZKd1RWZF9tNExjbDVWanlGTTFnNHA0YWhlSnh4TGRxWkJpWnY0VHFlemhvOHM5cmJoUEFQY0Z0a3dSNmhnZnBkdHlBejlCcXNfdXdqRUF3cHlEcS1XWUk?oc=5",
+      "keywords": [],
+      "impacts": {},
+      "sentiment": {
+        "compound": 0,
+        "label": "中性"
+      }
+    },
+    {
+      "text": "Canada, US and tit-for-tat tariffs: How will they impact their economies? - Al Jazeera Canada, US and tit-for-tat tariffs: How will they impact their economies?  Al Jazeera",
+      "timestamp": "2026-08-24T05:57:00.000Z",
+      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOTU5yN2NLN2dTZDRWRm9fc1BUMDFrWWprUjFRNFN6MXNuQWdPbDB5UHFWYWowUFdickpzNENFR1g4S1RmZGlhcWV6eXNsdXVaWTVnd2pNZ0d0QUlVMXZlblBnYnpvNTJoNDJwMkJ3b2RHTHhzVm5fX2JvSDBmUzA2TjJGSTk4akNSbHNiNDRCTDVrWFA4TUJ4OWo2TWd4VUx5emlvYU4yNXd4RlFaaFHSAbMBQVVfeXFMUDVnenlrSURzMFZCS3RwNDc4dEx0Mlh4NkptRlhzdnhtdmdrUXlZSmxkejdhcndoNGRFX3lxWV9kWnNJdFhOejVpODQ3QVNGWGlIYURqZXhXZ3FiQm10aDZWa2xYYVdsX2NxLWRXUDZrOW5zQlFoU2FvTWN0cGNSTFFoUEJfalZ3NXFETXVSU3Fvc2JiN2F4OThXSHNkSl9ReFgxT18xbm0wQnMta0MtTEZRWFk?oc=5",
       "keywords": [
-        "ai",
         "tariff",
-        "china",
-        "chinese"
+        "tariffs"
       ],
       "impacts": {
-        "ai_server": 0.7,
-        "foundry": -0.4,
+        "foundry": -1,
         "shipping": -1,
-        "steel": -0.5,
+        "steel": -1,
         "ic_design": -1,
         "display": -1,
-        "ev_supply": -0.7
+        "ev_supply": -0.8
       },
       "sentiment": {
         "compound": -0.7184,
@@ -49,52 +79,23 @@
       }
     },
     {
-      "text": "Carney warned about economic coercion. Now Trump is testing the Canadian prime minister - PBS Carney warned about economic coercion. Now Trump is testing the Canadian prime minister  PBS",
-      "timestamp": "2026-08-23T15:54:12.000Z",
-      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPdXNYNlJxRk42U3hWeUVzVk5EZHpoZnUzWWEyWkxtODZGMkFnNFpyT1o3aHNGV0xUSVVCN2lGVFF6QjFIUzNsNnp4OTVBZ3JVRElHN0F1M1QyVFlPSUQ4Y1VDbUtBSDdNY1pZQkdkaWcyWHdTYjFhWDY2dzNfeTRFclJPQUxaNVpVeFNnUWFiVTJSNVh4SC1fTkQybG9hMEkySlpDRXJHTWxCX2hLMTd4a0N2eWNZampaT2N1VXln0gHDAUFVX3lxTE12WHZCb2dRSmFwNHloazlNX09kMGFVX21feUZhRnZGZTF5cFZXb2o2YnUwandKOXRreXJnQVU1RkNSX29pWjlJTHV1bEp1QU9yVXN1aHhyUDh2WnRTS01wdm04LTlqVnRHWVFudTY3SDJmbmRITTJ4eHpKX2xlSVJWR0tGdkNNY3dTRW1vb2FCaFlJMkMxdG9rZ2xMVUZyM3NOWnhEa1RIOTdfc2hBdXFLX1JsQVFfWFVZUklsRHpCRV9icw?oc=5",
-      "keywords": [],
-      "impacts": {},
-      "sentiment": {
-        "compound": 0,
-        "label": "中性"
-      }
-    },
-    {
-      "text": "A powerful country on the other side of the world is quietly shaping Trump's latest trade fight - Fox Business A powerful country on the other side of the world is quietly shaping Trump's latest trade fight  Fox Business",
-      "timestamp": "2026-08-23T18:41:00.000Z",
-      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQdXpWZllXejZ6T3FtZF9BM3BrSWtzLVBTdlRhVjFnZnllaGVLdGNQV3B1WTZpTXI3bzNFc1F5Zk1nX19yU19JcGJKaXhKbExnNzVwR09ZQjZ3OVVoVDdMZFhEYjgzSi05bW8yczVLWVk4azZ0LTZzejFSYTFfV1NRNlpacmotRTVKSDhqVU9jdEtmTFdnSHl6OXMtTFN5MVdsREJKNE05ZkVsa0pna3BjNnhB0gG3AUFVX3lxTE92bkFRbEV2cmV3SVk5VWY0S29FaERrb0ZyMHh3ZktUYlZ4TWNGOE9heGhwV2d4UlpYMXlTdVNFeGVOdTBzN3U0TktHcmNJZERvdjZnV1hyRUlBNU9CbjRTY2ZkRVNiOGRNZGJTdzM3V3dZenE1NTBNRXEtMnhVTGhSZjhodFM2SGw2ZElfemtmRjVsVFFvbWxTTWpOeFNadVVQSHRkZW14YVpTb08yMUNDWDVBRWtEUQ?oc=5",
-      "keywords": [],
-      "impacts": {},
-      "sentiment": {
-        "compound": 0,
-        "label": "中性"
-      }
-    },
-    {
-      "text": "U.S.-Canada breakdown shows limits of Trump’s aggressive trade strategy - The Washington Post U.S.-Canada breakdown shows limits of Trump’s aggressive trade strategy  The Washington Post",
-      "timestamp": "2026-08-23T17:00:01.000Z",
-      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQVHA3eFdqa3YwMDlIZ3o1U2Ntc3VBMk94YUl4aTBlSWpLYk9lRkRMU0czdi1hbVBYRXVSWVNxYlFsVnJldVVIS2ViZzZhZG5HZ0I5Sk1EbF9EOWI3MEtEdTc4cjc4b3NTUlNEZlVkSzRuOU9DanRhWjV2VUstaW54NzFfdXR3VXdlcm9OOF9mR0I2XzVXd0F5VVlOeXprRElrVXMxRTBLNnZTbWkwaDQ3U0cwLUFXWkt4?oc=5",
-      "keywords": [],
-      "impacts": {},
-      "sentiment": {
-        "compound": 0,
-        "label": "中性"
-      }
-    },
-    {
-      "text": "The lesson from Canada’s collapsed trade talks with the US: negotiation may be futile - The Guardian The lesson from Canada’s collapsed trade talks with the US: negotiation may be futile  The Guardian",
-      "timestamp": "2026-08-23T17:31:00.000Z",
-      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNb0tEMEUwT3dMMkdPLVFVajVfOUtnMmJFMkMzU016LXQtY3MyU0pqRU4xZFdoOHRoN3hoTGhKeVVqMVlybTRoZEZTM2NkbmZVTGVLYXlMZHdRNXloVks5NlJ6ZmxzNFRsQUp3RDhva1VnUTlCd3lqN0JlTnRyOVZZSmVrdDl0Q0V3dzVldTRWaHU5bi15bnMxX3NCOEUwTzBqUEJRR0ZNUFBob3NGdS1z?oc=5",
+      "text": "Canada’s tariff fight with Trump just got a big backer - AFR Canada’s tariff fight with Trump just got a big backer  AFR",
+      "timestamp": "2026-08-24T05:29:00.000Z",
+      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOQm5ZQk85T2VzVGVzeTNEaERkdkdQVVV4VmhsVkhvbzJpREJ3SWl0dUNZUXhDWU9wTF8tMXJaS1JURDZKb1Y4eGdHYUowbzRrbmxURHBQR2NxSzZBZ3p0NTNLaHF1NU9SbmRGWDgwa3ZmRV82NU1yS0o5YU1xSEJ2SnhZRWptNUdKNG05Njdyc0hZbFlSMTE5ZGVwNkpqS1EtZlY0?oc=5",
       "keywords": [
-        "negotiation"
+        "tariff"
       ],
       "impacts": {
-        "shipping": 0.2,
-        "ic_design": 0.2
+        "foundry": -0.7,
+        "shipping": -0.5,
+        "steel": -0.5,
+        "ic_design": -0.6,
+        "display": -0.5,
+        "ev_supply": -0.4
       },
       "sentiment": {
-        "compound": 0,
-        "label": "中性"
+        "compound": -0.7184,
+        "label": "強烈利空"
       }
     },
     {
@@ -119,6 +120,17 @@
       }
     },
     {
+      "text": "A powerful country on the other side of the world is quietly shaping Trump's latest trade fight - Fox Business A powerful country on the other side of the world is quietly shaping Trump's latest trade fight  Fox Business",
+      "timestamp": "2026-08-23T18:41:00.000Z",
+      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQdXpWZllXejZ6T3FtZF9BM3BrSWtzLVBTdlRhVjFnZnllaGVLdGNQV3B1WTZpTXI3bzNFc1F5Zk1nX19yU19JcGJKaXhKbExnNzVwR09ZQjZ3OVVoVDdMZFhEYjgzSi05bW8yczVLWVk4azZ0LTZzejFSYTFfV1NRNlpacmotRTVKSDhqVU9jdEtmTFdnSHl6OXMtTFN5MVdsREJKNE05ZkVsa0pna3BjNnhB0gG3AUFVX3lxTE92bkFRbEV2cmV3SVk5VWY0S29FaERrb0ZyMHh3ZktUYlZ4TWNGOE9heGhwV2d4UlpYMXlTdVNFeGVOdTBzN3U0TktHcmNJZERvdjZnV1hyRUlBNU9CbjRTY2ZkRVNiOGRNZGJTdzM3V3dZenE1NTBNRXEtMnhVTGhSZjhodFM2SGw2ZElfemtmRjVsVFFvbWxTTWpOeFNadVVQSHRkZW14YVpTb08yMUNDWDVBRWtEUQ?oc=5",
+      "keywords": [],
+      "impacts": {},
+      "sentiment": {
+        "compound": 0,
+        "label": "中性"
+      }
+    },
+    {
       "text": "Canadian Prime Minister Mark Carney calls new U.S. tariffs ‘a miscalculation’ after trade talks collapse - NBC News Canadian Prime Minister Mark Carney calls new U.S. tariffs ‘a miscalculation’ after trade talks collapse  NBC News",
       "timestamp": "2026-08-22T18:48:00.000Z",
       "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPa2RBa0xGOG9rdlNQbG53UEhIMXVBb2lhVllhVmRqUzU2bFZpX1RtV3ZMMXZkbXpFMEFpMV9oT0M3aEpMbzdzcWw1SFlaVWNqWGJZYzJ2bml0djNLSG5jQk41WjNVV1FBR3RUdm1PQ1AtanRLcmxYcXctdVBqVU92Q0lydWdrdw?oc=5",
@@ -140,24 +152,30 @@
       }
     },
     {
-      "text": "Canada, US and tit-for-tat tariffs: How will they impact their economies? - Al Jazeera Canada, US and tit-for-tat tariffs: How will they impact their economies?  Al Jazeera",
-      "timestamp": "2026-08-23T16:05:33.000Z",
-      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOTU5yN2NLN2dTZDRWRm9fc1BUMDFrWWprUjFRNFN6MXNuQWdPbDB5UHFWYWowUFdickpzNENFR1g4S1RmZGlhcWV6eXNsdXVaWTVnd2pNZ0d0QUlVMXZlblBnYnpvNTJoNDJwMkJ3b2RHTHhzVm5fX2JvSDBmUzA2TjJGSTk4akNSbHNiNDRCTDVrWFA4TUJ4OWo2TWd4VUx5emlvYU4yNXd4RlFaaFHSAbMBQVVfeXFMUDVnenlrSURzMFZCS3RwNDc4dEx0Mlh4NkptRlhzdnhtdmdrUXlZSmxkejdhcndoNGRFX3lxWV9kWnNJdFhOejVpODQ3QVNGWGlIYURqZXhXZ3FiQm10aDZWa2xYYVdsX2NxLWRXUDZrOW5zQlFoU2FvTWN0cGNSTFFoUEJfalZ3NXFETXVSU3Fvc2JiN2F4OThXSHNkSl9ReFgxT18xbm0wQnMta0MtTEZRWFk?oc=5",
+      "text": "The lesson from Canada’s collapsed trade talks with the US: negotiation may be futile - The Guardian The lesson from Canada’s collapsed trade talks with the US: negotiation may be futile  The Guardian",
+      "timestamp": "2026-08-23T17:24:00.000Z",
+      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNb0tEMEUwT3dMMkdPLVFVajVfOUtnMmJFMkMzU016LXQtY3MyU0pqRU4xZFdoOHRoN3hoTGhKeVVqMVlybTRoZEZTM2NkbmZVTGVLYXlMZHdRNXloVks5NlJ6ZmxzNFRsQUp3RDhva1VnUTlCd3lqN0JlTnRyOVZZSmVrdDl0Q0V3dzVldTRWaHU5bi15bnMxX3NCOEUwTzBqUEJRR0ZNUFBob3NGdS1z?oc=5",
       "keywords": [
-        "tariff",
-        "tariffs"
+        "negotiation"
       ],
       "impacts": {
-        "foundry": -1,
-        "shipping": -1,
-        "steel": -1,
-        "ic_design": -1,
-        "display": -1,
-        "ev_supply": -0.8
+        "shipping": 0.2,
+        "ic_design": 0.2
       },
       "sentiment": {
-        "compound": -0.7184,
-        "label": "強烈利空"
+        "compound": 0,
+        "label": "中性"
+      }
+    },
+    {
+      "text": "U.S.-Canada breakdown shows limits of Trump’s aggressive trade strategy - The Washington Post U.S.-Canada breakdown shows limits of Trump’s aggressive trade strategy  The Washington Post",
+      "timestamp": "2026-08-23T17:00:01.000Z",
+      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQVHA3eFdqa3YwMDlIZ3o1U2Ntc3VBMk94YUl4aTBlSWpLYk9lRkRMU0czdi1hbVBYRXVSWVNxYlFsVnJldVVIS2ViZzZhZG5HZ0I5Sk1EbF9EOWI3MEtEdTc4cjc4b3NTUlNEZlVkSzRuOU9DanRhWjV2VUstaW54NzFfdXR3VXdlcm9OOF9mR0I2XzVXd0F5VVlOeXprRElrVXMxRTBLNnZTbWkwaDQ3U0cwLUFXWkt4?oc=5",
+      "keywords": [],
+      "impacts": {},
+      "sentiment": {
+        "compound": 0,
+        "label": "中性"
       }
     },
     {
@@ -192,6 +210,30 @@
         "ic_design": -1,
         "display": -1,
         "ev_supply": -0.8
+      },
+      "sentiment": {
+        "compound": -0.7184,
+        "label": "強烈利空"
+      }
+    },
+    {
+      "text": "China Media Hails Canada’s ‘Chinese-Style’ Tariff Retaliation - Bloomberg China Media Hails Canada’s ‘Chinese-Style’ Tariff Retaliation  Bloomberg",
+      "timestamp": "2026-08-24T02:57:00.000Z",
+      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPTXBBTGdHMmNJRGlxaXhkNDJoS1JCZEE2TW9adUttLVE0MzdXVlNNM2VnNUlrbTFGRkpnN2hOU19tN3pLbV9BY01mZ2FpYTZQZE81OGtkcER3S1pfY0pKZFRDcFBXWG9OVVNKbU5HQlNOLXBaWUh2TXRfTW1VVlVNT2JvT09XanN5SzNlNGcybncxcHNwbGk3VjhvSDBGRVFldy1lZ29IV3FhY1JBQ0NB?oc=5",
+      "keywords": [
+        "ai",
+        "tariff",
+        "china",
+        "chinese"
+      ],
+      "impacts": {
+        "ai_server": 0.7,
+        "foundry": -0.4,
+        "shipping": -1,
+        "steel": -0.5,
+        "ic_design": -1,
+        "display": -1,
+        "ev_supply": -0.7
       },
       "sentiment": {
         "compound": -0.7184,
@@ -240,29 +282,6 @@
       }
     },
     {
-      "text": "Canada, U.S. fail to reach trade pact to avert Trump tariffs - Canadian Affairs Canada, U.S. fail to reach trade pact to avert Trump tariffs  Canadian Affairs",
-      "timestamp": "2026-08-22T11:17:50.000Z",
-      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNSFJmUlZDRXN1ajNHSWtfOS1lekp3ck5pY0NITlljVEZIMmF0dHluMFVyQ0Exc2Q3dWEyTGw5NktXekIwWTNBQ0NXWTR1SFhwQzloUHlaLUlWc25Fc1pTN1dEdi1IeURvSVJsVHE0OFUzUHhNR0NpNU9qWlZkeXI2SC1XZ2tWYlAyUHFhX0JtWEwxVkV4TVNwVXNfU3VhSFRKR0J3Tmtn?oc=5",
-      "keywords": [
-        "ai",
-        "tariff",
-        "tariffs"
-      ],
-      "impacts": {
-        "ai_server": 0.7,
-        "foundry": -1,
-        "shipping": -1,
-        "steel": -1,
-        "ic_design": -1,
-        "display": -1,
-        "ev_supply": -0.8
-      },
-      "sentiment": {
-        "compound": -0.7184,
-        "label": "強烈利空"
-      }
-    },
-    {
       "text": "US imposes 50 percent tariffs on $20bn in Canadian goods after talks fail - Al Jazeera US imposes 50 percent tariffs on $20bn in Canadian goods after talks fail  Al Jazeera",
       "timestamp": "2026-08-22T22:14:51.000Z",
       "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOMnpTbXF4ZXdNVnJrZklRcnk0dlRXYVFreVVNZWF3bGJMaGxVWE1jWkVDNDZwSHZLeHN1ZjA3czRxeXVyakpBZGtkdk41RWdKZGRLOU9lTXF2TjB5bHh2T3NWbGI4VGp5N3JGUVRoTGxyUmZBZVZJM000aVYwVU1zNzBycVJ1S2pUN2pBSjU3eUk5dkRqUVV6QnRHNXhyWjlkUGxrbUx1dUhlaVRxRlVtddIBtgFBVV95cUxONlVEdExyOTJESFJycHhXaXpSWkdkR1hZcWdHZ0IxSzR5aUVYeUhCNkhCc1hSV2xNM2kxdVJqX3gxSXF2OGdmMng1WU11Z0VNR1RiUzNvbThkNXY3aUdIcS1qa0NnczVrX2xZd2I4WlVteldKMjRLS2FQMFN0QmpfcG95NGc1ZkNOcXNiUmZMVENEWlV1LWZwNnNTSWVQNmNIbnQ3X21jVzAzOUtfemlIRVNpT2phQQ?oc=5",
@@ -279,50 +298,6 @@
         "ic_design": -1,
         "display": -1,
         "ev_supply": -0.8
-      },
-      "sentiment": {
-        "compound": -0.7184,
-        "label": "強烈利空"
-      }
-    },
-    {
-      "text": "Trump’s tariffs are sending some companies back to China - The Japan Times Trump’s tariffs are sending some companies back to China  The Japan Times",
-      "timestamp": "2026-07-30T07:00:00.000Z",
-      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNWWp0MG9xVjY5R3B0a0liRVBadWNaeDVsNEJOSnpoU2s3UnNsNmF2NEo1M3RtLWRoclQ2Q3JJYlVBTlJkWnVINWpROFRHTnFxRk84RDJoSjNZS3lLNnZyNndJN1RLMzZYNUZWQ1Ntcl9BQ2txd09OcUJSOG1zVW5ic0hnaTBIeFloaE9yakJuR2xKOW8?oc=5",
-      "keywords": [
-        "tariff",
-        "tariffs",
-        "china"
-      ],
-      "impacts": {
-        "foundry": -1,
-        "shipping": -1,
-        "steel": -1,
-        "ic_design": -1,
-        "display": -1,
-        "ev_supply": -1
-      },
-      "sentiment": {
-        "compound": -0.7184,
-        "label": "強烈利空"
-      }
-    },
-    {
-      "text": "Trump Tariffs ‘Tortuous’ to Soybean Trade, China Diplomat Says - Bloomberg.com Trump Tariffs ‘Tortuous’ to Soybean Trade, China Diplomat Says  Bloomberg.com",
-      "timestamp": "2026-08-07T07:00:00.000Z",
-      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQQWZaU1JQN0l1ZUdDc0d3ZE00TlU1ZENGdko3TzhFQ09QemVoVXF2VmZNdGIwcjFVRnE3S295VXB0TEhiWEN2a3dVOXc5MFZTUHdrYllqTVFjMHFhYTFreHJOS0p0bTNsaC1LQ2NVY1hxX0szOG1DazdOdHdHTUlRZkFmQTZHeGl3MnpaY3RPR1JHbHVyeC13NWdUYzk3TzNPYVlPU09LU2ppNnprS2RJ?oc=5",
-      "keywords": [
-        "tariff",
-        "tariffs",
-        "china"
-      ],
-      "impacts": {
-        "foundry": -1,
-        "shipping": -1,
-        "steel": -1,
-        "ic_design": -1,
-        "display": -1,
-        "ev_supply": -1
       },
       "sentiment": {
         "compound": -0.7184,
@@ -367,6 +342,28 @@
       }
     },
     {
+      "text": "Trump Tariffs ‘Tortuous’ to Soybean Trade, China Diplomat Says - Bloomberg Trump Tariffs ‘Tortuous’ to Soybean Trade, China Diplomat Says  Bloomberg",
+      "timestamp": "2026-08-07T07:00:00.000Z",
+      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQQWZaU1JQN0l1ZUdDc0d3ZE00TlU1ZENGdko3TzhFQ09QemVoVXF2VmZNdGIwcjFVRnE3S295VXB0TEhiWEN2a3dVOXc5MFZTUHdrYllqTVFjMHFhYTFreHJOS0p0bTNsaC1LQ2NVY1hxX0szOG1DazdOdHdHTUlRZkFmQTZHeGl3MnpaY3RPR1JHbHVyeC13NWdUYzk3TzNPYVlPU09LU2ppNnprS2RJ?oc=5",
+      "keywords": [
+        "tariff",
+        "tariffs",
+        "china"
+      ],
+      "impacts": {
+        "foundry": -1,
+        "shipping": -1,
+        "steel": -1,
+        "ic_design": -1,
+        "display": -1,
+        "ev_supply": -1
+      },
+      "sentiment": {
+        "compound": -0.7184,
+        "label": "強烈利空"
+      }
+    },
+    {
       "text": "Trump wants to ‘manage’ China trade. Businesses see a tariff opening. - Politico Trump wants to ‘manage’ China trade. Businesses see a tariff opening.  Politico",
       "timestamp": "2026-05-30T07:00:00.000Z",
       "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPbGZ0RElvZWg0Y0xtbTNTNXVkS2lrYU5fTG9RY054MVYwOVBwMzVua1dmMjJHQjNwRmVvRUp5WDRiZkhXb0ZfOHV6dzBjSDNXclN3RGNWUjRvRy1PXzhNcndxcHZCNW1TX3UxTHVIRHJHOWJhSzNEV0RvcW91N0xmRVN6VGZOa3l2UkhMNHhKbUI?oc=5",
@@ -388,18 +385,73 @@
       }
     }
   ],
-  "deltas": [],
-  "topDeltas": [],
+  "deltas": [
+    {
+      "sector": "ai_server",
+      "sectorName": "AI 伺服器",
+      "prev": 0.193,
+      "current": 0.042,
+      "delta": -0.151,
+      "momentum": "↓ 訊號弱化",
+      "accelerating": true
+    },
+    {
+      "sector": "foundry",
+      "sectorName": "晶圓代工",
+      "prev": -0.902,
+      "current": -1,
+      "delta": -0.098,
+      "momentum": "↓ 壓力加深",
+      "accelerating": true
+    },
+    {
+      "sector": "steel",
+      "sectorName": "鋼鐵",
+      "prev": -0.833,
+      "current": -0.904,
+      "delta": -0.071,
+      "momentum": "↓ 壓力加深",
+      "accelerating": true
+    }
+  ],
+  "topDeltas": [
+    {
+      "sector": "ai_server",
+      "sectorName": "AI 伺服器",
+      "prev": 0.193,
+      "current": 0.042,
+      "delta": -0.151,
+      "momentum": "↓ 訊號弱化",
+      "accelerating": true
+    },
+    {
+      "sector": "foundry",
+      "sectorName": "晶圓代工",
+      "prev": -0.902,
+      "current": -1,
+      "delta": -0.098,
+      "momentum": "↓ 壓力加深",
+      "accelerating": true
+    },
+    {
+      "sector": "steel",
+      "sectorName": "鋼鐵",
+      "prev": -0.833,
+      "current": -0.904,
+      "delta": -0.071,
+      "momentum": "↓ 壓力加深",
+      "accelerating": true
+    }
+  ],
   "totalAnalyzed": 100,
   "sources": [
     "Google News"
   ],
   "sectorState": {
     "foundry": {
-      "score": -0.902,
-      "lastUpdated": "2026-08-24T13:02:54.554Z",
+      "score": -1,
+      "lastUpdated": "2026-08-24T16:45:44.034Z",
       "deltaHistory": [
-        0.0010000000000000009,
         0.008000000000000007,
         0.03500000000000003,
         -0.14,
@@ -408,14 +460,14 @@
         -0.0050000000000000044,
         0,
         0.07699999999999996,
-        0.02100000000000002
+        0.02100000000000002,
+        -0.09799999999999998
       ]
     },
     "shipping": {
-      "score": -0.956,
-      "lastUpdated": "2026-08-24T13:02:54.554Z",
+      "score": -0.933,
+      "lastUpdated": "2026-08-24T16:45:44.034Z",
       "deltaHistory": [
-        -0.0010000000000000009,
         -0.0010000000000000009,
         -0.0010000000000000009,
         0.018000000000000016,
@@ -424,14 +476,14 @@
         -0.006000000000000005,
         0.02200000000000002,
         -0.049000000000000044,
-        -0.02399999999999991
+        -0.02399999999999991,
+        0.02299999999999991
       ]
     },
     "steel": {
-      "score": -0.833,
-      "lastUpdated": "2026-08-24T13:02:54.554Z",
+      "score": -0.904,
+      "lastUpdated": "2026-08-24T16:45:44.034Z",
       "deltaHistory": [
-        0.0010000000000000009,
         -0.007000000000000006,
         0.03400000000000003,
         -0.125,
@@ -440,14 +492,14 @@
         -0.017000000000000015,
         -0.018000000000000016,
         0.0010000000000000009,
-        -0.02399999999999991
+        -0.02399999999999991,
+        -0.07100000000000006
       ]
     },
     "ic_design": {
-      "score": -1,
-      "lastUpdated": "2026-08-24T13:02:54.554Z",
+      "score": -0.983,
+      "lastUpdated": "2026-08-24T16:45:44.034Z",
       "deltaHistory": [
-        0,
         0,
         0,
         0,
@@ -456,14 +508,14 @@
         0,
         0.02200000000000002,
         -0.02200000000000002,
-        0
+        0,
+        0.017000000000000015
       ]
     },
     "display": {
-      "score": -0.954,
-      "lastUpdated": "2026-08-24T13:02:54.554Z",
+      "score": -0.93,
+      "lastUpdated": "2026-08-24T16:45:44.034Z",
       "deltaHistory": [
-        0.0010000000000000009,
         -0.016000000000000014,
         0.02100000000000002,
         -0.07599999999999996,
@@ -472,14 +524,14 @@
         -0.018000000000000016,
         -0.015999999999999903,
         -0.10300000000000009,
-        -0.030999999999999917
+        -0.030999999999999917,
+        0.02399999999999991
       ]
     },
     "ev_supply": {
-      "score": -0.778,
-      "lastUpdated": "2026-08-24T13:02:54.554Z",
+      "score": -0.81,
+      "lastUpdated": "2026-08-24T16:45:44.034Z",
       "deltaHistory": [
-        -0.0030000000000000027,
         -0.0050000000000000044,
         0.016000000000000014,
         -0.07299999999999995,
@@ -488,14 +540,14 @@
         -0.010000000000000009,
         0,
         -0.06799999999999995,
-        -0.029000000000000026
+        -0.029000000000000026,
+        -0.03200000000000003
       ]
     },
     "ai_server": {
-      "score": 0.193,
-      "lastUpdated": "2026-08-24T13:02:54.554Z",
+      "score": 0.042,
+      "lastUpdated": "2026-08-24T16:45:44.034Z",
       "deltaHistory": [
-        -0.006000000000000005,
         0.02099999999999999,
         0.0010000000000000009,
         -0.023999999999999994,
@@ -504,12 +556,13 @@
         -0.041999999999999996,
         -0.0010000000000000009,
         0.152,
-        0.009000000000000008
+        0.009000000000000008,
+        -0.151
       ]
     },
     "pcb": {
       "score": 0,
-      "lastUpdated": "2026-08-24T13:02:54.554Z",
+      "lastUpdated": "2026-08-24T16:45:44.034Z",
       "deltaHistory": [
         0,
         0,
@@ -540,10 +593,9 @@
       ]
     },
     "packaging": {
-      "score": -0.001,
-      "lastUpdated": "2026-08-24T13:02:54.554Z",
+      "score": 0,
+      "lastUpdated": "2026-08-24T16:45:44.034Z",
       "deltaHistory": [
-        0,
         0.001,
         0,
         -0.001,
@@ -552,14 +604,14 @@
         0.001,
         0,
         -0.001,
-        0
+        0,
+        0.001
       ]
     },
     "semiconductor_equip": {
       "score": 0,
-      "lastUpdated": "2026-08-24T13:02:54.554Z",
+      "lastUpdated": "2026-08-24T16:45:44.034Z",
       "deltaHistory": [
-        0,
         0,
         0,
         0,
@@ -568,14 +620,14 @@
         0,
         0.011,
         -0.011,
+        0,
         0
       ]
     },
     "robotics": {
       "score": 0,
-      "lastUpdated": "2026-08-24T13:02:54.554Z",
+      "lastUpdated": "2026-08-24T16:45:44.034Z",
       "deltaHistory": [
-        0,
         0,
         0,
         0,
@@ -584,6 +636,7 @@
         0,
         0.011,
         -0.011,
+        0,
         0
       ]
     },
