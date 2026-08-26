@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-26T08:52:00.049Z",
+  "updatedAt": "2026-08-26T13:04:34.824Z",
   "posts": [
     {
       "text": "Canada announces retaliatory tariffs on U.S. products as trade war deepens - The Washington Post Canada announces retaliatory tariffs on U.S. products as trade war deepens  The Washington Post",
@@ -14,30 +14,6 @@
         "foundry": -1,
         "ic_design": -1,
         "shipping": -1,
-        "steel": -1,
-        "display": -1,
-        "ev_supply": -0.8
-      },
-      "sentiment": {
-        "compound": -0.7184,
-        "label": "強烈利空"
-      }
-    },
-    {
-      "text": "Canada Fires Back in Trade War Against Trump With Up to 50% Tariffs - The New York Times Canada Fires Back in Trade War Against Trump With Up to 50% Tariffs  The New York Times",
-      "timestamp": "2026-08-25T15:00:27.000Z",
-      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNakZzdURoeWVCRFVRUVotX3NidXdfX1h3YUU1WVF2RUlIRy02dzRsQ1V5ZTRTUW5tekR5Q1Y5LXVKNWRZMmVoLWxYTzNEUGRjeFlZY2s2NFR4aVVrSElJLW5Wd2QzUGRoOTd6RE5tMlZfWi1Ba2Zvbkw0ZmU3elZfLURSbl82Y29sUU9zSUluY0pVM1I4VWRN?oc=5",
-      "keywords": [
-        "trade war",
-        "ai",
-        "tariff",
-        "tariffs"
-      ],
-      "impacts": {
-        "foundry": -1,
-        "ic_design": -1,
-        "shipping": -1,
-        "ai_server": 0.7,
         "steel": -1,
         "display": -1,
         "ev_supply": -0.8
@@ -92,23 +68,27 @@
       }
     },
     {
-      "text": "As U.S.-Canada trade war escalates, Ontario Premier Doug Ford says Trump is \"treating us like we're Communist China\" - CBS News As U.S.-Canada trade war escalates, Ontario Premier Doug Ford says Trump is \"treating us like we're Communist China\"  CBS News",
-      "timestamp": "2026-08-25T23:10:08.000Z",
-      "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQalVZV0VlcGdEMTU3Y2NmRXBSVTU0VklJR0N5SjhzTThqcFU3WE1wcHVCZzFpbVhXbDhacldTUklWV2dFblFsQVNINVRGTm9aYUppbEt0Q1RQUjhrTWZoTDVUejhubFF2VF9Nd25ka0MtT1JaM2I5ekhFQjFyMjkyTW13YWpBNk0?oc=5",
+      "text": "Canada Fires Back in Trade War Against Trump With Up to 50% Tariffs - The New York Times Canada Fires Back in Trade War Against Trump With Up to 50% Tariffs  The New York Times",
+      "timestamp": "2026-08-25T15:00:27.000Z",
+      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNakZzdURoeWVCRFVRUVotX3NidXdfX1h3YUU1WVF2RUlIRy02dzRsQ1V5ZTRTUW5tekR5Q1Y5LXVKNWRZMmVoLWxYTzNEUGRjeFlZY2s2NFR4aVVrSElJLW5Wd2QzUGRoOTd6RE5tMlZfWi1Ba2Zvbkw0ZmU3elZfLURSbl82Y29sUU9zSUluY0pVM1I4VWRN?oc=5",
       "keywords": [
         "trade war",
-        "china"
+        "ai",
+        "tariff",
+        "tariffs"
       ],
       "impacts": {
-        "foundry": -0.6,
+        "foundry": -1,
         "ic_design": -1,
         "shipping": -1,
-        "display": -0.4,
-        "ev_supply": -0.3
+        "ai_server": 0.7,
+        "steel": -1,
+        "display": -1,
+        "ev_supply": -0.8
       },
       "sentiment": {
-        "compound": 0,
-        "label": "中性"
+        "compound": -0.7184,
+        "label": "強烈利空"
       }
     },
     {
@@ -134,7 +114,44 @@
       }
     },
     {
-      "text": "US Eyes China Overcapacity Tariffs of 7.5% Before Xi-Trump Talks - Bloomberg.com US Eyes China Overcapacity Tariffs of 7.5% Before Xi-Trump Talks  Bloomberg.com",
+      "text": "As U.S.-Canada trade war escalates, Ontario Premier Doug Ford says Trump is \"treating us like we're Communist China\" - CBS News As U.S.-Canada trade war escalates, Ontario Premier Doug Ford says Trump is \"treating us like we're Communist China\"  CBS News",
+      "timestamp": "2026-08-25T23:10:08.000Z",
+      "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQalVZV0VlcGdEMTU3Y2NmRXBSVTU0VklJR0N5SjhzTThqcFU3WE1wcHVCZzFpbVhXbDhacldTUklWV2dFblFsQVNINVRGTm9aYUppbEt0Q1RQUjhrTWZoTDVUejhubFF2VF9Nd25ka0MtT1JaM2I5ekhFQjFyMjkyTW13YWpBNk0?oc=5",
+      "keywords": [
+        "trade war",
+        "china"
+      ],
+      "impacts": {
+        "foundry": -0.6,
+        "ic_design": -1,
+        "shipping": -1,
+        "display": -0.4,
+        "ev_supply": -0.3
+      },
+      "sentiment": {
+        "compound": 0,
+        "label": "中性"
+      }
+    },
+    {
+      "text": "What smart people are saying about Trump’s escalating trade war with Canada - Business Insider What smart people are saying about Trump’s escalating trade war with Canada  Business Insider",
+      "timestamp": "2026-08-26T04:47:00.000Z",
+      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQVWp4bnRIMm85d1QxRks1cFlwaG1US3dWeTlwd2ZQSmlZanlwMTBZSmZIN2kyckcyRUF3d3UxRHhaSWE4bnozVkdfS182NWhMWEdLZTBmS0pfOV9VYjA3eTZxdVBKRE1vUmZabm1XNk1PRzNSQmN6bVo2ZHphNklKZXRmZDAyaF9SYXpLS1BzQ29rQXRxZE80VkZB?oc=5",
+      "keywords": [
+        "trade war"
+      ],
+      "impacts": {
+        "foundry": -0.6,
+        "ic_design": -0.8,
+        "shipping": -0.6
+      },
+      "sentiment": {
+        "compound": 0,
+        "label": "中性"
+      }
+    },
+    {
+      "text": "US Eyes China Overcapacity Tariffs of 7.5% Before Xi-Trump Talks - Bloomberg US Eyes China Overcapacity Tariffs of 7.5% Before Xi-Trump Talks  Bloomberg",
       "timestamp": "2026-08-24T23:47:53.000Z",
       "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOY1cySzg1bmVQS2h5QnlFSllIV3VwWWNnQzRTVURxSjlhNnlRd3lvTmtOcE83dWs4UVQ3S05sUVZiR1h1dENiWU9hWnZXeVh4SjRDbzFTX1lrUVRROTNIUTdXNGJlcFVqbGs4Q3RCRUFaWHpSNkxreTZkYnNCYWIxbEg3V19WdURwamwxaU83TllhdWQ5X0lRQ1VXd1MwUzB1WVUyTmNaU2xzbzlxZVNDTndlWEk?oc=5",
       "keywords": [
@@ -178,6 +195,17 @@
       }
     },
     {
+      "text": "Escalated U.S.-Canada trade talks threaten fallout - Axios Escalated U.S.-Canada trade talks threaten fallout  Axios",
+      "timestamp": "2026-08-24T16:39:11.000Z",
+      "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE1QTmdzY19OdmpZY01oZGVKWXdJUFZHaTJrc3BuY3FtX2NmdmZPYjBmb2RvSkdCa1JyOGh2NFNEZktYeXhvdkE3ZWxMdTRVQ1VQOGhJcjFEV0tNQ3J0V0NyMHdNeDlUZw?oc=5",
+      "keywords": [],
+      "impacts": {},
+      "sentiment": {
+        "compound": 0,
+        "label": "中性"
+      }
+    },
+    {
       "text": "Carney warned about economic coercion. Now Trump is testing the Canadian prime minister - PBS Carney warned about economic coercion. Now Trump is testing the Canadian prime minister  PBS",
       "timestamp": "2026-08-23T15:54:12.000Z",
       "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPdXNYNlJxRk42U3hWeUVzVk5EZHpoZnUzWWEyWkxtODZGMkFnNFpyT1o3aHNGV0xUSVVCN2lGVFF6QjFIUzNsNnp4OTVBZ3JVRElHN0F1M1QyVFlPSUQ4Y1VDbUtBSDdNY1pZQkdkaWcyWHdTYjFhWDY2dzNfeTRFclJPQUxaNVpVeFNnUWFiVTJSNVh4SC1fTkQybG9hMEkySlpDRXJHTWxCX2hLMTd4a0N2eWNZampaT2N1VXln0gHDAUFVX3lxTE12WHZCb2dRSmFwNHloazlNX09kMGFVX21feUZhRnZGZTF5cFZXb2o2YnUwandKOXRreXJnQVU1RkNSX29pWjlJTHV1bEp1QU9yVXN1aHhyUDh2WnRTS01wdm04LTlqVnRHWVFudTY3SDJmbmRITTJ4eHpKX2xlSVJWR0tGdkNNY3dTRW1vb2FCaFlJMkMxdG9rZ2xMVUZyM3NOWnhEa1RIOTdfc2hBdXFLX1JsQVFfWFVZUklsRHpCRV9icw?oc=5",
@@ -207,17 +235,6 @@
       "sentiment": {
         "compound": -0.7184,
         "label": "強烈利空"
-      }
-    },
-    {
-      "text": "Escalated U.S.-Canada trade talks threaten fallout - Axios Escalated U.S.-Canada trade talks threaten fallout  Axios",
-      "timestamp": "2026-08-24T16:39:11.000Z",
-      "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE1QTmdzY19OdmpZY01oZGVKWXdJUFZHaTJrc3BuY3FtX2NmdmZPYjBmb2RvSkdCa1JyOGh2NFNEZktYeXhvdkE3ZWxMdTRVQ1VQOGhJcjFEV0tNQ3J0V0NyMHdNeDlUZw?oc=5",
-      "keywords": [],
-      "impacts": {},
-      "sentiment": {
-        "compound": 0,
-        "label": "中性"
       }
     },
     {
@@ -266,6 +283,27 @@
       }
     },
     {
+      "text": "Do the Trump Tariffs Make Sense? - The Jerusalem Strategic Tribune Do the Trump Tariffs Make Sense?  The Jerusalem Strategic Tribune",
+      "timestamp": "2026-08-24T12:37:39.000Z",
+      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE1VeUpNdnlTQzBON0ZwM1lCbzJNRDJIb0RaQVotUXBZeElvV1Zqck1hR0MxX1REdDBTdG5YbURRT3lsYk92eDN1UE5jYXpTcjk1OHFGVmQxODF4UVA5LVBlbXgtckc?oc=5",
+      "keywords": [
+        "tariff",
+        "tariffs"
+      ],
+      "impacts": {
+        "foundry": -1,
+        "shipping": -1,
+        "steel": -1,
+        "ic_design": -1,
+        "display": -1,
+        "ev_supply": -0.8
+      },
+      "sentiment": {
+        "compound": -0.7184,
+        "label": "強烈利空"
+      }
+    },
+    {
       "text": "The U.S. and Canada are in a trade war. China aims to win it. - The Washington Post The U.S. and Canada are in a trade war. China aims to win it.  The Washington Post",
       "timestamp": "2026-08-26T05:22:11.000Z",
       "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNRnVBRFNJY1poZjdOb21nOVYwYkd0SG9jY2pmaU9jdnZldi1hdE5XWW9jRTc5UzdJZ2g3OEkwejJES2xqYlBuc2ZBeVdaTUEwcHp4dHNZN0I2c2s5cE92VElaTjdDZmRIb2VtRFF3VzhHLXJVVUUydlp1VVh3NVV6NXEzdXozdFUybGFWdEo4U3dNb2VB?oc=5",
@@ -285,50 +323,6 @@
       "sentiment": {
         "compound": 0,
         "label": "中性"
-      }
-    },
-    {
-      "text": "US eyes China overcapacity tariffs of 7.5% before Xi-Trump talks, Bloomberg News reports - Reuters US eyes China overcapacity tariffs of 7.5% before Xi-Trump talks, Bloomberg News reports  Reuters",
-      "timestamp": "2026-08-24T16:04:15.000Z",
-      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxONVZLUTRjNDFCbG9qX21DUWdHYkNMb3hzYXREb3BhX0lXNGF6MEdxNExNZ1hqYkRxRWU3OUdGY3hKRHdnYm9YOEZkOVRhSnp4bG52bUtWSU10NjQyQTE3Z1ZFRlVRelBSMF9vTGswcTFJRDMzQnkwVGlpeThzeGRlZ3FSd1IwNlBmOVNWeERLaHQtWWZiazQ3OTJyaXJGQmpVb2FKN2RjTlNseDBoNXRrUFJrRnc2MWdoQUhwcnpiQQ?oc=5",
-      "keywords": [
-        "tariff",
-        "tariffs",
-        "china",
-        "port"
-      ],
-      "impacts": {
-        "foundry": -1,
-        "shipping": -1,
-        "steel": -1,
-        "ic_design": -1,
-        "display": -1,
-        "ev_supply": -1
-      },
-      "sentiment": {
-        "compound": -0.7184,
-        "label": "強烈利空"
-      }
-    },
-    {
-      "text": "Do the Trump Tariffs Make Sense? - The Jerusalem Strategic Tribune Do the Trump Tariffs Make Sense?  The Jerusalem Strategic Tribune",
-      "timestamp": "2026-08-24T12:37:39.000Z",
-      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE1VeUpNdnlTQzBON0ZwM1lCbzJNRDJIb0RaQVotUXBZeElvV1Zqck1hR0MxX1REdDBTdG5YbURRT3lsYk92eDN1UE5jYXpTcjk1OHFGVmQxODF4UVA5LVBlbXgtckc?oc=5",
-      "keywords": [
-        "tariff",
-        "tariffs"
-      ],
-      "impacts": {
-        "foundry": -1,
-        "shipping": -1,
-        "steel": -1,
-        "ic_design": -1,
-        "display": -1,
-        "ev_supply": -0.8
-      },
-      "sentiment": {
-        "compound": -0.7184,
-        "label": "強烈利空"
       }
     },
     {
@@ -353,48 +347,25 @@
       }
     },
     {
-      "text": "Tariff-Driven Inflation Risks Return With Trump Moves on Canada, Iran - Bloomberg.com Tariff-Driven Inflation Risks Return With Trump Moves on Canada, Iran  Bloomberg.com",
-      "timestamp": "2026-08-24T11:00:01.000Z",
-      "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQa2U4ZkJpTGtHMkQwUkpNNUxiVnM3bHN6azlxa2tWY0twTGMyRVNXYTFNNlo2REx4TDhEYTZmX2s3QlNnN3dsZXpIaVBfTU5sOU1aZzVXcGVVdzhNcnVTeUJvRFRoN21QcHdFQUpUYlIzZFVfRk8tWTVUUDRMZjA0NVA4VnRfZkp3eGk5eGJ4b0JPSS1BR1dveDdYOWdsRzBaNFk4WGZIYUR0ZVhHVXBJajQ2YmFiYjc1ZWRYeE1TbHA0U3Y3NWxR?oc=5",
-      "keywords": [
-        "tariff",
-        "inflation"
-      ],
-      "impacts": {
-        "foundry": -0.7,
-        "shipping": -0.5,
-        "steel": -0.5,
-        "ic_design": -0.6,
-        "display": -0.5,
-        "ev_supply": -0.4,
-        "banking": -0.3,
-        "petrochemical": 0.3
-      },
+      "text": "Trump’s Economic Approach Draws Concern From Some Republicans - The New York Times Trump’s Economic Approach Draws Concern From Some Republicans  The New York Times",
+      "timestamp": "2026-08-24T13:11:19.000Z",
+      "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOYnlNWHBQanhtY1VKcTU5RlBmblA3RlZaU3lpREh4cjA5MnBZWkhHQUZJMk03MHJram9aN0VSTXcyVFZXeUFCbzJpZUl2djVaMlk0QjBQTWlJWmpCYUlsUURvZFZQTlNtaUNqSWJOTjVMSnNQd0lDQmo4R1dJZlJsQk5FZnJScmJoNEJELUxmRQ?oc=5",
+      "keywords": [],
+      "impacts": {},
       "sentiment": {
         "compound": 0,
         "label": "中性"
       }
     },
     {
-      "text": "How U.S.-Canada Tariff Negotiations Turned Into an All-Out Trade War - The New York Times How U.S.-Canada Tariff Negotiations Turned Into an All-Out Trade War  The New York Times",
-      "timestamp": "2026-08-25T04:01:11.000Z",
-      "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOZjgyam16ajl5RG5oYnJjOFhDMndvMDJqbFZ4WHZVMkctOHNneU5GaU1KQkFiS29CNS1kcmRDY1JPN3dwekZEeTB5d0hvUVEyc3JQVGZuQm1KNDBENnhaUmp0UW5ieUJuV21rczFZWnZpRWxIWEo1UGVUd0c5SF9WSzZxTmt5dVRWMlJN?oc=5",
-      "keywords": [
-        "trade war",
-        "tariff",
-        "negotiation"
-      ],
-      "impacts": {
-        "foundry": -1,
-        "ic_design": -1,
-        "shipping": -0.9,
-        "steel": -0.5,
-        "display": -0.5,
-        "ev_supply": -0.4
-      },
+      "text": "U.S.-Canada breakdown shows limits of Trump’s aggressive trade strategy - The Washington Post U.S.-Canada breakdown shows limits of Trump’s aggressive trade strategy  The Washington Post",
+      "timestamp": "2026-08-23T17:00:01.000Z",
+      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQVHA3eFdqa3YwMDlIZ3o1U2Ntc3VBMk94YUl4aTBlSWpLYk9lRkRMU0czdi1hbVBYRXVSWVNxYlFsVnJldVVIS2ViZzZhZG5HZ0I5Sk1EbF9EOWI3MEtEdTc4cjc4b3NTUlNEZlVkSzRuOU9DanRhWjV2VUstaW54NzFfdXR3VXdlcm9OOF9mR0I2XzVXd0F5VVlOeXprRElrVXMxRTBLNnZTbWkwaDQ3U0cwLUFXWkt4?oc=5",
+      "keywords": [],
+      "impacts": {},
       "sentiment": {
-        "compound": -0.7184,
-        "label": "強烈利空"
+        "compound": 0,
+        "label": "中性"
       }
     }
   ],
@@ -406,10 +377,9 @@
   ],
   "sectorState": {
     "foundry": {
-      "score": -0.941,
-      "lastUpdated": "2026-08-26T08:52:00.049Z",
+      "score": -0.939,
+      "lastUpdated": "2026-08-26T13:04:34.824Z",
       "deltaHistory": [
-        0.0010000000000000009,
         0.051000000000000045,
         0.03699999999999992,
         0.06700000000000006,
@@ -418,14 +388,14 @@
         0.0020000000000000018,
         0.08199999999999996,
         -0.132,
-        -0.017999999999999905
+        -0.017999999999999905,
+        0.0020000000000000018
       ]
     },
     "shipping": {
-      "score": -0.963,
-      "lastUpdated": "2026-08-26T08:52:00.049Z",
+      "score": -0.946,
+      "lastUpdated": "2026-08-26T13:04:34.824Z",
       "deltaHistory": [
-        -0.030999999999999917,
         0.014000000000000012,
         0.0040000000000000036,
         0.0129999999999999,
@@ -434,14 +404,14 @@
         0.02200000000000002,
         -0.014000000000000012,
         -0.014999999999999902,
-        -0.025000000000000022
+        -0.025000000000000022,
+        0.017000000000000015
       ]
     },
     "steel": {
-      "score": -0.813,
-      "lastUpdated": "2026-08-26T08:52:00.049Z",
+      "score": -0.779,
+      "lastUpdated": "2026-08-26T13:04:34.824Z",
       "deltaHistory": [
-        -0.038999999999999924,
         0.09899999999999998,
         0.02300000000000002,
         0.08099999999999996,
@@ -450,14 +420,15 @@
         -0.04700000000000004,
         0.21000000000000008,
         -0.20000000000000007,
-        -0.025999999999999912
+        -0.025999999999999912,
+        0.03399999999999992
       ]
     },
     "ic_design": {
       "score": -1,
-      "lastUpdated": "2026-08-26T08:52:00.049Z",
+      "lastUpdated": "2026-08-26T13:04:34.824Z",
       "deltaHistory": [
-        -0.017000000000000015,
+        0,
         0,
         0,
         0,
@@ -470,10 +441,9 @@
       ]
     },
     "display": {
-      "score": -0.916,
-      "lastUpdated": "2026-08-26T08:52:00.049Z",
+      "score": -0.88,
+      "lastUpdated": "2026-08-26T13:04:34.824Z",
       "deltaHistory": [
-        -0.050999999999999934,
         0.01100000000000001,
         0.0020000000000000018,
         0.04599999999999993,
@@ -482,14 +452,14 @@
         -0.017000000000000015,
         0.127,
         -0.134,
-        -0.027000000000000024
+        -0.027000000000000024,
+        0.03600000000000003
       ]
     },
     "ev_supply": {
-      "score": -0.767,
-      "lastUpdated": "2026-08-26T08:52:00.049Z",
+      "score": -0.733,
+      "lastUpdated": "2026-08-26T13:04:34.824Z",
       "deltaHistory": [
-        -0.02299999999999991,
         0.007000000000000006,
         0.027999999999999914,
         0.05500000000000005,
@@ -498,14 +468,14 @@
         -0.0010000000000000009,
         0.08799999999999997,
         -0.124,
-        -0.029000000000000026
+        -0.029000000000000026,
+        0.03400000000000003
       ]
     },
     "ai_server": {
-      "score": 0.151,
-      "lastUpdated": "2026-08-26T08:52:00.049Z",
+      "score": 0.118,
+      "lastUpdated": "2026-08-26T13:04:34.824Z",
       "deltaHistory": [
-        0.066,
         -0.033,
         0.05500000000000001,
         0.035,
@@ -514,12 +484,13 @@
         0.13,
         0.07500000000000001,
         -0.15700000000000003,
-        -0.028999999999999998
+        -0.028999999999999998,
+        -0.033
       ]
     },
     "pcb": {
       "score": 0,
-      "lastUpdated": "2026-08-26T04:47:25.980Z",
+      "lastUpdated": "2026-08-26T13:04:34.824Z",
       "deltaHistory": [
         0,
         0,
@@ -551,7 +522,7 @@
     },
     "packaging": {
       "score": 0,
-      "lastUpdated": "2026-08-26T08:52:00.049Z",
+      "lastUpdated": "2026-08-26T13:04:34.824Z",
       "deltaHistory": [
         0,
         0,
@@ -567,13 +538,13 @@
     },
     "semiconductor_equip": {
       "score": 0,
-      "lastUpdated": "2026-08-26T08:52:00.049Z",
+      "lastUpdated": "2026-08-26T13:04:34.824Z",
       "deltaHistory": [
-        0.009,
         -0.005999999999999999,
         -0.001,
         -0.001,
         -0.001,
+        0,
         0,
         0,
         0,
@@ -583,7 +554,7 @@
     },
     "robotics": {
       "score": 0,
-      "lastUpdated": "2026-08-26T08:52:00.049Z",
+      "lastUpdated": "2026-08-26T13:04:34.824Z",
       "deltaHistory": [
         0,
         0,
