@@ -1,9 +1,9 @@
 {
-  "updatedAt": "2026-08-29T13:46:26.895Z",
+  "updatedAt": "2026-08-29T19:20:35.485Z",
   "posts": [
     {
       "text": "The countries fighting back against Trump's tariff tirade - DW.com The countries fighting back against Trump's tariff tirade  DW.com",
-      "timestamp": "2026-08-28T14:54:52.000Z",
+      "timestamp": "2026-08-29T06:38:45.000Z",
       "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQTzBfZjVLY0RlUEllUTVEcUYyVXo2bktodGN5Y1BkX2c0blBxck44M3Y1c0g0YXJMd1JZUkM0SXYzNTR4MDY3a1VaRE9jQ2ZiM2Fsc2FlOHF5Q0xzblJDSUVHNG0yOE1QcFFMZ0V6UGphMmxRNHBYcmRZZVkxWjdqSkc0V0RCbV9kT0tyVm9YRzBRQ1YtRWdTZA?oc=5",
       "keywords": [
         "ai",
@@ -17,6 +17,30 @@
         "ic_design": -0.6,
         "display": -0.5,
         "ev_supply": -0.4
+      },
+      "sentiment": {
+        "compound": -0.7184,
+        "label": "強烈利空"
+      }
+    },
+    {
+      "text": "Detroit despairs as ‘insanity’ of Trump’s Canada trade war punishes city | Trump tariffs - The Guardian Detroit despairs as ‘insanity’ of Trump’s Canada trade war punishes city | Trump tariffs  The Guardian",
+      "timestamp": "2026-08-28T11:00:00.000Z",
+      "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNWFV3ZktKc0pmS3laeUhZbks0RXk0eThVUU1ld2JoTER2eC1NaHh4eGd3akpOWDIyRHl2bUE5OW9oekUwUG5qS1hvZ0ZPSDJkd01wWjBPNFpkMGJ6SU9WZnMtQjlFUk1GRVhRYklLeEpDVzlpZ05Sa3NlcFFFdG9nTTFGTmNQalFvMnlaaUZGLTE?oc=5",
+      "keywords": [
+        "trade war",
+        "ai",
+        "tariff",
+        "tariffs"
+      ],
+      "impacts": {
+        "foundry": -1,
+        "ic_design": -1,
+        "shipping": -1,
+        "ai_server": 0.7,
+        "steel": -1,
+        "display": -1,
+        "ev_supply": -0.8
       },
       "sentiment": {
         "compound": -0.7184,
@@ -99,23 +123,6 @@
       }
     },
     {
-      "text": "How to lose Trump’s trade war: test Canada’s resolve with threats to hockey sticks - The Guardian How to lose Trump’s trade war: test Canada’s resolve with threats to hockey sticks  The Guardian",
-      "timestamp": "2026-08-26T18:15:00.000Z",
-      "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE5UMS0xZS1nb0lSVm16Y1JWeWlaTlBQRE04Y1IxNDNYVF9GTHV0THBvQ3B4OWhfRjkteFVRbU5GQ2RJemRWZnVjZHYzUjlDUmZUb0NqVG50TmRzVGRZWk43aFpFZUs4dE1wUnI4V2ppOGF5cGNrWmxXSUVB?oc=5",
-      "keywords": [
-        "trade war"
-      ],
-      "impacts": {
-        "foundry": -0.6,
-        "ic_design": -0.8,
-        "shipping": -0.6
-      },
-      "sentiment": {
-        "compound": 0,
-        "label": "中性"
-      }
-    },
-    {
       "text": "Another potential headache for US data centers — Trump tariffs - Politico Another potential headache for US data centers — Trump tariffs  Politico",
       "timestamp": "2026-08-27T09:00:00.000Z",
       "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNdFRMNlNMVUdZcnBvbXI3cURKYmxzLXpUaGx2MFZHVGUzOHpIWXhVSkJ6RXE0VVJpeGJUakFUVUtyUDBKV0Zrd2VjUUZiN0pUd050Rk1QNVF0LWVSTVIzOEpGa2xPUWNtT29nUWU3eWlHeWY3Mzh0b19BdjdhcldDYzZHS25UMTBzOWJB?oc=5",
@@ -161,17 +168,6 @@
       }
     },
     {
-      "text": "The Country That Has the Biggest Trade Surplus With the U.S. Is Now… Vietnam - WSJ The Country That Has the Biggest Trade Surplus With the U.S. Is Now… Vietnam  WSJ",
-      "timestamp": "2026-08-26T14:38:00.000Z",
-      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQSmcweVVzekJZR3VGMDZ6djRxN2NwRmI0clZXWjc5MlVUR052ZEkzUjA0UWdBbU81d3ZQV3RCNFZrTEI0SFNWdURxOXFDQTcxMmhqVWhsbG9hWHpkejJpSmR6alpjQXNIektYNFJ2c2FBVWVSN1pYQl8yNzRpYnJ3am9NZmxFMGpnRjVyeXM3UVhlTXM5RTZzXzUyeHprQWNpRS1mSUNURnhzODJjWmc?oc=5",
-      "keywords": [],
-      "impacts": {},
-      "sentiment": {
-        "compound": 0,
-        "label": "中性"
-      }
-    },
-    {
       "text": "India, China, Canada and more: 10 countries still under Trump’s tariff squeeze and why - The Times of India India, China, Canada and more: 10 countries still under Trump’s tariff squeeze and why  The Times of India",
       "timestamp": "2026-08-27T10:04:00.000Z",
       "url": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxOYVFrU3J0R2dDV2laRTlZcGYxakVLcGlfTDZWZno2UVpTaW5yalF5QTc5eWNxZGhNMld1Q00xSEdoeTlCYy16RUJIYWZHbjA5QTVYRHM5SG9fSlk5aFJwWklJQXF3MmNlN0JFT3dvLUhXTFhrM1JEVjhuM05jQ3N0ekFWaE9qWndFOFczdWo3V2d2Y3l5bWhTR3FOSTJZV0l3OWVfcTNQYUJ3TElGNzBXOThER3cyTTVHYzBOWHhCVzNTMDBBNEhWTWVBbXlGWXVYc0o2U05UN0t4WGZFYVhPaDY4R2pZZUdYbTNlWHBkMF9kTHpoY2U5Slpic2nSAYICQVVfeXFMTWwxQ1psdDlWOVVLdXA2U0htdUN2TnlLVlBmWm1wbUJOVDdWNTFsMWd2My1sekx4UktFZkRFNy1CajN3cTdpbGwzc0REZGszZlN2RXdSSjhFeVlUUGdIa0dMaW1XQmVFaDJKLUV1aHA2NVFwRFg0cjRQUnNDZDMyWko1ZUF1bk45dWNVVEFnZ1pIdEdxeVhHT1FBdUlzQU9XWEhoUGR2MFVhMkpra3hnalNId2tNeUw0VnU0ZkRiUGVuVGd1cEx0VEFzWmpmSHNPVWc3RG9kemVTcTJoa2Fsa1hkUDFUZjhWSUFJbHYxU2tCU19uSjFaTmIwUGVQWi1MYlhB?oc=5",
@@ -204,29 +200,6 @@
       }
     },
     {
-      "text": "Carney Matches Trump Tariffs With 50% Tax on US Dairy, Steel - Bloomberg.com Carney Matches Trump Tariffs With 50% Tax on US Dairy, Steel  Bloomberg.com",
-      "timestamp": "2026-08-25T16:27:40.000Z",
-      "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNZS0tWERYS0wyTDRjbi1MUUZHa01Kak1mMDItd0RhRWVOZ0pQNkNqTUVFRG94UWlGemFGVDlNMUJfY3MzV21MamRwbFRDOU5yV2QtUWxaSklxamRmclJ1YWo2Xy1YeG5FNFFEejAxWHJnUzBYYTMybXhiYmhIeTN2c2JaaE5lWUgxcGhTM0FRNGxUSHd0cnlJcFZrcU95MEUzcjBzUlBxN0pZSVkwRG8zbE1oTHhja0dCNzJPb3RoMkVlOHk3M0Zr?oc=5",
-      "keywords": [
-        "ai",
-        "tariff",
-        "tariffs"
-      ],
-      "impacts": {
-        "ai_server": 0.7,
-        "foundry": -1,
-        "shipping": -1,
-        "steel": -1,
-        "ic_design": -1,
-        "display": -1,
-        "ev_supply": -0.8
-      },
-      "sentiment": {
-        "compound": -0.7184,
-        "label": "強烈利空"
-      }
-    },
-    {
       "text": "Trump White House says it’s losing $19B-$26B a year in revenue as countries dodge tariffs - AP News Trump White House says it’s losing $19B-$26B a year in revenue as countries dodge tariffs  AP News",
       "timestamp": "2026-08-13T07:00:00.000Z",
       "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPbUp3OW5Xa2o2US1WWENZVGRsLXFMQi1FQW9Kall0aUllUEFUbjFPZW1CMzdxWnEzN25FVlppRmY0V1JMSXFCdUhtRFlUSGVLUWZBYktFTE9Jb1JSbEdNLVByMnh6blFuVG9QR1lhNVV1VEJoLVp2M0h1N0hFSlVZQXpZVmVEMWlWUlBKUkh0cWpYZWhhTFlLVktuaWRoTEppSmFV?oc=5",
@@ -249,21 +222,22 @@
       }
     },
     {
-      "text": "Trump’s Tariffs Push US Companies Back into China - Cato Institute Trump’s Tariffs Push US Companies Back into China  Cato Institute",
-      "timestamp": "2026-07-31T07:00:00.000Z",
-      "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE5lT2tNMW1lR1JIVks1LUJpMWdydXg2cS03OUlSWWRnSFhGM1BDTldULUYxa1E4U1g4V0N4OE16MWtqcmdjSlVMdUlSOWd6OThYdEkzWDRTNkxaVEtDaHIxODVBSUdfSGxKYW1hQzIyZGo1cXlxZVNWdQ?oc=5",
+      "text": "Carney Matches Trump Tariffs With 50% Tax on US Dairy, Steel - Bloomberg.com Carney Matches Trump Tariffs With 50% Tax on US Dairy, Steel  Bloomberg.com",
+      "timestamp": "2026-08-25T16:27:40.000Z",
+      "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNZS0tWERYS0wyTDRjbi1MUUZHa01Kak1mMDItd0RhRWVOZ0pQNkNqTUVFRG94UWlGemFGVDlNMUJfY3MzV21MamRwbFRDOU5yV2QtUWxaSklxamRmclJ1YWo2Xy1YeG5FNFFEejAxWHJnUzBYYTMybXhiYmhIeTN2c2JaaE5lWUgxcGhTM0FRNGxUSHd0cnlJcFZrcU95MEUzcjBzUlBxN0pZSVkwRG8zbE1oTHhja0dCNzJPb3RoMkVlOHk3M0Zr?oc=5",
       "keywords": [
+        "ai",
         "tariff",
-        "tariffs",
-        "china"
+        "tariffs"
       ],
       "impacts": {
+        "ai_server": 0.7,
         "foundry": -1,
         "shipping": -1,
         "steel": -1,
         "ic_design": -1,
         "display": -1,
-        "ev_supply": -1
+        "ev_supply": -0.8
       },
       "sentiment": {
         "compound": -0.7184,
@@ -294,14 +268,25 @@
       }
     },
     {
-      "text": "Fact-checking the White House statement of facts about Canada - CBC Fact-checking the White House statement of facts about Canada  CBC",
-      "timestamp": "2026-08-26T02:38:00.000Z",
-      "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxOQnplSWlwSkk0dGpqR1kyeFh5dF96Z0xPRTRmenBkMHo5c3dBNUVyZ2tlaUQ2N1Jickdka3JUcGhkSVAyMEdLSnN2LWl5dXVjZ1dHUkFZejc1QlEtMEtjX0hKa2RpMXVwMkVQNnJWbENwS3JtVjg4YkU0N05GakhpSmlB?oc=5",
-      "keywords": [],
-      "impacts": {},
+      "text": "Trump’s Tariffs Push US Companies Back into China - Cato Institute Trump’s Tariffs Push US Companies Back into China  Cato Institute",
+      "timestamp": "2026-07-31T07:00:00.000Z",
+      "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE5lT2tNMW1lR1JIVks1LUJpMWdydXg2cS03OUlSWWRnSFhGM1BDTldULUYxa1E4U1g4V0N4OE16MWtqcmdjSlVMdUlSOWd6OThYdEkzWDRTNkxaVEtDaHIxODVBSUdfSGxKYW1hQzIyZGo1cXlxZVNWdQ?oc=5",
+      "keywords": [
+        "tariff",
+        "tariffs",
+        "china"
+      ],
+      "impacts": {
+        "foundry": -1,
+        "shipping": -1,
+        "steel": -1,
+        "ic_design": -1,
+        "display": -1,
+        "ev_supply": -1
+      },
       "sentiment": {
-        "compound": 0,
-        "label": "中性"
+        "compound": -0.7184,
+        "label": "強烈利空"
       }
     },
     {
@@ -324,6 +309,23 @@
       "sentiment": {
         "compound": 0.7184,
         "label": "強烈利多"
+      }
+    },
+    {
+      "text": "How to lose Trump’s trade war: test Canada’s resolve with threats to hockey sticks - The Guardian How to lose Trump’s trade war: test Canada’s resolve with threats to hockey sticks  The Guardian",
+      "timestamp": "2026-08-26T18:15:00.000Z",
+      "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE5UMS0xZS1nb0lSVm16Y1JWeWlaTlBQRE04Y1IxNDNYVF9GTHV0THBvQ3B4OWhfRjkteFVRbU5GQ2RJemRWZnVjZHYzUjlDUmZUb0NqVG50TmRzVGRZWk43aFpFZUs4dE1wUnI4V2ppOGF5cGNrWmxXSUVB?oc=5",
+      "keywords": [
+        "trade war"
+      ],
+      "impacts": {
+        "foundry": -0.6,
+        "ic_design": -0.8,
+        "shipping": -0.6
+      },
+      "sentiment": {
+        "compound": 0,
+        "label": "中性"
       }
     },
     {
@@ -369,6 +371,27 @@
       }
     },
     {
+      "text": "Trump wants to ‘manage’ China trade. Businesses see a tariff opening. - Politico Trump wants to ‘manage’ China trade. Businesses see a tariff opening.  Politico",
+      "timestamp": "2026-05-30T07:00:00.000Z",
+      "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPbGZ0RElvZWg0Y0xtbTNTNXVkS2lrYU5fTG9RY054MVYwOVBwMzVua1dmMjJHQjNwRmVvRUp5WDRiZkhXb0ZfOHV6dzBjSDNXclN3RGNWUjRvRy1PXzhNcndxcHZCNW1TX3UxTHVIRHJHOWJhSzNEV0RvcW91N0xmRVN6VGZOa3l2UkhMNHhKbUI?oc=5",
+      "keywords": [
+        "tariff",
+        "china"
+      ],
+      "impacts": {
+        "foundry": -0.7,
+        "shipping": -0.9,
+        "steel": -0.5,
+        "ic_design": -1,
+        "display": -0.9,
+        "ev_supply": -0.7
+      },
+      "sentiment": {
+        "compound": -0.7184,
+        "label": "強烈利空"
+      }
+    },
+    {
       "text": "Trump’s 50% Tariffs on Canada: What to Know, and What’s Next - The New York Times Trump’s 50% Tariffs on Canada: What to Know, and What’s Next  The New York Times",
       "timestamp": "2026-08-08T07:00:00.000Z",
       "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNWFVvaGRrVTQ3X05xRjlJN3pBUE0xeXlUTTVKY0hHdVJVVzlEazZUclZoSkUzS3c2TnNmT3YxQnFsbl9uNzFvRmMwMGNrdTAyMGprVDBSaVJEZ1kwV1Ftdm85SDRmQmlOanVrOHFuRmV3NnBIbFN4SmpxaXFfNjlxQ2tDU2hwQQ?oc=5",
@@ -392,77 +415,77 @@
   ],
   "deltas": [
     {
-      "sector": "steel",
-      "sectorName": "鋼鐵",
-      "prev": -0.606,
-      "current": -0.698,
-      "delta": -0.092,
-      "momentum": "↓ 壓力加深",
-      "accelerating": true
-    },
-    {
-      "sector": "ev_supply",
-      "sectorName": "電動車供應鏈",
-      "prev": -0.554,
-      "current": -0.623,
-      "delta": -0.069,
-      "momentum": "↓ 壓力加深",
+      "sector": "ai_server",
+      "sectorName": "AI 伺服器",
+      "prev": 0.248,
+      "current": 0.346,
+      "delta": 0.098,
+      "momentum": "↑ 訊號強化",
       "accelerating": true
     },
     {
       "sector": "display",
       "sectorName": "面板/顯示",
-      "prev": -0.697,
-      "current": -0.761,
-      "delta": -0.064,
+      "prev": -0.761,
+      "current": -0.845,
+      "delta": -0.084,
       "momentum": "↓ 壓力加深",
       "accelerating": true
     },
     {
-      "sector": "ai_server",
-      "sectorName": "AI 伺服器",
-      "prev": 0.191,
-      "current": 0.248,
-      "delta": 0.057,
-      "momentum": "↑ 訊號強化",
+      "sector": "steel",
+      "sectorName": "鋼鐵",
+      "prev": -0.698,
+      "current": -0.78,
+      "delta": -0.082,
+      "momentum": "↓ 壓力加深",
+      "accelerating": false
+    },
+    {
+      "sector": "ev_supply",
+      "sectorName": "電動車供應鏈",
+      "prev": -0.623,
+      "current": -0.684,
+      "delta": -0.061,
+      "momentum": "↓ 壓力加深",
       "accelerating": false
     }
   ],
   "topDeltas": [
     {
-      "sector": "steel",
-      "sectorName": "鋼鐵",
-      "prev": -0.606,
-      "current": -0.698,
-      "delta": -0.092,
-      "momentum": "↓ 壓力加深",
-      "accelerating": true
-    },
-    {
-      "sector": "ev_supply",
-      "sectorName": "電動車供應鏈",
-      "prev": -0.554,
-      "current": -0.623,
-      "delta": -0.069,
-      "momentum": "↓ 壓力加深",
+      "sector": "ai_server",
+      "sectorName": "AI 伺服器",
+      "prev": 0.248,
+      "current": 0.346,
+      "delta": 0.098,
+      "momentum": "↑ 訊號強化",
       "accelerating": true
     },
     {
       "sector": "display",
       "sectorName": "面板/顯示",
-      "prev": -0.697,
-      "current": -0.761,
-      "delta": -0.064,
+      "prev": -0.761,
+      "current": -0.845,
+      "delta": -0.084,
       "momentum": "↓ 壓力加深",
       "accelerating": true
     },
     {
-      "sector": "ai_server",
-      "sectorName": "AI 伺服器",
-      "prev": 0.191,
-      "current": 0.248,
-      "delta": 0.057,
-      "momentum": "↑ 訊號強化",
+      "sector": "steel",
+      "sectorName": "鋼鐵",
+      "prev": -0.698,
+      "current": -0.78,
+      "delta": -0.082,
+      "momentum": "↓ 壓力加深",
+      "accelerating": false
+    },
+    {
+      "sector": "ev_supply",
+      "sectorName": "電動車供應鏈",
+      "prev": -0.623,
+      "current": -0.684,
+      "delta": -0.061,
+      "momentum": "↓ 壓力加深",
       "accelerating": false
     }
   ],
@@ -472,10 +495,9 @@
   ],
   "sectorState": {
     "foundry": {
-      "score": -0.856,
-      "lastUpdated": "2026-08-29T13:46:26.895Z",
+      "score": -0.878,
+      "lastUpdated": "2026-08-29T19:20:35.485Z",
       "deltaHistory": [
-        -0.017999999999999905,
         0.0020000000000000018,
         0.016999999999999904,
         -0.01100000000000001,
@@ -484,14 +506,14 @@
         0.050999999999999934,
         -0.04399999999999993,
         0.019000000000000017,
-        -0.03500000000000003
+        -0.03500000000000003,
+        -0.02200000000000002
       ]
     },
     "shipping": {
-      "score": -0.917,
-      "lastUpdated": "2026-08-29T13:46:26.895Z",
+      "score": -0.94,
+      "lastUpdated": "2026-08-29T19:20:35.485Z",
       "deltaHistory": [
-        -0.025000000000000022,
         0.017000000000000015,
         -0.008000000000000007,
         0.02299999999999991,
@@ -500,14 +522,14 @@
         0.039000000000000035,
         -0.006000000000000005,
         0.019000000000000017,
-        0.02499999999999991
+        0.02499999999999991,
+        -0.02299999999999991
       ]
     },
     "steel": {
-      "score": -0.698,
-      "lastUpdated": "2026-08-29T13:46:26.895Z",
+      "score": -0.78,
+      "lastUpdated": "2026-08-29T19:20:35.485Z",
       "deltaHistory": [
-        -0.025999999999999912,
         0.03399999999999992,
         0.016000000000000014,
         0.07200000000000006,
@@ -516,12 +538,13 @@
         0.09099999999999997,
         0.06099999999999994,
         -0.05899999999999994,
-        -0.09199999999999997
+        -0.09199999999999997,
+        -0.08200000000000007
       ]
     },
     "ic_design": {
       "score": -1,
-      "lastUpdated": "2026-08-29T13:46:26.895Z",
+      "lastUpdated": "2026-08-29T19:20:35.485Z",
       "deltaHistory": [
         0,
         0,
@@ -536,10 +559,9 @@
       ]
     },
     "display": {
-      "score": -0.761,
-      "lastUpdated": "2026-08-29T13:46:26.895Z",
+      "score": -0.845,
+      "lastUpdated": "2026-08-29T19:20:35.485Z",
       "deltaHistory": [
-        -0.027000000000000024,
         0.03600000000000003,
         0.014000000000000012,
         0.09399999999999997,
@@ -548,14 +570,14 @@
         0.08999999999999997,
         0.10699999999999998,
         -0.04599999999999993,
-        -0.06400000000000006
+        -0.06400000000000006,
+        -0.08399999999999996
       ]
     },
     "ev_supply": {
-      "score": -0.623,
-      "lastUpdated": "2026-08-29T13:46:26.895Z",
+      "score": -0.684,
+      "lastUpdated": "2026-08-29T19:20:35.485Z",
       "deltaHistory": [
-        -0.029000000000000026,
         0.03400000000000003,
         0.026000000000000023,
         0.06899999999999995,
@@ -564,14 +586,14 @@
         0.126,
         0.04699999999999993,
         -0.029000000000000026,
-        -0.06899999999999995
+        -0.06899999999999995,
+        -0.061000000000000054
       ]
     },
     "ai_server": {
-      "score": 0.248,
-      "lastUpdated": "2026-08-29T13:46:26.895Z",
+      "score": 0.346,
+      "lastUpdated": "2026-08-29T19:20:35.485Z",
       "deltaHistory": [
-        -0.028999999999999998,
         -0.033,
         0.068,
         -0.14,
@@ -580,12 +602,13 @@
         0.127,
         -0.128,
         0.152,
-        0.056999999999999995
+        0.056999999999999995,
+        0.09799999999999998
       ]
     },
     "pcb": {
       "score": 0,
-      "lastUpdated": "2026-08-29T13:46:26.895Z",
+      "lastUpdated": "2026-08-29T19:20:35.485Z",
       "deltaHistory": [
         0,
         0,
@@ -616,10 +639,9 @@
       ]
     },
     "packaging": {
-      "score": -0.06,
-      "lastUpdated": "2026-08-29T13:46:26.895Z",
+      "score": -0.047,
+      "lastUpdated": "2026-08-29T19:20:35.485Z",
       "deltaHistory": [
-        0,
         0,
         0,
         0,
@@ -628,7 +650,8 @@
         0.001,
         -0.002,
         -0.056999999999999995,
-        0
+        0,
+        0.012999999999999998
       ]
     },
     "semiconductor_equip": {
@@ -691,9 +714,8 @@
     },
     "solar": {
       "score": -0.003,
-      "lastUpdated": "2026-08-29T13:46:26.895Z",
+      "lastUpdated": "2026-08-29T19:20:35.485Z",
       "deltaHistory": [
-        0.002,
         0.002,
         0.002,
         -0.004,
@@ -702,6 +724,7 @@
         0,
         -0.001,
         -0.001,
+        0,
         0
       ]
     },
@@ -749,12 +772,13 @@
       ]
     },
     "optical_comm": {
-      "score": 0.032,
-      "lastUpdated": "2026-08-29T13:46:26.895Z",
+      "score": 0.029,
+      "lastUpdated": "2026-08-29T19:20:35.485Z",
       "deltaHistory": [
         0.005,
         0,
-        0.027
+        0.027,
+        -0.002999999999999999
       ]
     }
   }
