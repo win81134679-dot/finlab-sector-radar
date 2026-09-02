@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-02T21:26:57+08:00",
+  "updated_at": "2026-09-03T00:48:49+08:00",
   "active_policies": [
     {
       "key": "tariff",
@@ -112,7 +112,7 @@
           "o": 131.5,
           "h": 133.0,
           "l": 126.0,
-          "v": 136309570
+          "v": 136331797
         }
       ]
     },
@@ -189,7 +189,7 @@
           "o": 2415.0,
           "h": 2420.0,
           "l": 2385.0,
-          "v": 23453944
+          "v": 25151394
         }
       ]
     },
@@ -266,7 +266,7 @@
           "o": 151.0,
           "h": 151.5,
           "l": 149.0,
-          "v": 7536377
+          "v": 11808377
         }
       ]
     },
@@ -728,7 +728,7 @@
           "o": 338.0,
           "h": 341.5,
           "l": 336.0,
-          "v": 9419719
+          "v": 9424750
         }
       ]
     },
@@ -959,7 +959,7 @@
           "o": 2790.0,
           "h": 2875.0,
           "l": 2585.0,
-          "v": 10869601
+          "v": 10869612
         }
       ]
     },
@@ -1036,7 +1036,7 @@
           "o": 253.0,
           "h": 255.0,
           "l": 250.5,
-          "v": 28527668
+          "v": 29265369
         }
       ]
     },
@@ -1267,7 +1267,7 @@
           "o": 1000.0,
           "h": 1020.0,
           "l": 993.0,
-          "v": 3734771
+          "v": 3736142
         }
       ]
     },
@@ -1575,7 +1575,7 @@
           "o": 1815.0,
           "h": 1815.0,
           "l": 1730.0,
-          "v": 15973659
+          "v": 15977253
         }
       ]
     },
@@ -1729,7 +1729,7 @@
           "o": 3365.0,
           "h": 3490.0,
           "l": 3280.0,
-          "v": 3029133
+          "v": 3136748
         }
       ]
     },
@@ -2037,7 +2037,7 @@
           "o": 558.0,
           "h": 563.0,
           "l": 540.0,
-          "v": 3166710
+          "v": 3294710
         }
       ]
     },
@@ -2499,7 +2499,7 @@
           "o": 4450.0,
           "h": 4565.0,
           "l": 4230.0,
-          "v": 23560501
+          "v": 23567252
         }
       ]
     },
@@ -2576,7 +2576,7 @@
           "o": 17120.0,
           "h": 18395.0,
           "l": 17120.0,
-          "v": 797023
+          "v": 803023
         }
       ]
     },
@@ -3038,7 +3038,7 @@
           "o": 599.0,
           "h": 607.0,
           "l": 587.0,
-          "v": 17461025
+          "v": 17467250
         }
       ]
     },
@@ -5271,7 +5271,7 @@
           "o": 2145.0,
           "h": 2205.0,
           "l": 2105.0,
-          "v": 3469294
+          "v": 3470248
         }
       ]
     },
@@ -9449,7 +9449,7 @@
           "o": 2000.0,
           "h": 2010.0,
           "l": 1955.0,
-          "v": 1234535
+          "v": 1235243
         }
       ]
     },
@@ -11220,7 +11220,7 @@
           "o": 14220.0,
           "h": 14220.0,
           "l": 13600.0,
-          "v": 438923
+          "v": 439034
         }
       ]
     },
@@ -24119,7 +24119,7 @@
           "o": 42.15,
           "h": 42.3,
           "l": 41.7,
-          "v": 18161837
+          "v": 20019837
         }
       ]
     },
@@ -25659,7 +25659,7 @@
           "o": 240.0,
           "h": 248.0,
           "l": 232.0,
-          "v": 127814622
+          "v": 127824204
         }
       ]
     },
@@ -32065,9 +32065,33 @@
   },
   "news": [
     {
+      "date": "2026-09-02T15:36:15+00:00",
+      "headline": "台積電還有可能變「美積電」？中經院長3點論證揭答案：台灣很幸運碰上這潮流 - Yahoo新聞",
+      "url": "https://news.google.com/rss/articles/CBMizANBVV95cUxNcVItT2dXQWRYYnQtQ3U5c19lZURMaG14RE12ck9PZkZOYkh1ak1hT1pZWUhtNXBOcmpsakwyRUFCdlFTSHZkX2syN2ZVc1hISWZOU3NLMkJNU24xX3J0aWlucXFycHh0WVRuR3gwS2l3d3c0b2JNRExlSnhld3h0QkxkWE9ZaWdYTjdUNE1lNU5rTEpObUJDM2pHay0yaDNIZkdJVkJVc1c0ZVBlb2Z0VEFOZlM4N2M4SmNzQmk5MXZFa05DaTBsV3VJcmV6MGxLOUVuQU1GYzk1TUZ1eWRoZmZQZXNwZklFVTZvQXdfbU9tQXdEeDFUcExCN1YxT2lqQS0yX2p0NWFTVk93T1loNFc3S3JoSXZ3VGJSRzJtMWIxZkkwdnFPbll2aXNrUlhMTnZ6bFlqU0d3WU1SZzgxZ0ItTUJmRHpTeUk1bWUydzB3YjdhSGFtOVVMWjNPcFBhTWZ4NGJ6dWY4Y3BuQmU1N2J5RzRBN2s1Y2tuMEFsVkthMW1lczlLS1dEbmx5MGNZX2JhYkF6aWlwMDAyOTd2T0w4N2RiUlh5dVlTWUZEdTFMR3dZeDFuNTVqdEtGcVhnN0tCeU5lSFFzQjRQ?oc=5",
+      "sentiment": "neutral"
+    },
+    {
+      "date": "2026-09-02T13:20:38+00:00",
+      "headline": "擬加半導體關稅！盧特尼克：台灣下週宣布最高300億美元對美投資 - NOWnews今日新聞",
+      "url": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE5ELWZWX2h6dDZmTEZOZW5yaVlaYi1DVW0xSFltT3JEZ2dHMWZ4bXU2TU9peVBIdG1GdjE0ekNqYWRzellReGR6QkNreC3SAVJBVV95cUxPY2hENHVmTDZYOWZZOFhNMnR4X0RBdlJleEJ2V1VjaERtcExPMHdBdXdUOXlXQnhHOWZ5dFVCaVM4VDdRb2lvQ0l1MmFKYWE5SzJR?oc=5",
+      "sentiment": "neutral"
+    },
+    {
+      "date": "2026-09-02T12:51:00+00:00",
+      "headline": "美商務部長證實將加徵半導體關稅 透露台灣下周將再宣布上看9500億投資 - 知新聞",
+      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE1RMmk3OTBMQ2xaSF9kbkpkRzBiVDg0R3ZJRWpta3duWjNKRzBJQ3ZlQUlRaUVaNXZkLTZEMHZmNUhFVmg5T1N6ZzZSbmRqb09NT1VwYlVyRGJLWnlXRG9Mc0drTjB5d2pQWDRrQ0ltVQ?oc=5",
+      "sentiment": "neutral"
+    },
+    {
       "date": "2026-09-02T11:43:34+00:00",
       "headline": "物料處理商 MotionTech 揮軍美國市場 Kristian Hulgard 領軍拓展 - Yahoo股市",
       "url": "https://news.google.com/rss/articles/CBMihgJBVV95cUxOT1RQcm9ZT0xwdzFDeUdrUjFRcjJVVmsyMWxuNlJGazJETlRjUnBQcUgwNWw5TEhwaUNjaHZWeUhYSHdEbXZocVh1eE9pNTZ5VG9vdnRETTJvb3A2VnYwTXpsbC1KU2lYRDVoc3RVRk92SGZBQ2NjUzV1Z3A0OUFkODB3cDlMQ2xZQ0EyYTBzQ1V4YTVrOWpOQWxWRmtSTGxaalE2MjhuQ3M0QXhueEZpRlpiRmF3UkJpelZIMDl0VG5PVjRXNzA5eC1ZUUNuakNTNjJLc1NKTEVZLXVHYzBhWVFSREUyTkhmeThzU2xpZ0w3Yk1McmxITlhvZ01Lbm5SUmNtV3p3?oc=5",
+      "sentiment": "neutral"
+    },
+    {
+      "date": "2026-09-02T11:07:27+00:00",
+      "headline": "台積電赴美掏空台灣？中經院長：AI治好各界對產業空洞化疑慮 - ec.ltn.com.tw",
+      "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE9ZRVladmJ3OHpGZGZMUWliZ3FTWGRXeWlWbTMwRzF6cVR4d21pR3BrTEZRWm4yZGptTFZ4QVRtYV9lNmM2U0RGS0xxLWNvSUZJUFhFSFdIWUZTUnVkS3U4?oc=5",
       "sentiment": "neutral"
     },
     {
@@ -32077,33 +32101,9 @@
       "sentiment": "neutral"
     },
     {
-      "date": "2026-09-02T10:10:50+00:00",
-      "headline": "經長出席「美國館」開幕 龔明鑫透露：近3個月台廠加碼投資美國200億美元 - Yahoo股市",
-      "url": "https://news.google.com/rss/articles/CBMitgNBVV95cUxNNVBzSXlzcmhUSkdfOXlNUC1vcHNfek5rdVZpeWdJRXdqVG1NRzUzNkljTE16R1pvSmRMMlpwUmZuYmp3VHNGQUZFeTloUWtQNnpSS1Ruc0prQUJINUpMTF9oaFU5VzJJUWJ3N0x1dWY1QUZRZkNRMmNjdzNQaThXTmRKYk9yZTI3SXAweGJTdHd4WENJMDVTdlFiTXdWV0FKWWNheEs5YTZsdTF4aW1CNDZST1RzODVET3BKQ3VQREpoVmU4Q0g0TXJpdVdTczNjY05BMVpqa1REdlJPRFdmbEl0NUNpMWFKVXl2X1VVTFhnX3huS1ZTN29nRnE5U1Q0LURRcjd5cTllVlBfblN1M1JUSWgyNXJtUkJuWlVuR3VvMl9LWkY3T2RSeW1DNm9MMXRwSDZwQlhDZDRPcVh0am1UYm0wM1BsRENPdWFQcXVzQlJiRjk1eC1ITkx0bjlaYXowd1dlRXlQQlc1NlRYQWVQeWtINXNuQjBCVjNmUkVxOFd5a1lPVHNIZHc0QWVXNTljOXFBeEJrLTRDTi0yQkRzQlhnR0Q2cnlSZjlia0h1ek5Ba1E?oc=5",
-      "sentiment": "neutral"
-    },
-    {
-      "date": "2026-09-02T08:30:37+00:00",
-      "headline": "【即時新聞】受惠AI強勁需求！台廠擬擴大赴美投資200億美元，台積電(TSM)擴產引關注 - CMoney投資網誌",
-      "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOYWJVcVJYTzBPQjMtWUVhMEFQM3BPN0ZUTV9lRWItRC1YVldLWXg0VGFodTZnbTFwRVhta0ZTM01ZSHI3RTdKNUFCNnV6Z3VIR1JwT1dpNTd4MUZLc1dlZ1AwRlhBa1pHWnBkdUVpTm9QNDZZdE5lbWRfNWg1Q3JxbnhaZVAydC1IdzhjNGJBazU?oc=5",
-      "sentiment": "positive"
-    },
-    {
-      "date": "2026-09-02T03:27:00+00:00",
-      "headline": "跟台積電遠赴美國！工程師太太享高薪生活　揭真實生活：一點都不開心 - 三立新聞網SETN.com",
-      "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE5NVkNEZjBQa3JWQkx3RXRLSFpJbmhGSUFVYzZ0OWxwUUliZVU4TXhielU3U1BUbWpzSUdOdkpXTUZfNXZoejA1TNIBTEFVX3lxTFA3a2hsZGhVdFRXemU3MVU3NW1rOWpaQk8tbUpqdmxwYkpPMDVxM19GSFRSWGh0U1diMmRKLTJ6TFlxd1J5SXpHSEw3TFM?oc=5",
-      "sentiment": "neutral"
-    },
-    {
-      "date": "2026-09-01T07:30:00+00:00",
-      "headline": "美擬擴大晶片關稅至終端產品 台半導體業恐遭重創 - 堅料網",
-      "url": "https://news.google.com/rss/articles/CBMitgNBVV95cUxPV3czcDhxc1MxY19DZUxzR2YxUGJRTFd6UWhoUzh4VC1JSU5XVHRTYlIxMm9Rbk1VWnFVNXplQlFsak93UGNreUhkVnB1MDdCekdjN010WmRXT2RCR0RweUtPLVdFN2RWcVNyajlSam1vZUlCSGR3bHR4TGJodnlwOXQ2Q0JkRXZzeWpfTExQeFltWWRCb0ZrblFVa0ZMVUN1NzhRN0hKd29DWmhlSDZITFNld3JKT2k3MFVRU25DXzJRRURVZjZocEgwa1pKZllFUFktR3NYdG5uU2w3a2dDb2ZXcmtET2FFYlRRWW45eXFhNTVIUV9HcUF6ZmpnMVB5SjhPWWxFVTNDbkI3dURWSlJKeHh4azB4Z1FySlY5dHN4LUxzQmljREZYQnhxcjVrdWQ0ZUhLcHpvdmhWeTU2RWJQT3BRUlFOdHdpTlBhZXFiQ2JVMndwWms3Qk8zOFFuMUE2NDNLa2kzUVdrek5ScXFsTTJSSk9XbmRFaUJCaC1rNlBnT1NEbkVvazhvWE5GY0hid1ltLTNrVlZ0aERjalh2dDVSa2FudFpHd0lmOFpLcHNSQUE?oc=5",
-      "sentiment": "neutral"
-    },
-    {
-      "date": "2026-08-31T08:22:52+00:00",
-      "headline": "美擬加碼關稅台芯片業恐遭重創業界批台當局「跪美」加速掏空台灣- 中國 - epaper.tkww.hk",
-      "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE4weEtoV19fS3VrNmRXTmRSYWczdDBrLXdVdVk5NUpOdng5WGpxQlZmeU44b2M5d01nd1MwcWU3RnJ6aEJlMEFfNERDT2QxZ3JJT0NYZEludlJ1REplZEdiTTJyZkptUkdmRUZjaTdib3g3R3dp?oc=5",
+      "date": "2026-09-02T06:52:00+00:00",
+      "headline": "跟台積電遠赴美國！工程師太太揭真相：一點都不開心 - 東森電視",
+      "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE5yUTEzdy0wRU12Z0ljMEtvQmVtSXNfY1A0SVBpV1R6MlZTenBYMjBTeW8xbE1ocXpNVkg3ekprY2RYczV1YUR0eWdwd2h4UmdjeUlkcQ?oc=5",
       "sentiment": "neutral"
     },
     {
@@ -32113,21 +32113,21 @@
       "sentiment": "neutral"
     },
     {
-      "date": "2026-08-28T09:45:00+00:00",
-      "headline": "川普擬開徵「終端產品關稅」筆電、AI伺服器全納入！台灣代工三雄恐遭重創 - ftnn.com.tw",
-      "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTFB1bUlKWnBYRUJDak5vRzhHNjFtUkJvNFRtUUFzbU00aUcwd2hhVG1TVGZBRHJMSU16bDNNT2pVNUhtbXZXdVc2cUJjTQ?oc=5",
+      "date": "2026-08-28T02:20:05+00:00",
+      "headline": "台灣注意、美企業急了！川普傳擴大半導體關稅 外媒曝後果 - ec.ltn.com.tw",
+      "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE9oUE5hODZwMDZ1bTRxaEs4b3hXSXByUEpnUUlsOWIwcVZKMXAxNTVpRzNsbTZ6dUtIMUVzeTJCeGt2Z1dYdTlKbmxhR2drNW5oY3ZLODhkU0ZJRHIzNkpv?oc=5",
       "sentiment": "neutral"
     },
     {
-      "date": "2026-08-27T11:40:00+00:00",
-      "headline": "台灣注意、美企業急了！川普傳擴大半導體關稅 外媒曝後果 - 自由時報",
-      "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE1nbGFzajJrRUNsQ3JHNFI2d0NCTE9nbk9vQWdmZGctRVJIZ041QnFodm0xRU5XUnBpZk9veHhScURqLXBWQXVaQXVMMmppT2UtQXZ4cGhCQXQ?oc=5",
+      "date": "2026-08-27T19:00:00+00:00",
+      "headline": "半導體新一輪關稅？美國課稅兩構想曝光美科技界恐慌急展開遊說- 日報 - ctee.com.tw",
+      "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFAzQUV1elZuckxRMHRFR3dnUVRvVzZXQmlkQ21qVFg4dlA3Q09IU0F2M2NnMDFjM3dSeWhoMV9SemF0NlQ3UE50SlRsdlhLWDd2TkFKcE1ILVJLcWtPV1Bj?oc=5",
       "sentiment": "neutral"
     },
     {
-      "date": "2026-01-14T08:00:00+00:00",
-      "headline": "Cabinet mum on possible U.S. tariff deal involving TSMC investment|English News - 僑新聞",
-      "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE5OdzE1UDFNb1ItY2RHajhVU0d6MVRyYmkzY1BYdWY3X1ptU0Y1MFdFTzVIa3RkOHJCWmFuMkNmT3kyZnQwSEV6NHdPUQ?oc=5",
+      "date": "2026-05-28T07:00:00+00:00",
+      "headline": "US-Taiwan trade deal tariffs to take effect retroactively from May 1 - Formosa News",
+      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE1OLV9KMUVPZm5DYmNGa1Q0OFFTakk4OEI5SEZpVmZlTkoyQnUyMEFOSlVHTGNiVlhhbm90TFpFcWsxbUpfR3ZpdTlUQTZza2pJWVVoQmdhN2NfSkM5?oc=5",
       "sentiment": "neutral"
     },
     {
@@ -32137,28 +32137,22 @@
       "sentiment": "neutral"
     },
     {
-      "date": "2025-07-08T07:00:00+00:00",
-      "headline": "TSMC says U.S. investment won't impact projects elsewhere|English News - 僑新聞",
-      "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE1LeXNEMUhEUHh6RnB6QlNUVjg0YVJIczg5N1ZqdjhRUE5Tbk1VOXcweldiOUxfd1hXNGtsei1jU1h0b3I3d0RxWk1ENA?oc=5",
-      "sentiment": "neutral"
-    },
-    {
-      "date": "2025-06-29T07:00:00+00:00",
-      "headline": "TSMC named on Time's list of 100 Most Influential Companies|English News - 僑新聞",
-      "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE1UZ1lINDhTRnZKVVdTMFRZLVhHSHFuNGZRektlbHd5c3VzcHp0Tnl4RGtkc2V4Z0ptS1RENkNjSTd4dnV0bGNoTFhWaw?oc=5",
-      "sentiment": "neutral"
-    },
-    {
-      "date": "2025-03-30T07:00:00+00:00",
-      "headline": "《TAIPEI TIMES》 TSMC, US working on solutions as new tariffs loom - 自由時報",
-      "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE5GQW1NYk9mOEdybUVvRjFYc3pEdjVKWV9Xdnp1VU9fMjQ2ZnFHQkt3S3VYX1M1VTc2bnd3ZmszMVMtaDctc2Y0Tmc4Snh5OFRHaTVJQzRCOV9QSnVVNVRvRVlGRkN2dw?oc=5",
-      "sentiment": "neutral"
-    },
-    {
       "date": "2025-03-21T07:00:00+00:00",
       "headline": "Nvidia Downplays Tariff Impact, Eyes U.S. Production Boost - TradingView",
       "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPei1wWXcxQ05KQnp5T2ZHMU5qWmFETDN6cjYzcGJVRGNvb29oUlVIdlAyRkoxNU42QW9QTEh6bnlOMW5pZzdkMy1ha25TNTlFT1JLbF9RWEsxSEdkRjZJM2pGLVV1Ul9yZlEwM3lJZk5yQmtWbW1RU3dCYnpBSk1oa3hrUEowS1dkWFZIcS00Z0pnRXJfRl81RTh4bTVPZVRNUUVnZ3RUTm1od3JQSFd0NWYtampudw?oc=5",
       "sentiment": "positive"
+    },
+    {
+      "date": "2025-03-18T07:00:00+00:00",
+      "headline": "TSMC's Wei one of 'most respected' people in business: Trump|English News - 僑新聞",
+      "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE0taThnQ3lLVS1EajNFMDN4S09PSm9DaVBsVTJET3R5THBQLVpWU0l6bkxsc1R3bXVWbUc1UkVMQ3AwQmNhaUZhTllpcw?oc=5",
+      "sentiment": "neutral"
+    },
+    {
+      "date": "2025-03-10T07:00:00+00:00",
+      "headline": "Trump softens tone on Taiwan's chip industry after TSMC investment|English News - 僑新聞",
+      "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE52aWF0RW9rc2lPcjVPWF8wUjdmUnd0SnNzRVBEYVdVT2YwaFBKUlNDbWljRzRIY3RyanJpQ0NOcWFOamhxYmM1QVBtZw?oc=5",
+      "sentiment": "neutral"
     }
   ]
 }
