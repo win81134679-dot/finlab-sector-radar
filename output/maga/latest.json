@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-03T21:27:44+08:00",
+  "updated_at": "2026-09-04T00:38:45+08:00",
   "active_policies": [
     {
       "key": "tariff",
@@ -189,7 +189,7 @@
           "o": 2385.0,
           "h": 2400.0,
           "l": 2380.0,
-          "v": 13477351
+          "v": 14252351
         }
       ]
     },
@@ -266,7 +266,7 @@
           "o": 151.0,
           "h": 151.0,
           "l": 147.0,
-          "v": 9996073
+          "v": 11343073
         }
       ]
     },
@@ -959,7 +959,7 @@
           "o": 2605.0,
           "h": 2630.0,
           "l": 2475.0,
-          "v": 5103604
+          "v": 5153604
         }
       ]
     },
@@ -1036,7 +1036,7 @@
           "o": 253.5,
           "h": 254.5,
           "l": 247.5,
-          "v": 29386493
+          "v": 29851493
         }
       ]
     },
@@ -1267,7 +1267,7 @@
           "o": 1020.0,
           "h": 1025.0,
           "l": 962.0,
-          "v": 3188248
+          "v": 3213248
         }
       ]
     },
@@ -1575,7 +1575,7 @@
           "o": 1735.0,
           "h": 1810.0,
           "l": 1725.0,
-          "v": 10319094
+          "v": 10346094
         }
       ]
     },
@@ -1729,7 +1729,7 @@
           "o": 3395.0,
           "h": 3525.0,
           "l": 3290.0,
-          "v": 4401016
+          "v": 4418016
         }
       ]
     },
@@ -2499,7 +2499,7 @@
           "o": 4400.0,
           "h": 4420.0,
           "l": 4290.0,
-          "v": 9319994
+          "v": 9510164
         }
       ]
     },
@@ -2576,7 +2576,7 @@
           "o": 17735.0,
           "h": 18790.0,
           "l": 17360.0,
-          "v": 583232
+          "v": 591321
         }
       ]
     },
@@ -9603,7 +9603,7 @@
           "o": 822.0,
           "h": 847.0,
           "l": 817.0,
-          "v": 1148550
+          "v": 1396550
         }
       ]
     },
@@ -32064,6 +32064,66 @@
     "avg_beneficiary_score": 29
   },
   "news": [
+    {
+      "date": "2026-09-03T09:58:00+00:00",
+      "headline": "美擬加徵半導體關稅政院：將確保台灣享有最優惠待遇| 政治 - 中央社 CNA",
+      "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFAwQnFWV3k2VEN2b2xQOUtBemRZaDhWSXVJejRVWEpVeEViYXpWNUI3ZG81S1Vqd1p2WjBjbDZQZi03RU84UkFrT1dwTHM1MzJpNlU1bmd5bmgzYmVLOTlB?oc=5",
+      "sentiment": "neutral"
+    },
+    {
+      "date": "2026-09-03T07:52:29+00:00",
+      "headline": "新半導體關稅來襲！盧特尼克曝台灣加碼投資 經濟部：追加200億美元 - 民報",
+      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9jZDhDYjlRNjhsRnJLSExpNUEyU2VtZmt3S2VJSENKcHhtTTk2U2xSNTBHTThMc3RUSmRqNHVVVkFuZzFPZ2pYenBFZUFxOXhTWUJMYWgtb1AwS0JGeU13SWRta0o?oc=5",
+      "sentiment": "neutral"
+    },
+    {
+      "date": "2026-09-03T07:06:00+00:00",
+      "headline": "委內瑞拉石油將大量回歸市場！美國出手簽能源協議「拚產量翻倍」國際油價恐承壓 - Yahoo股市",
+      "url": "https://news.google.com/rss/articles/CBMi9wNBVV95cUxNSFlYRkJnZlJsdEtiRWdlNHUycHNveFo2aTltTHRLWUVPeGNTVHo2TDlWQ0NGdW1TNWVFOGI4QzhjSDhFUjVsQzRiV3JFZUU0d1BQaWRIWXhYSkZIcWlmNWx3UFF2SGk0T3FqTlZYR3hrbHhNZEE2bHFTenR5d2ZVQ2VxOFhUSUxZcGctRjJiQUpuUWR1bjFxTlZmVW1GV1d0SmhUVWVaaW5RUjdxR0I2TlV4NDd6UHlkRHZBRm9sZDQzWTAxMXJQN205c3hoM09QUlhJdnJKYTdabS0zdlRadmc5SHY4VEFwLVh5TGNYUGdpOHR2alUwei14Z2ZJQWJlM2dVRlA3cmNabnlzS3NLcHJTamM4YVlIU2RGY3dTS0VPLW5MQ3NaZVlfcXluQ1h6R2NXNzFPbWdCVjVnYnRuTHBkeU1jNzR0VHVJeTdZMEphNWNscjFZYUNTVnBQVFRWekdnTFM1OU1xQURqYjdGcDB5UlBzUXl4QTZMT3lGVzFxaVdBNk5NLV9CMk91aUhLX3ZwSWtYRGZKV21tSHFQLXo1NW9BeFZ2TFJHLU55b2VoU2U1dE9tQ3BnQkp4VWFfSWZoMjFwX1hwYk5rUGVlaDdkVWtjbmRIRUhaUmdfX09ZV1owZE10eFF5SWtuNnJ1RjYwZ1g5RQ?oc=5",
+      "sentiment": "neutral"
+    },
+    {
+      "date": "2026-09-03T06:59:00+00:00",
+      "headline": "美半導體關稅來襲！美商務部長曝：台灣下週將宣布加碼投資 - 遠見雜誌",
+      "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE9TV29DR3JKNGVOR0Y2UlNHX19IU3hWazdDQTNrSTBGR0lXSWhKYmxBY0E1UmxQb3NKQXBnTGU0dGpkbUpqTWw5cGJJdFZ0dw?oc=5",
+      "sentiment": "neutral"
+    },
+    {
+      "date": "2026-09-03T05:58:08+00:00",
+      "headline": "美擬對半導體加徵新關稅 政院：台灣爭取落實232最惠待遇 - UDN",
+      "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE5MQ0JmZ20xellqR1RybTZDUk1OQ1ZDLUtvQzR4aGhvQXY0dHJYbkY3RW1LdVNfN3hyeEpUSDFhcmtsalRVdHVWcmh2X3NHZG5x0gFWQVVfeXFMTnJrOW5DeUdXVC1qX1k0SVZsaUdESVpRYVlHZF9VYWJ6am9UbnEwbDFkNEF2N1djWHJxZlZWV01ZMHZ0WHlaczZqdVd2MExhd0dkeGxPeVE?oc=5",
+      "sentiment": "neutral"
+    },
+    {
+      "date": "2026-09-03T05:55:00+00:00",
+      "headline": "全球近20座廠仍不夠 ！台積電高層曝「AI需求30年來罕見」：設備需求半年暴增9成 - FTNN 新聞網",
+      "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTFB6U1JnSWZ1UDhrU192QTNLVEdiOF9qTy1LbllJX0VXY25HVlptSXJkQU9HZWpuVTAyN2RvaklmWEpCRzlsSVhZWERPbw?oc=5",
+      "sentiment": "neutral"
+    },
+    {
+      "date": "2026-09-03T04:27:00+00:00",
+      "headline": "說溜嘴？盧特尼克：台灣下周宣布新一波對美投資 證實川普「晶片關稅」研擬中 - Yahoo股市",
+      "url": "https://news.google.com/rss/articles/CBMi9AJBVV95cUxQY2tqaDdWN1JyN1ZaMEktWmxJVDBha3lqLTE4SWVkSml4Q0MtVzhGRGVzbmpDVVZxdEJHVTRXSW44RXZ3TlBBeUlvdEEza1FiRmwzS0NMa2ZlVlM1elNsdF9PN1dGT3V0UlRmYkYyMjRUeW56XzA3ZWVqUUlySHJLU2ZJb2NGVnJFQUt5TzZoZThRNW1NeC1za2NsOVFpWlFFX2JsWHJhQm9idUpsTldieGZOQXRPRzFWanBIT1B4ZFMtV3JZdXlkdndtNHBkalNxbmpBR2NLSG91eTd3TGRtNGhlSWJEYnI2RXNLRFVWU3BONDFUcnBPejZVVkVSQUI1Q2RwOGowcGRrcjRNUnNJeUR1LXU2RUN0S3Rib3doWmlUM2QyQnQzX3lscW9Gck5uSXJyRWFqdEpsZ201eHhvaHloZjUwVVFhVXM3UDBjbFE5SmpPaGpDbkZnOUxQZmN5Vkp0dXNEbDc1M1VWSExzZkl3T2U?oc=5",
+      "sentiment": "neutral"
+    },
+    {
+      "date": "2026-09-03T03:52:18+00:00",
+      "headline": "赴美設廠免付晶片關稅？盧特尼克：台灣將再加碼 - TechNews 科技新報",
+      "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxObzd4eEFTSlFFZUFLcXp0b2xGekI1dGRXUlVLZjVvM29JNzlLOUxDQjdUUlZjMzdiblA1M0o1Sk9sU19NT0d6OENPNE13VWJyZzlBTUtQckRwWWpPNks2bmFxWEl6WVZETXhqLWJKckM1VEpoQjFQbGV6dVptRm9iTF9TajFUWnd1d3Nz?oc=5",
+      "sentiment": "neutral"
+    },
+    {
+      "date": "2026-09-03T01:41:44+00:00",
+      "headline": "美國擬推「目標性」晶片關稅 促廠商本土生產、台積電亞利桑那廠受矚 - 商傳媒",
+      "url": "https://news.google.com/rss/articles/CBMi6ANBVV95cUxOeUtzSWdtS1B4enNJMXQxRVJhTTVfbjBpTHdib0ZiU2FzSjBEOTBCb0hWVUdPMXpsVlBoS0pnVGQzd0ltc09uYkZuV0k4dnk5SmJsU2V3aXBTbmJCVkVMTjZoUUlMVlV0Qnlkek9WSWRwUnFQSFhLdGtXa0hZWDNOdmhLcnNQRkE3V0tqa0hicU84WlI0SThGQ2w2YnQyVGdXNk9SUWhoZ25YaVh5RUhQRkEzUnUyajR0Rm9aNFlYVGNLVkpGUUpqbmNwbERmRHkzcWlwZzJNXzRQajhmNl9KYUNsWWxkdzB6VDVLMVVxUVdBVHFTN2xhazhFSmhYeWVEMzZ3bUYyR1ZpWnc1OGR2TENmMlY2VXhMWF9XUmIxYnY5ckVlaXBSR0k1Mm9nN185dkl0Y3JVd3F1ZnM0SmFUeHpQRnBLUEtMREVuUUxXNFNsaEVIcmUxMUE5NXp2aWsxM2lqSGxPbERkQTlFN3lrdVZ5WHh2R1djdGtwUDMxUG05TF8tWVlXamlseE5tVjNueWIzYlFETXk4T0FGQ0Z2Q1RJMV9qM2tyVTdFOWxJRzBoWkxQdjM4WDZOdmk3RTQzR1I0Z0dtLWdtVXBnNldTX19oQjBHd3BVMTBuU1FDdGlCeWNucW1YZA?oc=5",
+      "sentiment": "neutral"
+    },
+    {
+      "date": "2026-09-02T03:33:07+00:00",
+      "headline": "跟台積電遠赴美國！工程師太太享高薪生活 揭真實生活：一點都不開心 - 三立新聞網SETN.com",
+      "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE5ONkV5V2xKV0pidU40cVRDRWlMZUdhNmZrMDJzTUV3blNWaGQwNjdmS1lxVkNKNFdpM01EYUVONkM1RkNCOEpmZk9adw?oc=5",
+      "sentiment": "neutral"
+    },
     {
       "date": "2026-05-28T07:00:00+00:00",
       "headline": "US-Taiwan trade deal tariffs to take effect retroactively from May 1 - Formosa News",
