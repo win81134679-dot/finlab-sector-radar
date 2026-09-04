@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-04T21:28:17+08:00",
+  "updated_at": "2026-09-05T00:33:41+08:00",
   "active_policies": [
     {
       "key": "tariff",
@@ -112,7 +112,7 @@
           "o": 128.5,
           "h": 131.0,
           "l": 126.5,
-          "v": 142747105
+          "v": 142867105
         }
       ]
     },
@@ -189,7 +189,7 @@
           "o": 2415.0,
           "h": 2415.0,
           "l": 2390.0,
-          "v": 14090018
+          "v": 14102018
         }
       ]
     },
@@ -959,7 +959,7 @@
           "o": 2505.0,
           "h": 2570.0,
           "l": 2485.0,
-          "v": 3721234
+          "v": 4361234
         }
       ]
     },
@@ -1036,7 +1036,7 @@
           "o": 252.5,
           "h": 256.0,
           "l": 251.0,
-          "v": 49284342
+          "v": 49402342
         }
       ]
     },
@@ -2576,7 +2576,7 @@
           "o": 18490.0,
           "h": 18490.0,
           "l": 17410.0,
-          "v": 241941
+          "v": 244941
         }
       ]
     },
@@ -2730,7 +2730,7 @@
           "o": 4155.0,
           "h": 4275.0,
           "l": 4110.0,
-          "v": 1749291
+          "v": 1757291
         }
       ]
     },
@@ -6446,7 +6446,7 @@
           "o": 1345.0,
           "h": 1360.0,
           "l": 1280.0,
-          "v": 1994478
+          "v": 2009478
         }
       ]
     },
@@ -6677,7 +6677,7 @@
           "o": 2420.0,
           "h": 2515.0,
           "l": 2355.0,
-          "v": 1155652
+          "v": 1188652
         }
       ]
     },
@@ -9526,7 +9526,7 @@
           "o": 1375.0,
           "h": 1415.0,
           "l": 1370.0,
-          "v": 221906
+          "v": 289906
         }
       ]
     },
@@ -32063,5 +32063,96 @@
     "total_victim": 251,
     "avg_beneficiary_score": 29
   },
-  "news": []
+  "news": [
+    {
+      "date": "2026-09-04T14:51:54+00:00",
+      "headline": "美國掌控委內瑞拉石油儲備：百年油情衝突再掀波瀾 - Yahoo股市",
+      "url": "https://news.google.com/rss/articles/CBMi5AJBVV95cUxOeVRZbWhSMmN5UmpWWDEwZXQ0Q1lNNmtJLWZwQWgzbTRtVmxKeVBLa1V4X0FlX0VnQkNLSWJIWFltWmhHUlJKN1cxNlNveGVkaV9mRTl1Wm1Gd3lkaEFDaFVKWlJvaWNxc040VzhUTGZNQ2U2d1E0ZXJUVmtpTGQ0b1Z2czN0by0wd1FOaGszeHVkZm85cnRpR3Rkc290bC1manZTaGR5emRWcjBrR3V2Smdrd1RkYjFvRVlSWFhoRktQdDJkNGgtOXotYUdyQ2N0QjZwcGdlejFrWG1xcE00WFlMUExuQl9GeEUyNnRjaThZa3lzc0F0YTN6T0Q0N09GWGlieVpUaHUySFFqOW5KVVNjU2VtbW5kd1hBVjRZTlIzVUU2QXI0dnh4U3pjZFdXRExFMV80cFRJcGFCYktzcVVjdUVGYVRoUklfaDBzQjlfYjRPemw3LWRKMnZ5MVIybm1BcQ?oc=5",
+      "sentiment": "neutral"
+    },
+    {
+      "date": "2026-09-04T13:48:04+00:00",
+      "headline": "美國非農大超預期 費半、那指雙漲 台積電ADR勁揚8美元 - 中時新聞網",
+      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9zOG9fUzZPNmlXTThLcnA5ekt0TFpBT0J1ejg5UWpxQkljQlJuSDBwTENBeHVwc3h2c1c1WkZESWxFV1ZhNVk3VUg5OXp1NjNCSVNBQzJReTdUaGpfSnpNRzNrYlZTdUtienFza2dR?oc=5",
+      "sentiment": "neutral"
+    },
+    {
+      "date": "2026-09-04T12:52:00+00:00",
+      "headline": "美提台積電投資額施壓首爾 韓媒：三星與SK海力士得砸錢6.5倍 - 工商時報",
+      "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE1OcnFBZm0wbmxwX29ZWkJGdTF6QWUxYWJXcHNfMk9VY3ZQdXQtVWdtcU9oUE15QUlTeUo3bVVzbFRTZ1F0ay1DYlNZOGVhaS1zNHJpN2ZCZ3ByM3NYNi04?oc=5",
+      "sentiment": "neutral"
+    },
+    {
+      "date": "2026-09-04T11:35:03+00:00",
+      "headline": "AI終極贏家！美媒點名台積電股票比「科技七雄」更香 - 自由財經",
+      "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE0tTWFuWmZxMXc2Yk5zMm5OdVlSZ0pRaVM1c2JkeS1yNUNuWnY2T0xHa3dGRW5rMVNwUWdzczZLdUktcDAtS2tBQUw2S3hneDBQcXJCaTFOLXZ5THZDWFpr?oc=5",
+      "sentiment": "neutral"
+    },
+    {
+      "date": "2026-09-04T00:27:00+00:00",
+      "headline": "美股收高台積電ADR小漲投顧：AI訂單兌現台股韌性強| 證券 - 中央社 CNA",
+      "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE1sZHA0SWY1Vmp3cE9TcFcyUW52akRnQ3RlQ1BhZjZNMmFCa21oRmx4aEYtSVhkdmdVLTRqQjlrQnQ0UHJJb2RPYmI4QWpkQkVYbkpSWW5qTEg1T3FoY2c?oc=5",
+      "sentiment": "positive"
+    },
+    {
+      "date": "2026-09-03T07:52:29+00:00",
+      "headline": "新半導體關稅來襲！盧特尼克曝台灣加碼投資 經濟部：追加200億美元 - 民報",
+      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9jZDhDYjlRNjhsRnJLSExpNUEyU2VtZmt3S2VJSENKcHhtTTk2U2xSNTBHTThMc3RUSmRqNHVVVkFuZzFPZ2pYenBFZUFxOXhTWUJMYWgtb1AwS0JGeU13SWRta0o?oc=5",
+      "sentiment": "neutral"
+    },
+    {
+      "date": "2026-09-03T04:31:46+00:00",
+      "headline": "說溜嘴？盧特尼克：台灣下周宣布新一波對美投資 證實川普「晶片關稅」研擬中 - Yahoo股市",
+      "url": "https://news.google.com/rss/articles/CBMi9AJBVV95cUxQY2tqaDdWN1JyN1ZaMEktWmxJVDBha3lqLTE4SWVkSml4Q0MtVzhGRGVzbmpDVVZxdEJHVTRXSW44RXZ3TlBBeUlvdEEza1FiRmwzS0NMa2ZlVlM1elNsdF9PN1dGT3V0UlRmYkYyMjRUeW56XzA3ZWVqUUlySHJLU2ZJb2NGVnJFQUt5TzZoZThRNW1NeC1za2NsOVFpWlFFX2JsWHJhQm9idUpsTldieGZOQXRPRzFWanBIT1B4ZFMtV3JZdXlkdndtNHBkalNxbmpBR2NLSG91eTd3TGRtNGhlSWJEYnI2RXNLRFVWU3BONDFUcnBPejZVVkVSQUI1Q2RwOGowcGRrcjRNUnNJeUR1LXU2RUN0S3Rib3doWmlUM2QyQnQzX3lscW9Gck5uSXJyRWFqdEpsZ201eHhvaHloZjUwVVFhVXM3UDBjbFE5SmpPaGpDbkZnOUxQZmN5Vkp0dXNEbDc1M1VWSExzZkl3T2U?oc=5",
+      "sentiment": "neutral"
+    },
+    {
+      "date": "2026-09-03T03:52:18+00:00",
+      "headline": "赴美設廠免付晶片關稅？盧特尼克：台灣將再加碼 - TechNews 科技新報",
+      "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxObzd4eEFTSlFFZUFLcXp0b2xGekI1dGRXUlVLZjVvM29JNzlLOUxDQjdUUlZjMzdiblA1M0o1Sk9sU19NT0d6OENPNE13VWJyZzlBTUtQckRwWWpPNks2bmFxWEl6WVZETXhqLWJKckM1VEpoQjFQbGV6dVptRm9iTF9TajFUWnd1d3Nz?oc=5",
+      "sentiment": "neutral"
+    },
+    {
+      "date": "2026-09-03T01:15:00+00:00",
+      "headline": "晶片關稅震撼彈！美國半導體新關稅確定了盧特尼克證實：台灣下周宣布加碼投資- 國際 - 工商時報",
+      "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE1Ra1hDejBlVGowYWRhcldyOGlsREdndWYxRkJtWFItY21oREN4c0o4b1RxSUFKbkJ2RHA1RHpRejJRUjV2bng5U2xwcEhLakU4NGtzSjY3a2pXamV2bDNV?oc=5",
+      "sentiment": "neutral"
+    },
+    {
+      "date": "2026-09-02T17:24:46+00:00",
+      "headline": "美商務部長：台灣將投資美國300億美元 評估開徵新半導體關稅 - 經濟日報",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE50SWxxMC1tZ0dwSDNiLVg4ZXNFTFZ1VzRGcFJWVnZXaXJDS2NZMzg5Z0ZTX2ZCRlR1aGJUTDAzQ0ZGbEYzcTFaQnpSVklEWFBVT2gwdUY4TUJTd9IBX0FVX3lxTE5PaVBQekNhdEgxRTYxVm51alUxQk53QUZFNUVtbkhXYVVUbktMQzB1SDZfVjlZcEh1R0xtcWJsVXZ4QVRSOEJkdnlJcEdPak5mZ0NSUWlVbTlqcW1feE5F?oc=5",
+      "sentiment": "neutral"
+    },
+    {
+      "date": "2026-07-10T07:00:00+00:00",
+      "headline": "Bilateral Recommendations in the Post-Tariff Agreement Era - 未來城市＠天下 - 進步城市的新想像 - 未來城市＠天下",
+      "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE5SdG9aUVAwTXNQSkdXYUVhUVRfVkdvYTdnSUdHRk5aYmcyVlpNOVQ5bHBRdGNCQlI4M0F1THFNZ0ktYTNnZHpwLUxPdWhCUzhzSW1r?oc=5",
+      "sentiment": "neutral"
+    },
+    {
+      "date": "2026-05-28T07:00:00+00:00",
+      "headline": "US-Taiwan trade deal tariffs to take effect retroactively from May 1 - Formosa News",
+      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE1OLV9KMUVPZm5DYmNGa1Q0OFFTakk4OEI5SEZpVmZlTkoyQnUyMEFOSlVHTGNiVlhhbm90TFpFcWsxbUpfR3ZpdTlUQTZza2pJWVVoQmdhN2NfSkM5?oc=5",
+      "sentiment": "neutral"
+    },
+    {
+      "date": "2025-08-10T07:00:00+00:00",
+      "headline": "TSMC 'at front of the line' for exemption of Trump tariff: US scholar|English News - 僑新聞",
+      "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTFB1WThzVWRIbHN5Ym5kWmVTZDl3ZlFwZlQzYW9CZFV1d3lHSVhfM0psMmlWRXpzTWoxcGYxOUhtR0hteFM2SWdZSnVsOA?oc=5",
+      "sentiment": "neutral"
+    },
+    {
+      "date": "2025-04-04T07:00:00+00:00",
+      "headline": "Trump tariff could cause US exports to drop 63%, GDP to shrink by 3.8% - Formosa News",
+      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE5IajRMelZOZzhWYXdrSW9LRTJXYmtIN3JKUTBVTWxxbkhzSktBZnBwamtpVGxWTE8tVkJrTUtueEhzY0dseWVWR0FmLWdyU2p6bWlpTFBBVHBJN3ZH?oc=5",
+      "sentiment": "negative"
+    },
+    {
+      "date": "2025-03-21T07:00:00+00:00",
+      "headline": "Nvidia Downplays Tariff Impact, Eyes U.S. Production Boost - TradingView",
+      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPei1wWXcxQ05KQnp5T2ZHMU5qWmFETDN6cjYzcGJVRGNvb29oUlVIdlAyRkoxNU42QW9QTEh6bnlOMW5pZzdkMy1ha25TNTlFT1JLbF9RWEsxSEdkRjZJM2pGLVV1Ul9yZlEwM3lJZk5yQmtWbW1RU3dCYnpBSk1oa3hrUEowS1dkWFZIcS00Z0pnRXJfRl81RTh4bTVPZVRNUUVnZ3RUTm1od3JQSFd0NWYtampudw?oc=5",
+      "sentiment": "positive"
+    }
+  ]
 }
