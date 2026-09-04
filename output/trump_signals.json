@@ -1,6 +1,27 @@
 {
-  "updatedAt": "2026-09-04T18:55:50.873Z",
+  "updatedAt": "2026-09-04T22:16:54.537Z",
   "posts": [
+    {
+      "text": "The 50 percent problem with Trump’s Canada tariffs - The Hill The 50 percent problem with Trump’s Canada tariffs  The Hill",
+      "timestamp": "2026-09-04T15:30:00.000Z",
+      "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOTFlLT0wzRUMxeHpYclFGZGVia3RrSXhQdnJzWFNWUTV2Z3hBVFBSbHFzYmNBeWg0YlAwVWZhZkktbHlTaFUzZE5vT1dFdGdOX0V4T0N6WGpzd3dnQnVpVDMxeHFtenltN1JQQ25mWWdkUnhEV0tfSklqQVJ4OWVLWlpSTG5kd9IBiwFBVV95cUxPWGpIcmoxWXNXTjVWTEtEWDBvdXlQWEMzVWdHQzk1QUYyVUJ6ZDgzOWVxNTJwd2lUU1ZhU3RHeDI0V0VxOXphdU1XdTUyR1NvUTAyZDlraDhWc2IwcUFyNV83UXFKOG5tNjdhZ0tJVm9TWTRoZ2I4SVRrOHFydGdaTTFUWjNhWFpaa3V3?oc=5",
+      "keywords": [
+        "tariff",
+        "tariffs"
+      ],
+      "impacts": {
+        "foundry": -1,
+        "shipping": -1,
+        "steel": -1,
+        "ic_design": -1,
+        "display": -1,
+        "ev_supply": -0.8
+      },
+      "sentiment": {
+        "compound": -0.7184,
+        "label": "強烈利空"
+      }
+    },
     {
       "text": "Canada's Carney holds firm against Trump tariffs - DW.com Canada's Carney holds firm against Trump tariffs  DW.com",
       "timestamp": "2026-09-01T07:56:11.000Z",
@@ -18,6 +39,27 @@
         "ic_design": -1,
         "display": -1,
         "ev_supply": -0.8
+      },
+      "sentiment": {
+        "compound": -0.7184,
+        "label": "強烈利空"
+      }
+    },
+    {
+      "text": "US, China debate 'nonsensitive' tariff cuts ahead of Trump-Xi summit - Nikkei Asia US, China debate 'nonsensitive' tariff cuts ahead of Trump-Xi summit  Nikkei Asia",
+      "timestamp": "2026-09-01T17:28:00.000Z",
+      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPMzlod3BMTlh0dEhTS0k1aE56UVFPUFNVb3dtbzBEdktjWXh3U1pxdHgwN0dQTldURGVoeEJ3WWxXSUdFR0t4eWVjb2xEN01wMklSd2tUaFU5MUZtaEo0OFRUeU1xZnI0WV9VZ3lMVlphLVdtWkVvTFphekgwdzcxOFB4U1J1UzJHcE5VTEpjSEJ5VWkyN1hZV0tjSXRsdEE0UE5MemdZemZwbVFMNU54SDBKX2ZDUQ?oc=5",
+      "keywords": [
+        "tariff",
+        "china"
+      ],
+      "impacts": {
+        "foundry": -0.7,
+        "shipping": -0.9,
+        "steel": -0.5,
+        "ic_design": -1,
+        "display": -0.9,
+        "ev_supply": -0.7
       },
       "sentiment": {
         "compound": -0.7184,
@@ -44,45 +86,21 @@
       }
     },
     {
-      "text": "US, China debate 'nonsensitive' tariff cuts ahead of Trump-Xi summit - Nikkei Asia US, China debate 'nonsensitive' tariff cuts ahead of Trump-Xi summit  Nikkei Asia",
-      "timestamp": "2026-09-01T17:28:00.000Z",
-      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPMzlod3BMTlh0dEhTS0k1aE56UVFPUFNVb3dtbzBEdktjWXh3U1pxdHgwN0dQTldURGVoeEJ3WWxXSUdFR0t4eWVjb2xEN01wMklSd2tUaFU5MUZtaEo0OFRUeU1xZnI0WV9VZ3lMVlphLVdtWkVvTFphekgwdzcxOFB4U1J1UzJHcE5VTEpjSEJ5VWkyN1hZV0tjSXRsdEE0UE5MemdZemZwbVFMNU54SDBKX2ZDUQ?oc=5",
+      "text": "China lashes back at US over G20 row ahead of Xi-Trump summit - Financial Times China lashes back at US over G20 row ahead of Xi-Trump summit  Financial Times",
+      "timestamp": "2026-09-04T04:03:05.000Z",
+      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPdTlHaHBLeWdTekJjbGx5TEYySUJSYU9UejV1ck5Ea3VObURwUlNmZVRUd0RFankzbURQNFIzZzZ5WllmdWMyakh6S2QxSlFDdE9rTE5OcGM1dWtJVnFvY1JaUHhzWDZTWHZtVUw5QTRTZ0FIcEpqcUdPSkdMaXJfRmkyYTQ?oc=5",
       "keywords": [
-        "tariff",
         "china"
       ],
       "impacts": {
-        "foundry": -0.7,
-        "shipping": -0.9,
-        "steel": -0.5,
-        "ic_design": -1,
-        "display": -0.9,
-        "ev_supply": -0.7
+        "ic_design": -0.5,
+        "shipping": -0.4,
+        "display": -0.4,
+        "ev_supply": -0.3
       },
       "sentiment": {
-        "compound": -0.7184,
-        "label": "強烈利空"
-      }
-    },
-    {
-      "text": "Trump Puts Tariffs of Up to 100% on Foreign-Made Drones - The New York Times Trump Puts Tariffs of Up to 100% on Foreign-Made Drones  The New York Times",
-      "timestamp": "2026-09-03T04:01:05.000Z",
-      "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTFBlZDFTc2M4RUlQZHZtMGRMWmhkem40RlcydU94RVZHOWNKMmVEb2ZqajJIbUNvZFBQam8ydl9aNXVLZ2JqNksxTW5TaTkya1BxZEtxWTJnemtjYWh4SGZ0VURsQVZhOUs3aHgtYzdNT0VEekdQUkJF?oc=5",
-      "keywords": [
-        "tariff",
-        "tariffs"
-      ],
-      "impacts": {
-        "foundry": -1,
-        "shipping": -1,
-        "steel": -1,
-        "ic_design": -1,
-        "display": -1,
-        "ev_supply": -0.8
-      },
-      "sentiment": {
-        "compound": -0.7184,
-        "label": "強烈利空"
+        "compound": 0,
+        "label": "中性"
       }
     },
     {
@@ -102,27 +120,6 @@
         "ic_design": -1,
         "display": -1,
         "ev_supply": -0.9
-      },
-      "sentiment": {
-        "compound": -0.7184,
-        "label": "強烈利空"
-      }
-    },
-    {
-      "text": "Asia’s acquiescence in ‘reciprocal trade agreements’ fortifies Trump’s tariff wall - East Asia Forum Asia’s acquiescence in ‘reciprocal trade agreements’ fortifies Trump’s tariff wall  East Asia Forum",
-      "timestamp": "2026-08-24T07:00:00.000Z",
-      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQMzZLa2J4Yi1mSUhNbHhlb0hGSE95UDV2RTEwTDJxR3RyMS1yQTF2aGNWeHFnaUZEcUtRMVh2V0tGa1A3MkRUaHFMc0pOZ0Nvd2FJN1JzZ09uRXhja2d1OTk3OFVyb1o3QW44bmx5VnpmNlgxT0NXZmY0VnRDZGxGS0xfM2VOUUlJbVdzcThseVRDeDduQ1gyb2hqWWtBY2pPZVRxN1ZCcVllSHBUM0Q1eFZNcDVxc1U?oc=5",
-      "keywords": [
-        "tariff",
-        "agreement"
-      ],
-      "impacts": {
-        "foundry": -0.7,
-        "shipping": -0.2,
-        "steel": -0.5,
-        "ic_design": -0.4,
-        "display": -0.5,
-        "ev_supply": -0.4
       },
       "sentiment": {
         "compound": -0.7184,
@@ -185,6 +182,24 @@
       }
     },
     {
+      "text": "Trump’s Vaunted ‘Trade Deals’ Are Much Less Than Meet the Eye - The Dispatch Trump’s Vaunted ‘Trade Deals’ Are Much Less Than Meet the Eye  The Dispatch",
+      "timestamp": "2026-09-03T19:25:42.000Z",
+      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNU3NCdzZCYm91WTlEdmpaWVBOWmRSMTRha29CZDljWFM0eldwZEFNb2dJNGNleG5uOThaVi1fVUk5ZTBNNTRPRkthYTNjZGZlNjhIRTNGSEtXd0tieDJSY20xdENZR2FJc0c5UUY1b0NMa293V1ljQ2RLb245SDlaNDJmdi1JWlJ4ZFFqbEdOMVdHQWs?oc=5",
+      "keywords": [
+        "trade deal",
+        "deal"
+      ],
+      "impacts": {
+        "shipping": 0.7,
+        "ic_design": 0.6,
+        "display": 0.3
+      },
+      "sentiment": {
+        "compound": 0,
+        "label": "中性"
+      }
+    },
+    {
       "text": "Trump Administration imposing new tariffs on drones - ABC Columbia Trump Administration imposing new tariffs on drones  ABC Columbia",
       "timestamp": "2026-09-03T22:44:51.000Z",
       "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQMVNXQi1BZFFpS25xSlVJWFFGRlN2MzR1R1M3c2ZFb05oS2lHUC1jRjZlcndOVUMwRWhOUWFaa2JVUmVZRWZsQWlvc0wyanJqOWVMbmJ5clVIdFdjWDJFOEV4aWlZR2l4SlNVaXZiR0xlWmtBSWRPbVBDVklycUpRTG9Db1dBd2VUVzhEcFQyM2hPd1N1dXc?oc=5",
@@ -206,39 +221,11 @@
       }
     },
     {
-      "text": "Trade World — despite Trump’s tariffs, global commerce just keeps on growing - ft.com Trade World — despite Trump’s tariffs, global commerce just keeps on growing  ft.com",
-      "timestamp": "2026-09-03T11:00:02.000Z",
-      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBfSUV3R2pWQ1N6SDYzWmZERDFZaThsS0pRUDBQVmEzbUIwZUJoLXdKak9JMzVwbHVSRDJ4N1BBMUpLQjJJXzVHWGxiTFNqRUdBSVd1U0hQQkhhWTlOcVJyemNtTGwwd2Vka0ZFWGRKamw?oc=5",
-      "keywords": [
-        "tariff",
-        "tariffs"
-      ],
-      "impacts": {
-        "foundry": -1,
-        "shipping": -1,
-        "steel": -1,
-        "ic_design": -1,
-        "display": -1,
-        "ev_supply": -0.8
-      },
-      "sentiment": {
-        "compound": -0.7184,
-        "label": "強烈利空"
-      }
-    },
-    {
-      "text": "Trump’s Vaunted ‘Trade Deals’ Are Much Less Than Meet the Eye - The Dispatch Trump’s Vaunted ‘Trade Deals’ Are Much Less Than Meet the Eye  The Dispatch",
-      "timestamp": "2026-09-03T19:25:42.000Z",
-      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNU3NCdzZCYm91WTlEdmpaWVBOWmRSMTRha29CZDljWFM0eldwZEFNb2dJNGNleG5uOThaVi1fVUk5ZTBNNTRPRkthYTNjZGZlNjhIRTNGSEtXd0tieDJSY20xdENZR2FJc0c5UUY1b0NMa293V1ljQ2RLb245SDlaNDJmdi1JWlJ4ZFFqbEdOMVdHQWs?oc=5",
-      "keywords": [
-        "trade deal",
-        "deal"
-      ],
-      "impacts": {
-        "shipping": 0.7,
-        "ic_design": 0.6,
-        "display": 0.3
-      },
+      "text": "Canada Is Fighting Back on Trade. Will Others Follow? - The New York Times Canada Is Fighting Back on Trade. Will Others Follow?  The New York Times",
+      "timestamp": "2026-08-24T07:00:00.000Z",
+      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNVHJxbTAzNGRzWUxmNC1BNDNSTmxOSHF4OVg3RkE5VVhETE5jTk9KZW5KOUw1SENjS19xUHA0clZYXzEyajFMczJKaVkzQmJ6QTB0dlltU3ZCZVFPZ2ZzZVdzbE9sQ09rclZiRG85MDRiejlGQ0YteEg0TzJiUWNfU3RrbWRRa0pCZVFZd1V3?oc=5",
+      "keywords": [],
+      "impacts": {},
       "sentiment": {
         "compound": 0,
         "label": "中性"
@@ -285,7 +272,7 @@
       }
     },
     {
-      "text": "Is the US actually too chicken to take on China for trade? - The Guardian Is the US actually too chicken to take on China for trade?  The Guardian",
+      "text": "Is the US actually too chicken to take on China for trade? - theguardian.com Is the US actually too chicken to take on China for trade?  theguardian.com",
       "timestamp": "2026-08-19T07:00:00.000Z",
       "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPSW0yU3RqTkNxcmFnT1B5TWJEVDRXcklzaGVPUlpraWxlWUhnTTBmQlhXaENuRHJnZnVna09jOU0yc1FldXNRVzZzM0t4N25raldRVVBSUVN6QjhodGlpRW1keU5QY01xTzJCbldVM0ZjRlpoVFpUV3dLQW9yZVA5MQ?oc=5",
       "keywords": [
@@ -304,7 +291,7 @@
     },
     {
       "text": "Trump Administration Tariff Tracker - Wiley Rein Trump Administration Tariff Tracker  Wiley Rein",
-      "timestamp": "2026-08-24T13:45:00.000Z",
+      "timestamp": "2026-08-24T07:00:00.000Z",
       "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBmOHhPR2NIU2JYTmJnT251UXkyUlNwTFNqWlJtZjFadl84QWdGazFTOExtMk1GQzV4dzVMbTFJbWlzalZUZW9ZT0V5VGZ2YXBib1pJcEpIak9fd1dIaFp1WDNtWTJ6NnNx?oc=5",
       "keywords": [
         "tariff"
@@ -366,30 +353,41 @@
       }
     },
     {
-      "text": "Trump-Xi Summit Could Deliver New China Agriculture Deals, U.S. Trade Chief Says — ‘Not Looking for a Gia - benzinga.com Trump-Xi Summit Could Deliver New China Agriculture Deals, U.S. Trade Chief Says — ‘Not Looking for a Gia  benzinga.com",
-      "timestamp": "2026-09-04T10:54:40.000Z",
-      "url": "https://news.google.com/rss/articles/CBMingJBVV95cUxNUVJBQ2lyWlI3bThYYTdWT25hVE9ONkFnWmpaUG8ya1RJRkxzQS1UaGNYaTdNYUxyZ0NqRjlja2pjNGJnUW5iTEhPdmdWT2ExekdMSXFDMlJLcVpRQklzYUp0b3F2RVlzYWk4eldVZU9jSU8wdDc1b2dReEhqejNSZkVUa1I0ek43ZkZsTEkzR0RuSlVUTkQ4NHRiSFdZSnE1RGtPOTFrT2xaOUpGTDNiUVYyLWxFWkNsaTE2SXRxbmhwMklLa2xwd3RoTUhxTGZ2a25CaklRU0toVjJqQWVLUThycFh3MVdnZW8tSjB3TjVxVDRzamE2bGJQSXhrNzZsRGE4bmdrZFNVeWR0V1g4c1gwemp2cThTeFRuemJB?oc=5",
+      "text": "Trade World — despite Trump’s tariffs, global commerce just keeps on growing - Financial Times Trade World — despite Trump’s tariffs, global commerce just keeps on growing  Financial Times",
+      "timestamp": "2026-09-03T11:00:02.000Z",
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBfSUV3R2pWQ1N6SDYzWmZERDFZaThsS0pRUDBQVmEzbUIwZUJoLXdKak9JMzVwbHVSRDJ4N1BBMUpLQjJJXzVHWGxiTFNqRUdBSVd1U0hQQkhhWTlOcVJyemNtTGwwd2Vka0ZFWGRKamw?oc=5",
       "keywords": [
-        "china",
-        "deal"
+        "tariff",
+        "tariffs"
       ],
       "impacts": {
-        "ic_design": -0.3,
-        "shipping": -0.2,
-        "display": -0.4,
-        "ev_supply": -0.3
+        "foundry": -1,
+        "shipping": -1,
+        "steel": -1,
+        "ic_design": -1,
+        "display": -1,
+        "ev_supply": -0.8
       },
       "sentiment": {
-        "compound": 0,
-        "label": "中性"
+        "compound": -0.7184,
+        "label": "強烈利空"
       }
     },
     {
-      "text": "Canada Is Fighting Back on Trade. Will Others Follow? - The New York Times Canada Is Fighting Back on Trade. Will Others Follow?  The New York Times",
-      "timestamp": "2026-08-24T07:00:00.000Z",
-      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNVHJxbTAzNGRzWUxmNC1BNDNSTmxOSHF4OVg3RkE5VVhETE5jTk9KZW5KOUw1SENjS19xUHA0clZYXzEyajFMczJKaVkzQmJ6QTB0dlltU3ZCZVFPZ2ZzZVdzbE9sQ09rclZiRG85MDRiejlGQ0YteEg0TzJiUWNfU3RrbWRRa0pCZVFZd1V3?oc=5",
-      "keywords": [],
-      "impacts": {},
+      "text": "China Has Come Through Trump’s Trade War in a Good Position - The New York Times China Has Come Through Trump’s Trade War in a Good Position  The New York Times",
+      "timestamp": "2026-07-25T07:00:00.000Z",
+      "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE5PRDkyX0ZpSzd2QmhBWnJiQVJDbHBqbWZlQzBGbGJacUVUekJmcHhYYVJXWlpXeUk4TVRSWG5MNzdnR2ZCSVNTbWtra3doaDg1ei10NlB4bk9JUXAzMXVRYmRuWU1NSGJVMnpub1Jybms5Q0xjTXRN?oc=5",
+      "keywords": [
+        "trade war",
+        "china"
+      ],
+      "impacts": {
+        "foundry": -0.6,
+        "ic_design": -1,
+        "shipping": -1,
+        "display": -0.4,
+        "ev_supply": -0.3
+      },
       "sentiment": {
         "compound": 0,
         "label": "中性"
@@ -400,40 +398,22 @@
     {
       "sector": "foundry",
       "sectorName": "晶圓代工",
-      "prev": -0.931,
-      "current": -0.785,
-      "delta": 0.146,
+      "prev": -0.785,
+      "current": -0.733,
+      "delta": 0.052,
       "momentum": "↑ 壓力緩解",
-      "accelerating": true
-    },
-    {
-      "sector": "steel",
-      "sectorName": "鋼鐵",
-      "prev": -0.834,
-      "current": -0.721,
-      "delta": 0.113,
-      "momentum": "↑ 壓力緩解",
-      "accelerating": true
+      "accelerating": false
     }
   ],
   "topDeltas": [
     {
       "sector": "foundry",
       "sectorName": "晶圓代工",
-      "prev": -0.931,
-      "current": -0.785,
-      "delta": 0.146,
+      "prev": -0.785,
+      "current": -0.733,
+      "delta": 0.052,
       "momentum": "↑ 壓力緩解",
-      "accelerating": true
-    },
-    {
-      "sector": "steel",
-      "sectorName": "鋼鐵",
-      "prev": -0.834,
-      "current": -0.721,
-      "delta": 0.113,
-      "momentum": "↑ 壓力緩解",
-      "accelerating": true
+      "accelerating": false
     }
   ],
   "totalAnalyzed": 100,
@@ -442,10 +422,9 @@
   ],
   "sectorState": {
     "foundry": {
-      "score": -0.785,
-      "lastUpdated": "2026-09-04T18:55:50.873Z",
+      "score": -0.733,
+      "lastUpdated": "2026-09-04T22:16:54.537Z",
       "deltaHistory": [
-        0.0050000000000000044,
         0.04500000000000004,
         -0.06300000000000006,
         0.17000000000000004,
@@ -454,14 +433,14 @@
         -0.1469999999999999,
         -0.0030000000000000027,
         0.013999999999999901,
-        0.14600000000000002
+        0.14600000000000002,
+        0.052000000000000046
       ]
     },
     "shipping": {
-      "score": -0.983,
-      "lastUpdated": "2026-09-04T18:55:50.873Z",
+      "score": -0.981,
+      "lastUpdated": "2026-09-04T22:16:54.537Z",
       "deltaHistory": [
-        -0.020000000000000018,
         0.02400000000000002,
         -0.008000000000000007,
         -0.007000000000000006,
@@ -470,14 +449,14 @@
         -0.0030000000000000027,
         0.014000000000000012,
         0.0050000000000000044,
-        -0.040000000000000036
+        -0.040000000000000036,
+        0.0020000000000000018
       ]
     },
     "steel": {
-      "score": -0.721,
-      "lastUpdated": "2026-09-04T18:55:50.873Z",
+      "score": -0.687,
+      "lastUpdated": "2026-09-04T22:16:54.537Z",
       "deltaHistory": [
-        -0.03300000000000003,
         0.061000000000000054,
         -0.05400000000000005,
         0.16500000000000004,
@@ -486,12 +465,13 @@
         -0.16300000000000003,
         0.010000000000000009,
         0.026000000000000023,
-        0.11299999999999999
+        0.11299999999999999,
+        0.03399999999999992
       ]
     },
     "ic_design": {
       "score": -1,
-      "lastUpdated": "2026-09-04T18:55:50.873Z",
+      "lastUpdated": "2026-09-04T22:16:54.537Z",
       "deltaHistory": [
         0,
         0,
@@ -506,10 +486,9 @@
       ]
     },
     "display": {
-      "score": -0.952,
-      "lastUpdated": "2026-09-04T18:55:50.873Z",
+      "score": -0.939,
+      "lastUpdated": "2026-09-04T22:16:54.537Z",
       "deltaHistory": [
-        -0.06700000000000006,
         0.02300000000000002,
         -0.0040000000000000036,
         0.04200000000000004,
@@ -518,14 +497,14 @@
         -0.06099999999999994,
         -0.02300000000000002,
         0.013000000000000012,
-        0.014000000000000012
+        0.014000000000000012,
+        0.013000000000000012
       ]
     },
     "ev_supply": {
-      "score": -0.767,
-      "lastUpdated": "2026-09-04T18:55:50.873Z",
+      "score": -0.757,
+      "lastUpdated": "2026-09-04T22:16:54.537Z",
       "deltaHistory": [
-        -0.06099999999999994,
         0.030000000000000027,
         -0.007000000000000006,
         0.039999999999999925,
@@ -534,14 +513,14 @@
         -0.09000000000000008,
         -0.009000000000000008,
         0.01200000000000001,
-        0.03300000000000003
+        0.03300000000000003,
+        0.010000000000000009
       ]
     },
     "ai_server": {
-      "score": 0.143,
-      "lastUpdated": "2026-09-04T18:55:50.873Z",
+      "score": 0.124,
+      "lastUpdated": "2026-09-04T22:16:54.537Z",
       "deltaHistory": [
-        0.064,
         -0.07400000000000001,
         0.008,
         -0.0029999999999999957,
@@ -550,12 +529,13 @@
         0.03599999999999999,
         0.008000000000000007,
         -0.01200000000000001,
-        0.0010000000000000009
+        0.0010000000000000009,
+        -0.01899999999999999
       ]
     },
     "pcb": {
       "score": 0,
-      "lastUpdated": "2026-09-04T18:55:50.873Z",
+      "lastUpdated": "2026-09-04T22:16:54.537Z",
       "deltaHistory": [
         0,
         0,
@@ -586,10 +566,9 @@
       ]
     },
     "packaging": {
-      "score": -0.003,
-      "lastUpdated": "2026-09-04T18:55:50.873Z",
+      "score": -0.002,
+      "lastUpdated": "2026-09-04T22:16:54.537Z",
       "deltaHistory": [
-        -0.003,
         0.002,
         0,
         -0.001,
@@ -598,7 +577,8 @@
         0.009999999999999998,
         -0.005,
         0.005,
-        0
+        0,
+        0.001
       ]
     },
     "semiconductor_equip": {
@@ -660,10 +640,9 @@
       ]
     },
     "solar": {
-      "score": -0.002,
-      "lastUpdated": "2026-09-04T18:55:50.873Z",
+      "score": -0.001,
+      "lastUpdated": "2026-09-04T22:16:54.537Z",
       "deltaHistory": [
-        -0.001,
         0,
         -0.001,
         -0.001,
@@ -672,7 +651,8 @@
         0.005,
         -0.003,
         0.003,
-        0
+        0,
+        0.001
       ]
     },
     "wind_energy": {
