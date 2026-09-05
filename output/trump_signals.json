@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-05T14:58:37.572Z",
+  "updatedAt": "2026-09-05T18:03:53.751Z",
   "posts": [
     {
       "text": "Trump and Scott Bessent slam China for choking markets with a ‘never-ending stream of cheap exports’ - Yahoo Finance Trump and Scott Bessent slam China for choking markets with a ‘never-ending stream of cheap exports’  Yahoo Finance",
@@ -107,9 +107,9 @@
       }
     },
     {
-      "text": "Trump and Xi are set to meet in DC. Why some China watchers have low expectations - CNBC Trump and Xi are set to meet in DC. Why some China watchers have low expectations  CNBC",
-      "timestamp": "2026-09-02T22:00:01.000Z",
-      "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQdWtOaVR1Zm5zTG1DdFRobVR4MlJRTi1FSVd4cXpxS2F4cFJpUE5pVDZ6S1lJenNPQlZJUmFSajMzU2R3Tzdsa29XZkcyS0pYTGU2bzZMYXVHNDVjMFEtbzJlZHRWVl9kMGxaX2NVV3pGV2dJN01zUVRnOV9PYVdiUjNGMWttdw?oc=5",
+      "text": "China lashes back at US over G20 row ahead of Xi-Trump summit - Financial Times China lashes back at US over G20 row ahead of Xi-Trump summit  Financial Times",
+      "timestamp": "2026-09-04T04:04:28.000Z",
+      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPdTlHaHBLeWdTekJjbGx5TEYySUJSYU9UejV1ck5Ea3VObURwUlNmZVRUd0RFankzbURQNFIzZzZ5WllmdWMyakh6S2QxSlFDdE9rTE5OcGM1dWtJVnFvY1JaUHhzWDZTWHZtVUw5QTRTZ0FIcEpqcUdPSkdMaXJfRmkyYTQ?oc=5",
       "keywords": [
         "china"
       ],
@@ -125,47 +125,21 @@
       }
     },
     {
-      "text": "Trade World — despite Trump’s tariffs, global commerce just keeps on growing - Financial Times Trade World — despite Trump’s tariffs, global commerce just keeps on growing  Financial Times",
-      "timestamp": "2026-09-03T11:00:02.000Z",
-      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBfSUV3R2pWQ1N6SDYzWmZERDFZaThsS0pRUDBQVmEzbUIwZUJoLXdKak9JMzVwbHVSRDJ4N1BBMUpLQjJJXzVHWGxiTFNqRUdBSVd1U0hQQkhhWTlOcVJyemNtTGwwd2Vka0ZFWGRKamw?oc=5",
+      "text": "Trump and Xi are set to meet in DC. Why some China watchers have low expectations - CNBC Trump and Xi are set to meet in DC. Why some China watchers have low expectations  CNBC",
+      "timestamp": "2026-09-02T22:00:01.000Z",
+      "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQdWtOaVR1Zm5zTG1DdFRobVR4MlJRTi1FSVd4cXpxS2F4cFJpUE5pVDZ6S1lJenNPQlZJUmFSajMzU2R3Tzdsa29XZkcyS0pYTGU2bzZMYXVHNDVjMFEtbzJlZHRWVl9kMGxaX2NVV3pGV2dJN01zUVRnOV9PYVdiUjNGMWttdw?oc=5",
       "keywords": [
-        "tariff",
-        "tariffs"
+        "china"
       ],
       "impacts": {
-        "foundry": -1,
-        "shipping": -1,
-        "steel": -1,
-        "ic_design": -1,
-        "display": -1,
-        "ev_supply": -0.8
+        "ic_design": -0.5,
+        "shipping": -0.4,
+        "display": -0.4,
+        "ev_supply": -0.3
       },
       "sentiment": {
-        "compound": -0.7184,
-        "label": "強烈利空"
-      }
-    },
-    {
-      "text": "Did Canada import Chinese steel and resell it to US to avoid tariffs? What we know - snopes.com Did Canada import Chinese steel and resell it to US to avoid tariffs? What we know  snopes.com",
-      "timestamp": "2026-09-04T22:42:27.000Z",
-      "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTFB2cFBORXpBRXBSUFFVa0FJV0hkdTlMR2RwMmtTd1VoYTJISWZ1RzRUQ0tTcGxTalFTNldGQkVxRjRBRTFjcXhlUGgwTkdGdWtZZjNpdnppUHV1ekdtX01TOE13a2pSYmVKcjdIUktKSlR2cVBSUEQtakFYNA?oc=5",
-      "keywords": [
-        "tariff",
-        "tariffs",
-        "chinese",
-        "port"
-      ],
-      "impacts": {
-        "foundry": -1,
-        "shipping": -1,
-        "steel": -1,
-        "ic_design": -1,
-        "display": -1,
-        "ev_supply": -0.8
-      },
-      "sentiment": {
-        "compound": -0.7184,
-        "label": "強烈利空"
+        "compound": 0,
+        "label": "中性"
       }
     },
     {
@@ -214,6 +188,29 @@
       "sentiment": {
         "compound": 0,
         "label": "中性"
+      }
+    },
+    {
+      "text": "Did Canada import Chinese steel and resell it to US to avoid tariffs? What we know - Snopes Did Canada import Chinese steel and resell it to US to avoid tariffs? What we know  Snopes",
+      "timestamp": "2026-09-04T22:42:27.000Z",
+      "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTFB2cFBORXpBRXBSUFFVa0FJV0hkdTlMR2RwMmtTd1VoYTJISWZ1RzRUQ0tTcGxTalFTNldGQkVxRjRBRTFjcXhlUGgwTkdGdWtZZjNpdnppUHV1ekdtX01TOE13a2pSYmVKcjdIUktKSlR2cVBSUEQtakFYNA?oc=5",
+      "keywords": [
+        "tariff",
+        "tariffs",
+        "chinese",
+        "port"
+      ],
+      "impacts": {
+        "foundry": -1,
+        "shipping": -1,
+        "steel": -1,
+        "ic_design": -1,
+        "display": -1,
+        "ev_supply": -0.8
+      },
+      "sentiment": {
+        "compound": -0.7184,
+        "label": "強烈利空"
       }
     },
     {
@@ -316,7 +313,7 @@
       }
     },
     {
-      "text": "How Trump kneecapped his own China policy with a 50% tariff on Canada: Anthony De Luca-Baratta in the Washington Examiner - macdonaldlaurier.ca How Trump kneecapped his own China policy with a 50% tariff on Canada: Anthony De Luca-Baratta in the Washington Examiner  macdonaldlaurier.ca",
+      "text": "How Trump kneecapped his own China policy with a 50% tariff on Canada: Anthony De Luca-Baratta in the Washington Examiner - The Macdonald-Laurier Institute How Trump kneecapped his own China policy with a 50% tariff on Canada: Anthony De Luca-Baratta in the Washington Examiner  The Macdonald-Laurier Institute",
       "timestamp": "2026-09-02T22:22:04.000Z",
       "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxPTkNoWHVDcjNnZkF3ZkNRSVBrWkUyYldWRVFhVFM2SDNxRlJIZnJZdVRCVHdtMnZvSFYtSzVXaTlJLXBHU256RHQzcE1sTi1sd0tWNE9xNmdpX1UxQ2ZvN0RtQkw2V0dVZFFCTzJmZWFISXRYTmVXQ1hreHl5a2Z0R1loNWtib1pIUHFhcXl1dnl3Wk5HeXVrbXJ5Y0JWVTNlYTd1Tmc5c0JXbVlWSW9PODlTeWhPZ0NxOHVSdHdEZ0RsSkFEdEdVLVVxYWx1U2NmbkthangyNzBMTlliTUxQbXJB?oc=5",
       "keywords": [
@@ -359,19 +356,18 @@
       }
     },
     {
-      "text": "Tracking the Impact of the Trump Tariffs & Trade War - Tax Foundation Tracking the Impact of the Trump Tariffs & Trade War  Tax Foundation",
-      "timestamp": "2026-08-20T16:36:30.000Z",
-      "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE5LU1daamtmcnNXWEZENFBwb3BYMThMQ1M4bHFPSzVZX0s5QmlLYWM4dDdKUGNiOF9iNjcxZ2VZTXd0bVJ6NGNNcDZVVmlkc25rTmxLd3Q4RVJhQmM3dUhpR3h1aXhXNGs3UkNQN0ZKLUpSSnBnOWVaX0tTRQ?oc=5",
+      "text": "Trade World — despite Trump’s tariffs, global commerce just keeps on growing - Financial Times Trade World — despite Trump’s tariffs, global commerce just keeps on growing  Financial Times",
+      "timestamp": "2026-09-03T11:00:02.000Z",
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBfSUV3R2pWQ1N6SDYzWmZERDFZaThsS0pRUDBQVmEzbUIwZUJoLXdKak9JMzVwbHVSRDJ4N1BBMUpLQjJJXzVHWGxiTFNqRUdBSVd1U0hQQkhhWTlOcVJyemNtTGwwd2Vka0ZFWGRKamw?oc=5",
       "keywords": [
-        "trade war",
         "tariff",
         "tariffs"
       ],
       "impacts": {
         "foundry": -1,
-        "ic_design": -1,
         "shipping": -1,
         "steel": -1,
+        "ic_design": -1,
         "display": -1,
         "ev_supply": -0.8
       },
@@ -401,18 +397,55 @@
       }
     }
   ],
-  "deltas": [],
-  "topDeltas": [],
+  "deltas": [
+    {
+      "sector": "steel",
+      "sectorName": "鋼鐵",
+      "prev": -0.732,
+      "current": -0.679,
+      "delta": 0.053,
+      "momentum": "↑ 壓力緩解",
+      "accelerating": true
+    },
+    {
+      "sector": "foundry",
+      "sectorName": "晶圓代工",
+      "prev": -0.748,
+      "current": -0.696,
+      "delta": 0.052,
+      "momentum": "↑ 壓力緩解",
+      "accelerating": true
+    }
+  ],
+  "topDeltas": [
+    {
+      "sector": "steel",
+      "sectorName": "鋼鐵",
+      "prev": -0.732,
+      "current": -0.679,
+      "delta": 0.053,
+      "momentum": "↑ 壓力緩解",
+      "accelerating": true
+    },
+    {
+      "sector": "foundry",
+      "sectorName": "晶圓代工",
+      "prev": -0.748,
+      "current": -0.696,
+      "delta": 0.052,
+      "momentum": "↑ 壓力緩解",
+      "accelerating": true
+    }
+  ],
   "totalAnalyzed": 100,
   "sources": [
     "Google News"
   ],
   "sectorState": {
     "foundry": {
-      "score": -0.748,
-      "lastUpdated": "2026-09-05T14:58:37.572Z",
+      "score": -0.696,
+      "lastUpdated": "2026-09-05T18:03:53.751Z",
       "deltaHistory": [
-        -0.025000000000000022,
         -0.029000000000000026,
         -0.1469999999999999,
         -0.0030000000000000027,
@@ -421,14 +454,14 @@
         0.052000000000000046,
         -0.07999999999999996,
         0.07099999999999995,
-        -0.006000000000000005
+        -0.006000000000000005,
+        0.052000000000000046
       ]
     },
     "shipping": {
       "score": -1,
-      "lastUpdated": "2026-09-05T14:58:37.572Z",
+      "lastUpdated": "2026-09-05T18:03:53.751Z",
       "deltaHistory": [
-        0.01200000000000001,
         -0.052999999999999936,
         -0.0030000000000000027,
         0.014000000000000012,
@@ -437,14 +470,14 @@
         0.0020000000000000018,
         0.0010000000000000009,
         -0.020000000000000018,
+        0,
         0
       ]
     },
     "steel": {
-      "score": -0.732,
-      "lastUpdated": "2026-09-05T14:58:37.572Z",
+      "score": -0.679,
+      "lastUpdated": "2026-09-05T18:03:53.751Z",
       "deltaHistory": [
-        0.006000000000000005,
         -0.10499999999999998,
         -0.16300000000000003,
         0.010000000000000009,
@@ -453,14 +486,14 @@
         0.03399999999999992,
         -0.08599999999999997,
         0.049000000000000044,
-        -0.008000000000000007
+        -0.008000000000000007,
+        0.052999999999999936
       ]
     },
     "ic_design": {
-      "score": -0.983,
-      "lastUpdated": "2026-09-05T14:58:37.572Z",
+      "score": -0.988,
+      "lastUpdated": "2026-09-05T18:03:53.751Z",
       "deltaHistory": [
-        0,
         0,
         0,
         0,
@@ -469,14 +502,14 @@
         0,
         0,
         0.02200000000000002,
+        -0.0050000000000000044,
         -0.0050000000000000044
       ]
     },
     "display": {
-      "score": -0.934,
-      "lastUpdated": "2026-09-05T14:58:37.572Z",
+      "score": -0.929,
+      "lastUpdated": "2026-09-05T18:03:53.751Z",
       "deltaHistory": [
-        0.08199999999999996,
         -0.13,
         -0.06099999999999994,
         -0.02300000000000002,
@@ -485,14 +518,14 @@
         0.013000000000000012,
         -0.017000000000000015,
         0.028999999999999915,
-        -0.007000000000000006
+        -0.007000000000000006,
+        0.0050000000000000044
       ]
     },
     "ev_supply": {
-      "score": -0.719,
-      "lastUpdated": "2026-09-05T14:58:37.572Z",
+      "score": -0.713,
+      "lastUpdated": "2026-09-05T18:03:53.751Z",
       "deltaHistory": [
-        0.05400000000000005,
         -0.09199999999999997,
         -0.09000000000000008,
         -0.009000000000000008,
@@ -501,14 +534,14 @@
         0.010000000000000009,
         -0.015000000000000013,
         0.05700000000000005,
-        -0.0040000000000000036
+        -0.0040000000000000036,
+        0.006000000000000005
       ]
     },
     "ai_server": {
-      "score": 0.124,
-      "lastUpdated": "2026-09-05T14:58:37.572Z",
+      "score": 0.133,
+      "lastUpdated": "2026-09-05T18:03:53.751Z",
       "deltaHistory": [
-        0.10399999999999998,
         -0.03599999999999999,
         0.03599999999999999,
         0.008000000000000007,
@@ -517,12 +550,13 @@
         -0.01899999999999999,
         -0.011999999999999997,
         -0.006000000000000005,
-        0.018000000000000002
+        0.018000000000000002,
+        0.009000000000000008
       ]
     },
     "pcb": {
       "score": 0,
-      "lastUpdated": "2026-09-05T14:58:37.572Z",
+      "lastUpdated": "2026-09-05T18:03:53.751Z",
       "deltaHistory": [
         0,
         0,
@@ -554,9 +588,8 @@
     },
     "packaging": {
       "score": -0.002,
-      "lastUpdated": "2026-09-05T14:58:37.572Z",
+      "lastUpdated": "2026-09-05T18:03:53.751Z",
       "deltaHistory": [
-        0.002,
         -0.013,
         0.009999999999999998,
         -0.005,
@@ -565,12 +598,13 @@
         0.001,
         0.001,
         -0.001,
+        0,
         0
       ]
     },
     "semiconductor_equip": {
       "score": 0,
-      "lastUpdated": "2026-09-05T14:58:37.572Z",
+      "lastUpdated": "2026-09-05T18:03:53.751Z",
       "deltaHistory": [
         0,
         0,
@@ -579,14 +613,14 @@
         0,
         0,
         0,
-        0,
         0.001,
-        -0.001
+        -0.001,
+        0
       ]
     },
     "robotics": {
       "score": 0,
-      "lastUpdated": "2026-09-05T14:58:37.572Z",
+      "lastUpdated": "2026-09-05T18:03:53.751Z",
       "deltaHistory": [
         0,
         0,
@@ -595,9 +629,9 @@
         0,
         0,
         0,
-        0,
         0.001,
-        -0.001
+        -0.001,
+        0
       ]
     },
     "petrochemical": {
@@ -628,15 +662,15 @@
     },
     "solar": {
       "score": -0.001,
-      "lastUpdated": "2026-09-05T14:58:37.572Z",
+      "lastUpdated": "2026-09-05T18:03:53.751Z",
       "deltaHistory": [
-        0.002,
         -0.003,
         0.005,
         -0.003,
         0.003,
         0,
         0.001,
+        0,
         0,
         0,
         0
