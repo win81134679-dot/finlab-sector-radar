@@ -1,6 +1,49 @@
 {
-  "updatedAt": "2026-09-07T19:47:53.433Z",
+  "updatedAt": "2026-09-07T22:43:06.621Z",
   "posts": [
+    {
+      "text": "Canada’s Retaliatory Tariffs Set to Take Effect as Trump Threatens to Escalate - The New York Times Canada’s Retaliatory Tariffs Set to Take Effect as Trump Threatens to Escalate  The New York Times",
+      "timestamp": "2026-09-07T22:04:15.000Z",
+      "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPb015UGswWm1Na0pCWTRkc1B6bUR6Q2FrdndPNTdkdDlITkFEQmtTRV8xZGFlbDhRWmVFWUhLZ1dZblNjbzhSZlMzYVJJdE9ld3dKcFByQ2J4R2dXejZlVE01N1dnSW5jWi0xLUNudFMzYkdoaEtkV2RCNmo2eHkyQXhTUTVjNk9VNUFN?oc=5",
+      "keywords": [
+        "tariff",
+        "tariffs"
+      ],
+      "impacts": {
+        "foundry": -1,
+        "shipping": -1,
+        "steel": -1,
+        "ic_design": -1,
+        "display": -1,
+        "ev_supply": -0.8
+      },
+      "sentiment": {
+        "compound": -0.7184,
+        "label": "強烈利空"
+      }
+    },
+    {
+      "text": "Canada set to hit back at Trump tariffs, risking wider trade war - scmp.com Canada set to hit back at Trump tariffs, risking wider trade war  scmp.com",
+      "timestamp": "2026-09-07T20:08:51.000Z",
+      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxON2tfaTc1Rl8wUDFLZ3d4UVJXNm9FeGo2N2NXR0dGWktaMDdjaC1aUWlEa2RqbEFLVnZkblJBWlNXMVpCd3owWVVFQ0RuVkxUYVFmNUhYZkNuYlF4NEVCcS1xNkNiN2YwT0JKREIxQjV1Uy1lNE5YMGYxU2VwLWdTWldUX3NWWDN4ZUh6Y0d3Q3h3Nk1UV1F0TDhaV3VmdWlFXzBxZzRacWEtbkFMR0Zqa000aXJkLXlHN21EN3NIcExIRng2?oc=5",
+      "keywords": [
+        "trade war",
+        "tariff",
+        "tariffs"
+      ],
+      "impacts": {
+        "foundry": -1,
+        "ic_design": -1,
+        "shipping": -1,
+        "steel": -1,
+        "display": -1,
+        "ev_supply": -0.8
+      },
+      "sentiment": {
+        "compound": -0.7184,
+        "label": "強烈利空"
+      }
+    },
     {
       "text": "Trump’s tariffs are deterring the investment needed for reshoring - East Asia Forum Trump’s tariffs are deterring the investment needed for reshoring  East Asia Forum",
       "timestamp": "2026-09-07T12:00:00.000Z",
@@ -47,28 +90,6 @@
       }
     },
     {
-      "text": "Canada Set to Hit at Trump Tariffs, Risking Wider Trade War - bloomberg.com Canada Set to Hit at Trump Tariffs, Risking Wider Trade War  bloomberg.com",
-      "timestamp": "2026-09-07T14:35:53.000Z",
-      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOZE0tVzdBN21qWjZjZTVSV2ZhX1VibDN1eVgwcjZaeUxlR0RhRGVNWlN4ZnBiSkVlTUNiTXdPdW9BYjFqMWVtcHlNR01iNEJnbHZrM2stLUpMR2tFS3lCQnNLMnJiTVB4OUMyMTBqaG8ta0FLUW1rcVotbEJYbWZONXNOQnVfb2RGcFFBbkpUZU9nSmtUS1o2QnFrSFhMQmp4TVZ2bVFBaHd6Vmk5OXY4Y3lwc2g?oc=5",
-      "keywords": [
-        "trade war",
-        "tariff",
-        "tariffs"
-      ],
-      "impacts": {
-        "foundry": -1,
-        "ic_design": -1,
-        "shipping": -1,
-        "steel": -1,
-        "display": -1,
-        "ev_supply": -0.8
-      },
-      "sentiment": {
-        "compound": -0.7184,
-        "label": "強烈利空"
-      }
-    },
-    {
       "text": "Trump and Scott Bessent slam China for choking markets with a ‘never-ending stream of cheap exports’ - Yahoo Finance Trump and Scott Bessent slam China for choking markets with a ‘never-ending stream of cheap exports’  Yahoo Finance",
       "timestamp": "2026-09-04T15:25:00.000Z",
       "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNVUItbGZhdVc0NHZnWDk0UXFiX0tuTDNFZ1BnaHV0RGNfSjdQLTB4bGZ1LWIzRVMyUllIczRCWThFWW5ZQmNiVmtUUVRyNU9LRzBHWXQwQ096OUd4NW9DdzB0dENWQjdwZVdyalA2MVNkQUNYeFdkS29hRzdrOUR4YVl6MHJvMjUwRjJteUxJMWJnZF8xVDN2bVIzOA?oc=5",
@@ -89,7 +110,7 @@
       }
     },
     {
-      "text": "The 50 percent problem with Trump’s Canada tariffs - thehill.com The 50 percent problem with Trump’s Canada tariffs  thehill.com",
+      "text": "The 50 percent problem with Trump’s Canada tariffs - The Hill The 50 percent problem with Trump’s Canada tariffs  The Hill",
       "timestamp": "2026-09-04T15:30:00.000Z",
       "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOTFlLT0wzRUMxeHpYclFGZGVia3RrSXhQdnJzWFNWUTV2Z3hBVFBSbHFzYmNBeWg0YlAwVWZhZkktbHlTaFUzZE5vT1dFdGdOX0V4T0N6WGpzd3dnQnVpVDMxeHFtenltN1JQQ25mWWdkUnhEV0tfSklqQVJ4OWVLWlpSTG5kd9IBiwFBVV95cUxPWGpIcmoxWXNXTjVWTEtEWDBvdXlQWEMzVWdHQzk1QUYyVUJ6ZDgzOWVxNTJwd2lUU1ZhU3RHeDI0V0VxOXphdU1XdTUyR1NvUTAyZDlraDhWc2IwcUFyNV83UXFKOG5tNjdhZ0tJVm9TWTRoZ2I4SVRrOHFydGdaTTFUWjNhWFpaa3V3?oc=5",
       "keywords": [
@@ -151,17 +172,6 @@
       }
     },
     {
-      "text": "Canada Is Fighting Back on Trade. Will Others Follow? - nytimes.com Canada Is Fighting Back on Trade. Will Others Follow?  nytimes.com",
-      "timestamp": "2026-08-24T07:00:00.000Z",
-      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNVHJxbTAzNGRzWUxmNC1BNDNSTmxOSHF4OVg3RkE5VVhETE5jTk9KZW5KOUw1SENjS19xUHA0clZYXzEyajFMczJKaVkzQmJ6QTB0dlltU3ZCZVFPZ2ZzZVdzbE9sQ09rclZiRG85MDRiejlGQ0YteEg0TzJiUWNfU3RrbWRRa0pCZVFZd1V3?oc=5",
-      "keywords": [],
-      "impacts": {},
-      "sentiment": {
-        "compound": 0,
-        "label": "中性"
-      }
-    },
-    {
       "text": "Trump White House says it’s losing $19B-$26B a year in revenue as countries dodge tariffs - AP News Trump White House says it’s losing $19B-$26B a year in revenue as countries dodge tariffs  AP News",
       "timestamp": "2026-08-13T07:00:00.000Z",
       "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPbUp3OW5Xa2o2US1WWENZVGRsLXFMQi1FQW9Kall0aUllUEFUbjFPZW1CMzdxWnEzN25FVlppRmY0V1JMSXFCdUhtRFlUSGVLUWZBYktFTE9Jb1JSbEdNLVByMnh6blFuVG9QR1lhNVV1VEJoLVp2M0h1N0hFSlVZQXpZVmVEMWlWUlBKUkh0cWpYZWhhTFlLVktuaWRoTEppSmFV?oc=5",
@@ -204,7 +214,29 @@
       }
     },
     {
-      "text": "Did Canada import Chinese steel and resell it to US to avoid tariffs? What we know - Snopes Did Canada import Chinese steel and resell it to US to avoid tariffs? What we know  Snopes",
+      "text": "Tracking the Impact of the Trump Tariffs & Trade War - Tax Foundation Tracking the Impact of the Trump Tariffs & Trade War  Tax Foundation",
+      "timestamp": "2026-08-20T16:36:30.000Z",
+      "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE5LU1daamtmcnNXWEZENFBwb3BYMThMQ1M4bHFPSzVZX0s5QmlLYWM4dDdKUGNiOF9iNjcxZ2VZTXd0bVJ6NGNNcDZVVmlkc25rTmxLd3Q4RVJhQmM3dUhpR3h1aXhXNGs3UkNQN0ZKLUpSSnBnOWVaX0tTRQ?oc=5",
+      "keywords": [
+        "trade war",
+        "tariff",
+        "tariffs"
+      ],
+      "impacts": {
+        "foundry": -1,
+        "ic_design": -1,
+        "shipping": -1,
+        "steel": -1,
+        "display": -1,
+        "ev_supply": -0.8
+      },
+      "sentiment": {
+        "compound": -0.7184,
+        "label": "強烈利空"
+      }
+    },
+    {
+      "text": "Did Canada import Chinese steel and resell it to US to avoid tariffs? What we know - Snopes.com Did Canada import Chinese steel and resell it to US to avoid tariffs? What we know  Snopes.com",
       "timestamp": "2026-09-04T22:42:27.000Z",
       "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTFB2cFBORXpBRXBSUFFVa0FJV0hkdTlMR2RwMmtTd1VoYTJISWZ1RzRUQ0tTcGxTalFTNldGQkVxRjRBRTFjcXhlUGgwTkdGdWtZZjNpdnppUHV1ekdtX01TOE13a2pSYmVKcjdIUktKSlR2cVBSUEQtakFYNA?oc=5",
       "keywords": [
@@ -227,19 +259,18 @@
       }
     },
     {
-      "text": "Tracking the Impact of the Trump Tariffs & Trade War - Tax Foundation Tracking the Impact of the Trump Tariffs & Trade War  Tax Foundation",
-      "timestamp": "2026-08-20T16:36:30.000Z",
-      "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE5LU1daamtmcnNXWEZENFBwb3BYMThMQ1M4bHFPSzVZX0s5QmlLYWM4dDdKUGNiOF9iNjcxZ2VZTXd0bVJ6NGNNcDZVVmlkc25rTmxLd3Q4RVJhQmM3dUhpR3h1aXhXNGs3UkNQN0ZKLUpSSnBnOWVaX0tTRQ?oc=5",
+      "text": "Canada, US and tit-for-tat tariffs: How will they impact their economies? - Al Jazeera Canada, US and tit-for-tat tariffs: How will they impact their economies?  Al Jazeera",
+      "timestamp": "2026-08-23T07:00:00.000Z",
+      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOTU5yN2NLN2dTZDRWRm9fc1BUMDFrWWprUjFRNFN6MXNuQWdPbDB5UHFWYWowUFdickpzNENFR1g4S1RmZGlhcWV6eXNsdXVaWTVnd2pNZ0d0QUlVMXZlblBnYnpvNTJoNDJwMkJ3b2RHTHhzVm5fX2JvSDBmUzA2TjJGSTk4akNSbHNiNDRCTDVrWFA4TUJ4OWo2TWd4VUx5emlvYU4yNXd4RlFaaFHSAbMBQVVfeXFMUDVnenlrSURzMFZCS3RwNDc4dEx0Mlh4NkptRlhzdnhtdmdrUXlZSmxkejdhcndoNGRFX3lxWV9kWnNJdFhOejVpODQ3QVNGWGlIYURqZXhXZ3FiQm10aDZWa2xYYVdsX2NxLWRXUDZrOW5zQlFoU2FvTWN0cGNSTFFoUEJfalZ3NXFETXVSU3Fvc2JiN2F4OThXSHNkSl9ReFgxT18xbm0wQnMta0MtTEZRWFk?oc=5",
       "keywords": [
-        "trade war",
         "tariff",
         "tariffs"
       ],
       "impacts": {
         "foundry": -1,
-        "ic_design": -1,
         "shipping": -1,
         "steel": -1,
+        "ic_design": -1,
         "display": -1,
         "ev_supply": -0.8
       },
@@ -291,22 +322,11 @@
       }
     },
     {
-      "text": "How did Trump’s 2025 trade war affect the decoupling of US-China supply chains? - piie.com How did Trump’s 2025 trade war affect the decoupling of US-China supply chains?  piie.com",
-      "timestamp": "2026-07-30T13:14:13.000Z",
-      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNU2daMko4NGt5aFRoSXN4WDBjdzVOallRZE9LaHNGbV9iVGpTQzMzRFZlWkdzd1VrVldaZm12UUM1QVdfemNtUEV5Q0pjMG9MOGN2Wm1sSUZEbGN5czJCeDhKVVVZQmZtSXhVbTY4bzd3c0VabEVrMDJRallGT2R0NzlubUg4Q2MzRkVhVUdUSWp1M05YaE9vZ2psOVE3NTRNU1FwZDJnVFJTY1MtTXRtV1lVLVhoRE5Y?oc=5",
-      "keywords": [
-        "trade war",
-        "ai",
-        "china",
-        "decoupling"
-      ],
-      "impacts": {
-        "ic_design": -1,
-        "shipping": -1,
-        "ai_server": 0.7,
-        "display": -0.4,
-        "ev_supply": -0.3
-      },
+      "text": "Canada Is Fighting Back on Trade. Will Others Follow? - The New York Times Canada Is Fighting Back on Trade. Will Others Follow?  The New York Times",
+      "timestamp": "2026-08-24T07:00:00.000Z",
+      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNVHJxbTAzNGRzWUxmNC1BNDNSTmxOSHF4OVg3RkE5VVhETE5jTk9KZW5KOUw1SENjS19xUHA0clZYXzEyajFMczJKaVkzQmJ6QTB0dlltU3ZCZVFPZ2ZzZVdzbE9sQ09rclZiRG85MDRiejlGQ0YteEg0TzJiUWNfU3RrbWRRa0pCZVFZd1V3?oc=5",
+      "keywords": [],
+      "impacts": {},
       "sentiment": {
         "compound": 0,
         "label": "中性"
@@ -356,7 +376,7 @@
       }
     },
     {
-      "text": "China Has Come Through Trump’s Trade War in a Good Position - nytimes.com China Has Come Through Trump’s Trade War in a Good Position  nytimes.com",
+      "text": "China Has Come Through Trump’s Trade War in a Good Position - The New York Times China Has Come Through Trump’s Trade War in a Good Position  The New York Times",
       "timestamp": "2026-07-25T07:00:00.000Z",
       "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE5PRDkyX0ZpSzd2QmhBWnJiQVJDbHBqbWZlQzBGbGJacUVUekJmcHhYYVJXWlpXeUk4TVRSWG5MNzdnR2ZCSVNTbWtra3doaDg1ei10NlB4bk9JUXAzMXVRYmRuWU1NSGJVMnpub1Jybms5Q0xjTXRN?oc=5",
       "keywords": [
@@ -373,27 +393,6 @@
       "sentiment": {
         "compound": 0,
         "label": "中性"
-      }
-    },
-    {
-      "text": "Trump hit countries with tariffs over forced labor, while slowing enforcement of its own ban - Politico Trump hit countries with tariffs over forced labor, while slowing enforcement of its own ban  Politico",
-      "timestamp": "2026-07-31T07:00:00.000Z",
-      "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxQVFpVazdwT1VUc1V0X2J4eTlfdEtyX3UxS2YyMl9JM09KX3ZfU1FVZWdDOG4ycFZBN3FyYmRhR3d6TG1SU3lUdTZFR0J2Ym9jd3BVTDBGY2RaTENLam1vVnB4dHVQeGhYamZXZnE4eXJhN1JvVG9JV0xWemNZRVpwRHF5UU9FdTBHNXREVzdPcnRGZnlhT3QxMFBMV0R2ZlN2YjE0ay1Gcy1KYnlfaF9IVlNmOExRWDRhSVREcGJhcXNnc3JfTTNNbi11YnU1UQ?oc=5",
-      "keywords": [
-        "tariff",
-        "tariffs"
-      ],
-      "impacts": {
-        "foundry": -1,
-        "shipping": -1,
-        "steel": -1,
-        "ic_design": -1,
-        "display": -1,
-        "ev_supply": -0.8
-      },
-      "sentiment": {
-        "compound": -0.7184,
-        "label": "強烈利空"
       }
     },
     {
@@ -419,59 +418,23 @@
   ],
   "deltas": [
     {
-      "sector": "foundry",
-      "sectorName": "晶圓代工",
-      "prev": -0.84,
-      "current": -0.97,
-      "delta": -0.13,
-      "momentum": "↓ 壓力加深",
-      "accelerating": true
-    },
-    {
-      "sector": "steel",
-      "sectorName": "鋼鐵",
-      "prev": -0.81,
-      "current": -0.937,
-      "delta": -0.127,
-      "momentum": "↓ 壓力加深",
-      "accelerating": true
-    },
-    {
-      "sector": "ev_supply",
-      "sectorName": "電動車供應鏈",
-      "prev": -0.753,
-      "current": -0.817,
-      "delta": -0.064,
-      "momentum": "↓ 壓力加深",
+      "sector": "semiconductor_equip",
+      "sectorName": "半導體設備",
+      "prev": 0.139,
+      "current": 0.087,
+      "delta": -0.052,
+      "momentum": "↓ 訊號弱化",
       "accelerating": true
     }
   ],
   "topDeltas": [
     {
-      "sector": "foundry",
-      "sectorName": "晶圓代工",
-      "prev": -0.84,
-      "current": -0.97,
-      "delta": -0.13,
-      "momentum": "↓ 壓力加深",
-      "accelerating": true
-    },
-    {
-      "sector": "steel",
-      "sectorName": "鋼鐵",
-      "prev": -0.81,
-      "current": -0.937,
-      "delta": -0.127,
-      "momentum": "↓ 壓力加深",
-      "accelerating": true
-    },
-    {
-      "sector": "ev_supply",
-      "sectorName": "電動車供應鏈",
-      "prev": -0.753,
-      "current": -0.817,
-      "delta": -0.064,
-      "momentum": "↓ 壓力加深",
+      "sector": "semiconductor_equip",
+      "sectorName": "半導體設備",
+      "prev": 0.139,
+      "current": 0.087,
+      "delta": -0.052,
+      "momentum": "↓ 訊號弱化",
       "accelerating": true
     }
   ],
@@ -481,10 +444,9 @@
   ],
   "sectorState": {
     "foundry": {
-      "score": -0.97,
-      "lastUpdated": "2026-09-07T19:47:53.433Z",
+      "score": -0.976,
+      "lastUpdated": "2026-09-07T22:43:06.621Z",
       "deltaHistory": [
-        -0.006000000000000005,
         0.052000000000000046,
         -0.07200000000000006,
         -0.030000000000000027,
@@ -493,14 +455,14 @@
         0,
         -0.050999999999999934,
         -0.01100000000000001,
-        -0.13
+        -0.13,
+        -0.006000000000000005
       ]
     },
     "shipping": {
-      "score": -0.987,
-      "lastUpdated": "2026-09-07T19:47:53.433Z",
+      "score": -0.993,
+      "lastUpdated": "2026-09-07T22:43:06.621Z",
       "deltaHistory": [
-        0,
         0,
         0,
         0,
@@ -509,14 +471,14 @@
         0.006000000000000005,
         -0.006000000000000005,
         0.0010000000000000009,
-        0.01200000000000001
+        0.01200000000000001,
+        -0.006000000000000005
       ]
     },
     "steel": {
-      "score": -0.937,
-      "lastUpdated": "2026-09-07T19:47:53.433Z",
+      "score": -0.951,
+      "lastUpdated": "2026-09-07T22:43:06.621Z",
       "deltaHistory": [
-        -0.008000000000000007,
         0.052999999999999936,
         -0.07299999999999995,
         -0.020000000000000018,
@@ -525,14 +487,14 @@
         0.0040000000000000036,
         -0.049000000000000044,
         -0.01200000000000001,
-        -0.127
+        -0.127,
+        -0.013999999999999901
       ]
     },
     "ic_design": {
-      "score": -0.999,
-      "lastUpdated": "2026-09-07T19:47:53.433Z",
+      "score": -1,
+      "lastUpdated": "2026-09-07T22:43:06.621Z",
       "deltaHistory": [
-        -0.0050000000000000044,
         -0.0050000000000000044,
         0.007000000000000006,
         -0.01200000000000001,
@@ -541,14 +503,14 @@
         -0.0020000000000000018,
         0,
         0,
-        0.0010000000000000009
+        0.0010000000000000009,
+        -0.0010000000000000009
       ]
     },
     "display": {
       "score": -1,
-      "lastUpdated": "2026-09-07T19:47:53.433Z",
+      "lastUpdated": "2026-09-07T22:43:06.621Z",
       "deltaHistory": [
-        -0.007000000000000006,
         0.0050000000000000044,
         -0.007000000000000006,
         -0.004999999999999893,
@@ -557,14 +519,14 @@
         -0.007000000000000006,
         -0.01100000000000001,
         0.007000000000000006,
-        -0.04300000000000004
+        -0.04300000000000004,
+        0
       ]
     },
     "ev_supply": {
-      "score": -0.817,
-      "lastUpdated": "2026-09-07T19:47:53.433Z",
+      "score": -0.805,
+      "lastUpdated": "2026-09-07T22:43:06.621Z",
       "deltaHistory": [
-        -0.0040000000000000036,
         0.006000000000000005,
         -0.008000000000000007,
         -0.030000000000000027,
@@ -573,14 +535,14 @@
         -0.010000000000000009,
         -0.014000000000000012,
         0.0030000000000000027,
-        -0.06399999999999995
+        -0.06399999999999995,
+        0.0119999999999999
       ]
     },
     "ai_server": {
-      "score": 0.017,
-      "lastUpdated": "2026-09-07T19:47:53.433Z",
+      "score": 0.005,
+      "lastUpdated": "2026-09-07T22:43:06.621Z",
       "deltaHistory": [
-        0.018000000000000002,
         0.009000000000000008,
         -0.015000000000000013,
         0.0010000000000000009,
@@ -589,12 +551,13 @@
         -0.13599999999999998,
         0.001,
         0.005999999999999999,
-        0.004000000000000002
+        0.004000000000000002,
+        -0.012
       ]
     },
     "pcb": {
-      "score": 0.115,
-      "lastUpdated": "2026-09-07T19:47:53.433Z",
+      "score": 0.072,
+      "lastUpdated": "2026-09-07T22:43:06.621Z",
       "deltaHistory": [
         0,
         0,
@@ -603,9 +566,9 @@
         0,
         0,
         0,
-        0,
         0.108,
-        0.007000000000000006
+        0.007000000000000006,
+        -0.04300000000000001
       ]
     },
     "defense": {
@@ -626,9 +589,8 @@
     },
     "packaging": {
       "score": -0.001,
-      "lastUpdated": "2026-09-07T19:47:53.433Z",
+      "lastUpdated": "2026-09-07T22:43:06.621Z",
       "deltaHistory": [
-        0,
         0,
         0.001,
         -0.011,
@@ -637,14 +599,14 @@
         0,
         0,
         0,
+        0,
         0
       ]
     },
     "semiconductor_equip": {
-      "score": 0.139,
-      "lastUpdated": "2026-09-07T19:47:53.433Z",
+      "score": 0.087,
+      "lastUpdated": "2026-09-07T22:43:06.621Z",
       "deltaHistory": [
-        0.001,
         -0.001,
         0,
         0,
@@ -653,14 +615,14 @@
         0,
         0,
         0.13,
-        0.008000000000000007
+        0.008000000000000007,
+        -0.05200000000000002
       ]
     },
     "robotics": {
-      "score": 0.093,
-      "lastUpdated": "2026-09-07T19:47:53.433Z",
+      "score": 0.058,
+      "lastUpdated": "2026-09-07T22:43:06.621Z",
       "deltaHistory": [
-        0.001,
         -0.001,
         0,
         0,
@@ -669,7 +631,8 @@
         0,
         0,
         0.087,
-        0.0050000000000000044
+        0.0050000000000000044,
+        -0.034999999999999996
       ]
     },
     "petrochemical": {
@@ -731,8 +694,8 @@
       ]
     },
     "power_infra": {
-      "score": 0.046,
-      "lastUpdated": "2026-09-07T19:47:53.433Z",
+      "score": 0.029,
+      "lastUpdated": "2026-09-07T22:43:06.621Z",
       "deltaHistory": [
         0.009,
         -0.005999999999999999,
@@ -741,7 +704,8 @@
         -0.001,
         0,
         0.043,
-        0.0030000000000000027
+        0.0030000000000000027,
+        -0.016999999999999998
       ]
     },
     "banking": {
