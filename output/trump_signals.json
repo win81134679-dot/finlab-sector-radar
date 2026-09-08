@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-08T19:22:04.159Z",
+  "updatedAt": "2026-09-08T22:30:34.104Z",
   "posts": [
     {
       "text": "Canada’s US tariffs take effect as Trump threatens Bombardier aircraft sales - South China Morning Post Canada’s US tariffs take effect as Trump threatens Bombardier aircraft sales  South China Morning Post",
@@ -27,7 +27,7 @@
     },
     {
       "text": "Canada’s Retaliatory Tariffs Set to Take Effect as Trump Threatens to Escalate - The New York Times Canada’s Retaliatory Tariffs Set to Take Effect as Trump Threatens to Escalate  The New York Times",
-      "timestamp": "2026-09-08T01:24:15.000Z",
+      "timestamp": "2026-09-08T13:12:00.000Z",
       "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPb015UGswWm1Na0pCWTRkc1B6bUR6Q2FrdndPNTdkdDlITkFEQmtTRV8xZGFlbDhRWmVFWUhLZ1dZblNjbzhSZlMzYVJJdE9ld3dKcFByQ2J4R2dXejZlVE01N1dnSW5jWi0xLUNudFMzYkdoaEtkV2RCNmo2eHkyQXhTUTVjNk9VNUFN?oc=5",
       "keywords": [
         "tariff",
@@ -70,29 +70,6 @@
       }
     },
     {
-      "text": "OPINION: U.S. trade policy after 2028 likely to retain Trump-era tariffs - Japan Wire by Kyodo News OPINION: U.S. trade policy after 2028 likely to retain Trump-era tariffs  Japan Wire by Kyodo News",
-      "timestamp": "2026-09-08T11:02:00.000Z",
-      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE44cV92T0RXUHcwVy14eVo3WXNNb0dyNFd3clFIWmpNQXpmSjkweTNramhyTXd2dlB6d2dkdDdMVDhZcDM2QmpqS1lmQlRGTWFMRllKcTFsOUR5QQ?oc=5",
-      "keywords": [
-        "ai",
-        "tariff",
-        "tariffs"
-      ],
-      "impacts": {
-        "ai_server": 0.7,
-        "foundry": -1,
-        "shipping": -1,
-        "steel": -1,
-        "ic_design": -1,
-        "display": -1,
-        "ev_supply": -0.8
-      },
-      "sentiment": {
-        "compound": -0.7184,
-        "label": "強烈利空"
-      }
-    },
-    {
       "text": "Trump’s tariffs are deterring the investment needed for reshoring - East Asia Forum Trump’s tariffs are deterring the investment needed for reshoring  East Asia Forum",
       "timestamp": "2026-09-07T12:00:00.000Z",
       "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQWUdYNnJRRXRIWHUxYW1xZk1YZ2I1Q1hLMWM1RlNSTkFjNFVIcndlbTdhLU1FODFGYTdyS1NIR0dXYkxRUTVheHNjN01DRHZpUmVIaXUxdXViN3pNMW5KYkFsMTlSRWNnak9GZThvUGxvc1N5TnNCNWJPLXNuVWZPTmVyRm9mcnc4QjZUZ1lYdTl0YlRuMkFGajAwQmtzYlRuMDBvMg?oc=5",
@@ -113,6 +90,29 @@
         "semiconductor_equip": 0.6,
         "robotics": 0.4,
         "power_infra": 0.2
+      },
+      "sentiment": {
+        "compound": -0.7184,
+        "label": "強烈利空"
+      }
+    },
+    {
+      "text": "OPINION: U.S. trade policy after 2028 likely to retain Trump-era tariffs - Japan Wire by Kyodo News OPINION: U.S. trade policy after 2028 likely to retain Trump-era tariffs  Japan Wire by Kyodo News",
+      "timestamp": "2026-09-08T11:02:00.000Z",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE44cV92T0RXUHcwVy14eVo3WXNNb0dyNFd3clFIWmpNQXpmSjkweTNramhyTXd2dlB6d2dkdDdMVDhZcDM2QmpqS1lmQlRGTWFMRllKcTFsOUR5QQ?oc=5",
+      "keywords": [
+        "ai",
+        "tariff",
+        "tariffs"
+      ],
+      "impacts": {
+        "ai_server": 0.7,
+        "foundry": -1,
+        "shipping": -1,
+        "steel": -1,
+        "ic_design": -1,
+        "display": -1,
+        "ev_supply": -0.8
       },
       "sentiment": {
         "compound": -0.7184,
@@ -181,7 +181,7 @@
       }
     },
     {
-      "text": "Trump’s Tariffs Push US Companies Back into China - Cato Institute Trump’s Tariffs Push US Companies Back into China  Cato Institute",
+      "text": "Trump’s Tariffs Push US Companies Back into China - cato.org Trump’s Tariffs Push US Companies Back into China  cato.org",
       "timestamp": "2026-07-31T07:00:00.000Z",
       "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE5lT2tNMW1lR1JIVks1LUJpMWdydXg2cS03OUlSWWRnSFhGM1BDTldULUYxa1E4U1g4V0N4OE16MWtqcmdjSlVMdUlSOWd6OThYdEkzWDRTNkxaVEtDaHIxODVBSUdfSGxKYW1hQzIyZGo1cXlxZVNWdQ?oc=5",
       "keywords": [
@@ -288,7 +288,7 @@
       }
     },
     {
-      "text": "More Trump Tariffs Are Coming—and They Could Look Different - barrons.com More Trump Tariffs Are Coming—and They Could Look Different  barrons.com",
+      "text": "More Trump Tariffs Are Coming—and They Could Look Different - Barron's More Trump Tariffs Are Coming—and They Could Look Different  Barron's",
       "timestamp": "2026-08-14T07:00:00.000Z",
       "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE9kMlR0bm1oRlhxaEl0WDQ3Yk15MzYtZUNCUGotOVBjT1FtQmVVSGVSWmhQZnI2RTF5cHB2cElKUW4yYldNaTkwakJmaVhES1FtclREeENhLVE5NWg2eDE4VjdjRk1mM3hNVDh2dmJ5WU9sZWpTX0tCUzRhdDYxQQ?oc=5",
       "keywords": [
@@ -331,7 +331,7 @@
       }
     },
     {
-      "text": "Trump Tariffs ‘Tortuous’ to Soybean Trade, China Diplomat Says - bloomberg.com Trump Tariffs ‘Tortuous’ to Soybean Trade, China Diplomat Says  bloomberg.com",
+      "text": "Trump Tariffs ‘Tortuous’ to Soybean Trade, China Diplomat Says - Bloomberg.com Trump Tariffs ‘Tortuous’ to Soybean Trade, China Diplomat Says  Bloomberg.com",
       "timestamp": "2026-08-07T07:00:00.000Z",
       "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQQWZaU1JQN0l1ZUdDc0d3ZE00TlU1ZENGdko3TzhFQ09QemVoVXF2VmZNdGIwcjFVRnE3S295VXB0TEhiWEN2a3dVOXc5MFZTUHdrYllqTVFjMHFhYTFreHJOS0p0bTNsaC1LQ2NVY1hxX0szOG1DazdOdHdHTUlRZkFmQTZHeGl3MnpaY3RPR1JHbHVyeC13NWdUYzk3TzNPYVlPU09LU2ppNnprS2RJ?oc=5",
       "keywords": [
@@ -440,28 +440,8 @@
       }
     }
   ],
-  "deltas": [
-    {
-      "sector": "ai_server",
-      "sectorName": "AI 伺服器",
-      "prev": 0.093,
-      "current": 0.194,
-      "delta": 0.101,
-      "momentum": "↑ 訊號強化",
-      "accelerating": true
-    }
-  ],
-  "topDeltas": [
-    {
-      "sector": "ai_server",
-      "sectorName": "AI 伺服器",
-      "prev": 0.093,
-      "current": 0.194,
-      "delta": 0.101,
-      "momentum": "↑ 訊號強化",
-      "accelerating": true
-    }
-  ],
+  "deltas": [],
+  "topDeltas": [],
   "totalAnalyzed": 100,
   "sources": [
     "Google News"
@@ -469,9 +449,8 @@
   "sectorState": {
     "foundry": {
       "score": -0.958,
-      "lastUpdated": "2026-09-08T19:22:04.159Z",
+      "lastUpdated": "2026-09-08T22:30:34.104Z",
       "deltaHistory": [
-        -0.03599999999999992,
         0.05599999999999994,
         0,
         -0.050999999999999934,
@@ -480,14 +459,14 @@
         -0.006000000000000005,
         -0.018000000000000016,
         0.03700000000000003,
-        -0.0010000000000000009
+        -0.0010000000000000009,
+        0
       ]
     },
     "shipping": {
       "score": -0.978,
-      "lastUpdated": "2026-09-08T19:22:04.159Z",
+      "lastUpdated": "2026-09-08T22:30:34.104Z",
       "deltaHistory": [
-        0,
         0,
         0.006000000000000005,
         -0.006000000000000005,
@@ -496,14 +475,14 @@
         -0.006000000000000005,
         0.014000000000000012,
         0.0010000000000000009,
+        0,
         0
       ]
     },
     "steel": {
-      "score": -0.926,
-      "lastUpdated": "2026-09-08T19:22:04.159Z",
+      "score": -0.925,
+      "lastUpdated": "2026-09-08T22:30:34.104Z",
       "deltaHistory": [
-        -0.041999999999999926,
         0.06099999999999994,
         0.0040000000000000036,
         -0.049000000000000044,
@@ -512,14 +491,14 @@
         -0.013999999999999901,
         0.05599999999999994,
         -0.031000000000000028,
-        0
+        0,
+        0.0010000000000000009
       ]
     },
     "ic_design": {
       "score": -1,
-      "lastUpdated": "2026-09-08T19:22:04.159Z",
+      "lastUpdated": "2026-09-08T22:30:34.104Z",
       "deltaHistory": [
-        -0.006000000000000005,
         0.0010000000000000009,
         -0.0020000000000000018,
         0,
@@ -528,14 +507,14 @@
         -0.0010000000000000009,
         0,
         0,
+        0,
         0
       ]
     },
     "display": {
-      "score": -0.971,
-      "lastUpdated": "2026-09-08T19:22:04.159Z",
+      "score": -0.97,
+      "lastUpdated": "2026-09-08T22:30:34.104Z",
       "deltaHistory": [
-        -0.02200000000000002,
         0.017000000000000015,
         -0.007000000000000006,
         -0.01100000000000001,
@@ -544,14 +523,14 @@
         0,
         0.040000000000000036,
         -0.01100000000000001,
-        0
+        0,
+        0.0010000000000000009
       ]
     },
     "ev_supply": {
       "score": -0.85,
-      "lastUpdated": "2026-09-08T19:22:04.159Z",
+      "lastUpdated": "2026-09-08T22:30:34.104Z",
       "deltaHistory": [
-        -0.0020000000000000018,
         0.02100000000000002,
         -0.010000000000000009,
         -0.014000000000000012,
@@ -560,14 +539,14 @@
         0.0119999999999999,
         0.0040000000000000036,
         -0.040999999999999925,
-        -0.008000000000000007
+        -0.008000000000000007,
+        0
       ]
     },
     "ai_server": {
-      "score": 0.194,
-      "lastUpdated": "2026-09-08T19:22:04.159Z",
+      "score": 0.184,
+      "lastUpdated": "2026-09-08T22:30:34.104Z",
       "deltaHistory": [
-        -0.008999999999999994,
         0.03199999999999999,
         -0.13599999999999998,
         0.001,
@@ -576,14 +555,14 @@
         -0.012,
         0.016999999999999998,
         0.07100000000000001,
-        0.101
+        0.101,
+        -0.010000000000000009
       ]
     },
     "pcb": {
-      "score": 0.042,
-      "lastUpdated": "2026-09-08T19:22:04.159Z",
+      "score": 0.05,
+      "lastUpdated": "2026-09-08T22:30:34.104Z",
       "deltaHistory": [
-        0,
         0,
         0,
         0,
@@ -592,7 +571,8 @@
         -0.04300000000000001,
         0.007000000000000006,
         -0.037,
-        0
+        0,
+        0.008
       ]
     },
     "defense": {
@@ -612,10 +592,9 @@
       ]
     },
     "packaging": {
-      "score": -0.001,
-      "lastUpdated": "2026-09-08T19:22:04.159Z",
+      "score": -0.002,
+      "lastUpdated": "2026-09-08T22:30:34.104Z",
       "deltaHistory": [
-        0.011,
         0,
         0,
         0,
@@ -624,14 +603,14 @@
         0,
         -0.002,
         0.001,
-        0.001
+        0.001,
+        -0.001
       ]
     },
     "semiconductor_equip": {
-      "score": 0.053,
-      "lastUpdated": "2026-09-08T19:22:04.159Z",
+      "score": 0.062,
+      "lastUpdated": "2026-09-08T22:30:34.104Z",
       "deltaHistory": [
-        0.001,
         0,
         0,
         0,
@@ -640,14 +619,14 @@
         -0.05200000000000002,
         0.009000000000000008,
         -0.043000000000000003,
-        0
+        0,
+        0.009000000000000001
       ]
     },
     "robotics": {
-      "score": 0.036,
-      "lastUpdated": "2026-09-08T19:22:04.159Z",
+      "score": 0.042,
+      "lastUpdated": "2026-09-08T22:30:34.104Z",
       "deltaHistory": [
-        0.001,
         0,
         0,
         0,
@@ -656,7 +635,8 @@
         -0.034999999999999996,
         0.006999999999999999,
         -0.029000000000000005,
-        0
+        0,
+        0.006000000000000005
       ]
     },
     "petrochemical": {
@@ -718,10 +698,9 @@
       ]
     },
     "power_infra": {
-      "score": 0.017,
-      "lastUpdated": "2026-09-08T19:22:04.159Z",
+      "score": 0.02,
+      "lastUpdated": "2026-09-08T22:30:34.104Z",
       "deltaHistory": [
-        -0.001,
         -0.001,
         -0.001,
         0,
@@ -730,7 +709,8 @@
         -0.016999999999999998,
         0.0019999999999999983,
         -0.013999999999999999,
-        0
+        0,
+        0.002999999999999999
       ]
     },
     "banking": {
