@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-09T19:11:54.091Z",
+  "updatedAt": "2026-09-09T22:24:46.925Z",
   "posts": [
     {
       "text": "Fmr Biden ambassador blames Trump for Canada playing 'footsie' with China - Fox News Fmr Biden ambassador blames Trump for Canada playing 'footsie' with China  Fox News",
@@ -20,7 +20,26 @@
       }
     },
     {
-      "text": "US Escalates Canada Trade War With Product Bans, New Tariffs - Bloomberg.com US Escalates Canada Trade War With Product Bans, New Tariffs  Bloomberg.com",
+      "text": "China’s Surging Exports Loom Over Trump’s Talks With Xi - The New York Times China’s Surging Exports Loom Over Trump’s Talks With Xi  The New York Times",
+      "timestamp": "2026-09-08T08:24:33.000Z",
+      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPUlR4d0EwcFVWcnRtZm83dm1MbF9VLTZaN3ViMXZHNy1yNVFxS1FDRW84X3VBRDlMX3ZsbHdVQ3hCMktqQ2wtOW4wNEVselF1X21LWXFDMHNnZHhMVWdqLWxEUHNrNkR4TEkyNkFuX2ZaUGZqaGFURkhfNmZsRWhMRGsxUQ?oc=5",
+      "keywords": [
+        "china",
+        "port"
+      ],
+      "impacts": {
+        "ic_design": -0.5,
+        "shipping": -0.7,
+        "display": -0.4,
+        "ev_supply": -0.3
+      },
+      "sentiment": {
+        "compound": 0,
+        "label": "中性"
+      }
+    },
+    {
+      "text": "US Escalates Canada Trade War With Product Bans, New Tariffs - Bloomberg US Escalates Canada Trade War With Product Bans, New Tariffs  Bloomberg",
       "timestamp": "2026-09-09T03:22:00.000Z",
       "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNbDhtMHBzc1ZnWUhjUWhfcUU4cHpuMEI3LU5PMjI2bVY4YkdzcjVQNHA4UUhiODdLTGdIMllYZjRPWjY5QVF1VjFNWTRKRDV0UWpjS0M5TkZVRnRQR1Z5ak5mWTdLVlhvcEVEQm5USkNNRGxIODRfLWdqQ2F6YWQxTWwzU2EtT2RFZGRONlBKYkoyTkxpMll4TWxmOVlHZ3duYUNWZDlJQnpEaWdIcTdzX0hDQTBzZw?oc=5",
       "keywords": [
@@ -42,26 +61,7 @@
       }
     },
     {
-      "text": "China’s Surging Exports Loom Over Trump’s Talks With Xi - nytimes.com China’s Surging Exports Loom Over Trump’s Talks With Xi  nytimes.com",
-      "timestamp": "2026-09-08T08:24:33.000Z",
-      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPUlR4d0EwcFVWcnRtZm83dm1MbF9VLTZaN3ViMXZHNy1yNVFxS1FDRW84X3VBRDlMX3ZsbHdVQ3hCMktqQ2wtOW4wNEVselF1X21LWXFDMHNnZHhMVWdqLWxEUHNrNkR4TEkyNkFuX2ZaUGZqaGFURkhfNmZsRWhMRGsxUQ?oc=5",
-      "keywords": [
-        "china",
-        "port"
-      ],
-      "impacts": {
-        "ic_design": -0.5,
-        "shipping": -0.7,
-        "display": -0.4,
-        "ev_supply": -0.3
-      },
-      "sentiment": {
-        "compound": 0,
-        "label": "中性"
-      }
-    },
-    {
-      "text": "The hidden tradeoffs of using Trump’s tariffs as leverage with China - brookings.edu The hidden tradeoffs of using Trump’s tariffs as leverage with China  brookings.edu",
+      "text": "The hidden tradeoffs of using Trump’s tariffs as leverage with China - Brookings The hidden tradeoffs of using Trump’s tariffs as leverage with China  Brookings",
       "timestamp": "2026-08-20T07:00:00.000Z",
       "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQRmVXUmJmaVdnUFl3YTRlNFFyTEM2STJDdno5TGhBUVg2eko5S1hKVzBaU1RiQlJ4eEhYNlVGMzN1VWlwYzVxWmgwbzlXaUdlb3hEOXplX2R2TkV6THRpaV9aaXpvRkJRYzZNR3BBeTdyYVZYaEpRVTFWWGNUS21zWjF0Ml9GUTVTbl81UWo2TkZ0RzIzQy1COHZiTWtQcjFHSjdNZHRR?oc=5",
       "keywords": [
@@ -134,14 +134,13 @@
       }
     },
     {
-      "text": "Canada’s US tariffs take effect as Trump threatens Bombardier aircraft sales - South China Morning Post Canada’s US tariffs take effect as Trump threatens Bombardier aircraft sales  South China Morning Post",
+      "text": "Canada’s US tariffs take effect as Trump threatens Bombardier aircraft sales - scmp.com Canada’s US tariffs take effect as Trump threatens Bombardier aircraft sales  scmp.com",
       "timestamp": "2026-09-07T20:08:51.000Z",
       "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxON2tfaTc1Rl8wUDFLZ3d4UVJXNm9FeGo2N2NXR0dGWktaMDdjaC1aUWlEa2RqbEFLVnZkblJBWlNXMVpCd3owWVVFQ0RuVkxUYVFmNUhYZkNuYlF4NEVCcS1xNkNiN2YwT0JKREIxQjV1Uy1lNE5YMGYxU2VwLWdTWldUX3NWWDN4ZUh6Y0d3Q3h3Nk1UV1F0TDhaV3VmdWlFXzBxZzRacWEtbkFMR0Zqa000aXJkLXlHN21EN3NIcExIRng20gHEAUFVX3lxTE1GOWpTWWxCZDVuV0ttNE5ZcEpiRjM3OFQ1eDhIa2t2WWVmTWRxeUlKSDAxS2UyLWh2TTloNUpUSUFIbDc0OHc1ekVyYW9kc2xyazd4RVp2WDZCQ1kxMERxOGUzZVFHZ3VNNWMzT0JKY0FhWVRjWWlNTUlXeUQzMkk5NktwVU9pVl9qdGU4ZElDOTdDRUNJZVgwYnEtTXItNm95S2p1Mk5UWDFzSDluc0ZOLWxzTC0zSm5wWXp6ZTduMlNzQWs?oc=5",
       "keywords": [
         "ai",
         "tariff",
-        "tariffs",
-        "china"
+        "tariffs"
       ],
       "impacts": {
         "ai_server": 0.7,
@@ -150,7 +149,7 @@
         "steel": -1,
         "ic_design": -1,
         "display": -1,
-        "ev_supply": -1
+        "ev_supply": -0.8
       },
       "sentiment": {
         "compound": -0.7184,
@@ -220,7 +219,7 @@
       }
     },
     {
-      "text": "Brushing Aside Trump’s Threats, Canada Retaliates on Tariffs - nytimes.com Brushing Aside Trump’s Threats, Canada Retaliates on Tariffs  nytimes.com",
+      "text": "Brushing Aside Trump’s Threats, Canada Retaliates on Tariffs - The New York Times Brushing Aside Trump’s Threats, Canada Retaliates on Tariffs  The New York Times",
       "timestamp": "2026-09-08T01:24:15.000Z",
       "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPb015UGswWm1Na0pCWTRkc1B6bUR6Q2FrdndPNTdkdDlITkFEQmtTRV8xZGFlbDhRWmVFWUhLZ1dZblNjbzhSZlMzYVJJdE9ld3dKcFByQ2J4R2dXejZlVE01N1dnSW5jWi0xLUNudFMzYkdoaEtkV2RCNmo2eHkyQXhTUTVjNk9VNUFN?oc=5",
       "keywords": [
@@ -370,23 +369,24 @@
       }
     },
     {
-      "text": "Peter Schiff Says China Is 'the Clear Winner' of Trump's Trade War - Benzinga Peter Schiff Says China Is 'the Clear Winner' of Trump's Trade War  Benzinga",
-      "timestamp": "2026-09-09T03:42:07.000Z",
-      "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxNd1lKVlJza1BpeHpORFhpZXN4OEp6Yi1mSE1jZ2RrM2RRUjNxdVNXS3R4TDU3UUtUOHgwd3pNRXZBcTA2ZFBCY1JlNEVrSlFleVEyVDBjMURYdldJQXJaYzFXV1RrZmNHa1lsaUhOeVhXckhGQWJiT1B5T25OTzZlZ01zNXdMNTdHNzBaTWVpUlY5X0JLQl9rTVJXNzJpMWtyZFlzUVp0Wm8zRmRXb2x3UmxydW05eF80SDg3eXRsZnpjbG5JcjkyNmJBa2hwWnZCVUlQYVY3QkdZYzRxRWItcg?oc=5",
+      "text": "Trump wants to ‘manage’ China trade. Businesses see a tariff opening. - Politico Trump wants to ‘manage’ China trade. Businesses see a tariff opening.  Politico",
+      "timestamp": "2026-05-30T07:00:00.000Z",
+      "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPbGZ0RElvZWg0Y0xtbTNTNXVkS2lrYU5fTG9RY054MVYwOVBwMzVua1dmMjJHQjNwRmVvRUp5WDRiZkhXb0ZfOHV6dzBjSDNXclN3RGNWUjRvRy1PXzhNcndxcHZCNW1TX3UxTHVIRHJHOWJhSzNEV0RvcW91N0xmRVN6VGZOa3l2UkhMNHhKbUI?oc=5",
       "keywords": [
-        "trade war",
+        "tariff",
         "china"
       ],
       "impacts": {
-        "foundry": -0.6,
+        "foundry": -0.7,
+        "shipping": -0.9,
+        "steel": -0.5,
         "ic_design": -1,
-        "shipping": -1,
-        "display": -0.4,
-        "ev_supply": -0.3
+        "display": -0.9,
+        "ev_supply": -0.7
       },
       "sentiment": {
-        "compound": 0,
-        "label": "中性"
+        "compound": -0.7184,
+        "label": "強烈利空"
       }
     },
     {
@@ -411,7 +411,7 @@
       }
     },
     {
-      "text": "China Has Come Through Trump’s Trade War in a Good Position - nytimes.com China Has Come Through Trump’s Trade War in a Good Position  nytimes.com",
+      "text": "China Has Come Through Trump’s Trade War in a Good Position - The New York Times China Has Come Through Trump’s Trade War in a Good Position  The New York Times",
       "timestamp": "2026-07-25T07:00:00.000Z",
       "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE5PRDkyX0ZpSzd2QmhBWnJiQVJDbHBqbWZlQzBGbGJacUVUekJmcHhYYVJXWlpXeUk4TVRSWG5MNzdnR2ZCSVNTbWtra3doaDg1ei10NlB4bk9JUXAzMXVRYmRuWU1NSGJVMnpub1Jybms5Q0xjTXRN?oc=5",
       "keywords": [
@@ -431,38 +431,17 @@
       }
     }
   ],
-  "deltas": [
-    {
-      "sector": "foundry",
-      "sectorName": "晶圓代工",
-      "prev": -0.872,
-      "current": -0.812,
-      "delta": 0.06,
-      "momentum": "↑ 壓力緩解",
-      "accelerating": false
-    }
-  ],
-  "topDeltas": [
-    {
-      "sector": "foundry",
-      "sectorName": "晶圓代工",
-      "prev": -0.872,
-      "current": -0.812,
-      "delta": 0.06,
-      "momentum": "↑ 壓力緩解",
-      "accelerating": false
-    }
-  ],
+  "deltas": [],
+  "topDeltas": [],
   "totalAnalyzed": 100,
   "sources": [
     "Google News"
   ],
   "sectorState": {
     "foundry": {
-      "score": -0.812,
-      "lastUpdated": "2026-09-09T19:11:54.091Z",
+      "score": -0.799,
+      "lastUpdated": "2026-09-09T22:24:46.925Z",
       "deltaHistory": [
-        -0.01100000000000001,
         -0.13,
         -0.006000000000000005,
         -0.018000000000000016,
@@ -471,14 +450,14 @@
         0,
         0.0050000000000000044,
         0.08099999999999996,
-        0.05999999999999994
+        0.05999999999999994,
+        0.013000000000000012
       ]
     },
     "shipping": {
-      "score": -0.995,
-      "lastUpdated": "2026-09-09T19:11:54.091Z",
+      "score": -0.999,
+      "lastUpdated": "2026-09-09T22:24:46.925Z",
       "deltaHistory": [
-        0.0010000000000000009,
         0.01200000000000001,
         -0.006000000000000005,
         0.014000000000000012,
@@ -487,14 +466,14 @@
         0,
         0.0030000000000000027,
         -0.025000000000000022,
-        0.0050000000000000044
+        0.0050000000000000044,
+        -0.0040000000000000036
       ]
     },
     "steel": {
-      "score": -0.784,
-      "lastUpdated": "2026-09-09T19:11:54.091Z",
+      "score": -0.772,
+      "lastUpdated": "2026-09-09T22:24:46.925Z",
       "deltaHistory": [
-        -0.01200000000000001,
         -0.127,
         -0.013999999999999901,
         0.05599999999999994,
@@ -503,14 +482,14 @@
         0.0010000000000000009,
         0,
         0.10000000000000009,
-        0.040999999999999925
+        0.040999999999999925,
+        0.01200000000000001
       ]
     },
     "ic_design": {
       "score": -1,
-      "lastUpdated": "2026-09-09T19:11:54.091Z",
+      "lastUpdated": "2026-09-09T22:24:46.925Z",
       "deltaHistory": [
-        0,
         0.0010000000000000009,
         -0.0010000000000000009,
         0,
@@ -519,14 +498,14 @@
         0,
         0,
         0.01200000000000001,
-        -0.01200000000000001
+        -0.01200000000000001,
+        0
       ]
     },
     "display": {
       "score": -0.942,
-      "lastUpdated": "2026-09-09T19:11:54.091Z",
+      "lastUpdated": "2026-09-09T22:24:46.925Z",
       "deltaHistory": [
-        0.007000000000000006,
         -0.04300000000000004,
         0,
         0.040000000000000036,
@@ -535,14 +514,14 @@
         0.0010000000000000009,
         0.0020000000000000018,
         0.03399999999999992,
-        -0.007999999999999896
+        -0.007999999999999896,
+        0
       ]
     },
     "ev_supply": {
-      "score": -0.799,
-      "lastUpdated": "2026-09-09T19:11:54.091Z",
+      "score": -0.784,
+      "lastUpdated": "2026-09-09T22:24:46.925Z",
       "deltaHistory": [
-        0.0030000000000000027,
         -0.06399999999999995,
         0.0119999999999999,
         0.0040000000000000036,
@@ -551,14 +530,14 @@
         0,
         0.038999999999999924,
         0.0010000000000000009,
-        0.01100000000000001
+        0.01100000000000001,
+        0.015000000000000013
       ]
     },
     "ai_server": {
-      "score": 0.101,
-      "lastUpdated": "2026-09-09T19:11:54.091Z",
+      "score": 0.103,
+      "lastUpdated": "2026-09-09T22:24:46.925Z",
       "deltaHistory": [
-        0.005999999999999999,
         0.004000000000000002,
         -0.012,
         0.016999999999999998,
@@ -567,14 +546,14 @@
         -0.010000000000000009,
         -0.0040000000000000036,
         -0.056999999999999995,
-        -0.021999999999999992
+        -0.021999999999999992,
+        0.001999999999999988
       ]
     },
     "pcb": {
-      "score": 0.047,
-      "lastUpdated": "2026-09-09T19:11:54.091Z",
+      "score": 0.048,
+      "lastUpdated": "2026-09-09T22:24:46.925Z",
       "deltaHistory": [
-        0.108,
         0.007000000000000006,
         -0.04300000000000001,
         0.007000000000000006,
@@ -583,12 +562,13 @@
         0.008,
         -0.007000000000000006,
         0.020000000000000004,
-        -0.016
+        -0.016,
+        0.0010000000000000009
       ]
     },
     "defense": {
       "score": 0,
-      "lastUpdated": "2026-09-09T19:11:54.091Z",
+      "lastUpdated": "2026-09-09T22:24:46.925Z",
       "deltaHistory": [
         0,
         0,
@@ -604,9 +584,8 @@
     },
     "packaging": {
       "score": -0.002,
-      "lastUpdated": "2026-09-09T19:11:54.091Z",
+      "lastUpdated": "2026-09-09T22:24:46.925Z",
       "deltaHistory": [
-        0,
         0,
         0,
         -0.002,
@@ -615,14 +594,14 @@
         -0.001,
         -0.002,
         0.002,
+        0,
         0
       ]
     },
     "semiconductor_equip": {
-      "score": 0.057,
-      "lastUpdated": "2026-09-09T19:11:54.091Z",
+      "score": 0.058,
+      "lastUpdated": "2026-09-09T22:24:46.925Z",
       "deltaHistory": [
-        0.13,
         0.008000000000000007,
         -0.05200000000000002,
         0.009000000000000008,
@@ -631,14 +610,14 @@
         0.009000000000000001,
         -0.009000000000000001,
         0.023,
-        -0.018999999999999996
+        -0.018999999999999996,
+        0.0010000000000000009
       ]
     },
     "robotics": {
-      "score": 0.038,
-      "lastUpdated": "2026-09-09T19:11:54.091Z",
+      "score": 0.039,
+      "lastUpdated": "2026-09-09T22:24:46.925Z",
       "deltaHistory": [
-        0.087,
         0.0050000000000000044,
         -0.034999999999999996,
         0.006999999999999999,
@@ -647,7 +626,8 @@
         0.006000000000000005,
         -0.006000000000000005,
         0.015,
-        -0.012999999999999998
+        -0.012999999999999998,
+        0.0010000000000000009
       ]
     },
     "petrochemical": {
@@ -678,9 +658,8 @@
     },
     "solar": {
       "score": -0.001,
-      "lastUpdated": "2026-09-09T19:11:54.091Z",
+      "lastUpdated": "2026-09-09T22:24:46.925Z",
       "deltaHistory": [
-        0,
         0.001,
         0,
         0,
@@ -689,6 +668,7 @@
         0,
         -0.001,
         0.001,
+        0,
         0
       ]
     },
@@ -710,9 +690,8 @@
     },
     "power_infra": {
       "score": 0.019,
-      "lastUpdated": "2026-09-09T19:11:54.091Z",
+      "lastUpdated": "2026-09-09T22:24:46.925Z",
       "deltaHistory": [
-        0.043,
         0.0030000000000000027,
         -0.016999999999999998,
         0.0019999999999999983,
@@ -721,7 +700,8 @@
         0.002999999999999999,
         -0.002999999999999999,
         0.008,
-        -0.006000000000000002
+        -0.006000000000000002,
+        0
       ]
     },
     "banking": {
