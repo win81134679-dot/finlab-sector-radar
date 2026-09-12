@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-12T12:05:12.060Z",
+  "updatedAt": "2026-09-12T18:15:53.806Z",
   "posts": [
     {
       "text": "The Fallout of the U.S.–Canada Trade War Won’t Be Limited to North America - Carnegie Endowment for International Peace The Fallout of the U.S.–Canada Trade War Won’t Be Limited to North America  Carnegie Endowment for International Peace",
@@ -74,6 +74,27 @@
         "ic_design": -1,
         "display": -1,
         "ev_supply": -0.9
+      },
+      "sentiment": {
+        "compound": -0.7184,
+        "label": "強烈利空"
+      }
+    },
+    {
+      "text": "BRICS Indirectly Hits Out at Trump’s Tariffs, WTO Paralysis - Jakarta Globe BRICS Indirectly Hits Out at Trump’s Tariffs, WTO Paralysis  Jakarta Globe",
+      "timestamp": "2026-09-12T15:33:00.000Z",
+      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOeG5VSVFhUHNfTl9lcjRlVThLY3lNSFpLNmdXeWhBQVBQR0FEejM4US1xSHhMaXNGUEl3YVh1NkFVbFBxczVPMkt5QllBLU1kMUdmNy12cWdTRlJmYzY2dFlHbVFuVkhxOW5pOVlfU1h6QUFVWmNrMllJalBBaEtqcy11ZzRzcFNzS1NPVTdsTjdUVmNC?oc=5",
+      "keywords": [
+        "tariff",
+        "tariffs"
+      ],
+      "impacts": {
+        "foundry": -1,
+        "shipping": -1,
+        "steel": -1,
+        "ic_design": -1,
+        "display": -1,
+        "ev_supply": -0.8
       },
       "sentiment": {
         "compound": -0.7184,
@@ -207,7 +228,7 @@
       }
     },
     {
-      "text": "Tracking the Impact of the Trump Tariffs & Trade War - Tax Foundation Tracking the Impact of the Trump Tariffs & Trade War  Tax Foundation",
+      "text": "Tracking the Impact of the Trump Tariffs & Trade War - taxfoundation.org Tracking the Impact of the Trump Tariffs & Trade War  taxfoundation.org",
       "timestamp": "2026-08-20T16:36:30.000Z",
       "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE5LU1daamtmcnNXWEZENFBwb3BYMThMQ1M4bHFPSzVZX0s5QmlLYWM4dDdKUGNiOF9iNjcxZ2VZTXd0bVJ6NGNNcDZVVmlkc25rTmxLd3Q4RVJhQmM3dUhpR3h1aXhXNGs3UkNQN0ZKLUpSSnBnOWVaX0tTRQ?oc=5",
       "keywords": [
@@ -251,6 +272,26 @@
       }
     },
     {
+      "text": "China Has Come Through Trump’s Trade War in a Good Position - The New York Times China Has Come Through Trump’s Trade War in a Good Position  The New York Times",
+      "timestamp": "2026-07-25T07:00:00.000Z",
+      "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE5PRDkyX0ZpSzd2QmhBWnJiQVJDbHBqbWZlQzBGbGJacUVUekJmcHhYYVJXWlpXeUk4TVRSWG5MNzdnR2ZCSVNTbWtra3doaDg1ei10NlB4bk9JUXAzMXVRYmRuWU1NSGJVMnpub1Jybms5Q0xjTXRN?oc=5",
+      "keywords": [
+        "trade war",
+        "china"
+      ],
+      "impacts": {
+        "foundry": -0.6,
+        "ic_design": -1,
+        "shipping": -1,
+        "display": -0.4,
+        "ev_supply": -0.3
+      },
+      "sentiment": {
+        "compound": 0,
+        "label": "中性"
+      }
+    },
+    {
       "text": "China flags major tariff breakthrough ahead of Trump talks - The Nightly China flags major tariff breakthrough ahead of Trump talks  The Nightly",
       "timestamp": "2026-09-11T01:08:28.000Z",
       "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxPWUF0M1pHb3RwbW5ZOVZRTXNjLVR6S3NQdndmM3lrZkpJZ1d5cmxyOTZoQk9ZRXE3SmdsdWVOMEV3TmtYTGd5RGRmWFVQNnltSVN5RV8yTG9FTEhHeEo1R3l4ek1RS19ScHR0djNyM3hxVlhHQmxBOG9sV2RCMmJqNzk2SXFqVUg1V1ZZQmVLYnIzWFFncjZxLXRhWU4xNFl6S21PbDM0Yk9RMmU5T09Id21Nc01mN0ZVcEhDUVg4N0RKZHpEcnhBMFpaN2VSWG1ZN3pka25VV3dJUUxUMXdhNjJHUlZuazQ?oc=5",
@@ -272,26 +313,6 @@
       }
     },
     {
-      "text": "China Has Come Through Trump’s Trade War in a Good Position - The New York Times China Has Come Through Trump’s Trade War in a Good Position  The New York Times",
-      "timestamp": "2026-07-25T07:00:00.000Z",
-      "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE5PRDkyX0ZpSzd2QmhBWnJiQVJDbHBqbWZlQzBGbGJacUVUekJmcHhYYVJXWlpXeUk4TVRSWG5MNzdnR2ZCSVNTbWtra3doaDg1ei10NlB4bk9JUXAzMXVRYmRuWU1NSGJVMnpub1Jybms5Q0xjTXRN?oc=5",
-      "keywords": [
-        "trade war",
-        "china"
-      ],
-      "impacts": {
-        "foundry": -0.6,
-        "ic_design": -1,
-        "shipping": -1,
-        "display": -0.4,
-        "ev_supply": -0.3
-      },
-      "sentiment": {
-        "compound": 0,
-        "label": "中性"
-      }
-    },
-    {
       "text": "Trump’s tariff fix leaves US trade policy in permanent flux - Financial Times Trump’s tariff fix leaves US trade policy in permanent flux  Financial Times",
       "timestamp": "2026-08-31T07:00:00.000Z",
       "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBzbEJnSTd5RldTRGViY2tRNlZWVjVfclJoc3RXUXhya0Jva3hCb3VDNzQ0OTBHa01Scl9XOXpUQmRaTnMwejg3eE1ZS3BOaW9MX2QwdXFpNGNxMUdLQmdfamh0UWxkOWtwWC1ZSnpTTFM?oc=5",
@@ -305,27 +326,6 @@
         "ic_design": -0.6,
         "display": -0.5,
         "ev_supply": -0.4
-      },
-      "sentiment": {
-        "compound": -0.7184,
-        "label": "強烈利空"
-      }
-    },
-    {
-      "text": "China seeks US tariff cuts ahead of Trump-Xi summit - The News International China seeks US tariff cuts ahead of Trump-Xi summit  The News International",
-      "timestamp": "2026-09-10T10:38:00.000Z",
-      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOR1NJZ0xYXzh1LU9kSGtMY3k3OXFRSkxNcFVwZ2tEZzloaWFvdU5EbUJ3ZnBvdlZNOENKd0txUUthUF8yc0pfTTBKOHNrdDJkamZOdFdVeklWQU5TZjBYdGhHMlNCZVRTdThzaW5xb1BUQXJCYlpEZTd3d3JJODZHXzJxemlBWkEtcEFoMVllWDh5VjNHbTVMb9IBlAFBVV95cUxOa1g5bkQ2UDRpZXNadG1wNUNUVzFYdjFLU3F2ckliRDJIOHdweDg5WGlUUFNkSS1Gc1MxN096T3FJWEtCWGU2NGZrZUlYVEk2bEJfWWw4ZzB1b1cycG5ETWl4UTVjNG84TGJjLXllcThuUTNYVU5HeDBqSWRqWHlwaXM2R2tXcTV4ZldqUTVqeUo5OHdH?oc=5",
-      "keywords": [
-        "tariff",
-        "china"
-      ],
-      "impacts": {
-        "foundry": -0.7,
-        "shipping": -0.9,
-        "steel": -0.5,
-        "ic_design": -1,
-        "display": -0.9,
-        "ev_supply": -0.7
       },
       "sentiment": {
         "compound": -0.7184,
@@ -376,28 +376,6 @@
       }
     },
     {
-      "text": "White House says more than 40 nations help China dodge tariffs - The Washington Post White House says more than 40 nations help China dodge tariffs  The Washington Post",
-      "timestamp": "2026-08-13T07:00:00.000Z",
-      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPREFqd1dJbUx4Y1BwU2ZuRG9RVWZWN2MtTV9EUlRhNmpfd1pyOG4yblhDWjlIdTlMZW1IR0pMYUZ1UHRsQklOR3M5WEZsMV9fRzVHRUlWY2k2YTBHem1kQ18xekFocFh6Y1Ztc0lDNGtORFhhUFF2eGstTmlTR01RRURmeUJSN08wWDVyS1NraFJZTkN2b004T255LU95YkJHVlB1X2xlZkUzSVFHVlJ2Qmh0N2c?oc=5",
-      "keywords": [
-        "tariff",
-        "tariffs",
-        "china"
-      ],
-      "impacts": {
-        "foundry": -1,
-        "shipping": -1,
-        "steel": -1,
-        "ic_design": -1,
-        "display": -1,
-        "ev_supply": -1
-      },
-      "sentiment": {
-        "compound": -0.7184,
-        "label": "強烈利空"
-      }
-    },
-    {
       "text": "China Says US Tariff Cuts Could Come ‘At an Early Date’ as Trump, Xi Gear Up for Washington Summit - Benzinga China Says US Tariff Cuts Could Come ‘At an Early Date’ as Trump, Xi Gear Up for Washington Summit  Benzinga",
       "timestamp": "2026-09-11T06:25:09.000Z",
       "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxQSXpKakdRd2lUOVh4Zm5IUm5tNXl5NVdvekROTVd4LTZqb0xpYWYzcllWdlpOa19PaFBXOW9RdWNod0xHb25pLVFrcnhXMlFRVzY3SUNpNmVlNW1TNXZ1NFlkSF9TbUlxS3BINVVBczBHc3hXcXkzb1lidVZINGxja1gzQnJxbzhIUVR0Z0xTYlNSU3dzSWd0Z0tnWF8tR0hQLUZHZGFQakVrdXhKYW50UlhseWFyZFZSd1pnbmtnQ2dBSzk2WGw2dE9KVDF0UFA0TEZyQW9sZWlTTlhGWkFmVTVsMA?oc=5",
@@ -417,6 +395,28 @@
         "compound": -0.7184,
         "label": "強烈利空"
       }
+    },
+    {
+      "text": "Trump Tariffs ‘Tortuous’ to Soybean Trade, China Diplomat Says - Bloomberg.com Trump Tariffs ‘Tortuous’ to Soybean Trade, China Diplomat Says  Bloomberg.com",
+      "timestamp": "2026-08-07T07:00:00.000Z",
+      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQQWZaU1JQN0l1ZUdDc0d3ZE00TlU1ZENGdko3TzhFQ09QemVoVXF2VmZNdGIwcjFVRnE3S295VXB0TEhiWEN2a3dVOXc5MFZTUHdrYllqTVFjMHFhYTFreHJOS0p0bTNsaC1LQ2NVY1hxX0szOG1DazdOdHdHTUlRZkFmQTZHeGl3MnpaY3RPR1JHbHVyeC13NWdUYzk3TzNPYVlPU09LU2ppNnprS2RJ?oc=5",
+      "keywords": [
+        "tariff",
+        "tariffs",
+        "china"
+      ],
+      "impacts": {
+        "foundry": -1,
+        "shipping": -1,
+        "steel": -1,
+        "ic_design": -1,
+        "display": -1,
+        "ev_supply": -1
+      },
+      "sentiment": {
+        "compound": -0.7184,
+        "label": "強烈利空"
+      }
     }
   ],
   "deltas": [],
@@ -427,10 +427,9 @@
   ],
   "sectorState": {
     "foundry": {
-      "score": -0.762,
-      "lastUpdated": "2026-09-12T12:05:12.060Z",
+      "score": -0.778,
+      "lastUpdated": "2026-09-12T18:15:53.806Z",
       "deltaHistory": [
-        0.0050000000000000044,
         0.09200000000000008,
         -0.05700000000000005,
         -0.02100000000000002,
@@ -439,14 +438,14 @@
         -0.0030000000000000027,
         0.0050000000000000044,
         0.010000000000000009,
-        0.013000000000000012
+        0.013000000000000012,
+        -0.016000000000000014
       ]
     },
     "shipping": {
-      "score": -0.899,
-      "lastUpdated": "2026-09-12T12:05:12.060Z",
+      "score": -0.906,
+      "lastUpdated": "2026-09-12T18:15:53.806Z",
       "deltaHistory": [
-        -0.0010000000000000009,
         0.03600000000000003,
         0.025000000000000022,
         -0.006000000000000005,
@@ -455,14 +454,14 @@
         0.0020000000000000018,
         0.014000000000000012,
         0.0020000000000000018,
-        0.006000000000000005
+        0.006000000000000005,
+        -0.007000000000000006
       ]
     },
     "steel": {
-      "score": -0.588,
-      "lastUpdated": "2026-09-12T12:05:12.060Z",
+      "score": -0.611,
+      "lastUpdated": "2026-09-12T18:15:53.806Z",
       "deltaHistory": [
-        0.0050000000000000044,
         0.11699999999999999,
         -0.052999999999999936,
         -0.019000000000000017,
@@ -471,15 +470,16 @@
         0.0040000000000000036,
         0.02400000000000002,
         0.0040000000000000036,
-        0.02400000000000002
+        0.02400000000000002,
+        -0.02300000000000002
       ]
     },
     "ic_design": {
       "score": -1,
-      "lastUpdated": "2026-09-12T12:05:12.060Z",
+      "lastUpdated": "2026-09-12T18:15:53.806Z",
       "deltaHistory": [
-        0.006000000000000005,
         -0.006000000000000005,
+        0,
         0,
         0,
         0,
@@ -491,10 +491,9 @@
       ]
     },
     "display": {
-      "score": -0.794,
-      "lastUpdated": "2026-09-12T12:05:12.060Z",
+      "score": -0.799,
+      "lastUpdated": "2026-09-12T18:15:53.806Z",
       "deltaHistory": [
-        0.005999999999999894,
         0.017000000000000015,
         -0.006000000000000005,
         -0.009000000000000008,
@@ -503,14 +502,14 @@
         0.016000000000000014,
         0.006999999999999895,
         0.0030000000000000027,
-        0.009000000000000008
+        0.009000000000000008,
+        -0.0050000000000000044
       ]
     },
     "ev_supply": {
       "score": -0.66,
-      "lastUpdated": "2026-09-12T12:05:12.060Z",
+      "lastUpdated": "2026-09-12T18:15:53.806Z",
       "deltaHistory": [
-        -0.015000000000000013,
         0.039000000000000035,
         -0.014000000000000012,
         -0.02400000000000002,
@@ -519,14 +518,14 @@
         0.02299999999999991,
         0,
         0.0010000000000000009,
-        0.019000000000000017
+        0.019000000000000017,
+        0
       ]
     },
     "ai_server": {
-      "score": 0.072,
-      "lastUpdated": "2026-09-12T12:05:12.060Z",
+      "score": 0.063,
+      "lastUpdated": "2026-09-12T18:15:53.806Z",
       "deltaHistory": [
-        0.0030000000000000027,
         0.06799999999999999,
         0.01100000000000001,
         -0.038000000000000006,
@@ -535,14 +534,14 @@
         0.006999999999999992,
         -0.02099999999999999,
         0.0010000000000000009,
-        0.00399999999999999
+        0.00399999999999999,
+        -0.008999999999999994
       ]
     },
     "pcb": {
       "score": 0,
-      "lastUpdated": "2026-09-12T12:05:12.060Z",
+      "lastUpdated": "2026-09-12T18:15:53.806Z",
       "deltaHistory": [
-        0.018000000000000002,
         -0.021000000000000005,
         -0.0020000000000000018,
         -0.006999999999999999,
@@ -551,12 +550,13 @@
         0.005999999999999998,
         -0.043,
         0,
+        0,
         0
       ]
     },
     "defense": {
       "score": 0,
-      "lastUpdated": "2026-09-12T12:05:12.060Z",
+      "lastUpdated": "2026-09-12T18:15:53.806Z",
       "deltaHistory": [
         0,
         0,
@@ -571,10 +571,9 @@
       ]
     },
     "packaging": {
-      "score": -0.004,
-      "lastUpdated": "2026-09-12T12:05:12.060Z",
+      "score": -0.005,
+      "lastUpdated": "2026-09-12T18:15:53.806Z",
       "deltaHistory": [
-        -0.001,
         0.001,
         0,
         0,
@@ -583,14 +582,14 @@
         0,
         -0.001,
         -0.001,
-        0
+        0,
+        -0.001
       ]
     },
     "semiconductor_equip": {
       "score": 0.001,
-      "lastUpdated": "2026-09-12T12:05:12.060Z",
+      "lastUpdated": "2026-09-12T18:15:53.806Z",
       "deltaHistory": [
-        0.022,
         -0.025,
         -0.0020000000000000018,
         -0.009000000000000001,
@@ -599,14 +598,14 @@
         0.008,
         -0.052,
         0,
+        0,
         0
       ]
     },
     "robotics": {
       "score": 0.001,
-      "lastUpdated": "2026-09-12T12:05:12.060Z",
+      "lastUpdated": "2026-09-12T18:15:53.806Z",
       "deltaHistory": [
-        0.015,
         -0.017,
         -0.001999999999999995,
         -0.006000000000000002,
@@ -614,6 +613,7 @@
         0.0009999999999999974,
         0.0050000000000000044,
         -0.034,
+        0,
         0,
         0
       ]
@@ -645,8 +645,8 @@
       ]
     },
     "solar": {
-      "score": -0.001,
-      "lastUpdated": "2026-09-12T12:05:12.060Z",
+      "score": -0.002,
+      "lastUpdated": "2026-09-12T18:15:53.806Z",
       "deltaHistory": [
         0,
         0,
@@ -657,7 +657,7 @@
         0,
         0,
         0,
-        0
+        -0.001
       ]
     },
     "wind_energy": {
