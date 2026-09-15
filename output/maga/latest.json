@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-15T21:26:20+08:00",
+  "updated_at": "2026-09-16T01:13:58+08:00",
   "active_policies": [
     {
       "key": "tariff",
@@ -189,7 +189,7 @@
           "o": 2405.0,
           "h": 2405.0,
           "l": 2380.0,
-          "v": 15013752
+          "v": 15215752
         }
       ]
     },
@@ -266,7 +266,7 @@
           "o": 157.5,
           "h": 157.5,
           "l": 153.0,
-          "v": 8836913
+          "v": 8949913
         }
       ]
     },
@@ -1575,7 +1575,7 @@
           "o": 1590.0,
           "h": 1715.0,
           "l": 1585.0,
-          "v": 14740962
+          "v": 14802962
         }
       ]
     },
@@ -2730,7 +2730,7 @@
           "o": 3535.0,
           "h": 3590.0,
           "l": 3335.0,
-          "v": 2668862
+          "v": 2699862
         }
       ]
     },
@@ -3038,7 +3038,7 @@
           "o": 601.0,
           "h": 608.0,
           "l": 592.0,
-          "v": 13401324
+          "v": 14790324
         }
       ]
     },
@@ -5656,7 +5656,7 @@
           "o": 901.0,
           "h": 959.0,
           "l": 895.0,
-          "v": 7583423
+          "v": 8270423
         }
       ]
     },
@@ -7601,7 +7601,7 @@
           "o": 121.5,
           "h": 124.5,
           "l": 121.0,
-          "v": 10447689
+          "v": 10604689
         }
       ]
     },
@@ -9526,7 +9526,7 @@
           "o": 1260.0,
           "h": 1285.0,
           "l": 1255.0,
-          "v": 425567
+          "v": 445567
         }
       ]
     },
@@ -22733,7 +22733,7 @@
           "o": 68.2,
           "h": 69.2,
           "l": 67.2,
-          "v": 2302301
+          "v": 2615301
         }
       ]
     },
@@ -32089,12 +32089,6 @@
       "sentiment": "neutral"
     },
     {
-      "date": "2026-09-15T00:39:00+00:00",
-      "headline": "AI疑慮＋油價上漲 美4大指數收黑 台積電ADR重挫3.52％ - fnc.ebc.net.tw",
-      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE12QUZzN0NtNGdTUjFlZHhHd3F3S3lNX0VrYW1pcFJPZnVPVlhlZ18zc0M5cVotWVJSc3NITDdUcy1CZVhfSmlXY0doTEozQlFCNUdEdkdn?oc=5",
-      "sentiment": "positive"
-    },
-    {
       "date": "2026-09-11T08:51:06+00:00",
       "headline": "原來川普將再課台灣半導體關稅是誤會一場？分析師如此解讀 - 經濟日報",
       "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFB2aUpySlhoYUl1Ym8tbFBKNnpmS2pYTTlJeFdzajhBUHRHdml3THUyNk00ck5ZQlVRcTRDejg5V1hVYko2bUw2aDAzMU5qOEdMN01iY0tFRXBoZ9IBX0FVX3lxTE9HOHRzSTdLM29lM2FDczFrSTlNMm1TNzV0cHBLVEpOOUg3WkNORnhtNUxjZ3F5RHNuMlVhdzRVTGMtSWpUN0RZRzhIbEp4QWpYODdMU2RqeVhDbUJDS1g0?oc=5",
@@ -32102,8 +32096,14 @@
     },
     {
       "date": "2026-09-10T10:10:28+00:00",
-      "headline": "川普再喊台灣晶片課200%重稅！半導體供應鏈掀「美國製造」遷徙潮 台積電、環球晶領軍赴美 - moneyweekly.com.tw",
+      "headline": "川普再喊台灣晶片課200%重稅！半導體供應鏈掀「美國製造」遷徙潮 台積電、環球晶領軍赴美 - 理財周刊",
       "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE5lbUtxY1VtdEx2VDl6T3B5SFFtMUw3eVZRYVY1dEZ0azFfR3JtVlM5cTUtY2ZaUEhqZHB3SzZxQXF2d085Si0ydjlNYWxsZUhZb3NoVFBXUmtnMUR6cEtWM1FBNnppVTNQNDdjczdCOA?oc=5",
+      "sentiment": "neutral"
+    },
+    {
+      "date": "2026-09-10T09:00:00+00:00",
+      "headline": "經濟部通過200億美元增資美國 TSMC 建置12吋晶圓廠及先進封裝廠 - 經濟日報",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5jcGZyb3FyMERUUWxGMUtacy1oWlNaeWV5bzNoN1dBWlVBSUhIWlpVTVVVd1F4YUhOcm53OHR4Y1dCM1JLeThFNl9MVWF0S2R2Z3p4QjJoSjQzQdIBX0FVX3lxTE90cURJdV9GTWxnYWI2VllfamdyZHpJT2V4Tks4bWlkUnNPMm5Ob1NxUlJMTDhQVmhSVEFyQWhYcjZIeWFhbTZ6elp6NjNkSXoyM21zMGhoRzQ5eFpFd0tr?oc=5",
       "sentiment": "neutral"
     },
     {
@@ -32122,12 +32122,6 @@
       "date": "2026-08-28T07:00:00+00:00",
       "headline": "台灣注意、美企業急了！川普傳擴大半導體關稅 外媒曝後果 - 自由財經",
       "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE9oUE5hODZwMDZ1bTRxaEs4b3hXSXByUEpnUUlsOWIwcVZKMXAxNTVpRzNsbTZ6dUtIMUVzeTJCeGt2Z1dYdTlKbmxhR2drNW5oY3ZLODhkU0ZJRHIzNkpv?oc=5",
-      "sentiment": "neutral"
-    },
-    {
-      "date": "2026-07-10T07:00:00+00:00",
-      "headline": "Bilateral Recommendations in the Post-Tariff Agreement Era - 未來城市＠天下 - 進步城市的新想像 - 未來城市＠天下",
-      "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE5SdG9aUVAwTXNQSkdXYUVhUVRfVkdvYTdnSUdHRk5aYmcyVlpNOVQ5bHBRdGNCQlI4M0F1THFNZ0ktYTNnZHpwLUxPdWhCUzhzSW1r?oc=5",
       "sentiment": "neutral"
     },
     {
@@ -32152,6 +32146,12 @@
       "date": "2025-03-30T07:00:00+00:00",
       "headline": "《TAIPEI TIMES》 TSMC, US working on solutions as new tariffs loom - 自由時報",
       "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE5GQW1NYk9mOEdybUVvRjFYc3pEdjVKWV9Xdnp1VU9fMjQ2ZnFHQkt3S3VYX1M1VTc2bnd3ZmszMVMtaDctc2Y0Tmc4Snh5OFRHaTVJQzRCOV9QSnVVNVRvRVlGRkN2d9IBa0FVX3lxTE9XbzY1RHAyM1VjSk1JbUVsak1xeFVDY0NIclZrZGFkaDBMZlJ1WHY3NTFzQjFfUktncnJBX01SbUxSM05kNERyS0MyaHJXdzNNSmxMTG5IT212bUFuYkJfdDZVUHRaSjNVZXJn?oc=5",
+      "sentiment": "neutral"
+    },
+    {
+      "date": "2025-03-27T07:00:00+00:00",
+      "headline": "「矽盾」未來在無人機戰場？台灣如何強化國防優勢 - peopo.org",
+      "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE12b0FjaGFmenJscTlBc1A4RHJUQ09tTHhjS2FWOTVpMEdPbV9SWmlYV1lIV1VkOVFsaklXU0NuWVpQX0E4RTRhUA?oc=5",
       "sentiment": "neutral"
     },
     {
