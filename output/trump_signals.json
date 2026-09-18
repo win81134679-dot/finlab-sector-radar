@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-17T22:46:40.764Z",
+  "updatedAt": "2026-09-18T04:18:20.704Z",
   "posts": [
     {
       "text": "Trump gains a tariff weapon against China and India. Will he use it? - CNBC Trump gains a tariff weapon against China and India. Will he use it?  CNBC",
@@ -20,6 +20,29 @@
         "display": -0.9,
         "ev_supply": -0.7,
         "defense": 0.7
+      },
+      "sentiment": {
+        "compound": -0.7184,
+        "label": "強烈利空"
+      }
+    },
+    {
+      "text": "US Said to Delay Excess Capacity Tariffs Until After Xi Summit - Bloomberg.com US Said to Delay Excess Capacity Tariffs Until After Xi Summit  Bloomberg.com",
+      "timestamp": "2026-09-17T18:03:26.000Z",
+      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQdFhuSWpjeFhHdU1FYXZpM2dWalBWQW1BcGtxd0RLcEtKVmE1bVhnYTZGdnB2U2prMWttbTlTYzJXRmdZWG56c1MzU3BLWTl3Q1hleFVxSTZFMnpXZ2lESWo0S3lwY296ejMtd2gzd0pDdE5pSnBWZFdUMHRqbVRCYTBYMG1rNXlybTc1YzRvWnotMTZIWlRhN1RlckR5QWFMd2FTcTFVU2hJdGdSQlVwdjJRTQ?oc=5",
+      "keywords": [
+        "ai",
+        "tariff",
+        "tariffs"
+      ],
+      "impacts": {
+        "ai_server": 0.7,
+        "foundry": -1,
+        "shipping": -1,
+        "steel": -1,
+        "ic_design": -1,
+        "display": -1,
+        "ev_supply": -0.8
       },
       "sentiment": {
         "compound": -0.7184,
@@ -51,50 +74,6 @@
       }
     },
     {
-      "text": "US trade chief pressed Brazil to review Anglo American nickel sale to China - South China Morning Post US trade chief pressed Brazil to review Anglo American nickel sale to China  South China Morning Post",
-      "timestamp": "2026-09-17T21:11:34.000Z",
-      "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNdjdvSHVPcHp4blhUdUtGMW96ZG5HUjlMRUx2QkxuVHBuREU3eDdJak5XOXd4UE9NQmQ3b0RMN1J4OFNvcG1uQkVVcFpoMmpDN2FJakUxZk1hdV9SWWdjdGloY05XRkluSVNOUU50Nk9LZ0lucU9pcGd4VzBJNjBaOHk5cFhPR0FfM045aktHYXNMaVBMUXJiYno0ZjBVNlFQS0tqektVLU4xNEtqdWJBUGF6THBWY2pxTmFsTU5zb0FqN2NLclHSAcYBQVVfeXFMTUM1NWVvUnhvVjd5SXFCX1Q3VmFnZUFSbWxwRlhaR3BsejhmV0hkTTREbE5uTWpUdmpGZzlxR1VIbWp4LU9PVjBhcGlDNEZHbEZBaXRVbGpfMGpSMGtuaEw1V2pvMTludnFXTXpkcGhDV2dNcHhsTjBZVi1icFZfWVJKZ0NJeDZlWEJ5ZmUtVFRxZTBUT29VN2tfM2R2N3U5Z0FELUFKNmZOQUhxQlY5UXVBTmQ5b0dBUGhKZFJWZjZpaTRiWEZB?oc=5",
-      "keywords": [
-        "china",
-        "ev"
-      ],
-      "impacts": {
-        "ic_design": -0.5,
-        "shipping": -0.4,
-        "display": -0.4,
-        "ev_supply": -0.1
-      },
-      "sentiment": {
-        "compound": 0,
-        "label": "中性"
-      }
-    },
-    {
-      "text": "India warns new US tariffs over Russian oil could impact ties - Al Jazeera India warns new US tariffs over Russian oil could impact ties  Al Jazeera",
-      "timestamp": "2026-09-17T07:43:01.000Z",
-      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQMl9PcjVlYklaOEduZmFaQTc4UTYydWlqdzRhWkI5SGl6YTl5blRoY042TWJidktWNDFfTmo1NHFTYU1MVVVVSXozUkVMcWVWRWZBTExJZzVhZ2hzeGJTNFBDdjZ1YzZ5cHdsRFc5T1U5WDlZdDduUE01MmMyTkZyQ3U2ZDFGb0Yya1I5U0FINW5xMzNOOUhnbVByU054WmNjYjFqZ9IBqgFBVV95cUxNQURNRGtuanJNa3FsVEZWdWJHT1BuQTN2NUJVVm11RUFnemZfbDlnN2h0NFFUU2l4dWNYNGduSGtQV28wYUQ1X3l3cGl6NU9BVFU1WXRlMl9uMDQzOU0wVzdGR3JKVHA4TzB3dW03TXpmZ2JKTFJlbzRzZU9EWGcyTEQ3djdFWFBQeHRab2duTlRfcUxWbjBZWm1oa3BBa0xBeVR4ZlJCWkhJQQ?oc=5",
-      "keywords": [
-        "tariff",
-        "tariffs",
-        "oil",
-        "russia"
-      ],
-      "impacts": {
-        "foundry": -1,
-        "shipping": -0.8,
-        "steel": -1,
-        "ic_design": -1,
-        "display": -1,
-        "ev_supply": -0.8,
-        "petrochemical": 0.7,
-        "defense": 0.4
-      },
-      "sentiment": {
-        "compound": -0.7184,
-        "label": "強烈利空"
-      }
-    },
-    {
       "text": "Where the US-China tariff row stands ahead of White House summit - Yahoo Finance UK Where the US-China tariff row stands ahead of White House summit  Yahoo Finance UK",
       "timestamp": "2026-09-17T02:47:00.000Z",
       "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFB3TWU0Zm9DcXNVRnEtVHBMSTdLZ2tSRzViemFFWl9NNXRveWwwMWozbHk4WVRBcXA2bkU3RjNiZTJOQ241SWJUR3BaeWo4bWN2M2tCSlB0Z2RySnE2TE1aMVdPajgxTlRpRFJCSzQ2X1c4N29aOU9SX080UUtIbXM?oc=5",
@@ -116,6 +95,25 @@
       }
     },
     {
+      "text": "US trade chief pressed Brazil to review Anglo American nickel sale to China - South China Morning Post US trade chief pressed Brazil to review Anglo American nickel sale to China  South China Morning Post",
+      "timestamp": "2026-09-17T21:11:34.000Z",
+      "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNdjdvSHVPcHp4blhUdUtGMW96ZG5HUjlMRUx2QkxuVHBuREU3eDdJak5XOXd4UE9NQmQ3b0RMN1J4OFNvcG1uQkVVcFpoMmpDN2FJakUxZk1hdV9SWWdjdGloY05XRkluSVNOUU50Nk9LZ0lucU9pcGd4VzBJNjBaOHk5cFhPR0FfM045aktHYXNMaVBMUXJiYno0ZjBVNlFQS0tqektVLU4xNEtqdWJBUGF6THBWY2pxTmFsTU5zb0FqN2NLclHSAcYBQVVfeXFMTUM1NWVvUnhvVjd5SXFCX1Q3VmFnZUFSbWxwRlhaR3BsejhmV0hkTTREbE5uTWpUdmpGZzlxR1VIbWp4LU9PVjBhcGlDNEZHbEZBaXRVbGpfMGpSMGtuaEw1V2pvMTludnFXTXpkcGhDV2dNcHhsTjBZVi1icFZfWVJKZ0NJeDZlWEJ5ZmUtVFRxZTBUT29VN2tfM2R2N3U5Z0FELUFKNmZOQUhxQlY5UXVBTmQ5b0dBUGhKZFJWZjZpaTRiWEZB?oc=5",
+      "keywords": [
+        "china",
+        "ev"
+      ],
+      "impacts": {
+        "ic_design": -0.5,
+        "shipping": -0.4,
+        "display": -0.4,
+        "ev_supply": -0.1
+      },
+      "sentiment": {
+        "compound": 0,
+        "label": "中性"
+      }
+    },
+    {
       "text": "U.S. and China soften trade war as Trump and Xi discuss tariff cuts on 2 crucial sectors, while Africa takes a different path - Business Insider Africa U.S. and China soften trade war as Trump and Xi discuss tariff cuts on 2 crucial sectors, while Africa takes a different path  Business Insider Africa",
       "timestamp": "2026-09-16T06:07:14.000Z",
       "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQc2J3aF9CU29oT09VdGJXZng1TXdKOGFIZGVlOHQzOHJtY1QwUkV1eEVFZ0hEdm1EdTEzTkJReGQ3V2QxNUg2R3pxWkV2M2ZUOXlhQ3BtX1ZGQ2F4WXl6UnlKdjNnUkxFOUVnT2xnVVBRcnNya292Ylk1bWxVR1NiWHZQNUl0QnRKTjJ6NDl5RHJEUThZTGdybDgwSS1YMGlxMmFCZFVPVndTa0hiTmxUaXdQVEcydjA3YUw0Z1NUSEIzOW90VmZVMTYxWVRhUkVy?oc=5",
@@ -131,6 +129,31 @@
         "steel": -0.5,
         "display": -0.9,
         "ev_supply": -0.7
+      },
+      "sentiment": {
+        "compound": -0.7184,
+        "label": "強烈利空"
+      }
+    },
+    {
+      "text": "India warns new US tariffs over Russian oil could impact ties - Al Jazeera India warns new US tariffs over Russian oil could impact ties  Al Jazeera",
+      "timestamp": "2026-09-17T07:43:01.000Z",
+      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQMl9PcjVlYklaOEduZmFaQTc4UTYydWlqdzRhWkI5SGl6YTl5blRoY042TWJidktWNDFfTmo1NHFTYU1MVVVVSXozUkVMcWVWRWZBTExJZzVhZ2hzeGJTNFBDdjZ1YzZ5cHdsRFc5T1U5WDlZdDduUE01MmMyTkZyQ3U2ZDFGb0Yya1I5U0FINW5xMzNOOUhnbVByU054WmNjYjFqZ9IBqgFBVV95cUxNQURNRGtuanJNa3FsVEZWdWJHT1BuQTN2NUJVVm11RUFnemZfbDlnN2h0NFFUU2l4dWNYNGduSGtQV28wYUQ1X3l3cGl6NU9BVFU1WXRlMl9uMDQzOU0wVzdGR3JKVHA4TzB3dW03TXpmZ2JKTFJlbzRzZU9EWGcyTEQ3djdFWFBQeHRab2duTlRfcUxWbjBZWm1oa3BBa0xBeVR4ZlJCWkhJQQ?oc=5",
+      "keywords": [
+        "tariff",
+        "tariffs",
+        "oil",
+        "russia"
+      ],
+      "impacts": {
+        "foundry": -1,
+        "shipping": -0.8,
+        "steel": -1,
+        "ic_design": -1,
+        "display": -1,
+        "ev_supply": -0.8,
+        "petrochemical": 0.7,
+        "defense": 0.4
       },
       "sentiment": {
         "compound": -0.7184,
@@ -180,7 +203,7 @@
       }
     },
     {
-      "text": "Scott Bessent to meet He Lifeng in New York ahead of Trump-Xi summit - ft.com Scott Bessent to meet He Lifeng in New York ahead of Trump-Xi summit  ft.com",
+      "text": "Scott Bessent to meet He Lifeng in New York ahead of Trump-Xi summit - Financial Times Scott Bessent to meet He Lifeng in New York ahead of Trump-Xi summit  Financial Times",
       "timestamp": "2026-09-15T22:32:47.000Z",
       "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNbXU2Tnc2clhhTFBaZzBObXl4U0NMMUQ2NHpFSVJSX1A5Qko0SVFlWmZHSUltVVk5VWJaZDFYM0hiSWhJZVdYeWJYRHdjTFp1MW55Rmw2SWxsNk5QVjRLZTR1bDBidE5sVmhYQUNTX0ZyMjBUYXhQVWZxS1FHSHgxNHJWV0Y?oc=5",
       "keywords": [],
@@ -188,6 +211,29 @@
       "sentiment": {
         "compound": 0,
         "label": "中性"
+      }
+    },
+    {
+      "text": "US said to hold off on tariffs until after Xi-Trump summit - The Business Times US said to hold off on tariffs until after Xi-Trump summit  The Business Times",
+      "timestamp": "2026-09-18T00:56:00.000Z",
+      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQemlUZDBTby1iS29QVmttN3hJS2VtWDRPenR5VHFnRFRUbF9tSnFJUDBmX2N0d0w4UjlDZlhSU3NOVENUUUtKTlYydEo4SGtOYXJwSlhHaHN4YVRWU2FpUnUzWTJNVHN1ckhqMUcybHBDc19sUjNFczZFemhqMmxORFczTUYwdEYyUWxUSUJCbEpoYzg2MnpDaC1yQQ?oc=5",
+      "keywords": [
+        "ai",
+        "tariff",
+        "tariffs"
+      ],
+      "impacts": {
+        "ai_server": 0.7,
+        "foundry": -1,
+        "shipping": -1,
+        "steel": -1,
+        "ic_design": -1,
+        "display": -1,
+        "ev_supply": -0.8
+      },
+      "sentiment": {
+        "compound": -0.7184,
+        "label": "強烈利空"
       }
     },
     {
@@ -257,122 +303,6 @@
       }
     },
     {
-      "text": "Trump-Xi summit: Tariffs, trade imbalance and rare earths loom over US-China talks - The Economic Times Trump-Xi summit: Tariffs, trade imbalance and rare earths loom over US-China talks  The Economic Times",
-      "timestamp": "2026-09-17T03:03:50.000Z",
-      "url": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxOd2FFZG1tcy1UNTFCMXNnSUtUaGNjSmtyQktHZjNfRkhFZ0k5NEZtc0lmbktqZHB1WHVWOWp5T05oQTJHYVdON2NSQTlBMG5oRnBUUHVoZV9WeDRFWjUxUllpVmd6RkdJQ3J4Z0N5RHcxUVpqOEZFUDI4Uy15MTk5UEtCbktKN2poVUJPZjhMUWNTbzBINkFvaTZIVm9VQ0JSeWNFSGtkSWg1QVBvVEhFS1pBM3ZWT3pSQmNkMVFWX1otQ1dRRHVyRWtkMmNzZi1NRjhLSmZ1S2M1STBnM0ZZSlBaR2JDZVRNNi1QcnN0Wm04VHZqT0FsS182b9IBgAJBVV95cUxQSjNhQUpMNHFXUmExNlFIb0hmWk1EdW1YRWNVa1h3dTZBWTVwVFp0dUVJUXBkYVlfeDdROGFXTC0tUnh0VTFaMlhUTE1mNGtPa1FJRXVJWmpDWG9uaXdYVG1nM25UWVhCU2dMSFVtbWRSUGl6ejdWN3hpUzBWd24yWTlqUm1lOUI2eXBSa3IxZ0pZQ0ZFQXd4NTBWX0JzSkJ4MHBEVDBSWTdWbC1VSlFBc1JTMUJVbG1kVmNsOWxNWWJXTzVhWWRVOW12eUFucmRUN1V5RGF3YjRBTG10cW1sQWJhWGs1UGlwalBWWlo3VEp6bnhqV1JsR2p6SkY4Q2Ns?oc=5",
-      "keywords": [
-        "tariff",
-        "tariffs",
-        "china"
-      ],
-      "impacts": {
-        "foundry": -1,
-        "shipping": -1,
-        "steel": -1,
-        "ic_design": -1,
-        "display": -1,
-        "ev_supply": -1
-      },
-      "sentiment": {
-        "compound": -0.7184,
-        "label": "強烈利空"
-      }
-    },
-    {
-      "text": "Asian markets mixed following Fed rate hike as Trump tariff threats weigh - tradingview.com Asian markets mixed following Fed rate hike as Trump tariff threats weigh  tradingview.com",
-      "timestamp": "2026-09-17T05:22:00.000Z",
-      "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxPYjFrc0RtTFVoOUpuTDlhMVhfdVROVFV0cGRnQU9qU1Vtb1JEZmJVY05kR0l2cU9HcmtxelJDN0VCV3o1SG5nczlwX09pdk5EY2k0YVZUVXVjVlZINnVybGZWSFZEbGE3am5HVWU2dHF1UUx3eFU2THhBYml5NGtqWDFuVF9tejRkRXZWR2tHU1ZnNzBZSHNtWGhtSGMtdW9lemcxWjZnUmRscXczcUdjMmhmVmJrWk15RThvR2dPOE9QVzF3YXVULVZOQUk4UF9fcEE?oc=5",
-      "keywords": [
-        "tariff",
-        "fed"
-      ],
-      "impacts": {
-        "foundry": -0.7,
-        "shipping": -0.5,
-        "steel": -0.5,
-        "ic_design": -0.6,
-        "display": -0.5,
-        "ev_supply": -0.4,
-        "banking": -0.3,
-        "financial_holding": -0.3
-      },
-      "sentiment": {
-        "compound": -0.7184,
-        "label": "強烈利空"
-      }
-    },
-    {
-      "text": "Companies left China to dodge tariffs. Now some are heading back - BNN Bloomberg Companies left China to dodge tariffs. Now some are heading back  BNN Bloomberg",
-      "timestamp": "2026-09-14T09:51:46.000Z",
-      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxOYi10a1k0bXJIczFoWDJFWWl6cl9ZM0JKN21VT0pZVUM4dkszRl9aSmhzZXlNYTJVQlliNVlET1hKZmpZTWMtekd5b3oxUWZoNW5VU0dZejgwREd6cDJiLU1wVU83eXZNTGxBWllRRktBS1ItYlB0eC1KZGNWRXNDTWF2NHZwYTZFUnFXbjRwa0ZzNmJOR1ZWZEk4SXRoOEtFclJoUGhIQS1ObFRUTE9JU2tTYWdIWEl6ZXMwMFU3bVhwQWpy?oc=5",
-      "keywords": [
-        "tariff",
-        "tariffs",
-        "china"
-      ],
-      "impacts": {
-        "foundry": -1,
-        "shipping": -1,
-        "steel": -1,
-        "ic_design": -1,
-        "display": -1,
-        "ev_supply": -1
-      },
-      "sentiment": {
-        "compound": -0.7184,
-        "label": "強烈利空"
-      }
-    },
-    {
-      "text": "100% Trump tariffs loom: Russia sanctions bill passed in US; will it make India stop buying crude from Moscow? - The Times of India 100% Trump tariffs loom: Russia sanctions bill passed in US; will it make India stop buying crude from Moscow?  The Times of India",
-      "timestamp": "2026-09-17T03:01:00.000Z",
-      "url": "https://news.google.com/rss/articles/CBMinAJBVV95cUxPNlZ4RVFuWkpCUHB5NTJFUkl5ZUxpNEs2UGRseWluRFMyV29BTl9LSTdqUWhFVjNZME9UOG5aamNER3h3VzNhVnR0bk1iemwzWWNZS0lrcUhweFdvbWxGeU5YMXp0M2k1NnlCYmI0eHEyMUtIOThESVA3djNoaGlFQXJkcW5PUXJHS0V6RmtnYWJvSVpjY0QwZWJkVmNyZ2NwUHpDMy13d3p5UXR6eHFzeDVPN3RpS1E5aFRZc1JiZGlLYUt3T0ZoMnZPQVRfemx2LUZfbVdIdWZzRXZWN21EbTM2NGw2QXg3MDVVbENuZjRmQkVOZmJBLVZ6N0RLcThPTmlFbGhSVVJSNFFuZ0k2M1NMTU5fN3Y5OFVQOA?oc=5",
-      "keywords": [
-        "tariff",
-        "tariffs",
-        "sanction",
-        "sanctions",
-        "russia"
-      ],
-      "impacts": {
-        "foundry": -0.6,
-        "shipping": -1,
-        "steel": -1,
-        "ic_design": -1,
-        "display": -1,
-        "ev_supply": -0.8,
-        "petrochemical": 0.3,
-        "defense": 0.4
-      },
-      "sentiment": {
-        "compound": -0.9186,
-        "label": "強烈利空"
-      }
-    },
-    {
-      "text": "Where the US-China tariff dispute stands ahead of the White House summit - kuwaittimes.com Where the US-China tariff dispute stands ahead of the White House summit  kuwaittimes.com",
-      "timestamp": "2026-09-17T03:50:16.000Z",
-      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQUEhoV0pOVXZGTFhUQmZZc19nVUFRU3FybjBQMGtySzNGZldzNmh4eGRncmQ4T01IZFpmZ2dxWWtUVGdrQWl3c2w0bHhZanVOYU02T0RvN3RGczVPSDhTa0hLQmpTcERscmZ0S0FIb0FLNVBpWFF0bTgzRXZKNHo2Q1pVOEE1RUtfNFNHWUFoOGNtQmNWaFE3TkQ0YnBUZmNyUDQzdllOZS1ybmVxQXhBajltTnFCYzF0Qlc4eNIBwAFBVV95cUxNV2tqc05DSEpTZkVaWmVucjdfdWhjVjFuZk5sMUdKSE83Ym12ejBSV1FSZjFwaGtMQkgwakJZUFFZY1Y1UU4za243elFZM2M1aG1uTE5SSlZGbjJlRGUxN0RLcUViLUZVY3BlLXBvYWY1WnpxRUpZcVhCSmR2Vlpod0ZVdHJ1Z1lWc19rcmt1bkpiN3pEQTNqeHhIc2FKVnJFVGp5aFYtYnIzb3VKYnNlNks1SXZsLXhIWTZMWHo3Q2w?oc=5",
-      "keywords": [
-        "ai",
-        "tariff",
-        "china"
-      ],
-      "impacts": {
-        "ai_server": 0.7,
-        "foundry": -0.4,
-        "shipping": -0.9,
-        "steel": -0.5,
-        "ic_design": -1,
-        "display": -0.9,
-        "ev_supply": -0.7
-      },
-      "sentiment": {
-        "compound": -0.7184,
-        "label": "強烈利空"
-      }
-    },
-    {
       "text": "The Real Cost of the U.S.-Canada Trade Breakdown - Council on Foreign Relations The Real Cost of the U.S.-Canada Trade Breakdown  Council on Foreign Relations",
       "timestamp": "2026-08-27T07:00:00.000Z",
       "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQWnczbGIyajU5WHVTVGxHd2xBelBzWENkRFlqRERzZFYzNWhUbHpubjhRWkp1YkpvZEZ3cmhITnBsY05MZHViUzBQQVhfdVE0MFEwV0lXMVJsUWU3MUdzYmN0ZUg3eTRHM2JZeTExV3BGUGJxMXVGSzdlWmc5alRRcWhn?oc=5",
@@ -381,30 +311,6 @@
       "sentiment": {
         "compound": 0,
         "label": "中性"
-      }
-    },
-    {
-      "text": "India faces 100% tariff threat over Russian oil after US House vote - BBC India faces 100% tariff threat over Russian oil after US House vote  BBC",
-      "timestamp": "2026-09-17T05:33:29.000Z",
-      "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE1FSXQtNDlOZ0VYb1dSLXp0MHZ3dkp0T1pYNlFVSWI1UWVmZUdqZllHcEFlMjJjZ3ZWSjZtblRQU3lKMUZDU0E1QUVZUzI1Um90dHdPRU85dk5DanhvSFE?oc=5",
-      "keywords": [
-        "tariff",
-        "oil",
-        "russia"
-      ],
-      "impacts": {
-        "foundry": -0.7,
-        "shipping": -0.3,
-        "steel": -0.5,
-        "ic_design": -0.6,
-        "display": -0.5,
-        "ev_supply": -0.4,
-        "petrochemical": 0.7,
-        "defense": 0.4
-      },
-      "sentiment": {
-        "compound": -0.9001,
-        "label": "強烈利空"
       }
     },
     {
@@ -428,46 +334,115 @@
         "compound": -0.7184,
         "label": "強烈利空"
       }
+    },
+    {
+      "text": "To beat back Trump’s tariffs Carney should take a page out of China’s trade war playbook - The Hub | More Signal. Less Noise. To beat back Trump’s tariffs Carney should take a page out of China’s trade war playbook  The Hub | More Signal. Less Noise.",
+      "timestamp": "2026-09-08T07:00:00.000Z",
+      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQU2gxU2otQlRZZkE3MkVWREFLcXpZbGJlOFlSVWJCcUhUeWFlQjVBT0ZuX2ljdG5mWnFDNE9zQUpPbGZxX0g0N1JkcTBSa3VIc0hUYXpFNUZ3YlJiX0ItcjRxclJBT2ZPRHJiN0xVOTVVeDVsU2lHaE9RRGEyVDYyWDlSUzc4QTJGU3l6Yk1mNkFHUTE2UUI4Q0dPUmJ6aHRzUWp6dkZDb2hqRjlYR3ZF?oc=5",
+      "keywords": [
+        "trade war",
+        "tariff",
+        "tariffs",
+        "china"
+      ],
+      "impacts": {
+        "foundry": -1,
+        "ic_design": -1,
+        "shipping": -1,
+        "steel": -1,
+        "display": -1,
+        "ev_supply": -1
+      },
+      "sentiment": {
+        "compound": -0.7184,
+        "label": "強烈利空"
+      }
+    },
+    {
+      "text": "Trump-Xi summit: Tariffs, trade imbalance and rare earths loom over US-China talks - The Economic Times Trump-Xi summit: Tariffs, trade imbalance and rare earths loom over US-China talks  The Economic Times",
+      "timestamp": "2026-09-17T03:03:50.000Z",
+      "url": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxOd2FFZG1tcy1UNTFCMXNnSUtUaGNjSmtyQktHZjNfRkhFZ0k5NEZtc0lmbktqZHB1WHVWOWp5T05oQTJHYVdON2NSQTlBMG5oRnBUUHVoZV9WeDRFWjUxUllpVmd6RkdJQ3J4Z0N5RHcxUVpqOEZFUDI4Uy15MTk5UEtCbktKN2poVUJPZjhMUWNTbzBINkFvaTZIVm9VQ0JSeWNFSGtkSWg1QVBvVEhFS1pBM3ZWT3pSQmNkMVFWX1otQ1dRRHVyRWtkMmNzZi1NRjhLSmZ1S2M1STBnM0ZZSlBaR2JDZVRNNi1QcnN0Wm04VHZqT0FsS182b9IBgAJBVV95cUxQSjNhQUpMNHFXUmExNlFIb0hmWk1EdW1YRWNVa1h3dTZBWTVwVFp0dUVJUXBkYVlfeDdROGFXTC0tUnh0VTFaMlhUTE1mNGtPa1FJRXVJWmpDWG9uaXdYVG1nM25UWVhCU2dMSFVtbWRSUGl6ejdWN3hpUzBWd24yWTlqUm1lOUI2eXBSa3IxZ0pZQ0ZFQXd4NTBWX0JzSkJ4MHBEVDBSWTdWbC1VSlFBc1JTMUJVbG1kVmNsOWxNWWJXTzVhWWRVOW12eUFucmRUN1V5RGF3YjRBTG10cW1sQWJhWGs1UGlwalBWWlo3VEp6bnhqV1JsR2p6SkY4Q2Ns?oc=5",
+      "keywords": [
+        "tariff",
+        "tariffs",
+        "china"
+      ],
+      "impacts": {
+        "foundry": -1,
+        "shipping": -1,
+        "steel": -1,
+        "ic_design": -1,
+        "display": -1,
+        "ev_supply": -1
+      },
+      "sentiment": {
+        "compound": -0.7184,
+        "label": "強烈利空"
+      }
+    },
+    {
+      "text": "Trump’s Tariffs Push US Companies Back into China - Cato Institute Trump’s Tariffs Push US Companies Back into China  Cato Institute",
+      "timestamp": "2026-07-31T07:00:00.000Z",
+      "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE5lT2tNMW1lR1JIVks1LUJpMWdydXg2cS03OUlSWWRnSFhGM1BDTldULUYxa1E4U1g4V0N4OE16MWtqcmdjSlVMdUlSOWd6OThYdEkzWDRTNkxaVEtDaHIxODVBSUdfSGxKYW1hQzIyZGo1cXlxZVNWdQ?oc=5",
+      "keywords": [
+        "tariff",
+        "tariffs",
+        "china"
+      ],
+      "impacts": {
+        "foundry": -1,
+        "shipping": -1,
+        "steel": -1,
+        "ic_design": -1,
+        "display": -1,
+        "ev_supply": -1
+      },
+      "sentiment": {
+        "compound": -0.7184,
+        "label": "強烈利空"
+      }
+    },
+    {
+      "text": "China Has Come Through Trump’s Trade War in a Good Position - The New York Times China Has Come Through Trump’s Trade War in a Good Position  The New York Times",
+      "timestamp": "2026-07-25T07:00:00.000Z",
+      "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE5PRDkyX0ZpSzd2QmhBWnJiQVJDbHBqbWZlQzBGbGJacUVUekJmcHhYYVJXWlpXeUk4TVRSWG5MNzdnR2ZCSVNTbWtra3doaDg1ei10NlB4bk9JUXAzMXVRYmRuWU1NSGJVMnpub1Jybms5Q0xjTXRN?oc=5",
+      "keywords": [
+        "trade war",
+        "china"
+      ],
+      "impacts": {
+        "foundry": -0.6,
+        "ic_design": -1,
+        "shipping": -1,
+        "display": -0.4,
+        "ev_supply": -0.3
+      },
+      "sentiment": {
+        "compound": 0,
+        "label": "中性"
+      }
     }
   ],
   "deltas": [
     {
-      "sector": "petrochemical",
-      "sectorName": "塑化",
-      "prev": 0.029,
-      "current": 0.099,
-      "delta": 0.07,
+      "sector": "ai_server",
+      "sectorName": "AI 伺服器",
+      "prev": 0.146,
+      "current": 0.267,
+      "delta": 0.121,
       "momentum": "↑ 訊號強化",
-      "accelerating": false
-    },
-    {
-      "sector": "foundry",
-      "sectorName": "晶圓代工",
-      "prev": -0.847,
-      "current": -0.796,
-      "delta": 0.051,
-      "momentum": "↑ 壓力緩解",
-      "accelerating": false
+      "accelerating": true
     }
   ],
   "topDeltas": [
     {
-      "sector": "petrochemical",
-      "sectorName": "塑化",
-      "prev": 0.029,
-      "current": 0.099,
-      "delta": 0.07,
+      "sector": "ai_server",
+      "sectorName": "AI 伺服器",
+      "prev": 0.146,
+      "current": 0.267,
+      "delta": 0.121,
       "momentum": "↑ 訊號強化",
-      "accelerating": false
-    },
-    {
-      "sector": "foundry",
-      "sectorName": "晶圓代工",
-      "prev": -0.847,
-      "current": -0.796,
-      "delta": 0.051,
-      "momentum": "↑ 壓力緩解",
-      "accelerating": false
+      "accelerating": true
     }
   ],
   "totalAnalyzed": 100,
@@ -476,10 +451,9 @@
   ],
   "sectorState": {
     "foundry": {
-      "score": -0.796,
-      "lastUpdated": "2026-09-17T22:46:40.764Z",
+      "score": -0.828,
+      "lastUpdated": "2026-09-18T04:18:20.704Z",
       "deltaHistory": [
-        -0.04300000000000004,
         0.0050000000000000044,
         0.013000000000000012,
         0.025000000000000022,
@@ -488,14 +462,14 @@
         0.08099999999999996,
         0.029000000000000026,
         -0.07599999999999996,
-        0.050999999999999934
+        0.050999999999999934,
+        -0.03199999999999992
       ]
     },
     "shipping": {
-      "score": -0.809,
-      "lastUpdated": "2026-09-17T22:46:40.764Z",
+      "score": -0.853,
+      "lastUpdated": "2026-09-18T04:18:20.704Z",
       "deltaHistory": [
-        -0.006000000000000005,
         0.0010000000000000009,
         0.01100000000000001,
         -0.007000000000000006,
@@ -504,14 +478,14 @@
         0.07599999999999996,
         0.041000000000000036,
         0.030000000000000027,
-        0.02399999999999991
+        0.02399999999999991,
+        -0.04399999999999993
       ]
     },
     "steel": {
-      "score": -0.689,
-      "lastUpdated": "2026-09-17T22:46:40.764Z",
+      "score": -0.729,
+      "lastUpdated": "2026-09-18T04:18:20.704Z",
       "deltaHistory": [
-        -0.05900000000000005,
         0.007000000000000006,
         0.08499999999999996,
         0.09400000000000008,
@@ -520,12 +494,13 @@
         0.04299999999999993,
         -0.0050000000000000044,
         -0.028999999999999915,
-        0.016000000000000014
+        0.016000000000000014,
+        -0.040000000000000036
       ]
     },
     "ic_design": {
       "score": -1,
-      "lastUpdated": "2026-09-17T22:46:40.764Z",
+      "lastUpdated": "2026-09-18T04:18:20.704Z",
       "deltaHistory": [
         0,
         0,
@@ -540,10 +515,9 @@
       ]
     },
     "display": {
-      "score": -0.939,
-      "lastUpdated": "2026-09-17T22:46:40.764Z",
+      "score": -0.948,
+      "lastUpdated": "2026-09-18T04:18:20.704Z",
       "deltaHistory": [
-        -0.026000000000000023,
         0.0040000000000000036,
         0.020000000000000018,
         -0.0040000000000000036,
@@ -552,14 +526,14 @@
         0.025000000000000022,
         -0.030000000000000027,
         -0.04300000000000004,
-        -0.006999999999999895
+        -0.006999999999999895,
+        -0.009000000000000008
       ]
     },
     "ev_supply": {
-      "score": -0.776,
-      "lastUpdated": "2026-09-17T22:46:40.764Z",
+      "score": -0.778,
+      "lastUpdated": "2026-09-18T04:18:20.704Z",
       "deltaHistory": [
-        -0.026000000000000023,
         -0.0020000000000000018,
         0.052000000000000046,
         0.019000000000000017,
@@ -568,14 +542,14 @@
         0.038000000000000034,
         -0.017000000000000015,
         -0.08100000000000007,
-        0.03200000000000003
+        0.03200000000000003,
+        -0.0020000000000000018
       ]
     },
     "ai_server": {
-      "score": 0.146,
-      "lastUpdated": "2026-09-17T22:46:40.764Z",
+      "score": 0.267,
+      "lastUpdated": "2026-09-18T04:18:20.704Z",
       "deltaHistory": [
-        -0.006999999999999999,
         0.0049999999999999975,
         0.053000000000000005,
         0.043,
@@ -584,12 +558,13 @@
         -0.067,
         0.1,
         -0.013000000000000012,
-        -0.007000000000000006
+        -0.007000000000000006,
+        0.12100000000000002
       ]
     },
     "pcb": {
       "score": 0,
-      "lastUpdated": "2026-09-17T22:46:40.764Z",
+      "lastUpdated": "2026-09-18T04:18:20.704Z",
       "deltaHistory": [
         0,
         0,
@@ -604,10 +579,9 @@
       ]
     },
     "defense": {
-      "score": 0.195,
-      "lastUpdated": "2026-09-17T22:46:40.764Z",
+      "score": 0.159,
+      "lastUpdated": "2026-09-18T04:18:20.704Z",
       "deltaHistory": [
-        0,
         -0.008,
         0.012,
         -0.0010000000000000009,
@@ -616,14 +590,14 @@
         0.036,
         0.194,
         -0.07600000000000001,
-        0.04100000000000001
+        0.04100000000000001,
+        -0.036000000000000004
       ]
     },
     "packaging": {
       "score": 0,
-      "lastUpdated": "2026-09-17T22:46:40.764Z",
+      "lastUpdated": "2026-09-18T04:18:20.704Z",
       "deltaHistory": [
-        -0.001,
         0,
         0.005,
         0.002,
@@ -632,19 +606,20 @@
         0,
         0.001,
         0,
+        0,
         0
       ]
     },
     "semiconductor_equip": {
       "score": 0,
-      "lastUpdated": "2026-09-17T22:46:40.764Z",
+      "lastUpdated": "2026-09-18T04:18:20.704Z",
       "deltaHistory": [
-        -0.001,
         0,
         -0.002,
         -0.001,
         0.001,
         -0.001,
+        0,
         0,
         0,
         0,
@@ -653,9 +628,8 @@
     },
     "robotics": {
       "score": 0,
-      "lastUpdated": "2026-09-17T22:46:40.764Z",
+      "lastUpdated": "2026-09-18T04:18:20.704Z",
       "deltaHistory": [
-        -0.001,
         0,
         -0.002,
         -0.001,
@@ -664,14 +638,14 @@
         0,
         0,
         0,
+        0,
         0
       ]
     },
     "petrochemical": {
-      "score": 0.099,
-      "lastUpdated": "2026-09-17T22:46:40.764Z",
+      "score": 0.053,
+      "lastUpdated": "2026-09-18T04:18:20.704Z",
       "deltaHistory": [
-        0.021,
         0,
         -0.005000000000000001,
         0.009000000000000001,
@@ -680,7 +654,8 @@
         0.039,
         0.087,
         -0.121,
-        0.07
+        0.07,
+        -0.046000000000000006
       ]
     },
     "gas_energy": {
@@ -742,10 +717,9 @@
       ]
     },
     "banking": {
-      "score": -0.007,
-      "lastUpdated": "2026-09-17T22:46:40.764Z",
+      "score": -0.002,
+      "lastUpdated": "2026-09-18T04:18:20.704Z",
       "deltaHistory": [
-        0.002,
         -0.001,
         0.002,
         -0.002,
@@ -754,7 +728,8 @@
         0,
         -0.013000000000000001,
         0.005000000000000001,
-        0.003999999999999999
+        0.003999999999999999,
+        0.005
       ]
     },
     "optical_comm": {
@@ -774,12 +749,13 @@
       ]
     },
     "financial_holding": {
-      "score": -0.007,
-      "lastUpdated": "2026-09-17T22:46:40.764Z",
+      "score": -0.002,
+      "lastUpdated": "2026-09-18T04:18:20.704Z",
       "deltaHistory": [
         -0.016,
         0.005000000000000001,
-        0.003999999999999999
+        0.003999999999999999,
+        0.005
       ]
     }
   }
