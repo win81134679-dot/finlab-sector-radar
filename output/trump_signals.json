@@ -1,21 +1,6 @@
 {
-  "updatedAt": "2026-09-26T04:36:54.367Z",
+  "updatedAt": "2026-09-26T12:55:13.049Z",
   "posts": [
-    {
-      "text": "Trump-Xi visit wraps up with few achievements announced - CBS News Trump-Xi visit wraps up with few achievements announced  CBS News",
-      "timestamp": "2026-09-25T23:47:35.000Z",
-      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQU1F6dWRlbTNWNnJPa21UVXhzOWtkd0xJZFFGbmFpUmRuSjRLMFBFSThXU3YxS3BseEdVaFljREtKQTlvdFlDQVBMS3FuR1JNZWE2WDhTc1hHWEV4aTBJYTJWbEdRTWZJNW8tZzVoYVVRRzdmRVk5c3BQbkQzbElZcERrVjNJTk1zRXhyc3hXVzd0VjNB?oc=5",
-      "keywords": [
-        "ev"
-      ],
-      "impacts": {
-        "ev_supply": 0.2
-      },
-      "sentiment": {
-        "compound": 0,
-        "label": "中性"
-      }
-    },
     {
       "text": "Businesses ‘frozen out’ of Trump’s tariff channel with China - Politico Businesses ‘frozen out’ of Trump’s tariff channel with China  Politico",
       "timestamp": "2026-09-22T09:00:00.000Z",
@@ -38,21 +23,40 @@
       }
     },
     {
-      "text": "China saw 'surprise' jump in U.S. orders ahead of Trump-Xi summit, private survey shows - CNBC China saw 'surprise' jump in U.S. orders ahead of Trump-Xi summit, private survey shows  CNBC",
-      "timestamp": "2026-09-25T10:00:01.000Z",
-      "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE02NzNfeHZJM0NQVGhCdlpFOXl1WFdpWnFIZ0t6NWExSndXUDd4Mk1PU1l4NFhJUXRWWkdvS0JjU3R3QWF4NmI5WDJBMk5icWdfUzhNVVZHc0c3UWJlNnRCejlxZDZBM3ZkcDhOeTlLUTRuMml4dXRBeDVDVzAtQQ?oc=5",
+      "text": "Trump-Xi visit wraps up with few achievements announced - CBS News Trump-Xi visit wraps up with few achievements announced  CBS News",
+      "timestamp": "2026-09-25T23:47:35.000Z",
+      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQU1F6dWRlbTNWNnJPa21UVXhzOWtkd0xJZFFGbmFpUmRuSjRLMFBFSThXU3YxS3BseEdVaFljREtKQTlvdFlDQVBMS3FuR1JNZWE2WDhTc1hHWEV4aTBJYTJWbEdRTWZJNW8tZzVoYVVRRzdmRVk5c3BQbkQzbElZcERrVjNJTk1zRXhyc3hXVzd0VjNB?oc=5",
       "keywords": [
-        "china"
+        "ev"
       ],
       "impacts": {
-        "ic_design": -0.5,
-        "shipping": -0.4,
-        "display": -0.4,
-        "ev_supply": -0.3
+        "ev_supply": 0.2
       },
       "sentiment": {
         "compound": 0,
         "label": "中性"
+      }
+    },
+    {
+      "text": "U.S., China reach $30 billion tariff deal after Trump-Xi summit - Axios U.S., China reach $30 billion tariff deal after Trump-Xi summit  Axios",
+      "timestamp": "2026-09-26T11:18:03.000Z",
+      "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTFBXYUZGel9ZYmZTYjdDM0lhV3BkUUNSdGFFOTRNWGM5TzZ0NVBzZW5aeUNjUGlCYXpYdUNjNXU5UmF3VFppVVhHNFlzQWtzZFlDSEVBLTZDUlRORURGTVBjazFCLS1JejcyNXM5cjJsTk83dzFi?oc=5",
+      "keywords": [
+        "tariff",
+        "china",
+        "deal"
+      ],
+      "impacts": {
+        "foundry": -0.7,
+        "shipping": -0.7,
+        "steel": -0.5,
+        "ic_design": -0.9,
+        "display": -0.9,
+        "ev_supply": -0.7
+      },
+      "sentiment": {
+        "compound": -0.25,
+        "label": "偏空"
       }
     },
     {
@@ -74,7 +78,29 @@
       }
     },
     {
-      "text": "China makes up a record 40% of all global container exports—a sign it's adapted to Trump's tariffs - Fortune China makes up a record 40% of all global container exports—a sign it's adapted to Trump's tariffs  Fortune",
+      "text": "After Xi-Trump summit, US-China rivalry remains frozen. Is this to Beijing's advantage? - DW.com After Xi-Trump summit, US-China rivalry remains frozen. Is this to Beijing's advantage?  DW.com",
+      "timestamp": "2026-09-26T00:26:02.000Z",
+      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPMGgtQ3FHZXRJN2hWcnhBYVl3T3lUcDZXanV3UVFaS3Q0NWFLaFo1SnVTcy1BaTF3S3VZR0ZrcTB4UndOYnBFVGZxQWNod2hWYkhrNV9oQkFHOURteklmM1ZZYlNTdnlmOU1RMUtqTE5uTHVzd296U2syUTBzcGxLQlAzb0Z0SWg1WHprc253QUxNTndOanl0WnpGNl9XRURCak55Vk5YeG9KVGNNWTRqUWc4ajNJeWPSAbcBQVVfeXFMUFMwMDgwNWJtN0FrN3JLTUpybEtCeDgwOEtiYTFMVkFIV3JobzRoMDN1QlRObFJ0dTJ0clk2ajhXOFNCWlR2MnZiNXNyb3Z6a3N5VTVwNWZ3ekVONjlldFRWZnkzRzg5WmZ2Z2o0eGI5NFpwcjNxcFowWEc2SWQyYU5yYmNkOFhJMXZLd3U2VGtiQkZHWUtWVnFXTVFLaXdyd0dRa0oyZG5tYi10OHhUMVJQQWdNVThN?oc=5",
+      "keywords": [
+        "ai",
+        "china",
+        "beijing"
+      ],
+      "impacts": {
+        "ai_server": 0.7,
+        "foundry": 0.3,
+        "ic_design": -0.9,
+        "shipping": -0.7,
+        "display": -0.4,
+        "ev_supply": -0.3
+      },
+      "sentiment": {
+        "compound": 0,
+        "label": "中性"
+      }
+    },
+    {
+      "text": "China makes up a record 40% of all global container exports—a sign it's adapted to Trump's tariffs - fortune.com China makes up a record 40% of all global container exports—a sign it's adapted to Trump's tariffs  fortune.com",
       "timestamp": "2026-09-24T07:05:00.000Z",
       "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPdnhJYlUtWXZLaldhdkI1am9CZ0Z6YW9DZUs0bHYyc0djUFlMQ3ZzcWRzREllcktRYXczaWtuZWNXdERsNm5QSENZYm9TU1RCRW1ELTQ0YkdTMzE2WThwU1RwTU43T2FhOHdOMG1jeGVlU0JhU0YwRVBqVHJtVERwZzBlUWVyRHRLUUxDQnlZUjJLSUV3djc2cXdn?oc=5",
       "keywords": [
@@ -99,69 +125,9 @@
       }
     },
     {
-      "text": "U.S. and China agree to extend trade truce through Jan. 10, Bessent says - NBC News U.S. and China agree to extend trade truce through Jan. 10, Bessent says  NBC News",
-      "timestamp": "2026-09-23T22:20:11.000Z",
-      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQS051cC1BN2VtYm9pT0wtQkhoaWNIa3lpU2dzbzJfNjhjaXpKZFQ1MkZUVk9kdGRDbkwyVW9rUWY1NHFKVFlTbl85X0haTjFnQjhEOU1sQ3k4cGJiUG9JRkFSYWM2QXZmWG1OOHJ0VlkyTlRKUERjR284RVA0YXNGcU5HQ0JCWHpqYkNKZ05R?oc=5",
-      "keywords": [
-        "china"
-      ],
-      "impacts": {
-        "ic_design": -0.5,
-        "shipping": -0.4,
-        "display": -0.4,
-        "ev_supply": -0.3
-      },
-      "sentiment": {
-        "compound": 0,
-        "label": "中性"
-      }
-    },
-    {
-      "text": "After Xi-Trump summit, US-China rivalry remains frozen. Is this to Beijing's advantage? - DW.com After Xi-Trump summit, US-China rivalry remains frozen. Is this to Beijing's advantage?  DW.com",
-      "timestamp": "2026-09-25T12:34:52.000Z",
-      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPMGgtQ3FHZXRJN2hWcnhBYVl3T3lUcDZXanV3UVFaS3Q0NWFLaFo1SnVTcy1BaTF3S3VZR0ZrcTB4UndOYnBFVGZxQWNod2hWYkhrNV9oQkFHOURteklmM1ZZYlNTdnlmOU1RMUtqTE5uTHVzd296U2syUTBzcGxLQlAzb0Z0SWg1WHprc253QUxNTndOanl0WnpGNl9XRURCak55Vk5YeG9KVGNNWTRqUWc4ajNJeWPSAbcBQVVfeXFMUFMwMDgwNWJtN0FrN3JLTUpybEtCeDgwOEtiYTFMVkFIV3JobzRoMDN1QlRObFJ0dTJ0clk2ajhXOFNCWlR2MnZiNXNyb3Z6a3N5VTVwNWZ3ekVONjlldFRWZnkzRzg5WmZ2Z2o0eGI5NFpwcjNxcFowWEc2SWQyYU5yYmNkOFhJMXZLd3U2VGtiQkZHWUtWVnFXTVFLaXdyd0dRa0oyZG5tYi10OHhUMVJQQWdNVThN?oc=5",
-      "keywords": [
-        "ai",
-        "china",
-        "beijing"
-      ],
-      "impacts": {
-        "ai_server": 0.7,
-        "foundry": 0.3,
-        "ic_design": -0.9,
-        "shipping": -0.7,
-        "display": -0.4,
-        "ev_supply": -0.3
-      },
-      "sentiment": {
-        "compound": 0,
-        "label": "中性"
-      }
-    },
-    {
-      "text": "Trump Struggles to Find Leverage With Xi Over Chinese Exports - The New York Times Trump Struggles to Find Leverage With Xi Over Chinese Exports  The New York Times",
-      "timestamp": "2026-09-24T16:35:25.000Z",
-      "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE9pdTdvT1d3VDU3UUlCc29RTGplMkFEN3FoTmRiMHJfYXRjaFNVTU5hYnVyTVN4amQwWkdXeXIzbzM1cnpQTXNJMGVoNkRscXVJcF9tMUFabldoLVoySGdxTm50bWEyWTNQWWVzTlMySng2dC1KMDFSYUpGQQ?oc=5",
-      "keywords": [
-        "chinese",
-        "ev",
-        "port"
-      ],
-      "impacts": {
-        "ic_design": -0.5,
-        "shipping": -0.7,
-        "display": -0.4,
-        "ev_supply": 0.2
-      },
-      "sentiment": {
-        "compound": 0,
-        "label": "中性"
-      }
-    },
-    {
-      "text": "What to know about Trump’s meeting with China’s Xi and the economic stakes - washingtonpost.com What to know about Trump’s meeting with China’s Xi and the economic stakes  washingtonpost.com",
-      "timestamp": "2026-09-24T16:00:00.000Z",
-      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxORGxadVBZZlFfUmUwdzFqZXJrRDJ4MkFzZmNQaUV1STRvVzlleVRIVTFHMW9leEFWZVI5MGtSdHAxWlpOY3dob0F4RjBKWWg4b0gzWHZkMUNRVlFlbm1EY01wOHc4QnB0QXdRTngzQUhLUDJHU3p6ZzQtbUxlVzVtck9KcERrd2FJcklURVd2WGpjOXBsS3BZM05GWVBMeTljTF8ySkh4aEctM1BqLU1iMU9UNWlITGc?oc=5",
+      "text": "China saw 'surprise' jump in U.S. orders ahead of Trump-Xi summit, private survey shows - CNBC China saw 'surprise' jump in U.S. orders ahead of Trump-Xi summit, private survey shows  CNBC",
+      "timestamp": "2026-09-25T10:00:01.000Z",
+      "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE02NzNfeHZJM0NQVGhCdlpFOXl1WFdpWnFIZ0t6NWExSndXUDd4Mk1PU1l4NFhJUXRWWkdvS0JjU3R3QWF4NmI5WDJBMk5icWdfUzhNVVZHc0c3UWJlNnRCejlxZDZBM3ZkcDhOeTlLUTRuMml4dXRBeDVDVzAtQQ?oc=5",
       "keywords": [
         "china"
       ],
@@ -199,7 +165,27 @@
       }
     },
     {
-      "text": "US, China agree to extend trade truce by two months, work on bigger deal, Bessent says - reuters.com US, China agree to extend trade truce by two months, work on bigger deal, Bessent says  reuters.com",
+      "text": "Trump Struggles to Find Leverage With Xi Over Chinese Exports - The New York Times Trump Struggles to Find Leverage With Xi Over Chinese Exports  The New York Times",
+      "timestamp": "2026-09-24T16:35:25.000Z",
+      "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE9pdTdvT1d3VDU3UUlCc29RTGplMkFEN3FoTmRiMHJfYXRjaFNVTU5hYnVyTVN4amQwWkdXeXIzbzM1cnpQTXNJMGVoNkRscXVJcF9tMUFabldoLVoySGdxTm50bWEyWTNQWWVzTlMySng2dC1KMDFSYUpGQQ?oc=5",
+      "keywords": [
+        "chinese",
+        "ev",
+        "port"
+      ],
+      "impacts": {
+        "ic_design": -0.5,
+        "shipping": -0.7,
+        "display": -0.4,
+        "ev_supply": 0.2
+      },
+      "sentiment": {
+        "compound": 0,
+        "label": "中性"
+      }
+    },
+    {
+      "text": "US, China agree to extend trade truce by two months, work on bigger deal, Bessent says - Reuters US, China agree to extend trade truce by two months, work on bigger deal, Bessent says  Reuters",
       "timestamp": "2026-09-23T23:37:51.000Z",
       "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNTnhVVmVJN29ISDRHWjZ5eW5ON2VoSnJvM1plbXoyUTdxX1lNUzRxVmJMMTR1dHlRVzJEVmoyMm9UeDdXZjdPOWs2VmhsZjNrRV8ydXFLcFJsWXUxeG5YWjFQVVNoZ1pFV1B0TTdPWVBTdTRfcl83dTVvQ2VNSkpjcW5MZnZOTV9KeWRXNS1zV0JsNUVTMXpuU2dDdXN6YmxVWWVhTVNUdWpxSnNYaV9UQzEyU2VTWGFfNUNxM2g4NFo4emtJTk5VVnhYSFVHZw?oc=5",
       "keywords": [
@@ -215,6 +201,27 @@
       "sentiment": {
         "compound": 0.6124,
         "label": "強烈利多"
+      }
+    },
+    {
+      "text": "Trump set to impose sweeping tariffs on 60 trade partners - abcnews.com Trump set to impose sweeping tariffs on 60 trade partners  abcnews.com",
+      "timestamp": "2026-09-25T11:11:28.000Z",
+      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNa1BDcjdFRHFWaGlkYlMzZi1ZY2hCaVR5dGRpalctVTI1Q2poOGxFcXZqdmZfX2lqaVZxRmo3MWZIZ2ZUU0xCMm44OFdibDRCNF9BOVNmT1VHNURxR0tabkNtaVdoNTRaTW81cVIyVUdvanhBUS1rX3pEZFdyQmNSbDVDa0VMM2tPVGhYbDkwR1VhcUJJTDJXVmhNZVVVNi1L0gGmAUFVX3lxTE5UdFo2TDl4c1R2ZWRuX1ZxbTA3UmdwQnlrbVh1OXUyd1pucVlQS2dqY2VsbnRNSGt3WWljNkZ3V2kySmZNUzJ4WVBaT2NXSGRuUFlqRmx1UXNzSlEwZkV1MGRWVWxNbHdBcnY3Vm9CMVFqSWZxdnI3TkZqbWxValByNzBMRWxBR3BraFBtbEVuUFBvNDNpUVNBdWVkN3V6enc1YjlIWXc?oc=5",
+      "keywords": [
+        "tariff",
+        "tariffs"
+      ],
+      "impacts": {
+        "foundry": -1,
+        "shipping": -1,
+        "steel": -1,
+        "ic_design": -1,
+        "display": -1,
+        "ev_supply": -0.8
+      },
+      "sentiment": {
+        "compound": -0.875,
+        "label": "強烈利空"
       }
     },
     {
@@ -257,49 +264,6 @@
       }
     },
     {
-      "text": "China says it hopes to agree with the US on tariff reductions at ‘an early date’ - AP News China says it hopes to agree with the US on tariff reductions at ‘an early date’  AP News",
-      "timestamp": "2026-09-10T07:00:00.000Z",
-      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOaElLTzZISkhGRzh3ZFZYbGcxZ21jTHozWXpwM3U1X0N4cXlYRFBpZFczX2E2ZENwdmQ4ZF9abEJfdHc2QmNvOHdUQVJkS1hIOVZhM2Fza0NjQ053TU0xNmdSOWFMUmxBOVA4dHAxZzdZUXZjTEVUSVU4WW9UZ0N6ai1pZHlwRUFnUk5JZDdLcWtrakNaS29xM2xOY2dIeG8?oc=5",
-      "keywords": [
-        "tariff",
-        "china"
-      ],
-      "impacts": {
-        "foundry": -0.7,
-        "shipping": -0.9,
-        "steel": -0.5,
-        "ic_design": -1,
-        "display": -0.9,
-        "ev_supply": -0.7
-      },
-      "sentiment": {
-        "compound": -0.7184,
-        "label": "強烈利空"
-      }
-    },
-    {
-      "text": "Trump-Xi Summit: What Investors Are Watching on Tariffs, Trade, and China - Barron's Trump-Xi Summit: What Investors Are Watching on Tariffs, Trade, and China  Barron's",
-      "timestamp": "2026-09-23T19:40:00.000Z",
-      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOTVRzUEEyNGtxaUVFSVZhVnlLWERPMW5LQlhkaGthbE05S1dlRmtKTUF2WHIxVGdOZFhhTUo5ZXB2OGdjNE1OcE5kaVJWazlTSlhlWUFiaGY5TFlSNGxTZ2lFb0xieEZ2RXUyeVgwU2p6Q0Rmc2dZWnB3cWZ5WU1nUW5tSQ?oc=5",
-      "keywords": [
-        "tariff",
-        "tariffs",
-        "china"
-      ],
-      "impacts": {
-        "foundry": -1,
-        "shipping": -1,
-        "steel": -1,
-        "ic_design": -1,
-        "display": -1,
-        "ev_supply": -1
-      },
-      "sentiment": {
-        "compound": -0.7184,
-        "label": "強烈利空"
-      }
-    },
-    {
       "text": "U.S. Farmers Push for China Commitments on Imports as Trump and Xi Talk Trade - Successful Farming U.S. Farmers Push for China Commitments on Imports as Trump and Xi Talk Trade  Successful Farming",
       "timestamp": "2026-09-24T11:23:19.000Z",
       "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOaXBSRUlyVWJFOEFra1BPc0pYQnhndG5QZGM2WHY3SkZyTEtzUm93Z0Y1MEhJZXF1bGY0Q1pLazZLZWcxT1lDdU9yc01BcGM1UkktZHhIWTRrQU0wVDF0QWZ3eTdfbC0zdFEzVlo2dG5kMWhkTmJjaDFuZFRxaWZ6ajJSRE9CZEpwNVVSS0tzT0RxRkh0bDF3ZlVJdk56WVlLdFBJVVVlZWRnNW9hazE1RzROVGdIVjB2Q3pzNEdpSQ?oc=5",
@@ -319,23 +283,20 @@
       }
     },
     {
-      "text": "China’s Record Port Traffic Signals Export Rush Ahead Of Xi-Trump Summit Amid Tariff Uncertainty - marineinsight.com China’s Record Port Traffic Signals Export Rush Ahead Of Xi-Trump Summit Amid Tariff Uncertainty  marineinsight.com",
-      "timestamp": "2026-09-25T11:51:58.000Z",
-      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxOZEhsd3NzVG05NVdhNG9uWTJhdDZrclB1MElEM1AwbmtzalZObUpVMUVfc19SdUxGTGp3a3lidGo3Vy1TcktmVHBiRjBLbG1sWWNNOHBERWRXLTdUY0lCdkNLWDQ1RFpMQjJxQ3VFT2gyaThSUDMwdVUzWUtEWHpLeWxlTDZoVVFZX0ctOUdnc1RhNmh5UHlRTlFWSlFVbEdSYkJCUng2WEhIMDZwSkZBVWQycm5FdmxiTkNaLVVxRk1qNnFh?oc=5",
+      "text": "A Guide to Trump’s Section 232 Tariffs, in Maps - Council on Foreign Relations A Guide to Trump’s Section 232 Tariffs, in Maps  Council on Foreign Relations",
+      "timestamp": "2026-09-17T07:00:00.000Z",
+      "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTFBwMWQtRkNnYlhHOGZVQ3BmSzI2VmJJYWd2V3NqZUx1MmdYOUtWdXJCQmN3ZmlkUWlTamxzYjFPQjJ4SWJoZXJMNmhpUlJEUmJuNVE1czlhX2lYcGw0U2tuY3RXYkdZTWVDR3dRN0tZb28zZk5jblZmMWltMA?oc=5",
       "keywords": [
-        "ai",
         "tariff",
-        "china",
-        "port"
+        "tariffs"
       ],
       "impacts": {
-        "ai_server": 0.7,
-        "foundry": -0.4,
+        "foundry": -1,
         "shipping": -1,
-        "steel": -0.5,
+        "steel": -1,
         "ic_design": -1,
-        "display": -0.9,
-        "ev_supply": -0.7
+        "display": -1,
+        "ev_supply": -0.8
       },
       "sentiment": {
         "compound": -0.7184,
@@ -357,6 +318,17 @@
       "sentiment": {
         "compound": 0.7184,
         "label": "強烈利多"
+      }
+    },
+    {
+      "text": "A $5,000 Bike Shows Why It’s Hard to Build in America - bloomberg.com A $5,000 Bike Shows Why It’s Hard to Build in America  bloomberg.com",
+      "timestamp": "2026-09-22T21:00:00.000Z",
+      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTFBqcHB3bHFHdGlzaE5JY2J5NnRiU2U2clB6MHdoaXVYNEwtalU2Y3hhdmNZczNTb2dwMmg3ci1uZlVMRWttRzJOLXNnNTJUT2dpbWFGa2tWN1BLUjFhUGdJUGtubzNSYkN1MnZrcy1NOA?oc=5",
+      "keywords": [],
+      "impacts": {},
+      "sentiment": {
+        "compound": 0,
+        "label": "中性"
       }
     },
     {
@@ -405,45 +377,69 @@
         "compound": -0.7184,
         "label": "強烈利空"
       }
+    },
+    {
+      "text": "China’s Record Port Traffic Signals Export Rush Ahead Of Xi-Trump Summit Amid Tariff Uncertainty - Marine Insight China’s Record Port Traffic Signals Export Rush Ahead Of Xi-Trump Summit Amid Tariff Uncertainty  Marine Insight",
+      "timestamp": "2026-09-25T11:51:58.000Z",
+      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxOZEhsd3NzVG05NVdhNG9uWTJhdDZrclB1MElEM1AwbmtzalZObUpVMUVfc19SdUxGTGp3a3lidGo3Vy1TcktmVHBiRjBLbG1sWWNNOHBERWRXLTdUY0lCdkNLWDQ1RFpMQjJxQ3VFT2gyaThSUDMwdVUzWUtEWHpLeWxlTDZoVVFZX0ctOUdnc1RhNmh5UHlRTlFWSlFVbEdSYkJCUng2WEhIMDZwSkZBVWQycm5FdmxiTkNaLVVxRk1qNnFh?oc=5",
+      "keywords": [
+        "ai",
+        "tariff",
+        "china",
+        "port"
+      ],
+      "impacts": {
+        "ai_server": 0.7,
+        "foundry": -0.4,
+        "shipping": -1,
+        "steel": -0.5,
+        "ic_design": -1,
+        "display": -0.9,
+        "ev_supply": -0.7
+      },
+      "sentiment": {
+        "compound": -0.7184,
+        "label": "強烈利空"
+      }
     }
   ],
   "deltas": [
     {
-      "sector": "ai_server",
-      "sectorName": "AI 伺服器",
-      "prev": 0.097,
-      "current": 0.191,
-      "delta": 0.094,
-      "momentum": "↑ 訊號強化",
+      "sector": "foundry",
+      "sectorName": "晶圓代工",
+      "prev": -0.441,
+      "current": -0.557,
+      "delta": -0.116,
+      "momentum": "↓ 壓力加深",
       "accelerating": true
     },
     {
-      "sector": "foundry",
-      "sectorName": "晶圓代工",
-      "prev": -0.506,
-      "current": -0.441,
-      "delta": 0.065,
-      "momentum": "↑ 壓力緩解",
+      "sector": "steel",
+      "sectorName": "鋼鐵",
+      "prev": -0.408,
+      "current": -0.496,
+      "delta": -0.088,
+      "momentum": "↓ 壓力加深",
       "accelerating": true
     }
   ],
   "topDeltas": [
     {
-      "sector": "ai_server",
-      "sectorName": "AI 伺服器",
-      "prev": 0.097,
-      "current": 0.191,
-      "delta": 0.094,
-      "momentum": "↑ 訊號強化",
+      "sector": "foundry",
+      "sectorName": "晶圓代工",
+      "prev": -0.441,
+      "current": -0.557,
+      "delta": -0.116,
+      "momentum": "↓ 壓力加深",
       "accelerating": true
     },
     {
-      "sector": "foundry",
-      "sectorName": "晶圓代工",
-      "prev": -0.506,
-      "current": -0.441,
-      "delta": 0.065,
-      "momentum": "↑ 壓力緩解",
+      "sector": "steel",
+      "sectorName": "鋼鐵",
+      "prev": -0.408,
+      "current": -0.496,
+      "delta": -0.088,
+      "momentum": "↓ 壓力加深",
       "accelerating": true
     }
   ],
@@ -453,10 +449,9 @@
   ],
   "sectorState": {
     "foundry": {
-      "score": -0.441,
-      "lastUpdated": "2026-09-26T04:36:54.367Z",
+      "score": -0.557,
+      "lastUpdated": "2026-09-26T12:55:13.049Z",
       "deltaHistory": [
-        0.017999999999999905,
         -0.013999999999999901,
         0.1459999999999999,
         0.05600000000000005,
@@ -465,14 +460,14 @@
         0.03200000000000003,
         -0.02400000000000002,
         -0.059,
-        0.065
+        0.065,
+        -0.11600000000000005
       ]
     },
     "shipping": {
-      "score": -0.904,
-      "lastUpdated": "2026-09-26T04:36:54.367Z",
+      "score": -0.898,
+      "lastUpdated": "2026-09-26T12:55:13.049Z",
       "deltaHistory": [
-        0.02100000000000002,
         -0.016000000000000014,
         0.019000000000000017,
         -0.038000000000000034,
@@ -481,14 +476,14 @@
         0.02399999999999991,
         0.0040000000000000036,
         0.0050000000000000044,
-        0.01100000000000001
+        0.01100000000000001,
+        0.006000000000000005
       ]
     },
     "steel": {
-      "score": -0.408,
-      "lastUpdated": "2026-09-26T04:36:54.367Z",
+      "score": -0.496,
+      "lastUpdated": "2026-09-26T12:55:13.049Z",
       "deltaHistory": [
-        0.10099999999999998,
         -0.04200000000000004,
         0.11699999999999999,
         0.03200000000000003,
@@ -497,12 +492,13 @@
         0.029000000000000026,
         0,
         -0.06,
-        0.020000000000000018
+        0.020000000000000018,
+        -0.08800000000000002
       ]
     },
     "ic_design": {
       "score": -1,
-      "lastUpdated": "2026-09-26T04:36:54.367Z",
+      "lastUpdated": "2026-09-26T12:55:13.049Z",
       "deltaHistory": [
         0,
         0,
@@ -517,10 +513,9 @@
       ]
     },
     "display": {
-      "score": -0.853,
-      "lastUpdated": "2026-09-26T04:36:54.367Z",
+      "score": -0.872,
+      "lastUpdated": "2026-09-26T12:55:13.049Z",
       "deltaHistory": [
-        0.127,
         -0.01200000000000001,
         -0.04299999999999993,
         0.01100000000000001,
@@ -529,14 +524,14 @@
         -0.007000000000000006,
         0.013000000000000012,
         -0.0020000000000000018,
-        0.020000000000000018
+        0.020000000000000018,
+        -0.019000000000000017
       ]
     },
     "ev_supply": {
-      "score": -0.614,
-      "lastUpdated": "2026-09-26T04:36:54.367Z",
+      "score": -0.649,
+      "lastUpdated": "2026-09-26T12:55:13.049Z",
       "deltaHistory": [
-        0.10499999999999998,
         -0.02200000000000002,
         -0.019999999999999907,
         -0.006000000000000005,
@@ -545,14 +540,14 @@
         0.02100000000000002,
         0.031000000000000028,
         -0.016000000000000014,
-        0.020000000000000018
+        0.020000000000000018,
+        -0.03500000000000003
       ]
     },
     "ai_server": {
-      "score": 0.191,
-      "lastUpdated": "2026-09-26T04:36:54.367Z",
+      "score": 0.177,
+      "lastUpdated": "2026-09-26T12:55:13.049Z",
       "deltaHistory": [
-        -0.036000000000000004,
         0.036000000000000004,
         -0.07,
         0.05499999999999999,
@@ -561,14 +556,14 @@
         -0.0010000000000000009,
         -0.026999999999999996,
         0.016,
-        0.094
+        0.094,
+        -0.014000000000000012
       ]
     },
     "pcb": {
-      "score": 0.002,
-      "lastUpdated": "2026-09-26T04:36:54.367Z",
+      "score": 0,
+      "lastUpdated": "2026-09-26T12:55:13.049Z",
       "deltaHistory": [
-        0,
         0,
         0,
         0,
@@ -577,14 +572,14 @@
         0,
         0.003,
         0.001,
+        -0.002,
         -0.002
       ]
     },
     "defense": {
       "score": 0.008,
-      "lastUpdated": "2026-09-26T04:36:54.367Z",
+      "lastUpdated": "2026-09-26T12:55:13.049Z",
       "deltaHistory": [
-        -0.017,
         0.013999999999999999,
         -0.023,
         -0.014999999999999996,
@@ -593,12 +588,13 @@
         0.005000000000000001,
         -0.011000000000000001,
         0.0010000000000000009,
-        -0.002
+        -0.002,
+        0
       ]
     },
     "packaging": {
       "score": 0,
-      "lastUpdated": "2026-09-26T04:36:54.367Z",
+      "lastUpdated": "2026-09-26T12:55:13.049Z",
       "deltaHistory": [
         0,
         0,
@@ -613,10 +609,9 @@
       ]
     },
     "semiconductor_equip": {
-      "score": 0.003,
-      "lastUpdated": "2026-09-26T04:36:54.367Z",
+      "score": 0,
+      "lastUpdated": "2026-09-26T12:55:13.049Z",
       "deltaHistory": [
-        0,
         0.001,
         0,
         -0.001,
@@ -625,14 +620,14 @@
         0,
         0.003,
         0.001,
-        -0.001
+        -0.001,
+        -0.003
       ]
     },
     "robotics": {
-      "score": 0.002,
-      "lastUpdated": "2026-09-26T04:36:54.367Z",
+      "score": 0,
+      "lastUpdated": "2026-09-26T12:55:13.049Z",
       "deltaHistory": [
-        0,
         0.001,
         0,
         -0.001,
@@ -641,14 +636,14 @@
         0,
         0.002,
         0.001,
-        -0.001
+        -0.001,
+        -0.002
       ]
     },
     "petrochemical": {
-      "score": 0.001,
-      "lastUpdated": "2026-09-26T04:36:54.367Z",
+      "score": 0.002,
+      "lastUpdated": "2026-09-26T12:55:13.049Z",
       "deltaHistory": [
-        0,
         0,
         0,
         0,
@@ -657,7 +652,8 @@
         0.003,
         0,
         0,
-        -0.002
+        -0.002,
+        0.001
       ]
     },
     "gas_energy": {
