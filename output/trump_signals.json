@@ -1,21 +1,44 @@
 {
-  "updatedAt": "2026-09-27T19:41:19.616Z",
+  "updatedAt": "2026-09-27T22:55:40.809Z",
   "posts": [
     {
-      "text": "Xi visit delivers coal deal, tariff talks — and plenty of unresolved issues - Politico Xi visit delivers coal deal, tariff talks — and plenty of unresolved issues  Politico",
-      "timestamp": "2026-09-27T14:11:00.000Z",
-      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBTMFZHdmJyVEZFU3RXOURfOVpzLVZKV0pLWHdFNTRMY3pGV01BZklSY0xMUk1DZDdKVU5JQU9qeFMydzhWZ3pRMTRjS3ZoWFA0b2ZKakhEZTNBZFpNaGd1OUZmYW9nMkNJZUUzRXM3dnFiM1pEckVfaHJySDhxbGM?oc=5",
+      "text": "Businesses ‘frozen out’ of Trump’s tariff channel with China - Politico Businesses ‘frozen out’ of Trump’s tariff channel with China  Politico",
+      "timestamp": "2026-09-22T09:00:00.000Z",
+      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQRFRIVGlQZTZxTUxmQVJBUmJIdFhoVHRZdGVQU1Ywa01XMGJnQ3Jqa0hKOXNWemd6UUcwZVY3bGt3cEpocDI4RkJWYVNMUUxwYkFiOGR2cEc5dHZpaGNUNEpyQW1pd0FoWWdueDQ0RlZnZU9fZi0yQzNuZzBXZlB1WDZQUXNFbnVCbEUtbQ?oc=5",
       "keywords": [
         "tariff",
-        "deal"
+        "china"
       ],
       "impacts": {
         "foundry": -0.7,
-        "shipping": -0.3,
+        "shipping": -0.9,
         "steel": -0.5,
-        "ic_design": -0.4,
-        "display": -0.5,
-        "ev_supply": -0.4
+        "ic_design": -1,
+        "display": -0.9,
+        "ev_supply": -0.7
+      },
+      "sentiment": {
+        "compound": -0.7184,
+        "label": "強烈利空"
+      }
+    },
+    {
+      "text": "US, China strike deal to lower tariffs on $30B in goods after Trump-Xi Washington summit - Fox News US, China strike deal to lower tariffs on $30B in goods after Trump-Xi Washington summit  Fox News",
+      "timestamp": "2026-09-26T15:41:14.000Z",
+      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNYnJGNFpjblFqU3p0UmxhSHg5eDRkblZ5MnlsalJCWmduY0FkZThPY3I2WlZwWHhRdHdJVVpHLUNrdEsxLUN2eUkyTS1QcE5acS1Gak1XOWJFbS1nVnp2Rk5PVjBvZVNyZWRxRnJnN2FueldOSF9qblRPRGd6TGZKcFVQQzVLT3VLN0dpUEliTEI4dW9FNVVZWnFpS1NCVUZWa2dNVE1XQdIBrAFBVV95cUxNWkpaQkxoTVJDSUdxT2pUeE96Sy04R1U4SnBMcXZuTU5XUHEzTERKWmd4djRGTGt5bzR1cFdUUk54VG5NQ0syZjM1UWRrMUJKeGRXUERYaHV0YUp5Y3ByNktYWEkwSzMyZXllVFFQcDdyVVA4WnpRYlhVT09odDNpRFY1Tnlwd1FZY3lmSmJHbFFXc2Iwa2pjaHdCU3owbFZneVhKVkE2VXRWeFhu?oc=5",
+      "keywords": [
+        "tariff",
+        "tariffs",
+        "china",
+        "deal"
+      ],
+      "impacts": {
+        "foundry": -1,
+        "shipping": -1,
+        "steel": -1,
+        "ic_design": -1,
+        "display": -1,
+        "ev_supply": -1
       },
       "sentiment": {
         "compound": -0.25,
@@ -45,29 +68,6 @@
       }
     },
     {
-      "text": "US, China strike deal to lower tariffs on $30B in goods after Trump-Xi Washington summit - Fox News US, China strike deal to lower tariffs on $30B in goods after Trump-Xi Washington summit  Fox News",
-      "timestamp": "2026-09-26T15:41:14.000Z",
-      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNYnJGNFpjblFqU3p0UmxhSHg5eDRkblZ5MnlsalJCWmduY0FkZThPY3I2WlZwWHhRdHdJVVpHLUNrdEsxLUN2eUkyTS1QcE5acS1Gak1XOWJFbS1nVnp2Rk5PVjBvZVNyZWRxRnJnN2FueldOSF9qblRPRGd6TGZKcFVQQzVLT3VLN0dpUEliTEI4dW9FNVVZWnFpS1NCVUZWa2dNVE1XQdIBrAFBVV95cUxNWkpaQkxoTVJDSUdxT2pUeE96Sy04R1U4SnBMcXZuTU5XUHEzTERKWmd4djRGTGt5bzR1cFdUUk54VG5NQ0syZjM1UWRrMUJKeGRXUERYaHV0YUp5Y3ByNktYWEkwSzMyZXllVFFQcDdyVVA4WnpRYlhVT09odDNpRFY1Tnlwd1FZY3lmSmJHbFFXc2Iwa2pjaHdCU3owbFZneVhKVkE2VXRWeFhu?oc=5",
-      "keywords": [
-        "tariff",
-        "tariffs",
-        "china",
-        "deal"
-      ],
-      "impacts": {
-        "foundry": -1,
-        "shipping": -1,
-        "steel": -1,
-        "ic_design": -1,
-        "display": -1,
-        "ev_supply": -1
-      },
-      "sentiment": {
-        "compound": -0.25,
-        "label": "偏空"
-      }
-    },
-    {
       "text": "‘Hostile, but hooked’: What’s behind the US-China trade truce extension? - Al Jazeera ‘Hostile, but hooked’: What’s behind the US-China trade truce extension?  Al Jazeera",
       "timestamp": "2026-09-24T19:10:05.000Z",
       "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQM0VCRW5zQlc4N1gyV2VWSEFjQm0tMnhRajF3QkFFWENVVGd1T1g0d1FTbmhfRFFYeFo2REhjT3h3RXJOS2g0cU0xeVZfemIzU0p3RDVIanFnMFhrcjRMUTZyRjZzbGpkZlUyYlVyOXM0MTl2cHZYSWlTZlI2STNPZVc2V0Ewa2JzSFJ6dS1qZHU5Q0F4YlhKeTFxemptRFJVZkYtZnduUHlPSXRUY2NZ0gG0AUFVX3lxTFBJTC1fTmZ1cFFSNjBHQjBVd1BCaE1YNFVmRWgtaWE5YjlyYzFKb1o3TzJKcnhtZTBSTDhPTWhkTW5PMURPU1F2X3hXaHUwVlJJSUNGOWhMOXdxLUxoNVczOUg3NXlXeUhoQ3lXRTEzNk1ORFZTcjRaNWZpdlpPcWZJZUdFUkxmbTd6VlFha3ZoX01CX3pYdkFrRUdPQ0gwazBPY3dJU3hWeVpqRW5BQ0Zkb2FVVQ?oc=5",
@@ -86,7 +86,30 @@
       }
     },
     {
-      "text": "China makes up a record 40% of all global container exports—a sign it's adapted to Trump's tariffs - Fortune China makes up a record 40% of all global container exports—a sign it's adapted to Trump's tariffs  Fortune",
+      "text": "China, US agree to AI dialogue, tariff cuts on $30 billion in goods during Xi visit - Reuters China, US agree to AI dialogue, tariff cuts on $30 billion in goods during Xi visit  Reuters",
+      "timestamp": "2026-09-26T19:59:32.000Z",
+      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNT2FRVWRwSDZuWUZPYTRXcmNuNTFDR0hrQkVUZnpSdV9RdGhpUjV5R0hwN2V6MUNUS2hiTHpENFhwUFVDODBIeDhBSm5SdUJOeU1qSUhjekl2RzBDd0VBYi0tdmNDblQwV1RMTF9QMGFHdlFRcDRmalE3dWlhX0l6aUJjSGtsVjlsZXNnbmZWY3JzMEtwY3hxNEZHT3JjWXJEQlVRSFpSM0haSUROOUFRaWJB?oc=5",
+      "keywords": [
+        "ai",
+        "tariff",
+        "china"
+      ],
+      "impacts": {
+        "ai_server": 0.7,
+        "foundry": -0.4,
+        "shipping": -0.9,
+        "steel": -0.5,
+        "ic_design": -1,
+        "display": -0.9,
+        "ev_supply": -0.7
+      },
+      "sentiment": {
+        "compound": -0.7184,
+        "label": "強烈利空"
+      }
+    },
+    {
+      "text": "China makes up a record 40% of all global container exports—a sign it's adapted to Trump's tariffs - fortune.com China makes up a record 40% of all global container exports—a sign it's adapted to Trump's tariffs  fortune.com",
       "timestamp": "2026-09-24T07:05:00.000Z",
       "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPdnhJYlUtWXZLaldhdkI1am9CZ0Z6YW9DZUs0bHYyc0djUFlMQ3ZzcWRzREllcktRYXczaWtuZWNXdERsNm5QSENZYm9TU1RCRW1ELTQ0YkdTMzE2WThwU1RwTU43T2FhOHdOMG1jeGVlU0JhU0YwRVBqVHJtVERwZzBlUWVyRHRLUUxDQnlZUjJLSUV3djc2cXdn?oc=5",
       "keywords": [
@@ -95,6 +118,30 @@
         "tariffs",
         "china",
         "port"
+      ],
+      "impacts": {
+        "ai_server": 0.7,
+        "foundry": -1,
+        "shipping": -1,
+        "steel": -1,
+        "ic_design": -1,
+        "display": -1,
+        "ev_supply": -1
+      },
+      "sentiment": {
+        "compound": -0.7184,
+        "label": "強烈利空"
+      }
+    },
+    {
+      "text": "US, China agree to cut tariffs on $30 billion worth of goods, set up channel for AI incidents - The Hill US, China agree to cut tariffs on $30 billion worth of goods, set up channel for AI incidents  The Hill",
+      "timestamp": "2026-09-26T12:10:00.000Z",
+      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNa21ZZWtfTDZVTkpVNFE4VWJiTy1RbmtNX2l6RVN1Ui1ZaVpuQ2p6eE1CcDZYNDJsU3dpbjJhZzVvWVJCZEtrbjA0bTBVQnFiYVNYa1BMaVRUcHpRY2t2dXN3c1NiS3NSYmJ5N2NkSGdVbUNDSk5LT2ZuSVJlb255T0JoR1BPQVVpSEZTNNIBkgFBVV95cUxOOFh1NnNUUDFudzZweFdaNEpfX0pKMGdvYWJBZUJuSWY5NkliYlN3ZDRYOGJsSExjZjdYYXRNWXFzS0hrR241am1aRDVPS3M3SDVZbEtXd05ENDc5M05FZjZFdWdTWE5pR0dlY0IyNkowVkZaMmkydU9fM2dlYnVQUnRqeWlqWUtQbFV6TGFWaUVXdw?oc=5",
+      "keywords": [
+        "ai",
+        "tariff",
+        "tariffs",
+        "china"
       ],
       "impacts": {
         "ai_server": 0.7,
@@ -141,49 +188,6 @@
       "sentiment": {
         "compound": 0,
         "label": "中性"
-      }
-    },
-    {
-      "text": "US farmers push for China commitments on imports as Trump and Xi talk trade - Reuters US farmers push for China commitments on imports as Trump and Xi talk trade  Reuters",
-      "timestamp": "2026-09-24T10:32:34.000Z",
-      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOdDdvUXBmX0hNUWRzdm5EckNpOUdzekVxTkh3MGY0Ync2TlBXcjlLY2daRFYzVW1Qb1VnT0RmRWVHZ0NGVVVWVFotbmFoNXJ1VkxET0NiWl9ENFRRMEpQTHRqWVJxU3VDS1dWRFN6VEUtTmlyNjZXdlpGeW10M01PUXdCMjktUnpUUGNIT2E4bjZiVkpXTnFlQ3pYbW8tSzRvQkloWFZnY3h3clBPMkE?oc=5",
-      "keywords": [
-        "china",
-        "port"
-      ],
-      "impacts": {
-        "ic_design": -0.5,
-        "shipping": -0.7,
-        "display": -0.4,
-        "ev_supply": -0.3
-      },
-      "sentiment": {
-        "compound": 0,
-        "label": "中性"
-      }
-    },
-    {
-      "text": "US, China agree to cut tariffs on $30 billion worth of goods, set up channel for AI incidents - The Hill US, China agree to cut tariffs on $30 billion worth of goods, set up channel for AI incidents  The Hill",
-      "timestamp": "2026-09-26T12:10:00.000Z",
-      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNa21ZZWtfTDZVTkpVNFE4VWJiTy1RbmtNX2l6RVN1Ui1ZaVpuQ2p6eE1CcDZYNDJsU3dpbjJhZzVvWVJCZEtrbjA0bTBVQnFiYVNYa1BMaVRUcHpRY2t2dXN3c1NiS3NSYmJ5N2NkSGdVbUNDSk5LT2ZuSVJlb255T0JoR1BPQVVpSEZTNNIBkgFBVV95cUxOOFh1NnNUUDFudzZweFdaNEpfX0pKMGdvYWJBZUJuSWY5NkliYlN3ZDRYOGJsSExjZjdYYXRNWXFzS0hrR241am1aRDVPS3M3SDVZbEtXd05ENDc5M05FZjZFdWdTWE5pR0dlY0IyNkowVkZaMmkydU9fM2dlYnVQUnRqeWlqWUtQbFV6TGFWaUVXdw?oc=5",
-      "keywords": [
-        "ai",
-        "tariff",
-        "tariffs",
-        "china"
-      ],
-      "impacts": {
-        "ai_server": 0.7,
-        "foundry": -1,
-        "shipping": -1,
-        "steel": -1,
-        "ic_design": -1,
-        "display": -1,
-        "ev_supply": -1
-      },
-      "sentiment": {
-        "compound": -0.7184,
-        "label": "強烈利空"
       }
     },
     {
@@ -249,9 +253,51 @@
       }
     },
     {
-      "text": "Businesses ‘frozen out’ of Trump’s tariff channel with China - Politico Businesses ‘frozen out’ of Trump’s tariff channel with China  Politico",
-      "timestamp": "2026-09-22T09:00:00.000Z",
-      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQRFRIVGlQZTZxTUxmQVJBUmJIdFhoVHRZdGVQU1Ywa01XMGJnQ3Jqa0hKOXNWemd6UUcwZVY3bGt3cEpocDI4RkJWYVNMUUxwYkFiOGR2cEc5dHZpaGNUNEpyQW1pd0FoWWdueDQ0RlZnZU9fZi0yQzNuZzBXZlB1WDZQUXNFbnVCbEUtbQ?oc=5",
+      "text": "China says it hopes to agree with the US on tariff reductions at ‘an early date’ - AP News China says it hopes to agree with the US on tariff reductions at ‘an early date’  AP News",
+      "timestamp": "2026-09-10T07:00:00.000Z",
+      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOaElLTzZISkhGRzh3ZFZYbGcxZ21jTHozWXpwM3U1X0N4cXlYRFBpZFczX2E2ZENwdmQ4ZF9abEJfdHc2QmNvOHdUQVJkS1hIOVZhM2Fza0NjQ053TU0xNmdSOWFMUmxBOVA4dHAxZzdZUXZjTEVUSVU4WW9UZ0N6ai1pZHlwRUFnUk5JZDdLcWtrakNaS29xM2xOY2dIeG8?oc=5",
+      "keywords": [
+        "tariff",
+        "china"
+      ],
+      "impacts": {
+        "foundry": -0.7,
+        "shipping": -0.9,
+        "steel": -0.5,
+        "ic_design": -1,
+        "display": -0.9,
+        "ev_supply": -0.7
+      },
+      "sentiment": {
+        "compound": -0.7184,
+        "label": "強烈利空"
+      }
+    },
+    {
+      "text": "Xi visit delivers coal deal, tariff talks — and plenty of unresolved issues - Politico Xi visit delivers coal deal, tariff talks — and plenty of unresolved issues  Politico",
+      "timestamp": "2026-09-27T14:11:00.000Z",
+      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBTMFZHdmJyVEZFU3RXOURfOVpzLVZKV0pLWHdFNTRMY3pGV01BZklSY0xMUk1DZDdKVU5JQU9qeFMydzhWZ3pRMTRjS3ZoWFA0b2ZKakhEZTNBZFpNaGd1OUZmYW9nMkNJZUUzRXM3dnFiM1pEckVfaHJySDhxbGM?oc=5",
+      "keywords": [
+        "tariff",
+        "deal"
+      ],
+      "impacts": {
+        "foundry": -0.7,
+        "shipping": -0.3,
+        "steel": -0.5,
+        "ic_design": -0.4,
+        "display": -0.5,
+        "ev_supply": -0.4
+      },
+      "sentiment": {
+        "compound": -0.25,
+        "label": "偏空"
+      }
+    },
+    {
+      "text": "US and China agree on tariff cut totaling $30B after Trump-Xi summit - New York Post US and China agree on tariff cut totaling $30B after Trump-Xi summit  New York Post",
+      "timestamp": "2026-09-26T18:19:26.000Z",
+      "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQZXFxTll4a09KcXVaNXVIRmZOa3hWNEJtOEdSTm9ocUdwTEFQakNHbGNlS3JXN1I4aVFzeEdpT2tVdlNIUmVKRnc2V2NhaHo1RjlMTVYtb0g1M29ZR0NYSXpUZnJFM3U4YTBiMmRKUktJel9wUGdUbENFZkNCUWFhWlVLZGxFdTRfSHR2c1Y0bw?oc=5",
       "keywords": [
         "tariff",
         "china"
@@ -292,49 +338,7 @@
       }
     },
     {
-      "text": "China says it hopes to agree with the US on tariff reductions at ‘an early date’ - AP News China says it hopes to agree with the US on tariff reductions at ‘an early date’  AP News",
-      "timestamp": "2026-09-10T07:00:00.000Z",
-      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOaElLTzZISkhGRzh3ZFZYbGcxZ21jTHozWXpwM3U1X0N4cXlYRFBpZFczX2E2ZENwdmQ4ZF9abEJfdHc2QmNvOHdUQVJkS1hIOVZhM2Fza0NjQ053TU0xNmdSOWFMUmxBOVA4dHAxZzdZUXZjTEVUSVU4WW9UZ0N6ai1pZHlwRUFnUk5JZDdLcWtrakNaS29xM2xOY2dIeG8?oc=5",
-      "keywords": [
-        "tariff",
-        "china"
-      ],
-      "impacts": {
-        "foundry": -0.7,
-        "shipping": -0.9,
-        "steel": -0.5,
-        "ic_design": -1,
-        "display": -0.9,
-        "ev_supply": -0.7
-      },
-      "sentiment": {
-        "compound": -0.7184,
-        "label": "強烈利空"
-      }
-    },
-    {
-      "text": "US and China agree on tariff cut totaling $30B after Trump-Xi summit - New York Post US and China agree on tariff cut totaling $30B after Trump-Xi summit  New York Post",
-      "timestamp": "2026-09-26T18:19:26.000Z",
-      "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQZXFxTll4a09KcXVaNXVIRmZOa3hWNEJtOEdSTm9ocUdwTEFQakNHbGNlS3JXN1I4aVFzeEdpT2tVdlNIUmVKRnc2V2NhaHo1RjlMTVYtb0g1M29ZR0NYSXpUZnJFM3U4YTBiMmRKUktJel9wUGdUbENFZkNCUWFhWlVLZGxFdTRfSHR2c1Y0bw?oc=5",
-      "keywords": [
-        "tariff",
-        "china"
-      ],
-      "impacts": {
-        "foundry": -0.7,
-        "shipping": -0.9,
-        "steel": -0.5,
-        "ic_design": -1,
-        "display": -0.9,
-        "ev_supply": -0.7
-      },
-      "sentiment": {
-        "compound": -0.7184,
-        "label": "強烈利空"
-      }
-    },
-    {
-      "text": "After Xi-Trump summit, US-China rivalry remains frozen. Is this to Beijing's advantage? - dw.com After Xi-Trump summit, US-China rivalry remains frozen. Is this to Beijing's advantage?  dw.com",
+      "text": "After Xi-Trump summit, US-China rivalry remains frozen. Is this to Beijing's advantage? - DW.com After Xi-Trump summit, US-China rivalry remains frozen. Is this to Beijing's advantage?  DW.com",
       "timestamp": "2026-09-25T15:56:25.000Z",
       "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPMGgtQ3FHZXRJN2hWcnhBYVl3T3lUcDZXanV3UVFaS3Q0NWFLaFo1SnVTcy1BaTF3S3VZR0ZrcTB4UndOYnBFVGZxQWNod2hWYkhrNV9oQkFHOURteklmM1ZZYlNTdnlmOU1RMUtqTE5uTHVzd296U2syUTBzcGxLQlAzb0Z0SWg1WHprc253QUxNTndOanl0WnpGNl9XRURCak55Vk5YeG9KVGNNWTRqUWc4ajNJeWPSAbcBQVVfeXFMUFMwMDgwNWJtN0FrN3JLTUpybEtCeDgwOEtiYTFMVkFIV3JobzRoMDN1QlRObFJ0dTJ0clk2ajhXOFNCWlR2MnZiNXNyb3Z6a3N5VTVwNWZ3ekVONjlldFRWZnkzRzg5WmZ2Z2o0eGI5NFpwcjNxcFowWEc2SWQyYU5yYmNkOFhJMXZLd3U2VGtiQkZHWUtWVnFXTVFLaXdyd0dRa0oyZG5tYi10OHhUMVJQQWdNVThN?oc=5",
       "keywords": [
@@ -379,26 +383,22 @@
       }
     },
     {
-      "text": "China, US agree to AI dialogue, tariff cuts on $30 billion in goods during Xi visit - Reuters China, US agree to AI dialogue, tariff cuts on $30 billion in goods during Xi visit  Reuters",
-      "timestamp": "2026-09-26T19:59:32.000Z",
-      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNT2FRVWRwSDZuWUZPYTRXcmNuNTFDR0hrQkVUZnpSdV9RdGhpUjV5R0hwN2V6MUNUS2hiTHpENFhwUFVDODBIeDhBSm5SdUJOeU1qSUhjekl2RzBDd0VBYi0tdmNDblQwV1RMTF9QMGFHdlFRcDRmalE3dWlhX0l6aUJjSGtsVjlsZXNnbmZWY3JzMEtwY3hxNEZHT3JjWXJEQlVRSFpSM0haSUROOUFRaWJB?oc=5",
+      "text": "US farmers push for China commitments on imports as Trump and Xi talk trade - Reuters US farmers push for China commitments on imports as Trump and Xi talk trade  Reuters",
+      "timestamp": "2026-09-24T10:32:34.000Z",
+      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOdDdvUXBmX0hNUWRzdm5EckNpOUdzekVxTkh3MGY0Ync2TlBXcjlLY2daRFYzVW1Qb1VnT0RmRWVHZ0NGVVVWVFotbmFoNXJ1VkxET0NiWl9ENFRRMEpQTHRqWVJxU3VDS1dWRFN6VEUtTmlyNjZXdlpGeW10M01PUXdCMjktUnpUUGNIT2E4bjZiVkpXTnFlQ3pYbW8tSzRvQkloWFZnY3h3clBPMkE?oc=5",
       "keywords": [
-        "ai",
-        "tariff",
-        "china"
+        "china",
+        "port"
       ],
       "impacts": {
-        "ai_server": 0.7,
-        "foundry": -0.4,
-        "shipping": -0.9,
-        "steel": -0.5,
-        "ic_design": -1,
-        "display": -0.9,
-        "ev_supply": -0.7
+        "ic_design": -0.5,
+        "shipping": -0.7,
+        "display": -0.4,
+        "ev_supply": -0.3
       },
       "sentiment": {
-        "compound": -0.7184,
-        "label": "強烈利空"
+        "compound": 0,
+        "label": "中性"
       }
     },
     {
@@ -428,40 +428,22 @@
     {
       "sector": "foundry",
       "sectorName": "晶圓代工",
-      "prev": -0.68,
-      "current": -0.798,
-      "delta": -0.118,
-      "momentum": "↓ 壓力加深",
-      "accelerating": true
-    },
-    {
-      "sector": "steel",
-      "sectorName": "鋼鐵",
-      "prev": -0.609,
-      "current": -0.699,
-      "delta": -0.09,
-      "momentum": "↓ 壓力加深",
-      "accelerating": true
+      "prev": -0.798,
+      "current": -0.721,
+      "delta": 0.077,
+      "momentum": "↑ 壓力緩解",
+      "accelerating": false
     }
   ],
   "topDeltas": [
     {
       "sector": "foundry",
       "sectorName": "晶圓代工",
-      "prev": -0.68,
-      "current": -0.798,
-      "delta": -0.118,
-      "momentum": "↓ 壓力加深",
-      "accelerating": true
-    },
-    {
-      "sector": "steel",
-      "sectorName": "鋼鐵",
-      "prev": -0.609,
-      "current": -0.699,
-      "delta": -0.09,
-      "momentum": "↓ 壓力加深",
-      "accelerating": true
+      "prev": -0.798,
+      "current": -0.721,
+      "delta": 0.077,
+      "momentum": "↑ 壓力緩解",
+      "accelerating": false
     }
   ],
   "totalAnalyzed": 100,
@@ -470,10 +452,9 @@
   ],
   "sectorState": {
     "foundry": {
-      "score": -0.798,
-      "lastUpdated": "2026-09-27T19:41:19.616Z",
+      "score": -0.721,
+      "lastUpdated": "2026-09-27T22:55:40.809Z",
       "deltaHistory": [
-        0.03200000000000003,
         -0.02400000000000002,
         -0.059,
         0.065,
@@ -482,14 +463,14 @@
         -0.0030000000000000027,
         0.050000000000000044,
         0.02399999999999991,
-        -0.118
+        -0.118,
+        0.07700000000000007
       ]
     },
     "shipping": {
-      "score": -0.917,
-      "lastUpdated": "2026-09-27T19:41:19.616Z",
+      "score": -0.919,
+      "lastUpdated": "2026-09-27T22:55:40.809Z",
       "deltaHistory": [
-        0.02399999999999991,
         0.0040000000000000036,
         0.0050000000000000044,
         0.01100000000000001,
@@ -498,14 +479,14 @@
         0.009000000000000008,
         0.008000000000000007,
         0.01100000000000001,
-        -0.008000000000000007
+        -0.008000000000000007,
+        -0.0020000000000000018
       ]
     },
     "steel": {
-      "score": -0.699,
-      "lastUpdated": "2026-09-27T19:41:19.616Z",
+      "score": -0.651,
+      "lastUpdated": "2026-09-27T22:55:40.809Z",
       "deltaHistory": [
-        0.029000000000000026,
         0,
         -0.06,
         0.020000000000000018,
@@ -514,12 +495,13 @@
         -0.0010000000000000009,
         0.050999999999999934,
         0.03700000000000003,
-        -0.08999999999999997
+        -0.08999999999999997,
+        0.04799999999999993
       ]
     },
     "ic_design": {
       "score": -1,
-      "lastUpdated": "2026-09-27T19:41:19.616Z",
+      "lastUpdated": "2026-09-27T22:55:40.809Z",
       "deltaHistory": [
         0,
         0,
@@ -534,10 +516,9 @@
       ]
     },
     "display": {
-      "score": -0.968,
-      "lastUpdated": "2026-09-27T19:41:19.616Z",
+      "score": -0.938,
+      "lastUpdated": "2026-09-27T22:55:40.809Z",
       "deltaHistory": [
-        -0.007000000000000006,
         0.013000000000000012,
         -0.0020000000000000018,
         0.020000000000000018,
@@ -546,14 +527,14 @@
         -0.008000000000000007,
         0.015999999999999903,
         0.0020000000000000018,
-        -0.03299999999999992
+        -0.03299999999999992,
+        0.030000000000000027
       ]
     },
     "ev_supply": {
-      "score": -0.797,
-      "lastUpdated": "2026-09-27T19:41:19.616Z",
+      "score": -0.778,
+      "lastUpdated": "2026-09-27T22:55:40.809Z",
       "deltaHistory": [
-        0.02100000000000002,
         0.031000000000000028,
         -0.016000000000000014,
         0.020000000000000018,
@@ -562,14 +543,14 @@
         -0.007000000000000006,
         0.030000000000000027,
         0.029000000000000026,
-        -0.04500000000000004
+        -0.04500000000000004,
+        0.019000000000000017
       ]
     },
     "ai_server": {
-      "score": 0.158,
-      "lastUpdated": "2026-09-27T19:41:19.616Z",
+      "score": 0.199,
+      "lastUpdated": "2026-09-27T22:55:40.809Z",
       "deltaHistory": [
-        -0.0010000000000000009,
         -0.026999999999999996,
         0.016,
         0.094,
@@ -578,7 +559,8 @@
         -0.01999999999999999,
         0.04000000000000001,
         -0.029000000000000026,
-        -0.045999999999999985
+        -0.045999999999999985,
+        0.04100000000000001
       ]
     },
     "pcb": {
@@ -599,9 +581,8 @@
     },
     "defense": {
       "score": 0.006,
-      "lastUpdated": "2026-09-27T19:41:19.616Z",
+      "lastUpdated": "2026-09-27T22:55:40.809Z",
       "deltaHistory": [
-        0.005000000000000001,
         -0.011000000000000001,
         0.0010000000000000009,
         -0.002,
@@ -610,14 +591,14 @@
         -0.001,
         0,
         0.001,
-        0.002
+        0.002,
+        0
       ]
     },
     "packaging": {
-      "score": -0.006,
-      "lastUpdated": "2026-09-27T19:41:19.616Z",
+      "score": -0.004,
+      "lastUpdated": "2026-09-27T22:55:40.809Z",
       "deltaHistory": [
-        0,
         0,
         0,
         0,
@@ -626,18 +607,19 @@
         0,
         -0.005,
         -0.002,
-        0.001
+        0.001,
+        0.002
       ]
     },
     "semiconductor_equip": {
       "score": 0,
-      "lastUpdated": "2026-09-27T19:41:19.616Z",
+      "lastUpdated": "2026-09-27T22:55:40.809Z",
       "deltaHistory": [
-        0,
         0.003,
         0.001,
         -0.001,
         -0.003,
+        0,
         0,
         0,
         0,
@@ -647,13 +629,13 @@
     },
     "robotics": {
       "score": 0,
-      "lastUpdated": "2026-09-27T19:41:19.616Z",
+      "lastUpdated": "2026-09-27T22:55:40.809Z",
       "deltaHistory": [
-        0,
         0.002,
         0.001,
         -0.001,
         -0.002,
+        0,
         0,
         0,
         0,
@@ -663,9 +645,8 @@
     },
     "petrochemical": {
       "score": 0.001,
-      "lastUpdated": "2026-09-27T19:41:19.616Z",
+      "lastUpdated": "2026-09-27T22:55:40.809Z",
       "deltaHistory": [
-        0,
         0,
         0.003,
         0,
@@ -674,6 +655,7 @@
         0.001,
         -0.002,
         0.001,
+        0,
         0
       ]
     },
