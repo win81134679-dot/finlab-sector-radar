@@ -1,6 +1,28 @@
 {
-  "updatedAt": "2026-09-29T00:17:51.057Z",
+  "updatedAt": "2026-09-29T10:33:40.842Z",
   "posts": [
+    {
+      "text": "U.S. and China to Cut Tariffs on $60 Billion of Goods - Time Magazine U.S. and China to Cut Tariffs on $60 Billion of Goods  Time Magazine",
+      "timestamp": "2026-09-29T10:00:00.000Z",
+      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPcjhvLXJfUEZkMXFHLW5zeHB3eC1ORnh0cGJ3NklDT2E0dVNjTEdKNmcyYVA1Yzk4TWVUSEhOTHRhZkYyUU5NblA3V0hKSGhMMVZaaGJrZEY1dzFQaUlnMmgxaTRMZ0gzYlI3Y0FjNWNOZ2tKRFZDbVp6RUpuSjJORWVld3FNbGxveEZRcnIwVGtSZW9NUUE?oc=5",
+      "keywords": [
+        "tariff",
+        "tariffs",
+        "china"
+      ],
+      "impacts": {
+        "foundry": -1,
+        "shipping": -1,
+        "steel": -1,
+        "ic_design": -1,
+        "display": -1,
+        "ev_supply": -1
+      },
+      "sentiment": {
+        "compound": -0.7184,
+        "label": "強烈利空"
+      }
+    },
     {
       "text": "U.S. and China release product lists for tariff cuts after Trump-Xi meeting - PBS U.S. and China release product lists for tariff cuts after Trump-Xi meeting  PBS",
       "timestamp": "2026-09-28T17:29:57.000Z",
@@ -25,16 +47,14 @@
       }
     },
     {
-      "text": "US and China release reciprocal $30 billion product lists for tariff cuts after Trump-Xi meeting - ABC News - Breaking News, Latest News and Videos US and China release reciprocal $30 billion product lists for tariff cuts after Trump-Xi meeting  ABC News - Breaking News, Latest News and Videos",
-      "timestamp": "2026-09-28T10:10:37.000Z",
-      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPSDIwbjAydjRlRG1PYk5VXzl2MTNIeFNlOW9RQjJnOWhpenB3NXBiWHlNWFozNmM2TFFjOU1ybkJSTUtSMy1rSTF5RG9ZVmJwNkhmTVBsN3M3V3g5MHEzNU4tRXpJT2JwSktpUnNwV1BweWZkVnlHQm5mZThwQ2c4Z2RVUk91cEFRdTJfbGJfYVRmME12a3pjalJIcTBCUGxVb3pZ0gGoAUFVX3lxTFAzUUZYd1lsWlNRTkJGMzB0Ri1JVHh3a3U3RGxwWHlGWGdRMXJyQ0s4d0gzbE8yVVRmWEFJZHBoRzlUZmk4MHN4RkowMUJkT2h2ZFdtZWd5U2hweHBlNlFTYWFUdW5lYUVPQVdJNjBDcDNqTEgwaXVQbGZtU0tUMkdTYUlGek4taU5jQUlaZWxURVE3bXdUTHB2WFhXcDZPcnFHalJqSGJBcg?oc=5",
+      "text": "China and U.S. agree to tariff cuts on $60 billion of goods including agriculture, toys - NBC News China and U.S. agree to tariff cuts on $60 billion of goods including agriculture, toys  NBC News",
+      "timestamp": "2026-09-28T12:42:52.000Z",
+      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPZVpUSXVoSExyRmV1NXREQzVOenhNSDEwOWlPSDJLaUlJSDJiSG1rM0MtY1BrT096NjFMUWVEZHo5cHJveU41QmQzT1l0U0NTSnJGaXhNUlpQU1o2dUwxbWplaExGVXJzbE9NRXExWFJVOU0xRzlUeFVUR2xRTUxhSDNyMkJ0bkFZWTlmaGVQMHhDTHRPUURaYQ?oc=5",
       "keywords": [
-        "ase",
         "tariff",
         "china"
       ],
       "impacts": {
-        "packaging": -0.7,
         "foundry": -0.7,
         "shipping": -0.9,
         "steel": -0.5,
@@ -48,9 +68,30 @@
       }
     },
     {
-      "text": "China and U.S. agree to tariff cuts on $60 billion of goods, including agriculture, household items - NBC News China and U.S. agree to tariff cuts on $60 billion of goods, including agriculture, household items  NBC News",
-      "timestamp": "2026-09-28T12:42:52.000Z",
-      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPZVpUSXVoSExyRmV1NXREQzVOenhNSDEwOWlPSDJLaUlJSDJiSG1rM0MtY1BrT096NjFMUWVEZHo5cHJveU41QmQzT1l0U0NTSnJGaXhNUlpQU1o2dUwxbWplaExGVXJzbE9NRXExWFJVOU0xRzlUeFVUR2xRTUxhSDNyMkJ0bkFZWTlmaGVQMHhDTHRPUURaYQ?oc=5",
+      "text": "China, US pledge tariff cuts on $60 billion of goods including agriculture, toys, toasters - Reuters China, US pledge tariff cuts on $60 billion of goods including agriculture, toys, toasters  Reuters",
+      "timestamp": "2026-09-28T03:07:00.000Z",
+      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPaTBqVzRGcGNNZ2M5YWVLbUQxanlOVWhxYU5lWjNuYzJSWmtHV2lQTWdSUXlpTGM3M1UzU2JUckNLUGxIc3dFVWx5WlExNnotSmtQblE4UnM0Sk1OVnQycjVkR0ozUlpzMW5MMExHNll4NDR2dXpfWTNCMVpQT0docjI1SHFDeFdwYnZGVlVocXhzTy10WWViRk54VklyNzNiRFczXy04aURCdVdmSEdNbjNrRHpXNXM5LWRCZzJQajZVMVBx?oc=5",
+      "keywords": [
+        "tariff",
+        "china"
+      ],
+      "impacts": {
+        "foundry": -0.7,
+        "shipping": -0.9,
+        "steel": -0.5,
+        "ic_design": -1,
+        "display": -0.9,
+        "ev_supply": -0.7
+      },
+      "sentiment": {
+        "compound": -0.7184,
+        "label": "強烈利空"
+      }
+    },
+    {
+      "text": "US, China list goods recommended for tariff cuts following Trump-Xi summit - Al Jazeera US, China list goods recommended for tariff cuts following Trump-Xi summit  Al Jazeera",
+      "timestamp": "2026-09-28T06:51:36.000Z",
+      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQelZyZ0FsbXVrSlp3OXZ2ZWlFZHpINVdwdVJwYmc1NTN0bGZ5NXJxQTZOYm5lbzBSSXJmU2ItbmJYX1Z2ay1wZHBVM3dENDBkWWRVcEtEakNjTkYwckVYMWJXeC04SURqQ2NCTTJrQ0UxOUIwRGp3RjZHTTI5bXlmd0kxME4wVGZrNV9Bekx2TVh5RnB6Y29iSWFIamlOUmFvTHhLOHVRSE1TQWxoLXhHcGdlYk9FNm050gG-AUFVX3lxTE9xRGdhcFMtb0lJQmkwbm9HWW5kUmIzdGxEeU1WTjVXbWZwcHoxd2JzWHpZT0s0c2p3NFBQdENpckwxME92OW5IZ3Z2ZW9kaXZQMm1QU1RYSmVLZTE0TUF2aGt5UHNuLVN0Zmd1dDRDWVgxTURYS2NjZlRMMFAzM2NnSjVWNlFKYXBBTS1GaEFVMTFaTzFtZ0hIOHhFbVJZa3VvREtEbTBjal9xcGZKUmdqZHJMY0dub3BwVFh6OHc?oc=5",
       "keywords": [
         "tariff",
         "china"
@@ -91,27 +132,6 @@
       }
     },
     {
-      "text": "US, China list goods recommended for tariff cuts following Trump-Xi summit - Al Jazeera US, China list goods recommended for tariff cuts following Trump-Xi summit  Al Jazeera",
-      "timestamp": "2026-09-28T06:51:36.000Z",
-      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQelZyZ0FsbXVrSlp3OXZ2ZWlFZHpINVdwdVJwYmc1NTN0bGZ5NXJxQTZOYm5lbzBSSXJmU2ItbmJYX1Z2ay1wZHBVM3dENDBkWWRVcEtEakNjTkYwckVYMWJXeC04SURqQ2NCTTJrQ0UxOUIwRGp3RjZHTTI5bXlmd0kxME4wVGZrNV9Bekx2TVh5RnB6Y29iSWFIamlOUmFvTHhLOHVRSE1TQWxoLXhHcGdlYk9FNm050gG-AUFVX3lxTE9xRGdhcFMtb0lJQmkwbm9HWW5kUmIzdGxEeU1WTjVXbWZwcHoxd2JzWHpZT0s0c2p3NFBQdENpckwxME92OW5IZ3Z2ZW9kaXZQMm1QU1RYSmVLZTE0TUF2aGt5UHNuLVN0Zmd1dDRDWVgxTURYS2NjZlRMMFAzM2NnSjVWNlFKYXBBTS1GaEFVMTFaTzFtZ0hIOHhFbVJZa3VvREtEbTBjal9xcGZKUmdqZHJMY0dub3BwVFh6OHc?oc=5",
-      "keywords": [
-        "tariff",
-        "china"
-      ],
-      "impacts": {
-        "foundry": -0.7,
-        "shipping": -0.9,
-        "steel": -0.5,
-        "ic_design": -1,
-        "display": -0.9,
-        "ev_supply": -0.7
-      },
-      "sentiment": {
-        "compound": -0.7184,
-        "label": "強烈利空"
-      }
-    },
-    {
       "text": "US, China agree to cut tariffs on $60B worth of products - The Hill US, China agree to cut tariffs on $60B worth of products  The Hill",
       "timestamp": "2026-09-28T12:42:00.000Z",
       "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPTmFrcl8za2hZamJaSDI1X2JRU2V4TTZsTi1YQU04eXNHVlBMLW90UUZYVFVxcHZPNXVSZkxQRHRxYmJtanNiZERCQU1rbVZtVXhHX3pBWFpmekdHVVE1MnRDcXlVZGQydlBHS19jd0VHYlU5TzQ3ZHlNd0FyNDhfRjlmNHc4enJqeDc5TVg5YzFLWXAzSU1ZM3E1ejU2aU1mZzcza09B0gGrAUFVX3lxTE9QS3VrN094NG1PNkVSRnVSMVNyUW5PSExUbVp4cUtXZEpOeWpHM2hld0JpQzdYZU1FT3pKbDlXa0J1dmRxczBiY2t4VXFXMVlDeTJFSWxoWHFIem1JcFlQYXdhbXZOdzZRdXVUZ0ZETzFtdl96WXRwb0R5dVM5SnZXUzdxS3NMc19LeXdGVUVIeDZSVGZ3RWxydTFtOG9LUUpIbndzYTJlWGR2Zw?oc=5",
@@ -134,9 +154,9 @@
       }
     },
     {
-      "text": "China, US pledge tariff cuts on $60 billion of goods including agriculture, toys, toasters - Reuters China, US pledge tariff cuts on $60 billion of goods including agriculture, toys, toasters  Reuters",
-      "timestamp": "2026-09-28T03:07:00.000Z",
-      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPaTBqVzRGcGNNZ2M5YWVLbUQxanlOVWhxYU5lWjNuYzJSWmtHV2lQTWdSUXlpTGM3M1UzU2JUckNLUGxIc3dFVWx5WlExNnotSmtQblE4UnM0Sk1OVnQycjVkR0ozUlpzMW5MMExHNll4NDR2dXpfWTNCMVpQT0docjI1SHFDeFdwYnZGVlVocXhzTy10WWViRk54VklyNzNiRFczXy04aURCdVdmSEdNbjNrRHpXNXM5LWRCZzJQajZVMVBx?oc=5",
+      "text": "Businesses ‘frozen out’ of Trump’s tariff channel with China - Politico Businesses ‘frozen out’ of Trump’s tariff channel with China  Politico",
+      "timestamp": "2026-09-22T09:00:00.000Z",
+      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQRFRIVGlQZTZxTUxmQVJBUmJIdFhoVHRZdGVQU1Ywa01XMGJnQ3Jqa0hKOXNWemd6UUcwZVY3bGt3cEpocDI4RkJWYVNMUUxwYkFiOGR2cEc5dHZpaGNUNEpyQW1pd0FoWWdueDQ0RlZnZU9fZi0yQzNuZzBXZlB1WDZQUXNFbnVCbEUtbQ?oc=5",
       "keywords": [
         "tariff",
         "china"
@@ -148,28 +168,6 @@
         "ic_design": -1,
         "display": -0.9,
         "ev_supply": -0.7
-      },
-      "sentiment": {
-        "compound": -0.7184,
-        "label": "強烈利空"
-      }
-    },
-    {
-      "text": "U.S. & China to lower tariffs on goods - ABC Columbia U.S. & China to lower tariffs on goods  ABC Columbia",
-      "timestamp": "2026-09-28T21:52:16.000Z",
-      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQOGdMQ0NvanBoSGVFQ2t6WmpNYi16eE1KNEo0VHJzYW4yUXM3Zy1tNkdxOWJPczhqelZraXhqbS1rLTNOQzYtc1FzYnRuUE1GcllMTkQxcmxqNTBZSEIxVVZ6djlzTGpBSVlJU2lxeDNTS0dmeE5qZlFQVFNKN0RPTQ?oc=5",
-      "keywords": [
-        "tariff",
-        "tariffs",
-        "china"
-      ],
-      "impacts": {
-        "foundry": -1,
-        "shipping": -1,
-        "steel": -1,
-        "ic_design": -1,
-        "display": -1,
-        "ev_supply": -1
       },
       "sentiment": {
         "compound": -0.7184,
@@ -200,9 +198,75 @@
       }
     },
     {
-      "text": "Businesses ‘frozen out’ of Trump’s tariff channel with China - Politico Businesses ‘frozen out’ of Trump’s tariff channel with China  Politico",
-      "timestamp": "2026-09-22T09:00:00.000Z",
-      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQRFRIVGlQZTZxTUxmQVJBUmJIdFhoVHRZdGVQU1Ywa01XMGJnQ3Jqa0hKOXNWemd6UUcwZVY3bGt3cEpocDI4RkJWYVNMUUxwYkFiOGR2cEc5dHZpaGNUNEpyQW1pd0FoWWdueDQ0RlZnZU9fZi0yQzNuZzBXZlB1WDZQUXNFbnVCbEUtbQ?oc=5",
+      "text": "Foie gras, live dolphins and toasters: China and US cut reciprocal tariffs on $30bn each of goods - theguardian.com Foie gras, live dolphins and toasters: China and US cut reciprocal tariffs on $30bn each of goods  theguardian.com",
+      "timestamp": "2026-09-28T14:02:00.000Z",
+      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQZGlQcExwdWFMSUJMemJZVG9mUG9YYW9VZ2lPTTRFSzdsd1VUM2VhMzByYzV1d1lkOTRJV3JtUzhqSlVRczJrbjZjeHViX05LM2xROTAwUUZXODc5bFJISGJPZkt4WTNXcGdPdGFNcEotWFBxS1pnMnUxTkFaWVNwSnpPalFfOGI1Y2U4Ug?oc=5",
+      "keywords": [
+        "tariff",
+        "tariffs",
+        "china"
+      ],
+      "impacts": {
+        "foundry": -1,
+        "shipping": -1,
+        "steel": -1,
+        "ic_design": -1,
+        "display": -1,
+        "ev_supply": -1
+      },
+      "sentiment": {
+        "compound": -0.7184,
+        "label": "強烈利空"
+      }
+    },
+    {
+      "text": "‘Missed opportunity’: US soybean farmers question China tariff cuts exclusion - South China Morning Post ‘Missed opportunity’: US soybean farmers question China tariff cuts exclusion  South China Morning Post",
+      "timestamp": "2026-09-28T22:48:25.000Z",
+      "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPcUtnMGVyRWpBVFZrZE5TVTM5dkFhLXBfQVZJQXVVSTJhWkNHb0VkUlpjZTNfR3BrWEs5VGZSUHRrSVl3OWJwcnB4UEh0ZkE4V2lNSjFWTnZtZ2JxMXZwek5xME5QYk1uM25SanZSTEtSM1FycnZFTlc5b2trT2I2SklpUWp5c2s5OHBpSVMtdkpzMGY2ZVY1Q1VpVXNDbDJoa3FvMmpjdlpTVm1NU1FxTkh1dTRUMktOVVZ2NkFXdTNVYVV2OE5ZQ9IByAFBVV95cUxOTzVFNEIwd0ZEMUhXQUlWdHBQVXl4SDFTVGI3Q2w1WEhqY3gxVmdoV29GUGVEd3NlUTNqVzVwaWE4c2NqM0JSVXVjSldrTDhiYnZaREhnTFRxS0pPR2hqdVlJQ1BoNnBrc2xwYjIwZUxEMi02TzQ0dG5OMXBBdHFqZldyR0pkaUFOR2g1eEpERW5LT19yMXlmRGxVeHNmZ1VyaWhEbHhvblpEdjM3SFhvMGkxUXJEV2tpZmVmOUpPU09Rd19remJBVQ?oc=5",
+      "keywords": [
+        "tariff",
+        "china",
+        "port"
+      ],
+      "impacts": {
+        "foundry": -0.7,
+        "shipping": -1,
+        "steel": -0.5,
+        "ic_design": -1,
+        "display": -0.9,
+        "ev_supply": -0.7
+      },
+      "sentiment": {
+        "compound": -0.7184,
+        "label": "強烈利空"
+      }
+    },
+    {
+      "text": "China and the U.S. Pledge to Cut Tariffs on $60 Billion in Goods - The New York Times China and the U.S. Pledge to Cut Tariffs on $60 Billion in Goods  The New York Times",
+      "timestamp": "2026-09-28T11:12:55.000Z",
+      "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE1rdUg4QW9wLTQ0Q0NoSFRCckJveTFzQW1fN0gwNWpkT21xeExETUREUngtMV9aRWx5WHBLV1RPVTYyaU9XSnpzazc0QktxdFBoUl85cHJKV18zTlhCX2xVakN3Mnl2cHRPbFdyZjRJSG9OMlBUT1ZFZW01eDg?oc=5",
+      "keywords": [
+        "tariff",
+        "tariffs",
+        "china"
+      ],
+      "impacts": {
+        "foundry": -1,
+        "shipping": -1,
+        "steel": -1,
+        "ic_design": -1,
+        "display": -1,
+        "ev_supply": -1
+      },
+      "sentiment": {
+        "compound": -0.7184,
+        "label": "強烈利空"
+      }
+    },
+    {
+      "text": "US-China tariff cuts include emus, robots, whales and soccer balls - ABC News & Headlines – Australian Broadcasting Corporation US-China tariff cuts include emus, robots, whales and soccer balls  ABC News & Headlines – Australian Broadcasting Corporation",
+      "timestamp": "2026-09-29T03:21:53.000Z",
+      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQdWRhOXpteGcyTFNVaGs3NXJGd0poaGtta2U4TGEtNlI4VmtOOXUxUDNzdTZaaUVheVNweTk2Ul85Ym8xLUQwZ3FxMDJwSTBkenh0bk4xclNseWYxOUF1ZXFOSm03bHlma0RSTzlQQ1RpTE1hZm1Dc1F1Nm1JV3hYNThROEN1aEpqSDQxXzNNMi1INHZFVzB1cWxmaHoySFFSUnV3?oc=5",
       "keywords": [
         "tariff",
         "china"
@@ -214,6 +278,47 @@
         "ic_design": -1,
         "display": -0.9,
         "ev_supply": -0.7
+      },
+      "sentiment": {
+        "compound": -0.7184,
+        "label": "強烈利空"
+      }
+    },
+    {
+      "text": "Trump’s tariff war is clobbering the Hanks of America - Financial Times Trump’s tariff war is clobbering the Hanks of America  Financial Times",
+      "timestamp": "2026-09-24T04:01:07.000Z",
+      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQRWRhang2bGV0SWk0aTdTU0dmU3NHM0w0MHl3TFFUYjMzNDd1ZWlWb3hZYkgyVGV6UHU2amMtVUNDMFpCc3pVSGpRRURHbFlSd3hfelpJYnJTeFVqNUx0b2FLNDFtN1VsM09UbHJWTUZLcHBOX2pPY0E5WUxoMzJtNTdBYTE?oc=5",
+      "keywords": [
+        "tariff"
+      ],
+      "impacts": {
+        "foundry": -0.7,
+        "shipping": -0.5,
+        "steel": -0.5,
+        "ic_design": -0.6,
+        "display": -0.5,
+        "ev_supply": -0.4
+      },
+      "sentiment": {
+        "compound": -0.7184,
+        "label": "強烈利空"
+      }
+    },
+    {
+      "text": "Trump’s Tariffs Push Canadian Companies to Look Past American Links - The New York Times Trump’s Tariffs Push Canadian Companies to Look Past American Links  The New York Times",
+      "timestamp": "2026-09-28T09:03:13.000Z",
+      "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQdldLVHF3azFPMGQ1cGF6S0F4UlNaTVZKOU44aG1YODQzVzdxRW5PSlVPRFF4RWNtc0s4eGdQZ0JIWTZHQWctVVJsX0l3eV9HQVAtUEpFaXl3X2tBd2ZnSzJjRFdTM3lnZHRHRno4RXhtNXlVT1FtZzE4MnQzRzB2MkVZZzhjUQ?oc=5",
+      "keywords": [
+        "tariff",
+        "tariffs"
+      ],
+      "impacts": {
+        "foundry": -1,
+        "shipping": -1,
+        "steel": -1,
+        "ic_design": -1,
+        "display": -1,
+        "ev_supply": -0.8
       },
       "sentiment": {
         "compound": -0.7184,
@@ -243,44 +348,20 @@
       }
     },
     {
-      "text": "Trump and Xi Jinping agree to US-China tariff cuts as markets react to trade deal - Fox Business Trump and Xi Jinping agree to US-China tariff cuts as markets react to trade deal  Fox Business",
-      "timestamp": "2026-09-28T18:03:27.000Z",
-      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE10RWlrc2hEa2pzc0pwT3dEOGlrYmZBd3lSbEN4d3RxNGJzbUJFalJyOG9yOHZjbFVwN3B0dmhZU3M5REF4UlpHOThBQ1hjLWRxOVdZNmlZWVdab2c?oc=5",
-      "keywords": [
-        "trade deal",
-        "tariff",
-        "china",
-        "deal"
-      ],
-      "impacts": {
-        "shipping": -0.2,
-        "ic_design": -0.5,
-        "display": -0.6,
-        "foundry": -0.7,
-        "steel": -0.5,
-        "ev_supply": -0.7
-      },
-      "sentiment": {
-        "compound": -0.25,
-        "label": "偏空"
-      }
-    },
-    {
-      "text": "US, China agree to cut tariffs on $60 billion of goods after Trump-Xi talks - The American Bazaar US, China agree to cut tariffs on $60 billion of goods after Trump-Xi talks  The American Bazaar",
-      "timestamp": "2026-09-28T20:16:01.000Z",
-      "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOVzVHZXdVcHJSLVozRTBJVU9pTmlFT1NzU3pDZ3RRT1I5ZHdhOUo2U2ExaHZpOElkZEw1dHNfQjVNWExpOXVMVTloYlJGbl96YmNGTEQ4MDZnZzZlbzRscVJJR1VxTXBfaUQ3OWNma21kek41SUJValVnTTFSQzRyb1BaVlAyY1VGYXBMUVhxeDF6MmtrRVZHTTdpS000Uk9hYXl2NkJTSlRNcE9icENScW1tZGNWTlVRUXFwTWJhem5RSnc?oc=5",
+      "text": "US, China unveil USD 60 billion ’30-for-30′ tariff framework following Xi-Trump summit - Asia News Network US, China unveil USD 60 billion ’30-for-30′ tariff framework following Xi-Trump summit  Asia News Network",
+      "timestamp": "2026-09-29T02:59:25.000Z",
+      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNWEtOWGxUZGpnNlFkME9oSVhnU3NkTVROakhJVkFoZExVMTJXVUszNXdSM2x2STlmdTdpcVFaRUxMTE10bkN1NGFDdGFfWlFzeDBMTTZ1SkV2T3M2bmR1bkRNRUN5Q2piSnhQNUVNRWpVOGQyZkxmZ2FlVjBVcnRuYTQ2b080YTRmTVdxejRTbXJJWEg0QjZuMUJNbE9CWEFxNzR1MGdHT3BKQm54UzhjMGtSeTh1UHNYOXc?oc=5",
       "keywords": [
         "tariff",
-        "tariffs",
         "china"
       ],
       "impacts": {
-        "foundry": -1,
-        "shipping": -1,
-        "steel": -1,
+        "foundry": -0.7,
+        "shipping": -0.9,
+        "steel": -0.5,
         "ic_design": -1,
-        "display": -1,
-        "ev_supply": -1
+        "display": -0.9,
+        "ev_supply": -0.7
       },
       "sentiment": {
         "compound": -0.7184,
@@ -309,94 +390,7 @@
       }
     },
     {
-      "text": "US and China release $60 billion nonsensitive product lists for tariff cuts after Trump-Xi meeting - Ottumwa Courier US and China release $60 billion nonsensitive product lists for tariff cuts after Trump-Xi meeting  Ottumwa Courier",
-      "timestamp": "2026-09-28T15:55:51.000Z",
-      "url": "https://news.google.com/rss/articles/CBMimAJBVV95cUxPeS02Q09UMFJMSjNqSGZtTnlBeDJpNWtYM2c4b2R1RzFfcV9KN2ZEVVhlakp6S3dOcUZBZjNSbE8wQXpvaUFFQnFMM1pzSHdSY0NlWjBYNmhhOEJHY0p4d3kxLVI1cWFhRTlUbGpJd0t1M1FQYUc1S2tYcXpfN2taNlpFZ2hNMWdrOUthOHltdUg0S0ZGMVB6VXk5c0JYakRiR2ZTMFZRd2V5aVNHcUFwSFp0bmFrZnhNY2RRLW1XRGs4OEx6R2FJQlRYTG9EQnNaTmlQSktLUjRnODNkTmNOcVFVVHJpM0k2WjVBWmFTWVduUzJSaXYtTjhuX2RfUy1PTGxUWkxUSDdJaWdaenFGRTkxUVByUjg2?oc=5",
-      "keywords": [
-        "ase",
-        "tariff",
-        "china"
-      ],
-      "impacts": {
-        "packaging": -0.7,
-        "foundry": -0.7,
-        "shipping": -0.9,
-        "steel": -0.5,
-        "ic_design": -1,
-        "display": -0.9,
-        "ev_supply": -0.7
-      },
-      "sentiment": {
-        "compound": -0.7184,
-        "label": "強烈利空"
-      }
-    },
-    {
-      "text": "China, US agree to AI dialogue, tariff cuts on $30 billion in goods during Xi visit - Reuters China, US agree to AI dialogue, tariff cuts on $30 billion in goods during Xi visit  Reuters",
-      "timestamp": "2026-09-26T19:59:32.000Z",
-      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNT2FRVWRwSDZuWUZPYTRXcmNuNTFDR0hrQkVUZnpSdV9RdGhpUjV5R0hwN2V6MUNUS2hiTHpENFhwUFVDODBIeDhBSm5SdUJOeU1qSUhjekl2RzBDd0VBYi0tdmNDblQwV1RMTF9QMGFHdlFRcDRmalE3dWlhX0l6aUJjSGtsVjlsZXNnbmZWY3JzMEtwY3hxNEZHT3JjWXJEQlVRSFpSM0haSUROOUFRaWJB?oc=5",
-      "keywords": [
-        "ai",
-        "tariff",
-        "china"
-      ],
-      "impacts": {
-        "ai_server": 0.7,
-        "foundry": -0.4,
-        "shipping": -0.9,
-        "steel": -0.5,
-        "ic_design": -1,
-        "display": -0.9,
-        "ev_supply": -0.7
-      },
-      "sentiment": {
-        "compound": -0.7184,
-        "label": "強烈利空"
-      }
-    },
-    {
-      "text": "Trump set to impose sweeping tariffs on 60 trade partners - ABC News - Breaking News, Latest News and Videos Trump set to impose sweeping tariffs on 60 trade partners  ABC News - Breaking News, Latest News and Videos",
-      "timestamp": "2026-09-26T06:07:06.000Z",
-      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNa1BDcjdFRHFWaGlkYlMzZi1ZY2hCaVR5dGRpalctVTI1Q2poOGxFcXZqdmZfX2lqaVZxRmo3MWZIZ2ZUU0xCMm44OFdibDRCNF9BOVNmT1VHNURxR0tabkNtaVdoNTRaTW81cVIyVUdvanhBUS1rX3pEZFdyQmNSbDVDa0VMM2tPVGhYbDkwR1VhcUJJTDJXVmhNZVVVNi1L0gGmAUFVX3lxTE5UdFo2TDl4c1R2ZWRuX1ZxbTA3UmdwQnlrbVh1OXUyd1pucVlQS2dqY2VsbnRNSGt3WWljNkZ3V2kySmZNUzJ4WVBaT2NXSGRuUFlqRmx1UXNzSlEwZkV1MGRWVWxNbHdBcnY3Vm9CMVFqSWZxdnI3TkZqbWxValByNzBMRWxBR3BraFBtbEVuUFBvNDNpUVNBdWVkN3V6enc1YjlIWXc?oc=5",
-      "keywords": [
-        "tariff",
-        "tariffs"
-      ],
-      "impacts": {
-        "foundry": -1,
-        "shipping": -1,
-        "steel": -1,
-        "ic_design": -1,
-        "display": -1,
-        "ev_supply": -0.8
-      },
-      "sentiment": {
-        "compound": -0.875,
-        "label": "強烈利空"
-      }
-    },
-    {
-      "text": "Trump’s tariff war is clobbering the Hanks of America - Financial Times Trump’s tariff war is clobbering the Hanks of America  Financial Times",
-      "timestamp": "2026-09-24T04:01:07.000Z",
-      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQRWRhang2bGV0SWk0aTdTU0dmU3NHM0w0MHl3TFFUYjMzNDd1ZWlWb3hZYkgyVGV6UHU2amMtVUNDMFpCc3pVSGpRRURHbFlSd3hfelpJYnJTeFVqNUx0b2FLNDFtN1VsM09UbHJWTUZLcHBOX2pPY0E5WUxoMzJtNTdBYTE?oc=5",
-      "keywords": [
-        "tariff"
-      ],
-      "impacts": {
-        "foundry": -0.7,
-        "shipping": -0.5,
-        "steel": -0.5,
-        "ic_design": -0.6,
-        "display": -0.5,
-        "ev_supply": -0.4
-      },
-      "sentiment": {
-        "compound": -0.7184,
-        "label": "強烈利空"
-      }
-    },
-    {
-      "text": "China says it hopes to agree with the US on tariff reductions at ‘an early date’ - apnews.com China says it hopes to agree with the US on tariff reductions at ‘an early date’  apnews.com",
+      "text": "China says it hopes to agree with the US on tariff reductions at ‘an early date’ - AP News China says it hopes to agree with the US on tariff reductions at ‘an early date’  AP News",
       "timestamp": "2026-09-10T07:00:00.000Z",
       "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOaElLTzZISkhGRzh3ZFZYbGcxZ21jTHozWXpwM3U1X0N4cXlYRFBpZFczX2E2ZENwdmQ4ZF9abEJfdHc2QmNvOHdUQVJkS1hIOVZhM2Fza0NjQ053TU0xNmdSOWFMUmxBOVA4dHAxZzdZUXZjTEVUSVU4WW9UZ0N6ai1pZHlwRUFnUk5JZDdLcWtrakNaS29xM2xOY2dIeG8?oc=5",
       "keywords": [
@@ -417,24 +411,24 @@
       }
     },
     {
-      "text": "Trump gains a tariff weapon against China and India. Will he use it? - CNBC Trump gains a tariff weapon against China and India. Will he use it?  CNBC",
-      "timestamp": "2026-09-17T07:00:00.000Z",
-      "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxORVJ2bjZBQTBob3Vmb1JCWDh0TERtZ21NVllFVVlLN2R6Z0JWanEyc2dTTTFHcUQzTndJWGViRlRvVWZMOUxvU19ydjkxWlZWc0hYRkh6OEF5LUdxMHlxT0RyS1Zfbk5pY29VMDliWFRNNE8ySmE0SElIMGJ5NGhkT0JTRFNjT1BJbXdr?oc=5",
+      "text": "US and China release $60 billion nonsensitive product lists for tariff cuts after Trump-Xi meeting - Decatur Daily US and China release $60 billion nonsensitive product lists for tariff cuts after Trump-Xi meeting  Decatur Daily",
+      "timestamp": "2026-09-29T05:00:00.000Z",
+      "url": "https://news.google.com/rss/articles/CBMiiAJBVV95cUxQd3JsbzFva3ViYkNLZHZqVmk4S0xvVHk0NDBqUFpQTUhDaUJKLS1rcjFrYlhhVU1hellicFBSX0t1UTB4UGVWSUNmTkx6VTdvem1jd0tyUkNDWTdOZU9xS2VoODRySWxhckhWSGRUMEJ4YkVVc3JSOHBYLW1jQlYtcHYySU0zUkREWFk0ekNDRFpySk5PWEw0VmxqNWQySmc0U0ZLdEZvVHg4cW9ydWl4SmhqVFpYclhuc09LMk1KbFdlSUlYZk5XQWxXYUFvbGE5cW1MalBjR2ozYzgtcF9DXzJvb2ZUaDQxcFJWYjIzTmxSOWtET0FfVVNwS1ZER0MwSTdPZ0RSNS0?oc=5",
       "keywords": [
+        "ase",
         "ai",
         "tariff",
-        "china",
-        "weapon"
+        "china"
       ],
       "impacts": {
+        "packaging": -0.7,
         "ai_server": 0.7,
         "foundry": -0.4,
         "shipping": -0.9,
         "steel": -0.5,
         "ic_design": -1,
         "display": -0.9,
-        "ev_supply": -0.7,
-        "defense": 0.7
+        "ev_supply": -0.7
       },
       "sentiment": {
         "compound": -0.7184,
@@ -446,40 +440,22 @@
     {
       "sector": "packaging",
       "sectorName": "封測",
-      "prev": -0.107,
-      "current": -0.209,
-      "delta": -0.102,
-      "momentum": "↓ 壓力加深",
-      "accelerating": false
-    },
-    {
-      "sector": "ai_server",
-      "sectorName": "AI 伺服器",
-      "prev": 0.103,
-      "current": 0.045,
-      "delta": -0.058,
-      "momentum": "↓ 訊號弱化",
-      "accelerating": false
+      "prev": -0.209,
+      "current": -0.096,
+      "delta": 0.113,
+      "momentum": "↑ 壓力緩解",
+      "accelerating": true
     }
   ],
   "topDeltas": [
     {
       "sector": "packaging",
       "sectorName": "封測",
-      "prev": -0.107,
-      "current": -0.209,
-      "delta": -0.102,
-      "momentum": "↓ 壓力加深",
-      "accelerating": false
-    },
-    {
-      "sector": "ai_server",
-      "sectorName": "AI 伺服器",
-      "prev": 0.103,
-      "current": 0.045,
-      "delta": -0.058,
-      "momentum": "↓ 訊號弱化",
-      "accelerating": false
+      "prev": -0.209,
+      "current": -0.096,
+      "delta": 0.113,
+      "momentum": "↑ 壓力緩解",
+      "accelerating": true
     }
   ],
   "totalAnalyzed": 100,
@@ -488,10 +464,9 @@
   ],
   "sectorState": {
     "foundry": {
-      "score": -0.784,
-      "lastUpdated": "2026-09-29T00:17:51.057Z",
+      "score": -0.808,
+      "lastUpdated": "2026-09-29T10:33:40.842Z",
       "deltaHistory": [
-        -0.11600000000000005,
         -0.19399999999999995,
         -0.0030000000000000027,
         0.050000000000000044,
@@ -500,14 +475,14 @@
         0.07700000000000007,
         0.007000000000000006,
         -0.07500000000000007,
-        0.0050000000000000044
+        0.0050000000000000044,
+        -0.02400000000000002
       ]
     },
     "shipping": {
-      "score": -0.923,
-      "lastUpdated": "2026-09-29T00:17:51.057Z",
+      "score": -0.94,
+      "lastUpdated": "2026-09-29T10:33:40.842Z",
       "deltaHistory": [
-        0.006000000000000005,
         -0.039000000000000035,
         0.009000000000000008,
         0.008000000000000007,
@@ -516,14 +491,14 @@
         -0.0020000000000000018,
         -0.0050000000000000044,
         -0.013000000000000012,
-        0.014000000000000012
+        0.014000000000000012,
+        -0.016999999999999904
       ]
     },
     "steel": {
-      "score": -0.657,
-      "lastUpdated": "2026-09-29T00:17:51.057Z",
+      "score": -0.699,
+      "lastUpdated": "2026-09-29T10:33:40.842Z",
       "deltaHistory": [
-        -0.08800000000000002,
         -0.19999999999999996,
         -0.0010000000000000009,
         0.050999999999999934,
@@ -532,12 +507,13 @@
         0.04799999999999993,
         -0.0020000000000000018,
         -0.03699999999999992,
-        0.03299999999999992
+        0.03299999999999992,
+        -0.041999999999999926
       ]
     },
     "ic_design": {
       "score": -1,
-      "lastUpdated": "2026-09-29T00:17:51.057Z",
+      "lastUpdated": "2026-09-29T10:33:40.842Z",
       "deltaHistory": [
         0,
         0,
@@ -552,10 +528,9 @@
       ]
     },
     "display": {
-      "score": -0.931,
-      "lastUpdated": "2026-09-29T00:17:51.057Z",
+      "score": -0.938,
+      "lastUpdated": "2026-09-29T10:33:40.842Z",
       "deltaHistory": [
-        -0.019000000000000017,
         -0.07299999999999995,
         -0.008000000000000007,
         0.015999999999999903,
@@ -564,14 +539,14 @@
         0.030000000000000027,
         0.0009999999999998899,
         0.0050000000000000044,
-        0.0010000000000000009
+        0.0010000000000000009,
+        -0.006999999999999895
       ]
     },
     "ev_supply": {
-      "score": -0.792,
-      "lastUpdated": "2026-09-29T00:17:51.057Z",
+      "score": -0.812,
+      "lastUpdated": "2026-09-29T10:33:40.842Z",
       "deltaHistory": [
-        -0.03500000000000003,
         -0.15500000000000003,
         -0.007000000000000006,
         0.030000000000000027,
@@ -580,14 +555,14 @@
         0.019000000000000017,
         -0.006000000000000005,
         0.0010000000000000009,
-        -0.009000000000000008
+        -0.009000000000000008,
+        -0.020000000000000018
       ]
     },
     "ai_server": {
-      "score": 0.045,
-      "lastUpdated": "2026-09-29T00:17:51.057Z",
+      "score": 0.039,
+      "lastUpdated": "2026-09-29T10:33:40.842Z",
       "deltaHistory": [
-        -0.014000000000000012,
         0.036000000000000004,
         -0.01999999999999999,
         0.04000000000000001,
@@ -596,14 +571,14 @@
         0.04100000000000001,
         0.023999999999999994,
         -0.12000000000000001,
-        -0.057999999999999996
+        -0.057999999999999996,
+        -0.005999999999999998
       ]
     },
     "pcb": {
       "score": 0,
-      "lastUpdated": "2026-09-29T00:17:51.057Z",
+      "lastUpdated": "2026-09-29T10:33:40.842Z",
       "deltaHistory": [
-        0,
         0,
         0,
         0.003,
@@ -612,14 +587,14 @@
         -0.002,
         0,
         0,
+        0,
         0
       ]
     },
     "defense": {
-      "score": 0.005,
-      "lastUpdated": "2026-09-29T00:17:51.057Z",
+      "score": 0.004,
+      "lastUpdated": "2026-09-29T10:33:40.842Z",
       "deltaHistory": [
-        0,
         -0.004,
         -0.001,
         0,
@@ -628,14 +603,14 @@
         0,
         -0.002,
         0.006999999999999999,
-        -0.005999999999999999
+        -0.005999999999999999,
+        -0.001
       ]
     },
     "packaging": {
-      "score": -0.209,
-      "lastUpdated": "2026-09-29T00:17:51.057Z",
+      "score": -0.096,
+      "lastUpdated": "2026-09-29T10:33:40.842Z",
       "deltaHistory": [
-        0,
         0,
         0,
         -0.005,
@@ -644,14 +619,15 @@
         0.002,
         0.002,
         -0.105,
-        -0.102
+        -0.102,
+        0.11299999999999999
       ]
     },
     "semiconductor_equip": {
       "score": 0,
-      "lastUpdated": "2026-09-29T00:17:51.057Z",
+      "lastUpdated": "2026-09-29T10:33:40.842Z",
       "deltaHistory": [
-        -0.003,
+        0,
         0,
         0,
         0,
@@ -665,9 +641,9 @@
     },
     "robotics": {
       "score": 0,
-      "lastUpdated": "2026-09-29T00:17:51.057Z",
+      "lastUpdated": "2026-09-29T10:33:40.842Z",
       "deltaHistory": [
-        -0.002,
+        0,
         0,
         0,
         0,
