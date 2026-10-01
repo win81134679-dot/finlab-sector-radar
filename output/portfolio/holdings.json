@@ -1,15 +1,15 @@
 {
-  "updated_at": "2026-09-30T18:05:42.755620+00:00",
+  "updated_at": "2026-10-01T13:26:54.561857+00:00",
   "positions": {
     "2303": {
       "name_zh": "聯電",
       "sector": "foundry",
       "category": "beneficiary",
       "composite_score": 0.3,
-      "entry_price": 154.5,
+      "entry_price": 161.5,
       "shares": 0,
       "weight": 0.0556,
-      "added_at": "2026-09-30T18:05:42.749574+00:00",
+      "added_at": "2026-10-01T13:26:54.555063+00:00",
       "reason": "訊號進場",
       "exit_alert": false
     },
@@ -18,10 +18,10 @@
       "sector": "foundry",
       "category": "beneficiary",
       "composite_score": 0.3,
-      "entry_price": 2480.0,
+      "entry_price": 2510.0,
       "shares": 0,
       "weight": 0.0556,
-      "added_at": "2026-09-30T18:05:42.749574+00:00",
+      "added_at": "2026-10-01T13:26:54.555063+00:00",
       "reason": "訊號進場"
     },
     "5347": {
@@ -29,10 +29,10 @@
       "sector": "foundry",
       "category": "beneficiary",
       "composite_score": 0.3,
-      "entry_price": 181.0,
+      "entry_price": 184.5,
       "shares": 0,
       "weight": 0.0556,
-      "added_at": "2026-09-30T18:05:42.749574+00:00",
+      "added_at": "2026-10-01T13:26:54.555063+00:00",
       "reason": "訊號進場"
     },
     "6770": {
@@ -40,10 +40,10 @@
       "sector": "foundry",
       "category": "beneficiary",
       "composite_score": 0.3,
-      "entry_price": 75.3,
+      "entry_price": 74.5,
       "shares": 0,
       "weight": 0.0556,
-      "added_at": "2026-09-30T18:05:42.749574+00:00",
+      "added_at": "2026-10-01T13:26:54.555063+00:00",
       "reason": "訊號進場",
       "exit_alert": false
     },
@@ -52,21 +52,22 @@
       "sector": "foundry",
       "category": "beneficiary",
       "composite_score": 0.3,
-      "entry_price": 542.0,
+      "entry_price": 538.0,
       "shares": 0,
       "weight": 0.0556,
-      "added_at": "2026-09-30T18:05:42.749574+00:00",
-      "reason": "訊號進場"
+      "added_at": "2026-10-01T13:26:54.555063+00:00",
+      "reason": "訊號進場",
+      "exit_alert": false
     },
     "3016": {
       "name_zh": "3016",
       "sector": "foundry",
       "category": "beneficiary",
       "composite_score": 0.3,
-      "entry_price": 169.0,
+      "entry_price": 168.0,
       "shares": 0,
       "weight": 0.0556,
-      "added_at": "2026-09-30T18:05:42.749574+00:00",
+      "added_at": "2026-10-01T13:26:54.555063+00:00",
       "reason": "訊號進場",
       "exit_alert": false
     },
@@ -75,22 +76,21 @@
       "sector": "foundry",
       "category": "beneficiary",
       "composite_score": 0.3,
-      "entry_price": 8040.0,
+      "entry_price": 7900.0,
       "shares": 0,
       "weight": 0.0556,
-      "added_at": "2026-09-30T18:05:42.749574+00:00",
-      "reason": "訊號進場",
-      "exit_alert": false
+      "added_at": "2026-10-01T13:26:54.555063+00:00",
+      "reason": "訊號進場"
     },
     "2338": {
       "name_zh": "2338",
       "sector": "foundry",
       "category": "beneficiary",
       "composite_score": 0.3,
-      "entry_price": 47.3,
+      "entry_price": 47.2,
       "shares": 0,
       "weight": 0.0111,
-      "added_at": "2026-09-30T18:05:42.749574+00:00",
+      "added_at": "2026-10-01T13:26:54.555063+00:00",
       "reason": "訊號進場"
     },
     "3711": {
@@ -98,10 +98,10 @@
       "sector": "packaging",
       "category": "beneficiary",
       "composite_score": 0.25,
-      "entry_price": 703.0,
+      "entry_price": 710.0,
       "shares": 0,
       "weight": 0.0463,
-      "added_at": "2026-09-30T18:05:42.749574+00:00",
+      "added_at": "2026-10-01T13:26:54.555063+00:00",
       "reason": "訊號進場"
     },
     "6239": {
@@ -109,10 +109,10 @@
       "sector": "packaging",
       "category": "beneficiary",
       "composite_score": 0.25,
-      "entry_price": 289.5,
+      "entry_price": 292.5,
       "shares": 0,
       "weight": 0.0463,
-      "added_at": "2026-09-30T18:05:42.749574+00:00",
+      "added_at": "2026-10-01T13:26:54.555063+00:00",
       "reason": "訊號進場"
     },
     "8150": {
@@ -120,10 +120,10 @@
       "sector": "packaging",
       "category": "beneficiary",
       "composite_score": 0.25,
-      "entry_price": 114.5,
+      "entry_price": 115.5,
       "shares": 0,
       "weight": 0.0463,
-      "added_at": "2026-09-30T18:05:42.749574+00:00",
+      "added_at": "2026-10-01T13:26:54.555063+00:00",
       "reason": "訊號進場"
     },
     "2441": {
@@ -131,10 +131,10 @@
       "sector": "packaging",
       "category": "beneficiary",
       "composite_score": 0.25,
-      "entry_price": 125.5,
+      "entry_price": 124.5,
       "shares": 0,
       "weight": 0.0463,
-      "added_at": "2026-09-30T18:05:42.749574+00:00",
+      "added_at": "2026-10-01T13:26:54.555063+00:00",
       "reason": "訊號進場"
     },
     "6257": {
@@ -142,10 +142,10 @@
       "sector": "packaging",
       "category": "beneficiary",
       "composite_score": 0.25,
-      "entry_price": 254.0,
+      "entry_price": 256.5,
       "shares": 0,
       "weight": 0.0463,
-      "added_at": "2026-09-30T18:05:42.749574+00:00",
+      "added_at": "2026-10-01T13:26:54.555063+00:00",
       "reason": "訊號進場"
     },
     "3264": {
@@ -153,10 +153,10 @@
       "sector": "packaging",
       "category": "beneficiary",
       "composite_score": 0.25,
-      "entry_price": 243.5,
+      "entry_price": 245.5,
       "shares": 0,
       "weight": 0.0463,
-      "added_at": "2026-09-30T18:05:42.749574+00:00",
+      "added_at": "2026-10-01T13:26:54.555063+00:00",
       "reason": "訊號進場"
     },
     "2449": {
@@ -164,10 +164,10 @@
       "sector": "packaging",
       "category": "beneficiary",
       "composite_score": 0.25,
-      "entry_price": 294.5,
+      "entry_price": 296.0,
       "shares": 0,
       "weight": 0.0463,
-      "added_at": "2026-09-30T18:05:42.749574+00:00",
+      "added_at": "2026-10-01T13:26:54.555063+00:00",
       "reason": "訊號進場"
     },
     "2369": {
@@ -175,10 +175,10 @@
       "sector": "packaging",
       "category": "beneficiary",
       "composite_score": 0.25,
-      "entry_price": 32.15,
+      "entry_price": 31.75,
       "shares": 1000,
       "weight": 0.0463,
-      "added_at": "2026-09-30T18:05:42.749574+00:00",
+      "added_at": "2026-10-01T13:26:54.555063+00:00",
       "reason": "訊號進場"
     },
     "2434": {
@@ -186,10 +186,10 @@
       "sector": "packaging",
       "category": "beneficiary",
       "composite_score": 0.25,
-      "entry_price": 65.4,
+      "entry_price": 62.9,
       "shares": 0,
       "weight": 0.0296,
-      "added_at": "2026-09-30T18:05:42.749574+00:00",
+      "added_at": "2026-10-01T13:26:54.555063+00:00",
       "reason": "訊號進場"
     }
   },
